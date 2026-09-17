@@ -1,0 +1,286 @@
+{
+ "name": "SnapLine",
+ "subtitle": "Grid lines that pass behind your subject",
+ "summary": "Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.",
+ "hero": {
+  "hook": "Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.",
+  "shotAlt": "The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Bend the grid",
+   "body": [
+    "You start from the rule-of-thirds grid. Drag the middle point of a line and it bends while both ends stay on the edge of the photo. Drag an edge point and the line tilts. Drag the small tick on a line to add another bend."
+   ],
+   "bullets": [
+    "Bend and tilt any line",
+    "Extra bend points, sharp or smooth",
+    "Add line and Delete line buttons"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Close-up of palm trees at sunset. Bent grid lines pass behind the fronds.",
+    "caption": "App screen, zoomed in"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Erase where they overlap",
+   "body": [
+    "Switch to Erase and rub over the line where it crosses the subject. Tap Auto mask and the app finds the subject and clears the lines over it in one step. Switch to Restore and the line comes back wherever you rub."
+   ],
+   "bullets": [
+    "Auto mask for one-tap erasing",
+    "Zoom up to 8× with a loupe",
+    "Press and hold to see the result"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Three tools, Erase, Restore and Auto mask, with zoom up to 8× and a brush from 1 to 60 pt",
+    "items": [
+     {
+      "name": "Erase",
+      "desc": "Removes a line where you rub"
+     },
+     {
+      "name": "Restore",
+      "desc": "Brings erased lines back"
+     },
+     {
+      "name": "Auto mask",
+      "desc": "Clears lines over the subject at once",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Zoom",
+      "value": "Up to 8×",
+      "meter": "ticks",
+      "count": 8,
+      "on": 3
+     },
+     {
+      "label": "Brush",
+      "value": "1 to 60 pt"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Full-size exports",
+   "body": [
+    "Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away."
+   ],
+   "bullets": [
+    "Original resolution kept",
+    "JPEG quality 95",
+    "Save to Photos or Share"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "No sign-up",
+   "body": [
+    "Choose a photo and the grid is already on it. There is no account to create, and your work is saved in the app so you can reopen it from the home screen."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "No login",
+     "No ads"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Choose how your lines look,\nand save without the watermark",
+  "items": [
+   "Save without the watermark",
+   "Dashed, double and glow line styles",
+   "Custom line colors besides white and black",
+   "Snap lines to subject corners"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Bending and tilting a line",
+   "a": [
+    "Each line has three points. The two ends sit on the edge of the photo, and the middle one moves freely. Drag the middle point and the line bends while its ends stay put. Drag an edge point and it slides along that edge, tilting the line.",
+    "Tap a line to show small ticks along it. Drag a tick to add a bend point, or tap any point to Delete it or make it Smooth. Edge points can't be deleted, and a line holds up to 8 points."
+   ]
+  },
+  {
+   "q": "Making a line pass behind the subject",
+   "a": [
+    "Choose Erase in the toolbar at the bottom and rub over the line where it crosses your subject. Tap Auto mask and the app finds the subject and clears the lines over it in one step.",
+    "To bring an erased line back, open Settings while in Erase, choose Restore and rub over the spot. Undo works too."
+   ]
+  },
+  {
+   "q": "When Auto mask can't find the subject",
+   "a": [
+    "Auto mask works best when the subject stands clearly apart from the background. If it finds nothing, erase by hand with Erase and you get the same result. To remove a mask you applied, tap the same button, now labeled Clear auto mask."
+   ]
+  },
+  {
+   "q": "Erasing fine details",
+   "a": [
+    "Pinch to zoom in up to 8×, or double-tap to switch between 3× and the full view. In Settings, move the Brush slider to the left for a thinner brush.",
+    "Turn on Loupe to see what your finger is covering, and Erased areas to highlight what you have erased. While zoomed in, you can drag the edge of the photo well into the screen."
+   ]
+  },
+  {
+   "q": "Export quality and the watermark",
+   "a": [
+    "Export composes your photo at its original resolution and saves it as a JPEG at quality 95. There is no size limit.",
+    "Photos saved on the free version carry a small SnapLine watermark in the bottom-right corner. SnapLine Pro saves without it."
+   ]
+  },
+  {
+   "q": "Why dashed or glow lines save as solid",
+   "a": [
+    "The Dashed, Double and Glow line styles are SnapLine Pro features. Anyone can try them on the canvas while editing, and without Pro they are saved as solid lines. Tap Save with this line style on the export screen to see Pro."
+   ]
+  },
+  {
+   "q": "Picking up where you left off",
+   "a": [
+    "When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold to delete it.",
+    "SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos."
+   ]
+  },
+  {
+   "q": "Restoring a Pro purchase",
+   "a": [
+    "If you switched devices or reinstalled the app, tap Restore Purchase on the purchase screen. To get there, open a photo, expand Settings while in Lines and tap the Pro badge next to Style. With the same Apple Account you won't be charged again."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Editing, Auto mask and saving all work offline. Only buying and restoring Pro need a connection to the App Store."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "SnapLine Privacy Policy",
+  "effectiveDate": "2026-09-17",
+  "summary": "SnapLine does not collect personal information. There is no sign-up or login, and Apple handles Pro payments.",
+  "intro": [
+   "kvndh (the developer) handles the personal information of people who use the SnapLine app (the app) in line with the Personal Information Protection Act of Korea, and describes its practices below."
+  ],
+  "sections": [
+   {
+    "title": "Purposes of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not process personal information about its users, so there is no purpose to state."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Personal information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+    ],
+    "bullets": [
+     "Recent projects (your edits, a copy of the original photo, a thumbnail): used to reopen your work",
+     "Settings and whether you own Pro: used to decide what the app shows and how it exports",
+     "First launch time and number of saves: used to decide when to ask for a rating",
+     "A temporary image for sharing: used when you share, deleted at the next export or app launch"
+    ]
+   },
+   {
+    "title": "Retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is removed when you delete the app, and older recent projects are removed as new ones are saved. Photos you saved to the Photos app stay there until you delete them in Photos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Provision to third parties",
+    "paragraphs": [
+     "Personal information is not provided to third parties."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "No processing of personal information is outsourced. Apple processes SnapLine Pro payments through the App Store, and payment information falls under Apple's privacy policy. The developer never receives your payment method or Apple Account details."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of personal information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. You can delete a recent project by pressing and holding its thumbnail on the home screen, and deleting the app removes all of its data."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal representatives",
+    "paragraphs": [
+     "Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, write to the contact below and we will look into it."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "The app only receives the photos you choose in the iOS photo picker. To save an edited photo it uses add-only access to Photos, and it never asks for permission to read your photo library."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies and other automatic collection",
+    "paragraphs": [
+     "The app uses no cookies, no advertising identifier and no analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "For questions about personal information, contact:"
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies",
+    "paragraphs": [
+     "If you believe your privacy rights have been infringed, you can contact the data protection authority where you live."
+    ],
+    "bullets": [
+     "European Union and EEA: your national data protection authority (listed at edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Elsewhere: the data protection authority in your country or region"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show the new text and its new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}
