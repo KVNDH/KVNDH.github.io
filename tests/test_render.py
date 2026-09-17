@@ -72,6 +72,20 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('<div class="play" aria-hidden="true">', html)
         self.assertIn('<ul class="chips"><li>c</li></ul>', html)
 
+    def test_glyph_svg_is_inlined_when_present(self):
+        folder = self.site.root / "assets" / "demo" / "glyphs"
+        folder.mkdir(parents=True)
+        (folder / "gl.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 40" role="img" aria-label="Glaze"><path d="M0 0" fill="currentColor"/></svg>')
+        html = render.render_app(self.site, "ko", "demo")
+        self.assertIn('<span class="g-svg"><svg aria-hidden="true" focusable="false" xmlns=', html)
+        self.assertNotIn('aria-label="Glaze"', html)
+        self.assertNotIn('class="g g-gl"', html)
+
+    def test_kit_without_glyphs_is_marked_plain(self):
+        self.assertIn('<ul class="kit-b">', render.render_app(self.site, "ko", "demo"))
+        del self.site.copy[("demo", "ko")]["sections"][1]["visual"]["items"][0]["glyph"]
+        self.assertIn('<ul class="kit-b kit-b--plain">', render.render_app(self.site, "ko", "demo"))
+
     def test_pro_block_lists_pro_features_only(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn("<h2>first<br>second</h2>", html)

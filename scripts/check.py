@@ -62,6 +62,9 @@ LAYOUTS = {"feat": ("crop", "kit"), "card": ("play", "chips", None)}
 REQUIRED_FILES = ("CNAME", "app-ads.txt", ".nojekyll", "404.html", "index.html", "robots.txt", "sitemap.xml")
 
 
+NON_TEXT_KEYS = {"layout", "type", "glyph", "meter", "focus", "effectiveDate", "shot"}
+
+
 def strings(obj, path: str = ""):
     if isinstance(obj, str):
         yield path, obj
@@ -70,7 +73,8 @@ def strings(obj, path: str = ""):
             yield from strings(value, f"{path}[{i}]")
     elif isinstance(obj, dict):
         for key, value in obj.items():
-            yield from strings(value, f"{path}.{key}" if path else key)
+            if key not in NON_TEXT_KEYS:
+                yield from strings(value, f"{path}.{key}" if path else key)
 
 
 def is_haeyo(text: str) -> bool:
@@ -114,8 +118,6 @@ def check_copy(site: Site) -> list[str]:
     problems = []
     for (slug, lang), copy in sorted(site.copy.items()):
         for path, text in strings(copy):
-            if path.endswith("effectiveDate"):
-                continue
             marketing = re.split(r"[.\[]", path)[0] in MARKETING_KEYS
             problems += [f"{slug}/{lang} {path}: {p}" for p in rule_problems(lang, text, marketing)]
         if lang == "ko":

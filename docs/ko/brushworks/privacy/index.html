@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BrushWorks 개인정보 처리방침</title>
-<meta name="description" content="BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, Pro 결제는 Apple이 처리합니다.">
+<meta name="description" content="BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, 인앱 결제는 Apple이 처리합니다.">
 <link rel="canonical" href="https://kvndh.com/ko/brushworks/privacy/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/brushworks/privacy/">
-<link rel="alternate" hreflang="x-default" href="https://kvndh.com/ko/brushworks/privacy/">
+<link rel="alternate" hreflang="en" href="https://kvndh.com/en/brushworks/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/brushworks/privacy/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BrushWorks 개인정보 처리방침">
-<meta property="og:description" content="BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, Pro 결제는 Apple이 처리합니다.">
+<meta property="og:description" content="BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, 인앱 결제는 Apple이 처리합니다.">
 <meta property="og:url" content="https://kvndh.com/ko/brushworks/privacy/">
 <meta property="og:image" content="https://kvndh.com/assets/brushworks/og.jpg">
 <meta property="og:locale" content="ko_KR">
@@ -134,6 +135,9 @@ to{opacity:1;transform:scale(1.04)}
 .g-gl{border:2px solid #BDBCB7;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.28),transparent 60%)}
 .g-br{background:repeating-linear-gradient(180deg,#BDBCB7 0 3px,transparent 3px 11px) 0 8px/100% 28px no-repeat}
 .g-kn{background:linear-gradient(var(--ink),var(--ink)) center/24px 40px no-repeat;border-radius:9px}
+.g-svg{display:block;width:52px;height:40px;margin-bottom:16px;color:#BDBCB7}
+.g-svg svg{display:block;width:100%;height:100%}
+.kit-b .on .g-svg{color:var(--ink)}
 .kit-b b{display:block;font-size:17px}
 .kit-b small{display:block;margin-top:6px;font-size:13.5px;line-height:1.5;color:var(--t2)}
 .kit-r{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:12px;padding:18px 22px;border-radius:20px;border:1px solid var(--ln);background:var(--bg)}
@@ -250,11 +254,14 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:-160px;width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
+.kit-b--plain li{display:block}
+.kit-b--plain small{margin-top:4px}
 .g{grid-row:span 2;width:36px;height:36px;margin:0}
+.g-svg{grid-row:span 2;width:40px;height:31px;margin:0}
 .g-br{background-position:0 5px;background-size:100% 26px}
 .g-kn{background-size:20px 34px}
 .kit-b small{margin-top:0}
@@ -314,7 +321,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="page" style="--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42;--btn-tx:#FFFFFF">
 <header class="sh">
 <a class="wm" href="/ko/">kvndh</a>
-<details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>한국어</span></summary><ul aria-label="언어"><li><a href="/ko/brushworks/privacy/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li></ul></details>
+<details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>한국어</span></summary><ul aria-label="언어"><li><a href="/ko/brushworks/privacy/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/en/brushworks/privacy/" lang="en" hreflang="en">English</a></li></ul></details>
 </header>
 <nav class="ab" aria-label="BrushWorks">
 <a class="ab-id" href="/ko/brushworks/"><img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="30" height="30">BrushWorks</a>
@@ -329,9 +336,9 @@ to{opacity:1;transform:scale(1.04)}
 <p class="doc-k"><img src="/assets/brushworks/icon-180.webp" alt="" width="30" height="30">BrushWorks</p>
 <h1>개인정보 처리방침</h1>
 <p class="doc-meta">시행일 <time datetime="2026-09-17">2026-09-17</time></p>
-<p class="doc-sum"><strong>요약</strong>BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, Pro 결제는 Apple이 처리합니다.</p>
+<p class="doc-sum"><strong>요약</strong>BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, 인앱 결제는 Apple이 처리합니다.</p>
 <p>kvndh(이하 개발자)는 BrushWorks 앱(이하 앱)을 쓰는 분의 개인정보를 「개인정보 보호법」에 따라 다루며, 그 기준을 아래와 같이 알립니다.</p>
-<section id="p1"><h2><span>01</span>개인정보의 처리 목적</h2><p>앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 그래서 따로 정한 처리 목적이 없습니다.</p></section><section id="p2"><h2><span>02</span>처리하는 개인정보의 항목</h2><p>개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.</p><ul><li>고른 사진의 사본: 그림을 다시 열 때 사용</li><li>붓질 기록과 설정: 그림을 다시 그릴 때 사용</li></ul></section><section id="p3"><h2><span>03</span>처리 및 보유 기간</h2><p>개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다. 사진 앱에 저장한 그림은 사진 앱에서 지웁니다.</p></section><section id="p4"><h2><span>04</span>제3자 제공</h2><p>개인정보를 제3자에게 제공하지 않습니다.</p></section><section id="p5"><h2><span>05</span>처리 위탁</h2><p>개인정보 처리를 위탁하지 않습니다. BrushWorks Pro 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.</p></section><section id="p6"><h2><span>06</span>파기 절차와 방법</h2><p>개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 고른 사진의 사본은 설정에서 처음 상태로를 누르면 지워지고, 앱의 모든 자료는 앱을 삭제하면 지워집니다.</p></section><section id="p7"><h2><span>07</span>정보주체와 법정대리인의 권리와 의무, 행사 방법</h2><p>개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 문의처로 연락하면 확인해 드립니다.</p></section><section id="p8"><h2><span>08</span>안전성 확보 조치</h2><p>사진은 iOS 사진 선택기로 고른 한 장만 앱에 전달됩니다. 완성작을 저장할 때는 사진을 추가하는 권한만 쓰며, 사진 보관함을 읽는 권한은 요청하지 않습니다.</p></section><section id="p9"><h2><span>09</span>자동 수집 장치의 설치와 운영, 거부 방법</h2><p>쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.</p></section><section id="p10"><h2><span>10</span>개인정보 보호책임자</h2><p>개인정보와 관련한 문의는 아래로 연락하면 됩니다.</p><dl><dt>책임자</dt><dd>kvndh</dd><dt>이메일</dt><dd><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></dd></dl></section><section id="p11"><h2><span>11</span>권익침해 구제 방법</h2><p>개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.</p><ul><li>개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)</li><li>개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)</li><li>대검찰청: 국번 없이 1301 (www.spo.go.kr)</li><li>경찰청: 국번 없이 182 (ecrm.police.go.kr)</li></ul></section><section id="p12"><h2><span>12</span>처리방침의 변경</h2><p>내용이 바뀌면 이 페이지에 바뀐 내용과 새 시행일을 알립니다.</p></section>
+<section id="p1"><h2><span>01</span>개인정보의 처리 목적</h2><p>앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 그래서 따로 정한 처리 목적이 없습니다.</p></section><section id="p2"><h2><span>02</span>처리하는 개인정보의 항목</h2><p>개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.</p><ul><li>고른 사진의 사본: 그림을 다시 열 때 사용</li><li>붓질 기록과 설정: 그림을 다시 그릴 때 사용</li></ul></section><section id="p3"><h2><span>03</span>처리 및 보유 기간</h2><p>개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다. 사진 앱에 저장한 그림은 사진 앱에서 지웁니다.</p></section><section id="p4"><h2><span>04</span>제3자 제공</h2><p>개인정보를 제3자에게 제공하지 않습니다.</p></section><section id="p5"><h2><span>05</span>처리 위탁</h2><p>개인정보 처리를 위탁하지 않습니다. BrushWorks Pro 같은 인앱 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.</p></section><section id="p6"><h2><span>06</span>파기 절차와 방법</h2><p>개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 고른 사진의 사본은 설정에서 처음 상태로를 누르면 지워지고, 앱의 모든 자료는 앱을 삭제하면 지워집니다.</p></section><section id="p7"><h2><span>07</span>정보주체와 법정대리인의 권리와 의무, 행사 방법</h2><p>개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 문의처로 연락하면 확인해 드립니다.</p></section><section id="p8"><h2><span>08</span>안전성 확보 조치</h2><p>사진은 iOS 사진 선택기로 고른 한 장만 앱에 전달됩니다. 완성작을 저장할 때는 사진을 추가하는 권한만 쓰며, 사진 보관함을 읽는 권한은 요청하지 않습니다.</p></section><section id="p9"><h2><span>09</span>자동 수집 장치의 설치와 운영, 거부 방법</h2><p>쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.</p></section><section id="p10"><h2><span>10</span>개인정보 보호책임자</h2><p>개인정보와 관련한 문의는 아래로 연락하면 됩니다.</p><dl><dt>책임자</dt><dd>kvndh</dd><dt>이메일</dt><dd><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></dd></dl></section><section id="p11"><h2><span>11</span>권익침해 구제 방법</h2><p>개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.</p><ul><li>개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)</li><li>개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)</li><li>대검찰청: 국번 없이 1301 (www.spo.go.kr)</li><li>경찰청: 국번 없이 182 (ecrm.police.go.kr)</li></ul></section><section id="p12"><h2><span>12</span>처리방침의 변경</h2><p>내용이 바뀌면 이 페이지에 바뀐 내용과 새 시행일을 알립니다.</p></section>
 <p class="doc-end">이 방침은 2026-09-17부터 적용합니다.</p>
 </article>
 </div>

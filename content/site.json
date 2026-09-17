@@ -101,8 +101,7 @@
    "accent": "#EE9D1C",
    "accentText": "#EE9D1C",
    "glow": "rgba(238,157,28,.32)",
-   "paperAccent": "#9A4F09",
-   "shotCrop": "--sw:218px;--sx:-34px;--sy:-112px"
+   "paperAccent": "#9A4F09"
   }
  ]
 }

@@ -109,6 +109,11 @@ class FactsTest(unittest.TestCase):
         site.facts["demo"]["numbers"] = ["7", "3072", "1.5"]
         self.assertEqual(check.check_facts(site), [])
 
+    def test_css_focus_value_is_not_a_fact(self):
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["sections"][0]["visual"]["focus"] = "-170px"
+        self.assertEqual(check.check_facts(site), [])
+
     def test_ads_app_privacy_must_name_admob(self):
         site = Site(make_site())
         site.facts["demo"]["ads"] = True

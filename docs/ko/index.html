@@ -7,7 +7,8 @@
 <meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master">
 <link rel="canonical" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/">
-<link rel="alternate" hreflang="x-default" href="https://kvndh.com/ko/">
+<link rel="alternate" hreflang="en" href="https://kvndh.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kvndh 앱">
 <meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master">
@@ -134,6 +135,9 @@ to{opacity:1;transform:scale(1.04)}
 .g-gl{border:2px solid #BDBCB7;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.28),transparent 60%)}
 .g-br{background:repeating-linear-gradient(180deg,#BDBCB7 0 3px,transparent 3px 11px) 0 8px/100% 28px no-repeat}
 .g-kn{background:linear-gradient(var(--ink),var(--ink)) center/24px 40px no-repeat;border-radius:9px}
+.g-svg{display:block;width:52px;height:40px;margin-bottom:16px;color:#BDBCB7}
+.g-svg svg{display:block;width:100%;height:100%}
+.kit-b .on .g-svg{color:var(--ink)}
 .kit-b b{display:block;font-size:17px}
 .kit-b small{display:block;margin-top:6px;font-size:13.5px;line-height:1.5;color:var(--t2)}
 .kit-r{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:12px;padding:18px 22px;border-radius:20px;border:1px solid var(--ln);background:var(--bg)}
@@ -250,11 +254,14 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:-160px;width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
+.kit-b--plain li{display:block}
+.kit-b--plain small{margin-top:4px}
 .g{grid-row:span 2;width:36px;height:36px;margin:0}
+.g-svg{grid-row:span 2;width:40px;height:31px;margin:0}
 .g-br{background-position:0 5px;background-size:100% 26px}
 .g-kn{background-size:20px 34px}
 .kit-b small{margin-top:0}
@@ -314,7 +321,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="page" style="">
 <header class="sh">
 <a class="wm" href="/ko/">kvndh</a>
-<details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>한국어</span></summary><ul aria-label="언어"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li></ul></details>
+<details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>한국어</span></summary><ul aria-label="언어"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li></ul></details>
 </header>
 
 <main id="main">
@@ -334,51 +341,51 @@ to{opacity:1;transform:scale(1.04)}
 <article class="tile t-p2" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
 <div class="tile-tx">
 <img class="ic" src="/assets/snapline/icon-180.webp" alt="" width="80" height="80">
-<h2>SnapLine</h2>
+<h2><a class="tile-link" href="/ko/snapline/">SnapLine</a></h2>
 <p class="sub">피사체 뒤로 지나가는 구도선</p>
 
-<p class="tile-act"><a class="as" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine, App Store에서 보기">App Store ↗</a></p>
+<p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine, App Store에서 보기">App Store ↗</a></p>
 </div>
-<div class="shot" style=""><img src="/assets/snapline/shots/en/01.webp" alt="SnapLine 화면" loading="lazy"></div>
+<div class="shot" style=""><img src="/assets/snapline/shots/en/01.webp" alt="SnapLine 편집 화면. 해 질 녘 등대 사진 위 격자선이 등대 쪽으로 꺾여 있고, 아래에 선과 지우기 도구가 있습니다." loading="lazy"></div>
 </article>
 
 <article class="tile t-p3" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/life-tyde/icon-180.webp" alt="" width="80" height="80">
-<h2>Life Tyde</h2>
+<h2><a class="tile-link" href="/ko/life-tyde/">Life Tyde</a></h2>
 <p class="sub">조용히 쌓이는 나의 연대기</p>
 
-<p class="tile-act"><a class="as" href="https://apps.apple.com/app/id6773198369" aria-label="Life Tyde, App Store에서 보기">App Store ↗</a></p>
+<p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6773198369" aria-label="Life Tyde, App Store에서 보기">App Store ↗</a></p>
 </div>
-<div class="shot" style=""><img src="/assets/life-tyde/shots/ko/01.webp" alt="Life Tyde 화면" loading="lazy"></div>
+<div class="shot" style=""><img src="/assets/life-tyde/shots/ko/01.webp" alt="Life Tyde 타임라인 화면. 연도별 기록이 세로로 이어지고, 강조한 기록은 빨간 점과 빨간 제목으로 보입니다." loading="lazy"></div>
 </article>
 
 <article class="tile t-p4" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
 <div class="tile-tx">
 <img class="ic" src="/assets/tapey/icon-180.webp" alt="" width="80" height="80">
-<h2>Tapey</h2>
+<h2><a class="tile-link" href="/ko/tapey/">Tapey</a></h2>
 <p class="sub">벽에 붙인 듯한 사진 콜라주</p>
 
-<p class="tile-act"><a class="as" href="https://apps.apple.com/app/id6778635856" aria-label="Tapey, App Store에서 보기">App Store ↗</a></p>
+<p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6778635856" aria-label="Tapey, App Store에서 보기">App Store ↗</a></p>
 </div>
-<div class="shot" style="--sw:196px;--sx:-24px;--sy:-76px"><img src="/assets/tapey/shots/ko/01.webp" alt="Tapey 화면" loading="lazy"></div>
+<div class="shot" style="--sw:196px;--sx:-24px;--sy:-76px"><img src="/assets/tapey/shots/ko/01.webp" alt="Tapey 편집 화면. 잠금화면 시계 아래에 폴라로이드 프레임 사진들이 워시테이프로 붙어 있고, 한 장에는 손글씨 메모가 있습니다." loading="lazy"></div>
 </article>
 
 <article class="tile t-p5" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
 <div class="tile-tx">
 <img class="ic" src="/assets/dice-master/icon-180.webp" alt="" width="80" height="80">
-<h2>Dice Master</h2>
+<h2><a class="tile-link" href="/ko/dice-master/">Dice Master</a></h2>
 <p class="sub">수식 자동 계산과 색상별 부분합</p>
 
-<p class="tile-act"><a class="as" href="https://apps.apple.com/app/id6765857608" aria-label="Dice Master, App Store에서 보기">App Store ↗</a></p>
+<p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6765857608" aria-label="Dice Master, App Store에서 보기">App Store ↗</a></p>
 </div>
-<div class="shot" style="--sw:218px;--sx:-34px;--sy:-112px"><img src="/assets/dice-master/shots/ko/01.webp" alt="Dice Master 화면" loading="lazy"></div>
+<div class="shot" style=""><img src="/assets/dice-master/shots/ko/01.webp" alt="Dice Master에서 6면 주사위 5개를 3D로 굴린 화면. 주사위 위에 합계와 계산 과정이 있습니다." loading="lazy"></div>
 </article>
 
 </div>
 
 </main>
-<footer class="sf"><div class="sf-l"><a class="wm" href="/ko/">kvndh</a></div><div><h2>문의</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>개인정보 처리방침</h2><ul><li><a href="/ko/brushworks/privacy/">BrushWorks</a></li></ul></div><div class="sf-l"><h2>언어</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li></ul></div><p class="copy">© kvndh</p></footer>
+<footer class="sf"><div class="sf-l"><a class="wm" href="/ko/">kvndh</a></div><div><h2>문의</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>개인정보 처리방침</h2><ul><li><a href="/ko/brushworks/privacy/">BrushWorks</a></li><li><a href="/ko/snapline/privacy/">SnapLine</a></li><li><a href="/ko/life-tyde/privacy/">Life Tyde</a></li><li><a href="/ko/tapey/privacy/">Tapey</a></li><li><a href="/ko/dice-master/privacy/">Dice Master</a></li></ul></div><div class="sf-l"><h2>언어</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </div>
 </body>
 </html>

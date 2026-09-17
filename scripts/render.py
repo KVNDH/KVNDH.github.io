@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from string import Template
 
 from sitelib import Site, app_store_url, esc, page_path
@@ -202,6 +203,18 @@ def render_hub(site: Site, lang: str) -> str:
                 content=content, footer=hub_footer(site, lang))
 
 
+def glyph(site: Site, slug: str, name: str) -> str:
+    """붓 그림. assets/<app>/glyphs/<name>.svg 가 있으면 인라인(강조색을 따른다), 없으면 CSS 도형."""
+    path = site.root / "assets" / slug / "glyphs" / f"{name}.svg"
+    if not path.exists():
+        return f'<span class="g g-{esc(name)}"></span>'
+    svg = path.read_text(encoding="utf-8").strip()
+    svg = re.sub(r"<\?xml[^>]*>\s*", "", svg)
+    svg = re.sub(r'\s(?:role|aria-label)="[^"]*"', "", svg)
+    svg = svg.replace("<svg ", '<svg aria-hidden="true" focusable="false" ', 1)
+    return f'<span class="g-svg">{svg}</span>'
+
+
 def render_visual(site: Site, lang: str, slug: str, visual: dict) -> str:
     kind = visual["type"]
     if kind == "crop":
@@ -213,7 +226,7 @@ def render_visual(site: Site, lang: str, slug: str, visual: dict) -> str:
     if kind == "kit":
         tools = "".join(
             ('<li class="on">' if tool.get("on") else "<li>")
-            + (f'<span class="g g-{esc(tool["glyph"])}"></span>' if tool.get("glyph") else "")
+            + (glyph(site, slug, tool["glyph"]) if tool.get("glyph") else "")
             + f'<b>{esc(tool["name"])}</b><small>{esc(tool["desc"])}</small></li>'
             for tool in visual["items"]
         )
@@ -221,9 +234,10 @@ def render_visual(site: Site, lang: str, slug: str, visual: dict) -> str:
             f'<div class="kit-r"><p>{esc(row["label"])}<b>{esc(row["value"])}</b></p>{meter(row)}</div>'
             for row in visual.get("rows", [])
         )
+        plain = "" if any(tool.get("glyph") for tool in visual["items"]) else " kit-b--plain"
         return (
             f'<div class="feat-vis kit" role="img" aria-label="{esc(visual["label"])}">'
-            f'<ul class="kit-b">{tools}</ul>{rows}</div>'
+            f'<ul class="kit-b{plain}">{tools}</ul>{rows}</div>'
         )
     raise ValueError(f"unknown feature visual: {kind}")
 

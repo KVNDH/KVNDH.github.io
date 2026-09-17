@@ -1,12 +1,54 @@
 {
- "brushworks": {"icon": "BrushWorks/Sources/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-  "shots": {"en": ["BrushWorks/docs/store/screenshots/01-finished.png"]}},
- "life-tyde": {"icon": "Life Tyde/Life Tyde/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-  "shots": {"ko": ["Life Tyde/results/screenshots/01-timeline-ko.png"], "en": ["Life Tyde/results/screenshots/01-timeline-en.png"]}},
- "snapline": {"icon": "SnapLine/SnapLine/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
-  "shots": {"en": ["SnapLine/docs/appstore/screenshots/01-behind.png"]}},
- "tapey": {"icon": "Tapey/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
-  "shots": {"ko": ["Tapey/screenshots/ko/APP_IPHONE_67_01.png"]}},
- "dice-master": {"icon": "diceMaster/diceMaster/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
-  "shots": {"ko": ["diceMaster/results/asc-shot1-final/ko/APP_IPHONE_67/00_01_formula3d.png"]}}
+ "brushworks": {
+  "icon": "BrushWorks/Sources/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "en": [
+    "BrushWorks/docs/store/screenshots/01-finished.png"
+   ]
+  }
+ },
+ "life-tyde": {
+  "icon": "Life Tyde/Life Tyde/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "Life Tyde/results/store-1.2.1-src/ko_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/ko_3-chronicle.png"
+   ],
+   "en": [
+    "Life Tyde/results/store-1.2.1-src/en_4-onthisday.png",
+    "Life Tyde/results/store-1.2.1-src/en_3-chronicle.png"
+   ]
+  }
+ },
+ "snapline": {
+  "icon": "SnapLine/SnapLine/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+  "shots": {
+   "en": [
+    "SnapLine/docs/appstore/screenshots/01-behind.png",
+    "SnapLine/docs/appstore/screenshots/02-bend.png"
+   ]
+  }
+ },
+ "tapey": {
+  "icon": "Tapey/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+  "shots": {
+   "ko": [
+    "Tapey/appstore/ko/03.png"
+   ],
+   "en": [
+    "Tapey/appstore/en/03.png"
+   ]
+  }
+ },
+ "dice-master": {
+  "icon": "diceMaster/diceMaster/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+  "shots": {
+   "ko": [
+    "diceMaster/results/asc-shot1-raw/iphone/ko.png"
+   ],
+   "en": [
+    "diceMaster/results/asc-shot1-raw/iphone/en-US.png"
+   ]
+  }
+ }
 }
