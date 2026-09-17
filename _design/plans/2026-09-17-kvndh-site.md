@@ -2073,7 +2073,7 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
 
 ```json
 {"name": "", "subtitle": "", "summary": "허브 큰 타일과 meta description",
- "hero": {"hook": "", "meta": "명사형 한 줄 (예: 무료, Pro는 한 번 구매)", "shotAlt": ""},
+ "hero": {"hook": "", "meta": "(선택, 명사형 한 줄. 구매 방식은 쓰지 않는다)", "shotAlt": ""},
  "sections": [
   {"layout": "feat", "title": "", "body": [""], "bullets": [""],
    "visual": {"type": "crop", "shot": 1, "alt": "", "caption": "", "focus": "-200px (선택)"}},
@@ -2083,7 +2083,7 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
   {"layout": "card", "title": "", "body": [""], "bullets": [""], "visual": {"type": "play", "label": ""}},
   {"layout": "card", "title": "", "body": [""], "bullets": [], "visual": {"type": "chips", "items": ["명사형"]}}
  ],
- "pro": {"kick": "", "title": "줄바꿈은 \\n", "badge": "", "free": [""], "pro": [""], "freeLabel": "(선택)", "proLabel": "(선택)"},
+ "pro": {"kick": "<앱> Pro", "title": "Pro 로 되는 것 (줄바꿈은 \\n)", "items": ["Pro 기능, 명사형"]},
  "faq": [{"q": "명사형 제목", "a": [""]}],
  "privacy": {"title": "", "effectiveDate": "", "summary": "", "intro": [""],
              "sections": [{"title": "", "paragraphs": [""], "bullets": [], "pairs": [{"label": "", "value": ""}]}]}}
@@ -2094,8 +2094,9 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
 - `feat` 는 순서대로 좌우가 번갈아 놓인다
 - 연속한 `card` 는 두 장씩 `duo` 로 묶인다. 카드는 짝수 개로 둔다
 - 섹션 번호 `01`~ 은 자동으로 붙는다
-- `check.py` 가 layout/visual 조합, `hero.meta`, `privacy.summary`, 언어 간 구조(섹션마다 body 수, 불릿 수, visual 항목 수, 절마다 문단 수, 불릿 수, pairs 수)를 검사한다
-- UI 키(ko 기준): `skip language hubMetaTitle learnMore getOnAppStore storeLabel({name}) screenshot navAbout navSupport navPrivacy helpBody supportPage free pro oneTime priceNote faqTitle contactTitle contactBody effectiveDate effectiveFrom({date}) summaryLabel toc notFound`
+- Pro 블록은 비교표 없이 Pro 기능만 나열한다. 가격, 구매 방식, 배지는 없다(스펙 3절 9번)
+- `check.py` 가 layout/visual 조합, `hero.hook`, `privacy.summary`, 언어 간 구조(섹션마다 body 수, 불릿 수, visual 항목 수, 절마다 문단 수, 불릿 수, pairs 수)를 검사한다
+- UI 키(ko 기준): `skip language hubMetaTitle learnMore getOnAppStore storeLabel({name}) screenshot navAbout navSupport navPrivacy helpBody supportPage faqTitle contactTitle contactBody effectiveDate effectiveFrom({date}) summaryLabel toc notFound`
 
 **확인:** 테스트 56개 OK, `check.py` 통과, 1280px 과 390px 화면이 목업 C안과 일치
 
@@ -2131,10 +2132,6 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
  "navPrivacy": "Privacy Policy",
  "helpBody": "Questions and contact details are on the support page.",
  "supportPage": "Support page",
- "free": "Free",
- "pro": "Pro",
- "oneTime": "One-time purchase",
- "priceNote": "Prices are shown on the App Store.",
  "faqTitle": "Questions",
  "contactTitle": "Contact",
  "contactBody": "Send questions and bug reports by email. Include your device model and iOS version so we can check faster.",
@@ -2167,7 +2164,7 @@ content/apps/brushworks/ko.json 과 facts.json (형식과 말투의 기준), 이
      numbers 에는 소개 문구에 쓸 숫자만 넣는다.
 2. ko.json, en.json 작성 (BrushWorks ko.json 과 같은 키와 구조)
    - sections 는 feat 2개 + card 2개(BrushWorks 와 같은 구성). feat 의 visual 은 crop 이나 kit(glyph 없이), card 는 play, chips, 없음.
-     pro 는 유료 기능이 있을 때만(없으면 null). hero.meta 는 명사형 한 줄
+     pro 는 유료 기능이 있을 때만(없으면 null)이고 Pro 기능만 나열한다(가격, 구매 방식 금지). hero.meta 는 쓰지 않는다
    - FAQ 는 기존 지원 페이지에서 옮기되 코드와 대조해 틀린 것은 고친다
    - 개인정보 처리방침은 12개 절, 순서와 제목은 BrushWorks ko.json 과 같게.
      광고 SDK가 있으면 9절(자동 수집 장치)과 4절이나 5절(제3자 제공, 위탁)에 사실대로 적고 "AdMob" 을 이름으로 쓴다

@@ -48,9 +48,9 @@ BANNED_WORDS = {
 
 # 반전과 권유 구문. 소개 문구(MARKETING_KEYS)에만 적용한다.
 BANNED_REGEX = {
-    "ko": [r"혼자서?\s?만[들듭드]", r"단순한 \S+(?:이|가) 아닙니다", r"(?:이|가) 아니라 .{1,30}입니다",
+    "ko": [r"한 ?번 구매", r"구독(?:이|은)? ?없", r"일회성 구매", r"고급 기능은 Pro", r"혼자서?\s?만[들듭드]", r"단순한 \S+(?:이|가) 아닙니다", r"(?:이|가) 아니라 .{1,30}입니다",
            r"뿐만 아니라", r"더 이상 .{0,12}필요", r"(?:앱|것)을 만듭니다"],
-    "en": [r"\bit'?s not\b.{1,40}\bit'?s\b", r"\bnot\b[^.]{1,40}\bbut\b"],
+    "en": [r"one-time purchase", r"no subscription", r"\bit'?s not\b.{1,40}\bit'?s\b", r"\bnot\b[^.]{1,40}\bbut\b"],
 }
 
 MARKETING_KEYS = ("summary", "subtitle", "hero", "sections", "pro")
@@ -102,11 +102,11 @@ def bullet_items(copy: dict):
                 yield f"sections[{i}].visual.items[{j}]", item
             else:
                 yield f"sections[{i}].visual.items[{j}].desc", item["desc"]
-    pro = copy.get("pro") or {}
-    for key in ("free", "pro"):
-        for j, item in enumerate(pro.get(key, [])):
-            yield f"pro.{key}[{j}]", item
-    yield "hero.meta", (copy.get("hero") or {}).get("meta", "")
+    for j, item in enumerate((copy.get("pro") or {}).get("items", [])):
+        yield f"pro.items[{j}]", item
+    meta = (copy.get("hero") or {}).get("meta")
+    if meta:
+        yield "hero.meta", meta
 
 
 def check_copy(site: Site) -> list[str]:
@@ -142,8 +142,8 @@ def shape(copy: dict) -> dict:
         ],
         "faq": [len(f["a"]) for f in copy["faq"]],
         "pro": bool(copy.get("pro")),
-        "pro free": len(pro.get("free", [])),
-        "pro items": len(pro.get("pro", [])),
+        "pro items": len(pro.get("items", [])),
+        "hero meta": bool(copy["hero"].get("meta")),
         "privacy": [
             (len(s.get("paragraphs", [])), len(s.get("bullets", [])), len(s.get("pairs", [])))
             for s in copy["privacy"]["sections"]
@@ -177,9 +177,8 @@ def check_structure(site: Site, release: bool) -> list[str]:
                 visual_type = (section.get("visual") or {}).get("type")
                 if section.get("layout") not in LAYOUTS or visual_type not in LAYOUTS[section.get("layout")]:
                     problems.append(f"{slug}/{code}: sections[{i}] layout/visual 조합이 틀림 ({section.get('layout')}, {visual_type})")
-            for key in ("hook", "meta"):
-                if key not in copy["hero"]:
-                    problems.append(f"{slug}/{code}: hero.{key} 없음")
+            if "hook" not in copy["hero"]:
+                problems.append(f"{slug}/{code}: hero.hook 없음")
             if "summary" not in copy["privacy"]:
                 problems.append(f"{slug}/{code}: privacy.summary 없음")
             count = len(copy["privacy"]["sections"])

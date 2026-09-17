@@ -281,19 +281,13 @@ def render_sections(site: Site, lang: str, slug: str, sections: list[dict]) -> s
 
 
 def render_pro(site: Site, lang: str, pro: dict | None) -> str:
+    """Pro 는 고급 기능으로만 소개한다. 가격이나 구매 방식은 적지 않는다."""
     if not pro:
         return ""
-    ui = site.ui[lang]
     return tpl(site, "pro.html").substitute(
         kick=esc(pro["kick"]),
         title=esc(pro["title"]).replace("\n", "<br>"),
-        badge=esc(pro["badge"]),
-        free_label=esc(pro.get("freeLabel", ui["free"])),
-        free=items(pro["free"]),
-        pro_label=esc(pro.get("proLabel", ui["pro"])),
-        one_time=esc(ui["oneTime"]),
-        pro=items(pro["pro"]),
-        price_note=esc(ui["priceNote"]),
+        items=items(pro["items"]),
     )
 
 
@@ -307,7 +301,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
         hook=esc(copy["hero"]["hook"]),
         store=app_store_url(app["appStoreId"]),
         get=esc(ui["getOnAppStore"]),
-        meta=esc(copy["hero"]["meta"]),
+        meta=f'<span class="meta">{esc(copy["hero"]["meta"])}</span>' if copy["hero"].get("meta") else "",
         shot=shot_path(site, slug, lang),
         shot_alt=esc(shot_alt(site, copy, lang)),
         sections=render_sections(site, lang, slug, copy["sections"]),

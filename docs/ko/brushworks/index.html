@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BrushWorks: 문질러서 쌓아 올리는 물감 질감</title>
-<meta name="description" content="사진을 손가락으로 문질러 그림으로 바꿉니다. 붓이 지나간 자리에 물감이 쌓입니다.">
+<title>BrushWorks: 칠한 만큼 완성되는 그림</title>
+<meta name="description" content="좋아하는 사진을 고르고 화면을 문지르면, 손끝이 지나간 자리부터 붓자국이 쌓입니다.">
 <link rel="canonical" href="https://kvndh.com/ko/brushworks/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/brushworks/">
 <link rel="alternate" hreflang="x-default" href="https://kvndh.com/ko/brushworks/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="BrushWorks: 문질러서 쌓아 올리는 물감 질감">
-<meta property="og:description" content="사진을 손가락으로 문질러 그림으로 바꿉니다. 붓이 지나간 자리에 물감이 쌓입니다.">
+<meta property="og:title" content="BrushWorks: 칠한 만큼 완성되는 그림">
+<meta property="og:description" content="좋아하는 사진을 고르고 화면을 문지르면, 손끝이 지나간 자리부터 붓자국이 쌓입니다.">
 <meta property="og:url" content="https://kvndh.com/ko/brushworks/">
 <meta property="og:image" content="https://kvndh.com/assets/brushworks/og.jpg">
 <meta property="og:locale" content="ko_KR">
@@ -167,6 +167,9 @@ to{opacity:1;transform:scale(1.04)}
 .chk li{position:relative;padding-left:28px;font-size:15.5px;line-height:1.5}
 .chk li::before{content:"";position:absolute;left:4px;top:3px;width:6px;height:11px;border-right:2px solid var(--t2);border-bottom:2px solid var(--t2);transform:rotate(45deg)}
 .plan-pro .chk li::before{border-color:var(--ink)}
+.chk-pro{margin-top:40px;grid-template-columns:1fr 1fr;gap:18px 48px}
+.chk-pro li{font-size:17px}
+.chk-pro li::before{border-color:var(--ink)}
 .pro-note{margin-top:20px;font-size:14px;color:var(--t2)}
 .help{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;margin:0 56px 88px;padding:30px 36px;border-radius:26px;border:1px solid var(--ln)}
 .help h2{font-size:22px;letter-spacing:-.02em}
@@ -262,6 +265,8 @@ to{opacity:1;transform:scale(1.04)}
 .pro{margin:0 12px 40px;padding:32px 20px;border-radius:28px}
 .pro h2{font-size:29px}
 .plans{grid-template-columns:1fr;margin-top:28px;gap:12px}
+.chk-pro{margin-top:28px;grid-template-columns:1fr;gap:14px}
+.chk-pro li{font-size:15.5px}
 .plan{padding:24px 20px;border-radius:20px}
 .help{flex-direction:column;align-items:flex-start;margin:0 12px 48px;padding:24px 20px}
 .sheet{grid-template-columns:minmax(0,1fr);gap:0;margin:16px 10px 0;padding:40px 22px 64px;border-radius:24px 24px 0 0}
@@ -322,25 +327,20 @@ to{opacity:1;transform:scale(1.04)}
 <div>
 <img class="ic ic-l" src="/assets/brushworks/icon-360.webp" alt="" width="108" height="108">
 <h1 class="hero-n">BrushWorks</h1>
-<p class="hero-sub">문질러서 쌓아 올리는 물감 질감</p>
-<p class="hero-hook">사진 한 장을 밑그림으로 깔고, 손가락으로 문질러 그 자리의 색을 물감으로 얹습니다.</p>
-<div class="hero-cta"><a class="btn" href="https://apps.apple.com/app/id6810951573">App Store에서 받기</a><span class="meta">무료, Pro는 한 번 구매</span></div>
+<p class="hero-sub">칠한 만큼 완성되는 그림</p>
+<p class="hero-hook">좋아하는 사진을 고르고 화면을 문지르면, 손끝이 지나간 자리부터 붓자국이 쌓입니다.</p>
+<div class="hero-cta"><a class="btn" href="https://apps.apple.com/app/id6810951573">App Store에서 받기</a></div>
 </div>
 <figure class="dev"><img src="/assets/brushworks/shots/en/01.webp" alt="BrushWorks에서 등대 사진을 물감으로 칠한 편집 화면. 아래에 붓 세 자루와 크기 단계가 있습니다."></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop"><img src="/assets/brushworks/shots/en/01.webp" alt="칠한 그림을 확대한 모습. 붓이 지나간 방향으로 결이 남아 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>물감이 쌓입니다</h2><p class="body">손가락이 지나간 자리에 그 아래 사진의 색이 물감으로 얹힙니다. 겹쳐 칠할수록 두께가 생기고, 그 두께가 빛을 받아 그림자를 만듭니다.</p><ul class="pts"><li>겹칠수록 짙어지는 붓자국</li><li>빛을 받는 물감 두께</li><li>원본을 잠깐 비춰 보는 눈 버튼</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop"><img src="/assets/brushworks/shots/en/01.webp" alt="칠한 그림을 확대한 모습. 붓이 지나간 방향으로 결이 남아 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>물감이 쌓입니다</h2><p class="body">칠할수록 물감이 두꺼워지고, 두꺼워진 자리는 빛을 받아 그림자가 집니다. 캔버스를 다 덮으면 그림이 끝납니다.</p><ul class="pts"><li>겹칠수록 짙어지는 붓자국</li><li>빛을 받는 물감 두께</li><li>원본을 잠깐 비춰 보는 눈 버튼</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="붓 세 자루와 붓 크기 9단계, 밑그림 농도 5단계"><ul class="kit-b"><li><span class="g g-gl"></span><b>얇은 칠</b><small>반투명하게 비쳐 섞이는 색</small></li><li><span class="g g-br"></span><b>붓결</b><small>그린 방향을 따라 남는 거친 자국</small></li><li class="on"><span class="g g-kn"></span><b>나이프</b><small>두껍게 밀어 바른 젖은 윤기</small></li></ul><div class="kit-r"><p>붓 크기<b>9단계</b></p><div class="ticks"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5" class="on"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i></div></div><div class="kit-r"><p>밑그림 농도<b>5단계</b></p><div class="lv"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i></div></div></div><div><p class="kick">02</p><h2>붓 세 자루</h2><p class="body">붓을 고르고 크기를 바꾸며 층을 쌓습니다. 밑그림 농도를 낮출수록 사진이 흐려지고, 가장 낮은 Blind 모드에서는 보이지 않습니다.</p><ul class="pts"><li>얇은 칠, 붓결, 나이프</li><li>붓 크기 9단계</li><li>밑그림 농도 5단계</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>그린 과정이 남습니다</h2><p class="body">붓질은 하나하나 기록됩니다. 리플레이로 처음부터 다시 보고, 짧은 타임랩스로 내보냅니다.</p><div class="play" aria-hidden="true"><b></b><i></i><span>리플레이</span></div><ul class="pts"><li>0.25배속까지 느려지는 리플레이</li><li>세로 9:16 타임랩스</li><li>끝에 남는 붓질 수와 그린 시간</li></ul></div><div class="card"><p class="kick">04</p><h2>회원가입 없이 바로 그립니다</h2><p class="body">앱을 열고 사진 한 장을 고르면 바로 칠합니다. 계정을 만들거나 로그인하지 않습니다.</p><ul class="chips"><li>계정 없음</li><li>로그인 없음</li><li>광고 없음</li></ul></div></section>
 <section class="pro">
 <div class="pro-h">
-<div><p class="kick">BrushWorks Pro</p><h2>무료로 그리고,<br>필요할 때 한 번 구매합니다.</h2></div>
-<p class="badge">한 번 구매, 구독 없음</p>
+<div><p class="kick">BrushWorks Pro</p><h2>더 크게 남기고,<br>더 섬세하게 칠합니다</h2></div>
 </div>
-<div class="plans">
-<div class="plan"><h3>무료</h3><ul class="chk"><li>붓 세 자루, 크기 9단계</li><li>밑그림 농도 5단계</li><li>10초 720×1280 타임랩스</li><li>모서리에 작은 워터마크가 들어가는 저장</li></ul></div>
-<div class="plan plan-pro"><h3>Pro <small>한 번 구매</small></h3><ul class="chk"><li>워터마크 없는 저장</li><li>10초~90초 1080×1920 타임랩스</li><li>고른 색 하나로 칠하는 색 고정</li><li>흔들림과 붓 크기 세밀 조절</li><li>1.5배 크기, 최대 3072px 저장</li><li>PNG, HEIF, TIFF 형식</li></ul></div>
-</div>
-<p class="pro-note">가격은 App Store에 표시됩니다.</p>
+<ul class="chk chk-pro"><li>워터마크 없는 저장</li><li>10초~90초 1080×1920 타임랩스</li><li>고른 색 하나로 칠하는 색 고정</li><li>흔들림과 붓 크기 세밀 조절</li><li>1.5배 크기, 최대 3072px 저장</li><li>PNG, HEIF, TIFF 형식</li></ul>
 </section>
 
 <section class="help">

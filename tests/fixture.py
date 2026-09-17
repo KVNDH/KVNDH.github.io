@@ -12,8 +12,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 
 UI_KEYS = [
     "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore", "screenshot",
-    "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "free", "pro", "oneTime",
-    "priceNote", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
+    "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
     "toc", "notFound",
 ]
 
@@ -42,7 +41,7 @@ def app_copy(lang: str) -> dict:
         "name": "Demo",
         "subtitle": "sub",
         "summary": "summary",
-        "hero": {"hook": "hook", "meta": "meta"},
+        "hero": {"hook": "hook"},
         "sections": [
             {"layout": "feat", "title": "title", "body": ["b"], "bullets": ["x"],
              "visual": {"type": "crop", "shot": 1, "alt": "alt", "caption": "cap"}},
@@ -52,7 +51,7 @@ def app_copy(lang: str) -> dict:
             {"layout": "card", "title": "card", "body": ["b"], "bullets": ["y"], "visual": {"type": "play", "label": "play"}},
             {"layout": "card", "title": "chips", "body": ["b"], "bullets": [], "visual": {"type": "chips", "items": ["c"]}},
         ],
-        "pro": {"kick": "Pro", "title": "first\nsecond", "badge": "badge", "free": ["f"], "pro": ["p"]},
+        "pro": {"kick": "Pro", "title": "first\nsecond", "items": ["p"]},
         "faq": [{"q": "q", "a": ["a"]}],
         "privacy": privacy(lang),
     }

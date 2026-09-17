@@ -63,7 +63,7 @@ class AppPageTest(unittest.TestCase):
     def test_hero_and_sections(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<h1 class="hero-n">Demo</h1>', html)
-        self.assertIn('<span class="meta">meta</span>', html)
+        self.assertNotIn('class="meta"', html)
         self.assertIn('<section class="feat"><figure class="feat-vis crop">', html)
         self.assertIn('<section class="feat feat-rev"><div class="feat-vis kit"', html)
         self.assertIn('<li class="on"><span class="g g-gl"></span><b>n</b><small>d</small></li>', html)
@@ -72,11 +72,16 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('<div class="play" aria-hidden="true">', html)
         self.assertIn('<ul class="chips"><li>c</li></ul>', html)
 
-    def test_pro_block(self):
+    def test_pro_block_lists_pro_features_only(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn("<h2>first<br>second</h2>", html)
-        self.assertIn('<div class="plan plan-pro"><h3>ko pro <small>ko oneTime</small></h3>', html)
-        self.assertIn('<p class="pro-note">ko priceNote</p>', html)
+        self.assertIn('<ul class="chk chk-pro"><li>p</li></ul>', html)
+        self.assertNotIn("plans", html.split("<main")[1])
+        self.assertNotIn("badge", html.split("<main")[1])
+
+    def test_hero_meta_is_optional(self):
+        self.site.copy[("demo", "ko")]["hero"]["meta"] = "meta"
+        self.assertIn('<span class="meta">meta</span>', render.render_app(self.site, "ko", "demo"))
 
     def test_app_page_without_pro(self):
         self.site.copy[("demo", "ko")]["pro"] = None

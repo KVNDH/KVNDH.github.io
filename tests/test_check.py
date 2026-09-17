@@ -53,6 +53,14 @@ class CopyRulesTest(unittest.TestCase):
         site.copy[("demo", "ko")]["hero"]["meta"] = "무료로 씁니다."
         self.assertTrue(check.check_copy(site))
 
+    def test_purchase_model_is_not_marketing(self):
+        for text in ["무료, Pro는 한 번 구매", "구독 없이 씁니다", "고급 기능은 Pro"]:
+            self.assertTrue(check.check_copy(site_with("ko", "summary", text)), text)
+        self.assertTrue(check.check_copy(site_with("en", "summary", "A one-time purchase, no subscription")))
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["faq"][0]["a"] = ["같은 계정이면 한 번 구매한 Pro가 복원됩니다."]
+        self.assertEqual(check.check_copy(site), [])
+
     def test_ui_strings_are_checked(self):
         site = Site(make_site())
         site.ui["ko"]["learnMore"] = "놀라운 앱"
