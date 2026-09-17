@@ -15,7 +15,6 @@
   "붓질 기록과 설정: 앱 저장공간"
  ],
  "numbers": [
-  "0.25",
   "5",
   "9",
   "16",
@@ -26,12 +25,20 @@
   "1080",
   "1920",
   "1.5",
-  "3072"
+  "3072",
+  "1",
+  "4"
  ],
  "sources": [
   "BrushWorks/README.md",
   "BrushWorks/docs/STATUS.md",
   "BrushWorks/docs/store/metadata.json",
-  "support/brushworks.html"
+  "support/brushworks.html",
+  "BrushWorks/Sources/App/ReplaySheet.swift (speeds, 2026-09-17 사용자 결정으로 1x/2x/4x)"
+ ],
+ "replaySpeeds": [
+  "1x",
+  "2x",
+  "4x"
  ]
 }
