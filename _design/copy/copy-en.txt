@@ -138,7 +138,7 @@
 
 ## 개인정보 처리방침 07절
 [brushworks.privacy.sections.6.title] Your rights and how to exercise them
-[brushworks.privacy.sections.6.paragraphs.0] Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address in section 10.
+[brushworks.privacy.sections.6.paragraphs.0] Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, email us at the address below.
 
 ## 개인정보 처리방침 08절
 [brushworks.privacy.sections.7.title] Security measures
@@ -150,7 +150,7 @@
 
 ## 개인정보 처리방침 10절
 [brushworks.privacy.sections.9.title] Privacy officer
-[brushworks.privacy.sections.9.paragraphs.0] Send questions about personal information to the contact below.
+[brushworks.privacy.sections.9.paragraphs.0] If you have questions about personal information, email us at the address below.
 [brushworks.privacy.sections.9.pairs.0.label] Privacy officer
 [brushworks.privacy.sections.9.pairs.0.value] kvndh
 [brushworks.privacy.sections.9.pairs.1.label] Email

@@ -147,7 +147,7 @@
 
 ## 개인정보 처리방침 07절
 [brushworks.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
-[brushworks.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 10절의 연락처로 문의해 주세요.
+[brushworks.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
 
 ## 개인정보 처리방침 08절
 [brushworks.privacy.sections.7.title] 안전성 확보 조치
@@ -159,7 +159,7 @@
 
 ## 개인정보 처리방침 10절
 [brushworks.privacy.sections.9.title] 개인정보 보호책임자
-[brushworks.privacy.sections.9.paragraphs.0] 개인정보 관련 문의는 아래 연락처로 받습니다.
+[brushworks.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
 [brushworks.privacy.sections.9.pairs.0.label] 책임자
 [brushworks.privacy.sections.9.pairs.0.value] kvndh
 [brushworks.privacy.sections.9.pairs.1.label] 이메일
@@ -305,7 +305,7 @@
 
 ## 개인정보 처리방침 07절
 [snapline.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
-[snapline.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 10절의 연락처로 문의해 주세요.
+[snapline.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
 
 ## 개인정보 처리방침 08절
 [snapline.privacy.sections.7.title] 안전성 확보 조치
@@ -317,7 +317,7 @@
 
 ## 개인정보 처리방침 10절
 [snapline.privacy.sections.9.title] 개인정보 보호책임자
-[snapline.privacy.sections.9.paragraphs.0] 개인정보 관련 문의는 아래 연락처로 받습니다.
+[snapline.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
 [snapline.privacy.sections.9.pairs.0.label] 책임자
 [snapline.privacy.sections.9.pairs.0.value] kvndh
 [snapline.privacy.sections.9.pairs.1.label] 이메일
@@ -456,7 +456,7 @@
 
 ## 개인정보 처리방침 07절
 [life-tyde.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
-[life-tyde.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 기록은 앱에서 직접 보고 고치고 지우며, CSV 파일로 내보낼 수 있습니다. 궁금한 점은 10절의 연락처로 문의해 주세요.
+[life-tyde.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 기록은 앱에서 직접 보고 고치고 지우며, CSV 파일로 내보낼 수 있습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
 
 ## 개인정보 처리방침 08절
 [life-tyde.privacy.sections.7.title] 안전성 확보 조치
@@ -469,7 +469,7 @@
 
 ## 개인정보 처리방침 10절
 [life-tyde.privacy.sections.9.title] 개인정보 보호책임자
-[life-tyde.privacy.sections.9.paragraphs.0] 개인정보 관련 문의는 아래 연락처로 받습니다.
+[life-tyde.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
 [life-tyde.privacy.sections.9.pairs.0.label] 책임자
 [life-tyde.privacy.sections.9.pairs.0.value] kvndh
 [life-tyde.privacy.sections.9.pairs.1.label] 이메일
@@ -626,7 +626,7 @@
 
 ## 개인정보 처리방침 07절
 [tapey.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
-[tapey.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 10절의 연락처로 문의해 주세요.
+[tapey.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
 [tapey.privacy.sections.6.paragraphs.1] AdMob이 수집한 정보는 Google에 열람이나 삭제를 요청할 수 있습니다. 광고 식별자 사용은 9절의 방법으로 거부합니다.
 
 ## 개인정보 처리방침 08절
@@ -646,7 +646,7 @@
 
 ## 개인정보 처리방침 10절
 [tapey.privacy.sections.9.title] 개인정보 보호책임자
-[tapey.privacy.sections.9.paragraphs.0] 개인정보 관련 문의는 아래 연락처로 받습니다.
+[tapey.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
 [tapey.privacy.sections.9.pairs.0.label] 책임자
 [tapey.privacy.sections.9.pairs.0.value] kvndh
 [tapey.privacy.sections.9.pairs.1.label] 이메일
@@ -783,7 +783,7 @@
 
 ## 개인정보 처리방침 07절
 [dice-master.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
-[dice-master.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 10절의 연락처로 문의해 주세요.
+[dice-master.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
 
 ## 개인정보 처리방침 08절
 [dice-master.privacy.sections.7.title] 안전성 확보 조치
@@ -795,7 +795,7 @@
 
 ## 개인정보 처리방침 10절
 [dice-master.privacy.sections.9.title] 개인정보 보호책임자
-[dice-master.privacy.sections.9.paragraphs.0] 개인정보 관련 문의는 아래 연락처로 받습니다.
+[dice-master.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
 [dice-master.privacy.sections.9.pairs.0.label] 책임자
 [dice-master.privacy.sections.9.pairs.0.value] kvndh
 [dice-master.privacy.sections.9.pairs.1.label] 이메일
