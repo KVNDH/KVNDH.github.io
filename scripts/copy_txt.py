@@ -26,16 +26,16 @@ SECTION_LABELS = {
 }
 
 
-def _leaves(obj, path: list):
+def _leaves(obj, path: list, skip=SKIP_KEYS):
     if isinstance(obj, str):
         yield path, obj
     elif isinstance(obj, list):
         for i, value in enumerate(obj):
-            yield from _leaves(value, path + [i])
+            yield from _leaves(value, path + [i], skip)
     elif isinstance(obj, dict):
         for key, value in obj.items():
-            if key not in SKIP_KEYS:
-                yield from _leaves(value, path + [key])
+            if key not in skip:
+                yield from _leaves(value, path + [key], skip)
 
 
 def _files(root: Path, lang: str) -> list[tuple[str, Path]]:
@@ -62,7 +62,7 @@ def export(root: Path, lang: str) -> str:
         title = "공통 화면 문구" if prefix == "ui" else f'{data.get("name", prefix)} ({prefix})'
         out += [f"==================== {title} ====================", ""]
         group = None
-        for leaf_path, text in _leaves(data, []):
+        for leaf_path, text in _leaves(data, [], set() if prefix == "ui" else SKIP_KEYS):
             head = leaf_path[0]
             if prefix != "ui":
                 if head == "sections":

@@ -22,7 +22,8 @@ class CopyTxtTest(unittest.TestCase):
         self.assertIn("[ui.navAbout] ko navAbout", text)
         self.assertNotIn(".layout]", text)
         self.assertNotIn(".glyph]", text)
-        self.assertNotIn("effectiveDate]", text)
+        self.assertNotIn("privacy.effectiveDate]", text)
+        self.assertIn("[ui.effectiveDate] ko effectiveDate", text)
 
     def test_round_trip_changes_nothing(self):
         before = self.read("content/apps/demo/ko.json")

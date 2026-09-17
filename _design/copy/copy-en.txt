@@ -1,0 +1,789 @@
+# kvndh.com 문구 (en)
+# 줄 맨 앞의 [키] 는 그대로 두고, 뒤의 문장만 고치면 됩니다.
+# 한 항목은 한 줄입니다. 줄바꿈이 필요한 곳은 \n 으로 적습니다.
+
+==================== 공통 화면 문구 ====================
+
+[ui.skip] Skip to content
+[ui.language] Language
+[ui.hubMetaTitle] kvndh apps
+[ui.learnMore] Details
+[ui.getOnAppStore] Download on the App Store
+[ui.storeLabel] {name} on the App Store
+[ui.screenshot] screen
+[ui.navAbout] About
+[ui.navSupport] Support
+[ui.navPrivacy] Privacy Policy
+[ui.helpBody] Questions and contact details are on the support page.
+[ui.supportPage] Support page
+[ui.faqTitle] Questions
+[ui.contactTitle] Contact
+[ui.contactBody] Send questions and bug reports by email. Include your device model and iOS version so we can check faster.
+[ui.effectiveDate] Effective
+[ui.effectiveFrom] This policy applies from {date}.
+[ui.summaryLabel] Summary
+[ui.toc] Contents
+[ui.notFound] This page does not exist. Pick a language below to see the apps.
+
+==================== BrushWorks (brushworks) ====================
+
+
+## 기본
+[brushworks.name] BrushWorks
+[brushworks.subtitle] A painting that grows as you paint
+[brushworks.summary] Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.
+
+## 첫 화면
+[brushworks.hero.hook] Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.
+[brushworks.hero.shotAlt] The BrushWorks canvas with a lighthouse photo painted over in thick strokes. The three brushes and the size steps sit below.
+
+## 기능 01 (feat, crop)
+[brushworks.sections.0.title] The paint builds up
+[brushworks.sections.0.body.0] Every pass makes the paint thicker, and the thick spots catch the light and cast shadows. Once the canvas is covered, the painting is done.
+[brushworks.sections.0.bullets.0] Brush marks that stack in layers
+[brushworks.sections.0.bullets.1] Paint with visible thickness
+[brushworks.sections.0.bullets.2] Eye button to check the original photo
+[brushworks.sections.0.visual.alt] A close-up of the painting. The strokes leave a grain in the direction the brush moved.
+[brushworks.sections.0.visual.caption] App screen, zoomed in
+
+## 기능 02 (feat, kit)
+[brushworks.sections.1.title] Three brushes
+[brushworks.sections.1.body.0] Pick a brush, change its size and build up layers. Turn down Underlay strength and the photo fades; at the lowest step, Blind mode, it is hidden.
+[brushworks.sections.1.bullets.0] Glaze, Bristle and Knife
+[brushworks.sections.1.bullets.1] Brush size in 9 steps
+[brushworks.sections.1.bullets.2] Underlay strength in 5 steps
+[brushworks.sections.1.visual.label] Three brushes, 9 brush sizes and 5 steps of Underlay strength
+[brushworks.sections.1.visual.items.0.name] Glaze
+[brushworks.sections.1.visual.items.0.desc] Sheer color that mixes as it layers
+[brushworks.sections.1.visual.items.1.name] Bristle
+[brushworks.sections.1.visual.items.1.desc] Streaks that follow your stroke
+[brushworks.sections.1.visual.items.2.name] Knife
+[brushworks.sections.1.visual.items.2.desc] Thick paint with a wet sheen
+[brushworks.sections.1.visual.rows.0.label] Brush size
+[brushworks.sections.1.visual.rows.0.value] 9 steps
+[brushworks.sections.1.visual.rows.1.label] Underlay strength
+[brushworks.sections.1.visual.rows.1.value] 5 steps
+
+## 기능 03 (card, play)
+[brushworks.sections.2.title] The process stays
+[brushworks.sections.2.body.0] Every dab is recorded. Replay plays the painting back from the start, and Time-lapse turns it into a short video.
+[brushworks.sections.2.bullets.0] Replay at 1× to 4× speed
+[brushworks.sections.2.bullets.1] Vertical 9:16 time-lapse video
+[brushworks.sections.2.bullets.2] A record of dabs and time painted
+[brushworks.sections.2.visual.label] Replay
+
+## 기능 04 (card, chips)
+[brushworks.sections.3.title] Paint without signing up
+[brushworks.sections.3.body.0] Open the app, pick a photo and start painting. There is no account to create and nothing to sign in to.
+[brushworks.sections.3.visual.items.0] No account
+[brushworks.sections.3.visual.items.1] No sign-in
+[brushworks.sections.3.visual.items.2] No ads
+
+## Pro
+[brushworks.pro.kick] BrushWorks Pro
+[brushworks.pro.title] Save it larger,\npaint it finer
+[brushworks.pro.items.0] Save without the watermark
+[brushworks.pro.items.1] Time-lapses of 10 to 90 seconds at 1080×1920
+[brushworks.pro.items.2] Color lock: paint with one color you choose
+[brushworks.pro.items.3] Precision controls for wobble and brush size
+[brushworks.pro.items.4] Save at 1.5×, up to 3072 px
+[brushworks.pro.items.5] PNG, HEIF and TIFF formats
+
+## 자주 묻는 질문
+[brushworks.faq.0.q] Where your photo is kept
+[brushworks.faq.0.a.0] BrushWorks keeps a copy of the photo you picked in the app's storage, so it can bring your painting back the next time you open the app. The copy is deleted when you pick another photo or tap Start over in Settings.
+[brushworks.faq.0.a.1] The iOS photo picker hands the app only the one photo you choose. Saving a finished painting uses add-only access to Photos.
+[brushworks.faq.1.q] Why you paint the whole canvas yourself
+[brushworks.faq.1.a.0] BrushWorks is for painting by hand, so there is no one-tap conversion. That is also why the time-lapse ends with how many strokes you made and how long you painted.
+[brushworks.faq.2.q] Why switching photos clears the painting
+[brushworks.faq.2.a.0] Each stroke takes its color from the photo whenever the painting is redrawn. Old strokes on a new photo would show colors they never had, so the canvas is cleared. If you have painted anything, the app asks first.
+[brushworks.faq.2.a.1] Undo cannot bring it back. Save your painting before you switch photos.
+[brushworks.faq.3.q] Time-lapse length
+[brushworks.faq.3.a.0] The free time-lapse is 10 seconds long, in a vertical 9:16 frame. With Pro you choose a length from 10 to 90 seconds.
+[brushworks.faq.3.a.1] To watch the whole process, use Replay in the app. Pick a speed from 1× to 4×, and drag sideways across the canvas to jump to any point.
+[brushworks.faq.4.q] Restoring Pro
+[brushworks.faq.4.a.0] On a new device or after reinstalling the app, open Settings and tap Restore Purchases in the Pro section. With the same Apple Account, you are not charged again.
+[brushworks.faq.5.q] Internet connection
+[brushworks.faq.5.a.0] Painting, saving and time-lapses work without an internet connection. Buying Pro and restoring purchases need a connection to the App Store.
+
+## 개인정보 처리방침
+[brushworks.privacy.title] BrushWorks Privacy Policy
+[brushworks.privacy.intro.0] This policy explains how kvndh ("we") handles personal information in the BrushWorks app ("the app"). We follow the Personal Information Protection Act of the Republic of Korea.
+
+## 개인정보 처리방침 01절
+[brushworks.privacy.sections.0.title] Purpose of processing
+[brushworks.privacy.sections.0.paragraphs.0] The app has no sign-up or sign-in, and we do not process personal information about its users. There is therefore no processing purpose to state.
+
+## 개인정보 처리방침 02절
+[brushworks.privacy.sections.1.title] Personal information we process
+[brushworks.privacy.sections.1.paragraphs.0] We collect no personal information. The app works with the data below, all of it kept in the app's storage on your device. We do not receive any of it.
+[brushworks.privacy.sections.1.bullets.0] Copy of the photo you picked: used to reopen your painting
+[brushworks.privacy.sections.1.bullets.1] Stroke record and settings: used to redraw your painting
+
+## 개인정보 처리방침 03절
+[brushworks.privacy.sections.2.title] Processing and retention period
+[brushworks.privacy.sections.2.paragraphs.0] We hold no personal information. Data in the app's storage is deleted when you delete the app. Paintings you saved to Photos stay there until you delete them in the Photos app.
+
+## 개인정보 처리방침 04절
+[brushworks.privacy.sections.3.title] Sharing with third parties
+[brushworks.privacy.sections.3.paragraphs.0] We do not share personal information with third parties.
+
+## 개인정보 처리방침 05절
+[brushworks.privacy.sections.4.title] Processing by service providers
+[brushworks.privacy.sections.4.paragraphs.0] We do not have anyone process personal information on our behalf. In-app purchases, including BrushWorks Pro, are processed by Apple through the App Store, and Apple's privacy policy covers that payment information. We do not receive your payment details or Apple Account information.
+
+## 개인정보 처리방침 06절
+[brushworks.privacy.sections.5.title] Deletion
+[brushworks.privacy.sections.5.paragraphs.0] We hold no personal information, so there is nothing for us to delete. The copy of the photo you picked is deleted when you tap Start over in Settings, and all app data is deleted when you delete the app.
+
+## 개인정보 처리방침 07절
+[brushworks.privacy.sections.6.title] Your rights and how to exercise them
+[brushworks.privacy.sections.6.paragraphs.0] Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address below and we will check for you.
+
+## 개인정보 처리방침 08절
+[brushworks.privacy.sections.7.title] Security measures
+[brushworks.privacy.sections.7.paragraphs.0] The iOS photo picker passes only the one photo you choose to the app. Saving a finished painting uses permission to add photos only, and the app does not ask for permission to read your photo library.
+
+## 개인정보 처리방침 09절
+[brushworks.privacy.sections.8.title] Automatic data collection and how to refuse it
+[brushworks.privacy.sections.8.paragraphs.0] The app does not use cookies, advertising identifiers or analytics tools.
+
+## 개인정보 처리방침 10절
+[brushworks.privacy.sections.9.title] Privacy officer
+[brushworks.privacy.sections.9.paragraphs.0] Send questions about personal information to the contact below.
+[brushworks.privacy.sections.9.pairs.0.label] Privacy officer
+[brushworks.privacy.sections.9.pairs.0.value] kvndh
+[brushworks.privacy.sections.9.pairs.1.label] Email
+[brushworks.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[brushworks.privacy.sections.10.title] Complaints and remedies
+[brushworks.privacy.sections.10.paragraphs.0] If you need advice about a privacy concern or help settling a dispute, you can contact the data protection authority where you live. For example:
+[brushworks.privacy.sections.10.bullets.0] European Union and EEA: your national data protection authority (edpb.europa.eu)
+[brushworks.privacy.sections.10.bullets.1] United Kingdom: Information Commissioner's Office (ico.org.uk)
+[brushworks.privacy.sections.10.bullets.2] United States: Federal Trade Commission (reportfraud.ftc.gov)
+[brushworks.privacy.sections.10.bullets.3] Other countries: the data protection or consumer protection authority in your country
+
+## 개인정보 처리방침 12절
+[brushworks.privacy.sections.11.title] Changes to this policy
+[brushworks.privacy.sections.11.paragraphs.0] If this policy changes, we will post the changes and the new effective date on this page.
+
+## 개인정보 처리방침
+[brushworks.privacy.summary] BrushWorks does not collect personal information. There is no sign-up or sign-in, and Apple processes in-app purchases such as Pro.
+
+==================== SnapLine (snapline) ====================
+
+
+## 기본
+[snapline.name] SnapLine
+[snapline.subtitle] Grid lines that pass behind your subject
+[snapline.summary] Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.
+
+## 첫 화면
+[snapline.hero.hook] Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.
+[snapline.hero.shotAlt] The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below.
+
+## 기능 01 (feat, crop)
+[snapline.sections.0.title] Bend the grid
+[snapline.sections.0.body.0] You start from the rule-of-thirds grid. Drag the middle point of a line and it bends while both ends stay on the edge of the photo. Drag an edge point and the line tilts. Drag the small tick on a line to add another bend.
+[snapline.sections.0.bullets.0] Bend and tilt any line
+[snapline.sections.0.bullets.1] Extra bend points, sharp or smooth
+[snapline.sections.0.bullets.2] Add line and Delete line buttons
+[snapline.sections.0.visual.alt] Close-up of palm trees at sunset. Bent grid lines pass behind the fronds.
+[snapline.sections.0.visual.caption] App screen, zoomed in
+
+## 기능 02 (feat, kit)
+[snapline.sections.1.title] Erase where they overlap
+[snapline.sections.1.body.0] Switch to Erase and rub over the line where it crosses the subject. Tap Auto mask and the app finds the subject and clears the lines over it in one step. Switch to Restore and the line comes back wherever you rub.
+[snapline.sections.1.bullets.0] Auto mask for one-tap erasing
+[snapline.sections.1.bullets.1] Zoom up to 8× with a loupe
+[snapline.sections.1.bullets.2] Press and hold to see the result
+[snapline.sections.1.visual.label] Three tools, Erase, Restore and Auto mask, with zoom up to 8× and a brush from 1 to 60 pt
+[snapline.sections.1.visual.items.0.name] Erase
+[snapline.sections.1.visual.items.0.desc] Removes a line where you rub
+[snapline.sections.1.visual.items.1.name] Restore
+[snapline.sections.1.visual.items.1.desc] Brings erased lines back
+[snapline.sections.1.visual.items.2.name] Auto mask
+[snapline.sections.1.visual.items.2.desc] Clears lines over the subject at once
+[snapline.sections.1.visual.rows.0.label] Zoom
+[snapline.sections.1.visual.rows.0.value] Up to 8×
+[snapline.sections.1.visual.rows.1.label] Brush
+[snapline.sections.1.visual.rows.1.value] 1 to 60 pt
+
+## 기능 03 (card, None)
+[snapline.sections.2.title] Full-size exports
+[snapline.sections.2.body.0] Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away.
+[snapline.sections.2.bullets.0] Original resolution kept
+[snapline.sections.2.bullets.1] JPEG quality 95
+[snapline.sections.2.bullets.2] Save to Photos or Share
+
+## 기능 04 (card, chips)
+[snapline.sections.3.title] No sign-up
+[snapline.sections.3.body.0] Choose a photo and the grid is already on it. There is no account to create, and your work is saved in the app so you can reopen it from the home screen.
+[snapline.sections.3.visual.items.0] No account
+[snapline.sections.3.visual.items.1] No login
+[snapline.sections.3.visual.items.2] No ads
+
+## Pro
+[snapline.pro.kick] SnapLine Pro
+[snapline.pro.title] Choose how your lines look,\nand save without the watermark
+[snapline.pro.items.0] Save without the watermark
+[snapline.pro.items.1] Dashed, double and glow line styles
+[snapline.pro.items.2] Custom line colors besides white and black
+[snapline.pro.items.3] Snap lines to subject corners
+
+## 자주 묻는 질문
+[snapline.faq.0.q] Bending and tilting a line
+[snapline.faq.0.a.0] Each line has three points. The two ends sit on the edge of the photo, and the middle one moves freely. Drag the middle point and the line bends while its ends stay put. Drag an edge point and it slides along that edge, tilting the line.
+[snapline.faq.0.a.1] Tap a line to show small ticks along it. Drag a tick to add a bend point, or tap any point to Delete it or make it Smooth. Edge points can't be deleted, and a line holds up to 8 points.
+[snapline.faq.1.q] Making a line pass behind the subject
+[snapline.faq.1.a.0] Choose Erase in the toolbar at the bottom and rub over the line where it crosses your subject. Tap Auto mask and the app finds the subject and clears the lines over it in one step.
+[snapline.faq.1.a.1] To bring an erased line back, open Settings while in Erase, choose Restore and rub over the spot. Undo works too.
+[snapline.faq.2.q] When Auto mask can't find the subject
+[snapline.faq.2.a.0] Auto mask works best when the subject stands clearly apart from the background. If it finds nothing, erase by hand with Erase and you get the same result. To remove a mask you applied, tap the same button, now labeled Clear auto mask.
+[snapline.faq.3.q] Erasing fine details
+[snapline.faq.3.a.0] Pinch to zoom in up to 8×, or double-tap to switch between 3× and the full view. In Settings, move the Brush slider to the left for a thinner brush.
+[snapline.faq.3.a.1] Turn on Loupe to see what your finger is covering, and Erased areas to highlight what you have erased. While zoomed in, you can drag the edge of the photo well into the screen.
+[snapline.faq.4.q] Export quality and the watermark
+[snapline.faq.4.a.0] Export composes your photo at its original resolution and saves it as a JPEG at quality 95. There is no size limit.
+[snapline.faq.4.a.1] Photos saved on the free version carry a small SnapLine watermark in the bottom-right corner. SnapLine Pro saves without it.
+[snapline.faq.5.q] Why dashed or glow lines save as solid
+[snapline.faq.5.a.0] The Dashed, Double and Glow line styles are SnapLine Pro features. Anyone can try them on the canvas while editing, and without Pro they are saved as solid lines. Tap Save with this line style on the export screen to see Pro.
+[snapline.faq.6.q] Picking up where you left off
+[snapline.faq.6.a.0] When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold to delete it.
+[snapline.faq.6.a.1] SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos.
+[snapline.faq.7.q] Restoring a Pro purchase
+[snapline.faq.7.a.0] If you switched devices or reinstalled the app, tap Restore Purchase on the purchase screen. To get there, open a photo, expand Settings while in Lines and tap the Pro badge next to Style. With the same Apple Account you won't be charged again.
+[snapline.faq.8.q] Internet connection
+[snapline.faq.8.a.0] Editing, Auto mask and saving all work offline. Only buying and restoring Pro need a connection to the App Store.
+
+## 개인정보 처리방침
+[snapline.privacy.title] SnapLine Privacy Policy
+[snapline.privacy.summary] SnapLine does not collect personal information. There is no sign-up or login, and Apple handles Pro payments.
+[snapline.privacy.intro.0] kvndh (the developer) handles the personal information of people who use the SnapLine app (the app) in line with the Personal Information Protection Act of Korea, and describes its practices below.
+
+## 개인정보 처리방침 01절
+[snapline.privacy.sections.0.title] Purposes of processing
+[snapline.privacy.sections.0.paragraphs.0] The app has no sign-up or login, and the developer does not process personal information about its users, so there is no purpose to state.
+
+## 개인정보 처리방침 02절
+[snapline.privacy.sections.1.title] Personal information processed
+[snapline.privacy.sections.1.paragraphs.0] The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it.
+[snapline.privacy.sections.1.bullets.0] Recent projects (your edits, a copy of the original photo, a thumbnail): used to reopen your work
+[snapline.privacy.sections.1.bullets.1] Settings and whether you own Pro: used to decide what the app shows and how it exports
+[snapline.privacy.sections.1.bullets.2] First launch time and number of saves: used to decide when to ask for a rating
+[snapline.privacy.sections.1.bullets.3] A temporary image for sharing: used when you share, deleted at the next export or app launch
+
+## 개인정보 처리방침 03절
+[snapline.privacy.sections.2.title] Retention period
+[snapline.privacy.sections.2.paragraphs.0] The developer holds no personal information. Data in the app's storage is removed when you delete the app, and older recent projects are removed as new ones are saved. Photos you saved to the Photos app stay there until you delete them in Photos.
+
+## 개인정보 처리방침 04절
+[snapline.privacy.sections.3.title] Provision to third parties
+[snapline.privacy.sections.3.paragraphs.0] Personal information is not provided to third parties.
+
+## 개인정보 처리방침 05절
+[snapline.privacy.sections.4.title] Outsourcing of processing
+[snapline.privacy.sections.4.paragraphs.0] No processing of personal information is outsourced. Apple processes SnapLine Pro payments through the App Store, and payment information falls under Apple's privacy policy. The developer never receives your payment method or Apple Account details.
+
+## 개인정보 처리방침 06절
+[snapline.privacy.sections.5.title] Destruction of personal information
+[snapline.privacy.sections.5.paragraphs.0] The developer holds no personal information, so there is nothing to destroy. You can delete a recent project by pressing and holding its thumbnail on the home screen, and deleting the app removes all of its data.
+
+## 개인정보 처리방침 07절
+[snapline.privacy.sections.6.title] Rights of users and legal representatives
+[snapline.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, write to the contact below and we will look into it.
+
+## 개인정보 처리방침 08절
+[snapline.privacy.sections.7.title] Security measures
+[snapline.privacy.sections.7.paragraphs.0] The app only receives the photos you choose in the iOS photo picker. To save an edited photo it uses add-only access to Photos, and it never asks for permission to read your photo library.
+
+## 개인정보 처리방침 09절
+[snapline.privacy.sections.8.title] Cookies and other automatic collection
+[snapline.privacy.sections.8.paragraphs.0] The app uses no cookies, no advertising identifier and no analytics tools.
+
+## 개인정보 처리방침 10절
+[snapline.privacy.sections.9.title] Privacy officer
+[snapline.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[snapline.privacy.sections.9.pairs.0.label] Officer
+[snapline.privacy.sections.9.pairs.0.value] kvndh
+[snapline.privacy.sections.9.pairs.1.label] Email
+[snapline.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[snapline.privacy.sections.10.title] Remedies
+[snapline.privacy.sections.10.paragraphs.0] If you believe your privacy rights have been infringed, you can contact the data protection authority where you live.
+[snapline.privacy.sections.10.bullets.0] European Union and EEA: your national data protection authority (listed at edpb.europa.eu)
+[snapline.privacy.sections.10.bullets.1] United Kingdom: Information Commissioner's Office (ico.org.uk)
+[snapline.privacy.sections.10.bullets.2] United States: Federal Trade Commission (reportfraud.ftc.gov)
+[snapline.privacy.sections.10.bullets.3] Elsewhere: the data protection authority in your country or region
+
+## 개인정보 처리방침 12절
+[snapline.privacy.sections.11.title] Changes to this policy
+[snapline.privacy.sections.11.paragraphs.0] If this policy changes, this page will show the new text and its new effective date.
+
+==================== Life Tyde (life-tyde) ====================
+
+
+## 기본
+[life-tyde.name] Life Tyde
+[life-tyde.subtitle] Quiet chronicle of your years
+[life-tyde.summary] Pick out the big moments of your life, file them under hashtags, and keep them on one timeline.
+
+## 첫 화면
+[life-tyde.hero.hook] Pick out the big moments of your life, file them under hashtags, and keep them on one timeline.
+[life-tyde.hero.shotAlt] The Life Tyde timeline. Entries run down the screen by year, and highlighted ones show a red dot and a red title.
+
+## 기능 01 (feat, crop)
+[life-tyde.sections.0.title] Only the moments that mattered
+[life-tyde.sections.0.body.0] Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title.
+[life-tyde.sections.0.bullets.0] Age or year count beside each entry
+[life-tyde.sections.0.bullets.1] Era event packs from the Event market
+[life-tyde.sections.0.bullets.2] Reminders and repeats for upcoming events
+[life-tyde.sections.0.visual.alt] Close-up of the timeline. Each row shows the year, the month and day, the age, a title, and a note, and highlighted entries are red.
+[life-tyde.sections.0.visual.caption] App screen, close-up
+
+## 기능 02 (feat, crop)
+[life-tyde.sections.1.title] One hashtag, one chronicle
+[life-tyde.sections.1.body.0] Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top.
+[life-tyde.sections.1.bullets.0] Tag filter with a highlights-only view
+[life-tyde.sections.1.bullets.1] Suggestions from the tags you already use
+[life-tyde.sections.1.bullets.2] Chronicle summaries with Apple Intelligence
+[life-tyde.sections.1.visual.alt] Tag Chronicle for #Work. Only the entries with that tag, from a first job to starting a consulting firm, run down one line.
+[life-tyde.sections.1.visual.caption] Tag Chronicle
+
+## 기능 03 (card, play)
+[life-tyde.sections.2.title] Go back over the years
+[life-tyde.sections.2.body.0] Replay turns through your entries one at a time, oldest first. Life Map spreads every entry across a grid of years and months, and Side by Side lines up two timelines by age or by year.
+[life-tyde.sections.2.bullets.0] Automatic advance to the next entry
+[life-tyde.sections.2.bullets.1] On this day card and widget
+[life-tyde.sections.2.bullets.2] Chronicle exchange with a nearby device
+[life-tyde.sections.2.visual.label] Replay
+
+## 기능 04 (card, chips)
+[life-tyde.sections.3.title] No sign-up needed
+[life-tyde.sections.3.body.0] Open the app and start writing. Entries are saved in the app, and iCloud sync carries them to your iPhone and iPad on the same iCloud account.
+[life-tyde.sections.3.visual.items.0] No account
+[life-tyde.sections.3.visual.items.1] No ads
+[life-tyde.sections.3.visual.items.2] iCloud sync
+[life-tyde.sections.3.visual.items.3] CSV backup
+
+## Pro
+[life-tyde.pro.kick] Life Tyde Pro
+[life-tyde.pro.title] More room for your life,\nand a book to keep it in
+[life-tyde.pro.items.0] Chronicle book export as an A4 PDF
+[life-tyde.pro.items.1] Unlimited events and hashtags
+[life-tyde.pro.items.2] Up to 3 timelines
+[life-tyde.pro.items.3] All event packs
+[life-tyde.pro.items.4] Replay filtered by decade, tag, or highlight
+[life-tyde.pro.items.5] Essay drafts and forewords with Apple Intelligence
+
+## 자주 묻는 질문
+[life-tyde.faq.0.q] Where entries are stored
+[life-tyde.faq.0.a.0] Entries are kept in the app's storage. With iCloud sync on, they are also saved to your own iCloud account and kept in step with your other devices on that account.
+[life-tyde.faq.0.a.1] Deleted entries stay in Trash in Settings for 7 days, and you can restore them during that time.
+[life-tyde.faq.1.q] Turning iCloud sync on or off
+[life-tyde.faq.1.a.0] iCloud sync is on from the start, and you can turn it off or back on in Settings. The change applies after you close the app from the app switcher and open it again.
+[life-tyde.faq.1.a.1] On your other devices, sign in to the same iCloud account and keep iCloud sync on. The first sync between devices can take a few minutes.
+[life-tyde.faq.2.q] What the free version includes
+[life-tyde.faq.2.a.0] You can keep up to 100 events, 1 timeline, and 10 tags for free, and add the major history pack for your app language from the Event market. Reaching a limit never locks what you have already written, and you can still read and edit it.
+[life-tyde.faq.2.a.1] With Pro, events and tags have no limit, and you can create up to 3 timelines.
+[life-tyde.faq.3.q] Restoring Pro
+[life-tyde.faq.3.a.0] After switching devices or reinstalling the app, open Settings, tap Upgrade to Pro, then tap Restore at the top right. On the same Apple Account you won't be charged again.
+[life-tyde.faq.4.q] Upcoming events and reminders
+[life-tyde.faq.4.a.0] An entry dated tomorrow or later becomes an upcoming event. Once it has a month and a day, Remind me offers Same day, 1 day, 1 week, or 1 month before. The app asks for notification permission the first time you save an event with a reminder.
+[life-tyde.faq.4.a.1] When the date has passed, tap Mark as done to turn the event into a regular entry. If you set it to repeat, the next round is scheduled at that point.
+[life-tyde.faq.5.q] Backing up with CSV
+[life-tyde.faq.5.a.0] Tap Export to CSV in Settings to save your entries as a CSV file. When you bring them back with Import CSV, choose Add to existing events or Replace all events.
+[life-tyde.faq.5.a.1] A CSV file is a backup you make when you need one, and it is separate from iCloud sync.
+[life-tyde.faq.6.q] Internet connection
+[life-tyde.faq.6.a.0] Writing, Replay, and exports work without an internet connection. iCloud sync and buying or restoring Pro need one.
+[life-tyde.faq.6.a.1] Exchange nearby connects two devices directly, without the internet. Both people need to open Exchange nearby in Life Tyde.
+[life-tyde.faq.7.q] Devices that support the AI features
+[life-tyde.faq.7.a.0] Summarize this chronicle, Add AI foreword, and essay drafts appear on devices that support Apple Intelligence, running iOS 26 or later with Apple Intelligence turned on. They stay hidden if the on-device model does not support the app language.
+[life-tyde.faq.7.a.1] AI text needs at least 5 entries to work from. You can edit anything it writes before exporting.
+
+## 개인정보 처리방침
+[life-tyde.privacy.title] Life Tyde Privacy Policy
+[life-tyde.privacy.intro.0] kvndh ("the developer") handles the personal information of people who use the Life Tyde app ("the app") in accordance with the Personal Information Protection Act of Korea. This policy explains how.
+
+## 개인정보 처리방침 01절
+[life-tyde.privacy.sections.0.title] Purpose of processing
+[life-tyde.privacy.sections.0.paragraphs.0] The app has no sign-up or login, and the developer does not process users' personal information. There is therefore no processing purpose to state.
+
+## 개인정보 처리방침 02절
+[life-tyde.privacy.sections.1.title] Information processed
+[life-tyde.privacy.sections.1.paragraphs.0] The developer collects no personal information. The data the app uses is listed below and is kept in the app's storage on your device. With iCloud sync on, your entries are also kept in your own iCloud account. The developer does not receive this data.
+[life-tyde.privacy.sections.1.bullets.0] Events (year, month, day, title, note, highlight, schedule and reminder settings), tags, and timeline names: used to show your timeline
+[life-tyde.privacy.sections.1.bullets.1] Settings such as your birthday or base year, display options, and app language: used for what appears on screen
+[life-tyde.privacy.sections.1.bullets.2] Book titles and drafts: used to pick up work on a book (PDF)
+[life-tyde.privacy.sections.1.bullets.3] Event titles and years: used for the device search index while Spotlight search is on
+[life-tyde.privacy.sections.1.bullets.4] On this day items: used to show the Home Screen widget
+
+## 개인정보 처리방침 03절
+[life-tyde.privacy.sections.2.title] Retention period
+[life-tyde.privacy.sections.2.paragraphs.0] The developer holds no personal information. Data in the app's storage is removed when you delete the app. Entries synced to iCloud remain in your iCloud account, and deleting an entry in the app removes it from the synced copies as well. Timeline images saved to Photos and exported files are yours to delete.
+
+## 개인정보 처리방침 04절
+[life-tyde.privacy.sections.3.title] Sharing with third parties
+[life-tyde.privacy.sections.3.paragraphs.0] Personal information is not shared with third parties.
+[life-tyde.privacy.sections.3.paragraphs.1] Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as profile.
+
+## 개인정보 처리방침 05절
+[life-tyde.privacy.sections.4.title] Outsourcing of processing
+[life-tyde.privacy.sections.4.paragraphs.0] No processing of personal information is outsourced. iCloud sync runs on Apple's iCloud (CloudKit), and synced data is covered by Apple's privacy policy. Apple handles Life Tyde Pro payments through the App Store. The developer does not receive payment details or Apple Account information.
+
+## 개인정보 처리방침 06절
+[life-tyde.privacy.sections.5.title] Destruction of information
+[life-tyde.privacy.sections.5.paragraphs.0] The developer holds no personal information, so there is nothing to destroy. Deleted entries stay in Trash for 7 days and are then removed, or you can remove them at once with Delete Permanently. Deleting the app removes all of its data from the device.
+
+## 개인정보 처리방침 07절
+[life-tyde.privacy.sections.6.title] Your rights and how to exercise them
+[life-tyde.privacy.sections.6.paragraphs.0] The developer holds no personal information, so there is nothing to request access to, correct, or delete. You can view, edit, and delete your entries in the app and export them as a CSV file. For any questions, write to the contact below.
+
+## 개인정보 처리방침 08절
+[life-tyde.privacy.sections.7.title] Security measures
+[life-tyde.privacy.sections.7.paragraphs.0] iCloud sync uses the private database in your own iCloud account. Exchange nearby works only over an encrypted connection. The app asks only for permission to add timeline images to Photos and does not ask to read your photo library. Notification permission is requested only when you save an event with a reminder.
+[life-tyde.privacy.sections.7.paragraphs.1] Spotlight search indexes only event titles and years, and turning it off in Settings clears the index. AI summaries and drafts are written by the Apple Intelligence model on your device.
+
+## 개인정보 처리방침 09절
+[life-tyde.privacy.sections.8.title] Automatic collection tools
+[life-tyde.privacy.sections.8.paragraphs.0] The app uses no cookies, advertising identifiers, or analytics tools.
+
+## 개인정보 처리방침 10절
+[life-tyde.privacy.sections.9.title] Privacy officer
+[life-tyde.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[life-tyde.privacy.sections.9.pairs.0.label] Officer
+[life-tyde.privacy.sections.9.pairs.0.value] kvndh
+[life-tyde.privacy.sections.9.pairs.1.label] Email
+[life-tyde.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[life-tyde.privacy.sections.10.title] Remedies
+[life-tyde.privacy.sections.10.paragraphs.0] If you believe your privacy rights have been infringed, you can contact the data protection authority where you live. For example:
+[life-tyde.privacy.sections.10.bullets.0] European Union and EEA: the data protection authority of your country (edpb.europa.eu)
+[life-tyde.privacy.sections.10.bullets.1] United Kingdom: Information Commissioner's Office (ico.org.uk)
+[life-tyde.privacy.sections.10.bullets.2] United States: Federal Trade Commission (reportfraud.ftc.gov)
+[life-tyde.privacy.sections.10.bullets.3] Other countries: the privacy or consumer protection authority where you live
+
+## 개인정보 처리방침 12절
+[life-tyde.privacy.sections.11.title] Changes to this policy
+[life-tyde.privacy.sections.11.paragraphs.0] If this policy changes, this page will show what changed and the new effective date.
+
+## 개인정보 처리방침
+[life-tyde.privacy.summary] Life Tyde does not collect personal information. There is no sign-up or login, iCloud sync runs through your own iCloud account, and Apple handles Pro payments.
+
+==================== Tapey (tapey) ====================
+
+
+## 기본
+[tapey.name] Tapey
+[tapey.subtitle] Washi-tape photo wallpapers
+[tapey.summary] Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.
+
+## 첫 화면
+[tapey.hero.hook] Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.
+[tapey.hero.shotAlt] The Tapey editor. Below the lock screen clock, photos in Polaroid frames are held up with washi tape, and one has a handwritten note.
+
+## 기능 01 (feat, crop)
+[tapey.sections.0.title] Photos find their place
+[tapey.sections.0.body.0] Pick up to 12 photos and Tapey lays them out like prints on a wall. Drag a photo to move it, or use two fingers to resize and turn it. Any photo you move by hand stays pinned where you put it.
+[tapey.sections.0.bullets.0] Automatic layout for up to 12 photos
+[tapey.sections.0.bullets.1] Auto, Grid, Stairs, and Heart layouts
+[tapey.sections.0.bullets.2] Undo and redo
+[tapey.sections.0.visual.alt] Close-up of the editor. Polaroid prints held up with washi tape, with a handwritten note among them.
+[tapey.sections.0.visual.caption] App screen, zoomed in
+
+## 기능 02 (feat, kit)
+[tapey.sections.1.title] Tape and frames
+[tapey.sections.1.body.0] Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note.
+[tapey.sections.1.bullets.0] 8 tape colors and 4 patterns
+[tapey.sections.1.bullets.1] White borders and Polaroid frames
+[tapey.sections.1.bullets.2] B&W for the whole wall or a single photo
+[tapey.sections.1.visual.label] Tape, Frame, and Background tools, with 8 tape colors and 6 background tones
+[tapey.sections.1.visual.items.0.name] Tape
+[tapey.sections.1.visual.items.0.desc] Color, placement, pattern, torn ends
+[tapey.sections.1.visual.items.1.name] Frame
+[tapey.sections.1.visual.items.1.desc] Border, Polaroid, B&W
+[tapey.sections.1.visual.items.2.name] Background
+[tapey.sections.1.visual.items.2.desc] Wall tones, My photo, Texture
+[tapey.sections.1.visual.rows.0.label] Tape colors
+[tapey.sections.1.visual.rows.0.value] 8
+[tapey.sections.1.visual.rows.1.label] Background tones
+[tapey.sections.1.visual.rows.1.value] 6
+
+## 기능 03 (card, None)
+[tapey.sections.2.title] Fitted to the lock screen
+[tapey.sections.2.body.0] The current time sits on the canvas just like your lock screen clock. Drag the handle to set the clock space, and the photos move down below it. You can keep room for widgets as well, and the resolution is matched to your device from the start.
+[tapey.sections.2.bullets.0] Adjustable clock space
+[tapey.sections.2.bullets.1] Reserved widget space
+[tapey.sections.2.bullets.2] iPhone and iPad resolutions
+
+## 기능 04 (card, chips)
+[tapey.sections.3.title] No sign-up, straight to your photos
+[tapey.sections.3.body.0] There is no account to create and nothing to sign in to. Pick photos and you are already working. Your wall is still there when you reopen the app, and tapping Make a new one after saving moves it to Recent.
+[tapey.sections.3.visual.items.0] No account
+[tapey.sections.3.visual.items.1] No sign-in
+[tapey.sections.3.visual.items.2] 31 languages
+
+## 자주 묻는 질문
+[tapey.faq.0.q] Adding photos
+[tapey.faq.0.a.0] On the start screen, tap Add photos, then choose from your photo library or take a new picture. While editing, tap Add in the Photos tab.
+[tapey.faq.0.a.1] Each wallpaper holds up to 12 photos. The Heart layout appears once you have 6 or more.
+[tapey.faq.1.q] Where saved wallpapers go
+[tapey.faq.1.a.0] Tap Save at the top of the editor. The wallpaper goes to the Photos app as a PNG at the resolution chosen in Settings. The first time, iOS asks whether Tapey may add photos.
+[tapey.faq.1.a.1] If saving fails, allow photo access in Settings > Tapey.
+[tapey.faq.2.q] The ad when you save
+[tapey.faq.2.a.0] Tapey is free and shows one full-screen ad when you save a wallpaper. There is no banner ad on screen.
+[tapey.faq.2.a.1] If the ad can't load, or your last save failed, Tapey saves right away without an ad.
+[tapey.faq.3.q] Removing ads and restoring the purchase
+[tapey.faq.3.a.0] Buy Remove ads from the menu or the start screen. After that, no ad appears when you save.
+[tapey.faq.3.a.1] On a new device or after reinstalling, open Remove ads from the menu and tap Restore purchase. With the same Apple Account, you won't be charged again.
+[tapey.faq.4.q] Tracking and ad preferences
+[tapey.faq.4.a.0] The first time you open the app, iOS asks whether Tapey may track you. The app works the same either way, and you can change your answer in Settings > Privacy & Security > Tracking.
+[tapey.faq.4.a.1] Where ad consent is required, such as the European Economic Area, change your choices under Ad preferences at the bottom of the start screen.
+[tapey.faq.5.q] Where your work is kept
+[tapey.faq.5.a.0] Copies of the photos and background photos you pick, along with the layout and notes, are kept in the app's storage so you can pick up where you left off. Start over in the menu clears the current work, and deleting the app removes everything.
+[tapey.faq.5.a.1] Tapping Make a new one after saving moves the current work to Recent. Recent keeps 3 projects and drops the oldest when a new one comes in.
+[tapey.faq.6.q] Setting the wallpaper
+[tapey.faq.6.a.0] Open the image you just saved in the Photos app, tap Share, then choose Use as Wallpaper. Pick Lock Screen and tap Set.
+[tapey.faq.6.a.1] The same steps are under How to set it as wallpaper on the screen that appears after saving.
+[tapey.faq.7.q] Using Tapey on iPad
+[tapey.faq.7.a.0] Tapey runs on iPad too. There it makes a square wallpaper that works in both portrait and landscape, and the editor lets you switch between the two views.
+[tapey.faq.7.a.1] To make an iPhone wallpaper on your iPad, pick an iPhone size under Resolution in Settings.
+[tapey.faq.8.q] Internet connection
+[tapey.faq.8.a.0] Arranging, decorating, and saving work offline. Ads, buying Remove ads, and restoring the purchase need a connection.
+[tapey.faq.8.a.1] The handwriting font for photo notes is downloaded while you are online. Without a connection, notes appear in a standard font.
+[tapey.faq.9.q] Troubleshooting
+[tapey.faq.9.a.0] Close the app completely, open it again, and check that you have the latest version from the App Store. If the problem continues, email us with the screen you were on and what you were doing.
+
+## 개인정보 처리방침
+[tapey.privacy.title] Tapey Privacy Policy
+[tapey.privacy.summary] The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove ads.
+[tapey.privacy.intro.0] kvndh ("the developer") handles the personal information of people who use the Tapey app ("the app") under Korea's Personal Information Protection Act, as set out below.
+
+## 개인정보 처리방침 01절
+[tapey.privacy.sections.0.title] Purpose of processing
+[tapey.privacy.sections.0.paragraphs.0] The app has no sign-up or login, and the developer does not collect personal information from users.
+[tapey.privacy.sections.0.paragraphs.1] When you save a wallpaper, the app shows one full-screen ad. Google's ad service AdMob selects and displays that ad, and uses device information to show ads and measure how they perform.
+
+## 개인정보 처리방침 02절
+[tapey.privacy.sections.1.title] Information processed
+[tapey.privacy.sections.1.paragraphs.0] The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it.
+[tapey.privacy.sections.1.paragraphs.1] The app downloads the handwriting font for photo notes from the jsDelivr content delivery network. As with any internet request, your device's IP address reaches jsDelivr. The developer does not receive it.
+[tapey.privacy.sections.1.paragraphs.2] Information that AdMob may collect when showing ads is listed in section 9.
+[tapey.privacy.sections.1.bullets.0] Copies of the photos and background photos you pick: used to reopen your work
+[tapey.privacy.sections.1.bullets.1] Layout and decoration settings, photo notes: used to reopen your work
+[tapey.privacy.sections.1.bullets.2] Up to 3 recent projects with preview images: used for Recent on the start screen
+[tapey.privacy.sections.1.bullets.3] Language choice, Remove ads purchase status, save count: used to run the app and to time the rating request
+
+## 개인정보 처리방침 03절
+[tapey.privacy.sections.2.title] Processing and retention period
+[tapey.privacy.sections.2.paragraphs.0] The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Wallpapers saved to the Photos app are deleted in the Photos app.
+[tapey.privacy.sections.2.paragraphs.1] Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy).
+
+## 개인정보 처리방침 04절
+[tapey.privacy.sections.3.title] Disclosure to third parties
+[tapey.privacy.sections.3.paragraphs.0] The developer does not provide users' personal information to third parties. When an ad is shown, however, the Google Mobile Ads SDK built into the app sends the information in section 9 directly to Google, as follows.
+[tapey.privacy.sections.3.bullets.0] Recipient: Google LLC (United States), AdMob
+[tapey.privacy.sections.3.bullets.1] Purpose: showing ads and measuring ad performance
+[tapey.privacy.sections.3.bullets.2] Information: the device information and ad interaction records listed in section 9
+[tapey.privacy.sections.3.bullets.3] When and how: sent over the internet when an ad is loaded and shown
+[tapey.privacy.sections.3.bullets.4] Retention: as set out in Google's Privacy Policy
+
+## 개인정보 처리방침 05절
+[tapey.privacy.sections.4.title] Outsourcing of processing
+[tapey.privacy.sections.4.paragraphs.0] The developer does not outsource the processing of personal information. Apple processes payment for Remove ads through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details.
+
+## 개인정보 처리방침 06절
+[tapey.privacy.sections.5.title] Destruction of information
+[tapey.privacy.sections.5.paragraphs.0] The developer holds no personal information, so there is nothing to destroy. Start over in the menu clears your current work, and deleting the app removes all of its data.
+
+## 개인정보 처리방침 07절
+[tapey.privacy.sections.6.title] Rights of users and legal guardians, and how to exercise them
+[tapey.privacy.sections.6.paragraphs.0] Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, write to the address below and we will look into it.
+[tapey.privacy.sections.6.paragraphs.1] You can ask Google to give you access to, or delete, information collected by AdMob. To refuse use of the advertising identifier, follow section 9.
+
+## 개인정보 처리방침 08절
+[tapey.privacy.sections.7.title] Security measures
+[tapey.privacy.sections.7.paragraphs.0] Only the photos you choose in the iOS photo picker or take with the camera are passed to the app. When saving a finished wallpaper, the app uses only the permission to add photos.
+
+## 개인정보 처리방침 09절
+[tapey.privacy.sections.8.title] Automatic collection and how to refuse it
+[tapey.privacy.sections.8.paragraphs.0] The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) for advertising, which may collect the information below when it loads and shows ads.
+[tapey.privacy.sections.8.paragraphs.1] The first time you open the app, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and ads still appear. You can change this in iOS Settings > Privacy & Security > Tracking.
+[tapey.privacy.sections.8.paragraphs.2] In regions where ad consent is required, such as the European Economic Area, Google's consent form appears first. There, you can change your choices under Ad preferences at the bottom of the start screen.
+[tapey.privacy.sections.8.paragraphs.3] After you buy Remove ads, the app stops starting AdMob from the next launch, so neither ads nor the tracking prompt appear.
+[tapey.privacy.sections.8.bullets.0] Device identifiers, and the advertising identifier (IDFA) if you allow tracking
+[tapey.privacy.sections.8.bullets.1] Approximate location estimated from your IP address
+[tapey.privacy.sections.8.bullets.2] Ad interaction records such as impressions and taps
+[tapey.privacy.sections.8.bullets.3] App performance, crash, and diagnostic information
+
+## 개인정보 처리방침 10절
+[tapey.privacy.sections.9.title] Privacy officer
+[tapey.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[tapey.privacy.sections.9.pairs.0.label] Officer
+[tapey.privacy.sections.9.pairs.0.value] kvndh
+[tapey.privacy.sections.9.pairs.1.label] Email
+[tapey.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[tapey.privacy.sections.10.title] Remedies for privacy concerns
+[tapey.privacy.sections.10.paragraphs.0] If you need advice about a privacy concern or help resolving a dispute, you can contact the following.
+[tapey.privacy.sections.10.bullets.0] The data protection authority in your country or region
+[tapey.privacy.sections.10.bullets.1] The developer: kvndh36@naver.com
+[tapey.privacy.sections.10.bullets.2] Google, for information collected by AdMob (policies.google.com/privacy)
+[tapey.privacy.sections.10.bullets.3] Apple, for payment information (apple.com/legal/privacy)
+
+## 개인정보 처리방침 12절
+[tapey.privacy.sections.11.title] Changes to this policy
+[tapey.privacy.sections.11.paragraphs.0] If this policy changes, this page will show what changed and the new effective date.
+
+==================== Dice Master (dice-master) ====================
+
+
+## 기본
+[dice-master.name] Dice Master
+[dice-master.subtitle] Formula math, color subtotals
+[dice-master.summary] Choose the dice, tap the screen, and the total appears the moment they stop, with every value that went into it.
+
+## 첫 화면
+[dice-master.hero.hook] Choose the dice, tap the screen, and the total appears the moment they stop, with every value that went into it.
+[dice-master.hero.shotAlt] Dice Master after rolling five 6-sided dice in 3D. The total and the values behind it sit above the dice.
+
+## 기능 01 (feat, crop)
+[dice-master.sections.0.title] Roll, and the math is done
+[dice-master.sections.0.body.0] When the dice stop, the result appears in large type with each value lined up beneath it. Choose the formula the game calls for, such as Sum, Product, Highest or Lowest. Give the dice different colors and each color gets its own subtotal.
+[dice-master.sections.0.bullets.0] 6 formulas, including Sum, Product and Highest
+[dice-master.sections.0.bullets.1] Subtotals by dice color
+[dice-master.sections.0.bullets.2] Switch between 3D dice and a 2D view
+[dice-master.sections.0.visual.alt] Close-up of the total with the values beneath it. Chips for faces, dice count, roll mode and formula run across the top.
+[dice-master.sections.0.visual.caption] App screen, zoomed in
+
+## 기능 02 (feat, kit)
+[dice-master.sections.1.title] Rules that fit the game
+[dice-master.sections.1.body.0] Set the faces, dice count and roll mode to match the rules on the box. In All at Once, tap a die to lock it and reroll the rest. In One by One, every roll adds to a running total, and going over the Sum Limit ends the round in a bust. Save the setup to My Presets and bring it back later.
+[dice-master.sections.1.bullets.0] All at Once and One by One roll modes
+[dice-master.sections.1.bullets.1] Dice locking and a roll limit
+[dice-master.sections.1.bullets.2] Sum Limit with bust
+[dice-master.sections.1.visual.label] Roll modes All at Once and One by One, Roll Limit from 2 to 20 rolls, Sum Limit from 1 to 999
+[dice-master.sections.1.visual.items.0.name] All at Once
+[dice-master.sections.1.visual.items.0.desc] Roll them all, then lock the ones you keep
+[dice-master.sections.1.visual.items.1.name] One by One
+[dice-master.sections.1.visual.items.1.desc] Each roll adds to a running total
+[dice-master.sections.1.visual.items.2.name] Sum Limit
+[dice-master.sections.1.visual.items.2.desc] Go over it and the round is a bust
+[dice-master.sections.1.visual.rows.0.label] Roll Limit
+[dice-master.sections.1.visual.rows.0.value] 2 to 20 rolls
+[dice-master.sections.1.visual.rows.1.label] Sum Limit
+[dice-master.sections.1.visual.rows.1.value] 1 to 999
+
+## 기능 03 (card, None)
+[dice-master.sections.2.title] Start from a Quick Preset
+[dice-master.sections.2.body.0] Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll.
+[dice-master.sections.2.bullets.0] 17 Quick Presets
+[dice-master.sections.2.bullets.1] Roll verdicts for 10 games
+[dice-master.sections.2.bullets.2] Game search and hiding
+
+## 기능 04 (card, chips)
+[dice-master.sections.3.title] No sign-up, just roll
+[dice-master.sections.3.body.0] The app opens with the dice setup you used last time. There is no account to create or sign in to, and rolling works with no internet connection.
+[dice-master.sections.3.visual.items.0] No account
+[dice-master.sections.3.visual.items.1] No ads
+[dice-master.sections.3.visual.items.2] Works offline
+
+## Pro
+[dice-master.pro.kick] Dice Master Pro
+[dice-master.pro.title] Bigger dice,\nand more of them
+[dice-master.pro.items.0] Dice beyond 10 faces (d12, d20, d100)
+[dice-master.pro.items.1] Roll up to 20 dice at once
+[dice-master.pro.items.2] Neon, Thunder, Gold and Flame skins
+[dice-master.pro.items.3] Custom dice face icons
+[dice-master.pro.items.4] Unlimited saved presets
+[dice-master.pro.items.5] Full roll history and statistics
+
+## 자주 묻는 질문
+[dice-master.faq.0.q] Where settings and history are kept
+[dice-master.faq.0.a.0] Dice settings, My Presets and Roll History are kept in the app's own storage. Deleting the app deletes them as well. iCloud sync is not supported.
+[dice-master.faq.0.a.1] Reset App at the bottom of App Settings erases all settings, presets and roll history, and it cannot be undone. A Pro purchase is not affected.
+[dice-master.faq.1.q] A die that is not in the list
+[dice-master.faq.1.a.0] Tap the faces chip at the top of the screen to open Dice Settings. Tap the pencil box and enter any number from 2 to 100 under Custom Faces to roll a die with that many sides. Dice beyond 10 faces need Pro.
+[dice-master.faq.1.a.1] The 3D view supports 2 to 20 sides. Larger dice are shown in 2D.
+[dice-master.faq.2.q] App language
+[dice-master.faq.2.a.0] The app starts in your device language. To change it, open Language in App Settings and pick one of 13 languages. The switch happens inside the app right away.
+[dice-master.faq.3.q] What needs Pro
+[dice-master.faq.3.a.0] Dice beyond 10 faces, more than 10 dice at once, the Neon, Thunder, Gold and Flame skins, and custom icons need Pro. So do verdicts after you change a Quick Preset's rules. The d20 Check preset rolls without Pro.
+[dice-master.faq.3.a.1] Without Pro you can save 2 presets, and Roll History and Statistics show your latest 50 rolls. Older rolls are still kept in the app, and all of them appear with Pro.
+[dice-master.faq.4.q] Restoring Pro
+[dice-master.faq.4.a.0] If you switched devices or reinstalled the app, tap the gear at the top right and open App Settings. Tap DiceMaster Pro at the top, then Restore Purchase near the bottom of the sheet. With the same Apple Account you are not charged again.
+[dice-master.faq.5.q] Internet connection
+[dice-master.faq.5.a.0] Rolling, history and presets work without an internet connection. Only buying and restoring Pro need a connection to the App Store.
+[dice-master.faq.6.q] Turning off Shake to Roll
+[dice-master.faq.6.a.0] Turn off Shake to Roll under Controls in App Settings, and shaking the device will no longer roll the dice.
+
+## 개인정보 처리방침
+[dice-master.privacy.title] Dice Master Privacy Policy
+[dice-master.privacy.intro.0] kvndh ("the developer") handles the personal information of people who use the Dice Master app ("the app") in line with Korea's Personal Information Protection Act. This policy sets out how.
+
+## 개인정보 처리방침 01절
+[dice-master.privacy.sections.0.title] Purpose of processing
+[dice-master.privacy.sections.0.paragraphs.0] The app has no sign-up or login, and the developer does not process personal information about its users. There is therefore no processing purpose to state.
+
+## 개인정보 처리방침 02절
+[dice-master.privacy.sections.1.title] Personal information processed
+[dice-master.privacy.sections.1.paragraphs.0] The developer collects no personal information. The app uses the data listed below, all of it kept in the app's storage on your device. The developer does not receive this data.
+[dice-master.privacy.sections.1.bullets.0] Dice settings and My Presets: used to pick up where you left off next time
+[dice-master.privacy.sections.1.bullets.1] Roll history: used for the history list and statistics
+[dice-master.privacy.sections.1.bullets.2] App settings (skin, sound, language and similar): used for display and sound
+
+## 개인정보 처리방침 03절
+[dice-master.privacy.sections.2.title] Retention period
+[dice-master.privacy.sections.2.paragraphs.0] The developer holds no personal information. Data in the app's storage is deleted when you delete the app.
+
+## 개인정보 처리방침 04절
+[dice-master.privacy.sections.3.title] Disclosure to third parties
+[dice-master.privacy.sections.3.paragraphs.0] Personal information is not provided to third parties. If you send a roll result with the Share button, the text you send is handled under the policy of the app you choose.
+
+## 개인정보 처리방침 05절
+[dice-master.privacy.sections.4.title] Outsourcing of processing
+[dice-master.privacy.sections.4.paragraphs.0] No processing of personal information is outsourced. Apple processes Dice Master Pro payments through the App Store, and payment details fall under Apple's privacy policy. The developer does not receive payment methods or Apple Account details.
+
+## 개인정보 처리방침 06절
+[dice-master.privacy.sections.5.title] Deletion
+[dice-master.privacy.sections.5.paragraphs.0] The developer holds no personal information, so there is nothing to delete on the developer's side. Clear History in Roll History removes your rolls, and Reset App in App Settings removes settings, presets and history together. Deleting the app removes all of its data.
+
+## 개인정보 처리방침 07절
+[dice-master.privacy.sections.6.title] Your rights and how to exercise them
+[dice-master.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, write to the contact below and the developer will look into it.
+
+## 개인정보 처리방침 08절
+[dice-master.privacy.sections.7.title] Security measures
+[dice-master.privacy.sections.7.paragraphs.0] The app does not ask for access to photos, location, contacts, the camera or the microphone. Shake to Roll reads the device's accelerometer only to detect shaking and does not store those readings.
+
+## 개인정보 처리방침 09절
+[dice-master.privacy.sections.8.title] Automatic collection tools
+[dice-master.privacy.sections.8.paragraphs.0] The app uses no cookies, advertising identifiers or analytics tools.
+
+## 개인정보 처리방침 10절
+[dice-master.privacy.sections.9.title] Privacy officer
+[dice-master.privacy.sections.9.paragraphs.0] Send any privacy question to the contact below.
+[dice-master.privacy.sections.9.pairs.0.label] Officer
+[dice-master.privacy.sections.9.pairs.0.value] kvndh
+[dice-master.privacy.sections.9.pairs.1.label] Email
+[dice-master.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[dice-master.privacy.sections.10.title] Remedies
+[dice-master.privacy.sections.10.paragraphs.0] If you believe your personal information has been mishandled, you can contact the data protection authority where you live.
+[dice-master.privacy.sections.10.bullets.0] European Union and EEA: your national data protection authority (listed at edpb.europa.eu)
+[dice-master.privacy.sections.10.bullets.1] United Kingdom: Information Commissioner's Office (ico.org.uk)
+[dice-master.privacy.sections.10.bullets.2] United States: Federal Trade Commission (reportfraud.ftc.gov)
+[dice-master.privacy.sections.10.bullets.3] Elsewhere: the privacy or consumer protection authority in your country
+
+## 개인정보 처리방침 12절
+[dice-master.privacy.sections.11.title] Changes to this policy
+[dice-master.privacy.sections.11.paragraphs.0] If this policy changes, this page will show the changes and the new effective date.
+
+## 개인정보 처리방침
+[dice-master.privacy.summary] Dice Master does not collect personal information. There is no sign-up or login, and Apple handles Pro payments.
+
