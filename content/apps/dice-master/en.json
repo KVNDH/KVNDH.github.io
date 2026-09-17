@@ -69,7 +69,7 @@
   },
   {
    "layout": "card",
-   "title": "Start from a Quick Preset",
+   "title": "Quick Presets for many games",
    "body": [
     "Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll."
    ],
@@ -81,9 +81,9 @@
   },
   {
    "layout": "card",
-   "title": "No sign-up, just roll",
+   "title": "Picks up where you left off",
    "body": [
-    "The app opens with the dice setup you used last time. There is no account to create or sign in to, and rolling works with no internet connection."
+    "The app opens with last time's dice setup. No account, and rolling works offline."
    ],
    "bullets": [],
    "visual": {

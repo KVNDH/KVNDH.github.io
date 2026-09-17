@@ -1,9 +1,9 @@
 {
  "name": "BrushWorks",
  "subtitle": "A painting that grows as you paint",
- "summary": "Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.",
+ "summary": "Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.",
  "hero": {
-  "hook": "Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.",
+  "hook": "Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.",
   "shotAlt": "The BrushWorks canvas with a lighthouse photo painted over in thick strokes. The three brushes and the size steps sit below."
  },
  "sections": [
@@ -76,7 +76,7 @@
   },
   {
    "layout": "card",
-   "title": "The process stays",
+   "title": "Every stroke on record",
    "body": [
     "Every dab is recorded. Replay plays the painting back from the start, and Time-lapse turns it into a short video."
    ],
@@ -215,7 +215,7 @@
    {
     "title": "Your rights and how to exercise them",
     "paragraphs": [
-     "Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address below and we will check for you."
+     "Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address in section 10."
     ],
     "bullets": []
    },

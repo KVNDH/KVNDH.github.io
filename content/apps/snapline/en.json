@@ -1,9 +1,9 @@
 {
  "name": "SnapLine",
- "subtitle": "Grid lines that pass behind your subject",
- "summary": "Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.",
+ "subtitle": "Fresh lines on shots you took",
+ "summary": "Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.",
  "hero": {
-  "hook": "Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.",
+  "hook": "Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.",
   "shotAlt": "The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below."
  },
  "sections": [
@@ -76,16 +76,16 @@
     "Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away."
    ],
    "bullets": [
-    "Original resolution kept",
+    "No size limit on exports",
     "JPEG quality 95",
     "Save to Photos or Share"
    ]
   },
   {
    "layout": "card",
-   "title": "No sign-up",
+   "title": "Pick a photo and go",
    "body": [
-    "Choose a photo and the grid is already on it. There is no account to create, and your work is saved in the app so you can reopen it from the home screen."
+    "Nothing to sign up for. Your edits wait on the home screen; tap one to pick up where you left off."
    ],
    "bullets": [],
    "visual": {

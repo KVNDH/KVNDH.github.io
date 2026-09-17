@@ -31,10 +31,10 @@
 ## 기본
 [brushworks.name] BrushWorks
 [brushworks.subtitle] A painting that grows as you paint
-[brushworks.summary] Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.
+[brushworks.summary] Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.
 
 ## 첫 화면
-[brushworks.hero.hook] Pick a photo you like and rub the screen. Brush marks pile up wherever your fingertip goes.
+[brushworks.hero.hook] Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.
 [brushworks.hero.shotAlt] The BrushWorks canvas with a lighthouse photo painted over in thick strokes. The three brushes and the size steps sit below.
 
 ## 기능 01 (feat, crop)
@@ -65,7 +65,7 @@
 [brushworks.sections.1.visual.rows.1.value] 5 steps
 
 ## 기능 03 (card, play)
-[brushworks.sections.2.title] The process stays
+[brushworks.sections.2.title] Every stroke on record
 [brushworks.sections.2.body.0] Every dab is recorded. Replay plays the painting back from the start, and Time-lapse turns it into a short video.
 [brushworks.sections.2.bullets.0] Replay at 1× to 4× speed
 [brushworks.sections.2.bullets.1] Vertical 9:16 time-lapse video
@@ -138,7 +138,7 @@
 
 ## 개인정보 처리방침 07절
 [brushworks.privacy.sections.6.title] Your rights and how to exercise them
-[brushworks.privacy.sections.6.paragraphs.0] Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address below and we will check for you.
+[brushworks.privacy.sections.6.paragraphs.0] Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, write to the address in section 10.
 
 ## 개인정보 처리방침 08절
 [brushworks.privacy.sections.7.title] Security measures
@@ -176,11 +176,11 @@
 
 ## 기본
 [snapline.name] SnapLine
-[snapline.subtitle] Grid lines that pass behind your subject
-[snapline.summary] Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.
+[snapline.subtitle] Fresh lines on shots you took
+[snapline.summary] Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.
 
 ## 첫 화면
-[snapline.hero.hook] Bend the camera grid on your photo toward the subject, then erase the lines where they cross it so they pass behind.
+[snapline.hero.hook] Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.
 [snapline.hero.shotAlt] The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below.
 
 ## 기능 01 (feat, crop)
@@ -213,13 +213,13 @@
 ## 기능 03 (card, None)
 [snapline.sections.2.title] Full-size exports
 [snapline.sections.2.body.0] Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away.
-[snapline.sections.2.bullets.0] Original resolution kept
+[snapline.sections.2.bullets.0] No size limit on exports
 [snapline.sections.2.bullets.1] JPEG quality 95
 [snapline.sections.2.bullets.2] Save to Photos or Share
 
 ## 기능 04 (card, chips)
-[snapline.sections.3.title] No sign-up
-[snapline.sections.3.body.0] Choose a photo and the grid is already on it. There is no account to create, and your work is saved in the app so you can reopen it from the home screen.
+[snapline.sections.3.title] Pick a photo and go
+[snapline.sections.3.body.0] Nothing to sign up for. Your edits wait on the home screen; tap one to pick up where you left off.
 [snapline.sections.3.visual.items.0] No account
 [snapline.sections.3.visual.items.1] No login
 [snapline.sections.3.visual.items.2] No ads
@@ -361,8 +361,8 @@
 [life-tyde.sections.2.visual.label] Replay
 
 ## 기능 04 (card, chips)
-[life-tyde.sections.3.title] No sign-up needed
-[life-tyde.sections.3.body.0] Open the app and start writing. Entries are saved in the app, and iCloud sync carries them to your iPhone and iPad on the same iCloud account.
+[life-tyde.sections.3.title] Open it and write
+[life-tyde.sections.3.body.0] No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone and iPad on the same account.
 [life-tyde.sections.3.visual.items.0] No account
 [life-tyde.sections.3.visual.items.1] No ads
 [life-tyde.sections.3.visual.items.2] iCloud sync
@@ -520,8 +520,8 @@
 [tapey.sections.2.bullets.2] iPhone and iPad resolutions
 
 ## 기능 04 (card, chips)
-[tapey.sections.3.title] No sign-up, straight to your photos
-[tapey.sections.3.body.0] There is no account to create and nothing to sign in to. Pick photos and you are already working. Your wall is still there when you reopen the app, and tapping Make a new one after saving moves it to Recent.
+[tapey.sections.3.title] Start with your photos
+[tapey.sections.3.body.0] No account and nothing to sign in to. Your wall is still there when you come back, and Make a new one after saving moves it to Recent.
 [tapey.sections.3.visual.items.0] No account
 [tapey.sections.3.visual.items.1] No sign-in
 [tapey.sections.3.visual.items.2] 31 languages
@@ -679,15 +679,15 @@
 [dice-master.sections.1.visual.rows.1.value] 1 to 999
 
 ## 기능 03 (card, None)
-[dice-master.sections.2.title] Start from a Quick Preset
+[dice-master.sections.2.title] Quick Presets for many games
 [dice-master.sections.2.body.0] Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll.
 [dice-master.sections.2.bullets.0] 17 Quick Presets
 [dice-master.sections.2.bullets.1] Roll verdicts for 10 games
 [dice-master.sections.2.bullets.2] Game search and hiding
 
 ## 기능 04 (card, chips)
-[dice-master.sections.3.title] No sign-up, just roll
-[dice-master.sections.3.body.0] The app opens with the dice setup you used last time. There is no account to create or sign in to, and rolling works with no internet connection.
+[dice-master.sections.3.title] Picks up where you left off
+[dice-master.sections.3.body.0] The app opens with last time's dice setup. No account, and rolling works offline.
 [dice-master.sections.3.visual.items.0] No account
 [dice-master.sections.3.visual.items.1] No ads
 [dice-master.sections.3.visual.items.2] Works offline

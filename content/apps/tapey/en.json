@@ -83,9 +83,9 @@
   },
   {
    "layout": "card",
-   "title": "No sign-up, straight to your photos",
+   "title": "Start with your photos",
    "body": [
-    "There is no account to create and nothing to sign in to. Pick photos and you are already working. Your wall is still there when you reopen the app, and tapping Make a new one after saving moves it to Recent."
+    "No account and nothing to sign in to. Your wall is still there when you come back, and Make a new one after saving moves it to Recent."
    ],
    "bullets": [],
    "visual": {
