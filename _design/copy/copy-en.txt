@@ -292,7 +292,7 @@
 
 ## 개인정보 처리방침 07절
 [snapline.privacy.sections.6.title] Rights of users and legal representatives
-[snapline.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, write to the contact below and we will look into it.
+[snapline.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, email us at the address below.
 
 ## 개인정보 처리방침 08절
 [snapline.privacy.sections.7.title] Security measures
@@ -304,7 +304,7 @@
 
 ## 개인정보 처리방침 10절
 [snapline.privacy.sections.9.title] Privacy officer
-[snapline.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[snapline.privacy.sections.9.paragraphs.0] If you have questions about personal information, email us at the address below.
 [snapline.privacy.sections.9.pairs.0.label] Officer
 [snapline.privacy.sections.9.pairs.0.value] kvndh
 [snapline.privacy.sections.9.pairs.1.label] Email
@@ -439,7 +439,7 @@
 
 ## 개인정보 처리방침 07절
 [life-tyde.privacy.sections.6.title] Your rights and how to exercise them
-[life-tyde.privacy.sections.6.paragraphs.0] The developer holds no personal information, so there is nothing to request access to, correct, or delete. You can view, edit, and delete your entries in the app and export them as a CSV file. For any questions, write to the contact below.
+[life-tyde.privacy.sections.6.paragraphs.0] The developer holds no personal information, so there is nothing to request access to, correct, or delete. You can view, edit, and delete your entries in the app and export them as a CSV file. If you have questions, email us at the address below.
 
 ## 개인정보 처리방침 08절
 [life-tyde.privacy.sections.7.title] Security measures
@@ -452,7 +452,7 @@
 
 ## 개인정보 처리방침 10절
 [life-tyde.privacy.sections.9.title] Privacy officer
-[life-tyde.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[life-tyde.privacy.sections.9.paragraphs.0] If you have questions about personal information, email us at the address below.
 [life-tyde.privacy.sections.9.pairs.0.label] Officer
 [life-tyde.privacy.sections.9.pairs.0.value] kvndh
 [life-tyde.privacy.sections.9.pairs.1.label] Email
@@ -601,7 +601,7 @@
 
 ## 개인정보 처리방침 07절
 [tapey.privacy.sections.6.title] Rights of users and legal guardians, and how to exercise them
-[tapey.privacy.sections.6.paragraphs.0] Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, write to the address below and we will look into it.
+[tapey.privacy.sections.6.paragraphs.0] Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, email us at the address below.
 [tapey.privacy.sections.6.paragraphs.1] You can ask Google to give you access to, or delete, information collected by AdMob. To refuse use of the advertising identifier, follow section 9.
 
 ## 개인정보 처리방침 08절
@@ -621,7 +621,7 @@
 
 ## 개인정보 처리방침 10절
 [tapey.privacy.sections.9.title] Privacy officer
-[tapey.privacy.sections.9.paragraphs.0] For questions about personal information, contact:
+[tapey.privacy.sections.9.paragraphs.0] If you have questions about personal information, email us at the address below.
 [tapey.privacy.sections.9.pairs.0.label] Officer
 [tapey.privacy.sections.9.pairs.0.value] kvndh
 [tapey.privacy.sections.9.pairs.1.label] Email
@@ -754,7 +754,7 @@
 
 ## 개인정보 처리방침 07절
 [dice-master.privacy.sections.6.title] Your rights and how to exercise them
-[dice-master.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, write to the contact below and the developer will look into it.
+[dice-master.privacy.sections.6.paragraphs.0] Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, email us at the address below.
 
 ## 개인정보 처리방침 08절
 [dice-master.privacy.sections.7.title] Security measures
@@ -766,7 +766,7 @@
 
 ## 개인정보 처리방침 10절
 [dice-master.privacy.sections.9.title] Privacy officer
-[dice-master.privacy.sections.9.paragraphs.0] Send any privacy question to the contact below.
+[dice-master.privacy.sections.9.paragraphs.0] If you have questions about personal information, email us at the address below.
 [dice-master.privacy.sections.9.pairs.0.label] Officer
 [dice-master.privacy.sections.9.pairs.0.value] kvndh
 [dice-master.privacy.sections.9.pairs.1.label] Email
