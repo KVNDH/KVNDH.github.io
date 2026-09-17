@@ -41,7 +41,7 @@ def app_copy(lang: str) -> dict:
         "subtitle": "sub",
         "summary": "summary",
         "hero": {"hook": "hook", "points": ["point"]},
-        "sections": [{"title": "t1", "body": ["b"], "bullets": ["x"]}],
+        "sections": [{"title": "title", "body": ["b"], "bullets": ["x"]}],
         "pro": {"title": "Pro", "body": ["pb"], "free": ["f"], "pro": ["p"], "note": "n"},
         "faq": [{"q": "q", "a": ["a"]}],
         "privacy": privacy(lang),
