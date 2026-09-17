@@ -94,7 +94,7 @@ def tabs(site: Site, lang: str, slug: str, current: str) -> str:
 
 
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
-         content: str, body_style: str = "", extra_head: str = "", og_image: str = "/assets/og.png") -> str:
+         content: str, body_style: str = "", extra_head: str = "", og_image: str = "/assets/og.jpg") -> str:
     option = site.lang(lang)
     return tpl(site, "base.html").substitute(
         html_lang=esc(option["htmlLang"]),
@@ -181,7 +181,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
                 content=content, body_style=accent_style(app),
                 extra_head=f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">',
-                og_image=asset(slug, "og.png"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def render_support(site: Site, lang: str, slug: str) -> str:
@@ -200,7 +200,7 @@ def render_support(site: Site, lang: str, slug: str) -> str:
         email=site.config["contact"],
     )
     return page(site, lang=lang, slug=slug, kind="support", title=title, description=copy["summary"],
-                content=content, body_style=accent_style(app), og_image=asset(slug, "og.png"))
+                content=content, body_style=accent_style(app), og_image=asset(slug, "og.jpg"))
 
 
 def render_privacy(site: Site, lang: str, slug: str) -> str:
@@ -226,7 +226,7 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="privacy", title=policy["title"],
                 description=policy["title"], content=content, body_style=accent_style(app),
-                og_image=asset(slug, "og.png"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def language_items(site: Site) -> str:

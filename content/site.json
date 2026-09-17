@@ -1,0 +1,21 @@
+{
+ "baseUrl": "https://kvndh.com",
+ "contact": "kvndh36@naver.com",
+ "languages": [
+  {"code": "ko", "htmlLang": "ko", "hreflang": "ko", "label": "한국어", "ogLocale": "ko_KR"},
+  {"code": "en", "htmlLang": "en", "hreflang": "en", "label": "English", "ogLocale": "en_US"},
+  {"code": "ja", "htmlLang": "ja", "hreflang": "ja", "label": "日本語", "ogLocale": "ja_JP"},
+  {"code": "zh-hans", "htmlLang": "zh-Hans", "hreflang": "zh-Hans", "label": "简体中文", "ogLocale": "zh_CN"},
+  {"code": "zh-hant", "htmlLang": "zh-Hant", "hreflang": "zh-Hant", "label": "繁體中文", "ogLocale": "zh_TW"},
+  {"code": "de", "htmlLang": "de", "hreflang": "de", "label": "Deutsch", "ogLocale": "de_DE"},
+  {"code": "es", "htmlLang": "es", "hreflang": "es", "label": "Español", "ogLocale": "es_ES"},
+  {"code": "pt-br", "htmlLang": "pt-BR", "hreflang": "pt-BR", "label": "Português (Brasil)", "ogLocale": "pt_BR"}
+ ],
+ "apps": [
+  {"slug": "brushworks", "appStoreId": "6810951573", "accent": "#A05B42", "accentText": "#E39C80", "featured": true},
+  {"slug": "life-tyde", "appStoreId": "6773198369", "accent": "#E33C48", "accentText": "#F46A74"},
+  {"slug": "snapline", "appStoreId": "6809834907", "accent": "#F9F9F9", "accentText": "#F9F9F9"},
+  {"slug": "tapey", "appStoreId": "6778635856", "accent": "#CBD3B6", "accentText": "#CBD3B6"},
+  {"slug": "dice-master", "appStoreId": "6765857608", "accent": "#EE9D1C", "accentText": "#EE9D1C"}
+ ]
+}

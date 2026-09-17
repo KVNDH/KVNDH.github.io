@@ -15,7 +15,7 @@ class BuildTest(unittest.TestCase):
         for rel in ("index.html", "404.html", "ko/index.html", "en/demo/index.html",
                     "en/demo/support/index.html", "ko/demo/privacy/index.html", "CNAME",
                     "app-ads.txt", ".nojekyll", "robots.txt", "sitemap.xml",
-                    "assets/demo/icon-180.webp", "assets/og.png"):
+                    "assets/demo/icon-180.webp", "assets/og.jpg"):
             self.assertTrue((out / rel).exists(), rel)
         self.assertIn("/ko/demo/privacy/", written)
         sitemap = (out / "sitemap.xml").read_text()

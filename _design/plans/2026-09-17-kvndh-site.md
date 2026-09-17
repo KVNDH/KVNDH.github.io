@@ -154,8 +154,8 @@ def make_site(langs=("ko", "en"), with_pages: bool = True) -> Path:
         copy = app_copy(lang) if with_pages else {"name": "Demo", "subtitle": "sub", "summary": "summary"}
         write(content / "apps" / "demo" / f"{lang}.json", copy)
     write(content / "apps" / "demo" / "facts.json", {"describesVersion": "1.0.0", "numbers": [], "ads": False})
-    for rel in ("assets/demo/icon-180.webp", "assets/demo/icon-360.webp", "assets/demo/og.png",
-                "assets/demo/shots/en/01.webp", "assets/og.png"):
+    for rel in ("assets/demo/icon-180.webp", "assets/demo/icon-360.webp", "assets/demo/og.jpg",
+                "assets/demo/shots/en/01.webp", "assets/og.jpg"):
         p = root / rel
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_bytes(b"x")
@@ -696,7 +696,7 @@ h1,h2,h3{text-wrap:balance}
 .tile__summary{color:var(--muted);margin:16px 0 0;font-size:15px}
 .tile__links{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;position:relative;z-index:1}
 .tile__shot{margin-top:auto;align-self:center;width:62%;max-width:240px;border-radius:24px;transform:translateY(30%);box-shadow:0 20px 60px rgba(0,0,0,.5)}
-.tile--featured .tile__shot{width:48%;max-width:300px;transform:translateY(10%)}
+.tile--featured .tile__shot{width:62%;max-width:380px;transform:translateY(6%)}
 .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-size:14px;font-weight:600;background:rgba(10,10,11,.6)}
 .btn--primary{background:var(--accent-text);color:#0A0A0B;border-color:transparent}
 .tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:8px 0 0;overflow-x:auto}
@@ -856,7 +856,7 @@ def tabs(site: Site, lang: str, slug: str, current: str) -> str:
 
 
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
-         content: str, body_style: str = "", extra_head: str = "", og_image: str = "/assets/og.png") -> str:
+         content: str, body_style: str = "", extra_head: str = "", og_image: str = "/assets/og.jpg") -> str:
     option = site.lang(lang)
     return tpl(site, "base.html").substitute(
         html_lang=esc(option["htmlLang"]),
@@ -943,7 +943,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
                 content=content, body_style=accent_style(app),
                 extra_head=f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">',
-                og_image=asset(slug, "og.png"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def render_support(site: Site, lang: str, slug: str) -> str:
@@ -962,7 +962,7 @@ def render_support(site: Site, lang: str, slug: str) -> str:
         email=site.config["contact"],
     )
     return page(site, lang=lang, slug=slug, kind="support", title=title, description=copy["summary"],
-                content=content, body_style=accent_style(app), og_image=asset(slug, "og.png"))
+                content=content, body_style=accent_style(app), og_image=asset(slug, "og.jpg"))
 
 
 def render_privacy(site: Site, lang: str, slug: str) -> str:
@@ -988,7 +988,7 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="privacy", title=policy["title"],
                 description=policy["title"], content=content, body_style=accent_style(app),
-                og_image=asset(slug, "og.png"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def language_items(site: Site) -> str:
@@ -1069,7 +1069,7 @@ class BuildTest(unittest.TestCase):
         for rel in ("index.html", "404.html", "ko/index.html", "en/demo/index.html",
                     "en/demo/support/index.html", "ko/demo/privacy/index.html", "CNAME",
                     "app-ads.txt", ".nojekyll", "robots.txt", "sitemap.xml",
-                    "assets/demo/icon-180.webp", "assets/og.png"):
+                    "assets/demo/icon-180.webp", "assets/og.jpg"):
             self.assertTrue((out / rel).exists(), rel)
         self.assertIn("/ko/demo/privacy/", written)
         sitemap = (out / "sitemap.xml").read_text()
@@ -1975,13 +1975,13 @@ def import_app(slug: str) -> None:
             out.parent.mkdir(parents=True, exist_ok=True)
             magick(CODING / rel, "-strip", "-resize", "660x", "-quality", "80", out)
     magick("-size", "1200x630", f"radial-gradient:{app['accent']}-#0A0A0B",
-           "(", icon, "-resize", "300x300", ")", "-gravity", "center", "-composite", "-strip", dest / "og.png")
+           "(", icon, "-resize", "300x300", ")", "-gravity", "center", "-composite", "-strip", "-quality", "85", dest / "og.jpg")
 
 
 def import_site_og() -> None:
     (ROOT / "assets").mkdir(exist_ok=True)
     magick("-size", "1200x630", "xc:#0A0A0B", "-fill", "#F2F2F3", "-font", FONT, "-pointsize", "150",
-           "-gravity", "center", "-annotate", "+0+0", "kvndh", "-strip", ROOT / "assets" / "og.png")
+           "-gravity", "center", "-annotate", "+0+0", "kvndh", "-strip", "-quality", "85", ROOT / "assets" / "og.jpg")
 
 
 def main(argv: list[str]) -> int:
@@ -2000,8 +2000,8 @@ if __name__ == "__main__":
 
 Run: `python3 scripts/import_assets.py && find assets -type f | sort`
 Expected:
-- 앱마다 `icon-180.webp`, `icon-360.webp`, `og.png`, `shots/<lang>/01.webp` 가 생긴다
-- 사이트 전체용 `assets/og.png` 가 생긴다
+- 앱마다 `icon-180.webp`, `icon-360.webp`, `og.jpg`, `shots/<lang>/01.webp` 가 생긴다
+- 사이트 전체용 `assets/og.jpg` 가 생긴다
 
 - [ ] **Step 5: 빌드하고 검사한다**
 

@@ -68,8 +68,8 @@ def make_site(langs=("ko", "en"), with_pages: bool = True) -> Path:
         copy = app_copy(lang) if with_pages else {"name": "Demo", "subtitle": "sub", "summary": "summary"}
         write(content / "apps" / "demo" / f"{lang}.json", copy)
     write(content / "apps" / "demo" / "facts.json", {"describesVersion": "1.0.0", "numbers": [], "ads": False})
-    for rel in ("assets/demo/icon-180.webp", "assets/demo/icon-360.webp", "assets/demo/og.png",
-                "assets/demo/shots/en/01.webp", "assets/og.png"):
+    for rel in ("assets/demo/icon-180.webp", "assets/demo/icon-360.webp", "assets/demo/og.jpg",
+                "assets/demo/shots/en/01.webp", "assets/og.jpg"):
         p = root / rel
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_bytes(b"x")

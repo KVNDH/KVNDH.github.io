@@ -190,7 +190,7 @@ content/
   apps/<app>/facts.json      코드에서 뽑은 사실 + 출처 파일 경로
   apps/<app>/<lang>.json     소개, FAQ, 개인정보 처리방침 문구
 templates/                   base, hub, app, support, privacy, root, 404 (Python string.Template)
-assets/<app>/                icon (180, 360 WebP), shots/<lang>/NN.webp, og.png
+assets/<app>/                icon (180, 360 WebP), shots/<lang>/NN.webp, og.jpg
 static/                      app-ads.txt, CNAME, robots.txt, .nojekyll (docs/ 로 그대로 복사)
 scripts/build.py             content + templates → docs/ (표준 라이브러리만)
 scripts/check.py             검사기 (아래)
