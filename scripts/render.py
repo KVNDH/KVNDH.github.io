@@ -140,11 +140,10 @@ def render_hub(site: Site, lang: str) -> str:
             shot=shot_path(site, slug, lang),
             shot_alt=esc(f'{copy["name"]} {ui["screenshot"]}'),
         ))
-    content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubTitle"]), lead=esc(ui["hubLead"]), tiles="\n".join(tiles),
-    )
+    names = ", ".join(site.app_copy(app["slug"], lang)["name"] for app in site.apps if site.app_copy(app["slug"], lang))
+    content = tpl(site, "hub.html").substitute(title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles))
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"],
-                description=ui["hubLead"], content=content)
+                description=names, content=content)
 
 
 def render_app(site: Site, lang: str, slug: str) -> str:

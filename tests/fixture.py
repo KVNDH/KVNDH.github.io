@@ -11,7 +11,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
 UI_KEYS = [
-    "skip", "language", "hubMetaTitle", "hubTitle", "hubLead", "learnMore", "getOnAppStore",
+    "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore",
     "screenshot", "navAbout", "navSupport", "navPrivacy", "free", "pro", "faqTitle",
     "contactTitle", "contactBody", "effectiveDate", "toc", "notFound",
 ]

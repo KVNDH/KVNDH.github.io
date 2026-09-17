@@ -18,6 +18,12 @@ class RenderTest(unittest.TestCase):
         self.assertIn("https://apps.apple.com/app/id123", html)
         self.assertIn("tile--featured", html)
 
+    def test_hub_has_no_summary_sentence(self):
+        html = render.render_hub(self.site, "ko")
+        self.assertNotIn("hub-intro", html)
+        self.assertIn('<h1 class="sr-only">ko hubMetaTitle</h1>', html)
+        self.assertIn('<meta name="description" content="Demo">', html)
+
     def test_hub_without_pages_has_no_detail_link(self):
         html = render.render_hub(Site(make_site(with_pages=False)), "ko")
         self.assertNotIn('href="/ko/demo/"', html)

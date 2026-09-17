@@ -47,7 +47,7 @@ class CopyRulesTest(unittest.TestCase):
 
     def test_ui_strings_are_checked(self):
         site = Site(make_site())
-        site.ui["ko"]["hubLead"] = "놀라운 앱"
+        site.ui["ko"]["learnMore"] = "놀라운 앱"
         self.assertTrue(check.check_copy(site))
 
 

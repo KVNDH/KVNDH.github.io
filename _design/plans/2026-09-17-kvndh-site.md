@@ -97,7 +97,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
 UI_KEYS = [
-    "skip", "language", "hubMetaTitle", "hubTitle", "hubLead", "learnMore", "getOnAppStore",
+    "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore",
     "screenshot", "navAbout", "navSupport", "navPrivacy", "free", "pro", "faqTitle",
     "contactTitle", "contactBody", "effectiveDate", "toc", "notFound",
 ]
@@ -377,6 +377,12 @@ class RenderTest(unittest.TestCase):
         self.assertIn("https://apps.apple.com/app/id123", html)
         self.assertIn("tile--featured", html)
 
+    def test_hub_has_no_summary_sentence(self):
+        html = render.render_hub(self.site, "ko")
+        self.assertNotIn("hub-intro", html)
+        self.assertIn('<h1 class="sr-only">ko hubMetaTitle</h1>', html)
+        self.assertIn('<meta name="description" content="Demo">', html)
+
     def test_hub_without_pages_has_no_detail_link(self):
         html = render.render_hub(Site(make_site(with_pages=False)), "ko")
         self.assertNotIn('href="/ko/demo/"', html)
@@ -502,10 +508,7 @@ $footer
 
 ```html
 <div class="wrap">
-  <section class="hub-intro">
-    <h1>$title</h1>
-    <p>$lead</p>
-  </section>
+  <h1 class="sr-only">$title</h1>
   <div class="bento">
 $tiles
   </div>
@@ -682,10 +685,8 @@ h1,h2,h3{text-wrap:balance}
 .lang-menu li a{display:block;padding:8px 12px;border-radius:8px;text-decoration:none}
 .lang-menu li a:hover{background:var(--line)}
 .lang-menu li a[aria-current]{color:var(--accent-text);font-weight:600}
-.hub-intro{padding:56px 0 40px}
-.hub-intro h1{font-size:clamp(34px,6vw,64px);line-height:1.15;letter-spacing:-.03em;margin:0 0 16px}
-.hub-intro p{color:var(--muted);margin:0;max-width:40em}
-.bento{display:grid;gap:16px;grid-template-columns:repeat(4,1fr);padding-bottom:72px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.bento{display:grid;gap:16px;grid-template-columns:repeat(4,1fr);padding:24px 0 72px}
 .tile{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:24px;min-height:320px;display:flex;flex-direction:column;isolation:isolate}
 .tile::after{content:"";position:absolute;right:-30%;bottom:-40%;width:90%;height:90%;background:radial-gradient(closest-side,var(--accent),transparent);opacity:.28;z-index:-1;pointer-events:none}
 .tile--featured{grid-column:span 2;grid-row:span 2;min-height:660px}
@@ -902,11 +903,10 @@ def render_hub(site: Site, lang: str) -> str:
             shot=shot_path(site, slug, lang),
             shot_alt=esc(f'{copy["name"]} {ui["screenshot"]}'),
         ))
-    content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubTitle"]), lead=esc(ui["hubLead"]), tiles="\n".join(tiles),
-    )
+    names = ", ".join(site.app_copy(app["slug"], lang)["name"] for app in site.apps if site.app_copy(app["slug"], lang))
+    content = tpl(site, "hub.html").substitute(title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles))
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"],
-                description=ui["hubLead"], content=content)
+                description=names, content=content)
 
 
 def render_app(site: Site, lang: str, slug: str) -> str:
@@ -1024,7 +1024,7 @@ def render_sitemap(site: Site, paths: list[str]) -> str:
 - [ ] **Step 5: 통과를 확인한다**
 
 Run: `python3 -m unittest discover -s tests -v`
-Expected: 19 tests OK
+Expected: 20 tests OK
 
 - [ ] **Step 6: 커밋한다**
 
@@ -1177,7 +1177,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: 통과를 확인한다**
 
 Run: `python3 -m unittest discover -s tests -v`
-Expected: 22 tests OK
+Expected: 23 tests OK
 
 - [ ] **Step 5: 커밋한다**
 
@@ -1264,7 +1264,7 @@ class CopyRulesTest(unittest.TestCase):
 
     def test_ui_strings_are_checked(self):
         site = Site(make_site())
-        site.ui["ko"]["hubLead"] = "놀라운 앱"
+        site.ui["ko"]["learnMore"] = "놀라운 앱"
         self.assertTrue(check.check_copy(site))
 
 
@@ -1704,7 +1704,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: 통과를 확인한다**
 
 Run: `python3 -m unittest discover -s tests -v`
-Expected: 47 tests OK
+Expected: 48 tests OK
 
 - [ ] **Step 5: 커밋한다**
 
@@ -1773,8 +1773,6 @@ printf 'User-agent: *\nAllow: /\nSitemap: https://kvndh.com/sitemap.xml\n' > sta
  "skip": "본문으로 건너뛰기",
  "language": "언어",
  "hubMetaTitle": "kvndh 앱",
- "hubTitle": "사진과 기록, 주사위를 다루는 iOS 앱",
- "hubLead": "다섯 앱 모두 회원가입 없이 바로 씁니다.",
  "learnMore": "자세히 보기",
  "getOnAppStore": "App Store에서 받기",
  "screenshot": "화면",
@@ -2061,8 +2059,6 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
  "skip": "Skip to content",
  "language": "Language",
  "hubMetaTitle": "kvndh apps",
- "hubTitle": "iOS apps for photos, records and dice",
- "hubLead": "All five apps work without an account.",
  "learnMore": "Details",
  "getOnAppStore": "Download on the App Store",
  "screenshot": "screen",
