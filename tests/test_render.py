@@ -7,27 +7,43 @@ import render
 from sitelib import Site
 
 
-class RenderTest(unittest.TestCase):
+class HubTest(unittest.TestCase):
     def setUp(self):
         self.site = Site(make_site())
 
-    def test_hub_lists_app_with_links(self):
+    def test_hub_tile_links_whole_tile_and_store(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<html lang="ko">', html)
-        self.assertIn('href="/ko/demo/"', html)
+        self.assertIn('<article class="tile t-feature"', html)
+        self.assertIn('<a class="tile-link" href="/ko/demo/">Demo</a>', html)
+        self.assertIn('aria-label="Demo store"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
-        self.assertIn("tile--featured", html)
+        self.assertIn('<div class="shot" style="--sw:196px">', html)
+
+    def test_feature_tile_shows_summary(self):
+        self.assertIn('<p class="hook">summary</p>', render.render_hub(self.site, "ko"))
 
     def test_hub_has_no_summary_sentence(self):
         html = render.render_hub(self.site, "ko")
-        self.assertNotIn("hub-intro", html)
         self.assertIn('<h1 class="sr-only">ko hubMetaTitle</h1>', html)
         self.assertIn('<meta name="description" content="Demo">', html)
+
+    def test_hub_footer_lists_privacy_and_languages(self):
+        html = render.render_hub(self.site, "ko")
+        self.assertIn('<footer class="sf">', html)
+        self.assertIn('href="/ko/demo/privacy/"', html)
+        self.assertIn('<ul class="langs">', html)
 
     def test_hub_without_pages_has_no_detail_link(self):
         html = render.render_hub(Site(make_site(with_pages=False)), "ko")
         self.assertNotIn('href="/ko/demo/"', html)
+        self.assertNotIn('class="tile-link"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
+
+
+class AppPageTest(unittest.TestCase):
+    def setUp(self):
+        self.site = Site(make_site())
 
     def test_alternates_cover_active_languages_and_default(self):
         html = render.render_app(self.site, "ko", "demo")
@@ -36,29 +52,35 @@ class RenderTest(unittest.TestCase):
         self.assertIn('hreflang="x-default" href="https://kvndh.com/en/demo/"', html)
         self.assertNotIn('hreflang="ja"', html)
 
-    def test_app_page_has_banner_accent_tabs_and_pro(self):
+    def test_app_bar_accent_and_banner(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('content="app-id=123"', html)
-        self.assertIn("--accent:#A05B42;--accent-text:#E39C80", html)
+        self.assertIn("--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42", html)
+        self.assertIn('<nav class="ab"', html)
+        self.assertIn('<a href="/ko/demo/" aria-current="page">ko navAbout</a>', html)
         self.assertIn('href="/ko/demo/support/"', html)
-        self.assertIn('aria-current="page"', html)
-        self.assertIn('class="pro"', html)
+
+    def test_hero_and_sections(self):
+        html = render.render_app(self.site, "ko", "demo")
+        self.assertIn('<h1 class="hero-n">Demo</h1>', html)
+        self.assertIn('<span class="meta">meta</span>', html)
+        self.assertIn('<section class="feat"><figure class="feat-vis crop">', html)
+        self.assertIn('<section class="feat feat-rev"><div class="feat-vis kit"', html)
+        self.assertIn('<li class="on"><span class="g g-gl"></span><b>n</b><small>d</small></li>', html)
+        self.assertIn('<i style="--i:2" class="on"></i>', html)
+        self.assertIn('<section class="duo"><div class="card"><p class="kick">03</p>', html)
+        self.assertIn('<div class="play" aria-hidden="true">', html)
+        self.assertIn('<ul class="chips"><li>c</li></ul>', html)
+
+    def test_pro_block(self):
+        html = render.render_app(self.site, "ko", "demo")
+        self.assertIn("<h2>first<br>second</h2>", html)
+        self.assertIn('<div class="plan plan-pro"><h3>ko pro <small>ko oneTime</small></h3>', html)
+        self.assertIn('<p class="pro-note">ko priceNote</p>', html)
 
     def test_app_page_without_pro(self):
         self.site.copy[("demo", "ko")]["pro"] = None
         self.assertNotIn('class="pro"', render.render_app(self.site, "ko", "demo"))
-
-    def test_support_page_has_faq_and_contact(self):
-        html = render.render_support(self.site, "en", "demo")
-        self.assertIn("<summary>q</summary>", html)
-        self.assertIn('href="mailto:kvndh36@naver.com"', html)
-
-    def test_privacy_has_twelve_numbered_sections_and_toc(self):
-        html = render.render_privacy(self.site, "en", "demo")
-        self.assertIn('id="p12"', html)
-        self.assertIn('href="#p1"', html)
-        self.assertIn("2026-09-17", html)
-        self.assertIn('class="paper"', html)
 
     def test_text_is_escaped(self):
         self.site.copy[("demo", "ko")]["hero"]["hook"] = "<script>x</script>"
@@ -70,6 +92,33 @@ class RenderTest(unittest.TestCase):
         self.assertEqual(render.shot_path(self.site, "demo", "ko"), "/assets/demo/shots/en/01.webp")
         with self.assertRaises(FileNotFoundError):
             render.shot_path(self.site, "demo", "ko", index=2)
+
+    def test_unknown_visual_fails(self):
+        self.site.copy[("demo", "ko")]["sections"][0]["visual"]["type"] = "video"
+        with self.assertRaises(ValueError):
+            render.render_app(self.site, "ko", "demo")
+
+
+class OtherPagesTest(unittest.TestCase):
+    def setUp(self):
+        self.site = Site(make_site())
+
+    def test_support_page_has_faq_and_contact(self):
+        html = render.render_support(self.site, "en", "demo")
+        self.assertIn('<section class="sup">', html)
+        self.assertIn("<summary>q</summary>", html)
+        self.assertIn('href="mailto:kvndh36@naver.com"', html)
+        self.assertIn('<a href="/en/demo/support/" aria-current="page">', html)
+
+    def test_privacy_sheet(self):
+        html = render.render_privacy(self.site, "en", "demo")
+        self.assertIn('<div class="sheet">', html)
+        self.assertIn('<section id="p12"><h2><span>12</span>s12</h2>', html)
+        self.assertIn('href="#p1"', html)
+        self.assertIn('<time datetime="2026-09-17">2026-09-17</time>', html)
+        self.assertIn('<p class="doc-sum"><strong>en summaryLabel</strong>sum</p>', html)
+        self.assertIn('<dd><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></dd>', html)
+        self.assertIn('<p class="doc-end">from 2026-09-17</p>', html)
 
     def test_no_external_resources(self):
         for html in (render.render_hub(self.site, "ko"), render.render_app(self.site, "ko", "demo"),

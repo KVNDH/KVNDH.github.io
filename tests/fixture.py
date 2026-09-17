@@ -11,9 +11,10 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 
 UI_KEYS = [
-    "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore",
-    "screenshot", "navAbout", "navSupport", "navPrivacy", "free", "pro", "faqTitle",
-    "contactTitle", "contactBody", "effectiveDate", "toc", "notFound",
+    "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore", "screenshot",
+    "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "free", "pro", "oneTime",
+    "priceNote", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
+    "toc", "notFound",
 ]
 
 
@@ -23,16 +24,17 @@ def write(path: Path, data) -> None:
 
 
 def ui(lang: str) -> dict:
-    return {k: f"{lang} {k}" for k in UI_KEYS}
+    values = {k: f"{lang} {k}" for k in UI_KEYS}
+    values["storeLabel"] = "{name} store"
+    values["effectiveFrom"] = "from {date}"
+    return values
 
 
 def privacy(lang: str) -> dict:
-    return {
-        "title": f"{lang} privacy",
-        "effectiveDate": "2026-09-17",
-        "intro": ["intro"],
-        "sections": [{"title": f"s{i}", "paragraphs": ["p"], "bullets": []} for i in range(1, 13)],
-    }
+    sections = [{"title": f"s{i}", "paragraphs": ["p"], "bullets": []} for i in range(1, 13)]
+    sections[9]["pairs"] = [{"label": "mail", "value": "kvndh36@naver.com"}]
+    return {"title": f"{lang} privacy", "effectiveDate": "2026-09-17", "summary": "sum", "intro": ["intro"],
+            "sections": sections}
 
 
 def app_copy(lang: str) -> dict:
@@ -40,9 +42,17 @@ def app_copy(lang: str) -> dict:
         "name": "Demo",
         "subtitle": "sub",
         "summary": "summary",
-        "hero": {"hook": "hook", "points": ["point"]},
-        "sections": [{"title": "title", "body": ["b"], "bullets": ["x"]}],
-        "pro": {"title": "Pro", "body": ["pb"], "free": ["f"], "pro": ["p"], "note": "n"},
+        "hero": {"hook": "hook", "meta": "meta"},
+        "sections": [
+            {"layout": "feat", "title": "title", "body": ["b"], "bullets": ["x"],
+             "visual": {"type": "crop", "shot": 1, "alt": "alt", "caption": "cap"}},
+            {"layout": "feat", "title": "kit", "body": ["b"], "bullets": [],
+             "visual": {"type": "kit", "label": "kit", "items": [{"glyph": "gl", "name": "n", "desc": "d", "on": True}],
+                        "rows": [{"label": "l", "value": "v", "meter": "ticks", "count": 3, "on": 2}]}},
+            {"layout": "card", "title": "card", "body": ["b"], "bullets": ["y"], "visual": {"type": "play", "label": "play"}},
+            {"layout": "card", "title": "chips", "body": ["b"], "bullets": [], "visual": {"type": "chips", "items": ["c"]}},
+        ],
+        "pro": {"kick": "Pro", "title": "first\nsecond", "badge": "badge", "free": ["f"], "pro": ["p"]},
         "faq": [{"q": "q", "a": ["a"]}],
         "privacy": privacy(lang),
     }
@@ -60,8 +70,9 @@ def make_site(langs=("ko", "en"), with_pages: bool = True) -> Path:
             {"code": "en", "htmlLang": "en", "hreflang": "en", "label": "English", "ogLocale": "en_US"},
             {"code": "ja", "htmlLang": "ja", "hreflang": "ja", "label": "日本語", "ogLocale": "ja_JP"},
         ],
-        "apps": [{"slug": "demo", "appStoreId": "123", "accent": "#A05B42",
-                  "accentText": "#E39C80", "featured": True}],
+        "apps": [{"slug": "demo", "appStoreId": "123", "accent": "#A05B42", "accentText": "#E39C80",
+                  "glow": "rgba(160,91,66,.5)", "paperAccent": "#8A4A34", "button": "#A05B42",
+                  "buttonText": "#FFFFFF", "shotCrop": "--sw:196px"}],
     })
     for lang in langs:
         write(content / "i18n" / f"{lang}.json", ui(lang))

@@ -57,6 +57,7 @@ MARKETING_KEYS = ("summary", "subtitle", "hero", "sections", "pro")
 HAEYO_OK = ("필요", "중요", "주요", "수요", "세요", "개요", "강요")
 NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
 REQUIRED_KEYS = ("name", "subtitle", "summary", "hero", "sections", "faq", "privacy")
+LAYOUTS = {"feat": ("crop", "kit"), "card": ("play", "chips", None)}
 REQUIRED_FILES = ("CNAME", "app-ads.txt", ".nojekyll", "404.html", "index.html", "robots.txt", "sitemap.xml")
 
 
@@ -91,15 +92,21 @@ def rule_problems(lang: str, text: str, marketing: bool) -> list[str]:
 
 
 def bullet_items(copy: dict):
+    """ko 에서 명사형으로 끝나야 하는 항목들."""
     for i, section in enumerate(copy.get("sections", [])):
         for j, item in enumerate(section.get("bullets", [])):
             yield f"sections[{i}].bullets[{j}]", item
-    for j, item in enumerate((copy.get("hero") or {}).get("points", [])):
-        yield f"hero.points[{j}]", item
+        visual = section.get("visual") or {}
+        for j, item in enumerate(visual.get("items", [])):
+            if isinstance(item, str):
+                yield f"sections[{i}].visual.items[{j}]", item
+            else:
+                yield f"sections[{i}].visual.items[{j}].desc", item["desc"]
     pro = copy.get("pro") or {}
     for key in ("free", "pro"):
         for j, item in enumerate(pro.get(key, [])):
             yield f"pro.{key}[{j}]", item
+    yield "hero.meta", (copy.get("hero") or {}).get("meta", "")
 
 
 def check_copy(site: Site) -> list[str]:
@@ -120,17 +127,27 @@ def check_copy(site: Site) -> list[str]:
     return problems
 
 
+def visual_shape(visual: dict | None):
+    if not visual:
+        return None
+    return (visual["type"], len(visual.get("items", [])), len(visual.get("rows", [])))
+
+
 def shape(copy: dict) -> dict:
     pro = copy.get("pro") or {}
     return {
-        "sections": len(copy["sections"]),
-        "section bullets": [len(s.get("bullets", [])) for s in copy["sections"]],
-        "hero points": len(copy["hero"].get("points", [])),
-        "faq": len(copy["faq"]),
+        "sections": [
+            (s.get("layout"), len(s.get("body", [])), len(s.get("bullets", [])), visual_shape(s.get("visual")))
+            for s in copy["sections"]
+        ],
+        "faq": [len(f["a"]) for f in copy["faq"]],
         "pro": bool(copy.get("pro")),
         "pro free": len(pro.get("free", [])),
         "pro items": len(pro.get("pro", [])),
-        "privacy bullets": [len(s.get("bullets", [])) for s in copy["privacy"]["sections"]],
+        "privacy": [
+            (len(s.get("paragraphs", [])), len(s.get("bullets", [])), len(s.get("pairs", [])))
+            for s in copy["privacy"]["sections"]
+        ],
     }
 
 
@@ -156,6 +173,15 @@ def check_structure(site: Site, release: bool) -> list[str]:
             if missing:
                 problems.append(f"{slug}/{code}: 빠진 키 {missing}")
                 continue
+            for i, section in enumerate(copy["sections"]):
+                visual_type = (section.get("visual") or {}).get("type")
+                if section.get("layout") not in LAYOUTS or visual_type not in LAYOUTS[section.get("layout")]:
+                    problems.append(f"{slug}/{code}: sections[{i}] layout/visual 조합이 틀림 ({section.get('layout')}, {visual_type})")
+            for key in ("hook", "meta"):
+                if key not in copy["hero"]:
+                    problems.append(f"{slug}/{code}: hero.{key} 없음")
+            if "summary" not in copy["privacy"]:
+                problems.append(f"{slug}/{code}: privacy.summary 없음")
             count = len(copy["privacy"]["sections"])
             if count != PRIVACY_SECTION_COUNT:
                 problems.append(f"{slug}/{code}: 개인정보 처리방침 {count}개 절 (12개여야 함)")

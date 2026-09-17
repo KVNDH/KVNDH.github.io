@@ -325,6 +325,8 @@ git commit -m "사이트 콘텐츠를 읽고 주소를 만드는 sitelib 을 둔
 
 ### Task 2: 템플릿과 페이지 렌더링 (`render.py`)
 
+> **Task 5b 에서 C안 충실 이식으로 대체됐다.** 아래 코드는 첫 구현 기록이다. 현재 기준은 저장소의 `templates/`, `scripts/render.py` 와 Task 5b 의 스키마다.
+
 **Files:**
 - Create: `templates/base.html`, `templates/hub.html`, `templates/tile.html`, `templates/app.html`, `templates/pro.html`, `templates/support.html`, `templates/privacy.html`, `templates/root.html`, `templates/404.html`, `templates/style.css`
 - Delete: `templates/.gitkeep`
@@ -2038,6 +2040,67 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
 
 ---
 
+### Task 5b: C안 충실 이식 (2026-09-17 사용자 지적, 완료)
+
+사용자 지적: 첫 구현이 목업 C안과 달랐다. 허브 BrushWorks 타일에 빈 공간이 많았다. 원인은 C안 CSS 를 옮기지 않고 새로 쓴 것이다.
+
+**한 일**
+- `templates/style.css`: `_design/parts/dir-c.html` 의 CSS 를 그대로 옮겼다
+  - `.dir-c` 접두사를 뺐다
+  - 목업 틀(`cap`, `stage`, `br-*`, `ph-*`) 규칙을 뺐다
+  - `@container`(560px)를 `@media (max-width:900px)` 로 바꿨다
+  - 지원 페이지(`.sup`, `.faq`)와 언어 선택/404(`.center`, `.langs-big`) 스타일을 더했다
+- **허브**
+  - 12칸 벤토. 타일 위치 클래스는 `t-feature`, `t-p2`~`t-p5` 이고 `site.json` 의 앱 순서를 따른다
+  - 타일 구성: 글은 왼쪽, 스크린샷(`.shot`)은 오른쪽이고, 타일 전체가 링크(`.tile-link`)다
+  - 요약 문장은 없다(`h1` 은 `sr-only`)
+- **앱 소개**
+  - 앱 바(`nav.ab`: 탭, App Store 버튼)
+  - 히어로(`hero`, `dev` 기기 프레임)
+  - 기능 섹션(`feat`)과 카드 묶음(`duo`)
+  - Pro 요금표(`pro`, `plans`), 지원 안내(`help`)
+  - 꼬리(`sf-c`)
+- **개인정보 처리방침:** 종이 면 `sheet`, 목차 `toc`, `doc`, 요약 상자 `doc-sum`, 번호 달린 절, 연락처 `dl`
+
+**`content/site.json` 앱 필드 (v2)**
+
+```json
+{"slug": "", "appStoreId": "", "accent": "#", "accentText": "#", "glow": "rgba()", "paperAccent": "#(종이 면 위 AA)",
+ "button": "#(선택)", "buttonText": "#(선택)", "shotCrop": "--sw:196px;--sx:-24px;--sy:-76px (선택, 스토어 틀이 있는 스크린샷 자르기)"}
+```
+
+**`content/apps/<app>/<lang>.json` 스키마 (v2)** — 기준 파일은 `content/apps/brushworks/ko.json` 이다.
+
+```json
+{"name": "", "subtitle": "", "summary": "허브 큰 타일과 meta description",
+ "hero": {"hook": "", "meta": "명사형 한 줄 (예: 무료, Pro는 한 번 구매)", "shotAlt": ""},
+ "sections": [
+  {"layout": "feat", "title": "", "body": [""], "bullets": [""],
+   "visual": {"type": "crop", "shot": 1, "alt": "", "caption": "", "focus": "-200px (선택)"}},
+  {"layout": "feat", "title": "", "body": [""], "bullets": [""],
+   "visual": {"type": "kit", "label": "", "items": [{"glyph": "gl|br|kn (BrushWorks 전용, 선택)", "name": "", "desc": "명사형", "on": true}],
+              "rows": [{"label": "", "value": "", "meter": "ticks|levels (선택)", "count": 9, "on": 5}]}},
+  {"layout": "card", "title": "", "body": [""], "bullets": [""], "visual": {"type": "play", "label": ""}},
+  {"layout": "card", "title": "", "body": [""], "bullets": [], "visual": {"type": "chips", "items": ["명사형"]}}
+ ],
+ "pro": {"kick": "", "title": "줄바꿈은 \\n", "badge": "", "free": [""], "pro": [""], "freeLabel": "(선택)", "proLabel": "(선택)"},
+ "faq": [{"q": "명사형 제목", "a": [""]}],
+ "privacy": {"title": "", "effectiveDate": "", "summary": "", "intro": [""],
+             "sections": [{"title": "", "paragraphs": [""], "bullets": [], "pairs": [{"label": "", "value": ""}]}]}}
+```
+
+**스키마 규칙**
+- `feat` 의 visual 은 `crop` 이나 `kit` 이고, `card` 의 visual 은 `play`, `chips`, 없음 중 하나다
+- `feat` 는 순서대로 좌우가 번갈아 놓인다
+- 연속한 `card` 는 두 장씩 `duo` 로 묶인다. 카드는 짝수 개로 둔다
+- 섹션 번호 `01`~ 은 자동으로 붙는다
+- `check.py` 가 layout/visual 조합, `hero.meta`, `privacy.summary`, 언어 간 구조(섹션마다 body 수, 불릿 수, visual 항목 수, 절마다 문단 수, 불릿 수, pairs 수)를 검사한다
+- UI 키(ko 기준): `skip language hubMetaTitle learnMore getOnAppStore storeLabel({name}) screenshot navAbout navSupport navPrivacy helpBody supportPage free pro oneTime priceNote faqTitle contactTitle contactBody effectiveDate effectiveFrom({date}) summaryLabel toc notFound`
+
+**확인:** 테스트 56개 OK, `check.py` 통과, 1280px 과 390px 화면이 목업 C안과 일치
+
+---
+
 ### Task 6: 1단계 앱별 사실과 문구 (에이전트 5개, 병렬)
 
 **Files (앱마다):**
@@ -2061,16 +2124,23 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
  "hubMetaTitle": "kvndh apps",
  "learnMore": "Details",
  "getOnAppStore": "Download on the App Store",
+ "storeLabel": "{name} on the App Store",
  "screenshot": "screen",
  "navAbout": "About",
  "navSupport": "Support",
  "navPrivacy": "Privacy Policy",
+ "helpBody": "Questions and contact details are on the support page.",
+ "supportPage": "Support page",
  "free": "Free",
  "pro": "Pro",
+ "oneTime": "One-time purchase",
+ "priceNote": "Prices are shown on the App Store.",
  "faqTitle": "Questions",
  "contactTitle": "Contact",
  "contactBody": "Send questions and bug reports by email. Include your device model and iOS version so we can check faster.",
  "effectiveDate": "Effective",
+ "effectiveFrom": "This policy applies from {date}.",
+ "summaryLabel": "Summary",
  "toc": "Contents",
  "notFound": "This page does not exist. Pick a language below to see the apps."
 }
@@ -2083,7 +2153,8 @@ git commit -m "0단계: 한국어 허브와 BrushWorks 샘플 페이지를 만�
 ```
 kvndh.com 사이트의 {app} 콘텐츠를 만든다. 저장소: ~/Desktop/CODING/KVNDH.github.io (브랜치 site-v1).
 반드시 먼저 읽을 것: _design/specs/2026-09-17-kvndh-site-design.md (3절, 3-1절, 5절),
-content/apps/brushworks/ko.json 과 facts.json (형식과 말투의 기준).
+content/apps/brushworks/ko.json 과 facts.json (형식과 말투의 기준), 이 계획의 Task 5b 스키마(v2).
+렌더 결과가 목업 C안(_design/2026-09-17-site-directions.html 의 C)과 같은 모양이어야 한다.
 
 1. 사실 조사 (앱 저장소 ~/Desktop/CODING/{repo} 는 읽기만 한다. 절대 수정하지 않는다)
    - 가격 구조: .storekit, ProStore, Paywall, FreeLimits
@@ -2095,7 +2166,8 @@ content/apps/brushworks/ko.json 과 facts.json (형식과 말투의 기준).
    → content/apps/{app}/facts.json 에 적는다. 모든 항목에 출처 파일을 sources 로 남긴다.
      numbers 에는 소개 문구에 쓸 숫자만 넣는다.
 2. ko.json, en.json 작성 (BrushWorks ko.json 과 같은 키와 구조)
-   - sections 3개, pro 는 유료 기능이 있을 때만(없으면 null)
+   - sections 는 feat 2개 + card 2개(BrushWorks 와 같은 구성). feat 의 visual 은 crop 이나 kit(glyph 없이), card 는 play, chips, 없음.
+     pro 는 유료 기능이 있을 때만(없으면 null). hero.meta 는 명사형 한 줄
    - FAQ 는 기존 지원 페이지에서 옮기되 코드와 대조해 틀린 것은 고친다
    - 개인정보 처리방침은 12개 절, 순서와 제목은 BrushWorks ko.json 과 같게.
      광고 SDK가 있으면 9절(자동 수집 장치)과 4절이나 5절(제3자 제공, 위탁)에 사실대로 적고 "AdMob" 을 이름으로 쓴다

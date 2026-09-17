@@ -45,6 +45,14 @@ class CopyRulesTest(unittest.TestCase):
         site.copy[("demo", "ko")]["sections"][0]["bullets"] = ["붓 세 자루"]
         self.assertEqual(check.check_copy(site), [])
 
+    def test_ko_visual_items_and_meta_must_be_noun_endings(self):
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["sections"][1]["visual"]["items"][0]["desc"] = "색이 섞입니다"
+        self.assertTrue(check.check_copy(site))
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["hero"]["meta"] = "무료로 씁니다."
+        self.assertTrue(check.check_copy(site))
+
     def test_ui_strings_are_checked(self):
         site = Site(make_site())
         site.ui["ko"]["learnMore"] = "놀라운 앱"
@@ -63,6 +71,16 @@ class StructureTest(unittest.TestCase):
     def test_privacy_needs_twelve_sections(self):
         site = Site(make_site())
         site.copy[("demo", "en")]["privacy"]["sections"].pop()
+        self.assertTrue(check.check_structure(site, release=False))
+
+    def test_wrong_layout_visual_pair_fails(self):
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["sections"][0]["layout"] = "card"
+        self.assertTrue(check.check_structure(site, release=False))
+
+    def test_visual_item_count_mismatch_fails(self):
+        site = Site(make_site())
+        site.copy[("demo", "en")]["sections"][3]["visual"]["items"].append("d")
         self.assertTrue(check.check_structure(site, release=False))
 
     def test_missing_ui_key_fails(self):

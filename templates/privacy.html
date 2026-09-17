@@ -1,14 +1,12 @@
-<div class="wrap">
-  $tabs
-  <div class="paper">
-    <div class="paper__inner">
-      <nav class="toc" aria-label="$toc_label"><strong>$toc_label</strong><ol>$toc</ol></nav>
-      <article>
-        <h1>$title</h1>
-        <p class="meta">$meta</p>
-        $intro
-        $body
-      </article>
-    </div>
-  </div>
+<div class="sheet">
+<nav class="toc" aria-label="$toc_label"><p>$toc_label</p><ol>$toc</ol></nav>
+<article class="doc">
+<p class="doc-k"><img src="$icon" alt="" width="30" height="30">$name</p>
+<h1>$title</h1>
+<p class="doc-meta">$effective_label <time datetime="$date">$date</time></p>
+<p class="doc-sum"><strong>$summary_label</strong>$summary</p>
+$intro
+$body
+<p class="doc-end">$end</p>
+</article>
 </div>
