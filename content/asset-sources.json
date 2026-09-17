@@ -33,10 +33,10 @@
   "icon": "Tapey/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
   "shots": {
    "ko": [
-    "Tapey/appstore/ko/03.png"
+    "Tapey/appstore-raw/ko/03.png"
    ],
    "en": [
-    "Tapey/appstore/en/03.png"
+    "Tapey/appstore-raw/en/03.png"
    ]
   }
  },

@@ -92,8 +92,7 @@
    "accent": "#CBD3B6",
    "accentText": "#CBD3B6",
    "glow": "rgba(203,211,182,.24)",
-   "paperAccent": "#525A4A",
-   "shotCrop": "--sw:196px;--sx:-24px;--sy:-76px"
+   "paperAccent": "#525A4A"
   },
   {
    "slug": "dice-master",
