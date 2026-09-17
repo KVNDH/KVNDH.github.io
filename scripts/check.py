@@ -3,6 +3,7 @@
 사용:
   python3 scripts/check.py            # 지금 있는 언어와 앱만 검사
   python3 scripts/check.py --release  # 8개 언어 x 5개 앱이 모두 있어야 통과
+  python3 scripts/check.py --content  # content/ 만 검사 (docs/ 를 보지 않는다. 여러 작업자가 동시에 돌릴 때)
 문제가 하나라도 있으면 종료 코드 1.
 """
 from __future__ import annotations
@@ -327,7 +328,9 @@ def main(argv: list[str] | None = None) -> int:
     site = Site(ROOT)
     out = ROOT / "docs"
     problems = check_copy(site) + check_structure(site, "--release" in argv) + check_facts(site)
-    if out.exists():
+    if "--content" in argv:
+        pass
+    elif out.exists():
         problems += check_output(site, out) + check_fresh(site, out)
     else:
         problems.append("docs/ 없음. 먼저 python3 scripts/build.py")
