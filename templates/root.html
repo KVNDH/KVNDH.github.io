@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kvndh</title>
+<link rel="canonical" href="$base/">
+<script>
+(function () {
+  var have = $langs_json;
+  var wanted = navigator.languages || [navigator.language || "en"];
+  for (var i = 0; i < wanted.length; i++) {
+    var tag = String(wanted[i]).toLowerCase();
+    var code = tag.split("-")[0];
+    if (code === "zh") { code = /hant|tw|hk|mo/.test(tag) ? "zh-hant" : "zh-hans"; }
+    if (code === "pt") { code = "pt-br"; }
+    if (have.indexOf(code) !== -1) { location.replace("/" + code + "/"); return; }
+  }
+  location.replace("/" + (have.indexOf("en") !== -1 ? "en" : have[0]) + "/");
+})();
+</script>
+<style>$css</style>
+</head>
+<body>
+<main class="wrap center">
+  <p class="wordmark">kvndh</p>
+  <ul class="lang-list">$items</ul>
+</main>
+</body>
+</html>
