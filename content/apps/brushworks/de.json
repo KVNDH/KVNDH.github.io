@@ -1,9 +1,9 @@
 {
  "name": "BrushWorks",
  "subtitle": "Aus Sorgfalt, nicht Talent",
- "summary": "Wählen Sie ein Foto und reiben Sie mit dem Finger darüber, bis ein Gemälde daraus wird. Die Farben nimmt die App aus dem Foto, gemalt wird von Hand.",
+ "summary": "Wählen Sie ein Foto, das Ihnen gefällt, und reiben Sie mit dem Finger über den Bildschirm. Sie müssen nicht malen können; das Gemälde füllt sich mit der Zeit, die Sie hineinstecken.",
  "hero": {
-  "hook": "Wählen Sie ein Foto und reiben Sie mit dem Finger darüber, bis ein Gemälde daraus wird. Die Farben nimmt die App aus dem Foto, gemalt wird von Hand.",
+  "hook": "Wählen Sie ein Foto, das Ihnen gefällt, und reiben Sie mit dem Finger über den Bildschirm. Sie müssen nicht malen können; das Gemälde füllt sich mit der Zeit, die Sie hineinstecken.",
   "shotAlt": "Die Leinwand von BrushWorks mit einem Leuchtturmfoto, das in dicken Strichen übermalt ist. Darunter liegen die drei Pinsel und die Größenstufen."
  },
  "sections": [

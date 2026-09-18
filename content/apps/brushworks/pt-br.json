@@ -1,9 +1,9 @@
 {
  "name": "BrushWorks",
  "subtitle": "Obra de esmero, não de talento",
- "summary": "Escolha uma foto e esfregue a tela com o dedo até ela virar pintura. A cor o app tira da foto; pintar é com você.",
+ "summary": "Escolha uma foto de que você gosta e esfregue a tela com o dedo. Não precisa saber desenhar; a pintura se preenche com o tempo que você dedica.",
  "hero": {
-  "hook": "Escolha uma foto e esfregue a tela com o dedo até ela virar pintura. A cor o app tira da foto; pintar é com você.",
+  "hook": "Escolha uma foto de que você gosta e esfregue a tela com o dedo. Não precisa saber desenhar; a pintura se preenche com o tempo que você dedica.",
   "shotAlt": "A tela de pintura do BrushWorks com a foto de um farol coberta por pinceladas espessas. Abaixo estão os três pincéis e os níveis de tamanho."
  },
  "sections": [

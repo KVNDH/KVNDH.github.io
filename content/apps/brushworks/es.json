@@ -1,9 +1,9 @@
 {
  "name": "BrushWorks",
  "subtitle": "Obra de esmero, no de talento",
- "summary": "Elige una foto y frótala con el dedo hasta convertirla en un cuadro. El color lo saca la app de la foto; pintar lo haces tú.",
+ "summary": "Elige una foto que te guste y frota la pantalla con el dedo. No hace falta saber dibujar; el cuadro se llena con el tiempo que le dediques.",
  "hero": {
-  "hook": "Elige una foto y frótala con el dedo hasta convertirla en un cuadro. El color lo saca la app de la foto; pintar lo haces tú.",
+  "hook": "Elige una foto que te guste y frota la pantalla con el dedo. No hace falta saber dibujar; el cuadro se llena con el tiempo que le dediques.",
   "shotAlt": "El lienzo de BrushWorks con la foto de un faro pintada por encima con trazos espesos. Debajo están los tres pinceles y los pasos de tamaño."
  },
  "sections": [
