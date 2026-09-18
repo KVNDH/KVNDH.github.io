@@ -27,6 +27,7 @@
 <style>:root{--bg:#0A0A0B;--s1:#141416;--s2:#1B1B1E;--s3:#26262A;--ln:rgba(255,255,255,.08);--ln2:rgba(255,255,255,.16);--tx:#F4F3EF;--t2:#A3A29D;--t3:#8F8E8A;--acc:#F4F3EF;--ink:#F4F3EF;--glow:rgba(255,255,255,.07);--paper:#F5F3EE;--p-tx:#1D1C1A;--p-t2:#5E5C57;--p-ln:#DEDAD1;--p-acc:#5E5C57;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
 html{-webkit-text-size-adjust:100%;background:var(--bg)}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Hiragino Sans","PingFang SC","PingFang TC","Malgun Gothic","Noto Sans KR","Noto Sans",system-ui,sans-serif;font-size:16px;line-height:1.6;color:var(--tx);background:var(--bg);word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased}
+html[lang="ja"] body,html[lang^="zh"] body{word-break:normal}
 .page{max-width:1200px;margin:0 auto;overflow-x:clip}
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-999px;top:0;z-index:10}
@@ -122,7 +123,7 @@ to{opacity:1;transform:scale(1.04)}
 .dev{position:relative;width:344px;margin:0 auto;padding:11px;border-radius:60px;background:#050506;box-shadow:0 0 0 1.5px #3E3E44,0 0 0 7px #121214,0 0 0 8px #2A2A2F,0 70px 120px -40px rgba(0,0,0,.95),0 0 180px -10px var(--glow)}
 .dev img{width:100%;height:auto;border-radius:49px}
 .dev::before{content:"";position:absolute;z-index:1;left:50%;top:22px;width:98px;height:29px;margin-left:-49px;border-radius:16px;background:#000}
-.feat{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:104px 56px;border-top:1px solid var(--ln)}
+.feat{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center;padding:104px 56px;border-top:1px solid var(--ln)}
 .feat-rev .feat-vis{order:2}
 .kick{font:600 13px var(--mono);letter-spacing:.08em;color:var(--ink)}
 .feat h2,.card h2{margin-top:14px;font-size:46px;line-height:1.15;font-weight:800;letter-spacing:-.04em}
@@ -154,7 +155,7 @@ to{opacity:1;transform:scale(1.04)}
 .ticks .on{background:var(--ink)}
 .lv{gap:6px}
 .lv i{width:26px;height:26px;border-radius:8px;background:var(--acc);opacity:calc(var(--i)*.2)}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:0 56px 104px}
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:0 56px 104px}
 .card{display:flex;flex-direction:column;padding:44px;border-radius:34px;border:1px solid var(--ln);background:radial-gradient(80% 70% at 0% 100%,var(--glow),transparent 65%),var(--s1)}
 .card h2{font-size:34px}
 .card .body{font-size:17px}
@@ -168,7 +169,7 @@ to{opacity:1;transform:scale(1.04)}
 .pro-h{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px}
 .pro h2{margin-top:14px;font-size:42px;line-height:1.2;font-weight:800;letter-spacing:-.04em}
 .badge{padding:9px 18px;border:1px solid var(--acc);border-radius:999px;font-size:14px;font-weight:650;color:var(--ink);white-space:nowrap}
-.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.plans{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;margin-top:40px}
 .plan{padding:32px;border-radius:26px;border:1px solid var(--ln);background:var(--bg)}
 .plan-pro{border-color:var(--acc);box-shadow:0 0 70px -24px var(--glow)}
 .plan h3{display:flex;align-items:baseline;justify-content:space-between;gap:12px;font-size:24px;letter-spacing:-.02em}
@@ -177,11 +178,12 @@ to{opacity:1;transform:scale(1.04)}
 .chk li{position:relative;padding-left:28px;font-size:15.5px;line-height:1.5}
 .chk li::before{content:"";position:absolute;left:4px;top:3px;width:6px;height:11px;border-right:2px solid var(--t2);border-bottom:2px solid var(--t2);transform:rotate(45deg)}
 .plan-pro .chk li::before{border-color:var(--ink)}
-.chk-pro{margin-top:40px;grid-template-columns:1fr 1fr;gap:18px 48px}
+.chk-pro{margin-top:40px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 48px}
 .chk-pro li{font-size:17px}
 .chk-pro li::before{border-color:var(--ink)}
 .pro-note{margin-top:20px;font-size:14px;color:var(--t2)}
 .help{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;margin:0 56px 88px;padding:30px 36px;border-radius:26px;border:1px solid var(--ln)}
+.help>div{min-width:0}
 .help h2{font-size:22px;letter-spacing:-.02em}
 .help p{margin-top:4px;color:var(--t2)}
 .help div:last-child{display:flex;flex-wrap:wrap;gap:10px}
@@ -217,7 +219,7 @@ to{opacity:1;transform:scale(1.04)}
 .bento{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:12px;padding:20px 20px 56px}
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
-.t-feature{grid-column:1/-1;height:540px}
+.t-feature{grid-column:1/-1;height:596px}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -231,8 +233,8 @@ to{opacity:1;transform:scale(1.04)}
 .tile:not(.t-feature) .tile-act{position:absolute;top:22px;right:12px;margin:0}
 .tile:not(.t-feature) .more{display:none}
 .as{padding:4px 10px;font-size:12px}
-.shot{left:18px;right:auto;top:150px;border-radius:22px}
-.t-feature .shot{left:50%;top:318px;width:210px;height:500px;margin-left:-105px;border-radius:34px}
+.shot{left:18px;right:auto;top:168px;border-radius:22px}
+.t-feature .shot{left:50%;top:372px;width:210px;height:500px;margin-left:-105px;border-radius:34px}
 .sf{grid-template-columns:1fr 1fr;gap:28px;padding:40px 20px 32px}
 .sf .sf-l{grid-column:1/-1}
 .sf-c{padding:28px 20px 40px;gap:10px 20px}
@@ -273,12 +275,12 @@ to{opacity:1;transform:scale(1.04)}
 .kit-b small{margin-top:0}
 .kit-r{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin-top:8px}
 .ticks{gap:6px}
-.duo{grid-template-columns:1fr;gap:12px;padding:0 20px 56px}
+.duo{grid-template-columns:minmax(0,1fr);gap:12px;padding:0 20px 56px}
 .card{padding:28px 22px;border-radius:26px}
 .pro{margin:0 12px 40px;padding:32px 20px;border-radius:28px}
 .pro h2{font-size:29px}
-.plans{grid-template-columns:1fr;margin-top:28px;gap:12px}
-.chk-pro{margin-top:28px;grid-template-columns:1fr;gap:14px}
+.plans{grid-template-columns:minmax(0,1fr);margin-top:28px;gap:12px}
+.chk-pro{margin-top:28px;grid-template-columns:minmax(0,1fr);gap:14px}
 .chk-pro li{font-size:15.5px}
 .plan{padding:24px 20px;border-radius:20px}
 .help{flex-direction:column;align-items:flex-start;margin:0 12px 48px;padding:24px 20px}
