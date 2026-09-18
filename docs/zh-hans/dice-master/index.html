@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/dice-master/shots/zh-hans/01.webp" alt="Dice Master 用 3D 投掷 5 颗 6 面骰子之后的画面，骰子上方为总和与参与计算的点数。"></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-100px"><img src="/assets/dice-master/shots/zh-hans/01.webp" alt="总和数字和下方算式的放大图，上方为面数、骰子数、进行方式和计算公式的标签。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">01</p><h2>掷完，计算也随之完成</h2><p class="body">骰子停下后，结果以大字显示，下方依次排列参与计算的点数。计算公式可依游戏选择求和、求积、最大值或最小值。为骰子分别上色后，还会一并给出按颜色划分的小计。</p><ul class="pts"><li>求和、求积、最大值等 6 种计算公式</li><li>按骰子颜色分的小计</li><li>3D 骰子和 2D 视图切换</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-10px"><img src="/assets/dice-master/shots/zh-hans/01.webp" alt="总和数字和下方算式的放大图，上方为面数、骰子数、进行方式和计算公式的标签。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">01</p><h2>掷完，计算也随之完成</h2><p class="body">骰子停下后，结果以大字显示，下方依次排列参与计算的点数。计算公式可依游戏选择求和、求积、最大值或最小值。为骰子分别上色后，还会一并给出按颜色划分的小计。</p><ul class="pts"><li>求和、求积、最大值等 6 种计算公式</li><li>按骰子颜色分的小计</li><li>3D 骰子和 2D 视图切换</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="进行方式全部同时和逐个投掷，投掷次数限制 2 到 20 次，总和限制 1 到 999"><ul class="kit-b kit-b--plain"><li class="on"><b>全部同时</b><small>全部投完后选择要锁定的骰子</small></li><li><b>逐个投掷</b><small>每投一次便随之增加的累计和</small></li><li><b>总和限制</b><small>超过上限即为爆牌</small></li></ul><div class="kit-r"><p>投掷次数限制<b>2 到 20 次</b></p></div><div class="kit-r"><p>总和限制<b>1 到 999</b></p></div></div><div><p class="kick">02</p><h2>规则依游戏而定</h2><p class="body">面数、骰子数和进行方式均按游戏规则设定。在全部同时中，轻点骰子即可将其锁定，其余骰子重新投掷。在逐个投掷中，每投一次累计和便随之增加，超过总和限制则本轮以爆牌结束。设定好的配置可存入我的预设，日后随时调用。</p><ul class="pts"><li>全部同时和逐个投掷两种进行方式</li><li>骰子锁定和投掷次数限制</li><li>总和限制与爆牌</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>各种游戏的快速预设</h2><p class="body">桌游、派对、赌场和桌上角色扮演所用的骰子配置均已内置。花旗骰、骰宝、Farkle 等游戏每投一次即给出一次判定。</p><ul class="pts"><li>17 种快速预设</li><li>10 种游戏的结果判定</li><li>游戏搜索和隐藏</li></ul></div><div class="card"><p class="kick">04</p><h2>沿用上次的配置继续投掷</h2><p class="body">打开 App，上次的骰子配置依然保留。不需要账户，没有网络也能投掷。</p><ul class="chips"><li>没有账户</li><li>没有广告</li><li>离线可用</li></ul></div></section>
 <section class="pro">

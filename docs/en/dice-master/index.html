@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/dice-master/shots/en/01.webp" alt="Dice Master after rolling five 6-sided dice in 3D. The total and the values behind it sit above the dice."></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-100px"><img src="/assets/dice-master/shots/en/01.webp" alt="Close-up of the total with the values beneath it. Chips for faces, dice count, roll mode and formula run across the top." loading="lazy"><figcaption>App screen, zoomed in</figcaption></figure><div><p class="kick">01</p><h2>Roll, and the math is done</h2><p class="body">When the dice stop, the result appears in large type with each value lined up beneath it. Choose the formula the game calls for, such as Sum, Product, Highest or Lowest. Give the dice different colors and each color gets its own subtotal.</p><ul class="pts"><li>6 formulas, including Sum, Product and Highest</li><li>Subtotals by dice color</li><li>Switch between 3D dice and a 2D view</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-10px"><img src="/assets/dice-master/shots/en/01.webp" alt="Close-up of the total with the values beneath it. Chips for faces, dice count, roll mode and formula run across the top." loading="lazy"><figcaption>App screen, zoomed in</figcaption></figure><div><p class="kick">01</p><h2>Roll, and the math is done</h2><p class="body">When the dice stop, the result appears in large type with each value lined up beneath it. Choose the formula the game calls for, such as Sum, Product, Highest or Lowest. Give the dice different colors and each color gets its own subtotal.</p><ul class="pts"><li>6 formulas, including Sum, Product and Highest</li><li>Subtotals by dice color</li><li>Switch between 3D dice and a 2D view</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="Roll modes All at Once and One by One, Roll Limit from 2 to 20 rolls, Sum Limit from 1 to 999"><ul class="kit-b kit-b--plain"><li class="on"><b>All at Once</b><small>Roll them all, then lock the ones you keep</small></li><li><b>One by One</b><small>Each roll adds to a running total</small></li><li><b>Sum Limit</b><small>Go over it and the round is a bust</small></li></ul><div class="kit-r"><p>Roll Limit<b>2 to 20 rolls</b></p></div><div class="kit-r"><p>Sum Limit<b>1 to 999</b></p></div></div><div><p class="kick">02</p><h2>Rules that fit the game</h2><p class="body">Set the faces, dice count and roll mode to match the rules on the box. In All at Once, tap a die to lock it and reroll the rest. In One by One, every roll adds to a running total, and going over the Sum Limit ends the round in a bust. Save the setup to My Presets and bring it back later.</p><ul class="pts"><li>All at Once and One by One roll modes</li><li>Dice locking and a roll limit</li><li>Sum Limit with bust</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>Quick Presets for many games</h2><p class="body">Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll.</p><ul class="pts"><li>17 Quick Presets</li><li>Roll verdicts for 10 games</li><li>Game search and hiding</li></ul></div><div class="card"><p class="kick">04</p><h2>Picks up where you left off</h2><p class="body">The app opens with last time&#x27;s dice setup. No account, and rolling works offline.</p><ul class="chips"><li>No account</li><li>No ads</li><li>Works offline</li></ul></div></section>
 <section class="pro">

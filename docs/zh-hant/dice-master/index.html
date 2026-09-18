@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/dice-master/shots/zh-hant/01.webp" alt="Dice Master 用 3D 擲出 5 顆 6 面骰子之後的畫面，骰子上方為合計與參與計算的點數。"></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-100px"><img src="/assets/dice-master/shots/zh-hant/01.webp" alt="合計數字和下方算式的放大圖，上方為面數、骰子數量、進行方式和計算式的標籤。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>擲完，計算也隨之完成</h2><p class="body">骰子停下後，結果以大字顯示，下方依序排列參與計算的點數。計算式可依遊戲選擇加總、乘積、最大值或最小值。為骰子分別上色後，還會一併給出依顏色劃分的小計。</p><ul class="pts"><li>加總、乘積、最大值等 6 種計算式</li><li>依骰子顏色分的小計</li><li>3D 骰子和 2D 檢視切換</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-10px"><img src="/assets/dice-master/shots/zh-hant/01.webp" alt="合計數字和下方算式的放大圖，上方為面數、骰子數量、進行方式和計算式的標籤。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>擲完，計算也隨之完成</h2><p class="body">骰子停下後，結果以大字顯示，下方依序排列參與計算的點數。計算式可依遊戲選擇加總、乘積、最大值或最小值。為骰子分別上色後，還會一併給出依顏色劃分的小計。</p><ul class="pts"><li>加總、乘積、最大值等 6 種計算式</li><li>依骰子顏色分的小計</li><li>3D 骰子和 2D 檢視切換</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="進行方式一次全部和逐一擲骰，擲骰限制 2 到 20 次，合計限制 1 到 999"><ul class="kit-b kit-b--plain"><li class="on"><b>一次全部</b><small>全部擲完後選擇要鎖定的骰子</small></li><li><b>逐一擲骰</b><small>每擲一次便隨之增加的累計加總</small></li><li><b>合計限制</b><small>超過上限即為爆牌</small></li></ul><div class="kit-r"><p>擲骰限制<b>2 到 20 次</b></p></div><div class="kit-r"><p>合計限制<b>1 到 999</b></p></div></div><div><p class="kick">02</p><h2>規則依遊戲而定</h2><p class="body">面數、骰子數量和進行方式均按遊戲規則設定。在一次全部中，輕點骰子即可將其鎖定，其餘骰子重新擲出。在逐一擲骰中，每擲一次累計加總便隨之增加，超過合計限制則本輪以爆牌結束。設定好的配置可存入我的預設，日後隨時調用。</p><ul class="pts"><li>一次全部和逐一擲骰兩種進行方式</li><li>骰子鎖定和擲骰限制</li><li>合計限制與爆牌</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>各種遊戲的快速預設</h2><p class="body">桌遊、派對、賭場和桌上角色扮演所用的骰子設定均已內建。花旗骰、骰寶、Farkle 等遊戲每擲一次即給出一次判定。</p><ul class="pts"><li>17 種快速預設</li><li>10 種遊戲的結果判定</li><li>遊戲搜尋和隱藏</li></ul></div><div class="card"><p class="kick">04</p><h2>沿用上次的設定繼續擲骰</h2><p class="body">打開 App，上次的骰子設定依然保留。不需要帳號，沒有網路也能擲骰。</p><ul class="chips"><li>沒有帳號</li><li>沒有廣告</li><li>離線可用</li></ul></div></section>
 <section class="pro">

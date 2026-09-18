@@ -22,7 +22,9 @@
     "type": "crop",
     "shot": 1,
     "alt": "Die Timeline aus der Nähe. Jede Zeile zeigt Jahr, Monat und Tag, Alter, Titel und Notiz, hervorgehobene Einträge stehen in Rot.",
-    "caption": "App-Ansicht, vergrößert"
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-245px",
+    "focusX": "28px"
    }
   },
   {

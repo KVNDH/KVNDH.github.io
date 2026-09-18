@@ -72,6 +72,16 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('<div class="play" aria-hidden="true">', html)
         self.assertIn('<ul class="chips"><li>c</li></ul>', html)
 
+    def test_crop_offsets_render_as_css_vars(self):
+        crop = self.site.copy[("demo", "ko")]["sections"][0]["visual"]
+        self.assertNotIn("style=", render.render_app(self.site, "ko", "demo").split("feat-vis crop")[1][:40])
+        crop["focus"] = "-10px"
+        self.assertIn('<figure class="feat-vis crop" style="--cy:-10px">', render.render_app(self.site, "ko", "demo"))
+        crop["focusX"] = "26px"
+        self.assertIn('style="--cy:-10px;--cx:26px"', render.render_app(self.site, "ko", "demo"))
+        del crop["focus"]
+        self.assertIn('style="--cx:26px"', render.render_app(self.site, "ko", "demo"))
+
     def test_glyph_svg_is_inlined_when_present(self):
         folder = self.site.root / "assets" / "demo" / "glyphs"
         folder.mkdir(parents=True)

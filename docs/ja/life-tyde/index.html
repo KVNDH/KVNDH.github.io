@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/life-tyde/shots/ja/01.webp" alt="Life Tyde のタイムライン画面。年ごとの記録が縦に続き、ハイライトした記録は赤い点と赤いタイトルで並んでいます。"></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop"><img src="/assets/life-tyde/shots/ja/01.webp" alt="タイムラインの拡大。年の横に月と日、年齢、タイトル、メモが並び、ハイライトした記録は赤く表示されます。" loading="lazy"><figcaption>アプリ画面の拡大</figcaption></figure><div><p class="kick">01</p><h2>大きな出来事だけを残します</h2><p class="body">人生の出来事を年の順に一本の線へ並べます。年とタイトルさえあれば記録になり、月と日、メモは思い出したときに足します。大事だった瞬間をハイライトすると、赤い点と赤いタイトルで残ります。</p><ul class="pts"><li>満年齢、数え年、経過年数の表示</li><li>出来事マーケットの時代パック</li><li>今後の予定のリマインドと繰り返し</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-245px;--cx:28px"><img src="/assets/life-tyde/shots/ja/01.webp" alt="タイムラインの拡大。年の横に月と日、年齢、タイトル、メモが並び、ハイライトした記録は赤く表示されます。" loading="lazy"><figcaption>アプリ画面の拡大</figcaption></figure><div><p class="kick">01</p><h2>大きな出来事だけを残します</h2><p class="body">人生の出来事を年の順に一本の線へ並べます。年とタイトルさえあれば記録になり、月と日、メモは思い出したときに足します。大事だった瞬間をハイライトすると、赤い点と赤いタイトルで残ります。</p><ul class="pts"><li>満年齢、数え年、経過年数の表示</li><li>出来事マーケットの時代パック</li><li>今後の予定のリマインドと繰り返し</li></ul></div></section>
 <section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-170px"><img src="/assets/life-tyde/shots/ja/02.webp" alt="#仕事 のタグ年代記。そのタグが付いた記録だけが、最初のアルバイトからチームを率いた年まで縦に続きます。" loading="lazy"><figcaption>タグ年代記</figcaption></figure><div><p class="kick">02</p><h2>ハッシュタグひとつに、年代記ひとつ</h2><p class="body">記録に #学校 や #仕事 のようなハッシュタグを付けます。タグのフィルタでタグをひとつ選ぶとタグ年代記が開き、そのタグの記録が最初から最近まで一本に続きます。いちばん上に件数と期間が出ます。</p><ul class="pts"><li>タグのフィルタとハイライトのみの表示</li><li>すでに使ったタグの提案</li><li>Apple Intelligence による年代記の要約</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>通ってきた記録を見返します</h2><p class="body">振り返りは記録を古いものから一枚ずつめくります。人生マップはすべての記録を年と月の格子に点で広げ、並べて表示は二つのタイムラインを同じ年齢か同じ年に合わせます。</p><div class="play" aria-hidden="true"><b></b><i></i><span>振り返り</span></div><ul class="pts"><li>次の記録への自動送り</li><li>過去のこの日のカードとウィジェット</li><li>近くの端末との年代記の交換</li></ul></div><div class="card"><p class="kick">04</p><h2>開いてすぐ書けます</h2><p class="body">アカウントを作る必要はありません。記録はアプリに保存され、iCloud同期を入にしておくと、同じアカウントの iPhone と iPad で続きを開けます。</p><ul class="chips"><li>アカウントなし</li><li>広告なし</li><li>iCloud同期</li><li>CSV バックアップ</li></ul></div></section>
 <section class="pro">

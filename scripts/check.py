@@ -62,7 +62,7 @@ LAYOUTS = {"feat": ("crop", "kit"), "card": ("play", "chips", None)}
 REQUIRED_FILES = ("CNAME", "app-ads.txt", ".nojekyll", "404.html", "index.html", "robots.txt", "sitemap.xml")
 
 
-NON_TEXT_KEYS = {"layout", "type", "glyph", "meter", "focus", "effectiveDate", "shot"}
+NON_TEXT_KEYS = {"layout", "type", "glyph", "meter", "focus", "focusX", "effectiveDate", "shot"}
 
 
 def strings(obj, path: str = ""):

@@ -22,7 +22,9 @@
     "type": "crop",
     "shot": 1,
     "alt": "Primer plano de la línea de tiempo. Cada fila muestra el año, el mes y el día, la edad, un título y una nota, y las entradas destacadas van en rojo.",
-    "caption": "Pantalla de la app, ampliada"
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-245px",
+    "focusX": "28px"
    }
   },
   {

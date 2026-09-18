@@ -18,7 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from sitelib import ROOT, load_json  # noqa: E402
 
-SKIP_KEYS = {"layout", "type", "glyph", "meter", "focus", "effectiveDate", "shot"}
+SKIP_KEYS = {"layout", "type", "glyph", "meter", "focus", "focusX", "effectiveDate", "shot"}
 LINE = re.compile(r"^\[([^\]]+)\] ?(.*)$")
 SECTION_LABELS = {
     "name": "기본", "hero": "첫 화면", "sections": "기능", "pro": "Pro",

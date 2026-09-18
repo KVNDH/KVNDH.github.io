@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/life-tyde/shots/pt-br/01.webp" alt="A linha do tempo do Life Tyde. Os registros descem pela tela por ano, e os destacados trazem um ponto vermelho e um título vermelho."></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop"><img src="/assets/life-tyde/shots/pt-br/01.webp" alt="A linha do tempo vista de perto. Cada linha traz o ano, o mês e o dia, a idade, um título e uma nota, e os registros destacados aparecem em vermelho." loading="lazy"><figcaption>Tela do app, ampliada</figcaption></figure><div><p class="kick">01</p><h2>Só os momentos que pesaram</h2><p class="body">Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho.</p><ul class="pts"><li>Idade ou anos decorridos ao lado de cada registro</li><li>Pacotes de época do Mercado de eventos</li><li>Lembretes e repetição para o que ainda vem</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-245px;--cx:28px"><img src="/assets/life-tyde/shots/pt-br/01.webp" alt="A linha do tempo vista de perto. Cada linha traz o ano, o mês e o dia, a idade, um título e uma nota, e os registros destacados aparecem em vermelho." loading="lazy"><figcaption>Tela do app, ampliada</figcaption></figure><div><p class="kick">01</p><h2>Só os momentos que pesaram</h2><p class="body">Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho.</p><ul class="pts"><li>Idade ou anos decorridos ao lado de cada registro</li><li>Pacotes de época do Mercado de eventos</li><li>Lembretes e repetição para o que ainda vem</li></ul></div></section>
 <section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-170px"><img src="/assets/life-tyde/shots/pt-br/02.webp" alt="Crônica da tag #Trabalho. Só os registros com essa tag descem numa linha, do primeiro emprego à abertura de uma consultoria." loading="lazy"><figcaption>Crônica da tag</figcaption></figure><div><p class="kick">02</p><h2>Uma hashtag, uma crônica</h2><p class="body">Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem.</p><ul class="pts"><li>Filtro de tags e visão só dos destaques</li><li>Sugestões a partir das tags que você já usa</li><li>Resumo da crônica com Apple Intelligence</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>Voltar pelos anos</h2><p class="body">O Rever passa seus registros um a um, começando pelos mais antigos. O Mapa da vida espalha cada registro numa grade de anos e meses, e o Lado a lado alinha duas linhas do tempo por idade ou por ano.</p><div class="play" aria-hidden="true"><b></b><i></i><span>Rever</span></div><ul class="pts"><li>Avanço automático para o registro seguinte</li><li>Cartão e widget Neste dia</li><li>Troca de crônicas com um aparelho por perto</li></ul></div><div class="card"><p class="kick">04</p><h2>Abra e escreva</h2><p class="body">Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta.</p><ul class="chips"><li>Sem conta</li><li>Sem anúncios</li><li>Sincronização com iCloud</li><li>Backup em CSV</li></ul></div></section>
 <section class="pro">

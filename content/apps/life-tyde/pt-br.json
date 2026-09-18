@@ -22,7 +22,9 @@
     "type": "crop",
     "shot": 1,
     "alt": "A linha do tempo vista de perto. Cada linha traz o ano, o mês e o dia, a idade, um título e uma nota, e os registros destacados aparecem em vermelho.",
-    "caption": "Tela do app, ampliada"
+    "caption": "Tela do app, ampliada",
+    "focus": "-245px",
+    "focusX": "28px"
    }
   },
   {

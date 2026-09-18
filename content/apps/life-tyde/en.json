@@ -22,7 +22,9 @@
     "type": "crop",
     "shot": 1,
     "alt": "Close-up of the timeline. Each row shows the year, the month and day, the age, a title, and a note, and highlighted entries are red.",
-    "caption": "App screen, close-up"
+    "caption": "App screen, close-up",
+    "focus": "-245px",
+    "focusX": "28px"
    }
   },
   {

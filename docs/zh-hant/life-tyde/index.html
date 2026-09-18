@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/life-tyde/shots/zh-hant/01.webp" alt="Life Tyde 的時間軸畫面，記錄按年份直著排下來，標記過的那些帶紅點和紅色標題。"></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop"><img src="/assets/life-tyde/shots/zh-hant/01.webp" alt="時間軸放大後的樣子，每一行依序是年份、月和日、年齡、標題和備註，標記過的記錄是紅色。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>只留下要緊的時刻</h2><p class="body">人生裡的事情按年份排在一條線上。有年份和標題就成了一筆記錄，月、日和備註等想起來再補。挑出重要的時刻加上標記，它們會留著紅點和紅色標題。</p><ul class="pts"><li>每筆記錄旁的年齡或經過年數</li><li>事件市集裡的年代事件合集</li><li>未來日程的提醒和重複</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-245px;--cx:28px"><img src="/assets/life-tyde/shots/zh-hant/01.webp" alt="時間軸放大後的樣子，每一行依序是年份、月和日、年齡、標題和備註，標記過的記錄是紅色。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>只留下要緊的時刻</h2><p class="body">人生裡的事情按年份排在一條線上。有年份和標題就成了一筆記錄，月、日和備註等想起來再補。挑出重要的時刻加上標記，它們會留著紅點和紅色標題。</p><ul class="pts"><li>每筆記錄旁的年齡或經過年數</li><li>事件市集裡的年代事件合集</li><li>未來日程的提醒和重複</li></ul></div></section>
 <section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-170px"><img src="/assets/life-tyde/shots/zh-hant/02.webp" alt="#工作 的標籤編年史，只有帶這個標籤的記錄，從第一份兼職排到當上組長那年。" loading="lazy"><figcaption>標籤編年史</figcaption></figure><div><p class="kick">02</p><h2>一個主題標籤，一部編年史</h2><p class="body">給記錄加上 #學校、#工作這樣的主題標籤。在標籤篩選裡只選一個標籤，標籤編年史就打開了，只有帶這個標籤的記錄從最早排到最近。最上面寫著記錄筆數和跨過的年數。</p><ul class="pts"><li>標籤篩選和僅標記的檢視</li><li>根據既有標籤給出的建議</li><li>Apple Intelligence 編年史總結</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>把走過的日子再看一遍</h2><p class="body">回顧從最早的記錄開始，一筆一筆往下翻。人生地圖把所有記錄攤在年和月的格子上，並排對照把兩條時間軸按同樣的年齡或同一年對齊。</p><div class="play" aria-hidden="true"><b></b><i></i><span>回顧</span></div><ul class="pts"><li>自動翻到下一筆記錄</li><li>那年今日卡片和小工具</li><li>與附近裝置交換編年史</li></ul></div><div class="card"><p class="kick">04</p><h2>打開就能寫</h2><p class="body">不用建帳號。記錄存在 App 裡，打開 iCloud 同步，同一個帳號的 iPhone 和 iPad 就都接得上。</p><ul class="chips"><li>沒有帳號</li><li>沒有廣告</li><li>iCloud 同步</li><li>CSV 備份</li></ul></div></section>
 <section class="pro">

@@ -218,7 +218,12 @@ def glyph(site: Site, slug: str, name: str) -> str:
 def render_visual(site: Site, lang: str, slug: str, visual: dict) -> str:
     kind = visual["type"]
     if kind == "crop":
-        focus = f' style="--cy:{esc(visual["focus"])}"' if visual.get("focus") else ""
+        offsets = []
+        if visual.get("focus"):
+            offsets.append(f'--cy:{esc(visual["focus"])}')
+        if visual.get("focusX"):
+            offsets.append(f'--cx:{esc(visual["focusX"])}')
+        focus = f' style="{";".join(offsets)}"' if offsets else ""
         return (
             f'<figure class="feat-vis crop"{focus}><img src="{shot_path(site, slug, lang, visual.get("shot", 1))}" '
             f'alt="{esc(visual["alt"])}" loading="lazy"><figcaption>{esc(visual["caption"])}</figcaption></figure>'

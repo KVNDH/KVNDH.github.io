@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/dice-master/shots/ja/01.webp" alt="Dice Master で6面のサイコロを5個、3D で振った画面。サイコロの上に合計と計算の中身が出ています。"></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-100px"><img src="/assets/dice-master/shots/ja/01.webp" alt="合計の数字と、その下の計算の中身の拡大。上には面数、ダイス数、進め方、計算式のチップが並んでいます。" loading="lazy"><figcaption>アプリ画面の拡大</figcaption></figure><div><p class="kick">01</p><h2>振れば計算が終わります</h2><p class="body">サイコロが止まると結果が大きく出て、その下に計算に使った目が順に並びます。計算式は合計、積、最大値、最小値からゲームに合うものを選びます。サイコロにカラーを分けて塗ると、カラー別の小計も一緒に出ます。</p><ul class="pts"><li>合計、積、最大値など計算式6種類</li><li>カラー別の小計の表示</li><li>3D のサイコロと 2D 表示の切り替え</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-10px"><img src="/assets/dice-master/shots/ja/01.webp" alt="合計の数字と、その下の計算の中身の拡大。上には面数、ダイス数、進め方、計算式のチップが並んでいます。" loading="lazy"><figcaption>アプリ画面の拡大</figcaption></figure><div><p class="kick">01</p><h2>振れば計算が終わります</h2><p class="body">サイコロが止まると結果が大きく出て、その下に計算に使った目が順に並びます。計算式は合計、積、最大値、最小値からゲームに合うものを選びます。サイコロにカラーを分けて塗ると、カラー別の小計も一緒に出ます。</p><ul class="pts"><li>合計、積、最大値など計算式6種類</li><li>カラー別の小計の表示</li><li>3D のサイコロと 2D 表示の切り替え</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="進め方の一括と順番に、ロール回数制限2〜20回、合計制限1〜999"><ul class="kit-b kit-b--plain"><li class="on"><b>一括</b><small>まとめて振ってから選んでロック</small></li><li><b>順番に</b><small>振るたびに積み上がる累計</small></li><li><b>合計制限</b><small>上限を超えるとバースト</small></li></ul><div class="kit-r"><p>ロール回数制限<b>2〜20回</b></p></div><div class="kit-r"><p>合計制限<b>1〜999</b></p></div></div><div><p class="kick">02</p><h2>ルールはゲームに合わせます</h2><p class="body">面数とダイス数、進め方をゲームの決まりどおりに設定します。一括では、サイコロをタップしてロックし、残りだけを振り直します。順番にでは、振るたびに累計が積み上がり、合計制限を超えるとバーストで終わります。決めた設定はマイプリセットに保存して呼び出します。</p><ul class="pts"><li>一括と順番にの二つの進め方</li><li>サイコロのロックとロール回数制限</li><li>合計制限とバースト</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>ゲームごとのクイックプリセットが入っています</h2><p class="body">ボードゲーム、パーティー、カジノ、TRPG で使うサイコロの組み合わせが入っています。クラップス、シックボー、ファークルのようなゲームは、振るたびに結果を判定します。</p><ul class="pts"><li>クイックプリセット17種類</li><li>10のゲームの判定</li><li>ゲーム検索と非表示</li></ul></div><div class="card"><p class="kick">04</p><h2>前の設定のまま続けて振れます</h2><p class="body">アプリを開くと、前回のサイコロの設定がそのまま残っています。アカウントなしで使え、インターネットが切れていても振れます。</p><ul class="chips"><li>アカウントなし</li><li>広告なし</li><li>オフラインで利用</li></ul></div></section>
 <section class="pro">

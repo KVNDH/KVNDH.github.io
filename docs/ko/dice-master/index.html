@@ -132,7 +132,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts li{position:relative;padding:14px 0 14px 28px;border-bottom:1px solid var(--ln);font-size:16px}
 .pts li::before{content:"";position:absolute;left:3px;top:23px;width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 12px 1px var(--glow)}
 .crop{position:relative;height:480px;overflow:hidden;border-radius:34px;border:1px solid var(--ln2);background:#000;box-shadow:0 0 140px -30px var(--glow)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:-280px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px))}
 .crop figcaption{position:absolute;left:18px;bottom:18px;padding:6px 12px;border-radius:999px;background:rgba(10,10,11,.8);font-size:12.5px;color:#DDDCD7}
 .kit{padding:28px;border-radius:34px;border:1px solid var(--ln);background:var(--s1);box-shadow:0 0 140px -30px var(--glow)}
 .kit-b{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -262,7 +262,7 @@ to{opacity:1;transform:scale(1.04)}
 .pts{margin-top:22px}
 .pts li{font-size:15px}
 .crop{height:320px;border-radius:26px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:-210px}
+.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
 .kit{padding:14px;border-radius:26px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -348,7 +348,7 @@ to{opacity:1;transform:scale(1.04)}
 </div>
 <figure class="dev"><img src="/assets/dice-master/shots/ko/01.webp" alt="Dice Master에서 6면 주사위 5개를 3D로 굴린 화면. 주사위 위에 합계와 계산 과정이 있습니다."></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-100px"><img src="/assets/dice-master/shots/ko/01.webp" alt="합계 숫자와 그 아래 계산 과정을 확대한 모습. 위에는 면체, 주사위 수, 진행 방식, 계산식 칩이 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>굴리면 계산이 끝납니다</h2><p class="body">주사위가 멈추면 결과가 크게 뜨고, 그 아래에 계산에 쓰인 눈이 차례로 놓입니다. 계산식은 합과 곱, 최댓값, 최솟값 가운데 게임에 맞는 것을 고릅니다. 주사위에 색을 나눠 칠하면 색상별 부분합도 함께 나옵니다.</p><ul class="pts"><li>합, 곱, 최댓값 등 6가지 계산식</li><li>색상별 부분합 표시</li><li>3D 주사위와 2D 보기 전환</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-10px"><img src="/assets/dice-master/shots/ko/01.webp" alt="합계 숫자와 그 아래 계산 과정을 확대한 모습. 위에는 면체, 주사위 수, 진행 방식, 계산식 칩이 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>굴리면 계산이 끝납니다</h2><p class="body">주사위가 멈추면 결과가 크게 뜨고, 그 아래에 계산에 쓰인 눈이 차례로 놓입니다. 계산식은 합과 곱, 최댓값, 최솟값 가운데 게임에 맞는 것을 고릅니다. 주사위에 색을 나눠 칠하면 색상별 부분합도 함께 나옵니다.</p><ul class="pts"><li>합, 곱, 최댓값 등 6가지 계산식</li><li>색상별 부분합 표시</li><li>3D 주사위와 2D 보기 전환</li></ul></div></section>
 <section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="진행 방식 한번에와 하나씩, 굴림 횟수 제한 2~20회, 합계 제한 1~999"><ul class="kit-b kit-b--plain"><li class="on"><b>한번에</b><small>모두 굴린 뒤 골라 잠그는 방식</small></li><li><b>하나씩</b><small>굴릴 때마다 쌓이는 누적 합</small></li><li><b>합계 제한</b><small>한도를 넘으면 버스트</small></li></ul><div class="kit-r"><p>굴림 횟수 제한<b>2~20회</b></p></div><div class="kit-r"><p>합계 제한<b>1~999</b></p></div></div><div><p class="kick">02</p><h2>규칙은 게임에 맞춥니다</h2><p class="body">면체와 주사위 수, 진행 방식을 게임 규칙대로 정합니다. 한번에 모드에서는 주사위를 탭해 잠그고 나머지만 다시 굴립니다. 하나씩 모드에서는 굴릴 때마다 누적 합이 쌓이고, 합계 제한을 넘으면 버스트로 끝납니다. 맞춘 설정은 나만의 프리셋으로 저장해 두고 불러옵니다.</p><ul class="pts"><li>한번에, 하나씩 두 가지 진행 방식</li><li>주사위 잠금과 굴림 횟수 제한</li><li>합계 제한과 버스트 처리</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>게임별 프리셋이 들어 있습니다</h2><p class="body">보드게임, 파티, 카지노, TRPG에서 쓰는 주사위 구성이 들어 있습니다. 크랩스, 식보, 파클 같은 게임은 굴릴 때마다 결과를 판정합니다.</p><ul class="pts"><li>17가지 기본 프리셋</li><li>10가지 게임 결과 판정</li><li>게임 검색과 숨기기</li></ul></div><div class="card"><p class="kick">04</p><h2>지난 설정 그대로 이어 굴립니다</h2><p class="body">앱을 열면 지난번 주사위 설정이 그대로 있습니다. 계정 없이 쓰고, 인터넷이 끊겨도 굴립니다.</p><ul class="chips"><li>계정 없음</li><li>광고 없음</li><li>오프라인 사용</li></ul></div></section>
 <section class="pro">
