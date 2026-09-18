@@ -1,9 +1,9 @@
 {
  "name": "SnapLine",
  "subtitle": "Líneas nuevas sobre fotos ya tomadas",
- "summary": "Pon una cuadrícula sobre una foto que ya hiciste y dobla las líneas para que pasen por detrás del sujeto.",
+ "summary": "Pon la cuadrícula de la cámara sobre tu foto y compón la imagen con buen ojo.",
  "hero": {
-  "hook": "Pon una cuadrícula sobre una foto que ya hiciste y dobla las líneas para que pasen por detrás del sujeto.",
+  "hook": "Pon la cuadrícula de la cámara sobre tu foto y compón la imagen con buen ojo.",
   "shotAlt": "El editor de SnapLine con un faro al anochecer. Las líneas de la cuadrícula se doblan hacia el faro y debajo están las herramientas Líneas y Borrar."
  },
  "sections": [
@@ -113,9 +113,8 @@
     "Exportar dibuja las líneas sobre tu foto original en su resolución completa. Guarda el JPEG en Fotos o compártelo ahí mismo."
    ],
    "bullets": [
-    "Exportación sin límite de tamaño",
+    "Tamaño en píxeles en la pantalla de exportación",
     "Calidad JPEG 95",
-    "Sin marca de agua en la foto guardada",
     "Guardar en Fotos o Compartir"
    ]
   },
@@ -130,7 +129,6 @@
     "type": "chips",
     "items": [
      "Sin cuenta",
-     "Sin anuncios",
      "Funciona sin conexión"
     ]
    }
@@ -179,10 +177,10 @@
    ]
   },
   {
-   "q": "Calidad de exportación y marca de agua",
+   "q": "Calidad de exportación",
    "a": [
-    "Exportar compone tu foto en su resolución original y la guarda como JPEG con calidad 95. No hay límite de tamaño.",
-    "Las fotos guardadas no llevan marca de agua. Guardar en Fotos deja el archivo en tu fototeca y Compartir lo envía al momento."
+    "Exportar compone tu foto en su resolución original y la guarda como JPEG con calidad 95. La pantalla de exportación muestra el tamaño en píxeles y la calidad del resultado.",
+    "Guardar en Fotos deja el archivo en tu fototeca y Compartir lo envía al momento."
    ]
   },
   {

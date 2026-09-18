@@ -1,9 +1,9 @@
 {
  "name": "SnapLine",
  "subtitle": "Fresh lines on shots you took",
- "summary": "Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.",
+ "summary": "Lay the camera grid over your photo and arrange it with an eye for composition.",
  "hero": {
-  "hook": "Lay a grid over a photo you already took, then bend the lines so they pass behind your subject.",
+  "hook": "Lay the camera grid over your photo and arrange it with an eye for composition.",
   "shotAlt": "The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below."
  },
  "sections": [
@@ -113,9 +113,8 @@
     "Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away."
    ],
    "bullets": [
-    "No size limit on exports",
+    "Pixel size shown on the export screen",
     "JPEG quality 95",
-    "No watermark on saved photos",
     "Save to Photos or Share"
    ]
   },
@@ -130,7 +129,6 @@
     "type": "chips",
     "items": [
      "No account",
-     "No ads",
      "Works offline"
     ]
    }
@@ -179,10 +177,10 @@
    ]
   },
   {
-   "q": "Export quality and watermarks",
+   "q": "Export quality",
    "a": [
-    "Export composes your photo at its original resolution and saves it as a JPEG at quality 95. There is no size limit.",
-    "Saved photos carry no watermark. Save to Photos puts the file in your library, and Share sends it straight out."
+    "Export composes your photo at its original resolution and saves it as a JPEG at quality 95. The export screen shows the pixel size and the quality of the result.",
+    "Save to Photos puts the file in your library, and Share sends it straight out."
    ]
   },
   {

@@ -116,7 +116,7 @@
   {
    "q": "The ad when you save",
    "a": [
-    "Tapey is free and shows one full-screen ad when you save a wallpaper. There is no banner ad on screen.",
+    "Tapey shows one full-screen ad when you save a wallpaper. Google AdMob picks and serves that ad.",
     "If the ad can't load, or your last save failed, Tapey saves right away without an ad."
    ]
   },

@@ -116,7 +116,7 @@
   {
    "q": "El anuncio al guardar",
    "a": [
-    "Tapey es gratis y muestra un anuncio a pantalla completa cuando guardas un fondo. No hay banner de anuncios en pantalla.",
+    "Tapey muestra un anuncio a pantalla completa cuando guardas un fondo. Google AdMob selecciona y muestra ese anuncio.",
     "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio."
    ]
   },

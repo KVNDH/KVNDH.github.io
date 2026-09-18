@@ -1,9 +1,9 @@
 {
  "name": "SnapLine",
  "subtitle": "Linhas novas em fotos que você já tirou",
- "summary": "Coloque uma grade sobre uma foto que você já tirou e dobre as linhas para elas passarem atrás do objeto.",
+ "summary": "Coloque a grade da câmera sobre a sua foto e componha a imagem com bom olho.",
  "hero": {
-  "hook": "Coloque uma grade sobre uma foto que você já tirou e dobre as linhas para elas passarem atrás do objeto.",
+  "hook": "Coloque a grade da câmera sobre a sua foto e componha a imagem com bom olho.",
   "shotAlt": "O editor do SnapLine com um farol ao anoitecer. As linhas da grade se dobram na direção do farol e, abaixo, estão as ferramentas Linhas e Apagar."
  },
  "sections": [
@@ -113,9 +113,8 @@
     "Exportar desenha as linhas sobre a foto original na resolução cheia. Salve o JPEG em Fotos ou compartilhe na hora."
    ],
    "bullets": [
-    "Exportação sem limite de tamanho",
+    "Tamanho em pixels na tela de exportação",
     "Qualidade JPEG 95",
-    "Sem marca d’água na foto salva",
     "Salvar em Fotos ou Compartilhar"
    ]
   },
@@ -130,7 +129,6 @@
     "type": "chips",
     "items": [
      "Sem conta",
-     "Sem anúncios",
      "Funciona off-line"
     ]
    }
@@ -179,10 +177,10 @@
    ]
   },
   {
-   "q": "Qualidade da exportação e marca d’água",
+   "q": "Qualidade da exportação",
    "a": [
-    "Exportar compõe a foto na resolução original e salva como JPEG na qualidade 95. Não há limite de tamanho.",
-    "As fotos salvas não levam marca d’água. Salvar em Fotos coloca o arquivo na sua fototeca e Compartilhar envia na hora."
+    "Exportar compõe a foto na resolução original e salva como JPEG na qualidade 95. A tela de exportação mostra o tamanho em pixels e a qualidade do resultado.",
+    "Salvar em Fotos coloca o arquivo na sua fototeca e Compartilhar envia na hora."
    ]
   },
   {

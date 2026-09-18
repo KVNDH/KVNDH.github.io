@@ -116,7 +116,7 @@
   {
    "q": "Die Werbung beim Sichern",
    "a": [
-    "Tapey ist kostenlos und zeigt beim Sichern eines Hintergrunds eine bildschirmfüllende Werbung. Ein Banner auf dem Bildschirm gibt es nicht.",
+    "Beim Sichern eines Hintergrunds zeigt Tapey eine bildschirmfüllende Werbung. Ausgewählt und ausgeliefert wird sie von Google AdMob.",
     "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung."
    ]
   },

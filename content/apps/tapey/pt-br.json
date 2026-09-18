@@ -116,7 +116,7 @@
   {
    "q": "O anúncio ao salvar",
    "a": [
-    "O Tapey é gratuito e mostra um anúncio em tela cheia quando você salva um papel de parede. Não há banner de anúncio na tela.",
+    "O Tapey mostra um anúncio em tela cheia quando você salva um papel de parede. O Google AdMob escolhe e exibe esse anúncio.",
     "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio."
    ]
   },
