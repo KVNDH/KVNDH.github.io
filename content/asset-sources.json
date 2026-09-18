@@ -17,6 +17,30 @@
    "en": [
     "Life Tyde/results/store-1.2.1-src/en_4-onthisday.png",
     "Life Tyde/results/store-1.2.1-src/en_3-chronicle.png"
+   ],
+   "ja": [
+    "Life Tyde/results/store-1.2.1-src/ja_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/ja_3-chronicle.png"
+   ],
+   "zh-hans": [
+    "Life Tyde/results/store-1.2.1-src/zh-Hans_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/zh-Hans_3-chronicle.png"
+   ],
+   "zh-hant": [
+    "Life Tyde/results/store-1.2.1-src/zh-Hant_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/zh-Hant_3-chronicle.png"
+   ],
+   "de": [
+    "Life Tyde/results/store-1.2.1-src/de_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/de_3-chronicle.png"
+   ],
+   "es": [
+    "Life Tyde/results/store-1.2.1-src/es_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/es_3-chronicle.png"
+   ],
+   "pt-br": [
+    "Life Tyde/results/store-1.2.1-src/pt-BR_1-timeline.png",
+    "Life Tyde/results/store-1.2.1-src/pt-BR_3-chronicle.png"
    ]
   }
  },
@@ -48,6 +72,24 @@
    ],
    "en": [
     "diceMaster/results/asc-shot1-raw/iphone/en-US.png"
+   ],
+   "ja": [
+    "diceMaster/results/asc-shot1-raw/iphone/ja.png"
+   ],
+   "zh-hans": [
+    "diceMaster/results/asc-shot1-raw/iphone/zh-Hans.png"
+   ],
+   "zh-hant": [
+    "diceMaster/results/asc-shot1-raw/iphone/zh-Hant.png"
+   ],
+   "de": [
+    "diceMaster/results/asc-shot1-raw/iphone/de-DE.png"
+   ],
+   "es": [
+    "diceMaster/results/asc-shot1-raw/iphone/es-ES.png"
+   ],
+   "pt-br": [
+    "diceMaster/results/asc-shot1-raw/iphone/pt-PT.png"
    ]
   }
  }

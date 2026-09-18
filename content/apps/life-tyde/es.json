@@ -1,0 +1,267 @@
+{
+ "name": "Life Tyde",
+ "subtitle": "La crónica callada de tus años",
+ "summary": "Escoge los momentos grandes de tu vida, guárdalos bajo hashtags y tenlos en una sola línea de tiempo.",
+ "hero": {
+  "hook": "Escoge los momentos grandes de tu vida, guárdalos bajo hashtags y tenlos en una sola línea de tiempo.",
+  "shotAlt": "La línea de tiempo de Life Tyde. Las entradas bajan por la pantalla ordenadas por año, y las destacadas llevan un punto rojo y un título rojo."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Solo los momentos que contaron",
+   "body": [
+    "Los acontecimientos de una vida se ponen en una sola línea, por orden de año. Con un año y un título ya tienes una entrada; el mes, el día y una nota pueden esperar a que los recuerdes. Tú eliges qué momentos destacar, y esos se quedan con punto rojo y título rojo."
+   ],
+   "bullets": [
+    "Edad o años transcurridos junto a cada entrada",
+    "Packs de época del Mercado de eventos",
+    "Recordatorios y repetición para lo que viene"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Primer plano de la línea de tiempo. Cada fila muestra el año, el mes y el día, la edad, un título y una nota, y las entradas destacadas van en rojo.",
+    "caption": "Pantalla de la app, ampliada"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Un hashtag, una crónica",
+   "body": [
+    "Marca las entradas con hashtags como #escuela o #trabajo. Elige una sola etiqueta en el filtro y se abre su Crónica de etiqueta, con las entradas de esa etiqueta desde la primera hasta la última. Arriba están el número de entradas y el periodo que abarcan."
+   ],
+   "bullets": [
+    "Filtro de etiquetas y vista solo de destacados",
+    "Sugerencias a partir de las etiquetas que ya usas",
+    "Resumen de la crónica con Apple Intelligence"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Crónica de etiqueta de #Trabajo. Solo las entradas con esa etiqueta bajan por una línea, del primer empleo a montar una consultoría.",
+    "caption": "Crónica de etiqueta",
+    "focus": "-170px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Volver sobre los años",
+   "body": [
+    "Repasar pasa tus entradas de una en una, empezando por las más antiguas. El Mapa de vida extiende cada entrada sobre una retícula de años y meses, y Lado a lado alinea dos líneas de tiempo por edad o por año."
+   ],
+   "bullets": [
+    "Avance automático a la entrada siguiente",
+    "Tarjeta y widget En este día",
+    "Intercambio de crónicas con un dispositivo cercano"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Repasar"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Abre y escribe",
+   "body": [
+    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Sin anuncios",
+     "Sincronización con iCloud",
+     "Copia en CSV"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Life Tyde Pro",
+  "title": "Más sitio para tu vida\ny un libro donde guardarla",
+  "items": [
+   "Libro de crónica en PDF tamaño A4",
+   "Eventos y hashtags ilimitados",
+   "Hasta 3 líneas de tiempo",
+   "Todos los packs de eventos",
+   "Repaso filtrado por década, etiqueta o destacado",
+   "Borradores de ensayo y prólogos con Apple Intelligence"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Dónde se guardan las entradas",
+   "a": [
+    "Las entradas se guardan en el almacenamiento de la app. Con la sincronización con iCloud activada, también quedan en tu propia cuenta de iCloud y se mantienen al día con tus otros dispositivos de esa cuenta.",
+    "Las entradas eliminadas se quedan 7 días en la Papelera, dentro de Ajustes, y durante ese tiempo puedes restaurarlas."
+   ]
+  },
+  {
+   "q": "Activar o desactivar la sincronización con iCloud",
+   "a": [
+    "La sincronización con iCloud viene activada de inicio, y puedes desactivarla o volver a activarla en Ajustes. El cambio se aplica después de cerrar la app desde el selector de apps y abrirla otra vez.",
+    "En tus otros dispositivos, inicia sesión en la misma cuenta de iCloud y deja la sincronización activada. La primera sincronización entre dispositivos puede tardar unos minutos."
+   ]
+  },
+  {
+   "q": "Qué incluye la versión gratuita",
+   "a": [
+    "Puedes tener hasta 100 eventos, 1 línea de tiempo y 10 etiquetas de forma gratuita, y añadir el pack de historia principal del idioma de la app desde el Mercado de eventos. Llegar a un límite nunca bloquea lo que ya has escrito: sigues leyéndolo y editándolo.",
+    "Con Pro, los eventos y las etiquetas no tienen límite, y puedes crear hasta 3 líneas de tiempo."
+   ]
+  },
+  {
+   "q": "Restaurar Pro",
+   "a": [
+    "Después de cambiar de dispositivo o reinstalar la app, abre Ajustes, toca Pasar a Pro y luego Restaurar arriba a la derecha. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Eventos próximos y recordatorios",
+   "a": [
+    "Una entrada fechada mañana o más adelante pasa a ser un evento próximo. En cuanto tiene mes y día, Recordarme ofrece Mismo día, 1 día, 1 semana o 1 mes antes. La app pide permiso de notificaciones la primera vez que guardas un evento con recordatorio.",
+    "Cuando la fecha ya ha pasado, toca Marcar como hecho y el evento se convierte en una entrada normal. Si le pusiste repetición, en ese momento se programa la siguiente."
+   ]
+  },
+  {
+   "q": "Copia de seguridad en CSV",
+   "a": [
+    "Toca Exportar a CSV en Ajustes para guardar tus entradas en un archivo CSV. Al recuperarlas con Importar CSV, elige entre Añadir a los eventos existentes y Reemplazar todos los eventos.",
+    "Un archivo CSV es una copia que haces cuando la necesitas, aparte de la sincronización con iCloud."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Escribir, Repasar y exportar funcionan sin conexión a internet. La sincronización con iCloud y comprar o restaurar Pro sí la necesitan.",
+    "Intercambiar cerca conecta dos dispositivos directamente, sin internet. Las dos personas tienen que abrir Intercambiar cerca en Life Tyde."
+   ]
+  },
+  {
+   "q": "Dispositivos compatibles con las funciones de IA",
+   "a": [
+    "Resumir esta crónica, Añadir prólogo con IA y los borradores de ensayo aparecen en dispositivos compatibles con Apple Intelligence, con iOS 26 o posterior y Apple Intelligence activado. Si el modelo del dispositivo no admite el idioma de la app, quedan ocultos.",
+    "Un texto de IA necesita al menos 5 entradas de las que partir. Puedes editar cualquier cosa que escriba antes de exportar."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Life Tyde",
+  "effectiveDate": "2026-09-17",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Life Tyde (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea. Esta política explica cómo lo hace."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. Por tanto, no hay ninguna finalidad que declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo y se guardan en el almacenamiento de la app en tu dispositivo. Con la sincronización con iCloud activada, tus entradas quedan además en tu propia cuenta de iCloud. El desarrollador no recibe estos datos."
+    ],
+    "bullets": [
+     "Eventos (año, mes, día, título, nota, destacado, ajustes de fecha y recordatorio), etiquetas y nombres de líneas de tiempo: para mostrar tu línea de tiempo",
+     "Ajustes como tu fecha de nacimiento o año base, opciones de visualización e idioma de la app: para lo que aparece en pantalla",
+     "Títulos y borradores de libro: para retomar el trabajo en un libro (PDF)",
+     "Títulos y años de los eventos: para el índice de búsqueda del dispositivo mientras la Búsqueda de Spotlight está activada",
+     "Elementos de En este día: para mostrar el widget de la pantalla de inicio"
+    ]
+   },
+   {
+    "title": "Plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Las entradas sincronizadas con iCloud siguen en tu cuenta de iCloud, y al borrar una entrada en la app también desaparece de las copias sincronizadas. Las imágenes de la línea de tiempo guardadas en Fotos y los archivos exportados los borras tú."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cesión a terceros",
+    "paragraphs": [
+     "La información personal no se cede a terceros.",
+     "Intercambiar cerca es una función que inicias tú. Cuando los dos dispositivos aceptan, se envían el nombre y el emoji de la línea de tiempo actual y sus entradas (título, nota, fecha, etiquetas, destacado). Las entradas recibidas solo se pueden ver, y únicamente se guardan en el dispositivo receptor si tocas Guardar como perfil."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El tratamiento de información personal no se encarga a terceros. La sincronización con iCloud funciona sobre iCloud de Apple (CloudKit), y los datos sincronizados se rigen por la política de privacidad de Apple. Apple procesa el pago de Life Tyde Pro a través del App Store. El desarrollador no recibe datos de pago ni información de tu cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las entradas eliminadas se quedan 7 días en la Papelera y luego desaparecen, o puedes quitarlas al momento con Eliminar de forma permanente. Al eliminar la app desaparecen del dispositivo todos sus datos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tus derechos y cómo ejercerlos",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada a lo que acceder ni que rectificar o suprimir. Tus entradas las ves, las editas y las borras en la app, y puedes exportarlas a un archivo CSV. Si tienes dudas, escribe a la dirección de abajo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "La sincronización con iCloud usa la base de datos privada de tu propia cuenta de iCloud. Intercambiar cerca funciona solo sobre una conexión cifrada. La app pide únicamente permiso para añadir imágenes de la línea de tiempo a Fotos y no pide permiso para leer tu fototeca. El permiso de notificaciones se pide solo cuando guardas un evento con recordatorio.",
+     "La Búsqueda de Spotlight indexa solo títulos y años de los eventos, y al desactivarla en Ajustes se borra el índice. Los resúmenes y borradores de IA los escribe el modelo de Apple Intelligence de tu dispositivo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Herramientas de recogida automática",
+    "paragraphs": [
+     "La app no usa cookies, ni identificadores de publicidad, ni herramientas de analítica."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación",
+    "paragraphs": [
+     "Si crees que se han vulnerado tus derechos de privacidad, puedes dirigirte a la autoridad de protección de datos del lugar donde vives. Por ejemplo:"
+    ],
+    "bullets": [
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "Life Tyde no recoge información personal. No hay registro ni inicio de sesión, la sincronización con iCloud funciona sobre tu propia cuenta de iCloud, y del pago de Pro se encarga Apple."
+ }
+}

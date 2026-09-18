@@ -1,0 +1,306 @@
+{
+ "name": "Tapey",
+ "subtitle": "Fondos de pantalla con washi tape",
+ "summary": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
+ "hero": {
+  "hook": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
+  "shotAlt": "El editor de Tapey. Bajo el reloj de la pantalla bloqueada hay fotos en marcos Polaroid sujetas con washi tape, y una lleva una nota a mano."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Las fotos encuentran su sitio",
+   "body": [
+    "Elige hasta 12 fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla, o usa dos dedos para cambiar su tamaño y su inclinación. La foto que mueves a mano se queda donde la has dejado."
+   ],
+   "bullets": [
+    "Disposición automática de hasta 12 fotos",
+    "Diseños Auto, Cuadrícula, Escalera y Corazón",
+    "Deshacer y rehacer"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Primer plano del editor. Copias Polaroid sujetas con washi tape y, entre ellas, una nota escrita a mano.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-620px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Cinta y marcos",
+   "body": [
+    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano."
+   ],
+   "bullets": [
+    "8 colores de cinta y 4 patrones",
+    "Borde blanco y marco Polaroid",
+    "B/N para todo el fondo o para una sola foto"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Las herramientas Cinta, Marco y Fondo, con 8 colores de cinta y 6 tonos de fondo",
+    "items": [
+     {
+      "name": "Cinta",
+      "desc": "Color, posición, patrón, extremos rasgados"
+     },
+     {
+      "name": "Marco",
+      "desc": "Borde, Polaroid, B/N",
+      "on": true
+     },
+     {
+      "name": "Fondo",
+      "desc": "Tonos de pared, Mi foto, Textura"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Colores de cinta",
+      "value": "8"
+     },
+     {
+      "label": "Tonos de fondo",
+      "value": "6",
+      "meter": "levels",
+      "count": 6
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "A la medida de la pantalla bloqueada",
+   "body": [
+    "La hora actual está sobre el lienzo igual que el reloj de tu pantalla bloqueada. Arrastra el tirador para fijar el espacio del reloj y las fotos bajan por debajo. También puedes dejar sitio para los widgets, y la resolución se ajusta a tu dispositivo desde el principio."
+   ],
+   "bullets": [
+    "Espacio del reloj ajustable",
+    "Zona de widgets reservada",
+    "Resoluciones de iPhone y iPad"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Empieza por tus fotos",
+   "body": [
+    "Sin cuenta y sin nada que iniciar. Tu fondo sigue ahí cuando vuelves, y Crear uno nuevo después de guardar lo manda a Recientes."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Sin inicio de sesión",
+     "31 idiomas"
+    ]
+   }
+  }
+ ],
+ "pro": null,
+ "faq": [
+  {
+   "q": "Añadir fotos",
+   "a": [
+    "En la pantalla de inicio, toca Añadir fotos y elige de tu fototeca o haz una foto nueva. Mientras editas, toca Añadir en la pestaña Fotos.",
+    "En cada fondo caben hasta 12 fotos. El diseño Corazón aparece cuando tienes 6 o más."
+   ]
+  },
+  {
+   "q": "Dónde van los fondos guardados",
+   "a": [
+    "Toca Guardar en la parte de arriba del editor. El fondo pasa a la app Fotos como PNG, en la resolución elegida en Ajustes. La primera vez, iOS pregunta si Tapey puede añadir fotos.",
+    "Si guardar falla, permite el acceso a fotos en Ajustes > Tapey."
+   ]
+  },
+  {
+   "q": "El anuncio al guardar",
+   "a": [
+    "Tapey es gratis y muestra un anuncio a pantalla completa cuando guardas un fondo. No hay banner de anuncios en pantalla.",
+    "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio."
+   ]
+  },
+  {
+   "q": "Quitar anuncios y restaurar la compra",
+   "a": [
+    "Compra Quitar anuncios desde el menú o desde la pantalla de inicio. A partir de ahí no aparece ningún anuncio al guardar.",
+    "En un dispositivo nuevo o después de reinstalar, abre Quitar anuncios en el menú y toca Restaurar compras. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Rastreo y preferencias de anuncios",
+   "a": [
+    "La primera vez que abres la app, iOS pregunta si Tapey puede rastrearte. La app funciona igual en cualquier caso, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, cambia tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio."
+   ]
+  },
+  {
+   "q": "Dónde se guarda tu trabajo",
+   "a": [
+    "Las copias de las fotos y de las fotos de fondo que eliges, junto con la disposición y las notas, se guardan en el almacenamiento de la app para que puedas seguir donde lo dejaste. Empezar de nuevo, en el menú, borra el trabajo actual, y al eliminar la app desaparece todo.",
+    "Si tocas Crear uno nuevo después de guardar, el trabajo actual pasa a Recientes. Recientes conserva 3 proyectos y retira el más antiguo cuando entra uno nuevo."
+   ]
+  },
+  {
+   "q": "Poner el fondo de pantalla",
+   "a": [
+    "Abre en la app Fotos la imagen que acabas de guardar, toca Compartir y elige Usar como fondo de pantalla. Elige Pantalla bloqueada y toca Establecer.",
+    "Esos mismos pasos están en Cómo ponerlo de fondo de pantalla, en la pantalla que aparece después de guardar."
+   ]
+  },
+  {
+   "q": "Tapey en el iPad",
+   "a": [
+    "Tapey también funciona en el iPad. Ahí crea un fondo cuadrado que sirve en vertical y en horizontal, y el editor te deja alternar entre las dos vistas.",
+    "Para hacer un fondo de iPhone desde el iPad, elige un tamaño de iPhone en Resolución, dentro de Ajustes."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Colocar, decorar y guardar funcionan sin conexión. Los anuncios, la compra de Quitar anuncios y la restauración necesitan conexión.",
+    "La letra manuscrita de las notas se descarga mientras estás conectado. Sin conexión, las notas aparecen con una tipografía estándar."
+   ]
+  },
+  {
+   "q": "Si algo va mal",
+   "a": [
+    "Cierra la app del todo, ábrela otra vez y comprueba en el App Store que tienes la última versión. Si el problema sigue, escríbenos contando en qué pantalla estabas y qué estabas haciendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Tapey",
+  "effectiveDate": "2026-09-17",
+  "summary": "El desarrollador no recoge información personal. El anuncio que aparece al guardar viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Quitar anuncios se encarga Apple.",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Tapey (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
+     "Al guardar un fondo, la app muestra un anuncio a pantalla completa. El servicio publicitario de Google, AdMob, elige y muestra ese anuncio, y usa información del dispositivo para mostrar anuncios y medir su rendimiento."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo, y el desarrollador no los recibe.",
+     "La app descarga la letra manuscrita de las notas desde la red de distribución de contenidos jsDelivr. Como en cualquier petición por internet, la dirección IP de tu dispositivo llega a jsDelivr. El desarrollador no la recibe.",
+     "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
+    ],
+    "bullets": [
+     "Copias de las fotos y de las fotos de fondo que eliges: para volver a abrir tu trabajo",
+     "Disposición, ajustes de decoración y notas de las fotos: para volver a abrir tu trabajo",
+     "Hasta 3 proyectos recientes con imágenes de vista previa: para Recientes en la pantalla de inicio",
+     "Idioma elegido, estado de compra de Quitar anuncios y número de guardados: para el funcionamiento de la app y para el momento de la valoración"
+    ]
+   },
+   {
+    "title": "Tratamiento y plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
+     "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Comunicación a terceros",
+    "paragraphs": [
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, cuando se muestra un anuncio, el SDK de Google Mobile Ads incluido en la app envía a Google directamente la información del apartado 9, del modo siguiente."
+    ],
+    "bullets": [
+     "Destinatario: Google LLC (Estados Unidos), AdMob",
+     "Finalidad: mostrar anuncios y medir su rendimiento",
+     "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
+     "Cuándo y cómo: se envía por internet cuando se carga y se muestra un anuncio",
+     "Conservación: la indicada en la Política de Privacidad de Google"
+    ]
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Quitar anuncios a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Empezar de nuevo, en el menú, borra el trabajo actual, y al eliminar la app desaparecen todos sus datos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo.",
+     "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión. Para rechazar el uso del identificador de publicidad, sigue el apartado 9."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "A la app solo llegan las fotos que eliges en el selector de fotos de iOS o que haces con la cámara. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Recogida automática y cómo rechazarla",
+    "paragraphs": [
+     "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob), que puede recoger la información de abajo cuando carga y muestra anuncios.",
+     "La primera vez que abres la app, iOS muestra el aviso de transparencia de seguimiento (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
+     "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Allí puedes cambiar tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio.",
+     "Después de comprar Quitar anuncios, la app deja de iniciar AdMob a partir del siguiente arranque, así que no aparecen ni anuncios ni el aviso de seguimiento."
+    ],
+    "bullets": [
+     "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",
+     "Ubicación aproximada estimada a partir de tu dirección IP",
+     "Registros de interacción con los anuncios, como impresiones y toques",
+     "Información de rendimiento, fallos y diagnóstico de la app"
+    ]
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación en materia de privacidad",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a las siguientes instancias."
+    ],
+    "bullets": [
+     "La autoridad de protección de datos de tu país o región",
+     "El desarrollador: kvndh36@naver.com",
+     "Google, por la información recogida por AdMob (policies.google.com/privacy)",
+     "Apple, por los datos de pago (apple.com/legal/privacy)"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

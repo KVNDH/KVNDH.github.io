@@ -1,0 +1,22 @@
+{
+ "skip": "Zum Inhalt springen",
+ "language": "Sprache",
+ "hubMetaTitle": "kvndh Apps",
+ "learnMore": "Mehr erfahren",
+ "getOnAppStore": "Laden im App Store",
+ "storeLabel": "{name} im App Store ansehen",
+ "screenshot": "Bildschirm",
+ "navAbout": "Überblick",
+ "navSupport": "Support",
+ "navPrivacy": "Datenschutzerklärung",
+ "helpBody": "Häufige Fragen und die Kontaktadresse stehen auf der Supportseite.",
+ "supportPage": "Supportseite",
+ "faqTitle": "Häufige Fragen",
+ "contactTitle": "Kontakt",
+ "contactBody": "Schreiben Sie Fragen und Fehlermeldungen per E-Mail. Mit Gerätemodell und iOS-Version lässt sich die Sache schneller prüfen.",
+ "effectiveDate": "Gültig ab",
+ "effectiveFrom": "Diese Erklärung gilt ab {date}.",
+ "summaryLabel": "Zusammenfassung",
+ "toc": "Inhalt",
+ "notFound": "Diese Seite gibt es nicht. Wählen Sie unten eine Sprache, dann geht es zur Übersicht der Apps."
+}

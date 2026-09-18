@@ -1,0 +1,275 @@
+{
+ "name": "BrushWorks",
+ "subtitle": "Un cuadro que avanza según lo pintas",
+ "summary": "Elige una foto y frótala con el dedo hasta convertirla en un cuadro. El color lo saca la app de la foto; pintar lo haces tú.",
+ "hero": {
+  "hook": "Elige una foto y frótala con el dedo hasta convertirla en un cuadro. El color lo saca la app de la foto; pintar lo haces tú.",
+  "shotAlt": "El lienzo de BrushWorks con la foto de un faro pintada por encima con trazos espesos. Debajo están los tres pinceles y los pasos de tamaño."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "La pintura se acumula",
+   "body": [
+    "Cada pasada deja más pintura, y las zonas gruesas atrapan la luz y proyectan sombra. Cuando el lienzo queda cubierto, el cuadro está terminado."
+   ],
+   "bullets": [
+    "Pinceladas que se superponen en capas",
+    "Pintura con grosor visible",
+    "Botón del ojo para mirar la foto original"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Primer plano del cuadro. Las pinceladas dejan una veta en la dirección en que pasó el pincel.",
+    "caption": "Pantalla de la app, ampliada"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Tres pinceles",
+   "body": [
+    "Elige un pincel, cambia su tamaño y ve levantando capas. Al bajar la Intensidad del fondo la foto se atenúa, y en el escalón más bajo, el Modo Blind, queda oculta."
+   ],
+   "bullets": [
+    "Veladura, Cerdas y Espátula",
+    "Tamaño del pincel en 9 pasos",
+    "Intensidad del fondo en 5 pasos"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Tres pinceles, 9 tamaños de pincel y 5 pasos de Intensidad del fondo",
+    "items": [
+     {
+      "glyph": "gl",
+      "name": "Veladura",
+      "desc": "Color translúcido que se mezcla al superponerse"
+     },
+     {
+      "glyph": "br",
+      "name": "Cerdas",
+      "desc": "Estrías que siguen la dirección del trazo"
+     },
+     {
+      "glyph": "kn",
+      "name": "Espátula",
+      "desc": "Pintura espesa con brillo húmedo",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Tamaño del pincel",
+      "value": "9 pasos",
+      "meter": "ticks",
+      "count": 9,
+      "on": 5
+     },
+     {
+      "label": "Intensidad del fondo",
+      "value": "5 pasos",
+      "meter": "levels",
+      "count": 5
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Todos los trazos quedan",
+   "body": [
+    "Cada toque queda registrado. La Repetición reproduce el cuadro desde el principio y el Time-lapse lo resume en una grabación corta."
+   ],
+   "bullets": [
+    "Repetición de 1× a 4×",
+    "Time-lapse vertical en 9:16",
+    "Registro de pinceladas y tiempo pintando"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Repetición"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "A pintar sin registrarse",
+   "body": [
+    "Abre la app, elige una foto y empieza a pintar. No hay cuenta que crear ni sesión que iniciar."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Sin inicio de sesión",
+     "Sin anuncios"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "BrushWorks Pro",
+  "title": "Guarda más grande,\npinta más fino",
+  "items": [
+   "Guarda sin la marca de agua",
+   "Time-lapses de 10 a 90 segundos en 1080×1920",
+   "Bloqueo de color: pinta con el color que elijas",
+   "Control preciso del temblor y el tamaño del pincel",
+   "Guarda a 1,5×, hasta 3072 px",
+   "Formatos PNG, HEIF y TIFF"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Dónde se guarda la foto elegida",
+   "a": [
+    "BrushWorks conserva una copia de la foto que elegiste en el almacenamiento de la app, para recuperar tu cuadro la próxima vez que la abras. La copia se borra cuando eliges otra foto o tocas Volver a empezar en Ajustes.",
+    "El selector de fotos de iOS entrega a la app solo la foto que eliges. Para guardar un cuadro terminado basta con el permiso de añadir fotos."
+   ]
+  },
+  {
+   "q": "Por qué el lienzo se pinta entero a mano",
+   "a": [
+    "BrushWorks está hecho para pintar a mano, así que no hay conversión de un solo toque. Por eso el time-lapse termina con cuántas pinceladas diste y cuánto tiempo estuviste pintando."
+   ]
+  },
+  {
+   "q": "Por qué cambiar de foto borra el cuadro",
+   "a": [
+    "Cada pincelada toma su color de la foto cada vez que el cuadro se vuelve a dibujar. Sobre una foto nueva, los trazos antiguos mostrarían colores que nunca tuvieron, así que el lienzo se vacía. Si ya pintaste algo, la app pregunta antes.",
+    "Deshacer no lo recupera. Guarda tu cuadro antes de cambiar de foto."
+   ]
+  },
+  {
+   "q": "Duración del time-lapse",
+   "a": [
+    "Sin Pro, el time-lapse dura 10 segundos, en vertical 9:16. Con Pro eliges una duración de 10 a 90 segundos.",
+    "Para ver todo el proceso usa la Repetición dentro de la app. Elige una velocidad de 1× a 4× y arrastra de lado a lado sobre el lienzo para saltar a cualquier punto."
+   ]
+  },
+  {
+   "q": "Restaurar compras",
+   "a": [
+    "En un dispositivo nuevo o después de reinstalar la app, abre Ajustes y toca Restaurar compras en la tarjeta de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Pintar, guardar y los time-lapses funcionan sin conexión a internet. Comprar Pro y restaurar compras necesitan conexión con el App Store."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de BrushWorks",
+  "effectiveDate": "2026-09-17",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app BrushWorks (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, y expone a continuación sus criterios."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. Por tanto, no hay ninguna finalidad que declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recopila información personal. La app trabaja con los datos que se indican abajo, todos guardados en el almacenamiento de la app dentro de tu dispositivo. El desarrollador no recibe ninguno de ellos."
+    ],
+    "bullets": [
+     "Copia de la foto elegida: sirve para volver a abrir tu cuadro",
+     "Registro de pinceladas y ajustes: sirven para volver a dibujar tu cuadro"
+    ]
+   },
+   {
+    "title": "Plazo de tratamiento y conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app se borran al eliminar la app. Los cuadros guardados en Fotos siguen ahí hasta que los borras en la app Fotos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cesión a terceros",
+    "paragraphs": [
+     "No se cede información personal a terceros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "No se encarga a nadie el tratamiento de información personal. Las compras dentro de la app, como BrushWorks Pro, las procesa Apple a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu medio de pago ni los datos de tu cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Procedimiento de destrucción",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. La copia de la foto elegida se borra al tocar Volver a empezar en Ajustes, y todos los datos de la app se borran al eliminar la app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de la persona interesada y de su representante legal",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal sobre ti ni sobre tu representante legal, no hay nada que consultar, rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "El selector de fotos de iOS entrega a la app solo la foto que eliges. Para guardar un cuadro terminado, la app usa únicamente el permiso de añadir fotos y no pide permiso para leer la fototeca."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Recogida automática y cómo rechazarla",
+    "paragraphs": [
+     "La app no usa cookies, ni identificadores publicitarios, ni herramientas de analítica."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a la autoridad de protección de datos del lugar donde vives. Por ejemplo:"
+    ],
+    "bullets": [
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo de tu país"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, se publicarán en esta página los cambios y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "BrushWorks no recopila información personal. No hay registro ni inicio de sesión, y las compras dentro de la app, como Pro, las procesa Apple."
+ }
+}

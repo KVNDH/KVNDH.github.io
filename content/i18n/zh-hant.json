@@ -1,0 +1,22 @@
+{
+ "skip": "跳到主要內容",
+ "language": "語言",
+ "hubMetaTitle": "kvndh App",
+ "learnMore": "詳細資訊",
+ "getOnAppStore": "從 App Store 下載",
+ "storeLabel": "在 App Store 上查看 {name}",
+ "screenshot": "畫面",
+ "navAbout": "介紹",
+ "navSupport": "支援",
+ "navPrivacy": "隱私權政策",
+ "helpBody": "常見問題和聯絡方式都在支援頁面。",
+ "supportPage": "支援頁面",
+ "faqTitle": "常見問題",
+ "contactTitle": "聯絡",
+ "contactBody": "有疑問或發現問題，請寄電子郵件過來。附上裝置型號和 iOS 版本，我們能查得更快。",
+ "effectiveDate": "生效日期",
+ "effectiveFrom": "本政策自 {date} 起生效。",
+ "summaryLabel": "摘要",
+ "toc": "目錄",
+ "notFound": "找不到這個頁面。在下面選一種語言，就能看到 App 列表。"
+}

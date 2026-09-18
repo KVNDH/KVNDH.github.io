@@ -1,0 +1,275 @@
+{
+ "name": "BrushWorks",
+ "subtitle": "Ein Bild, das beim Malen entsteht",
+ "summary": "Wählen Sie ein Foto und reiben Sie mit dem Finger darüber, bis ein Gemälde daraus wird. Die Farben nimmt die App aus dem Foto, gemalt wird von Hand.",
+ "hero": {
+  "hook": "Wählen Sie ein Foto und reiben Sie mit dem Finger darüber, bis ein Gemälde daraus wird. Die Farben nimmt die App aus dem Foto, gemalt wird von Hand.",
+  "shotAlt": "Die Leinwand von BrushWorks mit einem Leuchtturmfoto, das in dicken Strichen übermalt ist. Darunter liegen die drei Pinsel und die Größenstufen."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Die Farbe wird dicker",
+   "body": [
+    "Jeder Zug trägt Farbe auf, und die dicken Stellen fangen das Licht und werfen Schatten. Ist die Leinwand bedeckt, ist das Bild fertig."
+   ],
+   "bullets": [
+    "Pinselstriche, die sich schichten",
+    "Farbauftrag mit sichtbarer Dicke",
+    "Augentaste zum Blick auf das Originalfoto"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Nahaufnahme des Gemäldes. Die Striche hinterlassen eine Maserung in der Richtung des Pinsels.",
+    "caption": "App-Ansicht, vergrößert"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Drei Pinsel",
+   "body": [
+    "Wählen Sie einen Pinsel, ändern Sie die Größe und tragen Sie Schicht auf Schicht auf. Je niedriger die Deckkraft der Vorlage, desto blasser das Foto; auf der untersten Stufe, im Blind-Modus, bleibt es verborgen."
+   ],
+   "bullets": [
+    "Lasur, Borste und Spachtel",
+    "Pinselgröße in 9 Stufen",
+    "Deckkraft der Vorlage in 5 Stufen"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Drei Pinsel, 9 Pinselgrößen und 5 Stufen Deckkraft der Vorlage",
+    "items": [
+     {
+      "glyph": "gl",
+      "name": "Lasur",
+      "desc": "Durchscheinende Farbe, die sich beim Schichten mischt"
+     },
+     {
+      "glyph": "br",
+      "name": "Borste",
+      "desc": "Streifen in Richtung des Zugs"
+     },
+     {
+      "glyph": "kn",
+      "name": "Spachtel",
+      "desc": "Dicke Farbe mit feuchtem Glanz",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Pinselgröße",
+      "value": "9 Stufen",
+      "meter": "ticks",
+      "count": 9,
+      "on": 5
+     },
+     {
+      "label": "Deckkraft der Vorlage",
+      "value": "5 Stufen",
+      "meter": "levels",
+      "count": 5
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Jeder Strich bleibt festgehalten",
+   "body": [
+    "Jeder Tupfer wird aufgezeichnet. Die Wiedergabe spielt das Bild von Anfang an ab, der Zeitraffer macht daraus ein kurzes Video."
+   ],
+   "bullets": [
+    "Wiedergabe von 1× bis 4×",
+    "Zeitraffer im Hochformat 9:16",
+    "Angabe von Tupfern und Maldauer"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Wiedergabe"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Malen ohne Anmeldung",
+   "body": [
+    "App öffnen, Foto wählen, losmalen. Es gibt kein Konto und nichts, wobei man sich anmelden müsste."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "Keine Anmeldung",
+     "Keine Werbung"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "BrushWorks Pro",
+  "title": "Größer sichern,\nfeiner malen",
+  "items": [
+   "Ohne Wasserzeichen sichern",
+   "Zeitraffer von 10 bis 90 Sekunden in 1080×1920",
+   "Feste Farbe: Malen in einer selbst gewählten Farbe",
+   "Präzise Regler für Zittern und Pinselgröße",
+   "Sichern in 1,5×, bis zu 3072 px",
+   "Formate PNG, HEIF und TIFF"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Speicherort des gewählten Fotos",
+   "a": [
+    "BrushWorks legt eine Kopie des gewählten Fotos im Speicher der App ab, damit Ihr Gemälde beim nächsten Start wieder da ist. Die Kopie wird gelöscht, sobald Sie ein anderes Foto wählen oder in den Einstellungen auf Neu beginnen tippen.",
+    "Die Fotoauswahl von iOS übergibt der App nur das eine Foto, das Sie auswählen. Zum Sichern eines fertigen Gemäldes genügt die Berechtigung, Fotos hinzuzufügen."
+   ]
+  },
+  {
+   "q": "Warum die Leinwand von Hand gefüllt wird",
+   "a": [
+    "BrushWorks ist zum Malen mit der Hand gedacht, deshalb gibt es keine Umwandlung auf Tastendruck. Aus demselben Grund steht am Ende des Zeitraffers, wie viele Striche Sie gesetzt haben und wie lange Sie gemalt haben."
+   ]
+  },
+  {
+   "q": "Warum ein Fotowechsel das Gemälde löscht",
+   "a": [
+    "Jeder Strich holt seine Farbe aus dem Foto, sobald das Gemälde neu gezeichnet wird. Auf einem anderen Foto hätten alte Striche Farben, die es dort nie gab, deshalb wird die Leinwand geleert. Haben Sie schon gemalt, fragt die App vorher nach.",
+    "Widerrufen holt das Gemälde nicht zurück. Sichern Sie es, bevor Sie das Foto wechseln."
+   ]
+  },
+  {
+   "q": "Länge des Zeitraffers",
+   "a": [
+    "Der Zeitraffer ohne Pro dauert 10 Sekunden, im Hochformat 9:16. Mit Pro wählen Sie eine Länge zwischen 10 und 90 Sekunden.",
+    "Den ganzen Verlauf sehen Sie in der App über die Wiedergabe. Wählen Sie ein Tempo von 1× bis 4× und ziehen Sie quer über die Leinwand, um an eine beliebige Stelle zu springen."
+   ]
+  },
+  {
+   "q": "Käufe wiederherstellen",
+   "a": [
+    "Auf einem neuen Gerät oder nach einer Neuinstallation öffnen Sie die Einstellungen und tippen im Pro-Bereich auf Käufe wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Malen, Sichern und Zeitraffer laufen ohne Internetverbindung. Der Kauf von Pro und das Wiederherstellen von Käufen brauchen eine Verbindung zum App Store."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für BrushWorks",
+  "effectiveDate": "2026-09-17",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App BrushWorks (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea und legt die Grundsätze dafür wie folgt dar."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Ein gesonderter Verarbeitungszweck besteht daher nicht."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät liegen. Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Kopie des gewählten Fotos: zum erneuten Öffnen des Gemäldes",
+     "Strichaufzeichnung und Einstellungen: zum erneuten Zeichnen des Gemäldes"
+    ]
+   },
+   {
+    "title": "Verarbeitungs- und Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Die Daten im Speicher der App werden mit dem Löschen der App entfernt. Gemälde, die Sie in Fotos gesichert haben, bleiben dort, bis Sie sie in der App Fotos löschen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Der Entwickler lässt keine personenbezogenen Daten im Auftrag verarbeiten. Käufe in der App wie BrushWorks Pro wickelt Apple über den App Store ab; für die Zahlungsdaten gilt die Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Die Kopie des gewählten Fotos wird entfernt, sobald Sie in den Einstellungen auf Neu beginnen tippen, und alle Daten der App werden mit dem Löschen der App entfernt."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der betroffenen Person und ihrer gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie oder Ihre gesetzliche Vertretung hat, gibt es nichts, wozu Auskunft, Berichtigung oder Löschung verlangt werden könnte. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Die Fotoauswahl von iOS übergibt der App nur das eine Foto, das Sie auswählen. Zum Sichern eines fertigen Gemäldes nutzt die App allein die Berechtigung, Fotos hinzuzufügen; eine Leseberechtigung für die Fotomediathek fordert sie nicht an."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatisch erfassende Verfahren und Widerspruch",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennungen und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Beschwerden und Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die Datenschutzbehörde an Ihrem Wohnort. Zum Beispiel:"
+    ],
+    "bullets": [
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, werden die Änderungen und das neue Datum des Inkrafttretens auf dieser Seite veröffentlicht."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "BrushWorks erhebt keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und Käufe in der App wie Pro wickelt Apple ab."
+ }
+}

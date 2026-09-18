@@ -1,0 +1,22 @@
+{
+ "skip": "本文へスキップ",
+ "language": "言語",
+ "hubMetaTitle": "kvndh のアプリ",
+ "learnMore": "詳しく見る",
+ "getOnAppStore": "App Store からダウンロード",
+ "storeLabel": "{name} を App Store で見る",
+ "screenshot": "画面",
+ "navAbout": "紹介",
+ "navSupport": "サポート",
+ "navPrivacy": "プライバシーポリシー",
+ "helpBody": "よくある質問とお問い合わせ先はサポートページにあります。",
+ "supportPage": "サポートページ",
+ "faqTitle": "よくある質問",
+ "contactTitle": "お問い合わせ",
+ "contactBody": "ご質問や不具合はメールでお送りください。お使いの機種と iOS のバージョンを書き添えていただけると、確認が早く進みます。",
+ "effectiveDate": "施行日",
+ "effectiveFrom": "このポリシーは {date} から適用します。",
+ "summaryLabel": "要約",
+ "toc": "目次",
+ "notFound": "お探しのページはありません。下から言語を選ぶとアプリの一覧に移ります。"
+}

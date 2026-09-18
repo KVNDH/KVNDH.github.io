@@ -1,0 +1,22 @@
+{
+ "skip": "Saltar al contenido",
+ "language": "Idioma",
+ "hubMetaTitle": "Apps de kvndh",
+ "learnMore": "Ver más",
+ "getOnAppStore": "Consíguelo en el App Store",
+ "storeLabel": "Ver {name} en el App Store",
+ "screenshot": "pantalla",
+ "navAbout": "Información",
+ "navSupport": "Soporte",
+ "navPrivacy": "Política de privacidad",
+ "helpBody": "Las preguntas frecuentes y la dirección de contacto están en la página de soporte.",
+ "supportPage": "Página de soporte",
+ "faqTitle": "Preguntas frecuentes",
+ "contactTitle": "Contacto",
+ "contactBody": "Escribe por correo si tienes dudas o encuentras un fallo. Si indicas el modelo del dispositivo y la versión de iOS, la revisión avanza mucho antes.",
+ "effectiveDate": "En vigor desde",
+ "effectiveFrom": "Esta política se aplica desde el {date}.",
+ "summaryLabel": "Resumen",
+ "toc": "Contenido",
+ "notFound": "Esta página no existe. Elige un idioma abajo y llegarás a la lista de apps."
+}

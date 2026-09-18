@@ -1,0 +1,271 @@
+{
+ "name": "Dice Master",
+ "subtitle": "Fórmulas resueltas, subtotales por color",
+ "summary": "Elige los dados, toca la pantalla y, en cuanto se paran, aparece el total con cada valor que ha entrado en él.",
+ "hero": {
+  "hook": "Elige los dados, toca la pantalla y, en cuanto se paran, aparece el total con cada valor que ha entrado en él.",
+  "shotAlt": "Dice Master tras lanzar cinco dados de 6 caras en 3D. Sobre los dados están el total y los valores que lo componen."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Lanzas y la cuenta ya está hecha",
+   "body": [
+    "Cuando los dados se paran, el resultado sale en grande y debajo se alinean los valores uno a uno. Como fórmula eliges la que pide el juego, por ejemplo Suma, Product, Highest o Lowest. Si repartes colores entre los dados, cada color recibe su propio subtotal."
+   ],
+   "bullets": [
+    "6 fórmulas, entre ellas Suma y Suma × Lanzamientos",
+    "Subtotales por color de dado",
+    "Cambio entre dados en 3D y vista 2D"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Primer plano del total con los valores debajo. Arriba cruzan la pantalla los chips de caras, número de dados, modo de lanzamiento y fórmula.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-100px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Las reglas que pide el juego",
+   "body": [
+    "Ajusta las caras, el número de dados y el modo de lanzamiento a lo que dice la caja. En Simultáneo tocas un dado para bloquearlo y vuelves a lanzar el resto. En One by One cada lanzamiento suma al total acumulado, y pasarse del Límite de suma cierra la ronda en Pierde. Guarda la configuración en Mis preajustes y recupérala más tarde."
+   ],
+   "bullets": [
+    "Modos Simultáneo y One by One",
+    "Bloqueo de dados y límite de lanzamientos",
+    "Límite de suma con Pierde"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Modos Simultáneo y One by One, Límite de lanzamientos de 2 a 20 y Límite de suma de 1 a 999",
+    "items": [
+     {
+      "name": "Simultáneo",
+      "desc": "Lanzas todos y bloqueas los que te quedas",
+      "on": true
+     },
+     {
+      "name": "One by One",
+      "desc": "Cada lanzamiento suma al total acumulado"
+     },
+     {
+      "name": "Límite de suma",
+      "desc": "Si lo pasas, la ronda acaba en Pierde"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Límite de lanzamientos",
+      "value": "De 2 a 20 lanzamientos"
+     },
+     {
+      "label": "Límite de suma",
+      "value": "De 1 a 999"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Presets para muchos juegos",
+   "body": [
+    "Vienen de serie configuraciones de dados para juegos de mesa, juegos de fiesta, juegos de casino y juegos de rol. En juegos como Craps, Sic Bo y Farkle, cada lanzamiento recibe su resultado."
+   ],
+   "bullets": [
+    "17 Presets",
+    "Resultado de la tirada en 10 juegos",
+    "Buscar y ocultar juegos"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Sigue donde lo dejaste",
+   "body": [
+    "La app abre con la configuración de dados de la última vez. Sin cuenta, y se lanza aunque no haya conexión."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Sin anuncios",
+     "Funciona sin conexión"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Dice Master Pro",
+  "title": "Dados más grandes\ny más dados",
+  "items": [
+   "Dados de más de 10 caras (d12, d20, d100)",
+   "Lanza hasta 20 dados a la vez",
+   "Apariencias Neon, Thunder, Gold y Llama",
+   "Iconos personalizados para las caras de los dados",
+   "Preajustes guardados sin límite",
+   "Historial y estadísticas completos"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Dónde se guardan los ajustes y el historial",
+   "a": [
+    "La configuración de dados, Mis preajustes y el Historial se guardan en el almacenamiento propio de la app. Al eliminar la app desaparecen con ella. No hay sincronización con iCloud.",
+    "Restablecer app, al final de App Settings, borra todos los ajustes, preajustes e historial, y no se puede deshacer. Una compra de Pro no se ve afectada."
+   ]
+  },
+  {
+   "q": "Un dado que no está en la lista",
+   "a": [
+    "Toca el chip de caras en la parte de arriba de la pantalla y se abre la Configuración de dados. Toca la casilla del lápiz y escribe en Caras personalizadas cualquier número del 2 al 100 para lanzar un dado con esas caras. Los dados de más de 10 caras necesitan Pro.",
+    "La vista 3D admite de 2 a 20 caras. Los dados mayores se muestran en 2D."
+   ]
+  },
+  {
+   "q": "Idioma de la app",
+   "a": [
+    "La app arranca en el idioma de tu dispositivo. Para cambiarlo, abre Language en App Settings y elige uno de los 13 idiomas. El cambio ocurre dentro de la app al momento."
+   ]
+  },
+  {
+   "q": "Qué necesita Pro",
+   "a": [
+    "Los dados de más de 10 caras, más de 10 dados a la vez, las apariencias Neon, Thunder, Gold y Llama, y los iconos personalizados necesitan Pro. También el resultado después de cambiar las reglas de un preset. El preset Tirada d20 se lanza sin Pro.",
+    "Sin Pro guardas 2 preajustes, y el Historial y las Estadísticas muestran tus últimos 50 lanzamientos. Los más antiguos siguen guardados en la app y aparecen todos con Pro."
+   ]
+  },
+  {
+   "q": "Restaurar Pro",
+   "a": [
+    "Si cambiaste de dispositivo o reinstalaste la app, toca la rueda dentada de arriba a la derecha y abre App Settings. Toca DiceMaster Pro en la parte de arriba y luego Restaurar compra, cerca del final de la hoja. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Lanzar, el historial y los preajustes funcionan sin conexión a internet. Solo comprar y restaurar Pro necesitan conexión con el App Store."
+   ]
+  },
+  {
+   "q": "Desactivar Agitar para lanzar",
+   "a": [
+    "Desactiva Agitar para lanzar en Controles, dentro de App Settings, y agitar el dispositivo dejará de lanzar los dados."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Dice Master",
+  "effectiveDate": "2026-09-17",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Dice Master (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea. Esta política explica cómo lo hace."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. Por tanto, no hay ninguna finalidad que declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. La app usa los datos que figuran abajo, todos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe estos datos."
+    ],
+    "bullets": [
+     "Configuración de dados y Mis preajustes: para retomar la próxima vez donde lo dejaste",
+     "Historial de lanzamientos: para la lista del historial y las estadísticas",
+     "Ajustes de la app (apariencia, sonido, idioma y similares): para la presentación y el sonido"
+    ]
+   },
+   {
+    "title": "Plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Comunicación a terceros",
+    "paragraphs": [
+     "La información personal no se comunica a terceros. Si envías un resultado con el botón Compartir, el texto que envías se rige por la política de la app que elijas."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El tratamiento de información personal no se encarga a terceros. Apple procesa el pago de Dice Master Pro a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe formas de pago ni datos de tu cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir por su parte. Borrar historial, dentro del Historial, quita tus lanzamientos, y Restablecer app, en App Settings, quita ajustes, preajustes e historial a la vez. Al eliminar la app desaparecen todos sus datos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tus derechos y cómo ejercerlos",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal sobre ti, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "La app no pide acceso a fotos, ubicación, contactos, cámara ni micrófono. Agitar para lanzar lee el acelerómetro del dispositivo solo para detectar el meneo, y no guarda esas lecturas."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Herramientas de recogida automática",
+    "paragraphs": [
+     "La app no usa cookies, ni identificadores de publicidad, ni herramientas de analítica."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación",
+    "paragraphs": [
+     "Si crees que se ha tratado mal tu información personal, puedes dirigirte a la autoridad de protección de datos del lugar donde vives."
+    ],
+    "bullets": [
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (listada en edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "En otros lugares: la autoridad de protección de datos o de consumo de tu país"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerán los cambios y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "Dice Master no recoge información personal. No hay registro ni inicio de sesión, y del pago de Pro se encarga Apple."
+ }
+}

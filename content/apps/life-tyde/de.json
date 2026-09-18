@@ -1,0 +1,267 @@
+{
+ "name": "Life Tyde",
+ "subtitle": "Die stille Chronik Ihrer Jahre",
+ "summary": "Suchen Sie die großen Momente Ihres Lebens heraus, ordnen Sie sie Hashtags zu und halten Sie sie auf einer Timeline.",
+ "hero": {
+  "hook": "Suchen Sie die großen Momente Ihres Lebens heraus, ordnen Sie sie Hashtags zu und halten Sie sie auf einer Timeline.",
+  "shotAlt": "Die Timeline von Life Tyde. Die Einträge laufen nach Jahren den Bildschirm hinunter, hervorgehobene tragen einen roten Punkt und einen roten Titel."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Nur die Momente, auf die es ankam",
+   "body": [
+    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Ihnen wieder einfällt, wie es war. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel."
+   ],
+   "bullets": [
+    "Alter oder Jahre neben jedem Eintrag",
+    "Zeitgeschichtliche Packs aus dem Ereignis-Markt",
+    "Erinnerungen und Wiederholung für Anstehendes"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Die Timeline aus der Nähe. Jede Zeile zeigt Jahr, Monat und Tag, Alter, Titel und Notiz, hervorgehobene Einträge stehen in Rot.",
+    "caption": "App-Ansicht, vergrößert"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Ein Hashtag, eine Chronik",
+   "body": [
+    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum."
+   ],
+   "bullets": [
+    "Tag-Filter und Ansicht nur mit Highlights",
+    "Vorschläge aus den Tags, die Sie schon nutzen",
+    "Chronik-Zusammenfassung mit Apple Intelligence"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Die Tag-Chronik zu #Arbeit. Nur die Einträge mit diesem Tag laufen auf einer Linie, vom ersten Job bis zur eigenen Beratung.",
+    "caption": "Tag-Chronik",
+    "focus": "-170px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Zurück durch die Jahre",
+   "body": [
+    "Die Rückschau blättert Ihre Einträge einzeln durch, die ältesten zuerst. Die Lebenskarte breitet jeden Eintrag über ein Raster aus Jahren und Monaten aus, und Nebeneinander stellt zwei Timelines nach Alter oder nach Jahr gegenüber."
+   ],
+   "bullets": [
+    "Automatisch zum nächsten Eintrag",
+    "Karte und Widget An diesem Tag",
+    "Chronik mit einem Gerät in der Nähe austauschen"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Rückschau"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Öffnen und schreiben",
+   "body": [
+    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "Keine Werbung",
+     "iCloud-Sync",
+     "CSV-Backup"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Life Tyde Pro",
+  "title": "Mehr Platz für Ihr Leben,\nund ein Buch dafür",
+  "items": [
+   "Chronikbuch als PDF im A4-Format",
+   "Unbegrenzte Ereignisse und Hashtags",
+   "Bis zu 3 Timelines",
+   "Alle Ereignis-Packs",
+   "Rückschau gefiltert nach Jahrzehnt, Tag oder Highlight",
+   "Essay-Entwürfe und Vorworte mit Apple Intelligence"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Speicherort der Einträge",
+   "a": [
+    "Die Einträge liegen im Speicher der App. Bei eingeschaltetem iCloud-Sync werden sie zusätzlich in Ihrem eigenen iCloud-Account gesichert und mit Ihren anderen Geräten in diesem Account abgeglichen.",
+    "Gelöschte Einträge bleiben 7 Tage im Papierkorb in den Einstellungen, und in dieser Zeit können Sie sie wiederherstellen."
+   ]
+  },
+  {
+   "q": "iCloud-Sync ein- und ausschalten",
+   "a": [
+    "iCloud-Sync ist von Anfang an eingeschaltet und lässt sich in den Einstellungen aus- und wieder einschalten. Die Änderung greift, nachdem Sie die App im App-Umschalter geschlossen und neu geöffnet haben.",
+    "Melden Sie sich auf Ihren anderen Geräten im selben iCloud-Account an und lassen Sie iCloud-Sync dort eingeschaltet. Der erste Abgleich zwischen Geräten kann einige Minuten dauern."
+   ]
+  },
+  {
+   "q": "Umfang der kostenlosen Version",
+   "a": [
+    "Kostenlos halten Sie bis zu 100 Ereignisse, 1 Timeline und 10 Tags und holen sich aus dem Ereignis-Markt das große Geschichtspack Ihrer App-Sprache. Ein erreichtes Limit sperrt nie, was schon geschrieben ist, Sie können es weiter lesen und bearbeiten.",
+    "Mit Pro haben Ereignisse und Tags kein Limit, und Sie legen bis zu 3 Timelines an."
+   ]
+  },
+  {
+   "q": "Pro wiederherstellen",
+   "a": [
+    "Nach einem Gerätewechsel oder einer Neuinstallation öffnen Sie die Einstellungen, tippen auf Auf Pro upgraden und dann oben rechts auf Wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Anstehendes und Erinnerungen",
+   "a": [
+    "Ein Eintrag mit einem Datum ab morgen wird zu einem anstehenden Ereignis. Sobald Monat und Tag feststehen, bietet Erinnere mich Am Tag, 1 Tag vorher, 1 Woche vorher oder 1 Monat vorher an. Die App fragt beim ersten Sichern eines Ereignisses mit Erinnerung nach der Mitteilungsberechtigung.",
+    "Ist das Datum vorbei, tippen Sie auf Als erledigt markieren, und das Ereignis wird zu einem gewöhnlichen Eintrag. Haben Sie eine Wiederholung gesetzt, wird in diesem Moment der nächste Termin eingeplant."
+   ]
+  },
+  {
+   "q": "Backup per CSV",
+   "a": [
+    "Tippen Sie in den Einstellungen auf Als CSV exportieren, um Ihre Einträge als CSV-Datei zu sichern. Beim Zurückholen mit CSV importieren wählen Sie Zu bestehenden Ereignissen hinzufügen oder Alle Ereignisse ersetzen.",
+    "Eine CSV-Datei ist ein Backup, das Sie bei Bedarf selbst anlegen, und vom iCloud-Sync unabhängig."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Schreiben, Rückschau und Export laufen ohne Internetverbindung. iCloud-Sync sowie Kauf und Wiederherstellung von Pro brauchen eine.",
+    "In der Nähe austauschen verbindet zwei Geräte direkt, ohne Internet. Beide Seiten müssen In der Nähe austauschen in Life Tyde öffnen."
+   ]
+  },
+  {
+   "q": "Geräte für die KI-Funktionen",
+   "a": [
+    "Diese Chronik zusammenfassen, KI-Vorwort hinzufügen und Essay-Entwürfe erscheinen auf Geräten, die Apple Intelligence unterstützen, ab iOS 26 und mit eingeschaltetem Apple Intelligence. Unterstützt das Modell auf dem Gerät die App-Sprache nicht, bleiben sie verborgen.",
+    "Für einen KI-Text braucht es mindestens 5 Einträge als Grundlage. Alles, was dabei entsteht, können Sie vor dem Export bearbeiten."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für Life Tyde",
+  "effectiveDate": "2026-09-17",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Life Tyde (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Es gibt daher keinen Verarbeitungszweck anzugeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die unten genannten Daten nutzt die App, und sie liegen im Speicher der App auf Ihrem Gerät. Bei eingeschaltetem iCloud-Sync liegen Ihre Einträge zusätzlich in Ihrem eigenen iCloud-Account. Der Entwickler erhält diese Daten nicht."
+    ],
+    "bullets": [
+     "Ereignisse (Jahr, Monat, Tag, Titel, Notiz, Highlight, Termin- und Erinnerungseinstellungen), Tags und Timeline-Namen: für die Anzeige Ihrer Timeline",
+     "Einstellungen wie Geburtstag oder Basisjahr, Anzeigeoptionen und App-Sprache: für das, was auf dem Bildschirm erscheint",
+     "Buchtitel und Entwürfe: um die Arbeit an einem Buch (PDF) fortzusetzen",
+     "Ereignistitel und Jahre: für den Suchindex des Geräts, solange die Spotlight-Suche eingeschaltet ist",
+     "Einträge für An diesem Tag: für die Anzeige des Home-Bildschirm-Widgets"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Mit iCloud abgeglichene Einträge bleiben in Ihrem iCloud-Account; löschen Sie einen Eintrag in der App, verschwindet er auch aus den abgeglichenen Kopien. Timeline-Bilder in Fotos und exportierte Dateien löschen Sie selbst."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben.",
+     "In der Nähe austauschen ist eine Funktion, die Sie selbst starten. Sobald beide Geräte zustimmen, tauschen sie Namen und Emoji der aktuellen Timeline sowie deren Einträge (Titel, Notiz, Datum, Tags, Highlight). Empfangene Einträge lassen sich nur ansehen und werden nur dann auf dem empfangenden Gerät gesichert, wenn Sie auf Als Profil behalten tippen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Der iCloud-Sync läuft über Apples iCloud (CloudKit), und die abgeglichenen Daten unterliegen der Datenschutzerklärung von Apple. Die Zahlung für Life Tyde Pro wickelt Apple über den App Store ab. Der Entwickler erhält weder Zahlungsdaten noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gelöschte Einträge bleiben 7 Tage im Papierkorb und werden dann entfernt, oder Sie entfernen sie sofort mit Endgültig löschen. Mit dem Löschen der App verschwinden alle ihre Daten vom Gerät."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Ihre Rechte und wie Sie sie ausüben",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Ihre Einträge sehen, bearbeiten und löschen Sie in der App und exportieren sie als CSV-Datei. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Der iCloud-Sync nutzt die private Datenbank in Ihrem eigenen iCloud-Account. In der Nähe austauschen arbeitet nur über eine verschlüsselte Verbindung. Die App bittet allein um die Berechtigung, Timeline-Bilder zu Fotos hinzuzufügen, und fordert keine Leseberechtigung für Ihre Mediathek an. Nach der Mitteilungsberechtigung fragt sie erst, wenn Sie ein Ereignis mit Erinnerung sichern.",
+     "Die Spotlight-Suche indiziert nur Ereignistitel und Jahre; schalten Sie sie in den Einstellungen aus, wird der Index gelöscht. KI-Zusammenfassungen und Entwürfe schreibt das Apple-Intelligence-Modell auf Ihrem Gerät."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennungen und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Ihre Datenschutzrechte verletzt sehen, können Sie sich an die Datenschutzbehörde an Ihrem Wohnort wenden. Zum Beispiel:"
+    ],
+    "bullets": [
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde an Ihrem Wohnort"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "Life Tyde erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, der iCloud-Sync läuft über Ihren eigenen iCloud-Account, und die Zahlung für Pro wickelt Apple ab."
+ }
+}
