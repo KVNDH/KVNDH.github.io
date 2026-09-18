@@ -9,12 +9,12 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "The paint builds up",
+   "title": "The color comes from the photo",
    "body": [
-    "Every pass makes the paint thicker, and the thick spots catch the light and cast shadows. Once the canvas is covered, the painting is done."
+    "There is no palette. Rub the screen and BrushWorks reads the photo at that exact spot, then lays that color down as paint. All you choose is a brush and a size."
    ],
    "bullets": [
-    "Brush marks that stack in layers",
+    "Color lifted from the spot you rub",
     "Paint with visible thickness",
     "Eye button to check the original photo"
    ],
@@ -29,7 +29,7 @@
    "layout": "feat",
    "title": "Three brushes",
    "body": [
-    "Pick a brush, change its size and build up layers. Turn down Underlay strength and the photo fades; at the lowest step, Blind mode, it is hidden."
+    "Pick a brush and change its size as you work. Paint over a spot and the last brush through leaves its grain. Turn down Underlay strength and the photo fades; at the lowest step, Blind mode, it is hidden."
    ],
    "bullets": [
     "Glaze, Bristle and Knife",

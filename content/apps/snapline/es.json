@@ -9,9 +9,9 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "Doblar la cuadrícula",
+   "title": "Meter la cuadrícula en la foto",
    "body": [
-    "Se empieza por la cuadrícula de tercios. Arrastra el punto central de una línea y esta se dobla mientras los dos extremos siguen pegados al borde de la foto. Arrastra un punto del borde y la línea se inclina. Arrastra la marca pequeña sobre una línea y aparece otro doblez."
+    "La cuadrícula de la cámara flota en el visor y desaparece en cuanto salta el obturador. SnapLine la devuelve a una foto que ya hiciste, partiendo de la cuadrícula de tercios. Arrastra el punto central de una línea y esta se dobla mientras los dos extremos siguen pegados al borde de la foto. Arrastra un punto del borde y la línea se inclina. Arrastra la marca pequeña sobre una línea y aparece otro doblez."
    ],
    "bullets": [
     "Doblar e inclinar cualquier línea",
@@ -27,9 +27,9 @@
   },
   {
    "layout": "feat",
-   "title": "Borrar donde se cruzan",
+   "title": "Pasar la línea por detrás del sujeto",
    "body": [
-    "Cambia a Borrar y frota sobre la línea allí donde cruza el sujeto. Toca Máscara auto y la app encuentra el sujeto y limpia de una vez las líneas que lo cubren. Con Restaurar, la línea vuelve por donde frotes."
+    "Cambia a Borrar y frota sobre la línea allí donde cruza el sujeto. Ahí la línea se corta y la cuadrícula se coloca detrás del sujeto, dentro de la foto. Toca Máscara auto y la app encuentra el sujeto y limpia de una vez las líneas que lo cubren. Con Restaurar, la línea vuelve por donde frotes."
    ],
    "bullets": [
     "Máscara auto para borrar de una vez",

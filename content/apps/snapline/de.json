@@ -9,9 +9,9 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "Das Raster knicken",
+   "title": "Das Raster ins Foto holen",
    "body": [
-    "Sie beginnen beim Drittelraster. Ziehen Sie den mittleren Punkt einer Linie, dann knickt sie ab, während beide Enden am Fotorand bleiben. Ziehen Sie einen Randpunkt, kippt die Linie. Ziehen Sie die kleine Marke auf einer Linie, kommt ein weiterer Knick dazu."
+    "Auf der Kamera schwebt das Raster im Sucher und ist fort, sobald der Auslöser fällt. SnapLine legt es zurück auf ein Foto, das Sie schon gemacht haben, und beginnt beim Drittelraster. Ziehen Sie den mittleren Punkt einer Linie, dann knickt sie ab, während beide Enden am Fotorand bleiben. Ziehen Sie einen Randpunkt, kippt die Linie. Ziehen Sie die kleine Marke auf einer Linie, kommt ein weiterer Knick dazu."
    ],
    "bullets": [
     "Linien knicken und kippen",
@@ -27,9 +27,9 @@
   },
   {
    "layout": "feat",
-   "title": "Überschneidungen wegradieren",
+   "title": "Die Linie hinter das Motiv führen",
    "body": [
-    "Wechseln Sie zu Radieren und reiben Sie über die Linie, wo sie das Motiv kreuzt. Tippen Sie auf Auto-Maske, findet die App das Motiv und löscht die Linien darüber in einem Zug. Mit Wiederherstellen kommt die Linie überall dort zurück, wo Sie reiben."
+    "Wechseln Sie zu Radieren und reiben Sie über die Linie, wo sie das Motiv kreuzt. Dort bricht die Linie ab und das Raster rückt hinter das Motiv, mitten ins Bild. Tippen Sie auf Auto-Maske, findet die App das Motiv und löscht die Linien darüber in einem Zug. Mit Wiederherstellen kommt die Linie überall dort zurück, wo Sie reiben."
    ],
    "bullets": [
     "Auto-Maske für das Radieren in einem Zug",

@@ -9,12 +9,12 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "A tinta se acumula",
+   "title": "A cor vem da foto",
    "body": [
-    "Cada passada deixa a tinta mais espessa, e as partes grossas pegam a luz e projetam sombra. Quando a tela fica coberta, a pintura acabou."
+    "Não existe paleta. Onde o dedo passa, o app lê a cor da foto naquele ponto exato e pinta com ela. O que você escolhe é o pincel e o tamanho."
    ],
    "bullets": [
-    "Pinceladas que se empilham em camadas",
+    "Cor tirada direto do ponto que você esfrega",
     "Tinta com espessura visível",
     "Botão de olho para conferir a foto original"
    ],
@@ -29,7 +29,7 @@
    "layout": "feat",
    "title": "Três pincéis",
    "body": [
-    "Escolha um pincel, mude o tamanho e vá levantando camadas. Ao baixar a Intensidade do fundo a foto desbota, e no nível mais baixo, o Modo Blind, ela some."
+    "Escolha um pincel e mude o tamanho no meio do caminho. Onde você passa de novo, fica o veio do último pincel que passou. Ao baixar a Intensidade do fundo a foto desbota, e no nível mais baixo, o Modo Blind, ela some."
    ],
    "bullets": [
     "Veladura, Cerdas e Espátula",

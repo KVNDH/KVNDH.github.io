@@ -9,12 +9,12 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "La pintura se acumula",
+   "title": "El color sale de la foto",
    "body": [
-    "Cada pasada deja más pintura, y las zonas gruesas atrapan la luz y proyectan sombra. Cuando el lienzo queda cubierto, el cuadro está terminado."
+    "No hay paleta. Donde pasa el dedo, la app lee el color de la foto en ese punto exacto y pinta con él. Lo que eliges es el pincel y su tamaño."
    ],
    "bullets": [
-    "Pinceladas que se superponen en capas",
+    "Color tomado del punto que frotas",
     "Pintura con grosor visible",
     "Botón del ojo para mirar la foto original"
    ],
@@ -29,7 +29,7 @@
    "layout": "feat",
    "title": "Tres pinceles",
    "body": [
-    "Elige un pincel, cambia su tamaño y ve levantando capas. Al bajar la Intensidad del fondo la foto se atenúa, y en el escalón más bajo, el Modo Blind, queda oculta."
+    "Elige un pincel y cambia su tamaño sobre la marcha. Donde vuelves a pasar queda la veta del último pincel que pasó. Al bajar la Intensidad del fondo la foto se atenúa, y en el escalón más bajo, el Modo Blind, queda oculta."
    ],
    "bullets": [
     "Veladura, Cerdas y Espátula",

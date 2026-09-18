@@ -9,12 +9,12 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "Die Farbe wird dicker",
+   "title": "Die Farbe kommt aus dem Foto",
    "body": [
-    "Jeder Zug trägt Farbe auf, und die dicken Stellen fangen das Licht und werfen Schatten. Ist die Leinwand bedeckt, ist das Bild fertig."
+    "Es gibt keine Palette. Wo Ihr Finger über den Bildschirm fährt, liest die App die Farbe des Fotos genau dort ab und malt damit. Zu wählen bleiben Pinsel und Größe."
    ],
    "bullets": [
-    "Pinselstriche, die sich schichten",
+    "Farbe direkt aus dem Foto darunter",
     "Farbauftrag mit sichtbarer Dicke",
     "Augentaste zum Blick auf das Originalfoto"
    ],
@@ -29,7 +29,7 @@
    "layout": "feat",
    "title": "Drei Pinsel",
    "body": [
-    "Wählen Sie einen Pinsel, ändern Sie die Größe und tragen Sie Schicht auf Schicht auf. Je niedriger die Deckkraft der Vorlage, desto blasser das Foto; auf der untersten Stufe, im Blind-Modus, bleibt es verborgen."
+    "Wählen Sie einen Pinsel und ändern Sie unterwegs die Größe. Wo Sie ein zweites Mal darüberfahren, bleibt die Maserung des zuletzt geführten Pinsels. Je niedriger die Deckkraft der Vorlage, desto blasser das Foto; auf der untersten Stufe, im Blind-Modus, bleibt es verborgen."
    ],
    "bullets": [
     "Lasur, Borste und Spachtel",

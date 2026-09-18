@@ -9,9 +9,9 @@
  "sections": [
   {
    "layout": "feat",
-   "title": "Dobrar a grade",
+   "title": "Trazer a grade para dentro da foto",
    "body": [
-    "Você começa pela grade de terços. Arraste o ponto central de uma linha e ela dobra enquanto as duas pontas continuam na borda da foto. Arraste um ponto da borda e a linha se inclina. Arraste a marca pequena sobre a linha e nasce mais uma dobra."
+    "A grade da câmera flutua no visor e some no instante em que o obturador dispara. O SnapLine a coloca de volta numa foto que você já tirou, partindo da grade de terços. Arraste o ponto central de uma linha e ela dobra enquanto as duas pontas continuam na borda da foto. Arraste um ponto da borda e a linha se inclina. Arraste a marca pequena sobre a linha e nasce mais uma dobra."
    ],
    "bullets": [
     "Dobrar e inclinar qualquer linha",
@@ -27,9 +27,9 @@
   },
   {
    "layout": "feat",
-   "title": "Apagar onde as linhas cruzam",
+   "title": "Passar a linha por trás do objeto",
    "body": [
-    "Mude para Apagar e esfregue sobre a linha onde ela cruza o objeto. Toque em Máscara auto e o app encontra o objeto e limpa de uma vez as linhas que passam por cima dele. Com Restaurar, a linha volta onde você esfregar."
+    "Mude para Apagar e esfregue sobre a linha onde ela cruza o objeto. Ali a linha se rompe e a grade recua para trás do objeto, para dentro da foto. Toque em Máscara auto e o app encontra o objeto e limpa de uma vez as linhas que passam por cima dele. Com Restaurar, a linha volta onde você esfregar."
    ],
    "bullets": [
     "Máscara auto para apagar de uma vez",
