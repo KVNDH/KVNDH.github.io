@@ -70,6 +70,43 @@
    }
   },
   {
+   "layout": "feat",
+   "title": "Fija el grosor y el color",
+   "body": [
+    "Abre Ajustes y aparecen los reguladores de Grosor y Opacidad. El color es Blanco o Negro. Añade una línea, elimina otra y, con Restablecer, la cuadrícula vuelve a su punto de partida."
+   ],
+   "bullets": [
+    "Reguladores de Grosor y Opacidad",
+    "Colores de línea Blanco y Negro",
+    "Deshacer y Rehacer"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Colores de línea Blanco y Negro, con reguladores de Grosor y Opacidad",
+    "items": [
+     {
+      "name": "Blanco",
+      "desc": "Para líneas sobre una foto oscura",
+      "on": true
+     },
+     {
+      "name": "Negro",
+      "desc": "Para líneas sobre una foto clara"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Grosor",
+      "value": "De fino a grueso"
+     },
+     {
+      "label": "Opacidad",
+      "value": "De tenue a sólido"
+     }
+    ]
+   }
+  },
+  {
    "layout": "card",
    "title": "Exportación a tamaño completo",
    "body": [
@@ -78,6 +115,7 @@
    "bullets": [
     "Exportación sin límite de tamaño",
     "Calidad JPEG 95",
+    "Sin marca de agua en la foto guardada",
     "Guardar en Fotos o Compartir"
    ]
   },
@@ -85,7 +123,7 @@
    "layout": "card",
    "title": "Elige una foto y empieza",
    "body": [
-    "No hay nada que registrar. Tus ediciones te esperan en la pantalla de inicio; toca una y sigues donde lo dejaste."
+    "No hay nada que registrar. Elige una foto y la cuadrícula cae sobre ella."
    ],
    "bullets": [],
    "visual": {
@@ -98,16 +136,7 @@
    }
   }
  ],
- "pro": {
-  "kick": "SnapLine Pro",
-  "title": "Decide cómo se ven tus líneas\ny guarda sin marca de agua",
-  "items": [
-   "Guardar sin marca de agua",
-   "Estilos de línea discontinua, doble y brillo",
-   "Colores de línea propios además del blanco y el negro",
-   "Ajustar líneas a las esquinas del sujeto"
-  ]
- },
+ "pro": null,
  "faq": [
   {
    "q": "Doblar e inclinar una línea",
@@ -137,43 +166,36 @@
    ]
   },
   {
+   "q": "Cambiar el color y el grosor de la línea",
+   "a": [
+    "Abre Ajustes con la herramienta Líneas activa y verás los reguladores de Grosor y Opacidad junto a los botones de color. Los colores son Blanco y Negro.",
+    "Añadir línea coloca una línea nueva, alternando horizontal y vertical. Eliminar línea quita la que tengas seleccionada."
+   ]
+  },
+  {
+   "q": "Devolver la cuadrícula a su punto de partida",
+   "a": [
+    "Toca Restablecer en Ajustes y desaparecen las líneas que moviste y los puntos de doblez que añadiste: la cuadrícula vuelve a su punto de partida. Las áreas borradas se conservan. Deshacer lo trae todo de vuelta."
+   ]
+  },
+  {
    "q": "Calidad de exportación y marca de agua",
    "a": [
     "Exportar compone tu foto en su resolución original y la guarda como JPEG con calidad 95. No hay límite de tamaño.",
-    "Las fotos guardadas sin Pro llevan una pequeña marca de agua de SnapLine en la esquina inferior derecha. SnapLine Pro guarda sin ella."
-   ]
-  },
-  {
-   "q": "Por qué la línea discontinua se guarda continua",
-   "a": [
-    "Los estilos de línea discontinua, doble y brillo son funciones de SnapLine Pro. Cualquiera puede probarlos en el lienzo mientras edita, y sin Pro se guardan como línea continua. Toca Guardar con este estilo de línea en la pantalla de exportación y se abre Pro."
-   ]
-  },
-  {
-   "q": "Retomar el trabajo",
-   "a": [
-    "Cuando cierras una foto o sales de la app, tu trabajo se queda en la pantalla de inicio como miniatura. Tócala para seguir editando sin volver a elegir la foto, o mantenla pulsada para eliminarla.",
-    "SnapLine conserva una copia de la foto original junto al proyecto, así que puedes seguir editando y exportar a resolución completa aunque hayas borrado el original en Fotos.",
-    "La pantalla de inicio muestra los 3 proyectos más recientes. La app guarda hasta 12, y con SnapLine Pro aparecen los 12."
-   ]
-  },
-  {
-   "q": "Restaurar una compra de Pro",
-   "a": [
-    "Si cambiaste de dispositivo o reinstalaste la app, toca Restaurar compra en la pantalla de compra. Para llegar ahí, abre una foto, despliega Ajustes mientras estás en Líneas y toca la insignia Pro que hay junto a Estilo. Con la misma cuenta de Apple no se cobra de nuevo."
+    "Las fotos guardadas no llevan marca de agua. Guardar en Fotos deja el archivo en tu fototeca y Compartir lo envía al momento."
    ]
   },
   {
    "q": "Conexión a internet",
    "a": [
-    "Editar, la Máscara auto y guardar funcionan sin conexión. Solo comprar y restaurar Pro necesitan conexión con el App Store."
+    "Editar, la Máscara auto y guardar funcionan sin conexión. La app no tiene ningún servidor al que conectarse."
    ]
   }
  ],
  "privacy": {
   "title": "Política de privacidad de SnapLine",
   "effectiveDate": "2026-09-18",
-  "summary": "SnapLine no recoge información personal. No hay registro ni inicio de sesión, y del pago de Pro se encarga Apple.",
+  "summary": "SnapLine no recoge información personal. No hay registro ni inicio de sesión, y tampoco compras dentro de la app.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app SnapLine (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, y expone a continuación sus criterios."
   ],
@@ -191,16 +213,15 @@
      "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
     ],
     "bullets": [
-     "Proyectos recientes (tus ediciones, una copia de la foto original, una miniatura): para volver a abrir tu trabajo",
-     "Ajustes y si tienes Pro: para decidir qué muestra la app y cómo exporta",
-     "Hora del primer arranque y número de guardados: para decidir cuándo pedir una valoración",
+     "Hora del primer arranque y versión de la app: se guarda como registro de instalación",
+     "Si ya has visto el aviso inicial: sirve para mostrarlo una sola vez",
      "Una imagen temporal para compartir: se usa al compartir y se borra en la siguiente exportación o al abrir la app"
     ]
    },
    {
     "title": "Plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app, y los proyectos recientes más antiguos se van retirando a medida que llegan otros nuevos. Las fotos guardadas en Fotos siguen ahí hasta que las borres en Fotos."
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Las fotos guardadas en Fotos siguen ahí hasta que las borres en Fotos."
     ],
     "bullets": []
    },
@@ -214,14 +235,14 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "El tratamiento de información personal no se encarga a terceros. Apple procesa el pago de SnapLine Pro a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador nunca recibe tu forma de pago ni los datos de tu cuenta de Apple."
+     "El tratamiento de información personal no se encarga a terceros."
     ],
     "bullets": []
    },
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Puedes eliminar un proyecto reciente manteniendo pulsada su miniatura en la pantalla de inicio, y al eliminar la app desaparecen todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },
