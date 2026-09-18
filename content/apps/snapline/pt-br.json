@@ -1,0 +1,291 @@
+{
+ "name": "SnapLine",
+ "subtitle": "Linhas novas em fotos que você já tirou",
+ "summary": "Coloque uma grade sobre uma foto que você já tirou e dobre as linhas para elas passarem atrás do objeto.",
+ "hero": {
+  "hook": "Coloque uma grade sobre uma foto que você já tirou e dobre as linhas para elas passarem atrás do objeto.",
+  "shotAlt": "O editor do SnapLine com um farol ao anoitecer. As linhas da grade se dobram na direção do farol e, abaixo, estão as ferramentas Linhas e Apagar."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Dobrar a grade",
+   "body": [
+    "Você começa pela grade de terços. Arraste o ponto central de uma linha e ela dobra enquanto as duas pontas continuam na borda da foto. Arraste um ponto da borda e a linha se inclina. Arraste a marca pequena sobre a linha e nasce mais uma dobra."
+   ],
+   "bullets": [
+    "Dobrar e inclinar qualquer linha",
+    "Pontos de dobra, em ângulo ou em curva",
+    "Adicionar linha e Excluir linha"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Palmeiras ao pôr do sol vistas de perto. As linhas dobradas da grade passam atrás das folhas.",
+    "caption": "Tela do app, ampliada"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Apagar onde as linhas cruzam",
+   "body": [
+    "Mude para Apagar e esfregue sobre a linha onde ela cruza o objeto. Toque em Máscara auto e o app encontra o objeto e limpa de uma vez as linhas que passam por cima dele. Com Restaurar, a linha volta onde você esfregar."
+   ],
+   "bullets": [
+    "Máscara auto para apagar de uma vez",
+    "Zoom de até 8× com lupa",
+    "Toque e segure para ver o resultado"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Três ferramentas, Apagar, Restaurar e Máscara auto, com zoom de até 8× e pincel de 1 a 60 pt",
+    "items": [
+     {
+      "name": "Apagar",
+      "desc": "Tira a linha onde você esfrega"
+     },
+     {
+      "name": "Restaurar",
+      "desc": "Traz de volta as linhas apagadas"
+     },
+     {
+      "name": "Máscara auto",
+      "desc": "Limpa de uma vez as linhas sobre o objeto",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Zoom",
+      "value": "Até 8×",
+      "meter": "ticks",
+      "count": 8,
+      "on": 3
+     },
+     {
+      "label": "Pincel",
+      "value": "De 1 a 60 pt"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Exportação em tamanho real",
+   "body": [
+    "Exportar desenha as linhas sobre a foto original na resolução cheia. Salve o JPEG em Fotos ou compartilhe na hora."
+   ],
+   "bullets": [
+    "Exportação sem limite de tamanho",
+    "Qualidade JPEG 95",
+    "Salvar em Fotos ou Compartilhar"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Escolha uma foto e comece",
+   "body": [
+    "Não há cadastro nenhum. Seus trabalhos ficam esperando na tela inicial; toque em um deles e continue de onde parou."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sem conta",
+     "Sem anúncios",
+     "Funciona off-line"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Decida como as linhas ficam\ne salve sem marca d’água",
+  "items": [
+   "Salvar sem marca d’água",
+   "Estilos de linha tracejada, dupla e brilho",
+   "Cores de linha próprias além de branco e preto",
+   "Encaixar linhas nos cantos do objeto"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Dobrar e inclinar uma linha",
+   "a": [
+    "Cada linha tem três pontos. As duas pontas ficam na borda da foto e o ponto central se move livremente. Arraste o ponto central e a linha dobra com as pontas paradas. Arraste um ponto da borda e ele desliza por aquele lado, inclinando a linha.",
+    "Toque numa linha e aparecem marcas pequenas ao longo dela. Arraste uma marca para criar um ponto de dobra, ou toque em qualquer ponto para excluí-lo ou transformá-lo em curva. Os pontos da borda não podem ser excluídos, e uma linha aceita até 8 pontos."
+   ]
+  },
+  {
+   "q": "Levar uma linha para trás do objeto",
+   "a": [
+    "Escolha Apagar na barra de ferramentas de baixo e esfregue sobre a linha onde ela cruza o objeto. Toque em Máscara auto e o app encontra o objeto e limpa de uma vez as linhas que passam por cima dele.",
+    "Para trazer de volta uma linha apagada, abra os Ajustes ainda em Apagar, escolha Restaurar e esfregue naquele ponto. Desfazer também resolve."
+   ]
+  },
+  {
+   "q": "Quando a Máscara auto não acha o objeto",
+   "a": [
+    "A Máscara auto vai melhor quando o objeto se separa bem do fundo. Se ela não achar nada, apague à mão com Apagar e o resultado é o mesmo. Para tirar uma máscara já aplicada, toque no mesmo botão, que agora se chama Remover máscara auto."
+   ]
+  },
+  {
+   "q": "Apagar detalhes finos",
+   "a": [
+    "Abra os dedos para ampliar até 8×, ou toque duas vezes para alternar entre 3× e a vista inteira. Nos Ajustes, mova o controle Pincel para a esquerda e o pincel afina.",
+    "Ligue a Lupa para ver o que o dedo está cobrindo e Áreas apagadas para destacar o que já saiu. Com a foto ampliada, você arrasta a borda dela bem para dentro da tela."
+   ]
+  },
+  {
+   "q": "Qualidade da exportação e marca d’água",
+   "a": [
+    "Exportar compõe a foto na resolução original e salva como JPEG na qualidade 95. Não há limite de tamanho.",
+    "As fotos salvas sem o Pro levam uma pequena marca d’água do SnapLine no canto inferior direito. O SnapLine Pro salva sem ela."
+   ]
+  },
+  {
+   "q": "Por que a linha tracejada sai contínua",
+   "a": [
+    "Os estilos de linha tracejada, dupla e brilho são recursos do SnapLine Pro. Qualquer pessoa pode experimentá-los na área de edição, e sem o Pro eles são salvos como linha contínua. Toque em Salvar com este estilo de linha na tela de exportação e o Pro aparece."
+   ]
+  },
+  {
+   "q": "Retomar o trabalho",
+   "a": [
+    "Quando você fecha uma foto ou sai do app, o trabalho fica na tela inicial como miniatura. Toque nela para continuar editando sem escolher a foto de novo, ou toque e segure para excluí-la.",
+    "O SnapLine guarda uma cópia da foto original junto com o projeto, então dá para continuar editando e exportar na resolução cheia mesmo depois de apagar o original em Fotos.",
+    "A tela inicial mostra os 3 projetos mais recentes. O app guarda até 12, e com o SnapLine Pro aparecem todos os 12."
+   ]
+  },
+  {
+   "q": "Restaurar uma compra do Pro",
+   "a": [
+    "Se você trocou de aparelho ou reinstalou o app, toque em Restaurar Compra na tela de compra. Para chegar lá, abra uma foto, expanda os Ajustes ainda em Linhas e toque no selo Pro ao lado de Estilo. Com a mesma Conta Apple não há nova cobrança."
+   ]
+  },
+  {
+   "q": "Conexão com a internet",
+   "a": [
+    "Editar, usar a Máscara auto e salvar funcionam sem conexão. Só comprar e restaurar o Pro precisam de conexão com a App Store."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do SnapLine",
+  "effectiveDate": "2026-09-18",
+  "summary": "O SnapLine não coleta informações pessoais. Não há cadastro nem login, e o pagamento do Pro é processado pela Apple.",
+  "intro": [
+   "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app SnapLine (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, e apresenta a seguir os seus critérios."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não trata informações pessoais de quem o usa, de modo que não há finalidade a declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
+    ],
+    "bullets": [
+     "Projetos recentes (suas edições, uma cópia da foto original, uma miniatura): usados para reabrir o trabalho",
+     "Ajustes e se você tem o Pro: usados para definir o que o app mostra e como exporta",
+     "Hora da primeira abertura e número de salvamentos: usados para definir quando pedir uma avaliação",
+     "Uma imagem temporária para compartilhar: usada ao compartilhar e apagada na exportação seguinte ou ao abrir o app"
+    ]
+   },
+   {
+    "title": "Período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app, e os projetos recentes mais antigos saem conforme novos entram. As fotos salvas no app Fotos ficam lá até você apagá-las por lá."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Fornecimento a terceiros",
+    "paragraphs": [
+     "Informações pessoais não são fornecidas a terceiros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "O tratamento de informações pessoais não é terceirizado. A Apple processa o pagamento do SnapLine Pro pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor nunca recebe a forma de pagamento nem os dados da Conta Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Você apaga um projeto recente tocando e segurando a miniatura dele na tela inicial, e excluir o app leva junto todos os dados dele."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de representantes legais",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais suas, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "O app só recebe as fotos que você escolhe no seletor de fotos do iOS. Para salvar uma foto editada ele usa a permissão de adicionar fotos e nunca pede permissão para ler a sua fototeca."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies e outra coleta automática",
+    "paragraphs": [
+     "O app não usa cookies, identificador de publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

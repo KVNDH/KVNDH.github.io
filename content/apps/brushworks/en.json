@@ -1,0 +1,268 @@
+{
+ "name": "BrushWorks",
+ "subtitle": "A painting that grows as you paint",
+ "summary": "Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.",
+ "hero": {
+  "hook": "Pick a photo you like and paint it by rubbing the screen. The app picks the colors; you do the painting.",
+  "shotAlt": "The BrushWorks canvas with a lighthouse photo painted over in thick strokes. The three brushes and the size steps sit below."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "The paint builds up",
+   "body": [
+    "Every pass makes the paint thicker, and the thick spots catch the light and cast shadows. Once the canvas is covered, the painting is done."
+   ],
+   "bullets": [
+    "Brush marks that stack in layers",
+    "Paint with visible thickness",
+    "Eye button to check the original photo"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "A close-up of the painting. The strokes leave a grain in the direction the brush moved.",
+    "caption": "App screen, zoomed in"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Three brushes",
+   "body": [
+    "Pick a brush, change its size and build up layers. Turn down Underlay strength and the photo fades; at the lowest step, Blind mode, it is hidden."
+   ],
+   "bullets": [
+    "Glaze, Bristle and Knife",
+    "Brush size in 9 steps",
+    "Underlay strength in 5 steps"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Three brushes, 9 brush sizes and 5 steps of Underlay strength",
+    "items": [
+     {
+      "glyph": "gl",
+      "name": "Glaze",
+      "desc": "Sheer color that mixes as it layers"
+     },
+     {
+      "glyph": "br",
+      "name": "Bristle",
+      "desc": "Streaks that follow your stroke"
+     },
+     {
+      "glyph": "kn",
+      "name": "Knife",
+      "desc": "Thick paint with a wet sheen",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Brush size",
+      "value": "9 steps",
+      "meter": "ticks",
+      "count": 9,
+      "on": 5
+     },
+     {
+      "label": "Underlay strength",
+      "value": "5 steps",
+      "meter": "levels",
+      "count": 5
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Every stroke on record",
+   "body": [
+    "Every dab is recorded. Replay plays the painting back from the start, and Time-lapse turns it into a short video."
+   ],
+   "bullets": [
+    "Replay at 0.25×, 0.5×, 1×, 2× or 4×",
+    "Vertical 9:16 time-lapse video",
+    "A record of dabs and time painted"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Replay"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Paint without signing up",
+   "body": [
+    "Open the app, pick a photo and start painting. There is no account to create and nothing to sign in to."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "No sign-in",
+     "No ads"
+    ]
+   }
+  }
+ ],
+ "pro": null,
+ "faq": [
+  {
+   "q": "Where your photo is kept",
+   "a": [
+    "BrushWorks keeps a copy of the photo you picked in the app's storage, so it can bring your painting back the next time you open the app. The copy is deleted when you pick another photo or tap Start over in Settings.",
+    "The iOS photo picker hands the app only the one photo you choose. Saving a finished painting uses add-only access to Photos."
+   ]
+  },
+  {
+   "q": "Why you paint the whole canvas yourself",
+   "a": [
+    "BrushWorks is for painting by hand, so there is no one-tap conversion. That is also why the time-lapse ends with how many strokes you made and how long you painted."
+   ]
+  },
+  {
+   "q": "Why switching photos clears the painting",
+   "a": [
+    "Each stroke takes its color from the photo whenever the painting is redrawn. Old strokes on a new photo would show colors they never had, so the canvas is cleared. If you have painted anything, the app asks first.",
+    "Undo cannot bring it back. Save your painting before you switch photos."
+   ]
+  },
+  {
+   "q": "The mark on saved paintings",
+   "a": [
+    "Every painting you save carries a small BRUSH/WORKS mark in the lower right corner. Paintings are saved as PNG."
+   ]
+  },
+  {
+   "q": "Time-lapse length",
+   "a": [
+    "Every time-lapse is 10 seconds long at 720×1280, in a vertical 9:16 frame.",
+    "To watch the whole process, use Replay in the app. Pick 0.25×, 0.5×, 1×, 2× or 4×, and drag sideways across the canvas to jump to any point."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Painting, saving and time-lapses all work without an internet connection. The app has nothing to connect to."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "BrushWorks Privacy Policy",
+  "effectiveDate": "2026-09-18",
+  "intro": [
+   "This policy explains how kvndh (\"we\") handles personal information in the BrushWorks app (\"the app\"). We follow the Personal Information Protection Act of the Republic of Korea."
+  ],
+  "sections": [
+   {
+    "title": "Purpose of processing",
+    "paragraphs": [
+     "The app has no sign-up or sign-in, and we do not process personal information about its users. There is therefore no processing purpose to state."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Personal information we process",
+    "paragraphs": [
+     "We collect no personal information. The app works with the data below, all of it kept in the app's storage on your device. We do not receive any of it."
+    ],
+    "bullets": [
+     "Copy of the photo you picked: used to reopen your painting",
+     "Stroke record and settings: used to redraw your painting"
+    ]
+   },
+   {
+    "title": "Processing and retention period",
+    "paragraphs": [
+     "We hold no personal information. Data in the app's storage is deleted when you delete the app. Paintings you saved to Photos stay there until you delete them in the Photos app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Sharing with third parties",
+    "paragraphs": [
+     "We do not share personal information with third parties."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Processing by service providers",
+    "paragraphs": [
+     "We do not have anyone process personal information on our behalf."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Deletion",
+    "paragraphs": [
+     "We hold no personal information, so there is nothing for us to delete. The copy of the photo you picked is deleted when you tap Start over in Settings, and all app data is deleted when you delete the app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Your rights and how to exercise them",
+    "paragraphs": [
+     "Because we hold no personal information about you or your legal representative, there is nothing to access, correct or delete. If you have questions, email us at the address below."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "The iOS photo picker passes only the one photo you choose to the app. Saving a finished painting uses permission to add photos only, and no prompt asking for access to your whole photo library appears."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic data collection and how to refuse it",
+    "paragraphs": [
+     "The app does not use cookies, advertising identifiers or analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Privacy officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Complaints and remedies",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, we will post the changes and the new effective date on this page."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "BrushWorks does not collect personal information. There is no sign-up, no sign-in and no in-app purchases."
+ }
+}

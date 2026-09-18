@@ -1,0 +1,818 @@
+# kvndh.com 문구 (ko)
+# 줄 맨 앞의 [키] 는 그대로 두고, 뒤의 문장만 고치면 됩니다.
+# 한 항목은 한 줄입니다. 줄바꿈이 필요한 곳은 \n 으로 적습니다.
+
+# ---- 전체 확인 사항 ----
+# 시행일은 배포하는 날로 바꿉니다.
+# 가족 공유는 ASC 설정을 확인하지 못해 어느 앱에도 적지 않았습니다.
+# 영어 개인정보 처리방침 11절은 한국 기관 대신 EU, 영국, 미국, 그 밖의 나라 감독기관을 적었고, 운영자를 'we'로 적었습니다(copy-en.txt).
+
+==================== 공통 화면 문구 ====================
+
+[ui.skip] 본문으로 건너뛰기
+[ui.language] 언어
+[ui.hubMetaTitle] kvndh 앱
+[ui.learnMore] 자세히 보기
+[ui.getOnAppStore] App Store에서 받기
+[ui.storeLabel] {name}, App Store에서 보기
+[ui.screenshot] 화면
+[ui.navAbout] 소개
+[ui.navSupport] 지원
+[ui.navPrivacy] 개인정보 처리방침
+[ui.helpBody] 자주 묻는 질문과 문의 방법은 지원 페이지에 있습니다.
+[ui.supportPage] 지원 페이지
+[ui.faqTitle] 자주 묻는 질문
+[ui.contactTitle] 문의
+[ui.contactBody] 궁금한 점이나 오류는 메일로 보내 주세요. 기기 모델과 iOS 버전을 함께 적어 주시면 많은 도움이 됩니다.
+[ui.effectiveDate] 시행일
+[ui.effectiveFrom] 이 방침은 {date}부터 적용합니다.
+[ui.summaryLabel] 요약
+[ui.toc] 목차
+[ui.notFound] 찾는 페이지가 없습니다. 아래에서 언어를 고르면 앱 목록으로 갑니다.
+
+==================== BrushWorks (brushworks) ====================
+# 확인 필요:
+#  - HQ가 앱 화면 표기에 맞춰 고친 곳: '구매 복원'→'구입 항목 복원', '작업 시간'→'그린 시간', '타임랩스 저장'→'타임랩스 영상'(앱은 공유 시트로 내보냄), 결제 문장을 '인앱 결제'로(팁 3개도 인앱 결제)
+#  - 개인정보 8절 '사진 보관함을 읽는 권한은 요청하지 않습니다': 코드상 사실이지만 Info.plist에 읽기 권한 문구가 선언돼 있음. 표현 확인 필요
+#  - 스크린샷이 영어 UI 한 벌뿐이라 한국어 페이지에도 영어 화면이 보임
+
+
+## 기본
+[brushworks.name] BrushWorks
+[brushworks.subtitle] 칠한 만큼 완성되는 그림
+[brushworks.summary] 좋아하는 사진을 고르고 화면을 문질러서 그림으로 그려 보세요. 물감의 색만 대신 골라 드릴 테니 색칠만 하시면 됩니다.
+
+## 첫 화면
+[brushworks.hero.hook] 좋아하는 사진을 고르고 화면을 문질러서 그림으로 그려 보세요. 물감의 색만 대신 골라 드릴 테니 색칠만 하시면 됩니다.
+[brushworks.hero.shotAlt] BrushWorks에서 등대 사진을 물감으로 칠한 편집 화면. 아래에 붓 세 자루와 크기 단계가 있습니다.
+
+## 기능 01 (feat, crop)
+[brushworks.sections.0.title] 물감이 쌓입니다
+[brushworks.sections.0.body.0] 칠할수록 물감이 두꺼워지고, 두꺼워진 자리는 빛을 받아 그림자가 집니다. 캔버스를 다 덮으면 그림이 끝납니다.
+[brushworks.sections.0.bullets.0] 겹겹이 쌓이는 붓자국
+[brushworks.sections.0.bullets.1] 두께감 있는 물감 표현
+[brushworks.sections.0.bullets.2] 눈 버튼으로 원본 비교
+[brushworks.sections.0.visual.alt] 칠한 그림을 확대한 모습. 붓이 지나간 방향으로 결이 남아 있습니다.
+[brushworks.sections.0.visual.caption] 앱 화면 확대
+
+## 기능 02 (feat, kit)
+[brushworks.sections.1.title] 붓 세 자루
+[brushworks.sections.1.body.0] 붓을 고르고 크기를 바꾸며 층을 쌓습니다. 밑그림 농도를 낮출수록 사진이 흐려지고, 가장 낮은 Blind 모드에서는 보이지 않습니다.
+[brushworks.sections.1.bullets.0] 얇은 칠, 붓결, 나이프 세 가지 붓
+[brushworks.sections.1.bullets.1] 9단계 붓 크기 조절
+[brushworks.sections.1.bullets.2] 5단계 밑그림 농도 조절
+[brushworks.sections.1.visual.label] 붓 세 자루와 붓 크기 9단계, 밑그림 농도 5단계
+[brushworks.sections.1.visual.items.0.name] 얇은 칠
+[brushworks.sections.1.visual.items.0.desc] 반투명하게 겹치는 색 표현
+[brushworks.sections.1.visual.items.1.name] 붓결
+[brushworks.sections.1.visual.items.1.desc] 방향을 따라 남는 붓결 질감
+[brushworks.sections.1.visual.items.2.name] 나이프
+[brushworks.sections.1.visual.items.2.desc] 두껍게 바른 듯한 윤기 표현
+[brushworks.sections.1.visual.rows.0.label] 붓 크기
+[brushworks.sections.1.visual.rows.0.value] 9단계
+[brushworks.sections.1.visual.rows.1.label] 밑그림 농도
+[brushworks.sections.1.visual.rows.1.value] 5단계
+
+## 기능 03 (card, play)
+[brushworks.sections.2.title] 그린 과정이 남습니다
+[brushworks.sections.2.body.0] 붓질은 하나하나 기록됩니다. 리플레이로 처음부터 다시 보고, 짧은 타임랩스로 내보냅니다.
+[brushworks.sections.2.bullets.0] 1~4배속 리플레이
+[brushworks.sections.2.bullets.1] 9:16 세로 타임랩스 영상
+[brushworks.sections.2.bullets.2] 붓질 횟수와 그린 시간 기록
+[brushworks.sections.2.visual.label] 리플레이
+
+## 기능 04 (card, chips)
+[brushworks.sections.3.title] 회원가입 없이 바로 그립니다
+[brushworks.sections.3.body.0] 앱을 열고 사진 한 장을 고르면 바로 칠합니다. 계정을 만들거나 로그인하지 않습니다.
+[brushworks.sections.3.visual.items.0] 계정 없음
+[brushworks.sections.3.visual.items.1] 로그인 없음
+[brushworks.sections.3.visual.items.2] 광고 없음
+
+## Pro
+[brushworks.pro.kick] BrushWorks Pro
+[brushworks.pro.title] 더 크게 남기고,\n더 섬세하게 칠합니다
+[brushworks.pro.items.0] 워터마크 없는 깔끔한 저장
+[brushworks.pro.items.1] 10~90초 고화질 타임랩스 (1080×1920)
+[brushworks.pro.items.2] 원하는 색으로만 칠하는 색 고정
+[brushworks.pro.items.3] 붓 흔들림과 크기 세밀 조절
+[brushworks.pro.items.4] 최대 3072px 고해상도 저장
+[brushworks.pro.items.5] PNG, HEIF, TIFF 형식 지원
+
+## 자주 묻는 질문
+[brushworks.faq.0.q] 고른 사진의 보관 위치
+[brushworks.faq.0.a.0] 고른 사진의 사본은 다음에 앱을 열 때 그림을 되살리려고 앱 저장공간에 둡니다. 다른 사진을 고르거나 설정에서 처음 상태로를 누르면 지워집니다.
+[brushworks.faq.0.a.1] 사진은 iOS 사진 선택기로 고른 한 장만 앱에 전달됩니다. 완성작을 저장할 때는 추가 전용 권한만 씁니다.
+[brushworks.faq.1.q] 캔버스 전체를 문질러야 하는 이유
+[brushworks.faq.1.a.0] 손으로 그리는 앱이라 한 번에 바꿔 주는 기능이 없습니다. 타임랩스 끝에 붓질 수와 그린 시간이 남는 것도 그래서입니다.
+[brushworks.faq.2.q] 사진을 바꾸면 그림이 사라지는 이유
+[brushworks.faq.2.a.0] 붓질의 색은 그림을 다시 그릴 때마다 사진에서 읽어 옵니다. 사진이 바뀌면 옛 붓질에 없던 색이 나오므로 캔버스를 비웁니다. 칠한 것이 있으면 먼저 묻습니다.
+[brushworks.faq.2.a.1] 되돌리기로는 복구되지 않습니다. 사진을 바꾸기 전에 그림을 저장해 두세요.
+[brushworks.faq.3.q] 타임랩스 길이
+[brushworks.faq.3.a.0] 무료 타임랩스는 10초, 세로 9:16입니다. Pro에서는 10초에서 90초 사이로 길이를 고릅니다.
+[brushworks.faq.3.a.1] 전 과정은 앱 안의 리플레이로 봅니다. 1배속부터 4배속까지 고르고, 캔버스를 좌우로 끌면 원하는 지점으로 갑니다.
+[brushworks.faq.4.q] 구입 항목 복원
+[brushworks.faq.4.a.0] 기기를 바꾸거나 앱을 다시 설치했다면 설정의 Pro 카드에서 구입 항목 복원을 누릅니다. 같은 Apple 계정이면 다시 결제하지 않습니다.
+[brushworks.faq.5.q] 인터넷 연결
+[brushworks.faq.5.a.0] 그리기와 저장, 타임랩스는 인터넷 연결 없이 됩니다. Pro 구매와 구입 항목 복원에는 App Store 연결이 필요합니다.
+
+## 개인정보 처리방침
+[brushworks.privacy.title] BrushWorks 개인정보 처리방침
+[brushworks.privacy.intro.0] kvndh(이하 개발자)는 BrushWorks 앱(이하 앱) 이용자의 개인정보를 「개인정보 보호법」에 따라 처리하며, 그 기준을 다음과 같이 알립니다.
+
+## 개인정보 처리방침 01절
+[brushworks.privacy.sections.0.title] 개인정보의 처리 목적
+[brushworks.privacy.sections.0.paragraphs.0] 앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 따라서 별도의 처리 목적이 없습니다.
+
+## 개인정보 처리방침 02절
+[brushworks.privacy.sections.1.title] 처리하는 개인정보의 항목
+[brushworks.privacy.sections.1.paragraphs.0] 개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.
+[brushworks.privacy.sections.1.bullets.0] 고른 사진의 사본: 그림을 다시 열 때 사용
+[brushworks.privacy.sections.1.bullets.1] 붓질 기록과 설정: 그림을 다시 그릴 때 사용
+
+## 개인정보 처리방침 03절
+[brushworks.privacy.sections.2.title] 처리 및 보유 기간
+[brushworks.privacy.sections.2.paragraphs.0] 개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다. 사진 앱에 저장한 그림은 사진 앱에서 지웁니다.
+
+## 개인정보 처리방침 04절
+[brushworks.privacy.sections.3.title] 제3자 제공
+[brushworks.privacy.sections.3.paragraphs.0] 개인정보를 제3자에게 제공하지 않습니다.
+
+## 개인정보 처리방침 05절
+[brushworks.privacy.sections.4.title] 처리 위탁
+[brushworks.privacy.sections.4.paragraphs.0] 개인정보 처리를 위탁하지 않습니다. BrushWorks Pro 같은 인앱 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.
+
+## 개인정보 처리방침 06절
+[brushworks.privacy.sections.5.title] 파기 절차와 방법
+[brushworks.privacy.sections.5.paragraphs.0] 개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 고른 사진의 사본은 설정에서 처음 상태로를 누르면 지워지고, 앱의 모든 자료는 앱을 삭제하면 지워집니다.
+
+## 개인정보 처리방침 07절
+[brushworks.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
+[brushworks.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
+
+## 개인정보 처리방침 08절
+[brushworks.privacy.sections.7.title] 안전성 확보 조치
+[brushworks.privacy.sections.7.paragraphs.0] 사진은 iOS 사진 선택기로 고른 한 장만 앱에 전달됩니다. 완성작을 저장할 때는 사진을 추가하는 권한만 쓰며, 사진 보관함을 읽는 권한은 요청하지 않습니다.
+
+## 개인정보 처리방침 09절
+[brushworks.privacy.sections.8.title] 자동 수집 장치의 설치와 운영, 거부 방법
+[brushworks.privacy.sections.8.paragraphs.0] 쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.
+
+## 개인정보 처리방침 10절
+[brushworks.privacy.sections.9.title] 개인정보 보호책임자
+[brushworks.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
+[brushworks.privacy.sections.9.pairs.0.label] 책임자
+[brushworks.privacy.sections.9.pairs.0.value] kvndh
+[brushworks.privacy.sections.9.pairs.1.label] 이메일
+[brushworks.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[brushworks.privacy.sections.10.title] 권익침해 구제 방법
+[brushworks.privacy.sections.10.paragraphs.0] 개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.
+[brushworks.privacy.sections.10.bullets.0] 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
+[brushworks.privacy.sections.10.bullets.1] 개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)
+[brushworks.privacy.sections.10.bullets.2] 대검찰청: 국번 없이 1301 (www.spo.go.kr)
+[brushworks.privacy.sections.10.bullets.3] 경찰청: 국번 없이 182 (ecrm.police.go.kr)
+
+## 개인정보 처리방침 12절
+[brushworks.privacy.sections.11.title] 처리방침의 변경
+[brushworks.privacy.sections.11.paragraphs.0] 방침이 바뀌면 바뀐 내용과 새 시행일을 이 페이지에 게시합니다.
+
+## 개인정보 처리방침
+[brushworks.privacy.summary] BrushWorks는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, 인앱 결제는 Apple이 처리합니다.
+
+==================== SnapLine (snapline) ====================
+# 확인 필요:
+#  - 무료 저장본 워터마크: App Store 상품을 확인하기 전(첫 실행이 오프라인 등)에는 찍히지 않음. FAQ에는 '들어간다'고만 적음
+#  - 최근 작업 개수(무료 3개, Pro 12개)는 로드맵 결정에 따라 적지 않음
+#  - 스크린샷이 영어 UI뿐이라 한국어 페이지에도 영어 화면이 보임
+
+
+## 기본
+[snapline.name] SnapLine
+[snapline.subtitle] 이미 찍은 한 장에 다시 얹는 그리드
+[snapline.summary] 찍어 둔 사진에 격자를 얹고, 선을 꺾어 피사체 뒤로 지나가게 합니다.
+
+## 첫 화면
+[snapline.hero.hook] 찍어 둔 사진에 격자를 얹고, 선을 꺾어 피사체 뒤로 지나가게 합니다.
+[snapline.hero.shotAlt] SnapLine 편집 화면. 해 질 녘 등대 사진 위 격자선이 등대 쪽으로 꺾여 있고, 아래에 선과 지우기 도구가 있습니다.
+
+## 기능 01 (feat, crop)
+[snapline.sections.0.title] 격자를 꺾습니다
+[snapline.sections.0.body.0] 3분할 격자에서 시작합니다. 선의 가운데 점을 끌면 양 끝은 사진 가장자리에 붙은 채 선이 꺾이고, 가장자리 점을 끌면 선이 기울어집니다. 선 위의 작은 눈금을 끌면 꺾임점이 하나 더 생깁니다.
+[snapline.sections.0.bullets.0] 선 꺾기와 기울이기
+[snapline.sections.0.bullets.1] 꺾임점 추가와 둥글게 전환
+[snapline.sections.0.bullets.2] 선 추가와 삭제
+[snapline.sections.0.visual.alt] 야자수 사진을 확대한 모습. 꺾인 격자선이 야자수 잎 뒤로 지나갑니다.
+[snapline.sections.0.visual.caption] 앱 화면 확대
+
+## 기능 02 (feat, kit)
+[snapline.sections.1.title] 겹친 자리를 지웁니다
+[snapline.sections.1.body.0] 지우기로 바꾸고 선이 피사체와 겹치는 자리를 문지릅니다. 자동 마스크를 누르면 피사체를 찾아 그 자리의 선을 한 번에 지웁니다. 복원으로 바꾸면 문지른 자리에 선이 돌아옵니다.
+[snapline.sections.1.bullets.0] 자동 마스크로 한 번에 지우기
+[snapline.sections.1.bullets.1] 최대 8배 확대와 돋보기
+[snapline.sections.1.bullets.2] 길게 눌러 완성본 확인
+[snapline.sections.1.visual.label] 지우기, 복원, 자동 마스크 세 도구와 최대 8배 확대, 1~60pt 브러시
+[snapline.sections.1.visual.items.0.name] 지우기
+[snapline.sections.1.visual.items.0.desc] 겹친 선 부분 지우기
+[snapline.sections.1.visual.items.1.name] 복원
+[snapline.sections.1.visual.items.1.desc] 지운 선 되살리기
+[snapline.sections.1.visual.items.2.name] 자동 마스크
+[snapline.sections.1.visual.items.2.desc] 피사체 자리 한 번에 지우기
+[snapline.sections.1.visual.rows.0.label] 확대
+[snapline.sections.1.visual.rows.0.value] 최대 8배
+[snapline.sections.1.visual.rows.1.label] 브러시
+[snapline.sections.1.visual.rows.1.value] 1~60pt
+
+## 기능 03 (card, None)
+[snapline.sections.2.title] 원본 크기로 저장합니다
+[snapline.sections.2.body.0] 내보내기는 원본 사진의 해상도 그대로 선을 합성합니다. 결과는 JPEG로 사진 앱에 저장하거나 바로 공유합니다.
+[snapline.sections.2.bullets.0] 크기 제한 없는 내보내기
+[snapline.sections.2.bullets.1] JPEG 품질 95
+[snapline.sections.2.bullets.2] 사진 앱 저장과 바로 공유
+
+## 기능 04 (card, chips)
+[snapline.sections.3.title] 사진만 고르면 시작합니다
+[snapline.sections.3.body.0] 가입 절차가 없습니다. 편집하던 사진은 홈 화면에 남고, 누르면 이어서 엽니다.
+[snapline.sections.3.visual.items.0] 계정 없음
+[snapline.sections.3.visual.items.1] 로그인 없음
+[snapline.sections.3.visual.items.2] 광고 없음
+
+## Pro
+[snapline.pro.kick] SnapLine Pro
+[snapline.pro.title] 선의 모양과 색을 고르고,\n워터마크 없이 저장합니다
+[snapline.pro.items.0] 워터마크 없는 깔끔한 저장
+[snapline.pro.items.1] 점선, 이중선, 글로우 선 스타일
+[snapline.pro.items.2] 흰색, 검정 외 사용자 지정 색상
+[snapline.pro.items.3] 피사체 꼭짓점에 선 붙이기
+
+## 자주 묻는 질문
+[snapline.faq.0.q] 선 꺾기와 기울이기
+[snapline.faq.0.a.0] 선마다 점이 셋입니다. 양 끝은 사진 가장자리에 붙은 점이고, 가운데 점은 자유롭게 움직입니다. 가운데 점을 끌면 양 끝은 그대로 둔 채 선이 꺾이고, 가장자리 점을 끌면 그 변을 따라 미끄러지며 선이 기울어집니다.
+[snapline.faq.0.a.1] 선을 누르면 선 위에 작은 눈금이 보입니다. 눈금을 끌면 꺾임점이 하나 늘고, 점을 누르면 삭제하거나 둥글게 바꿉니다. 가장자리 점은 삭제되지 않고, 한 선에는 점을 8개까지 둡니다.
+[snapline.faq.1.q] 선을 피사체 뒤로 보내는 방법
+[snapline.faq.1.a.0] 화면 아래에서 지우기를 고르고, 선이 피사체와 겹치는 자리를 문지릅니다. 자동 마스크를 누르면 피사체를 찾아 그 자리의 선을 한 번에 지웁니다.
+[snapline.faq.1.a.1] 지운 선을 되살리려면 지우기 상태에서 설정을 열고 복원을 고른 뒤 그 자리를 문지릅니다. 실행 취소로도 되돌립니다.
+[snapline.faq.2.q] 자동 마스크가 피사체를 찾지 못할 때
+[snapline.faq.2.a.0] 자동 마스크는 피사체가 배경과 뚜렷이 구분될 때 잘 찾습니다. 찾지 못하면 지우기로 직접 문질러도 결과는 같습니다. 적용한 마스크는 같은 자리의 자동 마스크 해제 버튼으로 걷어 냅니다.
+[snapline.faq.3.q] 세밀한 부분 지우기
+[snapline.faq.3.a.0] 두 손가락으로 벌려 최대 8배까지 확대하고, 두 번 탭하면 3배 확대와 원래 크기를 오갑니다. 설정의 브러시 슬라이더를 왼쪽으로 옮길수록 브러시가 가늘어집니다.
+[snapline.faq.3.a.1] 돋보기를 켜면 손가락에 가린 자리가 보이고, 지운 영역을 켜면 지운 자리가 표시됩니다. 확대한 상태에서는 사진 가장자리를 화면 안쪽까지 끌어옵니다.
+[snapline.faq.4.q] 저장 화질과 워터마크
+[snapline.faq.4.a.0] 내보내기는 원본 사진의 해상도 그대로 합성하고, JPEG 품질 95로 저장합니다. 크기 제한은 없습니다.
+[snapline.faq.4.a.1] 무료로 저장한 사진에는 오른쪽 아래에 작은 SnapLine 워터마크가 들어갑니다. SnapLine Pro에서는 워터마크 없이 저장합니다.
+[snapline.faq.5.q] 점선과 글로우가 실선으로 저장되는 이유
+[snapline.faq.5.a.0] 선 스타일의 점선, 이중선, 글로우는 SnapLine Pro 기능입니다. 편집 중에는 누구나 캔버스에 입혀 볼 수 있고, Pro가 아니면 실선으로 저장됩니다. 내보내기 화면의 이 선 스타일 그대로 저장을 누르면 Pro 안내가 열립니다.
+[snapline.faq.6.q] 편집하던 작업 이어서 열기
+[snapline.faq.6.a.0] 편집한 사진을 닫거나 앱을 벗어나면 작업이 홈 화면 아래에 썸네일로 남습니다. 썸네일을 누르면 사진을 다시 고르지 않고 이어서 편집하고, 길게 누르면 삭제합니다.
+[snapline.faq.6.a.1] 원본 사진의 사본을 함께 보관하므로, 사진 앱에서 원본을 지워도 이어서 편집하고 원본 해상도로 저장합니다.
+[snapline.faq.7.q] Pro 구매 복원
+[snapline.faq.7.a.0] 기기를 바꾸거나 앱을 다시 설치했다면 결제 화면에서 구매 복원을 누릅니다. 사진을 연 뒤 선 상태에서 설정을 펼치면 스타일 옆에 Pro 표시가 있고, 이 표시를 누르면 결제 화면이 열립니다. 같은 Apple 계정이면 다시 결제하지 않습니다.
+[snapline.faq.8.q] 인터넷 연결
+[snapline.faq.8.a.0] 편집과 자동 마스크, 저장은 인터넷 연결 없이 됩니다. Pro 구매와 복원에만 App Store 연결이 필요합니다.
+
+## 개인정보 처리방침
+[snapline.privacy.title] SnapLine 개인정보 처리방침
+[snapline.privacy.summary] SnapLine은 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, Pro 결제는 Apple이 처리합니다.
+[snapline.privacy.intro.0] kvndh(이하 개발자)는 SnapLine 앱(이하 앱) 이용자의 개인정보를 「개인정보 보호법」에 따라 처리하며, 그 기준을 다음과 같이 알립니다.
+
+## 개인정보 처리방침 01절
+[snapline.privacy.sections.0.title] 개인정보의 처리 목적
+[snapline.privacy.sections.0.paragraphs.0] 앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 따라서 별도의 처리 목적이 없습니다.
+
+## 개인정보 처리방침 02절
+[snapline.privacy.sections.1.title] 처리하는 개인정보의 항목
+[snapline.privacy.sections.1.paragraphs.0] 개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.
+[snapline.privacy.sections.1.bullets.0] 최근 프로젝트(편집 내용, 원본 사진 사본, 썸네일): 편집을 이어서 열 때 사용
+[snapline.privacy.sections.1.bullets.1] 설정과 Pro 구매 여부: 앱 화면과 저장 결과를 정할 때 사용
+[snapline.privacy.sections.1.bullets.2] 첫 실행 시각과 저장 횟수: 평점 요청 시점을 정할 때 사용
+[snapline.privacy.sections.1.bullets.3] 공유용 임시 이미지: 공유할 때 사용하고, 다음 내보내기나 앱 실행 때 삭제
+
+## 개인정보 처리방침 03절
+[snapline.privacy.sections.2.title] 처리 및 보유 기간
+[snapline.privacy.sections.2.paragraphs.0] 개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워지고, 최근 프로젝트는 새 작업이 쌓이면 오래된 것부터 지워집니다. 사진 앱에 저장한 사진은 사진 앱에서 지웁니다.
+
+## 개인정보 처리방침 04절
+[snapline.privacy.sections.3.title] 제3자 제공
+[snapline.privacy.sections.3.paragraphs.0] 개인정보를 제3자에게 제공하지 않습니다.
+
+## 개인정보 처리방침 05절
+[snapline.privacy.sections.4.title] 처리 위탁
+[snapline.privacy.sections.4.paragraphs.0] 개인정보 처리를 위탁하지 않습니다. SnapLine Pro 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.
+
+## 개인정보 처리방침 06절
+[snapline.privacy.sections.5.title] 파기 절차와 방법
+[snapline.privacy.sections.5.paragraphs.0] 개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 최근 프로젝트는 홈 화면에서 썸네일을 길게 눌러 지우고, 앱의 모든 자료는 앱을 삭제하면 지워집니다.
+
+## 개인정보 처리방침 07절
+[snapline.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
+[snapline.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
+
+## 개인정보 처리방침 08절
+[snapline.privacy.sections.7.title] 안전성 확보 조치
+[snapline.privacy.sections.7.paragraphs.0] 사진은 iOS 사진 선택기로 고른 사진만 앱에 전달됩니다. 편집한 사진을 저장할 때는 사진을 추가하는 권한만 쓰며, 사진 보관함을 읽는 권한은 요청하지 않습니다.
+
+## 개인정보 처리방침 09절
+[snapline.privacy.sections.8.title] 자동 수집 장치의 설치와 운영, 거부 방법
+[snapline.privacy.sections.8.paragraphs.0] 쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.
+
+## 개인정보 처리방침 10절
+[snapline.privacy.sections.9.title] 개인정보 보호책임자
+[snapline.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
+[snapline.privacy.sections.9.pairs.0.label] 책임자
+[snapline.privacy.sections.9.pairs.0.value] kvndh
+[snapline.privacy.sections.9.pairs.1.label] 이메일
+[snapline.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[snapline.privacy.sections.10.title] 권익침해 구제 방법
+[snapline.privacy.sections.10.paragraphs.0] 개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.
+[snapline.privacy.sections.10.bullets.0] 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
+[snapline.privacy.sections.10.bullets.1] 개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)
+[snapline.privacy.sections.10.bullets.2] 대검찰청: 국번 없이 1301 (www.spo.go.kr)
+[snapline.privacy.sections.10.bullets.3] 경찰청: 국번 없이 182 (ecrm.police.go.kr)
+
+## 개인정보 처리방침 12절
+[snapline.privacy.sections.11.title] 처리방침의 변경
+[snapline.privacy.sections.11.paragraphs.0] 방침이 바뀌면 바뀐 내용과 새 시행일을 이 페이지에 게시합니다.
+
+==================== Life Tyde (life-tyde) ====================
+# 확인 필요:
+#  - 개인정보 4절에 '근처 기기와 교환'(양쪽이 승인하면 타임라인 이름, 이모지, 기록을 주고받음)을 제3자 제공으로 적음. 이 분류가 맞는지 확인 필요
+#  - 개인정보 3절 '앱에서 지우면 동기화된 곳에서도 지워짐'(iCloud)은 실기기로 확인하지 않음
+#  - 스크린샷의 탄생 행이 '1살'로 보이지만 지금 앱은 만 나이(0살)로 표시함
+
+
+## 기본
+[life-tyde.name] Life Tyde
+[life-tyde.subtitle] 조용히 쌓이는 나의 연대기
+[life-tyde.summary] 해시태그 아래 굵직한 순간만 골라 한 줄 타임라인에 남깁니다.
+
+## 첫 화면
+[life-tyde.hero.hook] 해시태그 아래 굵직한 순간만 골라 한 줄 타임라인에 남깁니다.
+[life-tyde.hero.shotAlt] Life Tyde 타임라인 화면. 연도별 기록이 세로로 이어지고, 강조한 기록은 빨간 점과 빨간 제목으로 보입니다.
+
+## 기능 01 (feat, crop)
+[life-tyde.sections.0.title] 굵직한 순간만 남깁니다
+[life-tyde.sections.0.body.0] 인생의 사건을 연도순으로 한 줄에 놓습니다. 연도와 제목만 있으면 기록이 되고, 월과 일, 메모는 아는 만큼 채웁니다. 중요했던 순간을 강조하면 빨간 점과 빨간 제목으로 남습니다.
+[life-tyde.sections.0.bullets.0] 만 나이, 세는나이, 경과 연수 표시
+[life-tyde.sections.0.bullets.1] 이벤트 마켓의 시대 사건 팩
+[life-tyde.sections.0.bullets.2] 다가오는 일정 알림과 반복
+[life-tyde.sections.0.visual.alt] 타임라인 화면 확대. 연도 옆에 월과 일, 나이, 제목, 메모가 차례로 놓이고, 강조한 기록은 빨간색입니다.
+[life-tyde.sections.0.visual.caption] 앱 화면 확대
+
+## 기능 02 (feat, crop)
+[life-tyde.sections.1.title] 해시태그 하나가 연대기 하나
+[life-tyde.sections.1.body.0] 기록에 #학교, #일 같은 해시태그를 붙입니다. 태그 필터에서 태그 하나만 고르면 태그 연대기가 열리고, 그 태그의 기록이 처음부터 최근까지 한 줄로 이어집니다. 맨 위에는 기록 수와 기간이 나옵니다.
+[life-tyde.sections.1.bullets.0] 태그 필터와 강조 이벤트만 보기
+[life-tyde.sections.1.bullets.1] 제목에 맞는 기존 태그 제안
+[life-tyde.sections.1.bullets.2] Apple Intelligence 연대기 요약
+[life-tyde.sections.1.visual.alt] 태그 연대기 화면. #일 태그가 붙은 기록만 첫 아르바이트부터 팀장이 된 해까지 세로로 이어집니다.
+[life-tyde.sections.1.visual.caption] 태그 연대기
+
+## 기능 03 (card, play)
+[life-tyde.sections.2.title] 지나온 기록을 다시 봅니다
+[life-tyde.sections.2.body.0] 다시보기는 기록을 오래된 것부터 한 장씩 넘깁니다. 인생 지도는 모든 기록을 연과 월의 격자 위에 점으로 펼치고, 나란히 보기는 두 타임라인을 같은 나이나 같은 해에 맞춰 놓습니다.
+[life-tyde.sections.2.bullets.0] 다음 기록으로 자동 진행
+[life-tyde.sections.2.bullets.1] 과거의 오늘 카드와 위젯
+[life-tyde.sections.2.bullets.2] 근처 기기와 연대기 교환
+[life-tyde.sections.2.visual.label] 다시보기
+
+## 기능 04 (card, chips)
+[life-tyde.sections.3.title] 열자마자 적습니다
+[life-tyde.sections.3.body.0] 계정을 만들 필요가 없습니다. 기록은 앱에 저장되고, iCloud 동기화를 켜 두면 같은 계정의 iPhone과 iPad에서 이어집니다.
+[life-tyde.sections.3.visual.items.0] 계정 없음
+[life-tyde.sections.3.visual.items.1] 광고 없음
+[life-tyde.sections.3.visual.items.2] iCloud 동기화
+[life-tyde.sections.3.visual.items.3] CSV 백업
+
+## Pro
+[life-tyde.pro.kick] Life Tyde Pro
+[life-tyde.pro.title] 기록의 폭을 넓히고,\n책으로 엮습니다
+[life-tyde.pro.items.0] A4 크기 연대기책 PDF 내보내기
+[life-tyde.pro.items.1] 무제한 이벤트와 해시태그
+[life-tyde.pro.items.2] 타임라인 최대 3개
+[life-tyde.pro.items.3] 모든 이벤트 팩
+[life-tyde.pro.items.4] 연대, 태그, 강조별 다시보기 필터
+[life-tyde.pro.items.5] Apple Intelligence 산문 초안과 서문
+
+## 자주 묻는 질문
+[life-tyde.faq.0.q] 기록의 보관 위치
+[life-tyde.faq.0.a.0] 기록은 앱 저장공간에 보관됩니다. iCloud 동기화가 켜져 있으면 본인 iCloud 계정에도 저장되어, 같은 계정을 쓰는 다른 기기와 맞춰집니다.
+[life-tyde.faq.0.a.1] 지운 기록은 설정의 휴지통에 7일 동안 남고, 그사이에는 복원할 수 있습니다.
+[life-tyde.faq.1.q] iCloud 동기화 설정
+[life-tyde.faq.1.a.0] iCloud 동기화는 처음부터 켜져 있고, 설정에서 끄거나 다시 켭니다. 바꾼 설정은 앱 전환기에서 앱을 닫았다가 다시 열면 적용됩니다.
+[life-tyde.faq.1.a.1] 다른 기기에서도 같은 iCloud 계정으로 로그인하고 iCloud 동기화를 켜 둡니다. 기기 사이의 첫 동기화는 몇 분 걸릴 수 있습니다.
+[life-tyde.faq.2.q] 무료로 쓰는 범위
+[life-tyde.faq.2.a.0] 이벤트 100개, 타임라인 1개, 태그 10개까지 무료로 씁니다. 이벤트 마켓에서는 앱 언어의 주요 역사 팩 하나를 무료로 담습니다. 한도에 닿아도 이미 남긴 기록은 그대로 보고 고칩니다.
+[life-tyde.faq.2.a.1] Pro에서는 이벤트와 태그 수에 제한이 없고, 타임라인을 3개까지 만듭니다.
+[life-tyde.faq.3.q] Pro 구매 복원
+[life-tyde.faq.3.a.0] 기기를 바꾸거나 앱을 다시 설치했다면 설정에서 Pro로 업그레이드를 누르고, 오른쪽 위의 복원을 누릅니다. 같은 Apple 계정이면 다시 결제하지 않습니다.
+[life-tyde.faq.4.q] 다가오는 일정과 알림
+[life-tyde.faq.4.a.0] 내일 이후 날짜로 적은 기록은 다가오는 일정이 됩니다. 월과 일을 정하면 알림 받기에서 당일, 1일 전, 1주 전, 1달 전 가운데 하나를 고릅니다. 알림 권한은 알림을 켠 일정을 처음 저장할 때 묻습니다.
+[life-tyde.faq.4.a.1] 날짜가 지난 일정은 완료로 기록을 눌러야 일반 기록이 됩니다. 반복을 정해 두었다면 이때 다음 회차가 등록됩니다.
+[life-tyde.faq.5.q] CSV 백업
+[life-tyde.faq.5.a.0] 설정의 CSV로 내보내기를 누르면 기록을 CSV 파일로 저장합니다. CSV 불러오기로 되살릴 때는 기존 이벤트에 추가와 모든 이벤트 교체 가운데 하나를 고릅니다.
+[life-tyde.faq.5.a.1] CSV 파일은 필요할 때 한 번씩 만드는 백업이며, iCloud 동기화와 별개입니다.
+[life-tyde.faq.6.q] 인터넷 연결
+[life-tyde.faq.6.a.0] 기록, 다시보기, 내보내기는 인터넷 연결 없이 됩니다. iCloud 동기화와 Pro 구매, 복원에는 연결이 필요합니다.
+[life-tyde.faq.6.a.1] 근처에서 교환은 인터넷 없이 가까운 두 기기를 바로 잇습니다. 두 기기 모두 Life Tyde에서 근처에서 교환 화면을 열어 둡니다.
+[life-tyde.faq.7.q] AI 기능 지원 기기
+[life-tyde.faq.7.a.0] 이 연대기 요약하기, AI 서문 추가, 산문 초안은 iOS 26 이상에서 Apple Intelligence를 켠 지원 기기에 나타납니다. 앱 언어를 기기의 AI 모델이 지원하지 않으면 보이지 않습니다.
+[life-tyde.faq.7.a.1] 대상 기록이 5개보다 적으면 AI 글을 만들지 않습니다. 만든 글은 내보내기 전에 자유롭게 고칩니다.
+
+## 개인정보 처리방침
+[life-tyde.privacy.title] Life Tyde 개인정보 처리방침
+[life-tyde.privacy.intro.0] kvndh(이하 개발자)는 Life Tyde 앱(이하 앱) 이용자의 개인정보를 「개인정보 보호법」에 따라 처리하며, 그 기준을 다음과 같이 알립니다.
+
+## 개인정보 처리방침 01절
+[life-tyde.privacy.sections.0.title] 개인정보의 처리 목적
+[life-tyde.privacy.sections.0.paragraphs.0] 앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 따라서 별도의 처리 목적이 없습니다.
+
+## 개인정보 처리방침 02절
+[life-tyde.privacy.sections.1.title] 처리하는 개인정보의 항목
+[life-tyde.privacy.sections.1.paragraphs.0] 개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 이용자 기기의 앱 저장공간에 보관됩니다. iCloud 동기화가 켜져 있으면 기록은 이용자 본인의 iCloud 계정에도 보관됩니다. 개발자는 이 자료를 받지 않습니다.
+[life-tyde.privacy.sections.1.bullets.0] 이벤트(연도, 월, 일, 제목, 메모, 강조 여부, 일정과 알림 설정), 태그, 타임라인 이름: 타임라인 표시에 사용
+[life-tyde.privacy.sections.1.bullets.1] 생일이나 기준연도, 표시 방식, 앱 언어 같은 설정: 화면 표시에 사용
+[life-tyde.privacy.sections.1.bullets.2] 책 제목과 원고 초안: 책(PDF) 작업을 이어 갈 때 사용
+[life-tyde.privacy.sections.1.bullets.3] 이벤트 제목과 연도: Spotlight 검색이 켜져 있을 때 기기 검색 색인에 사용
+[life-tyde.privacy.sections.1.bullets.4] 과거의 오늘 항목: 홈 화면 위젯 표시에 사용
+
+## 개인정보 처리방침 03절
+[life-tyde.privacy.sections.2.title] 처리 및 보유 기간
+[life-tyde.privacy.sections.2.paragraphs.0] 개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다. iCloud에 동기화된 기록은 이용자의 iCloud 계정에 남으며, 앱에서 기록을 지우면 동기화된 곳에서도 지워집니다. 사진 앱에 저장한 타임라인 이미지와 내보낸 파일은 이용자가 직접 지웁니다.
+
+## 개인정보 처리방침 04절
+[life-tyde.privacy.sections.3.title] 제3자 제공
+[life-tyde.privacy.sections.3.paragraphs.0] 개인정보를 제3자에게 제공하지 않습니다.
+[life-tyde.privacy.sections.3.paragraphs.1] 근처에서 교환은 이용자가 직접 실행하는 기능입니다. 두 기기가 모두 승인하면 현재 타임라인의 이름과 이모지, 기록(제목, 메모, 날짜, 태그, 강조 여부)을 서로의 기기로 주고받습니다. 받은 기록은 보기만 할 수 있고, 프로필로 보관을 누를 때만 받은 기기에 저장됩니다.
+
+## 개인정보 처리방침 05절
+[life-tyde.privacy.sections.4.title] 처리 위탁
+[life-tyde.privacy.sections.4.paragraphs.0] 개인정보 처리를 위탁하지 않습니다. iCloud 동기화는 Apple의 iCloud(CloudKit)로 이루어지며, 동기화된 자료는 Apple의 개인정보 처리방침을 따릅니다. Life Tyde Pro 결제는 Apple이 App Store에서 처리합니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.
+
+## 개인정보 처리방침 06절
+[life-tyde.privacy.sections.5.title] 파기 절차와 방법
+[life-tyde.privacy.sections.5.paragraphs.0] 개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 지운 기록은 휴지통에 7일 동안 남은 뒤 지워지고, 휴지통의 영구 삭제로 바로 지울 수도 있습니다. 앱의 모든 자료는 앱을 삭제하면 기기에서 지워집니다.
+
+## 개인정보 처리방침 07절
+[life-tyde.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
+[life-tyde.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 기록은 앱에서 직접 보고 고치고 지우며, CSV 파일로 내보낼 수 있습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
+
+## 개인정보 처리방침 08절
+[life-tyde.privacy.sections.7.title] 안전성 확보 조치
+[life-tyde.privacy.sections.7.paragraphs.0] iCloud 동기화는 이용자 본인 iCloud 계정의 개인 데이터베이스를 씁니다. 근처에서 교환은 암호화한 연결로만 이루어집니다. 사진 앱에는 타임라인 이미지를 추가하는 권한만 쓰며, 사진 보관함을 읽는 권한은 요청하지 않습니다. 알림 권한은 알림을 켠 일정을 저장할 때만 요청합니다.
+[life-tyde.privacy.sections.7.paragraphs.1] Spotlight 검색에는 이벤트 제목과 연도만 색인하며, 설정에서 끄면 색인을 지웁니다. AI 요약과 초안은 기기의 Apple Intelligence 모델로 만듭니다.
+
+## 개인정보 처리방침 09절
+[life-tyde.privacy.sections.8.title] 자동 수집 장치의 설치와 운영, 거부 방법
+[life-tyde.privacy.sections.8.paragraphs.0] 쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.
+
+## 개인정보 처리방침 10절
+[life-tyde.privacy.sections.9.title] 개인정보 보호책임자
+[life-tyde.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
+[life-tyde.privacy.sections.9.pairs.0.label] 책임자
+[life-tyde.privacy.sections.9.pairs.0.value] kvndh
+[life-tyde.privacy.sections.9.pairs.1.label] 이메일
+[life-tyde.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[life-tyde.privacy.sections.10.title] 권익침해 구제 방법
+[life-tyde.privacy.sections.10.paragraphs.0] 개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.
+[life-tyde.privacy.sections.10.bullets.0] 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
+[life-tyde.privacy.sections.10.bullets.1] 개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)
+[life-tyde.privacy.sections.10.bullets.2] 대검찰청: 국번 없이 1301 (www.spo.go.kr)
+[life-tyde.privacy.sections.10.bullets.3] 경찰청: 국번 없이 182 (ecrm.police.go.kr)
+
+## 개인정보 처리방침 12절
+[life-tyde.privacy.sections.11.title] 처리방침의 변경
+[life-tyde.privacy.sections.11.paragraphs.0] 방침이 바뀌면 바뀐 내용과 새 시행일을 이 페이지에 게시합니다.
+
+## 개인정보 처리방침
+[life-tyde.privacy.summary] Life Tyde는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, iCloud 동기화는 이용자 본인의 iCloud 계정으로 이루어지며, Pro 결제는 Apple이 처리합니다.
+
+==================== Tapey (tapey) ====================
+# 확인 필요:
+#  - [법률] AdMob으로 가는 정보를 4절(제3자 제공)에 적음. 5절(처리 위탁)로 볼지 판단 필요
+#  - [법률] 받는 곳을 Google LLC(미국)로 적음. 국외 이전 고지 항목(국가, 시기, 방법, 거부 방법)이 충분한지 확인 필요
+#  - [법률] 9절 수집 항목(기기 식별자, IDFA, IP 기반 대략적 위치, 광고 노출과 탭, 성능, 충돌)은 AdMob SDK 기준. ASC 개인정보 라벨(4가지)과 차이가 있어 라벨 갱신이 필요할 수 있음
+#  - [법률] 7절 'Google에 열람이나 삭제를 요청할 수 있다' 표현 확인 필요
+#  - [법률] 앱이 jsDelivr에서 글꼴을 받을 때 IP가 전달되는 사실을 2절에 적음. 방침에 넣을지 판단 필요
+#  - 옛 방침의 '13세 미만' 조항은 코드로 확인할 수 없어 뺌
+#  - 첫 화면 스크린샷이 스토어용 이미지라 기기 화면 안에 제목 글자(폴라로이드에 손글씨 한 줄)가 보임. 틀 없는 원본 캡처가 필요
+
+
+## 기본
+[tapey.name] Tapey
+[tapey.subtitle] 벽에 붙인 듯한 사진 콜라주
+[tapey.summary] 사진을 고르면 벽에 붙인 인화 사진처럼 자리를 잡습니다. 워시테이프와 프레임을 더해 보이는 그대로 배경화면으로 저장합니다.
+
+## 첫 화면
+[tapey.hero.hook] 사진을 고르면 벽에 붙인 인화 사진처럼 자리를 잡습니다. 워시테이프와 프레임을 더해 보이는 그대로 배경화면으로 저장합니다.
+[tapey.hero.shotAlt] Tapey 편집 화면. 잠금화면 시계 아래에 폴라로이드 프레임 사진들이 워시테이프로 붙어 있고, 한 장에는 손글씨 메모가 있습니다.
+
+## 기능 01 (feat, crop)
+[tapey.sections.0.title] 고르면 자리를 잡습니다
+[tapey.sections.0.body.0] 사진을 최대 12장 고르면 벽에 붙인 인화 사진처럼 배치됩니다. 끌어서 옮기고, 두 손가락으로 크기와 각도를 바꿉니다. 손으로 옮긴 사진은 그 자리에 고정됩니다.
+[tapey.sections.0.bullets.0] 최대 12장 자동 배치
+[tapey.sections.0.bullets.1] 자동, 격자, 계단, 하트 배치
+[tapey.sections.0.bullets.2] 되돌리기와 다시 실행
+[tapey.sections.0.visual.alt] 편집 화면 확대. 워시테이프로 붙인 폴라로이드 사진들 사이에 손글씨 메모가 보입니다.
+[tapey.sections.0.visual.caption] 앱 화면 확대
+
+## 기능 02 (feat, kit)
+[tapey.sections.1.title] 테이프와 프레임
+[tapey.sections.1.body.0] 테이프 색을 고르면 사진에 테이프가 붙습니다. 붙는 자리와 무늬를 바꾸고, 끝을 찢은 모양으로도 붙입니다. 폴라로이드 프레임에는 사진마다 손글씨 메모를 적습니다.
+[tapey.sections.1.bullets.0] 테이프 색 8가지, 무늬 4가지
+[tapey.sections.1.bullets.1] 흰 테두리와 폴라로이드 프레임
+[tapey.sections.1.bullets.2] 전체 흑백과 사진별 흑백
+[tapey.sections.1.visual.label] 테이프, 프레임, 배경 도구와 테이프 색 8가지, 배경 톤 6가지
+[tapey.sections.1.visual.items.0.name] 테이프
+[tapey.sections.1.visual.items.0.desc] 색, 자리, 무늬, 찢기
+[tapey.sections.1.visual.items.1.name] 프레임
+[tapey.sections.1.visual.items.1.desc] 테두리, 폴라로이드, 흑백
+[tapey.sections.1.visual.items.2.name] 배경
+[tapey.sections.1.visual.items.2.desc] 배경 톤, 내 사진, 텍스처
+[tapey.sections.1.visual.rows.0.label] 테이프 색
+[tapey.sections.1.visual.rows.0.value] 8가지
+[tapey.sections.1.visual.rows.1.label] 배경 톤
+[tapey.sections.1.visual.rows.1.value] 6가지
+
+## 기능 03 (card, None)
+[tapey.sections.2.title] 잠금화면에 맞춥니다
+[tapey.sections.2.body.0] 캔버스 위에 지금 시각이 잠금화면 시계처럼 떠 있습니다. 손잡이를 끌어 시계 공간을 정하면 사진은 그 아래로 자리를 옮기고, 위젯 자리도 따로 비웁니다. 해상도는 처음부터 쓰는 기기에 맞춰집니다.
+[tapey.sections.2.bullets.0] 시계 공간 조절
+[tapey.sections.2.bullets.1] 위젯 자리 확보
+[tapey.sections.2.bullets.2] iPhone, iPad 해상도 지원
+
+## 기능 04 (card, chips)
+[tapey.sections.3.title] 사진부터 고릅니다
+[tapey.sections.3.body.0] 가입 절차 없이 바로 시작합니다. 하던 작업은 앱을 다시 열어도 그대로 있고, 저장한 뒤 새로 만들기를 누르면 최근 프로젝트로 넘어갑니다.
+[tapey.sections.3.visual.items.0] 계정 없음
+[tapey.sections.3.visual.items.1] 로그인 없음
+[tapey.sections.3.visual.items.2] 31개 언어
+
+## 자주 묻는 질문
+[tapey.faq.0.q] 사진 추가 방법
+[tapey.faq.0.a.0] 시작 화면의 사진 붙이기를 누르고 사진 보관함에서 고르거나 카메라로 찍습니다. 편집 중에는 사진 탭의 추가를 누릅니다.
+[tapey.faq.0.a.1] 배경화면 하나에 사진을 최대 12장까지 담습니다. 배치 탭의 하트는 사진이 6장 이상일 때 나타납니다.
+[tapey.faq.1.q] 저장한 배경화면의 위치
+[tapey.faq.1.a.0] 편집 화면 위의 저장을 누르면 설정에서 고른 해상도의 PNG 파일로 사진 앱에 저장됩니다. 처음 저장할 때 iOS가 사진을 추가해도 되는지 묻습니다.
+[tapey.faq.1.a.1] 저장이 되지 않으면 설정 > Tapey에서 사진 접근을 허용합니다.
+[tapey.faq.2.q] 저장할 때 나오는 광고
+[tapey.faq.2.a.0] Tapey는 무료이며, 배경화면을 저장할 때 전면 광고가 한 번 나옵니다. 화면에 늘 떠 있는 배너 광고는 없습니다.
+[tapey.faq.2.a.1] 광고를 불러오지 못했거나 바로 전 저장이 실패했다면 광고 없이 곧바로 저장합니다.
+[tapey.faq.3.q] 광고 제거와 구매 복원
+[tapey.faq.3.a.0] 메뉴나 시작 화면의 광고 제거에서 구매합니다. 구매한 뒤에는 저장할 때 광고가 나오지 않습니다.
+[tapey.faq.3.a.1] 기기를 바꾸거나 앱을 다시 설치했다면 메뉴의 광고 제거를 열고 구매 복원을 누릅니다. 같은 Apple 계정이면 다시 결제하지 않습니다.
+[tapey.faq.4.q] 추적 허용과 광고 설정
+[tapey.faq.4.a.0] 앱을 처음 열면 iOS가 추적 허용 여부를 묻습니다. 허용하지 않아도 앱은 그대로 쓰며, 이 선택은 iOS 설정 > 개인정보 보호 및 보안 > 추적에서 바꿉니다.
+[tapey.faq.4.a.1] 유럽 경제 지역처럼 광고 동의가 필요한 곳에서는 시작 화면 아래의 광고 설정에서 동의 내용을 바꿉니다.
+[tapey.faq.5.q] 작업 내용의 보관 위치
+[tapey.faq.5.a.0] 고른 사진과 배경 사진의 사본, 배치와 메모는 다음에 앱을 열 때 이어서 편집하려고 앱 저장공간에 둡니다. 메뉴의 다시 시작을 누르면 지금 작업이 지워지고, 앱을 삭제하면 모두 지워집니다.
+[tapey.faq.5.a.1] 저장한 뒤 새로 만들기를 누르면 지금 작업은 최근 프로젝트로 옮겨집니다. 최근 프로젝트는 3개까지 남고, 넘치면 오래된 것부터 지워집니다.
+[tapey.faq.6.q] 배경화면 설정 방법
+[tapey.faq.6.a.0] 사진 앱에서 방금 저장한 사진을 열고 공유 버튼을 누른 뒤 배경화면으로 사용을 고릅니다. 잠금 화면을 고르고 설정을 누르면 끝납니다.
+[tapey.faq.6.a.1] 같은 안내가 저장 완료 창의 배경화면으로 설정하는 법에도 있습니다.
+[tapey.faq.7.q] iPad 지원
+[tapey.faq.7.a.0] iPad에서도 씁니다. iPad에서는 세로와 가로 화면에 함께 쓰는 정사각형 배경화면을 만들고, 편집 화면에서 세로와 가로 모습을 번갈아 확인합니다.
+[tapey.faq.7.a.1] 설정의 해상도에서 iPhone 크기를 고르면 iPad에서 iPhone용 배경화면도 만듭니다.
+[tapey.faq.8.q] 인터넷 연결
+[tapey.faq.8.a.0] 사진 배치와 꾸미기, 저장은 인터넷 연결 없이 됩니다. 광고와 광고 제거 구매, 구매 복원에는 인터넷 연결이 필요합니다.
+[tapey.faq.8.a.1] 사진 메모의 손글씨 글꼴은 인터넷에 연결되어 있을 때 받아 옵니다. 연결이 없으면 메모가 기본 글꼴로 표시됩니다.
+[tapey.faq.9.q] 앱 오류 해결 방법
+[tapey.faq.9.a.0] 앱을 완전히 닫았다가 다시 열고, App Store에서 최신 버전인지 확인합니다. 그래도 계속되면 어떤 화면에서 무엇을 하다가 생겼는지 적어 메일로 보내 주세요.
+
+## 개인정보 처리방침
+[tapey.privacy.title] Tapey 개인정보 처리방침
+[tapey.privacy.summary] 개발자는 개인정보를 수집하지 않습니다. 저장할 때 나오는 광고는 Google AdMob이 보여 주며, AdMob은 광고 식별자 등 기기 정보를 처리합니다. 광고 제거 결제는 Apple이 처리합니다.
+[tapey.privacy.intro.0] kvndh(이하 개발자)는 Tapey 앱(이하 앱) 이용자의 개인정보를 「개인정보 보호법」에 따라 처리하며, 그 기준을 다음과 같이 알립니다.
+
+## 개인정보 처리방침 01절
+[tapey.privacy.sections.0.title] 개인정보의 처리 목적
+[tapey.privacy.sections.0.paragraphs.0] 앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 수집하지 않습니다.
+[tapey.privacy.sections.0.paragraphs.1] 앱은 배경화면을 저장할 때 전면 광고를 한 번 보여 줍니다. 이 광고는 Google의 광고 서비스인 AdMob이 고르고 보여 주며, AdMob은 광고를 보여 주고 그 성과를 측정하는 데 기기 정보를 씁니다.
+
+## 개인정보 처리방침 02절
+[tapey.privacy.sections.1.title] 처리하는 개인정보의 항목
+[tapey.privacy.sections.1.paragraphs.0] 개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.
+[tapey.privacy.sections.1.paragraphs.1] 앱은 사진 메모의 손글씨 글꼴을 jsDelivr 글꼴 배포망에서 내려받습니다. 이때 일반적인 인터넷 연결처럼 기기의 IP 주소가 jsDelivr에 전달되며, 개발자는 이 정보를 받지 않습니다.
+[tapey.privacy.sections.1.paragraphs.2] 광고를 보여 줄 때 AdMob이 수집할 수 있는 정보는 9절에 적었습니다.
+[tapey.privacy.sections.1.bullets.0] 고른 사진과 배경 사진의 사본: 작업을 다시 열 때 사용
+[tapey.privacy.sections.1.bullets.1] 배치와 꾸미기 설정, 사진 메모: 작업을 다시 열 때 사용
+[tapey.privacy.sections.1.bullets.2] 최근 프로젝트 최대 3개와 미리보기 이미지: 시작 화면의 최근 프로젝트에 사용
+[tapey.privacy.sections.1.bullets.3] 언어 선택, 광고 제거 구매 여부, 저장 횟수: 앱 동작과 평가 요청 시점에 사용
+
+## 개인정보 처리방침 03절
+[tapey.privacy.sections.2.title] 처리 및 보유 기간
+[tapey.privacy.sections.2.paragraphs.0] 개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다. 사진 앱에 저장한 배경화면은 사진 앱에서 지웁니다.
+[tapey.privacy.sections.2.paragraphs.1] AdMob이 수집한 정보의 보유 기간은 Google의 개인정보처리방침(policies.google.com/privacy)을 따릅니다.
+
+## 개인정보 처리방침 04절
+[tapey.privacy.sections.3.title] 제3자 제공
+[tapey.privacy.sections.3.paragraphs.0] 개발자는 이용자의 개인정보를 제3자에게 제공하지 않습니다. 다만 광고를 보여 줄 때 앱에 들어 있는 Google Mobile Ads SDK가 9절의 정보를 Google에 직접 보냅니다. 내용은 아래와 같습니다.
+[tapey.privacy.sections.3.bullets.0] 받는 곳: Google LLC(미국), AdMob
+[tapey.privacy.sections.3.bullets.1] 목적: 광고 표시와 광고 성과 측정
+[tapey.privacy.sections.3.bullets.2] 항목: 9절에 적은 기기 정보와 광고 이용 기록
+[tapey.privacy.sections.3.bullets.3] 시기와 방법: 광고를 불러오고 보여 줄 때 인터넷으로 전송
+[tapey.privacy.sections.3.bullets.4] 보유 기간: Google의 개인정보처리방침에 따름
+
+## 개인정보 처리방침 05절
+[tapey.privacy.sections.4.title] 처리 위탁
+[tapey.privacy.sections.4.paragraphs.0] 개인정보 처리를 위탁하지 않습니다. 광고 제거 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.
+
+## 개인정보 처리방침 06절
+[tapey.privacy.sections.5.title] 파기 절차와 방법
+[tapey.privacy.sections.5.paragraphs.0] 개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 지금 작업은 메뉴의 다시 시작으로 지우고, 앱의 모든 자료는 앱을 삭제하면 지워집니다.
+
+## 개인정보 처리방침 07절
+[tapey.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
+[tapey.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
+[tapey.privacy.sections.6.paragraphs.1] AdMob이 수집한 정보는 Google에 열람이나 삭제를 요청할 수 있습니다. 광고 식별자 사용은 9절의 방법으로 거부합니다.
+
+## 개인정보 처리방침 08절
+[tapey.privacy.sections.7.title] 안전성 확보 조치
+[tapey.privacy.sections.7.paragraphs.0] 사진은 iOS의 사진 선택 화면이나 카메라로 고른 것만 앱에 전달됩니다. 완성한 배경화면을 저장할 때는 사진을 추가하는 권한만 씁니다.
+
+## 개인정보 처리방침 09절
+[tapey.privacy.sections.8.title] 자동 수집 장치의 설치와 운영, 거부 방법
+[tapey.privacy.sections.8.paragraphs.0] 앱은 쿠키와 방문 분석 도구를 쓰지 않습니다. 광고를 위해 Google Mobile Ads SDK(AdMob)가 들어 있으며, 이 SDK는 광고를 불러오고 보여 줄 때 아래 정보를 수집할 수 있습니다.
+[tapey.privacy.sections.8.paragraphs.1] 앱을 처음 열면 iOS가 앱 추적 투명성(ATT) 창으로 추적 허용 여부를 묻습니다. 허용하지 않으면 AdMob은 광고 식별자(IDFA)를 받지 못하며, 광고는 계속 나옵니다. 이 선택은 iOS 설정 > 개인정보 보호 및 보안 > 추적에서 바꿉니다.
+[tapey.privacy.sections.8.paragraphs.2] 유럽 경제 지역처럼 광고 동의가 필요한 지역에서는 Google의 동의 창이 먼저 뜹니다. 이 지역에서는 시작 화면 아래의 광고 설정에서 동의 내용을 바꿉니다.
+[tapey.privacy.sections.8.paragraphs.3] 광고 제거를 구매하면 그다음 실행부터 앱이 AdMob을 시작하지 않으므로 광고와 추적 허용 창이 나오지 않습니다.
+[tapey.privacy.sections.8.bullets.0] 기기 식별자, 추적을 허용한 경우 광고 식별자(IDFA)
+[tapey.privacy.sections.8.bullets.1] IP 주소로 추정한 대략적인 위치
+[tapey.privacy.sections.8.bullets.2] 광고 노출과 탭 같은 광고 이용 기록
+[tapey.privacy.sections.8.bullets.3] 앱 성능, 충돌, 진단 정보
+
+## 개인정보 처리방침 10절
+[tapey.privacy.sections.9.title] 개인정보 보호책임자
+[tapey.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
+[tapey.privacy.sections.9.pairs.0.label] 책임자
+[tapey.privacy.sections.9.pairs.0.value] kvndh
+[tapey.privacy.sections.9.pairs.1.label] 이메일
+[tapey.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[tapey.privacy.sections.10.title] 권익침해 구제 방법
+[tapey.privacy.sections.10.paragraphs.0] 개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.
+[tapey.privacy.sections.10.bullets.0] 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
+[tapey.privacy.sections.10.bullets.1] 개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)
+[tapey.privacy.sections.10.bullets.2] 대검찰청: 국번 없이 1301 (www.spo.go.kr)
+[tapey.privacy.sections.10.bullets.3] 경찰청: 국번 없이 182 (ecrm.police.go.kr)
+
+## 개인정보 처리방침 12절
+[tapey.privacy.sections.11.title] 처리방침의 변경
+[tapey.privacy.sections.11.paragraphs.0] 방침이 바뀌면 바뀐 내용과 새 시행일을 이 페이지에 게시합니다.
+
+==================== Dice Master (dice-master) ====================
+# 확인 필요:
+#  - Pro 이름: 사이트는 'Dice Master Pro', 앱 화면은 'DiceMaster Pro'(붙여 씀)
+#  - '전체 굴리기 기록과 통계'는 실제로 30,000건 저장 상한 안에서의 전체임
+#  - 개인정보 4절(공유 버튼으로 보낸 결과 글)과 8절(가속도 센서 값을 저장하지 않음) 표현 확인 필요
+
+
+## 기본
+[dice-master.name] Dice Master
+[dice-master.subtitle] 수식 자동 계산과 색상별 부분합
+[dice-master.summary] 면체와 개수를 정하고 화면을 누르면, 주사위가 멈추는 순간 합계와 계산 과정이 함께 나옵니다.
+
+## 첫 화면
+[dice-master.hero.hook] 면체와 개수를 정하고 화면을 누르면, 주사위가 멈추는 순간 합계와 계산 과정이 함께 나옵니다.
+[dice-master.hero.shotAlt] Dice Master에서 6면 주사위 5개를 3D로 굴린 화면. 주사위 위에 합계와 계산 과정이 있습니다.
+
+## 기능 01 (feat, crop)
+[dice-master.sections.0.title] 굴리면 계산이 끝납니다
+[dice-master.sections.0.body.0] 주사위가 멈추면 결과가 크게 뜨고, 그 아래에 계산에 쓰인 눈이 차례로 놓입니다. 계산식은 합과 곱, 최댓값, 최솟값 가운데 게임에 맞는 것을 고릅니다. 주사위에 색을 나눠 칠하면 색상별 부분합도 함께 나옵니다.
+[dice-master.sections.0.bullets.0] 합, 곱, 최댓값 등 6가지 계산식
+[dice-master.sections.0.bullets.1] 색상별 부분합 표시
+[dice-master.sections.0.bullets.2] 3D 주사위와 2D 보기 전환
+[dice-master.sections.0.visual.alt] 합계 숫자와 그 아래 계산 과정을 확대한 모습. 위에는 면체, 주사위 수, 진행 방식, 계산식 칩이 있습니다.
+[dice-master.sections.0.visual.caption] 앱 화면 확대
+
+## 기능 02 (feat, kit)
+[dice-master.sections.1.title] 규칙은 게임에 맞춥니다
+[dice-master.sections.1.body.0] 면체와 주사위 수, 진행 방식을 게임 규칙대로 정합니다. 한번에 모드에서는 주사위를 탭해 잠그고 나머지만 다시 굴립니다. 하나씩 모드에서는 굴릴 때마다 누적 합이 쌓이고, 합계 제한을 넘으면 버스트로 끝납니다. 맞춘 설정은 나만의 프리셋으로 저장해 두고 불러옵니다.
+[dice-master.sections.1.bullets.0] 한번에, 하나씩 두 가지 진행 방식
+[dice-master.sections.1.bullets.1] 주사위 잠금과 굴림 횟수 제한
+[dice-master.sections.1.bullets.2] 합계 제한과 버스트 처리
+[dice-master.sections.1.visual.label] 진행 방식 한번에와 하나씩, 굴림 횟수 제한 2~20회, 합계 제한 1~999
+[dice-master.sections.1.visual.items.0.name] 한번에
+[dice-master.sections.1.visual.items.0.desc] 모두 굴린 뒤 골라 잠그는 방식
+[dice-master.sections.1.visual.items.1.name] 하나씩
+[dice-master.sections.1.visual.items.1.desc] 굴릴 때마다 쌓이는 누적 합
+[dice-master.sections.1.visual.items.2.name] 합계 제한
+[dice-master.sections.1.visual.items.2.desc] 한도를 넘으면 버스트
+[dice-master.sections.1.visual.rows.0.label] 굴림 횟수 제한
+[dice-master.sections.1.visual.rows.0.value] 2~20회
+[dice-master.sections.1.visual.rows.1.label] 합계 제한
+[dice-master.sections.1.visual.rows.1.value] 1~999
+
+## 기능 03 (card, None)
+[dice-master.sections.2.title] 게임별 프리셋이 들어 있습니다
+[dice-master.sections.2.body.0] 보드게임, 파티, 카지노, TRPG에서 쓰는 주사위 구성이 들어 있습니다. 크랩스, 식보, 파클 같은 게임은 굴릴 때마다 결과를 판정합니다.
+[dice-master.sections.2.bullets.0] 17가지 기본 프리셋
+[dice-master.sections.2.bullets.1] 10가지 게임 결과 판정
+[dice-master.sections.2.bullets.2] 게임 검색과 숨기기
+
+## 기능 04 (card, chips)
+[dice-master.sections.3.title] 지난 설정 그대로 이어 굴립니다
+[dice-master.sections.3.body.0] 앱을 열면 지난번 주사위 설정이 그대로 있습니다. 계정 없이 쓰고, 인터넷이 끊겨도 굴립니다.
+[dice-master.sections.3.visual.items.0] 계정 없음
+[dice-master.sections.3.visual.items.1] 광고 없음
+[dice-master.sections.3.visual.items.2] 오프라인 사용
+
+## Pro
+[dice-master.pro.kick] Dice Master Pro
+[dice-master.pro.title] 더 큰 주사위를,\n더 많이 굴립니다
+[dice-master.pro.items.0] 11면 이상 주사위 (d12, d20, d100)
+[dice-master.pro.items.1] 한 번에 최대 20개 굴리기
+[dice-master.pro.items.2] 네온, 썬더, 골드, 플레임 스킨
+[dice-master.pro.items.3] 주사위 면 커스텀 아이콘
+[dice-master.pro.items.4] 프리셋 무제한 저장
+[dice-master.pro.items.5] 전체 굴리기 기록과 통계
+
+## 자주 묻는 질문
+[dice-master.faq.0.q] 설정과 기록의 보관 위치
+[dice-master.faq.0.a.0] 주사위 설정, 나만의 프리셋, 굴리기 기록은 앱 저장공간에 보관됩니다. 앱을 삭제하면 함께 지워지며, iCloud 동기화는 지원하지 않습니다.
+[dice-master.faq.0.a.1] 기능 설정 맨 아래의 앱 초기화를 누르면 설정과 프리셋, 굴리기 기록이 모두 지워지고 되돌릴 수 없습니다. Pro 구매는 그대로 남습니다.
+[dice-master.faq.1.q] 목록에 없는 면체
+[dice-master.faq.1.a.0] 화면 위의 면체 칩을 누르면 주사위 설정이 열립니다. 연필 모양 칸을 누르고 커스텀 면 수에 2부터 100까지 숫자를 넣으면 그 면체로 굴립니다. 11면 이상은 Pro에서 씁니다.
+[dice-master.faq.1.a.1] 3D 보기는 2면부터 20면까지 지원하고, 그보다 큰 면체는 2D로 보여 줍니다.
+[dice-master.faq.2.q] 앱 표시 언어
+[dice-master.faq.2.a.0] 처음에는 기기 언어를 따릅니다. 기능 설정의 Language에서 13개 언어 가운데 하나를 고르면 앱 안에서 바로 바뀝니다.
+[dice-master.faq.3.q] Pro가 필요한 구성
+[dice-master.faq.3.a.0] 11면 이상 주사위, 한 번에 11개 이상 굴리기, 네온, 썬더, 골드, 플레임 스킨, 커스텀 아이콘은 Pro에서 씁니다. 기본 프리셋의 규칙을 바꾼 뒤에 판정을 계속 받을 때도 Pro가 필요합니다. 기본 프리셋 가운데 d20 판정은 Pro 없이 굴립니다.
+[dice-master.faq.3.a.1] 나만의 프리셋은 2개까지 저장합니다. 굴리기 기록과 통계에는 최근 50건이 보이고, 그보다 오래된 기록도 앱에 남아 있어 Pro에서 모두 볼 수 있습니다.
+[dice-master.faq.4.q] Pro 구매 복원
+[dice-master.faq.4.a.0] 기기를 바꾸거나 앱을 다시 설치했다면 오른쪽 위 톱니바퀴에서 기능 설정을 엽니다. 맨 위의 DiceMaster Pro를 누르고 아래쪽의 구매 복원을 누르면 됩니다. 같은 Apple 계정이면 다시 결제하지 않습니다.
+[dice-master.faq.5.q] 인터넷 연결
+[dice-master.faq.5.a.0] 주사위 굴리기와 기록, 프리셋은 인터넷 연결 없이 됩니다. Pro 구매와 복원에만 App Store 연결이 필요합니다.
+[dice-master.faq.6.q] 흔들어서 굴리기 끄기
+[dice-master.faq.6.a.0] 기능 설정의 조작 방식에서 흔들어서 굴리기를 끄면 기기를 흔들어도 주사위가 굴러가지 않습니다.
+
+## 개인정보 처리방침
+[dice-master.privacy.title] Dice Master 개인정보 처리방침
+[dice-master.privacy.intro.0] kvndh(이하 개발자)는 Dice Master 앱(이하 앱) 이용자의 개인정보를 「개인정보 보호법」에 따라 처리하며, 그 기준을 다음과 같이 알립니다.
+
+## 개인정보 처리방침 01절
+[dice-master.privacy.sections.0.title] 개인정보의 처리 목적
+[dice-master.privacy.sections.0.paragraphs.0] 앱에는 회원가입과 로그인이 없고, 개발자는 이용자의 개인정보를 처리하지 않습니다. 따라서 별도의 처리 목적이 없습니다.
+
+## 개인정보 처리방침 02절
+[dice-master.privacy.sections.1.title] 처리하는 개인정보의 항목
+[dice-master.privacy.sections.1.paragraphs.0] 개발자가 수집하는 개인정보 항목은 없습니다. 앱이 쓰는 자료는 아래와 같으며, 모두 이용자 기기의 앱 저장공간에 보관됩니다. 개발자는 이 자료를 받지 않습니다.
+[dice-master.privacy.sections.1.bullets.0] 주사위 설정과 나만의 프리셋: 다음에 앱을 열 때 이어서 사용
+[dice-master.privacy.sections.1.bullets.1] 굴리기 기록: 기록 목록과 통계 표시에 사용
+[dice-master.privacy.sections.1.bullets.2] 앱 설정(스킨, 사운드, 언어 등): 화면과 소리 설정에 사용
+
+## 개인정보 처리방침 03절
+[dice-master.privacy.sections.2.title] 처리 및 보유 기간
+[dice-master.privacy.sections.2.paragraphs.0] 개발자가 보유하는 개인정보가 없습니다. 앱 저장공간의 자료는 앱을 삭제하면 함께 지워집니다.
+
+## 개인정보 처리방침 04절
+[dice-master.privacy.sections.3.title] 제3자 제공
+[dice-master.privacy.sections.3.paragraphs.0] 개인정보를 제3자에게 제공하지 않습니다. 이용자가 공유 버튼으로 굴리기 결과를 보내면, 보낸 글은 이용자가 고른 앱의 방침에 따라 다뤄집니다.
+
+## 개인정보 처리방침 05절
+[dice-master.privacy.sections.4.title] 처리 위탁
+[dice-master.privacy.sections.4.paragraphs.0] 개인정보 처리를 위탁하지 않습니다. Dice Master Pro 결제는 Apple이 App Store에서 처리하며, 결제 정보는 Apple의 개인정보 처리방침을 따릅니다. 개발자는 결제 수단이나 Apple 계정 정보를 받지 않습니다.
+
+## 개인정보 처리방침 06절
+[dice-master.privacy.sections.5.title] 파기 절차와 방법
+[dice-master.privacy.sections.5.paragraphs.0] 개발자가 보유하는 개인정보가 없어 파기할 대상이 없습니다. 굴리기 기록은 굴리기 기록 화면의 기록 지우기로 지우고, 설정과 프리셋, 기록 전체는 기능 설정의 앱 초기화로 지웁니다. 앱의 모든 자료는 앱을 삭제하면 지워집니다.
+
+## 개인정보 처리방침 07절
+[dice-master.privacy.sections.6.title] 정보주체와 법정대리인의 권리와 의무, 행사 방법
+[dice-master.privacy.sections.6.paragraphs.0] 개발자가 보유한 개인정보가 없으므로 열람, 정정, 삭제를 요청할 대상이 없습니다. 궁금한 점은 아래 메일 주소로 연락 주세요.
+
+## 개인정보 처리방침 08절
+[dice-master.privacy.sections.7.title] 안전성 확보 조치
+[dice-master.privacy.sections.7.paragraphs.0] 앱은 사진, 위치, 연락처, 카메라, 마이크 같은 기기 권한을 요청하지 않습니다. 흔들어서 굴리기는 기기의 가속도 센서 값으로 흔들림만 알아보며, 그 값을 저장하지 않습니다.
+
+## 개인정보 처리방침 09절
+[dice-master.privacy.sections.8.title] 자동 수집 장치의 설치와 운영, 거부 방법
+[dice-master.privacy.sections.8.paragraphs.0] 쿠키, 광고 식별자, 방문 분석 도구를 쓰지 않습니다.
+
+## 개인정보 처리방침 10절
+[dice-master.privacy.sections.9.title] 개인정보 보호책임자
+[dice-master.privacy.sections.9.paragraphs.0] 개인정보와 관련해 궁금한 점은 아래 메일 주소로 연락 주세요.
+[dice-master.privacy.sections.9.pairs.0.label] 책임자
+[dice-master.privacy.sections.9.pairs.0.value] kvndh
+[dice-master.privacy.sections.9.pairs.1.label] 이메일
+[dice-master.privacy.sections.9.pairs.1.value] kvndh36@naver.com
+
+## 개인정보 처리방침 11절
+[dice-master.privacy.sections.10.title] 권익침해 구제 방법
+[dice-master.privacy.sections.10.paragraphs.0] 개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다.
+[dice-master.privacy.sections.10.bullets.0] 개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)
+[dice-master.privacy.sections.10.bullets.1] 개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)
+[dice-master.privacy.sections.10.bullets.2] 대검찰청: 국번 없이 1301 (www.spo.go.kr)
+[dice-master.privacy.sections.10.bullets.3] 경찰청: 국번 없이 182 (ecrm.police.go.kr)
+
+## 개인정보 처리방침 12절
+[dice-master.privacy.sections.11.title] 처리방침의 변경
+[dice-master.privacy.sections.11.paragraphs.0] 방침이 바뀌면 바뀐 내용과 새 시행일을 이 페이지에 게시합니다.
+
+## 개인정보 처리방침
+[dice-master.privacy.summary] Dice Master는 개인정보를 수집하지 않습니다. 회원가입과 로그인이 없고, Pro 결제는 Apple이 처리합니다.
+

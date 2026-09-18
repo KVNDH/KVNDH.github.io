@@ -1,0 +1,309 @@
+{
+ "name": "Tapey",
+ "subtitle": "Foto-Hintergründe mit Washi-Tape",
+ "summary": "Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.",
+ "hero": {
+  "hook": "Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.",
+  "shotAlt": "Der Editor von Tapey. Unter der Uhr des Sperrbildschirms hängen Fotos in Polaroid-Rahmen an Washi-Tape, eines trägt eine handgeschriebene Notiz."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Die Fotos finden ihren Platz",
+   "body": [
+    "Wählen Sie bis zu 12 Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben, oder ändern Sie mit zwei Fingern Größe und Winkel. Was Sie von Hand bewegt haben, bleibt dort, wo Sie es abgelegt haben."
+   ],
+   "bullets": [
+    "Automatisches Layout für bis zu 12 Fotos",
+    "Layouts Auto, Raster, Treppe und Herz",
+    "Rückgängig und Wiederholen"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Der Editor aus der Nähe. Polaroid-Abzüge hängen an Washi-Tape, dazwischen eine handgeschriebene Notiz.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-620px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Tape und Rahmen",
+   "body": [
+    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz."
+   ],
+   "bullets": [
+    "8 Tape-Farben und 4 Muster",
+    "Weißer Rand und Polaroid-Rahmen",
+    "S/W für die ganze Wand oder ein einzelnes Foto"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Die Werkzeuge Tape, Rahmen und Hintergrund, dazu 8 Tape-Farben und 6 Hintergrundtöne",
+    "items": [
+     {
+      "name": "Tape",
+      "desc": "Farbe, Platz, Muster, gerissene Enden"
+     },
+     {
+      "name": "Rahmen",
+      "desc": "Rand, Polaroid, S/W",
+      "on": true
+     },
+     {
+      "name": "Hintergrund",
+      "desc": "Wandtöne, Mein Foto, Textur"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Tape-Farben",
+      "value": "8"
+     },
+     {
+      "label": "Hintergrundtöne",
+      "value": "6",
+      "meter": "levels",
+      "count": 6
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Auf den Sperrbildschirm zugeschnitten",
+   "body": [
+    "Die aktuelle Uhrzeit steht auf der Leinwand wie die Uhr Ihres Sperrbildschirms. Ziehen Sie am Griff, um den Uhrplatz festzulegen, und die Fotos rücken darunter. Platz für Widgets lässt sich ebenso freihalten, und die Auflösung passt von Anfang an zu Ihrem Gerät."
+   ],
+   "bullets": [
+    "Einstellbarer Uhrplatz",
+    "Reservierter Widget-Platz",
+    "Auflösungen für iPhone und iPad"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Es beginnt mit Ihren Fotos",
+   "body": [
+    "Kein Konto und nichts, wobei man sich anmelden müsste. Ihre Wand ist noch da, wenn Sie wiederkommen, und Neu erstellen nach dem Sichern legt sie unter Zuletzt ab."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "31 Sprachen"
+    ]
+   }
+  }
+ ],
+ "pro": null,
+ "faq": [
+  {
+   "q": "Fotos hinzufügen",
+   "a": [
+    "Tippen Sie auf dem Startbildschirm auf Fotos hinzufügen und wählen Sie aus Ihrer Mediathek oder machen Sie ein neues Bild. Beim Bearbeiten tippen Sie im Tab Fotos auf Hinzufügen.",
+    "In einen Hintergrund passen bis zu 12 Fotos. Das Layout Herz erscheint, sobald Sie 6 oder mehr haben."
+   ]
+  },
+  {
+   "q": "Wohin gesicherte Hintergründe kommen",
+   "a": [
+    "Tippen Sie oben im Editor auf Speichern. Der Hintergrund landet als PNG in der Fotos-App, in der Auflösung, die Sie in den Einstellungen gewählt haben. Beim ersten Mal fragt iOS, ob Tapey Fotos hinzufügen darf.",
+    "Klappt das Sichern nicht, erlauben Sie den Fotozugriff unter Einstellungen > Tapey."
+   ]
+  },
+  {
+   "q": "Die Werbung beim Sichern",
+   "a": [
+    "Tapey ist kostenlos und zeigt beim Sichern eines Hintergrunds eine bildschirmfüllende Werbung. Ein Banner auf dem Bildschirm gibt es nicht.",
+    "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung."
+   ]
+  },
+  {
+   "q": "Werbung entfernen und den Kauf wiederherstellen",
+   "a": [
+    "Werbung entfernen kaufen Sie im Menü oder auf dem Startbildschirm. Danach erscheint beim Sichern keine Werbung mehr.",
+    "Auf einem neuen Gerät oder nach einer Neuinstallation öffnen Sie Werbung entfernen im Menü und tippen auf Einkäufe wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Tracking und Werbeeinstellungen",
+   "a": [
+    "Beim ersten Öffnen fragt iOS, ob Tapey Sie tracken darf. Die App funktioniert so oder so gleich, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, ändern Sie Ihre Auswahl unter Werbeeinstellungen am unteren Rand des Startbildschirms."
+   ]
+  },
+  {
+   "q": "Wo Ihre Arbeit liegt",
+   "a": [
+    "Kopien der gewählten Fotos und Hintergrundfotos liegen zusammen mit Layout und Notizen im Speicher der App, damit Sie dort weitermachen können, wo Sie aufgehört haben. Neu beginnen im Menü löscht die aktuelle Arbeit, und mit dem Löschen der App verschwindet alles.",
+    "Tippen Sie nach dem Sichern auf Neu erstellen, wandert die aktuelle Arbeit zu Zuletzt. Dort bleiben 3 Projekte, und das älteste weicht, wenn ein neues dazukommt."
+   ]
+  },
+  {
+   "q": "Als Hintergrundbild festlegen",
+   "a": [
+    "Öffnen Sie das gerade gesicherte Bild in der Fotos-App, tippen Sie auf Teilen und wählen Sie Als Hintergrundbild. Wählen Sie Sperrbildschirm und tippen Sie auf Festlegen.",
+    "Dieselben Schritte stehen unter „So legst du es als Hintergrundbild fest“ auf dem Bildschirm, der nach dem Sichern erscheint."
+   ]
+  },
+  {
+   "q": "Tapey auf dem iPad",
+   "a": [
+    "Tapey läuft auch auf dem iPad. Dort entsteht ein quadratischer Hintergrund, der im Hoch- und im Querformat passt, und im Editor wechseln Sie zwischen beiden Ansichten.",
+    "Für einen iPhone-Hintergrund auf dem iPad wählen Sie unter Auflösung in den Einstellungen eine iPhone-Größe."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Anordnen, Verzieren und Sichern laufen offline. Werbung, der Kauf von Werbung entfernen und das Wiederherstellen brauchen eine Verbindung.",
+    "Von den Handschriften für Notizen wird nur die koreanische geladen, die übrigen stecken in der App. Ohne Verbindung erscheinen Notizen, die sie brauchen, in einer Standardschrift."
+   ]
+  },
+  {
+   "q": "Wenn etwas klemmt",
+   "a": [
+    "Schließen Sie die App ganz, öffnen Sie sie neu und prüfen Sie im App Store, ob Sie die neueste Version haben. Hält das Problem an, schreiben Sie uns, auf welchem Bildschirm Sie waren und was Sie gerade gemacht haben."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für Tapey",
+  "effectiveDate": "2026-09-18",
+  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Die Werbung beim Sichern kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Tapey (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
+     "Beim Sichern eines Hintergrunds zeigt die App eine bildschirmfüllende Werbung. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät, und der Entwickler erhält sie nicht.",
+     "Braucht eine Fotonotiz die koreanische Handschrift, lädt die App sie vom Content-Delivery-Netzwerk jsDelivr. Wie bei jeder Anfrage im Internet erreicht dabei die IP-Adresse Ihres Geräts jsDelivr. Der Entwickler erhält sie nicht.",
+     "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
+    ],
+    "bullets": [
+     "Kopien der gewählten Fotos und Hintergrundfotos: zum Wiederöffnen Ihrer Arbeit",
+     "Layout, Einstellungen zur Gestaltung, Fotonotizen: zum Wiederöffnen Ihrer Arbeit",
+     "Bis zu 3 letzte Projekte mit Vorschaubildern: für Zuletzt auf dem Startbildschirm",
+     "Sprachwahl, Kaufstatus von Werbung entfernen, Zahl der Sicherungen: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage"
+    ]
+   },
+   {
+    "title": "Verarbeitung und Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Hintergründe, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
+     "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Wird jedoch Werbung angezeigt, sendet das in der App enthaltene Google Mobile Ads SDK die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
+    ],
+    "bullets": [
+     "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
+     "Zweck: Ausspielen von Werbung und Messung ihrer Wirkung",
+     "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
+     "Zeitpunkt und Weg: über das Internet, wenn eine Werbung geladen und angezeigt wird",
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+    ]
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Werbung entfernen über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Neu beginnen im Menü löscht Ihre aktuelle Arbeit, und mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Nutzerinnen und Nutzer sowie der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
+     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "An die App gehen nur die Fotos, die Sie in der Fotoauswahl von iOS aussuchen oder mit der Kamera aufnehmen. Zum Sichern eines fertigen Hintergrunds nutzt die App allein die Berechtigung, Fotos hinzuzufügen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatische Erfassung und wie Sie sie ablehnen",
+    "paragraphs": [
+     "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob), das beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen kann.",
+     "Beim ersten Öffnen zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "In Regionen, in denen eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Dort ändern Sie Ihre Auswahl später unter Werbeeinstellungen am unteren Rand des Startbildschirms.",
+     "Nach dem Kauf von Werbung entfernen startet die App AdMob ab dem nächsten Öffnen nicht mehr, sodass weder Werbung noch die Tracking-Abfrage erscheinen."
+    ],
+    "bullets": [
+     "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
+     "Ungefährer Standort, geschätzt anhand Ihrer IP-Adresse",
+     "Interaktionsdaten zu Werbung wie Einblendungen und Antippen",
+     "Informationen zu Leistung, Abstürzen und Diagnose der App"
+    ]
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe in Datenschutzfragen",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

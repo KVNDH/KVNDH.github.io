@@ -1,0 +1,309 @@
+{
+ "name": "Tapey",
+ "subtitle": "Washi-tape photo wallpapers",
+ "summary": "Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.",
+ "hero": {
+  "hook": "Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.",
+  "shotAlt": "The Tapey editor. Below the lock screen clock, photos in Polaroid frames are held up with washi tape, and one has a handwritten note."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Photos find their place",
+   "body": [
+    "Pick up to 12 photos and Tapey lays them out like prints on a wall. Drag a photo to move it, or use two fingers to resize and turn it. Any photo you move by hand stays pinned where you put it."
+   ],
+   "bullets": [
+    "Automatic layout for up to 12 photos",
+    "Auto, Grid, Stairs, and Heart layouts",
+    "Undo and redo"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Close-up of the editor. Polaroid prints held up with washi tape, with a handwritten note among them.",
+    "caption": "App screen, zoomed in",
+    "focus": "-620px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Tape and frames",
+   "body": [
+    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note."
+   ],
+   "bullets": [
+    "8 tape colors and 4 patterns",
+    "White borders and Polaroid frames",
+    "B&W for the whole wall or a single photo"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Tape, Frame, and Background tools, with 8 tape colors and 6 background tones",
+    "items": [
+     {
+      "name": "Tape",
+      "desc": "Color, placement, pattern, torn ends"
+     },
+     {
+      "name": "Frame",
+      "desc": "Border, Polaroid, B&W",
+      "on": true
+     },
+     {
+      "name": "Background",
+      "desc": "Wall tones, My photo, Texture"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Tape colors",
+      "value": "8"
+     },
+     {
+      "label": "Background tones",
+      "value": "6",
+      "meter": "levels",
+      "count": 6
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Fitted to the lock screen",
+   "body": [
+    "The current time sits on the canvas just like your lock screen clock. Drag the handle to set the clock space, and the photos move down below it. You can keep room for widgets as well, and the resolution is matched to your device from the start."
+   ],
+   "bullets": [
+    "Adjustable clock space",
+    "Reserved widget space",
+    "iPhone and iPad resolutions"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Start with your photos",
+   "body": [
+    "No account and nothing to sign in to. Your wall is still there when you come back, and Make a new one after saving moves it to Recent."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "31 languages"
+    ]
+   }
+  }
+ ],
+ "pro": null,
+ "faq": [
+  {
+   "q": "Adding photos",
+   "a": [
+    "On the start screen, tap Add photos, then choose from your photo library or take a new picture. While editing, tap Add in the Photos tab.",
+    "Each wallpaper holds up to 12 photos. The Heart layout appears once you have 6 or more."
+   ]
+  },
+  {
+   "q": "Where saved wallpapers go",
+   "a": [
+    "Tap Save at the top of the editor. The wallpaper goes to the Photos app as a PNG at the resolution chosen in Settings. The first time, iOS asks whether Tapey may add photos.",
+    "If saving fails, allow photo access in Settings > Tapey."
+   ]
+  },
+  {
+   "q": "The ad when you save",
+   "a": [
+    "Tapey is free and shows one full-screen ad when you save a wallpaper. There is no banner ad on screen.",
+    "If the ad can't load, or your last save failed, Tapey saves right away without an ad."
+   ]
+  },
+  {
+   "q": "Removing ads and restoring the purchase",
+   "a": [
+    "Buy Remove ads from the menu or the start screen. After that, no ad appears when you save.",
+    "On a new device or after reinstalling, open Remove ads from the menu and tap Restore purchase. With the same Apple Account, you won't be charged again."
+   ]
+  },
+  {
+   "q": "Tracking and ad preferences",
+   "a": [
+    "The first time you open the app, iOS asks whether Tapey may track you. The app works the same either way, and you can change your answer in Settings > Privacy & Security > Tracking.",
+    "Where ad consent is required, such as the European Economic Area, change your choices under Ad preferences at the bottom of the start screen."
+   ]
+  },
+  {
+   "q": "Where your work is kept",
+   "a": [
+    "Copies of the photos and background photos you pick, along with the layout and notes, are kept in the app's storage so you can pick up where you left off. Start over in the menu clears the current work, and deleting the app removes everything.",
+    "Tapping Make a new one after saving moves the current work to Recent. Recent keeps 3 projects and drops the oldest when a new one comes in."
+   ]
+  },
+  {
+   "q": "Setting the wallpaper",
+   "a": [
+    "Open the image you just saved in the Photos app, tap Share, then choose Use as Wallpaper. Pick Lock Screen and tap Set.",
+    "The same steps are under How to set it as wallpaper on the screen that appears after saving."
+   ]
+  },
+  {
+   "q": "Using Tapey on iPad",
+   "a": [
+    "Tapey runs on iPad too. There it makes a square wallpaper that works in both portrait and landscape, and the editor lets you switch between the two views.",
+    "To make an iPhone wallpaper on your iPad, pick an iPhone size under Resolution in Settings."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Arranging, decorating, and saving work offline. Ads, buying Remove ads, and restoring the purchase need a connection.",
+    "Of the handwriting fonts for notes, only the Korean one is downloaded; the rest come with the app. Without a connection, notes that need it appear in a standard font."
+   ]
+  },
+  {
+   "q": "Troubleshooting",
+   "a": [
+    "Close the app completely, open it again, and check that you have the latest version from the App Store. If the problem continues, email us with the screen you were on and what you were doing."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Tapey Privacy Policy",
+  "effectiveDate": "2026-09-18",
+  "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove ads.",
+  "intro": [
+   "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
+  ],
+  "sections": [
+   {
+    "title": "Purpose of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not collect personal information from users.",
+     "When you save a wallpaper, the app shows one full-screen ad. Google's ad service AdMob selects and displays that ad, and uses device information to show ads and measure how they perform."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it.",
+     "When a photo note needs the Korean handwriting font, the app loads it from the jsDelivr content delivery network. As with any internet request, your device's IP address reaches jsDelivr. The developer does not receive it.",
+     "Information that AdMob may collect when showing ads is listed in section 9."
+    ],
+    "bullets": [
+     "Copies of the photos and background photos you pick: used to reopen your work",
+     "Layout and decoration settings, photo notes: used to reopen your work",
+     "Up to 3 recent projects with preview images: used for Recent on the start screen",
+     "Language choice, Remove ads purchase status, save count: used to run the app and to time the rating request"
+    ]
+   },
+   {
+    "title": "Processing and retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Wallpapers saved to the Photos app are deleted in the Photos app.",
+     "Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Disclosure to third parties",
+    "paragraphs": [
+     "The developer does not provide users' personal information to third parties. When an ad is shown, however, the Google Mobile Ads SDK built into the app sends the information in section 9 directly to Google, as follows."
+    ],
+    "bullets": [
+     "Recipient: Google LLC (United States), AdMob",
+     "Purpose: showing ads and measuring ad performance",
+     "Information: the device information and ad interaction records listed in section 9",
+     "When and how: sent over the internet when an ad is loaded and shown",
+     "Retention: as set out in Google's Privacy Policy"
+    ]
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "The developer does not outsource the processing of personal information. Apple processes payment for Remove ads through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. Start over in the menu clears your current work, and deleting the app removes all of its data."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal guardians, and how to exercise them",
+    "paragraphs": [
+     "Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, email us at the address below.",
+     "You can ask Google to give you access to, or delete, information collected by AdMob (policies.google.com/privacy). To refuse use of the advertising identifier, follow section 9. Payment information is held by Apple and is covered by Apple's privacy policy (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "Only the photos you choose in the iOS photo picker or take with the camera are passed to the app. When saving a finished wallpaper, the app uses only the permission to add photos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic collection and how to refuse it",
+    "paragraphs": [
+     "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) for advertising, which may collect the information below when it loads and shows ads.",
+     "The first time you open the app, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and ads still appear. You can change this in iOS Settings > Privacy & Security > Tracking.",
+     "In regions where ad consent is required, such as the European Economic Area, Google's consent form appears first. There, you can change your choices under Ad preferences at the bottom of the start screen.",
+     "After you buy Remove ads, the app stops starting AdMob from the next launch, so neither ads nor the tracking prompt appear."
+    ],
+    "bullets": [
+     "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",
+     "Approximate location estimated from your IP address",
+     "Ad interaction records such as impressions and taps",
+     "App performance, crash, and diagnostic information"
+    ]
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies for privacy concerns",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show what changed and the new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

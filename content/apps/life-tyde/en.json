@@ -1,0 +1,271 @@
+{
+ "name": "Life Tyde",
+ "subtitle": "Quiet chronicle of your years",
+ "summary": "Pick out the big moments of your life, file them under hashtags, and keep them on one timeline.",
+ "hero": {
+  "hook": "Pick out the big moments of your life, file them under hashtags, and keep them on one timeline.",
+  "shotAlt": "The Life Tyde timeline. Entries run down the screen by year, and highlighted ones show a red dot and a red title."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Only the moments that mattered",
+   "body": [
+    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title."
+   ],
+   "bullets": [
+    "Age or year count beside each entry",
+    "Era event packs from the Event market",
+    "Reminders and repeats for upcoming events"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Close-up of the timeline. Each row shows the year, the month and day, the age, a title, and a note, and highlighted entries are red.",
+    "caption": "App screen, close-up"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "One hashtag, one chronicle",
+   "body": [
+    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top."
+   ],
+   "bullets": [
+    "Tag filter with a highlights-only view",
+    "Suggestions from the tags you already use",
+    "Chronicle summaries with Apple Intelligence"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Tag Chronicle for #Work. Only the entries with that tag, from a first job to starting a consulting firm, run down one line.",
+    "caption": "Tag Chronicle",
+    "focus": "-170px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Go back over the years",
+   "body": [
+    "Replay turns through your entries one at a time, oldest first. Life Map spreads every entry across a grid of years and months, and Side by Side lines up two timelines by age or by year."
+   ],
+   "bullets": [
+    "Automatic advance to the next entry",
+    "On this day card and widget",
+    "Chronicle exchange with a nearby device"
+   ],
+   "visual": {
+    "type": "play",
+    "label": "Replay"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Open it and write",
+   "body": [
+    "No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone and iPad on the same account."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "No ads",
+     "iCloud sync",
+     "CSV backup"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Life Tyde Pro",
+  "title": "More room for your life,\nand a book to keep it in",
+  "items": [
+   "Chronicle book export as an A4 PDF",
+   "Unlimited events and hashtags",
+   "Up to 3 timelines",
+   "All event packs",
+   "Replay filtered by decade, tag, or highlight",
+   "Essay drafts and forewords with Apple Intelligence"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Where entries are stored",
+   "a": [
+    "Entries are kept in the app's storage. With iCloud sync on, they are also saved to your own iCloud account and kept in step with your other devices on that account.",
+    "Deleted entries stay in Trash in Settings for 7 days, and you can restore them during that time."
+   ]
+  },
+  {
+   "q": "Turning iCloud sync on or off",
+   "a": [
+    "iCloud sync is on from the start, and you can turn it off or back on in Settings. The change applies after you close the app from the app switcher and open it again.",
+    "On your other devices, sign in to the same iCloud account and keep iCloud sync on. The first sync between devices can take a few minutes."
+   ]
+  },
+  {
+   "q": "What the free version includes",
+   "a": [
+    "You can keep up to 100 events, 1 timeline, and 10 tags for free, and add the major history pack for your app language from the Event market. Reaching a limit never locks what you have already written, and you can still read and edit it.",
+    "With Pro, events and tags have no limit, and you can create up to 3 timelines."
+   ]
+  },
+  {
+   "q": "Restoring Pro",
+   "a": [
+    "After switching devices or reinstalling the app, open Settings, tap Upgrade to Pro, then tap Restore at the top right. On the same Apple Account you won't be charged again."
+   ]
+  },
+  {
+   "q": "Upcoming events and reminders",
+   "a": [
+    "An entry dated tomorrow or later becomes an upcoming event. Once it has a month and a day, Remind me offers Same day, 1 day, 1 week, or 1 month before. The app asks for notification permission the first time you save an event with a reminder.",
+    "When the date has passed, tap Mark as done to turn the event into a regular entry. If you set it to repeat, the next round is scheduled at that point."
+   ]
+  },
+  {
+   "q": "Backing up with CSV",
+   "a": [
+    "Tap Export to CSV in Settings to save your entries as a CSV file. When you bring them back with Import CSV, choose Add to existing events or Replace all events.",
+    "A CSV file is a backup you make when you need one, and it is separate from iCloud sync."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Writing, Replay, and exports work without an internet connection. iCloud sync and buying or restoring Pro need one.",
+    "Exchange nearby connects two devices directly, without the internet. Both people need to open Exchange nearby in Life Tyde."
+   ]
+  },
+  {
+   "q": "Devices that support the AI features",
+   "a": [
+    "Summarize this chronicle, Add AI foreword, and essay drafts appear on devices that support Apple Intelligence, running iOS 26 or later with Apple Intelligence turned on. They stay hidden if the on-device model does not support the app language.",
+    "AI text needs at least 5 entries to work from. You can edit anything it writes before exporting."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Life Tyde Privacy Policy",
+  "effectiveDate": "2026-09-18",
+  "intro": [
+   "kvndh (\"the developer\") handles the personal information of people who use the Life Tyde app (\"the app\") in accordance with the Personal Information Protection Act of Korea. This policy explains how."
+  ],
+  "sections": [
+   {
+    "title": "Purpose of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not process users' personal information. There is therefore no processing purpose to state."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The data the app uses is listed below and is kept in the app's storage on your device. With iCloud sync on, your entries are also kept in your own iCloud account. The developer does not receive this data."
+    ],
+    "bullets": [
+     "Events (year, month, day, title, note, highlight, schedule and reminder settings), tags, and timeline names: used to show your timeline",
+     "Settings such as your birthday or base year, display options, and app language: used for what appears on screen",
+     "Book titles and drafts: used to pick up work on a book (PDF)",
+     "Event titles and years: used for the device search index while Spotlight search is on",
+     "On this day items: used to show the Home Screen widget"
+    ]
+   },
+   {
+    "title": "Retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is removed when you delete the app. Entries synced to iCloud remain in your iCloud account, and deleting an entry in the app removes it from the synced copies as well. Timeline images saved to Photos and exported files are yours to delete."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Sharing with third parties",
+    "paragraphs": [
+     "Personal information is not shared with third parties.",
+     "Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as profile."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "No processing of personal information is outsourced. iCloud sync runs on Apple's iCloud (CloudKit), and synced data is covered by Apple's privacy policy. Apple handles Life Tyde Pro payments through the App Store. The developer does not receive payment details or Apple Account information."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. Deleted entries stay in Trash for 7 days and are then removed, or you can remove them at once with Delete Permanently. Deleting the app removes all of its data from the device."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Your rights and how to exercise them",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to request access to, correct, or delete. You can view, edit, and delete your entries in the app and export them as a CSV file. If you have questions, email us at the address below."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "iCloud sync uses the private database in your own iCloud account. Exchange nearby works only over an encrypted connection. The app asks only for permission to add timeline images to Photos and does not ask to read your photo library. Notification permission is requested only when you save an event with a reminder.",
+     "Spotlight search indexes only event titles and years, and turning it off in Settings clears the index. AI summaries and drafts are written by the Apple Intelligence model on your device."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic collection tools",
+    "paragraphs": [
+     "The app uses no cookies, advertising identifiers, or analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show what changed and the new effective date."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "Life Tyde does not collect personal information. There is no sign-up or login, iCloud sync runs through your own iCloud account, and Apple handles Pro payments."
+ }
+}

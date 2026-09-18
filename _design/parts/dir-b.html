@@ -1,0 +1,723 @@
+<style>
+.dir-b{--n-bg:#F7F6F2;--n-ink:#1C1B19;--n-mute:#5B5953;--n-line:#E0DDD6;--focus:#1F5FBF;--sans:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Noto Sans KR","Malgun Gothic",sans-serif;--serif:"AppleMyungjo","Nanum Myeongjo","Noto Serif KR","Batang",serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;--hand:"Nanum Pen Script","AppleMyungjo",serif;display:block;max-width:1256px;margin:0 auto;padding:56px 28px 96px;background:#E8E6E1;color:var(--n-ink);font-family:var(--sans);font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:break-word;-webkit-font-smoothing:antialiased;text-align:left}
+.dir-b *,.dir-b *::before,.dir-b *::after{box-sizing:border-box}
+.dir-b h1,.dir-b h2,.dir-b h3,.dir-b h4,.dir-b h5,.dir-b h6,.dir-b p,.dir-b ul,.dir-b ol,.dir-b dl,.dir-b dd,.dir-b figure{margin:0;padding:0}
+.dir-b ul,.dir-b ol{list-style:none}
+.dir-b img,.dir-b svg{display:block;max-width:100%}
+.dir-b a{color:inherit;text-decoration:none}
+.dir-b a:focus-visible,.dir-b summary:focus-visible,.dir-b [tabindex]:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:6px}
+.dir-b .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.dir-b .defs{position:absolute;width:0;height:0;overflow:hidden}
+
+/* caption */
+.dir-b .cap{max-width:780px}
+.dir-b .cap-k{font:600 12px/1 var(--mono);letter-spacing:.14em;color:var(--n-mute)}
+.dir-b .cap-t{margin-top:12px;font-size:36px;line-height:1.2;letter-spacing:-.025em;font-weight:800}
+.dir-b .cap-r{margin-top:16px;font-size:16.5px;line-height:1.75;color:#34332F}
+.dir-b .cap-c{margin-top:16px;padding:12px 16px;border-left:3px solid #8A4A33;background:#F4F2EE;border-radius:0 10px 10px 0;font-size:14.5px;color:#34332F}
+.dir-b .cap-c strong{margin-right:6px}
+.dir-b .worlds{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.dir-b .worlds li{display:flex;align-items:center;gap:8px;padding:5px 12px 5px 5px;border-radius:999px;background:#F4F2EE;font-size:13px}
+.dir-b .worlds i{width:22px;height:22px;border-radius:50%}
+.dir-b .worlds .s1{background:radial-gradient(circle at 30% 35%,#A68B69 0 30%,transparent 32%),linear-gradient(160deg,#A05B42 40%,#7F8162 42% 70%,#3A291E 72%)}
+.dir-b .worlds .s2{background:repeating-linear-gradient(45deg,rgba(255,255,255,.5) 0 3px,transparent 3px 6px),#AFB6A0}
+.dir-b .worlds .s3{background:linear-gradient(90deg,transparent 45%,#F9F9F9 45% 55%,transparent 55%),linear-gradient(transparent 45%,#F9F9F9 45% 55%,transparent 55%),#0C0C0E}
+.dir-b .worlds .s4{background:radial-gradient(circle,#1D1D1D 2.5px,transparent 3px),#EE9D1C;border-radius:7px}
+.dir-b .worlds .s5{background:radial-gradient(circle,#E33C48 4px,transparent 4.5px),linear-gradient(90deg,transparent 10px,#313130 10px 12px,transparent 12px),#F5F5F0;box-shadow:inset 0 0 0 1px #D8D7CF}
+
+/* spreads and frames */
+.dir-b .spread{margin-top:88px}
+.dir-b .spread-t{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;font-size:22px;font-weight:800;letter-spacing:-.02em}
+.dir-b .spread-t span{font:600 12px var(--mono);color:var(--n-mute)}
+.dir-b .spread-t code{padding:2px 8px;border-radius:6px;background:#F4F2EE;font:500 13px var(--mono);color:var(--n-mute)}
+.dir-b .spread-d{margin:8px 0 20px;max-width:720px;font-size:15px;color:#46453F}
+.dir-b .browser{max-width:1200px;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 40px 70px -40px rgba(30,25,20,.45)}
+.dir-b .chrome{display:flex;align-items:center;gap:8px;height:40px;padding:0 14px;background:#ECEBE7;border-bottom:1px solid #D9D7D1}
+.dir-b .chrome i{width:11px;height:11px;border-radius:50%;background:#CFCCC5}
+.dir-b .url{flex:0 1 420px;margin:0 auto;height:24px;padding:0 12px;border-radius:6px;background:#fff;font:12px/24px var(--mono);color:#55534E;text-align:center;white-space:nowrap;overflow:hidden}
+.dir-b .phones{display:flex;flex-wrap:wrap;align-items:flex-start;gap:44px;margin-top:44px}
+.dir-b .phone{flex:none;width:410px}
+.dir-b .ph{padding:10px;border-radius:58px;background:#1B1A19;box-shadow:inset 0 0 0 1px #3A3936,0 40px 60px -36px rgba(30,25,20,.6)}
+.dir-b .ph-in{position:relative;overflow:hidden;border-radius:48px;background:var(--n-bg)}
+.dir-b .sb{display:flex;align-items:center;justify-content:space-between;height:50px;padding:0 30px 0 44px;font:600 15px var(--sans);color:var(--n-ink);background:var(--n-bg)}
+.dir-b .sb::before{content:"";position:absolute;left:50%;top:11px;width:122px;height:34px;margin-left:-61px;border-radius:20px;background:#0B0B0B}
+.dir-b .sb-r{display:flex;align-items:flex-end;gap:2px}
+.dir-b .sb-r i{width:3px;border-radius:1px;background:currentColor}
+.dir-b .sb-r i:nth-child(1){height:4px}.dir-b .sb-r i:nth-child(2){height:6px}.dir-b .sb-r i:nth-child(3){height:8px}.dir-b .sb-r i:nth-child(4){height:10px}
+.dir-b .sb-r b{width:24px;height:11px;margin-left:6px;border-radius:3px;border:1.5px solid currentColor;box-shadow:inset 0 0 0 1.5px var(--n-bg),inset 18px 0 currentColor}
+.dir-b .screen{height:794px;overflow-y:auto;overscroll-behavior:contain}
+.dir-b .phone figcaption{margin-top:14px;text-align:center;font:600 12px var(--mono);color:var(--n-mute)}
+.dir-b .note{flex:0 0 300px;padding-top:28px;font-size:14.5px;color:#3A3934}
+.dir-b .note h4{font-size:16px;margin-bottom:10px}
+.dir-b .note li{position:relative;margin-top:8px;padding-left:16px}
+.dir-b .note li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:2px;background:currentColor}
+.dir-b .note p{margin-top:14px;color:#55534E}
+
+/* page base: layout switches on frame width, not viewport */
+.dir-b .pg{container:dir-b-pg/inline-size;background:var(--bg,var(--n-bg));color:var(--ink,var(--n-ink))}
+
+/* shared top bar */
+.dir-b .gbar{position:relative;z-index:4;display:flex;align-items:center;gap:16px;height:56px;padding:0 18px;background:var(--n-bg);color:var(--n-ink);border-bottom:1px solid var(--n-line);--focus:#1F5FBF}
+.dir-b .wm{display:flex;align-items:center;gap:8px;font-size:19px;font-weight:800;letter-spacing:-.045em}
+.dir-b .wm::before{content:"";width:14px;height:14px;border-radius:4px;background:conic-gradient(#A05B42 0 72deg,#AFB6A0 0 144deg,#0C0C0E 0 216deg,#EE9D1C 0 288deg,#E33C48 0)}
+.dir-b .gnav{display:flex;gap:16px;margin-left:auto;font-size:14px;color:var(--n-mute)}
+.dir-b .gnav a:hover{color:var(--n-ink)}
+.dir-b .lang{position:relative;font-size:14px}
+.dir-b .lang summary{display:flex;align-items:center;gap:7px;height:34px;padding:0 12px;border:1px solid var(--n-line);border-radius:999px;background:#fff;cursor:pointer;list-style:none}
+.dir-b .lang summary::-webkit-details-marker{display:none}
+.dir-b .lang summary::before{content:"";width:13px;height:13px;border:1.5px solid;border-radius:50%;background:linear-gradient(currentColor,currentColor) 50% 50%/100% 1.5px no-repeat,linear-gradient(currentColor,currentColor) 50% 50%/1.5px 100% no-repeat}
+.dir-b .lang summary::after{content:"";width:6px;height:6px;margin:-3px 0 0 1px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg)}
+.dir-b .lang[open] summary{border-color:#BDBAB2}
+.dir-b .lang ul{position:absolute;right:0;top:42px;width:208px;padding:6px;border:1px solid var(--n-line);border-radius:14px;background:#fff;box-shadow:0 24px 44px -22px rgba(0,0,0,.35)}
+.dir-b .lang a{display:flex;justify-content:space-between;align-items:center;padding:7px 10px;border-radius:8px}
+.dir-b .lang a:hover{background:var(--n-bg)}
+.dir-b .lang a[aria-current]{font-weight:700}
+.dir-b .lang a[aria-current]::after{content:"";width:7px;height:7px;border-radius:50%;background:var(--n-ink)}
+
+/* shared footer */
+.dir-b .gft{padding:32px 18px 24px;background:var(--n-bg);color:var(--n-ink);border-top:1px solid var(--n-line);font-size:14px;--focus:#1F5FBF}
+.dir-b .gft-in{display:grid;gap:24px}
+.dir-b .gft-h{margin-bottom:8px;font-size:12.5px;font-weight:600;color:var(--n-mute)}
+.dir-b .gft ul{display:flex;flex-wrap:wrap;gap:6px 16px}
+.dir-b .gft a{text-decoration:underline;text-decoration-color:transparent;text-underline-offset:3px}
+.dir-b .gft a:hover{text-decoration-color:currentColor}
+.dir-b .gft .mail{font-weight:600;text-decoration-color:var(--n-line)}
+.dir-b .gft-c{margin-top:24px;padding-top:14px;border-top:1px solid var(--n-line);font-size:13px;color:var(--n-mute)}
+
+/* app nav (world-tinted, same structure everywhere) */
+.dir-b .anav{position:sticky;top:0;z-index:3;display:flex;align-items:center;gap:12px;height:50px;padding:0 18px;background:var(--bg);border-bottom:1px solid var(--line);white-space:nowrap;overflow-x:auto}
+.dir-b .anav-n{font-weight:800;font-size:15px}
+.dir-b .anav ul{display:flex;gap:2px}
+.dir-b .anav ul a{display:block;padding:5px 10px;border-radius:999px;font-size:13.5px;color:var(--mute)}
+.dir-b .anav ul a:hover{color:var(--ink)}
+.dir-b .anav ul a[aria-current]{background:var(--acc);color:var(--bg);font-weight:600}
+.dir-b .anav .get{display:none;margin-left:auto;padding:6px 14px;border-radius:999px;background:var(--acc);color:var(--bg);font-size:13px;font-weight:700}
+
+/* hub */
+.dir-b .hub{padding:36px 18px 48px}
+.dir-b .hub-t{max-width:15em;font-size:27px;line-height:1.35;font-weight:800;letter-spacing:-.03em}
+.dir-b .gal{display:grid;gap:12px;margin-top:28px}
+.dir-b .t a{position:relative;display:flex;flex-direction:column;height:176px;padding:16px;border-radius:18px;overflow:hidden;isolation:isolate;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.dir-b .t a:hover{transform:translateY(-3px);box-shadow:0 18px 30px -20px rgba(0,0,0,.5)}
+.dir-b .t-art{position:absolute;inset:0;z-index:-1;width:100%;height:100%}
+.dir-b .t-i{width:52px;height:52px;margin-bottom:auto;border-radius:12px}
+.dir-b .t-x{align-self:flex-start;display:grid;gap:1px}
+.dir-b .t-n{font-size:18px;font-weight:800;letter-spacing:-.02em}
+.dir-b .t-s{font-size:13.5px}
+.dir-b .t-bw a{height:236px;background:#E9E1D6;color:#2E2118}
+.dir-b .t-bw .t-i{border-radius:14px;box-shadow:0 0 0 3px #F8F3EC,0 10px 20px -8px rgba(58,41,30,.6)}
+.dir-b .t-bw .t-x{padding:10px 14px;border-radius:12px 16px 12px 14px;background:rgba(248,243,236,.95)}
+.dir-b .t-bw .t-s{color:#5E4D40}
+.dir-b .t-tp a{background:radial-gradient(rgba(69,78,78,.08) 1px,transparent 1.6px) 0 0/8px 8px,#EDECE5;color:#2F3636;border-radius:10px}
+.dir-b .t-tp .t-s{color:#565E57}
+.dir-b .pin{position:relative;align-self:flex-start;margin-bottom:auto;padding:5px 5px 16px;background:#fff;transform:rotate(-4deg);box-shadow:0 1px 1px rgba(47,54,54,.1),0 10px 18px -10px rgba(47,54,54,.5)}
+.dir-b .pin .t-i{width:50px;height:50px;margin:0;border-radius:1px}
+.dir-b .tape{position:absolute;width:84px;height:22px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.4) 0 4px,transparent 4px 8px),rgba(175,182,160,.8);clip-path:polygon(0 0,100% 0,97% 25%,100% 50%,97% 75%,100% 100%,0 100%,3% 75%,0 50%,3% 25%)}
+.dir-b .tape.k{background:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 2px,transparent 2px 7px),rgba(226,204,164,.85)}
+.dir-b .tape.r{background:radial-gradient(rgba(255,255,255,.55) 1.5px,transparent 2px) 0 0/7px 7px,rgba(229,196,186,.85)}
+.dir-b .pin .tape{top:-10px;left:50%;width:54px;height:16px;margin-left:-27px;transform:rotate(6deg)}
+.dir-b .t-tp .ta1{top:18px;right:-14px;transform:rotate(-28deg)}
+.dir-b .t-tp .ta2{top:46px;right:20px;width:64px;transform:rotate(12deg)}
+.dir-b .t-sl a{background:linear-gradient(rgba(249,249,249,.07) 1px,transparent 1px) 0 0/22px 22px,linear-gradient(90deg,rgba(249,249,249,.07) 1px,transparent 1px) 0 0/22px 22px,#0C0C0E;color:#F9F9F9;border-radius:4px}
+.dir-b .t-sl .t-i{border-radius:10px;box-shadow:0 0 0 1px #4E4E4F}
+.dir-b .t-sl .t-x{padding:6px 10px 2px 0;background:#0C0C0E}
+.dir-b .t-sl .t-s{color:#B4B4B4}
+.dir-b .t-dm a{background:linear-gradient(165deg,#F3B04A,#EE9D1C 48%,#E78C10);color:#1D1D1D;border-radius:30px;box-shadow:inset 0 2px 0 rgba(255,255,255,.45),inset 0 -6px 0 rgba(160,72,0,.35)}
+.dir-b .t-dm .t-i{border-radius:15px;box-shadow:0 5px 0 #B65B06}
+.dir-b .t-dm .t-s{color:#33250F}
+.dir-b .die{position:absolute;width:58px;height:58px;border-radius:15px;background:radial-gradient(circle at 26% 26%,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle at 74% 74%,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle,#1D1D1D 5px,transparent 5.5px),#FBFAF6;box-shadow:inset 0 -5px 0 #DAD8D0,0 7px 0 rgba(150,62,0,.45);transition:transform .4s cubic-bezier(.3,1.4,.5,1)}
+.dir-b .die.d5{top:22px;right:26px;transform:rotate(14deg);background:radial-gradient(circle at 26% 26%,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle at 74% 26%,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle at 26% 74%,#1D1D1D 5px,transparent 5.5px),radial-gradient(circle at 74% 74%,#1D1D1D 5px,transparent 5.5px),#FBFAF6}
+.dir-b .die.d3{top:74px;right:70px;width:46px;height:46px;border-radius:12px;transform:rotate(-18deg)}
+.dir-b .t-dm a:hover .d5{transform:rotate(-8deg) translateY(-4px)}
+.dir-b .t-dm a:hover .d3{transform:rotate(10deg) translateY(-2px)}
+.dir-b .t-lt a{background:#F5F5F0;color:#313130;box-shadow:inset 0 0 0 1px #E0DFD7}
+.dir-b .t-lt .t-s{color:#5A5957}
+.dir-b .t-lt .t-i{box-shadow:0 0 0 1px #DCDBD3}
+.dir-b .tl{position:absolute;top:26px;right:30px;display:grid;gap:22px;padding-left:18px;border-left:1.5px solid #313130;font-size:12.5px;line-height:1.2}
+.dir-b .tl i{position:relative;font-style:normal}
+.dir-b .tl i::before{content:"";position:absolute;left:-23.25px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:#313130}
+.dir-b .tl .on{color:#C42A36;font-weight:700}
+.dir-b .tl .on::before{left:-25.25px;width:13px;height:13px;margin-top:-6.5px;background:#E33C48}
+
+/* BrushWorks world */
+.dir-b .w-bw{--bg:#F3EEE7;--ink:#2E2118;--mute:#5E4D40;--acc:#8A4A33;--line:#DED4C7;--deep:#3A291E;--focus:#8A4A33}
+.dir-b .w-bw main{background:repeating-linear-gradient(0deg,rgba(58,41,30,.025) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(58,41,30,.025) 0 1px,transparent 1px 3px)}
+.dir-b .serif{font-family:var(--serif);font-weight:700;letter-spacing:-.035em}
+.dir-b .bw-hero{display:grid;gap:8px;padding:32px 18px 0;overflow:hidden}
+.dir-b .bw-icon{width:72px;height:72px;border-radius:17px;box-shadow:0 0 0 4px #FBF8F3,0 14px 28px -12px rgba(58,41,30,.6)}
+.dir-b .bw-name{margin-top:20px;font-size:40px;line-height:1.1}
+.dir-b .sub{margin-top:8px;font-size:18px;font-weight:700;color:var(--acc)}
+.dir-b .hook{margin-top:16px;max-width:29em;font-size:16px;line-height:1.75}
+.dir-b .btn{display:inline-flex;align-items:center;gap:10px;height:50px;margin-top:24px;padding:0 22px;background:repeating-linear-gradient(94deg,rgba(255,255,255,.07) 0 2px,transparent 2px 7px),var(--deep);color:#FBF8F3;font-size:15.5px;font-weight:700;border-radius:14px 20px 12px 18px/18px 12px 20px 14px;transition:background-color .2s,transform .2s}
+.dir-b .btn:hover{background-color:#574030;transform:translateY(-1px)}
+.dir-b .btn::after{content:"";width:7px;height:7px;border-top:2px solid;border-right:2px solid;transform:rotate(45deg)}
+.dir-b .meta{margin-top:10px;font-size:13.5px;color:var(--mute)}
+.dir-b .bw-stage{position:relative;display:grid;place-items:center;padding:36px 0 44px;margin:0 -18px}
+.dir-b .bw-paint{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible}
+.dir-b .dev{position:relative;width:224px;padding:8px;border-radius:40px;background:#1E1712;box-shadow:inset 0 0 0 1px rgba(255,255,255,.1),0 44px 60px -30px rgba(40,25,15,.75)}
+.dir-b .dev img{width:100%;height:auto;aspect-ratio:320/695;border-radius:32px}
+.dir-b .bw-f{display:grid;gap:28px;padding:52px 18px;border-top:1px solid var(--line)}
+.dir-b .no{font:600 12px var(--mono);letter-spacing:.12em;color:var(--acc)}
+.dir-b .fh{margin-top:8px;font-size:29px;line-height:1.25}
+.dir-b .lead{margin-top:14px;max-width:32em;font-size:16px;line-height:1.8}
+.dir-b .pts{display:grid;gap:10px;margin-top:20px}
+.dir-b .pts li{position:relative;padding-left:24px}
+.dir-b .pts li::before{content:"";position:absolute;left:0;top:.6em;width:14px;height:7px;border-radius:7px 3px 6px 2px;background:var(--acc);transform:rotate(-8deg)}
+.dir-b .swatch{border-radius:22px 28px 20px 26px;overflow:hidden;background:#EDE5DA;box-shadow:inset 0 0 0 1px var(--line)}
+.dir-b .swatch svg{width:100%;height:auto}
+.dir-b .brushes{display:grid;gap:10px}
+.dir-b .brushes li{display:grid;grid-template-columns:132px 1fr;align-items:center;gap:14px;padding:10px 16px 10px 10px;border:1px solid var(--line);border-radius:16px;background:#FBF8F3}
+.dir-b .brushes svg{width:132px;height:60px;border-radius:10px;background:#EFE8DE}
+.dir-b .brushes strong{display:block;font-size:16px}
+.dir-b .brushes span{display:block;font-size:14px;color:var(--mute)}
+.dir-b .specs{display:flex;gap:10px;margin-top:10px}
+.dir-b .specs div{flex:1;padding:12px 16px;border-radius:16px;background:var(--deep);color:#F3EEE7}
+.dir-b .specs dt{font-size:13px;color:#D8CABA}
+.dir-b .specs dd{font:700 26px/1.25 var(--serif)}
+.dir-b .reel{padding:18px;border-radius:22px;background:#FBF8F3;border:1px solid var(--line)}
+.dir-b .frames{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.dir-b .frames li{position:relative;border-radius:8px;overflow:hidden;background:#EFE8DE;box-shadow:0 0 0 1px var(--line)}
+.dir-b .frames svg{width:100%;height:auto}
+.dir-b .stamp{position:absolute;left:6px;right:6px;bottom:6px;padding:3px 0;border-radius:6px;background:rgba(46,33,24,.86);color:#FBF8F3;font-size:11px;font-weight:700;text-align:center}
+.dir-b .scrub{position:relative;height:4px;margin-top:16px;border-radius:2px;background:linear-gradient(90deg,var(--acc) 0 100%) 0 0/100% 100% no-repeat,var(--line)}
+.dir-b .scrub::after{content:"";position:absolute;right:-6px;top:-5px;width:14px;height:14px;border-radius:50%;background:var(--acc);box-shadow:0 0 0 3px #FBF8F3}
+.dir-b .safe{display:grid;gap:8px;margin:0 18px;padding:18px 20px;border-radius:18px;background:#EAE1D5}
+.dir-b .safe h5{font-size:16px}
+.dir-b .safe ul{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14.5px;color:var(--mute)}
+.dir-b .safe li::before{content:"";display:inline-block;width:6px;height:6px;margin:0 8px 2px 0;border-radius:50%;background:var(--acc)}
+.dir-b .pro{position:relative;overflow:hidden;margin:40px 18px 56px;padding:28px 20px;border-radius:26px 30px 24px 28px;background:var(--deep);color:#F3EEE7;--focus:#F3EEE7}
+.dir-b .pro-art{display:none;position:absolute;overflow:visible}
+.dir-b .pro-h{position:relative}
+.dir-b .pro h5{font-size:30px;line-height:1.2}
+.dir-b .pro-l{margin-top:10px;max-width:24em;color:#E3D7C9}
+.dir-b .price{display:inline-block;margin-top:16px;padding:6px 14px;border-radius:999px;background:#F3EEE7;color:#3A291E;font-size:14px;font-weight:800}
+.dir-b .pro-cols{position:relative;display:grid;gap:12px;margin-top:24px}
+.dir-b .pc{padding:18px 20px;border-radius:18px;border:1px solid rgba(243,238,231,.2)}
+.dir-b .pc.p{background:#F3EEE7;color:#2E2118;border-color:transparent}
+.dir-b .pc-h{font-size:13px;font-weight:700;color:#D8CABA}
+.dir-b .pc.p .pc-h{color:#8A4A33}
+.dir-b .pc li{position:relative;padding:9px 0 9px 24px;border-top:1px solid rgba(243,238,231,.14);font-size:15px}
+.dir-b .pc li:first-child{border-top:0}
+.dir-b .pc.p li{border-color:#DED4C7}
+.dir-b .pc li::before{content:"";position:absolute;left:2px;top:1.05em;width:10px;height:2px;background:#BFAF9D}
+.dir-b .pc.p li::before{top:.95em;width:10px;height:5px;background:none;border-left:2px solid #8A4A33;border-bottom:2px solid #8A4A33;transform:rotate(-45deg)}
+
+/* Tapey world */
+.dir-b .w-tp{--bg:#EDECE5;--ink:#2F3636;--mute:#565E57;--acc:#454E4E;--line:#D5D5CA;--focus:#454E4E}
+.dir-b .w-tp main{background:radial-gradient(rgba(69,78,78,.07) 1px,transparent 1.6px) 0 0/8px 8px}
+.dir-b .tp-hero{display:grid;gap:24px;padding:36px 18px 44px}
+.dir-b .tp-ic{position:relative;display:inline-block;padding:6px 6px 20px;background:#fff;transform:rotate(-3deg);box-shadow:0 1px 1px rgba(47,54,54,.1),0 12px 22px -12px rgba(47,54,54,.5)}
+.dir-b .tp-ic img{width:64px;height:64px}
+.dir-b .tp-ic .tape{top:-11px;left:50%;width:62px;height:18px;margin-left:-31px;transform:rotate(-5deg)}
+.dir-b .tp-name{margin-top:22px;font-size:44px;line-height:1.1}
+.dir-b .w-tp .sub{color:#4B5A4E}
+.dir-b .w-tp .btn{background:var(--acc);border-radius:999px;color:#F6F5EF}
+.dir-b .w-tp .btn:hover{background:#2F3636}
+.dir-b .wall{position:relative;height:520px}
+.dir-b .print{position:absolute;left:50%;top:18px;width:236px;margin-left:-100px;padding:10px 10px 46px;background:#fff;transform:rotate(2.5deg);box-shadow:0 1px 1px rgba(47,54,54,.1),0 26px 40px -24px rgba(47,54,54,.55)}
+.dir-b .print img{width:100%;height:auto;aspect-ratio:320/694;object-fit:cover;object-position:top;max-height:400px}
+.dir-b .print .t1{top:-12px;left:-22px;transform:rotate(-32deg)}
+.dir-b .print .t2{top:-10px;right:-24px;transform:rotate(28deg)}
+.dir-b .memo{position:absolute;left:14px;bottom:10px;font:24px/1 var(--hand);color:#454E4E}
+.dir-b .ghost{position:absolute;background:#fff;padding:8px 8px 26px;box-shadow:0 12px 26px -16px rgba(47,54,54,.5)}
+.dir-b .ghost i{display:block;width:100%;height:100%}
+.dir-b .g1{left:4%;top:110px;width:128px;height:156px;transform:rotate(-7deg)}
+.dir-b .g1 i{background:linear-gradient(#DCE3D2 0 55%,#B9C3A2 55%)}
+.dir-b .g2{left:10%;top:300px;width:112px;height:128px;transform:rotate(5deg)}
+.dir-b .g2 i{background:radial-gradient(circle at 70% 30%,#F2DDC9 0 18%,transparent 19%),linear-gradient(#C9D2DA,#E9E4DA)}
+.dir-b .g1 .tape{top:-10px;left:28px;width:66px;height:18px;transform:rotate(4deg)}
+.dir-b .g2 .tape{bottom:10px;right:-20px;width:60px;height:18px;transform:rotate(-40deg)}
+.dir-b .steps{padding:48px 18px 60px;border-top:1px dashed #C4C6B8}
+.dir-b .cards{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px;margin-top:30px;counter-reset:s}
+.dir-b .cards li{position:relative;padding:24px 14px 16px;background:#FBFAF6;font-size:14.5px;line-height:1.5;counter-increment:s;transform:rotate(var(--r,-1deg));box-shadow:0 1px 1px rgba(47,54,54,.08),0 10px 20px -14px rgba(47,54,54,.45)}
+.dir-b .cards li:nth-child(2n){--r:1.2deg}
+.dir-b .cards li:nth-child(3n){--r:.3deg}
+.dir-b .cards li::before{content:counter(s,decimal-leading-zero);display:block;margin-bottom:8px;font:26px/1 var(--hand);color:#5E6A5C}
+.dir-b .cards .tape{top:-10px;left:50%;width:70px;height:18px;margin-left:-35px;transform:rotate(-3deg)}
+
+/* privacy document */
+.dir-b .w-doc{--bg:#FBF9F5}
+.dir-b .w-doc main{background:none}
+.dir-b .doc{padding:0 18px 56px}
+.dir-b .dab{width:210px;height:28px;margin:0 0 14px -6px;overflow:visible}
+.dir-b .doc-h{max-width:65ch;padding:32px 0 26px;border-bottom:1px solid var(--line)}
+.dir-b .doc-k{font-size:14px;font-weight:700;color:var(--acc)}
+.dir-b .doc-t{margin-top:6px;font-size:30px;line-height:1.25;font-weight:800;letter-spacing:-.025em}
+.dir-b .doc-d{margin-top:8px;font-size:14px;color:var(--mute)}
+.dir-b .sum{display:grid;gap:6px;margin-top:20px;padding:16px 18px;border-radius:12px;background:#F1EBE2;font-size:15px}
+.dir-b .sum li::before{content:"";display:inline-block;width:6px;height:6px;margin:0 10px 2px 0;border-radius:50%;background:var(--acc)}
+.dir-b .toc{margin-top:24px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;font-size:14px}
+.dir-b .toc-h{font-size:12.5px;font-weight:700;color:var(--mute)}
+.dir-b .toc ol{display:grid;gap:2px;margin-top:6px}
+.dir-b .toc a{display:block;padding:3px 0;color:var(--mute)}
+.dir-b .toc a:hover,.dir-b .toc a[aria-current]{color:var(--ink)}
+.dir-b .toc a[aria-current]{font-weight:700}
+.dir-b .prose{max-width:65ch;font-size:16px;line-height:1.8}
+.dir-b .prose section{padding-top:32px}
+.dir-b .prose h5{display:flex;align-items:baseline;gap:10px;font-size:19px;line-height:1.4;letter-spacing:-.015em}
+.dir-b .prose h5 span{font:600 13px var(--mono);color:var(--acc)}
+.dir-b .prose p{margin-top:10px}
+.dir-b .prose .nil{display:inline-block;margin-top:12px;padding:2px 10px;border-radius:6px;background:#F1EBE2;font-weight:700}
+.dir-b .prose .mail{display:inline-block;margin-top:12px;font-weight:700;border-bottom:2px solid var(--acc)}
+
+/* wide frames */
+@container dir-b-pg (min-width:760px){
+.dir-b .gbar{height:64px;padding:0 32px;gap:24px}
+.dir-b .gnav{gap:24px}
+.dir-b .gft{padding:48px 32px 28px}
+.dir-b .gft-in{grid-template-columns:1.1fr 1.6fr .9fr}
+.dir-b .anav{height:56px;padding:0 32px;gap:20px}
+.dir-b .anav .get{display:block}
+.dir-b .hub{padding:76px 32px 80px}
+.dir-b .hub-t{font-size:42px}
+.dir-b .gal{grid-template-columns:repeat(4,1fr);grid-template-rows:252px 252px;gap:16px;margin-top:44px}
+.dir-b .t a{height:100%;padding:20px}
+.dir-b .t-bw{grid-column:span 2;grid-row:span 2}
+.dir-b .t-bw a{padding:28px}
+.dir-b .t-bw .t-i{width:76px;height:76px;border-radius:18px}
+.dir-b .t-bw .t-x{padding:14px 18px}
+.dir-b .t-bw .t-n{font-size:26px}
+.dir-b .t-bw .t-s{font-size:15px}
+.dir-b .bw-hero{grid-template-columns:1fr 1fr;align-items:center;gap:0;padding:0 0 0 56px}
+.dir-b .bw-copy{padding:64px 0}
+.dir-b .bw-icon{width:92px;height:92px;border-radius:22px}
+.dir-b .bw-name{font-size:60px}
+.dir-b .sub{font-size:21px}
+.dir-b .hook{font-size:17px}
+.dir-b .bw-stage{margin:0;padding:56px 0;min-height:640px}
+.dir-b .dev{width:272px}
+.dir-b .bw-f{grid-template-columns:5fr 6fr;align-items:center;gap:72px;padding:96px 56px}
+.dir-b .bw-f.rev>:first-child{order:2}
+.dir-b .fh{font-size:36px}
+.dir-b .safe{grid-template-columns:auto 1fr;align-items:center;gap:24px;margin:0 56px;padding:22px 28px}
+.dir-b .pro{display:grid;grid-template-columns:.9fr 1.6fr;gap:48px;margin:56px 56px 96px;padding:48px}
+.dir-b .pro h5{font-size:40px}
+.dir-b .pro-art{display:block;left:28px;bottom:24px;width:360px;height:156px}
+.dir-b .pro-cols{grid-template-columns:1fr 1.25fr;margin-top:0}
+.dir-b .tp-hero{grid-template-columns:1fr 1.1fr;align-items:center;gap:40px;padding:56px 56px 40px}
+.dir-b .tp-name{font-size:64px}
+.dir-b .wall{height:580px}
+.dir-b .print{width:262px;margin-left:-60px}
+.dir-b .print img{max-height:none}
+.dir-b .g1{left:0;top:70px;width:150px;height:180px}
+.dir-b .g2{left:auto;right:0;top:300px;width:138px;height:160px}
+.dir-b .steps{display:grid;grid-template-columns:1fr 1.9fr;gap:64px;padding:88px 56px 104px}
+.dir-b .cards{grid-template-columns:repeat(3,1fr);gap:30px 22px;margin-top:0}
+.dir-b .cards li{padding:30px 18px 22px;font-size:15.5px}
+.dir-b .doc{padding:0 56px 104px}
+.dir-b .doc-wrap{display:grid;grid-template-columns:200px minmax(0,65ch);column-gap:80px}
+.dir-b .doc-h{grid-column:2;padding:64px 0 36px}
+.dir-b .doc-t{font-size:40px}
+.dir-b .toc{grid-column:1;grid-row:1/span 2;align-self:start;position:sticky;top:80px;margin-top:100px;padding:0;border:0;border-radius:0}
+.dir-b .toc ol{margin-top:12px;border-left:1px solid var(--line)}
+.dir-b .toc a{margin-left:-1px;padding:6px 0 6px 14px;border-left:2px solid transparent}
+.dir-b .toc a[aria-current]{border-left-color:var(--acc)}
+.dir-b .prose{grid-column:2;font-size:17px}
+.dir-b .prose section{padding-top:40px}
+.dir-b .prose h5{font-size:21px}
+}
+@media (prefers-reduced-motion:reduce){
+.dir-b *,.dir-b *::before,.dir-b *::after{transition:none!important;animation:none!important}
+.dir-b .t a:hover,.dir-b .btn:hover{transform:none}
+.dir-b .t-dm a:hover .d5{transform:rotate(14deg)}
+.dir-b .t-dm a:hover .d3{transform:rotate(-18deg)}
+}
+</style>
+<section class="dir-b" id="dir-b" aria-labelledby="dir-b-title">
+<svg class="defs" aria-hidden="true" focusable="false">
+<filter id="dir-b-paint" filterUnits="userSpaceOnUse" x="-80" y="-80" width="760" height="720" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="2" seed="5" result="e"/>
+<feDisplacementMap in="SourceGraphic" in2="e" scale="22" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency=".008 .07" numOctaves="4" seed="3"/>
+<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2.5 -0.7" result="n"/>
+<feGaussianBlur in="d" stdDeviation="7" result="b"/>
+<feComposite in="b" in2="n" operator="arithmetic" k2="0.8" k3="0.6" result="h"/>
+<feDiffuseLighting in="h" surfaceScale="8" lighting-color="#fff" result="l"><feDistantLight azimuth="225" elevation="50"/></feDiffuseLighting>
+<feSpecularLighting in="h" surfaceScale="8" specularConstant="0.5" specularExponent="24" lighting-color="#fff" result="s"><feDistantLight azimuth="225" elevation="50"/></feSpecularLighting>
+<feComposite in="d" in2="l" operator="arithmetic" k1="0.7" k2="0.48" result="p"/>
+<feComposite in="s" in2="d" operator="in" result="hs"/>
+<feComposite in="p" in2="hs" operator="arithmetic" k2="1" k3="0.5" result="q"/>
+<feGaussianBlur in="d" stdDeviation="3"/><feOffset dx="3" dy="5"/><feColorMatrix values="0 0 0 0 .16 0 0 0 0 .1 0 0 0 0 .06 0 0 0 .4 0" result="sd"/><feMerge><feMergeNode in="sd"/><feMergeNode in="q"/></feMerge>
+</filter>
+<filter id="dir-b-thin" filterUnits="userSpaceOnUse" x="-80" y="-80" width="760" height="720" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency=".01 .06" numOctaves="3" seed="4" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feColorMatrix in="n" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1.4 1.25" result="m"/>
+<feComposite in="d" in2="m" operator="in"/>
+</filter>
+<filter id="dir-b-knife" filterUnits="userSpaceOnUse" x="-80" y="-80" width="760" height="720" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency=".02" numOctaves="2" seed="5" result="e"/>
+<feDisplacementMap in="SourceGraphic" in2="e" scale="12" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feTurbulence type="fractalNoise" baseFrequency=".003 .025" numOctaves="2" seed="3"/>
+<feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 -0.5" result="n"/>
+<feGaussianBlur in="d" stdDeviation="3" result="b"/>
+<feComposite in="b" in2="n" operator="arithmetic" k2="0.9" k3="0.3" result="h"/>
+<feDiffuseLighting in="h" surfaceScale="5" lighting-color="#fff" result="l"><feDistantLight azimuth="225" elevation="50"/></feDiffuseLighting>
+<feSpecularLighting in="h" surfaceScale="5" specularConstant="0.8" specularExponent="32" lighting-color="#fff" result="s"><feDistantLight azimuth="225" elevation="50"/></feSpecularLighting>
+<feComposite in="d" in2="l" operator="arithmetic" k1="0.72" k2="0.46" result="p"/>
+<feComposite in="s" in2="d" operator="in" result="hs"/>
+<feComposite in="p" in2="hs" operator="arithmetic" k2="1" k3="0.55" result="q"/>
+<feGaussianBlur in="d" stdDeviation="3"/><feOffset dx="3" dy="5"/><feColorMatrix values="0 0 0 0 .16 0 0 0 0 .1 0 0 0 0 .06 0 0 0 .4 0" result="sd"/><feMerge><feMergeNode in="sd"/><feMergeNode in="q"/></feMerge>
+</filter>
+<filter id="dir-b-mini-f" filterUnits="userSpaceOnUse" x="-10" y="-10" width="120" height="150" color-interpolation-filters="sRGB">
+<feTurbulence type="fractalNoise" baseFrequency=".05 .9" numOctaves="3" seed="3" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feDiffuseLighting in="n" surfaceScale="1.4" lighting-color="#fff" result="l"><feDistantLight azimuth="235" elevation="50"/></feDiffuseLighting>
+<feComposite in="d" in2="l" operator="arithmetic" k1=".9" k2=".3"/>
+</filter>
+<symbol id="dir-b-art" viewBox="0 0 600 560" overflow="visible">
+<g fill="none" stroke-linecap="round">
+<path d="M60 120C180 80 340 150 540 96" stroke="#A68B69" stroke-width="100" filter="url(#dir-b-paint)"/>
+<path d="M30 250C170 214 380 300 570 230" stroke="#A05B42" stroke-width="118" filter="url(#dir-b-paint)"/>
+<path d="M70 390C220 356 390 430 550 376" stroke="#7F8162" stroke-width="110" filter="url(#dir-b-paint)"/>
+<path d="M120 500C250 474 400 520 520 490" stroke="#3A291E" stroke-width="70" filter="url(#dir-b-paint)"/>
+<path d="M110 176C230 156 350 190 480 166" stroke="#CFC3B2" stroke-width="30" filter="url(#dir-b-knife)"/>
+<path d="M200 318C300 300 400 330 520 306" stroke="#C98463" stroke-width="24" filter="url(#dir-b-knife)"/>
+</g>
+</symbol>
+<symbol id="dir-b-mini" viewBox="0 0 100 130" overflow="visible">
+<g fill="none" stroke-linecap="round" filter="url(#dir-b-mini-f)">
+<path d="M-6 22H106" stroke="#A9BBC6" stroke-width="48"/>
+<path d="M-6 60H106" stroke="#D8C7AE" stroke-width="26"/>
+<path d="M-6 96H106" stroke="#4F6F86" stroke-width="44"/>
+<path d="M-6 126H106" stroke="#7F8162" stroke-width="18"/>
+<path d="M50 40V80" stroke="#EADFCD" stroke-width="12"/>
+<path d="M50 30V36" stroke="#A05B42" stroke-width="13"/>
+</g>
+</symbol>
+<clipPath id="dir-b-k1"><path d="M0 0H100V30Q70 40 45 30T0 34Z"/></clipPath>
+<clipPath id="dir-b-k2"><path d="M0 0H100V64Q72 76 48 62T0 70Z"/></clipPath>
+<clipPath id="dir-b-k3"><path d="M0 0H100V100Q70 112 44 98T0 106Z"/></clipPath>
+</svg>
+
+<header class="cap">
+<p class="cap-k">방향 B</p>
+<h2 class="cap-t" id="dir-b-title">앱마다 다른 랜딩</h2>
+<p class="cap-r">허브는 작품을 거는 흰 벽처럼 조용하게 둡니다. 앱 페이지는 아이콘의 색과 질감에서 출발해 앱마다 다른 화면을 만듭니다. 상단 바와 푸터는 어느 페이지에서나 같아서 한 사이트로 읽힙니다.</p>
+<p class="cap-c"><strong>유지 비용</strong>템플릿 5종을 8개 언어로 맞춰야 합니다. 문구 하나를 고쳐도 소개 페이지 40개의 줄바꿈과 배치를 다시 확인해야 합니다.</p>
+<ul class="worlds" aria-label="앱별 재질">
+<li><i class="s1"></i>BrushWorks 물감</li>
+<li><i class="s2"></i>Tapey 워시테이프</li>
+<li><i class="s3"></i>SnapLine 격자</li>
+<li><i class="s4"></i>Dice Master 주사위</li>
+<li><i class="s5"></i>Life Tyde 타임라인</li>
+</ul>
+</header>
+
+<!-- 01 HUB -->
+<div class="spread" id="dir-b-hub">
+<h3 class="spread-t"><span>01</span>허브<code>kvndh.com/ko/</code></h3>
+<p class="spread-d">흰 벽 위에 앱 다섯 개를 겁니다. 타일의 틀은 같고, 안쪽 재질과 모서리 둥글기만 앱의 성격을 따릅니다. 언어 메뉴는 열린 상태로 그렸습니다.</p>
+<figure class="browser">
+<div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span class="url">kvndh.com/ko/</span></div>
+<div class="pg">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang" open><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-hub" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-hub" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-hub" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-hub" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-hub" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-hub" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-hub" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-hub" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<main class="hub">
+<h4 class="hub-t">kvndh는 iOS 앱 다섯 개를 만들고 운영합니다.</h4>
+<ul class="gal">
+<li class="t t-bw"><a href="#dir-b-bw"><svg class="t-art" viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#dir-b-art" width="600" height="560"/></svg><img class="t-i" src="{{icon:brushworks}}" alt="" width="76" height="76"><span class="t-x"><span class="t-n">BrushWorks</span><span class="t-s">문질러서 쌓아 올리는 물감 질감</span></span></a></li>
+<li class="t t-tp"><a href="#dir-b-tapey"><span class="t-art" aria-hidden="true"><i class="tape k ta1"></i><i class="tape r ta2"></i></span><span class="pin"><i class="tape" aria-hidden="true"></i><img class="t-i" src="{{icon:tapey}}" alt="" width="50" height="50"></span><span class="t-x"><span class="t-n">Tapey</span><span class="t-s">벽에 붙인 듯한 사진 콜라주</span></span></a></li>
+<li class="t t-sl"><a href="#dir-b-hub"><svg class="t-art" viewBox="0 0 280 252" preserveAspectRatio="xMaxYMin slice" aria-hidden="true"><g fill="none" stroke="#F9F9F9" stroke-width="1.6" opacity=".9"><path d="M120 0V252"/><path d="M204 0V96Q204 120 176 150L150 252"/><path d="M0 84H280"/><path d="M60 168Q140 168 204 132Q240 116 280 116"/></g><circle cx="204" cy="132" r="5" fill="#0C0C0E" stroke="#F9F9F9" stroke-width="1.6"/><circle cx="176" cy="150" r="3" fill="#F9F9F9"/></svg><img class="t-i" src="{{icon:snapline}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">SnapLine</span><span class="t-s">피사체 뒤로 지나가는 구도선</span></span></a></li>
+<li class="t t-dm"><a href="#dir-b-hub"><span class="t-art" aria-hidden="true"><i class="die d5"></i><i class="die d3"></i></span><img class="t-i" src="{{icon:dice-master}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">Dice Master</span><span class="t-s">수식 자동 계산과 색상별 부분합</span></span></a></li>
+<li class="t t-lt"><a href="#dir-b-hub"><span class="t-art" aria-hidden="true"><span class="tl"><i>#여행</i><i class="on">#학업</i><i>#일</i></span></span><img class="t-i" src="{{icon:life-tyde}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">Life Tyde</span><span class="t-s">조용히 쌓이는 나의 연대기</span></span></a></li>
+</ul>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+<figcaption class="sr">허브 데스크톱, 폭 1200px</figcaption>
+</figure>
+
+<div class="phones">
+<figure class="phone">
+<div class="ph"><div class="ph-in">
+<div class="sb" aria-hidden="true"><span>9:41</span><span class="sb-r"><i></i><i></i><i></i><i></i><b></b></span></div>
+<div class="screen" tabindex="0" role="region" aria-label="허브 모바일 미리보기, 스크롤 가능">
+<div class="pg">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang"><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-hub" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-hub" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-hub" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-hub" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-hub" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-hub" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-hub" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-hub" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<main class="hub">
+<h4 class="hub-t">kvndh는 iOS 앱 다섯 개를 만들고 운영합니다.</h4>
+<ul class="gal">
+<li class="t t-bw"><a href="#dir-b-bw"><svg class="t-art" viewBox="0 0 600 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#dir-b-art" width="600" height="560"/></svg><img class="t-i" src="{{icon:brushworks}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">BrushWorks</span><span class="t-s">문질러서 쌓아 올리는 물감 질감</span></span></a></li>
+<li class="t t-tp"><a href="#dir-b-tapey"><span class="t-art" aria-hidden="true"><i class="tape k ta1"></i><i class="tape r ta2"></i></span><span class="pin"><i class="tape" aria-hidden="true"></i><img class="t-i" src="{{icon:tapey}}" alt="" width="50" height="50"></span><span class="t-x"><span class="t-n">Tapey</span><span class="t-s">벽에 붙인 듯한 사진 콜라주</span></span></a></li>
+<li class="t t-sl"><a href="#dir-b-hub"><svg class="t-art" viewBox="0 0 280 252" preserveAspectRatio="xMaxYMin slice" aria-hidden="true"><g fill="none" stroke="#F9F9F9" stroke-width="1.6" opacity=".9"><path d="M120 0V252"/><path d="M204 0V96Q204 120 176 150L150 252"/><path d="M0 84H280"/><path d="M60 168Q140 168 204 132Q240 116 280 116"/></g><circle cx="204" cy="132" r="5" fill="#0C0C0E" stroke="#F9F9F9" stroke-width="1.6"/></svg><img class="t-i" src="{{icon:snapline}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">SnapLine</span><span class="t-s">피사체 뒤로 지나가는 구도선</span></span></a></li>
+<li class="t t-dm"><a href="#dir-b-hub"><span class="t-art" aria-hidden="true"><i class="die d5"></i><i class="die d3"></i></span><img class="t-i" src="{{icon:dice-master}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">Dice Master</span><span class="t-s">수식 자동 계산과 색상별 부분합</span></span></a></li>
+<li class="t t-lt"><a href="#dir-b-hub"><span class="t-art" aria-hidden="true"><span class="tl"><i>#여행</i><i class="on">#학업</i><i>#일</i></span></span><img class="t-i" src="{{icon:life-tyde}}" alt="" width="52" height="52"><span class="t-x"><span class="t-n">Life Tyde</span><span class="t-s">조용히 쌓이는 나의 연대기</span></span></a></li>
+</ul>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+</div>
+</div></div>
+<figcaption>허브 모바일 390</figcaption>
+</figure>
+<div class="note">
+<h4>모든 페이지가 공유하는 틀</h4>
+<ul>
+<li>상단 바: kvndh 표식, 앱, 문의, 언어 선택</li>
+<li>푸터: 앱별 개인정보 처리방침, 문의 메일, 저작권 표기</li>
+<li>타일: 같은 틀 안에 앱마다 다른 재질</li>
+<li>표식: 다섯 앱의 대표색을 나눈 작은 원</li>
+</ul>
+<p>틀은 흰 벽 색으로 고정합니다. 앱 페이지로 넘어가도 위아래 가장자리는 그대로 남습니다.</p>
+</div>
+</div>
+</div>
+
+<!-- 02 BRUSHWORKS -->
+<div class="spread" id="dir-b-bw">
+<h3 class="spread-t"><span>02</span>BrushWorks 소개<code>kvndh.com/ko/brushworks/</code></h3>
+<p class="spread-d">캔버스 결 위에 아이콘의 흙빛 물감을 두껍게 올립니다. 물감 질감은 이미지 파일 없이 SVG 필터로 그립니다.</p>
+<figure class="browser">
+<div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span class="url">kvndh.com/ko/brushworks/</span></div>
+<div class="pg w-bw">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang"><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-bw" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-bw" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-bw" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-bw" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-bw" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-bw" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-bw" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-bw" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<nav class="anav" aria-label="BrushWorks"><span class="anav-n">BrushWorks</span><ul><li><a href="#dir-b-bw" aria-current="page">소개</a></li><li><a href="#dir-b-bw">지원</a></li><li><a href="#dir-b-privacy">개인정보 처리방침</a></li></ul><a class="get" href="https://apps.apple.com/app/id6810951573">App Store</a></nav>
+<main>
+<section class="bw-hero">
+<div class="bw-copy">
+<img class="bw-icon" src="{{icon:brushworks}}" alt="BrushWorks 앱 아이콘" width="92" height="92">
+<h4 class="bw-name serif">BrushWorks</h4>
+<p class="sub">문질러서 쌓아 올리는 물감 질감</p>
+<p class="hook">사진을 문질러 그림으로 바꿉니다. 붓이 지나간 자리에 물감이 실제로 쌓이고, 겹칠수록 결이 남습니다.</p>
+<a class="btn" href="https://apps.apple.com/app/id6810951573">App Store에서 받기</a>
+<p class="meta">무료로 받고, Pro는 한 번 구매합니다.</p>
+</div>
+<div class="bw-stage">
+<svg class="bw-paint" viewBox="0 0 600 560" aria-hidden="true"><use href="#dir-b-art" width="600" height="560"/></svg>
+<div class="dev"><img src="{{shot:brushworks}}" alt="BrushWorks 그리기 화면. 등대 사진 위에 물감 붓질이 쌓여 있습니다." width="320" height="695"></div>
+</div>
+</section>
+
+<section class="bw-f">
+<div>
+<p class="no">01</p>
+<h5 class="fh serif">물감이 쌓입니다</h5>
+<p class="lead">사진 한 장을 밑그림으로 깔고 손가락으로 문지릅니다. 그 자리의 색이 물감으로 얹힙니다. 자동 변환이나 필터가 아니라서 화면 전체를 직접 칠해 한 장을 완성합니다.</p>
+<ul class="pts"><li>손이 지나간 자리에만 남는 그림</li><li>겹쳐 칠할수록 새로 생기는 붓의 결</li><li>빛을 받아 그림자를 만드는 물감 두께</li></ul>
+</div>
+<div class="swatch" aria-hidden="true"><svg viewBox="0 0 600 400"><g fill="none" stroke-linecap="round"><path d="M110 120C220 90 380 150 490 110" stroke="#BDB6AE" stroke-width="100" filter="url(#dir-b-paint)"/><path d="M90 210C210 180 380 250 510 200" stroke="#A68B69" stroke-width="96" filter="url(#dir-b-paint)"/><path d="M130 300C240 270 390 330 480 290" stroke="#A05B42" stroke-width="84" filter="url(#dir-b-paint)"/><path d="M150 150C250 134 330 160 420 146" stroke="#3A291E" stroke-width="22" filter="url(#dir-b-paint)"/><path d="M170 250C270 236 350 262 450 244" stroke="#7F8162" stroke-width="40" filter="url(#dir-b-knife)"/></g></svg></div>
+</section>
+
+<section class="bw-f rev">
+<div>
+<p class="no">02</p>
+<h5 class="fh serif">붓 세 자루</h5>
+<p class="lead">붓을 고르고 크기를 바꾸며 층을 쌓습니다. 붓마다 물감이 남는 방식이 다릅니다.</p>
+</div>
+<div>
+<ul class="brushes">
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><g fill="none" stroke-linecap="round" filter="url(#dir-b-thin)"><path d="M30 60C110 40 200 80 290 56" stroke="#A05B42" stroke-width="56" opacity=".55"/><path d="M40 92C120 72 210 110 290 88" stroke="#7F8162" stroke-width="52" opacity=".55"/></g></svg><div><strong>얇은 칠</strong><span>반투명하게 비쳐 섞이는 색</span></div></li>
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><path d="M34 74C110 52 210 96 286 68" fill="none" stroke="#A68B69" stroke-width="64" stroke-linecap="round" filter="url(#dir-b-paint)"/></svg><div><strong>붓결</strong><span>그린 방향을 따라 남는 거친 자국</span></div></li>
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><path d="M44 76C120 62 200 88 276 70" fill="none" stroke="#A05B42" stroke-width="76" stroke-linecap="square" filter="url(#dir-b-knife)"/></svg><div><strong>나이프</strong><span>두껍게 밀어 바른 젖은 윤기</span></div></li>
+</ul>
+<dl class="specs"><div><dt>붓 크기</dt><dd>9단계</dd></div><div><dt>밑그림 농도</dt><dd>5단계</dd></div></dl>
+</div>
+</section>
+
+<section class="bw-f">
+<div>
+<p class="no">03</p>
+<h5 class="fh serif">그린 과정이 남습니다</h5>
+<p class="lead">붓질 하나하나가 기록됩니다. 15분 동안 그린 과정도 짧은 영상으로 되돌려 봅니다. 영상 끝에는 그린 시간이 함께 남습니다.</p>
+</div>
+<div class="reel" aria-hidden="true">
+<ol class="frames">
+<li><svg viewBox="0 0 100 130"><use href="#dir-b-mini" width="100" height="130" opacity=".22"/><use href="#dir-b-mini" width="100" height="130" clip-path="url(#dir-b-k1)"/></svg></li>
+<li><svg viewBox="0 0 100 130"><use href="#dir-b-mini" width="100" height="130" opacity=".22"/><use href="#dir-b-mini" width="100" height="130" clip-path="url(#dir-b-k2)"/></svg></li>
+<li><svg viewBox="0 0 100 130"><use href="#dir-b-mini" width="100" height="130" opacity=".22"/><use href="#dir-b-mini" width="100" height="130" clip-path="url(#dir-b-k3)"/></svg></li>
+<li><svg viewBox="0 0 100 130"><use href="#dir-b-mini" width="100" height="130"/></svg><span class="stamp">그린 시간 15분</span></li>
+</ol>
+<div class="scrub"></div>
+</div>
+</section>
+
+<section class="safe"><h5>사진은 기기 안에 있습니다</h5><ul><li>어디에도 올라가지 않는 밑그림 사진</li><li>계정 없음, 로그인 없음</li></ul></section>
+
+<section class="pro" aria-labelledby="dir-b-pro1">
+<svg class="pro-art" viewBox="0 0 600 260" aria-hidden="true"><path d="M60 140C200 100 380 170 560 120" fill="none" stroke="#A05B42" stroke-width="90" stroke-linecap="round" filter="url(#dir-b-knife)"/></svg>
+<div class="pro-h">
+<h5 class="serif" id="dir-b-pro1">BrushWorks Pro</h5>
+<p class="pro-l">무료로 그리고 저장합니다. Pro는 저장 품질과 타임랩스, 세밀한 조절을 더합니다.</p>
+<p class="price">한 번 구매, 구독 없음</p>
+</div>
+<div class="pro-cols">
+<div class="pc"><p class="pc-h">무료</p><ul><li>붓 세 자루</li><li>붓 크기 9단계, 밑그림 농도 5단계</li><li>모서리에 작은 워터마크가 들어가는 저장</li></ul></div>
+<div class="pc p"><p class="pc-h">Pro</p><ul><li>워터마크 없는 저장</li><li>10초~90초 길이의 1080×1920 타임랩스</li><li>고른 색 하나로만 칠하는 색 고정</li><li>흔들림과 붓 크기 세밀 조절</li><li>1.5배 크기, 최대 3072px의 PNG, HEIF, TIFF 저장</li></ul></div>
+</div>
+</section>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+<figcaption class="sr">BrushWorks 소개 데스크톱, 폭 1200px</figcaption>
+</figure>
+
+<div class="phones">
+<figure class="phone">
+<div class="ph"><div class="ph-in">
+<div class="sb" aria-hidden="true"><span>9:41</span><span class="sb-r"><i></i><i></i><i></i><i></i><b></b></span></div>
+<div class="screen" tabindex="0" role="region" aria-label="BrushWorks 소개 모바일 미리보기, 스크롤 가능">
+<div class="pg w-bw">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang"><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-bw" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-bw" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-bw" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-bw" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-bw" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-bw" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-bw" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-bw" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<nav class="anav" aria-label="BrushWorks"><span class="anav-n">BrushWorks</span><ul><li><a href="#dir-b-bw" aria-current="page">소개</a></li><li><a href="#dir-b-bw">지원</a></li><li><a href="#dir-b-privacy">개인정보 처리방침</a></li></ul></nav>
+<main>
+<section class="bw-hero">
+<div class="bw-copy">
+<img class="bw-icon" src="{{icon:brushworks}}" alt="BrushWorks 앱 아이콘" width="72" height="72">
+<h4 class="bw-name serif">BrushWorks</h4>
+<p class="sub">문질러서 쌓아 올리는 물감 질감</p>
+<p class="hook">사진을 문질러 그림으로 바꿉니다. 붓이 지나간 자리에 물감이 실제로 쌓이고, 겹칠수록 결이 남습니다.</p>
+<a class="btn" href="https://apps.apple.com/app/id6810951573">App Store에서 받기</a>
+<p class="meta">무료로 받고, Pro는 한 번 구매합니다.</p>
+</div>
+<div class="bw-stage">
+<svg class="bw-paint" viewBox="0 0 600 560" aria-hidden="true"><use href="#dir-b-art" width="600" height="560"/></svg>
+<div class="dev"><img src="{{shot:brushworks}}" alt="BrushWorks 그리기 화면. 등대 사진 위에 물감 붓질이 쌓여 있습니다." width="320" height="695"></div>
+</div>
+</section>
+<section class="bw-f">
+<div>
+<p class="no">01</p>
+<h5 class="fh serif">물감이 쌓입니다</h5>
+<p class="lead">사진 한 장을 밑그림으로 깔고 손가락으로 문지릅니다. 그 자리의 색이 물감으로 얹힙니다. 자동 변환이나 필터가 아니라서 화면 전체를 직접 칠해 한 장을 완성합니다.</p>
+<ul class="pts"><li>손이 지나간 자리에만 남는 그림</li><li>겹쳐 칠할수록 새로 생기는 붓의 결</li><li>빛을 받아 그림자를 만드는 물감 두께</li></ul>
+</div>
+</section>
+<section class="bw-f">
+<div>
+<p class="no">02</p>
+<h5 class="fh serif">붓 세 자루</h5>
+<p class="lead">붓을 고르고 크기를 바꾸며 층을 쌓습니다. 붓마다 물감이 남는 방식이 다릅니다.</p>
+</div>
+<div>
+<ul class="brushes">
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><g fill="none" stroke-linecap="round" filter="url(#dir-b-thin)"><path d="M30 60C110 40 200 80 290 56" stroke="#A05B42" stroke-width="56" opacity=".55"/><path d="M40 92C120 72 210 110 290 88" stroke="#7F8162" stroke-width="52" opacity=".55"/></g></svg><div><strong>얇은 칠</strong><span>반투명하게 비쳐 섞이는 색</span></div></li>
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><path d="M34 74C110 52 210 96 286 68" fill="none" stroke="#A68B69" stroke-width="64" stroke-linecap="round" filter="url(#dir-b-paint)"/></svg><div><strong>붓결</strong><span>그린 방향을 따라 남는 거친 자국</span></div></li>
+<li><svg viewBox="0 0 320 144" aria-hidden="true"><path d="M44 76C120 62 200 88 276 70" fill="none" stroke="#A05B42" stroke-width="76" stroke-linecap="square" filter="url(#dir-b-knife)"/></svg><div><strong>나이프</strong><span>두껍게 밀어 바른 젖은 윤기</span></div></li>
+</ul>
+<dl class="specs"><div><dt>붓 크기</dt><dd>9단계</dd></div><div><dt>밑그림 농도</dt><dd>5단계</dd></div></dl>
+</div>
+</section>
+<section class="safe"><h5>사진은 기기 안에 있습니다</h5><ul><li>어디에도 올라가지 않는 밑그림 사진</li><li>계정 없음, 로그인 없음</li></ul></section>
+<section class="pro" aria-labelledby="dir-b-pro2">
+<svg class="pro-art" viewBox="0 0 600 260" aria-hidden="true"><path d="M60 140C200 100 380 170 560 120" fill="none" stroke="#A05B42" stroke-width="90" stroke-linecap="round" filter="url(#dir-b-knife)"/></svg>
+<div class="pro-h">
+<h5 class="serif" id="dir-b-pro2">BrushWorks Pro</h5>
+<p class="pro-l">무료로 그리고 저장합니다. Pro는 저장 품질과 타임랩스, 세밀한 조절을 더합니다.</p>
+<p class="price">한 번 구매, 구독 없음</p>
+</div>
+<div class="pro-cols">
+<div class="pc"><p class="pc-h">무료</p><ul><li>붓 세 자루</li><li>붓 크기 9단계, 밑그림 농도 5단계</li><li>모서리에 작은 워터마크가 들어가는 저장</li></ul></div>
+<div class="pc p"><p class="pc-h">Pro</p><ul><li>워터마크 없는 저장</li><li>10초~90초 길이의 1080×1920 타임랩스</li><li>고른 색 하나로만 칠하는 색 고정</li><li>흔들림과 붓 크기 세밀 조절</li><li>1.5배 크기, 최대 3072px의 PNG, HEIF, TIFF 저장</li></ul></div>
+</div>
+</section>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+</div>
+</div></div>
+<figcaption>BrushWorks 모바일 390</figcaption>
+</figure>
+<div class="note">
+<h4>BrushWorks의 세계</h4>
+<ul>
+<li>색: 아이콘에서 뽑은 흙빛 5색</li>
+<li>질감: SVG 필터로 그린 물감 두께, 이미지 파일 없음</li>
+<li>버튼: 붓으로 칠한 듯 모서리가 고르지 않은 사각형</li>
+<li>제목 글꼴: 명조 계열, iPhone에서는 고딕으로 대체</li>
+<li>앱 내비게이션: 소개, 지원, 개인정보 처리방침 고정</li>
+</ul>
+<p>모바일에서는 앱 내비게이션이 화면 위에 붙어 따라옵니다. 휴대폰 화면 안을 스크롤해 확인합니다.</p>
+</div>
+</div>
+</div>
+
+<!-- 03 TAPEY -->
+<div class="spread" id="dir-b-tapey">
+<h3 class="spread-t"><span>03</span>Tapey 소개<code>kvndh.com/ko/tapey/</code></h3>
+<p class="spread-d">같은 상단 바와 푸터 안에서 배경, 버튼 모양, 제목 글꼴이 바뀝니다. 스크린숏은 휴대폰 틀 대신 벽에 붙인 인화지로 보여 줍니다.</p>
+<figure class="browser">
+<div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span class="url">kvndh.com/ko/tapey/</span></div>
+<div class="pg w-tp">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang"><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-tapey" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-tapey" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-tapey" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-tapey" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-tapey" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-tapey" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-tapey" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-tapey" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<nav class="anav" aria-label="Tapey"><span class="anav-n">Tapey</span><ul><li><a href="#dir-b-tapey" aria-current="page">소개</a></li><li><a href="#dir-b-tapey">지원</a></li><li><a href="#dir-b-tapey">개인정보 처리방침</a></li></ul><a class="get" href="https://apps.apple.com/app/id6778635856">App Store</a></nav>
+<main>
+<section class="tp-hero">
+<div>
+<span class="tp-ic"><i class="tape" aria-hidden="true"></i><img src="{{icon:tapey}}" alt="Tapey 앱 아이콘" width="64" height="64"></span>
+<h4 class="tp-name serif">Tapey</h4>
+<p class="sub">벽에 붙인 듯한 사진 콜라주</p>
+<p class="hook">좋아하는 사진을 워시테이프로 벽에 붙이듯 배치하고, 그대로 iPhone과 iPad 배경화면으로 내보냅니다. 보이는 그대로가 결과물입니다.</p>
+<a class="btn" href="https://apps.apple.com/app/id6778635856">App Store에서 받기</a>
+<p class="meta">무료로 쓰고, 광고 제거는 한 번 구매합니다.</p>
+</div>
+<div class="wall" aria-hidden="true">
+<span class="ghost g1"><i></i><b class="tape k"></b></span>
+<span class="ghost g2"><i></i><b class="tape r"></b></span>
+<figure class="print"><b class="tape t1"></b><b class="tape k t2"></b><img src="{{shot:tapey}}" alt="" width="320" height="694"><figcaption class="memo">보이는 그대로 저장</figcaption></figure>
+</div>
+</section>
+<section class="steps">
+<div>
+<h5 class="fh serif">이렇게 만듭니다</h5>
+<p class="lead">사진을 고르면 자동으로 보기 좋게 배치합니다. 끌어서 위치와 크기, 각도를 바꾸고 테이프와 프레임을 더하면 끝납니다. 만드는 동안 완성된 화면을 미리 보며 다듬습니다.</p>
+</div>
+<ol class="cards">
+<li><i class="tape" aria-hidden="true"></i>사진 1~12장 자동 배치</li>
+<li><i class="tape k" aria-hidden="true"></i>격자, 계단, 하트 템플릿</li>
+<li><i class="tape r" aria-hidden="true"></i>시계와 위젯 자리를 비우는 가이드</li>
+<li><i class="tape r" aria-hidden="true"></i>워시테이프 색, 무늬, 붙는 자리 선택</li>
+<li><i class="tape" aria-hidden="true"></i>흰 테두리와 폴라로이드 프레임</li>
+<li><i class="tape k" aria-hidden="true"></i>사진마다 남기는 손글씨 메모</li>
+</ol>
+</section>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+<figcaption class="sr">Tapey 소개 데스크톱, 폭 1200px</figcaption>
+</figure>
+</div>
+
+<!-- 04 PRIVACY -->
+<div class="spread" id="dir-b-privacy">
+<h3 class="spread-t"><span>04</span>BrushWorks 개인정보 처리방침<code>kvndh.com/ko/brushworks/privacy/</code></h3>
+<p class="spread-d">앱의 세계는 맨 위 붓 자국 한 줄과 번호 색에만 남깁니다. 본문은 65ch 폭의 차분한 문서로 둡니다.</p>
+<figure class="browser">
+<div class="chrome" aria-hidden="true"><i></i><i></i><i></i><span class="url">kvndh.com/ko/brushworks/privacy/</span></div>
+<div class="pg w-bw w-doc">
+<header class="gbar"><a class="wm" href="#dir-b-hub">kvndh</a><nav class="gnav" aria-label="사이트"><a href="#dir-b-hub">앱</a><a href="mailto:kvndh36@naver.com">문의</a></nav><details class="lang"><summary><span class="sr">언어 </span>한국어</summary><ul><li><a href="#dir-b-privacy" hreflang="ko" aria-current="true">한국어</a></li><li><a href="#dir-b-privacy" hreflang="en" lang="en">English</a></li><li><a href="#dir-b-privacy" hreflang="ja" lang="ja">日本語</a></li><li><a href="#dir-b-privacy" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="#dir-b-privacy" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li><li><a href="#dir-b-privacy" hreflang="de" lang="de">Deutsch</a></li><li><a href="#dir-b-privacy" hreflang="es" lang="es">Español</a></li><li><a href="#dir-b-privacy" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li></ul></details></header>
+<nav class="anav" aria-label="BrushWorks"><span class="anav-n">BrushWorks</span><ul><li><a href="#dir-b-bw">소개</a></li><li><a href="#dir-b-bw">지원</a></li><li><a href="#dir-b-privacy" aria-current="page">개인정보 처리방침</a></li></ul><a class="get" href="https://apps.apple.com/app/id6810951573">App Store</a></nav>
+<main class="doc">
+<div class="doc-wrap">
+<header class="doc-h">
+<svg class="dab" viewBox="0 0 600 80" aria-hidden="true"><path d="M40 42C160 30 330 52 560 34" fill="none" stroke="#A05B42" stroke-width="46" stroke-linecap="round" filter="url(#dir-b-knife)"/></svg>
+<p class="doc-k">BrushWorks</p>
+<h4 class="doc-t">개인정보 처리방침</h4>
+<p class="doc-d">시행일 <time datetime="2026-09-17">2026-09-17</time></p>
+<ul class="sum" aria-label="요약"><li>수집하는 개인정보 없음</li><li>사진과 그림은 기기 안에서 처리</li><li>인앱 결제는 Apple이 처리</li><li>제3자 제공 없음</li></ul>
+</header>
+<nav class="toc" aria-label="목차"><p class="toc-h">목차</p><ol>
+<li><a href="#dir-b-p1" aria-current="true">1. 수집하는 정보</a></li>
+<li><a href="#dir-b-p2">2. 기기 안에서 처리</a></li>
+<li><a href="#dir-b-p3">3. 인앱 결제</a></li>
+<li><a href="#dir-b-p4">4. 제3자 제공</a></li>
+<li><a href="#dir-b-p5">5. 아동</a></li>
+<li><a href="#dir-b-p6">6. 변경 고지</a></li>
+<li><a href="#dir-b-p7">7. 문의</a></li>
+</ol></nav>
+<article class="prose">
+<section id="dir-b-p1"><h5><span>01</span>수집하는 정보</h5><p class="nil">없음</p><p>BrushWorks는 개인정보를 수집하지 않습니다. 계정을 만들거나 로그인하는 기능이 없고, 이름이나 이메일 주소 같은 정보를 요청하지 않습니다.</p></section>
+<section id="dir-b-p2"><h5><span>02</span>기기 안에서 처리</h5><p>밑그림으로 고른 사진과 그린 그림, 붓질 기록은 기기 안에서만 처리합니다. 밑그림으로 쓴 사진은 어디에도 올라가지 않습니다.</p><p>사진 보관함 접근 권한은 밑그림을 고르고 완성한 그림을 저장하는 데만 씁니다. 앱을 삭제하면 앱 안의 기록도 함께 지워지고, 사진 보관함에 저장한 그림은 그대로 남습니다.</p></section>
+<section id="dir-b-p3"><h5><span>03</span>인앱 결제는 Apple이 처리</h5><p>BrushWorks Pro는 App Store 인앱 결제로 판매합니다. 결제는 Apple이 처리하며, 카드 번호 같은 결제 정보는 개발자에게 전달되지 않습니다. 결제 과정의 정보 처리는 Apple의 개인정보 처리방침을 따릅니다.</p></section>
+<section id="dir-b-p4"><h5><span>04</span>제3자 제공 없음</h5><p>수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 맡기는 정보도 없습니다.</p></section>
+<section id="dir-b-p5"><h5><span>05</span>아동</h5><p>BrushWorks는 나이와 관계없이 개인정보를 수집하지 않습니다. 만 14세 미만 아동의 정보도 받지 않습니다.</p></section>
+<section id="dir-b-p6"><h5><span>06</span>변경 고지</h5><p>이 방침을 바꾸면 이 페이지에 새 시행일과 함께 게시합니다. 달라진 내용은 페이지 첫머리에 적습니다.</p></section>
+<section id="dir-b-p7"><h5><span>07</span>문의</h5><p>개인정보 처리에 관한 문의는 아래 주소로 받습니다.</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></section>
+</article>
+</div>
+</main>
+<footer class="gft"><div class="gft-in"><div><a class="wm" href="#dir-b-hub">kvndh</a></div><nav aria-label="개인정보 처리방침"><p class="gft-h">개인정보 처리방침</p><ul><li><a href="#dir-b-privacy" aria-current="page">BrushWorks</a></li><li><a href="#dir-b-hub">Tapey</a></li><li><a href="#dir-b-hub">SnapLine</a></li><li><a href="#dir-b-hub">Dice Master</a></li><li><a href="#dir-b-hub">Life Tyde</a></li></ul></nav><div><p class="gft-h">문의</p><a class="mail" href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></div></div><p class="gft-c">© kvndh</p></footer>
+</div>
+<figcaption class="sr">BrushWorks 개인정보 처리방침 데스크톱, 폭 1200px</figcaption>
+</figure>
+</div>
+</section>

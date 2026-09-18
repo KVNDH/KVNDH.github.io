@@ -1,0 +1,97 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "none",
+ "ads": false,
+ "account": false,
+ "note": "사이트 문구는 심사 중인 1.0.0 기준이다. 1.0.1(BrushWorks Pro, 워터마크 해제, 긴 타임랩스, 1.5배 저장, HEIF/TIFF, 색 고정, 세밀 조절, 온보딩)이 출시되면 이 파일과 8개 언어 문구를 함께 되돌린다.",
+ "products": [],
+ "brushes": [
+  "선택 가능한 붓 3개: glaze(얇은 칠), bristle(붓결), trowel(나이프)",
+  "붓 크기 9단계, 밑그림 농도 5단계(0 이 Blind 모드)"
+ ],
+ "export": [
+  "저장: PNG 1배, 1536×2048 한 가지. HEIF, TIFF, 1.5배, 3072px 는 1.0.0 에 없음",
+  "저장한 그림 오른쪽 아래에 BRUSH/WORKS 워터마크가 항상 들어감. 끄는 설정 없음(Tier.current 가 .canvas 로 고정)",
+  "타임랩스: 10초, 720×1280, 세로 9:16 한 가지. 길이 선택 없음"
+ ],
+ "network": [
+  "네트워크 코드 없음. 서드파티 SDK 없음",
+  "StoreKit, 결제 화면, 구매 복원이 1.0.0 에 없음. 앱이 App Store 에 연결할 일이 없음"
+ ],
+ "permissions": [
+  "사진 선택: PhotosPicker(PHPicker), 고른 한 장만 전달",
+  "사진 추가 전용(addOnly): 완성작 저장",
+  "project.yml 에 INFOPLIST_KEY_NSPhotoLibraryUsageDescription(읽기 권한 문구)이 선언되어 있으나 코드에서 읽기 권한을 요청하지 않아 요청 화면이 뜨지 않음"
+ ],
+ "storage": [
+  "고른 사진의 사본: 앱 Documents(underlay-fit.bin), 다른 사진을 고르거나 설정의 처음 상태로를 누르면 삭제",
+  "붓질 기록: 앱 Documents(strokes.bin), 처음 상태로를 누르면 삭제",
+  "설정(붓 종류, 붓 크기, 앱 언어): UserDefaults",
+  "타임랩스 영상: 임시 폴더에 만든 뒤 공유 시트로 넘김"
+ ],
+ "tracking": "NSPrivacyTracking false, 수집 데이터 없음, 광고 식별자와 분석 도구 없음",
+ "replaySpeeds": [
+  "0.25x",
+  "0.5x",
+  "1x",
+  "2x",
+  "4x"
+ ],
+ "uiNames": {
+  "Glaze": "얇은 칠",
+  "Bristle": "붓결",
+  "Knife": "나이프",
+  "Underlay": "밑그림",
+  "Underlay strength": "밑그림 농도",
+  "Blind mode": "Blind 모드",
+  "Original photo (눈 버튼)": "원본 사진",
+  "Replay": "리플레이",
+  "Time-lapse": "타임랩스",
+  "Speed": "배속",
+  "Dabs": "붓질",
+  "Time painted": "그린 시간",
+  "Start over": "처음 상태로",
+  "Switch photo": "사진 바꾸기",
+  "Undo": "되돌리기",
+  "Save": "저장",
+  "Settings": "설정"
+ },
+ "numbers": [
+  "0.25",
+  "0.5",
+  "1",
+  "2",
+  "4",
+  "5",
+  "9",
+  "10",
+  "16",
+  "720",
+  "1280",
+  "1536",
+  "2048"
+ ],
+ "sources": [
+  "BrushWorks v1.0.0 태그 기준. 아래 경로는 모두 그 태그의 파일이다",
+  "BrushWorks/project.yml (MARKETING_VERSION 1.0.0, 사진 권한 문구 2개)",
+  "BrushWorks/Sources/Model/Tier.swift (Tier.current = .canvas 고정. 무료 10초 720×1280, watermarksSavedImages true)",
+  "BrushWorks/Sources/Model/CanvasSpec.swift (brushDiameters 9개, underlayLevels 5개, 0 이 Blind 모드)",
+  "BrushWorks/Sources/Model/Brush.swift (selectable: glaze, bristle, trowel)",
+  "BrushWorks/Sources/Model/TimelapsePlan.swift",
+  "BrushWorks/Sources/App/ReplaySheet.swift (speeds = [0.25, 0.5, 1, 2, 4], 드래그 스크럽)",
+  "BrushWorks/Sources/App/TimelapseSheet.swift (Dabs, Time painted, 공유 시트)",
+  "BrushWorks/Sources/Engine/TimelapseExporter.swift (엔드카드: 붓질 수, 그린 시간)",
+  "BrushWorks/Sources/App/CanvasExport.swift (1536×2048, PNG 인코딩, Watermark BRUSH/WORKS 오른쪽 아래, requestAuthorization .addOnly)",
+  "BrushWorks/Sources/App/CanvasScreen.swift (PhotosPicker, 사진 바꿀 때 확인, 눈 버튼, 저장 시 워터마크 적용)",
+  "BrushWorks/Sources/App/CanvasDocument.swift (사진 사본과 로그 보관, 처음 상태로)",
+  "BrushWorks/Sources/App/BrushPreference.swift (붓 종류와 크기만 UserDefaults 에 저장)",
+  "BrushWorks/Sources/App/SettingsSheet.swift (처음 상태로, 개인정보 링크)",
+  "BrushWorks/Sources/Resources/Localizable.xcstrings (8개 언어 화면 글자. Pro 관련 문자열 없음)",
+  "BrushWorks/Sources/Resources/PrivacyInfo.xcprivacy",
+  "BrushWorks/README.md",
+  "BrushWorks/docs/STATUS.md",
+  "BrushWorks/docs/STORE.md (스크린샷은 en-US 한 세트, 영어 UI)",
+  "BrushWorks/docs/store/metadata.json",
+  "support/brushworks.html"
+ ]
+}

@@ -1,0 +1,275 @@
+{
+ "name": "Dice Master",
+ "subtitle": "Formeln rechnen, Farben summieren",
+ "summary": "Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.",
+ "hero": {
+  "hook": "Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.",
+  "shotAlt": "Dice Master nach einem Wurf mit fünf sechsseitigen Würfeln in 3D. Über den Würfeln stehen das Ergebnis und die Augen, aus denen es entstand."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Gewürfelt, und das Rechnen ist erledigt",
+   "body": [
+    "Sobald die Würfel liegen, erscheint das Ergebnis groß, und darunter reihen sich die einzelnen Augen. Als Formel nehmen Sie die, die das Spiel verlangt, etwa Summe, Produkt, Höchster oder Niedrigster. Geben Sie den Würfeln verschiedene Farben, bekommt jede Farbe ihre eigene Zwischensumme."
+   ],
+   "bullets": [
+    "6 Formeln, darunter Summe und Summe × Würfe",
+    "Zwischensummen nach Würfelfarbe",
+    "Wechsel zwischen 3D-Würfeln und 2D-Ansicht"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Das Ergebnis aus der Nähe, darunter die einzelnen Augen. Oben laufen die Chips für Seiten, Würfelzahl, Wurfmodus und Formel quer über den Bildschirm.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-100px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Regeln nach dem Spiel",
+   "body": [
+    "Stellen Sie Seiten, Würfelzahl und Wurfmodus so ein, wie es die Spielregeln vorgeben. In Simultan tippen Sie einen Würfel an, um ihn zu sperren, und werfen den Rest neu. In Einzeln wächst mit jedem Wurf die Gesamtsumme, und wer über das Summenlimit kommt, beendet die Runde mit einer Pleite. Die Einstellung sichern Sie unter Meine Vorlagen und holen sie später zurück."
+   ],
+   "bullets": [
+    "Wurfmodi Simultan und Einzeln",
+    "Würfel sperren und Wurflimit",
+    "Summenlimit mit Pleite"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Die Wurfmodi Simultan und Einzeln, Wurflimit von 2 bis 20 Würfen, Summenlimit von 1 bis 999",
+    "items": [
+     {
+      "name": "Simultan",
+      "desc": "Alle werfen, dann die behalten, die Sie sperren",
+      "on": true
+     },
+     {
+      "name": "Einzeln",
+      "desc": "Jeder Wurf wächst zur Gesamtsumme"
+     },
+     {
+      "name": "Summenlimit",
+      "desc": "Darüber endet die Runde als Pleite"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Wurflimit",
+      "value": "2 bis 20 Würfe"
+     },
+     {
+      "label": "Summenlimit",
+      "value": "1 bis 999"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Schnellvoreinstellungen für viele Spiele",
+   "body": [
+    "Würfelaufbauten für Brettspiele, Partyspiele, Casinospiele und Pen-and-Paper-Rollenspiele sind schon dabei. Bei Spielen wie Craps, Sic Bo und Farkle steht nach jedem Wurf das Ergebnis der Runde da."
+   ],
+   "bullets": [
+    "17 Schnellvoreinstellungen",
+    "Ergebniswertung für 10 Spiele",
+    "Spiele suchen und ausblenden"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Es geht dort weiter, wo Sie aufgehört haben",
+   "body": [
+    "Die App öffnet mit dem Würfelaufbau vom letzten Mal. Kein Konto, und gewürfelt wird auch ohne Netz."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "Keine Werbung",
+     "Offline nutzbar"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Dice Master Pro",
+  "title": "Größere Würfel,\nund mehr davon",
+  "items": [
+   "Würfel mit mehr als 10 Seiten (d12, d20, d100)",
+   "Bis zu 20 Würfel gleichzeitig werfen",
+   "Skins Neon, Donner, Gold und Flamme",
+   "Eigene Symbole für Würfelseiten",
+   "Unbegrenzt Vorlagen speichern",
+   "Vollständiger Würfelverlauf und Statistik"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Wo Einstellungen und Verlauf liegen",
+   "a": [
+    "Würfeleinstellungen, Meine Vorlagen und der Würfelverlauf liegen im eigenen Speicher der App. Mit dem Löschen der App verschwinden sie ebenfalls. iCloud-Sync gibt es nicht.",
+    "App zurücksetzen unten in den App-Einstellungen löscht alle Einstellungen, Vorlagen und den Würfelverlauf, und das lässt sich nicht widerrufen. Ein Pro-Kauf bleibt davon unberührt."
+   ]
+  },
+  {
+   "q": "Ein Würfel, der nicht in der Liste steht",
+   "a": [
+    "Tippen Sie oben auf dem Bildschirm auf den Chip für die Seiten, dann öffnen sich die Würfeleinstellungen. Tippen Sie auf das Stiftfeld und tragen Sie unter Benutzerdefinierte Seiten eine Zahl von 2 bis 100 ein, um mit so vielen Seiten zu würfeln. Würfel mit mehr als 10 Seiten brauchen Pro.",
+    "Die 3D-Ansicht trägt 2 bis 20 Seiten. Größere Würfel erscheinen in 2D."
+   ]
+  },
+  {
+   "q": "Sprache der App",
+   "a": [
+    "Die App startet in der Sprache Ihres Geräts. Zum Wechseln öffnen Sie Language in den App-Einstellungen und wählen eine von 13 Sprachen. Der Wechsel geschieht sofort in der App."
+   ]
+  },
+  {
+   "q": "Was Pro braucht",
+   "a": [
+    "Würfel mit mehr als 10 Seiten, mehr als 10 Würfel auf einmal, die Skins Neon, Donner, Gold und Flamme sowie eigene Symbole brauchen Pro. Ebenso die Wertung, nachdem Sie die Regeln einer Schnellvoreinstellung geändert haben. Die Schnellvoreinstellung d20-Probe würfelt ohne Pro.",
+    "Ohne Pro sichern Sie 2 Vorlagen, und Würfelverlauf und Statistik zeigen Ihre letzten 50 Würfe. Ältere Würfe bleiben in der App erhalten und erscheinen mit Pro alle."
+   ]
+  },
+  {
+   "q": "Pro wiederherstellen",
+   "a": [
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie oben rechts auf das Zahnrad und öffnen die App-Einstellungen. Tippen Sie oben auf DiceMaster Pro und dann unten im Blatt auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Würfeln, Verlauf und Vorlagen laufen ohne Internetverbindung. Nur der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung zum App Store."
+   ]
+  },
+  {
+   "q": "Schütteln zum Würfeln ausschalten",
+   "a": [
+    "Schalten Sie Schütteln zum Würfeln unter Steuerung in den App-Einstellungen aus, dann löst Schütteln keinen Wurf mehr aus."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für Dice Master",
+  "effectiveDate": "2026-09-18",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Dice Master (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Es gibt daher keinen Verarbeitungszweck anzugeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App nutzt die unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät liegen. Der Entwickler erhält diese Daten nicht."
+    ],
+    "bullets": [
+     "Würfeleinstellungen und Meine Vorlagen: um beim nächsten Mal dort weiterzumachen",
+     "Würfelverlauf: für die Liste des Verlaufs und die Statistik",
+     "App-Einstellungen (Skin, Sound, Sprache und Ähnliches): für Darstellung und Ton"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben. Wenn Sie ein Wurfergebnis über die Taste Teilen verschicken, unterliegt der versendete Text der Erklärung der App, die Sie dafür wählen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Die Zahlung für Dice Master Pro wickelt Apple über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also auf seiner Seite nichts zu löschen. Verlauf löschen im Würfelverlauf entfernt Ihre Würfe, und App zurücksetzen in den App-Einstellungen entfernt Einstellungen, Vorlagen und Verlauf zusammen. Mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Ihre Rechte und wie Sie sie ausüben",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Die App fordert keinen Zugriff auf Fotos, Standort, Kontakte, Kamera oder Mikrofon an. Schütteln zum Würfeln liest den Beschleunigungssensor des Geräts allein dafür, das Schütteln zu erkennen, und speichert diese Messwerte nicht."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennungen und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, zeigt diese Seite die Änderungen und das neue Datum des Inkrafttretens."
+    ],
+    "bullets": []
+   }
+  ],
+  "summary": "Dice Master erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und die Zahlung für Pro wickelt Apple ab."
+ }
+}

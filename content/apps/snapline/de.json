@@ -1,0 +1,291 @@
+{
+ "name": "SnapLine",
+ "subtitle": "Neue Linien auf schon gemachten Fotos",
+ "summary": "Legen Sie ein Raster über ein Foto, das Sie schon gemacht haben, und knicken Sie die Linien so, dass sie hinter dem Motiv verlaufen.",
+ "hero": {
+  "hook": "Legen Sie ein Raster über ein Foto, das Sie schon gemacht haben, und knicken Sie die Linien so, dass sie hinter dem Motiv verlaufen.",
+  "shotAlt": "Der Editor von SnapLine mit einem Leuchtturm in der Dämmerung. Rasterlinien knicken zum Leuchtturm hin, darunter liegen die Werkzeuge Linien und Radieren."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Das Raster knicken",
+   "body": [
+    "Sie beginnen beim Drittelraster. Ziehen Sie den mittleren Punkt einer Linie, dann knickt sie ab, während beide Enden am Fotorand bleiben. Ziehen Sie einen Randpunkt, kippt die Linie. Ziehen Sie die kleine Marke auf einer Linie, kommt ein weiterer Knick dazu."
+   ],
+   "bullets": [
+    "Linien knicken und kippen",
+    "Weitere Knickpunkte, eckig oder rund",
+    "Linie hinzufügen und Linie löschen"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "alt": "Palmen im Abendlicht aus der Nähe. Geknickte Rasterlinien verlaufen hinter den Wedeln.",
+    "caption": "App-Ansicht, vergrößert"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Überschneidungen wegradieren",
+   "body": [
+    "Wechseln Sie zu Radieren und reiben Sie über die Linie, wo sie das Motiv kreuzt. Tippen Sie auf Auto-Maske, findet die App das Motiv und löscht die Linien darüber in einem Zug. Mit Wiederherstellen kommt die Linie überall dort zurück, wo Sie reiben."
+   ],
+   "bullets": [
+    "Auto-Maske für das Radieren in einem Zug",
+    "Zoom bis 8× mit Lupe",
+    "Gedrückt halten für das fertige Bild"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Drei Werkzeuge, Radieren, Wiederherstellen und Auto-Maske, dazu Zoom bis 8× und ein Pinsel von 1 bis 60 pt",
+    "items": [
+     {
+      "name": "Radieren",
+      "desc": "Nimmt die Linie dort weg, wo Sie reiben"
+     },
+     {
+      "name": "Wiederherstellen",
+      "desc": "Holt radierte Linien zurück"
+     },
+     {
+      "name": "Auto-Maske",
+      "desc": "Löscht die Linien über dem Motiv auf einmal",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Zoom",
+      "value": "Bis 8×",
+      "meter": "ticks",
+      "count": 8,
+      "on": 3
+     },
+     {
+      "label": "Pinsel",
+      "value": "1 bis 60 pt"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Export in voller Größe",
+   "body": [
+    "Der Export zeichnet die Linien in der vollen Auflösung auf Ihr Originalfoto. Sichern Sie das JPEG in Fotos oder teilen Sie es gleich."
+   ],
+   "bullets": [
+    "Export ohne Größenbeschränkung",
+    "JPEG-Qualität 95",
+    "In Fotos sichern oder Teilen"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Foto wählen und los",
+   "body": [
+    "Nichts, wofür man sich anmelden müsste. Ihre Arbeiten warten auf dem Startbildschirm; tippen Sie eine an und machen Sie dort weiter, wo Sie aufgehört haben."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "Keine Werbung",
+     "Offline nutzbar"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Bestimmen Sie, wie die Linien aussehen,\nund sichern Sie ohne Wasserzeichen",
+  "items": [
+   "Ohne Wasserzeichen sichern",
+   "Linienstile gestrichelt, doppelt und Leuchten",
+   "Eigene Linienfarben neben Weiß und Schwarz",
+   "Linien an Motivecken einrasten"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Eine Linie knicken und kippen",
+   "a": [
+    "Jede Linie hat drei Punkte. Die beiden Enden sitzen am Fotorand, der mittlere bewegt sich frei. Ziehen Sie den Mittelpunkt, knickt die Linie, die Enden bleiben liegen. Ziehen Sie einen Randpunkt, rutscht er an dieser Kante entlang und die Linie kippt.",
+    "Tippen Sie eine Linie an, erscheinen kleine Marken darauf. Ziehen Sie eine Marke, kommt ein Knickpunkt dazu; tippen Sie einen Punkt an, können Sie ihn löschen oder rund machen. Randpunkte lassen sich nicht löschen, und eine Linie fasst bis zu 8 Punkte."
+   ]
+  },
+  {
+   "q": "Eine Linie hinter das Motiv legen",
+   "a": [
+    "Wählen Sie unten in der Werkzeugleiste Radieren und reiben Sie über die Linie, wo sie Ihr Motiv kreuzt. Tippen Sie auf Auto-Maske, findet die App das Motiv und löscht die Linien darüber in einem Zug.",
+    "Um eine radierte Linie zurückzuholen, öffnen Sie im Modus Radieren die Einstellungen, wählen Wiederherstellen und reiben über die Stelle. Widerrufen geht auch."
+   ]
+  },
+  {
+   "q": "Wenn die Auto-Maske kein Motiv findet",
+   "a": [
+    "Die Auto-Maske arbeitet am besten, wenn sich das Motiv klar vom Hintergrund abhebt. Findet sie nichts, radieren Sie von Hand mit Radieren, das Ergebnis ist dasselbe. Eine gesetzte Maske nehmen Sie über dieselbe Taste zurück, die dann Auto-Maske entfernen heißt."
+   ]
+  },
+  {
+   "q": "Feine Stellen radieren",
+   "a": [
+    "Ziehen Sie mit zwei Fingern auf bis zu 8× auf, oder tippen Sie doppelt, um zwischen 3× und der ganzen Ansicht zu wechseln. In den Einstellungen schieben Sie den Regler Pinsel nach links für einen dünneren Pinsel.",
+    "Mit der Lupe sehen Sie, was Ihr Finger verdeckt, und mit Radierte Bereiche sehen Sie, was schon weg ist. Im gezoomten Zustand ziehen Sie den Fotorand weit in den Bildschirm hinein."
+   ]
+  },
+  {
+   "q": "Exportqualität und Wasserzeichen",
+   "a": [
+    "Der Export setzt Ihr Foto in der Originalauflösung zusammen und sichert es als JPEG in Qualität 95. Eine Größenbeschränkung gibt es nicht.",
+    "Fotos, die ohne Pro gesichert werden, tragen unten rechts ein kleines SnapLine-Wasserzeichen. SnapLine Pro sichert ohne dieses Zeichen."
+   ]
+  },
+  {
+   "q": "Warum gestrichelte Linien durchgezogen gesichert werden",
+   "a": [
+    "Die Linienstile gestrichelt, doppelt und Leuchten gehören zu SnapLine Pro. Beim Bearbeiten darf sie jeder auf der Leinwand ausprobieren, ohne Pro werden sie durchgezogen gesichert. Tippen Sie im Export auf Mit diesem Linienstil sichern, öffnet sich Pro."
+   ]
+  },
+  {
+   "q": "Später weitermachen",
+   "a": [
+    "Wenn Sie ein Foto schließen oder die App verlassen, bleibt Ihre Arbeit als Miniatur auf dem Startbildschirm. Tippen Sie sie an, um ohne neue Fotoauswahl weiterzuarbeiten, oder halten Sie sie gedrückt, um sie zu löschen.",
+    "SnapLine legt eine Kopie des Originalfotos zum Projekt, deshalb können Sie auch dann in voller Auflösung weiterarbeiten und exportieren, wenn Sie das Original in Fotos gelöscht haben.",
+    "Der Startbildschirm zeigt die 3 neuesten Projekte. Die App behält bis zu 12, und mit SnapLine Pro erscheinen alle 12."
+   ]
+  },
+  {
+   "q": "Einen Pro-Kauf wiederherstellen",
+   "a": [
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie im Kaufbildschirm auf Kauf wiederherstellen. Dorthin kommen Sie so: Foto öffnen, im Modus Linien die Einstellungen aufklappen und das Pro-Zeichen neben Stil antippen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Bearbeiten, Auto-Maske und Sichern laufen offline. Nur der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung zum App Store."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für SnapLine",
+  "effectiveDate": "2026-09-18",
+  "summary": "SnapLine erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und die Zahlung für Pro wickelt Apple ab.",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SnapLine (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea und legt die Grundsätze dafür wie folgt dar."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Es gibt daher keinen Zweck anzugeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Letzte Projekte (Ihre Bearbeitungen, eine Kopie des Originalfotos, eine Miniatur): zum Wiederöffnen Ihrer Arbeit",
+     "Einstellungen und ob Sie Pro besitzen: dafür, was die App zeigt und wie sie exportiert",
+     "Zeitpunkt des ersten Starts und Zahl der Sicherungen: für den Zeitpunkt der Bewertungsanfrage",
+     "Ein temporäres Bild zum Teilen: beim Teilen, gelöscht beim nächsten Export oder Start der App"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt, und ältere Projekte weichen neuen. Fotos, die Sie in Fotos gesichert haben, bleiben dort, bis Sie sie in Fotos löschen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Die Zahlung für SnapLine Pro wickelt Apple über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Ein letztes Projekt löschen Sie, indem Sie seine Miniatur auf dem Startbildschirm gedrückt halten; mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Die App erhält nur die Fotos, die Sie in der Fotoauswahl von iOS aussuchen. Zum Sichern eines bearbeiteten Fotos genügt die Berechtigung, Fotos hinzuzufügen; eine Berechtigung zum Lesen Ihrer Mediathek fordert die App nicht an."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies und andere automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "describesVersion": "1.0.1",
+ "purchase": "one-time",
+ "ads": false,
+ "account": false,
+ "network": [
+  "App Store 결제와 구매 복원(StoreKit 2). 그 밖의 네트워크 코드 없음",
+  "평점 요청은 시스템 창(requestReview), 사진 앱 저장 성공 뒤 조건이 맞을 때만"
+ ],
+ "permissions": [
+  "사진 선택: SwiftUI PhotosPicker, 고른 사진 데이터만 전달. 사진 보관함 읽기 권한(NSPhotoLibraryUsageDescription) 없음",
+  "사진 추가 전용(.addOnly): 사진에 저장. NSPhotoLibraryAddUsageDescription 'Save your edited photo to the Photos app.' / '편집한 사진을 사진 앱에 저장합니다.'"
+ ],
+ "storage": [
+  "최근 프로젝트: Application Support/Projects 아래 작업마다 폴더 하나(project.json 문서, photo.dat 원본 사진 사본, thumb.jpg 썸네일). 12개를 넘으면 오래된 것부터 삭제, 홈에서 길게 눌러 삭제. 무료는 홈에 최근 3개만 보이고 Pro 는 12개 (이 차이는 소개 문구에 쓰지 않는다, roadmap 2026-09-17 결정)",
+  "UserDefaults: Pro 자격 캐시, 상품 확인 여부, 첫 실행 버전과 시각(InstallRecord), 저장 성공 횟수와 평점 요청 버전(ReviewPrompt), 첫 실행 안내 표시 여부, 꼭짓점 스냅 설정",
+  "공유용 임시 JPEG: tmp/SnapLine-*.jpg, 새 합성 결과를 채택할 때와 앱 시작 때 이전 파일 삭제",
+  "사진 앱: 사용자가 사진에 저장을 누른 결과물(JPEG 품질 95)만"
+ ],
+ "pro": {
+  "productID": "com.kimdh.SnapLine.pro.lifetime",
+  "type": "NonConsumable, familyShareable true (.storekit)",
+  "features": [
+   "워터마크 없이 저장 (Save without the watermark)",
+   "선 스타일: 점선, 이중선, 글로우 (Line styles: dashed, double, glow). 무료도 편집 중 입혀 볼 수 있고 저장은 실선",
+   "사용자 지정 색상 (Custom color). 흰색, 검정은 무료. 무료는 자물쇠, 누르면 결제 화면",
+   "선을 피사체 꼭짓점에 붙이기 (Snap lines to subject corners). 자동 마스크가 있을 때만 보임. 꼭짓점(가장 높은 점)과 구멍 중심",
+   "최근 프로젝트 12개 표시 (무료 3개). 결제 화면 목록에는 없음"
+  ],
+  "restore": "결제 화면의 구매 복원(Restore Purchase). 결제 화면은 설정의 스타일 옆 Pro 표시, 사용자 지정 색상 자물쇠, 꼭짓점 스냅 줄, 내보내기 화면의 Pro 줄에서 열림. 홈의 Pro 는 구매자에게만 보이는 상태 표시"
+ },
+ "watermark": "무료 저장본 오른쪽 아래에 꺾인 헤어라인과 'SnapLine' 글자. App Store 가 상품을 판다고 이 기기에서 확인한 뒤에만 찍힘(ProEntitlement.canPurchase). 1.0.0 설치자도 면제 없음",
+ "export": "원본 해상도 그대로 합성, JPEG 품질 95, 크기 제한 없음. 사진에 저장 또는 공유",
+ "editor": [
+  "기본 격자: 가로 2줄, 세로 2줄(1/3, 2/3). 선마다 가장자리 점 2개와 가운데 점 1개",
+  "한 선의 통과점 최대 8개(꺾임점 6개), 결제와 무관한 제한",
+  "확대 1~8배, 더블탭 3배",
+  "브러시 반경 1~60pt, 로그 눈금 슬라이더",
+  "수렴 스냅 14pt(다른 선의 통과점, 무료)",
+  "확대 중 사진 가장자리를 화면 안쪽 34%까지 끌어옴",
+  "길게 누르면 점이 사라져 완성본 미리보기",
+  "재설정: 격자만, 열었을 때로. 둘 다 실행 취소 가능",
+  "자동 마스크: Vision VNGenerateForegroundInstanceMaskRequest"
+ ],
+ "numbers": [
+  "3",
+  "8",
+  "1",
+  "60",
+  "95",
+  "12"
+ ],
+ "versionNote": "SnapLine/SnapLine/Info.plist 는 1.0.1 (빌드 2). project.yml 의 info.properties 는 아직 1.0.0 으로 남아 있음",
+ "sources": [
+  "SnapLine/SnapLine/Info.plist",
+  "SnapLine/project.yml",
+  "SnapLine/SnapLine/PrivacyInfo.xcprivacy",
+  "SnapLine/SnapLine/Pro/Configuration.storekit",
+  "SnapLine/SnapLine/Pro/ProStore.swift",
+  "SnapLine/SnapLine/Pro/PaywallView.swift",
+  "SnapLine/SnapLine/Pro/ProBadge.swift",
+  "SnapLine/SnapLine/Services/ProEntitlement.swift",
+  "SnapLine/SnapLine/Services/ProjectStore.swift",
+  "SnapLine/SnapLine/Services/PhotoImportService.swift",
+  "SnapLine/SnapLine/Services/PhotoLibrarySaver.swift",
+  "SnapLine/SnapLine/Services/InstallRecord.swift",
+  "SnapLine/SnapLine/Services/ReviewPrompt.swift",
+  "SnapLine/SnapLine/Services/SubjectMaskService.swift",
+  "SnapLine/SnapLine/SnapLineApp.swift",
+  "SnapLine/SnapLine/Home/HomeView.swift",
+  "SnapLine/SnapLine/Editor/EditorViewModel.swift",
+  "SnapLine/SnapLine/Editor/EditorControls.swift",
+  "SnapLine/SnapLine/Editor/ExportSheet.swift",
+  "SnapLine/SnapLine/Editor/NodeActionChips.swift",
+  "SnapLine/SnapLine/Resources/Localizable.xcstrings",
+  "SnapLine/SnapLine/Resources/InfoPlist.xcstrings",
+  "SnapLine/Packages/SnapLineCore/Package.swift (외부 의존성 없음, Package.resolved/Podfile/package.json 없음)",
+  "SnapLine/Packages/SnapLineCore/Sources/SnapLineCore/Model.swift",
+  "SnapLine/Packages/SnapLineCore/Sources/SnapLineCore/Watermark.swift",
+  "SnapLine/Packages/SnapLineCore/Sources/SnapLineCore/SubjectSnapPoints.swift",
+  "SnapLine/README.md",
+  "SnapLine/docs/roadmap.md",
+  "SnapLine/docs/store/metadata.json",
+  "SnapLine/docs/store/whatsNew-1.0.1.json",
+  "support/snapline.html"
+ ]
+}

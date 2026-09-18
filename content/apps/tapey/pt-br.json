@@ -1,0 +1,309 @@
+{
+ "name": "Tapey",
+ "subtitle": "Papéis de parede com washi tape",
+ "summary": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
+ "hero": {
+  "hook": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
+  "shotAlt": "O editor do Tapey. Abaixo do relógio da tela bloqueada, fotos em molduras Polaroid estão presas com washi tape, e uma delas traz uma nota à mão."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "As fotos acham o lugar delas",
+   "body": [
+    "Escolha até 12 fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la, ou use dois dedos para mudar o tamanho e a inclinação. A foto que você move à mão fica fixa onde você a deixou."
+   ],
+   "bullets": [
+    "Layout automático para até 12 fotos",
+    "Layouts Auto, Grade, Escada e Coração",
+    "Desfazer e refazer"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "O editor visto de perto. Cópias Polaroid presas com washi tape e, no meio delas, uma nota escrita à mão.",
+    "caption": "Tela do app, ampliada",
+    "focus": "-620px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Fita e molduras",
+   "body": [
+    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão."
+   ],
+   "bullets": [
+    "8 cores de fita e 4 padrões",
+    "Borda branca e moldura Polaroid",
+    "P&B no fundo inteiro ou numa foto só"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "As ferramentas Fita, Moldura e Fundo, com 8 cores de fita e 6 tons de fundo",
+    "items": [
+     {
+      "name": "Fita",
+      "desc": "Cor, posição, padrão, pontas rasgadas"
+     },
+     {
+      "name": "Moldura",
+      "desc": "Borda, Polaroid, P&B",
+      "on": true
+     },
+     {
+      "name": "Fundo",
+      "desc": "Tons de parede, Minha foto, Textura"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Cores de fita",
+      "value": "8"
+     },
+     {
+      "label": "Tons de fundo",
+      "value": "6",
+      "meter": "levels",
+      "count": 6
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Sob medida para a tela bloqueada",
+   "body": [
+    "A hora atual fica sobre a área de edição igual ao relógio da sua tela bloqueada. Arraste a alça para definir o espaço do relógio e as fotos descem para baixo dele. Dá para reservar lugar para os widgets também, e a resolução já vem ajustada ao seu aparelho."
+   ],
+   "bullets": [
+    "Espaço do relógio ajustável",
+    "Área de widgets reservada",
+    "Resoluções de iPhone e iPad"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Comece pelas suas fotos",
+   "body": [
+    "Sem conta e sem nada para entrar. Sua parede continua ali quando você volta, e Criar um novo depois de salvar manda a anterior para Recentes."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sem conta",
+     "31 idiomas"
+    ]
+   }
+  }
+ ],
+ "pro": null,
+ "faq": [
+  {
+   "q": "Adicionar fotos",
+   "a": [
+    "Na tela inicial, toque em Adicionar fotos e escolha da sua fototeca ou tire uma foto na hora. Durante a edição, toque em Adicionar na aba Fotos.",
+    "Cada papel de parede comporta até 12 fotos. O layout Coração aparece quando você tem 6 ou mais."
+   ]
+  },
+  {
+   "q": "Para onde vão os papéis de parede salvos",
+   "a": [
+    "Toque em Salvar no alto do editor. O papel de parede vai para o app Fotos como PNG, na resolução escolhida nos Ajustes. Na primeira vez, o iOS pergunta se o Tapey pode adicionar fotos.",
+    "Se o salvamento falhar, permita o acesso às fotos em Ajustes > Tapey."
+   ]
+  },
+  {
+   "q": "O anúncio ao salvar",
+   "a": [
+    "O Tapey é gratuito e mostra um anúncio em tela cheia quando você salva um papel de parede. Não há banner de anúncio na tela.",
+    "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio."
+   ]
+  },
+  {
+   "q": "Remover anúncios e restaurar a compra",
+   "a": [
+    "Compre Remover anúncios pelo menu ou pela tela inicial. Depois disso, nenhum anúncio aparece ao salvar.",
+    "Num aparelho novo ou depois de reinstalar, abra Remover anúncios no menu e toque em Restaurar compras. Com a mesma Conta Apple não há nova cobrança."
+   ]
+  },
+  {
+   "q": "Rastreamento e preferências de anúncios",
+   "a": [
+    "Na primeira vez que você abre o app, o iOS pergunta se o Tapey pode rastrear você. O app funciona igual de um jeito ou de outro, e você muda a resposta em Ajustes > Privacidade e Segurança > Rastreamento.",
+    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, mude suas escolhas em Preferências de anúncios, no rodapé da tela inicial."
+   ]
+  },
+  {
+   "q": "Onde o seu trabalho fica guardado",
+   "a": [
+    "As cópias das fotos e das fotos de fundo que você escolhe, junto com o layout e as notas, ficam no armazenamento do app para você continuar de onde parou. Recomeçar, no menu, limpa o trabalho atual, e excluir o app leva tudo junto.",
+    "Tocar em Criar um novo depois de salvar manda o trabalho atual para Recentes. Recentes guarda 3 projetos e descarta o mais antigo quando um novo entra."
+   ]
+  },
+  {
+   "q": "Definir como papel de parede",
+   "a": [
+    "Abra no app Fotos a imagem que você acabou de salvar, toque em Compartilhar e escolha Usar como Papel de Parede. Escolha Tela Bloqueada e toque em Definir.",
+    "Os mesmos passos estão em Como definir como papel de parede, na tela que aparece depois de salvar."
+   ]
+  },
+  {
+   "q": "Usar o Tapey no iPad",
+   "a": [
+    "O Tapey roda no iPad também. Lá ele cria um papel de parede quadrado que serve na vertical e na horizontal, e o editor deixa você alternar entre as duas vistas.",
+    "Para fazer um papel de parede de iPhone no iPad, escolha um tamanho de iPhone em Resolução, dentro dos Ajustes."
+   ]
+  },
+  {
+   "q": "Conexão com a internet",
+   "a": [
+    "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra de Remover anúncios e a restauração precisam de conexão.",
+    "Entre as letras à mão das notas, só a coreana é baixada; as outras já vêm no app. Sem conexão, as notas que precisam dela aparecem em uma fonte comum."
+   ]
+  },
+  {
+   "q": "Quando algo dá errado",
+   "a": [
+    "Feche o app por completo, abra de novo e confira na App Store se você está com a última versão. Se o problema continuar, escreva para a gente contando em que tela você estava e o que estava fazendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do Tapey",
+  "effectiveDate": "2026-09-18",
+  "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remover anúncios é processado pela Apple.",
+  "intro": [
+   "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não coleta informações pessoais de quem o usa.",
+     "Ao salvar um papel de parede, o app mostra um anúncio em tela cheia. O serviço de publicidade do Google, o AdMob, escolhe e exibe esse anúncio e usa informações do aparelho para exibir anúncios e medir o desempenho deles."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. Os dados que o app usa são os de baixo. Todos ficam no armazenamento do app no seu aparelho, e o desenvolvedor não os recebe.",
+     "Quando uma nota precisa da letra à mão coreana, o app a baixa da rede de distribuição de conteúdo jsDelivr. Como em qualquer requisição pela internet, o endereço IP do seu aparelho chega ao jsDelivr. O desenvolvedor não o recebe.",
+     "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
+    ],
+    "bullets": [
+     "Cópias das fotos e das fotos de fundo que você escolhe: usadas para reabrir o trabalho",
+     "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
+     "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
+     "Idioma escolhido, situação da compra de Remover anúncios e número de salvamentos: usados para o funcionamento do app e para o momento do pedido de avaliação"
+    ]
+   },
+   {
+    "title": "Tratamento e período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
+     "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Divulgação a terceiros",
+    "paragraphs": [
+     "O desenvolvedor não fornece a terceiros as informações pessoais de quem usa o app. Quando um anúncio é exibido, porém, o SDK do Google Mobile Ads embutido no app envia diretamente ao Google as informações da seção 9, do seguinte modo."
+    ],
+    "bullets": [
+     "Destinatário: Google LLC (Estados Unidos), AdMob",
+     "Finalidade: exibir anúncios e medir o desempenho deles",
+     "Informações: as informações do aparelho e os registros de interação com anúncios da seção 9",
+     "Quando e como: enviadas pela internet quando um anúncio é carregado e exibido",
+     "Retenção: conforme a Política de Privacidade do Google"
+    ]
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento de Remover anúncios pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Recomeçar, no menu, limpa o trabalho atual, e excluir o app leva junto todos os dados dele."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de responsáveis legais, e como exercê-los",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo.",
+     "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas (policies.google.com/privacy). Para recusar o uso do identificador de publicidade, siga a seção 9. Os dados de pagamento ficam com a Apple e seguem a política de privacidade da Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos do iOS ou tira com a câmera. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Coleta automática e como recusá-la",
+    "paragraphs": [
+     "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob), que pode coletar as informações de baixo quando carrega e exibe anúncios.",
+     "Na primeira vez que você abre o app, o iOS mostra o aviso de transparência de rastreamento (ATT). Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
+     "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Lá você muda suas escolhas em Preferências de anúncios, no rodapé da tela inicial.",
+     "Depois da compra de Remover anúncios, o app deixa de iniciar o AdMob a partir da abertura seguinte, então nem os anúncios nem o aviso de rastreamento aparecem."
+    ],
+    "bullets": [
+     "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",
+     "Localização aproximada estimada a partir do seu endereço IP",
+     "Registros de interação com os anúncios, como exibições e toques",
+     "Informações de desempenho, falhas e diagnóstico do app"
+    ]
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação sobre privacidade",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}
