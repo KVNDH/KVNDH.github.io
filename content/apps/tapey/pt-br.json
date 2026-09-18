@@ -92,7 +92,6 @@
     "type": "chips",
     "items": [
      "Sem conta",
-     "Sem login",
      "31 idiomas"
     ]
    }
@@ -160,7 +159,7 @@
    "q": "Conexão com a internet",
    "a": [
     "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra de Remover anúncios e a restauração precisam de conexão.",
-    "A fonte de letra à mão das notas é baixada enquanto você está on-line. Sem conexão, as notas aparecem numa fonte comum."
+    "Entre as letras à mão das notas, só a coreana é baixada; as outras já vêm no app. Sem conexão, as notas que precisam dela aparecem em uma fonte comum."
    ]
   },
   {
@@ -190,7 +189,7 @@
     "title": "Informações tratadas",
     "paragraphs": [
      "O desenvolvedor não coleta informações pessoais. Os dados que o app usa são os de baixo. Todos ficam no armazenamento do app no seu aparelho, e o desenvolvedor não os recebe.",
-     "O app baixa a fonte de letra à mão das notas da rede de distribuição de conteúdo jsDelivr. Como em qualquer requisição pela internet, o endereço IP do seu aparelho chega ao jsDelivr. O desenvolvedor não o recebe.",
+     "Quando uma nota precisa da letra à mão coreana, o app a baixa da rede de distribuição de conteúdo jsDelivr. Como em qualquer requisição pela internet, o endereço IP do seu aparelho chega ao jsDelivr. O desenvolvedor não o recebe.",
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
@@ -239,7 +238,7 @@
     "title": "Direitos dos usuários e de responsáveis legais, e como exercê-los",
     "paragraphs": [
      "Como o desenvolvedor não guarda informações pessoais, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo.",
-     "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas. Para recusar o uso do identificador de publicidade, siga a seção 9."
+     "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas (policies.google.com/privacy). Para recusar o uso do identificador de publicidade, siga a seção 9. Os dados de pagamento ficam com a Apple e seguem a política de privacidade da Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
    },
@@ -285,13 +284,13 @@
    {
     "title": "Vias de reclamação sobre privacidade",
     "paragraphs": [
-     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar as instâncias abaixo."
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar a autoridade de proteção de dados do lugar onde mora. Por exemplo:"
     ],
     "bullets": [
-     "A autoridade de proteção de dados do seu país ou região",
-     "O desenvolvedor: kvndh36@naver.com",
-     "O Google, sobre as informações coletadas pelo AdMob (policies.google.com/privacy)",
-     "A Apple, sobre os dados de pagamento (apple.com/legal/privacy)"
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do seu país"
     ]
    },
    {

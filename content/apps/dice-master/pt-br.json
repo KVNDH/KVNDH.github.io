@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Você rola e a conta já está feita",
    "body": [
-    "Quando os dados param, o resultado aparece grande e, logo abaixo, os valores ficam enfileirados. Como fórmula, escolha a que o jogo pede, por exemplo Soma, Product, Highest ou Lowest. Se distribuir cores entre os dados, cada cor ganha o próprio subtotal."
+    "Quando os dados param, o resultado aparece grande e, logo abaixo, os valores ficam enfileirados. Como fórmula, escolha a que o jogo pede, por exemplo Soma, Produto, Maior ou Menor. Se distribuir cores entre os dados, cada cor ganha o próprio subtotal."
    ],
    "bullets": [
     "6 fórmulas, entre elas Soma e Soma × Rolagens",
@@ -30,16 +30,16 @@
    "layout": "feat",
    "title": "Regras no talhe do jogo",
    "body": [
-    "Acerte faces, quantidade de dados e modo de rolagem conforme as regras da caixa. Em Simultâneo, você toca num dado para travá-lo e rola o resto de novo. Em One by One, cada rolagem entra no total acumulado, e passar do Limite de soma fecha a rodada em Perde. Guarde a configuração em Minhas predefinições e traga de volta depois."
+    "Acerte faces, quantidade de dados e modo de rolagem conforme as regras do jogo. Em Simultâneo, você toca num dado para travá-lo e rola o resto de novo. Em Um por um, cada rolagem entra no total acumulado, e passar do Limite de soma fecha a rodada em Perde. Guarde a configuração em Minhas predefinições e traga de volta depois."
    ],
    "bullets": [
-    "Modos Simultâneo e One by One",
+    "Modos Simultâneo e Um por um",
     "Travar dados e limite de rolagens",
     "Limite de soma com Perde"
    ],
    "visual": {
     "type": "kit",
-    "label": "Modos Simultâneo e One by One, Limite de rolagens de 2 a 20 e Limite de soma de 1 a 999",
+    "label": "Modos Simultâneo e Um por um, Limite de rolagens de 2 a 20 e Limite de soma de 1 a 999",
     "items": [
      {
       "name": "Simultâneo",
@@ -47,7 +47,7 @@
       "on": true
      },
      {
-      "name": "One by One",
+      "name": "Um por um",
       "desc": "Cada rolagem entra no total acumulado"
      },
      {
@@ -69,12 +69,12 @@
   },
   {
    "layout": "card",
-   "title": "Presets para muitos jogos",
+   "title": "Predefinições rápidas para muitos jogos",
    "body": [
     "Já vêm prontas configurações de dados para jogos de tabuleiro, jogos de festa, jogos de cassino e RPGs de mesa. Em jogos como Craps, Sic Bo e Farkle, cada rolagem recebe o resultado dela."
    ],
    "bullets": [
-    "17 Presets",
+    "17 predefinições rápidas",
     "Resultado da rolagem em 10 jogos",
     "Buscar e ocultar jogos"
    ]
@@ -102,7 +102,7 @@
   "items": [
    "Dados com mais de 10 faces (d12, d20, d100)",
    "Role até 20 dados de uma vez",
-   "Aparências Neon, Thunder, Gold e Chama",
+   "Aparências Neon, Trovão, Ouro e Chama",
    "Ícones personalizados para as faces dos dados",
    "Predefinições salvas sem limite",
    "Histórico e estatísticas completos"
@@ -113,7 +113,7 @@
    "q": "Onde ficam os ajustes e o histórico",
    "a": [
     "As configurações dos dados, Minhas predefinições e o Histórico ficam no armazenamento do próprio app. Excluir o app leva tudo junto. Não há sincronização com iCloud.",
-    "Redefinir app, no fim de App Settings, apaga todos os ajustes, predefinições e o histórico, e isso não pode ser desfeito. A compra do Pro não é afetada."
+    "Redefinir app, no fim de Config. do app, apaga todos os ajustes, predefinições e o histórico, e isso não pode ser desfeito. A compra do Pro não é afetada."
    ]
   },
   {
@@ -126,20 +126,20 @@
   {
    "q": "Idioma do app",
    "a": [
-    "O app começa no idioma do seu aparelho. Para trocar, abra Language em App Settings e escolha um dos 13 idiomas. A troca acontece dentro do app na hora."
+    "O app começa no idioma do seu aparelho. Para trocar, abra Language em Config. do app e escolha um dos 13 idiomas. A troca acontece dentro do app na hora."
    ]
   },
   {
    "q": "O que precisa do Pro",
    "a": [
-    "Dados com mais de 10 faces, mais de 10 dados de uma vez, as aparências Neon, Thunder, Gold e Chama e os ícones personalizados precisam do Pro. O mesmo vale para o resultado depois de você mudar as regras de um preset. O preset Rolagem d20 rola sem o Pro.",
+    "Dados com mais de 10 faces, mais de 10 dados de uma vez, as aparências Neon, Trovão, Ouro e Chama e os ícones personalizados precisam do Pro. O mesmo vale para o resultado depois de você mudar as regras de uma predefinição rápida. A predefinição rápida Rolagem d20 rola sem o Pro.",
     "Sem o Pro você salva 2 predefinições, e o Histórico e as Estatísticas mostram as suas últimas 50 rolagens. As mais antigas continuam guardadas no app e aparecem todas com o Pro."
    ]
   },
   {
    "q": "Restaurar o Pro",
    "a": [
-    "Se você trocou de aparelho ou reinstalou o app, toque na engrenagem no canto superior direito e abra App Settings. Toque em DiceMaster Pro no alto e depois em Restaurar compra, perto do fim da folha. Com a mesma Conta Apple não há nova cobrança."
+    "Se você trocou de aparelho ou reinstalou o app, toque na engrenagem no canto superior direito e abra Config. do app. Toque em DiceMaster Pro no alto e depois em Restaurar compra, perto do fim da folha. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
   {
@@ -151,7 +151,7 @@
   {
    "q": "Desligar Agitar para rolar",
    "a": [
-    "Desligue Agitar para rolar em Controles, dentro de App Settings, e sacudir o aparelho deixa de rolar os dados."
+    "Desligue Agitar para rolar em Controles, dentro de Config. do app, e sacudir o aparelho deixa de rolar os dados."
    ]
   }
  ],
@@ -204,7 +204,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. Limpar histórico, dentro do Histórico, remove as suas rolagens, e Redefinir app, em App Settings, remove ajustes, predefinições e histórico de uma vez. Excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. Limpar histórico, dentro do Histórico, remove as suas rolagens, e Redefinir app, em Config. do app, remove ajustes, predefinições e histórico de uma vez. Excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },

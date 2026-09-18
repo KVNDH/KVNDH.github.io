@@ -92,8 +92,8 @@
     "type": "chips",
     "items": [
      "Sem conta",
-     "Sem login",
-     "Sem anúncios"
+     "Sem anúncios",
+     "Funciona off-line"
     ]
    }
   }
@@ -153,7 +153,8 @@
    "q": "Retomar o trabalho",
    "a": [
     "Quando você fecha uma foto ou sai do app, o trabalho fica na tela inicial como miniatura. Toque nela para continuar editando sem escolher a foto de novo, ou toque e segure para excluí-la.",
-    "O SnapLine guarda uma cópia da foto original junto com o projeto, então dá para continuar editando e exportar na resolução cheia mesmo depois de apagar o original em Fotos."
+    "O SnapLine guarda uma cópia da foto original junto com o projeto, então dá para continuar editando e exportar na resolução cheia mesmo depois de apagar o original em Fotos.",
+    "A tela inicial mostra os 3 projetos mais recentes. O app guarda até 12, e com o SnapLine Pro aparecem todos os 12."
    ]
   },
   {

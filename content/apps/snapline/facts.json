@@ -47,7 +47,8 @@
   "8",
   "1",
   "60",
-  "95"
+  "95",
+  "12"
  ],
  "versionNote": "SnapLine/SnapLine/Info.plist 는 1.0.1 (빌드 2). project.yml 의 info.properties 는 아직 1.0.0 으로 남아 있음",
  "sources": [

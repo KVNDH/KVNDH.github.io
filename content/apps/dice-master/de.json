@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Gewürfelt, und das Rechnen ist erledigt",
    "body": [
-    "Sobald die Würfel liegen, erscheint das Ergebnis groß, und darunter reihen sich die einzelnen Augen. Als Formel nehmen Sie die, die das Spiel verlangt, etwa Summe, Product, Highest oder Lowest. Geben Sie den Würfeln verschiedene Farben, bekommt jede Farbe ihre eigene Zwischensumme."
+    "Sobald die Würfel liegen, erscheint das Ergebnis groß, und darunter reihen sich die einzelnen Augen. Als Formel nehmen Sie die, die das Spiel verlangt, etwa Summe, Produkt, Höchster oder Niedrigster. Geben Sie den Würfeln verschiedene Farben, bekommt jede Farbe ihre eigene Zwischensumme."
    ],
    "bullets": [
     "6 Formeln, darunter Summe und Summe × Würfe",
@@ -30,16 +30,16 @@
    "layout": "feat",
    "title": "Regeln nach dem Spiel",
    "body": [
-    "Stellen Sie Seiten, Würfelzahl und Wurfmodus so ein, wie es auf der Schachtel steht. In Simultan tippen Sie einen Würfel an, um ihn zu sperren, und werfen den Rest neu. In One by One wächst mit jedem Wurf die Gesamtsumme, und wer über das Summenlimit kommt, beendet die Runde mit einer Pleite. Die Einstellung sichern Sie unter Meine Vorlagen und holen sie später zurück."
+    "Stellen Sie Seiten, Würfelzahl und Wurfmodus so ein, wie es die Spielregeln vorgeben. In Simultan tippen Sie einen Würfel an, um ihn zu sperren, und werfen den Rest neu. In Einzeln wächst mit jedem Wurf die Gesamtsumme, und wer über das Summenlimit kommt, beendet die Runde mit einer Pleite. Die Einstellung sichern Sie unter Meine Vorlagen und holen sie später zurück."
    ],
    "bullets": [
-    "Wurfmodi Simultan und One by One",
+    "Wurfmodi Simultan und Einzeln",
     "Würfel sperren und Wurflimit",
     "Summenlimit mit Pleite"
    ],
    "visual": {
     "type": "kit",
-    "label": "Die Wurfmodi Simultan und One by One, Wurflimit von 2 bis 20 Würfen, Summenlimit von 1 bis 999",
+    "label": "Die Wurfmodi Simultan und Einzeln, Wurflimit von 2 bis 20 Würfen, Summenlimit von 1 bis 999",
     "items": [
      {
       "name": "Simultan",
@@ -47,7 +47,7 @@
       "on": true
      },
      {
-      "name": "One by One",
+      "name": "Einzeln",
       "desc": "Jeder Wurf wächst zur Gesamtsumme"
      },
      {
@@ -69,12 +69,12 @@
   },
   {
    "layout": "card",
-   "title": "Presets für viele Spiele",
+   "title": "Schnellvoreinstellungen für viele Spiele",
    "body": [
     "Würfelaufbauten für Brettspiele, Partyspiele, Casinospiele und Pen-and-Paper-Rollenspiele sind schon dabei. Bei Spielen wie Craps, Sic Bo und Farkle steht nach jedem Wurf das Ergebnis der Runde da."
    ],
    "bullets": [
-    "17 Presets",
+    "17 Schnellvoreinstellungen",
     "Ergebniswertung für 10 Spiele",
     "Spiele suchen und ausblenden"
    ]
@@ -102,7 +102,7 @@
   "items": [
    "Würfel mit mehr als 10 Seiten (d12, d20, d100)",
    "Bis zu 20 Würfel gleichzeitig werfen",
-   "Skins Neon, Thunder, Gold und Flamme",
+   "Skins Neon, Donner, Gold und Flamme",
    "Eigene Symbole für Würfelseiten",
    "Unbegrenzt Vorlagen speichern",
    "Vollständiger Würfelverlauf und Statistik"
@@ -113,7 +113,7 @@
    "q": "Wo Einstellungen und Verlauf liegen",
    "a": [
     "Würfeleinstellungen, Meine Vorlagen und der Würfelverlauf liegen im eigenen Speicher der App. Mit dem Löschen der App verschwinden sie ebenfalls. iCloud-Sync gibt es nicht.",
-    "App zurücksetzen unten in den App Settings löscht alle Einstellungen, Vorlagen und den Würfelverlauf, und das lässt sich nicht widerrufen. Ein Pro-Kauf bleibt davon unberührt."
+    "App zurücksetzen unten in den App-Einstellungen löscht alle Einstellungen, Vorlagen und den Würfelverlauf, und das lässt sich nicht widerrufen. Ein Pro-Kauf bleibt davon unberührt."
    ]
   },
   {
@@ -126,20 +126,20 @@
   {
    "q": "Sprache der App",
    "a": [
-    "Die App startet in der Sprache Ihres Geräts. Zum Wechseln öffnen Sie Language in den App Settings und wählen eine von 13 Sprachen. Der Wechsel geschieht sofort in der App."
+    "Die App startet in der Sprache Ihres Geräts. Zum Wechseln öffnen Sie Language in den App-Einstellungen und wählen eine von 13 Sprachen. Der Wechsel geschieht sofort in der App."
    ]
   },
   {
    "q": "Was Pro braucht",
    "a": [
-    "Würfel mit mehr als 10 Seiten, mehr als 10 Würfel auf einmal, die Skins Neon, Thunder, Gold und Flamme sowie eigene Symbole brauchen Pro. Ebenso die Wertung, nachdem Sie die Regeln eines Presets geändert haben. Das Preset d20-Probe würfelt ohne Pro.",
+    "Würfel mit mehr als 10 Seiten, mehr als 10 Würfel auf einmal, die Skins Neon, Donner, Gold und Flamme sowie eigene Symbole brauchen Pro. Ebenso die Wertung, nachdem Sie die Regeln einer Schnellvoreinstellung geändert haben. Die Schnellvoreinstellung d20-Probe würfelt ohne Pro.",
     "Ohne Pro sichern Sie 2 Vorlagen, und Würfelverlauf und Statistik zeigen Ihre letzten 50 Würfe. Ältere Würfe bleiben in der App erhalten und erscheinen mit Pro alle."
    ]
   },
   {
    "q": "Pro wiederherstellen",
    "a": [
-    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie oben rechts auf das Zahnrad und öffnen die App Settings. Tippen Sie oben auf DiceMaster Pro und dann unten im Blatt auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie oben rechts auf das Zahnrad und öffnen die App-Einstellungen. Tippen Sie oben auf DiceMaster Pro und dann unten im Blatt auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
   {
@@ -151,7 +151,7 @@
   {
    "q": "Schütteln zum Würfeln ausschalten",
    "a": [
-    "Schalten Sie Schütteln zum Würfeln unter Steuerung in den App Settings aus, dann löst Schütteln keinen Wurf mehr aus."
+    "Schalten Sie Schütteln zum Würfeln unter Steuerung in den App-Einstellungen aus, dann löst Schütteln keinen Wurf mehr aus."
    ]
   }
  ],
@@ -204,7 +204,7 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also auf seiner Seite nichts zu löschen. Verlauf löschen im Würfelverlauf entfernt Ihre Würfe, und App zurücksetzen in den App Settings entfernt Einstellungen, Vorlagen und Verlauf zusammen. Mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also auf seiner Seite nichts zu löschen. Verlauf löschen im Würfelverlauf entfernt Ihre Würfe, und App zurücksetzen in den App-Einstellungen entfernt Einstellungen, Vorlagen und Verlauf zusammen. Mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },

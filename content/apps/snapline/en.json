@@ -92,8 +92,8 @@
     "type": "chips",
     "items": [
      "No account",
-     "No login",
-     "No ads"
+     "No ads",
+     "Works offline"
     ]
    }
   }
@@ -153,7 +153,8 @@
    "q": "Picking up where you left off",
    "a": [
     "When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold to delete it.",
-    "SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos."
+    "SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos.",
+    "The home screen shows the 3 most recent projects. The app keeps up to 12, and SnapLine Pro shows all 12."
    ]
   },
   {

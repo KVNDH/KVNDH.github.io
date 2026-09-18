@@ -92,7 +92,6 @@
     "type": "chips",
     "items": [
      "Kein Konto",
-     "Keine Anmeldung",
      "31 Sprachen"
     ]
    }
@@ -146,7 +145,7 @@
    "q": "Als Hintergrundbild festlegen",
    "a": [
     "Öffnen Sie das gerade gesicherte Bild in der Fotos-App, tippen Sie auf Teilen und wählen Sie Als Hintergrundbild. Wählen Sie Sperrbildschirm und tippen Sie auf Festlegen.",
-    "Dieselben Schritte stehen unter So legst du es als Hintergrundbild fest auf dem Bildschirm, der nach dem Sichern erscheint."
+    "Dieselben Schritte stehen unter „So legst du es als Hintergrundbild fest“ auf dem Bildschirm, der nach dem Sichern erscheint."
    ]
   },
   {
@@ -160,7 +159,7 @@
    "q": "Internetverbindung",
    "a": [
     "Anordnen, Verzieren und Sichern laufen offline. Werbung, der Kauf von Werbung entfernen und das Wiederherstellen brauchen eine Verbindung.",
-    "Die Handschrift für Fotonotizen wird geladen, während Sie online sind. Ohne Verbindung erscheinen Notizen in einer Standardschrift."
+    "Von den Handschriften für Notizen wird nur die koreanische geladen, die übrigen stecken in der App. Ohne Verbindung erscheinen Notizen, die sie brauchen, in einer Standardschrift."
    ]
   },
   {
@@ -190,7 +189,7 @@
     "title": "Verarbeitete Daten",
     "paragraphs": [
      "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät, und der Entwickler erhält sie nicht.",
-     "Die App lädt die Handschrift für Fotonotizen vom Content-Delivery-Netzwerk jsDelivr. Wie bei jeder Anfrage im Internet erreicht dabei die IP-Adresse Ihres Geräts jsDelivr. Der Entwickler erhält sie nicht.",
+     "Braucht eine Fotonotiz die koreanische Handschrift, lädt die App sie vom Content-Delivery-Netzwerk jsDelivr. Wie bei jeder Anfrage im Internet erreicht dabei die IP-Adresse Ihres Geräts jsDelivr. Der Entwickler erhält sie nicht.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
@@ -239,7 +238,7 @@
     "title": "Rechte der Nutzerinnen und Nutzer sowie der gesetzlichen Vertretung",
     "paragraphs": [
      "Da der Entwickler keine personenbezogenen Daten aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
-     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung. Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9."
+     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
    },
@@ -285,13 +284,13 @@
    {
     "title": "Rechtsbehelfe in Datenschutzfragen",
     "paragraphs": [
-     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, können Sie sich an die folgenden Stellen wenden."
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die Datenschutzbehörde an Ihrem Wohnort. Zum Beispiel:"
     ],
     "bullets": [
-     "Die Datenschutzbehörde in Ihrem Land oder Ihrer Region",
-     "Den Entwickler: kvndh36@naver.com",
-     "Google, wegen der von AdMob erfassten Informationen (policies.google.com/privacy)",
-     "Apple, wegen der Zahlungsdaten (apple.com/legal/privacy)"
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
     ]
    },
    {

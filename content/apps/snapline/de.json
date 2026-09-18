@@ -92,8 +92,8 @@
     "type": "chips",
     "items": [
      "Kein Konto",
-     "Keine Anmeldung",
-     "Keine Werbung"
+     "Keine Werbung",
+     "Offline nutzbar"
     ]
    }
   }
@@ -153,7 +153,8 @@
    "q": "Später weitermachen",
    "a": [
     "Wenn Sie ein Foto schließen oder die App verlassen, bleibt Ihre Arbeit als Miniatur auf dem Startbildschirm. Tippen Sie sie an, um ohne neue Fotoauswahl weiterzuarbeiten, oder halten Sie sie gedrückt, um sie zu löschen.",
-    "SnapLine legt eine Kopie des Originalfotos zum Projekt, deshalb können Sie auch dann in voller Auflösung weiterarbeiten und exportieren, wenn Sie das Original in Fotos gelöscht haben."
+    "SnapLine legt eine Kopie des Originalfotos zum Projekt, deshalb können Sie auch dann in voller Auflösung weiterarbeiten und exportieren, wenn Sie das Original in Fotos gelöscht haben.",
+    "Der Startbildschirm zeigt die 3 neuesten Projekte. Die App behält bis zu 12, und mit SnapLine Pro erscheinen alle 12."
    ]
   },
   {

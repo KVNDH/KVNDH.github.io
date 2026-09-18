@@ -92,7 +92,6 @@
     "type": "chips",
     "items": [
      "No account",
-     "No sign-in",
      "31 languages"
     ]
    }
@@ -160,7 +159,7 @@
    "q": "Internet connection",
    "a": [
     "Arranging, decorating, and saving work offline. Ads, buying Remove ads, and restoring the purchase need a connection.",
-    "The handwriting font for photo notes is downloaded while you are online. Without a connection, notes appear in a standard font."
+    "Of the handwriting fonts for notes, only the Korean one is downloaded; the rest come with the app. Without a connection, notes that need it appear in a standard font."
    ]
   },
   {
@@ -190,7 +189,7 @@
     "title": "Information processed",
     "paragraphs": [
      "The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it.",
-     "The app downloads the handwriting font for photo notes from the jsDelivr content delivery network. As with any internet request, your device's IP address reaches jsDelivr. The developer does not receive it.",
+     "When a photo note needs the Korean handwriting font, the app loads it from the jsDelivr content delivery network. As with any internet request, your device's IP address reaches jsDelivr. The developer does not receive it.",
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [
@@ -239,7 +238,7 @@
     "title": "Rights of users and legal guardians, and how to exercise them",
     "paragraphs": [
      "Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, email us at the address below.",
-     "You can ask Google to give you access to, or delete, information collected by AdMob. To refuse use of the advertising identifier, follow section 9."
+     "You can ask Google to give you access to, or delete, information collected by AdMob (policies.google.com/privacy). To refuse use of the advertising identifier, follow section 9. Payment information is held by Apple and is covered by Apple's privacy policy (apple.com/legal/privacy)."
     ],
     "bullets": []
    },
@@ -285,13 +284,13 @@
    {
     "title": "Remedies for privacy concerns",
     "paragraphs": [
-     "If you need advice about a privacy concern or help resolving a dispute, you can contact the following."
+     "If you need advice about a privacy concern or help resolving a dispute, you can contact the data protection authority where you live. For example:"
     ],
     "bullets": [
-     "The data protection authority in your country or region",
-     "The developer: kvndh36@naver.com",
-     "Google, for information collected by AdMob (policies.google.com/privacy)",
-     "Apple, for payment information (apple.com/legal/privacy)"
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority in your country"
     ]
    },
    {

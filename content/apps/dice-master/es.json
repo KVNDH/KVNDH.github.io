@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Lanzas y la cuenta ya está hecha",
    "body": [
-    "Cuando los dados se paran, el resultado sale en grande y debajo se alinean los valores uno a uno. Como fórmula eliges la que pide el juego, por ejemplo Suma, Product, Highest o Lowest. Si repartes colores entre los dados, cada color recibe su propio subtotal."
+    "Cuando los dados se paran, el resultado sale en grande y debajo se alinean los valores uno a uno. Como fórmula eliges la que pide el juego, por ejemplo Suma, Producto, Mayor o Menor. Si repartes colores entre los dados, cada color recibe su propio subtotal."
    ],
    "bullets": [
     "6 fórmulas, entre ellas Suma y Suma × Lanzamientos",
@@ -30,16 +30,16 @@
    "layout": "feat",
    "title": "Las reglas que pide el juego",
    "body": [
-    "Ajusta las caras, el número de dados y el modo de lanzamiento a lo que dice la caja. En Simultáneo tocas un dado para bloquearlo y vuelves a lanzar el resto. En One by One cada lanzamiento suma al total acumulado, y pasarse del Límite de suma cierra la ronda en Pierde. Guarda la configuración en Mis preajustes y recupérala más tarde."
+    "Ajusta las caras, el número de dados y el modo de lanzamiento a las reglas del juego. En Simultáneo tocas un dado para bloquearlo y vuelves a lanzar el resto. En Uno a uno cada lanzamiento suma al total acumulado, y pasarse del Límite de suma cierra la ronda en Pierde. Guarda la configuración en Mis preajustes y recupérala más tarde."
    ],
    "bullets": [
-    "Modos Simultáneo y One by One",
+    "Modos Simultáneo y Uno a uno",
     "Bloqueo de dados y límite de lanzamientos",
     "Límite de suma con Pierde"
    ],
    "visual": {
     "type": "kit",
-    "label": "Modos Simultáneo y One by One, Límite de lanzamientos de 2 a 20 y Límite de suma de 1 a 999",
+    "label": "Modos Simultáneo y Uno a uno, Límite de lanzamientos de 2 a 20 y Límite de suma de 1 a 999",
     "items": [
      {
       "name": "Simultáneo",
@@ -47,7 +47,7 @@
       "on": true
      },
      {
-      "name": "One by One",
+      "name": "Uno a uno",
       "desc": "Cada lanzamiento suma al total acumulado"
      },
      {
@@ -69,12 +69,12 @@
   },
   {
    "layout": "card",
-   "title": "Presets para muchos juegos",
+   "title": "Ajustes rápidos para muchos juegos",
    "body": [
     "Vienen de serie configuraciones de dados para juegos de mesa, juegos de fiesta, juegos de casino y juegos de rol. En juegos como Craps, Sic Bo y Farkle, cada lanzamiento recibe su resultado."
    ],
    "bullets": [
-    "17 Presets",
+    "17 ajustes rápidos",
     "Resultado de la tirada en 10 juegos",
     "Buscar y ocultar juegos"
    ]
@@ -102,7 +102,7 @@
   "items": [
    "Dados de más de 10 caras (d12, d20, d100)",
    "Lanza hasta 20 dados a la vez",
-   "Apariencias Neon, Thunder, Gold y Llama",
+   "Apariencias Neón, Trueno, Oro y Llama",
    "Iconos personalizados para las caras de los dados",
    "Preajustes guardados sin límite",
    "Historial y estadísticas completos"
@@ -113,7 +113,7 @@
    "q": "Dónde se guardan los ajustes y el historial",
    "a": [
     "La configuración de dados, Mis preajustes y el Historial se guardan en el almacenamiento propio de la app. Al eliminar la app desaparecen con ella. No hay sincronización con iCloud.",
-    "Restablecer app, al final de App Settings, borra todos los ajustes, preajustes e historial, y no se puede deshacer. Una compra de Pro no se ve afectada."
+    "Restablecer app, al final de Ajustes de app, borra todos los ajustes, preajustes e historial, y no se puede deshacer. Una compra de Pro no se ve afectada."
    ]
   },
   {
@@ -126,20 +126,20 @@
   {
    "q": "Idioma de la app",
    "a": [
-    "La app arranca en el idioma de tu dispositivo. Para cambiarlo, abre Language en App Settings y elige uno de los 13 idiomas. El cambio ocurre dentro de la app al momento."
+    "La app arranca en el idioma de tu dispositivo. Para cambiarlo, abre Language en Ajustes de app y elige uno de los 13 idiomas. El cambio ocurre dentro de la app al momento."
    ]
   },
   {
    "q": "Qué necesita Pro",
    "a": [
-    "Los dados de más de 10 caras, más de 10 dados a la vez, las apariencias Neon, Thunder, Gold y Llama, y los iconos personalizados necesitan Pro. También el resultado después de cambiar las reglas de un preset. El preset Tirada d20 se lanza sin Pro.",
+    "Los dados de más de 10 caras, más de 10 dados a la vez, las apariencias Neón, Trueno, Oro y Llama, y los iconos personalizados necesitan Pro. También el resultado después de cambiar las reglas de un ajuste rápido. El ajuste rápido Tirada d20 se lanza sin Pro.",
     "Sin Pro guardas 2 preajustes, y el Historial y las Estadísticas muestran tus últimos 50 lanzamientos. Los más antiguos siguen guardados en la app y aparecen todos con Pro."
    ]
   },
   {
    "q": "Restaurar Pro",
    "a": [
-    "Si cambiaste de dispositivo o reinstalaste la app, toca la rueda dentada de arriba a la derecha y abre App Settings. Toca DiceMaster Pro en la parte de arriba y luego Restaurar compra, cerca del final de la hoja. Con la misma cuenta de Apple no se cobra de nuevo."
+    "Si cambiaste de dispositivo o reinstalaste la app, toca la rueda dentada de arriba a la derecha y abre Ajustes de app. Toca DiceMaster Pro en la parte de arriba y luego Restaurar compra, cerca del final de la hoja. Con la misma cuenta de Apple no se cobra de nuevo."
    ]
   },
   {
@@ -151,7 +151,7 @@
   {
    "q": "Desactivar Agitar para lanzar",
    "a": [
-    "Desactiva Agitar para lanzar en Controles, dentro de App Settings, y agitar el dispositivo dejará de lanzar los dados."
+    "Desactiva Agitar para lanzar en Controles, dentro de Ajustes de app, y agitar el dispositivo dejará de lanzar los dados."
    ]
   }
  ],
@@ -204,7 +204,7 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir por su parte. Borrar historial, dentro del Historial, quita tus lanzamientos, y Restablecer app, en App Settings, quita ajustes, preajustes e historial a la vez. Al eliminar la app desaparecen todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir por su parte. Borrar historial, dentro del Historial, quita tus lanzamientos, y Restablecer app, en Ajustes de app, quita ajustes, preajustes e historial a la vez. Al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },

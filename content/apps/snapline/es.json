@@ -92,8 +92,8 @@
     "type": "chips",
     "items": [
      "Sin cuenta",
-     "Sin inicio de sesión",
-     "Sin anuncios"
+     "Sin anuncios",
+     "Funciona sin conexión"
     ]
    }
   }
@@ -153,7 +153,8 @@
    "q": "Retomar el trabajo",
    "a": [
     "Cuando cierras una foto o sales de la app, tu trabajo se queda en la pantalla de inicio como miniatura. Tócala para seguir editando sin volver a elegir la foto, o mantenla pulsada para eliminarla.",
-    "SnapLine conserva una copia de la foto original junto al proyecto, así que puedes seguir editando y exportar a resolución completa aunque hayas borrado el original en Fotos."
+    "SnapLine conserva una copia de la foto original junto al proyecto, así que puedes seguir editando y exportar a resolución completa aunque hayas borrado el original en Fotos.",
+    "La pantalla de inicio muestra los 3 proyectos más recientes. La app guarda hasta 12, y con SnapLine Pro aparecen los 12."
    ]
   },
   {

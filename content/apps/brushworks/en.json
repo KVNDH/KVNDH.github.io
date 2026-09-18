@@ -81,7 +81,7 @@
     "Every dab is recorded. Replay plays the painting back from the start, and Time-lapse turns it into a short video."
    ],
    "bullets": [
-    "Replay at 1× to 4× speed",
+    "Replay at 0.25×, 0.5×, 1×, 2× or 4×",
     "Vertical 9:16 time-lapse video",
     "A record of dabs and time painted"
    ],
@@ -107,18 +107,7 @@
    }
   }
  ],
- "pro": {
-  "kick": "BrushWorks Pro",
-  "title": "Save it larger,\npaint it finer",
-  "items": [
-   "Save without the watermark",
-   "Time-lapses of 10 to 90 seconds at 1080×1920",
-   "Color lock: paint with one color you choose",
-   "Precision controls for wobble and brush size",
-   "Save at 1.5×, up to 3072 px",
-   "PNG, HEIF and TIFF formats"
-  ]
- },
+ "pro": null,
  "faq": [
   {
    "q": "Where your photo is kept",
@@ -141,22 +130,22 @@
    ]
   },
   {
-   "q": "Time-lapse length",
+   "q": "The mark on saved paintings",
    "a": [
-    "The free time-lapse is 10 seconds long, in a vertical 9:16 frame. With Pro you choose a length from 10 to 90 seconds.",
-    "To watch the whole process, use Replay in the app. Pick a speed from 1× to 4×, and drag sideways across the canvas to jump to any point."
+    "Every painting you save carries a small BRUSH/WORKS mark in the lower right corner. Paintings are saved as PNG."
    ]
   },
   {
-   "q": "Restoring Pro",
+   "q": "Time-lapse length",
    "a": [
-    "On a new device or after reinstalling the app, open Settings and tap Restore Purchases in the Pro section. With the same Apple Account, you are not charged again."
+    "Every time-lapse is 10 seconds long at 720×1280, in a vertical 9:16 frame.",
+    "To watch the whole process, use Replay in the app. Pick 0.25×, 0.5×, 1×, 2× or 4×, and drag sideways across the canvas to jump to any point."
    ]
   },
   {
    "q": "Internet connection",
    "a": [
-    "Painting, saving and time-lapses work without an internet connection. Buying Pro and restoring purchases need a connection to the App Store."
+    "Painting, saving and time-lapses all work without an internet connection. The app has nothing to connect to."
    ]
   }
  ],
@@ -201,7 +190,7 @@
    {
     "title": "Processing by service providers",
     "paragraphs": [
-     "We do not have anyone process personal information on our behalf. In-app purchases, including BrushWorks Pro, are processed by Apple through the App Store, and Apple's privacy policy covers that payment information. We do not receive your payment details or Apple Account information."
+     "We do not have anyone process personal information on our behalf."
     ],
     "bullets": []
    },
@@ -222,7 +211,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "The iOS photo picker passes only the one photo you choose to the app. Saving a finished painting uses permission to add photos only, and the app does not ask for permission to read your photo library."
+     "The iOS photo picker passes only the one photo you choose to the app. Saving a finished painting uses permission to add photos only, and no prompt asking for access to your whole photo library appears."
     ],
     "bullets": []
    },
@@ -270,6 +259,6 @@
     "bullets": []
    }
   ],
-  "summary": "BrushWorks does not collect personal information. There is no sign-up or sign-in, and Apple processes in-app purchases such as Pro."
+  "summary": "BrushWorks does not collect personal information. There is no sign-up, no sign-in and no in-app purchases."
  }
 }

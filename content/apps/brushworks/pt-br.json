@@ -81,7 +81,7 @@
     "Cada toque é gravado. O Rever reproduz a pintura desde o começo, e o Time-lapse transforma tudo num vídeo curto."
    ],
    "bullets": [
-    "Rever de 1× a 4×",
+    "Rever a 0,25×, 0,5×, 1×, 2× ou 4×",
     "Time-lapse vertical em 9:16",
     "Registro de pinceladas e tempo pintando"
    ],
@@ -107,18 +107,7 @@
    }
   }
  ],
- "pro": {
-  "kick": "BrushWorks Pro",
-  "title": "Salve maior,\npinte mais fino",
-  "items": [
-   "Salvar sem a marca d’água",
-   "Time-lapses de 10 a 90 segundos em 1080×1920",
-   "Bloqueio de cor: pintar com uma cor escolhida por você",
-   "Controle preciso do tremor e do tamanho do pincel",
-   "Salvar em 1,5×, até 3072 px",
-   "Formatos PNG, HEIF e TIFF"
-  ]
- },
+ "pro": null,
  "faq": [
   {
    "q": "Onde fica a foto escolhida",
@@ -141,22 +130,22 @@
    ]
   },
   {
-   "q": "Duração do time-lapse",
+   "q": "A marca nas pinturas salvas",
    "a": [
-    "Sem o Pro, o time-lapse dura 10 segundos, no formato vertical 9:16. Com o Pro você escolhe uma duração de 10 a 90 segundos.",
-    "Para ver o processo inteiro, use o Rever dentro do app. Escolha uma velocidade de 1× a 4× e arraste de lado a lado sobre a tela para pular para qualquer ponto."
+    "Cada pintura salva leva uma marca pequena com BRUSH/WORKS no canto inferior direito. O formato de gravação é PNG."
    ]
   },
   {
-   "q": "Restaurar o Pro",
+   "q": "Duração do time-lapse",
    "a": [
-    "Num aparelho novo ou depois de reinstalar o app, abra os Ajustes e toque em Restaurar Compras no cartão do Pro. Com a mesma Conta Apple não há nova cobrança."
+    "O time-lapse dura sempre 10 segundos e tem 720×1280, no formato vertical 9:16.",
+    "Para ver o processo inteiro, use o Rever dentro do app. Escolha 0,25×, 0,5×, 1×, 2× ou 4× e arraste de lado a lado sobre a tela para pular para qualquer ponto."
    ]
   },
   {
    "q": "Conexão com a internet",
    "a": [
-    "Pintar, salvar e gerar time-lapses funcionam sem conexão com a internet. Comprar o Pro e restaurar compras precisam de conexão com a App Store."
+    "Pintar, salvar e gerar time-lapses funcionam sem conexão com a internet. O app não tem a que se conectar."
    ]
   }
  ],
@@ -201,7 +190,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "O tratamento de informações pessoais não é terceirizado. As compras dentro do app, como o BrushWorks Pro, são processadas pela Apple na App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a forma de pagamento nem os dados da Conta Apple."
+     "O tratamento de informações pessoais não é terceirizado."
     ],
     "bullets": []
    },
@@ -222,7 +211,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O seletor de fotos do iOS entrega ao app apenas a foto que você escolhe. Para salvar uma pintura pronta, o app usa somente a permissão de adicionar fotos e não pede permissão para ler a sua fototeca."
+     "O seletor de fotos do iOS entrega ao app apenas a foto que você escolhe. Para salvar uma pintura pronta, o app usa somente a permissão de adicionar fotos e não aparece nenhum pedido de acesso à fototeca inteira."
     ],
     "bullets": []
    },
@@ -270,6 +259,6 @@
     "bullets": []
    }
   ],
-  "summary": "O BrushWorks não coleta informações pessoais. Não há cadastro nem login, e as compras dentro do app, como o Pro, são processadas pela Apple."
+  "summary": "O BrushWorks não coleta informações pessoais. Não há cadastro, nem login, nem compras dentro do app."
  }
 }
