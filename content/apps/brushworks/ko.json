@@ -242,13 +242,17 @@
    {
     "title": "권익침해 구제 방법",
     "paragraphs": [
-     "개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다."
+     "개인정보 침해에 대한 상담이나 분쟁 해결이 필요하면 아래 기관에 문의할 수 있습니다. 한국 밖에 거주하면 그 나라의 감독기관에도 문의할 수 있습니다."
     ],
     "bullets": [
      "개인정보분쟁조정위원회: 1833-6972 (www.kopico.go.kr)",
      "개인정보침해신고센터: 국번 없이 118 (privacy.kisa.or.kr)",
      "대검찰청: 국번 없이 1301 (www.spo.go.kr)",
-     "경찰청: 국번 없이 182 (ecrm.police.go.kr)"
+     "경찰청: 국번 없이 182 (ecrm.police.go.kr)",
+     "유럽연합과 EEA: 거주국의 개인정보 감독기관 (edpb.europa.eu)",
+     "영국: Information Commissioner's Office (ico.org.uk)",
+     "미국: Federal Trade Commission (reportfraud.ftc.gov)",
+     "그 밖의 나라: 거주국의 개인정보 또는 소비자 보호 기관"
     ]
    },
    {
