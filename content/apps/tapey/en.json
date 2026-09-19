@@ -159,7 +159,7 @@
    "q": "Internet connection",
    "a": [
     "Arranging, decorating, and saving work offline. Ads, buying Remove ads, and restoring the purchase need a connection.",
-    "Of the handwriting fonts for notes, only the Korean one is downloaded; the rest come with the app. Without a connection, notes that need it appear in a standard font."
+    "The handwriting fonts for notes are installed with the app. One is used for Korean notes, another for notes in other languages."
    ]
   },
   {
@@ -171,7 +171,7 @@
  ],
  "privacy": {
   "title": "Tapey Privacy Policy",
-  "effectiveDate": "2026-09-18",
+  "effectiveDate": "2026-09-19",
   "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove ads.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -189,7 +189,6 @@
     "title": "Information processed",
     "paragraphs": [
      "The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it.",
-     "When a photo note needs the Korean handwriting font, the app loads it from the jsDelivr content delivery network. As with any internet request, your device's IP address reaches jsDelivr. The developer does not receive it.",
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [

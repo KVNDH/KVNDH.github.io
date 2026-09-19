@@ -70,47 +70,10 @@
    }
   },
   {
-   "layout": "feat",
-   "title": "Stärke und Farbe festlegen",
-   "body": [
-    "Öffnen Sie die Einstellungen, dann erscheinen Regler für Stärke und Deckkraft. Als Farbe stehen Weiß und Schwarz bereit. Linien kommen dazu oder fallen weg, und mit Zurücksetzen steht das Raster wieder am Anfang."
-   ],
-   "bullets": [
-    "Regler für Stärke und Deckkraft",
-    "Linienfarben Weiß und Schwarz",
-    "Widerrufen und Wiederholen"
-   ],
-   "visual": {
-    "type": "kit",
-    "label": "Linienfarben Weiß und Schwarz, dazu Regler für Stärke und Deckkraft",
-    "items": [
-     {
-      "name": "Weiß",
-      "desc": "Für Linien auf einem dunklen Foto",
-      "on": true
-     },
-     {
-      "name": "Schwarz",
-      "desc": "Für Linien auf einem hellen Foto"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Stärke",
-      "value": "Dünn bis dick"
-     },
-     {
-      "label": "Deckkraft",
-      "value": "Blass bis satt"
-     }
-    ]
-   }
-  },
-  {
    "layout": "card",
    "title": "Export in voller Größe",
    "body": [
-    "Der Export zeichnet die Linien in der vollen Auflösung auf Ihr Originalfoto. Sichern Sie das JPEG in Fotos oder teilen Sie es gleich."
+    "Der Export zeichnet die Linien in der vollen Auflösung auf Ihr Originalfoto. Sichern Sie das JPEG in Fotos oder teilen Sie es gleich. Gesicherte Fotos tragen unten rechts ein kleines SnapLine-Zeichen, und SnapLine Pro sichert ohne dieses Zeichen."
    ],
    "bullets": [
     "Pixelmaße im Exportfenster",
@@ -122,7 +85,7 @@
    "layout": "card",
    "title": "Foto wählen und los",
    "body": [
-    "Nichts, wofür man sich anmelden müsste. Wählen Sie ein Foto, und das Raster liegt darauf."
+    "Nichts, wofür man sich anmelden müsste. Wählen Sie ein Foto, und das Raster liegt darauf. Das zuletzt bearbeitete Foto bleibt auf dem Startbildschirm und öffnet sich mit einem Tippen wieder."
    ],
    "bullets": [],
    "visual": {
@@ -134,7 +97,16 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Bestimmen Sie Form und Farbe der Linien\nund sichern Sie ohne das Zeichen",
+  "items": [
+   "Sichern ohne das Zeichen",
+   "Linienstile gestrichelt, doppelt und Leuchten",
+   "Linienfarben jenseits von Weiß und Schwarz",
+   "Linien an Motivecken einrasten"
+  ]
+ },
  "faq": [
   {
    "q": "Eine Linie knicken und kippen",
@@ -164,36 +136,55 @@
    ]
   },
   {
-   "q": "Linienfarbe und Stärke ändern",
+   "q": "Linienstil und Farbe ändern",
    "a": [
-    "Öffnen Sie im Modus Linien die Einstellungen, dann erscheinen die Regler für Stärke und Deckkraft sowie die Farbtasten. Zur Wahl stehen Weiß und Schwarz.",
-    "Linie hinzufügen legt abwechselnd eine waagerechte und eine senkrechte Linie an; Linie löschen entfernt die ausgewählte."
+    "Öffnen Sie im Modus Linien die Einstellungen, dann erscheinen die Stiltasten, die Regler für Stärke und Deckkraft und die Farbtasten. Zur Wahl stehen Durchgezogen, Gestrichelt, Doppelt und Leuchten, und was Sie antippen, liegt sofort auf der Leinwand. Als Farbe stehen Weiß und Schwarz bereit: Beim Öffnen eines Fotos misst die App die Helligkeit des Hintergrunds ohne das Motiv und wählt die Farbe, die besser zu sehen ist.",
+    "Gestrichelt, Doppelt, Leuchten und jede Farbe jenseits von Weiß und Schwarz werden mit SnapLine Pro so gesichert, wie Sie sie eingestellt haben. Linie hinzufügen legt abwechselnd eine waagerechte und eine senkrechte Linie an; Linie löschen entfernt die ausgewählte."
+   ]
+  },
+  {
+   "q": "Warum gestrichelte Linien durchgezogen gesichert werden",
+   "a": [
+    "Die Stile Gestrichelt, Doppelt und Leuchten gehören zu SnapLine Pro. Beim Bearbeiten darf sie jeder auf der Leinwand ausprobieren, ohne Pro werden sie durchgezogen gesichert. Eine Farbe jenseits von Weiß und Schwarz wird im näheren der beiden Töne gesichert. Tippen Sie im Export auf Mit diesem Linienstil sichern, öffnet sich Pro."
    ]
   },
   {
    "q": "Das Raster wieder an den Anfang setzen",
    "a": [
-    "Tippen Sie in den Einstellungen auf Zurücksetzen, dann sind die verschobenen Linien und die Knickpunkte weg und das Raster steht wieder am Anfang. Radierte Bereiche bleiben erhalten. Widerrufen holt alles zurück."
+    "Tippen Sie in den Einstellungen auf Zurücksetzen, fragt die App nach einer von zwei Möglichkeiten. Nur das Raster bringt die Linien an ihren Platz zurück und behält die radierten Bereiche. Wie beim Öffnen macht alles rückgängig, was seit dem Öffnen des Fotos geschehen ist. Widerrufen holt beides zurück."
    ]
   },
   {
-   "q": "Exportqualität",
+   "q": "Exportqualität und das Zeichen",
    "a": [
     "Der Export setzt Ihr Foto in der Originalauflösung zusammen und sichert es als JPEG in Qualität 95. Im Exportfenster stehen die Pixelmaße und die Qualität des Ergebnisses.",
-    "In Fotos sichern legt die Datei in Ihrer Mediathek ab, Teilen schickt sie direkt weiter."
+    "Gesicherte Fotos tragen unten rechts ein kleines SnapLine-Zeichen: eine einmal geknickte Haarlinie neben dem Schriftzug. Seine Farbe misst die App am Foto darunter. SnapLine Pro sichert ohne das Zeichen."
+   ]
+  },
+  {
+   "q": "Später weitermachen",
+   "a": [
+    "Wenn Sie ein Foto schließen oder die App verlassen, bleibt Ihre Arbeit als Miniatur auf dem Startbildschirm. Tippen Sie sie an, um ohne neue Fotoauswahl weiterzuarbeiten, oder halten Sie sie gedrückt und wählen Löschen.",
+    "SnapLine legt eine Kopie des Originalfotos zum Projekt, deshalb können Sie auch dann in voller Auflösung weiterarbeiten und exportieren, wenn Sie das Original in Fotos gelöscht haben. Ältere Projekte weichen neuen."
+   ]
+  },
+  {
+   "q": "Einen Pro-Kauf wiederherstellen",
+   "a": [
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie im Kaufbildschirm auf Kauf wiederherstellen. Dorthin kommen Sie so: Foto öffnen, im Modus Linien die Einstellungen aufklappen und das Pro-Zeichen neben Stil antippen. Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
   {
    "q": "Internetverbindung",
    "a": [
-    "Bearbeiten, Auto-Maske und Sichern laufen offline. Die App hat keinen Server, zu dem sie sich verbindet."
+    "Bearbeiten, Auto-Maske und Sichern laufen offline. Nur der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung zum App Store."
    ]
   }
  ],
  "privacy": {
   "title": "Datenschutzerklärung für SnapLine",
-  "effectiveDate": "2026-09-18",
-  "summary": "SnapLine erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung und keine Käufe in der App.",
+  "effectiveDate": "2026-09-19",
+  "summary": "SnapLine erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und die Zahlung für Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SnapLine (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea und legt die Grundsätze dafür wie folgt dar."
   ],
@@ -211,15 +202,16 @@
      "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
     ],
     "bullets": [
-     "Zeitpunkt des ersten Starts und App-Version: als Installationsvermerk gespeichert",
-     "Ob Sie den Hinweis beim ersten Start gesehen haben: damit er nur einmal erscheint",
+     "Letzte Projekte (Ihre Bearbeitungen, eine Kopie des Originalfotos, eine Miniatur): zum Wiederöffnen Ihrer Arbeit",
+     "Einstellungen und ob Sie Pro besitzen: dafür, was die App zeigt und wie sie exportiert",
+     "Zeitpunkt des ersten Starts, App-Version und Zahl der Sicherungen: für den Zeitpunkt der Bewertungsanfrage",
      "Ein temporäres Bild zum Teilen: beim Teilen, gelöscht beim nächsten Export oder Start der App"
     ]
    },
    {
     "title": "Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Fotos, die Sie in Fotos gesichert haben, bleiben dort, bis Sie sie in Fotos löschen."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt, und ältere Projekte weichen neuen. Fotos, die Sie in Fotos gesichert haben, bleiben dort, bis Sie sie in Fotos löschen."
     ],
     "bullets": []
    },
@@ -233,14 +225,14 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert."
+     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Die Zahlung für SnapLine Pro wickelt Apple über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
     ],
     "bullets": []
    },
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Ein letztes Projekt löschen Sie, indem Sie seine Miniatur auf dem Startbildschirm gedrückt halten und Löschen wählen; mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },

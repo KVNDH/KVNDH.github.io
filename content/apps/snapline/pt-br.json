@@ -70,47 +70,10 @@
    }
   },
   {
-   "layout": "feat",
-   "title": "Defina a espessura e a cor",
-   "body": [
-    "Abra os Ajustes e aparecem os controles de Espessura e Opacidade. A cor é Branco ou Preto. Dá para adicionar uma linha, excluir outra e, com Redefinir, a grade volta ao ponto de partida."
-   ],
-   "bullets": [
-    "Controles de Espessura e Opacidade",
-    "Cores de linha Branco e Preto",
-    "Desfazer e Refazer"
-   ],
-   "visual": {
-    "type": "kit",
-    "label": "Cores de linha Branco e Preto, com controles de Espessura e Opacidade",
-    "items": [
-     {
-      "name": "Branco",
-      "desc": "Para linhas sobre uma foto escura",
-      "on": true
-     },
-     {
-      "name": "Preto",
-      "desc": "Para linhas sobre uma foto clara"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Espessura",
-      "value": "De fina a grossa"
-     },
-     {
-      "label": "Opacidade",
-      "value": "De suave a sólida"
-     }
-    ]
-   }
-  },
-  {
    "layout": "card",
    "title": "Exportação em tamanho real",
    "body": [
-    "Exportar desenha as linhas sobre a foto original na resolução cheia. Salve o JPEG em Fotos ou compartilhe na hora."
+    "Exportar desenha as linhas sobre a foto original na resolução cheia. Salve o JPEG em Fotos ou compartilhe na hora. As fotos salvas levam uma pequena marca do SnapLine no canto inferior direito, e o SnapLine Pro salva sem ela."
    ],
    "bullets": [
     "Tamanho em pixels na tela de exportação",
@@ -122,7 +85,7 @@
    "layout": "card",
    "title": "Escolha uma foto e comece",
    "body": [
-    "Não há cadastro nenhum. Escolha uma foto e a grade cai sobre ela."
+    "Não há cadastro nenhum. Escolha uma foto e a grade cai sobre ela. A foto que você estava editando fica na tela inicial e abre de novo com um toque."
    ],
    "bullets": [],
    "visual": {
@@ -134,7 +97,16 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Escolha a forma e a cor das linhas\ne salve sem a marca",
+  "items": [
+   "Salvamento sem a marca",
+   "Estilos de linha tracejada, dupla e brilho",
+   "Cores de linha além do branco e do preto",
+   "Encaixar linhas nos cantos do objeto"
+  ]
+ },
  "faq": [
   {
    "q": "Dobrar e inclinar uma linha",
@@ -164,36 +136,55 @@
    ]
   },
   {
-   "q": "Mudar a cor e a espessura da linha",
+   "q": "Mudar o estilo e a cor da linha",
    "a": [
-    "Abra os Ajustes com a ferramenta Linhas ativa e aparecem os controles de Espessura e Opacidade junto com os botões de cor. As cores são Branco e Preto.",
-    "Adicionar linha coloca uma linha nova, alternando horizontal e vertical. Excluir linha tira a que estiver selecionada."
+    "Abra os Ajustes com a ferramenta Linhas ativa e aparecem os botões de estilo, os controles de Espessura e Opacidade e os botões de cor. Os estilos são Contínua, Tracejada, Dupla e Brilho, e o que você tocar já aparece na área de edição. As cores são Branco e Preto: ao abrir uma foto, o app mede o brilho do fundo sem o objeto e escolhe a que fica mais visível.",
+    "A linha tracejada, a dupla, o brilho e qualquer cor além do branco e do preto são salvos como você deixou com o SnapLine Pro. Adicionar linha coloca uma linha nova, alternando horizontal e vertical. Excluir linha tira a que estiver selecionada."
+   ]
+  },
+  {
+   "q": "Por que a linha tracejada sai contínua",
+   "a": [
+    "Os estilos tracejada, dupla e brilho são recursos do SnapLine Pro. Qualquer pessoa pode experimentá-los na área de edição, e sem o Pro eles são salvos como linha contínua. Uma cor além do branco e do preto sai no tom mais próximo dos dois. Toque em Salvar com este estilo de linha na tela de exportação e o Pro aparece."
    ]
   },
   {
    "q": "Devolver a grade ao ponto de partida",
    "a": [
-    "Toque em Redefinir nos Ajustes e as linhas movidas e os pontos de dobra somem, com a grade de volta ao ponto de partida. As áreas apagadas permanecem. Desfazer traz tudo de volta."
+    "Toque em Redefinir nos Ajustes e o app pergunta qual das duas opções você quer. Apenas a grade coloca as linhas de volta no lugar e mantém as áreas apagadas. Como ao abrir desfaz tudo o que você fez desde que abriu a foto. Desfazer traz qualquer uma das duas de volta."
    ]
   },
   {
-   "q": "Qualidade da exportação",
+   "q": "Qualidade da exportação e a marca",
    "a": [
     "Exportar compõe a foto na resolução original e salva como JPEG na qualidade 95. A tela de exportação mostra o tamanho em pixels e a qualidade do resultado.",
-    "Salvar em Fotos coloca o arquivo na sua fototeca e Compartilhar envia na hora."
+    "As fotos salvas levam uma pequena marca do SnapLine no canto inferior direito: uma linha fina com uma dobra ao lado do nome. A cor dela é medida na foto que está embaixo. O SnapLine Pro salva sem a marca."
+   ]
+  },
+  {
+   "q": "Retomar o trabalho",
+   "a": [
+    "Quando você fecha uma foto ou sai do app, o trabalho fica na tela inicial como miniatura. Toque nela para continuar editando sem escolher a foto de novo, ou toque e segure e escolha Excluir.",
+    "O SnapLine guarda uma cópia da foto original junto com o projeto, então dá para continuar editando e exportar na resolução cheia mesmo depois de apagar o original em Fotos. Os projetos mais antigos saem conforme novos entram."
+   ]
+  },
+  {
+   "q": "Restaurar uma compra do Pro",
+   "a": [
+    "Se você trocou de aparelho ou reinstalou o app, toque em Restaurar Compra na tela de compra. Para chegar lá, abra uma foto, expanda os Ajustes ainda em Linhas e toque no selo Pro ao lado de Estilo. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
   {
    "q": "Conexão com a internet",
    "a": [
-    "Editar, usar a Máscara auto e salvar funcionam sem conexão. O app não tem servidor para acessar."
+    "Editar, usar a Máscara auto e salvar funcionam sem conexão. Só comprar e restaurar o Pro precisam de conexão com a App Store."
    ]
   }
  ],
  "privacy": {
   "title": "Política de Privacidade do SnapLine",
-  "effectiveDate": "2026-09-18",
-  "summary": "O SnapLine não coleta informações pessoais. Não há cadastro nem login, e também não há compras dentro do app.",
+  "effectiveDate": "2026-09-19",
+  "summary": "O SnapLine não coleta informações pessoais. Não há cadastro nem login, e o pagamento do Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app SnapLine (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, e apresenta a seguir os seus critérios."
   ],
@@ -211,15 +202,16 @@
      "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
     ],
     "bullets": [
-     "Hora da primeira abertura e versão do app: guardada como registro de instalação",
-     "Se você já viu o aviso inicial: serve para mostrá-lo uma única vez",
+     "Projetos recentes (suas edições, uma cópia da foto original, uma miniatura): usados para reabrir o trabalho",
+     "Ajustes e se você tem o Pro: usados para definir o que o app mostra e como exporta",
+     "Hora da primeira abertura, versão do app e número de salvamentos: usados para definir quando pedir uma avaliação",
      "Uma imagem temporária para compartilhar: usada ao compartilhar e apagada na exportação seguinte ou ao abrir o app"
     ]
    },
    {
     "title": "Período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. As fotos salvas no app Fotos ficam lá até você apagá-las por lá."
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app, e os projetos recentes mais antigos saem conforme novos entram. As fotos salvas no app Fotos ficam lá até você apagá-las por lá."
     ],
     "bullets": []
    },
@@ -233,14 +225,14 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "O tratamento de informações pessoais não é terceirizado."
+     "O tratamento de informações pessoais não é terceirizado. A Apple processa o pagamento do SnapLine Pro pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor nunca recebe a forma de pagamento nem os dados da Conta Apple."
     ],
     "bullets": []
    },
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que destruir. Excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Você apaga um projeto recente tocando e segurando a miniatura dele na tela inicial e escolhendo Excluir, e excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },

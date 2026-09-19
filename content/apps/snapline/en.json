@@ -70,47 +70,10 @@
    }
   },
   {
-   "layout": "feat",
-   "title": "Set the width and color",
-   "body": [
-    "Open Settings and you get sliders for Width and Opacity. Color is White or Black. Add a line, delete one, or tap Reset and the grid returns to where it started."
-   ],
-   "bullets": [
-    "Width and Opacity sliders",
-    "White and Black line colors",
-    "Undo and Redo"
-   ],
-   "visual": {
-    "type": "kit",
-    "label": "White and Black line colors, with Width and Opacity sliders",
-    "items": [
-     {
-      "name": "White",
-      "desc": "For lines over a dark photo",
-      "on": true
-     },
-     {
-      "name": "Black",
-      "desc": "For lines over a bright photo"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Width",
-      "value": "Thin to thick"
-     },
-     {
-      "label": "Opacity",
-      "value": "Faint to solid"
-     }
-    ]
-   }
-  },
-  {
    "layout": "card",
    "title": "Full-size exports",
    "body": [
-    "Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away."
+    "Export draws the lines onto your original photo at its full resolution. Save the JPEG to Photos or share it right away. Saved photos carry a small SnapLine mark in the bottom-right corner, and SnapLine Pro saves without it."
    ],
    "bullets": [
     "Pixel size shown on the export screen",
@@ -122,7 +85,7 @@
    "layout": "card",
    "title": "Pick a photo and go",
    "body": [
-    "Nothing to sign up for. Choose one photo and the grid lands on it."
+    "Nothing to sign up for. Choose one photo and the grid lands on it. The photo you were editing stays on the home screen, and a tap opens it again."
    ],
    "bullets": [],
    "visual": {
@@ -134,7 +97,16 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "SnapLine Pro",
+  "title": "Choose how your lines look,\nand save without the mark",
+  "items": [
+   "Saving without the mark",
+   "Dashed, double and glow line styles",
+   "Line colors beyond white and black",
+   "Snapping lines to subject corners"
+  ]
+ },
  "faq": [
   {
    "q": "Bending and tilting a line",
@@ -164,36 +136,55 @@
    ]
   },
   {
-   "q": "Changing line color and width",
+   "q": "Changing line style and color",
    "a": [
-    "Open Settings while in Lines and you get the Width and Opacity sliders along with the color buttons. The colors are White and Black.",
-    "Add line drops in a new line, alternating horizontal and vertical. Delete line removes the one you selected."
+    "Open Settings while in Lines and you get the style chips, the Width and Opacity sliders and the color buttons. The styles are Solid, Dashed, Double and Glow, and whichever you tap is drawn on the canvas right away. The colors are White and Black, and when you open a photo the app measures the brightness of the background without the subject and picks the one that reads better.",
+    "Dashed, Double, Glow and any color beyond white and black are saved the way you set them with SnapLine Pro. Add line drops in a new line, alternating horizontal and vertical. Delete line removes the one you selected."
+   ]
+  },
+  {
+   "q": "Why dashed or glow lines save as solid",
+   "a": [
+    "The Dashed, Double and Glow styles belong to SnapLine Pro. Anyone can try them on the canvas while editing, and without Pro they are saved as solid lines. A color beyond white and black is saved as the nearer of the two. Tap Save with this line style on the export screen to see what Pro adds."
    ]
   },
   {
    "q": "Putting the grid back where it started",
    "a": [
-    "Tap Reset in Settings and the lines you moved and the bend points you added are gone, with the grid back at its starting position. Erased areas stay. Undo brings it all back."
+    "Tap Reset in Settings and the app asks which of two you mean. Grid only puts the lines back at their starting position and keeps the areas you erased. As when opened undoes everything since you opened the photo. Undo brings back either one."
    ]
   },
   {
-   "q": "Export quality",
+   "q": "Export quality and the mark",
    "a": [
     "Export composes your photo at its original resolution and saves it as a JPEG at quality 95. The export screen shows the pixel size and the quality of the result.",
-    "Save to Photos puts the file in your library, and Share sends it straight out."
+    "Saved photos carry a small SnapLine mark in the bottom-right corner, a short bent hairline next to the word. Its color is measured from the photo underneath. SnapLine Pro saves without the mark."
+   ]
+  },
+  {
+   "q": "Picking up where you left off",
+   "a": [
+    "When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold and choose Delete.",
+    "SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos. Older projects drop off as new ones are saved."
+   ]
+  },
+  {
+   "q": "Restoring a Pro purchase",
+   "a": [
+    "If you switched devices or reinstalled the app, tap Restore Purchase on the purchase screen. To get there, open a photo, expand Settings while in Lines and tap the Pro badge next to Style. With the same Apple Account you won't be charged again."
    ]
   },
   {
    "q": "Internet connection",
    "a": [
-    "Editing, Auto mask and saving all work offline. The app has no server to connect to."
+    "Editing, Auto mask and saving all work offline. Only buying and restoring Pro need a connection to the App Store."
    ]
   }
  ],
  "privacy": {
   "title": "SnapLine Privacy Policy",
-  "effectiveDate": "2026-09-18",
-  "summary": "SnapLine does not collect personal information. There is no sign-up, no login and no in-app purchases.",
+  "effectiveDate": "2026-09-19",
+  "summary": "SnapLine does not collect personal information. There is no sign-up or login, and Apple handles Pro payments.",
   "intro": [
    "kvndh (the developer) handles the personal information of people who use the SnapLine app (the app) in line with the Personal Information Protection Act of Korea, and describes its practices below."
   ],
@@ -211,15 +202,16 @@
      "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
     ],
     "bullets": [
-     "First launch time and app version: kept as an install record",
-     "Whether you have seen the first-run hint: used to show it only once",
+     "Recent projects (your edits, a copy of the original photo, a thumbnail): used to reopen your work",
+     "Settings and whether you own Pro: used to decide what the app shows and how it exports",
+     "First launch time, app version and number of saves: used to decide when to ask for a rating",
      "A temporary image for sharing: used when you share, deleted at the next export or app launch"
     ]
    },
    {
     "title": "Retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is removed when you delete the app. Photos you saved to the Photos app stay there until you delete them in Photos."
+     "The developer holds no personal information. Data in the app's storage is removed when you delete the app, and older recent projects are removed as new ones are saved. Photos you saved to the Photos app stay there until you delete them in Photos."
     ],
     "bullets": []
    },
@@ -233,14 +225,14 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing of personal information is outsourced."
+     "No processing of personal information is outsourced. Apple processes SnapLine Pro payments through the App Store, and payment information falls under Apple's privacy policy. The developer never receives your payment method or Apple Account details."
     ],
     "bullets": []
    },
    {
     "title": "Destruction of personal information",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to destroy. Deleting the app removes all of its data."
+     "The developer holds no personal information, so there is nothing to destroy. You can delete a recent project by pressing and holding its thumbnail on the home screen and choosing Delete, and deleting the app removes all of its data."
     ],
     "bullets": []
    },

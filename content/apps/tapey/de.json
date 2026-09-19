@@ -159,7 +159,7 @@
    "q": "Internetverbindung",
    "a": [
     "Anordnen, Verzieren und Sichern laufen offline. Werbung, der Kauf von Werbung entfernen und das Wiederherstellen brauchen eine Verbindung.",
-    "Von den Handschriften für Notizen wird nur die koreanische geladen, die übrigen stecken in der App. Ohne Verbindung erscheinen Notizen, die sie brauchen, in einer Standardschrift."
+    "Die Handschriften für Notizen werden mit der App installiert. Eine davon dient koreanischen Notizen, eine weitere Notizen in anderen Sprachen."
    ]
   },
   {
@@ -171,7 +171,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Tapey",
-  "effectiveDate": "2026-09-18",
+  "effectiveDate": "2026-09-19",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Die Werbung beim Sichern kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Tapey (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -189,7 +189,6 @@
     "title": "Verarbeitete Daten",
     "paragraphs": [
      "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät, und der Entwickler erhält sie nicht.",
-     "Braucht eine Fotonotiz die koreanische Handschrift, lädt die App sie vom Content-Delivery-Netzwerk jsDelivr. Wie bei jeder Anfrage im Internet erreicht dabei die IP-Adresse Ihres Geräts jsDelivr. Der Entwickler erhält sie nicht.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [

@@ -159,7 +159,7 @@
    "q": "Conexão com a internet",
    "a": [
     "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra de Remover anúncios e a restauração precisam de conexão.",
-    "Entre as letras à mão das notas, só a coreana é baixada; as outras já vêm no app. Sem conexão, as notas que precisam dela aparecem em uma fonte comum."
+    "As letras à mão das notas são instaladas junto com o app. Uma é usada nas notas em coreano e outra nas notas nos demais idiomas."
    ]
   },
   {
@@ -171,7 +171,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-09-18",
+  "effectiveDate": "2026-09-19",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remover anúncios é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -189,7 +189,6 @@
     "title": "Informações tratadas",
     "paragraphs": [
      "O desenvolvedor não coleta informações pessoais. Os dados que o app usa são os de baixo. Todos ficam no armazenamento do app no seu aparelho, e o desenvolvedor não os recebe.",
-     "Quando uma nota precisa da letra à mão coreana, o app a baixa da rede de distribuição de conteúdo jsDelivr. Como em qualquer requisição pela internet, o endereço IP do seu aparelho chega ao jsDelivr. O desenvolvedor não o recebe.",
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
