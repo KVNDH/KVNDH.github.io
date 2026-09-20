@@ -110,6 +110,15 @@
    "glow": "rgba(230,57,70,.28)",
    "paperAccent": "#B02C37",
    "unreleased": true
+  },
+  {
+   "slug": "tailorcolor",
+   "appStoreId": "6814066446",
+   "accent": "#c29a3c",
+   "accentText": "#c29a3c",
+   "glow": "rgba(194,154,60,.28)",
+   "paperAccent": "#5f4331",
+   "unreleased": true
   }
  ]
 }

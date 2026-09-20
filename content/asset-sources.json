@@ -122,5 +122,16 @@
     "TimeScale/docs/store/screenshots/05-ring-twenties.png"
    ]
   }
+ },
+ "tailorcolor": {
+  "icon": "ColorFit/TailorColor/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
+  "shots": {
+   "en": [
+    "ColorFit/docs/store/screenshots/en/1-look.png"
+   ],
+   "ko": [
+    "ColorFit/docs/store/screenshots/ko/1-look.png"
+   ]
+  }
  }
 }
