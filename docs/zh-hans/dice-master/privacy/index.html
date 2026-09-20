@@ -322,7 +322,14 @@ to{opacity:1;transform:scale(1.04)}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .tile:hover,.btn:hover{transform:none}
-}</style>
+}
+/* 아직 나오지 않은 앱: 아이콘만 조용히 둔다 */
+.quiet{display:flex;justify-content:center;gap:18px;padding:0 56px 72px;margin-top:-56px}
+.quiet img{width:44px;height:44px;border-radius:10px;opacity:.16;filter:grayscale(1);transition:opacity .5s ease,filter .5s ease}
+.quiet:hover img{opacity:.5;filter:grayscale(.3)}
+@media(max-width:760px){.quiet{padding:0 20px 40px;margin-top:-28px;gap:14px}.quiet img{width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.quiet img{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>

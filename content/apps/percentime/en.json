@@ -1,0 +1,303 @@
+{
+ "name": "Percentime",
+ "subtitle": "Spans filling as they pass",
+ "summary": "From today to the 2020s, a scale that fills as far as time has gone",
+ "hero": {
+  "hook": "From today to the 2020s, a scale that fills as far as time has gone",
+  "shotAlt": "The Percentime home screen. A card at the top stacks today, this month, this year and the 2020s with their percentages and cells, and cards for your own timers follow below."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "The calendar stands six spans for you",
+   "body": [
+    "Open the app and today, this week, this month, this quarter and this year are already standing. You enter no start and no goal. When a span ends it does not drop to zero: the next one opens right after it. For fifteen minutes past midnight the span you just filled stays on screen."
+   ],
+   "bullets": [
+    "Six spans with nothing to enter",
+    "The next span opening after midnight",
+    "Fifteen minutes holding a filled span"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "A close view of the top card on the home screen. Today, this month, this year and the 2020s each sit on a row with a percentage and a bar of cells.",
+    "caption": "Close view of the app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "The span is cut into cells",
+   "body": [
+    "A percentage alone is hard to place. So the span is cut to the unit one step down. A day is 24 hours, this week is 7 days, this quarter is 14 weeks, this year is 12 months. Spans that do not land on calendar units get their units grouped instead."
+   ],
+   "bullets": [
+    "Cells cut to the unit one step down",
+    "Decimal places matched to the span",
+    "Two shapes on the full screen, tap to switch"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "The two shapes on the full screen and the cell count of each span",
+    "items": [
+     {
+      "name": "Filling column",
+      "desc": "Stacking from the bottom up",
+      "on": true
+     },
+     {
+      "name": "Round dial",
+      "desc": "The shape of the app icon"
+     }
+    ],
+    "rows": [
+     {
+      "label": "A day",
+      "value": "24 hours",
+      "meter": "ticks",
+      "count": 24,
+      "on": 10
+     },
+     {
+      "label": "This year",
+      "value": "12 months",
+      "meter": "ticks",
+      "count": 12,
+      "on": 7
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Read it from the Lock Screen",
+   "body": [
+    "Three widgets sit on the Lock Screen and three on the Home Screen. Every size carries the timer name, so you can tell what the percentage belongs to. The reading is redrawn the moment the number changes, so at noon a day reads exactly 50 percent."
+   ],
+   "bullets": [
+    "Lock Screen circular, rectangular and inline",
+    "Home Screen small, medium and large",
+    "Redrawn as the percentage changes"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Pick how you read it",
+   "body": [
+    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading yourself."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Years, months, days and a clock",
+     "One unit as a decimal",
+     "Progress in percent",
+     "Full moons, weekends, springs, birthdays"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Percentime Pro",
+  "title": "Stand several spans in one widget\nand hear from the app at the point you choose",
+  "items": [
+   "A stack widget with several spans at once",
+   "Span alerts at 25, 50, 75 and 100 percent",
+   "Repeating spans for every day, week, month or year",
+   "Spans without a count limit"
+  ]
+ },
+ "faq": [
+  {
+   "q": "What do I see when I first open it",
+   "a": [
+    "Today, this week, this month, this quarter and this year are already standing. Nothing to enter. The 2020s are left off the first screen; pick them in the stack rows or in a widget and they stand too.",
+    "The card at the top is the stack. Short spans sit above, long ones below. Choose rows sets what stands there."
+   ]
+  },
+  {
+   "q": "What happens when a span ends",
+   "a": [
+    "It does not drop to zero. The filled span is held for fifteen minutes and marked Filled, then the next span opens right after it. This keeps 100 percent from falling to 0 percent at midnight.",
+    "A timer of your own that passes its goal does not stop there: the time past the goal stacks up in the accent color."
+   ]
+  },
+  {
+   "q": "How are the cells decided",
+   "a": [
+    "The span is cut to the unit one step down. A day is 24 hours, this week is 7 days, this month is about 30 days, this quarter is 14 weeks, this year is 12 months, the 2020s are 10 years. Spans that do not land on calendar units get their units grouped: 35 days become 5 weeks, 90 minutes become 30 cells of 3 minutes."
+   ]
+  },
+  {
+   "q": "How are the decimal places chosen",
+   "a": [
+    "The span decides. A day is whole numbers, a week one place, a month and a quarter two, a year three, several years four. They are picked so the last digit moves about every ten or twenty minutes.",
+    "Pick the progress reading and set the places yourself and that value is used. More places also means a finer redraw: six places redraw up to thirty times a second."
+   ]
+  },
+  {
+   "q": "The two shapes on the full screen",
+   "a": [
+    "Tap the shape in the middle and it switches. The filling column stacks cells from the bottom up with the percentage at the waterline. Older cells sink, so the layers show.",
+    "The round dial is the shape of the app icon and the circular Lock Screen widget. The shape you pick is kept and used for every timer."
+   ]
+  },
+  {
+   "q": "How often do the widgets change",
+   "a": [
+    "They are redrawn the moment the percentage changes. A day widget gains one percent every 14 minutes 24 seconds and reads exactly 50 percent at noon. A span of 30 days is redrawn every 4 minutes 19 seconds."
+   ]
+  },
+  {
+   "q": "Making your own timer",
+   "a": [
+    "Tap the plus button and pick a length first. A day, a week, 30 days, 100 days, a year, or Custom. The goal moves that far ahead. Pick Custom to set a start in the past or to set the time of day."
+   ]
+  },
+  {
+   "q": "What readings are there",
+   "a": [
+    "Four. A combination of units such as years, months, days and a clock; one unit as a decimal; progress in percent; and life units. Life units count full moons, weekends, springs and birthdays.",
+    "Tap the number on the full screen and the readings come round in turn. Progress is left out of that turn because the big number already shows it."
+   ]
+  },
+  {
+   "q": "When do notifications arrive",
+   "a": [
+    "A timer with Notify me when the goal arrives turned on sends one notification at the goal. The calendar spans do not use it, so nothing arrives every night.",
+    "Span alerts are part of Pro. They arrive when the span reaches 25, 50, 75 or 100 percent, whichever you picked. Points still ahead in this turn are scheduled, and opening the app sets up the next turn."
+   ]
+  },
+  {
+   "q": "What is free",
+   "a": [
+    "The six calendar spans, all six timer widget sizes and every reading work without Pro. You keep three timers of your own, and the calendar spans never count toward that."
+   ]
+  },
+  {
+   "q": "Device and internet",
+   "a": [
+    "Runs on iPhone with iOS 18 or later. The screen is locked to portrait and stays dark, so the numbers are read against one background."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Percentime Privacy Policy",
+  "effectiveDate": "2026-09-20",
+  "summary": "Percentime collects no personal data. There is no account and no sign-in, and Apple handles the Pro purchase.",
+  "intro": [
+   "kvndh (the developer) handles the personal data of users of the Percentime app (the app) as described below."
+  ],
+  "sections": [
+   {
+    "title": "Purposes of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not process personal information about its users, so there is no purpose to state."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Personal information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+    ],
+    "bullets": [
+     "Your timers (name, start and goal, repeat rule, alert points, reading settings): used to draw the values on screen and in widgets",
+     "Settings (which rows stand in the stack, the shape on the full screen): used to lay out the app",
+     "The month and day of your birthday: used only to count birthdays ahead when you pick that life unit",
+     "Whether Pro was bought: used to decide which features open in the app and widgets"
+    ]
+   },
+   {
+    "title": "Retention period",
+    "paragraphs": [
+     "The developer holds no personal data. Everything in the app's storage is removed when the app is deleted. Timers stay until you delete them, and the calendar spans roll into the next span rather than piling up."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Provision to third parties",
+    "paragraphs": [
+     "Personal information is not provided to third parties."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "No processing is outsourced. The Percentime Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of personal information",
+    "paragraphs": [
+     "The developer holds no personal data, so there is nothing to destroy. Delete a timer by swiping it in the list or from the More menu on its full screen, and delete everything in the app by deleting the app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal representatives",
+    "paragraphs": [
+     "Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, email us at the address below."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "What the app uses sits in the app's storage and in its App Group container. Nothing travels beyond that except the widgets reading the same file. Notifications are local: made on the device and delivered on the device."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies and other automatic collection",
+    "paragraphs": [
+     "The app uses no cookies, no advertising identifier and no analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show the new text and its new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

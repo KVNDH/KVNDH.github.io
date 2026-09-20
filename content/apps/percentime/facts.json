@@ -1,0 +1,168 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "one-time",
+ "ads": false,
+ "account": false,
+ "products": [
+  "Percentime Pro: 비소모성 1개 (com.kimdh.Percentime.pro.lifetime). 구독 그룹 없음, 무료 체험 없음. 한국 ₩3,300 (가격은 마케팅 문구에 쓰지 않는다, asc-upload 4-1)"
+ ],
+ "network": [
+  "App Store 결제와 구매 복원, 상품 불러오기 (StoreKit 2, App/Pro/ProStore.swift). 그 밖의 네트워크 코드 없음. 서드파티 SDK 없음 (Packages/TimeCore 외부 의존성 없음, Podfile 과 package.json 없음)",
+  "앱을 켤 때는 StoreKit 을 건드리지 않는다. 결제 화면과 설정 화면에 들어갈 때만 상품을 불러온다 (2026-09-18, 켜자마자 Apple 계정 로그인 창이 뜨던 것을 고침)"
+ ],
+ "permissions": [
+  "알림: 목표에 닿는 순간과 구간 알림에 로컬 알림을 쓴다 (UNUserNotificationCenter). 알림을 켠 타이머를 처음 저장할 때 한 번 묻는다. 앱을 켤 때는 묻지 않는다 (App/Notifications/GoalNotifier.swift)",
+  "그 밖의 권한 요청 없음. 사진, 카메라, 위치, 연락처, 마이크 어느 것도 쓰지 않는다"
+ ],
+ "storage": [
+  "타이머 문서: 앱 그룹 컨테이너(group.com.kimdh.Percentime)의 JSON 파일 하나. 위젯이 같은 파일을 읽는다 (Shared/AppGroup.swift, Packages/TimeCore/Sources/TimeCore/TimerStore.swift). 저장이 깨지면 .bak 사본으로 되돌린다",
+  "문서에 담기는 것: 타이머마다 이름, 종류(목표까지 또는 카운트업), 시작과 목표 시각, 자동 구간 종류, 반복 규칙, 구간 알림 지점, 표현 설정, 만든 시각",
+  "설정에 담기는 것: 생일의 월과 일(삶의 단위 생일을 쓸 때만), 쌓임에 세울 줄 구성, 전체 화면 그림 모양(기둥 또는 원형), Pro 자격 여부",
+  "UserDefaults 두 키: didSeedCalendarSpans (첫 실행에 달력 구간을 세웠는지), didSeeWelcome (첫 화면 안내를 봤는지)",
+  "Pro 자격은 앱이 StoreKit 판정을 문서에 적어 두고 위젯이 그 값을 읽는다. 위젯에서는 StoreKit 을 부르지 않는다"
+ ],
+ "pro": {
+  "productID": "com.kimdh.Percentime.pro.lifetime",
+  "type": "NonConsumable (StoreKit/Percentime.storekit)",
+  "features": [
+   "직접 만드는 타이머 4개째부터 (무료는 3개, 달력이 세우는 자동 구간은 개수에 세지 않는다. Shared/Percent/TimerLimit.swift free = 3)",
+   "여러 구간을 한 위젯에 세우는 쌓임 위젯 (Stack, systemMedium. Widgets/LadderWidget.swift)",
+   "정해 둔 지점에 닿으면 오는 구간 알림 (25, 50, 75, 100 퍼센트 가운데 고른다. App/Editor/TimerEditor.swift alertPoints)",
+   "매일과 매주, 매달, 매년 다시 서는 반복 타이머 (Packages/TimeCore/Sources/TimeCore/RepeatRule.swift)"
+  ],
+  "paywallList": "결제 화면 목록(App/Pro/PaywallView.swift)은 위 넷이 전부다. 순서는 쌓임 위젯, 구간 알림, 반복 타이머, 개수 제한 없음",
+  "restore": "결제 화면과 설정 화면의 구매내역 복원. 결제 화면으로 가는 문 셋: 대시보드에서 네 번째 타이머를 만들 때, 편집 화면의 반복과 구간 알림 머리글의 Pro 표시, 설정 화면의 Percentime Pro 줄",
+  "freeForever": "달력이 세우는 여섯 구간과 타이머 위젯 여섯 크기, 모든 표현은 Pro 없이 쓴다"
+ },
+ "spans": [
+  "달력이 세우는 구간 여섯: 오늘, 이번 주, 이번 달, 이번 분기, 올해, 2020년대 (TimerPeriod). 처음 설치하면 2020년대를 뺀 다섯이 저절로 선다",
+  "저장된 시작과 목표는 만든 날의 구간이고, 볼 때마다 TimerItem.resolved(at:) 가 지금 구간으로 다시 잡는다",
+  "구간이 끝나면 15분 동안 방금 채운 구간을 그대로 보여 준다(TimerPeriod.hold). 자정에 100%가 0%로 떨어지는 모습을 막는다",
+  "직접 만드는 구간은 길이를 먼저 고른다: 하루, 1주, 30일, 100일, 1년, 직접 (App/Editor/SpanPreset.swift). 기본은 1주이고 시작은 오늘 0시다"
+ ],
+ "cells": [
+  "구간을 칸으로 끊는다. 달력 단위로 4~31칸이 되는 첫 단위를 쓴다 (PercentCells.layout)",
+  "하루는 시간 24칸, 이번 주는 날 7칸, 이번 달은 날 30~31칸, 이번 분기는 주 14칸, 올해는 달 12칸, 2020년대는 해 10칸",
+  "달력 단위로 떨어지지 않는 구간은 단위를 묶는다. 35일은 주 5칸, 90분은 3분씩 30칸, 100년은 4년씩 25칸",
+  "퍼센트 소수 자릿수는 기간이 정한다: 하루 0, 주 1, 달과 분기 2, 해 3, 여러 해 4 (PercentCells.digits). 표현에서 직접 고르면 그 자릿수를 쓴다"
+ ],
+ "widgets": [
+  "잠금 화면 셋: 원형(칸 링과 이름, 정수 퍼센트), 직사각형(이름과 큰 퍼센트, 칸), 한 줄(이름과 퍼센트, 채운 칸 수)",
+  "홈 화면 셋: 소형, 중형, 대형. 모두 퍼센트가 주인공이다",
+  "쌓임 위젯(중형)은 Pro. 여러 구간을 한 위젯에 층층이 세운다",
+  "퍼센트 숫자가 바뀌는 바로 그 순간에 다시 그린다 (Shared/Widget/WidgetTimeline.swift). 어림잡아 15분마다 그리면 정오에 하루 위젯이 49%로 보인다(2026-09-19 고침)",
+  "위젯을 누르면 그 타이머의 전체 화면이 열린다 (timescale://timer/<id>)"
+ ],
+ "readouts": [
+  "표현 넷: 단위 조합(년 개월 일 시:분:초), 소수 하나(7.004128년), 진행률 퍼센트, 삶의 단위",
+  "삶의 단위 넷: 보름달, 주말, 봄, 생일. 생일은 설정에서 월과 일을 넣어야 쓴다",
+  "전체 화면에서 아래 숫자를 누르면 표현이 차례로 돈다. 진행률은 큰 숫자 하나로만 보여 주므로 도는 목록에서 빠진다",
+  "화면은 보고 있는 표현의 자릿수에 맞춰 다시 그린다 (Representation.refreshInterval). 진행률 여섯 자리는 1초에 서른 번, 1초보다 느려지지는 않는다"
+ ],
+ "detail": [
+  "전체 화면 가운데의 그림은 두 가지다. 그림을 누르면 바뀌고 고른 모양은 설정에 남는다 (AppSettings.detailShape)",
+  "쌓이는 기둥: 칸이 아래에서 위로 쌓이고 수면 자리에 퍼센트가 걸린다. 오래된 칸일수록 가라앉는다",
+  "원형 눈금: 앱 아이콘, 잠금 화면 원형 위젯과 같은 모양이다",
+  "아래에 고른 표현과 그 반대쪽 시간(지난 시간 또는 남은 시간)을 나란히 둔다"
+ ],
+ "icon": "칸으로 끊은 고리 24칸 가운데 16칸이 찬 모습. 24칸은 하루의 시간 칸과 같은 수다. 고정이며 진행률을 따라 바뀌지 않는다(2026-09-20 결정, scripts/progress_icons.py)",
+ "uiNames": {
+  "Timers": "타이머",
+  "Where we are now": "지금 어디까지",
+  "Choose rows": "줄 고르기",
+  "Stack": "쌓임",
+  "New timer": "새 타이머",
+  "Edit Timer": "타이머 고치기",
+  "How long": "얼마나",
+  "A day": "하루",
+  "A week": "1주",
+  "30 days": "30일",
+  "100 days": "100일",
+  "A year": "1년",
+  "Custom": "직접",
+  "Title": "이름",
+  "Kind": "종류",
+  "Until a goal": "목표까지",
+  "Count up": "카운트업",
+  "Start": "시작",
+  "Goal": "목표",
+  "Before the goal, show": "목표 전에 보여 줄 것",
+  "Time remaining": "남은 시간",
+  "Time elapsed": "지난 시간",
+  "Preview": "미리보기",
+  "Display": "표시",
+  "Main": "주 표현",
+  "Units": "단위",
+  "Decimal": "소수점",
+  "Progress": "진행률",
+  "Life": "삶의 단위",
+  "Decimals": "소수점 자릿수",
+  "Repeat": "반복",
+  "Span alerts": "구간 알림",
+  "Notify me when the goal arrives": "목표에 닿으면 알리기",
+  "Filled": "다 채움",
+  "Today": "오늘",
+  "This week": "이번 주",
+  "This month": "이번 달",
+  "This quarter": "이번 분기",
+  "This year": "올해",
+  "Settings": "설정",
+  "Birthday": "생일",
+  "Percentime Pro": "Percentime Pro",
+  "Get Pro": "Pro 사기",
+  "Restore a purchase": "구매내역 복원",
+  "Full moons": "보름달",
+  "Weekends": "주말",
+  "Springs": "봄",
+  "Birthdays": "생일"
+ },
+ "numbers": [
+  "0",
+  "3",
+  "4",
+  "6",
+  "7",
+  "10",
+  "12",
+  "14",
+  "15",
+  "24",
+  "25",
+  "30",
+  "50",
+  "75",
+  "100",
+  "2020"
+ ],
+ "versionNote": "Percentime 1.0.0, 빌드 1. 아직 App Store 에 올리지 않았다. 레코드를 만들고 첫 심사를 받는 중이다",
+ "sources": [
+  "Percentime 1.0.0 기준. 아래 경로는 모두 ~/Desktop/CODING/Percentime 의 현재 작업 트리다",
+  "project.yml (최소 iOS 18.0, 번들 com.kimdh.Percentime, 앱 그룹 group.com.kimdh.Percentime, 세로 고정, 다크 모드 고정)",
+  "App/PrivacyInfo.xcprivacy",
+  "StoreKit/Percentime.storekit (NonConsumable com.kimdh.Percentime.pro.lifetime)",
+  "App/Pro/PaywallView.swift, App/Pro/ProStore.swift",
+  "App/Dashboard/DashboardView.swift, App/Dashboard/TimerCard.swift, App/Dashboard/LadderEditor.swift",
+  "App/Detail/TimerDetailView.swift, App/Detail/TimerPager.swift, App/Detail/ArrivalBloom.swift",
+  "App/Editor/TimerEditor.swift, App/Editor/SpanPreset.swift, App/Editor/RepresentationEditor.swift",
+  "App/Notifications/GoalNotifier.swift",
+  "App/Onboarding/WelcomeView.swift",
+  "App/Settings/SettingsView.swift",
+  "App/PercentimeApp.swift, App/AppModel.swift",
+  "Shared/AutomaticPeriods.swift, Shared/AppGroup.swift, Shared/Palette.swift",
+  "Shared/Percent/CellViews.swift, Shared/Percent/DetailShapes.swift, Shared/Percent/LadderView.swift, Shared/Percent/TimerLimit.swift",
+  "Shared/Widget/WidgetContent.swift, Shared/Widget/WidgetTimeline.swift",
+  "Widgets/TimerWidget.swift, Widgets/LadderWidget.swift",
+  "Packages/TimeCore/Sources/TimeCore/Model.swift, TimerPeriod.swift, PercentCells.swift, Representation.swift, RepeatRule.swift, TimerStore.swift",
+  "Shared/Resources/Localizable.xcstrings (화면 글자 187개, 영어와 한국어)",
+  "scripts/progress_icons.py (앱 아이콘)",
+  "docs/store/metadata.json (1.0.0 스토어 문안 50개 로케일)"
+ ],
+ "numberNotes": [
+  "0: 구간이 끝나도 0퍼센트로 떨어지지 않는다는 뜻으로 쓴다. TimerPeriod.hold 가 15분 동안 방금 채운 구간을 붙들기 때문이다",
+  "25, 50, 75, 100: 구간 알림을 걸 수 있는 지점. App/Editor/TimerEditor.swift 의 alertPoints = [0.25, 0.5, 0.75, 1]",
+  "2020: 달력 구간 가운데 하나인 2020년대. Shared/AutomaticPeriods.swift 가 `year - year % 10` 으로 만든다",
+  "15: 구간이 끝난 뒤 붙들어 두는 시간(분). TimerPeriod.hold = 15 * 60",
+  "24, 7, 30, 14, 12, 10: 하루·주·달·분기·해·2020년대를 나눈 칸 수",
+  "3: 무료로 두는 내 타이머 수(TimerLimit.free). 4: 그다음부터 Pro. 6: 달력 구간 수"
+ ]
+}

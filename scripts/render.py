@@ -104,7 +104,7 @@ def hub_footer(site: Site, lang: str) -> str:
     email = site.config["contact"]
     privacy = "".join(
         f'<li><a href="{page_path(lang, app["slug"], "privacy")}">{esc(site.app_copy(app["slug"], lang)["name"])}</a></li>'
-        for app in site.apps if site.has_pages(app["slug"], lang)
+        for app in site.apps if released(app) and site.has_pages(app["slug"], lang)
     )
     privacy_block = f'<div><h2>{esc(ui["navPrivacy"])}</h2><ul>{privacy}</ul></div>' if privacy else "<div></div>"
     return (
@@ -132,6 +132,28 @@ def app_footer(site: Site, lang: str, slug: str) -> str:
     )
 
 
+def released(app: dict) -> bool:
+    """출시된 앱인가. 아직 나오지 않은 앱은 App Store 링크를 걸지 않는다."""
+    return not app.get("unreleased")
+
+
+def store_button(site: Site, lang: str, app: dict, small: bool = False) -> str:
+    if not released(app):
+        return ""
+    cls = "btn btn-s" if small else "btn"
+    return f'<a class="{cls}" href="{app_store_url(app["appStoreId"])}">{esc(site.ui[lang]["getOnAppStore"])}</a>'
+
+
+def quiet_row(site: Site, lang: str) -> str:
+    """아직 나오지 않은 앱은 아이콘만 조용히 둔다. 이름도 링크도 설명도 붙이지 않는다."""
+    icons = "".join(
+        f'<img src="{asset(app["slug"], "icon-180.webp")}" alt="" width="44" height="44" loading="lazy">'
+        for app in site.apps
+        if not released(app) and (site.root / "assets" / app["slug"] / "icon-180.webp").exists()
+    )
+    return f'<div class="quiet" aria-hidden="true">{icons}</div>' if icons else ""
+
+
 def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
     ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
     tabs = []
@@ -143,8 +165,7 @@ def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
         about=page_path(lang, slug),
         icon=asset(slug, "icon-180.webp"),
         tabs="".join(tabs),
-        store=app_store_url(app["appStoreId"]),
-        get=esc(ui["getOnAppStore"]),
+        store_btn=store_button(site, lang, app, small=True),
     )
 
 
@@ -175,7 +196,8 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
 def render_hub(site: Site, lang: str) -> str:
     ui = site.ui[lang]
     tiles = []
-    for position, app in zip(TILE_POSITIONS, [a for a in site.apps if site.app_copy(a["slug"], lang)]):
+    listed = [a for a in site.apps if released(a) and site.app_copy(a["slug"], lang)]
+    for position, app in zip(TILE_POSITIONS, listed):
         slug = app["slug"]
         copy = site.app_copy(slug, lang)
         linked = site.has_pages(slug, lang)
@@ -197,8 +219,9 @@ def render_hub(site: Site, lang: str) -> str:
             shot=shot_path(site, slug, lang),
             shot_alt=esc(shot_alt(site, copy, lang)),
         ))
-    names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in site.apps if site.app_copy(a["slug"], lang))
-    content = tpl(site, "hub.html").substitute(title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles))
+    names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in listed)
+    content = tpl(site, "hub.html").substitute(
+        title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles), quiet=quiet_row(site, lang))
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
                 content=content, footer=hub_footer(site, lang))
 
@@ -318,8 +341,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
         name=esc(copy["name"]),
         subtitle=esc(copy["subtitle"]),
         hook=esc(copy["hero"]["hook"]),
-        store=app_store_url(app["appStoreId"]),
-        get=esc(ui["getOnAppStore"]),
+        store_btn=store_button(site, lang, app),
         meta=f'<span class="meta">{esc(copy["hero"]["meta"])}</span>' if copy["hero"].get("meta") else "",
         shot=shot_path(site, slug, lang),
         shot_alt=esc(shot_alt(site, copy, lang)),

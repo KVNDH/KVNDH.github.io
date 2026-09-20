@@ -1,0 +1,303 @@
+{
+ "name": "Percentime",
+ "subtitle": "Períodos que se enchem",
+ "summary": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
+ "hero": {
+  "hook": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
+  "shotAlt": "A tela inicial do Percentime. Um cartão no topo empilha hoje, este mês, este ano e os anos 2020 com suas porcentagens e células, e abaixo seguem os cartões dos períodos que você criou."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "O calendário põe seis períodos",
+   "body": [
+    "Ao abrir, hoje, esta semana, este mês, este trimestre e este ano já estão de pé. Não se digita início nem meta. Quando um período termina, ele não cai a zero: o seguinte abre logo depois. Por quinze minutos depois da meia-noite, o período recém-cheio continua na tela."
+   ],
+   "bullets": [
+    "Seis períodos sem nada para digitar",
+    "O período seguinte que abre depois da meia-noite",
+    "Quinze minutos segurando um período cheio"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Vista aproximada do cartão do topo da tela inicial. Hoje, este mês, este ano e os anos 2020 ocupam uma linha cada um, com porcentagem e uma barra de células.",
+    "caption": "Vista aproximada do app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "O período é cortado em células",
+   "body": [
+    "Só a porcentagem é difícil de situar. Por isso o período é cortado na unidade um passo abaixo. Um dia são 24 horas, esta semana 7 dias, este trimestre 14 semanas, este ano 12 meses. Períodos que não caem em unidades do calendário têm suas unidades agrupadas."
+   ],
+   "bullets": [
+    "Células cortadas na unidade um passo abaixo",
+    "Casas decimais ajustadas ao período",
+    "Duas formas na tela cheia, toque para trocar"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "As duas formas da tela cheia e as células de cada período",
+    "items": [
+     {
+      "name": "Coluna que sobe",
+      "desc": "Enche de baixo para cima",
+      "on": true
+     },
+     {
+      "name": "Mostrador redondo",
+      "desc": "A forma do ícone do app"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Um dia",
+      "value": "24 horas",
+      "meter": "ticks",
+      "count": 24,
+      "on": 10
+     },
+     {
+      "label": "Este ano",
+      "value": "12 meses",
+      "meter": "ticks",
+      "count": 12,
+      "on": 7
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Dá para ler na tela bloqueada",
+   "body": [
+    "São três widgets na tela bloqueada e três na tela de início. Todo tamanho traz o nome do período, então dá para saber a que a porcentagem pertence. A leitura é redesenhada no instante em que o número muda, então ao meio-dia um dia marca exatamente 50 por cento."
+   ],
+   "bullets": [
+    "Circular, retangular e em linha na tela bloqueada",
+    "Pequeno, médio e grande na tela de início",
+    "Redesenhado quando a porcentagem muda"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Você escolhe como ler",
+   "body": [
+    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Anos, meses, dias e um relógio",
+     "Uma unidade em decimal",
+     "Progresso em porcentagem",
+     "Luas cheias, fins de semana, primaveras, aniversários"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Percentime Pro",
+  "title": "Vários períodos em um só widget\ne avisos no ponto que você escolher",
+  "items": [
+   "Um widget com vários períodos de uma vez",
+   "Avisos em 25, 50, 75 e 100 por cento",
+   "Períodos que voltam todo dia, semana, mês ou ano",
+   "Períodos sem limite de quantidade"
+  ]
+ },
+ "faq": [
+  {
+   "q": "O que aparece na primeira vez",
+   "a": [
+    "Hoje, esta semana, este mês, este trimestre e este ano já estão de pé. Não há nada para digitar. Os anos 2020 ficam fora da primeira tela; escolha-os nas linhas da pilha ou em um widget e eles também ficam de pé.",
+    "O cartão do topo é a pilha. Períodos curtos em cima, longos embaixo. Em escolher linhas você define o que fica ali."
+   ]
+  },
+  {
+   "q": "O que acontece quando um período termina",
+   "a": [
+    "Ele não cai a zero. O período cheio fica segurado por quinze minutos, marcado como cheio, e depois o seguinte abre. Assim 100 por cento não despenca para 0 por cento à meia-noite.",
+    "Um período seu que passa da meta não para ali: o tempo além da meta se empilha na cor de destaque."
+   ]
+  },
+  {
+   "q": "Como as células são divididas",
+   "a": [
+    "O período é cortado na unidade um passo abaixo. Um dia são 24 horas, esta semana 7 dias, este mês cerca de 30 dias, este trimestre 14 semanas, este ano 12 meses, os anos 2020 são 10 anos. O que não fecha é agrupado: 35 dias viram 5 semanas e 90 minutos viram 30 células de 3 minutos."
+   ]
+  },
+  {
+   "q": "Como as casas decimais são escolhidas",
+   "a": [
+    "Quem decide é o período. Um dia em números inteiros, uma semana uma casa, um mês e um trimestre duas, um ano três, vários anos quatro. São escolhidas para o último dígito se mexer a cada dez ou vinte minutos.",
+    "Se você escolher a leitura de progresso e definir as casas, vale o seu valor. Mais casas também quer dizer redesenho mais fino: com seis chega a trinta vezes por segundo."
+   ]
+  },
+  {
+   "q": "As duas formas da tela cheia",
+   "a": [
+    "Toque na forma do meio e ela troca. A coluna que sobe empilha células de baixo para cima com a porcentagem na linha d'água. As células mais antigas afundam, então as camadas aparecem.",
+    "O mostrador redondo tem a forma do ícone do app e do widget circular da tela bloqueada. A forma escolhida fica guardada e vale para todos os períodos."
+   ]
+  },
+  {
+   "q": "De quanto em quanto tempo os widgets mudam",
+   "a": [
+    "São redesenhados no instante em que a porcentagem muda. Um widget de um dia sobe um ponto a cada 14 minutos e 24 segundos e ao meio-dia marca exatamente 50 por cento. Um período de 30 dias é redesenhado a cada 4 minutos e 19 segundos."
+   ]
+  },
+  {
+   "q": "Criar um período seu",
+   "a": [
+    "Toque no botão de mais e escolha primeiro uma duração. Um dia, uma semana, 30 dias, 100 dias, um ano ou Personalizado. A meta se coloca a essa distância. Para pôr o início no passado ou marcar a hora, escolha Personalizado."
+   ]
+  },
+  {
+   "q": "Quais leituras existem",
+   "a": [
+    "Quatro. Uma combinação de unidades como anos, meses, dias e um relógio; uma unidade em decimal; o progresso em porcentagem; e as unidades de vida. As unidades de vida contam luas cheias, fins de semana, primaveras e aniversários.",
+    "Toque no número na tela cheia e as leituras passam uma a uma. O progresso fica fora dessa roda porque o número grande já mostra."
+   ]
+  },
+  {
+   "q": "Quando chegam os avisos",
+   "a": [
+    "Um período com Avisar quando chegar à meta manda um aviso na hora da meta. Os períodos do calendário não usam isso, então nada chega toda noite.",
+    "Os avisos dentro do período fazem parte do Pro. Chegam em 25, 50, 75 ou 100 por cento, conforme a escolha. Só são agendados os pontos que ainda faltam nesta rodada, e abrir o app prepara a rodada seguinte."
+   ]
+  },
+  {
+   "q": "O que dá para usar sem o Pro",
+   "a": [
+    "Os seis períodos do calendário, os seis tamanhos de widget e todas as leituras funcionam sem o Pro. Ficam três períodos seus, e os períodos do calendário não contam nesse número."
+   ]
+  },
+  {
+   "q": "Aparelho e internet",
+   "a": [
+    "Funciona no iPhone com iOS 18 ou mais recente. A tela fica na vertical e em tons escuros, para os números serem lidos sempre no mesmo fundo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do Percentime",
+  "effectiveDate": "2026-09-20",
+  "summary": "O Percentime não coleta dados pessoais. Não há conta nem login, e a compra do Pro é feita pela Apple.",
+  "intro": [
+   "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app Percentime (o app) conforme descrito a seguir."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não trata informações pessoais de quem o usa, de modo que não há finalidade a declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
+    ],
+    "bullets": [
+     "Seus períodos (nome, início e meta, regra de repetição, pontos de aviso, ajustes de leitura): usados para desenhar os valores na tela e nos widgets",
+     "Ajustes (quais linhas ficam na pilha, a forma da tela cheia): usados para montar o app",
+     "O mês e o dia do seu aniversário: só para contar os aniversários que faltam quando você escolhe essa unidade de vida",
+     "Se o Pro foi comprado: para definir quais recursos ficam abertos no app e nos widgets"
+    ]
+   },
+   {
+    "title": "Período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais. Tudo que está no armazenamento do app some junto com o app. Os períodos ficam até você apagar, e os do calendário passam para o seguinte em vez de se acumular."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Fornecimento a terceiros",
+    "paragraphs": [
+     "Informações pessoais não são fornecidas a terceiros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "Nenhum tratamento é terceirizado. A compra do Percentime Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe meio de pagamento nem dados da conta Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Um período se apaga deslizando na lista ou pelo Mais na tela cheia dele, e tudo do app se apaga ao apagar o app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de representantes legais",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais suas, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "O que o app usa fica no armazenamento dele e no contêiner de App Group. Nada sai nem entra além disso, fora os widgets lendo o mesmo arquivo. Os avisos são locais: criados no aparelho e entregues no aparelho."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies e outra coleta automática",
+    "paragraphs": [
+     "O app não usa cookies, identificador de publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

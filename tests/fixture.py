@@ -57,7 +57,7 @@ def app_copy(lang: str) -> dict:
     }
 
 
-def make_site(langs=("ko", "en"), with_pages: bool = True) -> Path:
+def make_site(langs=("ko", "en"), with_pages: bool = True, unreleased: bool = False) -> Path:
     root = Path(tempfile.mkdtemp(prefix="kvndh-site-"))
     shutil.copytree(REPO / "templates", root / "templates")
     content = root / "content"
@@ -71,13 +71,25 @@ def make_site(langs=("ko", "en"), with_pages: bool = True) -> Path:
         ],
         "apps": [{"slug": "demo", "appStoreId": "123", "accent": "#A05B42", "accentText": "#E39C80",
                   "glow": "rgba(160,91,66,.5)", "paperAccent": "#8A4A34", "button": "#A05B42",
-                  "buttonText": "#FFFFFF", "shotCrop": "--sw:196px"}],
+                  "buttonText": "#FFFFFF", "shotCrop": "--sw:196px"}]
+                 + ([{"slug": "soon", "appStoreId": "456", "accent": "#FFB347", "accentText": "#FFB347",
+                      "glow": "rgba(255,179,71,.28)", "paperAccent": "#8A5A14", "unreleased": True}]
+                    if unreleased else []),
     })
     for lang in langs:
         write(content / "i18n" / f"{lang}.json", ui(lang))
         copy = app_copy(lang) if with_pages else {"name": "Demo", "subtitle": "sub", "summary": "summary"}
         write(content / "apps" / "demo" / f"{lang}.json", copy)
     write(content / "apps" / "demo" / "facts.json", {"describesVersion": "1.0.0", "numbers": [], "ads": False})
+    if unreleased:
+        for lang in langs:
+            write(content / "apps" / "soon" / f"{lang}.json", app_copy(lang) | {"name": "Soon"})
+        write(content / "apps" / "soon" / "facts.json", {"describesVersion": "1.0.0", "numbers": [], "ads": False})
+        for rel in ("assets/soon/icon-180.webp", "assets/soon/icon-360.webp", "assets/soon/og.jpg",
+                    "assets/soon/shots/en/01.webp"):
+            q = root / rel
+            q.parent.mkdir(parents=True, exist_ok=True)
+            q.write_bytes(b"x")
     for rel in ("assets/demo/icon-180.webp", "assets/demo/icon-360.webp", "assets/demo/og.jpg",
                 "assets/demo/shots/en/01.webp", "assets/og.jpg"):
         p = root / rel

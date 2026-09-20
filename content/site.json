@@ -101,6 +101,15 @@
    "accentText": "#EE9D1C",
    "glow": "rgba(238,157,28,.32)",
    "paperAccent": "#9A4F09"
+  },
+  {
+   "slug": "percentime",
+   "appStoreId": "6814066451",
+   "accent": "#FFB347",
+   "accentText": "#FFB347",
+   "glow": "rgba(255,179,71,.28)",
+   "paperAccent": "#8A5A14",
+   "unreleased": true
   }
  ]
 }

@@ -1,0 +1,294 @@
+{
+ "name": "TailorColor",
+ "subtitle": "A look built color by color",
+ "summary": "Dress the mannequin color by color and find a look that holds together.",
+ "hero": {
+  "hook": "Dress the mannequin color by color and find a look that holds together.",
+  "shotAlt": "The TailorColor home screen. The mannequin wears a navy long-sleeve tee, beige chinos and white sneakers, with slot chips in a row below."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Six slots, one color each",
+   "body": [
+    "Top, bottom, shoes, hat, outer and bag make six slots. Tap one and a sheet opens with garments above and colors below, and what you pick lands on the mannequin right away. Colors come from a set of 24. Neutrals, denim and earth tones carry the base, and accents sit on top of them."
+   ],
+   "bullets": [
+    "Six slots: top, bottom, shoes, hat, outer, bag",
+    "24 colors across neutrals, denim, earth and accents",
+    "Hat, outer and bag switch on and off"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "A close view of the mannequin's upper body. A camel coat hangs open over a navy long-sleeve tee.",
+    "caption": "Detail from the app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Flip through them in order",
+   "body": [
+    "Eleven rules score every combination, and the strongest twelve are laid out in advance. Each tap on Another combination moves one place down that list, and the end wraps around to the start. Only the best look for each pairing of bottom and shoes survives, so what comes up next reads as plainly different. A line above the mannequin says why this one works."
+   ],
+   "bullets": [
+    "Eleven rules weighing contrast and color count",
+    "Up to 12 looks, ranked",
+    "Lock holds one color while the rest change"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Another combination, Lock and Let TailorColor choose, with eleven rules and up to 12 looks",
+    "items": [
+     {
+      "name": "Another combination",
+      "desc": "Move down the ranked list"
+     },
+     {
+      "name": "Lock",
+      "desc": "Hold the color in that slot",
+      "on": true
+     },
+     {
+      "name": "Let TailorColor choose",
+      "desc": "Hand the slot back to the ranking"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Rules",
+      "value": "Eleven"
+     },
+     {
+      "label": "Looks prepared",
+      "value": "Up to 12",
+      "meter": "ticks",
+      "count": 12,
+      "on": 4
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Take a color from a photo",
+   "body": [
+    "Photograph a piece you already own, or anything whose color caught your eye, then tap the spot you want. The app reads the color there and swaps in the nearest of the 24. The photo sits on screen while you choose and is not kept in the app."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Choose from your photos",
+     "Take one on the spot"
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Keep the ones you like",
+   "body": [
+    "Save this look drops all six slots into Saved. When a single piece is the part worth keeping, put it in the Closet instead. Neither has a limit, so they pile up and stay there. Share this look renders the current outfit at 1080 x 1350 and hands it to the share sheet."
+   ],
+   "bullets": [
+    "Saved holds all six slots together",
+    "Closet holds one garment at a time",
+    "Shared as a 1080 x 1350 image"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "The six slots and switching them off",
+   "a": [
+    "Top, bottom and shoes are always on. Hat, outer and bag switch on and off from their slot chips. Switching one off takes it off the mannequin and out of the ranking.",
+    "Tapping a slot opens a sheet. Garments are at the top, colors below. What you pick lands on the mannequin as you tap it."
+   ]
+  },
+  {
+   "q": "The colors you can pick",
+   "a": [
+    "There are 24: six neutrals, three denims, five earth tones, navy and nine accents. They are the colors clothes actually come in, fixed in the app, so there is no way to mix your own or enter a hex value.",
+    "A color taken from a photo also resolves to the nearest of the 24."
+   ]
+  },
+  {
+   "q": "How Another combination picks the next one",
+   "a": [
+    "It is not random. Eleven rules score each combination, the strongest twelve are prepared in advance, and every tap moves one place down that list. The end wraps around to the start.",
+    "Only the best look for each pairing of bottom and shoes is kept, so you never get a run of outfits that differ by one color. Swiping the mannequin left or right walks the same list."
+   ]
+  },
+  {
+   "q": "What Lock holds",
+   "a": [
+    "Lock holds the color only. That slot keeps its color while the rest are chosen again around it. The garment itself is a separate choice and stays put either way.",
+    "Tap the same button to release it. Let TailorColor choose hands the slot back to the ranking."
+   ]
+  },
+  {
+   "q": "The line that explains a combination",
+   "a": [
+    "There are nine of them: dark top with a light bottom, tone on tone, one accent, bag matching the shoes, denim holding it together, and so on. Two or three show up per combination.",
+    "Combinations are named five ways. When there is an accent color the name borrows it, and otherwise the look is called earth tones, denim basics, monotone or basic."
+   ]
+  },
+  {
+   "q": "Taking a color from a photo",
+   "a": [
+    "Open the color sheet and choose Pick a color from a photo. Take a photo or choose one, tap the spot you want, and confirm with Use this color when the swatch below looks right.",
+    "Choosing a photo goes through the iOS photo picker, so the app asks for no photo library permission and receives only the one image you picked. Camera permission is asked only when you tap Take a photo."
+   ]
+  },
+  {
+   "q": "Saved and Closet",
+   "a": [
+    "The Saved screen has two tabs. Looks holds all six slots at once, and tapping one puts that outfit back on the mannequin exactly as it was.",
+    "Closet holds one garment at a time as a garment-and-color pair, which suits pieces you actually own and want to try other colors against. Neither tab has a limit."
+   ]
+  },
+  {
+   "q": "Sharing a look",
+   "a": [
+    "Share this look renders the current outfit at 1080 x 1350 and hands it to the iOS share sheet, where the destination is yours to pick. Saving it to Photos leaves a PNG."
+   ]
+  },
+  {
+   "q": "Which garments are available",
+   "a": [
+    "Nine at the moment: two tops, two bottoms, one outer layer, two pairs of shoes, one hat and one bag. Greyed-out entries in the sheet are garments still being prepared.",
+    "Saved looks and the closet stay as they are when new garments arrive."
+   ]
+  },
+  {
+   "q": "Device and display",
+   "a": [
+    "The app runs on iPhone with iOS 17 or later. iPad is not supported yet, and the screen stays in portrait.",
+    "The interface is always light. Since the whole point is judging color, it keeps one background rather than following the system dark mode."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Choosing colors, saving and sharing all work with no connection. The app makes no requests of its own. Safari opens only when you tap the support or privacy link on the About screen."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "TailorColor Privacy Policy",
+  "effectiveDate": "2026-09-20",
+  "summary": "TailorColor does not collect personal information. There is no sign-up or login, and the app carries no advertising or analytics.",
+  "intro": [
+   "kvndh (the developer) handles the personal information of people who use the TailorColor app (the app) in line with the Personal Information Protection Act of Korea, and describes its practices below."
+  ],
+  "sections": [
+   {
+    "title": "Purposes of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not process personal information about its users, so there is no purpose to state."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Personal information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+    ],
+    "bullets": [
+     "Saved looks (the garment and color in each slot, and when you saved it): used to bring a look back",
+     "Closet entries (slot, garment, color, and when you saved it): used to bring a garment back",
+     "Whether the intro has been seen: used to decide if this is a first launch"
+    ]
+   },
+   {
+    "title": "Retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is removed when you delete the app. An image you shared and saved to Photos is removed from Photos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Disclosure to third parties",
+    "paragraphs": [
+     "Personal information is not disclosed to third parties."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Outsourcing",
+    "paragraphs": [
+     "No processing of personal information is outsourced. The app has no in-app purchases, so it handles no payment information, and it carries no advertising or analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of personal information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. Saved looks and closet entries are removed one at a time from the Saved screen, and everything the app stores goes when you delete the app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Your rights and how to exercise them",
+    "paragraphs": [
+     "The developer holds no personal information about you, so there is nothing to request access to, correct or delete. If you have questions, email us at the address below."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "Photos reach the app one at a time through the iOS photo picker, and no photo library permission is requested. The camera asks for permission only when you tap Take a photo. A photo the app receives is used while you read a color from it and is not saved in the app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic collection devices",
+    "paragraphs": [
+     "The app uses no cookies, advertising identifiers or analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the supervisory authority where you live."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: your national data protection authority (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Elsewhere: your national privacy or consumer protection authority"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, the new text and its effective date are posted on this page."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,303 @@
+{
+ "name": "Percentime",
+ "subtitle": "Tramos que se llenan al pasar",
+ "summary": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
+ "hero": {
+  "hook": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
+  "shotAlt": "La pantalla principal de Percentime. Una tarjeta arriba apila hoy, este mes, este año y los años 2020 con sus porcentajes y casillas, y debajo siguen las tarjetas de los tramos propios."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "El calendario pone seis tramos",
+   "body": [
+    "Al abrir la app, hoy, esta semana, este mes, este trimestre y este año ya están puestos. No hay que escribir inicio ni meta. Cuando un tramo termina no cae a cero: el siguiente se abre justo después. Durante quince minutos pasada la medianoche sigue a la vista el tramo que acaba de llenarse."
+   ],
+   "bullets": [
+    "Seis tramos sin nada que escribir",
+    "El tramo siguiente que se abre pasada la medianoche",
+    "Quince minutos que sostienen un tramo lleno"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Vista cercana de la tarjeta superior de la pantalla principal. Hoy, este mes, este año y los años 2020 ocupan una fila cada uno con su porcentaje y una barra de casillas.",
+    "caption": "Vista cercana de la app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "El tramo se corta en casillas",
+   "body": [
+    "Un porcentaje solo cuesta situarlo. Por eso el tramo se corta a la unidad de un paso abajo. Un día son 24 horas, esta semana 7 días, este trimestre 14 semanas, este año 12 meses. Los tramos que no caen en unidades del calendario agrupan las suyas."
+   ],
+   "bullets": [
+    "Casillas cortadas a la unidad de un paso abajo",
+    "Decimales ajustados al tramo",
+    "Dos formas en la pantalla completa, toca para cambiar"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Las dos formas de la pantalla completa y las casillas de cada tramo",
+    "items": [
+     {
+      "name": "Columna que sube",
+      "desc": "Se llena de abajo arriba",
+      "on": true
+     },
+     {
+      "name": "Esfera redonda",
+      "desc": "La forma del icono de la app"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Un día",
+      "value": "24 horas",
+      "meter": "ticks",
+      "count": 24,
+      "on": 10
+     },
+     {
+      "label": "Este año",
+      "value": "12 meses",
+      "meter": "ticks",
+      "count": 12,
+      "on": 7
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Se lee desde la pantalla bloqueada",
+   "body": [
+    "Hay tres widgets en la pantalla bloqueada y tres en la de inicio. Todos los tamaños llevan el nombre del tramo, así se sabe a qué pertenece el porcentaje. La lectura se redibuja en el momento en que cambia el número, de modo que al mediodía un día marca exactamente el 50 por ciento."
+   ],
+   "bullets": [
+    "Circular, rectangular y en línea en la pantalla bloqueada",
+    "Pequeño, mediano y grande en la pantalla de inicio",
+    "Se redibuja cuando cambia el porcentaje"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Eliges cómo leerlo",
+   "body": [
+    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Años, meses, días y un reloj",
+     "Una unidad como decimal",
+     "Progreso en tanto por ciento",
+     "Lunas llenas, fines de semana, primaveras, cumpleaños"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Percentime Pro",
+  "title": "Varios tramos en un solo widget\ny avisos en el punto que elijas",
+  "items": [
+   "Un widget con varios tramos a la vez",
+   "Avisos al 25, 50, 75 y 100 por ciento",
+   "Tramos que vuelven cada día, semana, mes o año",
+   "Tramos sin límite de cantidad"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Qué veo al abrirla por primera vez",
+   "a": [
+    "Hoy, esta semana, este mes, este trimestre y este año ya están puestos. No hay nada que escribir. Los años 2020 quedan fuera de la primera pantalla; elígelos en las filas de la pila o en un widget y también se ponen.",
+    "La tarjeta de arriba es la pila. Los tramos cortos van encima y los largos debajo. Con elegir filas decides qué se pone ahí."
+   ]
+  },
+  {
+   "q": "Qué pasa cuando un tramo termina",
+   "a": [
+    "No cae a cero. El tramo lleno se sostiene quince minutos marcado como lleno y después se abre el siguiente. Así el 100 por ciento no baja a 0 por ciento a medianoche.",
+    "Un tramo tuyo que pasa su meta no se detiene ahí: el tiempo pasada la meta se apila en el color de acento."
+   ]
+  },
+  {
+   "q": "Con qué criterio se reparten las casillas",
+   "a": [
+    "El tramo se corta a la unidad de un paso abajo. Un día son 24 horas, esta semana 7 días, este mes unos 30 días, este trimestre 14 semanas, este año 12 meses, los años 2020 son 10 años. Lo que no cuadra se agrupa: 35 días pasan a 5 semanas y 90 minutos a 30 casillas de 3 minutos."
+   ]
+  },
+  {
+   "q": "Cómo se eligen los decimales",
+   "a": [
+    "Lo decide el tramo. Un día en números enteros, una semana un decimal, un mes y un trimestre dos, un año tres, varios años cuatro. Están elegidos para que el último dígito se mueva cada diez o veinte minutos.",
+    "Si eliges la lectura de progreso y fijas tú los decimales, se usa ese valor. Más decimales también significa un redibujado más fino: con seis llega a treinta veces por segundo."
+   ]
+  },
+  {
+   "q": "Las dos formas de la pantalla completa",
+   "a": [
+    "Toca la forma del centro y cambia. La columna que sube apila casillas de abajo arriba con el porcentaje en la línea de flotación. Las casillas más viejas se hunden, así se ven las capas.",
+    "La esfera redonda tiene la forma del icono de la app y del widget circular de la pantalla bloqueada. La forma elegida se guarda y vale para todos los tramos."
+   ]
+  },
+  {
+   "q": "Cada cuánto cambian los widgets",
+   "a": [
+    "Se redibujan en el momento en que cambia el porcentaje. Un widget de un día sube un punto cada 14 minutos y 24 segundos y al mediodía marca exactamente el 50 por ciento. Un tramo de 30 días se redibuja cada 4 minutos y 19 segundos."
+   ]
+  },
+  {
+   "q": "Crear un tramo propio",
+   "a": [
+    "Toca el botón de más y elige primero una duración. Un día, una semana, 30 días, 100 días, un año o A medida. La meta se coloca a esa distancia. Para poner el inicio en el pasado o fijar la hora, elige A medida."
+   ]
+  },
+  {
+   "q": "Qué lecturas hay",
+   "a": [
+    "Cuatro. Una combinación de unidades como años, meses, días y un reloj; una unidad como decimal; el progreso en tanto por ciento; y las unidades de vida. Las unidades de vida cuentan lunas llenas, fines de semana, primaveras y cumpleaños.",
+    "Toca el número en la pantalla completa y las lecturas van pasando. El progreso queda fuera de ese turno porque el número grande ya lo muestra."
+   ]
+  },
+  {
+   "q": "Cuándo llegan los avisos",
+   "a": [
+    "Un tramo con Avisarme al llegar a la meta manda un aviso a la hora de la meta. Los tramos del calendario no lo usan, así que no llega nada cada noche.",
+    "Los avisos dentro del tramo son parte de Pro. Llegan al 25, 50, 75 o 100 por ciento, según lo que elijas. Solo se programan los puntos que aún faltan en esta vuelta, y al abrir la app se prepara la siguiente."
+   ]
+  },
+  {
+   "q": "Qué se usa sin Pro",
+   "a": [
+    "Los seis tramos del calendario, los seis tamaños de widget y todas las lecturas funcionan sin Pro. Se quedan tres tramos propios, y los tramos del calendario no cuentan para ese número."
+   ]
+  },
+  {
+   "q": "Dispositivo e internet",
+   "a": [
+    "Funciona en iPhone con iOS 18 o posterior. La pantalla queda en vertical y en tonos oscuros, para leer los números siempre sobre el mismo fondo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Percentime",
+  "effectiveDate": "2026-09-20",
+  "summary": "Percentime no recoge datos personales. No hay cuenta ni inicio de sesión, y Apple gestiona la compra de Pro.",
+  "intro": [
+   "kvndh (el desarrollador) trata los datos personales de quienes usan la app Percentime (la app) del modo que se indica a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan, de modo que no hay ninguna finalidad que declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
+    ],
+    "bullets": [
+     "Tus tramos (nombre, inicio y meta, regla de repetición, puntos de aviso, ajustes de lectura): se usan para dibujar los valores en pantalla y en los widgets",
+     "Ajustes (qué filas se ponen en la pila, la forma de la pantalla completa): se usan para componer la app",
+     "El mes y el día de tu cumpleaños: solo para contar los cumpleaños que faltan cuando eliges esa unidad de vida",
+     "Si se ha comprado Pro: para decidir qué funciones se abren en la app y en los widgets"
+    ]
+   },
+   {
+    "title": "Plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Los tramos se quedan hasta que tú los borras, y los del calendario pasan al siguiente en lugar de acumularse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cesión a terceros",
+    "paragraphs": [
+     "La información personal no se cede a terceros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "No se encarga ningún tratamiento a terceros. La compra de Percentime Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe el medio de pago ni datos de la cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Un tramo se borra deslizándolo en la lista o desde Más en su pantalla completa, y todo lo de la app se borra al borrar la app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal sobre ti, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "Lo que usa la app está en su almacenamiento y en su contenedor de App Group. Nada sale ni entra más allá de eso, salvo que los widgets leen el mismo archivo. Los avisos son locales: se crean en el dispositivo y suenan en el dispositivo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies y otra recogida automática",
+    "paragraphs": [
+     "La app no usa cookies, ni identificador de publicidad, ni herramientas de analítica."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a los organismos coreanos que se indican abajo. Si vives fuera de Corea, también puedes dirigirte a la autoridad de protección de datos de tu país."
+    ],
+    "bullets": [
+     "Comité de Mediación de Conflictos sobre Información Personal: 1833-6972 en Corea (www.kopico.go.kr)",
+     "Centro de Denuncias por Vulneración de la Información Personal: 118 en Corea (privacy.kisa.or.kr)",
+     "Fiscalía Suprema: 1301 en Corea (www.spo.go.kr)",
+     "Agencia Nacional de Policía: 182 en Corea (ecrm.police.go.kr)",
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

@@ -110,5 +110,16 @@
     "diceMaster/results/asc-shot1-raw/iphone/pt-PT.png"
    ]
   }
+ },
+ "percentime": {
+  "icon": "TimeScale/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "en": [
+    "TimeScale/Screenshots/01-dashboard.png",
+    "TimeScale/Screenshots/02-detail-column.png",
+    "TimeScale/Screenshots/03-detail-dial.png",
+    "TimeScale/Screenshots/04-new-timer.png"
+   ]
+  }
  }
 }

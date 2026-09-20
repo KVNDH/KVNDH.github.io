@@ -40,6 +40,22 @@ class HubTest(unittest.TestCase):
         self.assertNotIn('class="tile-link"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
 
+    def test_unreleased_app_shows_only_its_icon(self):
+        site = Site(make_site(unreleased=True))
+        html = render.render_hub(site, "ko")
+        self.assertIn('<div class="quiet" aria-hidden="true">', html)
+        self.assertIn('src="/assets/soon/icon-180.webp"', html)
+        self.assertNotIn("Soon", html)
+        self.assertNotIn("/ko/soon/", html)
+        self.assertNotIn("https://apps.apple.com/app/id456", html)
+
+    def test_unreleased_app_page_has_no_store_button(self):
+        site = Site(make_site(unreleased=True))
+        html = render.render_app(site, "ko", "soon")
+        self.assertIn("Soon", html)
+        self.assertNotIn("https://apps.apple.com/app/id456", html)
+        self.assertNotIn('class="btn"', html)
+
 
 class AppPageTest(unittest.TestCase):
     def setUp(self):

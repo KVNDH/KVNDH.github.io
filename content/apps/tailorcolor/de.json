@@ -1,0 +1,294 @@
+{
+ "name": "TailorColor",
+ "subtitle": "Farben wechseln, bis das Outfit sitzt",
+ "summary": "Kleiden Sie die Schaufensterpuppe Farbe für Farbe ein und finden Sie einen stimmigen Look.",
+ "hero": {
+  "hook": "Kleiden Sie die Schaufensterpuppe Farbe für Farbe ein und finden Sie einen stimmigen Look.",
+  "shotAlt": "Der Startbildschirm von TailorColor. Die Schaufensterpuppe trägt ein marineblaues Langarmshirt, eine beigefarbene Chino und weiße Sneaker, darunter reihen sich die Chips der einzelnen Teile."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Sechs Teile, je eine Farbe",
+   "body": [
+    "Oberteil, Hose, Schuhe, Kappe, Mantel und Tasche: Das sind die sechs Teile. Tippen Sie eines an, öffnet sich eine Auswahl mit den Kleidungsstücken oben und den Farben unten, und was Sie wählen, trägt die Schaufensterpuppe sofort. Die Farben stammen aus einer festen Palette mit 24 Tönen. Neutraltöne, Denim und Erdtöne bilden das Fundament, Akzentfarben kommen obendrauf."
+   ],
+   "bullets": [
+    "Sechs Teile von Kopf bis Fuß",
+    "24 Farben: Neutral-, Denim-, Erd- und Akzenttöne",
+    "Kappe, Mantel und Tasche zuschaltbar"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "Der Oberkörper der Schaufensterpuppe aus der Nähe. Über dem marineblauen Langarmshirt hängt offen ein camelfarbener Mantel.",
+    "caption": "App-Ansicht, vergrößert"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Die besten Kombinationen der Reihe nach",
+   "body": [
+    "Elf Regeln bewerten jede Kombination, und die bis zu zwölf besten liegen vorab bereit. Jeder Tipp auf Another combination rückt in dieser Liste einen Platz weiter, nach dem letzten geht es wieder von vorn los. Für jedes Paar aus Hose und Schuhen bleibt nur der beste Look übrig, deshalb unterscheidet sich der nächste Vorschlag deutlich vom vorigen. Eine Zeile über der Schaufensterpuppe sagt, warum diese Kombination funktioniert."
+   ],
+   "bullets": [
+    "Elf Regeln für Kontrast und Zahl der Farben",
+    "Bis zu 12 Looks nach Rang",
+    "Lock hält eine Farbe fest"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Die Werkzeuge Another combination, Lock und Let TailorColor choose, dazu elf Regeln und bis zu 12 Looks",
+    "items": [
+     {
+      "name": "Another combination",
+      "desc": "Zum nächsten Look der Liste"
+     },
+     {
+      "name": "Lock",
+      "desc": "Hält die Farbe dieses Teils",
+      "on": true
+     },
+     {
+      "name": "Let TailorColor choose",
+      "desc": "Gibt das Teil an die Wertung zurück"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Regeln",
+      "value": "Elf"
+     },
+     {
+      "label": "Vorbereitete Looks",
+      "value": "Bis zu 12",
+      "meter": "ticks",
+      "count": 12,
+      "on": 4
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Eine Farbe aus dem Foto übernehmen",
+   "body": [
+    "Fotografieren Sie ein Kleidungsstück aus Ihrem Schrank oder etwas, dessen Farbe Ihnen aufgefallen ist, und tippen Sie auf die Stelle, die Sie meinen. Die App liest dort die Farbe und setzt den ähnlichsten der 24 Töne ein. Das Foto steht nur auf dem Bildschirm, solange Sie wählen, und wird in der App nicht aufbewahrt."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Aus der Mediathek wählen",
+     "Direkt fotografieren"
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Was gefällt, bleibt",
+   "body": [
+    "Save this look legt alle sechs Teile zusammen unter Saved ab. Gefällt Ihnen nur ein einzelnes Kleidungsstück, legen Sie es mit Keep in closet in den Tab Closet. Ein Limit gibt es bei beiden nicht, die Einträge sammeln sich an und bleiben. Share this look macht aus dem aktuellen Outfit ein Bild in 1080 x 1350 Pixeln und reicht es an das Teilen-Menü weiter."
+   ],
+   "bullets": [
+    "Saved speichert alle sechs Teile",
+    "Closet für einzelne Kleidungsstücke",
+    "Teilen als Bild in 1080 x 1350"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Die sechs Teile ein- und ausschalten",
+   "a": [
+    "Oberteil, Hose und Schuhe sind immer da. Kappe, Mantel und Tasche schalten Sie über ihre Chips ein und aus. Ein ausgeschaltetes Teil verschwindet von der Schaufensterpuppe und fällt aus der Wertung.",
+    "Tippen Sie auf ein Teil, öffnet sich eine Auswahl: oben die Kleidungsstücke, unten die Farben. Was Sie antippen, trägt die Schaufensterpuppe sofort."
+   ]
+  },
+  {
+   "q": "Welche Farben es gibt",
+   "a": [
+    "Es sind 24: sechs Neutraltöne, drei Denimtöne, fünf Erdtöne, Navy und neun Akzentfarben. Die Auswahl hält sich an Farben, in denen Kleidung tatsächlich vorkommt, und ist fest in der App hinterlegt. Eigene Farben mischen oder einen Hex-Wert eingeben können Sie deshalb nicht.",
+    "Auch eine Farbe aus einem Foto wird zum ähnlichsten der 24 Töne."
+   ]
+  },
+  {
+   "q": "Wie Another combination den nächsten Look wählt",
+   "a": [
+    "Der Zufall entscheidet nicht. Elf Regeln bewerten jede Kombination, die bis zu zwölf besten liegen vorab bereit, und jeder Tipp rückt in dieser Liste einen Platz weiter. Nach dem letzten geht es wieder von vorn los.",
+    "Für jedes Paar aus Hose und Schuhen bleibt nur der beste Look. So folgen nie mehrere Outfits aufeinander, die sich bloß in einer Farbe unterscheiden. Wischen Sie auf der Schaufensterpuppe nach links oder rechts, bewegen Sie sich durch dieselbe Liste."
+   ]
+  },
+  {
+   "q": "Was Lock festhält",
+   "a": [
+    "Lock hält nur die Farbe fest. Dieses Teil behält seine Farbe, während die übrigen neu gewählt werden. Das Kleidungsstück selbst ist eine eigene Wahl und bleibt in jedem Fall, wie es ist.",
+    "Zum Lösen tippen Sie noch einmal auf dieselbe Taste. Let TailorColor choose gibt das Teil wieder an die Wertung zurück."
+   ]
+  },
+  {
+   "q": "Die Zeile, die eine Kombination erklärt",
+   "a": [
+    "Es gibt neun solcher Begründungen, etwa „Dark top, light bottom“, „Tone on tone“, „Bag matches the shoes“, „Denim holds it together“ und „Three colors or fewer“. Zu jeder Kombination erscheinen zwei oder drei davon.",
+    "Für den Namen einer Kombination gibt es fünf Formen. Ist eine Akzentfarbe dabei, trägt der Name sie, etwa „Burgundy accent“. Sonst heißt der Look „Earth tones“, „Denim basics“, „Monotone“ oder „Basic“."
+   ]
+  },
+  {
+   "q": "Eine Farbe aus einem Foto übernehmen",
+   "a": [
+    "Wählen Sie in der Farbauswahl Pick a color from a photo und dann Take a photo oder Choose a photo. Tippen Sie auf die Stelle, die Sie meinen, und bestätigen Sie mit Use this color, wenn das Farbfeld darunter stimmt.",
+    "Fotos wählen Sie über die Fotoauswahl von iOS. Die App fragt deshalb nicht nach Zugriff auf Ihre Mediathek und erhält nur das eine Bild, das Sie ausgesucht haben. Nach dem Kamerazugriff fragt sie erst, wenn Sie auf Take a photo tippen."
+   ]
+  },
+  {
+   "q": "Saved und Closet",
+   "a": [
+    "Der Bildschirm Saved hat zwei Tabs. Looks nimmt alle sechs Teile auf einmal auf, und ein Tipp auf einen Eintrag zieht der Schaufensterpuppe genau dieses Outfit wieder an.",
+    "Closet nimmt ein Kleidungsstück nach dem anderen auf, jeweils als Paar aus Kleidungsstück und Farbe. Das eignet sich für Teile, die Sie wirklich besitzen und mit anderen Farben ausprobieren möchten. Keiner der beiden Tabs hat ein Limit."
+   ]
+  },
+  {
+   "q": "Einen Look teilen",
+   "a": [
+    "Share this look macht aus dem aktuellen Outfit ein Bild in 1080 x 1350 Pixeln und reicht es an das Teilen-Menü von iOS weiter, wo Sie das Ziel selbst wählen. Sichern Sie es in Fotos, entsteht ein PNG."
+   ]
+  },
+  {
+   "q": "Welche Kleidungsstücke es gibt",
+   "a": [
+    "Zurzeit neun: zwei Oberteile, zwei Hosen, ein Mantel, zwei Paar Schuhe, eine Kappe und eine Tasche. Grau dargestellte Einträge in der Auswahl sind Kleidungsstücke, die noch vorbereitet werden.",
+    "Kommen neue Kleidungsstücke hinzu, bleiben Ihre Einträge unter Looks und Closet unverändert."
+   ]
+  },
+  {
+   "q": "Gerät und Anzeige",
+   "a": [
+    "Die App läuft auf dem iPhone ab iOS 17. Das iPad wird noch nicht unterstützt, und der Bildschirm bleibt im Hochformat.",
+    "Die Oberfläche ist stets hell. Da es darum geht, Farben zu beurteilen, bleibt der Hintergrund gleich und folgt nicht dem Dunkelmodus des Systems."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Farben wählen, speichern und teilen funktioniert ohne Verbindung. Die App stellt von sich aus keine Anfragen ins Netz. Safari öffnet sich nur, wenn Sie im Bildschirm About auf Support oder Privacy Policy tippen."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für TailorColor",
+  "effectiveDate": "2026-09-20",
+  "summary": "TailorColor erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und die App enthält weder Werbung noch Analysewerkzeuge.",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App TailorColor (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea und legt die Grundsätze dafür wie folgt dar."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Es gibt daher keinen Zweck anzugeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät liegen. Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Gespeicherte Looks (Kleidungsstück und Farbe je Teil, Zeitpunkt des Speicherns): zum erneuten Aufrufen eines Looks",
+     "Einträge im Closet (Teil, Kleidungsstück, Farbe, Zeitpunkt des Speicherns): zum erneuten Aufrufen eines Kleidungsstücks",
+     "Ob die Einführung schon angezeigt wurde: um den ersten Start zu erkennen"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Ein geteiltes Bild, das Sie in Fotos gesichert haben, löschen Sie in Fotos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Die App hat keine In-App-Käufe und verarbeitet daher keine Zahlungsdaten, und sie enthält weder Werbe- noch Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Looks und Einträge im Closet löschen Sie einzeln im Bildschirm Saved; mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Fotos erhält die App einzeln über die Fotoauswahl von iOS, eine Berechtigung zum Lesen Ihrer Mediathek fordert sie nicht an. Nach dem Kamerazugriff fragt die App erst, wenn Sie auf Take a photo tippen. Ein Foto, das die App erhält, nutzt sie nur, solange Sie eine Farbe daraus lesen, und speichert es nicht."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies und andere automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "name": "TailorColor",
+ "subtitle": "Um look montado cor por cor",
+ "summary": "Vista o manequim cor por cor e encontre um look em que tudo combina.",
+ "hero": {
+  "hook": "Vista o manequim cor por cor e encontre um look em que tudo combina.",
+  "shotAlt": "A tela inicial do TailorColor. O manequim veste camiseta de manga longa azul-marinho, calça chino bege e tênis branco, e embaixo ficam os botões de cada parte, lado a lado."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Seis partes, uma cor em cada",
+   "body": [
+    "Parte de cima, parte de baixo, calçados, chapéu, casaco e bolsa: são seis partes. Toque numa delas e abre um painel com as peças em cima e as cores embaixo, e o que você escolhe vai direto para o manequim. As cores saem de um conjunto de 24. Neutros, jeans e tons terrosos seguram a base, e as cores de destaque entram por cima."
+   ],
+   "bullets": [
+    "Seis partes, do chapéu aos calçados",
+    "24 cores entre neutros, jeans, terrosos e destaques",
+    "Chapéu, casaco e bolsa ligam e desligam"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "alt": "O tronco do manequim visto de perto. Um casaco caramelo aberto cai sobre a camiseta de manga longa azul-marinho.",
+    "caption": "Tela do app, ampliada"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Passe pelas combinações em ordem",
+   "body": [
+    "Onze regras dão nota a cada combinação, e as melhores, até doze, ficam separadas de antemão. Cada toque em Another combination (outra combinação) desce um lugar nessa lista, e depois da última ela volta ao começo. Para cada par de parte de baixo e calçado sobra só o melhor look, então o que vem em seguida é bem diferente do anterior. Uma linha acima do manequim diz por que aquele look funciona."
+   ],
+   "bullets": [
+    "Onze regras que pesam contraste e número de cores",
+    "Até 12 looks, em ordem de nota",
+    "Lock segura uma cor e o resto muda"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Another combination, Lock e Let TailorColor choose, com onze regras e até 12 looks",
+    "items": [
+     {
+      "name": "Another combination",
+      "desc": "Desce um lugar na lista"
+     },
+     {
+      "name": "Lock",
+      "desc": "Segura a cor daquela parte",
+      "on": true
+     },
+     {
+      "name": "Let TailorColor choose",
+      "desc": "Devolve a parte ao ranking"
+     }
+    ],
+    "rows": [
+     {
+      "label": "Regras",
+      "value": "Onze"
+     },
+     {
+      "label": "Looks preparados",
+      "value": "Até 12",
+      "meter": "ticks",
+      "count": 12,
+      "on": 4
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Pegue a cor de uma foto",
+   "body": [
+    "Fotografe uma peça que você já tem, ou qualquer coisa cuja cor chamou sua atenção, e toque no ponto que interessa. O app lê a cor ali e coloca no lugar a mais próxima entre as 24. A foto fica na tela enquanto você escolhe e não é guardada no app."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Escolher nas suas fotos",
+     "Tirar uma na hora"
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Guarde os looks que deram certo",
+   "body": [
+    "Save this look (salvar este look) manda as seis partes juntas para Saved. Quando só uma peça vale a pena, guarde ela no Closet com Keep in closet. Nenhum dos dois tem limite, então tudo vai se acumulando e fica lá. Share this look transforma o look atual numa imagem de 1080 x 1350 e a passa para o menu de compartilhamento."
+   ],
+   "bullets": [
+    "Saved guarda as seis partes juntas",
+    "Closet guarda uma peça por vez",
+    "Compartilhado como imagem de 1080 x 1350"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "As seis partes e como desligar",
+   "a": [
+    "Parte de cima, parte de baixo e calçados ficam sempre ligados. Chapéu, casaco e bolsa ligam e desligam pelo botão de cada parte. Uma parte desligada sai do manequim e também do ranking.",
+    "Tocar numa parte abre um painel, com as peças em cima e as cores embaixo. O que você escolhe vai para o manequim no mesmo toque."
+   ]
+  },
+  {
+   "q": "As cores que dá para escolher",
+   "a": [
+    "São 24: seis neutros, três tons de jeans, cinco tons terrosos, azul-marinho e nove cores de destaque. São as cores em que as roupas costumam vir de verdade, fixas no app, então não dá para misturar uma cor própria nem digitar um valor hex.",
+    "Uma cor pega de uma foto também vira a mais próxima entre as 24."
+   ]
+  },
+  {
+   "q": "Como Another combination escolhe a próxima",
+   "a": [
+    "Não é aleatório. Onze regras dão nota a cada combinação, as melhores, até doze, ficam preparadas de antemão, e cada toque desce um lugar nessa lista. Depois da última, ela volta ao começo.",
+    "Para cada par de parte de baixo e calçado fica só o melhor look, para que não apareça uma fila de looks que mudam em uma cor só. Deslizar o manequim para a esquerda ou para a direita percorre a mesma lista."
+   ]
+  },
+  {
+   "q": "O que Lock segura",
+   "a": [
+    "Lock (travar) segura só a cor. Aquela parte mantém a cor enquanto as outras são escolhidas de novo em volta dela. A peça em si é uma escolha separada e fica como está de qualquer jeito.",
+    "Para soltar, toque de novo no mesmo botão. Let TailorColor choose (deixar o TailorColor escolher) devolve a parte ao ranking."
+   ]
+  },
+  {
+   "q": "A linha que explica a combinação",
+   "a": [
+    "São nove, como “Dark top, light bottom” (parte de cima escura, parte de baixo clara), “Tone on tone” (tom sobre tom), “One accent” (um só destaque), “Bag matches the shoes” (bolsa da cor dos calçados) e “Denim holds it together” (o jeans segura o look). Cada combinação traz duas ou três.",
+    "Os nomes das combinações seguem cinco formas. Quando há uma cor de destaque, o nome leva essa cor, como “Burgundy accent”. Sem ela, o look se chama “Earth tones”, “Denim basics”, “Monotone” ou “Basic”."
+   ]
+  },
+  {
+   "q": "Pegar a cor de uma foto",
+   "a": [
+    "No painel de cores, escolha Pick a color from a photo. Tire uma foto com Take a photo ou escolha uma com Choose a photo, toque no ponto que interessa e confirme com Use this color quando a amostra embaixo estiver certa.",
+    "A escolha da foto passa pelo seletor de fotos do iOS, então o app não pede acesso à fototeca e recebe só a imagem que você escolheu. A permissão da câmera só é pedida quando você toca em Take a photo."
+   ]
+  },
+  {
+   "q": "Saved e Closet",
+   "a": [
+    "A tela Saved tem duas abas. Looks guarda as seis partes de uma vez, e tocar num look salvo coloca ele de volta no manequim exatamente como estava.",
+    "Closet guarda uma peça por vez, como um par de peça e cor. Serve para as roupas que você tem de verdade e quer testar com outras cores. Nenhuma das duas abas tem limite."
+   ]
+  },
+  {
+   "q": "Compartilhar um look",
+   "a": [
+    "Share this look transforma o look atual numa imagem de 1080 x 1350 e a passa para o menu de compartilhamento do iOS, onde você escolhe o destino. Salva no app Fotos, ela fica como PNG."
+   ]
+  },
+  {
+   "q": "Quais peças estão disponíveis",
+   "a": [
+    "Nove por enquanto: duas peças de cima, duas de baixo, um casaco, dois pares de calçados, um chapéu e uma bolsa. As opções em cinza no painel são peças que ainda estão sendo preparadas.",
+    "Quando chegarem peças novas, os looks salvos e o Closet continuam como estão."
+   ]
+  },
+  {
+   "q": "Aparelho e tela",
+   "a": [
+    "O app funciona no iPhone com iOS 17 ou posterior. O iPad ainda não é compatível, e a tela fica sempre na vertical.",
+    "A interface é sempre clara. Como a ideia é julgar cores, o app mantém um fundo só em vez de seguir o modo escuro do sistema."
+   ]
+  },
+  {
+   "q": "Conexão com a internet",
+   "a": [
+    "Escolher cores, salvar e compartilhar funcionam sem conexão. O app não faz nenhuma requisição por conta própria. O Safari só abre quando você toca no link Support ou Privacy Policy da tela About."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do TailorColor",
+  "effectiveDate": "2026-09-20",
+  "summary": "O TailorColor não coleta informações pessoais. Não há cadastro nem login, e o app não tem publicidade nem ferramentas de análise.",
+  "intro": [
+   "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app TailorColor (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, e expõe abaixo os seus critérios."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não trata informações pessoais de quem o usa, de modo que não há finalidade a declarar."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
+    ],
+    "bullets": [
+     "Looks salvos (a peça e a cor de cada parte, e quando você salvou): usados para trazer um look de volta",
+     "Itens do Closet (parte, peça, cor, e quando você salvou): usados para trazer uma peça de volta",
+     "Se a introdução já foi vista: usado para saber se é a primeira abertura do app"
+    ]
+   },
+   {
+    "title": "Período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Uma imagem que você compartilhou e salvou no app Fotos é apagada pelo próprio app Fotos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Fornecimento a terceiros",
+    "paragraphs": [
+     "Informações pessoais não são fornecidas a terceiros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "O tratamento de informações pessoais não é terceirizado. Não há compras dentro do app, então ele não lida com dados de pagamento, e também não usa publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Os looks salvos e os itens do Closet são apagados um a um na tela Saved, e excluir o app leva junto tudo o que ele guarda."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de representantes legais",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais suas, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "As fotos chegam ao app uma de cada vez pelo seletor de fotos do iOS, e o app não pede permissão para acessar a fototeca. A câmera só pede permissão quando você toca em Take a photo. A foto recebida é usada enquanto você lê uma cor nela e não é salva no app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies e outra coleta automática",
+    "paragraphs": [
+     "O app não usa cookies, identificador de publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}
