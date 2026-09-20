@@ -4,14 +4,14 @@
  "summary": "From today to the 2020s, a scale that fills as far as time has gone",
  "hero": {
   "hook": "From today to the 2020s, a scale that fills as far as time has gone",
-  "shotAlt": "The Percentime home screen. A card at the top stacks today, this month, this year and the 2020s with their percentages and cells, and cards for your own timers follow below."
+  "shotAlt": "The Percentime home screen. A card at the top stacks today, this month, this year and the 2020s with their percentages and cells, and cards for the timers you made follow below."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "The calendar stands six spans for you",
+   "title": "The calendar opens six spans for you",
    "body": [
-    "Open the app and today, this week, this month, this quarter and this year are already standing. You enter no start and no goal. When a span ends it does not drop to zero: the next one opens right after it. For fifteen minutes past midnight the span you just filled stays on screen."
+    "Open the app and today, this week, this month, this quarter and this year are already there. You enter no start and no goal. When a span ends it does not drop to zero: the next one opens right after it. For fifteen minutes past midnight the span you just filled stays on screen."
    ],
    "bullets": [
     "Six spans with nothing to enter",
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "A close view of the top card on the home screen. Today, this month, this year and the 2020s each sit on a row with a percentage and a bar of cells.",
+    "alt": "A close view of the top card on the home screen. Today, this month, this year and the 2020s each hold a row with a percentage and a bar of cells.",
     "caption": "Close view of the app"
    }
   },
@@ -34,20 +34,24 @@
    "bullets": [
     "Cells cut to the unit one step down",
     "Decimal places matched to the span",
-    "Two shapes on the full screen, tap to switch"
+    "One ring of cells on the full screen"
    ],
    "visual": {
     "type": "kit",
-    "label": "The two shapes on the full screen and the cell count of each span",
+    "label": "The three states of a cell and the cell count of each span",
     "items": [
      {
-      "name": "Filling column",
-      "desc": "Stacking from the bottom up",
+      "name": "Cells behind you",
+      "desc": "Time set in ink"
+     },
+     {
+      "name": "The cell now",
+      "desc": "The one place the accent sits",
       "on": true
      },
      {
-      "name": "Round dial",
-      "desc": "The shape of the app icon"
+      "name": "Cells ahead",
+      "desc": "Left open in a pale line"
      }
     ],
     "rows": [
@@ -72,7 +76,7 @@
    "layout": "card",
    "title": "Read it from the Lock Screen",
    "body": [
-    "Three widgets sit on the Lock Screen and three on the Home Screen. Every size carries the timer name, so you can tell what the percentage belongs to. The reading is redrawn the moment the number changes, so at noon a day reads exactly 50 percent."
+    "Three Lock Screen widgets, three Home Screen widgets, and a stack widget that holds several spans at once. Every size carries the timer name, so you know which span the percentage belongs to. The same widgets come up large in StandBy. They redraw at the very moment the number changes, so at noon the day reads exactly 50 percent."
    ],
    "bullets": [
     "Lock Screen circular, rectangular and inline",
@@ -84,7 +88,7 @@
    "layout": "card",
    "title": "Pick how you read it",
    "body": [
-    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading yourself."
+    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading yourself: one place as it comes, the second onward with Pro."
    ],
    "bullets": [],
    "visual": {
@@ -93,27 +97,29 @@
      "Years, months, days and a clock",
      "One unit as a decimal",
      "Progress in percent",
-     "Full moons, weekends, springs, birthdays"
+     "Full moons, weekends, springs, birthdays (Pro)"
     ]
    }
   }
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Stand several spans in one widget\nand hear from the app at the point you choose",
+  "title": "Hours by weekday, repeating spans, life units\nand a notice at the point you choose",
   "items": [
-   "A stack widget with several spans at once",
-   "Span alerts at 25, 50, 75 and 100 percent",
+   "Hours by weekday: nine to six Monday through Thursday, nine to three on Friday",
+   "Timers without a count limit: three of your own to begin with",
    "Repeating spans for every day, week, month or year",
-   "Spans without a count limit"
+   "Life units: full moons, weekends, springs, birthdays",
+   "Decimal places from the second to the sixth",
+   "Span alerts at 25, 50, 75 and 100 percent"
   ]
  },
  "faq": [
   {
    "q": "What do I see when I first open it",
    "a": [
-    "Today, this week, this month, this quarter and this year are already standing. Nothing to enter. The 2020s are left off the first screen; pick them in the stack rows or in a widget and they stand too.",
-    "The card at the top is the stack. Short spans sit above, long ones below. Choose rows sets what stands there."
+    "Today, this week, this month, this quarter and this year are already there. Nothing to enter. The 2020s are left off the first screen; pick them in the stack rows or in a widget and they come along too.",
+    "The card at the top is the stack. Short spans sit above, long ones below. Choose rows sets what goes there."
    ]
   },
   {
@@ -133,14 +139,14 @@
    "q": "How are the decimal places chosen",
    "a": [
     "The span decides. A day is whole numbers, a week one place, a month and a quarter two, a year three, several years four. They are picked so the last digit moves about every ten or twenty minutes.",
-    "Pick the progress reading and set the places yourself and that value is used. More places also means a finer redraw: six places redraw up to thirty times a second."
+    "Pick the progress reading and set the places yourself and that value is used. More places also means a finer redraw: six places redraw up to thirty times a second. Without Pro the reading is cut at one place."
    ]
   },
   {
-   "q": "The two shapes on the full screen",
+   "q": "The ring in the middle of the full screen",
    "a": [
-    "Tap the shape in the middle and it switches. The filling column stacks cells from the bottom up with the percentage at the waterline. Older cells sink, so the layers show.",
-    "The round dial is the shape of the app icon and the circular Lock Screen widget. The shape you pick is kept and used for every timer."
+    "The span is cut into cells and laid around a ring. The percentage sits large in the centre with the count of filled cells beneath it. A span that does not divide into cells is drawn as one unbroken ring.",
+    "There are three colours. Cells behind you set in ink, the one cell filling now in the accent, and the cells ahead left as a pale line. When the span fills, the accent leaves the screen. That is how arrival is shown."
    ]
   },
   {
@@ -158,7 +164,7 @@
   {
    "q": "What readings are there",
    "a": [
-    "Four. A combination of units such as years, months, days and a clock; one unit as a decimal; progress in percent; and life units. Life units count full moons, weekends, springs and birthdays.",
+    "Four. A combination of units such as years, months, days and a clock; one unit as a decimal; progress in percent; and life units. Life units count full moons, weekends, springs and birthdays, and they are part of Pro.",
     "Tap the number on the full screen and the readings come round in turn. Progress is left out of that turn because the big number already shows it."
    ]
   },
@@ -172,13 +178,13 @@
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes and every reading work without Pro. You keep three timers of your own, and the calendar spans never count toward that."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro."
    ]
   },
   {
    "q": "Device and internet",
    "a": [
-    "Runs on iPhone with iOS 18 or later. The screen is locked to portrait and stays dark, so the numbers are read against one background."
+    "Runs on iPhone with iOS 18 or later. The screen is locked to portrait. Light is the default and it flips to black when the system is dark."
    ]
   }
  ],
@@ -204,7 +210,7 @@
     ],
     "bullets": [
      "Your timers (name, start and goal, repeat rule, alert points, reading settings): used to draw the values on screen and in widgets",
-     "Settings (which rows stand in the stack, the shape on the full screen): used to lay out the app",
+     "Settings (which rows go in the stack): used to lay out the app",
      "The month and day of your birthday: used only to count birthdays ahead when you pick that life unit",
      "Whether Pro was bought: used to decide which features open in the app and widgets"
     ]
@@ -226,7 +232,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. The Percentime Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information."
+     "No processing is outsourced. The Percentime Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. Your own iCloud is used to keep timers and settings in step between devices. The developer receives no payment method, no Apple Account information and nothing held in iCloud."
     ],
     "bullets": []
    },
@@ -247,7 +253,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits in the app's storage and in its App Group container. Nothing travels beyond that except the widgets reading the same file. Notifications are local: made on the device and delivered on the device."
+     "What the app uses sits in the app's storage and in its App Group container, and the widgets read the same file. Timers and settings are kept in step with your other devices on the same Apple Account through your own iCloud. The developer runs no server. Notifications are local: made on the device and delivered on the device."
     ],
     "bullets": []
    },

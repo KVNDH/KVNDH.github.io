@@ -4,14 +4,14 @@
  "summary": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
  "hero": {
   "hook": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
-  "shotAlt": "A tela inicial do Percentime. Um cartão no topo empilha hoje, este mês, este ano e os anos 2020 com suas porcentagens e células, e abaixo seguem os cartões dos períodos que você criou."
+  "shotAlt": "A tela inicial do Percentime. Um cartão no topo empilha hoje, este mês, este ano e os anos 2020 com suas porcentagens e células, e abaixo seguem os cartões dos períodos que você cria."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "O calendário põe seis períodos",
+   "title": "O calendário abre seis períodos para você",
    "body": [
-    "Ao abrir, hoje, esta semana, este mês, este trimestre e este ano já estão de pé. Não se digita início nem meta. Quando um período termina, ele não cai a zero: o seguinte abre logo depois. Por quinze minutos depois da meia-noite, o período recém-cheio continua na tela."
+    "Ao abrir, hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não se digita início nem meta. Quando um período termina, ele não cai a zero: o seguinte abre logo depois. Por quinze minutos depois da meia-noite, o período recém-cheio continua na tela."
    ],
    "bullets": [
     "Seis períodos sem nada para digitar",
@@ -34,20 +34,24 @@
    "bullets": [
     "Células cortadas na unidade um passo abaixo",
     "Casas decimais ajustadas ao período",
-    "Duas formas na tela cheia, toque para trocar"
+    "Um anel de células na tela cheia"
    ],
    "visual": {
     "type": "kit",
-    "label": "As duas formas da tela cheia e as células de cada período",
+    "label": "Os três estados de uma célula e as células de cada período",
     "items": [
      {
-      "name": "Coluna que sobe",
-      "desc": "Enche de baixo para cima",
+      "name": "Células que passaram",
+      "desc": "Tempo fixado em tinta"
+     },
+     {
+      "name": "A célula de agora",
+      "desc": "O único lugar da cor de destaque",
       "on": true
      },
      {
-      "name": "Mostrador redondo",
-      "desc": "A forma do ícone do app"
+      "name": "Células por vir",
+      "desc": "Deixadas abertas em uma linha clara"
      }
     ],
     "rows": [
@@ -72,7 +76,7 @@
    "layout": "card",
    "title": "Dá para ler na tela bloqueada",
    "body": [
-    "São três widgets na tela bloqueada e três na tela de início. Todo tamanho traz o nome do período, então dá para saber a que a porcentagem pertence. A leitura é redesenhada no instante em que o número muda, então ao meio-dia um dia marca exatamente 50 por cento."
+    "Três widgets de tela bloqueada, três de tela de início e ainda um widget de pilha que mostra vários períodos de uma vez. Em qualquer tamanho vai o nome do período, então dá para saber a que pertence a porcentagem. No StandBy aparecem os mesmos widgets em tamanho grande. Eles se redesenham no instante exato em que o número muda, então ao meio-dia o dia marca exatamente 50 por cento."
    ],
    "bullets": [
     "Circular, retangular e em linha na tela bloqueada",
@@ -84,7 +88,7 @@
    "layout": "card",
    "title": "Você escolhe como ler",
    "body": [
-    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você."
+    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você: uma casa de saída, da segunda em diante com o Pro."
    ],
    "bullets": [],
    "visual": {
@@ -93,27 +97,29 @@
      "Anos, meses, dias e um relógio",
      "Uma unidade em decimal",
      "Progresso em porcentagem",
-     "Luas cheias, fins de semana, primaveras, aniversários"
+     "Luas cheias, fins de semana, primaveras, aniversários (Pro)"
     ]
    }
   }
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Vários períodos em um só widget\ne avisos no ponto que você escolher",
+  "title": "Horários por dia da semana, repetições, unidades de vida\ne um aviso no ponto que você escolher",
   "items": [
-   "Um widget com vários períodos de uma vez",
-   "Avisos em 25, 50, 75 e 100 por cento",
-   "Períodos que voltam todo dia, semana, mês ou ano",
-   "Períodos sem limite de quantidade"
+   "Horários por dia da semana (de segunda a quinta das 9 às 18, sexta das 9 às 15)",
+   "Períodos sem limite de quantidade (por conta própria são três)",
+   "Repetições a cada dia, semana, mês ou ano",
+   "Unidades de vida: luas cheias, fins de semana, primaveras, aniversários",
+   "Casas decimais da segunda à sexta",
+   "Avisos em 25, 50, 75 e 100 por cento"
   ]
  },
  "faq": [
   {
    "q": "O que aparece na primeira vez",
    "a": [
-    "Hoje, esta semana, este mês, este trimestre e este ano já estão de pé. Não há nada para digitar. Os anos 2020 ficam fora da primeira tela; escolha-os nas linhas da pilha ou em um widget e eles também ficam de pé.",
-    "O cartão do topo é a pilha. Períodos curtos em cima, longos embaixo. Em escolher linhas você define o que fica ali."
+    "Hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não há nada para digitar. Os anos 2020 ficam fora da primeira tela; escolha-os nas linhas da pilha ou em um widget e eles também aparecem.",
+    "O cartão do topo é a pilha. Períodos curtos em cima, longos embaixo. Em escolher linhas você define o que vai ali."
    ]
   },
   {
@@ -133,14 +139,14 @@
    "q": "Como as casas decimais são escolhidas",
    "a": [
     "Quem decide é o período. Um dia em números inteiros, uma semana uma casa, um mês e um trimestre duas, um ano três, vários anos quatro. São escolhidas para o último dígito se mexer a cada dez ou vinte minutos.",
-    "Se você escolher a leitura de progresso e definir as casas, vale o seu valor. Mais casas também quer dizer redesenho mais fino: com seis chega a trinta vezes por segundo."
+    "Se você escolher a leitura de progresso e definir as casas, vale o seu valor. Mais casas também quer dizer redesenho mais fino: com seis chega a trinta vezes por segundo. Sem o Pro, fica cortado em uma casa."
    ]
   },
   {
-   "q": "As duas formas da tela cheia",
+   "q": "O anel no meio da tela cheia",
    "a": [
-    "Toque na forma do meio e ela troca. A coluna que sobe empilha células de baixo para cima com a porcentagem na linha d'água. As células mais antigas afundam, então as camadas aparecem.",
-    "O mostrador redondo tem a forma do ícone do app e do widget circular da tela bloqueada. A forma escolhida fica guardada e vale para todos os períodos."
+    "O período é cortado em células e disposto em volta de um anel. No centro fica a porcentagem em tamanho grande e abaixo o número de células cheias. Um período que não se divide em células é desenhado como um anel contínuo.",
+    "São três cores. As células que passaram fixadas em tinta, a única célula que está enchendo na cor de destaque, e as que faltam como uma linha clara. Quando o período enche, o destaque deixa a tela. É assim que a chegada aparece."
    ]
   },
   {
@@ -158,7 +164,7 @@
   {
    "q": "Quais leituras existem",
    "a": [
-    "Quatro. Uma combinação de unidades como anos, meses, dias e um relógio; uma unidade em decimal; o progresso em porcentagem; e as unidades de vida. As unidades de vida contam luas cheias, fins de semana, primaveras e aniversários.",
+    "Quatro. Uma combinação de unidades como anos, meses, dias e um relógio; uma unidade em decimal; o progresso em porcentagem; e as unidades de vida. As unidades de vida contam luas cheias, fins de semana, primaveras e aniversários, e fazem parte do Pro.",
     "Toque no número na tela cheia e as leituras passam uma a uma. O progresso fica fora dessa roda porque o número grande já mostra."
    ]
   },
@@ -172,13 +178,13 @@
   {
    "q": "O que dá para usar sem o Pro",
    "a": [
-    "Os seis períodos do calendário, os seis tamanhos de widget e todas as leituras funcionam sem o Pro. Ficam três períodos seus, e os períodos do calendário não contam nesse número."
+    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro."
    ]
   },
   {
    "q": "Aparelho e internet",
    "a": [
-    "Funciona no iPhone com iOS 18 ou mais recente. A tela fica na vertical e em tons escuros, para os números serem lidos sempre no mesmo fundo."
+    "Funciona no iPhone com iOS 18 ou mais recente. A tela fica na vertical. O fundo claro é o padrão e vira preto quando o sistema está no escuro."
    ]
   }
  ],
@@ -204,7 +210,7 @@
     ],
     "bullets": [
      "Seus períodos (nome, início e meta, regra de repetição, pontos de aviso, ajustes de leitura): usados para desenhar os valores na tela e nos widgets",
-     "Ajustes (quais linhas ficam na pilha, a forma da tela cheia): usados para montar o app",
+     "Ajustes (quais linhas ficam na pilha): usados para montar o app",
      "O mês e o dia do seu aniversário: só para contar os aniversários que faltam quando você escolhe essa unidade de vida",
      "Se o Pro foi comprado: para definir quais recursos ficam abertos no app e nos widgets"
     ]
@@ -226,7 +232,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "Nenhum tratamento é terceirizado. A compra do Percentime Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe meio de pagamento nem dados da conta Apple."
+     "Nenhum tratamento é terceirizado. A compra do Percentime Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. Para manter períodos e ajustes em dia entre aparelhos usa-se o seu próprio iCloud. O desenvolvedor não recebe meio de pagamento, nem dados da conta Apple, nem nada do que está no iCloud."
     ],
     "bullets": []
    },
@@ -247,7 +253,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica no armazenamento dele e no contêiner de App Group. Nada sai nem entra além disso, fora os widgets lendo o mesmo arquivo. Os avisos são locais: criados no aparelho e entregues no aparelho."
+     "O que o app usa fica no armazenamento dele e no contêiner de App Group, e os widgets leem o mesmo arquivo. Os períodos e os ajustes ficam em dia com os seus outros aparelhos da mesma conta Apple pelo seu próprio iCloud. O desenvolvedor não tem servidor. Os avisos são locais: criados no aparelho e entregues no aparelho."
     ],
     "bullets": []
    },

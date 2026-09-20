@@ -4,14 +4,14 @@
  "summary": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
  "hero": {
   "hook": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
-  "shotAlt": "La pantalla principal de Percentime. Una tarjeta arriba apila hoy, este mes, este año y los años 2020 con sus porcentajes y casillas, y debajo siguen las tarjetas de los tramos propios."
+  "shotAlt": "La pantalla principal de Percentime. Una tarjeta arriba apila hoy, este mes, este año y los años 2020 con sus porcentajes y casillas, y debajo siguen las tarjetas de los tramos que tú creas."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "El calendario pone seis tramos",
+   "title": "El calendario abre seis tramos por ti",
    "body": [
-    "Al abrir la app, hoy, esta semana, este mes, este trimestre y este año ya están puestos. No hay que escribir inicio ni meta. Cuando un tramo termina no cae a cero: el siguiente se abre justo después. Durante quince minutos pasada la medianoche sigue a la vista el tramo que acaba de llenarse."
+    "Al abrir la app, hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay que escribir inicio ni meta. Cuando un tramo termina no cae a cero: el siguiente se abre justo después. Durante quince minutos pasada la medianoche sigue a la vista el tramo que acaba de llenarse."
    ],
    "bullets": [
     "Seis tramos sin nada que escribir",
@@ -34,20 +34,24 @@
    "bullets": [
     "Casillas cortadas a la unidad de un paso abajo",
     "Decimales ajustados al tramo",
-    "Dos formas en la pantalla completa, toca para cambiar"
+    "Un anillo de casillas en la pantalla completa"
    ],
    "visual": {
     "type": "kit",
-    "label": "Las dos formas de la pantalla completa y las casillas de cada tramo",
+    "label": "Los tres estados de una casilla y las casillas de cada tramo",
     "items": [
      {
-      "name": "Columna que sube",
-      "desc": "Se llena de abajo arriba",
+      "name": "Casillas pasadas",
+      "desc": "Tiempo fijado en tinta"
+     },
+     {
+      "name": "La casilla de ahora",
+      "desc": "El único sitio del color de acento",
       "on": true
      },
      {
-      "name": "Esfera redonda",
-      "desc": "La forma del icono de la app"
+      "name": "Casillas por venir",
+      "desc": "Dejadas abiertas en una línea tenue"
      }
     ],
     "rows": [
@@ -72,7 +76,7 @@
    "layout": "card",
    "title": "Se lee desde la pantalla bloqueada",
    "body": [
-    "Hay tres widgets en la pantalla bloqueada y tres en la de inicio. Todos los tamaños llevan el nombre del tramo, así se sabe a qué pertenece el porcentaje. La lectura se redibuja en el momento en que cambia el número, de modo que al mediodía un día marca exactamente el 50 por ciento."
+    "Tres widgets de pantalla bloqueada, tres de pantalla de inicio y, además, un widget de pila que muestra varios tramos a la vez. En cualquier tamaño va el nombre del tramo, así se sabe a qué pertenece el porcentaje. En StandBy se ven los mismos widgets en grande. Se vuelven a dibujar en el momento exacto en que cambia el número, así que a mediodía el día marca justo el 50 por ciento."
    ],
    "bullets": [
     "Circular, rectangular y en línea en la pantalla bloqueada",
@@ -84,7 +88,7 @@
    "layout": "card",
    "title": "Eliges cómo leerlo",
    "body": [
-    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú."
+    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú: uno sin más, del segundo en adelante con Pro."
    ],
    "bullets": [],
    "visual": {
@@ -93,27 +97,29 @@
      "Años, meses, días y un reloj",
      "Una unidad como decimal",
      "Progreso en tanto por ciento",
-     "Lunas llenas, fines de semana, primaveras, cumpleaños"
+     "Lunas llenas, fines de semana, primaveras, cumpleaños (Pro)"
     ]
    }
   }
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Varios tramos en un solo widget\ny avisos en el punto que elijas",
+  "title": "Horarios por día de la semana, repeticiones, unidades de vida\ny un aviso en el punto que elijas",
   "items": [
-   "Un widget con varios tramos a la vez",
-   "Avisos al 25, 50, 75 y 100 por ciento",
-   "Tramos que vuelven cada día, semana, mes o año",
-   "Tramos sin límite de cantidad"
+   "Horarios por día de la semana (de lunes a jueves de 9 a 18, viernes de 9 a 15)",
+   "Tramos sin límite de cantidad (por tu cuenta son tres)",
+   "Repeticiones cada día, semana, mes o año",
+   "Unidades de vida: lunas llenas, fines de semana, primaveras, cumpleaños",
+   "Decimales del segundo al sexto",
+   "Avisos al 25, 50, 75 y 100 por ciento"
   ]
  },
  "faq": [
   {
    "q": "Qué veo al abrirla por primera vez",
    "a": [
-    "Hoy, esta semana, este mes, este trimestre y este año ya están puestos. No hay nada que escribir. Los años 2020 quedan fuera de la primera pantalla; elígelos en las filas de la pila o en un widget y también se ponen.",
-    "La tarjeta de arriba es la pila. Los tramos cortos van encima y los largos debajo. Con elegir filas decides qué se pone ahí."
+    "Hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay nada que escribir. Los años 2020 quedan fuera de la primera pantalla; elígelos en las filas de la pila o en un widget y también aparecen.",
+    "La tarjeta de arriba es la pila. Los tramos cortos van encima y los largos debajo. Con elegir filas decides qué va ahí."
    ]
   },
   {
@@ -133,14 +139,14 @@
    "q": "Cómo se eligen los decimales",
    "a": [
     "Lo decide el tramo. Un día en números enteros, una semana un decimal, un mes y un trimestre dos, un año tres, varios años cuatro. Están elegidos para que el último dígito se mueva cada diez o veinte minutos.",
-    "Si eliges la lectura de progreso y fijas tú los decimales, se usa ese valor. Más decimales también significa un redibujado más fino: con seis llega a treinta veces por segundo."
+    "Si eliges la lectura de progreso y fijas tú los decimales, se usa ese valor. Más decimales también significa un redibujado más fino: con seis llega a treinta veces por segundo. Sin Pro se corta en un decimal."
    ]
   },
   {
-   "q": "Las dos formas de la pantalla completa",
+   "q": "El anillo del centro de la pantalla completa",
    "a": [
-    "Toca la forma del centro y cambia. La columna que sube apila casillas de abajo arriba con el porcentaje en la línea de flotación. Las casillas más viejas se hunden, así se ven las capas.",
-    "La esfera redonda tiene la forma del icono de la app y del widget circular de la pantalla bloqueada. La forma elegida se guarda y vale para todos los tramos."
+    "El tramo se corta en casillas y se dispone alrededor de un anillo. En el centro va el porcentaje en grande y debajo el número de casillas llenas. Un tramo que no se divide en casillas se dibuja como un anillo continuo.",
+    "Hay tres colores. Las casillas pasadas fijadas en tinta, la única casilla que se está llenando en el color de acento, y las que faltan como una línea tenue. Cuando el tramo se llena, el acento deja la pantalla. Así se muestra la llegada."
    ]
   },
   {
@@ -158,7 +164,7 @@
   {
    "q": "Qué lecturas hay",
    "a": [
-    "Cuatro. Una combinación de unidades como años, meses, días y un reloj; una unidad como decimal; el progreso en tanto por ciento; y las unidades de vida. Las unidades de vida cuentan lunas llenas, fines de semana, primaveras y cumpleaños.",
+    "Cuatro. Una combinación de unidades como años, meses, días y un reloj; una unidad como decimal; el progreso en tanto por ciento; y las unidades de vida. Las unidades de vida cuentan lunas llenas, fines de semana, primaveras y cumpleaños, y forman parte de Pro.",
     "Toca el número en la pantalla completa y las lecturas van pasando. El progreso queda fuera de ese turno porque el número grande ya lo muestra."
    ]
   },
@@ -172,13 +178,13 @@
   {
    "q": "Qué se usa sin Pro",
    "a": [
-    "Los seis tramos del calendario, los seis tamaños de widget y todas las lecturas funcionan sin Pro. Se quedan tres tramos propios, y los tramos del calendario no cuentan para ese número."
+    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. El progreso muestra un decimal sin Pro."
    ]
   },
   {
    "q": "Dispositivo e internet",
    "a": [
-    "Funciona en iPhone con iOS 18 o posterior. La pantalla queda en vertical y en tonos oscuros, para leer los números siempre sobre el mismo fondo."
+    "Funciona en iPhone con iOS 18 o posterior. La pantalla queda en vertical. El fondo claro es lo normal y pasa a negro cuando el sistema está en oscuro."
    ]
   }
  ],
@@ -204,7 +210,7 @@
     ],
     "bullets": [
      "Tus tramos (nombre, inicio y meta, regla de repetición, puntos de aviso, ajustes de lectura): se usan para dibujar los valores en pantalla y en los widgets",
-     "Ajustes (qué filas se ponen en la pila, la forma de la pantalla completa): se usan para componer la app",
+     "Ajustes (qué filas van en la pila): se usan para componer la app",
      "El mes y el día de tu cumpleaños: solo para contar los cumpleaños que faltan cuando eliges esa unidad de vida",
      "Si se ha comprado Pro: para decidir qué funciones se abren en la app y en los widgets"
     ]
@@ -226,7 +232,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra de Percentime Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe el medio de pago ni datos de la cuenta de Apple."
+     "No se encarga ningún tratamiento a terceros. La compra de Percentime Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. Para mantener los tramos y los ajustes al día entre dispositivos se usa tu propio iCloud. El desarrollador no recibe el medio de pago, ni datos de la cuenta de Apple, ni nada de lo que haya en iCloud."
     ],
     "bullets": []
    },
@@ -247,7 +253,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en su almacenamiento y en su contenedor de App Group. Nada sale ni entra más allá de eso, salvo que los widgets leen el mismo archivo. Los avisos son locales: se crean en el dispositivo y suenan en el dispositivo."
+     "Lo que usa la app está en su almacenamiento y en su contenedor de App Group, y los widgets leen el mismo archivo. Los tramos y los ajustes se mantienen al día con tus otros dispositivos de la misma cuenta de Apple a través de tu propio iCloud. El desarrollador no tiene servidor. Los avisos son locales: se crean en el dispositivo y suenan en el dispositivo."
     ],
     "bullets": []
    },

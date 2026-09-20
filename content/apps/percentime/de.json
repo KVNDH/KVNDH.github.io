@@ -4,14 +4,14 @@
  "summary": "Von heute bis in die 2020er, eine Skala, die sich füllt, so weit die Zeit gekommen ist",
  "hero": {
   "hook": "Von heute bis in die 2020er, eine Skala, die sich füllt, so weit die Zeit gekommen ist",
-  "shotAlt": "Der Startbildschirm von Percentime. Eine Karte oben stapelt heute, diesen Monat, dieses Jahr und die 2020er mit Prozentwerten und Zellen, darunter folgen Karten für eigene Zeiträume."
+  "shotAlt": "Der Startbildschirm von Percentime. Eine Karte oben stapelt heute, diesen Monat, dieses Jahr und die 2020er mit Prozentwerten und Zellen, darunter folgen Karten für selbst angelegte Zeiträume."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "Der Kalender stellt sechs Zeiträume auf",
+   "title": "Der Kalender öffnet sechs Zeiträume für Sie",
    "body": [
-    "Beim Öffnen stehen heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr schon da. Sie geben weder Start noch Ziel ein. Endet ein Zeitraum, fällt er nicht auf null: Der nächste öffnet direkt danach. Fünfzehn Minuten nach Mitternacht bleibt der eben gefüllte Zeitraum noch stehen."
+    "Beim Öffnen sind heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr schon da. Sie geben weder Start noch Ziel ein. Endet ein Zeitraum, fällt er nicht auf null: Der nächste öffnet direkt danach. Fünfzehn Minuten nach Mitternacht bleibt der eben gefüllte Zeitraum noch zu sehen."
    ],
    "bullets": [
     "Sechs Zeiträume ohne eine einzige Eingabe",
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Nahansicht der oberen Karte auf dem Startbildschirm. Heute, dieser Monat, dieses Jahr und die 2020er stehen je in einer Zeile mit Prozentwert und einem Balken aus Zellen.",
+    "alt": "Nahansicht der oberen Karte auf dem Startbildschirm. Heute, dieser Monat, dieses Jahr und die 2020er liegen je in einer Zeile mit Prozentwert und einem Balken aus Zellen.",
     "caption": "Nahansicht der App"
    }
   },
@@ -34,20 +34,24 @@
    "bullets": [
     "Zellen im Maß der nächstkleineren Einheit",
     "Nachkommastellen passend zum Zeitraum",
-    "Zwei Formen im Vollbild, zum Wechseln antippen"
+    "Ein Ring aus Zellen im Vollbild"
    ],
    "visual": {
     "type": "kit",
-    "label": "Die zwei Formen im Vollbild und die Zellenzahl je Zeitraum",
+    "label": "Die drei Zustände einer Zelle und die Zellenzahl je Zeitraum",
     "items": [
      {
-      "name": "Steigende Säule",
-      "desc": "Füllt sich von unten nach oben",
+      "name": "Zellen hinter Ihnen",
+      "desc": "In Tinte gesetzte Zeit"
+     },
+     {
+      "name": "Die Zelle jetzt",
+      "desc": "Der einzige Platz für die Akzentfarbe",
       "on": true
      },
      {
-      "name": "Runde Skala",
-      "desc": "Die Form des App-Symbols"
+      "name": "Zellen davor",
+      "desc": "Als blasse Linie offen gelassen"
      }
     ],
     "rows": [
@@ -72,7 +76,7 @@
    "layout": "card",
    "title": "Direkt vom Sperrbildschirm ablesen",
    "body": [
-    "Drei Widgets stehen auf dem Sperrbildschirm und drei auf dem Home-Bildschirm. Jede Größe trägt den Namen des Zeitraums, damit klar ist, wozu der Prozentwert gehört. Die Anzeige wird in dem Moment neu gezeichnet, in dem sich die Zahl ändert, also steht mittags genau 50 Prozent."
+    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. In StandBy erscheinen dieselben Widgets groß. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
    ],
    "bullets": [
     "Rund, rechteckig und einzeilig auf dem Sperrbildschirm",
@@ -84,7 +88,7 @@
    "layout": "card",
    "title": "Wählen Sie, wie Sie es lesen",
    "body": [
-    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die Nachkommastellen des Fortschritts legen Sie selbst fest."
+    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die Nachkommastellen des Fortschritts legen Sie selbst fest: eine Stelle ohne Weiteres, ab der zweiten mit Pro."
    ],
    "bullets": [],
    "visual": {
@@ -93,27 +97,29 @@
      "Jahre, Monate, Tage und eine Uhr",
      "Eine Einheit als Dezimalwert",
      "Fortschritt in Prozent",
-     "Vollmonde, Wochenenden, Frühlinge, Geburtstage"
+     "Vollmonde, Wochenenden, Frühlinge, Geburtstage (Pro)"
     ]
    }
   }
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Mehrere Zeiträume in einem Widget\nund Hinweise an dem Punkt, den Sie wählen",
+  "title": "Uhrzeiten je Wochentag, Wiederholungen, Lebenseinheiten\nund ein Hinweis an dem Punkt, den Sie wählen",
   "items": [
-   "Ein Widget mit mehreren Zeiträumen auf einmal",
-   "Hinweise bei 25, 50, 75 und 100 Prozent",
-   "Zeiträume, die täglich, wöchentlich, monatlich oder jährlich neu anlaufen",
-   "Zeiträume ohne Obergrenze"
+   "Uhrzeiten je Wochentag (Mo bis Do 9~18 Uhr, Fr 9~15 Uhr)",
+   "Zeiträume ohne Obergrenze (selbst angelegt sind es sonst drei)",
+   "Wiederholungen für jeden Tag, jede Woche, jeden Monat, jedes Jahr",
+   "Lebenseinheiten: Vollmonde, Wochenenden, Frühlinge, Geburtstage",
+   "Nachkommastellen von der zweiten bis zur sechsten",
+   "Hinweise bei 25, 50, 75 und 100 Prozent"
   ]
  },
  "faq": [
   {
    "q": "Was sehe ich beim ersten Öffnen",
    "a": [
-    "Heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr stehen bereits da. Nichts einzugeben. Die 2020er bleiben vom ersten Bildschirm weg; wählen Sie sie in den Zeilen des Stapels oder in einem Widget, dann stehen auch sie.",
-    "Die Karte oben ist der Stapel. Kurze Zeiträume oben, lange unten. Über Zeilen wählen legen Sie fest, was dort steht."
+    "Heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr sind schon da. Nichts einzugeben. Die 2020er bleiben vom ersten Bildschirm weg; wählen Sie sie in den Zeilen des Stapels oder in einem Widget, dann kommen auch sie dazu.",
+    "Die Karte oben ist der Stapel. Kurze Zeiträume oben, lange unten. Über Zeilen wählen legen Sie fest, was dort liegt."
    ]
   },
   {
@@ -133,14 +139,14 @@
    "q": "Wie werden die Nachkommastellen gewählt",
    "a": [
     "Der Zeitraum entscheidet. Ein Tag ganze Zahlen, eine Woche eine Stelle, ein Monat und ein Quartal zwei, ein Jahr drei, mehrere Jahre vier. So bewegt sich die letzte Stelle etwa alle zehn bis zwanzig Minuten.",
-    "Wählen Sie die Fortschrittsanzeige und setzen die Stellen selbst, gilt Ihr Wert. Mehr Stellen heißt auch feiner neu zeichnen: sechs Stellen bis zu dreißig Mal pro Sekunde."
+    "Wählen Sie die Fortschrittsanzeige und setzen die Stellen selbst, gilt Ihr Wert. Mehr Stellen heißt auch feiner neu zeichnen: sechs Stellen bis zu dreißig Mal pro Sekunde. Ohne Pro wird bei einer Stelle abgeschnitten."
    ]
   },
   {
-   "q": "Die zwei Formen im Vollbild",
+   "q": "Der Ring in der Mitte des Vollbilds",
    "a": [
-    "Tippen Sie auf die Form in der Mitte, dann wechselt sie. Die steigende Säule stapelt Zellen von unten nach oben, der Prozentwert hängt an der Wasserlinie. Ältere Zellen sinken ab, so werden die Schichten sichtbar.",
-    "Die runde Skala hat die Form des App-Symbols und des runden Widgets auf dem Sperrbildschirm. Die gewählte Form bleibt und gilt für alle Zeiträume."
+    "Der Zeitraum wird in Zellen geschnitten und um einen Ring gelegt. In der Mitte steht der Prozentwert groß, darunter die Zahl der gefüllten Zellen. Ein Zeitraum, der sich nicht in Zellen teilt, wird als durchgehender Ring gezeichnet.",
+    "Es gibt drei Farben. Zellen hinter Ihnen in Tinte, die eine Zelle, die gerade füllt, in der Akzentfarbe, und die Zellen davor als blasse Linie. Ist der Zeitraum voll, verlässt die Akzentfarbe den Bildschirm. So wird das Ankommen gezeigt."
    ]
   },
   {
@@ -158,7 +164,7 @@
   {
    "q": "Welche Anzeigen gibt es",
    "a": [
-    "Vier. Eine Kombination von Einheiten wie Jahre, Monate, Tage und eine Uhr; eine Einheit als Dezimalwert; Fortschritt in Prozent; und Lebenseinheiten. Lebenseinheiten zählen Vollmonde, Wochenenden, Frühlinge und Geburtstage.",
+    "Vier. Eine Kombination von Einheiten wie Jahre, Monate, Tage und eine Uhr; eine Einheit als Dezimalwert; Fortschritt in Prozent; und Lebenseinheiten. Lebenseinheiten zählen Vollmonde, Wochenenden, Frühlinge und Geburtstage und gehören zu Pro.",
     "Tippen Sie im Vollbild auf die Zahl, dann kommen die Anzeigen der Reihe nach. Der Fortschritt bleibt außen vor, weil die große Zahl ihn schon zeigt."
    ]
   },
@@ -172,13 +178,13 @@
   {
    "q": "Was ist ohne Pro nutzbar",
    "a": [
-    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen und jede Anzeige gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit."
+    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Der Fortschritt zeigt ohne Pro eine Nachkommastelle."
    ]
   },
   {
    "q": "Gerät und Internet",
    "a": [
-    "Läuft auf dem iPhone ab iOS 18. Der Bildschirm bleibt im Hochformat und dunkel, damit die Zahlen immer auf demselben Untergrund gelesen werden."
+    "Läuft auf dem iPhone ab iOS 18. Der Bildschirm bleibt im Hochformat. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz."
    ]
   }
  ],
@@ -204,7 +210,7 @@
     ],
     "bullets": [
      "Ihre Zeiträume (Name, Start und Ziel, Wiederholungsregel, Hinweispunkte, Anzeigeeinstellungen): um die Werte auf dem Bildschirm und in Widgets zu zeichnen",
-     "Einstellungen (welche Zeilen im Stapel stehen, die Form im Vollbild): um die App zu gestalten",
+     "Einstellungen (welche Zeilen im Stapel liegen): um die App zu gestalten",
      "Monat und Tag Ihres Geburtstags: nur um kommende Geburtstage zu zählen, wenn Sie diese Lebenseinheit wählen",
      "Ob Pro gekauft wurde: um zu bestimmen, welche Funktionen in App und Widgets offen sind"
     ]
@@ -226,7 +232,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Es wird keine Verarbeitung ausgelagert. Den Kauf von Percentime Pro wickelt Apple im App Store ab, Zahlungsdaten folgen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Zahlungsmittel noch Angaben zum Apple-Account."
+     "Es wird keine Verarbeitung ausgelagert. Den Kauf von Percentime Pro wickelt Apple im App Store ab, Zahlungsdaten folgen der Datenschutzerklärung von Apple. Für den Abgleich von Zeiträumen und Einstellungen zwischen Geräten wird Ihre eigene iCloud genutzt. Der Entwickler erhält weder Zahlungsmittel noch Angaben zum Apple-Account noch Inhalte aus der iCloud."
     ],
     "bullets": []
    },
@@ -247,7 +253,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App nutzt, liegt im Speicher der App und in ihrem App-Group-Container. Darüber hinaus geht nichts hinaus oder herein, abgesehen davon, dass die Widgets dieselbe Datei lesen. Mitteilungen sind lokal: auf dem Gerät erzeugt und auf dem Gerät zugestellt."
+     "Was die App nutzt, liegt im Speicher der App und in ihrem App-Group-Container, und die Widgets lesen dieselbe Datei. Zeiträume und Einstellungen werden über Ihre eigene iCloud mit Ihren weiteren Geräten im selben Apple-Account abgeglichen. Der Entwickler betreibt keinen Server. Mitteilungen sind lokal: auf dem Gerät erzeugt und auf dem Gerät zugestellt."
     ],
     "bullets": []
    },
