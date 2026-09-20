@@ -115,10 +115,11 @@
   "icon": "TimeScale/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "en": [
-    "TimeScale/Screenshots/01-dashboard.png",
-    "TimeScale/Screenshots/02-detail-column.png",
-    "TimeScale/Screenshots/03-detail-dial.png",
-    "TimeScale/Screenshots/04-new-timer.png"
+    "TimeScale/docs/store/screenshots/01-dashboard.png",
+    "TimeScale/docs/store/screenshots/02-ring.png",
+    "TimeScale/docs/store/screenshots/03-dashboard-dark.png",
+    "TimeScale/docs/store/screenshots/04-ring-fifty.png",
+    "TimeScale/docs/store/screenshots/05-ring-twenties.png"
    ]
   }
  }
