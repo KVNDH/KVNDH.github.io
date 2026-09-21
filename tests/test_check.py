@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import unittest
 
 from tests.fixture import make_site
@@ -99,6 +100,29 @@ class StructureTest(unittest.TestCase):
     def test_release_requires_all_languages(self):
         self.assertTrue(check.check_structure(Site(make_site()), release=True))
 
+    def add_unreleased(self, root, slug, langs=()):
+        site_json = root / "content" / "site.json"
+        data = json.loads(site_json.read_text(encoding="utf-8"))
+        data["apps"].append({"slug": slug, "accent": "#E63946", "accentText": "#F46A74",
+                             "glow": "rgba(230,57,70,.28)", "paperAccent": "#B02C37", "unreleased": True})
+        site_json.write_text(json.dumps(data), encoding="utf-8")
+        for lang in langs:
+            src = root / "content" / "apps" / "demo" / f"{lang}.json"
+            dest = root / "content" / "apps" / slug / f"{lang}.json"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            dest.write_text(src.read_text(encoding="utf-8"), encoding="utf-8")
+
+    def test_release_skips_icon_only_unreleased_app(self):
+        # 문구가 한 언어도 없는 출시 전 앱은 페이지를 만들지 않는다. 흐린 아이콘만 뜬다(2026-09-21 OnPace).
+        root = make_site(langs=("ko", "en", "ja"))
+        self.add_unreleased(root, "later")
+        self.assertEqual(check.check_structure(Site(root), release=True), [])
+
+    def test_release_still_requires_all_languages_once_copy_starts(self):
+        root = make_site(langs=("ko", "en", "ja"))
+        self.add_unreleased(root, "later", langs=("ko",))
+        self.assertTrue(check.check_structure(Site(root), release=True))
+
 
 class FactsTest(unittest.TestCase):
     def test_unknown_number_in_marketing_copy_fails(self):
@@ -142,6 +166,22 @@ class OutputTest(unittest.TestCase):
         site, out = self.built()
         self.assertEqual(check.check_output(site, out), [])
         self.assertEqual(check.check_fresh(site, out), [])
+
+    def test_unreleased_app_without_store_id_passes(self):
+        # ASC 레코드가 아직 없는 앱(2026-09-21 OnPace)도 흐린 아이콘으로는 올릴 수 있어야 한다.
+        root = make_site()
+        site_json = root / "content" / "site.json"
+        data = json.loads(site_json.read_text(encoding="utf-8"))
+        data["apps"].append({"slug": "later", "accent": "#E63946", "accentText": "#F46A74",
+                             "glow": "rgba(230,57,70,.28)", "paperAccent": "#B02C37", "unreleased": True})
+        site_json.write_text(json.dumps(data), encoding="utf-8")
+        icon = root / "assets" / "later" / "icon-180.webp"
+        icon.parent.mkdir(parents=True)
+        icon.write_bytes(b"x")
+        site = Site(root)
+        build.build(site, root / "docs")
+        self.assertEqual(check.check_output(site, root / "docs"), [])
+        self.assertIn("later/icon-180.webp", (root / "docs" / "ko" / "index.html").read_text(encoding="utf-8"))
 
     def test_missing_app_ads_fails(self):
         site, out = self.built()

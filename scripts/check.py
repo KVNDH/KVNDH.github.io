@@ -154,6 +154,14 @@ def shape(copy: dict) -> dict:
     }
 
 
+def icon_only(site: Site, app: dict) -> bool:
+    """문구가 한 언어도 없는 출시 전 앱. 페이지 없이 허브에 흐린 아이콘으로만 뜬다(2026-09-21 OnPace).
+
+    한 언어라도 문구를 쓰기 시작하면 다른 앱과 똑같이 모든 언어를 요구한다.
+    """
+    return bool(app.get("unreleased")) and not any(site.has_pages(app["slug"], c) for c in site.lang_codes())
+
+
 def check_structure(site: Site, release: bool) -> list[str]:
     problems = []
     if release:
@@ -163,6 +171,8 @@ def check_structure(site: Site, release: bool) -> list[str]:
                 problems.append(f"i18n/{code}: 파일 없음")
                 continue
             for app in site.apps:
+                if icon_only(site, app):
+                    continue
                 if not site.has_pages(app["slug"], code):
                     problems.append(f"{app['slug']}/{code}: 페이지 문구 없음")
     for app in site.apps:
@@ -270,7 +280,9 @@ def check_output(site: Site, out: Path) -> list[str]:
         problems.append("docs/app-ads.txt 가 비어 있음")
     if (out / "support").exists():
         problems.append("docs/support/ 가 있음 (KVNDH/support 프로젝트 사이트와 겹침)")
-    app_ids = {app["appStoreId"] for app in site.apps}
+    # 출시 전 앱은 ASC 레코드가 없을 수 있다(2026-09-21 OnPace). 흐린 아이콘만 뜨고 링크를 쓰지 않으므로
+    # 아는 ID 목록에서 뺀다. 출시로 바꾸면 render.py 가 app["appStoreId"] 에서 멈춘다.
+    app_ids = {app["appStoreId"] for app in site.apps if app.get("appStoreId")}
     pages: dict[Path, PageParser] = {}
     for html_file in sorted(out.rglob("*.html")):
         parser = PageParser()
