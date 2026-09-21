@@ -119,6 +119,14 @@
    "glow": "rgba(194,154,60,.28)",
    "paperAccent": "#5f4331",
    "unreleased": true
+  },
+  {
+   "slug": "onpace",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37",
+   "unreleased": true
   }
  ]
 }

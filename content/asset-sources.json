@@ -133,5 +133,9 @@
     "ColorFit/docs/store/screenshots/ko/1-look.png"
    ]
   }
+ },
+ "onpace": {
+  "icon": "OnPace/PoC/App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {}
  }
 }
