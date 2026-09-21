@@ -38,6 +38,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
+.t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
 .t-feature .tile-tx{max-width:58%;padding:40px}
 .ic{border-radius:22.5%;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 14px 34px -8px var(--glow)}

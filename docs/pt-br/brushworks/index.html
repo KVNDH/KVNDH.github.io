@@ -64,6 +64,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
+.t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
 .t-feature .tile-tx{max-width:58%;padding:40px}
 .ic{border-radius:22.5%;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 14px 34px -8px var(--glow)}
@@ -341,7 +343,7 @@ to{opacity:1;transform:scale(1.04)}
 <nav class="ab" aria-label="BrushWorks">
 <a class="ab-id" href="/pt-br/brushworks/"><img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="30" height="30">BrushWorks</a>
 <ul class="tabs"><li><a href="/pt-br/brushworks/" aria-current="page">Sobre</a></li><li><a href="/pt-br/brushworks/support/">Suporte</a></li><li><a href="/pt-br/brushworks/privacy/">Política de Privacidade</a></li></ul>
-<a class="btn btn-s" href="https://apps.apple.com/app/id6810951573">Baixe na App Store</a>
+
 </nav>
 
 <main id="main">
@@ -351,7 +353,7 @@ to{opacity:1;transform:scale(1.04)}
 <h1 class="hero-n">BrushWorks</h1>
 <p class="hero-sub">Obra de esmero, não de talento</p>
 <p class="hero-hook">Escolha uma foto de que você gosta e esfregue a tela com o dedo. Não precisa saber desenhar; a pintura se preenche com o tempo que você dedica.</p>
-<div class="hero-cta"><a class="btn" href="https://apps.apple.com/app/id6810951573">Baixe na App Store</a></div>
+<div class="hero-cta"></div>
 </div>
 <figure class="dev"><img src="/assets/brushworks/shots/en/01.webp" alt="A tela de pintura do BrushWorks com a foto de um farol coberta por pinceladas espessas. Abaixo estão os três pincéis e os níveis de tamanho."></figure>
 </section>

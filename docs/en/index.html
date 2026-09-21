@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kvndh apps</title>
-<meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master">
+<meta name="description" content="SnapLine, Life Tyde, Tapey, Dice Master">
 <link rel="canonical" href="https://kvndh.com/en/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="en" href="https://kvndh.com/en/">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kvndh apps">
-<meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master">
+<meta property="og:description" content="SnapLine, Life Tyde, Tapey, Dice Master">
 <meta property="og:url" content="https://kvndh.com/en/">
 <meta property="og:image" content="https://kvndh.com/assets/og.jpg">
 <meta property="og:locale" content="en_US">
@@ -64,6 +64,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
+.t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
 .t-feature .tile-tx{max-width:58%;padding:40px}
 .ic{border-radius:22.5%;box-shadow:0 0 0 1px rgba(255,255,255,.1),0 14px 34px -8px var(--glow)}
@@ -342,29 +344,18 @@ to{opacity:1;transform:scale(1.04)}
 <main id="main">
 <h1 class="sr-only">kvndh apps</h1>
 <div class="bento">
-<article class="tile t-feature" style="--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42;--btn-tx:#FFFFFF">
-<div class="tile-tx">
-<img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="80" height="80">
-<h2><a class="tile-link" href="/en/brushworks/">BrushWorks</a></h2>
-<p class="sub">Filled with care, not talent</p>
-<p class="hook">Pick a photo you like and rub the screen. You do not have to draw well; the canvas fills with the time you put in.</p>
-<p class="tile-act"><span class="more" aria-hidden="true">Details →</span><a class="as" href="https://apps.apple.com/app/id6810951573" aria-label="BrushWorks on the App Store">App Store ↗</a></p>
-</div>
-<div class="shot" style=""><img src="/assets/brushworks/shots/en/01.webp" alt="The BrushWorks canvas with a lighthouse photo painted over in thick strokes. The three brushes and the size steps sit below." loading="lazy"></div>
-</article>
-
-<article class="tile t-p2" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
+<article class="tile t-feature" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
 <div class="tile-tx">
 <img class="ic" src="/assets/snapline/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/en/snapline/">SnapLine</a></h2>
 <p class="sub">Fresh lines on shots you took</p>
-
+<p class="hook">Lay the camera grid over your photo and arrange it with an eye for composition.</p>
 <p class="tile-act"><span class="more" aria-hidden="true">Details →</span><a class="as" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine on the App Store">App Store ↗</a></p>
 </div>
 <div class="shot" style=""><img src="/assets/snapline/shots/en/01.webp" alt="The SnapLine editor with a lighthouse at dusk. Grid lines bend toward the lighthouse, with the Lines and Erase tools below." loading="lazy"></div>
 </article>
 
-<article class="tile t-p3" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
+<article class="tile t-p2" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/life-tyde/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/en/life-tyde/">Life Tyde</a></h2>
@@ -375,7 +366,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/life-tyde/shots/en/01.webp" alt="The Life Tyde timeline. Entries run down the screen by year, and highlighted ones show a red dot and a red title." loading="lazy"></div>
 </article>
 
-<article class="tile t-p4" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
+<article class="tile t-p3" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
 <div class="tile-tx">
 <img class="ic" src="/assets/tapey/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/en/tapey/">Tapey</a></h2>
@@ -386,7 +377,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/tapey/shots/en/01.webp" alt="The Tapey editor. Below the lock screen clock, photos in Polaroid frames are held up with washi tape, and one has a handwritten note." loading="lazy"></div>
 </article>
 
-<article class="tile t-p5" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
+<article class="tile t-p4" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
 <div class="tile-tx">
 <img class="ic" src="/assets/dice-master/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/en/dice-master/">Dice Master</a></h2>
@@ -398,10 +389,10 @@ to{opacity:1;transform:scale(1.04)}
 </article>
 
 </div>
-<div class="quiet" aria-hidden="true"><img src="/assets/percentime/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
+<div class="quiet" aria-hidden="true"><img src="/assets/brushworks/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/percentime/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
 
 </main>
-<footer class="sf"><div class="sf-l"><a class="wm" href="/en/">kvndh</a></div><div><h2>Contact</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>Privacy Policy</h2><ul><li><a href="/en/brushworks/privacy/">BrushWorks</a></li><li><a href="/en/snapline/privacy/">SnapLine</a></li><li><a href="/en/life-tyde/privacy/">Life Tyde</a></li><li><a href="/en/tapey/privacy/">Tapey</a></li><li><a href="/en/dice-master/privacy/">Dice Master</a></li></ul></div><div class="sf-l"><h2>Language</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
+<footer class="sf"><div class="sf-l"><a class="wm" href="/en/">kvndh</a></div><div><h2>Contact</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>Privacy Policy</h2><ul><li><a href="/en/snapline/privacy/">SnapLine</a></li><li><a href="/en/life-tyde/privacy/">Life Tyde</a></li><li><a href="/en/tapey/privacy/">Tapey</a></li><li><a href="/en/dice-master/privacy/">Dice Master</a></li></ul></div><div class="sf-l"><h2>Language</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en" aria-current="true">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </div>
 </body>
 </html>
