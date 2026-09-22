@@ -58,14 +58,14 @@
      {
       "label": "一天",
       "value": "二十四个小时",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 24,
       "on": 10
      },
      {
       "label": "今年",
       "value": "十二个月",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 12,
       "on": 7
      }

@@ -58,14 +58,14 @@
      {
       "label": "一日",
       "value": "時間24マス",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 24,
       "on": 10
      },
      {
       "label": "今年",
       "value": "月12マス",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 12,
       "on": 7
      }

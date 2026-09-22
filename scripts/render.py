@@ -277,6 +277,14 @@ def meter(row: dict) -> str:
             f'<i style="--i:{i}"{on if i == row.get("on") else ""}></i>' for i in range(1, row["count"] + 1)
         )
         return f'<div class="ticks">{marks}</div>'
+    if row.get("meter") == "cells":
+        # 칸은 크기 단계가 아니라 시간 조각이라 폭과 높이를 똑같이 둔다. 앱 화면과 같은 세 가지 상태.
+        now = row.get("on", 0)
+        marks = "".join(
+            f'<i class="{"past" if i < now else "on" if i == now else "rest"}"></i>'
+            for i in range(1, row["count"] + 1)
+        )
+        return f'<div class="cells">{marks}</div>'
     if row.get("meter") == "levels":
         return '<div class="lv">' + "".join(f'<i style="--i:{i}"></i>' for i in range(1, row["count"] + 1)) + "</div>"
     return ""

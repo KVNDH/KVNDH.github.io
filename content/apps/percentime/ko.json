@@ -58,14 +58,14 @@
      {
       "label": "하루",
       "value": "시간 24칸",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 24,
       "on": 10
      },
      {
       "label": "올해",
       "value": "달 12칸",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 12,
       "on": 7
      }

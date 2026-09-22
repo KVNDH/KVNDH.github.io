@@ -115,11 +115,18 @@
   "icon": "TimeScale/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "en": [
-    "TimeScale/docs/store/screenshots/01-dashboard.png",
-    "TimeScale/docs/store/screenshots/02-ring.png",
-    "TimeScale/docs/store/screenshots/03-dashboard-dark.png",
-    "TimeScale/docs/store/screenshots/04-ring-fifty.png",
-    "TimeScale/docs/store/screenshots/05-ring-twenties.png"
+    "TimeScale/docs/store/screenshots/en-US/01-dashboard.png",
+    "TimeScale/docs/store/screenshots/en-US/02-ring.png",
+    "TimeScale/docs/store/screenshots/en-US/03-widgets-home.png",
+    "TimeScale/docs/store/screenshots/en-US/04-weekly-hours.png",
+    "TimeScale/docs/store/screenshots/en-US/05-lock-screen.png"
+   ],
+   "ko": [
+    "TimeScale/docs/store/screenshots/ko/01-dashboard.png",
+    "TimeScale/docs/store/screenshots/ko/02-ring.png",
+    "TimeScale/docs/store/screenshots/ko/03-widgets-home.png",
+    "TimeScale/docs/store/screenshots/ko/04-weekly-hours.png",
+    "TimeScale/docs/store/screenshots/ko/05-lock-screen.png"
    ]
   }
  },

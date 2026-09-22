@@ -58,14 +58,14 @@
      {
       "label": "Um dia",
       "value": "24 horas",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 24,
       "on": 10
      },
      {
       "label": "Este ano",
       "value": "12 meses",
-      "meter": "ticks",
+      "meter": "cells",
       "count": 12,
       "on": 7
      }

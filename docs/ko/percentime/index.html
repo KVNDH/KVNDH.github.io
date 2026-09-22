@@ -155,6 +155,10 @@ to{opacity:1;transform:scale(1.04)}
 .ticks,.lv{display:flex;align-items:center;gap:8px}
 .ticks i{width:calc(3px + var(--i)*.45px);height:calc(6px + var(--i)*2.8px);border-radius:2px;background:#6D6C67}
 .ticks .on{background:var(--ink)}
+.cells{display:flex;flex:1;align-items:center;gap:4px;min-width:0}
+.cells i{flex:1;height:15px;border-radius:999px;background:#2C2B2F}
+.cells .past{background:var(--tx)}
+.cells .on{background:var(--ink)}
 .lv{gap:6px}
 .lv i{width:26px;height:26px;border-radius:8px;background:var(--acc);opacity:calc(var(--i)*.2)}
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:0 56px 104px}
@@ -276,6 +280,8 @@ to{opacity:1;transform:scale(1.04)}
 .g-kn{background-size:20px 34px}
 .kit-b small{margin-top:0}
 .kit-r{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin-top:8px}
+.cells{width:100%;gap:3px}
+.cells i{height:12px}
 .ticks{gap:6px}
 .duo{grid-template-columns:minmax(0,1fr);gap:12px;padding:0 20px 56px}
 .card{padding:28px 22px;border-radius:26px}
@@ -355,10 +361,10 @@ to{opacity:1;transform:scale(1.04)}
 <p class="hero-hook">오늘부터 2020년대까지, 지나간 만큼 차오르는 눈금</p>
 <div class="hero-cta"><a class="btn" href="https://apps.apple.com/app/id6814066451">App Store에서 다운로드</a></div>
 </div>
-<figure class="dev"><img src="/assets/percentime/shots/en/01.webp" alt="Percentime 첫 화면. 위쪽 카드에 오늘과 이번 달, 올해, 2020년대가 퍼센트와 칸으로 층층이 놓이고 아래에 직접 만드는 타이머 카드가 이어집니다."></figure>
+<figure class="dev"><img src="/assets/percentime/shots/ko/01.webp" alt="Percentime 첫 화면. 위쪽 카드에 오늘과 이번 달, 올해, 2020년대가 퍼센트와 칸으로 층층이 놓이고 아래에 직접 만드는 타이머 카드가 이어집니다."></figure>
 </section>
-<section class="feat"><figure class="feat-vis crop"><img src="/assets/percentime/shots/en/01.webp" alt="첫 화면 위쪽 카드를 확대한 모습. 오늘과 이번 달, 올해, 2020년대가 각각 퍼센트와 칸 막대로 나란히 놓여 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>달력이 여섯 구간을 미리 열어 둡니다</h2><p class="body">처음 켜면 오늘과 이번 주, 이번 달, 이번 분기, 올해가 이미 열려 있습니다. 시작도 목표도 넣지 않습니다. 구간이 끝나면 0으로 떨어지지 않고 다음 구간이 이어서 열립니다. 자정 직후 15분 동안은 방금 채운 구간을 그대로 붙들어 보여 줍니다.</p><ul class="pts"><li>입력 없이 열리는 여섯 구간</li><li>자정을 넘기면 이어서 열리는 다음 구간</li><li>다 채운 구간을 붙들어 두는 15분</li></ul></div></section>
-<section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="칸의 세 가지 상태와 구간마다 다른 칸 수"><ul class="kit-b kit-b--plain"><li><b>지나온 칸</b><small>잉크로 굳은 시간</small></li><li class="on"><b>지금 칸</b><small>강조색이 앉는 자리 하나</small></li><li><b>남은 칸</b><small>옅은 선으로 비워 둔 자리</small></li></ul><div class="kit-r"><p>하루<b>시간 24칸</b></p><div class="ticks"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10" class="on"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i><i style="--i:21"></i><i style="--i:22"></i><i style="--i:23"></i><i style="--i:24"></i></div></div><div class="kit-r"><p>올해<b>달 12칸</b></p><div class="ticks"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7" class="on"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i></div></div></div><div><p class="kick">02</p><h2>구간을 칸으로 끊어 봅니다</h2><p class="body">퍼센트만 보면 어디까지 왔는지 가늠이 어렵습니다. 그래서 구간을 한 단계 아래 단위로 끊습니다. 하루는 시간 24칸, 이번 주는 날 7칸, 이번 분기는 주 14칸, 올해는 달 12칸입니다. 달력에 딱 떨어지지 않는 구간은 단위를 묶어 나눕니다.</p><ul class="pts"><li>한 단계 아래 단위로 끊은 칸</li><li>기간에 맞춘 퍼센트 소수 자릿수</li><li>칸으로 두른 고리 하나로 보는 전체 화면</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop"><img src="/assets/percentime/shots/ko/01.webp" alt="첫 화면 위쪽 카드를 확대한 모습. 오늘과 이번 달, 올해, 2020년대가 각각 퍼센트와 칸 막대로 나란히 놓여 있습니다." loading="lazy"><figcaption>앱 화면 확대</figcaption></figure><div><p class="kick">01</p><h2>달력이 여섯 구간을 미리 열어 둡니다</h2><p class="body">처음 켜면 오늘과 이번 주, 이번 달, 이번 분기, 올해가 이미 열려 있습니다. 시작도 목표도 넣지 않습니다. 구간이 끝나면 0으로 떨어지지 않고 다음 구간이 이어서 열립니다. 자정 직후 15분 동안은 방금 채운 구간을 그대로 붙들어 보여 줍니다.</p><ul class="pts"><li>입력 없이 열리는 여섯 구간</li><li>자정을 넘기면 이어서 열리는 다음 구간</li><li>다 채운 구간을 붙들어 두는 15분</li></ul></div></section>
+<section class="feat feat-rev"><div class="feat-vis kit" role="img" aria-label="칸의 세 가지 상태와 구간마다 다른 칸 수"><ul class="kit-b kit-b--plain"><li><b>지나온 칸</b><small>잉크로 굳은 시간</small></li><li class="on"><b>지금 칸</b><small>강조색이 앉는 자리 하나</small></li><li><b>남은 칸</b><small>옅은 선으로 비워 둔 자리</small></li></ul><div class="kit-r"><p>하루<b>시간 24칸</b></p><div class="cells"><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="on"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i></div></div><div class="kit-r"><p>올해<b>달 12칸</b></p><div class="cells"><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="past"></i><i class="on"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i><i class="rest"></i></div></div></div><div><p class="kick">02</p><h2>구간을 칸으로 끊어 봅니다</h2><p class="body">퍼센트만 보면 어디까지 왔는지 가늠이 어렵습니다. 그래서 구간을 한 단계 아래 단위로 끊습니다. 하루는 시간 24칸, 이번 주는 날 7칸, 이번 분기는 주 14칸, 올해는 달 12칸입니다. 달력에 딱 떨어지지 않는 구간은 단위를 묶어 나눕니다.</p><ul class="pts"><li>한 단계 아래 단위로 끊은 칸</li><li>기간에 맞춘 퍼센트 소수 자릿수</li><li>칸으로 두른 고리 하나로 보는 전체 화면</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">03</p><h2>잠금 화면에서 바로 봅니다</h2><p class="body">잠금 화면 위젯 셋과 홈 화면 위젯 셋이 있고, 여러 구간을 한 번에 보여 주는 쌓임 위젯이 따로 있습니다. 어느 크기든 타이머 이름이 함께 들어가 무엇의 퍼센트인지 알 수 있습니다. 대기 화면(StandBy)에서도 같은 위젯을 큼직하게 봅니다. 퍼센트 숫자가 바뀌는 바로 그 순간에 다시 그리므로 정오에는 하루가 정확히 50퍼센트입니다.</p><ul class="pts"><li>잠금 화면 원형과 직사각형, 한 줄</li><li>홈 화면 소형과 중형, 대형</li><li>퍼센트가 바뀌는 순간에 맞춘 갱신</li></ul></div><div class="card"><p class="kick">04</p><h2>읽는 방법을 고릅니다</h2><p class="body">같은 구간을 여러 방법으로 읽습니다. 전체 화면에서 아래 숫자를 누르면 고른 표현이 차례로 돕니다. 진행률 소수 자릿수도 직접 정합니다. 한 자리까지는 그대로 쓰고 둘째 자리부터는 Pro 입니다.</p><ul class="chips"><li>년 개월 일 시:분:초</li><li>소수 하나로</li><li>진행률 퍼센트</li><li>보름달과 주말, 봄, 생일 횟수 (Pro)</li></ul></div></section>
 <section class="pro">
 <div class="pro-h">

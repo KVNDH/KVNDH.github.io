@@ -136,6 +136,10 @@ to{opacity:1;transform:scale(1.04)}
 .ticks,.lv{display:flex;align-items:center;gap:8px}
 .ticks i{width:calc(3px + var(--i)*.45px);height:calc(6px + var(--i)*2.8px);border-radius:2px;background:#6D6C67}
 .ticks .on{background:var(--ink)}
+.cells{display:flex;flex:1;align-items:center;gap:4px;min-width:0}
+.cells i{flex:1;height:15px;border-radius:999px;background:#2C2B2F}
+.cells .past{background:var(--tx)}
+.cells .on{background:var(--ink)}
 .lv{gap:6px}
 .lv i{width:26px;height:26px;border-radius:8px;background:var(--acc);opacity:calc(var(--i)*.2)}
 .duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:0 56px 104px}
@@ -257,6 +261,8 @@ to{opacity:1;transform:scale(1.04)}
 .g-kn{background-size:20px 34px}
 .kit-b small{margin-top:0}
 .kit-r{flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px;margin-top:8px}
+.cells{width:100%;gap:3px}
+.cells i{height:12px}
 .ticks{gap:6px}
 .duo{grid-template-columns:minmax(0,1fr);gap:12px;padding:0 20px 56px}
 .card{padding:28px 22px;border-radius:26px}
