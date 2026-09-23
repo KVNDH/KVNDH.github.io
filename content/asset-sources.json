@@ -112,21 +112,21 @@
   }
  },
  "percentime": {
-  "icon": "TimeScale/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "icon": "Percentime/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "en": [
-    "TimeScale/docs/store/screenshots/en-US/01-dashboard.png",
-    "TimeScale/docs/store/screenshots/en-US/02-ring.png",
-    "TimeScale/docs/store/screenshots/en-US/03-widgets-home.png",
-    "TimeScale/docs/store/screenshots/en-US/04-weekly-hours.png",
-    "TimeScale/docs/store/screenshots/en-US/05-lock-screen.png"
+    "Percentime/docs/store/screenshots/en-US/01-dashboard.png",
+    "Percentime/docs/store/screenshots/en-US/02-ring.png",
+    "Percentime/docs/store/screenshots/en-US/03-widgets-home.png",
+    "Percentime/docs/store/screenshots/en-US/04-weekly-hours.png",
+    "Percentime/docs/store/screenshots/en-US/05-lock-screen.png"
    ],
    "ko": [
-    "TimeScale/docs/store/screenshots/ko/01-dashboard.png",
-    "TimeScale/docs/store/screenshots/ko/02-ring.png",
-    "TimeScale/docs/store/screenshots/ko/03-widgets-home.png",
-    "TimeScale/docs/store/screenshots/ko/04-weekly-hours.png",
-    "TimeScale/docs/store/screenshots/ko/05-lock-screen.png"
+    "Percentime/docs/store/screenshots/ko/01-dashboard.png",
+    "Percentime/docs/store/screenshots/ko/02-ring.png",
+    "Percentime/docs/store/screenshots/ko/03-widgets-home.png",
+    "Percentime/docs/store/screenshots/ko/04-weekly-hours.png",
+    "Percentime/docs/store/screenshots/ko/05-lock-screen.png"
    ]
   }
  },
