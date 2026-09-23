@@ -55,7 +55,10 @@ BANNED_REGEX = {
 }
 
 MARKETING_KEYS = ("summary", "subtitle", "hero", "sections", "pro")
-HAEYO_OK = ("필요", "중요", "주요", "수요", "세요", "개요", "강요")
+# 해요체는 절 끝의 요 를 전부 본다(2026-09-23). 문장 끝만 보면 "요…", "요," 가 샌다. ~세요 와 요 로 끝나는 명사는 뺀다.
+HAEYO_END = re.compile(r"(?<=[가-힣])요(?=$|\s|[.,!?…·~\"'”’」』)\]}])")
+HAEYO_NOUNS = ("필요", "중요", "주요", "수요", "개요", "강요", "소요", "동요")
+JYO_END = re.compile(r"(?<=[가-힣])죠(?=$|\s|[.,!?…·~\"'”’」』)\]}])")
 NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
 REQUIRED_KEYS = ("name", "subtitle", "summary", "hero", "sections", "faq", "privacy")
 LAYOUTS = {"feat": ("crop", "kit"), "card": ("play", "chips", None)}
@@ -78,11 +81,11 @@ def strings(obj, path: str = ""):
 
 
 def is_haeyo(text: str) -> bool:
-    for sentence in re.split(r"(?<=[.?])\s+|\n", text):
-        s = sentence.strip().rstrip(".?")
-        if len(s) >= 2 and s.endswith("요") and re.match(r"[가-힣]", s[-2]) and s[-2:] not in HAEYO_OK:
+    for m in HAEYO_END.finditer(text):
+        i = m.start()
+        if text[i - 1] != "세" and text[i - 1:i + 1] not in HAEYO_NOUNS:
             return True
-    return False
+    return bool(JYO_END.search(text))
 
 
 def rule_problems(lang: str, text: str, marketing: bool) -> list[str]:
