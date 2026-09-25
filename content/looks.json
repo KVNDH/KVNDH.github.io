@@ -160,7 +160,7 @@
  "percentime": {
   "mode": "blur",
   "ink": "dark",
-  "color": "#D7D6E4",
+  "color": "#D2D1DF",
   "alts": {
    "ko": [
     "시간이 얼마나 찼는지 퍼센트로 보여 줍니다",
