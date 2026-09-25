@@ -105,7 +105,7 @@
   {
    "q": "Tramos en autobús o metro",
    "a": [
-    "Activa Transit to the next checkpoint en un punto de control. Cuando se pierde la señal bajo tierra, la diferencia con la que subiste se mantiene hasta que bajas. No se usan datos de autobús ni de metro en tiempo real."
+    "Activa Transit to the next checkpoint al editar un punto de control. En el mapa de Edit route, el mismo interruptor aparece como Subway from here to the next checkpoint. Con él activado, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
    ]
   },
   {

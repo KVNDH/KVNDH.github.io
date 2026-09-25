@@ -105,7 +105,7 @@
   {
    "q": "公交和地铁路段",
    "a": [
-    "在检查点上打开 Transit to the next checkpoint 后，地铁里信号中断时，会沿用上车时的差距直到下车。不使用实时公交和地铁信息。"
+    "编辑检查点时打开 Transit to the next checkpoint。在 Edit route 地图上，同一个开关显示为 Subway from here to the next checkpoint。打开后，即使地铁里信号中断，也会沿用上车时的差距直到下车。不使用实时公交和地铁信息。"
    ]
   },
   {

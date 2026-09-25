@@ -105,7 +105,7 @@
   {
    "q": "Trechos de ônibus e metrô",
    "a": [
-    "Ative Transit to the next checkpoint em um checkpoint. Quando o sinal cai no subterrâneo, a diferença com que você embarcou continua valendo até o desembarque. Dados de ônibus e metrô em tempo real não são usados."
+    "Ative Transit to the next checkpoint ao editar um checkpoint. No mapa de Edit route, a mesma chave aparece como Subway from here to the next checkpoint. Com ela ativada, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
    ]
   },
   {

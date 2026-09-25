@@ -105,7 +105,7 @@
   {
    "q": "Bus and subway legs",
    "a": [
-    "Turn on Transit to the next checkpoint on a checkpoint. When the signal drops underground, the gap you boarded with carries until you get off. Live bus and subway data is not used."
+    "Turn on Transit to the next checkpoint when you edit a checkpoint. On the Edit route map the same switch reads Subway from here to the next checkpoint. With it on, the gap you boarded with carries until you get off, even when the signal drops underground. Live bus and subway data is not used."
    ]
   },
   {

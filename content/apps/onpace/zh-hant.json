@@ -105,7 +105,7 @@
   {
    "q": "公車和地鐵路段",
    "a": [
-    "在檢查點上打開 Transit to the next checkpoint 後，在地鐵裡訊號中斷時，會沿用上車時的差距直到下車。不使用即時公車和地鐵資訊。"
+    "編輯檢查點時打開 Transit to the next checkpoint。在 Edit route 地圖上，同一個開關顯示為 Subway from here to the next checkpoint。打開後，即使在地鐵裡訊號中斷，也會沿用上車時的差距直到下車。不使用即時公車和地鐵資訊。"
    ]
   },
   {
