@@ -1,0 +1,249 @@
+{
+ "name": "OnPace",
+ "subtitle": "Zu früh oder zu spät je Halt",
+ "summary": "An jedem Kontrollpunkt sehen Sie, ob Sie vor Ihrem Plan liegen oder dahinter",
+ "hero": {
+  "hook": "An jedem Kontrollpunkt sehen Sie, ob Sie vor Ihrem Plan liegen oder dahinter",
+  "shotAlt": "Der Bildschirm von OnPace unterwegs. Wie viele Minuten und Sekunden Sie vor oder hinter dem Plan liegen, steht in großen Ziffern, und Punkte auf einer dünnen Linie zeigen die Kontrollpunkte und Ihren aktuellen Standort."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Wie spät, Punkt für Punkt",
+   "body": [
+    "Legen Sie fest, wann Sie ein paar Punkte auf Ihrem Weg passieren: Haustür, Straßenecke, Bushaltestelle, Büro. Unterwegs vergleicht OnPace, wo Sie sind, mit der Stelle, an der Sie laut Plan sein sollten, und zeigt den Abstand in großen Minuten und Sekunden. Die App navigiert nicht. Sie sagt Ihnen, ob Sie sich beeilen müssen."
+   ],
+   "bullets": [
+    "Vorsprung oder Rückstand in Minuten und Sekunden",
+    "Nächster Kontrollpunkt mit Sollzeit",
+    "Voraussichtliche Ankunft"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-250px",
+    "alt": "Der Bildschirm unterwegs. Der Abstand steht in großen Ziffern, daneben der nächste Kontrollpunkt, sein Zeitfenster und die voraussichtliche Ankunft.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Routen aus der Karte oder aus einem Weg",
+   "body": [
+    "Wählen Sie Start und Ziel, und Apple Karten findet eine Route zu Fuß oder mit dem Auto; auf längeren Abschnitten werden Kontrollpunkte von selbst gesetzt. Eine Route, die keine Karte kennt, etwa ein Firmenshuttle, legen Sie an, indem Sie sie einmal zurücklegen. Orte, an denen Sie angehalten haben oder ein- und ausgestiegen sind, bleiben als Vorschläge für Kontrollpunkte."
+   ],
+   "bullets": [
+    "Routen zu Fuß und mit dem Auto",
+    "Route aus einem selbst zurückgelegten Weg",
+    "Eigenes Zeitfenster für jeden Kontrollpunkt"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-250px",
+    "alt": "Eine Route anlegen. Die gefundene Route auf der Karte, mit Kontrollpunkten entlang der Strecke.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Ohne das iPhone herauszuholen",
+   "body": [
+    "Unterwegs zeigen die Karte auf dem Sperrbildschirm und die Dynamic Island den Abstand und den nächsten Kontrollpunkt. Verlassen Sie das Zeitfenster, kommt einmal ein Hinweis. Starten Sie über das Kontrollzentrum oder Siri; zwei Minuten nach der Ankunft endet der Weg von selbst."
+   ],
+   "bullets": [
+    "Karte auf dem Sperrbildschirm und Dynamic Island",
+    "Hinweis beim Verlassen des Zeitfensters",
+    "Start über Kontrollzentrum und Siri"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Aus Ihren Wegen abgestimmt",
+   "body": [
+    "Jeder Weg fügt echte Zeiten hinzu. OnPace nimmt den Median Ihrer letzten Wege und schlägt vor, einen Kontrollpunkt zu verschieben, an dem Sie immer zu spät sind, oder einen zu knappen Abschnitt zu lockern. Die Abfahrt anhand eines einzigen Wegs vorzuziehen, steht allen offen."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Median der letzten Wege",
+     "Punkte mit Verspätung",
+     "Zu knappe Abschnitte",
+     "Früher aufbrechen"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "OnPace Pro",
+  "title": "Routen ohne Obergrenze\nund Zeiten aus Ihren Wegen",
+  "items": [
+   "Routen ohne Obergrenze (zum Start sind es zwei)",
+   "Tune from trips: Vorschläge auf die Zeiten der Kontrollpunkte anwenden"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Der Standortpfeil bleibt nach einem Weg",
+   "a": [
+    "OnPace nutzt den Standort zusammen mit der Karte auf dem Sperrbildschirm, solange ein Weg läuft, und hört auf, wenn Sie auf Stop tippen oder zwei Minuten nach der Ankunft. Wird die App mitten im Weg beendet oder neu installiert, kann iOS die Anzeige stehen lassen. Ein Neustart des iPhone entfernt sie."
+   ]
+  },
+  {
+   "q": "Welche Standortfreigabe",
+   "a": [
+    "„Beim Verwenden der App“ genügt. „Immer“ ist nicht nötig. Unterwegs bleibt die Karte auf dem Sperrbildschirm sichtbar, deshalb kommt der Standort auch bei ausgeschaltetem Bildschirm oder in einer anderen App an."
+   ]
+  },
+  {
+   "q": "Die Karte auf dem Sperrbildschirm erscheint nicht",
+   "a": [
+    "Schalten Sie Einstellungen > OnPace > Live-Aktivitäten ein. Kann die Karte nicht erscheinen, meldet sich die App stattdessen mit einer Mitteilung, sofern Mitteilungen erlaubt sind."
+   ]
+  },
+  {
+   "q": "Bus- und U-Bahn-Abschnitte",
+   "a": [
+    "Schalten Sie an einem Kontrollpunkt Transit to the next checkpoint ein. Bricht unter der Erde das Signal ab, gilt der Abstand beim Einsteigen bis zum Aussteigen weiter. Echtzeitdaten zu Bus und U-Bahn werden nicht genutzt."
+   ]
+  },
+  {
+   "q": "Warten an einer Haltestelle",
+   "a": [
+    "Setzen Sie zwei Kontrollpunkte an dieselbe Stelle mit auseinanderliegenden Zeiten, dann entsteht ein Warteabschnitt. Sind Sie früh da, steht bis zur Abfahrtszeit Wait here."
+   ]
+  },
+  {
+   "q": "Eine Route aus Versehen gelöscht",
+   "a": [
+    "Recently Deleted auf dem Startbildschirm der App behält die letzten drei gelöschten Routen. Tippen Sie auf Recover, um eine zurückzuholen. Eine zurückgeholte Route zählt wieder zu Ihren Routen."
+   ]
+  },
+  {
+   "q": "Pro auf einem anderen Gerät",
+   "a": [
+    "Tippen Sie auf dem Kaufbildschirm auf Restore purchase. Die Familienfreigabe ist aktiviert, Ihre Familie kann Pro also mitnutzen."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "OnPace Datenschutzerklärung",
+  "effectiveDate": "2026-09-26",
+  "summary": "OnPace erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Routen und Wege liegen auf Ihrem Gerät, und Ortssuche, Routenplanung und den Kauf von Pro übernimmt Apple.",
+  "intro": [
+   "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App OnPace (die App) wie folgt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Die App nutzt Ihren Standort, um Ihre Position mit Ihrem Plan zu vergleichen und Ihren Standort auf der Karte zu zeigen; das geschieht auf Ihrem Gerät."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Routen (Name; Name, Ort und Zeit jedes Kontrollpunkts; Zeitfenster; Verlauf der Strecke): um Vorsprung oder Rückstand zu berechnen",
+     "Wegverlauf (geplante und tatsächliche Zeit an jedem Kontrollpunkt): für die Vorschläge von Tune from trips",
+     "Die Spur Ihres letzten Wegs (Standorte): um den zurückgelegten Weg zu zeichnen, wenn Sie eine Route aus einem Weg anlegen oder nach diesem Weg abstimmen",
+     "Diagnoseprotokoll (Standorte und Zeiten, Art der Bewegung wie Gehen oder Fahren mit ihrer Sicherheit): um das Verhalten der App nachzuvollziehen. Bei 20 MB beginnt ein neues Protokoll, und die veröffentlichte Version kann es nicht exportieren",
+     "Einstellungen und ob Pro gekauft wurde: für den Aufbau der App und die verfügbaren Funktionen"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler hält keine personenbezogenen Daten. Alles im Speicher der App wird mit der App gelöscht. Routen bleiben, bis Sie sie löschen, und den Wegverlauf löschen Sie mit Clear history in den Einstellungen der App. Gelöschte Routen warten in Recently Deleted, das die letzten drei behält."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Es wird keine Verarbeitung ausgelagert. Den Kauf von OnPace Pro wickelt Apple im App Store ab, Zahlungsdaten folgen der Datenschutzerklärung von Apple. Ortssuche, Routen zu Fuß und mit dem Auto und die Karte übernimmt Apple Karten, ebenfalls nach der Datenschutzerklärung von Apple. Der Entwickler erhält weder Zahlungsmittel noch Daten Ihres Apple Accounts noch das, wonach Sie suchen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler hält keine personenbezogenen Daten, also gibt es nichts zu vernichten. Eine gelöschte Route kommt in Recently Deleted, den Wegverlauf löschen Sie mit Clear history in den Einstellungen der App, und mit der App wird alles in ihr gelöscht."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Was die App nutzt, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt kein iCloud. Den Standort fragt die App nur „Beim Verwenden der App“ an; im Hintergrund nutzt sie ihn nur während eines Wegs, den Sie gestartet haben, und so lange bleibt die Karte auf dem Sperrbildschirm sichtbar. Bewegungs- und Fitnessdaten dienen nur dazu, Gehen und Fahren zu unterscheiden. Mitteilungen sind lokal: auf dem Gerät erzeugt und auf dem Gerät zugestellt."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies und andere automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

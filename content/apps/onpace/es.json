@@ -1,0 +1,249 @@
+{
+ "name": "OnPace",
+ "subtitle": "Retraso o adelanto por parada",
+ "summary": "En cada punto de control sabrás si vas por delante de tu plan o por detrás",
+ "hero": {
+  "hook": "En cada punto de control sabrás si vas por delante de tu plan o por detrás",
+  "shotAlt": "La pantalla de trayecto de OnPace. Cuántos minutos y segundos vas por delante o por detrás del plan aparece en cifras grandes, y unos puntos sobre una línea fina marcan los puntos de control y dónde estás."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Cuánto tarde, punto por punto",
+   "body": [
+    "Fija la hora a la que pasas por unos cuantos puntos del camino: la salida de casa, la esquina, la parada del autobús, la oficina. Mientras te mueves, OnPace compara dónde estás con dónde deberías estar según el plan y muestra la diferencia en minutos y segundos, en cifras grandes. No te indica el camino. Te dice si tienes que darte prisa."
+   ],
+   "bullets": [
+    "Minutos y segundos de adelanto o retraso",
+    "Siguiente punto de control y hora de paso",
+    "Hora estimada de llegada"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-250px",
+    "alt": "La pantalla de trayecto. La diferencia aparece en cifras grandes, junto al siguiente punto de control, su margen y la hora estimada de llegada.",
+    "caption": "Vista cercana de la app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Rutas desde el mapa o desde un trayecto",
+   "body": [
+    "Elige una salida y un destino, y Mapas de Apple encuentra una ruta a pie o en coche, con puntos de control repartidos por los tramos largos. Una ruta que ningún mapa conoce, como el autobús de la empresa, se crea haciéndola una vez. Los sitios donde te paraste y donde subiste o bajaste quedan como candidatos a punto de control."
+   ],
+   "bullets": [
+    "Rutas a pie y en coche",
+    "Ruta a partir de un trayecto real",
+    "Margen propio en cada punto de control"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-250px",
+    "alt": "Crear una ruta. La ruta encontrada en el mapa, con puntos de control a lo largo del camino.",
+    "caption": "Vista cercana de la app"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Sin sacar el iPhone",
+   "body": [
+    "Durante el trayecto, la tarjeta de la pantalla bloqueada y la Dynamic Island muestran la diferencia y el siguiente punto de control. Si te sales del margen, recibes un aviso. Empieza desde el Centro de control o con Siri; el trayecto se detiene solo dos minutos después de llegar."
+   ],
+   "bullets": [
+    "Tarjeta en la pantalla bloqueada y Dynamic Island",
+    "Aviso al salir del margen",
+    "Inicio desde el Centro de control y Siri"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Ajustado con tus trayectos",
+   "body": [
+    "Cada trayecto suma tiempos reales. OnPace mira la mediana de tus trayectos recientes y sugiere mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo. Adelantar la salida a partir de un solo trayecto está al alcance de todos."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Mediana de los trayectos recientes",
+     "Puntos a los que llegas tarde",
+     "Tramos demasiado justos",
+     "Salir antes"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "OnPace Pro",
+  "title": "Rutas sin límite\ny horas ajustadas con tus trayectos",
+  "items": [
+   "Rutas sin límite de cantidad (para empezar son dos)",
+   "Tune from trips: aplica las sugerencias a las horas de los puntos de control"
+  ]
+ },
+ "faq": [
+  {
+   "q": "La flecha de ubicación sigue tras un trayecto",
+   "a": [
+    "OnPace usa la ubicación junto con la tarjeta de la pantalla bloqueada mientras dura un trayecto, y deja de usarla al tocar Stop o dos minutos después de llegar. Si la app se cierra a la fuerza o se reinstala a mitad de trayecto, iOS puede dejar el indicador. Al reiniciar el iPhone desaparece."
+   ]
+  },
+  {
+   "q": "Qué permiso de ubicación elegir",
+   "a": [
+    "Basta con «Al usar la app». «Siempre» no hace falta. Durante el trayecto la tarjeta de la pantalla bloqueada sigue visible, así que la ubicación llega aunque apagues la pantalla o uses otra app."
+   ]
+  },
+  {
+   "q": "La tarjeta de la pantalla bloqueada no aparece",
+   "a": [
+    "Activa Ajustes > OnPace > Actividades en directo. Si la tarjeta no puede mostrarse, la app avisa con una notificación, siempre que las notificaciones estén activadas."
+   ]
+  },
+  {
+   "q": "Tramos en autobús o metro",
+   "a": [
+    "Activa Transit to the next checkpoint en un punto de control. Cuando se pierde la señal bajo tierra, la diferencia con la que subiste se mantiene hasta que bajas. No se usan datos de autobús ni de metro en tiempo real."
+   ]
+  },
+  {
+   "q": "Esperar en una parada",
+   "a": [
+    "Pon dos puntos de control en el mismo sitio con horas separadas y se convierten en un tramo de espera. Si llegas antes, verás Wait here hasta la hora de salir."
+   ]
+  },
+  {
+   "q": "Una ruta borrada por error",
+   "a": [
+    "Recently Deleted, en la pantalla de inicio de la app, guarda las tres últimas rutas borradas. Toca Recover para recuperar una. Una ruta recuperada vuelve a contar entre tus rutas."
+   ]
+  },
+  {
+   "q": "Pro en otro dispositivo",
+   "a": [
+    "Toca Restore purchase en la pantalla de compra. Pro se comparte con En familia, así que tu familia también puede usarlo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de OnPace",
+  "effectiveDate": "2026-09-26",
+  "summary": "OnPace no recoge datos personales. No hay cuenta ni inicio de sesión. Tus rutas y trayectos se guardan en tu dispositivo, y la búsqueda de lugares, las indicaciones y la compra de Pro las gestiona Apple.",
+  "intro": [
+   "kvndh (el desarrollador) trata los datos personales de quienes usan la app OnPace (la app) del modo que se indica a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. La app usa tu ubicación para comparar tu posición con tu plan y para mostrar dónde estás en el mapa, y eso ocurre en tu dispositivo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
+    ],
+    "bullets": [
+     "Rutas (nombre; nombre, lugar y hora de cada punto de control; márgenes; forma de la ruta): para calcular el adelanto o el retraso",
+     "Historial de trayectos (la hora prevista y la real en cada punto de control): para las sugerencias de Tune from trips",
+     "El recorrido de tu último trayecto (ubicaciones): para dibujar por dónde fuiste al crear una ruta a partir de un trayecto o al ajustar con este trayecto",
+     "Registro de diagnóstico (ubicaciones y horas, y el tipo de actividad, como caminar o ir en coche, con su grado de certeza): para revisar cómo se comportó la app. Al llegar a 20 MB empieza un registro nuevo, y la versión publicada no puede exportarlo",
+     "Ajustes y si se compró Pro: para organizar la app y decidir qué funciones se abren"
+    ]
+   },
+   {
+    "title": "Plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Las rutas se quedan hasta que las borras, y el historial de trayectos se borra con Clear history en los ajustes de la app. Las rutas borradas esperan en Recently Deleted, que guarda las tres últimas."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cesión a terceros",
+    "paragraphs": [
+     "La información personal no se cede a terceros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Una ruta borrada pasa a Recently Deleted, el historial de trayectos se borra con Clear history en los ajustes de la app y, al borrar la app, se borra todo lo que contiene."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal sobre ti, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no usa iCloud. La ubicación se pide solo «Al usar la app»; en segundo plano se usa solo durante un trayecto que tú inicias, y mientras tanto la tarjeta de la pantalla bloqueada sigue visible. Los datos de movimiento y forma física solo sirven para distinguir si caminas o vas en un vehículo. Las notificaciones son locales: se crean en el dispositivo y suenan en el dispositivo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies y otra recogida automática",
+    "paragraphs": [
+     "La app no usa cookies, ni identificador de publicidad, ni herramientas de analítica."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a los organismos coreanos que se indican abajo. Si vives fuera de Corea, también puedes dirigirte a la autoridad de protección de datos de tu país."
+    ],
+    "bullets": [
+     "Comité de Mediación de Conflictos sobre Información Personal: 1833-6972 en Corea (www.kopico.go.kr)",
+     "Centro de Denuncias por Vulneración de la Información Personal: 118 en Corea (privacy.kisa.or.kr)",
+     "Fiscalía Suprema: 1301 en Corea (www.spo.go.kr)",
+     "Agencia Nacional de Policía: 182 en Corea (ecrm.police.go.kr)",
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

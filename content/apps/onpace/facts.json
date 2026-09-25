@@ -1,0 +1,67 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "one-time",
+ "ads": false,
+ "account": false,
+ "products": [
+  "OnPace Pro: 비소모성 1개 (com.kimdh.OnPace.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (OnPace/PoC/StoreKit/OnPace.storekit, docs/store/iap.json)"
+ ],
+ "network": [
+  "Apple 지도: 장소 검색, 도보와 자동차 길 찾기, 지도 타일 (MapKit)",
+  "App Store 결제와 구매 복원 (StoreKit). 서드파티 SDK 없음, 개발자 서버 없음, iCloud 와 CloudKit 안 씀"
+ ],
+ "permissions": [
+  "위치: 사용하는 동안만 요청(Always 요청 없음). 백그라운드 위치는 사용자가 시작한 실행 동안에만, 그동안 잠금 화면 카드가 떠 있다 (PoC/project.yml)",
+  "동작 및 피트니스: 걷기와 차 타기를 가른다 (App/Sensors.swift). 진단 로그에 활동 종류와 확신도가 시각과 함께 남는다",
+  "알림: 잠금 화면 카드를 못 띄웠을 때의 페이스 알림 하나. 홈의 켜기에서만 묻는다"
+ ],
+ "storage": [
+  "앱 Documents 폴더의 파일: routines.json(길 목록과 휴지통), guide.json(실행 기록), last-run.json(마지막 실행의 궤적), events.jsonl(진단 로그, 20MB 에서 넘김). 앱을 지우면 함께 지워진다",
+  "출시판에는 로그 내보내기가 없다(시험용 기능은 출시판에서 숨김, 1534003)"
+ ],
+ "pro": {
+  "productID": "com.kimdh.OnPace.pro.lifetime",
+  "type": "NonConsumable, familyShareable",
+  "features": [
+   "길 개수 제한 없음 (무료 2개, App/ProStore.swift freeRoutes = 2)",
+   "기록으로 다듬기(Tune from trips)의 적용. 최근 20번까지의 기록에서 지점마다 중앙값. 제안 목록은 무료에서도 보인다 (App/History.swift, App/Schedule.swift)"
+  ],
+  "freeForever": "실행, 잠금 화면 카드와 다이나믹 아일랜드, 지점별 오차 범위, 다녀온 기록, 이번 기록으로 다듬기(출발 앞당기기 포함), 제어 센터와 Siri"
+ },
+ "notOffered": [
+  "홈 화면 위젯",
+  "잠금 화면 위젯",
+  "Apple Watch 앱",
+  "출발 알림",
+  "기록 내보내기",
+  "대중교통 길 찾기",
+  "실시간 버스와 지하철 정보"
+ ],
+ "trip": [
+  "편차 +4:10 꼴(분:초, + 가 늦음), 다음 지점과 정상 구간, 도착 예상, 남은 거리. 도착 2분 뒤 저절로 멈춘다",
+  "오차 범위: ±30초, 1분, 2분, 3분, 빨라도 괜찮음(늦음 30초·1분·2분), 직접 15초~10분. 기본 ±1분",
+  "이탈 알림: 두 번 이어서 벗어나거나 30초 넘게 벗어나야 울리고, 같은 쪽은 2분 뒤 2분 넘게 더 벌어져야 다시 울린다",
+  "휴지통: 지운 길 3개까지, 복구도 무료 한도를 따른다",
+  "제어 센터 OnPace 시작, Siri 단축어 넷(OnPace 시작, 길 이름으로 시작, 얼마나 늦었어, 정지)"
+ ],
+ "uiNames": {
+  "Stop": "정지",
+  "Recently Deleted": "휴지통",
+  "Recover": "복구",
+  "Restore purchase": "구매 복원",
+  "Clear history": "기록 지우기",
+  "Transit to the next checkpoint": "다음 지점까지 대중교통",
+  "Tune from trips": "기록으로 다듬기",
+  "Wait here": "여기서 기다립니다",
+  "Start OnPace": "OnPace 시작"
+ },
+ "numbers": [
+  "2"
+ ],
+ "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음)",
+ "sources": [
+  "OnPace/docs/SITE_DRAFT.md (fd1057f)",
+  "OnPace/docs/store/metadata.json",
+  "OnPace/PoC/Shared/Localizable.xcstrings"
+ ]
+}

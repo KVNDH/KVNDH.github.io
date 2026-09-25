@@ -152,12 +152,15 @@
   "shots": {
    "ko": [
     "OnPace/docs/store/shots-raw/iphone/ko/run.png",
+    "OnPace/docs/store/shots-raw/iphone/ko/route.png",
     "OnPace/docs/store/shots-raw/iphone/ko/map.png"
    ],
    "en": [
     "OnPace/docs/store/shots-raw/iphone/en-US/run.png",
+    "OnPace/docs/store/shots-raw/iphone/en-US/route.png",
     "OnPace/docs/store/shots-raw/iphone/en-US/map.png"
    ]
-  }
+  },
+  "store": "OnPace/docs/store"
  }
 }

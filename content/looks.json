@@ -140,6 +140,23 @@
    ]
   }
  },
+ "onpace": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {
+   "ko": [
+    "지점마다 몇 분 늦었는지 바로 보입니다",
+    "지점마다 지날 시각과 오차 범위를 정합니다",
+    "지도에서 길을 찾고 지점을 찍습니다"
+   ],
+   "en": [
+    "See how late you are at every checkpoint",
+    "Set a time and a window for each checkpoint",
+    "Find the route and drop checkpoints"
+   ]
+  }
+ },
  "percentime": {
   "mode": "blur",
   "ink": "dark",
