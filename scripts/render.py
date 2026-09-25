@@ -15,6 +15,8 @@ KIND_UI_KEY = {"about": "navAbout", "support": "navSupport", "privacy": "navPriv
 TILE_POSITIONS = ["t-feature", "t-p2", "t-p3", "t-p4", "t-p5"]
 # 출시된 앱이 여섯이면 셋째 줄에 둘, 넷째 줄에 하나(2026-09-25 BrushWorks 출시로 여섯이 됐다)
 TILE_POSITIONS_6 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-r3"]
+# 일곱이면 셋째와 넷째 줄에 둘씩(2026-09-26 OnPace 심사 제출로 미리 둔다. 셋씩 두면 타일이 좁아 글과 그림이 겹친다)
+TILE_POSITIONS_7 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-q1", "t-q2"]
 GLOBE = (
     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>'
     '<path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg>'
@@ -274,7 +276,7 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
 
 def tile_positions(count: int) -> list[str]:
     """허브 타일 자리. zip 은 넘치는 앱을 조용히 버리므로, 자리보다 앱이 많으면 빌드를 멈춘다."""
-    positions = TILE_POSITIONS_6 if count == 6 else TILE_POSITIONS
+    positions = {6: TILE_POSITIONS_6, 7: TILE_POSITIONS_7}.get(count, TILE_POSITIONS)
     if count > len(positions):
         raise SystemExit(f"허브 타일 자리가 {len(positions)}개인데 출시된 앱이 {count}개다. "
                          "render.py 의 타일 자리와 style.css 를 늘린다")
