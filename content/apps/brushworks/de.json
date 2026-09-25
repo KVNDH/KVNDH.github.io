@@ -81,7 +81,7 @@
     "Jeder Tupfer wird aufgezeichnet. Die Wiedergabe spielt das Bild von Anfang an ab, der Zeitraffer macht daraus ein kurzes Video."
    ],
    "bullets": [
-    "Wiedergabe in 0,25×, 0,5×, 1×, 2× oder 4×",
+    "Wiedergabe in 1×, 2× oder 4×",
     "Zeitraffer im Hochformat 9:16",
     "Angabe von Tupfern und Maldauer"
    ],
@@ -107,7 +107,18 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "BrushWorks Pro",
+  "title": "Größer sichern,\nfeiner malen",
+  "items": [
+   "Ohne Wasserzeichen sichern",
+   "Zeitraffer von 10 bis 90 Sekunden in 1080×1920",
+   "Feste Farbe: Malen in einer selbst gewählten Farbe",
+   "Präzise Regler für Zittern und Pinselgröße",
+   "Sichern in 1,5×, bis zu 3072 px",
+   "Formate PNG, HEIF und TIFF"
+  ]
+ },
  "faq": [
   {
    "q": "Speicherort des gewählten Fotos",
@@ -130,22 +141,28 @@
    ]
   },
   {
-   "q": "Das Zeichen auf gesicherten Bildern",
+   "q": "Das Wasserzeichen auf gesicherten Bildern",
    "a": [
-    "Jedes gesicherte Bild trägt unten rechts ein kleines Zeichen mit BRUSH/WORKS. Gesichert wird als PNG."
+    "Ohne Pro gesicherte Bilder tragen unten rechts ein kleines Wasserzeichen mit BRUSH/WORKS. Mit Pro lässt sich das Wasserzeichen ausschalten."
    ]
   },
   {
    "q": "Länge des Zeitraffers",
    "a": [
-    "Der Zeitraffer dauert immer 10 Sekunden und misst 720×1280 im Hochformat 9:16.",
-    "Den ganzen Verlauf sehen Sie in der App über die Wiedergabe. Wählen Sie 0,25×, 0,5×, 1×, 2× oder 4× und ziehen Sie quer über die Leinwand, um an eine beliebige Stelle zu springen."
+    "Der Zeitraffer ohne Pro dauert 10 Sekunden, im Hochformat 9:16. Mit Pro wählen Sie eine Länge zwischen 10 und 90 Sekunden.",
+    "Den ganzen Verlauf sehen Sie in der App über die Wiedergabe. Wählen Sie 1×, 2× oder 4× und ziehen Sie quer über die Leinwand, um an eine beliebige Stelle zu springen."
+   ]
+  },
+  {
+   "q": "Käufe wiederherstellen",
+   "a": [
+    "Auf einem neuen Gerät oder nach einer Neuinstallation öffnen Sie die Einstellungen und tippen im Pro-Bereich auf Käufe wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
   {
    "q": "Internetverbindung",
    "a": [
-    "Malen, Sichern und Zeitraffer laufen alle ohne Internetverbindung. Die App hat nichts, womit sie sich verbinden müsste."
+    "Malen, Sichern und Zeitraffer laufen ohne Internetverbindung. Der Kauf von Pro und das Wiederherstellen von Käufen brauchen eine Verbindung zum App Store."
    ]
   }
  ],
@@ -190,7 +207,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Der Entwickler lässt keine personenbezogenen Daten im Auftrag verarbeiten."
+     "Der Entwickler lässt keine personenbezogenen Daten im Auftrag verarbeiten. Käufe in der App wie BrushWorks Pro wickelt Apple über den App Store ab; für die Zahlungsdaten gilt die Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
     ],
     "bullets": []
    },

@@ -81,7 +81,7 @@
     "Cada toque queda registrado. La Repetición reproduce el cuadro desde el principio y el Time-lapse lo resume en una grabación corta."
    ],
    "bullets": [
-    "Repetición a 0,25×, 0,5×, 1×, 2× o 4×",
+    "Repetición a 1×, 2× o 4×",
     "Time-lapse vertical en 9:16",
     "Registro de pinceladas y tiempo pintando"
    ],
@@ -107,7 +107,18 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "BrushWorks Pro",
+  "title": "Guarda más grande,\npinta más fino",
+  "items": [
+   "Guarda sin la marca de agua",
+   "Time-lapses de 10 a 90 segundos en 1080×1920",
+   "Bloqueo de color: pinta con el color que elijas",
+   "Control preciso del temblor y el tamaño del pincel",
+   "Guarda a 1,5×, hasta 3072 px",
+   "Formatos PNG, HEIF y TIFF"
+  ]
+ },
  "faq": [
   {
    "q": "Dónde se guarda la foto elegida",
@@ -130,22 +141,28 @@
    ]
   },
   {
-   "q": "La marca en los cuadros guardados",
+   "q": "La marca de agua en los cuadros guardados",
    "a": [
-    "Cada cuadro que guardas lleva una marca pequeña con BRUSH/WORKS en la esquina inferior derecha. El formato de guardado es PNG."
+    "Los cuadros guardados sin Pro llevan una pequeña marca de agua con BRUSH/WORKS en la esquina inferior derecha. Con Pro, la marca de agua se puede desactivar."
    ]
   },
   {
    "q": "Duración del time-lapse",
    "a": [
-    "El time-lapse dura siempre 10 segundos y mide 720×1280, en vertical 9:16.",
-    "Para ver todo el proceso usa la Repetición dentro de la app. Elige 0,25×, 0,5×, 1×, 2× o 4× y arrastra de lado a lado sobre el lienzo para saltar a cualquier punto."
+    "Sin Pro, el time-lapse dura 10 segundos, en vertical 9:16. Con Pro eliges una duración de 10 a 90 segundos.",
+    "Para ver todo el proceso usa la Repetición dentro de la app. Elige 1×, 2× o 4× y arrastra de lado a lado sobre el lienzo para saltar a cualquier punto."
+   ]
+  },
+  {
+   "q": "Restaurar compras",
+   "a": [
+    "En un dispositivo nuevo o después de reinstalar la app, abre Ajustes y toca Restaurar compras en la tarjeta de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
    ]
   },
   {
    "q": "Conexión a internet",
    "a": [
-    "Pintar, guardar y los time-lapses funcionan sin conexión a internet. La app no tiene nada a lo que conectarse."
+    "Pintar, guardar y los time-lapses funcionan sin conexión a internet. Comprar Pro y restaurar compras necesitan conexión con el App Store."
    ]
   }
  ],
@@ -190,7 +207,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga a nadie el tratamiento de información personal."
+     "No se encarga a nadie el tratamiento de información personal. Las compras dentro de la app, como BrushWorks Pro, las procesa Apple a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu medio de pago ni los datos de tu cuenta de Apple."
     ],
     "bullets": []
    },
