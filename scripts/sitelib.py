@@ -47,6 +47,9 @@ class Site:
         ]
         self.ui = {lang["code"]: load_json(content / "i18n" / f"{lang['code']}.json") for lang in self.langs}
         self.apps = self.config["apps"]
+        # 앱마다 스토어 스크린샷에서 가져온 모양(번짐 색, 글자색, 합성본 문구). import_assets.py 가 만든다
+        looks = content / "looks.json"
+        self.looks: dict[str, dict] = load_json(looks) if looks.exists() else {}
         self.copy: dict[tuple[str, str], dict] = {}
         self.facts: dict[str, dict | None] = {}
         for app in self.apps:

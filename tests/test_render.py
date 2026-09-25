@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import unittest
 
-from tests.fixture import make_site
+from tests.fixture import look, make_site, store
 import render
 from sitelib import Site
 
@@ -14,11 +14,26 @@ class HubTest(unittest.TestCase):
     def test_hub_tile_links_whole_tile_and_store(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<html lang="ko">', html)
-        self.assertIn('<article class="tile t-feature"', html)
+        self.assertIn('<article class="tile t-feature th-light"', html)
         self.assertIn('<a class="tile-link" href="/ko/demo/">Demo</a>', html)
         self.assertIn('aria-label="Demo store"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
         self.assertIn('<div class="shot" style="--sw:196px">', html)
+
+    def test_hub_is_the_light_page(self):
+        self.assertIn('<body class="hub">', render.render_hub(self.site, "ko"))
+
+    def test_tile_uses_the_store_screenshot_when_present(self):
+        store(self.site.root, "en", 1)
+        html = render.render_hub(Site(self.site.root), "ko")
+        self.assertIn('<div class="shot shot-store"><img src="/assets/demo/store/en/01.webp"', html)
+        self.assertNotIn('--sw:196px', html)
+
+    def test_tile_takes_the_app_field_and_ink(self):
+        look(self.site.root, ink="light", color="#101418")
+        html = render.render_hub(Site(self.site.root), "ko")
+        self.assertIn('<article class="tile t-feature th-dark"', html)
+        self.assertIn("--fc:#101418;--fld:url(/assets/demo/field.webp)", html)
 
     def test_feature_tile_shows_summary(self):
         self.assertIn('<p class="hook">summary</p>', render.render_hub(self.site, "ko"))
@@ -91,6 +106,7 @@ class AppPageTest(unittest.TestCase):
     def test_hero_and_sections(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<h1 class="hero-n">Demo</h1>', html)
+        self.assertIn('<div class="pano"><img src="/assets/demo/shots/en/01.webp" alt="Demo ko screenshot"', html)
         self.assertNotIn('class="meta"', html)
         self.assertIn('<section class="feat"><figure class="feat-vis crop">', html)
         self.assertIn('<section class="feat feat-rev"><div class="feat-vis kit"', html)
@@ -99,6 +115,26 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('<section class="duo"><div class="card"><p class="kick">03</p>', html)
         self.assertIn('<div class="play" aria-hidden="true">', html)
         self.assertIn('<ul class="chips"><li>c</li></ul>', html)
+
+    def test_page_takes_the_app_field(self):
+        html = render.render_app(self.site, "ko", "demo")
+        self.assertIn('<body class="th-light" style="--fc:#F5F5F7">', html)
+        look(self.site.root, ink="light", color="#101418")
+        html = render.render_app(Site(self.site.root), "ko", "demo")
+        self.assertIn('<body class="th-dark" style="--fc:#101418;--fld:url(/assets/demo/field.webp)">', html)
+        self.assertIn('<meta name="theme-color" content="#101418">', html)
+
+    def test_panorama_shows_the_store_screenshots_in_the_page_language(self):
+        for i in (1, 2, 3):
+            store(self.site.root, "en", i)
+        look(self.site.root, ink="dark", color="#EEE8DD", alts={"en": ["one", "two", "three"]})
+        html = render.render_app(Site(self.site.root), "ko", "demo")
+        self.assertIn('<div class="pano"><img src="/assets/demo/store/en/01.webp" alt="one"', html)
+        self.assertIn('<img src="/assets/demo/store/en/03.webp" alt="three"', html)
+        store(self.site.root, "ko", 1)
+        html = render.render_app(Site(self.site.root), "ko", "demo")
+        self.assertIn('src="/assets/demo/store/ko/01.webp" alt="Demo ko screenshot"', html)
+        self.assertNotIn("/store/en/", html)
 
     def test_crop_offsets_render_as_css_vars(self):
         crop = self.site.copy[("demo", "ko")]["sections"][0]["visual"]

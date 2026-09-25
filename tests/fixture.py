@@ -57,6 +57,19 @@ def app_copy(lang: str) -> dict:
     }
 
 
+def store(root: Path, lang: str, index: int) -> None:
+    """스토어 합성본 한 장(assets/demo/store/<lang>/0N.webp)."""
+    p = root / "assets" / "demo" / "store" / lang / f"{index:02d}.webp"
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_bytes(b"x")
+
+
+def look(root: Path, ink: str, color: str, alts: dict | None = None) -> None:
+    """import_assets.py 가 만드는 content/looks.json 과 번짐 그림."""
+    write(root / "content" / "looks.json", {"demo": {"mode": "blur", "ink": ink, "color": color, "alts": alts or {}}})
+    (root / "assets" / "demo" / "field.webp").write_bytes(b"x")
+
+
 def make_site(langs=("ko", "en"), with_pages: bool = True, unreleased: bool = False) -> Path:
     root = Path(tempfile.mkdtemp(prefix="kvndh-site-"))
     shutil.copytree(REPO / "templates", root / "templates")

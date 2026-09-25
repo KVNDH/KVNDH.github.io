@@ -1,0 +1,290 @@
+{
+ "brushworks": {
+  "mode": "blur",
+  "ink": "dark",
+  "color": "#BEB5A5",
+  "alts": {
+   "ko": [
+    "문지른 자리에 사진 색이 얹힙니다",
+    "얇은 칠, 붓결, 나이프 붓마다 질감이 다릅니다",
+    "확대하면 물감의 두께감이 보입니다"
+   ],
+   "en": [
+    "Rub, and the photo’s color becomes paint",
+    "Glaze, Bristle, Knife A texture for each",
+    "Zoom in to see the paint’s thickness"
+   ],
+   "ja": [
+    "こすった場所に 写真の色がのります",
+    "薄塗り、筆目、厚塗り それぞれ質感が違います",
+    "拡大すると 絵の具の厚みが見えます"
+   ],
+   "zh-hans": [
+    "涂抹过的地方 铺上照片的颜色",
+    "薄涂、笔触、厚涂 每种画笔质感不同",
+    "放大就能看见 颜料的厚度"
+   ],
+   "zh-hant": [
+    "塗抹過的地方 鋪上照片的顏色",
+    "薄塗、筆觸、厚塗 每種畫筆質感不同",
+    "放大就能看見 顏料的厚度"
+   ],
+   "de": [
+    "Wo du reibst, trägst du die Farbe des Fotos auf",
+    "Lasur, Borste, Spachtel Jeweils eigene Textur",
+    "Beim Zoomen siehst du die Dicke der Farbe"
+   ],
+   "es": [
+    "Donde frotas, se posa el color de la foto",
+    "Veladura, Cerdas, Espátula: tres texturas",
+    "Amplía y verás el grosor de la pintura"
+   ],
+   "pt-br": [
+    "Onde você esfrega, fica a cor da foto",
+    "Veladura, Cerdas, Espátula: três texturas",
+    "Amplie e veja a espessura da tinta"
+   ]
+  }
+ },
+ "dice-master": {
+  "mode": "blur",
+  "ink": "light",
+  "color": "#1E1A17",
+  "alts": {
+   "ko": [
+    "주사위를 한 번에 굴리고 합계를 바로 봅니다",
+    "면체와 주사위 수, 계산식을 직접 정합니다",
+    "주사위 스킨과 화면 테마를 고릅니다"
+   ],
+   "en": [
+    "Roll all dice at once and see the sum instantly",
+    "Set Faces, Dice Count, and Formula yourself",
+    "Choose your Dice Skin and Theme"
+   ],
+   "ja": [
+    "ダイスをまとめて振り 合計をすぐに確認",
+    "面数とダイス数、 計算式を自由に設定",
+    "ダイススキンと テーマを選択"
+   ],
+   "zh-hans": [
+    "一次掷出所有骰子 立即查看总和",
+    "自由设定面数、 骰子数和计算公式",
+    "挑选骰子皮肤 和主题"
+   ],
+   "zh-hant": [
+    "一次擲出所有骰子 立即查看總和",
+    "自由設定面數、 骰子數量和計算式",
+    "挑選骰子外觀 和畫面主題"
+   ],
+   "de": [
+    "Alle Würfel werfen und die Summe sofort sehen",
+    "Seiten, Würfelanzahl und Formel selbst festlegen",
+    "Würfel-Skin und Design wählen"
+   ],
+   "es": [
+    "Lanza todos los dados y ve la suma al instante",
+    "Caras, n.º de dados y fórmula a tu medida",
+    "Apariencia del dado y tema a tu gusto"
+   ],
+   "pt-br": [
+    "Role todos os dados e veja a soma na hora",
+    "Faces, nº de dados e fórmula do seu jeito",
+    "Aparência dos dados e tema à sua escolha"
+   ]
+  }
+ },
+ "life-tyde": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {
+   "ko": [
+    "굵직한 순간만 한 줄에 남깁니다",
+    "태그 하나를 고르면 연대기가 이어집니다",
+    "지나온 기록을 한 장씩 다시 봅니다"
+   ],
+   "en": [
+    "Keep only the big moments on a single line",
+    "Pick one tag and its chronicle unfolds",
+    "Look back at your records one by one"
+   ],
+   "ja": [
+    "大切な瞬間だけを 一本の線に残します",
+    "タグをひとつ選べば 年代記がつながります",
+    "これまでの記録を 一枚ずつ振り返ります"
+   ],
+   "zh-hans": [
+    "只留下重要时刻 连成一条线",
+    "选一个标签 串起一部编年史",
+    "过往的记录 一页一页回顾"
+   ],
+   "zh-hant": [
+    "只留下重要時刻 連成一條線",
+    "選一個標籤 串起一部編年史",
+    "過往的紀錄 一頁一頁回顧"
+   ],
+   "de": [
+    "Nur die großen Momente, auf einer Linie",
+    "Einen Hashtag wählen, die ganze Chronik sehen",
+    "Zurückblättern, Eintrag für Eintrag"
+   ],
+   "es": [
+    "Solo los grandes momentos, en una sola línea",
+    "Elige una etiqueta y sigue su crónica",
+    "Repasa tus registros uno a uno"
+   ],
+   "pt-br": [
+    "Só os grandes momentos, em uma única linha",
+    "Escolha uma tag e veja a crônica inteira",
+    "Reveja seus registros um por um"
+   ]
+  }
+ },
+ "percentime": {
+  "mode": "blur",
+  "ink": "dark",
+  "color": "#D7D6E4",
+  "alts": {
+   "ko": [
+    "시간이 얼마나 찼는지 퍼센트로 보여 줍니다",
+    "지나온 시간이 한 칸씩 쌓입니다",
+    "잠금 화면에서 바로 봅니다"
+   ],
+   "en": [
+    "See how full your time is, as a percentage",
+    "The time behind you stacks up, cell by cell",
+    "See it at a glance on the Lock Screen"
+   ],
+   "ja": [
+    "時間がどれだけ満ちたか パーセントで見せます",
+    "過ぎた時間が ひとマスずつ積もります",
+    "ロック画面で すぐに見られます"
+   ],
+   "zh-hans": [
+    "时间满了多少 用百分比呈现",
+    "走过的时间 一格一格堆积",
+    "在锁定屏幕上 一眼就能看到"
+   ],
+   "zh-hant": [
+    "時間滿了多少 用百分比呈現",
+    "走過的時間 一格一格堆疊",
+    "在鎖定畫面上 一眼就能看到"
+   ],
+   "de": [
+    "Wie voll die Zeit ist, in Prozent",
+    "Vergangene Zeit stapelt sich Feld für Feld",
+    "Direkt auf dem Sperrbildschirm"
+   ],
+   "es": [
+    "Mira cuánto se ha llenado tu tiempo, en porcentaje",
+    "El tiempo que pasa se acumula casilla a casilla",
+    "Directo en la pantalla bloqueada"
+   ],
+   "pt-br": [
+    "Veja quanto do seu tempo já passou, em porcentagem",
+    "O tempo que passou se acumula casa por casa",
+    "Direto na Tela Bloqueada"
+   ]
+  }
+ },
+ "snapline": {
+  "mode": "blur",
+  "ink": "light",
+  "color": "#322E32",
+  "alts": {
+   "ko": [
+    "격자가 사진 속으로 들어갑니다",
+    "점을 끌어 선을 꺾습니다",
+    "돋보기를 통해 미세하게 조절할 수 있습니다"
+   ],
+   "en": [
+    "The grid steps into the photo",
+    "Drag a point to bend the line",
+    "Fine-tune the details with the Loupe"
+   ],
+   "ja": [
+    "グリッドが 写真の中へ入ります",
+    "点をドラッグして 線を曲げます",
+    "ルーペで 細かく調整できます"
+   ],
+   "zh-hans": [
+    "网格走进 照片之中",
+    "拖动一个点 弯折线条",
+    "借助放大镜 细致调整"
+   ],
+   "zh-hant": [
+    "網格走進 照片之中",
+    "拖移一個點 彎折線條",
+    "透過放大鏡 細緻調整"
+   ],
+   "de": [
+    "Das Raster tritt ins Foto ein",
+    "Punkt ziehen, Linie biegen",
+    "Details fein justieren mit der Lupe"
+   ],
+   "es": [
+    "La cuadrícula entra en la foto",
+    "Arrastra un punto para doblar la línea",
+    "Ajusta cada detalle con la Lupa"
+   ],
+   "pt-br": [
+    "A grade entra na foto",
+    "Arraste um ponto para dobrar a linha",
+    "Ajuste os detalhes com a Lupa"
+   ]
+  }
+ },
+ "tailorcolor": {
+  "mode": "blur",
+  "ink": "dark",
+  "color": "#D3D5D9",
+  "alts": {}
+ },
+ "tapey": {
+  "mode": "blur",
+  "ink": "dark",
+  "color": "#B4ADA1",
+  "alts": {
+   "ko": [
+    "좋아하는 사진을 붙여 잠금화면을 만듭니다",
+    "테이프와 폴라로이드, 손글씨 메모로 꾸밉니다",
+    "몇 장 고르면 알아서 배치합니다"
+   ],
+   "en": [
+    "Tape up photos you love as your lock screen",
+    "Add tape, Polaroids and handwritten notes",
+    "Pick a few photos and they fall into place"
+   ],
+   "ja": [
+    "好きな写真を貼って ロック画面をつくります",
+    "テープとポラロイド、 手書きメモで飾ります",
+    "何枚か選ぶだけで 自動で配置します"
+   ],
+   "zh-hans": [
+    "贴上喜欢的照片 做成锁屏",
+    "用胶带、拍立得 和手写备注来装饰",
+    "选几张照片 自动完成布局"
+   ],
+   "zh-hant": [
+    "貼上喜歡的照片 做成鎖定畫面",
+    "用膠帶、拍立得 和手寫備註來裝飾",
+    "挑幾張照片 自動排好版面"
+   ],
+   "de": [
+    "Lieblingsfotos auf den Sperrbildschirm kleben",
+    "Mit Tape, Polaroids und Handschrift verzieren",
+    "Ein paar Fotos wählen, sie ordnen sich selbst"
+   ],
+   "es": [
+    "Pega tus fotos favoritas en la pantalla bloqueada",
+    "Decora con cinta, Polaroid y notas a mano",
+    "Elige unas fotos y se colocan solas"
+   ],
+   "pt-br": [
+    "Cole suas fotos favoritas na tela de bloqueio",
+    "Decore com fita, Polaroid e anotações à mão",
+    "Escolha algumas fotos, o layout se monta sozinho"
+   ]
+  }
+ }
+}

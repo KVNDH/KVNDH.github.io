@@ -5,7 +5,8 @@
    "en": [
     "BrushWorks/docs/store/screenshots/01-finished.png"
    ]
-  }
+  },
+  "store": "BrushWorks/docs/store"
  },
  "life-tyde": {
   "icon": "Life Tyde/Life Tyde/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
@@ -42,7 +43,8 @@
     "Life Tyde/results/store-1.2.1-src/pt-BR_1-timeline.png",
     "Life Tyde/results/store-1.2.1-src/pt-BR_3-chronicle.png"
    ]
-  }
+  },
+  "store": "Life Tyde/docs/store"
  },
  "snapline": {
   "icon": "SnapLine/SnapLine/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
@@ -51,7 +53,8 @@
     "SnapLine/docs/appstore/screenshots/01-behind.png",
     "SnapLine/docs/appstore/screenshots/02-bend.png"
    ]
-  }
+  },
+  "store": "SnapLine/docs/store"
  },
  "tapey": {
   "icon": "Tapey/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
@@ -80,7 +83,8 @@
    "pt-br": [
     "Tapey/appstore-raw/pt-BR/03.png"
    ]
-  }
+  },
+  "store": "Tapey/docs/store"
  },
  "dice-master": {
   "icon": "diceMaster/diceMaster/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
@@ -109,7 +113,8 @@
    "pt-br": [
     "diceMaster/results/asc-shot1-raw/iphone/pt-PT.png"
    ]
-  }
+  },
+  "store": "diceMaster/docs/store"
  },
  "percentime": {
   "icon": "Percentime/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
@@ -128,7 +133,8 @@
     "Percentime/docs/store/screenshots/ko/04-weekly-hours.png",
     "Percentime/docs/store/screenshots/ko/05-lock-screen.png"
    ]
-  }
+  },
+  "store": "Percentime/docs/store"
  },
  "tailorcolor": {
   "icon": "ColorFit/TailorColor/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
@@ -143,6 +149,15 @@
  },
  "onpace": {
   "icon": "OnPace/PoC/App/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
-  "shots": {}
+  "shots": {
+   "ko": [
+    "OnPace/docs/store/shots-raw/iphone/ko/run.png",
+    "OnPace/docs/store/shots-raw/iphone/ko/map.png"
+   ],
+   "en": [
+    "OnPace/docs/store/shots-raw/iphone/en-US/run.png",
+    "OnPace/docs/store/shots-raw/iphone/en-US/map.png"
+   ]
+  }
  }
 }

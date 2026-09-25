@@ -1,4 +1,8 @@
-"""페이지 HTML 을 만든다. 틀은 templates/*.html (string.Template), 모양은 C안(Dark Gallery)."""
+"""페이지 HTML 을 만든다. 틀은 templates/*.html (string.Template).
+
+모양은 2026-09-26 B안: 앱 페이지 바탕이 그 앱 스토어 스크린샷의 번짐 색이고, 첫 화면에 스토어 첫 세 장을 늘어놓는다.
+허브는 밝은 회색 바탕에 앱마다 제 번짐 색 타일.
+"""
 from __future__ import annotations
 
 import json
@@ -37,6 +41,72 @@ def accent_style(app: dict) -> str:
 
 def asset(slug: str, name: str) -> str:
     return f"/assets/{slug}/{name}"
+
+
+DEFAULT_LOOK = {"mode": "plain", "ink": "dark", "color": "#F5F5F7"}
+
+
+def look(site: Site, slug: str) -> dict:
+    return site.looks.get(slug) or DEFAULT_LOOK
+
+
+def theme(site: Site, slug: str) -> tuple[str, str, str]:
+    """스토어 스크린샷의 번짐에서 온 바탕. (클래스, CSS 변수, 바탕색). 글자가 밝으면 어두운 바탕이다."""
+    lk = look(site, slug)
+    cls = "th-dark" if lk.get("ink") == "light" else "th-light"
+    style = f"--fc:{lk['color']}"
+    if (site.root / "assets" / slug / "field.webp").exists():
+        style += f";--fld:url({asset(slug, 'field.webp')})"
+    return cls, style, lk["color"]
+
+
+def store_code(site: Site, slug: str, lang: str) -> str | None:
+    """스토어 합성본이 있는 언어 폴더. 이 언어가 없으면 영어, 그다음 한국어."""
+    for code in (lang, "en", "ko"):
+        if (site.root / "assets" / slug / "store" / code / "01.webp").exists():
+            return code
+    return None
+
+
+def store_images(site: Site, slug: str, lang: str, copy: dict, count: int) -> list[tuple[str, str]]:
+    """(주소, 대체 문구) 목록. 스토어 합성본이 있으면 그것을, 없으면 원래 캡처를 쓴다.
+    합성본의 대체 문구는 그 장의 스토어 문구다(합성본에 박힌 글자와 같다)."""
+    code = store_code(site, slug, lang)
+    if code:
+        alts = look(site, slug).get("alts", {}).get(code, [])
+        out = []
+        for i in range(1, count + 1):
+            if not (site.root / "assets" / slug / "store" / code / f"{i:02d}.webp").exists():
+                break
+            alt = alts[i - 1] if i - 1 < len(alts) else (shot_alt(site, copy, lang) if i == 1 else "")
+            out.append((asset(slug, f"store/{code}/{i:02d}.webp"), alt))
+        return out
+    first = shot_path(site, slug, lang)
+    out = [(first, shot_alt(site, copy, lang))]
+    folder = first.rsplit("/", 1)[0]
+    for i in range(2, count + 1):
+        rel = f"{folder}/{i:02d}.webp"
+        if (site.root / rel.lstrip("/")).exists():
+            out.append((rel, ""))
+    return out
+
+
+def panorama(site: Site, slug: str, lang: str, copy: dict) -> str:
+    """첫 화면에 스토어 첫 세 장을 App Store 처럼 늘어놓는다. 첫 장만 바로 읽는다."""
+    lazy = ' loading="lazy"'
+    imgs = "".join(
+        f'<img src="{src}" alt="{esc(alt)}"{lazy if i else ""}>'
+        for i, (src, alt) in enumerate(store_images(site, slug, lang, copy, 3))
+    )
+    return f'<div class="pano">{imgs}</div>'
+
+
+def tile_shot(site: Site, app: dict, copy: dict, lang: str) -> str:
+    slug = app["slug"]
+    src, alt = store_images(site, slug, lang, copy, 1)[0]
+    if "/store/" in src:
+        return f'<div class="shot shot-store"><img src="{src}" alt="{esc(alt)}" loading="lazy"></div>'
+    return f'<div class="shot" style="{esc(app.get("shotCrop", ""))}"><img src="{src}" alt="{esc(alt)}" loading="lazy"></div>'
 
 
 def shot_path(site: Site, slug: str, lang: str, index: int = 1) -> str:
@@ -175,7 +245,14 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
          content: str, footer: str, bar: str = "", page_style: str = "", extra_head: str = "",
          og_image: str = "/assets/og.jpg") -> str:
     option = site.lang(lang)
+    if slug is None:
+        body_class, body_style, color = "hub", "", DEFAULT_LOOK["color"]
+    else:
+        body_class, body_style, color = theme(site, slug)
     return tpl(site, "base.html").substitute(
+        body_class=body_class,
+        body_style=f' style="{esc(body_style)}"' if body_style else "",
+        theme_color=esc(color),
         html_lang=esc(option["htmlLang"]),
         title=esc(title),
         description=esc(description),
@@ -216,9 +293,12 @@ def render_hub(site: Site, lang: str) -> str:
             f'<a class="tile-link" href="{page_path(lang, slug)}">{esc(copy["name"])}</a>' if linked
             else esc(copy["name"])
         )
+        cls, field, _ = theme(site, slug)
+        light = f";--ink:{app['paperAccent']};--acc:{app['paperAccent']}" if cls == "th-light" else ""
         tiles.append(tpl(site, "tile.html").substitute(
             position=position,
-            style=esc(accent_style(app)),
+            theme=cls,
+            style=esc(f"{accent_style(app)};{field}{light}"),
             icon=asset(slug, "icon-180.webp"),
             name=name,
             subtitle=esc(copy["subtitle"]),
@@ -226,9 +306,7 @@ def render_hub(site: Site, lang: str) -> str:
             more=f'<span class="more" aria-hidden="true">{esc(ui["learnMore"])} →</span>' if linked else "",
             store=app_store_url(app["appStoreId"]),
             store_label=esc(fill(ui["storeLabel"], name=copy["name"])),
-            crop=esc(app.get("shotCrop", "")),
-            shot=shot_path(site, slug, lang),
-            shot_alt=esc(shot_alt(site, copy, lang)),
+            shot=tile_shot(site, app, copy, lang),
         ))
     names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in listed)
     content = tpl(site, "hub.html").substitute(
@@ -362,8 +440,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
         hook=esc(copy["hero"]["hook"]),
         store_btn=store_button(site, lang, app),
         meta=f'<span class="meta">{esc(copy["hero"]["meta"])}</span>' if copy["hero"].get("meta") else "",
-        shot=shot_path(site, slug, lang),
-        shot_alt=esc(shot_alt(site, copy, lang)),
+        pano=panorama(site, slug, lang, copy),
         sections=render_sections(site, lang, slug, copy["sections"]),
         pro=render_pro(site, lang, copy.get("pro")),
         help_title=esc(ui["navSupport"]),
