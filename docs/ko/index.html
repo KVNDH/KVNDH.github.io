@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kvndh 앱</title>
-<meta name="description" content="SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
+<meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
 <link rel="canonical" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="en" href="https://kvndh.com/en/">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kvndh 앱">
-<meta property="og:description" content="SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
+<meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
 <meta property="og:url" content="https://kvndh.com/ko/">
 <meta property="og:image" content="https://kvndh.com/assets/og.jpg">
 <meta property="og:locale" content="ko_KR">
@@ -64,6 +64,11 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 여섯이면 셋째 줄에 둘, 넷째 줄에 하나를 둔다(2026-09-25 BrushWorks 출시). 셋째 줄을 셋으로
+   나누면 타일이 좁아져 제목과 App Store 단추가 스크린샷에 겹쳤다. 한 줄을 다 쓰는 타일은 앱이 넷일 때 쓰던 꼴이다 */
+.t-r1{grid-column:1/7;grid-row:3}
+.t-r2{grid-column:7/13;grid-row:3}
+.t-r3{grid-column:1/-1;grid-row:4}
 /* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
 .t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
@@ -226,6 +231,7 @@ to{opacity:1;transform:scale(1.04)}
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
 .t-feature{grid-column:1/-1;height:596px}
+.t-r3{grid-column:1/-1}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -350,18 +356,29 @@ to{opacity:1;transform:scale(1.04)}
 <main id="main">
 <h1 class="sr-only">kvndh 앱</h1>
 <div class="bento">
-<article class="tile t-feature" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
+<article class="tile t-feature" style="--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42;--btn-tx:#FFFFFF">
+<div class="tile-tx">
+<img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="80" height="80">
+<h2><a class="tile-link" href="/ko/brushworks/">BrushWorks</a></h2>
+<p class="sub">실력 대신 정성으로 채우는 캔버스</p>
+<p class="hook">좋아하는 사진을 고르고 화면을 문지릅니다. 잘 그릴 줄 몰라도 되고, 시간을 들여 채우면 됩니다.</p>
+<p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6810951573" aria-label="BrushWorks, App Store에서 보기">App Store ↗</a></p>
+</div>
+<div class="shot" style=""><img src="/assets/brushworks/shots/en/01.webp" alt="BrushWorks에서 등대 사진을 물감으로 칠한 편집 화면. 아래에 붓 세 자루와 크기 단계가 있습니다." loading="lazy"></div>
+</article>
+
+<article class="tile t-p2" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
 <div class="tile-tx">
 <img class="ic" src="/assets/snapline/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/ko/snapline/">SnapLine</a></h2>
 <p class="sub">이미 찍은 한 장에 다시 얹는 격자</p>
-<p class="hook">사진 위에 카메라 격자를 얹고, 감각적으로 배치해보세요</p>
+
 <p class="tile-act"><span class="more" aria-hidden="true">자세히 보기 →</span><a class="as" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine, App Store에서 보기">App Store ↗</a></p>
 </div>
 <div class="shot" style=""><img src="/assets/snapline/shots/en/01.webp" alt="SnapLine 편집 화면. 해 질 녘 등대 사진 위 격자선이 등대 쪽으로 꺾여 있고, 아래에 선과 지우기 도구가 있습니다." loading="lazy"></div>
 </article>
 
-<article class="tile t-p2" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
+<article class="tile t-p3" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/life-tyde/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/ko/life-tyde/">Life Tyde</a></h2>
@@ -372,7 +389,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/life-tyde/shots/ko/01.webp" alt="Life Tyde 타임라인 화면. 연도별 기록이 세로로 이어지고, 강조한 기록은 빨간 점과 빨간 제목으로 보입니다." loading="lazy"></div>
 </article>
 
-<article class="tile t-p3" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
+<article class="tile t-r1" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
 <div class="tile-tx">
 <img class="ic" src="/assets/tapey/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/ko/tapey/">Tapey</a></h2>
@@ -383,7 +400,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/tapey/shots/ko/01.webp" alt="Tapey 편집 화면. 잠금화면 시계 아래에 폴라로이드 프레임 사진들이 종이테이프로 붙어 있고, 한 장에는 손글씨 메모가 있습니다." loading="lazy"></div>
 </article>
 
-<article class="tile t-p4" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
+<article class="tile t-r2" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
 <div class="tile-tx">
 <img class="ic" src="/assets/dice-master/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/ko/dice-master/">Dice Master</a></h2>
@@ -394,7 +411,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/dice-master/shots/ko/01.webp" alt="Dice Master에서 6면 주사위 5개를 3D로 굴린 화면. 주사위 위에 합계와 계산 과정이 있습니다." loading="lazy"></div>
 </article>
 
-<article class="tile t-p5" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37">
+<article class="tile t-r3" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/percentime/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/ko/percentime/">Percentime</a></h2>
@@ -406,10 +423,10 @@ to{opacity:1;transform:scale(1.04)}
 </article>
 
 </div>
-<div class="quiet" aria-hidden="true"><img src="/assets/brushworks/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
+<div class="quiet" aria-hidden="true"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
 
 </main>
-<footer class="sf"><div class="sf-l"><a class="wm" href="/ko/">kvndh</a></div><div><h2>문의</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>개인정보 처리방침</h2><ul><li><a href="/ko/snapline/privacy/">SnapLine</a></li><li><a href="/ko/life-tyde/privacy/">Life Tyde</a></li><li><a href="/ko/tapey/privacy/">Tapey</a></li><li><a href="/ko/dice-master/privacy/">Dice Master</a></li><li><a href="/ko/percentime/privacy/">Percentime</a></li></ul></div><div class="sf-l"><h2>언어</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
+<footer class="sf"><div class="sf-l"><a class="wm" href="/ko/">kvndh</a></div><div><h2>문의</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>개인정보 처리방침</h2><ul><li><a href="/ko/brushworks/privacy/">BrushWorks</a></li><li><a href="/ko/snapline/privacy/">SnapLine</a></li><li><a href="/ko/life-tyde/privacy/">Life Tyde</a></li><li><a href="/ko/tapey/privacy/">Tapey</a></li><li><a href="/ko/dice-master/privacy/">Dice Master</a></li><li><a href="/ko/percentime/privacy/">Percentime</a></li></ul></div><div class="sf-l"><h2>언어</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko" aria-current="true">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </div>
 </body>
 </html>

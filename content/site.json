@@ -68,8 +68,7 @@
    "glow": "rgba(160,91,66,.5)",
    "paperAccent": "#8A4A34",
    "button": "#A05B42",
-   "buttonText": "#FFFFFF",
-   "unreleased": true
+   "buttonText": "#FFFFFF"
   },
   {
    "slug": "snapline",

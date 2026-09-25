@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kvndh Apps</title>
-<meta name="description" content="SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
+<meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
 <link rel="canonical" href="https://kvndh.com/de/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="en" href="https://kvndh.com/en/">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kvndh Apps">
-<meta property="og:description" content="SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
+<meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime">
 <meta property="og:url" content="https://kvndh.com/de/">
 <meta property="og:image" content="https://kvndh.com/assets/og.jpg">
 <meta property="og:locale" content="de_DE">
@@ -64,6 +64,11 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 여섯이면 셋째 줄에 둘, 넷째 줄에 하나를 둔다(2026-09-25 BrushWorks 출시). 셋째 줄을 셋으로
+   나누면 타일이 좁아져 제목과 App Store 단추가 스크린샷에 겹쳤다. 한 줄을 다 쓰는 타일은 앱이 넷일 때 쓰던 꼴이다 */
+.t-r1{grid-column:1/7;grid-row:3}
+.t-r2{grid-column:7/13;grid-row:3}
+.t-r3{grid-column:1/-1;grid-row:4}
 /* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
 .t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
@@ -226,6 +231,7 @@ to{opacity:1;transform:scale(1.04)}
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
 .t-feature{grid-column:1/-1;height:596px}
+.t-r3{grid-column:1/-1}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -350,18 +356,29 @@ to{opacity:1;transform:scale(1.04)}
 <main id="main">
 <h1 class="sr-only">kvndh Apps</h1>
 <div class="bento">
-<article class="tile t-feature" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
+<article class="tile t-feature" style="--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42;--btn-tx:#FFFFFF">
+<div class="tile-tx">
+<img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="80" height="80">
+<h2><a class="tile-link" href="/de/brushworks/">BrushWorks</a></h2>
+<p class="sub">Aus Sorgfalt, nicht Talent</p>
+<p class="hook">Wählen Sie ein Foto, das Ihnen gefällt, und reiben Sie mit dem Finger über den Bildschirm. Sie müssen nicht malen können; das Gemälde füllt sich mit der Zeit, die Sie hineinstecken.</p>
+<p class="tile-act"><span class="more" aria-hidden="true">Mehr erfahren →</span><a class="as" href="https://apps.apple.com/app/id6810951573" aria-label="BrushWorks im App Store ansehen">App Store ↗</a></p>
+</div>
+<div class="shot" style=""><img src="/assets/brushworks/shots/en/01.webp" alt="Die Leinwand von BrushWorks mit einem Leuchtturmfoto, das in dicken Strichen übermalt ist. Darunter liegen die drei Pinsel und die Größenstufen." loading="lazy"></div>
+</article>
+
+<article class="tile t-p2" style="--acc:#F9F9F9;--ink:#F9F9F9;--glow:rgba(249,249,249,.16);--p-acc:#3F3F41">
 <div class="tile-tx">
 <img class="ic" src="/assets/snapline/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/de/snapline/">SnapLine</a></h2>
 <p class="sub">Neue Linien auf schon gemachten Fotos</p>
-<p class="hook">Legen Sie das Kameraraster über Ihr Foto und komponieren Sie das Bild mit Gespür.</p>
+
 <p class="tile-act"><span class="more" aria-hidden="true">Mehr erfahren →</span><a class="as" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine im App Store ansehen">App Store ↗</a></p>
 </div>
 <div class="shot" style=""><img src="/assets/snapline/shots/en/01.webp" alt="Der Editor von SnapLine mit einem Leuchtturm in der Dämmerung. Rasterlinien knicken zum Leuchtturm hin, darunter liegen die Werkzeuge Linien und Radieren." loading="lazy"></div>
 </article>
 
-<article class="tile t-p2" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
+<article class="tile t-p3" style="--acc:#E33C48;--ink:#F46A74;--glow:rgba(227,60,72,.34);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/life-tyde/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/de/life-tyde/">Life Tyde</a></h2>
@@ -372,7 +389,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/life-tyde/shots/de/01.webp" alt="Die Timeline von Life Tyde. Die Einträge laufen nach Jahren den Bildschirm hinunter, hervorgehobene tragen einen roten Punkt und einen roten Titel." loading="lazy"></div>
 </article>
 
-<article class="tile t-p3" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
+<article class="tile t-r1" style="--acc:#CBD3B6;--ink:#CBD3B6;--glow:rgba(203,211,182,.24);--p-acc:#525A4A">
 <div class="tile-tx">
 <img class="ic" src="/assets/tapey/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/de/tapey/">Tapey</a></h2>
@@ -383,7 +400,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/tapey/shots/de/01.webp" alt="Der Editor von Tapey. Unter der Uhr des Sperrbildschirms hängen Fotos in Polaroid-Rahmen an Washi-Tape, eines trägt eine handgeschriebene Notiz." loading="lazy"></div>
 </article>
 
-<article class="tile t-p4" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
+<article class="tile t-r2" style="--acc:#EE9D1C;--ink:#EE9D1C;--glow:rgba(238,157,28,.32);--p-acc:#9A4F09">
 <div class="tile-tx">
 <img class="ic" src="/assets/dice-master/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/de/dice-master/">Dice Master</a></h2>
@@ -394,7 +411,7 @@ to{opacity:1;transform:scale(1.04)}
 <div class="shot" style=""><img src="/assets/dice-master/shots/de/01.webp" alt="Dice Master nach einem Wurf mit fünf sechsseitigen Würfeln in 3D. Über den Würfeln stehen das Ergebnis und die Augen, aus denen es entstand." loading="lazy"></div>
 </article>
 
-<article class="tile t-p5" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37">
+<article class="tile t-r3" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37">
 <div class="tile-tx">
 <img class="ic" src="/assets/percentime/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/de/percentime/">Percentime</a></h2>
@@ -406,10 +423,10 @@ to{opacity:1;transform:scale(1.04)}
 </article>
 
 </div>
-<div class="quiet" aria-hidden="true"><img src="/assets/brushworks/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
+<div class="quiet" aria-hidden="true"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
 
 </main>
-<footer class="sf"><div class="sf-l"><a class="wm" href="/de/">kvndh</a></div><div><h2>Kontakt</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>Datenschutzerklärung</h2><ul><li><a href="/de/snapline/privacy/">SnapLine</a></li><li><a href="/de/life-tyde/privacy/">Life Tyde</a></li><li><a href="/de/tapey/privacy/">Tapey</a></li><li><a href="/de/dice-master/privacy/">Dice Master</a></li><li><a href="/de/percentime/privacy/">Percentime</a></li></ul></div><div class="sf-l"><h2>Sprache</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de" aria-current="true">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
+<footer class="sf"><div class="sf-l"><a class="wm" href="/de/">kvndh</a></div><div><h2>Kontakt</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>Datenschutzerklärung</h2><ul><li><a href="/de/brushworks/privacy/">BrushWorks</a></li><li><a href="/de/snapline/privacy/">SnapLine</a></li><li><a href="/de/life-tyde/privacy/">Life Tyde</a></li><li><a href="/de/tapey/privacy/">Tapey</a></li><li><a href="/de/dice-master/privacy/">Dice Master</a></li><li><a href="/de/percentime/privacy/">Percentime</a></li></ul></div><div class="sf-l"><h2>Sprache</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de" aria-current="true">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </div>
 </body>
 </html>

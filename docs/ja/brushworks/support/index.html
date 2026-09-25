@@ -64,6 +64,11 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .t-p3{grid-column:8/13;grid-row:2}
 .t-p4{grid-column:1/7;grid-row:3}
 .t-p5{grid-column:7/13;grid-row:3}
+/* 출시된 앱이 여섯이면 셋째 줄에 둘, 넷째 줄에 하나를 둔다(2026-09-25 BrushWorks 출시). 셋째 줄을 셋으로
+   나누면 타일이 좁아져 제목과 App Store 단추가 스크린샷에 겹쳤다. 한 줄을 다 쓰는 타일은 앱이 넷일 때 쓰던 꼴이다 */
+.t-r1{grid-column:1/7;grid-row:3}
+.t-r2{grid-column:7/13;grid-row:3}
+.t-r3{grid-column:1/-1;grid-row:4}
 /* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
 .t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
@@ -226,6 +231,7 @@ to{opacity:1;transform:scale(1.04)}
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
 .t-feature{grid-column:1/-1;height:596px}
+.t-r3{grid-column:1/-1}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -349,7 +355,7 @@ to{opacity:1;transform:scale(1.04)}
 <nav class="ab" aria-label="BrushWorks">
 <a class="ab-id" href="/ja/brushworks/"><img class="ic" src="/assets/brushworks/icon-180.webp" alt="" width="30" height="30">BrushWorks</a>
 <ul class="tabs"><li><a href="/ja/brushworks/">紹介</a></li><li><a href="/ja/brushworks/support/" aria-current="page">サポート</a></li><li><a href="/ja/brushworks/privacy/">プライバシーポリシー</a></li></ul>
-
+<a class="btn btn-s" href="https://apps.apple.com/app/id6810951573">App Store からダウンロード</a>
 </nav>
 
 <main id="main">

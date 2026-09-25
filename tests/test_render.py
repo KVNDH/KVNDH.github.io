@@ -57,6 +57,18 @@ class HubTest(unittest.TestCase):
         self.assertNotIn('class="btn"', html)
 
 
+class TilePositionTest(unittest.TestCase):
+    def test_five_or_fewer_keep_the_grid(self):
+        self.assertEqual(render.tile_positions(5), render.TILE_POSITIONS)
+
+    def test_six_apps_split_the_third_row(self):
+        self.assertEqual(render.tile_positions(6)[3:], ["t-r1", "t-r2", "t-r3"])
+
+    def test_more_apps_than_tiles_stops_the_build(self):
+        with self.assertRaises(SystemExit):
+            render.tile_positions(7)
+
+
 class AppPageTest(unittest.TestCase):
     def setUp(self):
         self.site = Site(make_site())
