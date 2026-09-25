@@ -68,7 +68,7 @@
   "diceMaster/DiceMaster.storekit (NonConsumable com.kimdh.dicemaster.pro)",
   "diceMaster/diceMaster/ViewModels/ProStore.swift (freeMaxFaces 10, freeMaxCount 10, freeMaxPresets 2, freeMaxHistory 50, d20판정 예외)",
   "diceMaster/diceMaster/Views/ProUnlockSheet.swift (Pro 기능 목록, 구매 복원 버튼)",
-  "diceMaster/diceMaster/Views/AppSettingsSheet.swift (DiceMaster Pro 카드, 조작 방식, Language, 앱 초기화)",
+  "diceMaster/diceMaster/Views/AppSettingsSheet.swift (Dice Master Pro 카드: 1.0.9 부터 띄어 씀, 조작 방식, Language, 앱 초기화)",
   "diceMaster/diceMaster/Views/DiceRulesSheet.swift (면체 2~100, 개수 1~20, 굴림 횟수 2~20, 합계 제한 1~999)",
   "diceMaster/diceMaster/Views/MainDiceView.swift (색상별 부분합, 판정 배지 Pro 게이트, requestReview, ShareLink)",
   "diceMaster/diceMaster/Views/HistorySheet.swift (무료 최근 50건 표시와 통계)",
