@@ -1,0 +1,262 @@
+{
+ "name": "Readride",
+ "subtitle": "Romane und News, Wort für Wort",
+ "summary": "Readride zeigt, was Sie lesen, ein oder zwei Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
+ "hero": {
+  "hook": "Readride zeigt, was Sie lesen, ein oder zwei Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
+  "shotAlt": "Der Bildschirm Get Ready in Readride. Kopf- und Fußzeile, die aus einem PDF entfernt wurden, erscheinen als eingeschaltete Schalter mit den Seiten, auf denen sie standen, und eine Seite ohne Text ist unter Check vermerkt."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Sie sehen, was entfernt wurde",
+   "body": [
+    "Wenn Sie etwas zum Lesen hinzufügen, räumt Readride es zuerst auf. Es entfernt Kopfzeilen und Seitenzahlen aus PDFs sowie Werbung und Listen verwandter Artikel rund um Webartikel, und es verbindet Zeilen, die mitten im Satz umbrechen. Get Ready listet alles auf, was entfernt wurde, und jedes Stück lässt sich zurückholen."
+   ],
+   "bullets": [
+    "Kopfzeilen, Fußzeilen und Seitenzahlen entfernt",
+    "Mitten im Satz umbrochene Zeilen verbunden",
+    "Alles Entfernte lässt sich zurückholen"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-650px",
+    "alt": "Get Ready. Unter Taken Out stehen die Kopf- und Fußzeilen des PDFs als eingeschaltete Schalter, jeweils mit den Seiten, auf denen sie standen.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "An einer Stelle lesen. Beim Anhalten öffnet sich der Text drumherum.",
+   "body": [
+    "Die Wörter erscheinen einzeln oder zu zweit an derselben Stelle in der Mitte des Bildschirms, mit kurzen Pausen an Kommas und am Satzende. Halten Sie an, öffnet sich der Text vor und nach Ihrer Stelle. Tippen Sie dort auf ein Wort, geht es von diesem Wort aus weiter."
+   ],
+   "bullets": [
+    "Ein oder zwei Wörter auf einmal, an einer Stelle",
+    "Der Text rund um Ihre Stelle beim Anhalten",
+    "Weiterlesen ab dem angetippten Wort"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-160px",
+    "alt": "Der angehaltene Lesebildschirm. In der Mitte steht groß The, darunter öffnet sich der Text, und die aktuellen Wörter sind hinterlegt.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Artikel aus Safari und Ihre eigenen Dateien",
+   "body": [
+    "Teilen Sie einen Artikel aus Safari mit Readride, zieht es den Artikeltext heraus und öffnet ihn in Get Ready. Textdateien (txt und md), PDFs, ePubs ohne DRM und eingefügter Text gehen ebenfalls."
+   ],
+   "bullets": [
+    "Aus Safari geteilte Artikel",
+    "txt, md, PDF und ePub ohne DRM",
+    "Eingefügter Text"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Ihre Stelle und Ihr Tempo",
+   "body": [
+    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. So geht sie nicht verloren, wenn Sie die Schriftgröße ändern. Das Tempo wählen Sie zwischen 100 und 600 Wörtern pro Minute, die Länge der Pausen an Kommas und Satzenden in fünf Stufen."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Ihre Stelle, aufs Zeichen genau",
+     "100 bis 600 Wörter pro Minute",
+     "Fünf Pausenlängen",
+     "Einstellbare Schriftgröße"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Readride Pro",
+  "title": "Beliebig viele Dokumente\nund lange Texte als Karte",
+  "items": [
+   "Keine Grenze für Dokumente (zu Beginn 3)",
+   "Ein ZIP mit Textdateien als ein Dokument",
+   "Document Map und der aktuelle Abschnitt über den Wörtern",
+   "Find More with AI auf unterstützten iPhones"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Was Sie hinzufügen können",
+   "a": [
+    "Textdateien (txt und md), PDFs und ePubs ohne DRM, aus der Dateien-App oder über das Teilen aus anderen Apps. Kopierten Text können Sie einfügen, einen Webartikel aus Safari über „Teilen“ senden. PDFs mit Passwort öffnen sich, sobald Sie das Passwort eingeben. Readride passt am besten zu fortlaufendem Text wie Romanen, Nachrichten und Essays. Tabellen und Aufzählungen werden ohne ihr Layout als reiner Text gelesen."
+   ]
+  },
+  {
+   "q": "HWP-Dateien",
+   "a": [
+    "HWP-Dateien kann Readride nicht öffnen. Speichern Sie die Datei in Hancom Office als PDF und fügen Sie dann das PDF hinzu."
+   ]
+  },
+  {
+   "q": "Gescannte PDFs",
+   "a": [
+    "Ein PDF ohne Textebene kann Readride nicht lesen, denn es hat keine Texterkennung (OCR). Sind nur einige Seiten gescannt, liest Readride die übrigen, zeigt in Get Ready, welche Seiten übersprungen wurden, und markiert die Stelle im Text. PDFs, die bereits eine OCR durchlaufen haben, haben eine Textebene und lassen sich lesen."
+   ]
+  },
+  {
+   "q": "Wie sich Readride Ihre Stelle merkt",
+   "a": [
+    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. Deshalb bleibt sie erhalten, wenn Sie die Schriftgröße ändern. Öffnen Sie das Dokument wieder, steht es angehalten an diesem Wort, mit dem Text drumherum."
+   ]
+  },
+  {
+   "q": "Was die kostenlose Version umfasst",
+   "a": [
+    "Aufräumen, Lesen, die Einstellungen für Tempo, Pausen und Schriftgröße sowie das Teilen aus Safari sind kostenlos. Ihr Regal fasst bis zu 3 Dokumente, gelesene Dokumente und Webartikel mitgezählt. Die Einführung, die mit der App kommt, zählt nicht. Ist das Regal voll, können Sie ein Dokument löschen, um Platz zu schaffen, oder ein neues lesen, ohne es hinzuzufügen. Hinzugefügte Dokumente lassen sich immer lesen."
+   ]
+  },
+  {
+   "q": "Pro wiederherstellen und Familienfreigabe",
+   "a": [
+    "Öffnen Sie auf einem neuen iPhone oder nach einer Neuinstallation die Einstellungen in Readride und tippen Sie im Bereich Readride Pro auf Restore Purchases. Mit demselben Apple Account zahlen Sie nicht erneut. Mitglieder Ihrer Familienfreigabe-Gruppe können Pro ebenfalls nutzen. Erstattungen wickelt Apple ab, und wird Pro erstattet, bleiben Ihre hinzugefügten Dokumente lesbar."
+   ]
+  },
+  {
+   "q": "iPhones für Find More with AI",
+   "a": [
+    "Ein iPhone, das Apple Intelligence unterstützt, mit iOS 26 oder neuer und eingeschalteter Apple Intelligence unter Einstellungen > Apple Intelligence & Siri. Solange das Modell auf dem Gerät noch geladen wird oder die Sprache des Textes nicht unterstützt, steht die Funktion nicht zur Verfügung. Sie arbeitet in Get Ready bei PDFs und Textdateien (nicht md). Sie läuft auf diesem iPhone und kann sich irren, deshalb sind ihre Vorschläge zunächst ausgeschaltet, und nur die eingeschalteten werden entfernt. Ob dieses iPhone sie nutzen kann, zeigt die Zeile AI features in den Einstellungen von Readride."
+   ]
+  },
+  {
+   "q": "Wohin ein geteilter Webartikel geht",
+   "a": [
+    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht Get Ready den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
+   ]
+  },
+  {
+   "q": "iPad und andere Geräte",
+   "a": [
+    "Es gibt keine Synchronisierung zwischen Geräten, daher lesen Sie Ihre Dokumente auf dem iPhone, auf dem Sie sie hinzugefügt haben. Eine Darstellung für das iPad gibt es nicht."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Readride Datenschutzerklärung",
+  "effectiveDate": "2026-09-26",
+  "summary": "Readride erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Was Sie hinzufügen, und Ihre Einstellungen liegen auf Ihrem Gerät, und den Kauf von Pro übernimmt Apple.",
+  "intro": [
+   "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Readride (die App) wie folgt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat keine Registrierung und keine Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten ihrer Nutzerinnen und Nutzer. Die App verwendet den Text, den Sie hinzufügen, nur, um ihn aufzuräumen und auf dem Lesebildschirm zu zeigen, und das geschieht auf Ihrem Gerät."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Hinzugefügte Dokumente (der aufgeräumte Text, die Originaldatei, Ihre Stelle und das bereits Gelesene): um sie im Regal zu halten und dort weiterzulesen, wo Sie aufgehört haben",
+     "Das Original-HTML hinzugefügter Webartikel: wird neben dem aufgeräumten Text aufbewahrt",
+     "Seiten, die die Freigabeerweiterung empfangen hat (Adresse, Titel, das HTML auf dem Bildschirm, Zeitpunkt des Empfangs): damit Get Ready den Artikeltext herausziehen kann. Gelöscht, sobald Sie hinzufügen oder abbrechen, und nach einer Stunde, wenn der Empfang nicht vollständig war",
+     "Leseeinstellungen (Tempo, Pausen, Schriftgröße) und ob Pro gekauft wurde: um den Lesebildschirm einzurichten und festzulegen, welche Funktionen offen sind"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler speichert keine personenbezogenen Daten. Alles im Speicher der App wird entfernt, wenn die App gelöscht wird. Dokumente bleiben, bis Sie sie löschen, und beim Löschen eines Dokuments werden seine Dateien mit entfernt. Eine von der Freigabeerweiterung empfangene Seite wird gelöscht, sobald Sie sie in Get Ready hinzufügen oder abbrechen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Es wird keine Verarbeitung ausgelagert. Kauf und Wiederherstellung von Readride Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Teilt eine andere App nur eine Webadresse, lädt die App diese Seite einmal von der Website. Wie bei jeder Webanfrage erhält die Website die IP-Adresse Ihres Geräts, eine Browserkennung, die Readride nennt, und die bevorzugten Sprachen Ihres Geräts. Die Anfrage läuft über keinen Server des Entwicklers und sendet oder speichert weder Cookies noch Cache noch gespeicherte Anmeldungen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Beim Löschen eines Dokuments wird sein Ordner entfernt, und beim Löschen der App alles, was sie enthält."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Was die App verwendet, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App synchronisiert nicht über iCloud. Wenn Sie Ihr iPhone sichern (etwa mit dem iCloud-Backup), sind diese Daten wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple. Eingefügter Text wird nur gelesen, wenn Sie auf die Taste zum Einfügen tippen. Das Aufspüren von Überflüssigem mit KI erledigt das Sprachmodell auf diesem iPhone, und Ihr Text wird weder an den Entwickler noch an einen anderen Server gesendet. Die Funktion läuft nur, wenn Sie auf Find More with AI tippen. Webseiten werden nur über https geladen und nie von Adressen in Ihrem lokalen Netzwerk."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies und andere automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

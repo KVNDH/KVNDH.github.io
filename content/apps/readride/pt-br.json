@@ -1,0 +1,262 @@
+{
+ "name": "Readride",
+ "subtitle": "Romances e notícias, palavra por palavra",
+ "summary": "O Readride mostra o que você lê uma ou duas palavras por vez, sempre no mesmo lugar, para que seus olhos fiquem parados. Romances, notícias, ensaios, PDFs e ePubs, primeiro organizados e depois lidos até o fim.",
+ "hero": {
+  "hook": "O Readride mostra o que você lê uma ou duas palavras por vez, sempre no mesmo lugar, para que seus olhos fiquem parados. Romances, notícias, ensaios, PDFs e ePubs, primeiro organizados e depois lidos até o fim.",
+  "shotAlt": "A tela Get Ready do Readride. O cabeçalho e o rodapé tirados de um PDF aparecem como chaves ativadas, com as páginas de onde vieram, e uma página sem texto aparece em Check."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Você vê primeiro o que foi tirado",
+   "body": [
+    "Quando você adiciona algo para ler, o Readride organiza tudo primeiro. Ele tira cabeçalhos e números de página dos PDFs, anúncios e listas de matérias relacionadas das notícias da web, e junta linhas quebradas no meio da frase. O Get Ready mostra tudo o que foi tirado, e qualquer parte pode voltar."
+   ],
+   "bullets": [
+    "Cabeçalhos, rodapés e números de página tirados",
+    "Linhas quebradas no meio da frase, unidas",
+    "Tudo o que saiu pode voltar"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-650px",
+    "alt": "Get Ready. Em Taken Out, os cabeçalhos e o rodapé do PDF aparecem como chaves ativadas, cada um com as páginas em que estava.",
+    "caption": "Vista aproximada do app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Leia num só lugar. Ao pausar, o texto ao redor se abre.",
+   "body": [
+    "As palavras aparecem uma ou duas por vez no mesmo lugar, no meio da tela, com pausas curtas nas vírgulas e no fim das frases. Ao pausar, o texto antes e depois de onde você estava se abre. Toque em qualquer palavra ali para continuar a partir dela."
+   ],
+   "bullets": [
+    "Uma ou duas palavras por vez, num só lugar",
+    "O texto ao redor ao pausar",
+    "Continuar a partir da palavra tocada"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-160px",
+    "alt": "A tela de leitura em pausa. No centro aparece The em tamanho grande e, abaixo, o texto se abre com as palavras atuais destacadas.",
+    "caption": "Vista aproximada do app"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Artigos do Safari e os seus arquivos",
+   "body": [
+    "Compartilhe um artigo do Safari com o Readride, e ele extrai o texto do artigo e o abre no Get Ready. Arquivos de texto (txt e md), PDFs, ePubs sem DRM e texto colado também funcionam."
+   ],
+   "bullets": [
+    "Artigos compartilhados do Safari",
+    "txt, md, PDF e ePub sem DRM",
+    "Texto colado"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Onde você parou e no seu ritmo",
+   "body": [
+    "O Readride guarda o ponto em que você pausou ou fechou como uma posição de caractere no texto organizado, então ele não se perde se você mudar o tamanho da letra. Escolha uma velocidade de 100 a 600 palavras por minuto e uma de cinco durações de pausa para vírgulas e fins de frase."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Seu ponto, guardado no caractere",
+     "De 100 a 600 palavras por minuto",
+     "Cinco durações de pausa",
+     "Tamanho de letra ajustável"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Readride Pro",
+  "title": "Quantos documentos quiser\ne textos longos num mapa",
+  "items": [
+   "Sem limite de documentos (3 para começar)",
+   "Um ZIP de arquivos de texto como um só documento",
+   "Document Map e a seção em que você está acima das palavras",
+   "Find More with AI nos iPhones compatíveis"
+  ]
+ },
+ "faq": [
+  {
+   "q": "O que você pode adicionar",
+   "a": [
+    "Arquivos de texto (txt e md), PDFs e ePubs sem DRM, pelo app Arquivos ou compartilhados de outros apps. Você também pode colar texto copiado ou enviar um artigo da web pelo botão Compartilhar do Safari. PDFs com senha abrem quando você digita a senha. O Readride funciona melhor com texto corrido, como romances, notícias e ensaios. Tabelas e listas são lidas como palavras em sequência, sem o layout."
+   ]
+  },
+  {
+   "q": "Arquivos HWP",
+   "a": [
+    "O Readride não abre arquivos HWP. Salve o arquivo como PDF no Hancom Office e adicione o PDF."
+   ]
+  },
+  {
+   "q": "PDFs digitalizados",
+   "a": [
+    "O Readride não lê um PDF sem camada de texto, porque não tem reconhecimento de texto (OCR). Se só algumas páginas forem digitalizadas, ele lê o resto, avisa no Get Ready quais páginas pulou e marca o lugar no texto. PDFs que já passaram por OCR têm camada de texto e podem ser lidos."
+   ]
+  },
+  {
+   "q": "Como o Readride lembra onde você parou",
+   "a": [
+    "Ele guarda o ponto em que você pausou ou fechou como uma posição de caractere no texto organizado, então mudar o tamanho da letra não faz você perder o lugar. Quando você abre o documento de novo, ele abre pausado naquela palavra, com o texto ao redor."
+   ]
+  },
+  {
+   "q": "O que a versão gratuita inclui",
+   "a": [
+    "Organizar o texto, ler, os ajustes de velocidade, pausas e tamanho da letra e compartilhar do Safari são gratuitos. Sua estante guarda até 3 documentos, contando os já lidos e os artigos da web. O tour que vem com o app não conta. Com a estante cheia, você pode apagar um para abrir espaço ou ler um documento novo sem adicioná-lo. Os documentos que você adicionou sempre podem ser lidos."
+   ]
+  },
+  {
+   "q": "Restaurar o Pro e Compartilhamento Familiar",
+   "a": [
+    "Num iPhone novo ou depois de reinstalar, abra os ajustes do Readride e toque em Restore Purchases na seção Readride Pro. Com a mesma Conta Apple, você não é cobrado de novo. Os membros do seu grupo de Compartilhamento Familiar também podem usar o Pro. Reembolsos ficam a cargo da Apple e, se o Pro for reembolsado, os documentos que você adicionou continuam podendo ser lidos."
+   ]
+  },
+  {
+   "q": "iPhones que podem usar Find More with AI",
+   "a": [
+    "Um iPhone compatível com Apple Intelligence, com iOS 26 ou posterior e Apple Intelligence ativada em Ajustes > Apple Intelligence e Siri. O recurso não fica disponível enquanto o modelo do aparelho ainda está sendo baixado, nem quando o modelo não aceita o idioma do texto. Ele funciona no Get Ready com PDFs e arquivos de texto (exceto md). Roda neste iPhone e pode errar, então as sugestões começam desativadas e só as que você ativa são tiradas. A linha AI features nos ajustes do Readride mostra se este iPhone pode usá-lo."
+   ]
+  },
+  {
+   "q": "Para onde vai um artigo compartilhado",
+   "a": [
+    "A página que você compartilha (endereço, título e o HTML na tela) é colocada na pasta compartilhada do Readride neste iPhone. Quando você abre o Readride, o Get Ready extrai dali o texto do artigo. Depois que você adiciona ou cancela, a página é apagada dessa pasta. Se outro app compartilhar só um endereço, o Readride baixa aquela página do site uma vez, sem seus cookies nem seu cache, então nenhum login é enviado. Nada passa por um servidor do desenvolvedor."
+   ]
+  },
+  {
+   "q": "iPad e outros aparelhos",
+   "a": [
+    "Não há sincronização entre aparelhos, então seus documentos são lidos no iPhone em que você os adicionou. Não há um layout para iPad."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do Readride",
+  "effectiveDate": "2026-09-26",
+  "summary": "O Readride não coleta dados pessoais. Não há conta nem login. O que você adiciona e seus ajustes ficam guardados no seu aparelho, e a compra do Pro fica a cargo da Apple.",
+  "intro": [
+   "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app Readride (o app) conforme descrito a seguir."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não trata informações pessoais de quem o usa. O app usa o texto que você adiciona só para organizá-lo e mostrá-lo na tela de leitura, e isso acontece no seu aparelho."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
+    ],
+    "bullets": [
+     "Documentos adicionados (o texto organizado, o arquivo original, onde você parou e o que já leu): para mantê-los na estante e continuar de onde você parou",
+     "O HTML original dos artigos da web adicionados: guardado ao lado do texto organizado",
+     "Páginas recebidas pela extensão de compartilhamento (endereço, título, o HTML na tela e quando chegou): para o Get Ready extrair o texto do artigo. Apagadas quando você adiciona ou cancela, e depois de uma hora se não foram recebidas por completo",
+     "Ajustes de leitura (velocidade, pausas, tamanho da letra) e se o Pro foi comprado: para montar a tela de leitura e decidir quais recursos ficam abertos"
+    ]
+   },
+   {
+    "title": "Período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais. Tudo que está no armazenamento do app some junto com o app. Os documentos ficam até você apagá-los, e apagar um documento apaga os arquivos dele. Uma página recebida pela extensão de compartilhamento é apagada quando você a adiciona ou cancela no Get Ready."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Fornecimento a terceiros",
+    "paragraphs": [
+     "Informações pessoais não são fornecidas a terceiros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "Nenhum tratamento é terceirizado. A compra e a restauração do Readride Pro são feitas pela Apple na App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe meio de pagamento nem dados da sua Conta Apple. Se outro app compartilhar só um endereço da web, o app baixa aquela página do site uma vez. Como em qualquer requisição da web, o site recebe o endereço IP do seu aparelho, uma descrição do navegador que cita o Readride e os idiomas preferidos do seu aparelho. A requisição não passa por nenhum servidor do desenvolvedor e não envia nem guarda cookies, cache ou logins salvos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar um documento apaga a pasta dele e, ao apagar o app, tudo que estava nele some."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de representantes legais",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais suas, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não sincroniza pelo iCloud. Se você faz backup do iPhone (por exemplo, com o Backup do iCloud), esses dados entram como os de qualquer outro app, e esse backup fica a cargo da Apple. O texto colado só é lido quando você toca no botão de colar. A busca de sobras com IA é feita pelo modelo de linguagem deste iPhone, e o seu texto não é enviado ao desenvolvedor nem a nenhum outro servidor. O recurso só roda quando você toca em Find More with AI. Páginas da web são baixadas só por https e nunca de endereços da sua rede local."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies e outra coleta automática",
+    "paragraphs": [
+     "O app não usa cookies, identificador de publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

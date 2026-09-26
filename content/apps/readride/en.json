@@ -1,0 +1,262 @@
+{
+ "name": "Readride",
+ "subtitle": "Novels and news, word by word",
+ "summary": "Readride shows what you read a word or two at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
+ "hero": {
+  "hook": "Readride shows what you read a word or two at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
+  "shotAlt": "The Readride Get Ready screen. The header and footer taken out of a PDF show as switches that are on, with the pages they came from, and a page with no text is listed under Check."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "See what was taken out",
+   "body": [
+    "When you add something to read, Readride tidies it first. It takes out PDF headers and page numbers, and the ads and related-link lists around web articles, and joins lines broken in the middle of a sentence. Get Ready lists everything it took out, and you can put any of it back."
+   ],
+   "bullets": [
+    "Headers, footers, and page numbers taken out",
+    "Lines broken mid-sentence joined",
+    "Anything taken out can go back"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-650px",
+    "alt": "Get Ready. Under Taken Out, the headers and the footer of a PDF show as switches that are on, each with the pages it was on.",
+    "caption": "Close view of the app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Read in one spot. Pause to see the page around it.",
+   "body": [
+    "The words appear one or two at a time in the same spot in the middle of the screen, with short pauses at commas and at the ends of sentences. Pause, and the text before and after your place opens up. Tap any word there to go on from that word."
+   ],
+   "bullets": [
+    "A word or two at a time, in one spot",
+    "The text around your place when you pause",
+    "Tap a word to go on from there"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-160px",
+    "alt": "The reading screen, paused. The word The shows large in the middle, and below it the text opens up with the current words highlighted.",
+    "caption": "Close view of the app"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Articles from Safari, and the files you have",
+   "body": [
+    "Share an article from Safari to Readride, and it pulls out the article text and opens it in Get Ready. Text files (txt and md), PDFs, DRM-free ePubs, and pasted text work too."
+   ],
+   "bullets": [
+    "Articles shared from Safari",
+    "txt, md, PDF, and DRM-free ePub",
+    "Pasted text"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Your place and your pace",
+   "body": [
+    "Readride saves where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose your place. Choose a speed from 100 to 600 words a minute, and one of five pause lengths for commas and the ends of sentences."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Your place, kept to the character",
+     "100 to 600 words a minute",
+     "Five pause lengths",
+     "Adjustable text size"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Readride Pro",
+  "title": "Keep every document,\nand see long ones on a map",
+  "items": [
+   "No limit on documents (3 to begin with)",
+   "A ZIP of text files as one document",
+   "Document Map, and the section you're in above the words",
+   "Find More with AI, on supported iPhones"
+  ]
+ },
+ "faq": [
+  {
+   "q": "What you can add",
+   "a": [
+    "Text files (txt and md), PDFs, and DRM-free ePubs, from the Files app or shared from other apps. You can also paste copied text, or share a web article from Safari. Password-protected PDFs open once you enter the password. Readride works best with running text such as novels, news, and essays. Tables and bullet lists are read as plain words, without their layout."
+   ]
+  },
+  {
+   "q": "HWP files",
+   "a": [
+    "Readride can't open HWP files. Save the file as a PDF in Hancom Office, then add the PDF."
+   ]
+  },
+  {
+   "q": "Scanned PDFs",
+   "a": [
+    "Readride can't read a PDF that has no text layer, because it has no text recognition (OCR). If only some pages are scans, it reads the rest, tells you on Get Ready which pages it skipped, and marks the spot in the text. PDFs that already went through OCR have a text layer and can be read."
+   ]
+  },
+  {
+   "q": "How Readride remembers your place",
+   "a": [
+    "It saves the place where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose it. When you open the document again, it opens paused at that word, with the text around it."
+   ]
+  },
+  {
+   "q": "What the free version includes",
+   "a": [
+    "Tidying, reading, the speed, pause, and text size settings, and sharing from Safari are free. Your shelf holds up to 3 documents, counting finished documents and web articles. The tour that comes with the app doesn't count. When the shelf is full, you can delete one to make room, or read a new document without adding it. Documents you've added can always be read."
+   ]
+  },
+  {
+   "q": "Restoring Pro and Family Sharing",
+   "a": [
+    "On a new iPhone or after reinstalling, open Settings in Readride and tap Restore Purchases in the Readride Pro section. On the same Apple Account you won't be charged again. Members of your Family Sharing group can use Pro too. Refunds are handled by Apple, and if Pro is refunded, the documents you've added can still be read."
+   ]
+  },
+  {
+   "q": "iPhones that can use Find More with AI",
+   "a": [
+    "An iPhone that supports Apple Intelligence, running iOS 26 or later, with Apple Intelligence turned on in Settings > Apple Intelligence & Siri. It isn't available while the on-device model is still downloading, or when the model doesn't support the language of the text. It works on Get Ready for PDFs and text files (not md). It runs on this iPhone and can be wrong, so its suggestions start turned off, and only the ones you turn on are taken out. The AI features row in Readride's Settings shows whether this iPhone can use it."
+   ]
+  },
+  {
+   "q": "Where a shared web article goes",
+   "a": [
+    "The one page you share (its address, title, and the HTML on screen) is placed in Readride's shared folder on this iPhone. When you open Readride, Get Ready pulls the article text from it. Once you add or cancel, the page is deleted from that folder. If another app shares only an address, Readride fetches that page from the site once, without your cookies or cache, so no login is sent. It doesn't go through any developer server."
+   ]
+  },
+  {
+   "q": "iPad and other devices",
+   "a": [
+    "There's no syncing between devices, so your documents are read on the iPhone you added them on. There's no iPad layout."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Readride Privacy Policy",
+  "effectiveDate": "2026-09-26",
+  "summary": "Readride collects no personal data. There is no account and no sign-in. What you add and your settings are kept on your device, and Apple handles the Pro purchase.",
+  "intro": [
+   "kvndh (the developer) handles the personal data of users of the Readride app (the app) as described below."
+  ],
+  "sections": [
+   {
+    "title": "Purposes of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not process personal information about its users. The app uses the text you add only to tidy it and show it on the reading screen, and this happens on your device."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Personal information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+    ],
+    "bullets": [
+     "Documents you add (the tidied text, the original file, where you were, and what you've read): used to keep them on your shelf and pick up where you left off",
+     "The original HTML of web articles you add: kept next to the tidied text",
+     "Pages received by the share extension (address, title, the HTML on screen, and when it arrived): used by Get Ready to pull out the article text. Deleted once you add or cancel, and after an hour if it wasn't received in full",
+     "Reading settings (speed, pauses, text size) and whether Pro was bought: used to set up the reading screen and decide which features open"
+    ]
+   },
+   {
+    "title": "Retention period",
+    "paragraphs": [
+     "The developer holds no personal data. Everything in the app's storage is removed when the app is deleted. Documents stay until you delete them, and deleting a document deletes its files. A page received by the share extension is deleted once you add or cancel it on Get Ready."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Provision to third parties",
+    "paragraphs": [
+     "Personal information is not provided to third parties."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "No processing is outsourced. Buying and restoring Readride Pro is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information. If another app shares only a web address, the app fetches that page from the site once. As with any web request, the site receives your device's IP address, a browser description that names Readride, and your device's preferred languages. The request doesn't go through any developer server, and it doesn't send or keep cookies, cache, or saved logins."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of personal information",
+    "paragraphs": [
+     "The developer holds no personal data, so there is nothing to destroy. Deleting a document removes its folder, and deleting the app removes everything in it."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal representatives",
+    "paragraphs": [
+     "Because the developer holds no personal information about you, there is nothing to access, correct or delete. If you have questions, email us at the address below."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app doesn't sync through iCloud. If you back up your iPhone (for example with iCloud Backup), this data is included like any other app's, and Apple handles that backup. Pasted text is read only when you tap the paste button. Finding clutter with AI is done by the language model on this iPhone, and your text is not sent to the developer or to any other server. It runs only when you tap Find More with AI. Web pages are fetched over https only, and never from addresses on your local network."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies and other automatic collection",
+    "paragraphs": [
+     "The app uses no cookies, no advertising identifier and no analytics tools."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show the new text and its new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

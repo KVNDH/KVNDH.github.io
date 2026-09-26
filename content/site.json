@@ -127,6 +127,14 @@
    "glow": "rgba(230,57,70,.28)",
    "paperAccent": "#B02C37",
    "unreleased": true
+  },
+  {
+   "slug": "readride",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37",
+   "unreleased": true
   }
  ]
 }

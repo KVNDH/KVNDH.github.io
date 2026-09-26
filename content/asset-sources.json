@@ -162,5 +162,20 @@
    ]
   },
   "store": "OnPace/docs/store"
+ },
+ "readride": {
+  "icon": "Readride/Readride/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "Readride/docs/screenshots/site/01-prepare-pdf-ko.png",
+    "Readride/docs/screenshots/site/02-paused-ko.png",
+    "Readride/docs/screenshots/site/03-prepare-web-ko.png"
+   ],
+   "en": [
+    "Readride/docs/screenshots/site/01-prepare-pdf-en.png",
+    "Readride/docs/screenshots/site/02-paused-en.png",
+    "Readride/docs/screenshots/site/03-prepare-web-en.png"
+   ]
+  }
  }
 }

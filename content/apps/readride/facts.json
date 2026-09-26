@@ -1,0 +1,70 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "one-time",
+ "ads": false,
+ "account": false,
+ "products": [
+  "Readride Pro: 비소모성 1개 (com.kimdh.Readride.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (StoreKit/Readride.storekit). 2026-09-26 기준 ASC 앱 레코드와 상품이 아직 없다(site.json 에 appStoreId 없음)"
+ ],
+ "network": [
+  "웹 기사 받아 오기 하나(WebImport.fetch): 주소만 공유됐거나 Safari 가 페이지를 넘기지 못했을 때만. 쿠키, 캐시, 자격 증명 없는 ephemeral 세션, https 만, 로컬 네트워크로는 안 감, 10MB 상한",
+  "App Store 결제와 복원 (StoreKit). 서드파티 SDK 없음, 개발자 서버 없음, iCloud 와 CloudKit 안 씀"
+ ],
+ "permissions": [
+  "권한 요청 없음. 붙여넣기는 시스템 붙여넣기 단추(UIPasteControl)라 누를 때만 받는다",
+  "공유 확장은 웹 주소 하나나 웹 페이지 하나일 때만 공유 시트에 뜬다"
+ ],
+ "storage": [
+  "Application Support/Readride/documents/<id>/ : 다듬은 본문, 원본 파일, 읽던 자리, 읽은 구간. 백업 제외 표시가 없어 iPhone 백업에 들어간다",
+  "앱 그룹 group.com.kimdh.Readride 받은편지함: item.json(주소, 제목, 받은 때)과 page.html. 넣거나 취소하면 지우고, 쓰다 멈춘 항목은 한 시간 뒤 지운다",
+  "설정(글자 크기, 속도, 쉼)은 UserDefaults"
+ ],
+ "pro": {
+  "productID": "com.kimdh.Readride.pro.lifetime",
+  "type": "NonConsumable, familyShareable",
+  "features": [
+   "문서 수 제한 없음 (무료 3개, ProRules.swift FreeLimits.documents = 3, 둘러보기 글은 세지 않음, 다 읽은 문서와 웹 기사는 셈)",
+   "ZIP 안의 여러 텍스트를 한 문서로",
+   "문서 지도와 자리 표시 (AI 없이 모든 iPhone)",
+   "AI로 더 찾기 (iOS 26 이상, Apple Intelligence 를 켠 지원 기기, PDF 와 텍스트 파일만, md 제외)"
+  ],
+  "freeForever": "다듬기, 읽기, 속도와 쉼과 글자 크기, Safari 공유, 넣은 문서는 언제나 읽기"
+ },
+ "notOffered": [
+  "OCR",
+  "HWP",
+  "기기 사이 동기화",
+  "iPad 에 맞춘 화면",
+  "AI 요약",
+  "읽기 통계",
+  "Mac, Vision Pro 설치"
+ ],
+ "reading": [
+  "속도 100~600, 기본 220 (분당 단어)",
+  "쉼 다섯 단계 0.5, 0.75, 1, 1.25, 1.5배",
+  "글자 크기 14~30",
+  "읽던 자리는 다듬은 본문의 UTF-16 오프셋. 멈출 때, 닫을 때, 앱이 뒤로 갈 때 저장"
+ ],
+ "uiNames": {
+  "Get Ready": "준비",
+  "Check": "확인할 것",
+  "Taken Out": "뺀 것",
+  "Find More with AI": "AI로 더 찾기",
+  "Restore Purchases": "구입 항목 복원",
+  "Document Map": "문서 지도",
+  "AI features": "AI 기능"
+ },
+ "numbers": [
+  "3",
+  "5",
+  "100",
+  "120",
+  "600"
+ ],
+ "numbersNote": "소개 문구의 숫자: 무료 문서 3개, 쉼 5단계(ja, zh 는 숫자로 씀), 분당 100~600단어, ko 묶기 예 '120억 원'. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다",
+ "sources": [
+  "Readride/docs/SITE_DRAFT.md (82e6471)",
+  "tmp/readride-site-2026-09-26/facts-from-session.md",
+  "Readride/Readride/Resources/Localizable.xcstrings"
+ ]
+}

@@ -204,6 +204,12 @@
    ]
   }
  },
+ "readride": {
+  "mode": "blur",
+  "ink": "dark",
+  "color": "#F3F3F5",
+  "alts": {}
+ },
  "snapline": {
   "mode": "blur",
   "ink": "light",

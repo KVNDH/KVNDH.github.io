@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import json
 import unittest
 
-from tests.fixture import look, make_site, store
+from tests.fixture import look, make_site, store, write
 import render
 from sitelib import Site
 
@@ -70,6 +71,20 @@ class HubTest(unittest.TestCase):
         self.assertIn("Soon", html)
         self.assertNotIn("https://apps.apple.com/app/id456", html)
         self.assertNotIn('class="btn"', html)
+
+    def test_app_without_store_record_has_pages_but_no_smart_banner(self):
+        # 2026-09-26 Readride: ASC 레코드가 생기기 전에 지원, 개인정보 주소가 먼저 열려 있어야 한다
+        root = make_site(unreleased=True)
+        path = root / "content" / "site.json"
+        config = json.loads(path.read_text(encoding="utf-8"))
+        del next(a for a in config["apps"] if a["slug"] == "soon")["appStoreId"]
+        write(path, config)
+        site = Site(root)
+        html = render.render_app(site, "ko", "soon")
+        self.assertIn("Soon", html)
+        self.assertNotIn("apple-itunes-app", html)
+        self.assertNotIn("https://apps.apple.com/", html)
+        self.assertIn("Soon", render.render_privacy(site, "ko", "soon"))
 
 
 class TilePositionTest(unittest.TestCase):

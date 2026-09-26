@@ -455,7 +455,9 @@ def render_app(site: Site, lang: str, slug: str) -> str:
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
                 content=content, footer=app_footer(site, lang, slug),
                 bar=app_bar(site, lang, slug, "about"), page_style=accent_style(app),
-                extra_head=f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">',
+                # ASC 레코드가 없는 출시 전 앱(2026-09-26 Readride)은 스마트 배너를 달지 않는다
+                extra_head=(f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">'
+                            if app.get("appStoreId") else ""),
                 og_image=asset(slug, "og.jpg"))
 
 
