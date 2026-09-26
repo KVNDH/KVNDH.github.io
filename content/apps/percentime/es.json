@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Se lee desde la pantalla bloqueada",
    "body": [
-    "Tres widgets de pantalla bloqueada, tres de pantalla de inicio y, además, un widget de pila que muestra varios tramos a la vez. En cualquier tamaño va el nombre del tramo, así se sabe a qué pertenece el porcentaje. En StandBy se ven los mismos widgets en grande. Se vuelven a dibujar en el momento exacto en que cambia el número, así que a mediodía el día marca justo el 50 por ciento."
+    "Tres widgets de pantalla bloqueada, tres de pantalla de inicio y, además, un widget de pila que muestra varios tramos a la vez. En cualquier tamaño va el nombre del tramo, así se sabe a qué pertenece el porcentaje. En StandBy se ven los mismos widgets en grande. Si giras el teléfono, la app también pasa a una pantalla negra con el anillo y un porcentaje grande. Se vuelven a dibujar en el momento exacto en que cambia el número, así que a mediodía el día marca justo el 50 por ciento."
    ],
    "bullets": [
     "Circular, rectangular y en línea en la pantalla bloqueada",
@@ -183,7 +183,7 @@
   {
    "q": "Dispositivo e internet",
    "a": [
-    "Funciona en iPhone con iOS 18 o posterior. La pantalla queda en vertical. El fondo claro es lo normal y pasa a negro cuando el sistema está en oscuro."
+    "Funciona en iPhone con iOS 18 o posterior. La app y sus widgets están en 46 idiomas y siguen el idioma del dispositivo. Se usa en vertical y, al girarla, muestra una pantalla negra grande. El fondo claro es lo normal y pasa a negro cuando el sistema está en oscuro."
    ]
   }
  ],

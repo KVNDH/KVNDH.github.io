@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Direkt vom Sperrbildschirm ablesen",
    "body": [
-    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. In StandBy erscheinen dieselben Widgets groß. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
+    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. In StandBy erscheinen dieselben Widgets groß. Drehen Sie das Telefon quer, wechselt auch die App zu einem schwarzen Bildschirm mit dem Ring und einer großen Prozentzahl. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
    ],
    "bullets": [
     "Rund, rechteckig und einzeilig auf dem Sperrbildschirm",
@@ -183,7 +183,7 @@
   {
    "q": "Gerät und Internet",
    "a": [
-    "Läuft auf dem iPhone ab iOS 18. Der Bildschirm bleibt im Hochformat. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz."
+    "Läuft auf dem iPhone ab iOS 18. App und Widgets gibt es in 46 Sprachen, sie folgen der Sprache des Geräts. Im Hochformat nutzen Sie sie wie gewohnt, quer gedreht zeigt sie einen großen schwarzen Bildschirm. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz."
    ]
   }
  ],

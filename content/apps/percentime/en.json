@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Read it from the Lock Screen",
    "body": [
-    "Three Lock Screen widgets, three Home Screen widgets, and a stack widget that holds several spans at once. Every size carries the timer name, so you know which span the percentage belongs to. The same widgets come up large in StandBy. They redraw at the very moment the number changes, so at noon the day reads exactly 50 percent."
+    "Three Lock Screen widgets, three Home Screen widgets, and a stack widget that holds several spans at once. Every size carries the timer name, so you know which span the percentage belongs to. The same widgets come up large in StandBy. Turn the phone sideways and the app itself switches to a black screen with the ring and a large percentage. They redraw at the very moment the number changes, so at noon the day reads exactly 50 percent."
    ],
    "bullets": [
     "Lock Screen circular, rectangular and inline",
@@ -183,7 +183,7 @@
   {
    "q": "Device and internet",
    "a": [
-    "Runs on iPhone with iOS 18 or later. The screen is locked to portrait. Light is the default and it flips to black when the system is dark."
+    "Runs on iPhone with iOS 18 or later. The app and its widgets come in 46 languages and follow your device language. Use it upright, or turn it sideways for a large black screen. Light is the default and it flips to black when the system is dark."
    ]
   }
  ],
