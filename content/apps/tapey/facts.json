@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.1.2",
+ "describesVersion": "1.2.0",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -41,7 +41,7 @@
   "maxPhotos": 12,
   "layouts": ["자동", "격자", "계단", "하트(사진 6장 이상일 때)"],
   "undoSteps": 30,
-  "wallTones": 6,
+  "wallTones": 8,
   "textureMoods": 4,
   "tapeColors": 8,
   "tapePlacements": ["가운데", "양쪽", "대각선", "없음"],
@@ -67,9 +67,9 @@
   "31",
   "620"
  ],
- "numbersNote": "12 최대 사진 수, 8 테이프 색, 4 테이프 무늬, 6 배경 톤, 31 앱 언어 수, 620 sections[0] crop 의 focus(-620px, 스크린샷 위치 값이며 사실 숫자가 아님)",
+ "numbersNote": "12 최대 사진 수, 8 테이프 색과 배경 톤(1.2.0 에서 어두운 벽 둘을 더해 6 → 8), 4 테이프 무늬, 6 하트 배치가 나오는 사진 수(FAQ), 31 앱 언어 수, 620 sections[0] crop 의 focus(-620px, 스크린샷 위치 값이며 사실 숫자가 아님)",
  "sources": [
-  "Tapey/ios/App/App.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.2, CURRENT_PROJECT_VERSION 16, TARGETED_DEVICE_FAMILY 1,2)",
+  "Tapey/ios/App/App.xcodeproj/project.pbxproj (MARKETING_VERSION 1.2.0, CURRENT_PROJECT_VERSION 17, TARGETED_DEVICE_FAMILY 1,2)",
   "Tapey/ios/App/Tapey.storekit",
   "Tapey/ios/App/App/Info.plist",
   "Tapey/ios/App/App/ko.lproj/InfoPlist.strings",

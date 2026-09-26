@@ -39,7 +39,7 @@
    ],
    "visual": {
     "type": "kit",
-    "label": "Las herramientas Cinta, Marco y Fondo, con 8 colores de cinta y 6 tonos de fondo",
+    "label": "Las herramientas Cinta, Marco y Fondo, con 8 colores de cinta y 8 tonos de fondo",
     "items": [
      {
       "name": "Cinta",
@@ -62,9 +62,9 @@
      },
      {
       "label": "Tonos de fondo",
-      "value": "6",
+      "value": "8",
       "meter": "levels",
-      "count": 6
+      "count": 8
      }
     ]
    }

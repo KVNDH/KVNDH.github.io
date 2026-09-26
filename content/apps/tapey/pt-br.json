@@ -39,7 +39,7 @@
    ],
    "visual": {
     "type": "kit",
-    "label": "As ferramentas Fita, Moldura e Fundo, com 8 cores de fita e 6 tons de fundo",
+    "label": "As ferramentas Fita, Moldura e Fundo, com 8 cores de fita e 8 tons de fundo",
     "items": [
      {
       "name": "Fita",
@@ -62,9 +62,9 @@
      },
      {
       "label": "Tons de fundo",
-      "value": "6",
+      "value": "8",
       "meter": "levels",
-      "count": 6
+      "count": 8
      }
     ]
    }
