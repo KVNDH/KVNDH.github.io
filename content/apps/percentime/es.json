@@ -11,12 +11,11 @@
    "layout": "feat",
    "title": "El calendario abre seis tramos por ti",
    "body": [
-    "Al abrir la app, hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay que escribir inicio ni meta. Cuando un tramo termina no cae a cero: el siguiente se abre justo después. Durante quince minutos pasada la medianoche sigue a la vista el tramo que acaba de llenarse."
+    "Al abrir la app, hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay que escribir inicio ni meta. En el momento en que un tramo termina, se abre el siguiente."
    ],
    "bullets": [
     "Seis tramos sin nada que escribir",
-    "El tramo siguiente que se abre pasada la medianoche",
-    "Quince minutos que sostienen un tramo lleno"
+    "El tramo siguiente que se abre pasada la medianoche"
    ],
    "visual": {
     "type": "crop",
@@ -125,7 +124,7 @@
   {
    "q": "Qué pasa cuando un tramo termina",
    "a": [
-    "No cae a cero. El tramo lleno se sostiene quince minutos marcado como lleno y después se abre el siguiente. Así el 100 por ciento no baja a 0 por ciento a medianoche.",
+    "Un tramo del calendario da paso al siguiente en el momento en que termina. Un tramo que se repite se queda en 100 por ciento al terminar una vuelta, y uno con horas por día de la semana muestra cuánto falta para la siguiente.",
     "Un tramo tuyo que pasa su meta no se detiene ahí: el tiempo pasada la meta se apila en el color de acento."
    ]
   },
@@ -158,7 +157,7 @@
   {
    "q": "Crear un tramo propio",
    "a": [
-    "Toca el botón de más y elige primero una duración. Un día, una semana, 30 días, 100 días, un año o A medida. La meta se coloca a esa distancia. Para poner el inicio en el pasado o fijar la hora, elige A medida."
+    "Toca el botón de más y elige Nuevo temporizador o Añadir un tramo del calendario. Un tramo nuevo se abre con el inicio en este momento y la meta una semana después. Las fichas de los dos campos lo cambian al instante: el inicio al comienzo de hoy o de este mes, la meta a un día, 30 días, 100 días o un año después, o a un momento como el fin de esta semana. Para fijar fecha y hora exactas, toca el campo y abre el calendario."
    ]
   },
   {

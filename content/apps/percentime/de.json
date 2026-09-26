@@ -11,12 +11,11 @@
    "layout": "feat",
    "title": "Der Kalender öffnet sechs Zeiträume für Sie",
    "body": [
-    "Beim Öffnen sind heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr schon da. Sie geben weder Start noch Ziel ein. Endet ein Zeitraum, fällt er nicht auf null: Der nächste öffnet direkt danach. Fünfzehn Minuten nach Mitternacht bleibt der eben gefüllte Zeitraum noch zu sehen."
+    "Beim Öffnen sind heute, diese Woche, dieser Monat, dieses Quartal und dieses Jahr schon da. Sie geben weder Start noch Ziel ein. Endet ein Zeitraum, öffnet im selben Moment der nächste."
    ],
    "bullets": [
     "Sechs Zeiträume ohne eine einzige Eingabe",
-    "Der nächste Zeitraum, der nach Mitternacht öffnet",
-    "Fünfzehn Minuten, die einen gefüllten Zeitraum halten"
+    "Der nächste Zeitraum, der nach Mitternacht öffnet"
    ],
    "visual": {
     "type": "crop",
@@ -125,7 +124,7 @@
   {
    "q": "Was passiert, wenn ein Zeitraum endet",
    "a": [
-    "Er fällt nicht auf null. Der gefüllte Zeitraum wird fünfzehn Minuten gehalten und als gefüllt gezeigt, dann öffnet der nächste direkt danach. So fällt um Mitternacht nicht 100 Prozent auf 0 Prozent.",
+    "Ein Kalenderzeitraum geht im Moment seines Endes in den nächsten über. Ein wiederkehrender Zeitraum bleibt nach einer Runde bei 100 Prozent stehen, und einer mit Zeiten je Wochentag zeigt, wie lange es bis zur nächsten Runde dauert.",
     "Ein eigener Zeitraum hört am Ziel nicht auf: Die Zeit nach dem Ziel stapelt sich in der Akzentfarbe."
    ]
   },
@@ -158,7 +157,7 @@
   {
    "q": "Einen eigenen Zeitraum anlegen",
    "a": [
-    "Tippen Sie auf Plus und wählen zuerst eine Länge. Ein Tag, eine Woche, 30 Tage, 100 Tage, ein Jahr oder Eigene. Das Ziel rückt dann so weit nach vorn. Für einen Start in der Vergangenheit oder eine genaue Uhrzeit wählen Sie Eigene."
+    "Tippen Sie auf Plus und wählen Sie Neuer Timer oder Kalenderspanne hinzufügen. Ein neuer Zeitraum öffnet mit dem Beginn auf jetzt und dem Ziel eine Woche später. Chips in beiden Feldern ändern das sofort: den Beginn auf den Anfang von heute oder diesem Monat, das Ziel auf einen Tag, 30 Tage, 100 Tage oder ein Jahr später oder auf einen Zeitpunkt wie das Ende dieser Woche. Für ein genaues Datum mit Uhrzeit tippen Sie auf das Feld und öffnen den Kalender."
    ]
   },
   {

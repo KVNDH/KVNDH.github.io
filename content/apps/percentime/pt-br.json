@@ -11,12 +11,11 @@
    "layout": "feat",
    "title": "O calendário abre seis períodos para você",
    "body": [
-    "Ao abrir, hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não se digita início nem meta. Quando um período termina, ele não cai a zero: o seguinte abre logo depois. Por quinze minutos depois da meia-noite, o período recém-cheio continua na tela."
+    "Ao abrir, hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não se digita início nem meta. No momento em que um período termina, o seguinte abre."
    ],
    "bullets": [
     "Seis períodos sem nada para digitar",
-    "O período seguinte que abre depois da meia-noite",
-    "Quinze minutos segurando um período cheio"
+    "O período seguinte que abre depois da meia-noite"
    ],
    "visual": {
     "type": "crop",
@@ -125,7 +124,7 @@
   {
    "q": "O que acontece quando um período termina",
    "a": [
-    "Ele não cai a zero. O período cheio fica segurado por quinze minutos, marcado como cheio, e depois o seguinte abre. Assim 100 por cento não despenca para 0 por cento à meia-noite.",
+    "Um período do calendário passa para o seguinte no momento em que termina. Um período que se repete fica em 100 por cento ao fim de cada rodada, e um com horários por dia da semana mostra quanto falta para a próxima.",
     "Um período seu que passa da meta não para ali: o tempo além da meta se empilha na cor de destaque."
    ]
   },
@@ -158,7 +157,7 @@
   {
    "q": "Criar um período seu",
    "a": [
-    "Toque no botão de mais e escolha primeiro uma duração. Um dia, uma semana, 30 dias, 100 dias, um ano ou Personalizado. A meta se coloca a essa distância. Para pôr o início no passado ou marcar a hora, escolha Personalizado."
+    "Toque no botão de mais e escolha Novo timer ou Adicionar um intervalo do calendário. Um período novo abre com o início agora e a meta uma semana depois. Os chips dos dois campos mudam isso na hora: o início para o começo de hoje ou deste mês, a meta para um dia, 30 dias, 100 dias ou um ano depois, ou para um momento como o fim desta semana. Para marcar data e hora exatas, toque no campo e abra o calendário."
    ]
   },
   {

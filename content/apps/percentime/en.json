@@ -11,12 +11,11 @@
    "layout": "feat",
    "title": "The calendar opens six spans for you",
    "body": [
-    "Open the app and today, this week, this month, this quarter and this year are already there. You enter no start and no goal. When a span ends it does not drop to zero: the next one opens right after it. For fifteen minutes past midnight the span you just filled stays on screen."
+    "Open the app and today, this week, this month, this quarter and this year are already there. You enter no start and no goal. The moment a span ends, the next one opens."
    ],
    "bullets": [
     "Six spans with nothing to enter",
-    "The next span opening after midnight",
-    "Fifteen minutes holding a filled span"
+    "The next span opening after midnight"
    ],
    "visual": {
     "type": "crop",
@@ -125,7 +124,7 @@
   {
    "q": "What happens when a span ends",
    "a": [
-    "It does not drop to zero. The filled span is held for fifteen minutes and marked Filled, then the next span opens right after it. This keeps 100 percent from falling to 0 percent at midnight.",
+    "A calendar span hands over to the next one the moment it ends. A repeating timer rests at 100 percent once a round is done, and a timer with weekly hours shows how long until its next round.",
     "A timer of your own that passes its goal does not stop there: the time past the goal stacks up in the accent color."
    ]
   },
@@ -158,7 +157,7 @@
   {
    "q": "Making your own timer",
    "a": [
-    "Tap the plus button and pick a length first. A day, a week, 30 days, 100 days, a year, or Custom. The goal moves that far ahead. Pick Custom to set a start in the past or to set the time of day."
+    "Tap the plus button and choose New timer or Add a calendar span. A new timer opens with the start at now and the goal a week later. Chips inside the two fields change them at once: the start to the beginning of today or this month, the goal to a day, 30 days, 100 days or a year later, or to a moment such as the end of this week. Tap a field to open its calendar and set any date and time."
    ]
   },
   {
