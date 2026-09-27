@@ -4,7 +4,7 @@
  "summary": "From today to the 2020s, a scale that fills as far as time has gone",
  "hero": {
   "hook": "From today to the 2020s, a scale that fills as far as time has gone",
-  "shotAlt": "The Percentime home screen. A card at the top stacks today, this month, this year and the 2020s with their percentages and cells, and cards for the timers you made follow below."
+  "shotAlt": "The Percentime home screen. The \"Where we are now\" card at the top stacks Today, This month, This year and The 2020s with their percentages and cells, and the \"Work hours\", \"The year I turn 50\" and \"Until this year ends\" cards follow below."
  },
  "sections": [
   {
@@ -20,7 +20,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "A close view of the top card on the home screen. Today, this month, this year and the 2020s each hold a row with a percentage and a bar of cells.",
+    "alt": "A close view of the top of the home screen. In the \"Where we are now\" card, Today, This month, This year and The 2020s each hold a row with a percentage and a bar of cells, and the \"Work hours\" card begins below.",
     "caption": "Close view of the app"
    }
   },
@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Pick how you read it",
    "body": [
-    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading yourself: one place as it comes, the second onward with Pro."
+    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading with one tap on a row of cells from 0 to 6: one place as it comes, the second onward with Pro."
    ],
    "bullets": [],
    "visual": {
@@ -97,6 +97,44 @@
      "One unit as a decimal",
      "Progress in percent",
      "Full moons, weekends, springs, birthdays (Pro)"
+    ]
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Say it, and the start and goal fill in",
+   "body": [
+    "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. Say \"until 2\", \"3 hours\" or \"meeting 1 hour 30 minutes\", stop, and the start, goal and title fill in. You tap Save yourself. The icon is there only when the app language is Korean or English.",
+    "By hand, you choose between \"From now\" and \"Start and goal\". With \"From now\" you turn only an hours and minutes wheel, and the count starts the moment you save. Leave the title blank and it takes a number, as in \"Timer 1\" and \"Timer 2\"."
+   ],
+   "bullets": [
+    "Start, goal and title from one spoken line",
+    "An hours and minutes wheel for From now",
+    "Numbered titles for timers left unnamed"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Three spoken lines and the start and goal they become, with the range of the From now wheel",
+    "items": [
+     {
+      "name": "until 2",
+      "desc": "Until the next 2 o'clock"
+     },
+     {
+      "name": "3 hours",
+      "desc": "From now until 3 hours later"
+     },
+     {
+      "name": "meeting 1 hour 30 minutes",
+      "desc": "Titled meeting, 1 hour 30 minutes long",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "From now wheel",
+      "value": "1 min to 23 hr 59 min"
+     }
     ]
    }
   }
@@ -117,7 +155,7 @@
   {
    "q": "What do I see when I first open it",
    "a": [
-    "Today, this week, this month, this quarter and this year are already there. Nothing to enter. The 2020s are left off the first screen; pick them in the stack rows or in a widget and they come along too.",
+    "Today, this week, this month, this quarter and this year are already there. Nothing to enter. The 2020s have no card of their own and sit as one row in the stack at the top of the first screen. You can take that row out in Choose rows or pick the 2020s in a widget.",
     "The card at the top is the stack. Short spans sit above, long ones below. Choose rows sets what goes there."
    ]
   },
@@ -138,7 +176,8 @@
    "q": "How are the decimal places chosen",
    "a": [
     "The span decides. A day is whole numbers, a week one place, a month and a quarter two, a year three, several years four. They are picked so the last digit moves about every ten or twenty minutes.",
-    "Pick the progress reading and set the places yourself and that value is used. More places also means a finer redraw: six places redraw up to thirty times a second. Without Pro the reading is cut at one place."
+    "Pick the progress reading and set the places yourself and that value is used. You set them in Settings and in Edit Timer with one tap on a row of cells from 0 to 6. More places also means a finer redraw: six places redraw up to thirty times a second. Without Pro the reading is cut at one place.",
+    "In Settings each place gets its own value: In the app, Lock Screen, StandBy and Home Screen. \"In the app\" sets the default number of places; each of the others sets the most that place will show. Without Pro, every place marks the cells from 2 to 6 as Pro, and tapping one of them opens the purchase screen. A place's \"Same as the app\" chip also shows the app's setting, as in \"Same as the app (2)\"."
    ]
   },
   {
@@ -157,7 +196,18 @@
   {
    "q": "Making your own timer",
    "a": [
-    "Tap the plus button and choose New timer or Add a calendar span. A new timer opens with the start at now and the goal a week later. Chips inside the two fields change them at once: the start to the beginning of today or this month, the goal to a day, 30 days, 100 days or a year later, or to a moment such as the end of this week. Tap a field to open its calendar and set any date and time."
+    "Tap the plus button and choose New timer or Add a calendar span. A new timer is set one of two ways, \"From now\" or \"Start and goal\", and it opens on the one you picked last time.",
+    "With \"From now\" you turn only an hours and minutes wheel, from 1 minute to 23 hours 59 minutes, and the count starts the moment you save. A span of a day or more is set with \"Start and goal\".",
+    "\"Start and goal\" opens with the start at now and the goal a week later. Chips inside the two fields change them at once: the start to the beginning of today or this month, the goal to a day, 30 days, 100 days or a year later, or to a moment such as the end of this week. Tap a field to open its calendar, and a separate time wheel appears below it.",
+    "The title can stay blank. The timer then takes the lowest free number, as in \"Timer 1\" and \"Timer 2\", and you can rename it later in Edit Timer."
+   ]
+  },
+  {
+   "q": "Setting a timer by voice",
+   "a": [
+    "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. When you stop speaking, it fills the start, goal and title with what it understood, and you tap Save yourself. The icon is there only when making a new timer, and it hides when Weekly hours is on.",
+    "\"until 2\" runs to the next 2 o'clock, and \"3 hours\" or \"1 hour 30 minutes\" run that long from now. \"from Nov 5 to Dec 31\" runs from the start of November 5 to the end of December 31. It also understands \"until tomorrow\", \"until Friday at 6pm\" and \"100 days\". Say \"meeting 1 hour 30 minutes\" and meeting becomes the title.",
+    "The icon appears only when the app language is Korean or English. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there."
    ]
   },
   {
@@ -177,7 +227,7 @@
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice is there only when the app language is Korean or English, and it also works without Pro."
    ]
   },
   {
@@ -189,7 +239,7 @@
  ],
  "privacy": {
   "title": "Percentime Privacy Policy",
-  "effectiveDate": "2026-09-20",
+  "effectiveDate": "2026-09-28",
   "summary": "Percentime collects no personal data. There is no account and no sign-in, and Apple handles the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Percentime app (the app) as described below."
@@ -205,13 +255,14 @@
    {
     "title": "Personal information processed",
     "paragraphs": [
-     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+     "The developer collects no personal information. The app works with the data below, and the developer does not receive any of it. What the app hears when you set a timer by voice is not kept, and everything else is kept in the app's storage on your device."
     ],
     "bullets": [
      "Your timers (name, start and goal, repeat rule, alert points, reading settings): used to draw the values on screen and in widgets",
      "Settings (which rows go in the stack): used to lay out the app",
      "The month and day of your birthday: used only to count birthdays ahead when you pick that life unit",
-     "Whether Pro was bought: used to decide which features open in the app and widgets"
+     "Whether Pro was bought: used to decide which features open in the app and widgets",
+     "What you say when setting a timer by voice: recognized on the device and used only to fill the start, goal and title of a new timer. The audio and the full transcript are not kept; when you tap Save, only the values in the start, goal and title fields go into your timers above (microphone and speech recognition access is optional and asked for once, on first use; if you decline, the typing field and every other feature still work, and you can turn access off in the Settings app)"
     ]
    },
    {
@@ -252,7 +303,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits in the app's storage and in its App Group container, and the widgets read the same file. Timers and settings are kept in step with your other devices on the same Apple Account through your own iCloud. The developer runs no server. Notifications are local: made on the device and delivered on the device."
+     "What the app uses sits in the app's storage and in its App Group container, and the widgets read the same file. Timers and settings are kept in step with your other devices on the same Apple Account through your own iCloud. The developer runs no server. Notifications are local: made on the device and delivered on the device. Speech recognition for setting a timer by voice runs on the iPhone, and what it hears is not kept."
     ],
     "bullets": []
    },
@@ -299,7 +350,8 @@
    {
     "title": "Changes to this policy",
     "paragraphs": [
-     "If this policy changes, this page will show the new text and its new effective date."
+     "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-09-28: Added the microphone and speech recognition used for setting a timer by voice to Personal information processed and to Security measures. The previous effective date was 2026-09-20."
     ],
     "bullets": []
    }

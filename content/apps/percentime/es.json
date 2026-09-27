@@ -4,7 +4,7 @@
  "summary": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
  "hero": {
   "hook": "De hoy a los años 2020, una escala que se llena hasta donde ha llegado el tiempo",
-  "shotAlt": "La pantalla principal de Percentime. Una tarjeta arriba apila hoy, este mes, este año y los años 2020 con sus porcentajes y casillas, y debajo siguen las tarjetas de los tramos que tú creas."
+  "shotAlt": "La pantalla principal de Percentime. Arriba, la tarjeta «Por dónde vamos» apila Hoy, Este mes, Este año y Los 2020 con sus porcentajes y casillas, y debajo siguen las tarjetas «Horario de trabajo», «El año en que cumplo 50» y «Hasta que acabe el año»."
  },
  "sections": [
   {
@@ -20,7 +20,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Vista cercana de la tarjeta superior de la pantalla principal. Hoy, este mes, este año y los años 2020 ocupan una fila cada uno con su porcentaje y una barra de casillas.",
+    "alt": "Vista cercana de la parte de arriba de la pantalla principal. En la tarjeta «Por dónde vamos», Hoy, Este mes, Este año y Los 2020 ocupan una fila cada uno con su porcentaje y una barra de casillas, y debajo empieza la tarjeta «Horario de trabajo».",
     "caption": "Vista cercana de la app"
    }
   },
@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Eliges cómo leerlo",
    "body": [
-    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú: uno sin más, del segundo en adelante con Pro."
+    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú con un toque en una fila de casillas del 0 al 6: uno sin más, del segundo en adelante con Pro."
    ],
    "bullets": [],
    "visual": {
@@ -97,6 +97,44 @@
      "Una unidad como decimal",
      "Progreso en tanto por ciento",
      "Lunas llenas, fines de semana, primaveras, cumpleaños (Pro)"
+    ]
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Pon un temporizador desde ahora o con la voz",
+   "body": [
+    "El icono de tres hebras de arriba a la derecha de Nuevo temporizador solo aparece si el idioma de la app es coreano o inglés. Tócalo y la app escucha al momento. En inglés, frases como «until 2», «3 hours» o «meeting 1 hour 30 minutes» rellenan el inicio, la meta y el nombre en cuanto dejas de hablar. Después tocas Guardar.",
+    "A mano, eliges entre «Desde ahora» e «Inicio y meta». Con «Desde ahora» solo giras una rueda de horas y minutos, y la cuenta empieza en el momento en que guardas. Si dejas el nombre vacío, recibe un número, como «Temporizador 1» o «Temporizador 2»."
+   ],
+   "bullets": [
+    "Inicio, meta y nombre a partir de una frase dicha",
+    "Una rueda de horas y minutos para «Desde ahora»",
+    "Números para los temporizadores sin nombre"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Tres frases en inglés y el inicio y la meta que dan, con el alcance de la rueda de «Desde ahora»",
+    "items": [
+     {
+      "name": "until 2",
+      "desc": "Hasta las 2 o las 14, lo que llegue antes"
+     },
+     {
+      "name": "3 hours",
+      "desc": "Desde ahora hasta 3 horas después"
+     },
+     {
+      "name": "meeting 1 hour 30 minutes",
+      "desc": "Nombre meeting, 1 hora y 30 minutos",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Rueda de «Desde ahora»",
+      "value": "De 1 min a 23 h 59 min"
+     }
     ]
    }
   }
@@ -117,7 +155,7 @@
   {
    "q": "Qué veo al abrirla por primera vez",
    "a": [
-    "Hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay nada que escribir. Los años 2020 quedan fuera de la primera pantalla; elígelos en las filas de la pila o en un widget y también aparecen.",
+    "Hoy, esta semana, este mes, este trimestre y este año ya están ahí. No hay nada que escribir. Los años 2020 no tienen tarjeta propia; ocupan una fila en la pila de arriba de la primera pantalla. Puedes quitarla en «Elegir filas» o elegirlos en un widget.",
     "La tarjeta de arriba es la pila. Los tramos cortos van encima y los largos debajo. Con elegir filas decides qué va ahí."
    ]
   },
@@ -138,7 +176,8 @@
    "q": "Cómo se eligen los decimales",
    "a": [
     "Lo decide el tramo. Un día en números enteros, una semana un decimal, un mes y un trimestre dos, un año tres, varios años cuatro. Están elegidos para que el último dígito se mueva cada diez o veinte minutos.",
-    "Si eliges la lectura de progreso y fijas tú los decimales, se usa ese valor. Más decimales también significa un redibujado más fino: con seis llega a treinta veces por segundo. Sin Pro se corta en un decimal."
+    "Si eliges la lectura de progreso y fijas tú los decimales, se usa ese valor. Se eligen en Ajustes y en Editar temporizador con un toque en una fila de casillas del 0 al 6. Más decimales también significa un redibujado más fino: con seis llega a treinta veces por segundo. Sin Pro se corta en un decimal.",
+    "En Ajustes cada lugar tiene su propio valor: En la app, Pantalla bloqueada, StandBy y Pantalla de inicio. «En la app» fija los decimales por defecto; los demás lugares fijan el máximo que se muestra ahí. Sin Pro, en todos los lugares las casillas del 2 al 6 llevan la marca Pro, y al tocar una se abre la pantalla de compra. La ficha «Igual que la app» de cada lugar muestra también el ajuste de la app, como en «Igual que la app (2)»."
    ]
   },
   {
@@ -157,7 +196,18 @@
   {
    "q": "Crear un tramo propio",
    "a": [
-    "Toca el botón de más y elige Nuevo temporizador o Añadir un tramo del calendario. Un tramo nuevo se abre con el inicio en este momento y la meta una semana después. Las fichas de los dos campos lo cambian al instante: el inicio al comienzo de hoy o de este mes, la meta a un día, 30 días, 100 días o un año después, o a un momento como el fin de esta semana. Para fijar fecha y hora exactas, toca el campo y abre el calendario."
+    "Toca el botón de más y elige Nuevo temporizador o Añadir un tramo del calendario. Un temporizador nuevo se pone de una de dos maneras, «Desde ahora» o «Inicio y meta», y se abre con la que usaste la última vez.",
+    "Con «Desde ahora» solo giras una rueda de horas y minutos, de 1 minuto a 23 horas y 59 minutos, y la cuenta empieza en el momento en que guardas. Lo que dure un día o más se fija con «Inicio y meta».",
+    "«Inicio y meta» se abre con el inicio en este momento y la meta una semana después. Las fichas de los dos campos lo cambian al instante: el inicio al comienzo de hoy o de este mes, la meta a un día, 30 días, 100 días o un año después, o a un momento como el fin de esta semana. Al tocar un campo se abre el calendario, y debajo aparece una rueda aparte para la hora.",
+    "El nombre puede quedar vacío. El temporizador toma entonces el número libre más bajo, como «Temporizador 1» o «Temporizador 2», y luego puedes cambiarlo en Editar temporizador."
+   ]
+  },
+  {
+   "q": "Poner un temporizador con la voz",
+   "a": [
+    "Toca el icono de tres hebras arriba a la derecha de Nuevo temporizador y la app escucha al momento. Cuando dejas de hablar, rellena el inicio, la meta y el nombre con lo que ha entendido, y eres tú quien toca Guardar. El icono solo está al crear un temporizador nuevo y se oculta si activas Horas por día de la semana.",
+    "Se habla en coreano o en inglés, según el idioma de la app. En inglés, «until 2» llega hasta las 2 o las 14, lo que llegue antes, y «3 hours» o «1 hour 30 minutes» duran eso desde ahora. «from Nov 5 to Dec 31» va del 5 de noviembre a las 0:00 al 31 de diciembre a las 24:00. También entiende «until tomorrow», «until Friday at 6pm» y «100 days». Con «meeting 1 hour 30 minutes», meeting pasa a ser el nombre.",
+    "El icono solo aparece si el idioma de la app es coreano o inglés. Al usarlo por primera vez, la app pide una sola vez acceso al micrófono y al reconocimiento de voz. En un iPhone que no puede reconocer la voz en el propio dispositivo, se abre un campo para escribir y ahí escribes la frase."
    ]
   },
   {
@@ -170,14 +220,14 @@
   {
    "q": "Cuándo llegan los avisos",
    "a": [
-    "Un tramo con Avisarme al llegar a la meta manda un aviso a la hora de la meta. Los tramos del calendario no lo usan, así que no llega nada cada noche.",
+    "Un tramo con «Avisarme cuando llegue la meta» activado manda un aviso a la hora de la meta. Los tramos del calendario no lo usan, así que no llega nada cada noche.",
     "Los avisos dentro del tramo son parte de Pro. Llegan al 25, 50, 75 o 100 por ciento, según lo que elijas. Solo se programan los puntos que aún faltan en esta vuelta, y al abrir la app se prepara la siguiente."
    ]
   },
   {
    "q": "Qué se usa sin Pro",
    "a": [
-    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. El progreso muestra un decimal sin Pro."
+    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. El progreso muestra un decimal sin Pro. Poner un temporizador nuevo con la rueda de «Desde ahora» también funciona sin Pro. Ponerlo con la voz solo está disponible si el idioma de la app es coreano o inglés, y también funciona sin Pro."
    ]
   },
   {
@@ -189,7 +239,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Percentime",
-  "effectiveDate": "2026-09-20",
+  "effectiveDate": "2026-09-28",
   "summary": "Percentime no recoge datos personales. No hay cuenta ni inicio de sesión, y Apple gestiona la compra de Pro.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Percentime (la app) del modo que se indica a continuación."
@@ -205,13 +255,14 @@
    {
     "title": "Información que se trata",
     "paragraphs": [
-     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
+     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, y el desarrollador no recibe ninguno. Lo que la app escucha cuando pones un temporizador con la voz no se conserva; todo lo demás se guarda en el almacenamiento de la app en tu dispositivo."
     ],
     "bullets": [
      "Tus tramos (nombre, inicio y meta, regla de repetición, puntos de aviso, ajustes de lectura): se usan para dibujar los valores en pantalla y en los widgets",
      "Ajustes (qué filas van en la pila): se usan para componer la app",
      "El mes y el día de tu cumpleaños: solo para contar los cumpleaños que faltan cuando eliges esa unidad de vida",
-     "Si se ha comprado Pro: para decidir qué funciones se abren en la app y en los widgets"
+     "Si se ha comprado Pro: para decidir qué funciones se abren en la app y en los widgets",
+     "Lo que dices al poner un temporizador con la voz: se reconoce en el dispositivo y solo se usa para rellenar el inicio, la meta y el nombre de un temporizador nuevo. No se conservan ni el audio ni la transcripción completa; al tocar Guardar, solo los valores del inicio, la meta y el nombre pasan a tus tramos de arriba (el acceso al micrófono y al reconocimiento de voz es opcional y se pide una sola vez, la primera vez que lo usas; si lo rechazas, el campo para escribir y todas las demás funciones siguen funcionando, y puedes desactivarlo en la app Ajustes)"
     ]
    },
    {
@@ -252,7 +303,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en su almacenamiento y en su contenedor de App Group, y los widgets leen el mismo archivo. Los tramos y los ajustes se mantienen al día con tus otros dispositivos de la misma cuenta de Apple a través de tu propio iCloud. El desarrollador no tiene servidor. Los avisos son locales: se crean en el dispositivo y suenan en el dispositivo."
+     "Lo que usa la app está en su almacenamiento y en su contenedor de App Group, y los widgets leen el mismo archivo. Los tramos y los ajustes se mantienen al día con tus otros dispositivos de la misma cuenta de Apple a través de tu propio iCloud. El desarrollador no tiene servidor. Los avisos son locales: se crean en el dispositivo y suenan en el dispositivo. El reconocimiento de voz al poner un temporizador hablando se hace en el iPhone, y lo que oye no se conserva."
     ],
     "bullets": []
    },
@@ -299,7 +350,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-09-28: se añadieron el micrófono y el reconocimiento de voz que se usan al poner un temporizador con la voz a «Información que se trata» y a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-20."
     ],
     "bullets": []
    }

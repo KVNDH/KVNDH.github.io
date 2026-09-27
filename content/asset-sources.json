@@ -119,19 +119,61 @@
  "percentime": {
   "icon": "Percentime/App/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
-   "en": [
-    "Percentime/docs/store/screenshots/en-US/01-dashboard.png",
-    "Percentime/docs/store/screenshots/en-US/02-ring.png",
-    "Percentime/docs/store/screenshots/en-US/03-widgets-home.png",
-    "Percentime/docs/store/screenshots/en-US/04-weekly-hours.png",
-    "Percentime/docs/store/screenshots/en-US/05-lock-screen.png"
-   ],
    "ko": [
-    "Percentime/docs/store/screenshots/ko/01-dashboard.png",
-    "Percentime/docs/store/screenshots/ko/02-ring.png",
-    "Percentime/docs/store/screenshots/ko/03-widgets-home.png",
-    "Percentime/docs/store/screenshots/ko/04-weekly-hours.png",
-    "Percentime/docs/store/screenshots/ko/05-lock-screen.png"
+    "Percentime/docs/store/shots-raw/iphone/ko/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/ko/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/ko/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/ko/home.png",
+    "Percentime/docs/store/shots-raw/iphone/ko/editor.png"
+   ],
+   "en": [
+    "Percentime/docs/store/shots-raw/iphone/en-US/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/en-US/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/en-US/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/en-US/home.png",
+    "Percentime/docs/store/shots-raw/iphone/en-US/editor.png"
+   ],
+   "ja": [
+    "Percentime/docs/store/shots-raw/iphone/ja/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/ja/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/ja/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/ja/home.png",
+    "Percentime/docs/store/shots-raw/iphone/ja/editor.png"
+   ],
+   "zh-hans": [
+    "Percentime/docs/store/shots-raw/iphone/zh-Hans/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hans/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hans/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hans/home.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hans/editor.png"
+   ],
+   "zh-hant": [
+    "Percentime/docs/store/shots-raw/iphone/zh-Hant/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hant/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hant/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hant/home.png",
+    "Percentime/docs/store/shots-raw/iphone/zh-Hant/editor.png"
+   ],
+   "de": [
+    "Percentime/docs/store/shots-raw/iphone/de-DE/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/de-DE/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/de-DE/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/de-DE/home.png",
+    "Percentime/docs/store/shots-raw/iphone/de-DE/editor.png"
+   ],
+   "es": [
+    "Percentime/docs/store/shots-raw/iphone/es-ES/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/es-ES/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/es-ES/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/es-ES/home.png",
+    "Percentime/docs/store/shots-raw/iphone/es-ES/editor.png"
+   ],
+   "pt-br": [
+    "Percentime/docs/store/shots-raw/iphone/pt-BR/dashboard.png",
+    "Percentime/docs/store/shots-raw/iphone/pt-BR/ring.png",
+    "Percentime/docs/store/shots-raw/iphone/pt-BR/lock.png",
+    "Percentime/docs/store/shots-raw/iphone/pt-BR/home.png",
+    "Percentime/docs/store/shots-raw/iphone/pt-BR/editor.png"
    ]
   },
   "store": "Percentime/docs/store"

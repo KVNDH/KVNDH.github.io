@@ -4,7 +4,7 @@
  "summary": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
  "hero": {
   "hook": "De hoje até os anos 2020, uma escala que se enche até onde o tempo chegou",
-  "shotAlt": "A tela inicial do Percentime. Um cartão no topo empilha hoje, este mês, este ano e os anos 2020 com suas porcentagens e células, e abaixo seguem os cartões dos períodos que você cria."
+  "shotAlt": "A tela inicial do Percentime. No topo, o cartão “Onde estamos agora” empilha Hoje, Este mês, Este ano e Os anos 2020 com suas porcentagens e células, e abaixo seguem os cartões “Horário de trabalho”, “O ano em que faço 50” e “Até este ano acabar”."
  },
  "sections": [
   {
@@ -20,7 +20,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Vista aproximada do cartão do topo da tela inicial. Hoje, este mês, este ano e os anos 2020 ocupam uma linha cada um, com porcentagem e uma barra de células.",
+    "alt": "Vista aproximada da parte de cima da tela inicial. No cartão “Onde estamos agora”, Hoje, Este mês, Este ano e Os anos 2020 ocupam uma linha cada um, com porcentagem e uma barra de células, e abaixo começa o cartão “Horário de trabalho”.",
     "caption": "Vista aproximada do app"
    }
   },
@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Você escolhe como ler",
    "body": [
-    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você: uma casa de saída, da segunda em diante com o Pro."
+    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você com um toque numa fileira de células de 0 a 6: uma casa de saída, da segunda em diante com o Pro."
    ],
    "bullets": [],
    "visual": {
@@ -97,6 +97,44 @@
      "Uma unidade em decimal",
      "Progresso em porcentagem",
      "Luas cheias, fins de semana, primaveras, aniversários (Pro)"
+    ]
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Um timer a partir de agora ou pela voz",
+   "body": [
+    "O ícone de três fios no canto superior direito de Novo timer só aparece quando o idioma do app é coreano ou inglês. Toque nele e o app começa a ouvir na hora. Em inglês, frases como “until 2”, “3 hours” ou “meeting 1 hour 30 minutes” preenchem o início, a meta e o nome assim que você para de falar. Depois você toca em Salvar.",
+    "Manualmente, você escolhe entre “A partir de agora” e “Início e meta”. Em “A partir de agora” você só gira uma roda de horas e minutos, e a contagem começa no momento em que você salva. Se o nome ficar vazio, entra um número, como “Timer 1” ou “Timer 2”."
+   ],
+   "bullets": [
+    "Início, meta e nome a partir de uma frase falada",
+    "Uma roda de horas e minutos em “A partir de agora”",
+    "Números para timers sem nome"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Três frases em inglês e o início e a meta que elas viram, com o alcance da roda de “A partir de agora”",
+    "items": [
+     {
+      "name": "until 2",
+      "desc": "Até as 2h ou as 14h, o que vier primeiro"
+     },
+     {
+      "name": "3 hours",
+      "desc": "De agora até 3 horas depois"
+     },
+     {
+      "name": "meeting 1 hour 30 minutes",
+      "desc": "Nome meeting, 1 hora e 30 minutos",
+      "on": true
+     }
+    ],
+    "rows": [
+     {
+      "label": "Roda de “A partir de agora”",
+      "value": "De 1 min a 23 h 59 min"
+     }
     ]
    }
   }
@@ -117,7 +155,7 @@
   {
    "q": "O que aparece na primeira vez",
    "a": [
-    "Hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não há nada para digitar. Os anos 2020 ficam fora da primeira tela; escolha-os nas linhas da pilha ou em um widget e eles também aparecem.",
+    "Hoje, esta semana, este mês, este trimestre e este ano já estão ali. Não há nada para digitar. Os anos 2020 não têm cartão próprio; ocupam uma linha na pilha no topo da primeira tela. Dá para tirá-la em “Escolher linhas” ou escolhê-los em um widget.",
     "O cartão do topo é a pilha. Períodos curtos em cima, longos embaixo. Em escolher linhas você define o que vai ali."
    ]
   },
@@ -138,7 +176,8 @@
    "q": "Como as casas decimais são escolhidas",
    "a": [
     "Quem decide é o período. Um dia em números inteiros, uma semana uma casa, um mês e um trimestre duas, um ano três, vários anos quatro. São escolhidas para o último dígito se mexer a cada dez ou vinte minutos.",
-    "Se você escolher a leitura de progresso e definir as casas, vale o seu valor. Mais casas também quer dizer redesenho mais fino: com seis chega a trinta vezes por segundo. Sem o Pro, fica cortado em uma casa."
+    "Se você escolher a leitura de progresso e definir as casas, vale o seu valor. As casas são escolhidas nos Ajustes e em Editar timer com um toque numa fileira de células de 0 a 6. Mais casas também quer dizer redesenho mais fino: com seis chega a trinta vezes por segundo. Sem o Pro, fica cortado em uma casa.",
+    "Nos Ajustes, cada lugar tem seu próprio valor: No app, Tela Bloqueada, StandBy e Tela de Início. “No app” define o número padrão de casas; os outros lugares definem o máximo que aparece ali. Sem o Pro, em todos os lugares as células de 2 a 6 levam a marca Pro, e tocar numa delas abre a tela de compra. O chip “Igual ao app” de cada lugar também mostra o ajuste do app, como em “Igual ao app (2)”."
    ]
   },
   {
@@ -157,7 +196,18 @@
   {
    "q": "Criar um período seu",
    "a": [
-    "Toque no botão de mais e escolha Novo timer ou Adicionar um intervalo do calendário. Um período novo abre com o início agora e a meta uma semana depois. Os chips dos dois campos mudam isso na hora: o início para o começo de hoje ou deste mês, a meta para um dia, 30 dias, 100 dias ou um ano depois, ou para um momento como o fim desta semana. Para marcar data e hora exatas, toque no campo e abra o calendário."
+    "Toque no botão de mais e escolha Novo timer ou Adicionar um intervalo do calendário. Um timer novo é definido de um de dois jeitos, “A partir de agora” ou “Início e meta”, e abre no jeito que você usou da última vez.",
+    "Em “A partir de agora” você só gira uma roda de horas e minutos, de 1 minuto a 23 horas e 59 minutos, e a contagem começa no momento em que você salva. O que durar um dia ou mais se define em “Início e meta”.",
+    "“Início e meta” abre com o início agora e a meta uma semana depois. Os chips dos dois campos mudam isso na hora: o início para o começo de hoje ou deste mês, a meta para um dia, 30 dias, 100 dias ou um ano depois, ou para um momento como o fim desta semana. Tocar num campo abre o calendário, e embaixo dele aparece uma roda separada para o horário.",
+    "O nome pode ficar vazio. O timer recebe então o menor número livre, como “Timer 1” ou “Timer 2”, e depois você pode trocar o nome em Editar timer."
+   ]
+  },
+  {
+   "q": "Criar um timer pela voz",
+   "a": [
+    "Toque no ícone de três fios no canto superior direito de Novo timer e o app começa a ouvir na hora. Quando você para de falar, ele preenche o início, a meta e o nome com o que entendeu, e quem toca em Salvar é você. O ícone só aparece ao criar um timer novo e some quando Horas por dia da semana está ativado.",
+    "A fala é em coreano ou em inglês, conforme o idioma do app. Em inglês, “until 2” vai até as 2h ou as 14h, o que vier primeiro, e “3 hours” ou “1 hour 30 minutes” duram isso a partir de agora. “from Nov 5 to Dec 31” vai de 5 de novembro às 0h até 31 de dezembro às 24h. Ele também entende “until tomorrow”, “until Friday at 6pm” e “100 days”. Com “meeting 1 hour 30 minutes”, meeting vira o nome.",
+    "O ícone só aparece quando o idioma do app é coreano ou inglês. No primeiro uso, o app pede uma única vez acesso ao microfone e ao reconhecimento de fala. Num iPhone que não consegue reconhecer a fala no próprio aparelho, abre um campo para digitar, e você digita a frase ali."
    ]
   },
   {
@@ -170,14 +220,14 @@
   {
    "q": "Quando chegam os avisos",
    "a": [
-    "Um período com Avisar quando chegar à meta manda um aviso na hora da meta. Os períodos do calendário não usam isso, então nada chega toda noite.",
+    "Um período com “Avisar quando a meta chegar” ativado manda um aviso na hora da meta. Os períodos do calendário não usam isso, então nada chega toda noite.",
     "Os avisos dentro do período fazem parte do Pro. Chegam em 25, 50, 75 ou 100 por cento, conforme a escolha. Só são agendados os pontos que ainda faltam nesta rodada, e abrir o app prepara a rodada seguinte."
    ]
   },
   {
    "q": "O que dá para usar sem o Pro",
    "a": [
-    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro."
+    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz só existe quando o idioma do app é coreano ou inglês, e também funciona sem o Pro."
    ]
   },
   {
@@ -189,7 +239,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Percentime",
-  "effectiveDate": "2026-09-20",
+  "effectiveDate": "2026-09-28",
   "summary": "O Percentime não coleta dados pessoais. Não há conta nem login, e a compra do Pro é feita pela Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app Percentime (o app) conforme descrito a seguir."
@@ -205,13 +255,14 @@
    {
     "title": "Informações tratadas",
     "paragraphs": [
-     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, e o desenvolvedor não recebe nenhum deles. O que o app ouve quando você cria um timer pela voz não é guardado; todo o resto fica no armazenamento do app no seu aparelho."
     ],
     "bullets": [
      "Seus períodos (nome, início e meta, regra de repetição, pontos de aviso, ajustes de leitura): usados para desenhar os valores na tela e nos widgets",
      "Ajustes (quais linhas ficam na pilha): usados para montar o app",
      "O mês e o dia do seu aniversário: só para contar os aniversários que faltam quando você escolhe essa unidade de vida",
-     "Se o Pro foi comprado: para definir quais recursos ficam abertos no app e nos widgets"
+     "Se o Pro foi comprado: para definir quais recursos ficam abertos no app e nos widgets",
+     "O que você fala ao criar um timer pela voz: reconhecido no aparelho e usado só para preencher o início, a meta e o nome de um timer novo. Nem o áudio nem a transcrição completa são guardados; ao tocar em Salvar, só os valores do início, da meta e do nome entram nos seus períodos listados acima (o acesso ao microfone e ao reconhecimento de fala é opcional e é pedido uma única vez, no primeiro uso; se você recusar, o campo para digitar e todas as outras funções continuam funcionando, e dá para desativá-lo no app Ajustes)"
     ]
    },
    {
@@ -252,7 +303,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica no armazenamento dele e no contêiner de App Group, e os widgets leem o mesmo arquivo. Os períodos e os ajustes ficam em dia com os seus outros aparelhos da mesma conta Apple pelo seu próprio iCloud. O desenvolvedor não tem servidor. Os avisos são locais: criados no aparelho e entregues no aparelho."
+     "O que o app usa fica no armazenamento dele e no contêiner de App Group, e os widgets leem o mesmo arquivo. Os períodos e os ajustes ficam em dia com os seus outros aparelhos da mesma conta Apple pelo seu próprio iCloud. O desenvolvedor não tem servidor. Os avisos são locais: criados no aparelho e entregues no aparelho. O reconhecimento de fala ao criar um timer pela voz acontece no iPhone, e o que ele ouve não é guardado."
     ],
     "bullets": []
    },
@@ -299,7 +350,8 @@
    {
     "title": "Mudanças nesta política",
     "paragraphs": [
-     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
+     "2026-09-28: o microfone e o reconhecimento de fala usados para criar um timer pela voz foram incluídos em “Informações tratadas” e em “Medidas de segurança”. A data de vigência anterior era 2026-09-20."
     ],
     "bullets": []
    }
