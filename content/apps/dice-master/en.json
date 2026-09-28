@@ -4,7 +4,7 @@
  "summary": "Choose the dice, tap the screen, and the total appears the moment they stop, with every value that went into it.",
  "hero": {
   "hook": "Choose the dice, tap the screen, and the total appears the moment they stop, with every value that went into it.",
-  "shotAlt": "Dice Master after rolling five 6-sided dice in 3D. The total and the values behind it sit above the dice."
+  "shotAlt": "Dice Master after rolling three 6-sided dice in 3D. The total and the values behind it sit above the dice."
  },
  "sections": [
   {
@@ -23,7 +23,7 @@
     "shot": 1,
     "alt": "Close-up of the total with the values beneath it. Chips for faces, dice count, roll mode and formula run across the top.",
     "caption": "App screen, zoomed in",
-    "focus": "-10px"
+    "focus": "-80px"
    }
   },
   {

@@ -4,7 +4,7 @@
  "summary": "Escolha os dados, toque na tela e, assim que eles param, o total aparece com cada valor que entrou nele.",
  "hero": {
   "hook": "Escolha os dados, toque na tela e, assim que eles param, o total aparece com cada valor que entrou nele.",
-  "shotAlt": "O Dice Master depois de rolar cinco dados de 6 faces em 3D. Acima dos dados estão o total e os valores que o formaram."
+  "shotAlt": "O Dice Master depois de rolar três dados de 6 faces em 3D. Acima dos dados estão o total e os valores que o formaram."
  },
  "sections": [
   {
@@ -23,7 +23,7 @@
     "shot": 1,
     "alt": "O total visto de perto, com os valores embaixo. No alto, atravessam a tela os chips de faces, quantidade de dados, modo de rolagem e fórmula.",
     "caption": "Tela do app, ampliada",
-    "focus": "-10px"
+    "focus": "-80px"
    }
   },
   {

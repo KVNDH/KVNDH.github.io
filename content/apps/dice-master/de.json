@@ -4,7 +4,7 @@
  "summary": "Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.",
  "hero": {
   "hook": "Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.",
-  "shotAlt": "Dice Master nach einem Wurf mit fünf sechsseitigen Würfeln in 3D. Über den Würfeln stehen das Ergebnis und die Augen, aus denen es entstand."
+  "shotAlt": "Dice Master nach einem Wurf mit drei sechsseitigen Würfeln in 3D. Über den Würfeln stehen das Ergebnis und die Augen, aus denen es entstand."
  },
  "sections": [
   {
@@ -23,7 +23,7 @@
     "shot": 1,
     "alt": "Das Ergebnis aus der Nähe, darunter die einzelnen Augen. Oben laufen die Chips für Seiten, Würfelzahl, Wurfmodus und Formel quer über den Bildschirm.",
     "caption": "App-Ansicht, vergrößert",
-    "focus": "-10px"
+    "focus": "-80px"
    }
   },
   {

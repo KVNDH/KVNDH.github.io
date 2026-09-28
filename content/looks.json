@@ -47,49 +47,49 @@
   }
  },
  "dice-master": {
-  "mode": "blur",
-  "ink": "light",
-  "color": "#1E1A17",
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
   "alts": {
    "ko": [
-    "주사위를 한 번에 굴리고 합계를 바로 봅니다",
-    "면체와 주사위 수, 계산식을 직접 정합니다",
-    "주사위 스킨과 화면 테마를 고릅니다"
+    "굴리는 순간 합계가 나옵니다",
+    "주사위 열 개를 더하고 색상별로 나눠 셉니다",
+    "2~20면을 3D로 굴리고 11면부터는 Pro입니다"
    ],
    "en": [
-    "Roll all dice at once and see the sum instantly",
-    "Set Faces, Dice Count, and Formula yourself",
-    "Choose your Dice Skin and Theme"
+    "Roll, and the total is already there",
+    "Ten dice added up, subtotals by color",
+    "2 to 20 sides in 3D, over 10 with Pro"
    ],
    "ja": [
-    "ダイスをまとめて振り 合計をすぐに確認",
-    "面数とダイス数、 計算式を自由に設定",
-    "ダイススキンと テーマを選択"
+    "振った瞬間に 合計が出ます",
+    "ダイス10個を合計し カラー別に小計します",
+    "2〜20面を3Dで振り 11面以上はProです"
    ],
    "zh-hans": [
-    "一次掷出所有骰子 立即查看总和",
-    "自由设定面数、 骰子数和计算公式",
-    "挑选骰子皮肤 和主题"
+    "掷出的瞬间 总和已经算好",
+    "10个骰子一起求和 按颜色分别小计",
+    "3D投掷支持2~20面 11面以上需要Pro"
    ],
    "zh-hant": [
-    "一次擲出所有骰子 立即查看總和",
-    "自由設定面數、 骰子數量和計算式",
-    "挑選骰子外觀 和畫面主題"
+    "擲出的瞬間 加總已經算好",
+    "10顆骰子一起加總 依顏色分別小計",
+    "3D擲骰支援2~20面 11面以上需要Pro"
    ],
    "de": [
-    "Alle Würfel werfen und die Summe sofort sehen",
-    "Seiten, Würfelanzahl und Formel selbst festlegen",
-    "Würfel-Skin und Design wählen"
+    "Würfeln, und schon steht die Summe da",
+    "Zehn Würfel addiert, Teilsummen nach Farbe",
+    "2 bis 20 Seiten in 3D, ab 11 Seiten mit Pro"
    ],
    "es": [
-    "Lanza todos los dados y ve la suma al instante",
-    "Caras, n.º de dados y fórmula a tu medida",
-    "Apariencia del dado y tema a tu gusto"
+    "Tira y la suma aparece al instante",
+    "Diez dados sumados, subtotales por color",
+    "De 2 a 20 caras en 3D, más de 10 con Pro"
    ],
    "pt-br": [
-    "Role todos os dados e veja a soma na hora",
-    "Faces, nº de dados e fórmula do seu jeito",
-    "Aparência dos dados e tema à sua escolha"
+    "Role e a soma aparece na hora",
+    "Dez dados somados, subtotais por cor",
+    "De 2 a 20 faces em 3D, mais de 10 com Pro"
    ]
   }
  },

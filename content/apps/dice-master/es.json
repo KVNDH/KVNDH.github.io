@@ -4,7 +4,7 @@
  "summary": "Elige los dados, toca la pantalla y, en cuanto se paran, aparece el total con cada valor que ha entrado en él.",
  "hero": {
   "hook": "Elige los dados, toca la pantalla y, en cuanto se paran, aparece el total con cada valor que ha entrado en él.",
-  "shotAlt": "Dice Master tras lanzar cinco dados de 6 caras en 3D. Sobre los dados están el total y los valores que lo componen."
+  "shotAlt": "Dice Master tras lanzar tres dados de 6 caras en 3D. Sobre los dados están el total y los valores que lo componen."
  },
  "sections": [
   {
@@ -23,7 +23,7 @@
     "shot": 1,
     "alt": "Primer plano del total con los valores debajo. Arriba cruzan la pantalla los chips de caras, número de dados, modo de lanzamiento y fórmula.",
     "caption": "Pantalla de la app, ampliada",
-    "focus": "-10px"
+    "focus": "-80px"
    }
   },
   {
