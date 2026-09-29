@@ -4,7 +4,7 @@
  "ads": false,
  "account": false,
  "products": [
-  "Readride Pro: 비소모성 1개 (com.kimdh.Readride.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (StoreKit/Readride.storekit). 2026-09-26 기준 ASC 앱 레코드와 상품이 아직 없다(site.json 에 appStoreId 없음)"
+  "Readride Pro: 비소모성 1개 (com.kimdh.Readride.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (StoreKit/Readride.storekit). ASC 앱 6816576585, 이 상품은 1.0.0 과 함께 2026-09-30 출시(HQ 가 ASC 로 확인)"
  ],
  "network": [
   "웹 기사 받아 오기 하나(WebImport.fetch): 주소만 공유됐거나 Safari 가 페이지를 넘기지 못했을 때만. 쿠키, 캐시, 자격 증명 없는 ephemeral 세션, https 만, 로컬 네트워크로는 안 감, 10MB 상한",

@@ -131,7 +131,7 @@
   {
    "q": "Adónde va un artículo compartido",
    "a": [
-    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este iPhone. Al abrir Readride, Get Ready extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
+    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este iPhone. Al abrir Readride, Get Ready extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, o si la página de Safari es demasiado grande y solo llega su dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
    ]
   },
   {
@@ -143,7 +143,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Readride",
-  "effectiveDate": "2026-09-26",
+  "effectiveDate": "2026-09-30",
   "summary": "Readride no recoge datos personales. No hay cuenta ni inicio de sesión. Lo que añades y tus ajustes se guardan en tu dispositivo, y la compra de Pro la gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Readride (la app) del modo que se indica a continuación."
@@ -185,7 +185,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra y la restauración de Readride Pro las gestiona Apple en el App Store, y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago ni datos de tu cuenta de Apple. Si otra app comparte solo una dirección web, la app descarga esa página del sitio una vez. Como en cualquier solicitud web, el sitio recibe la dirección IP de tu dispositivo, una descripción del navegador que nombra a Readride y los idiomas preferidos de tu dispositivo. La solicitud no pasa por ningún servidor del desarrollador y no envía ni guarda cookies, caché ni inicios de sesión guardados."
+     "No se encarga ningún tratamiento a terceros. La compra y la restauración de Readride Pro las gestiona Apple en el App Store, y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago ni datos de tu cuenta de Apple. Si otra app comparte solo una dirección web, o si una página compartida desde Safari es demasiado grande y solo llega su dirección, la app descarga esa página del sitio una vez. Como en cualquier solicitud web, el sitio recibe la dirección IP de tu dispositivo, una descripción del navegador que nombra a Readride y los idiomas preferidos de tu dispositivo. La solicitud no pasa por ningún servidor del desarrollador y no envía ni guarda cookies, caché ni inicios de sesión guardados."
     ],
     "bullets": []
    },
@@ -253,7 +253,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-09-30: Se añadió en «Encargo del tratamiento» el caso en que una página compartida desde Safari es demasiado grande y solo llega su dirección. La fecha de entrada en vigor anterior era el 2026-09-26."
     ],
     "bullets": []
    }

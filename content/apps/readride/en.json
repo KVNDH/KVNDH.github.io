@@ -131,7 +131,7 @@
   {
    "q": "Where a shared web article goes",
    "a": [
-    "The one page you share (its address, title, and the HTML on screen) is placed in Readride's shared folder on this iPhone. When you open Readride, Get Ready pulls the article text from it. Once you add or cancel, the page is deleted from that folder. If another app shares only an address, Readride fetches that page from the site once, without your cookies or cache, so no login is sent. It doesn't go through any developer server."
+    "The one page you share (its address, title, and the HTML on screen) is placed in Readride's shared folder on this iPhone. When you open Readride, Get Ready pulls the article text from it. Once you add or cancel, the page is deleted from that folder. If another app shares only an address, or the page from Safari is too large and only its address comes through, Readride fetches that page from the site once, without your cookies or cache, so no login is sent. It doesn't go through any developer server."
    ]
   },
   {
@@ -143,7 +143,7 @@
  ],
  "privacy": {
   "title": "Readride Privacy Policy",
-  "effectiveDate": "2026-09-26",
+  "effectiveDate": "2026-09-30",
   "summary": "Readride collects no personal data. There is no account and no sign-in. What you add and your settings are kept on your device, and Apple handles the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Readride app (the app) as described below."
@@ -185,7 +185,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. Buying and restoring Readride Pro is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information. If another app shares only a web address, the app fetches that page from the site once. As with any web request, the site receives your device's IP address, a browser description that names Readride, and your device's preferred languages. The request doesn't go through any developer server, and it doesn't send or keep cookies, cache, or saved logins."
+     "No processing is outsourced. Buying and restoring Readride Pro is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information. If another app shares only a web address, or a page shared from Safari is too large and only its address comes through, the app fetches that page from the site once. As with any web request, the site receives your device's IP address, a browser description that names Readride, and your device's preferred languages. The request doesn't go through any developer server, and it doesn't send or keep cookies, cache, or saved logins."
     ],
     "bullets": []
    },
@@ -253,7 +253,8 @@
    {
     "title": "Changes to this policy",
     "paragraphs": [
-     "If this policy changes, this page will show the new text and its new effective date."
+     "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-09-30: Added to “Outsourcing of processing” the case where a page shared from Safari is too large and only its address comes through. The previous effective date was 2026-09-26."
     ],
     "bullets": []
    }

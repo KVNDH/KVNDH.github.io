@@ -104,7 +104,7 @@
    "layout": "feat",
    "title": "Say it, and the start and goal fill in",
    "body": [
-    "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. Say \"until 2\", \"3 hours\" or \"meeting 1 hour 30 minutes\", stop, and the start, goal and title fill in. You tap Save yourself. The icon is there only when the app language is Korean or English.",
+    "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. Say \"until 2\", \"3 hours\" or \"meeting 1 hour 30 minutes\", stop, and the start, goal and title fill in. You tap Save yourself. The icon is there in every app language except the 11 that have no Apple speech recognizer.",
     "By hand, you choose between \"From now\" and \"Start and goal\". With \"From now\" you turn only an hours and minutes wheel, and the count starts the moment you save. Leave the title blank and it takes a number, as in \"Timer 1\" and \"Timer 2\"."
    ],
    "bullets": [
@@ -162,7 +162,7 @@
   {
    "q": "What happens when a span ends",
    "a": [
-    "A calendar span hands over to the next one the moment it ends. A repeating timer rests at 100 percent once a round is done, and a timer with weekly hours shows how long until its next round.",
+    "A calendar span hands over to the next one the moment it ends. A repeating timer stays at 100 percent after a round until the start of the day its next round begins, then drops to 0 percent and fills again from the start time. If the next round starts later the same day, it drops to 0 percent as soon as the round ends. It also shows how long until the next round.",
     "A timer of your own that passes its goal does not stop there: the time past the goal stacks up in the accent color."
    ]
   },
@@ -206,8 +206,8 @@
    "q": "Setting a timer by voice",
    "a": [
     "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. When you stop speaking, it fills the start, goal and title with what it understood, and you tap Save yourself. The icon is there only when making a new timer, and it hides when Weekly hours is on.",
-    "\"until 2\" runs to the next 2 o'clock, and \"3 hours\" or \"1 hour 30 minutes\" run that long from now. \"from Nov 5 to Dec 31\" runs from the start of November 5 to the end of December 31. It also understands \"until tomorrow\", \"until Friday at 6pm\" and \"100 days\". Say \"meeting 1 hour 30 minutes\" and meeting becomes the title.",
-    "The icon appears only when the app language is Korean or English. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there."
+    "\"until 2\" runs to the next 2 o'clock, and \"3 hours\" or \"1 hour 30 minutes\" run that long from now. \"from Nov 5 to Dec 31\" runs from the start of November 5 to the end of December 31. It also understands \"until tomorrow\", \"until Friday 6pm\" and \"100 days\". Say \"meeting 1 hour 30 minutes\" and meeting becomes the title.",
+    "The icon appears in every app language except the 11 that have no Apple speech recognizer, such as Bengali and Tamil. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there."
    ]
   },
   {
@@ -227,7 +227,7 @@
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice is there only when the app language is Korean or English, and it also works without Pro."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer)."
    ]
   },
   {

@@ -218,6 +218,7 @@
     "Readride/docs/screenshots/site/02-paused-en.png",
     "Readride/docs/screenshots/site/03-prepare-web-en.png"
    ]
-  }
+  },
+  "store": "tmp/readride-site-2026-09-26/store-1.0.0/docs/store"
  }
 }

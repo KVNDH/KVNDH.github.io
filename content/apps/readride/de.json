@@ -131,7 +131,7 @@
   {
    "q": "Wohin ein geteilter Webartikel geht",
    "a": [
-    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht Get Ready den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
+    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht Get Ready den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse oder ist die Seite aus Safari zu groß, sodass nur ihre Adresse ankommt, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
    ]
   },
   {
@@ -143,7 +143,7 @@
  ],
  "privacy": {
   "title": "Readride Datenschutzerklärung",
-  "effectiveDate": "2026-09-26",
+  "effectiveDate": "2026-09-30",
   "summary": "Readride erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Was Sie hinzufügen, und Ihre Einstellungen liegen auf Ihrem Gerät, und den Kauf von Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Readride (die App) wie folgt."
@@ -185,7 +185,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Es wird keine Verarbeitung ausgelagert. Kauf und Wiederherstellung von Readride Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Teilt eine andere App nur eine Webadresse, lädt die App diese Seite einmal von der Website. Wie bei jeder Webanfrage erhält die Website die IP-Adresse Ihres Geräts, eine Browserkennung, die Readride nennt, und die bevorzugten Sprachen Ihres Geräts. Die Anfrage läuft über keinen Server des Entwicklers und sendet oder speichert weder Cookies noch Cache noch gespeicherte Anmeldungen."
+     "Es wird keine Verarbeitung ausgelagert. Kauf und Wiederherstellung von Readride Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Teilt eine andere App nur eine Webadresse oder ist eine aus Safari geteilte Seite zu groß, sodass nur ihre Adresse ankommt, lädt die App diese Seite einmal von der Website. Wie bei jeder Webanfrage erhält die Website die IP-Adresse Ihres Geräts, eine Browserkennung, die Readride nennt, und die bevorzugten Sprachen Ihres Geräts. Die Anfrage läuft über keinen Server des Entwicklers und sendet oder speichert weder Cookies noch Cache noch gespeicherte Anmeldungen."
     ],
     "bullets": []
    },
@@ -253,7 +253,8 @@
    {
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
-     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-09-30: Unter „Auftragsverarbeitung“ den Fall ergänzt, dass eine aus Safari geteilte Seite zu groß ist und nur ihre Adresse ankommt. Vorheriges Datum des Inkrafttretens: 2026-09-26."
     ],
     "bullets": []
    }

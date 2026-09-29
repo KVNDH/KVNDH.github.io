@@ -104,7 +104,7 @@
    "layout": "feat",
    "title": "Timer ab jetzt oder per Sprache stellen",
    "body": [
-    "Nur wenn die App-Sprache Koreanisch oder Englisch ist, steht oben rechts im Bildschirm Neuer Timer ein Symbol mit drei Strängen. Ein Tipp darauf, und die App hört sofort zu. Auf Englisch füllen Sätze wie „until 2“, „3 hours“ oder „meeting 1 hour 30 minutes“ Beginn, Ziel und Name, sobald Sie aufhören zu sprechen. Auf Sichern tippen Sie selbst.",
+    "Oben rechts im Bildschirm Neuer Timer steht ein Symbol mit drei Strängen. Ein Tipp darauf, und die App hört sofort zu. Sätze wie „bis 14 Uhr“, „3 Stunden“ oder „Meeting 1 Stunde 30 Minuten“ füllen Beginn, Ziel und Name, sobald Sie aufhören zu sprechen. Auf Sichern tippen Sie selbst. Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple.",
     "Von Hand wählen Sie zwischen „Ab jetzt“ und „Beginn und Ziel“. Bei „Ab jetzt“ drehen Sie nur ein Rad aus Stunden und Minuten, gezählt wird ab dem Moment, in dem Sie sichern. Bleibt der Name leer, bekommt der Timer eine Nummer wie „Timer 1“ oder „Timer 2“."
    ],
    "bullets": [
@@ -114,19 +114,19 @@
    ],
    "visual": {
     "type": "kit",
-    "label": "Drei englische Sätze und was daraus wird, dazu die Spanne des Rads bei „Ab jetzt“",
+    "label": "Drei gesprochene Sätze und was daraus wird, dazu die Spanne des Rads bei „Ab jetzt“",
     "items": [
      {
-      "name": "until 2",
-      "desc": "Bis 2 oder 14 Uhr, was zuerst kommt"
+      "name": "bis 14 Uhr",
+      "desc": "Bis 14 Uhr, heute oder morgen"
      },
      {
-      "name": "3 hours",
+      "name": "3 Stunden",
       "desc": "Ab jetzt 3 Stunden lang"
      },
      {
-      "name": "meeting 1 hour 30 minutes",
-      "desc": "Name meeting, Dauer 1 Stunde 30 Minuten",
+      "name": "Meeting 1 Stunde 30 Minuten",
+      "desc": "Name Meeting, Dauer 1 Stunde 30 Minuten",
       "on": true
      }
     ],
@@ -162,7 +162,7 @@
   {
    "q": "Was passiert, wenn ein Zeitraum endet",
    "a": [
-    "Ein Kalenderzeitraum geht im Moment seines Endes in den nächsten über. Ein wiederkehrender Zeitraum bleibt nach einer Runde bei 100 Prozent stehen, und einer mit Zeiten je Wochentag zeigt, wie lange es bis zur nächsten Runde dauert.",
+    "Ein Kalenderzeitraum geht im Moment seines Endes in den nächsten über. Ein wiederkehrender Zeitraum bleibt nach einer Runde bei 100 Prozent, bis um 0 Uhr der Tag der nächsten Runde beginnt, springt dann auf 0 Prozent und füllt sich ab der Startzeit wieder. Beginnt die nächste Runde noch am selben Tag, springt er gleich nach dem Ende auf 0 Prozent. Er zeigt auch, wie lange es bis zur nächsten Runde dauert.",
     "Ein eigener Zeitraum hört am Ziel nicht auf: Die Zeit nach dem Ziel stapelt sich in der Akzentfarbe."
    ]
   },
@@ -206,8 +206,8 @@
    "q": "Einen Timer per Sprache stellen",
    "a": [
     "Tippen Sie oben rechts im Bildschirm Neuer Timer auf das Symbol mit drei Strängen, dann hört die App sofort zu. Sobald Sie aufhören zu sprechen, füllt sie Beginn, Ziel und Name mit dem, was sie verstanden hat; auf Sichern tippen Sie selbst. Das Symbol gibt es nur beim Anlegen eines neuen Timers, und es verschwindet, wenn Stunden je Wochentag eingeschaltet ist.",
-    "Gesprochen wird Koreanisch oder Englisch, je nach App-Sprache. Auf Englisch reicht „until 2“ bis 2 oder 14 Uhr, je nachdem, was zuerst kommt, und „3 hours“ oder „1 hour 30 minutes“ zählen so lange ab jetzt. „from Nov 5 to Dec 31“ reicht vom 5. November 0 Uhr bis zum 31. Dezember 24 Uhr. Auch „until tomorrow“, „until Friday at 6pm“ und „100 days“ werden verstanden. Bei „meeting 1 hour 30 minutes“ wird meeting zum Namen.",
-    "Das Symbol erscheint nur, wenn die App-Sprache Koreanisch oder Englisch ist. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein."
+    "„bis 14 Uhr“ reicht bis 14 Uhr, heute oder, wenn es schon später ist, morgen, und „3 Stunden“ zählt drei Stunden ab jetzt. „vom 5. November bis 31. Dezember“ reicht vom 5. November 0 Uhr bis zum 31. Dezember 24 Uhr. Auch „bis Freitag 18 Uhr“ und „100 Tage“ werden verstanden. Bei „Meeting 1 Stunde 30 Minuten“ wird Meeting zum Namen.",
+    "Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple, etwa Bengalisch und Tamil. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein."
    ]
   },
   {
@@ -227,7 +227,7 @@
   {
    "q": "Was ist ohne Pro nutzbar",
    "a": [
-    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Das Stellen per Sprache gibt es nur, wenn die App-Sprache Koreanisch oder Englisch ist, und auch das geht ohne Pro."
+    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Auch das Stellen per Sprache geht ohne Pro (außer in den 11 Sprachen ohne Spracherkennung von Apple)."
    ]
   },
   {

@@ -104,7 +104,7 @@
    "layout": "feat",
    "title": "Um timer a partir de agora ou pela voz",
    "body": [
-    "O ícone de três fios no canto superior direito de Novo timer só aparece quando o idioma do app é coreano ou inglês. Toque nele e o app começa a ouvir na hora. Em inglês, frases como “until 2”, “3 hours” ou “meeting 1 hour 30 minutes” preenchem o início, a meta e o nome assim que você para de falar. Depois você toca em Salvar.",
+    "No canto superior direito de Novo timer fica um ícone de três fios. Toque nele e o app começa a ouvir na hora. Frases como “até as 14h”, “3 horas” ou “reunião 1 hora e meia” preenchem o início, a meta e o nome assim que você para de falar. Depois você toca em Salvar. O ícone aparece em todos os idiomas do app, menos nos 11 que não têm reconhecimento de fala da Apple.",
     "Manualmente, você escolhe entre “A partir de agora” e “Início e meta”. Em “A partir de agora” você só gira uma roda de horas e minutos, e a contagem começa no momento em que você salva. Se o nome ficar vazio, entra um número, como “Timer 1” ou “Timer 2”."
    ],
    "bullets": [
@@ -114,19 +114,19 @@
    ],
    "visual": {
     "type": "kit",
-    "label": "Três frases em inglês e o início e a meta que elas viram, com o alcance da roda de “A partir de agora”",
+    "label": "Três frases faladas e o início e a meta que elas viram, com o alcance da roda de “A partir de agora”",
     "items": [
      {
-      "name": "until 2",
-      "desc": "Até as 2h ou as 14h, o que vier primeiro"
+      "name": "até as 14h",
+      "desc": "Até as 14h de hoje ou, se já passou, de amanhã"
      },
      {
-      "name": "3 hours",
+      "name": "3 horas",
       "desc": "De agora até 3 horas depois"
      },
      {
-      "name": "meeting 1 hour 30 minutes",
-      "desc": "Nome meeting, 1 hora e 30 minutos",
+      "name": "reunião 1 hora e meia",
+      "desc": "Nome reunião, 1 hora e 30 minutos",
       "on": true
      }
     ],
@@ -162,7 +162,7 @@
   {
    "q": "O que acontece quando um período termina",
    "a": [
-    "Um período do calendário passa para o seguinte no momento em que termina. Um período que se repete fica em 100 por cento ao fim de cada rodada, e um com horários por dia da semana mostra quanto falta para a próxima.",
+    "Um período do calendário passa para o seguinte no momento em que termina. Um período que se repete fica em 100 por cento depois de uma rodada até a 0h do dia em que começa a próxima; aí passa a 0 por cento e volta a encher a partir do horário de início. Se a próxima começa no mesmo dia, passa a 0 por cento assim que a rodada termina. Também mostra quanto falta para a próxima.",
     "Um período seu que passa da meta não para ali: o tempo além da meta se empilha na cor de destaque."
    ]
   },
@@ -206,8 +206,8 @@
    "q": "Criar um timer pela voz",
    "a": [
     "Toque no ícone de três fios no canto superior direito de Novo timer e o app começa a ouvir na hora. Quando você para de falar, ele preenche o início, a meta e o nome com o que entendeu, e quem toca em Salvar é você. O ícone só aparece ao criar um timer novo e some quando Horas por dia da semana está ativado.",
-    "A fala é em coreano ou em inglês, conforme o idioma do app. Em inglês, “until 2” vai até as 2h ou as 14h, o que vier primeiro, e “3 hours” ou “1 hour 30 minutes” duram isso a partir de agora. “from Nov 5 to Dec 31” vai de 5 de novembro às 0h até 31 de dezembro às 24h. Ele também entende “until tomorrow”, “until Friday at 6pm” e “100 days”. Com “meeting 1 hour 30 minutes”, meeting vira o nome.",
-    "O ícone só aparece quando o idioma do app é coreano ou inglês. No primeiro uso, o app pede uma única vez acesso ao microfone e ao reconhecimento de fala. Num iPhone que não consegue reconhecer a fala no próprio aparelho, abre um campo para digitar, e você digita a frase ali."
+    "“até as 14h” vai até as 14h de hoje, ou de amanhã se esse horário já passou, e “3 horas” conta três horas a partir de agora. “de 5 de novembro a 31 de dezembro” vai de 5 de novembro às 0h até 31 de dezembro às 24h. Ele também entende “até sexta às 18h” e “100 dias”. Com “reunião 1 hora e meia”, reunião vira o nome.",
+    "O ícone aparece em todos os idiomas do app, menos nos 11 que não têm reconhecimento de fala da Apple, como bengali e tâmil. No primeiro uso, o app pede uma única vez acesso ao microfone e ao reconhecimento de fala. Num iPhone que não consegue reconhecer a fala no próprio aparelho, abre um campo para digitar, e você digita a frase ali."
    ]
   },
   {
@@ -227,7 +227,7 @@
   {
    "q": "O que dá para usar sem o Pro",
    "a": [
-    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz só existe quando o idioma do app é coreano ou inglês, e também funciona sem o Pro."
+    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz também funciona sem o Pro (menos nos 11 idiomas sem reconhecimento de fala da Apple)."
    ]
   },
   {
