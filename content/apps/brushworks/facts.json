@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.1",
+ "describesVersion": "1.0.2",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -88,7 +88,7 @@
   "3072"
  ],
  "sources": [
-  "BrushWorks main(1.0.1 제출, 2026-09-25) 기준",
+  "BrushWorks main(1.0.1 제출, 2026-09-25) 기준. 1.0.2(빌드 1, 2026-09-30 출시, HQ 가 ASC READY_FOR_SALE 확인)는 붓 질감 표현(조명 v2, 질감 세대 5)만 바뀌었고 기능, 가격, Pro 혜택, 저장 규격, 스토어 문안, 스크린샷은 1.0.1 과 같다(BrushWorks 세션 09-30 보고, HQ 가 커밋 8cfa2c0~e9d8f37 로 대조)",
   "BrushWorks/project.yml (MARKETING_VERSION 1.0.1, 사진 권한 문구)",
   "BrushWorks/Sources/Model/Tier.swift (무료 10초 720×1280, Pro 1080×1920)",
   "BrushWorks/Sources/Model/CanvasSpec.swift (brushDiameters 9개, underlayLevels 5개, 0 이 Blind 모드)",
