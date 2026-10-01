@@ -30,18 +30,19 @@
    "layout": "feat",
    "title": "Trajetos pelo mapa ou por uma viagem",
    "body": [
-    "Escolha a partida e o destino, e o Mapas da Apple encontra uma rota a pé ou de carro, com checkpoints distribuídos nos trechos mais longos. Um caminho que nenhum mapa conhece, como o fretado da empresa, se cria fazendo o trajeto uma vez. Os lugares onde você parou e onde embarcou ou desembarcou ficam como candidatos a checkpoint."
+    "Escolha a partida e o destino, e o Mapas da Apple encontra uma rota a pé ou de carro, com checkpoints distribuídos nos trechos mais longos. Um caminho que nenhum mapa conhece, como o fretado da empresa, se cria fazendo o trajeto uma vez. Os lugares onde você parou e onde embarcou ou desembarcou ficam como candidatos a checkpoint. Checkpoints automáticos recebem o nome de uma estação ou rua próxima. Os trechos de ônibus ou metrô são marcados à parte."
    ],
    "bullets": [
     "Rotas a pé e de carro",
     "Trajeto criado a partir de uma viagem feita",
-    "Janela de horário própria em cada checkpoint"
+    "Janela de horário própria em cada checkpoint",
+    "Trechos de ônibus e metrô"
    ],
    "visual": {
     "type": "crop",
     "shot": 2,
     "focus": "-250px",
-    "alt": "Criar um trajeto. A rota encontrada no mapa, com checkpoints ao longo do caminho.",
+    "alt": "A tela do trajeto. Abaixo do nome do trajeto, o mapa mostra a rota com os checkpoints numerados.",
     "caption": "Vista aproximada do app"
    }
   },
@@ -49,9 +50,10 @@
    "layout": "card",
    "title": "Sem tirar o iPhone do bolso",
    "body": [
-    "Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. Se você sair da janela de horário, recebe um alerta. Comece pela Central de Controle ou pela Siri; o trajeto para sozinho dois minutos depois da chegada."
+    "Na hora de sair, toca o lembrete de saída que você ativou para o trajeto, e um toque nele inicia esse trajeto. Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. Se você sair da janela de horário, recebe um alerta. Ao abrir o app ou começar pela Central de Controle ou pela Siri, o OnPace escolhe o trajeto para a hora do dia; o trajeto para sozinho dois minutos depois da chegada."
    ],
    "bullets": [
+    "Lembrete de saída para cada trajeto",
     "Cartão na Tela Bloqueada e Dynamic Island",
     "Alerta ao sair da janela de horário",
     "Início pela Central de Controle e pela Siri"
@@ -77,10 +79,11 @@
  ],
  "pro": {
   "kick": "OnPace Pro",
-  "title": "Trajetos sem limite\ne horários ajustados pelas suas viagens",
+  "title": "Trajetos sem limite,\nhorários ajustados pelas viagens e dias para cada trajeto",
   "items": [
    "Trajetos sem limite de quantidade (para começar são dois)",
-   "Tune from trips: aplica as sugestões aos horários dos checkpoints"
+   "Tune from trips: aplica as sugestões aos horários dos checkpoints",
+   "Dias de cada trajeto: os lembretes de saída e a escolha automática seguem esses dias"
   ]
  },
  "faq": [
@@ -103,9 +106,21 @@
    ]
   },
   {
+   "q": "Ativar um lembrete de saída",
+   "a": [
+    "Na tela Route, em Schedule, defina Departure reminder como At departure, 5 min before, 10 min before ou 15 min before. Na primeira vez que você ativa um, o OnPace pede permissão para notificações. Tocar no lembrete inicia esse trajeto. Com o Pro você escolhe Days para um trajeto, e o lembrete toca só nesses dias. Se as notificações estiverem desativadas, ative em Ajustes > OnPace > Notificações."
+   ]
+  },
+  {
+   "q": "O trajeto escolhido muda sozinho",
+   "a": [
+    "Com dois trajetos ou mais, ao abrir o app ou começar pela Central de Controle ou pela Siri, o OnPace escolhe o trajeto cuja próxima saída está mais perto. Uma saída que passou há menos de uma hora ainda conta. Um trajeto que você mesmo escolheu na última hora fica como está, e nada muda durante um trajeto."
+   ]
+  },
+  {
    "q": "Trechos de ônibus e metrô",
    "a": [
-    "Ative Transit to the next checkpoint ao editar um checkpoint. No mapa de Edit route, a mesma chave aparece como Subway from here to the next checkpoint. Com ela ativada, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
+    "Ao editar um checkpoint ou no mapa de Edit route, escolha Bus ou Subway em To the next checkpoint. Nesses trechos, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
    ]
   },
   {
@@ -129,8 +144,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do OnPace",
-  "effectiveDate": "2026-09-26",
-  "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas e a compra do Pro ficam a cargo da Apple.",
+  "effectiveDate": "2026-10-02",
+  "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas, os nomes dos checkpoints conforme o que há por perto e a compra do Pro ficam a cargo da Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app OnPace (o app) conforme descrito a seguir."
   ],
@@ -148,11 +163,11 @@
      "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, todos guardados no armazenamento do app no seu aparelho. O desenvolvedor não recebe nenhum deles."
     ],
     "bullets": [
-     "Trajetos (nome; nome, lugar e horário de cada checkpoint; janelas de horário; forma da rota): para calcular o adiantamento ou o atraso",
+     "Trajetos (nome; nome, lugar e horário de cada checkpoint; janelas de horário; forma da rota; lembrete de saída e dias): para calcular o adiantamento ou o atraso e programar os lembretes de saída",
      "Histórico de viagens (o horário previsto e o real em cada checkpoint): para as sugestões do Tune from trips",
      "O percurso da última viagem (localizações): para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem",
      "Registro de diagnóstico (localizações e horários, e o tipo de atividade, como caminhar ou andar de carro, com o grau de certeza): para rever como o app se comportou. Ao chegar a 20 MB começa um registro novo, e a versão publicada não tem como exportá-lo",
-     "Ajustes e se o Pro foi comprado: para montar o app e decidir quais recursos ficam abertos"
+     "Ajustes, se o Pro foi comprado e quando você mesmo escolheu um trajeto pela última vez: para montar o app, decidir quais recursos ficam abertos e escolher o trajeto para a hora do dia"
     ]
    },
    {
@@ -172,7 +187,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
+     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. Quando o app dá nome a um checkpoint que ele mesmo colocou, também procura no Mapas da Apple os lugares e o endereço próximos da localização desse checkpoint. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
     ],
     "bullets": []
    },
@@ -193,7 +208,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir caminhada de deslocamento em veículo. As notificações são locais: criadas no aparelho e tocadas no aparelho."
+     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir caminhada de deslocamento em veículo. Os alertas de janela de horário e os lembretes de saída que você ativa são notificações locais: criadas no aparelho e tocadas no aparelho."
     ],
     "bullets": []
    },
@@ -240,7 +255,8 @@
    {
     "title": "Mudanças nesta política",
     "paragraphs": [
-     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
+     "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca de nomes de checkpoints no Mapas da Apple foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
     ],
     "bullets": []
    }

@@ -30,18 +30,19 @@
    "layout": "feat",
    "title": "Rutas desde el mapa o desde un trayecto",
    "body": [
-    "Elige una salida y un destino, y Mapas de Apple encuentra una ruta a pie o en coche, con puntos de control repartidos por los tramos largos. Una ruta que ningún mapa conoce, como el autobús de la empresa, se crea haciéndola una vez. Los sitios donde te paraste y donde subiste o bajaste quedan como candidatos a punto de control."
+    "Elige una salida y un destino, y Mapas de Apple encuentra una ruta a pie o en coche, con puntos de control repartidos por los tramos largos. Una ruta que ningún mapa conoce, como el autobús de la empresa, se crea haciéndola una vez. Los sitios donde te paraste y donde subiste o bajaste quedan como candidatos a punto de control. Los puntos de control automáticos llevan el nombre de una estación o calle cercana. Los tramos en autobús o metro se marcan aparte."
    ],
    "bullets": [
     "Rutas a pie y en coche",
     "Ruta a partir de un trayecto real",
-    "Margen propio en cada punto de control"
+    "Margen propio en cada punto de control",
+    "Tramos en autobús y metro"
    ],
    "visual": {
     "type": "crop",
     "shot": 2,
     "focus": "-250px",
-    "alt": "Crear una ruta. La ruta encontrada en el mapa, con puntos de control a lo largo del camino.",
+    "alt": "La pantalla de la ruta. Bajo el nombre de la ruta, el mapa muestra el camino con los puntos de control numerados.",
     "caption": "Vista cercana de la app"
    }
   },
@@ -49,9 +50,10 @@
    "layout": "card",
    "title": "Sin sacar el iPhone",
    "body": [
-    "Durante el trayecto, la tarjeta de la pantalla bloqueada y la Dynamic Island muestran la diferencia y el siguiente punto de control. Si te sales del margen, recibes un aviso. Empieza desde el Centro de control o con Siri; el trayecto se detiene solo dos minutos después de llegar."
+    "Cuando llega la hora de salir, suena el recordatorio de salida que activaste para la ruta, y al tocarlo empieza esa ruta. Durante el trayecto, la tarjeta de la pantalla bloqueada y la Dynamic Island muestran la diferencia y el siguiente punto de control. Si te sales del margen, recibes un aviso. Al abrir la app o empezar desde el Centro de control o con Siri, OnPace elige la ruta según la hora del día; el trayecto se detiene solo dos minutos después de llegar."
    ],
    "bullets": [
+    "Recordatorio de salida para cada ruta",
     "Tarjeta en la pantalla bloqueada y Dynamic Island",
     "Aviso al salir del margen",
     "Inicio desde el Centro de control y Siri"
@@ -77,10 +79,11 @@
  ],
  "pro": {
   "kick": "OnPace Pro",
-  "title": "Rutas sin límite\ny horas ajustadas con tus trayectos",
+  "title": "Rutas sin límite,\nhoras ajustadas con tus trayectos y días para cada ruta",
   "items": [
    "Rutas sin límite de cantidad (para empezar son dos)",
-   "Tune from trips: aplica las sugerencias a las horas de los puntos de control"
+   "Tune from trips: aplica las sugerencias a las horas de los puntos de control",
+   "Días para cada ruta: los recordatorios de salida y la elección automática los siguen"
   ]
  },
  "faq": [
@@ -103,9 +106,21 @@
    ]
   },
   {
+   "q": "Activar un recordatorio de salida",
+   "a": [
+    "En la pantalla Route, dentro de Schedule, pon Departure reminder en At departure, 5 min before, 10 min before o 15 min before. La primera vez que lo activas, OnPace pide permiso para las notificaciones. Al tocar el recordatorio empieza esa ruta. Con Pro puedes elegir Days para una ruta, y el recordatorio suena solo esos días. Si las notificaciones están desactivadas, actívalas en Ajustes > OnPace > Notificaciones."
+   ]
+  },
+  {
+   "q": "La ruta elegida cambia sola",
+   "a": [
+    "Con dos rutas o más, al abrir la app o empezar desde el Centro de control o con Siri, OnPace elige la ruta cuya próxima salida está más cerca. Una salida que pasó hace menos de una hora también cuenta. Una ruta que elegiste tú en la última hora se queda como está, y durante un trayecto no cambia nada."
+   ]
+  },
+  {
    "q": "Tramos en autobús o metro",
    "a": [
-    "Activa Transit to the next checkpoint al editar un punto de control. En el mapa de Edit route, el mismo interruptor aparece como Subway from here to the next checkpoint. Con él activado, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
+    "Al editar un punto de control o en el mapa de Edit route, elige Bus o Subway en To the next checkpoint. En esos tramos, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
    ]
   },
   {
@@ -129,8 +144,8 @@
  ],
  "privacy": {
   "title": "Política de privacidad de OnPace",
-  "effectiveDate": "2026-09-26",
-  "summary": "OnPace no recoge datos personales. No hay cuenta ni inicio de sesión. Tus rutas y trayectos se guardan en tu dispositivo, y la búsqueda de lugares, las indicaciones y la compra de Pro las gestiona Apple.",
+  "effectiveDate": "2026-10-02",
+  "summary": "OnPace no recoge datos personales. No hay cuenta ni inicio de sesión. Tus rutas y trayectos se guardan en tu dispositivo, y la búsqueda de lugares, las indicaciones, los nombres de los puntos de control según lo que hay cerca y la compra de Pro los gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app OnPace (la app) del modo que se indica a continuación."
   ],
@@ -148,11 +163,11 @@
      "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
     ],
     "bullets": [
-     "Rutas (nombre; nombre, lugar y hora de cada punto de control; márgenes; forma de la ruta): para calcular el adelanto o el retraso",
+     "Rutas (nombre; nombre, lugar y hora de cada punto de control; márgenes; forma de la ruta; recordatorio de salida y días): para calcular el adelanto o el retraso y programar los recordatorios de salida",
      "Historial de trayectos (la hora prevista y la real en cada punto de control): para las sugerencias de Tune from trips",
      "El recorrido de tu último trayecto (ubicaciones): para dibujar por dónde fuiste al crear una ruta a partir de un trayecto o al ajustar con este trayecto",
      "Registro de diagnóstico (ubicaciones y horas, y el tipo de actividad, como caminar o ir en coche, con su grado de certeza): para revisar cómo se comportó la app. Al llegar a 20 MB empieza un registro nuevo, y la versión publicada no puede exportarlo",
-     "Ajustes y si se compró Pro: para organizar la app y decidir qué funciones se abren"
+     "Ajustes, si se compró Pro y cuándo elegiste tú una ruta por última vez: para organizar la app, decidir qué funciones se abren y elegir la ruta según la hora del día"
     ]
    },
    {
@@ -172,7 +187,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
+     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. Cuando la app pone nombre a un punto de control que colocó ella, también busca en Mapas de Apple los lugares y la dirección cercanos a la ubicación de ese punto. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
     ],
     "bullets": []
    },
@@ -193,7 +208,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no usa iCloud. La ubicación se pide solo «Al usar la app»; en segundo plano se usa solo durante un trayecto que tú inicias, y mientras tanto la tarjeta de la pantalla bloqueada sigue visible. Los datos de movimiento y forma física solo sirven para distinguir si caminas o vas en un vehículo. Las notificaciones son locales: se crean en el dispositivo y suenan en el dispositivo."
+     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no usa iCloud. La ubicación se pide solo «Al usar la app»; en segundo plano se usa solo durante un trayecto que tú inicias, y mientras tanto la tarjeta de la pantalla bloqueada sigue visible. Los datos de movimiento y forma física solo sirven para distinguir si caminas o vas en un vehículo. Los avisos de margen y los recordatorios de salida que activas son notificaciones locales: se crean en el dispositivo y suenan en el dispositivo."
     ],
     "bullets": []
    },
@@ -240,7 +255,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-10-02: para la versión 1.0.1 se añadieron el recordatorio de salida, los días y el momento en que elegiste tú una ruta por última vez a «Información que se trata», la búsqueda de nombres de puntos de control en Mapas de Apple a «Encargo del tratamiento» y los recordatorios de salida a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-26."
     ],
     "bullets": []
    }

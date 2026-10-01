@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.0",
+ "describesVersion": "1.0.1",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -7,34 +7,36 @@
   "OnPace Pro: 비소모성 1개 (com.kimdh.OnPace.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (OnPace/PoC/StoreKit/OnPace.storekit, docs/store/iap.json)"
  ],
  "network": [
-  "Apple 지도: 장소 검색, 도보와 자동차 길 찾기, 지도 타일 (MapKit)",
-  "App Store 결제와 구매 복원 (StoreKit). 서드파티 SDK 없음, 개발자 서버 없음, iCloud 와 CloudKit 안 씀"
+  "Apple 지도: 장소 검색, 도보와 자동차 길 찾기, 지도 타일 (MapKit, App/PlaceSearch.swift, App/RouteFinder.swift)",
+  "Apple 지도: 1.0.1 부터 앱이 놓은 지점(지점 3 꼴 이름)에 붙일 근처 이름 찾기. 그 지점 좌표로 주변 장소(MKLocalPointsOfInterestRequest 60 m), 역과 육교 낱말 검색(MKLocalSearch), 주소(MKReverseGeocodingRequest 또는 CLGeocoder)를 묻는다. 지점 하나에 많아야 네 번 (App/PlaceNaming.swift, App/CheckpointNamer.swift, 0a60535)",
+  "App Store 결제와 구매 복원 (StoreKit). 서드파티 SDK 없음, 개발자 서버 없음, URLSession 없음, iCloud 와 CloudKit 안 씀"
  ],
  "permissions": [
-  "위치: 사용하는 동안만 요청(Always 요청 없음). 백그라운드 위치는 사용자가 시작한 실행 동안에만, 그동안 잠금 화면 카드가 떠 있다 (PoC/project.yml)",
+  "위치: 사용하는 동안만 요청(Always 요청 없음). 백그라운드 위치는 사용자가 시작한 실행 동안에만, 그동안 잠금 화면 카드가 떠 있다 (PoC/project.yml, 1.0.0 과 같음)",
   "동작 및 피트니스: 걷기와 차 타기를 가른다 (App/Sensors.swift). 진단 로그에 활동 종류와 확신도가 시각과 함께 남는다",
-  "알림: 잠금 화면 카드를 못 띄웠을 때의 페이스 알림 하나. 홈의 켜기에서만 묻는다"
+  "알림: 잠금 화면 카드를 못 띄웠을 때의 페이스 알림, 1.0.1 부터 사용자가 켠 길의 출발 알림(로컬 반복 알림). 홈의 알림 줄이나 길 화면에서 출발 알림을 켤 때 묻는다(앱을 켤 때는 묻지 않음). 권한 문구(Info.plist, InfoPlist.xcstrings)는 1.0.0 과 같음 (App/OnPacePoCApp.swift DepartureReminders, App/Views.swift ReminderRow)"
  ],
  "storage": [
-  "앱 Documents 폴더의 파일: routines.json(길 목록과 휴지통), guide.json(실행 기록), last-run.json(마지막 실행의 궤적), events.jsonl(진단 로그, 20MB 에서 넘김). 앱을 지우면 함께 지워진다",
-  "출시판에는 로그 내보내기가 없다(시험용 기능은 출시판에서 숨김, 1534003)"
+  "앱 Documents 폴더의 파일: routines.json(길 목록과 휴지통, 1.0.1 부터 길마다 reminder 와 weekdays), guide.json(실행 기록), last-run.json(마지막 실행의 궤적과 표시), events.jsonl(진단 로그, 20MB 에서 넘김). 앱을 지우면 함께 지워진다",
+  "UserDefaults: 설정값과 isPro, 1.0.1 부터 manualPickAt(길을 마지막으로 직접 고른 때, App/Routine.swift)",
+  "출시판에는 로그 내보내기가 없다(시험용 기능은 출시판에서 숨김, 1534003). 시작 알림 시험 화면도 DEBUG 에서만"
  ],
  "pro": {
   "productID": "com.kimdh.OnPace.pro.lifetime",
   "type": "NonConsumable, familyShareable",
   "features": [
-   "길 개수 제한 없음 (무료 2개, App/ProStore.swift freeRoutes = 2)",
-   "기록으로 다듬기(Tune from trips)의 적용. 최근 20번까지의 기록에서 지점마다 중앙값. 제안 목록은 무료에서도 보인다 (App/History.swift, App/Schedule.swift)"
+   "길 개수 제한 없음 (무료 2개, App/ProStore.swift freeRoutes = 2, 1.0.0 과 같음)",
+   "기록으로 다듬기(Tune from trips)의 적용. 최근 20번까지의 기록에서 지점마다 중앙값. 제안 목록은 무료에서도 보인다 (App/History.swift, App/Schedule.swift)",
+   "1.0.1 부터 길마다 요일(Days for each route). 출발 알림과 시간대별 자동 선택이 요일을 따른다. 무료에서는 요일 줄에 Pro 표시가 붙고 결제 화면이 열린다 (App/Paywall.swift, PaywallReason.days, App/Views.swift DaysRow, 34e1bc5)"
   ],
-  "freeForever": "실행, 잠금 화면 카드와 다이나믹 아일랜드, 지점별 오차 범위, 다녀온 기록, 이번 기록으로 다듬기(출발 앞당기기 포함), 제어 센터와 Siri"
+  "freeForever": "실행, 잠금 화면 카드와 다이나믹 아일랜드, 지점별 오차 범위, 다녀온 기록, 이번 기록으로 다듬기(출발 앞당기기 포함), 제어 센터와 Siri, 1.0.1 부터 길별 출발 알림과 시간대에 맞는 길 자동 선택, 버스와 지하철 구간, 근처 이름 붙이기"
  },
  "notOffered": [
   "홈 화면 위젯",
   "잠금 화면 위젯",
   "Apple Watch 앱",
-  "출발 알림",
   "기록 내보내기",
-  "대중교통 길 찾기",
+  "대중교통 길 찾기(Apple 지도가 주지 않아 도보와 자동차만, App/Routine.swift RouteMode)",
   "실시간 버스와 지하철 정보"
  ],
  "trip": [
@@ -42,7 +44,12 @@
   "오차 범위: ±30초, 1분, 2분, 3분, 빨라도 괜찮음(늦음 30초·1분·2분), 직접 15초~10분. 기본 ±1분",
   "이탈 알림: 두 번 이어서 벗어나거나 30초 넘게 벗어나야 울리고, 같은 쪽은 2분 뒤 2분 넘게 더 벌어져야 다시 울린다",
   "휴지통: 지운 길 3개까지, 복구도 무료 한도를 따른다",
-  "제어 센터 OnPace 시작, Siri 단축어 넷(OnPace 시작, 길 이름으로 시작, 얼마나 늦었어, 정지)"
+  "제어 센터 OnPace 시작, Siri 단축어 넷(OnPace 시작, 길 이름으로 시작, 얼마나 늦었어, 정지)",
+  "출발 알림(1.0.1, 무료): 길마다 끔, 출발 시각에, 5, 10, 15분 전(Routine.reminderChoices). 매일 또는 정한 요일에 반복, 누르면 그 길로 시작. 길이 바뀔 때와 앱을 켤 때 다시 건다",
+  "시간대에 맞는 길 자동 선택(1.0.1, 무료): 길이 둘 이상일 때 앱을 열 때와 길을 말하지 않고 시작할 때(제어 센터, OnPace 시작) 다음 출발이 가장 가까운 길. 한 시간 안에 지난 출발도 친다. 한 시간 안에 직접 고른 길은 두고 실행 중에는 부르지 않는다 (RoutineStore.pickForNow, Routine.nextDeparture)",
+  "다음 지점까지 [도보(차로 찾은 길이면 차) | 버스 | 지하철] 선택 하나(1.0.1). 엔진은 버스와 지하철을 똑같이 탑승 구간으로 다룬다(탈 때 편차를 내릴 때까지 이월). 예전 transit 은 지하철로 읽는다 (App/Routine.swift LegMode, App/Views.swift LegModePicker)",
+  "지점 이름(1.0.1): 앱이 놓은 지점만 바꾼다. 60 m 안의 장소, 역, 육교(역과 육교 30 m 가산), 400 m 안의 역이면 ○○역 근처, 아니면 도로명이나 동 이름. 사용자가 지은 이름은 그대로 (App/PlaceNaming.swift)",
+  "실행 중 표시(탑승, 하차 등)를 누른 자리에 지도 핀, 기록만 하는 실행에도 지나온 길 지도(1.0.1). 가 보면서 만들기는 지도 판에서 바로 기록을 시작하고 기록 중 화면에 흐른 시간과 그려지는 트랙(e559b07, 84ccee3)"
  ],
  "uiNames": {
   "Stop": "정지",
@@ -50,7 +57,16 @@
   "Recover": "복구",
   "Restore purchase": "구매 복원",
   "Clear history": "기록 지우기",
-  "Transit to the next checkpoint": "다음 지점까지 대중교통",
+  "To the next checkpoint": "다음 지점까지",
+  "Bus": "버스",
+  "Subway": "지하철",
+  "Edit route": "길 다듬기",
+  "Route": "길",
+  "Schedule": "일정",
+  "Departure reminder": "출발 알림",
+  "At departure": "출발 시각에",
+  "5 min before": "5분 전",
+  "Days": "요일",
   "Tune from trips": "기록으로 다듬기",
   "Wait here": "여기서 기다립니다",
   "Start OnPace": "OnPace 시작"
@@ -58,10 +74,13 @@
  "numbers": [
   "2"
  ],
- "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음)",
+ "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개. 출발 알림의 5, 10, 15분은 지원(FAQ)에만 쓴다. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음). 1.0.0 의 Transit to the next checkpoint 스위치는 1.0.1 에서 To the next checkpoint 선택(Walk, Bus, Subway)으로 바뀌었다",
  "sources": [
-  "OnPace/docs/SITE_DRAFT.md (fd1057f)",
-  "OnPace/docs/store/metadata.json",
-  "OnPace/PoC/Shared/Localizable.xcstrings"
+  "OnPace/docs/SITE_DRAFT.md (fd1057f, 1.0.1 에서 바뀌는 사실 55c3a1b, 빵집 a192fdf)",
+  "OnPace/docs/store/metadata.json (599acc7, 1.0.1 whatsNew 와 기능 섹션)",
+  "OnPace/PoC/Shared/Localizable.xcstrings (599acc7)",
+  "1.0.1 앱 코드: OnPace 599acc7(= 0a60535 와 앱 코드 같음)의 PoC/ 를 1.0.0 제출 커밋 4894944 와 비교. project.yml MARKETING_VERSION 1.0.1, CURRENT_PROJECT_VERSION 2. 권한 문구, PrivacyInfo.xcprivacy, StoreKit 은 바뀌지 않음",
+  "출발 알림, 시간대 자동 선택, 요일 Pro, 버스와 지하철: 34e1bc5. 지점 이름: 0a60535. 켜진 스위치 버밀리언: 74c226e",
+  "그림: OnPace/docs/store/shots-raw/iphone/<ko|en-US>/run.png, route.png, map.png(커밋 밖, ko 10-01 15:09~15:10, en 10-01 13:20~13:27 캡처). 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (8b4ac1d, ko 9336a0e)"
  ]
 }

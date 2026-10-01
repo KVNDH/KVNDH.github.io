@@ -30,18 +30,19 @@
    "layout": "feat",
    "title": "Routes from the map, or from one trip",
    "body": [
-    "Choose a departure and a destination and Apple Maps finds a walking or driving route, with checkpoints filled in along longer stretches. For a route no map can find, like a company shuttle, take it once and build the route from the trip. The places you stopped and where you got on and off become checkpoint candidates."
+    "Choose a departure and a destination and Apple Maps finds a walking or driving route, with checkpoints filled in along longer stretches and named after a nearby station or street. For a route no map can find, like a company shuttle, take it once and build the route from the trip. The places you stopped and where you got on and off become checkpoint candidates. Legs you ride by bus or subway are set apart."
    ],
    "bullets": [
     "Walking and driving routes",
     "A route built from a trip you take",
-    "A window of its own at each checkpoint"
+    "A window of its own at each checkpoint",
+    "Bus and subway legs"
    ],
    "visual": {
     "type": "crop",
     "shot": 2,
     "focus": "-250px",
-    "alt": "Making a route. The route found on the map, with checkpoints placed along it.",
+    "alt": "The Route screen. Under the route's name, the map shows the route with numbered checkpoints along it.",
     "caption": "Close view of the app"
    }
   },
@@ -49,9 +50,10 @@
    "layout": "card",
    "title": "Without taking out your phone",
    "body": [
-    "During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. Drift out of the window and you get one alert. Start from Control Center or Siri, and the trip stops on its own two minutes after you arrive."
+    "When it is time to leave, the departure reminder you turned on for the route goes off, and tapping it starts that route. During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. Drift out of the window and you get one alert. When you open the app or start from Control Center or Siri, OnPace picks the route for the time of day, and the trip stops on its own two minutes after you arrive."
    ],
    "bullets": [
+    "A departure reminder for each route",
     "Lock Screen card and Dynamic Island",
     "An alert when you drift out of the window",
     "Start from Control Center or Siri"
@@ -77,10 +79,11 @@
  ],
  "pro": {
   "kick": "OnPace Pro",
-  "title": "Routes without a limit,\nand checkpoint times tuned from your trips",
+  "title": "Routes without a limit,\ntimes tuned from your trips, days for each route",
   "items": [
    "Routes without a limit (two to begin with)",
-   "Tune from trips: apply the suggestions to your checkpoint times"
+   "Tune from trips: apply the suggestions to your checkpoint times",
+   "Days for each route: departure reminders and the automatic pick follow them"
   ]
  },
  "faq": [
@@ -103,9 +106,21 @@
    ]
   },
   {
+   "q": "Turning on a departure reminder",
+   "a": [
+    "On the Route screen, under Schedule, set Departure reminder to At departure, 5 min before, 10 min before or 15 min before. OnPace asks for notification permission the first time you turn one on. Tap the reminder to start that route. With Pro you can choose Days for a route, and the reminder goes off only on those days. If notifications are off, turn them on in Settings > OnPace > Notifications."
+   ]
+  },
+  {
+   "q": "The chosen route changes on its own",
+   "a": [
+    "With two or more routes, OnPace picks the one whose next departure is closest when you open the app or start from Control Center or Siri. A departure that passed less than an hour ago still counts. A route you chose yourself in the last hour stays as it is, and nothing changes during a trip."
+   ]
+  },
+  {
    "q": "Bus and subway legs",
    "a": [
-    "Turn on Transit to the next checkpoint when you edit a checkpoint. On the Edit route map the same switch reads Subway from here to the next checkpoint. With it on, the gap you boarded with carries until you get off, even when the signal drops underground. Live bus and subway data is not used."
+    "When you edit a checkpoint, or on the Edit route map, choose Bus or Subway under To the next checkpoint. On those legs the gap you boarded with carries until you get off, even when the signal drops underground. Live bus and subway data is not used."
    ]
   },
   {
@@ -129,8 +144,8 @@
  ],
  "privacy": {
   "title": "OnPace Privacy Policy",
-  "effectiveDate": "2026-09-26",
-  "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions and the Pro purchase.",
+  "effectiveDate": "2026-10-02",
+  "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions, naming checkpoints after nearby places and the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the OnPace app (the app) as described below."
   ],
@@ -148,11 +163,11 @@
      "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
     ],
     "bullets": [
-     "Routes (name, the name, place and time of each checkpoint, windows, route shape): used to work out how far ahead or behind you are",
+     "Routes (name, the name, place and time of each checkpoint, windows, route shape, departure reminder and days): used to work out how far ahead or behind you are and to set departure reminders",
      "Trip history (the planned and actual time at each checkpoint): used to make the Tune from trips suggestions",
      "The track of your last trip (locations): used to draw the way you went when you build a route from a trip or tune from this trip",
      "Diagnostic log (locations and times, and the activity type such as walking or driving with its confidence): used to look back at how the app behaved. It rolls over to a new log at 20 MB, and the release version has no way to export it",
-     "Settings and whether Pro was bought: used to lay out the app and decide which features open"
+     "Settings, whether Pro was bought, and when you last picked a route yourself: used to lay out the app, decide which features open and pick the route for the time of day"
     ]
    },
    {
@@ -172,7 +187,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. The OnPace Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. Place search, walking and driving directions and the map are handled by Apple Maps and follow Apple's privacy policy. The developer receives no payment method, no Apple Account information and nothing you search for."
+     "No processing is outsourced. The OnPace Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. Place search, walking and driving directions and the map are handled by Apple Maps and follow Apple's privacy policy. When the app names a checkpoint it placed, it also looks up nearby places and the address for that checkpoint's location in Apple Maps. The developer receives no payment method, no Apple Account information and nothing you search for."
     ],
     "bullets": []
    },
@@ -193,7 +208,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only to tell walking from riding. Notifications are local: made on the device and delivered on the device."
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only to tell walking from riding. Pace alerts and the departure reminders you turn on are local notifications: made on the device and delivered on the device."
     ],
     "bullets": []
    },
@@ -240,7 +255,8 @@
    {
     "title": "Changes to this policy",
     "paragraphs": [
-     "If this policy changes, this page will show the new text and its new effective date."
+     "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-10-02: For version 1.0.1, the departure reminder, days and the time you last picked a route were added to Personal information processed, looking up checkpoint names in Apple Maps was added to Outsourcing of processing, and departure reminders were added to Security measures. The previous effective date was 2026-09-26."
     ],
     "bullets": []
    }
