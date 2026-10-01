@@ -18,5 +18,11 @@
  "effectiveFrom": "本政策自 {date} 起生效。",
  "summaryLabel": "摘要",
  "toc": "目錄",
- "notFound": "找不到這個頁面。在下面選一種語言，就能看到 App 列表。"
+ "notFound": "找不到這個頁面。在下面選一種語言，就能看到 App 列表。",
+ "shelfLabel": "App 陳列架",
+ "shelfBack": "返回",
+ "shelfSound": "聲音",
+ "shelfVeiled": "尚未發布的 App，蓋著一塊布",
+ "shelfSoon": "尚未發布",
+ "shelfMoreLabel": "{name} 詳細資訊"
 }

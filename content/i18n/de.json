@@ -18,5 +18,11 @@
  "effectiveFrom": "Diese Erklärung gilt ab {date}.",
  "summaryLabel": "Zusammenfassung",
  "toc": "Inhalt",
- "notFound": "Diese Seite gibt es nicht. Wählen Sie unten eine Sprache, dann geht es zur Übersicht der Apps."
+ "notFound": "Diese Seite gibt es nicht. Wählen Sie unten eine Sprache, dann geht es zur Übersicht der Apps.",
+ "shelfLabel": "App-Regal",
+ "shelfBack": "Zurück",
+ "shelfSound": "Ton",
+ "shelfVeiled": "Noch nicht veröffentlichte App, mit einem Tuch verhüllt",
+ "shelfSoon": "Noch nicht veröffentlicht",
+ "shelfMoreLabel": "Mehr über {name} erfahren"
 }

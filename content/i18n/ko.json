@@ -18,5 +18,11 @@
  "effectiveFrom": "이 방침은 {date}부터 적용합니다.",
  "summaryLabel": "요약",
  "toc": "목차",
- "notFound": "찾는 페이지가 없습니다. 아래에서 언어를 고르면 앱 목록으로 갑니다."
+ "notFound": "찾는 페이지가 없습니다. 아래에서 언어를 고르면 앱 목록으로 갑니다.",
+ "shelfLabel": "앱 진열 선반",
+ "shelfBack": "되돌리기",
+ "shelfSound": "소리",
+ "shelfVeiled": "공개 전 앱, 천으로 덮여 있습니다",
+ "shelfSoon": "아직 공개 전입니다",
+ "shelfMoreLabel": "{name} 자세히 보기"
 }

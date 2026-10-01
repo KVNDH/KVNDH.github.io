@@ -18,5 +18,11 @@
  "effectiveFrom": "このポリシーは {date} から適用します。",
  "summaryLabel": "要約",
  "toc": "目次",
- "notFound": "お探しのページはありません。下から言語を選ぶとアプリの一覧に移ります。"
+ "notFound": "お探しのページはありません。下から言語を選ぶとアプリの一覧に移ります。",
+ "shelfLabel": "アプリの陳列棚",
+ "shelfBack": "戻る",
+ "shelfSound": "サウンド",
+ "shelfVeiled": "公開前のアプリです。布がかかっています",
+ "shelfSoon": "まだ公開前です",
+ "shelfMoreLabel": "{name} を詳しく見る"
 }

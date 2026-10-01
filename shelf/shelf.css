@@ -1,0 +1,92 @@
+/* 허브 트로피 선반. shelf/main.js 가 허브에서만 넣는다. 선반 규칙은 .c-toon-shelf 아래에만 둔다. */
+/* 자리: 머리줄 아래 한 화면. 선반이 서면 벤토와 흐린 아이콘 줄은 숨긴다(HTML 에는 그대로 남는다) */
+.shelf{position:relative;height:calc(100vh - 73px);height:calc(100svh - 73px);min-height:520px;max-height:1000px}
+body.shelf-on .bento,body.shelf-on .quiet{display:none}
+@media (max-width:900px){.shelf{height:calc(100vh - 59px);height:calc(100svh - 59px);min-height:560px}}
+/* 뒤 번짐: 본문 뒤(.page 아래) 한 겹. 번짐마다 둥글게 흐리고, 시그니처 때는 옅은 막이 덮는다 */
+.shelf-bg{position:absolute;left:0;top:0;width:100%;height:100vh;z-index:0;overflow:hidden;pointer-events:none;
+  -webkit-mask-image:linear-gradient(#000 calc(100% - 140px),transparent);mask-image:linear-gradient(#000 calc(100% - 140px),transparent)}
+.shelf-bg .shelf-blob{position:absolute;left:0;top:0;border-radius:50%;
+  -webkit-mask-image:radial-gradient(closest-side,#000 18%,rgba(0,0,0,.55) 58%,transparent);mask-image:radial-gradient(closest-side,#000 18%,rgba(0,0,0,.55) 58%,transparent)}
+.shelf-bg .shelf-blob.is-field{filter:blur(18px) saturate(1.08)}
+.shelf-bg .shelf-veil{position:absolute;left:0;width:100%}
+
+.c-toon-shelf{position:absolute;inset:0;overflow:hidden;background:transparent;color:#1A1A1A;
+  font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Hiragino Sans","PingFang SC","PingFang TC","Malgun Gothic","Noto Sans KR","Noto Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
+.c-toon-shelf .c-toon-shelf__gl,.c-toon-shelf .c-toon-shelf__snap{position:absolute;inset:0;width:100%;height:100%;display:block}
+.c-toon-shelf .c-toon-shelf__snap{opacity:0;pointer-events:none}
+
+/* 누름 자리: 타일과 명판을 덮는 투명 단추. 초점 테는 타일 둘레에만 먹선으로 */
+.c-toon-shelf .c-toon-shelf__hits{position:absolute;inset:0;pointer-events:none}
+.c-toon-shelf .c-toon-shelf__hit{position:absolute;left:0;top:0;margin:0;padding:0;border:0;background:transparent;
+  pointer-events:auto;cursor:pointer;outline:none;appearance:none;-webkit-appearance:none;touch-action:manipulation}
+.c-toon-shelf .c-toon-shelf__hit.is-veiled{cursor:default}
+.c-toon-shelf .c-toon-shelf__hit::after{content:"";position:absolute;left:var(--fx,0);top:var(--fy,0);width:var(--fw,0);height:var(--fh,0);
+  border-radius:27%;box-shadow:0 0 0 2px #1A1A1A;opacity:0;transition:opacity .12s linear;pointer-events:none}
+.c-toon-shelf .c-toon-shelf__hit:focus-visible::after{opacity:1}
+
+/* 시그니처 무대: 바깥 누름(되돌리기), 타일 돌리기 자리, 자세히 보기, 닫기 */
+.c-toon-shelf .c-toon-shelf__stage{position:absolute;inset:0;visibility:hidden;pointer-events:none}
+.c-toon-shelf.is-open .c-toon-shelf__stage{visibility:visible;pointer-events:auto}
+.c-toon-shelf .c-toon-shelf__back{position:absolute;inset:0;margin:0;padding:0;border:0;background:transparent;cursor:default;outline:none}
+.c-toon-shelf .c-toon-shelf__spin{position:absolute;border-radius:24%;cursor:grab;touch-action:none}
+.c-toon-shelf .c-toon-shelf__spin:active{cursor:grabbing}
+
+.c-toon-shelf .c-toon-shelf__more{position:absolute;left:50%;top:80%;display:inline-flex;align-items:center;gap:9px;
+  padding:10px 4px 9px;font-size:15px;font-weight:600;letter-spacing:-.01em;color:#1A1A1A;text-decoration:none;
+  border-bottom:1.5px solid #1A1A1A;transform:translate(-50%,-50%);opacity:0}
+.c-toon-shelf .c-toon-shelf__arrow{position:relative;width:15px;height:1.5px;background:#E63946;transition:transform .2s ease-out}
+.c-toon-shelf .c-toon-shelf__arrow::after{content:"";position:absolute;right:0;top:50%;width:6px;height:6px;border-top:1.5px solid #E63946;border-right:1.5px solid #E63946;
+  transform:translate(0,-50%) rotate(45deg)}
+.c-toon-shelf .c-toon-shelf__more:hover .c-toon-shelf__arrow,.c-toon-shelf .c-toon-shelf__more:focus-visible .c-toon-shelf__arrow{transform:translateX(4px)}
+.c-toon-shelf .c-toon-shelf__more:focus-visible{outline:2px solid #1A1A1A;outline-offset:4px;border-radius:2px}
+
+.c-toon-shelf .c-toon-shelf__close{position:absolute;top:20px;right:20px;width:44px;height:44px;margin:0;padding:0;cursor:pointer;
+  border:1.5px solid #1A1A1A;border-radius:11px;background:#FFFFFF;opacity:0}
+.c-toon-shelf .c-toon-shelf__close::before,.c-toon-shelf .c-toon-shelf__close::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:1.5px;background:#1A1A1A}
+.c-toon-shelf .c-toon-shelf__close::before{transform:translate(-50%,-50%) rotate(45deg)}
+.c-toon-shelf .c-toon-shelf__close::after{transform:translate(-50%,-50%) rotate(-45deg)}
+.c-toon-shelf .c-toon-shelf__close:active{transform:translate(1px,1px)}
+.c-toon-shelf .c-toon-shelf__close:focus-visible{outline:2px solid #1A1A1A;outline-offset:3px}
+
+/* 열릴 때: 넘쳤다 흔들려 서는 곡선(settle)을 열쇠 틀로 옮겼다 */
+@keyframes c-toon-shelf-settle{
+  0%{opacity:0;transform:translate(-50%,-50%) translateY(12px)}
+  34%{opacity:1;transform:translate(-50%,-50%) translateY(-2.2px)}
+  67%{transform:translate(-50%,-50%) translateY(.3px)}
+  100%{opacity:1;transform:translate(-50%,-50%) translateY(0)}
+}
+@keyframes c-toon-shelf-pop{
+  0%{opacity:0;transform:scale(.6)}
+  34%{opacity:1;transform:scale(1.1)}
+  67%{transform:scale(.99)}
+  100%{opacity:1;transform:scale(1)}
+}
+.c-toon-shelf.is-open .c-toon-shelf__more{animation:c-toon-shelf-settle .42s linear both}
+.c-toon-shelf.is-open .c-toon-shelf__close{animation:c-toon-shelf-pop .42s linear .06s both}
+
+/* 소리 켜기: 종이 라벨 모양. 기본은 꺼짐 */
+.c-toon-shelf .c-toon-shelf__sound{position:absolute;right:16px;bottom:16px;display:inline-flex;align-items:center;gap:7px;margin:0;
+  padding:6px 10px 6px 9px;font-family:inherit;font-size:12.5px;font-weight:600;line-height:1;color:#1A1A1A;cursor:pointer;
+  border:1.5px solid #1A1A1A;border-radius:6px;background:#FFFFFF;z-index:2}
+.c-toon-shelf .c-toon-shelf__led{width:8px;height:8px;border:1.5px solid #1A1A1A;border-radius:2px;background:#FFFFFF;box-sizing:content-box}
+.c-toon-shelf.is-sound .c-toon-shelf__led{background:#1A1A1A}
+.c-toon-shelf .c-toon-shelf__sound:active{transform:translate(1px,1px)}
+.c-toon-shelf .c-toon-shelf__sound:focus-visible{outline:2px solid #1A1A1A;outline-offset:3px}
+
+.c-toon-shelf .c-toon-shelf__sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+@media (max-width:600px){
+  .c-toon-shelf .c-toon-shelf__close{top:14px;right:14px}
+  .c-toon-shelf .c-toon-shelf__more{font-size:16px}
+  .c-toon-shelf .c-toon-shelf__sound{right:12px;bottom:12px}
+}
+
+/* 동작 줄이기: 짧은 페이드만 */
+.c-toon-shelf.is-reduced.is-open .c-toon-shelf__more,.c-toon-shelf.is-reduced.is-open .c-toon-shelf__close{animation:none;opacity:1;transition:opacity .16s linear}
+.c-toon-shelf.is-reduced .c-toon-shelf__more,.c-toon-shelf.is-reduced .c-toon-shelf__close{transition:opacity .16s linear}
+.c-toon-shelf.is-reduced .c-toon-shelf__arrow{transition:none}
+@media (prefers-reduced-motion:reduce){
+  .c-toon-shelf .c-toon-shelf__close:active,.c-toon-shelf .c-toon-shelf__sound:active{transform:none}
+}

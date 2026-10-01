@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import unittest
 
 from tests.fixture import look, make_site, store, write
@@ -240,6 +241,68 @@ class OtherPagesTest(unittest.TestCase):
             self.assertNotRegex(html, r'src="(https?:)?//')
             self.assertNotIn('rel="stylesheet"', html)
             self.assertIn("<style>", html)
+
+    # 허브 선반(2026-10-01): 벤토는 그대로 두고, 선반이 읽을 언어별 데이터를 JSON 으로 넣는다
+    def shelf(self, site, lang):
+        html = render.render_hub(site, lang)
+        m = re.search(r'<script type="application/json" id="shelf-data">(.*?)</script>', html, re.S)
+        self.assertIsNotNone(m)
+        return html, json.loads(m.group(1))
+
+    def test_hub_keeps_bento_and_adds_hidden_shelf(self):
+        html, data = self.shelf(self.site, "ko")
+        self.assertIn('<div class="shelf" id="shelf" data-src="/hub-shelf.js" hidden></div>', html)
+        self.assertIn('<div class="bento">', html)
+        self.assertIn('<article class="tile t-feature th-light"', html)
+        self.assertIn('<a class="tile-link" href="/ko/demo/">Demo</a>', html)
+        self.assertLess(html.index('id="shelf"'), html.index('class="bento"'))
+        self.assertIn('addEventListener("load"', html)
+        self.assertNotIn('<script src=', html)
+
+    def test_shelf_data_is_per_language(self):
+        store(self.site.root, "en", 1)
+        store(self.site.root, "en", 2)
+        site = Site(self.site.root)
+        _, ko = self.shelf(site, "ko")
+        _, en = self.shelf(site, "en")
+        self.assertEqual(ko["lang"], "ko")
+        self.assertEqual(ko["ui"]["more"], "ko learnMore")
+        self.assertEqual(en["ui"]["shelf"], "en shelfLabel")
+        self.assertEqual(en["ui"]["moreLabel"], "{name} more")
+        app = ko["apps"][0]
+        self.assertEqual(app["slug"], "demo")
+        self.assertEqual(app["href"], "/ko/demo/")
+        self.assertEqual(en["apps"][0]["href"], "/en/demo/")
+        self.assertEqual(app["icon"], "/assets/demo/icon-360.webp")
+        # 스토어 그림: 그 언어가 없으면 en (타일과 같은 규칙)
+        self.assertEqual(app["shots"], ["/assets/demo/store/en/01.webp", "/assets/demo/store/en/02.webp"])
+        self.assertFalse(app["unreleased"])
+        self.assertIsNone(app["field"])
+
+    def test_shelf_data_takes_field_and_ink(self):
+        look(self.site.root, ink="light", color="#101418")
+        _, data = self.shelf(Site(self.site.root), "ko")
+        app = data["apps"][0]
+        self.assertEqual(app["field"], "/assets/demo/field.webp")
+        self.assertEqual((app["color"], app["ink"], app["accent"]), ("#101418", "light", "#A05B42"))
+
+    def test_shelf_without_pages_has_no_link(self):
+        _, data = self.shelf(Site(make_site(with_pages=False)), "ko")
+        self.assertIsNone(data["apps"][0]["href"])
+
+    def test_unreleased_app_is_a_veiled_slot(self):
+        html, data = self.shelf(Site(make_site(unreleased=True)), "ko")
+        self.assertEqual([a["slug"] for a in data["apps"]], ["demo", "soon"])
+        self.assertEqual(data["apps"][1], {"slug": "soon", "unreleased": True})
+        self.assertNotIn("Soon", html)
+        self.assertNotIn("/ko/soon/", html)
+
+    def test_shelf_json_cannot_close_its_script(self):
+        site = Site(make_site())
+        site.copy[("demo", "ko")]["subtitle"] = "a</script><b>"
+        html, data = self.shelf(site, "ko")
+        self.assertEqual(data["apps"][0]["subtitle"], "a</script><b>")
+        self.assertNotIn("a</script>", html)
 
     def test_root_redirect_and_language_list(self):
         html = render.render_root(self.site)

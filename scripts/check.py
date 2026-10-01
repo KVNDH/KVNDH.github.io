@@ -263,6 +263,9 @@ class PageParser(HTMLParser):
             self.links.append(a["href"])
         if a.get("src"):
             self.srcs.append(a["src"])
+        if a.get("data-src"):
+            # 늦게 읽는 스크립트(허브 선반)도 있는 파일인지 본다
+            self.srcs.append(a["data-src"])
         if tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"):
             self.alternates[a["hreflang"]] = a.get("href", "")
         if tag == "link" and a.get("rel") == "stylesheet":

@@ -18,5 +18,11 @@
  "effectiveFrom": "Esta política vale a partir de {date}.",
  "summaryLabel": "Resumo",
  "toc": "Conteúdo",
- "notFound": "Esta página não existe. Escolha um idioma abaixo para chegar à lista de apps."
+ "notFound": "Esta página não existe. Escolha um idioma abaixo para chegar à lista de apps.",
+ "shelfLabel": "Estante de apps",
+ "shelfBack": "Voltar",
+ "shelfSound": "Som",
+ "shelfVeiled": "App ainda não lançado, coberto com um pano",
+ "shelfSoon": "Ainda não foi lançado",
+ "shelfMoreLabel": "Ver mais sobre {name}"
 }

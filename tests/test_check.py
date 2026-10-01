@@ -183,6 +183,13 @@ class OutputTest(unittest.TestCase):
         self.assertEqual(check.check_output(site, root / "docs"), [])
         self.assertIn("later/icon-180.webp", (root / "docs" / "ko" / "index.html").read_text(encoding="utf-8"))
 
+    def test_missing_shelf_script_fails(self):
+        # 허브가 늦게 읽는 선반 묶음(data-src)도 있는 파일이어야 한다
+        site, out = self.built()
+        (out / "hub-shelf.js").unlink()
+        problems = check.check_output(site, out)
+        self.assertIn("ko/index.html: 없는 파일 /hub-shelf.js", problems)
+
     def test_missing_app_ads_fails(self):
         site, out = self.built()
         (out / "app-ads.txt").unlink()

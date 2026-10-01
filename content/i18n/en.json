@@ -18,5 +18,11 @@
  "effectiveFrom": "This policy applies from {date}.",
  "summaryLabel": "Summary",
  "toc": "Contents",
- "notFound": "This page does not exist. Pick a language below to see the apps."
+ "notFound": "This page does not exist. Pick a language below to see the apps.",
+ "shelfLabel": "App shelf",
+ "shelfBack": "Back",
+ "shelfSound": "Sound",
+ "shelfVeiled": "Unreleased app, covered with a cloth",
+ "shelfSoon": "Not released yet",
+ "shelfMoreLabel": "{name} details"
 }

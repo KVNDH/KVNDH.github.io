@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 UI_KEYS = [
     "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore", "screenshot",
     "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
-    "toc", "notFound",
+    "toc", "notFound", "shelfLabel", "shelfBack", "shelfSound", "shelfVeiled", "shelfSoon",
 ]
 
 
@@ -26,6 +26,8 @@ def ui(lang: str) -> dict:
     values = {k: f"{lang} {k}" for k in UI_KEYS}
     values["storeLabel"] = "{name} store"
     values["effectiveFrom"] = "from {date}"
+    values["shelfMoreLabel"] = "{name} more"
+    values["shelfSoon"] = f"{lang} later"   # 키 이름의 Soon 이 출시 전 앱 이름 검사와 겹치지 않게
     return values
 
 
@@ -114,4 +116,5 @@ def make_site(langs=("ko", "en"), with_pages: bool = True, unreleased: bool = Fa
     (static / "app-ads.txt").write_text("google.com, pub-0, DIRECT, f08c47fec0942fa0\n")
     (static / ".nojekyll").write_text("")
     (static / "robots.txt").write_text("User-agent: *\nAllow: /\n")
+    (static / "hub-shelf.js").write_text("// shelf\n")
     return root

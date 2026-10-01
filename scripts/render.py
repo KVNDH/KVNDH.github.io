@@ -230,6 +230,61 @@ def quiet_row(site: Site, lang: str) -> str:
     return f'<div class="quiet" aria-hidden="true">{icons}</div>' if icons else ""
 
 
+SHELF_SCRIPT = "/hub-shelf.js"
+# 첫 그림 뒤(load)에 선반 묶음을 읽는다. WebGL 이 없거나 실패하면 벤토가 그대로 남는다
+SHELF_LOADER = (
+    '<script>addEventListener("load",function(){var h=document.getElementById("shelf");'
+    'if(!h||!window.WebGLRenderingContext)return;var s=document.createElement("script");'
+    's.src=h.getAttribute("data-src");s.async=true;document.head.appendChild(s)})</script>'
+)
+
+
+def shelf_data(site: Site, lang: str) -> dict:
+    """허브 선반(shelf/shelf.js)이 읽는 언어별 데이터. 순서는 site.json 그대로.
+    출시 전 앱은 흐린 아이콘 줄과 같은 조건으로 넣되 이름, 링크, 그림 없이 unreleased 만 둔다(천으로 덮인 자리).
+    스토어 그림은 타일과 같은 규칙(그 언어, 없으면 en, ko)이고 고를 때만 읽는다."""
+    ui = site.ui[lang]
+    apps = []
+    for app in site.apps:
+        slug = app["slug"]
+        if not released(app):
+            if (site.root / "assets" / slug / "icon-180.webp").exists():
+                apps.append({"slug": slug, "unreleased": True})
+            continue
+        copy = site.app_copy(slug, lang)
+        if not copy:
+            continue
+        lk = look(site, slug)
+        field = site.root / "assets" / slug / "field.webp"
+        apps.append({
+            "slug": slug,
+            "name": copy["name"],
+            "subtitle": copy["subtitle"],
+            "href": page_path(lang, slug) if site.has_pages(slug, lang) else None,
+            "icon": asset(slug, "icon-360.webp"),
+            "shots": [src for src, _ in store_images(site, slug, lang, copy, 3)],
+            "field": asset(slug, "field.webp") if field.exists() else None,
+            "color": lk["color"],
+            "accent": app["accent"],
+            "ink": lk.get("ink", "dark"),
+            "unreleased": False,
+        })
+    labels = {"shelf": ui["shelfLabel"], "back": ui["shelfBack"], "sound": ui["shelfSound"],
+              "veiled": ui["shelfVeiled"], "soon": ui["shelfSoon"], "more": ui["learnMore"],
+              "moreLabel": ui["shelfMoreLabel"]}
+    return {"lang": lang, "ui": labels, "apps": apps}
+
+
+def shelf_block(site: Site, lang: str) -> str:
+    """선반 자리(처음엔 숨김), 데이터 JSON, 늦게 읽는 스크립트. 벤토는 그대로 남아 검색과 JS 없는 환경을 맡는다."""
+    data = json.dumps(shelf_data(site, lang), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return (
+        f'<div class="shelf" id="shelf" data-src="{SHELF_SCRIPT}" hidden></div>\n'
+        f'<script type="application/json" id="shelf-data">{data}</script>\n'
+        f"{SHELF_LOADER}"
+    )
+
+
 def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
     ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
     tabs = []
@@ -314,7 +369,8 @@ def render_hub(site: Site, lang: str) -> str:
         ))
     names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in listed)
     content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles), quiet=quiet_row(site, lang))
+        title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles), quiet=quiet_row(site, lang),
+        shelf=shelf_block(site, lang))
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
                 content=content, footer=hub_footer(site, lang))
 
