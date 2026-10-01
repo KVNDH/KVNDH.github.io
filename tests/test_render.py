@@ -259,6 +259,20 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIn('addEventListener("load"', html)
         self.assertNotIn('<script src=', html)
 
+    def test_hub_waits_for_shelf_only_when_webgl_works(self):
+        # 로더는 벤토보다 먼저 돌고, WebGL 컨텍스트가 실제로 만들어질 때만 벤토를 숨겨 기다린다.
+        # 묶음이 실패하거나 늦으면(5초) 벤토로 돌아간다. 자리 높이와 숨김 규칙은 허브 head 에만 있다
+        html, _ = self.shelf(self.site, "ko")
+        loader = html.index('getContext("webgl2")')
+        self.assertLess(loader, html.index('class="bento"'))
+        self.assertIn('classList.add("shelf-wait")', html)
+        self.assertIn("s.onerror=h.off", html)
+        self.assertIn("setTimeout(h.off,5000)", html)
+        self.assertIn("body.shelf-wait .bento", html)
+        self.assertLess(html.index("body.shelf-wait .bento"), html.index("</head>"))
+        about = render.render_app(self.site, "ko", "demo")
+        self.assertNotIn("shelf-wait", about)
+
     def test_shelf_data_is_per_language(self):
         store(self.site.root, "en", 1)
         store(self.site.root, "en", 2)

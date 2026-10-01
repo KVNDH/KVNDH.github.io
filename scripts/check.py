@@ -8,6 +8,7 @@
 """
 from __future__ import annotations
 
+import hashlib
 import re
 import sys
 import tempfile
@@ -343,11 +344,36 @@ def check_fresh(site: Site, out: Path) -> list[str]:
     return []
 
 
+SHELF_SOURCES = ["build.mjs", "main.js", "shelf.css", "shelf.js", "three-lite.js", "package-lock.json"]
+
+
+def shelf_source_hash(src: Path) -> str:
+    """shelf/build.mjs 의 sourceHash 와 같은 방법(상대 경로와 내용을 차례로 sha256, 앞 16자)."""
+    h = hashlib.sha256()
+    files = SHELF_SOURCES + sorted(f"stubs/{p.name}" for p in (src / "stubs").iterdir() if p.is_file())
+    for rel in files:
+        h.update(rel.encode() + b"\0")
+        h.update((src / rel).read_bytes())
+        h.update(b"\0")
+    return h.hexdigest()[:16]
+
+
+def check_shelf_bundle(root: Path) -> list[str]:
+    """static/hub-shelf.js 머리 주석의 원본 해시가 지금 shelf/ 와 같은지. 원본이 없는 저장소(시험 사이트)는 건너뛴다."""
+    src, bundle = root / "shelf", root / "static" / "hub-shelf.js"
+    if not src.is_dir() or not bundle.exists():
+        return []
+    m = re.search(r"src:([0-9a-f]{16})", bundle.read_text(encoding="utf-8", errors="replace")[:600])
+    if not m or m.group(1) != shelf_source_hash(src):
+        return ["static/hub-shelf.js 가 shelf/ 원본과 다름. node shelf/build.mjs 로 묶음을 다시 만들 것"]
+    return []
+
+
 def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     site = Site(ROOT)
     out = ROOT / "docs"
-    problems = check_copy(site) + check_structure(site, "--release" in argv) + check_facts(site)
+    problems = check_copy(site) + check_structure(site, "--release" in argv) + check_facts(site) + check_shelf_bundle(ROOT)
     if "--content" in argv:
         pass
     elif out.exists():

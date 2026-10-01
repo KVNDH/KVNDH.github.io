@@ -1,8 +1,7 @@
 /* 허브 트로피 선반. shelf/main.js 가 허브에서만 넣는다. 선반 규칙은 .c-toon-shelf 아래에만 둔다. */
-/* 자리: 머리줄 아래 한 화면. 선반이 서면 벤토와 흐린 아이콘 줄은 숨긴다(HTML 에는 그대로 남는다) */
-.shelf{position:relative;height:calc(100vh - 73px);height:calc(100svh - 73px);min-height:520px;max-height:1000px}
-body.shelf-on .bento,body.shelf-on .quiet{display:none}
-@media (max-width:900px){.shelf{height:calc(100vh - 59px);height:calc(100svh - 59px);min-height:560px}}
+/* 자리 높이와 벤토 숨기기는 허브 head 의 짧은 규칙(render.py SHELF_STYLE)이 맡는다. 선반이 서기 전에는 그림과 번짐을 감춘다 */
+.c-toon-shelf.is-wait{visibility:hidden}
+body:not(.shelf-on) .shelf-bg{visibility:hidden}
 /* 뒤 번짐: 본문 뒤(.page 아래) 한 겹. 번짐마다 둥글게 흐리고, 시그니처 때는 옅은 막이 덮는다 */
 .shelf-bg{position:absolute;left:0;top:0;width:100%;height:100vh;z-index:0;overflow:hidden;pointer-events:none;
   -webkit-mask-image:linear-gradient(#000 calc(100% - 140px),transparent);mask-image:linear-gradient(#000 calc(100% - 140px),transparent)}

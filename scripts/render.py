@@ -231,11 +231,23 @@ def quiet_row(site: Site, lang: str) -> str:
 
 
 SHELF_SCRIPT = "/hub-shelf.js"
-# 첫 그림 뒤(load)에 선반 묶음을 읽는다. WebGL 이 없거나 실패하면 벤토가 그대로 남는다
+# 선반 자리 높이와, 선반을 기다리는 동안(shelf-wait)과 선반이 선 뒤(shelf-on) 벤토를 숨기는 규칙. 허브 head 에만 넣는다
+SHELF_STYLE = (
+    "<style>.shelf{position:relative;height:calc(100vh - 73px);height:calc(100svh - 73px);min-height:520px;max-height:1000px}"
+    "@media (max-width:900px){.shelf{height:calc(100vh - 59px);height:calc(100svh - 59px);min-height:560px}}"
+    "body.shelf-wait .bento,body.shelf-wait .quiet,body.shelf-on .bento,body.shelf-on .quiet{display:none}</style>"
+)
+# 벤토보다 먼저 돈다. WebGL 이 실제로 만들어질 때만 벤토를 그리기 전에 숨기고 자리를 잡고, 아이콘을 미리 받는다.
+# 묶음은 첫 그림 뒤(load)에 읽는다. 묶음이 실패하거나 5초 안에 선반이 서지 않으면 벤토로 돌아가고 선반은 다시 오지 않는다
 SHELF_LOADER = (
-    '<script>addEventListener("load",function(){var h=document.getElementById("shelf");'
-    'if(!h||!window.WebGLRenderingContext)return;var s=document.createElement("script");'
-    's.src=h.getAttribute("data-src");s.async=true;document.head.appendChild(s)})</script>'
+    '<script>(function(){var b=document.body,h=document.getElementById("shelf"),d;if(!h)return;'
+    'try{var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;'
+    'var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext();d=JSON.parse(document.getElementById("shelf-data").textContent)}catch(e){return}'
+    'b.classList.add("shelf-wait");h.hidden=false;'
+    'h.off=function(){if(b.classList.contains("shelf-on"))return;h.setAttribute("data-off","1");h.hidden=true;b.classList.remove("shelf-wait")};'
+    'd.apps.forEach(function(a){if(a.icon)(new Image).src=a.icon});setTimeout(h.off,5000);'
+    'addEventListener("load",function(){if(h.getAttribute("data-off"))return;var s=document.createElement("script");'
+    's.src=h.getAttribute("data-src");s.async=true;s.onerror=h.off;document.head.appendChild(s)})})()</script>'
 )
 
 
@@ -372,7 +384,7 @@ def render_hub(site: Site, lang: str) -> str:
         title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles), quiet=quiet_row(site, lang),
         shelf=shelf_block(site, lang))
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
-                content=content, footer=hub_footer(site, lang))
+                content=content, footer=hub_footer(site, lang), extra_head=SHELF_STYLE)
 
 
 def glyph(site: Site, slug: str, name: str) -> str:

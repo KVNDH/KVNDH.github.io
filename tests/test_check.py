@@ -190,6 +190,21 @@ class OutputTest(unittest.TestCase):
         problems = check.check_output(site, out)
         self.assertIn("ko/index.html: 없는 파일 /hub-shelf.js", problems)
 
+    def test_stale_shelf_bundle_fails(self):
+        # 묶음 머리 주석의 원본 해시가 shelf/ 원본과 다르면 실패한다. 원본이 없는 사이트는 건너뛴다
+        root = make_site()
+        self.assertEqual(check.check_shelf_bundle(root), [])
+        src = root / "shelf"
+        (src / "stubs").mkdir(parents=True)
+        for name in check.SHELF_SOURCES:
+            (src / name).write_text("// " + name + "\n")
+        (src / "stubs" / "A.js").write_text("// a\n")
+        bundle = root / "static" / "hub-shelf.js"
+        bundle.write_text("/* 원본: shelf/ src:" + check.shelf_source_hash(src) + " */\n")
+        self.assertEqual(check.check_shelf_bundle(root), [])
+        (src / "shelf.js").write_text("// changed\n")
+        self.assertEqual(len(check.check_shelf_bundle(root)), 1)
+
     def test_missing_app_ads_fails(self):
         site, out = self.built()
         (out / "app-ads.txt").unlink()

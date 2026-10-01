@@ -1,17 +1,32 @@
 // 허브 선반 묶음을 만든다: shelf/main.js + three(쓰는 것만) + shelf.css -> static/hub-shelf.js
-// 사용: node shelf/build.mjs
-// node_modules(three r186, esbuild)는 저장소에 넣지 않는다. 기본은 ../tmp/site-motion-2026-09-30/node_modules,
-// 다른 곳이면 SHELF_NODE_MODULES 로 준다.
+// 사용: (cd shelf && npm ci) 한 번, 그 뒤 node shelf/build.mjs
+// 판은 shelf/package.json 과 package-lock.json 이 고정한다(three 0.186.1, esbuild 0.28.2). node_modules 는 커밋하지 않는다.
+// shelf/node_modules 가 없으면 SHELF_NODE_MODULES, 그다음 ../tmp/site-motion-2026-09-30/node_modules 를 쓴다.
+// 묶음 머리 주석에 원본 해시(src:)를 적는다. check.py 가 다시 재어 다르면 '묶음 다시 만들 것'으로 실패한다.
+// SHELF_TEST=1 이면 시험용 손잡이(window.__shelf, _t)를 켠 묶음을 SHELF_OUT(기본 /tmp/hub-shelf-test.js)에 만든다(공개 묶음은 그대로).
 // 줄이는 법: three 를 src 모듈로 묶어 쓰지 않는 클래스를 털고, WebXR 과 환경맵 PMREM 은 shelf/stubs 의 대역으로 바꾸고, 셰이더 조각은 이 선반이 실제로 쓰는 것
 // (shelf.js 의 셰이더와 그림자 지도의 깊이 재질이 #include 로 닿는 것)만 남겨 주석과 들여쓰기를 걷는다.
 import { createRequire } from 'node:module';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repo = path.resolve(here, '..');
-const nm = process.env.SHELF_NODE_MODULES || path.resolve(repo, '..', 'tmp', 'site-motion-2026-09-30', 'node_modules');
+const nm = [path.join(here, 'node_modules'), process.env.SHELF_NODE_MODULES, path.resolve(repo, '..', 'tmp', 'site-motion-2026-09-30', 'node_modules')]
+  .find(d => d && fs.existsSync(path.join(d, 'three', 'package.json')));
+if (!nm) throw new Error('three 와 esbuild 가 없습니다. cd shelf && npm ci');
+const TEST = process.env.SHELF_TEST === '1';
+const outfile = TEST ? (process.env.SHELF_OUT || '/tmp/hub-shelf-test.js') : path.join(repo, 'static', 'hub-shelf.js');
+// 원본 해시: check.py 의 shelf_source_hash 와 같은 방법(상대 경로와 내용을 차례로)
+function sourceHash() {
+  const files = ['build.mjs', 'main.js', 'shelf.css', 'shelf.js', 'three-lite.js', 'package-lock.json']
+    .concat(fs.readdirSync(path.join(here, 'stubs')).sort().map(f => 'stubs/' + f));
+  const h = crypto.createHash('sha256');
+  for (const f of files) { h.update(f + '\0'); h.update(fs.readFileSync(path.join(here, f))); h.update('\0'); }
+  return h.digest('hex').slice(0, 16);
+}
 const esbuild = createRequire(path.join(nm, 'noop.js'))('esbuild');
 const shaders = path.join(nm, 'three', 'src', 'renderers', 'shaders');
 
@@ -78,11 +93,12 @@ const trimShaders = {
 
 const res = await esbuild.build({
   entryPoints: [path.join(here, 'main.js')],
-  outfile: path.join(repo, 'static', 'hub-shelf.js'),
+  outfile,
   bundle: true, minify: true, format: 'iife', target: ['es2020'],
   nodePaths: [nm], legalComments: 'eof',
   plugins: [trimShaders, stubs, cssText], metafile: true, logLevel: 'warning',
-  banner: { js: '/* kvndh 허브 선반. three.js r186 (MIT, Copyright 2010-2025 Three.js Authors) 일부를 묶었다. 원본: shelf/ */' }
+  define: { __SHELF_TEST__: TEST ? 'true' : 'false' },
+  banner: { js: '/* kvndh 허브 선반. three.js r186 (MIT, Copyright 2010-2025 Three.js Authors) 일부를 묶었다. 원본: shelf/ src:' + sourceHash() + ' */' }
 });
 const out = Object.entries(res.metafile.outputs)[0];
 console.log(path.relative(repo, out[0]), Math.round(out[1].bytes / 1024) + 'KB', '셰이더 조각', USED.size);
@@ -92,4 +108,4 @@ const zlib = await import('node:zlib');
 const gz = buf => (zlib.gzipSync(buf, { level: 9 }).length / 1024).toFixed(1) + 'KB';
 const three = await esbuild.build({ entryPoints: [path.join(here, 'three-lite.js')], bundle: true, minify: true, format: 'iife',
   globalName: 'T', target: ['es2020'], nodePaths: [nm], plugins: [trimShaders, stubs], write: false, logLevel: 'warning' });
-console.log('gzip: 전체', gz(fs.readFileSync(path.join(repo, 'static', 'hub-shelf.js'))), '/ three', gz(three.outputFiles[0].contents));
+console.log('gzip: 전체', gz(fs.readFileSync(outfile)), '/ three', gz(three.outputFiles[0].contents));

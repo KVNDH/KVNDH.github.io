@@ -24,8 +24,9 @@ var BEAT = {
   ],
   hop: [0.05, 0.12, 0.13], hopH: 0.14,       // 기다림, 튀어 오름, 다시 닿음(두 번째 톡), 높이
   plinth: [[0.06, [1.025, 0.955], 'outQuad'], [0.26, [1, 1], 'settle']],   // 받침이 눌렸다 튄다(몸통과 같은 값)
-  // 아랫줄은 윗줄 앞을 스치지 않게 자기 줄 바로 위에서 떨어진다. 같은 낙하 속도라 길이는 높이의 제곱근에 비례
-  fallLowMin: 0.16,
+  // 아랫줄은 위에서 떨어지지 않고 제 자리에서 솟는다(윗줄 명판 앞을 지나거나 가리지 않게).
+  // 납작하게 퍼지는 예비 동작(pre) → 세로로 늘며 솟는 본동작(grow, 꼭대기는 윗줄 명판 아래까지) → 닿아 찌그러졌다 settle(land)
+  sprout: { pre: 0.07, from: [0.3, 0.02], preS: [1.2, 0.14], grow: 0.15, growX: 0.92, maxS: 1.12 },
   // 입장 순서: 직, 지직, 지이이잉(PrintBeat 모양, 끝으로 갈수록 빨라지는 계단), 그리고 천.
   // 앱 수는 데이터에서 온다. 지이이잉 계단은 0.10 에서 0.01 씩 줄고 0.06 아래로는 가지 않는다
   enter: { first: [0.00, 0.42, 0.53], ramp: 0.78, gap0: 0.10, gapStep: 0.01, gapMin: 0.06, cloth: 0.31, clothGap: 0.16 },
@@ -44,7 +45,8 @@ var BEAT = {
   spin: 0.52,
   // 호버와 초점의 조명: 그 자리는 밝아지고(벽 조명, 등, 따뜻한 빛 한 겹) 나머지는 dim 만큼만 가라앉는다.
   // 계단 없이 dur 동안 outCubic 으로 잇고, 떠날 때와 옮길 때도 같은 곡선. 뒤 번짐도 같은 박자로 진해진다
-  spot: { dur: 0.4, reduced: 0.15, ease: 'outCubic', dim: 0.18, lift: 0.07, fanRest: 0.62, blobUp: 1.6, blobDown: 0.85 },
+  // 자리 사이 틈을 지날 때 조명이 꺼졌다 켜지지 않게, 떠날 때는 gap 만큼 기다렸다가 끈다
+  spot: { dur: 0.4, reduced: 0.15, ease: 'outCubic', dim: 0.18, lift: 0.12, fanRest: 0.62, blobUp: 1.6, blobUpTint: 2.2, blobDown: 0.85, gap: 0.14 },
   snapFade: 0.16                             // 동작 줄이기의 교차 페이드
 };
 // 입장 시각: 타일 n 개, 천 m 개
@@ -116,8 +118,9 @@ var TOON_FS = [
   'uniform vec3 uT; uniform vec3 uDir; uniform vec3 uSunDir; uniform vec3 uShade; uniform float uRecv;',
   'uniform float uFade; uniform vec3 uFadeColor; uniform float uOpacity;',
   'uniform float uGlow; uniform vec3 uGlowColor;',
-  // 호버 조명: 화면(사선 투영 평면)의 둥근 상자 안은 밝게, 밖은 살짝 가라앉게
-  'uniform vec4 uSpotBox; uniform float uSpotAmt; uniform vec2 uObl; uniform float uSpotDim; uniform float uSpotLift; uniform vec3 uSpotColor;',
+  // 호버 조명: 화면(사선 투영 평면)의 둥근 상자 안은 밝게, 밖은 살짝 가라앉게.
+  // 상자는 그 자리의 깊이 띠(uSpotZ) 안에만 걸린다(앞뒤 줄 물건에 밝기 띠가 걸리지 않게)
+  'uniform vec4 uSpotBox; uniform vec2 uSpotZ; uniform float uSpotAmt; uniform vec2 uObl; uniform float uSpotDim; uniform float uSpotLift; uniform vec3 uSpotColor;',
   '#ifdef MAPPED',
   'uniform sampler2D uMap;',
   '#endif',
@@ -132,7 +135,7 @@ var TOON_FS = [
   '  vec2 v = vec2( vWP.x - uObl.x * vWP.z, vWP.y - uObl.y * vWP.z );',
   '  vec2 q = abs( v - uSpotBox.xy ) / uSpotBox.zw;',
   '  float d = pow( pow( q.x, 4.0 ) + pow( q.y, 4.0 ), 0.25 );',
-  '  return 1.0 - smoothstep( 1.0, 1.4, d );',
+  '  return ( 1.0 - smoothstep( 1.0, 1.4, d ) ) * step( uSpotZ.x, vWP.z ) * step( vWP.z, uSpotZ.y );',
   '}',
   'float sunShadow() {',
   '  float s = 1.0;',
@@ -161,7 +164,10 @@ var TOON_FS = [
   '  c = mix( c, c * uShade, sh );',
   '#ifndef NOSPOT',
   '  float sl = spotLit() * uSpotAmt;',
-  '  c = mix( c, uSpotColor, uSpotLift * sl );',
+  // 따뜻한 빛은 단색 면(받침, 선반, 명판 종이)에만 곱한다. 아이콘과 글자 그림은 원래 색 그대로 두어 바래지 않게
+  '#ifndef MAPPED',
+  '  c = min( c * ( 1.0 + uSpotLift * sl * ( 2.0 * uSpotColor - 1.0 ) ), vec3( 1.0 ) );',
+  '#endif',
   '  c *= 1.0 - uSpotDim * ( uSpotAmt - sl );',
   '#endif',
   '  c = mix( c, uFadeColor, uFade );',
@@ -466,9 +472,17 @@ function drapeCloth(cl, p) {
 }
 
 /* ---------------- mount ----------------
-   root: 선반이 들어갈 자리, DATA: render.py 가 허브에 넣은 JSON({ lang, ui, apps }), bgEl: 번짐을 깔 DOM 층.
-   WebGL 을 못 만들면 null 을 돌려준다(부르는 쪽이 벤토를 그대로 둔다). */
-export function mount(root, DATA, bgEl) {
+   root: 선반이 들어갈 자리, DATA: render.py 가 허브에 넣은 JSON({ lang, ui, apps }), bgEl: 번짐을 깔 DOM 층,
+   hooks.onLost: WebGL 을 잃고 돌아오지 않을 때 부른다(부르는 쪽이 벤토로 돌아간다).
+   돌려주는 것: { ready(아이콘이 준비되면 true, 여럿 깨지면 false), start(입장 시작), destroy }.
+   WebGL 을 못 만들면 null 을 돌려준다. 올리다 예외가 나면 만든 것을 모두 치우고 예외를 다시 던진다. */
+export function mount(root, DATA, bgEl, hooks) {
+  if (!window.ResizeObserver || !window.IntersectionObserver || !window.Promise) return null;
+  var box = { destroy: null };
+  try { return mountShelf(root, DATA, bgEl, hooks || {}, box); }
+  catch (e) { if (box.destroy) { try { box.destroy(); } catch (e2) { /* 건너뛴다 */ } } throw e; }
+}
+function mountShelf(root, DATA, bgEl, hooks, box) {
   var dead = false;
   var reduced = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   var apps = DATA.apps, UI = DATA.ui;
@@ -482,7 +496,7 @@ export function mount(root, DATA, bgEl) {
   /* ----- DOM ----- */
   root.innerHTML = '';
   var wrap = document.createElement('div');
-  wrap.className = 'c-toon-shelf' + (reduced ? ' is-reduced' : '');
+  wrap.className = 'c-toon-shelf is-wait' + (reduced ? ' is-reduced' : '');
   wrap.innerHTML =
     '<canvas class="c-toon-shelf__gl" aria-hidden="true"></canvas>' +
     '<canvas class="c-toon-shelf__snap" aria-hidden="true"></canvas>' +
@@ -517,6 +531,19 @@ export function mount(root, DATA, bgEl) {
     renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
   } catch (e) { renderer = null; }
   if (!renderer) { root.innerHTML = ''; return null; }
+  box.destroy = destroy;
+
+  // WebGL 을 잃으면 잠깐 기다려 보고, 돌아오면 그림자와 장면을 다시 그린다. 돌아오지 않으면 벤토로 물러선다
+  var lostT = 0;
+  on(canvas, 'webglcontextlost', function (e) {
+    e.preventDefault();
+    if (!lostT) lostT = later(function () { lostT = 0; if (hooks.onLost) hooks.onLost(); }, 1500);
+  });
+  on(canvas, 'webglcontextrestored', function () {
+    if (lostT) { cancelLater(lostT); lostT = 0; }
+    sun.shadow.needsUpdate = true; stageLight.shadow.needsUpdate = true;
+    requestRender();
+  });
 
   var DPR = Math.min(window.devicePixelRatio || 1, 2);
   renderer.setPixelRatio(DPR);
@@ -560,7 +587,7 @@ export function mount(root, DATA, bgEl) {
     shade: { value: new THREE.Color(C.shade) },
     inkW: { value: 2 }, res: { value: new THREE.Vector2(1, 1) }, edge: { value: 64 },
     // 호버 조명: 상자(화면 평면의 가운데와 반폭), 세기, 사선 계수
-    spotBox: { value: new THREE.Vector4(0, 0, 1, 1) }, spotAmt: { value: 0 }, obl: { value: new THREE.Vector2(0.41, 0.287) },
+    spotBox: { value: new THREE.Vector4(0, 0, 1, 1) }, spotZ: { value: new THREE.Vector2(-99, 99) }, spotAmt: { value: 0 }, obl: { value: new THREE.Vector2(0.41, 0.287) },
     spotDim: { value: BEAT.spot.dim }, spotLift: { value: BEAT.spot.lift }, spotColor: { value: new THREE.Color(C.lampOn) }
   };
   var WHITE = new THREE.Color('#FFFFFF');
@@ -576,7 +603,7 @@ export function mount(root, DATA, bgEl) {
     }]);
     u.uFade = o.fade || shared.fade; u.uFadeColor = shared.fadeColor;
     u.uDir = shared.dir; u.uSunDir = shared.sunDir; u.uShade = shared.shade;
-    u.uSpotBox = shared.spotBox; u.uSpotAmt = shared.spotAmt; u.uObl = shared.obl;
+    u.uSpotBox = shared.spotBox; u.uSpotZ = shared.spotZ; u.uSpotAmt = shared.spotAmt; u.uObl = shared.obl;
     u.uSpotDim = shared.spotDim; u.uSpotLift = shared.spotLift; u.uSpotColor = shared.spotColor;
     if (o.map) u.uMap = { value: o.map };
     if (o.recvU) u.uRecv = o.recvU;
@@ -685,20 +712,42 @@ export function mount(root, DATA, bgEl) {
 
   /* ----- 그림(아이콘, 테 색) ----- */
   var images = [];
+  // 깨진 그림은 null 로 끝난다(거부하지 않는다)
   function loadImage(src) {
     var im = new Image();
     im.decoding = 'async';
-    im.src = src;
-    return (im.decode ? im.decode() : new Promise(function (r) { im.onload = r; })).then(function () { return im; }, function () { return im; });
+    var p = im.decode ? (im.src = src, im.decode()) : new Promise(function (r, j) { im.onload = r; im.onerror = j; im.src = src; });
+    return p.then(function () { return im.naturalWidth > 0 ? im : null; }, function () { return null; });
   }
-  function texFrom(src, cb) {
+  // ready 는 늘 끝나고 그림을 얹었는지(true, false)를 돌려준다. 깨지면 fail(tex) 로 대신 그릴 기회를 준다
+  function texFrom(src, cb, fail) {
     var tex = keep(new THREE.Texture());
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.anisotropy = Math.min(8, renderer.capabilities.getMaxAnisotropy());
     tex.minFilter = THREE.LinearMipmapLinearFilter;
-    var p = loadImage(src).then(function (im) { if (dead) return; tex.image = im; tex.needsUpdate = true; if (cb) cb(im); requestRender(); });
-    tex.userData.ready = p;
+    tex.userData.ready = loadImage(src).then(function (im) {
+      if (dead) return false;
+      var ok = !!im;
+      try {
+        if (ok) { tex.image = im; tex.needsUpdate = true; if (cb) cb(im); }
+        else if (fail) fail(tex);
+      } catch (e) { ok = false; }
+      requestRender();
+      return ok;
+    });
     return tex;
+  }
+  // 아이콘을 못 읽은 앱: 기본 테 색 바탕에 이름만 적은 앞면
+  function nameFace(it, tex) {
+    var N = 360, c = document.createElement('canvas'); c.width = c.height = N;
+    var x = c.getContext('2d');
+    x.fillStyle = hexOf(it.base); x.fillRect(0, 0, N, N);
+    var size = 64;
+    x.font = '700 ' + size + 'px ' + FONT;
+    while (x.measureText(it.app.name).width > N * 0.78 && size > 24) { size -= 4; x.font = '700 ' + size + 'px ' + FONT; }
+    x.fillStyle = C.ink; x.textAlign = 'center'; x.textBaseline = 'middle';
+    x.fillText(it.app.name, N / 2, N / 2);
+    tex.image = c; tex.needsUpdate = true;
   }
   // 아이콘 네 변 가운데 띠의 평균 색 = 타일 테 색(아이콘을 그대로 두툼하게 뽑아낸 것처럼)
   function edgeColor(im) {
@@ -848,7 +897,9 @@ export function mount(root, DATA, bgEl) {
         var t = tonesOf(it.base);
         it.rimMat.uniforms.uHi.value.copy(t[0]); it.rimMat.uniforms.uL.value.copy(t[1]);
         it.rimMat.uniforms.uM.value.copy(t[2]); it.rimMat.uniforms.uD.value.copy(t[3]);
-      });
+        it.backMat.uniforms.uHi.value.copy(t[0]); it.backMat.uniforms.uL.value.copy(t[1]);
+        it.backMat.uniforms.uM.value.copy(t[2]); it.backMat.uniforms.uD.value.copy(t[3]);
+      }, function (tex) { nameFace(it, tex); });
       it.iconMat = toon({ map: it.iconTex, fade: it.fadeU, recv: 0 });
       it.backMat = toon({ tones: tonesOf(it.base), fade: it.fadeU, recvU: it.recvU });
       it.hullMat = hullMat(it.fadeU);
@@ -882,11 +933,12 @@ export function mount(root, DATA, bgEl) {
       el.className = 'shelf-blob' + (a.field ? ' is-field' : ' is-tint');
       if (a.field) el.style.background = 'url("' + a.field + '") center / cover no-repeat, ' + a.color;
       else el.style.background = a.accent;
-      // 글자가 밝은(어두운 번짐) 앱은 옅게 깔아 파스텔로 둔다
-      var base = a.field ? (a.ink === 'light' ? 0.34 : 0.72) : 0.16;
+      // 글자가 밝은(어두운 번짐) 앱은 옅게 깔아 파스텔로 둔다.
+      // 줄 모티프 앱은 강조색이 서로 비슷해 겹치면 진해지므로 한 장을 더 옅게 둔다(겹쳐도 아주 옅게)
+      var base = a.field ? (a.ink === 'light' ? 0.34 : 0.72) : 0.09;
       el.style.opacity = String(base);
       bgEl.appendChild(el);
-      var b = { it: it, el: el, base: base, o: base, o0: base, o1: base };
+      var b = { it: it, el: el, base: base, tint: !a.field, o: base, o0: base, o1: base };
       it.blob = b;
       blobs.push(b);
     });
@@ -913,7 +965,9 @@ export function mount(root, DATA, bgEl) {
     veilEl.style.top = Math.round(oy) + 'px'; veilEl.style.height = Math.round(r.height) + 'px';
   }
   if (bgEl) on(window, 'resize', placeBlobs);
+  // 아이콘 하나가 깨지면 그 자리만 이름 앞면으로 앉히고, 둘 이상 깨지면 선반을 세우지 않는다(벤토로 돌아간다)
   var iconsReady = Promise.all(released.map(function (it) { return it.iconTex.userData.ready; }));
+  var ready = iconsReady.then(function (oks) { return !dead && oks.filter(function (ok) { return !ok; }).length < 2; });
 
   // 자락 끝 먹선(닫힌 줄)
   function makeHem(n) {
@@ -1040,6 +1094,9 @@ export function mount(root, DATA, bgEl) {
         it.seat.set((k - (row.length - 1) / 2) * L.P, L.h(j), -j * L.D + L.D / 2);
       });
     });
+    // Tab 과 화면 읽기 순서 = 보이는 순서(윗줄부터, 왼쪽에서 오른쪽)
+    items.slice().sort(function (p, q) { return p.row - q.row || p.seat.x - q.seat.x; })
+      .forEach(function (it) { if (it.hit) hitsEl.appendChild(it.hit); });
     // 받침
     items.forEach(function (it) {
       if (it.plinth) { it.plinth.parent && it.plinth.parent.remove(it.plinth); }
@@ -1090,13 +1147,6 @@ export function mount(root, DATA, bgEl) {
       layoutGroup.add(fan);
       it.fan = fan; it.fanMat = fanMat; it.fanWall = isTop;
     });
-    // 아랫줄은 늘어난 꼭대기가 윗줄 받침 윗면 아래에 머무는 높이에서 떨어진다(윗줄 앞을 스치지 않게)
-    items.forEach(function (it) {
-      if (it.tier === top) { it.fallH = BEAT.fallFrom; return; }
-      var up = L.h(it.tier + 1) + PL.h - OBL.ky * (-(it.tier + 1) * L.D + L.D / 2);
-      var tall = it.cloth ? it.cp.H * BEAT.cloth.fallS[1] : PL.h + TILE_H * BEAT.fallS[1];
-      it.fallH = Math.max(0.25, up - 0.05 - (it.seat.y - OBL.ky * it.seat.z) - tall);
-    });
     L.built = true;
     frameCamera();
     placeLabels();
@@ -1140,9 +1190,18 @@ export function mount(root, DATA, bgEl) {
       layoutGroup.add(g);
       it.label = g; it.labelBox = { w: lw, h: lh, y: y, z: z };
     });
+    // 아랫줄 자리의 위쪽 여유: 화면에서 자리 바닥부터 바로 윗줄 명판 아래까지. 솟는 입장과 호버 떠오름이 이 안에 머문다
+    items.forEach(function (it) {
+      var up = it.tier === L.R - 1 ? null : items.filter(function (o) { return o.tier === it.tier + 1; })[0];
+      if (!up) { it.room = Infinity; it.riseY = BEAT.hover.y; return; }
+      var lb = up.labelBox;
+      it.room = (lb.y - lb.h / 2 - OBL.ky * lb.z) - (it.seat.y - OBL.ky * it.seat.z) - 0.04;
+      // settle 의 첫 넘침(18% 쯤)까지 셈한다
+      it.riseY = it.cloth ? 0 : Math.max(0.04, Math.min(BEAT.hover.y, (it.room - PL.h - TILE_H) / 1.18));
+    });
     placeHits();
     placeBlobs();
-    if (spot.it) shared.spotBox.value.copy(spotBoxOf(spot.it));
+    if (spot.it) { shared.spotBox.value.copy(spotBoxOf(spot.it)); shared.spotZ.value.copy(spotZOf(spot.it)); }
     layoutStage();
     requestRender();
   }
@@ -1352,15 +1411,17 @@ export function mount(root, DATA, bgEl) {
   });
   function placeHits() {
     items.forEach(function (it) {
-      var topY = it.seat.y + PL.h + TILE_H + BEAT.hover.y + 0.05, z = it.seat.z, lb = it.labelBox;
+      var topY = it.seat.y + PL.h + TILE_H + it.riseY + 0.05, z = it.seat.z, lb = it.labelBox;
       var a = toPx(it.seat.x - 0.62, topY, z);
       var b = toPx(alignX(it, lb.z) + 0.62, lb.y - lb.h / 2 - 0.04, lb.z);
-      var el = it.hit;
+      // 가로는 자리 간격(P) 전부를 덮어 같은 줄 자리 사이에 틈이 없게 한다(옆으로 훑을 때 조명이 꺼졌다 켜지지 않게)
+      var el = it.hit, cx = toPx(it.seat.x, topY, z).x, hw = Math.max(22, L.P * view.ppu / 2 - 1);
+      a = { x: cx - hw, y: a.y };
       el.style.left = a.x + 'px'; el.style.top = a.y + 'px';
-      el.style.width = Math.max(44, b.x - a.x) + 'px'; el.style.height = Math.max(44, b.y - a.y) + 'px';
+      el.style.width = (2 * hw) + 'px'; el.style.height = Math.max(44, b.y - a.y) + 'px';
       // 초점 테: 타일 둘레
       // 초점 = 호버라서 타일은 떠오른 자리에 있다
-      var ty = it.seat.y + PL.h + (it.cloth || reduced ? 0 : BEAT.hover.y), th = it.cloth ? it.cp.H + 0.06 : TILE_H, tw = it.cloth ? 0.7 : 0.54;
+      var ty = it.seat.y + PL.h + (it.cloth || reduced ? 0 : it.riseY), th = it.cloth ? it.cp.H + 0.06 : TILE_H, tw = it.cloth ? 0.7 : 0.54;
       // 사선 투영이라 뒷면이 오른쪽 위로 밀려 보인다. 앞면의 왼쪽 아래와 뒷면의 오른쪽 위를 함께 감싸야
       // 테가 타일 먹선과 겹치지 않고 사방으로 같은 틈을 둔다.
       var fx0, fy0, fx1, fy1;
@@ -1398,12 +1459,36 @@ export function mount(root, DATA, bgEl) {
     var ps = it.ps, amt = k == null ? 1 : k;
     squashSeq(ps, BEAT.plinth.map(function (s) { return [s[0], [lerp(1, s[1][0], amt), lerp(1, s[1][1], amt)], s[2]]; }), 'p' + it.i);
   }
-  // 같은 낙하 속도: 길이는 높이의 제곱근에 비례(맨 윗줄은 표의 값 그대로)
-  function fallDur(full, h) { return Math.max(BEAT.fallLowMin, full * Math.sqrt(Math.min(1, h / BEAT.fallFrom))); }
+  // 아랫줄의 솟는 입장(예비, 본동작). 꼭대기는 it.room 아래, tall 은 늘기 전 키
+  function sproutIn(it, tall, cloth) {
+    var st = it.st, S = BEAT.sprout, cp = it.cp;
+    var top = Math.max(1, Math.min(S.maxS, it.room / tall));
+    st.shown = true; it.state = 'dropping'; st.y = 0;
+    return drive(S.pre, function (t) {
+      var e = Ease.outQuad(t);
+      st.sx = st.sz = lerp(S.from[0], S.preS[0], e); st.sy = lerp(S.from[1], S.preS[1], e);
+      if (cloth) { cp.flare = 0.8 * e; it.clothDirty = true; }
+    }).then(function () {
+      sfx('tap');
+      return drive(S.grow, function (t) {
+        var e = Ease.outQuad(t);
+        st.sx = st.sz = lerp(S.preS[0], S.growX, e); st.sy = lerp(S.preS[1], top, e);
+        if (cloth) { cp.flare = lerp(0.8, -0.35, e); it.clothDirty = true; }
+      });
+    });
+  }
   function dropTile(it) {
-    var st = it.st, H = it.fallH || BEAT.fallFrom;
+    var st = it.st;
+    // 아랫줄: 제 받침 위에서 솟아 한 번 찌그러졌다 선다(두 번째 톡 없이. 튀어 오르면 윗줄 명판을 가린다)
+    if (it.room !== Infinity) {
+      return sproutIn(it, TILE_H, false).then(function () {
+        sfx('thud'); lampOn(it); plinthPunch(it);
+        return squashSeq(st, BEAT.land);
+      }).then(function () { st.y = 0; it.state = 'seated'; if (it.hovered) hoverIn(it); });
+    }
+    var H = BEAT.fallFrom;
     st.shown = true; it.state = 'dropping';
-    return drive(fallDur(BEAT.fall, H), function (t) {
+    return drive(BEAT.fall, function (t) {
       var e = Ease.inQuad(t);
       st.y = H * (1 - e); st.sx = st.sz = lerp(1, BEAT.fallS[0], e); st.sy = lerp(1, BEAT.fallS[1], e);
     }).then(function () {
@@ -1416,18 +1501,19 @@ export function mount(root, DATA, bgEl) {
     }).then(function () { st.y = 0; it.state = 'seated'; if (it.hovered) hoverIn(it); });
   }
   function dropCloth(it) {
-    var st = it.st, H = it.fallH || BEAT.fallFrom, cb = BEAT.cloth, cp = it.cp;
-    st.shown = true; it.state = 'dropping';
-    return drive(fallDur(cb.fall, H), function (t) {
+    var st = it.st, H = BEAT.fallFrom, cb = BEAT.cloth, cp = it.cp;
+    var come = it.room !== Infinity ? sproutIn(it, cp.H + 0.035, true) : (st.shown = true, it.state = 'dropping', drive(cb.fall, function (t) {
       var e = Ease.inQuad(t);
       st.y = H * (1 - e); st.sx = st.sz = lerp(1, cb.fallS[0], e); st.sy = lerp(1, cb.fallS[1], e);
       cp.flare = -0.35 * e; it.clothDirty = true;
-    }).then(function () {
+    }));
+    return come.then(function () {
       sfx('soft');
       st.y = 0;
+      var ax = st.sx, ay = st.sy;
       return drive(cb.hit, function (t) {
         var e = Ease.outQuad(t);
-        st.sx = st.sz = lerp(cb.fallS[0], cb.hitS[0], e); st.sy = lerp(cb.fallS[1], cb.hitS[1], e);
+        st.sx = st.sz = lerp(ax, cb.hitS[0], e); st.sy = lerp(ay, cb.hitS[1], e);
         cp.flare = lerp(-0.35, 1, e); cp.fold = lerp(0.1, 0.16, e); it.clothDirty = true;
       });
     }).then(function () {
@@ -1464,25 +1550,46 @@ export function mount(root, DATA, bgEl) {
   // 호버 조명: 그 자리를 감싸는 화면 상자(타일 꼭대기와 떠오른 높이부터 명판 아래까지)
   var spot = { it: null };
   function spotBoxOf(it) {
-    var top = toView(it.seat.x, it.seat.y + PL.h + TILE_H + BEAT.hover.y + 0.04, it.seat.z);
+    var top = toView(it.seat.x, it.seat.y + PL.h + TILE_H + it.riseY + 0.04, it.seat.z);
     var lb = it.labelBox, bot = toView(alignX(it, lb.z), lb.y - lb.h / 2 - 0.06, lb.z);
     var hw = L.wide ? 0.66 : L.P * 0.44;
     return new THREE.Vector4(top.x, (top.y + bot.y) / 2, hw, (top.y - bot.y) / 2);
   }
-  // 켜고 끄고 옮기기 모두 같은 곡선 하나. 뒤 번짐도 같은 박자로 진해지고(그 앱) 살짝 옅어진다(나머지)
+  // 깊이 띠: 그 자리 층의 뒤 벽(윗줄 앞면)부터 명판 앞까지. 앞줄과 뒷줄 물건은 빠진다
+  function spotZOf(it) { return new THREE.Vector2(it.seat.z - L.D / 2 - 0.012, it.seat.z + L.D / 2 + 0.045); }
+  // 켜고 끄고 옮기기 모두 같은 곡선 하나. 뒤 번짐도 같은 박자로 진해지고(그 앱) 살짝 옅어진다(나머지).
+  // 번짐이 그 자리 뒤에 보이는 맨 윗줄만 번짐을 바꾼다(아랫줄 번짐은 윗줄 이웃 머리 위라 그 앱 것으로 읽힌다).
+  // 같은 색 번짐(줄 모티프 앱)은 옅게 하지 않는다
+  var spotOffT = 0;
   function spotTo(it) {
-    if (spot.it === it && it) return;
+    if (spotOffT) { cancelLater(spotOffT); spotOffT = 0; }
+    if (spot.it === it) return;
     spot.it = it;
     var f = spotEase(), a0 = shared.spotAmt.value, a1 = it ? 1 : 0;
     var b0 = shared.spotBox.value.clone(), b1 = it ? spotBoxOf(it) : b0.clone();
-    if (a0 < 0.002) b0.copy(b1);
-    blobs.forEach(function (b) { b.o0 = b.o; b.o1 = !it ? b.base : b.it === it ? Math.min(1, b.base * BEAT.spot.blobUp) : b.base * BEAT.spot.blobDown; });
+    var z0 = shared.spotZ.value.clone(), z1 = it ? spotZOf(it) : z0.clone();
+    if (a0 < 0.002) { b0.copy(b1); z0.copy(z1); }
+    var lit = it && it.blob && it.tier === L.R - 1 ? it.blob : null;
+    blobs.forEach(function (b) {
+      b.o0 = b.o;
+      if (!lit) b.o1 = b.base;
+      else if (b === lit) b.o1 = Math.min(1, b.base * (b.tint ? BEAT.spot.blobUpTint : BEAT.spot.blobUp));
+      else b.o1 = b.tint && lit.tint && near(b.it.app.accent, lit.it.app.accent) ? b.base : b.base * BEAT.spot.blobDown;
+    });
     drive(spotDur(), function (t) {
       var e = f(t);
       shared.spotBox.value.lerpVectors(b0, b1, e);
+      shared.spotZ.value.lerpVectors(z0, z1, e);
       shared.spotAmt.value = lerp(a0, a1, e);
       blobs.forEach(function (b) { b.o = lerp(b.o0, b.o1, e); b.el.style.opacity = b.o.toFixed(3); });
     }, { key: 'spot' });
+  }
+  // 두 강조색이 거의 같은 색인지(sRGB 거리)
+  function near(h1, h2) { var p = srgb(col(h1)), q = srgb(col(h2)); return Math.hypot(p.r - q.r, p.g - q.g, p.b - q.b) < 0.12; }
+  // 떠날 때: 잠깐 기다렸다 끈다. 그 사이 다른 자리에 들어오면 바로 그리로 옮긴다
+  function spotLeave(it) {
+    if (spot.it !== it || spotOffT) return;
+    spotOffT = later(function () { spotOffT = 0; if (spot.it === it && !it.hovered) spotTo(null); }, BEAT.spot.gap * 1000);
   }
   function hoverIn(it) {
     it.hovered = true;
@@ -1506,7 +1613,7 @@ export function mount(root, DATA, bgEl) {
       var y0 = st.y;
       return drive(B.rise, function (t) {
         var e = Ease.settle(t), k = Math.sin(PI * clamp01(t / 0.35));
-        st.y = lerp(y0, B.y, e);
+        st.y = lerp(y0, it.riseY, e);
         st.sx = st.sz = lerp(B.pressS[0], 1, e) * (1 - 0.025 * k); st.sy = lerp(B.pressS[1], 1, e) * (1 + 0.045 * k);
       }, { key: key });
     });
@@ -1514,7 +1621,7 @@ export function mount(root, DATA, bgEl) {
   function hoverOut(it) {
     it.hovered = false;
     fanHover(it, 0);
-    if (spot.it === it) spotTo(null);
+    spotLeave(it);
     if (it.state !== 'seated' || reduced) return;
     var tok = ++it.hTok, st = it.st, B = BEAT.hover, key = 'h' + it.i;
     if (it.cloth) {
@@ -1524,7 +1631,7 @@ export function mount(root, DATA, bgEl) {
     }
     var y0 = st.y, ax = st.sx, ay = st.sy;
     if (y0 < 0.01) { squashSeq(st, [[0.2, [1, 1], 'settle']], key, tok, it); return; }
-    drive(B.drop * Math.sqrt(y0 / B.y), function (t) {
+    drive(B.drop * Math.sqrt(Math.min(1, y0 / B.y)), function (t) {
       var e = Ease.inQuad(t);
       st.y = y0 * (1 - e); st.sx = st.sz = lerp(ax, 0.975, e); st.sy = lerp(ay, 1.04, e);
     }, { key: key }).then(function () {
@@ -1592,12 +1699,13 @@ export function mount(root, DATA, bgEl) {
     while (x.measureText(it.app.name).width > N * 0.7 && nameSize > 60) { nameSize -= 4; x.font = '700 ' + nameSize + 'px' + fam; }
     x.font = '700 ' + nameSize + 'px' + fam;
     x.textAlign = 'center'; x.textBaseline = 'alphabetic';
-    // 한 줄 소개: 낱말 단위로 두세 줄
-    var subSize = 70;
-    x.font = '500 ' + subSize + 'px' + fam;
-    var words = it.app.subtitle.split(' '), lines = [], cur = '';
-    words.forEach(function (w) { var tryL = cur ? cur + ' ' + w : w; if (x.measureText(tryL).width > N * 0.66 && cur) { lines.push(cur); cur = w; } else cur = tryL; });
-    if (cur) lines.push(cur);
+    // 한 줄 소개: 너비를 재어 세 줄 안에. 넘치면 글자를 줄인다
+    var subSize = 70, lines;
+    for (; ; subSize -= 4) {
+      x.font = '500 ' + subSize + 'px' + fam;
+      lines = wrapText(x, it.app.subtitle, N * 0.66);
+      if (subSize <= 40 || (lines.length <= 3 && lines.every(function (l) { return x.measureText(l).width <= N * 0.66; }))) break;
+    }
     var lineH = subSize * 1.34, blockH = nameSize + 64 + lines.length * lineH;
     var y0 = N / 2 - blockH / 2 + nameSize * 0.82;
     engrave(function () {
@@ -1612,6 +1720,21 @@ export function mount(root, DATA, bgEl) {
     it.engraveTex = tex;
     var bm = toon({ map: tex, fade: it.fadeU, recvU: it.recvU });
     it.pivot.children[0].userData.body.material[2] = bm;
+  }
+  // 줄 나누기: 띄어 쓴 말(한국어, 라틴 문자)은 낱말 단위로, 띄어 쓰지 않는 한자와 가나는 글자 단위로 나눈다.
+  // 닫는 문장 부호(、。，등)는 줄 첫머리에 오지 않게 앞 줄에 붙인다
+  var CLOSE = /^[、。，．,.!?！？：；」』）)〕】〉》ー〜]$/;
+  function wrapText(x, text, max) {
+    var toks = text.match(/[\u2E80-\u30FF\u3400-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF]|[^\s\u2E80-\u30FF\u3400-\u9FFF\uF900-\uFAFF\uFF00-\uFFEF]+|\s+/g) || [];
+    var lines = [], cur = '';
+    toks.forEach(function (t) {
+      if (/^\s+$/.test(t)) { if (cur) cur += ' '; return; }
+      var tryL = cur + t;
+      if (cur.trim() && x.measureText(tryL.trim()).width > max && !CLOSE.test(t)) { lines.push(cur.trim()); cur = t; }
+      else cur = tryL;
+    });
+    if (cur.trim()) lines.push(cur.trim());
+    return lines;
   }
   var openByKey = false;
   function select(it) {
@@ -1823,17 +1946,27 @@ export function mount(root, DATA, bgEl) {
   catcher.visible = false;
   requestRender();
   // 대기 중에는 아무것도 저절로 움직이지 않는다(시그니처 2절). 시안의 천 들썩임은 뺐다
-  intro();
-
-  /* ----- 시험용 손잡이(촬영 스크립트가 쓴다) ----- */
+  var started = false;
   var api = {
     destroy: destroy,
-    _t: {
+    ready: ready,
+    // 부르는 쪽이 선반을 보인 뒤에 입장을 시작한다
+    start: function () {
+      if (started || dead) return;
+      started = true;
+      wrap.classList.remove('is-wait');
+      resize(); placeBlobs(); requestRender();
+      intro();
+    }
+  };
+  /* ----- 시험용 손잡이: 촬영용 묶음(__SHELF_TEST__)에만 들어간다 ----- */
+  if (__SHELF_TEST__) {
+    api._t = {
       state: function () { return { current: current ? current.app.slug : null, states: items.map(function (it) { return it.state; }), motions: motions.length, spot: shared.spotAmt.value, lit: spot.it ? spot.it.app.slug : null }; },
       select: function (i) { return select(items[i]); },
       restore: function () { return restore(); }
-    }
-  };
+    };
+  }
   return api;
 
   function destroy() {
@@ -1842,15 +1975,15 @@ export function mount(root, DATA, bgEl) {
     if (raf) cancelAnimationFrame(raf); raf = 0;
     timers.forEach(function (id) { clearTimeout(id); }); timers.clear();
     offs.forEach(function (f) { f(); }); offs = [];
-    ro.disconnect(); io.disconnect();
+    if (ro) ro.disconnect();
+    if (io) io.disconnect();
     motions = [];
     layoutTrash.forEach(function (x) { x.dispose(); }); layoutTrash = [];
     labelTrash.forEach(function (x) { x.dispose(); }); labelTrash = [];
     trash.forEach(function (x) { if (x && x.dispose) x.dispose(); }); trash = [];
-    sun.shadow.map && sun.shadow.map.dispose();
-    stageLight.shadow.map && stageLight.shadow.map.dispose();
-    renderer.dispose();
-    if (renderer.forceContextLoss) renderer.forceContextLoss();
+    if (sun && sun.shadow.map) sun.shadow.map.dispose();
+    if (stageLight && stageLight.shadow.map) stageLight.shadow.map.dispose();
+    try { renderer.dispose(); if (!renderer.getContext().isContextLost()) renderer.forceContextLoss(); } catch (e) { /* 이미 잃은 컨텍스트 */ }
     if (AC) { try { AC.close(); } catch (e) { /* 이미 닫힘 */ } AC = null; }
     if (bgEl) bgEl.innerHTML = '';
     root.innerHTML = '';
