@@ -329,6 +329,32 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIn('href="/ko/"', html)
         self.assertIn("ko notFound", html)
 
+    # 2026-10-02 하위 페이지를 허브 선반 말투로: CSS 와 마크업만 바꾸고 스크립트는 허브(선반)와 첫 화면(언어 이동)에만 둔다
+    def test_scripts_stay_on_hub_and_root(self):
+        site = Site(make_site())
+        for html in (render.render_app(site, "ko", "demo"), render.render_support(site, "ko", "demo"),
+                     render.render_privacy(site, "ko", "demo"), render.render_404(site)):
+            self.assertNotIn("<script", html)
+        self.assertEqual(render.render_root(site).count("<script"), 1)
+
+    def test_sub_pages_use_shelf_marks(self):
+        site = Site(make_site())
+        about = render.render_app(site, "ko", "demo")
+        self.assertIn('<div class="dais"><img class="ic ic-l" src="/assets/demo/icon-360.webp"', about)
+        self.assertIn('<a class="ab-id" href="/ko/demo/"><img class="ic"', about)
+        self.assertIn('<span>Demo</span></a>', about)
+        self.assertIn('<p class="doc-k"><img class="ic"', render.render_privacy(site, "ko", "demo"))
+        self.assertIn('<p class="sup-k"><img class="ic"', render.render_support(site, "ko", "demo"))
+
+    def test_style_has_no_glass_or_blurred_shadow(self):
+        css = render.css(Site(make_site()))
+        self.assertNotIn("backdrop-filter", css)
+        # 흐린 그림자(세 번째 길이가 0 이 아닌 box-shadow)가 없다
+        for rule in re.findall(r"box-shadow:([^;}]*)", css):
+            for layer in re.split(r",(?![^(]*\))", rule):
+                parts = re.findall(r"calc\([^)]*\)\)?|var\(--[\w-]+\)|[-\d.]+px|\b0\b", layer)
+                self.assertTrue(len(parts) < 3 or parts[2] in ("0", "0px"), layer)
+
     def test_sitemap_lists_only_directory_pages(self):
         xml = render.render_sitemap(self.site, ["/", "/404.html", "/ko/"])
         self.assertIn("<loc>https://kvndh.com/ko/</loc>", xml)
