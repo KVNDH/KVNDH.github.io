@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.1.0",
+ "describesVersion": "1.1.1",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -64,7 +64,9 @@
   "999"
  ],
  "sources": [
-  "diceMaster/diceMaster.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.0, 빌드 23, 패키지 의존성 없음)",
+  "diceMaster main dbb3f11 기준. 1.1.1(빌드 24, 제출 60127bd, 중국어 스크린샷 교체 뒤 다시 제출 15015ce, 2026-10-01 출시, HQ 가 ASC 와 App Store 로 확인)이 1.1.0(0354339)과 다른 것은 3D 벽을 보이는 영역 끝에 세움(638ff93, Views/Dice3D/Dice3DArenaView.swift, Views/MainDiceView.swift), 중국어 Plex SC와 TC 사본과 언어별 글꼴(f0fdebe~fcbc8b8, Views/Components/PlexFont.swift, Views/AppSettingsSheet.swift), 밝은 판 아이콘 외곽선(081d54d), 설정 적용 안내 둘째 줄 12개 언어(759eae6, Models/L10n.swift)뿐이다. ProStore, Dice3DShapeFactory(supports3D 2...20), Models, ProUnlockSheet, DiceRulesSheet, HistorySheet, Info.plist, PrivacyInfo.xcprivacy, DiceMaster.storekit, 스토어 문안(whatsNew 밖)은 0354339 와 같아 본문 사실은 그대로 맞다",
+  "그림(2026-10-02): 아이콘 AppIcon-1024.png(081d54d)로 icon-180, icon-360, og 를 다시 뽑고, 간체와 번체만 스토어 그림 docs/store/screenshots/iphone/zh-Hans|zh-Hant/01~03.png(15015ce 때 다시 찍은 합성본)과 확대 캡처 docs/store/shots-raw/iphone/zh-Hans|zh-Hant/01.png 로 바꿨다. 나머지 여섯 언어는 다시 뽑아도 바이트가 같다. 1.1.1 이 뜬 tw, cn 스토어(iTunes lookup)의 아이콘과 첫 세 장이 새 파일과 맞는 것을 대조했다",
+  "diceMaster/diceMaster.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.1, 빌드 24, 패키지 의존성 없음)",
   "diceMaster/DiceMaster.storekit (NonConsumable com.kimdh.dicemaster.pro)",
   "diceMaster/diceMaster/ViewModels/ProStore.swift (freeMaxFaces 10, freeMaxCount 10, freeMaxPresets 2, freeMaxHistory 50, d20판정 예외)",
   "diceMaster/diceMaster/Views/ProUnlockSheet.swift (Pro 기능 목록, 구매 복원 버튼)",
@@ -85,7 +87,7 @@
   "diceMaster/diceMaster/Info.plist",
   "diceMaster/diceMaster/PrivacyInfo.xcprivacy",
   "diceMaster/docs/store/metadata.json (대조용)",
-  "diceMaster/results/CHANGELOG.md (v1.1.0 출시)",
+  "diceMaster/results/CHANGELOG.md (v1.1.1 절, v1.1.0 출시)",
   "support/dicemaster.html"
  ]
 }
