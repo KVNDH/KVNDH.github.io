@@ -97,9 +97,12 @@ class TilePositionTest(unittest.TestCase):
     def test_seven_apps_make_two_rows_of_two(self):
         self.assertEqual(render.tile_positions(7)[3:], ["t-r1", "t-r2", "t-q1", "t-q2"])
 
+    def test_eight_apps_add_a_full_fifth_row(self):
+        self.assertEqual(render.tile_positions(8)[3:], ["t-r1", "t-r2", "t-q1", "t-q2", "t-z1"])
+
     def test_more_apps_than_tiles_stops_the_build(self):
         with self.assertRaises(SystemExit):
-            render.tile_positions(8)
+            render.tile_positions(9)
 
 
 class AppPageTest(unittest.TestCase):

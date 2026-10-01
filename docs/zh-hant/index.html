@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>kvndh App</title>
-<meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime, Readride">
+<meta name="description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime, OnPace, Readride">
 <link rel="canonical" href="https://kvndh.com/zh-hant/">
 <link rel="alternate" hreflang="ko" href="https://kvndh.com/ko/">
 <link rel="alternate" hreflang="en" href="https://kvndh.com/en/">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://kvndh.com/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="kvndh App">
-<meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime, Readride">
+<meta property="og:description" content="BrushWorks, SnapLine, Life Tyde, Tapey, Dice Master, Percentime, OnPace, Readride">
 <meta property="og:url" content="https://kvndh.com/zh-hant/">
 <meta property="og:image" content="https://kvndh.com/assets/og.jpg">
 <meta property="og:locale" content="zh_TW">
@@ -81,6 +81,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 /* 출시된 앱이 일곱이면 넷째 줄도 둘로 나눈다 */
 .t-q1{grid-column:1/7;grid-row:4}
 .t-q2{grid-column:7/13;grid-row:4}
+/* 여덟이면 다섯째 줄 하나가 한 줄을 다 쓴다(2026-10-01 OnPace 출시). 모바일에서도 한 줄 전체 */
+.t-z1{grid-column:1/-1;grid-row:5}
 /* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
 .t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
@@ -242,7 +244,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
 .t-feature{grid-column:1/-1;height:596px}
-.t-r3{grid-column:1/-1}
+.t-r3,.t-z1{grid-column:1/-1}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -439,6 +441,17 @@ body.th-light::before,body.th-dark::before{height:980px}
 
 <article class="tile t-q2 th-light" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37;--fc:#FFFFFF;--ink:#B02C37;--acc:#B02C37">
 <div class="tile-tx">
+<img class="ic" src="/assets/onpace/icon-180.webp" alt="" width="80" height="80">
+<h2><a class="tile-link" href="/zh-hant/onpace/">OnPace</a></h2>
+<p class="sub">每一站的提前與落後</p>
+
+<p class="tile-act"><span class="more" aria-hidden="true">詳細資訊 →</span><a class="as" href="https://apps.apple.com/app/id6816075554" aria-label="在 App Store 上查看 OnPace">App Store ↗</a></p>
+</div>
+<div class="shot shot-store"><img src="/assets/onpace/store/en/01.webp" alt="See how late you are at every checkpoint" loading="lazy"></div>
+</article>
+
+<article class="tile t-z1 th-light" style="--acc:#E63946;--ink:#F46A74;--glow:rgba(230,57,70,.28);--p-acc:#B02C37;--fc:#FFFFFF;--ink:#B02C37;--acc:#B02C37">
+<div class="tile-tx">
 <img class="ic" src="/assets/readride/icon-180.webp" alt="" width="80" height="80">
 <h2><a class="tile-link" href="/zh-hant/readride/">Readride</a></h2>
 <p class="sub">從小說到新聞，一詞一詞地讀</p>
@@ -449,10 +462,10 @@ body.th-light::before,body.th-dark::before{height:980px}
 </article>
 
 </div>
-<div class="quiet" aria-hidden="true"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"><img src="/assets/onpace/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
+<div class="quiet" aria-hidden="true"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="44" height="44" loading="lazy"></div>
 
 </main>
-<footer class="sf"><div class="sf-l"><a class="wm" href="/zh-hant/">kvndh</a></div><div><h2>聯絡</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>隱私權政策</h2><ul><li><a href="/zh-hant/brushworks/privacy/">BrushWorks</a></li><li><a href="/zh-hant/snapline/privacy/">SnapLine</a></li><li><a href="/zh-hant/life-tyde/privacy/">Life Tyde</a></li><li><a href="/zh-hant/tapey/privacy/">Tapey</a></li><li><a href="/zh-hant/dice-master/privacy/">Dice Master</a></li><li><a href="/zh-hant/percentime/privacy/">Percentime</a></li><li><a href="/zh-hant/readride/privacy/">Readride</a></li></ul></div><div class="sf-l"><h2>語言</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
+<footer class="sf"><div class="sf-l"><a class="wm" href="/zh-hant/">kvndh</a></div><div><h2>聯絡</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>隱私權政策</h2><ul><li><a href="/zh-hant/brushworks/privacy/">BrushWorks</a></li><li><a href="/zh-hant/snapline/privacy/">SnapLine</a></li><li><a href="/zh-hant/life-tyde/privacy/">Life Tyde</a></li><li><a href="/zh-hant/tapey/privacy/">Tapey</a></li><li><a href="/zh-hant/dice-master/privacy/">Dice Master</a></li><li><a href="/zh-hant/percentime/privacy/">Percentime</a></li><li><a href="/zh-hant/onpace/privacy/">OnPace</a></li><li><a href="/zh-hant/readride/privacy/">Readride</a></li></ul></div><div class="sf-l"><h2>語言</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant" aria-current="true">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </div>
 </body>
 </html>

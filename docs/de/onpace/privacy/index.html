@@ -81,6 +81,8 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 /* 출시된 앱이 일곱이면 넷째 줄도 둘로 나눈다 */
 .t-q1{grid-column:1/7;grid-row:4}
 .t-q2{grid-column:7/13;grid-row:4}
+/* 여덟이면 다섯째 줄 하나가 한 줄을 다 쓴다(2026-10-01 OnPace 출시). 모바일에서도 한 줄 전체 */
+.t-z1{grid-column:1/-1;grid-row:5}
 /* 출시된 앱이 넷뿐이면 넷째 타일이 셋째 줄을 다 쓴다(2026-09-22 BrushWorks 심사 대기). 모바일에서도 한 줄 전체 */
 .t-p4:last-child{grid-column:1/-1}
 .tile-tx{display:flex;flex-direction:column;height:100%;max-width:60%;padding:28px}
@@ -242,7 +244,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--tx);outline-offset
 .tile{grid-column:auto;grid-row:auto;height:292px;border-radius:24px}
 .tile-link::after{border-radius:24px}
 .t-feature{grid-column:1/-1;height:596px}
-.t-r3{grid-column:1/-1}
+.t-r3,.t-z1{grid-column:1/-1}
 .tile-tx,.t-feature .tile-tx{height:auto;max-width:none;padding:18px}
 .t-feature .tile-tx{padding:26px}
 .tile .ic{width:42px;height:42px;margin-bottom:12px}
@@ -370,7 +372,7 @@ body.th-light::before,body.th-dark::before{height:980px}
 <nav class="ab" aria-label="OnPace">
 <a class="ab-id" href="/de/onpace/"><img class="ic" src="/assets/onpace/icon-180.webp" alt="" width="30" height="30">OnPace</a>
 <ul class="tabs"><li><a href="/de/onpace/">Überblick</a></li><li><a href="/de/onpace/support/">Support</a></li><li><a href="/de/onpace/privacy/" aria-current="page">Datenschutzerklärung</a></li></ul>
-
+<a class="btn btn-s" href="https://apps.apple.com/app/id6816075554">Laden im App Store</a>
 </nav>
 
 <main id="main">

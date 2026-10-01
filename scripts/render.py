@@ -17,6 +17,8 @@ TILE_POSITIONS = ["t-feature", "t-p2", "t-p3", "t-p4", "t-p5"]
 TILE_POSITIONS_6 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-r3"]
 # 일곱이면 셋째와 넷째 줄에 둘씩(2026-09-26 OnPace 심사 제출로 미리 둔다. 셋씩 두면 타일이 좁아 글과 그림이 겹친다)
 TILE_POSITIONS_7 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-q1", "t-q2"]
+# 여덟이면 다섯째 줄에 한 줄을 다 쓰는 타일 하나를 더한다(2026-10-01 OnPace 출시)
+TILE_POSITIONS_8 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-q1", "t-q2", "t-z1"]
 GLOBE = (
     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>'
     '<path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg>'
@@ -276,7 +278,7 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
 
 def tile_positions(count: int) -> list[str]:
     """허브 타일 자리. zip 은 넘치는 앱을 조용히 버리므로, 자리보다 앱이 많으면 빌드를 멈춘다."""
-    positions = {6: TILE_POSITIONS_6, 7: TILE_POSITIONS_7}.get(count, TILE_POSITIONS)
+    positions = {6: TILE_POSITIONS_6, 7: TILE_POSITIONS_7, 8: TILE_POSITIONS_8}.get(count, TILE_POSITIONS)
     if count > len(positions):
         raise SystemExit(f"허브 타일 자리가 {len(positions)}개인데 출시된 앱이 {count}개다. "
                          "render.py 의 타일 자리와 style.css 를 늘린다")
