@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Routen aus der Karte oder aus einem Weg",
    "body": [
-    "Wählen Sie Start und Ziel, und Apple Karten findet eine Route zu Fuß oder mit dem Auto; auf längeren Abschnitten werden Kontrollpunkte von selbst gesetzt. Eine Route, die keine Karte kennt, etwa ein Firmenshuttle, legen Sie an, indem Sie sie einmal zurücklegen. Orte, an denen Sie angehalten haben oder ein- und ausgestiegen sind, bleiben als Vorschläge für Kontrollpunkte. Automatisch gesetzte Kontrollpunkte tragen den Namen einer nahen Station oder Straße. Abschnitte mit Bus oder U-Bahn legen Sie eigens fest."
+    "Wählen Sie Start und Ziel, und Apple Karten findet eine Route zu Fuß oder mit dem Auto; auf längeren Abschnitten werden Kontrollpunkte von selbst gesetzt. Eine Route, die keine Karte kennt, etwa ein Firmenshuttle, legen Sie an, indem Sie sie einmal zurücklegen. Orte, an denen Sie angehalten haben oder ein- und ausgestiegen sind, bleiben als Vorschläge für Kontrollpunkte. Kontrollpunkte, die Sie nicht selbst benennen, tragen den Namen einer nahen Station oder Straße. Abschnitte mit Bus oder U-Bahn legen Sie eigens fest."
    ],
    "bullets": [
     "Routen zu Fuß und mit dem Auto",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Ohne das iPhone herauszuholen",
    "body": [
-    "Ist es Zeit zum Aufbruch, meldet sich die Abfahrtserinnerung, die Sie für die Route eingeschaltet haben; ein Tippen darauf startet diese Route. Unterwegs zeigen die Karte auf dem Sperrbildschirm und die Dynamic Island den Abstand und den nächsten Kontrollpunkt. Verlassen Sie das Zeitfenster, kommt einmal ein Hinweis. Öffnen Sie die App oder starten Sie über das Kontrollzentrum oder Siri, wählt OnPace die Route zur Tageszeit; zwei Minuten nach der Ankunft endet der Weg von selbst."
+    "Ist es Zeit zum Aufbruch, meldet sich die Abfahrtserinnerung, die Sie für die Route eingeschaltet haben; ein Tippen darauf startet diese Route. Unterwegs zeigen die Karte auf dem Sperrbildschirm und die Dynamic Island den Abstand und den nächsten Kontrollpunkt. Verlassen Sie das Zeitfenster, kommt einmal ein Hinweis. Öffnen Sie die App oder starten Sie über das Kontrollzentrum oder Siri, ohne eine Route zu nennen, wählt OnPace die Route zur Tageszeit; zwei Minuten nach der Ankunft endet der Weg von selbst."
    ],
    "bullets": [
     "Abfahrtserinnerung für jede Route",
@@ -114,7 +114,7 @@
   {
    "q": "Die gewählte Route wechselt von selbst",
    "a": [
-    "Bei zwei oder mehr Routen wählt OnPace beim Öffnen der App und beim Start über das Kontrollzentrum oder Siri die Route, deren nächste Abfahrt am nächsten liegt. Eine Abfahrt, die weniger als eine Stunde zurückliegt, zählt noch mit. Eine Route, die Sie in der letzten Stunde selbst gewählt haben, bleibt, und während eines Wegs wechselt nichts."
+    "Bei zwei oder mehr Routen wählt OnPace beim Öffnen der App und beim Start über das Kontrollzentrum oder Siri ohne Angabe einer Route die Route, deren nächste Abfahrt am nächsten liegt. Nennen Sie Siri eine Route, startet diese. Eine Abfahrt, die weniger als eine Stunde zurückliegt, zählt noch mit. Eine Route, die Sie in der letzten Stunde selbst gewählt haben, bleibt. Öffnen Sie die App während eines Wegs, wechselt nichts, und der laufende Weg behält seine Route bis zum Ende."
    ]
   },
   {
@@ -145,7 +145,7 @@
  "privacy": {
   "title": "OnPace Datenschutzerklärung",
   "effectiveDate": "2026-10-02",
-  "summary": "OnPace erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Routen und Wege liegen auf Ihrem Gerät, und Ortssuche, Routenplanung, die Namen für Kontrollpunkte aus der Umgebung und den Kauf von Pro übernimmt Apple.",
+  "summary": "OnPace erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Routen und Wege liegen auf Ihrem Gerät, und Ortssuche, Routenplanung, die Suche nach Orten in der Nähe für Namen von Kontrollpunkten und den Kauf von Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App OnPace (die App) wie folgt."
   ],
@@ -187,7 +187,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Es wird keine Verarbeitung ausgelagert. Den Kauf von OnPace Pro wickelt Apple im App Store ab, Zahlungsdaten folgen der Datenschutzerklärung von Apple. Ortssuche, Routen zu Fuß und mit dem Auto und die Karte übernimmt Apple Karten, ebenfalls nach der Datenschutzerklärung von Apple. Benennt die App einen Kontrollpunkt, den sie selbst gesetzt hat, sucht sie anhand seines Orts in Apple Karten nach Orten und der Adresse in der Nähe. Der Entwickler erhält weder Zahlungsmittel noch Daten Ihres Apple Accounts noch das, wonach Sie suchen."
+     "Es wird keine Verarbeitung ausgelagert. Den Kauf von OnPace Pro wickelt Apple im App Store ab, Zahlungsdaten folgen der Datenschutzerklärung von Apple. Ortssuche, Routen zu Fuß und mit dem Auto und die Karte übernimmt Apple Karten, ebenfalls nach der Datenschutzerklärung von Apple. Kontrollpunkte, die Sie nicht selbst benannt haben und die nur eine Nummer wie Checkpoint 3 tragen, benennt die App nach einer nahen Station oder Straße; dazu sucht sie anhand ihres Orts in Apple Karten nach Orten und der Adresse in der Nähe. Das gilt für Kontrollpunkte, die die App gesetzt hat, die Sie ohne Namen auf der Karte gesetzt oder mit Add current location hinzugefügt haben und die aus einem Weg entstanden sind. Beim Öffnen der App sucht sie auch für solche Kontrollpunkte auf früher angelegten Routen. Der Entwickler erhält weder Zahlungsmittel noch Daten Ihres Apple Accounts noch das, wonach Sie suchen."
     ],
     "bullets": []
    },
@@ -256,7 +256,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
-     "2026-10-02: Für Version 1.0.1 wurden Abfahrtserinnerung, Tage und der Zeitpunkt, zu dem Sie zuletzt selbst eine Route gewählt haben, unter „Verarbeitete Daten“ ergänzt, die Suche nach Namen für Kontrollpunkte in Apple Karten unter „Auftragsverarbeitung“ und Abfahrtserinnerungen unter „Maßnahmen zur Sicherheit“. Das vorherige Datum des Inkrafttretens war der 2026-09-26."
+     "2026-10-02: Für Version 1.0.1 wurden Abfahrtserinnerung, Tage und der Zeitpunkt, zu dem Sie zuletzt selbst eine Route gewählt haben, unter „Verarbeitete Daten“ ergänzt, die Suche nach Namen in Apple Karten für Kontrollpunkte ohne eigenen Namen unter „Auftragsverarbeitung“ und Abfahrtserinnerungen unter „Maßnahmen zur Sicherheit“. Das vorherige Datum des Inkrafttretens war der 2026-09-26."
     ],
     "bullets": []
    }

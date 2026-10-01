@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Trajetos pelo mapa ou por uma viagem",
    "body": [
-    "Escolha a partida e o destino, e o Mapas da Apple encontra uma rota a pé ou de carro, com checkpoints distribuídos nos trechos mais longos. Um caminho que nenhum mapa conhece, como o fretado da empresa, se cria fazendo o trajeto uma vez. Os lugares onde você parou e onde embarcou ou desembarcou ficam como candidatos a checkpoint. Checkpoints automáticos recebem o nome de uma estação ou rua próxima. Os trechos de ônibus ou metrô são marcados à parte."
+    "Escolha a partida e o destino, e o Mapas da Apple encontra uma rota a pé ou de carro, com checkpoints distribuídos nos trechos mais longos. Um caminho que nenhum mapa conhece, como o fretado da empresa, se cria fazendo o trajeto uma vez. Os lugares onde você parou e onde embarcou ou desembarcou ficam como candidatos a checkpoint. Checkpoints que você não nomeia recebem o nome de uma estação ou rua próxima. Os trechos de ônibus ou metrô são marcados à parte."
    ],
    "bullets": [
     "Rotas a pé e de carro",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Sem tirar o iPhone do bolso",
    "body": [
-    "Na hora de sair, toca o lembrete de saída que você ativou para o trajeto, e um toque nele inicia esse trajeto. Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. Se você sair da janela de horário, recebe um alerta. Ao abrir o app ou começar pela Central de Controle ou pela Siri, o OnPace escolhe o trajeto para a hora do dia; o trajeto para sozinho dois minutos depois da chegada."
+    "Na hora de sair, toca o lembrete de saída que você ativou para o trajeto, e um toque nele inicia esse trajeto. Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. Se você sair da janela de horário, recebe um alerta. Ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto para a hora do dia; o trajeto para sozinho dois minutos depois da chegada."
    ],
    "bullets": [
     "Lembrete de saída para cada trajeto",
@@ -114,7 +114,7 @@
   {
    "q": "O trajeto escolhido muda sozinho",
    "a": [
-    "Com dois trajetos ou mais, ao abrir o app ou começar pela Central de Controle ou pela Siri, o OnPace escolhe o trajeto cuja próxima saída está mais perto. Uma saída que passou há menos de uma hora ainda conta. Um trajeto que você mesmo escolheu na última hora fica como está, e nada muda durante um trajeto."
+    "Com dois trajetos ou mais, ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto cuja próxima saída está mais perto. Se você disser à Siri o nome de um trajeto, é esse que começa. Uma saída que passou há menos de uma hora ainda conta. Um trajeto que você mesmo escolheu na última hora fica como está. Abrir o app no meio do caminho não muda nada, e o trajeto em andamento segue o mesmo até o fim."
    ]
   },
   {
@@ -145,7 +145,7 @@
  "privacy": {
   "title": "Política de Privacidade do OnPace",
   "effectiveDate": "2026-10-02",
-  "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas, os nomes dos checkpoints conforme o que há por perto e a compra do Pro ficam a cargo da Apple.",
+  "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas, a busca de lugares próximos para nomear os checkpoints e a compra do Pro ficam a cargo da Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app OnPace (o app) conforme descrito a seguir."
   ],
@@ -187,7 +187,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. Quando o app dá nome a um checkpoint que ele mesmo colocou, também procura no Mapas da Apple os lugares e o endereço próximos da localização desse checkpoint. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
+     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. Checkpoints que você não nomeou, os que têm só um número como Checkpoint 3, recebem do app o nome de uma estação ou rua próxima, e para isso ele procura no Mapas da Apple os lugares e o endereço próximos da localização desse checkpoint. Isso vale para os checkpoints que o app distribuiu, os que você colocou no mapa sem nome, os adicionados com Add current location e os criados a partir de uma viagem. Ao abrir o app, ele também faz essa busca para checkpoints desse tipo que ficaram em trajetos criados antes. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
     ],
     "bullets": []
    },
@@ -256,7 +256,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
-     "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca de nomes de checkpoints no Mapas da Apple foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
+     "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca no Mapas da Apple de nomes para checkpoints sem nome próprio foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
     ],
     "bullets": []
    }

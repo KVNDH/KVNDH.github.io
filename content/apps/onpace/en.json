@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Routes from the map, or from one trip",
    "body": [
-    "Choose a departure and a destination and Apple Maps finds a walking or driving route, with checkpoints filled in along longer stretches and named after a nearby station or street. For a route no map can find, like a company shuttle, take it once and build the route from the trip. The places you stopped and where you got on and off become checkpoint candidates. Legs you ride by bus or subway are set apart."
+    "Choose a departure and a destination and Apple Maps finds a walking or driving route, with checkpoints filled in along longer stretches. For a route no map can find, like a company shuttle, take it once and build the route from the trip. The places you stopped and where you got on and off become checkpoint candidates. A checkpoint you don't name yourself is named after a nearby station or street. Legs you ride by bus or subway are set apart."
    ],
    "bullets": [
     "Walking and driving routes",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Without taking out your phone",
    "body": [
-    "When it is time to leave, the departure reminder you turned on for the route goes off, and tapping it starts that route. During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. Drift out of the window and you get one alert. When you open the app or start from Control Center or Siri, OnPace picks the route for the time of day, and the trip stops on its own two minutes after you arrive."
+    "When it is time to leave, the departure reminder you turned on for the route goes off, and tapping it starts that route. During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. Drift out of the window and you get one alert. When you open the app, or start from Control Center or Siri without naming a route, OnPace picks the route for the time of day, and the trip stops on its own two minutes after you arrive."
    ],
    "bullets": [
     "A departure reminder for each route",
@@ -114,7 +114,7 @@
   {
    "q": "The chosen route changes on its own",
    "a": [
-    "With two or more routes, OnPace picks the one whose next departure is closest when you open the app or start from Control Center or Siri. A departure that passed less than an hour ago still counts. A route you chose yourself in the last hour stays as it is, and nothing changes during a trip."
+    "With two or more routes, OnPace picks the one whose next departure is closest when you open the app, or when you start from Control Center or Siri without naming a route. Name a route to Siri and that route starts. A departure that passed less than an hour ago still counts. A route you chose yourself in the last hour stays as it is. Opening the app during a trip changes nothing, and the trip keeps its route until it ends."
    ]
   },
   {
@@ -145,7 +145,7 @@
  "privacy": {
   "title": "OnPace Privacy Policy",
   "effectiveDate": "2026-10-02",
-  "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions, naming checkpoints after nearby places and the Pro purchase.",
+  "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions, looking up nearby places to name checkpoints and the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the OnPace app (the app) as described below."
   ],
@@ -187,7 +187,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. The OnPace Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. Place search, walking and driving directions and the map are handled by Apple Maps and follow Apple's privacy policy. When the app names a checkpoint it placed, it also looks up nearby places and the address for that checkpoint's location in Apple Maps. The developer receives no payment method, no Apple Account information and nothing you search for."
+     "No processing is outsourced. The OnPace Pro purchase is handled by Apple on the App Store, and payment information follows Apple's privacy policy. Place search, walking and driving directions and the map are handled by Apple Maps and follow Apple's privacy policy. When a checkpoint has no name of your own, only a number such as Checkpoint 3, the app names it after a nearby station or street, and to do that it looks up nearby places and the address for that checkpoint's location in Apple Maps. This covers checkpoints the app filled in, ones you placed on the map without a name, ones added with Add current location and ones built from a trip. When the app opens, it does the same for such checkpoints left on routes made earlier. The developer receives no payment method, no Apple Account information and nothing you search for."
     ],
     "bullets": []
    },
@@ -256,7 +256,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
-     "2026-10-02: For version 1.0.1, the departure reminder, days and the time you last picked a route were added to Personal information processed, looking up checkpoint names in Apple Maps was added to Outsourcing of processing, and departure reminders were added to Security measures. The previous effective date was 2026-09-26."
+     "2026-10-02: For version 1.0.1, the departure reminder, days and the time you last picked a route were added to Personal information processed, looking up names in Apple Maps for checkpoints you have not named was added to Outsourcing of processing, and departure reminders were added to Security measures. The previous effective date was 2026-09-26."
     ],
     "bullets": []
    }

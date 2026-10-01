@@ -8,7 +8,7 @@
  ],
  "network": [
   "Apple 지도: 장소 검색, 도보와 자동차 길 찾기, 지도 타일 (MapKit, App/PlaceSearch.swift, App/RouteFinder.swift)",
-  "Apple 지도: 1.0.1 부터 앱이 놓은 지점(지점 3 꼴 이름)에 붙일 근처 이름 찾기. 그 지점 좌표로 주변 장소(MKLocalPointsOfInterestRequest 60 m), 역과 육교 낱말 검색(MKLocalSearch), 주소(MKReverseGeocodingRequest 또는 CLGeocoder)를 묻는다. 지점 하나에 많아야 네 번 (App/PlaceNaming.swift, App/CheckpointNamer.swift, 0a60535)",
+  "Apple 지도: 1.0.1 부터 이름이 '지점 3' 꼴(Routine.isAutoName)인 지점에 붙일 근처 이름 찾기. 누가 놓았는지 가리지 않는다: 앱이 채운 지점, 지도에서 이름을 비워 둔 지점(RouteBuilder.swift:816 Routine.autoName), 현재 위치로 추가한 지점(Views.swift addHere, Routine.addPoint, 좌표는 그때 기기 위치), 다녀온 길로 만든 지점(Refine.swift:154). 길이 바뀔 때(Routine.swift:589 routines didSet)와 앱을 켤 때(OnPacePoCApp.swift:42) 모든 길을 돈다. 그 지점 좌표로 주변 장소(MKLocalPointsOfInterestRequest 60 m), 역과 육교 낱말 검색(MKLocalSearch), 주소(MKReverseGeocodingRequest 또는 CLGeocoder)를 묻는다. 지점 하나에 많아야 네 번 (App/PlaceNaming.swift, App/CheckpointNamer.swift, 0a60535)",
   "App Store 결제와 구매 복원 (StoreKit). 서드파티 SDK 없음, 개발자 서버 없음, URLSession 없음, iCloud 와 CloudKit 안 씀"
  ],
  "permissions": [
@@ -46,9 +46,9 @@
   "휴지통: 지운 길 3개까지, 복구도 무료 한도를 따른다",
   "제어 센터 OnPace 시작, Siri 단축어 넷(OnPace 시작, 길 이름으로 시작, 얼마나 늦었어, 정지)",
   "출발 알림(1.0.1, 무료): 길마다 끔, 출발 시각에, 5, 10, 15분 전(Routine.reminderChoices). 매일 또는 정한 요일에 반복, 누르면 그 길로 시작. 길이 바뀔 때와 앱을 켤 때 다시 건다",
-  "시간대에 맞는 길 자동 선택(1.0.1, 무료): 길이 둘 이상일 때 앱을 열 때와 길을 말하지 않고 시작할 때(제어 센터, OnPace 시작) 다음 출발이 가장 가까운 길. 한 시간 안에 지난 출발도 친다. 한 시간 안에 직접 고른 길은 두고 실행 중에는 부르지 않는다 (RoutineStore.pickForNow, Routine.nextDeparture)",
+  "시간대에 맞는 길 자동 선택(1.0.1, 무료): 길이 둘 이상일 때 앱을 열 때와 길을 말하지 않고 시작할 때(제어 센터, OnPace 시작) 다음 출발이 가장 가까운 길. 길 이름을 말한 Siri(StartRouteIntent)와 출발 알림은 그 길로 시작하고 자동 선택은 하지 않는다(RunController.swift:560). 한 시간 안에 지난 출발도 친다. 한 시간 안에 직접 고른 길은 둔다. 앱을 열 때는 실행 중이면 부르지 않는다(Views.swift:120, 148). 제어 센터와 OnPace 시작은 실행 중인지 보기 전에 고르므로 실행 중에 누르면 고른 길이 바뀔 수 있다. 실행은 시작할 때 잡은 runRoutine 으로 이어진다(RunController.swift:220~224). 사이트에는 '실행 중에 앱을 열 때는 바꾸지 않고 실행 중인 길은 끝날 때까지 그대로'만 쓴다. 앱 쪽 고칠 거리는 OnPace 세션에 넘김 (RoutineStore.pickForNow, Routine.nextDeparture)",
   "다음 지점까지 [도보(차로 찾은 길이면 차) | 버스 | 지하철] 선택 하나(1.0.1). 엔진은 버스와 지하철을 똑같이 탑승 구간으로 다룬다(탈 때 편차를 내릴 때까지 이월). 예전 transit 은 지하철로 읽는다 (App/Routine.swift LegMode, App/Views.swift LegModePicker)",
-  "지점 이름(1.0.1): 앱이 놓은 지점만 바꾼다. 60 m 안의 장소, 역, 육교(역과 육교 30 m 가산), 400 m 안의 역이면 ○○역 근처, 아니면 도로명이나 동 이름. 사용자가 지은 이름은 그대로 (App/PlaceNaming.swift)",
+  "지점 이름(1.0.1): 이름이 '지점 3' 꼴인 지점만 바꾼다(앱이 채운 것, 이름 없이 찍은 것, 현재 위치로 추가한 것, 다녀온 길로 만든 것, 예전 길에 남은 것). 60 m 안의 장소, 역, 육교(역과 육교 30 m 가산), 400 m 안의 역이면 ○○역 근처, 아니면 도로명이나 동 이름. 사용자가 지은 이름은 그대로 (App/PlaceNaming.swift)",
   "실행 중 표시(탑승, 하차 등)를 누른 자리에 지도 핀, 기록만 하는 실행에도 지나온 길 지도(1.0.1). 가 보면서 만들기는 지도 판에서 바로 기록을 시작하고 기록 중 화면에 흐른 시간과 그려지는 트랙(e559b07, 84ccee3)"
  ],
  "uiNames": {

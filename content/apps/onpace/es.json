@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Rutas desde el mapa o desde un trayecto",
    "body": [
-    "Elige una salida y un destino, y Mapas de Apple encuentra una ruta a pie o en coche, con puntos de control repartidos por los tramos largos. Una ruta que ningún mapa conoce, como el autobús de la empresa, se crea haciéndola una vez. Los sitios donde te paraste y donde subiste o bajaste quedan como candidatos a punto de control. Los puntos de control automáticos llevan el nombre de una estación o calle cercana. Los tramos en autobús o metro se marcan aparte."
+    "Elige una salida y un destino, y Mapas de Apple encuentra una ruta a pie o en coche, con puntos de control repartidos por los tramos largos. Una ruta que ningún mapa conoce, como el autobús de la empresa, se crea haciéndola una vez. Los sitios donde te paraste y donde subiste o bajaste quedan como candidatos a punto de control. Los puntos de control a los que no pones nombre llevan el de una estación o calle cercana. Los tramos en autobús o metro se marcan aparte."
    ],
    "bullets": [
     "Rutas a pie y en coche",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Sin sacar el iPhone",
    "body": [
-    "Cuando llega la hora de salir, suena el recordatorio de salida que activaste para la ruta, y al tocarlo empieza esa ruta. Durante el trayecto, la tarjeta de la pantalla bloqueada y la Dynamic Island muestran la diferencia y el siguiente punto de control. Si te sales del margen, recibes un aviso. Al abrir la app o empezar desde el Centro de control o con Siri, OnPace elige la ruta según la hora del día; el trayecto se detiene solo dos minutos después de llegar."
+    "Cuando llega la hora de salir, suena el recordatorio de salida que activaste para la ruta, y al tocarlo empieza esa ruta. Durante el trayecto, la tarjeta de la pantalla bloqueada y la Dynamic Island muestran la diferencia y el siguiente punto de control. Si te sales del margen, recibes un aviso. Al abrir la app o empezar desde el Centro de control o con Siri sin indicar una ruta, OnPace elige la ruta según la hora del día; el trayecto se detiene solo dos minutos después de llegar."
    ],
    "bullets": [
     "Recordatorio de salida para cada ruta",
@@ -114,7 +114,7 @@
   {
    "q": "La ruta elegida cambia sola",
    "a": [
-    "Con dos rutas o más, al abrir la app o empezar desde el Centro de control o con Siri, OnPace elige la ruta cuya próxima salida está más cerca. Una salida que pasó hace menos de una hora también cuenta. Una ruta que elegiste tú en la última hora se queda como está, y durante un trayecto no cambia nada."
+    "Con dos rutas o más, al abrir la app o empezar desde el Centro de control o con Siri sin indicar una ruta, OnPace elige la ruta cuya próxima salida está más cerca. Si le dices a Siri el nombre de una ruta, empieza esa ruta. Una salida que pasó hace menos de una hora también cuenta. Una ruta que elegiste tú en la última hora se queda como está. Abrir la app durante un trayecto no cambia nada, y el trayecto en curso mantiene su ruta hasta el final."
    ]
   },
   {
@@ -145,7 +145,7 @@
  "privacy": {
   "title": "Política de privacidad de OnPace",
   "effectiveDate": "2026-10-02",
-  "summary": "OnPace no recoge datos personales. No hay cuenta ni inicio de sesión. Tus rutas y trayectos se guardan en tu dispositivo, y la búsqueda de lugares, las indicaciones, los nombres de los puntos de control según lo que hay cerca y la compra de Pro los gestiona Apple.",
+  "summary": "OnPace no recoge datos personales. No hay cuenta ni inicio de sesión. Tus rutas y trayectos se guardan en tu dispositivo, y la búsqueda de lugares, las indicaciones, la búsqueda de lugares cercanos para nombrar los puntos de control y la compra de Pro los gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app OnPace (la app) del modo que se indica a continuación."
   ],
@@ -187,7 +187,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. Cuando la app pone nombre a un punto de control que colocó ella, también busca en Mapas de Apple los lugares y la dirección cercanos a la ubicación de ese punto. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
+     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. A los puntos de control a los que no has puesto nombre, los que solo llevan un número como Checkpoint 3, la app les pone el de una estación o calle cercana, y para ello busca en Mapas de Apple los lugares y la dirección cercanos a la ubicación de ese punto. Esto incluye los puntos que repartió la app, los que colocaste en el mapa sin nombre, los añadidos con Add current location y los creados a partir de un trayecto. Al abrir la app, también hace esa búsqueda para los puntos de este tipo que quedan en rutas creadas antes. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
     ],
     "bullets": []
    },
@@ -256,7 +256,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
-     "2026-10-02: para la versión 1.0.1 se añadieron el recordatorio de salida, los días y el momento en que elegiste tú una ruta por última vez a «Información que se trata», la búsqueda de nombres de puntos de control en Mapas de Apple a «Encargo del tratamiento» y los recordatorios de salida a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-26."
+     "2026-10-02: para la versión 1.0.1 se añadieron el recordatorio de salida, los días y el momento en que elegiste tú una ruta por última vez a «Información que se trata», la búsqueda en Mapas de Apple de nombres para los puntos de control sin nombre propio a «Encargo del tratamiento» y los recordatorios de salida a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-26."
     ],
     "bullets": []
    }
