@@ -61,24 +61,6 @@
  ],
  "apps": [
   {
-   "slug": "brushworks",
-   "appStoreId": "6810951573",
-   "accent": "#A05B42",
-   "accentText": "#E39C80",
-   "glow": "rgba(160,91,66,.5)",
-   "paperAccent": "#8A4A34",
-   "button": "#A05B42",
-   "buttonText": "#FFFFFF"
-  },
-  {
-   "slug": "snapline",
-   "appStoreId": "6809834907",
-   "accent": "#F9F9F9",
-   "accentText": "#F9F9F9",
-   "glow": "rgba(249,249,249,.16)",
-   "paperAccent": "#3F3F41"
-  },
-  {
    "slug": "life-tyde",
    "appStoreId": "6773198369",
    "accent": "#E33C48",
@@ -103,8 +85,42 @@
    "paperAccent": "#B02C37"
   },
   {
+   "slug": "snapline",
+   "appStoreId": "6809834907",
+   "accent": "#F9F9F9",
+   "accentText": "#F9F9F9",
+   "glow": "rgba(249,249,249,.16)",
+   "paperAccent": "#3F3F41"
+  },
+  {
    "slug": "percentime",
    "appStoreId": "6814066451",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37"
+  },
+  {
+   "slug": "brushworks",
+   "appStoreId": "6810951573",
+   "accent": "#A05B42",
+   "accentText": "#E39C80",
+   "glow": "rgba(160,91,66,.5)",
+   "paperAccent": "#8A4A34",
+   "button": "#A05B42",
+   "buttonText": "#FFFFFF"
+  },
+  {
+   "slug": "readride",
+   "appStoreId": "6816576585",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37"
+  },
+  {
+   "slug": "onpace",
+   "appStoreId": "6816075554",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -118,22 +134,6 @@
    "glow": "rgba(194,154,60,.28)",
    "paperAccent": "#5f4331",
    "unreleased": true
-  },
-  {
-   "slug": "onpace",
-   "appStoreId": "6816075554",
-   "accent": "#E63946",
-   "accentText": "#F46A74",
-   "glow": "rgba(230,57,70,.28)",
-   "paperAccent": "#B02C37"
-  },
-  {
-   "slug": "readride",
-   "appStoreId": "6816576585",
-   "accent": "#E63946",
-   "accentText": "#F46A74",
-   "glow": "rgba(230,57,70,.28)",
-   "paperAccent": "#B02C37"
   }
  ]
 }
