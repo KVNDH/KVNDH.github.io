@@ -1,9 +1,9 @@
 {
  "name": "Readride",
- "subtitle": "Novelas y noticias, palabra a palabra",
- "summary": "Readride muestra lo que lees de una o dos palabras a la vez en un mismo punto, para que tus ojos no tengan que moverse. Novelas, noticias, ensayos, PDF y ePub, primero limpios y luego leídos hasta el final.",
+ "subtitle": "Novelas y noticias, pocas palabras a la vez",
+ "summary": "Readride muestra lo que lees unas pocas palabras a la vez en un mismo punto, para que tus ojos no tengan que moverse. Novelas, noticias, ensayos, PDF y ePub, primero limpios y luego leídos hasta el final.",
  "hero": {
-  "hook": "Readride muestra lo que lees de una o dos palabras a la vez en un mismo punto, para que tus ojos no tengan que moverse. Novelas, noticias, ensayos, PDF y ePub, primero limpios y luego leídos hasta el final.",
+  "hook": "Readride muestra lo que lees unas pocas palabras a la vez en un mismo punto, para que tus ojos no tengan que moverse. Novelas, noticias, ensayos, PDF y ePub, primero limpios y luego leídos hasta el final.",
   "shotAlt": "La pantalla Get Ready de Readride. El encabezado y el pie de página quitados de un PDF aparecen como interruptores activados, con las páginas de las que salieron, y una página sin texto figura en Check."
  },
  "sections": [
@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Primero ves lo que se quitó",
    "body": [
-    "Cuando añades algo para leer, Readride lo ordena primero. Quita los encabezados y los números de página de los PDF, los anuncios y las listas de artículos relacionados de las noticias web, y une las líneas cortadas a mitad de frase. Get Ready muestra todo lo que quitó, y puedes devolver cualquier parte."
+    "Cuando añades algo para leer, Readride lo ordena primero. Quita los encabezados y los números de página de los PDF, los anuncios y las listas de artículos relacionados de las noticias web, y une las líneas cortadas a mitad de frase. Preparación muestra todo lo que quitó, y puedes devolver cualquier parte. Readride también elige el idioma de lectura a partir del texto, y puedes cambiarlo en Preparación."
    ],
    "bullets": [
     "Encabezados, pies y números de página quitados",
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Lee en un solo punto. Al pausar, se abre el texto de alrededor.",
    "body": [
-    "Las palabras aparecen de una en una o de dos en dos en el mismo punto, en el centro de la pantalla, con pausas breves en las comas y al final de las frases. Al pausar, se abre el texto de antes y de después de donde ibas. Toca cualquier palabra ahí para seguir desde esa palabra."
+    "Las palabras aparecen en grupos pequeños en el mismo punto, en el centro de la pantalla, con pausas breves en las comas y al final de las frases. La forma de agruparlas se ajusta a cada uno de los 44 idiomas, así que el japonés, el chino y el tailandés se dividen en palabras, y el árabe, el hebreo y el urdu se muestran de derecha a izquierda. Al pausar, se abre el texto de antes y de después de donde ibas. Toca cualquier palabra ahí para seguir desde esa palabra."
    ],
    "bullets": [
-    "Una o dos palabras a la vez, en un mismo punto",
+    "Unas pocas palabras a la vez, en un mismo punto",
     "El texto de alrededor al pausar",
     "Seguir desde la palabra que tocas"
    ],
@@ -49,7 +49,7 @@
    "layout": "card",
    "title": "Artículos de Safari y tus propios archivos",
    "body": [
-    "Comparte un artículo de Safari con Readride y extraerá el texto del artículo para abrirlo en Get Ready. También sirven archivos de texto (txt y md), PDF, ePub sin DRM y texto pegado."
+    "Comparte un artículo de Safari con Readride y extraerá el texto del artículo para abrirlo en Preparación. También sirven archivos de texto (txt y md), PDF, ePub sin DRM y texto pegado."
    ],
    "bullets": [
     "Artículos compartidos desde Safari",
@@ -61,14 +61,14 @@
    "layout": "card",
    "title": "Dónde ibas y a qué ritmo",
    "body": [
-    "Readride guarda el punto donde pausaste o cerraste como una posición de carácter en el texto ordenado, así que no se pierde aunque cambies el tamaño de letra. Elige una velocidad de 100 a 600 palabras por minuto, y una de cinco duraciones de pausa para las comas y los finales de frase."
+    "Readride guarda el punto donde pausaste o cerraste como una posición de carácter en el texto ordenado, así que no se pierde aunque cambies el tamaño de letra. Cada idioma guarda su propia velocidad, y en español eliges de 100 a 600 palabras por minuto. Para las comas y los finales de frase eliges una de cinco duraciones de pausa."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
      "Tu punto, guardado al carácter",
-     "De 100 a 600 palabras por minuto",
+     "Una velocidad para cada idioma",
      "Cinco duraciones de pausa",
      "Tamaño de letra ajustable"
     ]
@@ -81,8 +81,8 @@
   "items": [
    "Sin límite de documentos (3 para empezar)",
    "Un ZIP de archivos de texto como un solo documento",
-   "Document Map y la sección en la que estás sobre las palabras",
-   "Find More with AI en los iPhone compatibles"
+   "Mapa del documento y la sección en la que estás sobre las palabras",
+   "Buscar más con IA en los iPhone compatibles"
   ]
  },
  "faq": [
@@ -101,7 +101,13 @@
   {
    "q": "PDF escaneados",
    "a": [
-    "Readride no puede leer un PDF sin capa de texto, porque no tiene reconocimiento de texto (OCR). Si solo algunas páginas son escaneos, lee el resto, te indica en Get Ready qué páginas se saltó y marca el lugar en el texto. Los PDF que ya pasaron por OCR tienen capa de texto y se pueden leer."
+    "Readride no puede leer un PDF sin capa de texto. Solo usa el reconocimiento de texto para volver a leer páginas en hindi y maratí que tienen capa de texto pero a las que les faltan letras. Si solo algunas páginas son escaneos, lee el resto, te indica en Preparación qué páginas se saltó y marca el lugar en el texto. Los PDF que ya pasaron por OCR tienen capa de texto y se pueden leer."
+   ]
+  },
+  {
+   "q": "PDF en escrituras de la India",
+   "a": [
+    "Si un PDF en una escritura de la India, como el hindi, el bengalí o el tamil, da sus letras en un orden equivocado, Readride las vuelve a ordenar y muestra en Preparación cuántos lugares corrigió. Preparación también te avisa de las páginas a las que les faltan letras o en las que algunas letras se han convertido en símbolos. Entre ellas, las páginas en hindi y maratí se vuelven a leer desde las imágenes de página con el reconocimiento de texto de este iPhone, cuando iOS lo admite. Puedes desactivarlo con Leer de las imágenes de página en Preparación. Es gratis y no tiene límite de páginas."
    ]
   },
   {
@@ -119,19 +125,19 @@
   {
    "q": "Restaurar Pro y En familia",
    "a": [
-    "En un iPhone nuevo o tras reinstalar, abre los ajustes de Readride y toca Restore Purchases en la sección Readride Pro. Con la misma cuenta de Apple no se te cobra de nuevo. Los miembros de tu grupo de En familia también pueden usar Pro. Los reembolsos los gestiona Apple y, si se reembolsa Pro, los documentos que añadiste se siguen pudiendo leer."
+    "En un iPhone nuevo o tras reinstalar, abre los ajustes de Readride y toca Restaurar compras en la sección Readride Pro. Con la misma cuenta de Apple no se te cobra de nuevo. Los miembros de tu grupo de En familia también pueden usar Pro. Los reembolsos los gestiona Apple y, si se reembolsa Pro, los documentos que añadiste se siguen pudiendo leer."
    ]
   },
   {
-   "q": "iPhone que pueden usar Find More with AI",
+   "q": "iPhone que pueden usar Buscar más con IA",
    "a": [
-    "Un iPhone compatible con Apple Intelligence, con iOS 26 o posterior y Apple Intelligence activado en Ajustes > Apple Intelligence y Siri. No está disponible mientras se descarga el modelo del dispositivo ni cuando el modelo no admite el idioma del texto. Funciona en Get Ready con PDF y archivos de texto (no md). Se ejecuta en este iPhone y puede equivocarse, así que sus sugerencias empiezan desactivadas y solo se quitan las que activas. La fila AI features de los ajustes de Readride indica si este iPhone puede usarlo."
+    "Un iPhone compatible con Apple Intelligence, con iOS 26 o posterior y Apple Intelligence activado en Ajustes > Apple Intelligence y Siri. No está disponible mientras se descarga el modelo del dispositivo ni cuando el modelo no admite el idioma del texto. Funciona en Preparación con PDF y archivos de texto (no md). Se ejecuta en este iPhone y puede equivocarse, así que sus sugerencias empiezan desactivadas y solo se quitan las que activas. La fila Funciones de IA de los ajustes de Readride indica si este iPhone puede usarlo."
    ]
   },
   {
    "q": "Adónde va un artículo compartido",
    "a": [
-    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este iPhone. Al abrir Readride, Get Ready extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, o si la página de Safari es demasiado grande y solo llega su dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
+    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este iPhone. Al abrir Readride, Preparación extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, o si la página de Safari es demasiado grande y solo llega su dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
    ]
   },
   {
@@ -143,7 +149,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Readride",
-  "effectiveDate": "2026-09-30",
+  "effectiveDate": "2026-10-03",
   "summary": "Readride no recoge datos personales. No hay cuenta ni inicio de sesión. Lo que añades y tus ajustes se guardan en tu dispositivo, y la compra de Pro la gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Readride (la app) del modo que se indica a continuación."
@@ -162,16 +168,16 @@
      "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
     ],
     "bullets": [
-     "Documentos añadidos (el texto ordenado, el archivo original, dónde ibas y lo que ya leíste): para tenerlos en la estantería y seguir donde lo dejaste",
+     "Documentos añadidos (el texto ordenado, el archivo original, el idioma de lectura, dónde ibas y lo que ya leíste): para tenerlos en la estantería y seguir donde lo dejaste",
      "El HTML original de los artículos web añadidos: se guarda junto al texto ordenado",
-     "Páginas recibidas por la extensión para compartir (dirección, título, el HTML en pantalla y cuándo llegó): para que Get Ready extraiga el texto del artículo. Se borran al añadir o cancelar, y al cabo de una hora si no se recibieron completas",
-     "Ajustes de lectura (velocidad, pausas, tamaño de letra) y si se compró Pro: para preparar la pantalla de lectura y decidir qué funciones se abren"
+     "Páginas recibidas por la extensión para compartir (dirección, título, el HTML en pantalla y cuándo llegó): para que Preparación extraiga el texto del artículo. Se borran al añadir o cancelar, y al cabo de una hora si no se recibieron completas",
+     "Ajustes de lectura (velocidad de cada idioma, pausas, tamaño de letra) y si se compró Pro: para preparar la pantalla de lectura y decidir qué funciones se abren"
     ]
    },
    {
     "title": "Plazo de conservación",
     "paragraphs": [
-     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Los documentos se quedan hasta que los borras, y al borrar un documento se borran sus archivos. Una página recibida por la extensión para compartir se borra en cuanto la añades o cancelas en Get Ready."
+     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Los documentos se quedan hasta que los borras, y al borrar un documento se borran sus archivos. Una página recibida por la extensión para compartir se borra en cuanto la añades o cancelas en Preparación."
     ],
     "bullets": []
    },
@@ -206,7 +212,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no sincroniza a través de iCloud. Si haces copias de seguridad del iPhone (por ejemplo, con la copia de seguridad de iCloud), estos datos se incluyen como los de cualquier otra app, y esa copia la gestiona Apple. El texto pegado solo se lee cuando tocas el botón de pegar. La búsqueda de restos con IA la hace el modelo de lenguaje de este iPhone, y tu texto no se envía al desarrollador ni a ningún otro servidor. La función solo se ejecuta cuando tocas Find More with AI. Las páginas web se descargan solo por https y nunca desde direcciones de tu red local."
+     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no sincroniza a través de iCloud. Si haces copias de seguridad del iPhone (por ejemplo, con la copia de seguridad de iCloud), estos datos se incluyen como los de cualquier otra app, y esa copia la gestiona Apple. El texto pegado solo se lee cuando tocas el botón de pegar. La búsqueda de restos con IA la hace el modelo de lenguaje de este iPhone, y tu texto no se envía al desarrollador ni a ningún otro servidor. La función solo se ejecuta cuando tocas Buscar más con IA. Volver a leer las páginas dañadas de un PDF desde sus imágenes lo hace el reconocimiento de texto de este iPhone, y ni las imágenes de página ni el texto se envían al desarrollador ni a ningún otro servidor. Las páginas web se descargan solo por https y nunca desde direcciones de tu red local."
     ],
     "bullets": []
    },
@@ -254,6 +260,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-10-03: Se añadieron en «Información que se trata» el idioma de lectura de cada documento y la velocidad de cada idioma, y en «Medidas de seguridad» la nueva lectura de páginas dañadas de un PDF con el reconocimiento de texto de este iPhone. La fecha de entrada en vigor anterior era el 2026-09-30.",
      "2026-09-30: Se añadió en «Encargo del tratamiento» el caso en que una página compartida desde Safari es demasiado grande y solo llega su dirección. La fecha de entrada en vigor anterior era el 2026-09-26."
     ],
     "bullets": []

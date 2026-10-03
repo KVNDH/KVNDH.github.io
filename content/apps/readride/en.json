@@ -1,9 +1,9 @@
 {
  "name": "Readride",
- "subtitle": "Novels and news, word by word",
- "summary": "Readride shows what you read a word or two at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
+ "subtitle": "Novels, news, phrase by phrase",
+ "summary": "Readride shows what you read a few words at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
  "hero": {
-  "hook": "Readride shows what you read a word or two at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
+  "hook": "Readride shows what you read a few words at a time in one spot, so your eyes stay still. Novels, news, essays, PDFs, and ePubs, cleaned up first and read to the end.",
   "shotAlt": "The Readride Get Ready screen. The header and footer taken out of a PDF show as switches that are on, with the pages they came from, and a page with no text is listed under Check."
  },
  "sections": [
@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "See what was taken out",
    "body": [
-    "When you add something to read, Readride tidies it first. It takes out PDF headers and page numbers, and the ads and related-link lists around web articles, and joins lines broken in the middle of a sentence. Get Ready lists everything it took out, and you can put any of it back."
+    "When you add something to read, Readride tidies it first. It takes out PDF headers and page numbers, and the ads and related-link lists around web articles, and joins lines broken in the middle of a sentence. Get Ready lists everything it took out, and you can put any of it back. It also picks the reading language from the text, and you can change it on Get Ready."
    ],
    "bullets": [
     "Headers, footers, and page numbers taken out",
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Read in one spot. Pause to see the page around it.",
    "body": [
-    "The words appear one or two at a time in the same spot in the middle of the screen, with short pauses at commas and at the ends of sentences. Pause, and the text before and after your place opens up. Tap any word there to go on from that word."
+    "The words appear a few at a time in the same spot in the middle of the screen, with short pauses at commas and at the ends of sentences. Grouping is fitted to each of 44 languages, so Japanese, Chinese, and Thai are divided into words, and Arabic, Hebrew, and Urdu run right to left. Pause, and the text before and after your place opens up. Tap any word there to go on from that word."
    ],
    "bullets": [
-    "A word or two at a time, in one spot",
+    "A few words at a time, in one spot",
     "The text around your place when you pause",
     "Tap a word to go on from there"
    ],
@@ -61,14 +61,14 @@
    "layout": "card",
    "title": "Your place and your pace",
    "body": [
-    "Readride saves where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose your place. Choose a speed from 100 to 600 words a minute, and one of five pause lengths for commas and the ends of sentences."
+    "Readride saves where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose your place. Each language keeps its own speed, and for English you choose from 100 to 600 words a minute. Pick one of five pause lengths for commas and the ends of sentences."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
      "Your place, kept to the character",
-     "100 to 600 words a minute",
+     "A speed kept for each language",
      "Five pause lengths",
      "Adjustable text size"
     ]
@@ -101,7 +101,13 @@
   {
    "q": "Scanned PDFs",
    "a": [
-    "Readride can't read a PDF that has no text layer, because it has no text recognition (OCR). If only some pages are scans, it reads the rest, tells you on Get Ready which pages it skipped, and marks the spot in the text. PDFs that already went through OCR have a text layer and can be read."
+    "Readride can't read a PDF that has no text layer. Its text recognition is used only to read again Hindi and Marathi pages that have a text layer but are missing letters. If only some pages are scans, it reads the rest, tells you on Get Ready which pages it skipped, and marks the spot in the text. PDFs that already went through OCR have a text layer and can be read."
+   ]
+  },
+  {
+   "q": "PDFs in Indian scripts",
+   "a": [
+    "When a PDF in an Indian script, such as Hindi, Bengali, or Tamil, gives its letters out of order, Readride puts them back in order and shows on Get Ready how many places it fixed. Get Ready also tells you which pages have letters missing or turned into symbols. Hindi and Marathi pages among them are read again from the page images with text recognition on this iPhone, when iOS supports it. You can turn this off with Read from Page Images on Get Ready. It's free, with no page limit."
    ]
   },
   {
@@ -143,7 +149,7 @@
  ],
  "privacy": {
   "title": "Readride Privacy Policy",
-  "effectiveDate": "2026-09-30",
+  "effectiveDate": "2026-10-03",
   "summary": "Readride collects no personal data. There is no account and no sign-in. What you add and your settings are kept on your device, and Apple handles the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Readride app (the app) as described below."
@@ -162,10 +168,10 @@
      "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
     ],
     "bullets": [
-     "Documents you add (the tidied text, the original file, where you were, and what you've read): used to keep them on your shelf and pick up where you left off",
+     "Documents you add (the tidied text, the original file, the reading language, where you were, and what you've read): used to keep them on your shelf and pick up where you left off",
      "The original HTML of web articles you add: kept next to the tidied text",
      "Pages received by the share extension (address, title, the HTML on screen, and when it arrived): used by Get Ready to pull out the article text. Deleted once you add or cancel, and after an hour if it wasn't received in full",
-     "Reading settings (speed, pauses, text size) and whether Pro was bought: used to set up the reading screen and decide which features open"
+     "Reading settings (speed for each language, pauses, text size) and whether Pro was bought: used to set up the reading screen and decide which features open"
     ]
    },
    {
@@ -206,7 +212,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app doesn't sync through iCloud. If you back up your iPhone (for example with iCloud Backup), this data is included like any other app's, and Apple handles that backup. Pasted text is read only when you tap the paste button. Finding clutter with AI is done by the language model on this iPhone, and your text is not sent to the developer or to any other server. It runs only when you tap Find More with AI. Web pages are fetched over https only, and never from addresses on your local network."
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app doesn't sync through iCloud. If you back up your iPhone (for example with iCloud Backup), this data is included like any other app's, and Apple handles that backup. Pasted text is read only when you tap the paste button. Finding clutter with AI is done by the language model on this iPhone, and your text is not sent to the developer or to any other server. It runs only when you tap Find More with AI. Reading damaged PDF pages again from their page images is done by text recognition on this iPhone, and the page images and text are not sent to the developer or to any other server. Web pages are fetched over https only, and never from addresses on your local network."
     ],
     "bullets": []
    },
@@ -254,6 +260,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-10-03: Added the reading language of each document and a speed for each language to “Personal information processed”, and reading damaged PDF pages again with text recognition on this iPhone to “Security measures”. The previous effective date was 2026-09-30.",
      "2026-09-30: Added to “Outsourcing of processing” the case where a page shared from Safari is too large and only its address comes through. The previous effective date was 2026-09-26."
     ],
     "bullets": []

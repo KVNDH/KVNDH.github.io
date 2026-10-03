@@ -1,9 +1,9 @@
 {
  "name": "Readride",
- "subtitle": "Romane und News, Wort für Wort",
- "summary": "Readride zeigt, was Sie lesen, ein oder zwei Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
+ "subtitle": "Romane und News in Wortgruppen",
+ "summary": "Readride zeigt, was Sie lesen, ein paar Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
  "hero": {
-  "hook": "Readride zeigt, was Sie lesen, ein oder zwei Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
+  "hook": "Readride zeigt, was Sie lesen, ein paar Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.",
   "shotAlt": "Der Bildschirm Get Ready in Readride. Kopf- und Fußzeile, die aus einem PDF entfernt wurden, erscheinen als eingeschaltete Schalter mit den Seiten, auf denen sie standen, und eine Seite ohne Text ist unter Check vermerkt."
  },
  "sections": [
@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Sie sehen, was entfernt wurde",
    "body": [
-    "Wenn Sie etwas zum Lesen hinzufügen, räumt Readride es zuerst auf. Es entfernt Kopfzeilen und Seitenzahlen aus PDFs sowie Werbung und Listen verwandter Artikel rund um Webartikel, und es verbindet Zeilen, die mitten im Satz umbrechen. Get Ready listet alles auf, was entfernt wurde, und jedes Stück lässt sich zurückholen."
+    "Wenn Sie etwas zum Lesen hinzufügen, räumt Readride es zuerst auf. Es entfernt Kopfzeilen und Seitenzahlen aus PDFs sowie Werbung und Listen verwandter Artikel rund um Webartikel, und es verbindet Zeilen, die mitten im Satz umbrechen. Die Vorbereitung listet alles auf, was entfernt wurde, und jedes Stück lässt sich zurückholen. Auch die Lesesprache wählt Readride anhand des Textes, und Sie können sie in der Vorbereitung ändern."
    ],
    "bullets": [
     "Kopfzeilen, Fußzeilen und Seitenzahlen entfernt",
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "An einer Stelle lesen. Beim Anhalten öffnet sich der Text drumherum.",
    "body": [
-    "Die Wörter erscheinen einzeln oder zu zweit an derselben Stelle in der Mitte des Bildschirms, mit kurzen Pausen an Kommas und am Satzende. Halten Sie an, öffnet sich der Text vor und nach Ihrer Stelle. Tippen Sie dort auf ein Wort, geht es von diesem Wort aus weiter."
+    "Die Wörter erscheinen in kleinen Gruppen an derselben Stelle in der Mitte des Bildschirms, mit kurzen Pausen an Kommas und am Satzende. Die Gruppierung ist auf jede von 44 Sprachen abgestimmt, sodass Japanisch, Chinesisch und Thai in Wörter zerlegt werden und Arabisch, Hebräisch und Urdu von rechts nach links laufen. Halten Sie an, öffnet sich der Text vor und nach Ihrer Stelle. Tippen Sie dort auf ein Wort, geht es von diesem Wort aus weiter."
    ],
    "bullets": [
-    "Ein oder zwei Wörter auf einmal, an einer Stelle",
+    "Ein paar Wörter auf einmal, an einer Stelle",
     "Der Text rund um Ihre Stelle beim Anhalten",
     "Weiterlesen ab dem angetippten Wort"
    ],
@@ -49,7 +49,7 @@
    "layout": "card",
    "title": "Artikel aus Safari und Ihre eigenen Dateien",
    "body": [
-    "Teilen Sie einen Artikel aus Safari mit Readride, zieht es den Artikeltext heraus und öffnet ihn in Get Ready. Textdateien (txt und md), PDFs, ePubs ohne DRM und eingefügter Text gehen ebenfalls."
+    "Teilen Sie einen Artikel aus Safari mit Readride, zieht es den Artikeltext heraus und öffnet ihn in der Vorbereitung. Textdateien (txt und md), PDFs, ePubs ohne DRM und eingefügter Text gehen ebenfalls."
    ],
    "bullets": [
     "Aus Safari geteilte Artikel",
@@ -61,14 +61,14 @@
    "layout": "card",
    "title": "Ihre Stelle und Ihr Tempo",
    "body": [
-    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. So geht sie nicht verloren, wenn Sie die Schriftgröße ändern. Das Tempo wählen Sie zwischen 100 und 600 Wörtern pro Minute, die Länge der Pausen an Kommas und Satzenden in fünf Stufen."
+    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. So geht sie nicht verloren, wenn Sie die Schriftgröße ändern. Jede Sprache behält ihr eigenes Tempo, für Deutsch wählen Sie zwischen 100 und 600 Wörtern pro Minute. Die Länge der Pausen an Kommas und Satzenden stellen Sie in fünf Stufen ein."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
      "Ihre Stelle, aufs Zeichen genau",
-     "100 bis 600 Wörter pro Minute",
+     "Ein eigenes Tempo für jede Sprache",
      "Fünf Pausenlängen",
      "Einstellbare Schriftgröße"
     ]
@@ -81,8 +81,8 @@
   "items": [
    "Keine Grenze für Dokumente (zu Beginn 3)",
    "Ein ZIP mit Textdateien als ein Dokument",
-   "Document Map und der aktuelle Abschnitt über den Wörtern",
-   "Find More with AI auf unterstützten iPhones"
+   "Dokumentübersicht und der aktuelle Abschnitt über den Wörtern",
+   "Mit KI mehr finden auf unterstützten iPhones"
   ]
  },
  "faq": [
@@ -101,7 +101,13 @@
   {
    "q": "Gescannte PDFs",
    "a": [
-    "Ein PDF ohne Textebene kann Readride nicht lesen, denn es hat keine Texterkennung (OCR). Sind nur einige Seiten gescannt, liest Readride die übrigen, zeigt in Get Ready, welche Seiten übersprungen wurden, und markiert die Stelle im Text. PDFs, die bereits eine OCR durchlaufen haben, haben eine Textebene und lassen sich lesen."
+    "Ein PDF ohne Textebene kann Readride nicht lesen. Texterkennung nutzt Readride nur, um Seiten auf Hindi und Marathi neu zu lesen, die zwar eine Textebene haben, denen aber Buchstaben fehlen. Sind nur einige Seiten gescannt, liest Readride die übrigen, zeigt in der Vorbereitung, welche Seiten übersprungen wurden, und markiert die Stelle im Text. PDFs, die bereits eine OCR durchlaufen haben, haben eine Textebene und lassen sich lesen."
+   ]
+  },
+  {
+   "q": "PDFs in indischen Schriften",
+   "a": [
+    "Gibt ein PDF in einer indischen Schrift, etwa auf Hindi, Bengali oder Tamil, seine Buchstaben in falscher Reihenfolge heraus, bringt Readride sie in die richtige Reihenfolge und zeigt in der Vorbereitung, an wie vielen Stellen es das getan hat. Seiten, auf denen Buchstaben fehlen oder zu Symbolen geworden sind, meldet die Vorbereitung ebenfalls. Seiten auf Hindi und Marathi darunter liest Readride, wenn iOS das unterstützt, mit der Texterkennung auf diesem iPhone neu aus den Seitenbildern. Mit „Aus Seitenbildern lesen“ in der Vorbereitung schalten Sie das aus. Das ist kostenlos und ohne Begrenzung der Seitenzahl."
    ]
   },
   {
@@ -119,19 +125,19 @@
   {
    "q": "Pro wiederherstellen und Familienfreigabe",
    "a": [
-    "Öffnen Sie auf einem neuen iPhone oder nach einer Neuinstallation die Einstellungen in Readride und tippen Sie im Bereich Readride Pro auf Restore Purchases. Mit demselben Apple Account zahlen Sie nicht erneut. Mitglieder Ihrer Familienfreigabe-Gruppe können Pro ebenfalls nutzen. Erstattungen wickelt Apple ab, und wird Pro erstattet, bleiben Ihre hinzugefügten Dokumente lesbar."
+    "Öffnen Sie auf einem neuen iPhone oder nach einer Neuinstallation die Einstellungen in Readride und tippen Sie im Bereich Readride Pro auf „Käufe wiederherstellen“. Mit demselben Apple Account zahlen Sie nicht erneut. Mitglieder Ihrer Familienfreigabe-Gruppe können Pro ebenfalls nutzen. Erstattungen wickelt Apple ab, und wird Pro erstattet, bleiben Ihre hinzugefügten Dokumente lesbar."
    ]
   },
   {
-   "q": "iPhones für Find More with AI",
+   "q": "iPhones für „Mit KI mehr finden“",
    "a": [
-    "Ein iPhone, das Apple Intelligence unterstützt, mit iOS 26 oder neuer und eingeschalteter Apple Intelligence unter Einstellungen > Apple Intelligence & Siri. Solange das Modell auf dem Gerät noch geladen wird oder die Sprache des Textes nicht unterstützt, steht die Funktion nicht zur Verfügung. Sie arbeitet in Get Ready bei PDFs und Textdateien (nicht md). Sie läuft auf diesem iPhone und kann sich irren, deshalb sind ihre Vorschläge zunächst ausgeschaltet, und nur die eingeschalteten werden entfernt. Ob dieses iPhone sie nutzen kann, zeigt die Zeile AI features in den Einstellungen von Readride."
+    "Ein iPhone, das Apple Intelligence unterstützt, mit iOS 26 oder neuer und eingeschalteter Apple Intelligence unter Einstellungen > Apple Intelligence & Siri. Solange das Modell auf dem Gerät noch geladen wird oder die Sprache des Textes nicht unterstützt, steht die Funktion nicht zur Verfügung. Sie arbeitet in der Vorbereitung bei PDFs und Textdateien (nicht md). Sie läuft auf diesem iPhone und kann sich irren, deshalb sind ihre Vorschläge zunächst ausgeschaltet, und nur die eingeschalteten werden entfernt. Ob dieses iPhone sie nutzen kann, zeigt die Zeile „KI-Funktionen“ in den Einstellungen von Readride."
    ]
   },
   {
    "q": "Wohin ein geteilter Webartikel geht",
    "a": [
-    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht Get Ready den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse oder ist die Seite aus Safari zu groß, sodass nur ihre Adresse ankommt, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
+    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht die Vorbereitung den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse oder ist die Seite aus Safari zu groß, sodass nur ihre Adresse ankommt, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
    ]
   },
   {
@@ -143,7 +149,7 @@
  ],
  "privacy": {
   "title": "Readride Datenschutzerklärung",
-  "effectiveDate": "2026-09-30",
+  "effectiveDate": "2026-10-03",
   "summary": "Readride erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Was Sie hinzufügen, und Ihre Einstellungen liegen auf Ihrem Gerät, und den Kauf von Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Readride (die App) wie folgt."
@@ -162,16 +168,16 @@
      "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
     ],
     "bullets": [
-     "Hinzugefügte Dokumente (der aufgeräumte Text, die Originaldatei, Ihre Stelle und das bereits Gelesene): um sie im Regal zu halten und dort weiterzulesen, wo Sie aufgehört haben",
+     "Hinzugefügte Dokumente (der aufgeräumte Text, die Originaldatei, die Lesesprache, Ihre Stelle und das bereits Gelesene): um sie im Regal zu halten und dort weiterzulesen, wo Sie aufgehört haben",
      "Das Original-HTML hinzugefügter Webartikel: wird neben dem aufgeräumten Text aufbewahrt",
-     "Seiten, die die Freigabeerweiterung empfangen hat (Adresse, Titel, das HTML auf dem Bildschirm, Zeitpunkt des Empfangs): damit Get Ready den Artikeltext herausziehen kann. Gelöscht, sobald Sie hinzufügen oder abbrechen, und nach einer Stunde, wenn der Empfang nicht vollständig war",
-     "Leseeinstellungen (Tempo, Pausen, Schriftgröße) und ob Pro gekauft wurde: um den Lesebildschirm einzurichten und festzulegen, welche Funktionen offen sind"
+     "Seiten, die die Freigabeerweiterung empfangen hat (Adresse, Titel, das HTML auf dem Bildschirm, Zeitpunkt des Empfangs): damit die Vorbereitung den Artikeltext herausziehen kann. Gelöscht, sobald Sie hinzufügen oder abbrechen, und nach einer Stunde, wenn der Empfang nicht vollständig war",
+     "Leseeinstellungen (Tempo je Sprache, Pausen, Schriftgröße) und ob Pro gekauft wurde: um den Lesebildschirm einzurichten und festzulegen, welche Funktionen offen sind"
     ]
    },
    {
     "title": "Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler speichert keine personenbezogenen Daten. Alles im Speicher der App wird entfernt, wenn die App gelöscht wird. Dokumente bleiben, bis Sie sie löschen, und beim Löschen eines Dokuments werden seine Dateien mit entfernt. Eine von der Freigabeerweiterung empfangene Seite wird gelöscht, sobald Sie sie in Get Ready hinzufügen oder abbrechen."
+     "Der Entwickler speichert keine personenbezogenen Daten. Alles im Speicher der App wird entfernt, wenn die App gelöscht wird. Dokumente bleiben, bis Sie sie löschen, und beim Löschen eines Dokuments werden seine Dateien mit entfernt. Eine von der Freigabeerweiterung empfangene Seite wird gelöscht, sobald Sie sie in der Vorbereitung hinzufügen oder abbrechen."
     ],
     "bullets": []
    },
@@ -206,7 +212,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App verwendet, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App synchronisiert nicht über iCloud. Wenn Sie Ihr iPhone sichern (etwa mit dem iCloud-Backup), sind diese Daten wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple. Eingefügter Text wird nur gelesen, wenn Sie auf die Taste zum Einfügen tippen. Das Aufspüren von Überflüssigem mit KI erledigt das Sprachmodell auf diesem iPhone, und Ihr Text wird weder an den Entwickler noch an einen anderen Server gesendet. Die Funktion läuft nur, wenn Sie auf Find More with AI tippen. Webseiten werden nur über https geladen und nie von Adressen in Ihrem lokalen Netzwerk."
+     "Was die App verwendet, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App synchronisiert nicht über iCloud. Wenn Sie Ihr iPhone sichern (etwa mit dem iCloud-Backup), sind diese Daten wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple. Eingefügter Text wird nur gelesen, wenn Sie auf die Taste zum Einfügen tippen. Das Aufspüren von Überflüssigem mit KI erledigt das Sprachmodell auf diesem iPhone, und Ihr Text wird weder an den Entwickler noch an einen anderen Server gesendet. Die Funktion läuft nur, wenn Sie auf „Mit KI mehr finden“ tippen. Beschädigte PDF-Seiten aus ihren Seitenbildern neu zu lesen, erledigt die Texterkennung auf diesem iPhone, und weder Seitenbilder noch Text werden an den Entwickler oder an einen anderen Server gesendet. Webseiten werden nur über https geladen und nie von Adressen in Ihrem lokalen Netzwerk."
     ],
     "bullets": []
    },
@@ -254,6 +260,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-10-03: Unter „Verarbeitete Daten“ die Lesesprache jedes Dokuments und das Tempo je Sprache ergänzt, unter „Maßnahmen zur Sicherheit“ das Neulesen beschädigter PDF-Seiten mit der Texterkennung auf diesem iPhone. Vorheriges Datum des Inkrafttretens: 2026-09-30.",
      "2026-09-30: Unter „Auftragsverarbeitung“ den Fall ergänzt, dass eine aus Safari geteilte Seite zu groß ist und nur ihre Adresse ankommt. Vorheriges Datum des Inkrafttretens: 2026-09-26."
     ],
     "bullets": []

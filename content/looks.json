@@ -218,6 +218,36 @@
     "Words come to you in one spot",
     "Pause, and the text around it opens",
     "See what was taken out first"
+   ],
+   "ja": [
+    "文章が一か所に 次々と届く",
+    "止めると 前後の本文が広がる",
+    "取り除いたものを 読む前に確認"
+   ],
+   "zh-hans": [
+    "文字在同一处 依次出现",
+    "暂停时 前后文随即展开",
+    "阅读之前 先看已移除的内容"
+   ],
+   "zh-hant": [
+    "文字在同一處 依序出現",
+    "暫停時 前後文隨即展開",
+    "閱讀之前 先看已移除的內容"
+   ],
+   "de": [
+    "Der Text kommt, Ihr Blick bleibt",
+    "Anhalten, und der Text ringsum öffnet sich",
+    "Zuerst sehen, was entfernt wurde"
+   ],
+   "es": [
+    "El texto viene a ti, en un solo punto",
+    "Al pausar, se abre el texto de alrededor",
+    "Mira primero lo que se ha quitado"
+   ],
+   "pt-br": [
+    "O texto vem até você num só lugar",
+    "Ao pausar, o texto ao redor se abre",
+    "Veja primeiro os itens removidos"
    ]
   }
  },
