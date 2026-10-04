@@ -141,9 +141,9 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Horarios por día de la semana, repeticiones, unidades de vida\ny un aviso en el punto que elijas",
+  "title": "Tramos sin límite de cantidad, repeticiones, unidades de vida\ny un aviso en el punto que elijas",
   "items": [
-   "Horarios por día de la semana (de lunes a jueves de 9 a 18, viernes de 9 a 15)",
+   "Horarios por día de la semana (de lunes a jueves de 9 a 18, viernes de 9 a 15), un tramo así funciona sin Pro",
    "Tramos sin límite de cantidad (por tu cuenta son tres)",
    "Repeticiones cada día, semana, mes o año",
    "Unidades de vida: lunas llenas, fines de semana, primaveras, cumpleaños",
@@ -227,7 +227,7 @@
   {
    "q": "Qué se usa sin Pro",
    "a": [
-    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. El progreso muestra un decimal sin Pro. Poner un temporizador nuevo con la rueda de «Desde ahora» también funciona sin Pro. Ponerlo con la voz también funciona sin Pro (salvo en los 11 idiomas sin reconocimiento de voz de Apple)."
+    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. Un tramo con Horas por día de la semana también funciona sin Pro. El progreso muestra un decimal sin Pro. Poner un temporizador nuevo con la rueda de «Desde ahora» también funciona sin Pro. Ponerlo con la voz también funciona sin Pro (salvo en los 11 idiomas sin reconocimiento de voz de Apple)."
    ]
   },
   {

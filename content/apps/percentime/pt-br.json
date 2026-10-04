@@ -141,9 +141,9 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Horários por dia da semana, repetições, unidades de vida\ne um aviso no ponto que você escolher",
+  "title": "Períodos sem limite de quantidade, repetições, unidades de vida\ne um aviso no ponto que você escolher",
   "items": [
-   "Horários por dia da semana (de segunda a quinta das 9 às 18, sexta das 9 às 15)",
+   "Horários por dia da semana (de segunda a quinta das 9 às 18, sexta das 9 às 15), um período assim funciona sem o Pro",
    "Períodos sem limite de quantidade (por conta própria são três)",
    "Repetições a cada dia, semana, mês ou ano",
    "Unidades de vida: luas cheias, fins de semana, primaveras, aniversários",
@@ -227,7 +227,7 @@
   {
    "q": "O que dá para usar sem o Pro",
    "a": [
-    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz também funciona sem o Pro (menos nos 11 idiomas sem reconhecimento de fala da Apple)."
+    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. Um período com Horas por dia da semana também funciona sem o Pro. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz também funciona sem o Pro (menos nos 11 idiomas sem reconhecimento de fala da Apple)."
    ]
   },
   {

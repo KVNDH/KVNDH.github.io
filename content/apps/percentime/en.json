@@ -141,9 +141,9 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Hours by weekday, repeating spans, life units\nand a notice at the point you choose",
+  "title": "Timers without a count limit, repeating spans, life units\nand a notice at the point you choose",
   "items": [
-   "Hours by weekday: nine to six Monday through Thursday, nine to three on Friday",
+   "Hours by weekday: nine to six Monday through Thursday, nine to three on Friday. One such timer works without Pro",
    "Timers without a count limit: three of your own to begin with",
    "Repeating spans for every day, week, month or year",
    "Life units: full moons, weekends, springs, birthdays",
@@ -227,7 +227,7 @@
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer)."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. One timer with Weekly hours works without Pro too. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer)."
    ]
   },
   {

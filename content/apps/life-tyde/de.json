@@ -66,7 +66,7 @@
    "layout": "card",
    "title": "Öffnen und schreiben",
    "body": [
-    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da."
+    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Auf dem iPad springen Tastaturkurzbefehle zum vorigen oder nächsten Jahr, und langes Drücken oder ein Rechtsklick auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben."
    ],
    "bullets": [],
    "visual": {

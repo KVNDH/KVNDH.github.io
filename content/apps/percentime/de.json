@@ -141,9 +141,9 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Uhrzeiten je Wochentag, Wiederholungen, Lebenseinheiten\nund ein Hinweis an dem Punkt, den Sie wählen",
+  "title": "Zeiträume ohne Obergrenze, Wiederholungen, Lebenseinheiten\nund ein Hinweis an dem Punkt, den Sie wählen",
   "items": [
-   "Uhrzeiten je Wochentag (Mo bis Do 9~18 Uhr, Fr 9~15 Uhr)",
+   "Uhrzeiten je Wochentag (Mo bis Do 9~18 Uhr, Fr 9~15 Uhr), ein solcher Zeitraum geht auch ohne Pro",
    "Zeiträume ohne Obergrenze (selbst angelegt sind es sonst drei)",
    "Wiederholungen für jeden Tag, jede Woche, jeden Monat, jedes Jahr",
    "Lebenseinheiten: Vollmonde, Wochenenden, Frühlinge, Geburtstage",
@@ -227,7 +227,7 @@
   {
    "q": "Was ist ohne Pro nutzbar",
    "a": [
-    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Auch das Stellen per Sprache geht ohne Pro (außer in den 11 Sprachen ohne Spracherkennung von Apple)."
+    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Ein Zeitraum mit Stunden je Wochentag geht ebenfalls ohne Pro. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Auch das Stellen per Sprache geht ohne Pro (außer in den 11 Sprachen ohne Spracherkennung von Apple)."
    ]
   },
   {

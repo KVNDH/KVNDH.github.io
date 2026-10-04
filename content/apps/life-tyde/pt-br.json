@@ -66,7 +66,7 @@
    "layout": "card",
    "title": "Abra e escreva",
    "body": [
-    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta."
+    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. No iPad, atalhos de teclado pulam para o ano anterior ou o seguinte, e um toque longo ou um clique com o botão direito num registro abre um menu para editar ou destacar."
    ],
    "bullets": [],
    "visual": {

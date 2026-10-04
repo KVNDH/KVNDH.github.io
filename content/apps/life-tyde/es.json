@@ -66,7 +66,7 @@
    "layout": "card",
    "title": "Abre y escribe",
    "body": [
-    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta."
+    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. En el iPad, los atajos de teclado saltan al año anterior o al siguiente, y una pulsación larga o un clic derecho sobre una entrada abre un menú para editarla o destacarla."
    ],
    "bullets": [],
    "visual": {
