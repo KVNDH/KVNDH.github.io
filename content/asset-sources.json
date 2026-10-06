@@ -57,31 +57,31 @@
   "store": "SnapLine/docs/store"
  },
  "tapey": {
-  "icon": "Tapey/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
+  "icon": "Tapey/swift/Tapey/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
   "shots": {
    "ko": [
-    "Tapey/appstore-raw/ko/03.png"
+    "Tapey/docs/store/shots-raw/iphone/ko/03.png"
    ],
    "en": [
-    "Tapey/appstore-raw/en/03.png"
+    "Tapey/docs/store/shots-raw/iphone/en-US/03.png"
    ],
    "ja": [
-    "Tapey/appstore-raw/ja/03.png"
+    "Tapey/docs/store/shots-raw/iphone/ja/03.png"
    ],
    "zh-hans": [
-    "Tapey/appstore-raw/zh-Hans/03.png"
+    "Tapey/docs/store/shots-raw/iphone/zh-Hans/03.png"
    ],
    "zh-hant": [
-    "Tapey/appstore-raw/zh-Hant/03.png"
+    "Tapey/docs/store/shots-raw/iphone/zh-Hant/03.png"
    ],
    "de": [
-    "Tapey/appstore-raw/de/03.png"
+    "Tapey/docs/store/shots-raw/iphone/de-DE/03.png"
    ],
    "es": [
-    "Tapey/appstore-raw/es/03.png"
+    "Tapey/docs/store/shots-raw/iphone/es-ES/03.png"
    ],
    "pt-br": [
-    "Tapey/appstore-raw/pt-BR/03.png"
+    "Tapey/docs/store/shots-raw/iphone/pt-BR/03.png"
    ]
   },
   "store": "Tapey/docs/store"

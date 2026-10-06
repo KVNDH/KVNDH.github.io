@@ -4,26 +4,26 @@
  "summary": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
  "hero": {
   "hook": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
-  "shotAlt": "El editor de Tapey. Bajo el reloj de la pantalla bloqueada hay fotos en marcos Polaroid sujetas con washi tape, y una lleva una nota a mano."
+  "shotAlt": "El paso Diseño del editor de Tapey. Una vista previa de la pantalla bloqueada con seis fotos en cuadrícula, encima de los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco y de una fila de opciones de diseño."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Las fotos encuentran su sitio",
    "body": [
-    "Elige hasta 12 fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla, o usa dos dedos para cambiar su tamaño y su inclinación. La foto que mueves a mano se queda donde la has dejado."
+    "Elige tus fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla, o usa dos dedos para cambiar su tamaño y su inclinación. La foto que mueves a mano se queda donde la has dejado."
    ],
    "bullets": [
-    "Disposición automática de hasta 12 fotos",
-    "Diseños Auto, Cuadrícula, Escalera y Corazón",
+    "Hasta 12 fotos, o 30 con Tapey Pro",
+    "Diseños Auto, Cuadrícula, Escalera, Corazón y Círculo",
     "Deshacer y rehacer"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Primer plano del editor. Copias Polaroid sujetas con washi tape y, entre ellas, una nota escrita a mano.",
+    "alt": "Primer plano del paso Diseño. Bajo los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco hay una fila de cinco opciones de diseño, la última con la marca Pro.",
     "caption": "Pantalla de la app, ampliada",
-    "focus": "-620px"
+    "focus": "-720px"
    }
   },
   {
@@ -33,13 +33,13 @@
     "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano."
    ],
    "bullets": [
-    "8 colores de cinta y 4 patrones",
+    "8 colores de cinta, 4 patrones y 8 patrones Pro",
     "Borde blanco y marco Polaroid",
     "B/N para todo el fondo o para una sola foto"
    ],
    "visual": {
     "type": "kit",
-    "label": "Las herramientas Cinta, Marco y Fondo, con 8 colores de cinta y 8 tonos de fondo",
+    "label": "Las herramientas Cinta, Marco y Fondo, con 8 colores de cinta y 10 fondos",
     "items": [
      {
       "name": "Cinta",
@@ -52,7 +52,7 @@
      },
      {
       "name": "Fondo",
-      "desc": "Tonos de pared, Mi foto, Textura"
+      "desc": "Tonos de pared, Corcho, Tela, Mi foto, Textura"
      }
     ],
     "rows": [
@@ -61,10 +61,10 @@
       "value": "8"
      },
      {
-      "label": "Tonos de fondo",
-      "value": "8",
+      "label": "Fondos",
+      "value": "10",
       "meter": "levels",
-      "count": 8
+      "count": 10
      }
     ]
    }
@@ -85,7 +85,7 @@
    "layout": "card",
    "title": "Empieza por tus fotos",
    "body": [
-    "Sin cuenta y sin nada que iniciar. Tu fondo sigue ahí cuando vuelves, y Crear uno nuevo después de guardar lo manda a Recientes."
+    "Sin cuenta y sin nada que iniciar. Pasa por Fotos, Reloj, Diseño, Fondo, Cinta y Marco con Siguiente, y el último paso guarda. Tu fondo sigue ahí cuando vuelves, y Crear uno nuevo después de guardar lo manda a Recientes."
    ],
    "bullets": [],
    "visual": {
@@ -97,19 +97,31 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "Tapey Pro",
+  "title": "Guarda sin anuncios,\ncon 30 fotos y más cintas, marcos y diseños",
+  "items": [
+   "Guardar sin anuncios",
+   "Hasta 30 fotos (versión gratis: hasta 12)",
+   "8 cintas premium: Florecitas, Vichy, Acuarela, Cuadrícula, Encaje, Oro diagonal, Mecanografía, Estrellas",
+   "Marcos nuevos: Sello, Papel rasgado",
+   "Diseños nuevos: Tendedero, Estrella",
+   "Prueba los patrones, marcos y diseños Pro en vista previa antes de comprar",
+   "Si ya compraste Quitar anuncios, ya tienes Tapey Pro"
+  ]
+ },
  "faq": [
   {
    "q": "Añadir fotos",
    "a": [
-    "En la pantalla de inicio, toca Añadir fotos y elige de tu fototeca o haz una foto nueva. Mientras editas, toca Añadir en la pestaña Fotos.",
-    "En cada fondo caben hasta 12 fotos. El diseño Corazón aparece cuando tienes 6 o más."
+    "En la pantalla de inicio, toca Añadir fotos y elige tus fotos. También puedes arrastrar fotos desde otra app. Mientras editas, toca Añadir en el paso Fotos.",
+    "En cada fondo caben hasta 12 fotos, o 30 con Tapey Pro. El diseño Corazón aparece cuando tienes 6 o más. Círculo necesita 8 o más, y Estrella, un diseño de Tapey Pro, 10 o más."
    ]
   },
   {
    "q": "Dónde van los fondos guardados",
    "a": [
-    "Toca Guardar en la parte de arriba del editor. El fondo pasa a la app Fotos como PNG, en la resolución elegida en Ajustes. La primera vez, iOS pregunta si Tapey puede añadir fotos.",
+    "Toca el botón de guardar, arriba a la derecha del editor, o Guardar en el último paso. El fondo pasa a la app Fotos como PNG, en la resolución elegida en Ajustes. La primera vez, iOS pregunta si Tapey puede añadir fotos.",
     "Si guardar falla, permite el acceso a fotos en Ajustes > Tapey."
    ]
   },
@@ -121,17 +133,17 @@
    ]
   },
   {
-   "q": "Quitar anuncios y restaurar la compra",
+   "q": "Tapey Pro y restaurar la compra",
    "a": [
-    "Compra Quitar anuncios desde el menú o desde la pantalla de inicio. A partir de ahí no aparece ningún anuncio al guardar.",
-    "En un dispositivo nuevo o después de reinstalar, abre Quitar anuncios en el menú y toca Restaurar compras. Con la misma cuenta de Apple no se cobra de nuevo."
+    "Compra Tapey Pro desde el menú o desde la pantalla de inicio. Es un pago único, no una suscripción. A partir de ahí no aparece ningún anuncio al guardar, y puedes usar hasta 30 fotos, las cintas premium y los marcos y diseños nuevos. Antes de comprar también puedes elegir elementos Pro para verlos en vista previa. Si guardas con ellos puestos, eliges entre Comprar Tapey Pro, Guardar con elementos básicos y Seguir editando.",
+    "En un dispositivo nuevo o después de reinstalar, abre Ajustes en el menú y toca Restaurar compras. Con la misma cuenta de Apple no se cobra de nuevo. Si ya compraste Quitar anuncios, ya tienes Tapey Pro."
    ]
   },
   {
    "q": "Rastreo y preferencias de anuncios",
    "a": [
-    "La primera vez que abres la app, iOS pregunta si Tapey puede rastrearte. La app funciona igual en cualquier caso, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
-    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, cambia tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio."
+    "La primera vez que abres la app, mientras prepara los anuncios, iOS pregunta si Tapey puede rastrearte. Si tienes Tapey Pro, no lo pregunta. La app funciona igual en cualquier caso, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, cambia tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio. Allí, el formulario de consentimiento aparece antes que el aviso de rastreo."
    ]
   },
   {
@@ -158,8 +170,8 @@
   {
    "q": "Conexión a internet",
    "a": [
-    "Colocar, decorar y guardar funcionan sin conexión. Los anuncios, la compra de Quitar anuncios y la restauración necesitan conexión.",
-    "Las letras manuscritas de las notas se instalan con la app. Una se usa en las notas en coreano y otra en las notas en los demás idiomas."
+    "Colocar, decorar y guardar funcionan sin conexión. Los anuncios, la compra de Tapey Pro y la restauración necesitan conexión.",
+    "Las letras manuscritas de las notas se instalan con la app. Una se usa cuando el idioma de la app es el coreano y otra con los demás idiomas. Los caracteres que esas letras no incluyen aparecen con la letra del sistema."
    ]
   },
   {
@@ -171,8 +183,8 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Tapey",
-  "effectiveDate": "2026-09-19",
-  "summary": "El desarrollador no recoge información personal. El anuncio que aparece al guardar viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Quitar anuncios se encarga Apple.",
+  "effectiveDate": "2026-10-06",
+  "summary": "El desarrollador no recoge información personal. El anuncio que aparece al guardar viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Tapey Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Tapey (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
   ],
@@ -188,20 +200,20 @@
    {
     "title": "Información que se trata",
     "paragraphs": [
-     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo, y el desarrollador no los recibe.",
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo. Si actualizas desde una versión anterior a la 2.0.0, la app lee una sola vez, al abrirse por primera vez, el trabajo y los ajustes que la versión anterior guardó en el dispositivo y los pasa a la nueva ubicación. Los datos anteriores se quedan donde estaban. El desarrollador no recibe ninguno de estos datos.",
      "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
     ],
     "bullets": [
      "Copias de las fotos y de las fotos de fondo que eliges: para volver a abrir tu trabajo",
      "Disposición, ajustes de decoración y notas de las fotos: para volver a abrir tu trabajo",
      "Hasta 3 proyectos recientes con imágenes de vista previa: para Recientes en la pantalla de inicio",
-     "Idioma elegido, estado de compra de Quitar anuncios y número de guardados: para el funcionamiento de la app y para el momento de la valoración"
+     "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, si ya se mostraron las guías iniciales, modo de vista elegido y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración"
     ]
    },
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. El archivo de vista previa para compartir, que se crea al guardar, queda en una carpeta temporal y se elimina la próxima vez que se abre la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -222,7 +234,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Quitar anuncios a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple."
+     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Tapey Pro a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple."
     ],
     "bullets": []
    },
@@ -244,7 +256,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "A la app solo llegan las fotos que eliges en el selector de fotos de iOS o que haces con la cámara. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
+     "A la app solo llegan las fotos que eliges en el selector de fotos de iOS o que arrastras a la app. La app no pide acceso a la cámara ni permiso para leer tu fototeca. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
     ],
     "bullets": []
    },
@@ -252,9 +264,9 @@
     "title": "Recogida automática y cómo rechazarla",
     "paragraphs": [
      "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob), que puede recoger la información de abajo cuando carga y muestra anuncios.",
-     "La primera vez que abres la app, iOS muestra el aviso de transparencia de seguimiento (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
-     "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Allí puedes cambiar tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio.",
-     "Después de comprar Quitar anuncios, la app deja de iniciar AdMob a partir del siguiente arranque, así que no aparecen ni anuncios ni el aviso de seguimiento."
+     "Cuando abres la app y esta prepara los anuncios, iOS muestra el aviso de transparencia del rastreo (ATT) si aún no lo has respondido. No aparece al guardar. Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
+     "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si el resultado es que no se pueden solicitar anuncios, tampoco aparece el aviso de rastreo. Allí puedes cambiar tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio.",
+     "Después de comprar Tapey Pro (o si ya habías comprado Quitar anuncios), no aparecen anuncios, y a partir del siguiente arranque la app deja de iniciar AdMob, así que no aparecen ni el formulario de consentimiento ni el aviso de rastreo."
     ],
     "bullets": [
      "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",

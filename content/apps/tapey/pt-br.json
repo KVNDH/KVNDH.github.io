@@ -4,26 +4,26 @@
  "summary": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
  "hero": {
   "hook": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
-  "shotAlt": "O editor do Tapey. Abaixo do relógio da tela bloqueada, fotos em molduras Polaroid estão presas com washi tape, e uma delas traz uma nota à mão."
+  "shotAlt": "A etapa Layout no editor do Tapey. Uma prévia da tela bloqueada com seis fotos em grade fica acima das etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura e de uma fileira de opções de layout."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "As fotos acham o lugar delas",
    "body": [
-    "Escolha até 12 fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la, ou use dois dedos para mudar o tamanho e a inclinação. A foto que você move à mão fica fixa onde você a deixou."
+    "Escolha suas fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la, ou use dois dedos para mudar o tamanho e a inclinação. A foto que você move à mão fica fixa onde você a deixou."
    ],
    "bullets": [
-    "Layout automático para até 12 fotos",
-    "Layouts Auto, Grade, Escada e Coração",
+    "Até 12 fotos, ou 30 com o Tapey Pro",
+    "Layouts Auto, Grade, Escada, Coração e Círculo",
     "Desfazer e refazer"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "O editor visto de perto. Cópias Polaroid presas com washi tape e, no meio delas, uma nota escrita à mão.",
+    "alt": "A etapa Layout vista de perto. Abaixo das etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura há uma fileira com cinco opções de layout, a última com a marca Pro.",
     "caption": "Tela do app, ampliada",
-    "focus": "-620px"
+    "focus": "-720px"
    }
   },
   {
@@ -33,13 +33,13 @@
     "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão."
    ],
    "bullets": [
-    "8 cores de fita e 4 padrões",
+    "8 cores de fita, 4 padrões e 8 padrões Pro",
     "Borda branca e moldura Polaroid",
     "P&B no fundo inteiro ou numa foto só"
    ],
    "visual": {
     "type": "kit",
-    "label": "As ferramentas Fita, Moldura e Fundo, com 8 cores de fita e 8 tons de fundo",
+    "label": "As ferramentas Fita, Moldura e Fundo, com 8 cores de fita e 10 fundos",
     "items": [
      {
       "name": "Fita",
@@ -52,7 +52,7 @@
      },
      {
       "name": "Fundo",
-      "desc": "Tons de parede, Minha foto, Textura"
+      "desc": "Tons de parede, Cortiça, Tecido, Minha foto, Textura"
      }
     ],
     "rows": [
@@ -61,10 +61,10 @@
       "value": "8"
      },
      {
-      "label": "Tons de fundo",
-      "value": "8",
+      "label": "Fundos",
+      "value": "10",
       "meter": "levels",
-      "count": 8
+      "count": 10
      }
     ]
    }
@@ -85,7 +85,7 @@
    "layout": "card",
    "title": "Comece pelas suas fotos",
    "body": [
-    "Sem conta e sem nada para entrar. Sua parede continua ali quando você volta, e Criar um novo depois de salvar manda a anterior para Recentes."
+    "Sem conta e sem nada para entrar. Passe por Fotos, Relógio, Layout, Fundo, Fita e Moldura com Avançar, e a última etapa salva. Sua parede continua ali quando você volta, e Criar um novo depois de salvar manda a anterior para Recentes."
    ],
    "bullets": [],
    "visual": {
@@ -97,19 +97,31 @@
    }
   }
  ],
- "pro": null,
+ "pro": {
+  "kick": "Tapey Pro",
+  "title": "Salve sem anúncios,\ncom 30 fotos e mais fitas, molduras e layouts",
+  "items": [
+   "Salvar sem anúncios",
+   "Até 30 fotos (versão grátis: até 12)",
+   "8 fitas premium: Florzinhas, Vichy, Aquarela, Quadriculado, Renda, Ouro diagonal, Datilografia, Estrelas",
+   "Molduras novas: Selo, Papel rasgado",
+   "Layouts novos: Varal, Estrela",
+   "Veja a prévia de padrões, molduras e layouts Pro antes de comprar",
+   "Se você já comprou Remover anúncios, já tem o Tapey Pro"
+  ]
+ },
  "faq": [
   {
    "q": "Adicionar fotos",
    "a": [
-    "Na tela inicial, toque em Adicionar fotos e escolha da sua fototeca ou tire uma foto na hora. Durante a edição, toque em Adicionar na aba Fotos.",
-    "Cada papel de parede comporta até 12 fotos. O layout Coração aparece quando você tem 6 ou mais."
+    "Na tela inicial, toque em Adicionar fotos e escolha suas fotos. Também dá para arrastar fotos de outro app. Durante a edição, toque em Adicionar na etapa Fotos.",
+    "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, um layout do Tapey Pro, 10 ou mais."
    ]
   },
   {
    "q": "Para onde vão os papéis de parede salvos",
    "a": [
-    "Toque em Salvar no alto do editor. O papel de parede vai para o app Fotos como PNG, na resolução escolhida nos Ajustes. Na primeira vez, o iOS pergunta se o Tapey pode adicionar fotos.",
+    "Toque no botão de salvar, no canto superior direito do editor, ou em Salvar na última etapa. O papel de parede vai para o app Fotos como PNG, na resolução escolhida nos Ajustes. Na primeira vez, o iOS pergunta se o Tapey pode adicionar fotos.",
     "Se o salvamento falhar, permita o acesso às fotos em Ajustes > Tapey."
    ]
   },
@@ -121,17 +133,17 @@
    ]
   },
   {
-   "q": "Remover anúncios e restaurar a compra",
+   "q": "Tapey Pro e restaurar a compra",
    "a": [
-    "Compre Remover anúncios pelo menu ou pela tela inicial. Depois disso, nenhum anúncio aparece ao salvar.",
-    "Num aparelho novo ou depois de reinstalar, abra Remover anúncios no menu e toque em Restaurar compras. Com a mesma Conta Apple não há nova cobrança."
+    "Compre o Tapey Pro pelo menu ou pela tela inicial. É um pagamento único, não uma assinatura. Depois disso, nenhum anúncio aparece ao salvar, e você pode usar até 30 fotos, as fitas premium e as molduras e os layouts novos. Antes de comprar, você também pode escolher itens Pro para ver a prévia. Se salvar com eles aplicados, você escolhe entre Comprar Tapey Pro, Salvar com itens básicos e Continuar editando.",
+    "Num aparelho novo ou depois de reinstalar, abra Ajustes no menu e toque em Restaurar compras. Com a mesma Conta Apple não há nova cobrança. Se você já comprou Remover anúncios, já tem o Tapey Pro."
    ]
   },
   {
    "q": "Rastreamento e preferências de anúncios",
    "a": [
-    "Na primeira vez que você abre o app, o iOS pergunta se o Tapey pode rastrear você. O app funciona igual de um jeito ou de outro, e você muda a resposta em Ajustes > Privacidade e Segurança > Rastreamento.",
-    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, mude suas escolhas em Preferências de anúncios, no rodapé da tela inicial."
+    "Na primeira vez que você abre o app, enquanto ele prepara os anúncios, o iOS pergunta se o Tapey pode rastrear você. Se você tem o Tapey Pro, ele não pergunta. O app funciona igual de um jeito ou de outro, e você muda a resposta em Ajustes > Privacidade e Segurança > Rastreamento.",
+    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, mude suas escolhas em Preferências de anúncios, no rodapé da tela inicial. Lá, o formulário de consentimento aparece antes do aviso de rastreamento."
    ]
   },
   {
@@ -158,8 +170,8 @@
   {
    "q": "Conexão com a internet",
    "a": [
-    "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra de Remover anúncios e a restauração precisam de conexão.",
-    "As letras à mão das notas são instaladas junto com o app. Uma é usada nas notas em coreano e outra nas notas nos demais idiomas."
+    "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra do Tapey Pro e a restauração precisam de conexão.",
+    "As letras à mão das notas são instaladas junto com o app. Uma é usada quando o idioma do app é o coreano e outra nos demais idiomas. Os caracteres que essas letras não incluem aparecem na letra do sistema."
    ]
   },
   {
@@ -171,8 +183,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-09-19",
-  "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remover anúncios é processado pela Apple.",
+  "effectiveDate": "2026-10-06",
+  "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -188,20 +200,20 @@
    {
     "title": "Informações tratadas",
     "paragraphs": [
-     "O desenvolvedor não coleta informações pessoais. Os dados que o app usa são os de baixo. Todos ficam no armazenamento do app no seu aparelho, e o desenvolvedor não os recebe.",
+     "O desenvolvedor não coleta informações pessoais. Os dados que o app usa são os de baixo. Todos ficam no armazenamento do app no seu aparelho. Se você atualizar de uma versão anterior à 2.0.0, o app lê uma única vez, na primeira abertura, o trabalho e os ajustes que a versão anterior guardou no aparelho e os leva para o novo local de armazenamento. Os dados anteriores ficam onde estavam. O desenvolvedor não recebe nenhum desses dados.",
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
      "Cópias das fotos e das fotos de fundo que você escolhe: usadas para reabrir o trabalho",
      "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
      "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
-     "Idioma escolhido, situação da compra de Remover anúncios e número de salvamentos: usados para o funcionamento do app e para o momento do pedido de avaliação"
+     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação"
     ]
    },
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. O arquivo de prévia para compartilhar, criado quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -222,7 +234,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento de Remover anúncios pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple."
+     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento do Tapey Pro pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple."
     ],
     "bullets": []
    },
@@ -244,7 +256,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos do iOS ou tira com a câmera. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
+     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos do iOS ou arrasta para o app. O app não pede acesso à câmera nem permissão para ler a sua fototeca. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
     ],
     "bullets": []
    },
@@ -252,9 +264,9 @@
     "title": "Coleta automática e como recusá-la",
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob), que pode coletar as informações de baixo quando carrega e exibe anúncios.",
-     "Na primeira vez que você abre o app, o iOS mostra o aviso de transparência de rastreamento (ATT). Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
-     "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Lá você muda suas escolhas em Preferências de anúncios, no rodapé da tela inicial.",
-     "Depois da compra de Remover anúncios, o app deixa de iniciar o AdMob a partir da abertura seguinte, então nem os anúncios nem o aviso de rastreamento aparecem."
+     "Quando você abre o app e ele prepara os anúncios, o iOS mostra o aviso de transparência de rastreamento (ATT), caso você ainda não tenha respondido. Ele não aparece na hora de salvar. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
+     "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se o resultado for que os anúncios não podem ser solicitados, o aviso de rastreamento também não aparece. Lá você muda suas escolhas em Preferências de anúncios, no rodapé da tela inicial.",
+     "Depois da compra do Tapey Pro (ou de uma compra anterior de Remover anúncios), os anúncios não aparecem, e a partir da abertura seguinte o app deixa de iniciar o AdMob, então nem o formulário de consentimento nem o aviso de rastreamento aparecem."
     ],
     "bullets": [
      "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",
