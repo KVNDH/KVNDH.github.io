@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "添加代码的三种方式",
    "body": [
-    "直接导入从 App Store Connect 下载的优惠代码 CSV。App 会从文件中识别对应的 App 和代码类型，并跳过已经添加过的代码。没有文件时，也可以直接粘贴代码。添加了 API 密钥后，可以在 App 内生成代码并直接加入。"
+    "直接导入从 App Store Connect 下载的优惠代码 CSV。App 会从文件中识别对应的 App 和代码类型。没有文件时，也可以直接粘贴代码，其中已经添加过的会被跳过。添加了 API 密钥后，可以在 App 内生成代码并直接加入。"
    ],
    "bullets": [
     "“Import CSV file”（导入 CSV）",
@@ -21,16 +21,16 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
-    "alt": "生成代码的“Issue codes”界面。“Custom codes”旁边的“One-time use codes”处于选中状态，下方依次是“Quantity”“Expiration date”和“Sandbox codes”。",
+    "focus": "-300px",
+    "alt": "生成代码的“Issue codes”界面。依次是“Quantity”“Expiration date”和“Sandbox codes”，下方有一段关于代码何时可以使用的说明。",
     "caption": "应用界面放大"
    }
   },
   {
    "layout": "feat",
-   "title": "按下“Issue”，就会拷贝下一个代码",
+   "title": "按下“Issue”（发放），就会拷贝下一个代码",
    "body": [
-    "按下“Issue”（发放），下一个代码会被拷贝，并标记为已送出。每个批次（App 中称为“roll”）可以分别设定拷贝兑换链接还是代码。当面送出时，可以出示带二维码的卡片，或者存成图片再发送。"
+    "拷贝的代码会标记为已送出。每个批次（App 中称为“roll”）可以分别设定拷贝兑换链接、代码，或者两者都拷贝。当面送出时，可以出示带二维码的卡片，或者存成图片再发送。"
    ],
    "bullets": [
     "拷贝代码或兑换链接",
@@ -40,8 +40,8 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-175px",
-    "alt": "送出代码后的卡片。上方显示“Copied”，卡片上有代码、二维码、时间和领取人，下方是“Save as image”“Copy again”和“Undo”按钮。",
+    "focus": "-245px",
+    "alt": "送出代码后的卡片。卡片上有 App 名称、批次名称、代码、二维码、时间和领取人。",
     "caption": "应用界面放大"
    }
   },
@@ -64,8 +64,8 @@
     "添加 App Store Connect API 密钥后，可以在 App 内创建优惠并生成一次性代码。生成的代码会直接成为一个批次。没有密钥时，导入 CSV 和粘贴代码等其他功能照常使用。"
    ],
    "bullets": [
-    "生成一次性代码批次",
-    "导入已创建的批次",
+    "生成一次性代码",
+    "导入已创建的代码",
     "创建新优惠"
    ]
   }
@@ -74,31 +74,31 @@
   {
    "q": "可以添加哪些代码",
    "a": [
-    "可以添加 App Store 的优惠代码（订阅和 App 内购买）、App 促销代码，以及其他代码。添加代码时从“Offer code”“App promo code”“Other code”中选择类型。App Store Connect 的优惠代码 CSV 会由 App 从文件中识别类型和对应的 App。"
+    "可以添加 App Store 的优惠代码（订阅和 App 内购买）、App 促销代码，以及其他代码。添加代码时从“Offer code”（优惠代码）“App promo code”（App 促销代码）“Other code”（其他代码）中选择类型。App Store Connect 的优惠代码 CSV 会由 App 从文件中识别类型和对应的 App。"
    ]
   },
   {
    "q": "从哪里获取优惠代码 CSV",
    "a": [
-    "在 App Store Connect 中打开相应订阅或 App 内购买的优惠代码页面，创建一次性代码后即可下载 CSV。把文件放到“文件”App 中，按“Add codes”，再选“Import CSV file”。"
+    "在 App Store Connect 中打开相应订阅或 App 内购买的优惠代码页面，创建一次性代码后即可下载 CSV。把文件放到“文件”App 中，按“Add codes”（添加代码），再选“Import CSV file”（导入 CSV）。"
    ]
   },
   {
    "q": "同一个文件导入两次时",
    "a": [
-    "如果文件里有已经添加过的代码，App 会提示“File already imported”并且不会添加。如果那个批次在废纸篓（“Trash”）里，可以在提示中恢复。"
+    "如果文件里的代码已经在其他批次中，App 会提示“File already imported”（文件已导入过）并且不会添加。如果那个批次在“Trash”（废纸篓）里，可以在提示中恢复。"
    ]
   },
   {
    "q": "选择拷贝链接还是代码",
    "a": [
-    "在批次界面上方，可以从“Link”“Code”“Both”（代码加链接）中选择。领取人打开优惠代码的链接后，会进入 App Store 的代码兑换页面。没有 App Store ID 的优惠代码批次以及其他代码只拷贝代码。"
+    "在批次界面上方，可以从“Link”（链接）“Code”（代码）“Both”（两者）中选择。领取人打开优惠代码的链接后，会进入 App Store 的代码兑换页面。没有 App Store ID 的优惠代码批次以及其他代码只拷贝代码。"
    ]
   },
   {
    "q": "撤销送错的代码",
    "a": [
-    "生成后立即在卡片上按“Undo”（撤销），或者在菜单的“Handed out”中轻扫那一行来撤销。撤销后的代码会回到未使用状态，为它写下的领取人名字也会清除。已经告诉对方的代码是否被使用，App 无法得知。"
+    "发放后立即在卡片上按“Undo”（撤销），或者在菜单的“Handed out”（送出记录）中轻扫那一行来撤销。撤销后的代码会回到未使用状态，为它写下的领取人名字也会清除。已经告诉对方的代码是否被使用，App 无法得知。"
    ]
   },
   {
@@ -116,19 +116,19 @@
   {
    "q": "在其他设备上查看",
    "a": [
-    "批次和代码存储在 iCloud 中，登录同一 Apple 账户的 iPhone 和 iPad 上都会显示。“Info”界面的“iCloud storage”一行会显示状态。没有登录 iCloud 时，数据存储在那台设备上。App Store Connect API 密钥需要在每台设备上分别添加。"
+    "批次和代码存储在 iCloud 中，登录同一 Apple 账户的 iPhone 和 iPad 上都会显示。“Info”（信息）界面的“iCloud storage”（iCloud 存储）一行会显示状态。没有登录 iCloud 时，数据存储在那台设备上。App Store Connect API 密钥需要在每台设备上分别添加。"
    ]
   },
   {
    "q": "App Store Connect API 密钥在哪里创建、存在哪里",
    "a": [
-    "团队密钥在 App Store Connect 的“用户和访问”>“集成”中创建，个人密钥在你的用户个人资料中创建，然后填入密钥 ID 和 .p8 文件。团队密钥还需要填入 Issuer ID。创建步骤在 App 内的“How to create a key”中。密钥只存储在添加它的那台设备的钥匙串中，不会传到 iCloud 或其他设备。.p8 文件只能下载一次，请另外保管好原文件。"
+    "团队密钥在 App Store Connect 的“用户和访问”>“集成”中创建，个人密钥在你的用户个人资料中创建，然后填入密钥 ID 和 .p8 文件。团队密钥还需要填入 Issuer ID。创建步骤在 App 内的“How to create a key”（如何创建密钥）中。密钥只存储在添加它的那台设备的钥匙串中，不会传到 iCloud 或其他设备。.p8 文件只能下载一次，请另外保管好原文件。"
    ]
   },
   {
    "q": "删除密钥",
    "a": [
-    "在“Info”界面打开“App Store Connect key”，再按“Delete key”。已导入的批次会保留。如果要让密钥彻底失效，请在 App Store Connect 中撤销该密钥。"
+    "在“Info”界面打开“App Store Connect key”（App Store Connect 密钥），再按“Delete key”（删除密钥）。已导入的批次会保留。如果要让密钥彻底失效，请在 App Store Connect 中撤销该密钥。"
    ]
   },
   {
@@ -146,7 +146,7 @@
   {
    "q": "App 的语言",
    "a": [
-    "App 界面有英语和韩语。设备语言是其他语言时显示英语。本页引号中的英文名称是英语界面上显示的名称。"
+    "App 界面有英语和韩语。App 会按设备首选语言列表中这两种语言里排在前面的一种显示，两种都不在列表中时显示英语。本页引号中的英文名称是英语界面上显示的名称。"
    ]
   }
  ],
@@ -168,10 +168,10 @@
    {
     "title": "处理的个人信息项目",
     "paragraphs": [
-     "开发者不收集任何个人信息项目。本 App 使用的数据如下，保存在用户设备的 App 存储空间里。设备登录了 iCloud 时，批次和代码也保存在用户本人的 iCloud 账户（CloudKit 专用数据库）中。开发者不会拿到这些数据。"
+     "开发者不收集任何个人信息项目。本应用使用的数据如下，保存在用户设备的 App 存储空间里。设备登录了 iCloud 时，批次和代码也保存在用户本人的 iCloud 账户（CloudKit 专用数据库）中。开发者不会拿到这些数据。"
     ],
     "bullets": [
-     "批次（名称、类型、拷贝设置、App Store ID、到期日、创建时间、移入废纸篓的时间，以及在 App 内生成或导入的批次所对应的 App Store Connect 批次标识符）：用于分别显示批次并统计剩余数量",
+     "批次（名称、类型、拷贝设置、App Store ID、到期日、创建时间、移入废纸篓的时间，以及在 App 内生成或导入的批次，App Store Connect 为这组代码分配的标识符）：用于分别显示批次并统计剩余数量",
      "代码（代码内容、是否已送出、送出时间）：用于给出下一个代码并显示送出记录",
      "领取人名字：送出代码时由用户自行填写的可选内容，可能是他人的姓名或昵称。显示在送出记录、送出后的卡片、存储的图片和导出的 CSV 中。与批次和代码一起保存在用户设备和用户本人的 iCloud 账户中",
      "App Store Connect API 密钥（密钥 ID、私钥，团队密钥还包括 Issuer ID）：只在用户添加后使用，用于在用户的 App Store Connect 中读取和创建 App、产品、优惠和代码。只存储在添加它的那台设备的钥匙串中，不通过 iCloud 同步",
@@ -181,7 +181,7 @@
    {
     "title": "处理和保存期限",
     "paragraphs": [
-     "开发者不保存任何个人信息。批次、代码和领取人名字会保留到用户删除为止。批次移入废纸篓后，超过 30 天再打开 App 时会连同代码被永久删除，也可以在废纸篓中立即永久删除。在一台设备上删除后，iCloud 中的副本和同一账户的其他设备上也会删除。设备上的 App 数据会在删除 App 时一起删除，但 iCloud 中的副本会留在用户的 iCloud 账户里。App Store Connect API 密钥会留在那台设备的钥匙串中，直到用户在“Info”界面的“App Store Connect key”中删除。"
+     "开发者不保存任何个人信息。批次、代码和领取人名字会保留到用户删除为止。批次移入废纸篓后，超过 30 天再打开 App 时会连同代码被永久删除，也可以在废纸篓中立即永久删除。在一台设备上删除后，iCloud 中的副本和同一账户的其他设备上也会删除。设备上的 App 数据会在删除 App 时一起删除，但 iCloud 中的副本会留在用户的 iCloud 账户里。App Store Connect API 密钥会留在那台设备的钥匙串中，直到用户在“Info”（信息）界面的“App Store Connect key”（App Store Connect 密钥）中删除。"
     ],
     "bullets": []
    },
@@ -195,14 +195,14 @@
    {
     "title": "处理委托",
     "paragraphs": [
-     "不委托处理个人信息。批次和代码的存储以及设备之间的同步通过 Apple 的 iCloud（CloudKit）进行，这些数据属于用户的 Apple 账户，适用 Apple 的隐私政策。开发者看不到也不会收到这些内容。批次带有 App Store ID 时，本应用会从 Apple 的 App Store 公开信息（itunes.apple.com）获取该 App 的图标和名称。这时会发送 App ID 和地区代码，Apple 会像普通的网页请求一样收到设备的 IP 地址。不发送 Cookie 和登录信息。添加 App Store Connect API 密钥后，本应用会把用该密钥签名的请求直接发送到 Apple 的 App Store Connect API（api.appstoreconnect.apple.com），用于读取和创建 App、产品、优惠和代码。这些请求不经过开发者的服务器。"
+     "不委托处理个人信息。批次和代码的存储以及设备之间的同步通过 Apple 的 iCloud（CloudKit）进行，这些数据属于用户的 Apple 账户，适用 Apple 的隐私政策。开发者看不到也不会收到这些内容。批次带有 App Store ID 时，本应用会从 Apple 的 App Store 公开信息（itunes.apple.com）以及其响应中给出的图标图片地址获取该 App 的图标和名称。这时会发送 App ID 和地区代码，Apple 会像普通的网页请求一样收到设备的 IP 地址。不发送 Cookie 和登录信息。公开信息中没有该 App 且已添加 App Store Connect API 密钥时，图标和名称改从 App Store Connect 获取。添加 App Store Connect API 密钥后，本应用会把用该密钥签名的请求直接发送到 Apple 的 App Store Connect API（api.appstoreconnect.apple.com），用于读取和创建 App、产品、优惠和代码。这些请求不经过开发者的服务器。"
     ],
     "bullets": []
    },
    {
     "title": "销毁程序和方法",
     "paragraphs": [
-     "开发者不保存个人信息，因此没有需要销毁的内容。在废纸篓中永久删除批次时，该批次的代码和领取人名字会一起删除；撤销已送出的代码时，为该代码填写的领取人名字会被清除。删除 App 时，这台设备上的 App 数据会被删除。App Store Connect API 密钥请在删除 App 之前，先在“Info”界面的“App Store Connect key”中按“Delete key”删除。iCloud 中的副本可以在“设置”>“你的姓名”>“iCloud”>“管理储存空间”>“Codematic”中删除。"
+     "开发者不保存个人信息，因此没有需要销毁的内容。在废纸篓中永久删除批次时，该批次的代码和领取人名字会一起删除；撤销已送出的代码时，为该代码填写的领取人名字会被清除。删除 App 时，这台设备上的 App 数据会被删除。App Store Connect API 密钥请在删除 App 之前，先在“Info”界面的“App Store Connect key”中按“Delete key”（删除密钥）删除。iCloud 中的副本可以在“设置”>“你的姓名”>“iCloud”>“管理储存空间”>“Codematic”中删除。"
     ],
     "bullets": []
    },
@@ -216,7 +216,7 @@
    {
     "title": "安全保障措施",
     "paragraphs": [
-     "本应用使用的数据存放在设备上的 App 存储空间里。开发者没有服务器。iCloud 存储使用用户本人 iCloud 账户里的专用数据库（CloudKit）。App 内没有关闭它的开关，在没有登录 iCloud 的设备上，数据只存储在那台设备上。App Store Connect API 密钥在添加时会向 Apple 确认一次，之后只存储在那台设备的钥匙串中，只有设备解锁时才能读取，也不通过 iCloud 钥匙串同步。在其他设备上需要另外添加。从“文件”App 或隔空投送传给本应用的 .p8 文件，App 内的副本在读取后删除。照片只在用户按“Save as image”时，以仅添加的权限存储，本应用不读取照片图库。送出代码或再次拷贝时，本应用会把代码或链接放入剪贴板；剪贴板的内容只在你轻点粘贴按钮时才读取。如果你打开了设备备份（例如 iCloud 云备份），App 存储空间里的数据会像其他 App 的数据一样包含在备份中，备份由 Apple 处理。"
+     "本应用使用的数据存放在设备上的 App 存储空间里。开发者没有服务器。iCloud 存储使用用户本人 iCloud 账户里的专用数据库（CloudKit）。本应用内没有关闭它的开关，在没有登录 iCloud 的设备上，数据只存储在那台设备上。App Store Connect API 密钥在添加时会向 Apple 确认一次，之后只存储在那台设备的钥匙串中，只有设备解锁时才能读取，也不通过 iCloud 钥匙串同步。在其他设备上需要另外添加。从“文件”App 或隔空投送传给本应用的 .p8 文件，本应用内的副本在读取后删除。照片只在用户按“Save as image”（存储为图片）时，以仅添加的权限存储，本应用不读取照片图库。送出代码或再次拷贝时，本应用会把代码或链接放入剪贴板；剪贴板的内容只在用户轻点粘贴按钮时才读取。如果用户打开了设备备份（例如 iCloud 云备份），App 存储空间里的数据会像其他 App 的数据一样包含在备份中，备份由 Apple 处理。"
     ],
     "bullets": []
    },

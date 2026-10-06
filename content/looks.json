@@ -52,14 +52,44 @@
   "color": "#FFFFFF",
   "alts": {
    "ko": [
-    "코드를 한 장씩 뽑아 건넵니다",
-    "발급할 때마다 영수증이 나옵니다",
-    "코드 묶음은 선반의 롤이 됩니다"
+    "코드를 건넨 뒤의 카드. 코드와 QR, 건넨 시각, 받는 사람이 적혀 있습니다.",
+    "묶음 화면에서 코드 하나를 발급하는 중입니다.",
+    "묶음 화면. 아래에 묶음 목록과 묶음마다 남은 수량이 있습니다."
    ],
    "en": [
-    "Hand out codes one ticket at a time",
-    "Every code prints as a receipt",
-    "Each batch becomes a roll on the shelf"
+    "The card shown after a code is handed out, with the code, a QR code, the time and the recipient.",
+    "A roll's screen while a code is being issued.",
+    "A roll's screen, with the list of rolls and the codes left in each below."
+   ],
+   "ja": [
+    "コードを渡したあとのカード。コード、QR コード、日時、受け取る人が書かれています。",
+    "セットの画面でコードをひとつ発行しているところ。",
+    "セットの画面。下にセットの一覧とそれぞれの残り数があります。"
+   ],
+   "zh-hans": [
+    "送出代码后的卡片，上面有代码、二维码、时间和领取人。",
+    "在批次界面发放一个代码的过程。",
+    "批次界面，下方是批次列表和每个批次的剩余数量。"
+   ],
+   "zh-hant": [
+    "送出代碼後的卡片，上面有代碼、QR Code、時間和領取人。",
+    "在批次畫面發放一個代碼的過程。",
+    "批次畫面，下方是批次列表和每個批次的剩餘數量。"
+   ],
+   "de": [
+    "Die Karte nach dem Weitergeben eines Codes, mit Code, QR-Code, Zeitpunkt und Empfänger.",
+    "Der Bildschirm eines Stapels, während ein Code ausgegeben wird.",
+    "Der Bildschirm eines Stapels, unten die Liste der Stapel mit den jeweils verbleibenden Codes."
+   ],
+   "es": [
+    "La tarjeta que aparece después de entregar un código, con el código, un código QR, la hora y el destinatario.",
+    "La pantalla de un lote mientras se emite un código.",
+    "La pantalla de un lote, con la lista de lotes y los códigos que quedan en cada uno debajo."
+   ],
+   "pt-br": [
+    "O cartão que aparece depois de entregar um código, com o código, um código QR, a hora e o destinatário.",
+    "A tela de um lote enquanto um código é emitido.",
+    "A tela de um lote, com a lista de lotes e os códigos restantes em cada um abaixo."
    ]
   }
  },

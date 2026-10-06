@@ -30,12 +30,13 @@
  "features": [
   "묶음 종류 셋: 오퍼 코드, 앱 프로모 코드, 그 밖의 코드 (RollKind)",
   "넣는 길 셋: CSV 파일 가져오기, 직접 붙여넣기, App Store Connect 에서 발급 (Views/Give/NewRollSheet.swift)",
-  "다른 묶음에 든 코드가 하나라도 있으면 '이미 불러온 파일' 알림을 띄우고 넣지 않는다. 휴지통의 묶음이면 알림에서 되살리기",
+  "CSV 파일의 코드가 다른 묶음에 하나라도 있으면 '이미 불러온 파일' 알림을 띄우고 파일째 넣지 않는다. 휴지통의 묶음이면 알림에서 되살리기. 붙여넣기와 같은 묶음에 더 넣을 때는 이미 든 코드만 빼고 넣는다 (NewRollSheet.swift importFile, fresh)",
+  "앱 화면 언어는 iOS 가 기기 선호 언어 목록에서 앱이 지원하는 첫 언어(영어, 한국어)로 고른다. 둘 다 없으면 영어(개발 언어)",
   "복사 방식: 링크, 코드, 코드+링크 (CopyMode). 오퍼 코드는 앱 ID 가 있어야 링크, 그 밖의 코드는 코드만 (Roll.canCopyLink)",
   "되돌리기(Ticket.restore)는 상태, 건넨 시각, 받는 사람 이름을 지운다",
   "휴지통: 묶음째 들어가고 30일 뒤 앱을 열 때 영구히 지운다 (Trash.keepDays, Trash.purge)",
   "App Store Connect 키 종류 둘: 팀 키(Issuer ID 필요), 개인 키(Issuer ID 없음) (ASC/ASCModels.swift ASCKeyKind)",
-  "방금 만든 코드는 Apple 에서 쓸 수 있게 되기까지 몇 시간 걸릴 수 있다 (Views/Give/TicketCloseup.swift 안내 글)"
+  "방금 만든 코드는 Apple 에서 쓸 수 있게 되기까지 몇 시간 걸릴 수 있다 (Views/Give/TicketCloseup.swift 안내 글). 코드 발급 화면의 안내 글은 '한 시간쯤'(about an hour)이라 앱 문자열이 둘이다. 영어 01 절 그림에 그 글이 보인다. FAQ 는 '몇 시간'을 따른다"
  ],
  "notOffered": [
   "코드 사용 여부 확인(사용 집계)",
@@ -53,10 +54,11 @@
   "앱 프로모 코드 링크(apps.apple.com/redeem?code=)에 코드가 미리 채워지는지: 실기기 확인 전이라 쓰지 않는다",
   "화면 움직임과 외관(상자, 롤, 프린터, 영수증): 이 앱만의 사용자 결정(docs/store/asc-answers.md '문안 기준')",
   "앱을 지우면 키체인의 키가 지워지는지: iOS 동작이라 단정하지 않고 '지우기 전에 키 삭제'로 안내한다",
-  "FAQ 2 의 App Store Connect 웹 메뉴 이름: 실제 화면과 맞춰 보지 않아 메뉴 이름을 적지 않았다"
+  "FAQ 2 의 App Store Connect 웹 메뉴 이름: 실제 화면과 맞춰 보지 않아 메뉴 이름을 적지 않았다",
+  "아이콘 그림을 받는 주소의 호스트 이름: 코드는 lookup 응답에 적힌 https 주소를 그대로 쓰므로 처리방침에 호스트를 못박지 않고 '그 응답에 적힌 그림 주소'라고 쓴다"
  ],
  "uiNames": {
-  "roll": "묶음",
+  "Roll": "묶음",
   "Add codes": "코드 넣기",
   "New codes": "새 코드",
   "Import CSV file": "CSV 파일 가져오기",
@@ -76,7 +78,7 @@
   "Copy again": "다시 복사",
   "Undo": "되돌리기",
   "Close": "닫기",
-  "Handed out": "건넨 기록",
+  "Handed out %lld": "건넨 기록 %lld",
   "More": "더 보기",
   "Choose next code": "남은 코드에서 고르기",
   "Export as CSV": "CSV 로 내보내기",
@@ -99,14 +101,15 @@
   "Create new offer": "새 오퍼 만들기",
   "Deactivate offer": "오퍼 비활성화"
  },
+ "uiNamesNote": "키는 Localizable.xcstrings 의 키 그대로다. 묶음은 카탈로그 키가 Roll 이고 문장 안에서는 roll 로 쓴다. Handed out %lld 는 건수가 붙는 메뉴 항목과 제목이라 문구에는 숫자 없이 Handed out, 건넨 기록으로 쓴다. More 는 글자 없는 메뉴 단추(…)의 접근성 이름이라 문구에는 '메뉴'라고만 쓴다",
  "numbers": [],
  "numbersNote": "소개 문구(요약, 부제, 절)에는 숫자를 쓰지 않는다. 30일(휴지통)과 7일(아이콘 캐시)은 지원과 처리방침에만 쓴다",
  "sources": [
   "Codematic/docs/SITE_DRAFT.md (ae59771: 영어 기본 화면, 5절 화면 이름 표. 첫 판 8ec7225)",
   "Codematic/Codematic/Resources/Localizable.xcstrings (ae59771, 화면 글자의 정본: 영어 키와 한국어 값)",
-  "Codematic/docs/store/metadata.json (8ec7225, 언어별 부제와 용어)",
+  "Codematic/docs/store/metadata.json (ae59771, 언어별 부제와 용어)",
   "Codematic/docs/store/asc-answers.md (문안 기준, 개인정보 설문)",
-  "앱 코드 Codematic 8ec7225: Model/Models.swift, ASC/ASCKeyStore.swift, ASC/ASCModels.swift, Logic/CloudSync.swift, Logic/AppIconFetcher.swift, Logic/AppIconStore.swift, Views/Give/NewRollSheet.swift, Views/Give/TrashView.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCKeyView.swift, Views/ASC/ASCKeyGuideView.swift, Resources/PrivacyInfo.xcprivacy, project.yml",
-  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). 절 그림 ko 는 원본 캡처 build/store/shots-src/asc/asc-1-add.png, light-main/card.png (커밋 밖, 2026-10-06 08:48 파일, 한국어 화면), 나머지 일곱 언어는 build/store/shots-src/en-US/iphone/asc-issue.png, card.png (커밋 밖, 2026-10-06 17:59 파일, 영어 화면). 영어 New codes 화면 캡처는 없다"
+  "앱 코드 Codematic ae59771 (1c3520e 까지 앱 코드 변경 없음): Model/Models.swift, ASC/ASCKeyStore.swift, ASC/ASCModels.swift, Logic/CloudSync.swift, Logic/AppIconFetcher.swift, Logic/AppIconStore.swift, Views/Give/NewRollSheet.swift, Views/Give/RollDetailView.swift, Views/Give/TrashView.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCKeyView.swift, Views/ASC/ASCKeyGuideView.swift, Resources/PrivacyInfo.xcprivacy, project.yml",
+  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). 절 그림 ko 는 원본 캡처 build/store/shots-src/asc/asc-1-add.png (커밋 밖, 2026-10-06 08:48 파일. 아래쪽 화면 글자 한 줄 위에서 잘라 쓴다), ko/iphone/card.png (2026-10-06 17:57 파일, light-main/card.png 와 같은 파일. 카드 시각이 19:08 이라 스토어 합성본 ko 의 18:36 과 다르다), 나머지 일곱 언어는 build/store/shots-src/en-US/iphone/asc-issue.png, card.png (커밋 밖, 2026-10-06 17:59 파일, 영어 화면). 영어 New codes 화면 캡처는 없다"
  ]
 }

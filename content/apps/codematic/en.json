@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Three ways to add codes",
    "body": [
-    "Import the offer code CSV you download from App Store Connect as it is. Codematic reads the app and the code type from the file and skips codes you have already added. Without a file, paste the codes in. With an API key added, issue codes in the app and they go straight in."
+    "Import the offer code CSV you download from App Store Connect as it is. Codematic reads the code type and which app the codes are for from the file. Without a file, paste the codes in, and any you have already added are skipped. With an API key added, issue codes in the app and they go straight in."
    ],
    "bullets": [
     "Import CSV file",
@@ -21,8 +21,8 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
-    "alt": "The Issue codes screen, with One-time use codes selected next to Custom codes, and Quantity, Expiration date and Sandbox codes below.",
+    "focus": "-300px",
+    "alt": "The Issue codes screen, with Quantity, Expiration date and Sandbox codes, and a note below about when the codes can be used.",
     "caption": "Close view of the app"
    }
   },
@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Tap Issue and the next code is copied",
    "body": [
-    "Tap Issue and the next code is copied and marked as handed out. Each roll can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it."
+    "The copied code is marked as handed out. Each roll can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it."
    ],
    "bullets": [
     "Code or redeem link copied",
@@ -40,8 +40,8 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-175px",
-    "alt": "The card shown after a code is handed out. It says Copied and has the code, a QR code, the time and the recipient, with Save as image, Copy again and Undo below.",
+    "focus": "-245px",
+    "alt": "The card shown after a code is handed out, with the app name, the roll name, the code, a QR code, the time and the recipient.",
     "caption": "Close view of the app"
    }
   },
@@ -74,7 +74,7 @@
   {
    "q": "Which kinds of codes can be added",
    "a": [
-    "App Store offer codes (for subscriptions and in-app purchases), app promo codes, and any other codes of your own. You choose the type when you add codes: Offer code, App promo code or Other code. An offer code CSV from App Store Connect tells the app the type and the app."
+    "App Store offer codes (for subscriptions and in-app purchases), app promo codes, and any other codes of your own. You choose the type when you add codes: Offer code, App promo code or Other code. With an offer code CSV from App Store Connect, Codematic reads the type and which app the codes are for from the file."
    ]
   },
   {
@@ -86,7 +86,7 @@
   {
    "q": "Importing the same file twice",
    "a": [
-    "If the file contains codes you already added, the app says File already imported and adds nothing. If that roll is in the Trash, you can restore it from the alert."
+    "If codes in the file are already in another roll, the app says File already imported and adds nothing. If that roll is in the Trash, you can restore it from the alert."
    ]
   },
   {
@@ -98,7 +98,7 @@
   {
    "q": "Undoing a code handed out by mistake",
    "a": [
-    "Tap Undo on the card right after issuing, or swipe the entry under Handed out in the More menu. The code goes back to the unused ones and the recipient name you typed for it is cleared. The app cannot tell whether a code you already sent has been redeemed."
+    "Tap Undo on the card right after issuing, or swipe the entry under Handed out in the menu. The code goes back to the unused ones and the recipient name you typed for it is cleared. The app cannot tell whether a code you already sent has been redeemed."
    ]
   },
   {
@@ -146,7 +146,7 @@
   {
    "q": "App languages",
    "a": [
-    "The app is in English and Korean. On a device set to any other language it appears in English."
+    "The app is in English and Korean. It follows whichever of the two comes first in the device's preferred languages, and appears in English when neither is listed."
    ]
   }
  ],
@@ -195,7 +195,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. Storing rolls and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. When a roll has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com). It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
+     "No processing is outsourced. Storing rolls and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. When a roll has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com) and from the icon image address given in that response. It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If the public information has no entry for the app and an App Store Connect API key is added, the icon and name come from App Store Connect instead. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
     ],
     "bullets": []
    },

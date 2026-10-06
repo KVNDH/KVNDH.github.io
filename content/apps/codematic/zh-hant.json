@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "加入代碼的三種方式",
    "body": [
-    "直接匯入從 App Store Connect 下載的優惠代碼 CSV。App 會從檔案中辨識對應的 App 和代碼類型，並略過已經加入過的代碼。沒有檔案時，也可以直接貼上代碼。加入 API 金鑰後，可以在 App 內產生代碼並直接加入。"
+    "直接匯入從 App Store Connect 下載的優惠代碼 CSV。App 會從檔案中辨識對應的 App 和代碼類型。沒有檔案時，也可以直接貼上代碼，其中已經加入過的會被略過。加入 API 金鑰後，可以在 App 內產生代碼並直接加入。"
    ],
    "bullets": [
     "「Import CSV file」（匯入 CSV）",
@@ -21,16 +21,16 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
-    "alt": "產生代碼的「Issue codes」畫面。「Custom codes」旁邊的「One-time use codes」處於選取狀態，下方依序是「Quantity」、「Expiration date」和「Sandbox codes」。",
+    "focus": "-300px",
+    "alt": "產生代碼的「Issue codes」畫面。依序是「Quantity」、「Expiration date」和「Sandbox codes」，下方有一段關於代碼何時可以使用的說明。",
     "caption": "應用畫面放大"
    }
   },
   {
    "layout": "feat",
-   "title": "按下「Issue」，就會拷貝下一個代碼",
+   "title": "按下「Issue」（發放），就會拷貝下一個代碼",
    "body": [
-    "按下「Issue」（發放），下一個代碼會被拷貝，並標示為已送出。每個批次（App 中稱為「roll」）可以分別設定拷貝兌換連結還是代碼。當面送出時，可以出示帶 QR Code 的卡片，或者儲存成圖片再傳送。"
+    "拷貝的代碼會標示為已送出。每個批次（App 中稱為「roll」）可以分別設定拷貝兌換連結、代碼，或者兩者都拷貝。當面送出時，可以出示帶 QR Code 的卡片，或者儲存成圖片再傳送。"
    ],
    "bullets": [
     "拷貝代碼或兌換連結",
@@ -40,8 +40,8 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-175px",
-    "alt": "送出代碼後的卡片。上方顯示「Copied」，卡片上有代碼、QR Code、時間和領取人，下方是「Save as image」、「Copy again」和「Undo」按鈕。",
+    "focus": "-245px",
+    "alt": "送出代碼後的卡片。卡片上有 App 名稱、批次名稱、代碼、QR Code、時間和領取人。",
     "caption": "應用畫面放大"
    }
   },
@@ -64,8 +64,8 @@
     "加入 App Store Connect API 金鑰後，可以在 App 內建立優惠並產生一次性代碼。產生的代碼會直接成為一個批次。沒有金鑰時，匯入 CSV 和貼上代碼等其他功能照常使用。"
    ],
    "bullets": [
-    "產生一次性代碼批次",
-    "匯入已建立的批次",
+    "產生一次性代碼",
+    "匯入已建立的代碼",
     "建立新優惠"
    ]
   }
@@ -74,31 +74,31 @@
   {
    "q": "可以加入哪些代碼",
    "a": [
-    "可以加入 App Store 的優惠代碼（訂閱和 App 內購買）、App 促銷代碼，以及其他代碼。加入代碼時從「Offer code」、「App promo code」、「Other code」中選擇類型。App Store Connect 的優惠代碼 CSV 會由 App 從檔案中辨識類型和對應的 App。"
+    "可以加入 App Store 的優惠代碼（訂閱和 App 內購買）、App 促銷代碼，以及其他代碼。加入代碼時從「Offer code」（優惠代碼）、「App promo code」（App 促銷代碼）、「Other code」（其他代碼）中選擇類型。App Store Connect 的優惠代碼 CSV 會由 App 從檔案中辨識類型和對應的 App。"
    ]
   },
   {
    "q": "從哪裡取得優惠代碼 CSV",
    "a": [
-    "在 App Store Connect 中打開相應訂閱或 App 內購買的優惠代碼頁面，建立一次性代碼後即可下載 CSV。把檔案放到「檔案」App 中，按「Add codes」，再選「Import CSV file」。"
+    "在 App Store Connect 中打開相應訂閱或 App 內購買的優惠代碼頁面，建立一次性代碼後即可下載 CSV。把檔案放到「檔案」App 中，按「Add codes」（加入代碼），再選「Import CSV file」（匯入 CSV）。"
    ]
   },
   {
    "q": "同一個檔案匯入兩次時",
    "a": [
-    "如果檔案裡有已經加入過的代碼，App 會提示「File already imported」並且不會加入。如果那個批次在垃圾桶（「Trash」）裡，可以在提示中復原。"
+    "如果檔案裡的代碼已經在其他批次中，App 會提示「File already imported」（檔案已匯入過）並且不會加入。如果那個批次在「Trash」（垃圾桶）裡，可以在提示中復原。"
    ]
   },
   {
    "q": "選擇拷貝連結還是代碼",
    "a": [
-    "在批次畫面上方，可以從「Link」、「Code」、「Both」（代碼加連結）中選擇。領取人打開優惠代碼的連結後，會進入 App Store 的代碼兌換頁面。沒有 App Store ID 的優惠代碼批次以及其他代碼只拷貝代碼。"
+    "在批次畫面上方，可以從「Link」（連結）、「Code」（代碼）、「Both」（兩者）中選擇。領取人打開優惠代碼的連結後，會進入 App Store 的代碼兌換頁面。沒有 App Store ID 的優惠代碼批次以及其他代碼只拷貝代碼。"
    ]
   },
   {
    "q": "還原送錯的代碼",
    "a": [
-    "產生後立即在卡片上按「Undo」（還原），或者在選單的「Handed out」中滑動那一列來還原。還原後的代碼會回到未使用狀態，為它寫下的領取人名字也會清除。已經告訴對方的代碼是否被使用，App 無法得知。"
+    "發放後立即在卡片上按「Undo」（還原），或者在選單的「Handed out」（送出記錄）中滑動那一列來還原。還原後的代碼會回到未使用狀態，為它寫下的領取人名字也會清除。已經告訴對方的代碼是否被使用，App 無法得知。"
    ]
   },
   {
@@ -116,19 +116,19 @@
   {
    "q": "在其他裝置上查看",
    "a": [
-    "批次和代碼儲存在 iCloud 中，登入同一 Apple 帳號的 iPhone 和 iPad 上都會顯示。「Info」畫面的「iCloud storage」一列會顯示狀態。沒有登入 iCloud 時，資料儲存在那台裝置上。App Store Connect API 金鑰需要在每台裝置上分別加入。"
+    "批次和代碼儲存在 iCloud 中，登入同一 Apple 帳號的 iPhone 和 iPad 上都會顯示。「Info」（資訊）畫面的「iCloud storage」（iCloud 儲存）一列會顯示狀態。沒有登入 iCloud 時，資料儲存在那台裝置上。App Store Connect API 金鑰需要在每台裝置上分別加入。"
    ]
   },
   {
    "q": "App Store Connect API 金鑰在哪裡建立、存在哪裡",
    "a": [
-    "團隊金鑰在 App Store Connect 的「使用者與存取權限」>「整合」中建立，個人金鑰在你的使用者個人檔案中建立，然後填入金鑰 ID 和 .p8 檔案。團隊金鑰還需要填入 Issuer ID。建立步驟在 App 內的「How to create a key」中。金鑰只儲存在加入它的那台裝置的鑰匙圈中，不會傳到 iCloud 或其他裝置。.p8 檔案只能下載一次，請另外保管好原始檔案。"
+    "團隊金鑰在 App Store Connect 的「使用者與存取權限」>「整合」中建立，個人金鑰在你的使用者個人檔案中建立，然後填入金鑰 ID 和 .p8 檔案。團隊金鑰還需要填入 Issuer ID。建立步驟在 App 內的「How to create a key」（如何建立金鑰）中。金鑰只儲存在加入它的那台裝置的鑰匙圈中，不會傳到 iCloud 或其他裝置。.p8 檔案只能下載一次，請另外保管好原始檔案。"
    ]
   },
   {
    "q": "刪除金鑰",
    "a": [
-    "在「Info」畫面打開「App Store Connect key」，再按「Delete key」。已匯入的批次會保留。如果要讓金鑰徹底失效，請在 App Store Connect 中撤銷該金鑰。"
+    "在「Info」畫面打開「App Store Connect key」（App Store Connect 金鑰），再按「Delete key」（刪除金鑰）。已匯入的批次會保留。如果要讓金鑰徹底失效，請在 App Store Connect 中撤銷該金鑰。"
    ]
   },
   {
@@ -146,7 +146,7 @@
   {
    "q": "App 的語言",
    "a": [
-    "App 畫面有英文和韓文。裝置語言是其他語言時顯示英文。本頁引號中的英文名稱是英文畫面上顯示的名稱。"
+    "App 畫面有英文和韓文。App 會依裝置偏好語言列表中這兩種語言裡排在前面的一種顯示，兩種都不在列表中時顯示英文。本頁引號中的英文名稱是英文畫面上顯示的名稱。"
    ]
   }
  ],
@@ -168,10 +168,10 @@
    {
     "title": "處理的個人資料項目",
     "paragraphs": [
-     "開發者不收集任何個人資料項目。本 App 使用的資料如下，保存在使用者裝置的 App 儲存空間裡。裝置登入了 iCloud 時，批次和代碼也保存在使用者本人的 iCloud 帳號（CloudKit 專用資料庫）中。開發者不會拿到這些資料。"
+     "開發者不收集任何個人資料項目。本應用使用的資料如下，保存在使用者裝置的 App 儲存空間裡。裝置登入了 iCloud 時，批次和代碼也保存在使用者本人的 iCloud 帳號（CloudKit 專用資料庫）中。開發者不會拿到這些資料。"
     ],
     "bullets": [
-     "批次（名稱、類型、拷貝設定、App Store ID、到期日、建立時間、移入垃圾桶的時間，以及在 App 內產生或匯入的批次所對應的 App Store Connect 批次識別碼）：用於分別顯示批次並統計剩餘數量",
+     "批次（名稱、類型、拷貝設定、App Store ID、到期日、建立時間、移入垃圾桶的時間，以及在 App 內產生或匯入的批次，App Store Connect 為這組代碼指定的識別碼）：用於分別顯示批次並統計剩餘數量",
      "代碼（代碼內容、是否已送出、送出時間）：用於給出下一個代碼並顯示送出記錄",
      "領取人名字：送出代碼時由使用者自行填寫的選填內容，可能是他人的姓名或暱稱。顯示在送出記錄、送出後的卡片、儲存的圖片和輸出的 CSV 中。與批次和代碼一起保存在使用者的裝置和使用者本人的 iCloud 帳號中",
      "App Store Connect API 金鑰（金鑰 ID、私密金鑰，團隊金鑰還包括 Issuer ID）：只在使用者加入後使用，用於在使用者的 App Store Connect 中讀取和建立 App、產品、優惠和代碼。只儲存在加入它的那台裝置的鑰匙圈中，不透過 iCloud 同步",
@@ -181,7 +181,7 @@
    {
     "title": "處理和保存期限",
     "paragraphs": [
-     "開發者不保存任何個人資料。批次、代碼和領取人名字會保留到使用者刪除為止。批次移入垃圾桶後，超過 30 天再打開 App 時會連同代碼被永久刪除，也可以在垃圾桶中立即永久刪除。在一台裝置上刪除後，iCloud 中的副本和同一帳號的其他裝置上也會刪除。裝置上的 App 資料會在刪除 App 時一起刪除，但 iCloud 中的副本會留在使用者的 iCloud 帳號裡。App Store Connect API 金鑰會留在那台裝置的鑰匙圈中，直到使用者在「Info」畫面的「App Store Connect key」中刪除。"
+     "開發者不保存任何個人資料。批次、代碼和領取人名字會保留到使用者刪除為止。批次移入垃圾桶後，超過 30 天再打開 App 時會連同代碼被永久刪除，也可以在垃圾桶中立即永久刪除。在一台裝置上刪除後，iCloud 中的副本和同一帳號的其他裝置上也會刪除。裝置上的 App 資料會在刪除 App 時一起刪除，但 iCloud 中的副本會留在使用者的 iCloud 帳號裡。App Store Connect API 金鑰會留在那台裝置的鑰匙圈中，直到使用者在「Info」（資訊）畫面的「App Store Connect key」（App Store Connect 金鑰）中刪除。"
     ],
     "bullets": []
    },
@@ -195,14 +195,14 @@
    {
     "title": "處理委外",
     "paragraphs": [
-     "不委託處理個人資料。批次和代碼的儲存以及裝置之間的同步透過 Apple 的 iCloud（CloudKit）進行，這些資料屬於使用者的 Apple 帳號，適用 Apple 的隱私政策。開發者看不到也不會收到這些內容。批次帶有 App Store ID 時，本應用會從 Apple 的 App Store 公開資訊（itunes.apple.com）取得該 App 的圖像和名稱。這時會傳送 App ID 和地區代碼，Apple 會像一般的網頁請求一樣收到裝置的 IP 位址。不傳送 Cookie 和登入資訊。加入 App Store Connect API 金鑰後，本應用會把用該金鑰簽署的請求直接傳送到 Apple 的 App Store Connect API（api.appstoreconnect.apple.com），用於讀取和建立 App、產品、優惠和代碼。這些請求不經過開發者的伺服器。"
+     "不委託處理個人資料。批次和代碼的儲存以及裝置之間的同步透過 Apple 的 iCloud（CloudKit）進行，這些資料屬於使用者的 Apple 帳號，適用 Apple 的隱私政策。開發者看不到也不會收到這些內容。批次帶有 App Store ID 時，本應用會從 Apple 的 App Store 公開資訊（itunes.apple.com）以及其回應中提供的圖像圖片位址取得該 App 的圖像和名稱。這時會傳送 App ID 和地區代碼，Apple 會像一般的網頁請求一樣收到裝置的 IP 位址。不傳送 Cookie 和登入資訊。公開資訊中沒有該 App 且已加入 App Store Connect API 金鑰時，圖像和名稱改從 App Store Connect 取得。加入 App Store Connect API 金鑰後，本應用會把用該金鑰簽署的請求直接傳送到 Apple 的 App Store Connect API（api.appstoreconnect.apple.com），用於讀取和建立 App、產品、優惠和代碼。這些請求不經過開發者的伺服器。"
     ],
     "bullets": []
    },
    {
     "title": "銷毀程序和方法",
     "paragraphs": [
-     "開發者不保存個人資料，因此沒有需要銷毀的內容。在垃圾桶中永久刪除批次時，該批次的代碼和領取人名字會一起刪除；還原已送出的代碼時，為該代碼填寫的領取人名字會被清除。刪除 App 時，這台裝置上的 App 資料會被刪除。App Store Connect API 金鑰請在刪除 App 之前，先在「Info」畫面的「App Store Connect key」中按「Delete key」刪除。iCloud 中的副本可以在「設定」>「你的名稱」>「iCloud」>「管理儲存空間」>「Codematic」中刪除。"
+     "開發者不保存個人資料，因此沒有需要銷毀的內容。在垃圾桶中永久刪除批次時，該批次的代碼和領取人名字會一起刪除；還原已送出的代碼時，為該代碼填寫的領取人名字會被清除。刪除 App 時，這台裝置上的 App 資料會被刪除。App Store Connect API 金鑰請在刪除 App 之前，先在「Info」畫面的「App Store Connect key」中按「Delete key」（刪除金鑰）刪除。iCloud 中的副本可以在「設定」>「你的名稱」>「iCloud」>「管理儲存空間」>「Codematic」中刪除。"
     ],
     "bullets": []
    },
@@ -216,7 +216,7 @@
    {
     "title": "安全維護措施",
     "paragraphs": [
-     "本應用使用的資料存放在裝置上的 App 儲存空間裡。開發者沒有伺服器。iCloud 儲存使用使用者本人 iCloud 帳號裡的專用資料庫（CloudKit）。App 內沒有關閉它的開關，在沒有登入 iCloud 的裝置上，資料只儲存在那台裝置上。App Store Connect API 金鑰在加入時會向 Apple 確認一次，之後只儲存在那台裝置的鑰匙圈中，只有裝置解鎖時才能讀取，也不透過 iCloud 鑰匙圈同步。在其他裝置上需要另外加入。從「檔案」App 或 AirDrop 傳給本應用的 .p8 檔案，App 內的副本在讀取後刪除。照片只在使用者按「Save as image」時，以僅加入的權限儲存，本應用不讀取照片圖庫。送出代碼或再次拷貝時，本應用會把代碼或連結放入剪貼板；剪貼板的內容只在你點一下貼上按鈕時才讀取。如果你開啟了裝置備份（例如 iCloud 備份），App 儲存空間裡的資料會像其他 App 的資料一樣包含在備份中，備份由 Apple 處理。"
+     "本應用使用的資料存放在裝置上的 App 儲存空間裡。開發者沒有伺服器。iCloud 儲存使用使用者本人 iCloud 帳號裡的專用資料庫（CloudKit）。本應用內沒有關閉它的開關，在沒有登入 iCloud 的裝置上，資料只儲存在那台裝置上。App Store Connect API 金鑰在加入時會向 Apple 確認一次，之後只儲存在那台裝置的鑰匙圈中，只有裝置解鎖時才能讀取，也不透過 iCloud 鑰匙圈同步。在其他裝置上需要另外加入。從「檔案」App 或 AirDrop 傳給本應用的 .p8 檔案，本應用內的副本在讀取後刪除。照片只在使用者按「Save as image」（儲存為圖片）時，以僅加入的權限儲存，本應用不讀取照片圖庫。送出代碼或再次拷貝時，本應用會把代碼或連結放入剪貼板；剪貼板的內容只在使用者點一下貼上按鈕時才讀取。如果使用者開啟了裝置備份（例如 iCloud 備份），App 儲存空間裡的資料會像其他 App 的資料一樣包含在備份中，備份由 Apple 處理。"
     ],
     "bullets": []
    },
