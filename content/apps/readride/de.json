@@ -61,7 +61,7 @@
    "layout": "card",
    "title": "Ihre Stelle und Ihr Tempo",
    "body": [
-    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. So geht sie nicht verloren, wenn Sie die Schriftgröße ändern. Jede Sprache behält ihr eigenes Tempo, für Deutsch wählen Sie zwischen 100 und 600 Wörtern pro Minute. Die Länge der Pausen an Kommas und Satzenden stellen Sie in fünf Stufen ein."
+    "Readride speichert die Stelle, an der Sie angehalten oder geschlossen haben, als Zeichenposition im aufgeräumten Text. So geht sie nicht verloren, wenn Sie die Schriftgröße ändern. Jede Sprache behält ihr eigenes Tempo, für Deutsch wählen Sie zwischen 100 und 1.000 Wörtern pro Minute. Die Länge der Pausen an Kommas und Satzenden stellen Sie in fünf Stufen ein. Geräte mit demselben iCloud-Account halten Regal, Lesepositionen und Gelesenes gleich, sodass Sie ein Dokument auf einem anderen Gerät dort weiterlesen, wo Sie aufgehört haben."
    ],
    "bullets": [],
    "visual": {
@@ -82,7 +82,8 @@
    "Keine Grenze für Dokumente (zu Beginn 3)",
    "Ein ZIP mit Textdateien als ein Dokument",
    "Dokumentübersicht und der aktuelle Abschnitt über den Wörtern",
-   "Mit KI mehr finden auf unterstützten iPhones"
+   "Ausgeschaltete Abschnitte überspringen, in Dokumenten mit Überschriften oder Dateien",
+   "Mit KI mehr finden auf unterstützten iPhones und iPads"
   ]
  },
  "faq": [
@@ -107,7 +108,7 @@
   {
    "q": "PDFs in indischen Schriften",
    "a": [
-    "Gibt ein PDF in einer indischen Schrift, etwa auf Hindi, Bengali oder Tamil, seine Buchstaben in falscher Reihenfolge heraus, bringt Readride sie in die richtige Reihenfolge und zeigt in der Vorbereitung, an wie vielen Stellen es das getan hat. Seiten, auf denen Buchstaben fehlen oder zu Symbolen geworden sind, meldet die Vorbereitung ebenfalls. Seiten auf Hindi und Marathi darunter liest Readride, wenn iOS das unterstützt, mit der Texterkennung auf diesem iPhone neu aus den Seitenbildern. Mit „Aus Seitenbildern lesen“ in der Vorbereitung schalten Sie das aus. Das ist kostenlos und ohne Begrenzung der Seitenzahl."
+    "Gibt ein PDF in einer indischen Schrift, etwa auf Hindi, Bengali oder Tamil, seine Buchstaben in falscher Reihenfolge heraus, bringt Readride sie in die richtige Reihenfolge und zeigt in der Vorbereitung, an wie vielen Stellen es das getan hat. Seiten, auf denen Buchstaben fehlen oder zu Symbolen geworden sind, meldet die Vorbereitung ebenfalls. Seiten auf Hindi und Marathi darunter liest Readride, wenn iOS das unterstützt, mit der Texterkennung auf diesem Gerät neu aus den Seitenbildern. Mit „Aus Seitenbildern lesen“ in der Vorbereitung schalten Sie das aus. Das ist kostenlos und ohne Begrenzung der Seitenzahl."
    ]
   },
   {
@@ -119,38 +120,44 @@
   {
    "q": "Was die kostenlose Version umfasst",
    "a": [
-    "Aufräumen, Lesen, die Einstellungen für Tempo, Pausen und Schriftgröße sowie das Teilen aus Safari sind kostenlos. Ihr Regal fasst bis zu 3 Dokumente, gelesene Dokumente und Webartikel mitgezählt. Die Einführung, die mit der App kommt, zählt nicht. Ist das Regal voll, können Sie ein Dokument löschen, um Platz zu schaffen, oder ein neues lesen, ohne es hinzuzufügen. Hinzugefügte Dokumente lassen sich immer lesen."
+    "Aufräumen, Lesen, die Einstellungen für Tempo, Pausen und Schriftgröße, das Teilen aus Safari und die Synchronisierung mit iCloud sind kostenlos. Ihr Regal fasst bis zu 3 Dokumente, gelesene Dokumente und Webartikel mitgezählt. Die Einführung, die mit der App kommt, zählt nicht. Ist das Regal voll, können Sie ein Dokument löschen, um Platz zu schaffen, oder ein neues lesen, ohne es hinzuzufügen. Hinzugefügte Dokumente lassen sich immer lesen. Kommen durch die Synchronisierung mit iCloud Dokumente von Ihren anderen Geräten hinzu und sind es dann mehr als 3, können Sie trotzdem alle lesen. Um dann ein neues Dokument ins Regal zu legen, löschen Sie Dokumente, bis höchstens 2 übrig sind."
    ]
   },
   {
    "q": "Pro wiederherstellen und Familienfreigabe",
    "a": [
-    "Öffnen Sie auf einem neuen iPhone oder nach einer Neuinstallation die Einstellungen in Readride und tippen Sie im Bereich Readride Pro auf „Käufe wiederherstellen“. Mit demselben Apple Account zahlen Sie nicht erneut. Mitglieder Ihrer Familienfreigabe-Gruppe können Pro ebenfalls nutzen. Erstattungen wickelt Apple ab, und wird Pro erstattet, bleiben Ihre hinzugefügten Dokumente lesbar."
+    "Öffnen Sie auf einem neuen iPhone oder iPad oder nach einer Neuinstallation die Einstellungen in Readride und tippen Sie im Bereich Readride Pro auf „Käufe wiederherstellen“. Mit demselben Apple Account zahlen Sie nicht erneut. Mitglieder Ihrer Familienfreigabe-Gruppe können Pro ebenfalls nutzen. Erstattungen wickelt Apple ab, und wird Pro erstattet, bleiben Ihre hinzugefügten Dokumente lesbar."
    ]
   },
   {
-   "q": "iPhones für „Mit KI mehr finden“",
+   "q": "Geräte für „Mit KI mehr finden“",
    "a": [
-    "Ein iPhone, das Apple Intelligence unterstützt, mit iOS 26 oder neuer und eingeschalteter Apple Intelligence unter Einstellungen > Apple Intelligence & Siri. Solange das Modell auf dem Gerät noch geladen wird oder die Sprache des Textes nicht unterstützt, steht die Funktion nicht zur Verfügung. Sie arbeitet in der Vorbereitung bei PDFs und Textdateien (nicht md). Sie läuft auf diesem iPhone und kann sich irren, deshalb sind ihre Vorschläge zunächst ausgeschaltet, und nur die eingeschalteten werden entfernt. Ob dieses iPhone sie nutzen kann, zeigt die Zeile „KI-Funktionen“ in den Einstellungen von Readride."
+    "Ein iPhone oder iPad, das Apple Intelligence unterstützt, mit iOS 26 oder iPadOS 26 oder neuer und eingeschalteter Apple Intelligence unter Einstellungen > Apple Intelligence & Siri. Solange das Modell auf dem Gerät noch geladen wird oder die Sprache des Textes nicht unterstützt, steht die Funktion nicht zur Verfügung. Sie arbeitet in der Vorbereitung bei PDFs und Textdateien (nicht md). Sie läuft auf diesem Gerät und kann sich irren, deshalb sind ihre Vorschläge zunächst ausgeschaltet, und nur die eingeschalteten werden entfernt. Ob dieses Gerät sie nutzen kann, zeigt die Zeile „KI-Funktionen“ in den Einstellungen von Readride."
    ]
   },
   {
    "q": "Wohin ein geteilter Webartikel geht",
    "a": [
-    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem iPhone gelegt. Wenn Sie Readride öffnen, zieht die Vorbereitung den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse oder ist die Seite aus Safari zu groß, sodass nur ihre Adresse ankommt, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
+    "Die eine Seite, die Sie teilen (Adresse, Titel und das HTML auf dem Bildschirm), wird in den Freigabeordner von Readride auf diesem Gerät gelegt. Wenn Sie Readride öffnen, zieht die Vorbereitung den Artikeltext daraus. Sobald Sie hinzufügen oder abbrechen, wird die Seite aus diesem Ordner gelöscht. Teilt eine andere App nur eine Adresse oder ist die Seite aus Safari zu groß, sodass nur ihre Adresse ankommt, lädt Readride die Seite einmal von der Website, ohne Ihre Cookies oder Ihren Cache, sodass keine Anmeldung mitgesendet wird. Dabei läuft nichts über einen Server des Entwicklers."
    ]
   },
   {
-   "q": "iPad und andere Geräte",
+   "q": "Readride auf dem iPad",
    "a": [
-    "Es gibt keine Synchronisierung zwischen Geräten, daher lesen Sie Ihre Dokumente auf dem iPhone, auf dem Sie sie hinzugefügt haben. Eine Darstellung für das iPad gibt es nicht."
+    "Readride läuft auch auf dem iPad. Es zeigt dieselben Bildschirme wie auf dem iPhone, auf eine angenehme Lesebreite erweitert, im Hoch- und im Querformat, und passt sich an, wenn Sie die Fenstergröße ändern."
+   ]
+  },
+  {
+   "q": "iCloud-Synchronisierung zwischen Geräten",
+   "a": [
+    "Geräte mit demselben iCloud-Account halten Regal, Lesepositionen und Gelesenes gleich, sodass Sie ein Dokument auf einem anderen Gerät dort weiterlesen, wo Sie aufgehört haben. Originaldateien werden nicht hochgeladen. Die Synchronisierung ist kostenlos und von Anfang an eingeschaltet. Schalten Sie im Bereich iCloud der Einstellungen von Readride „Mit iCloud synchronisieren“ aus, endet die Synchronisierung nur auf diesem Gerät. Ein Dokument, das Sie auf einem Gerät löschen, wird auch auf Ihren anderen Geräten gelöscht. Die Daten liegen in Ihrer eigenen iCloud und laufen über keinen Server des Entwicklers."
    ]
   }
  ],
  "privacy": {
   "title": "Readride Datenschutzerklärung",
-  "effectiveDate": "2026-10-03",
-  "summary": "Readride erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Was Sie hinzufügen, und Ihre Einstellungen liegen auf Ihrem Gerät, und den Kauf von Pro übernimmt Apple.",
+  "effectiveDate": "2026-10-06",
+  "summary": "Readride erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Was Sie hinzufügen, und Ihre Einstellungen liegen auf Ihrem Gerät, und bei eingeschalteter iCloud-Synchronisierung liegt Ihr Regal zusätzlich in Ihrem eigenen iCloud-Account. Den Kauf von Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Readride (die App) wie folgt."
   ],
@@ -158,26 +165,27 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat keine Registrierung und keine Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten ihrer Nutzerinnen und Nutzer. Die App verwendet den Text, den Sie hinzufügen, nur, um ihn aufzuräumen und auf dem Lesebildschirm zu zeigen, und das geschieht auf Ihrem Gerät."
+     "Die App hat keine Registrierung und keine Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten ihrer Nutzerinnen und Nutzer. Die App verwendet den Text, den Sie hinzufügen, nur, um ihn aufzuräumen und auf dem Lesebildschirm zu zeigen und, bei eingeschalteter iCloud-Synchronisierung, um Ihr Regal auf Geräten mit demselben iCloud-Account gleich zu halten. Aufräumen und Lesen geschehen auf Ihrem Gerät."
     ],
     "bullets": []
    },
    {
     "title": "Verarbeitete Daten",
     "paragraphs": [
-     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät bleiben. Der Entwickler erhält nichts davon."
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die im Speicher der App auf Ihrem Gerät liegen. Bei eingeschalteter iCloud-Synchronisierung liegen die unter „iCloud-Synchronisierung“ genannten Daten zusätzlich in Ihrem eigenen iCloud-Account. Der Entwickler erhält nichts davon."
     ],
     "bullets": [
-     "Hinzugefügte Dokumente (der aufgeräumte Text, die Originaldatei, die Lesesprache, Ihre Stelle und das bereits Gelesene): um sie im Regal zu halten und dort weiterzulesen, wo Sie aufgehört haben",
+     "Hinzugefügte Dokumente (der aufgeräumte Text, die Originaldatei, die Lesesprache, Ihre Stelle, das bereits Gelesene und die ausgeschalteten Abschnitte): um sie im Regal zu halten und dort weiterzulesen, wo Sie aufgehört haben",
      "Das Original-HTML hinzugefügter Webartikel: wird neben dem aufgeräumten Text aufbewahrt",
      "Seiten, die die Freigabeerweiterung empfangen hat (Adresse, Titel, das HTML auf dem Bildschirm, Zeitpunkt des Empfangs): damit die Vorbereitung den Artikeltext herausziehen kann. Gelöscht, sobald Sie hinzufügen oder abbrechen, und nach einer Stunde, wenn der Empfang nicht vollständig war",
-     "Leseeinstellungen (Tempo je Sprache, Pausen, Schriftgröße) und ob Pro gekauft wurde: um den Lesebildschirm einzurichten und festzulegen, welche Funktionen offen sind"
+     "Leseeinstellungen (Tempo je Sprache, Pausen, Schriftgröße) und ob Pro gekauft wurde: um den Lesebildschirm einzurichten und festzulegen, welche Funktionen offen sind",
+     "iCloud-Synchronisierung (eine Kopie in Ihrem eigenen iCloud-Account, solange sie eingeschaltet ist): der aufgeräumte Text, der Aufbau des Dokuments (Überschriften und Abschnitte), Angaben zum Dokument (Titel, Adresse des Webartikels, Dateinamen in einem ZIP, Zeitpunkt des Hinzufügens, Lesesprache und Ähnliches), Ihre Stelle, ob Sie es ausgelesen haben, wann Sie es zuletzt geöffnet haben, das Gelesene und Übersprungene und die ausgeschalteten Abschnitte. Um Ihr Regal auf Geräten mit demselben iCloud-Account gleich zu halten. Originaldateien, das Original-HTML von Webartikeln, Leseeinstellungen und ob Pro gekauft wurde, werden nicht hochgeladen"
     ]
    },
    {
     "title": "Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler speichert keine personenbezogenen Daten. Alles im Speicher der App wird entfernt, wenn die App gelöscht wird. Dokumente bleiben, bis Sie sie löschen, und beim Löschen eines Dokuments werden seine Dateien mit entfernt. Eine von der Freigabeerweiterung empfangene Seite wird gelöscht, sobald Sie sie in der Vorbereitung hinzufügen oder abbrechen."
+     "Der Entwickler speichert keine personenbezogenen Daten. Alles im Speicher der App wird entfernt, wenn die App gelöscht wird. Dokumente bleiben, bis Sie sie löschen, und beim Löschen eines Dokuments werden seine Dateien mit entfernt. Eine von der Freigabeerweiterung empfangene Seite wird gelöscht, sobald Sie sie in der Vorbereitung hinzufügen oder abbrechen. Mit iCloud synchronisierte Kopien bleiben in Ihrem iCloud-Account, auch wenn Sie die Synchronisierung ausschalten oder die App löschen. Löschen Sie ein Dokument auf einem Gerät, wird es auch auf Ihren anderen Geräten gelöscht. In iCloud werden sein Text und sein Lesestand entfernt, und es bleibt nur ein Vermerk, dass es gelöscht wurde, mit Angaben wie dem Titel."
     ],
     "bullets": []
    },
@@ -191,14 +199,14 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Es wird keine Verarbeitung ausgelagert. Kauf und Wiederherstellung von Readride Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Teilt eine andere App nur eine Webadresse oder ist eine aus Safari geteilte Seite zu groß, sodass nur ihre Adresse ankommt, lädt die App diese Seite einmal von der Website. Wie bei jeder Webanfrage erhält die Website die IP-Adresse Ihres Geräts, eine Browserkennung, die Readride nennt, und die bevorzugten Sprachen Ihres Geräts. Die Anfrage läuft über keinen Server des Entwicklers und sendet oder speichert weder Cookies noch Cache noch gespeicherte Anmeldungen."
+     "Es wird keine Verarbeitung ausgelagert. Die iCloud-Synchronisierung läuft über Apples iCloud (CloudKit). Die synchronisierten Daten gehören zu Ihrem Apple Account und unterliegen der Datenschutzrichtlinie von Apple. Der Entwickler kann sie weder einsehen noch erhält er sie. Kauf und Wiederherstellung von Readride Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Teilt eine andere App nur eine Webadresse oder ist eine aus Safari geteilte Seite zu groß, sodass nur ihre Adresse ankommt, lädt die App diese Seite einmal von der Website. Wie bei jeder Webanfrage erhält die Website die IP-Adresse Ihres Geräts, eine Browserkennung, die Readride nennt, und die bevorzugten Sprachen Ihres Geräts. Die Anfrage läuft über keinen Server des Entwicklers und sendet oder speichert weder Cookies noch Cache noch gespeicherte Anmeldungen."
     ],
     "bullets": []
    },
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Beim Löschen eines Dokuments wird sein Ordner entfernt, und beim Löschen der App alles, was sie enthält."
+     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Beim Löschen eines Dokuments wird sein Ordner entfernt, und beim Löschen der App alles, was sie auf diesem Gerät enthält. Die Kopie in iCloud löschen Sie unter Einstellungen > Ihr Name > iCloud > Speicher verwalten > Readride. Danach hält Readride die Synchronisierung an und lässt das Regal auf diesem Gerät, wie es ist. Ob es erneut hochgeladen wird, wählen Sie in den Einstellungen von Readride."
     ],
     "bullets": []
    },
@@ -212,7 +220,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App verwendet, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App synchronisiert nicht über iCloud. Wenn Sie Ihr iPhone sichern (etwa mit dem iCloud-Backup), sind diese Daten wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple. Eingefügter Text wird nur gelesen, wenn Sie auf die Taste zum Einfügen tippen. Das Aufspüren von Überflüssigem mit KI erledigt das Sprachmodell auf diesem iPhone, und Ihr Text wird weder an den Entwickler noch an einen anderen Server gesendet. Die Funktion läuft nur, wenn Sie auf „Mit KI mehr finden“ tippen. Beschädigte PDF-Seiten aus ihren Seitenbildern neu zu lesen, erledigt die Texterkennung auf diesem iPhone, und weder Seitenbilder noch Text werden an den Entwickler oder an einen anderen Server gesendet. Webseiten werden nur über https geladen und nie von Adressen in Ihrem lokalen Netzwerk."
+     "Was die App verwendet, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server. Die iCloud-Synchronisierung nutzt die private Datenbank (CloudKit) in Ihrem eigenen iCloud-Account, und Titel, Adressen von Webartikeln und Dateinamen in einem ZIP liegen in den verschlüsselten Feldern von CloudKit. Bei PDFs mit Passwort wird der aufgeräumte Text synchronisiert, das Passwort wird nie gespeichert. Melden Sie sich von iCloud ab oder wechseln Sie den Account, hält die Synchronisierung an, und das Regal auf diesem Gerät bleibt, wie es ist. Mit einem anderen Account wird es nur zusammengeführt, wenn Sie in den Einstellungen von Readride auf „Mit diesem Account zusammenführen“ tippen. Wenn Sie Ihr Gerät sichern (etwa mit dem iCloud-Backup), sind diese Daten wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple. Eingefügter Text wird nur gelesen, wenn Sie auf die Taste zum Einfügen tippen. Das Aufspüren von Überflüssigem mit KI erledigt das Sprachmodell auf diesem Gerät, und Ihr Text wird weder an den Entwickler noch an einen anderen Server gesendet. Die Funktion läuft nur, wenn Sie auf „Mit KI mehr finden“ tippen. Beschädigte PDF-Seiten aus ihren Seitenbildern neu zu lesen, erledigt die Texterkennung auf diesem Gerät, und weder Seitenbilder noch Text werden an den Entwickler oder an einen anderen Server gesendet. Webseiten werden nur über https geladen und nie von Adressen in Ihrem lokalen Netzwerk."
     ],
     "bullets": []
    },
@@ -260,6 +268,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-10-06: Die iCloud-Synchronisierung des Regals unter „Zweck der Verarbeitung“, „Verarbeitete Daten“, „Aufbewahrungsdauer“, „Auftragsverarbeitung“, „Löschung der Daten“ und „Maßnahmen zur Sicherheit“ ergänzt, mit dem Weg, die Kopie in iCloud zu löschen. Vorheriges Datum des Inkrafttretens: 2026-10-03.",
      "2026-10-03: Unter „Verarbeitete Daten“ die Lesesprache jedes Dokuments und das Tempo je Sprache ergänzt, unter „Maßnahmen zur Sicherheit“ das Neulesen beschädigter PDF-Seiten mit der Texterkennung auf diesem iPhone. Vorheriges Datum des Inkrafttretens: 2026-09-30.",
      "2026-09-30: Unter „Auftragsverarbeitung“ den Fall ergänzt, dass eine aus Safari geteilte Seite zu groß ist und nur ihre Adresse ankommt. Vorheriges Datum des Inkrafttretens: 2026-09-26."
     ],

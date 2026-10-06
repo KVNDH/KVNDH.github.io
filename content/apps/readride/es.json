@@ -61,7 +61,7 @@
    "layout": "card",
    "title": "Dónde ibas y a qué ritmo",
    "body": [
-    "Readride guarda el punto donde pausaste o cerraste como una posición de carácter en el texto ordenado, así que no se pierde aunque cambies el tamaño de letra. Cada idioma guarda su propia velocidad, y en español eliges de 100 a 600 palabras por minuto. Para las comas y los finales de frase eliges una de cinco duraciones de pausa."
+    "Readride guarda el punto donde pausaste o cerraste como una posición de carácter en el texto ordenado, así que no se pierde aunque cambies el tamaño de letra. Cada idioma guarda su propia velocidad, y en español eliges de 100 a 1000 palabras por minuto. Para las comas y los finales de frase eliges una de cinco duraciones de pausa. Los dispositivos con la misma cuenta de iCloud mantienen igual la estantería, las posiciones de lectura y lo que has leído, así que puedes seguir un documento en otro dispositivo donde lo dejaste."
    ],
    "bullets": [],
    "visual": {
@@ -82,7 +82,8 @@
    "Sin límite de documentos (3 para empezar)",
    "Un ZIP de archivos de texto como un solo documento",
    "Mapa del documento y la sección en la que estás sobre las palabras",
-   "Buscar más con IA en los iPhone compatibles"
+   "Omitir las secciones que desactivas, en documentos divididos por títulos o archivos",
+   "Buscar más con IA en los iPhone y iPad compatibles"
   ]
  },
  "faq": [
@@ -107,7 +108,7 @@
   {
    "q": "PDF en escrituras de la India",
    "a": [
-    "Si un PDF en una escritura de la India, como el hindi, el bengalí o el tamil, da sus letras en un orden equivocado, Readride las vuelve a ordenar y muestra en Preparación cuántos lugares corrigió. Preparación también te avisa de las páginas a las que les faltan letras o en las que algunas letras se han convertido en símbolos. Entre ellas, las páginas en hindi y maratí se vuelven a leer desde las imágenes de página con el reconocimiento de texto de este iPhone, cuando iOS lo admite. Puedes desactivarlo con Leer de las imágenes de página en Preparación. Es gratis y no tiene límite de páginas."
+    "Si un PDF en una escritura de la India, como el hindi, el bengalí o el tamil, da sus letras en un orden equivocado, Readride las vuelve a ordenar y muestra en Preparación cuántos lugares corrigió. Preparación también te avisa de las páginas a las que les faltan letras o en las que algunas letras se han convertido en símbolos. Entre ellas, las páginas en hindi y maratí se vuelven a leer desde las imágenes de página con el reconocimiento de texto de este dispositivo, cuando iOS lo admite. Puedes desactivarlo con Leer de las imágenes de página en Preparación. Es gratis y no tiene límite de páginas."
    ]
   },
   {
@@ -119,38 +120,44 @@
   {
    "q": "Qué incluye la versión gratuita",
    "a": [
-    "Ordenar el texto, leer, los ajustes de velocidad, pausas y tamaño de letra, y compartir desde Safari son gratis. Tu estantería admite hasta 3 documentos, contando los ya leídos y los artículos web. El recorrido que trae la app no cuenta. Si la estantería está llena, puedes borrar uno para hacer sitio o leer un documento nuevo sin añadirlo. Los documentos que ya añadiste se pueden leer siempre."
+    "Ordenar el texto, leer, los ajustes de velocidad, pausas y tamaño de letra, compartir desde Safari y la sincronización con iCloud son gratis. Tu estantería admite hasta 3 documentos, contando los ya leídos y los artículos web. El recorrido que trae la app no cuenta. Si la estantería está llena, puedes borrar uno para hacer sitio o leer un documento nuevo sin añadirlo. Los documentos que ya añadiste se pueden leer siempre. Si la sincronización con iCloud trae documentos de tus otros dispositivos y pasan de 3, puedes leerlos todos; para añadir uno nuevo a la estantería, borra documentos hasta que queden 2 o menos."
    ]
   },
   {
    "q": "Restaurar Pro y En familia",
    "a": [
-    "En un iPhone nuevo o tras reinstalar, abre los ajustes de Readride y toca Restaurar compras en la sección Readride Pro. Con la misma cuenta de Apple no se te cobra de nuevo. Los miembros de tu grupo de En familia también pueden usar Pro. Los reembolsos los gestiona Apple y, si se reembolsa Pro, los documentos que añadiste se siguen pudiendo leer."
+    "En un iPhone o iPad nuevo, o tras reinstalar, abre los ajustes de Readride y toca Restaurar compras en la sección Readride Pro. Con la misma cuenta de Apple no se te cobra de nuevo. Los miembros de tu grupo de En familia también pueden usar Pro. Los reembolsos los gestiona Apple y, si se reembolsa Pro, los documentos que añadiste se siguen pudiendo leer."
    ]
   },
   {
-   "q": "iPhone que pueden usar Buscar más con IA",
+   "q": "Dispositivos que pueden usar Buscar más con IA",
    "a": [
-    "Un iPhone compatible con Apple Intelligence, con iOS 26 o posterior y Apple Intelligence activado en Ajustes > Apple Intelligence y Siri. No está disponible mientras se descarga el modelo del dispositivo ni cuando el modelo no admite el idioma del texto. Funciona en Preparación con PDF y archivos de texto (no md). Se ejecuta en este iPhone y puede equivocarse, así que sus sugerencias empiezan desactivadas y solo se quitan las que activas. La fila Funciones de IA de los ajustes de Readride indica si este iPhone puede usarlo."
+    "Un iPhone o iPad compatible con Apple Intelligence, con iOS 26 o iPadOS 26 o posterior y Apple Intelligence activado en Ajustes > Apple Intelligence y Siri. No está disponible mientras se descarga el modelo del dispositivo ni cuando el modelo no admite el idioma del texto. Funciona en Preparación con PDF y archivos de texto (no md). Se ejecuta en este dispositivo y puede equivocarse, así que sus sugerencias empiezan desactivadas y solo se quitan las que activas. La fila Funciones de IA de los ajustes de Readride indica si este dispositivo puede usarlo."
    ]
   },
   {
    "q": "Adónde va un artículo compartido",
    "a": [
-    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este iPhone. Al abrir Readride, Preparación extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, o si la página de Safari es demasiado grande y solo llega su dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
+    "La página que compartes (su dirección, su título y el HTML en pantalla) se coloca en la carpeta compartida de Readride en este dispositivo. Al abrir Readride, Preparación extrae de ahí el texto del artículo. Cuando lo añades o cancelas, la página se borra de esa carpeta. Si otra app comparte solo una dirección, o si la página de Safari es demasiado grande y solo llega su dirección, Readride descarga esa página del sitio una vez, sin tus cookies ni tu caché, así que no se envía ningún inicio de sesión. No pasa por ningún servidor del desarrollador."
    ]
   },
   {
-   "q": "iPad y otros dispositivos",
+   "q": "Readride en el iPad",
    "a": [
-    "No hay sincronización entre dispositivos, así que tus documentos se leen en el iPhone donde los añadiste. No hay un diseño para iPad."
+    "Readride también funciona en el iPad. Muestra las mismas pantallas que en el iPhone, ensanchadas a un ancho cómodo para leer, en vertical y en horizontal, y se ajusta cuando cambias el tamaño de la ventana."
+   ]
+  },
+  {
+   "q": "Sincronización con iCloud entre dispositivos",
+   "a": [
+    "Los dispositivos con la misma cuenta de iCloud mantienen igual la estantería, las posiciones de lectura y lo que has leído, así que puedes seguir un documento en otro dispositivo donde lo dejaste. Los archivos originales no se suben. La sincronización es gratis y viene activada. Si desactivas Sincronizar con iCloud en la sección iCloud de los ajustes de Readride, solo ese dispositivo deja de sincronizar. Un documento que borras en un dispositivo se borra también en los demás. Los datos se guardan en tu propio iCloud y no pasan por ningún servidor del desarrollador."
    ]
   }
  ],
  "privacy": {
   "title": "Política de privacidad de Readride",
-  "effectiveDate": "2026-10-03",
-  "summary": "Readride no recoge datos personales. No hay cuenta ni inicio de sesión. Lo que añades y tus ajustes se guardan en tu dispositivo, y la compra de Pro la gestiona Apple.",
+  "effectiveDate": "2026-10-06",
+  "summary": "Readride no recoge datos personales. No hay cuenta ni inicio de sesión. Lo que añades y tus ajustes se guardan en tu dispositivo y, con la sincronización con iCloud activada, tu estantería también se guarda en tu propia cuenta de iCloud. La compra de Pro la gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Readride (la app) del modo que se indica a continuación."
   ],
@@ -158,26 +165,27 @@
    {
     "title": "Finalidad del tratamiento",
     "paragraphs": [
-     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. La app usa el texto que añades solo para ordenarlo y mostrarlo en la pantalla de lectura, y esto ocurre en tu dispositivo."
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan. La app usa el texto que añades solo para ordenarlo y mostrarlo en la pantalla de lectura y, con la sincronización con iCloud activada, para mantener igual tu estantería en los dispositivos con la misma cuenta de iCloud. Ordenar y leer ocurre en tu dispositivo."
     ],
     "bullets": []
    },
    {
     "title": "Información que se trata",
     "paragraphs": [
-     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
+     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, guardados en el almacenamiento de la app en tu dispositivo. Con la sincronización con iCloud activada, los datos del apartado Sincronización con iCloud también se guardan en tu propia cuenta de iCloud. El desarrollador no recibe ninguno."
     ],
     "bullets": [
-     "Documentos añadidos (el texto ordenado, el archivo original, el idioma de lectura, dónde ibas y lo que ya leíste): para tenerlos en la estantería y seguir donde lo dejaste",
+     "Documentos añadidos (el texto ordenado, el archivo original, el idioma de lectura, dónde ibas, lo que ya leíste y las secciones que desactivaste): para tenerlos en la estantería y seguir donde lo dejaste",
      "El HTML original de los artículos web añadidos: se guarda junto al texto ordenado",
      "Páginas recibidas por la extensión para compartir (dirección, título, el HTML en pantalla y cuándo llegó): para que Preparación extraiga el texto del artículo. Se borran al añadir o cancelar, y al cabo de una hora si no se recibieron completas",
-     "Ajustes de lectura (velocidad de cada idioma, pausas, tamaño de letra) y si se compró Pro: para preparar la pantalla de lectura y decidir qué funciones se abren"
+     "Ajustes de lectura (velocidad de cada idioma, pausas, tamaño de letra) y si se compró Pro: para preparar la pantalla de lectura y decidir qué funciones se abren",
+     "Sincronización con iCloud (una copia en tu propia cuenta de iCloud mientras está activada): el texto ordenado, la estructura del documento (títulos y secciones), los datos del documento (título, dirección del artículo web, nombres de archivo dentro de un ZIP, cuándo se añadió, idioma de lectura y similares), dónde ibas, si lo terminaste, cuándo lo abriste por última vez, lo que leíste y saltaste, y las secciones que desactivaste. Para mantener igual tu estantería en los dispositivos con la misma cuenta de iCloud. No se suben los archivos originales, el HTML original de los artículos web, los ajustes de lectura ni si se compró Pro"
     ]
    },
    {
     "title": "Plazo de conservación",
     "paragraphs": [
-     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Los documentos se quedan hasta que los borras, y al borrar un documento se borran sus archivos. Una página recibida por la extensión para compartir se borra en cuanto la añades o cancelas en Preparación."
+     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Los documentos se quedan hasta que los borras, y al borrar un documento se borran sus archivos. Una página recibida por la extensión para compartir se borra en cuanto la añades o cancelas en Preparación. Las copias sincronizadas con iCloud se quedan en tu cuenta de iCloud aunque desactives la sincronización o borres la app. Al borrar un documento en un dispositivo, se borra también en los demás. En iCloud se quitan su texto y su registro de lectura, y solo queda una marca de que se borró, con datos como su título."
     ],
     "bullets": []
    },
@@ -191,14 +199,14 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra y la restauración de Readride Pro las gestiona Apple en el App Store, y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago ni datos de tu cuenta de Apple. Si otra app comparte solo una dirección web, o si una página compartida desde Safari es demasiado grande y solo llega su dirección, la app descarga esa página del sitio una vez. Como en cualquier solicitud web, el sitio recibe la dirección IP de tu dispositivo, una descripción del navegador que nombra a Readride y los idiomas preferidos de tu dispositivo. La solicitud no pasa por ningún servidor del desarrollador y no envía ni guarda cookies, caché ni inicios de sesión guardados."
+     "No se encarga ningún tratamiento a terceros. La sincronización con iCloud funciona sobre iCloud de Apple (CloudKit). Los datos sincronizados pertenecen a tu cuenta de Apple y se rigen por la política de privacidad de Apple. El desarrollador no puede verlos ni los recibe. La compra y la restauración de Readride Pro las gestiona Apple en el App Store, y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago ni datos de tu cuenta de Apple. Si otra app comparte solo una dirección web, o si una página compartida desde Safari es demasiado grande y solo llega su dirección, la app descarga esa página del sitio una vez. Como en cualquier solicitud web, el sitio recibe la dirección IP de tu dispositivo, una descripción del navegador que nombra a Readride y los idiomas preferidos de tu dispositivo. La solicitud no pasa por ningún servidor del desarrollador y no envía ni guarda cookies, caché ni inicios de sesión guardados."
     ],
     "bullets": []
    },
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Al borrar un documento se borra su carpeta, y al borrar la app se borra todo lo que contiene."
+     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Al borrar un documento se borra su carpeta, y al borrar la app se borra todo lo que contiene en este dispositivo. Para borrar la copia de iCloud, ve a Ajustes > tu nombre > iCloud > Gestionar almacenamiento > Readride. Después, Readride deja de sincronizar y mantiene la estantería de este dispositivo como está, y en los ajustes de Readride eliges si volver a subirla."
     ],
     "bullets": []
    },
@@ -212,7 +220,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor y la app no sincroniza a través de iCloud. Si haces copias de seguridad del iPhone (por ejemplo, con la copia de seguridad de iCloud), estos datos se incluyen como los de cualquier otra app, y esa copia la gestiona Apple. El texto pegado solo se lee cuando tocas el botón de pegar. La búsqueda de restos con IA la hace el modelo de lenguaje de este iPhone, y tu texto no se envía al desarrollador ni a ningún otro servidor. La función solo se ejecuta cuando tocas Buscar más con IA. Volver a leer las páginas dañadas de un PDF desde sus imágenes lo hace el reconocimiento de texto de este iPhone, y ni las imágenes de página ni el texto se envían al desarrollador ni a ningún otro servidor. Las páginas web se descargan solo por https y nunca desde direcciones de tu red local."
+     "Lo que usa la app está en archivos dentro de su almacenamiento en tu dispositivo. El desarrollador no tiene servidor. La sincronización con iCloud usa la base de datos privada (CloudKit) de tu propia cuenta de iCloud, y los títulos, las direcciones de artículos web y los nombres de archivo dentro de un ZIP se guardan en los campos cifrados de CloudKit. En los PDF con contraseña se sincroniza el texto ordenado, y la contraseña no se guarda nunca. Si cierras sesión en iCloud o cambias de cuenta, la sincronización se detiene y la estantería de este dispositivo se queda como está. Solo se combina con otra cuenta si tocas Combinar con esta cuenta en los ajustes de Readride. Si haces copias de seguridad del dispositivo (por ejemplo, con la copia de seguridad de iCloud), estos datos se incluyen como los de cualquier otra app, y esa copia la gestiona Apple. El texto pegado solo se lee cuando tocas el botón de pegar. La búsqueda de restos con IA la hace el modelo de lenguaje de este dispositivo, y tu texto no se envía al desarrollador ni a ningún otro servidor. La función solo se ejecuta cuando tocas Buscar más con IA. Volver a leer las páginas dañadas de un PDF desde sus imágenes lo hace el reconocimiento de texto de este dispositivo, y ni las imágenes de página ni el texto se envían al desarrollador ni a ningún otro servidor. Las páginas web se descargan solo por https y nunca desde direcciones de tu red local."
     ],
     "bullets": []
    },
@@ -260,6 +268,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-10-06: Se añadió la sincronización de la estantería con iCloud en «Finalidad del tratamiento», «Información que se trata», «Plazo de conservación», «Encargo del tratamiento», «Destrucción de la información» y «Medidas de seguridad», con la forma de borrar la copia de iCloud. La fecha de entrada en vigor anterior era el 2026-10-03.",
      "2026-10-03: Se añadieron en «Información que se trata» el idioma de lectura de cada documento y la velocidad de cada idioma, y en «Medidas de seguridad» la nueva lectura de páginas dañadas de un PDF con el reconocimiento de texto de este iPhone. La fecha de entrada en vigor anterior era el 2026-09-30.",
      "2026-09-30: Se añadió en «Encargo del tratamiento» el caso en que una página compartida desde Safari es demasiado grande y solo llega su dirección. La fecha de entrada en vigor anterior era el 2026-09-26."
     ],

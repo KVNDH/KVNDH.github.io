@@ -61,7 +61,7 @@
    "layout": "card",
    "title": "Your place and your pace",
    "body": [
-    "Readride saves where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose your place. Each language keeps its own speed, and for English you choose from 100 to 600 words a minute. Pick one of five pause lengths for commas and the ends of sentences."
+    "Readride saves where you paused or closed as a character position in the tidied text, so changing the text size doesn't lose your place. Each language keeps its own speed, and for English you choose from 100 to 1,000 words a minute. Pick one of five pause lengths for commas and the ends of sentences. Devices signed in to the same iCloud account keep the same shelf, reading positions, and what you've read, so you can pick up a document on another device where you left off."
    ],
    "bullets": [],
    "visual": {
@@ -82,7 +82,8 @@
    "No limit on documents (3 to begin with)",
    "A ZIP of text files as one document",
    "Document Map, and the section you're in above the words",
-   "Find More with AI, on supported iPhones"
+   "Skip sections you turn off, in documents divided by headings or files",
+   "Find More with AI, on supported iPhones and iPads"
   ]
  },
  "faq": [
@@ -107,7 +108,7 @@
   {
    "q": "PDFs in Indian scripts",
    "a": [
-    "When a PDF in an Indian script, such as Hindi, Bengali, or Tamil, gives its letters out of order, Readride puts them back in order and shows on Get Ready how many places it fixed. Get Ready also tells you which pages have letters missing or turned into symbols. Hindi and Marathi pages among them are read again from the page images with text recognition on this iPhone, when iOS supports it. You can turn this off with Read from Page Images on Get Ready. It's free, with no page limit."
+    "When a PDF in an Indian script, such as Hindi, Bengali, or Tamil, gives its letters out of order, Readride puts them back in order and shows on Get Ready how many places it fixed. Get Ready also tells you which pages have letters missing or turned into symbols. Hindi and Marathi pages among them are read again from the page images with text recognition on this device, when iOS supports it. You can turn this off with Read from Page Images on Get Ready. It's free, with no page limit."
    ]
   },
   {
@@ -119,38 +120,44 @@
   {
    "q": "What the free version includes",
    "a": [
-    "Tidying, reading, the speed, pause, and text size settings, and sharing from Safari are free. Your shelf holds up to 3 documents, counting finished documents and web articles. The tour that comes with the app doesn't count. When the shelf is full, you can delete one to make room, or read a new document without adding it. Documents you've added can always be read."
+    "Tidying, reading, the speed, pause, and text size settings, sharing from Safari, and iCloud sync are free. Your shelf holds up to 3 documents, counting finished documents and web articles. The tour that comes with the app doesn't count. When the shelf is full, you can delete one to make room, or read a new document without adding it. Documents you've added can always be read. If iCloud sync brings in documents from your other devices and the shelf goes over 3, you can still read them all; to add a new one to the shelf, delete documents until 2 or fewer are left."
    ]
   },
   {
    "q": "Restoring Pro and Family Sharing",
    "a": [
-    "On a new iPhone or after reinstalling, open Settings in Readride and tap Restore Purchases in the Readride Pro section. On the same Apple Account you won't be charged again. Members of your Family Sharing group can use Pro too. Refunds are handled by Apple, and if Pro is refunded, the documents you've added can still be read."
+    "On a new iPhone or iPad, or after reinstalling, open Settings in Readride and tap Restore Purchases in the Readride Pro section. On the same Apple Account you won't be charged again. Members of your Family Sharing group can use Pro too. Refunds are handled by Apple, and if Pro is refunded, the documents you've added can still be read."
    ]
   },
   {
-   "q": "iPhones that can use Find More with AI",
+   "q": "Devices that can use Find More with AI",
    "a": [
-    "An iPhone that supports Apple Intelligence, running iOS 26 or later, with Apple Intelligence turned on in Settings > Apple Intelligence & Siri. It isn't available while the on-device model is still downloading, or when the model doesn't support the language of the text. It works on Get Ready for PDFs and text files (not md). It runs on this iPhone and can be wrong, so its suggestions start turned off, and only the ones you turn on are taken out. The AI features row in Readride's Settings shows whether this iPhone can use it."
+    "An iPhone or iPad that supports Apple Intelligence, running iOS 26 or iPadOS 26 or later, with Apple Intelligence turned on in Settings > Apple Intelligence & Siri. It isn't available while the on-device model is still downloading, or when the model doesn't support the language of the text. It works on Get Ready for PDFs and text files (not md). It runs on this device and can be wrong, so its suggestions start turned off, and only the ones you turn on are taken out. The AI features row in Readride's Settings shows whether this device can use it."
    ]
   },
   {
    "q": "Where a shared web article goes",
    "a": [
-    "The one page you share (its address, title, and the HTML on screen) is placed in Readride's shared folder on this iPhone. When you open Readride, Get Ready pulls the article text from it. Once you add or cancel, the page is deleted from that folder. If another app shares only an address, or the page from Safari is too large and only its address comes through, Readride fetches that page from the site once, without your cookies or cache, so no login is sent. It doesn't go through any developer server."
+    "The one page you share (its address, title, and the HTML on screen) is placed in Readride's shared folder on this device. When you open Readride, Get Ready pulls the article text from it. Once you add or cancel, the page is deleted from that folder. If another app shares only an address, or the page from Safari is too large and only its address comes through, Readride fetches that page from the site once, without your cookies or cache, so no login is sent. It doesn't go through any developer server."
    ]
   },
   {
-   "q": "iPad and other devices",
+   "q": "Using Readride on iPad",
    "a": [
-    "There's no syncing between devices, so your documents are read on the iPhone you added them on. There's no iPad layout."
+    "Readride runs on iPad too. It shows the same screens as on iPhone, widened to a comfortable reading width, in portrait or landscape, and it adjusts when you resize the window."
+   ]
+  },
+  {
+   "q": "iCloud sync between devices",
+   "a": [
+    "Devices signed in to the same iCloud account keep the same shelf, reading positions, and what you've read, so you can pick up a document on another device where you left off. Original files aren't uploaded. Sync is free and on by default. Turn off Sync with iCloud in the iCloud section of Readride's Settings to stop syncing on that device only. A document you delete on one device is deleted on your other devices too. The data is kept in your own iCloud and doesn't go through any developer server."
    ]
   }
  ],
  "privacy": {
   "title": "Readride Privacy Policy",
-  "effectiveDate": "2026-10-03",
-  "summary": "Readride collects no personal data. There is no account and no sign-in. What you add and your settings are kept on your device, and Apple handles the Pro purchase.",
+  "effectiveDate": "2026-10-06",
+  "summary": "Readride collects no personal data. There is no account and no sign-in. What you add and your settings are kept on your device, and with iCloud sync on, your shelf is also kept in your own iCloud account. Apple handles the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Readride app (the app) as described below."
   ],
@@ -158,26 +165,27 @@
    {
     "title": "Purposes of processing",
     "paragraphs": [
-     "The app has no sign-up or login, and the developer does not process personal information about its users. The app uses the text you add only to tidy it and show it on the reading screen, and this happens on your device."
+     "The app has no sign-up or login, and the developer does not process personal information about its users. The app uses the text you add only to tidy it and show it on the reading screen and, with iCloud sync on, to keep your shelf the same on devices signed in to the same iCloud account. Tidying and reading happen on your device."
     ],
     "bullets": []
    },
    {
     "title": "Personal information processed",
     "paragraphs": [
-     "The developer collects no personal information. The app works with the data below, all of it kept in the app's storage on your device. The developer does not receive any of it."
+     "The developer collects no personal information. The app works with the data below, kept in the app's storage on your device. With iCloud sync on, the data listed under iCloud sync below is also kept in your own iCloud account. The developer does not receive any of it."
     ],
     "bullets": [
-     "Documents you add (the tidied text, the original file, the reading language, where you were, and what you've read): used to keep them on your shelf and pick up where you left off",
+     "Documents you add (the tidied text, the original file, the reading language, where you were, what you've read, and the sections you turned off): used to keep them on your shelf and pick up where you left off",
      "The original HTML of web articles you add: kept next to the tidied text",
      "Pages received by the share extension (address, title, the HTML on screen, and when it arrived): used by Get Ready to pull out the article text. Deleted once you add or cancel, and after an hour if it wasn't received in full",
-     "Reading settings (speed for each language, pauses, text size) and whether Pro was bought: used to set up the reading screen and decide which features open"
+     "Reading settings (speed for each language, pauses, text size) and whether Pro was bought: used to set up the reading screen and decide which features open",
+     "iCloud sync (a copy kept in your own iCloud account while sync is on): the tidied text, the document's structure (headings and sections), document details (title, web article address, file names inside a ZIP, date added, reading language, and similar), where you were, whether you finished, when you last opened it, what you've read and skipped, and the sections you turned off. Used to keep your shelf the same on devices signed in to the same iCloud account. Original files, the original HTML of web articles, reading settings, and whether Pro was bought are not uploaded"
     ]
    },
    {
     "title": "Retention period",
     "paragraphs": [
-     "The developer holds no personal data. Everything in the app's storage is removed when the app is deleted. Documents stay until you delete them, and deleting a document deletes its files. A page received by the share extension is deleted once you add or cancel it on Get Ready."
+     "The developer holds no personal data. Everything in the app's storage is removed when the app is deleted. Documents stay until you delete them, and deleting a document deletes its files. A page received by the share extension is deleted once you add or cancel it on Get Ready. Copies synced to iCloud stay in your iCloud account, even if you turn off sync or delete the app. Deleting a document on one device deletes it on your other devices too, and in iCloud its text and reading record are removed, leaving only a record that it was deleted, with details such as its title."
     ],
     "bullets": []
    },
@@ -191,14 +199,14 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. Buying and restoring Readride Pro is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information. If another app shares only a web address, or a page shared from Safari is too large and only its address comes through, the app fetches that page from the site once. As with any web request, the site receives your device's IP address, a browser description that names Readride, and your device's preferred languages. The request doesn't go through any developer server, and it doesn't send or keep cookies, cache, or saved logins."
+     "No processing is outsourced. iCloud sync runs on Apple's iCloud (CloudKit). Synced data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. Buying and restoring Readride Pro is handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer receives no payment method and no Apple Account information. If another app shares only a web address, or a page shared from Safari is too large and only its address comes through, the app fetches that page from the site once. As with any web request, the site receives your device's IP address, a browser description that names Readride, and your device's preferred languages. The request doesn't go through any developer server, and it doesn't send or keep cookies, cache, or saved logins."
     ],
     "bullets": []
    },
    {
     "title": "Destruction of personal information",
     "paragraphs": [
-     "The developer holds no personal data, so there is nothing to destroy. Deleting a document removes its folder, and deleting the app removes everything in it."
+     "The developer holds no personal data, so there is nothing to destroy. Deleting a document removes its folder, and deleting the app removes everything it kept on this device. To delete the copy in iCloud, go to Settings > your name > iCloud > Manage Storage > Readride. Readride then stops syncing and leaves the shelf on this device as it is, and you choose in Readride's Settings whether to upload it again."
     ],
     "bullets": []
    },
@@ -212,7 +220,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app doesn't sync through iCloud. If you back up your iPhone (for example with iCloud Backup), this data is included like any other app's, and Apple handles that backup. Pasted text is read only when you tap the paste button. Finding clutter with AI is done by the language model on this iPhone, and your text is not sent to the developer or to any other server. It runs only when you tap Find More with AI. Reading damaged PDF pages again from their page images is done by text recognition on this iPhone, and the page images and text are not sent to the developer or to any other server. Web pages are fetched over https only, and never from addresses on your local network."
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server. iCloud sync uses the private database (CloudKit) in your own iCloud account, and titles, web article addresses, and file names inside a ZIP are kept in CloudKit's encrypted fields. For password-protected PDFs, the tidied text is synced and the password is never stored. If you sign out of iCloud or switch to another account, syncing stops and the shelf on this device stays as it is; it is merged with another account only when you tap Merge with This Account in Readride's Settings. If you back up your device (for example with iCloud Backup), this data is included like any other app's, and Apple handles that backup. Pasted text is read only when you tap the paste button. Finding clutter with AI is done by the language model on this device, and your text is not sent to the developer or to any other server. It runs only when you tap Find More with AI. Reading damaged PDF pages again from their page images is done by text recognition on this device, and the page images and text are not sent to the developer or to any other server. Web pages are fetched over https only, and never from addresses on your local network."
     ],
     "bullets": []
    },
@@ -260,6 +268,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-10-06: Added iCloud sync of the shelf to “Purposes of processing”, “Personal information processed”, “Retention period”, “Outsourcing of processing”, “Destruction of personal information”, and “Security measures”, with how to delete the copy in iCloud. The previous effective date was 2026-10-03.",
      "2026-10-03: Added the reading language of each document and a speed for each language to “Personal information processed”, and reading damaged PDF pages again with text recognition on this iPhone to “Security measures”. The previous effective date was 2026-09-30.",
      "2026-09-30: Added to “Outsourcing of processing” the case where a page shared from Safari is too large and only its address comes through. The previous effective date was 2026-09-26."
     ],
