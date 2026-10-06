@@ -14,23 +14,23 @@
     "Importe como está o CSV de códigos de oferta que você baixa do App Store Connect. O Codematic lê no arquivo o app e o tipo de código, e pula os códigos que você já adicionou. Sem arquivo, cole os códigos. Com uma chave de API adicionada, gere códigos no app e eles entram na hora."
    ],
    "bullets": [
-    "Importação de CSV",
-    "Códigos colados",
+    "“Import CSV file” (importar CSV)",
+    "“Paste directly” (colar códigos)",
     "Códigos repetidos ignorados"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-215px",
-    "alt": "A tela de adicionar códigos, em coreano. Ela mostra a importação de CSV, a colagem de códigos e a geração pelo App Store Connect.",
+    "focus": "-110px",
+    "alt": "A tela “Issue codes”, de gerar códigos. “One-time use codes” está selecionado ao lado de “Custom codes”, e abaixo aparecem “Quantity”, “Expiration date” e “Sandbox codes”.",
     "caption": "Vista aproximada do app"
    }
   },
   {
    "layout": "feat",
-   "title": "Toque em Emitir e o próximo código é copiado",
+   "title": "Toque em “Issue” e o próximo código é copiado",
    "body": [
-    "Ao tocar em Emitir, o próximo código é copiado e marcado como entregue. Em cada lote você escolhe se copia o link de resgate, o código ou os dois. Pessoalmente, mostre o cartão com o código QR ou salve como imagem e envie."
+    "Ao tocar em “Issue” (emitir), o próximo código é copiado e marcado como entregue. Em cada lote, que o app chama de “roll”, você escolhe se copia o link de resgate, o código ou os dois. Pessoalmente, mostre o cartão com o código QR ou salve como imagem e envie."
    ],
    "bullets": [
     "Cópia do código ou do link de resgate",
@@ -41,7 +41,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-175px",
-    "alt": "O cartão que aparece depois de entregar um código, em coreano. Ele traz o código, um código QR, a hora e o destinatário, com botões para salvar como imagem, copiar de novo e desfazer.",
+    "alt": "O cartão que aparece depois de entregar um código. No alto está “Copied”, com o código, um código QR, a hora e o destinatário, e embaixo os botões “Save as image”, “Copy again” e “Undo”.",
     "caption": "Vista aproximada do app"
    }
   },
@@ -74,31 +74,31 @@
   {
    "q": "Quais códigos podem ser adicionados",
    "a": [
-    "Códigos de oferta da App Store (de assinaturas e compras dentro do app), códigos promocionais de apps e qualquer outro código. Você escolhe o tipo ao criar um lote. Com um CSV de códigos de oferta do App Store Connect, o app lê no arquivo o tipo e o app."
+    "Códigos de oferta da App Store (de assinaturas e compras dentro do app), códigos promocionais de apps e qualquer outro código. Você escolhe o tipo ao adicionar códigos: “Offer code”, “App promo code” ou “Other code”. Com um CSV de códigos de oferta do App Store Connect, o app lê no arquivo o tipo e o app."
    ]
   },
   {
    "q": "Onde conseguir o CSV de códigos de oferta",
    "a": [
-    "No App Store Connect, abra os códigos de oferta da assinatura ou da compra dentro do app e crie códigos de uso único. Com isso você pode baixar um CSV. Guarde o arquivo no app Arquivos e importe pela tela de adicionar códigos."
+    "No App Store Connect, abra os códigos de oferta da assinatura ou da compra dentro do app e crie códigos de uso único. Com isso você pode baixar um CSV. Guarde o arquivo no app Arquivos, toque em “Add codes” e escolha “Import CSV file”."
    ]
   },
   {
    "q": "Importar o mesmo arquivo duas vezes",
    "a": [
-    "Se o arquivo tiver códigos que você já adicionou, o app avisa e não adiciona nada. Se aquele lote estiver no lixo, dá para restaurar pelo aviso."
+    "Se o arquivo tiver códigos que você já adicionou, o app mostra “File already imported” e não adiciona nada. Se aquele lote estiver no lixo (“Trash”), dá para restaurar pelo aviso."
    ]
   },
   {
    "q": "Copiar o link ou o código",
    "a": [
-    "No alto da tela de cada lote você escolhe entre link, código ou os dois. Quando o destinatário abre o link de um código de oferta, aparece a tela de resgate da App Store. Lotes de códigos de oferta sem ID da App Store e os outros códigos copiam só o código."
+    "No alto da tela de cada lote você escolhe entre “Link”, “Code” e “Both” (os dois). Quando o destinatário abre o link de um código de oferta, aparece a tela de resgate da App Store. Lotes de códigos de oferta sem ID da App Store e os outros códigos copiam só o código."
    ]
   },
   {
    "q": "Desfazer um código entregue por engano",
    "a": [
-    "Use o botão de desfazer no cartão logo depois de emitir, ou deslize a entrada no registro de entregas. O código volta a ficar sem uso e o nome do destinatário que você escreveu é apagado. O app não tem como saber se um código que você já enviou foi resgatado."
+    "Toque em “Undo” (desfazer) no cartão logo depois de emitir, ou deslize a entrada em “Handed out”, no menu. O código volta a ficar sem uso e o nome do destinatário que você escreveu é apagado. O app não tem como saber se um código que você já enviou foi resgatado."
    ]
   },
   {
@@ -110,25 +110,25 @@
   {
    "q": "Um lote apagado por engano",
    "a": [
-    "Um lote apagado fica no lixo com os códigos por 30 dias. Restaure pelo lixo, no fim da lista de lotes. Depois de 30 dias, ele é removido de vez na próxima vez que o app for aberto."
+    "Um lote apagado fica no lixo com os códigos por 30 dias. Restaure por “Trash”, no fim da lista de lotes. Depois de 30 dias, ele é removido de vez na próxima vez que o app for aberto."
    ]
   },
   {
    "q": "Outros aparelhos",
    "a": [
-    "Os lotes e os códigos ficam guardados no iCloud e aparecem no iPhone e no iPad com a mesma Conta Apple. A tela de informações mostra o estado do iCloud. Sem uma sessão do iCloud, eles ficam guardados naquele aparelho. A chave de API do App Store Connect é adicionada em cada aparelho separadamente."
+    "Os lotes e os códigos ficam guardados no iCloud e aparecem no iPhone e no iPad com a mesma Conta Apple. A tela “Info” mostra o estado na linha “iCloud storage”. Sem uma sessão do iCloud, eles ficam guardados naquele aparelho. A chave de API do App Store Connect é adicionada em cada aparelho separadamente."
    ]
   },
   {
    "q": "Onde criar a chave de API do App Store Connect e onde ela fica",
    "a": [
-    "Crie uma chave de equipe no App Store Connect, em Usuários e Acesso, Integrações, ou uma chave individual no seu perfil de usuário, e depois informe o ID da chave e o arquivo .p8. Uma chave de equipe também precisa do Issuer ID. O app traz um guia com os passos. A chave fica guardada só nas Chaves do aparelho em que você a adiciona e não vai para o iCloud nem para outros aparelhos. O arquivo .p8 só pode ser baixado uma vez, então guarde o original à parte."
+    "Crie uma chave de equipe no App Store Connect, em Usuários e Acesso, Integrações, ou uma chave individual no seu perfil de usuário, e depois informe o ID da chave e o arquivo .p8. Uma chave de equipe também precisa do Issuer ID. Os passos estão no app, em “How to create a key”. A chave fica guardada só nas Chaves do aparelho em que você a adiciona e não vai para o iCloud nem para outros aparelhos. O arquivo .p8 só pode ser baixado uma vez, então guarde o original à parte."
    ]
   },
   {
    "q": "Remover a chave",
    "a": [
-    "Abra a tela de informações, escolha a chave do App Store Connect e apague. Os lotes importados continuam. Para que a chave pare de funcionar de vez, revogue a chave no App Store Connect."
+    "Abra “Info”, escolha “App Store Connect key” e toque em “Delete key”. Os lotes importados continuam. Para que a chave pare de funcionar de vez, revogue a chave no App Store Connect."
    ]
   },
   {
@@ -141,6 +141,12 @@
    "q": "Avisos de validade",
    "a": [
     "Nenhuma notificação é enviada. A data de validade aparece na tela do lote."
+   ]
+  },
+  {
+   "q": "Idioma do app",
+   "a": [
+    "O app está em inglês e em coreano. Em um aparelho configurado em outro idioma, ele aparece em inglês. Os nomes entre aspas nesta página são os das telas em inglês."
    ]
   }
  ],
@@ -175,7 +181,7 @@
    {
     "title": "Período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda dados pessoais. Os lotes, os códigos e os nomes de destinatários ficam até você apagá-los. Um lote enviado ao lixo é removido de vez, com os códigos, quando o app é aberto depois de 30 dias, e você também pode apagá-lo do lixo na hora. O que você apaga num aparelho é apagado também da cópia no iCloud e dos seus outros aparelhos. Apagar o app remove o que ele guardava naquele aparelho, mas a cópia no iCloud continua na sua conta do iCloud. A chave de API do App Store Connect fica nas Chaves daquele aparelho até você apagá-la na tela de informações do app."
+     "O desenvolvedor não guarda dados pessoais. Os lotes, os códigos e os nomes de destinatários ficam até você apagá-los. Um lote enviado ao lixo é removido de vez, com os códigos, quando o app é aberto depois de 30 dias, e você também pode apagá-lo do lixo na hora. O que você apaga num aparelho é apagado também da cópia no iCloud e dos seus outros aparelhos. Apagar o app remove o que ele guardava naquele aparelho, mas a cópia no iCloud continua na sua conta do iCloud. A chave de API do App Store Connect fica nas Chaves daquele aparelho até você apagá-la em “App Store Connect key”, na tela “Info”."
     ],
     "bullets": []
    },
@@ -196,7 +202,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar de vez um lote do lixo apaga junto os códigos e os nomes de destinatários dele, e desfazer um código entregue apaga o nome do destinatário escrito para ele. Ao apagar o app, tudo que ele guardava neste aparelho some. Apague a chave de API do App Store Connect na tela de informações do app antes de apagar o app. Para apagar a cópia no iCloud, vá em Ajustes > seu nome > iCloud > Gerenciar Armazenamento > Codematic."
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar de vez um lote do lixo apaga junto os códigos e os nomes de destinatários dele, e desfazer um código entregue apaga o nome do destinatário escrito para ele. Ao apagar o app, tudo que ele guardava neste aparelho some. Apague a chave de API do App Store Connect com “Delete key”, em “App Store Connect key” na tela “Info”, antes de apagar o app. Para apagar a cópia no iCloud, vá em Ajustes > seu nome > iCloud > Gerenciar Armazenamento > Codematic."
     ],
     "bullets": []
    },
@@ -210,7 +216,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor. O armazenamento no iCloud usa o banco de dados privado (CloudKit) da sua própria conta do iCloud. O app não tem um botão para desativá-lo e, num aparelho sem sessão do iCloud, os dados ficam guardados só naquele aparelho. A chave de API do App Store Connect é conferida com a Apple uma vez quando você a adiciona e depois fica guardada só nas Chaves daquele aparelho, pode ser lida só com o aparelho desbloqueado e não é sincronizada pelas Chaves do iCloud. Em outro aparelho, ela é adicionada à parte. Quando um arquivo .p8 é passado ao app pelo app Arquivos ou pelo AirDrop, a cópia que fica no app é apagada depois de lida. As fotos são apenas adicionadas, com permissão só de adição, quando você salva um cartão como imagem, e o app não lê sua fototeca. O app coloca um código ou link na área de transferência quando você entrega ou copia de novo um código, e só lê a área de transferência quando você toca no botão de colar. Se você faz backup do aparelho (por exemplo, com o Backup do iCloud), os dados do armazenamento do app entram como os de qualquer outro app, e esse backup fica a cargo da Apple."
+     "O que o app usa fica no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor. O armazenamento no iCloud usa o banco de dados privado (CloudKit) da sua própria conta do iCloud. O app não tem um botão para desativá-lo e, num aparelho sem sessão do iCloud, os dados ficam guardados só naquele aparelho. A chave de API do App Store Connect é conferida com a Apple uma vez quando você a adiciona e depois fica guardada só nas Chaves daquele aparelho, pode ser lida só com o aparelho desbloqueado e não é sincronizada pelas Chaves do iCloud. Em outro aparelho, ela é adicionada à parte. Quando um arquivo .p8 é passado ao app pelo app Arquivos ou pelo AirDrop, a cópia que fica no app é apagada depois de lida. As fotos são apenas adicionadas, com permissão só de adição, quando você toca em “Save as image”, e o app não lê sua fototeca. O app coloca um código ou link na área de transferência quando você entrega ou copia de novo um código, e só lê a área de transferência quando você toca no botão de colar. Se você faz backup do aparelho (por exemplo, com o Backup do iCloud), os dados do armazenamento do app entram como os de qualquer outro app, e esse backup fica a cargo da Apple."
     ],
     "bullets": []
    },

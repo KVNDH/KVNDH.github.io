@@ -14,34 +14,34 @@
     "Import the offer code CSV you download from App Store Connect as it is. Codematic reads the app and the code type from the file and skips codes you have already added. Without a file, paste the codes in. With an API key added, issue codes in the app and they go straight in."
    ],
    "bullets": [
-    "CSV import",
-    "Pasted codes",
+    "Import CSV file",
+    "Paste directly",
     "Duplicates skipped"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-215px",
-    "alt": "The screen for adding codes, in Korean. It lists CSV import, pasting codes, and issuing from App Store Connect.",
+    "focus": "-110px",
+    "alt": "The Issue codes screen, with One-time use codes selected next to Custom codes, and Quantity, Expiration date and Sandbox codes below.",
     "caption": "Close view of the app"
    }
   },
   {
    "layout": "feat",
-   "title": "Press Issue and the next code is copied",
+   "title": "Tap Issue and the next code is copied",
    "body": [
-    "Press Issue and the next code is copied and marked as handed out. Each batch can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it."
+    "Tap Issue and the next code is copied and marked as handed out. Each roll can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it."
    ],
    "bullets": [
     "Code or redeem link copied",
     "A QR card you can save as an image",
-    "Codes left in each batch"
+    "Codes left in each roll"
    ],
    "visual": {
     "type": "crop",
     "shot": 2,
     "focus": "-175px",
-    "alt": "The card shown after a code is handed out, in Korean. It has the code, a QR code, the time and the recipient, with buttons to save it as an image, copy again and undo.",
+    "alt": "The card shown after a code is handed out. It says Copied and has the code, a QR code, the time and the recipient, with Save as image, Copy again and Undo below.",
     "caption": "Close view of the app"
    }
   },
@@ -49,11 +49,11 @@
    "layout": "card",
    "title": "Who got which code",
    "body": [
-    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Batches and codes are stored in iCloud and show up on the iPhone and iPad signed in to the same Apple Account."
+    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Rolls and codes are stored in iCloud and show up on the iPhone and iPad signed in to the same Apple Account."
    ],
    "bullets": [
-    "Hand-out record and undo",
-    "CSV export",
+    "Handed out list and Undo",
+    "Export as CSV",
     "iCloud sync"
    ]
   },
@@ -61,10 +61,10 @@
    "layout": "card",
    "title": "Issue from App Store Connect",
    "body": [
-    "Add your App Store Connect API key to create offers and issue one-time codes in the app. Issued codes become a batch right away. Without a key, CSV import and pasting work the same."
+    "Add your App Store Connect API key to create offers and issue one-time use codes in the app. Issued codes become a roll right away. Without a key, CSV import and pasting work the same."
    ],
    "bullets": [
-    "One-time code batches",
+    "One-time use code batches",
     "Existing batches imported",
     "New offers"
    ]
@@ -74,31 +74,31 @@
   {
    "q": "Which kinds of codes can be added",
    "a": [
-    "App Store offer codes (for subscriptions and in-app purchases), app promo codes, and any other codes of your own. You choose the kind when you create a batch. An offer code CSV from App Store Connect tells the app the kind and the app."
+    "App Store offer codes (for subscriptions and in-app purchases), app promo codes, and any other codes of your own. You choose the type when you add codes: Offer code, App promo code or Other code. An offer code CSV from App Store Connect tells the app the type and the app."
    ]
   },
   {
    "q": "Where to get the offer code CSV",
    "a": [
-    "In App Store Connect, open the offer codes for the subscription or in-app purchase and create one-time use codes. That gives you a CSV to download. Put it in the Files app and import it from the screen for adding codes."
+    "In App Store Connect, open the offer codes for the subscription or in-app purchase and create one-time use codes. That gives you a CSV to download. Put it in the Files app, tap Add codes and choose Import CSV file."
    ]
   },
   {
    "q": "Importing the same file twice",
    "a": [
-    "If the file contains codes you already added, the app tells you and adds nothing. If that batch is in the trash, you can restore it from the alert."
+    "If the file contains codes you already added, the app says File already imported and adds nothing. If that roll is in the Trash, you can restore it from the alert."
    ]
   },
   {
    "q": "Copying the link or the code",
    "a": [
-    "Each batch has a choice of link, code, or both at the top of its screen. Opening an offer code link takes the recipient to the App Store's redeem screen. Offer code batches without an App Store ID, and other codes, copy the code only."
+    "Each roll has a choice of Link, Code or Both at the top of its screen. Opening an offer code link takes the recipient to the App Store's redeem screen. Offer code rolls without an App Store ID, and other codes, copy the code only."
    ]
   },
   {
    "q": "Undoing a code handed out by mistake",
    "a": [
-    "Use the undo button on the card right after issuing, or swipe the entry in the hand-out record. The code goes back to the unused ones and the recipient name you typed for it is cleared. The app cannot tell whether a code you already sent has been redeemed."
+    "Tap Undo on the card right after issuing, or swipe the entry under Handed out in the More menu. The code goes back to the unused ones and the recipient name you typed for it is cleared. The app cannot tell whether a code you already sent has been redeemed."
    ]
   },
   {
@@ -108,27 +108,27 @@
    ]
   },
   {
-   "q": "A batch deleted by mistake",
+   "q": "A roll deleted by mistake",
    "a": [
-    "A deleted batch stays in the trash with its codes for 30 days. Restore it from the trash at the end of the batch list. After 30 days it is removed for good the next time the app opens."
+    "A deleted roll stays in the Trash with its codes for 30 days. Restore it from Trash at the end of the list of rolls. After 30 days it is removed for good the next time the app opens."
    ]
   },
   {
    "q": "Other devices",
    "a": [
-    "Batches and codes are stored in iCloud and appear on the iPhone and iPad signed in to the same Apple Account. The info screen shows the iCloud status. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
+    "Rolls and codes are stored in iCloud and appear on the iPhone and iPad signed in to the same Apple Account. The Info screen shows the status under iCloud storage. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
    ]
   },
   {
    "q": "Creating the App Store Connect API key, and where it is kept",
    "a": [
-    "Create a team key under Users and Access, Integrations in App Store Connect, or an individual key in your user profile there, then enter the Key ID and the .p8 file. A team key also needs the Issuer ID. The app has a guide with the steps. The key is stored only in the Keychain of the device you add it on and does not go to iCloud or to other devices. The .p8 file can be downloaded only once, so keep the original."
+    "Create a team key under Users and Access, Integrations in App Store Connect, or an individual key in your user profile there, then enter the Key ID and the .p8 file. A team key also needs the Issuer ID. The steps are under How to create a key in the app. The key is stored only in the Keychain of the device you add it on and does not go to iCloud or to other devices. The .p8 file can be downloaded only once, so keep the original."
    ]
   },
   {
    "q": "Removing the key",
    "a": [
-    "Open the info screen, choose the App Store Connect key and delete it. Imported batches stay. To stop the key from working at all, revoke it in App Store Connect."
+    "Open Info, choose App Store Connect key and tap Delete key. Imported rolls stay. To stop the key from working at all, revoke it in App Store Connect."
    ]
   },
   {
@@ -138,9 +138,15 @@
    ]
   },
   {
-   "q": "Expiry reminders",
+   "q": "Expiration reminders",
    "a": [
-    "No notifications are sent. The expiry date is shown on the batch screen."
+    "No notifications are sent. The expiration date is shown on the roll's screen."
+   ]
+  },
+  {
+   "q": "App languages",
+   "a": [
+    "The app is in English and Korean. On a device set to any other language it appears in English."
    ]
   }
  ],
@@ -155,27 +161,27 @@
    {
     "title": "Purposes of processing",
     "paragraphs": [
-     "The app has no sign-up or login, and the developer does not process personal information about its users. The app uses the codes you add and the recipient names you type to count the codes left, to show your hand-out record, and to keep batches and codes the same on devices signed in to the same Apple Account. An App Store Connect API key is used only if you add one, to send requests to your own App Store Connect."
+     "The app has no sign-up or login, and the developer does not process personal information about its users. The app uses the codes you add and the recipient names you type to count the codes left, to show your hand-out record, and to keep rolls and codes the same on devices signed in to the same Apple Account. An App Store Connect API key is used only if you add one, to send requests to your own App Store Connect."
     ],
     "bullets": []
    },
    {
     "title": "Personal information processed",
     "paragraphs": [
-     "The developer collects no personal information. The app works with the data below, kept in the app's storage on your device. When the device is signed in to iCloud, batches and codes are also kept in your own iCloud account (the CloudKit private database). The developer does not receive any of it."
+     "The developer collects no personal information. The app works with the data below, kept in the app's storage on your device. When the device is signed in to iCloud, rolls and codes are also kept in your own iCloud account (the CloudKit private database). The developer does not receive any of it."
     ],
     "bullets": [
-     "Batches (name, kind, copy setting, App Store ID, expiry date, when it was created, when it was moved to the trash, and for a batch issued or imported in the app, the identifier of its App Store Connect batch): used to list batches and count the codes left",
-     "Codes (the code, whether it was handed out, and when): used to give the next code and show the hand-out record",
-     "Recipient names: optional text you type when you hand out a code, which may be another person's name or nickname. Shown in the hand-out record, on the card after a hand-out, in images you save and in the CSV you export. Kept with batches and codes on your device and in your own iCloud account",
+     "Rolls (name, type, copy setting, App Store ID, expiration date, when it was created, when it was moved to the Trash, and for a roll issued or imported in the app, the identifier of its App Store Connect batch): used to list rolls and count the codes left",
+     "Codes (the code, whether it was handed out, and when): used to give the next code and show the Handed out list",
+     "Recipient names: optional text you type when you hand out a code, which may be another person's name or nickname. Shown in the Handed out list, on the card after a hand-out, in images you save and in the CSV you export. Kept with rolls and codes on your device and in your own iCloud account",
      "App Store Connect API key (Key ID, private key, and the Issuer ID for a team key): used only if you add one, to read and create apps' products, offers and codes in your App Store Connect. Stored only in the Keychain of the device you add it on and not synced through iCloud",
-     "App icon cache (the icon and name of the app for a batch's App Store ID): shown on batches and in saved images. Kept in the device's cache folder and fetched again after 7 days"
+     "App icon cache (the icon and name of the app for a roll's App Store ID): shown on rolls and in saved images. Kept in the device's cache folder and fetched again after 7 days"
     ]
    },
    {
     "title": "Retention period",
     "paragraphs": [
-     "The developer holds no personal data. Batches, codes and recipient names stay until you delete them. A batch moved to the trash is removed for good, with its codes, when the app opens after 30 days, and you can also delete it from the trash right away. Deleting on one device also deletes the copy in iCloud and on your other devices. Deleting the app removes what it kept on that device, but the copy in iCloud stays in your iCloud account. An App Store Connect API key stays in that device's Keychain until you delete it on the app's info screen."
+     "The developer holds no personal data. Rolls, codes and recipient names stay until you delete them. A roll moved to the Trash is removed for good, with its codes, when the app opens after 30 days, and you can also delete it from the Trash right away. Deleting on one device also deletes the copy in iCloud and on your other devices. Deleting the app removes what it kept on that device, but the copy in iCloud stays in your iCloud account. An App Store Connect API key stays in that device's Keychain until you delete it under App Store Connect key on the Info screen."
     ],
     "bullets": []
    },
@@ -189,14 +195,14 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. Storing batches and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. When a batch has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com). It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
+     "No processing is outsourced. Storing rolls and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. When a roll has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com). It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
     ],
     "bullets": []
    },
    {
     "title": "Destruction of personal information",
     "paragraphs": [
-     "The developer holds no personal data, so there is nothing to destroy. Deleting a batch from the trash for good removes its codes and recipient names with it, and undoing a handed-out code clears the recipient name typed for it. Deleting the app removes everything it kept on this device. Delete an App Store Connect API key on the app's info screen before you delete the app. To delete the copy in iCloud, go to Settings > your name > iCloud > Manage Storage > Codematic."
+     "The developer holds no personal data, so there is nothing to destroy. Deleting a roll from the Trash for good removes its codes and recipient names with it, and undoing a handed-out code clears the recipient name typed for it. Deleting the app removes everything it kept on this device. Delete an App Store Connect API key with Delete key, under App Store Connect key on the Info screen, before you delete the app. To delete the copy in iCloud, go to Settings > your name > iCloud > Manage Storage > Codematic."
     ],
     "bullets": []
    },
@@ -210,7 +216,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits in the app's storage on your device. The developer runs no server. iCloud storage uses the private database (CloudKit) in your own iCloud account. The app has no switch to turn it off, and on a device not signed in to iCloud the data is stored on that device only. An App Store Connect API key is checked with Apple once when you add it, then stored only in that device's Keychain, readable only while the device is not locked, and not synced through iCloud Keychain. On another device you add it separately. When a .p8 file is passed to the app from Files or AirDrop, the app's copy of the file is deleted once it has been read. Photos are only added, with add-only permission, when you save a card as an image, and the app does not read your photo library. The app puts a code or link on the clipboard when you hand out or copy a code, and reads the clipboard only when you tap the paste button. If you back up your device (for example with iCloud Backup), the data in the app's storage is included like any other app's, and Apple handles that backup."
+     "What the app uses sits in the app's storage on your device. The developer runs no server. iCloud storage uses the private database (CloudKit) in your own iCloud account. The app has no switch to turn it off, and on a device not signed in to iCloud the data is stored on that device only. An App Store Connect API key is checked with Apple once when you add it, then stored only in that device's Keychain, readable only while the device is not locked, and not synced through iCloud Keychain. On another device you add it separately. When a .p8 file is passed to the app from Files or AirDrop, the app's copy of the file is deleted once it has been read. Photos are only added, with add-only permission, when you tap Save as image, and the app does not read your photo library. The app puts a code or link on the clipboard when you hand out or copy a code, and reads the clipboard only when you tap the paste button. If you back up your device (for example with iCloud Backup), the data in the app's storage is included like any other app's, and Apple handles that backup."
     ],
     "bullets": []
    },

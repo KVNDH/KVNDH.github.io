@@ -227,6 +227,10 @@
    "ko": [
     "Codematic/build/store/shots-src/asc/asc-1-add.png",
     "Codematic/build/store/shots-src/light-main/card.png"
+   ],
+   "en": [
+    "Codematic/build/store/shots-src/en-US/iphone/asc-issue.png",
+    "Codematic/build/store/shots-src/en-US/iphone/card.png"
    ]
   },
   "store": "Codematic/docs/store"
