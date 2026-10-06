@@ -21,9 +21,9 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Die Timeline aus der Nähe. Jede Zeile zeigt Jahr, Monat und Tag, Alter, Titel und Notiz, hervorgehobene Einträge stehen in Rot.",
+    "alt": "Die Timeline aus der Nähe. Jede Zeile zeigt Jahr, Monat und Tag, Alter, Titel und Notiz, die hervorgehobenen Einträge Hochzeit und Umzug in unser erstes Zuhause stehen in Rot.",
     "caption": "App-Ansicht, vergrößert",
-    "focus": "-245px",
+    "focus": "-420px",
     "focusX": "28px"
    }
   },
@@ -41,9 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "alt": "Die Tag-Chronik zu #Arbeit. Nur die Einträge mit diesem Tag laufen auf einer Linie, vom ersten Job bis zur eigenen Beratung.",
+    "alt": "Die Tag-Chronik zu #Leben. Oben stehen die Zahl der Einträge und der Zeitraum, darunter laufen die Einträge auf einer Linie, von Geboren bis Ein ruhiger Jahresausklang.",
     "caption": "Tag-Chronik",
-    "focus": "-170px"
+    "focus": "-150px",
+    "focusX": "30px"
    }
   },
   {

@@ -21,9 +21,9 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "A linha do tempo vista de perto. Cada linha traz o ano, o mês e o dia, a idade, um título e uma nota, e os registros destacados aparecem em vermelho.",
+    "alt": "A linha do tempo vista de perto. Cada linha traz o ano, o mês e o dia, a idade, um título e uma nota, e os registros destacados, entre eles Casamento, aparecem em vermelho.",
     "caption": "Tela do app, ampliada",
-    "focus": "-245px",
+    "focus": "-400px",
     "focusX": "28px"
    }
   },
@@ -41,9 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "alt": "Crônica da tag #Trabalho. Só os registros com essa tag descem numa linha, do primeiro emprego à abertura de uma consultoria.",
+    "alt": "Crônica da tag #vida. No alto aparecem o número de registros e o período, e abaixo os registros descem numa linha, de Meu nascimento a Um fim de ano tranquilo.",
     "caption": "Crônica da tag",
-    "focus": "-170px"
+    "focus": "-150px",
+    "focusX": "30px"
    }
   },
   {

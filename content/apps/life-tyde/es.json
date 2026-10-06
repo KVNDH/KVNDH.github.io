@@ -21,9 +21,9 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Primer plano de la línea de tiempo. Cada fila muestra el año, el mes y el día, la edad, un título y una nota, y las entradas destacadas van en rojo.",
+    "alt": "Primer plano de la línea de tiempo. Cada fila muestra el año, el mes y el día, la edad, un título y una nota, y las entradas destacadas, entre ellas La boda, van en rojo.",
     "caption": "Pantalla de la app, ampliada",
-    "focus": "-245px",
+    "focus": "-400px",
     "focusX": "28px"
    }
   },
@@ -41,9 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "alt": "Crónica de etiqueta de #Trabajo. Solo las entradas con esa etiqueta bajan por una línea, del primer empleo a montar una consultoría.",
+    "alt": "Crónica de etiqueta de #Vida. Arriba figuran el número de entradas y el periodo, y debajo las entradas bajan por una línea, de Nacimiento a Un fin de año tranquilo.",
     "caption": "Crónica de etiqueta",
-    "focus": "-170px"
+    "focus": "-150px",
+    "focusX": "30px"
    }
   },
   {

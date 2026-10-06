@@ -12,36 +12,36 @@
   "icon": "Life Tyde/Life Tyde/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "Life Tyde/results/store-1.2.1-src/ko_1-timeline.2026-10-03.png",
-    "Life Tyde/results/store-1.2.1-src/ko_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/ko/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/ko/02.png"
    ],
    "en": [
-    "Life Tyde/results/store-1.2.1-src/en_4-onthisday.png",
-    "Life Tyde/results/store-1.2.1-src/en_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/en/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/en/02.png"
    ],
    "ja": [
-    "Life Tyde/results/store-1.2.1-src/ja_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/ja_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/ja/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/ja/02.png"
    ],
    "zh-hans": [
-    "Life Tyde/results/store-1.2.1-src/zh-Hans_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/zh-Hans_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/zh-Hans/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/zh-Hans/02.png"
    ],
    "zh-hant": [
-    "Life Tyde/results/store-1.2.1-src/zh-Hant_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/zh-Hant_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/zh-Hant/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/zh-Hant/02.png"
    ],
    "de": [
-    "Life Tyde/results/store-1.2.1-src/de_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/de_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/de/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/de/02.png"
    ],
    "es": [
-    "Life Tyde/results/store-1.2.1-src/es_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/es_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/es/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/es/02.png"
    ],
    "pt-br": [
-    "Life Tyde/results/store-1.2.1-src/pt-BR_1-timeline.png",
-    "Life Tyde/results/store-1.2.1-src/pt-BR_3-chronicle.png"
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/pt-BR/01.png",
+    "Life Tyde/docs/store/shots-raw/site-1.2.8/pt-BR/02.png"
    ]
   },
   "store": "Life Tyde/docs/store"

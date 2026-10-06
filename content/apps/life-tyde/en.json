@@ -21,9 +21,9 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Close-up of the timeline. Each row shows the year, the month and day, the age, a title, and a note, and highlighted entries are red.",
+    "alt": "Close-up of the timeline. Each row shows the year, the month and day, the age, a title, and a note, and highlighted entries such as Wedding day in Vermont are red.",
     "caption": "App screen, close-up",
-    "focus": "-245px",
+    "focus": "-225px",
     "focusX": "28px"
    }
   },
@@ -41,9 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "alt": "Tag Chronicle for #Work. Only the entries with that tag, from a first job to starting a consulting firm, run down one line.",
+    "alt": "Tag Chronicle for #Life. The top shows the entry count and the span of years, and the entries run down one line starting from Born.",
     "caption": "Tag Chronicle",
-    "focus": "-170px"
+    "focus": "-150px",
+    "focusX": "30px"
    }
   },
   {
