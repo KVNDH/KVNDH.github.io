@@ -1,0 +1,85 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "none",
+ "ads": false,
+ "account": false,
+ "unreleased": "2026-10-06 현재 출시 전(ASC 1.0.0 초안, 앱 ID 6819201504). site.json 의 unreleased 를 출시 때 뺀다",
+ "products": [],
+ "platform": [
+  "iPhone 과 iPad, iOS 26 이상. iPhone 은 세로만 (project.yml)",
+  "앱 화면은 한국어뿐이다(현지화 파일 없음). 다른 언어 페이지는 기능을 그 언어로 풀어 쓴다"
+ ],
+ "network": [
+  "iCloud: CloudKit 개인 데이터베이스, 컨테이너 iCloud.com.kimdh.Codematic (Codematic.entitlements, App/CodematicApp.swift cloudKitDatabase .private)",
+  "App Store 공개 정보: itunes.apple.com/lookup?id=<앱 ID>&country=<지역> 과 거기서 받은 아이콘 그림 주소. 지역은 기기 지역, us, kr 차례. 쿠키와 인증 헤더 없음(URLSessionConfiguration.ephemeral, Logic/AppIconFetcher.swift)",
+  "App Store Connect API: api.appstoreconnect.apple.com, 사용자가 등록한 키로 서명한 요청(ASC/ASCTransport.swift, ASC/ASCJWT.swift)",
+  "서드파티 SDK 없음, 개발자 서버 없음, 분석과 광고 없음 (PrivacyInfo.xcprivacy: 추적 없음, 수집 데이터 없음)"
+ ],
+ "permissions": [
+  "사진 추가 전용(NSPhotoLibraryAddUsageDescription, 이미지로 저장할 때). 사진을 읽지 않는다",
+  "알림, 위치, 카메라, 연락처, 마이크 권한을 묻지 않는다. iCloud 변경을 받는 조용한 푸시(UIBackgroundModes remote-notification)는 권한 창이 없다",
+  "클립보드: 발급과 다시 복사 때 쓴다(Views/Give/RollDetailView.swift, TicketCloseup.swift). 읽기는 붙여넣기 단추를 누를 때뿐(NewRollSheet.swift, ASCKeyView.swift PasteButton)"
+ ],
+ "storage": [
+  "SwiftData 저장소(앱 저장공간) + 사용자의 iCloud 개인 데이터베이스: Roll(name, kind, copyMode, appStoreID, expiresAt, createdAt, deletedAt, ascSourceID), Ticket(value, status, order, usedAt, recipient) (Model/Models.swift)",
+  "키체인: App Store Connect 키(kind, keyID, issuerID, privateKeyPEM). kSecAttrAccessibleWhenUnlockedThisDeviceOnly, kSecAttrSynchronizable false (ASC/ASCKeyStore.swift)",
+  "캐시 폴더 Caches/AppIcons: 앱 아이콘(<appID>.png)과 앱 이름(<appID>.name), 7일 뒤 다시 받음 (Logic/AppIconStore.swift maxAge)",
+  "UserDefaults 는 쓰지 않는다 (PrivacyInfo.xcprivacy 주석)"
+ ],
+ "features": [
+  "묶음 종류 셋: 오퍼 코드, 앱 프로모 코드, 그 밖의 코드 (RollKind)",
+  "넣는 길 셋: CSV 파일 가져오기, 직접 붙여넣기, App Store Connect 에서 발급 (Views/Give/NewRollSheet.swift)",
+  "다른 묶음에 든 코드가 하나라도 있으면 '이미 불러온 파일' 알림을 띄우고 넣지 않는다. 휴지통의 묶음이면 알림에서 되살리기",
+  "복사 방식: 링크, 코드, 코드+링크 (CopyMode). 오퍼 코드는 앱 ID 가 있어야 링크, 그 밖의 코드는 코드만 (Roll.canCopyLink)",
+  "되돌리기(Ticket.restore)는 상태, 건넨 시각, 받는 사람 이름을 지운다",
+  "휴지통: 묶음째 들어가고 30일 뒤 앱을 열 때 영구히 지운다 (Trash.keepDays, Trash.purge)",
+  "App Store Connect 키 종류 둘: 팀 키(Issuer ID 필요), 개인 키(Issuer ID 없음) (ASC/ASCModels.swift ASCKeyKind)",
+  "방금 만든 코드는 Apple 에서 쓸 수 있게 되기까지 몇 시간 걸릴 수 있다 (Views/Give/TicketCloseup.swift 안내 글)"
+ ],
+ "notOffered": [
+  "코드 사용 여부 확인(사용 집계)",
+  "만료 알림",
+  "위젯",
+  "공유 확장",
+  "Apple Watch 앱",
+  "Mac 앱",
+  "Face ID 잠금",
+  "메시지 보내기",
+  "영어 화면",
+  "인앱 구입",
+  "iPhone 가로 화면"
+ ],
+ "notWritten": [
+  "앱 프로모 코드 링크(apps.apple.com/redeem?code=)에 코드가 미리 채워지는지: 실기기 확인 전이라 쓰지 않는다",
+  "화면 움직임과 외관(상자, 롤, 프린터, 영수증): 이 앱만의 사용자 결정(docs/store/asc-answers.md '문안 기준')",
+  "앱을 지우면 키체인의 키가 지워지는지: iOS 동작이라 단정하지 않고 '지우기 전에 키 삭제'로 안내한다",
+  "FAQ 2 의 App Store Connect 웹 메뉴 이름: 실제 화면과 맞춰 보지 않아 메뉴 이름을 적지 않았다"
+ ],
+ "uiNames": {
+  "코드 넣기": "add codes",
+  "CSV 파일 가져오기": "CSV import",
+  "직접 붙여넣기": "paste",
+  "App Store Connect 에서 발급": "issue from App Store Connect",
+  "발급": "Issue",
+  "건넨 기록": "hand-out record",
+  "되돌리기": "undo",
+  "이미지로 저장": "save as image",
+  "다시 복사": "copy again",
+  "휴지통": "trash",
+  "정보": "info screen",
+  "iCloud 저장": "iCloud status row",
+  "App Store Connect 키": "App Store Connect key",
+  "키 삭제": "delete key",
+  "키 만드는 법": "key guide",
+  "이미 불러온 파일": "already imported alert"
+ },
+ "numbers": [],
+ "numbersNote": "소개 문구(요약, 부제, 절)에는 숫자를 쓰지 않는다. 30일(휴지통)과 7일(아이콘 캐시)은 지원과 처리방침에만 쓴다",
+ "sources": [
+  "Codematic/docs/SITE_DRAFT.md (8ec7225)",
+  "Codematic/docs/store/metadata.json (8ec7225, 언어별 부제와 용어)",
+  "Codematic/docs/store/asc-answers.md (문안 기준, 개인정보 설문)",
+  "앱 코드 Codematic 8ec7225: Model/Models.swift, ASC/ASCKeyStore.swift, ASC/ASCModels.swift, Logic/CloudSync.swift, Logic/AppIconFetcher.swift, Logic/AppIconStore.swift, Views/Give/NewRollSheet.swift, Views/Give/TrashView.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCKeyView.swift, Views/ASC/ASCKeyGuideView.swift, Resources/PrivacyInfo.xcprivacy, project.yml",
+  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png. 절 그림은 원본 캡처 build/store/shots-src/asc/asc-1-add.png, light-main/card.png (커밋 밖, 2026-10-06 08:48 파일, 한국어 화면)"
+ ]
+}

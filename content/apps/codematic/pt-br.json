@@ -1,0 +1,266 @@
+{
+ "name": "Codematic",
+ "subtitle": "Ofertas e promos, uma a uma",
+ "summary": "Reúna em um só lugar os códigos de oferta e os códigos promocionais de apps que você distribui, com o registro de quem recebeu cada um",
+ "hero": {
+  "hook": "Reúna em um só lugar os códigos de oferta e os códigos promocionais de apps que você distribui, com o registro de quem recebeu cada um",
+  "shotAlt": "O cartão que o Codematic mostra depois de entregar um código, com o código, o código QR, a hora e o destinatário."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Três formas de adicionar códigos",
+   "body": [
+    "Importe como está o CSV de códigos de oferta que você baixa do App Store Connect. O Codematic lê no arquivo o app e o tipo de código, e pula os códigos que você já adicionou. Sem arquivo, cole os códigos. Com uma chave de API adicionada, gere códigos no app e eles entram na hora."
+   ],
+   "bullets": [
+    "Importação de CSV",
+    "Códigos colados",
+    "Códigos repetidos ignorados"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-215px",
+    "alt": "A tela de adicionar códigos, em coreano. Ela mostra a importação de CSV, a colagem de códigos e a geração pelo App Store Connect.",
+    "caption": "Vista aproximada do app"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Toque em Emitir e o próximo código é copiado",
+   "body": [
+    "Ao tocar em Emitir, o próximo código é copiado e marcado como entregue. Em cada lote você escolhe se copia o link de resgate, o código ou os dois. Pessoalmente, mostre o cartão com o código QR ou salve como imagem e envie."
+   ],
+   "bullets": [
+    "Cópia do código ou do link de resgate",
+    "Cartão QR para salvar como imagem",
+    "Códigos restantes em cada lote"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-175px",
+    "alt": "O cartão que aparece depois de entregar um código, em coreano. Ele traz o código, um código QR, a hora e o destinatário, com botões para salvar como imagem, copiar de novo e desfazer.",
+    "caption": "Vista aproximada do app"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Quem recebeu cada código",
+   "body": [
+    "Escreva o nome do destinatário ao entregar um código, e cada código guarda quem o recebeu e quando. Desfaça um código entregue por engano e exporte o registro em CSV. Os lotes e os códigos ficam guardados no iCloud e aparecem no iPhone e no iPad com a mesma Conta Apple."
+   ],
+   "bullets": [
+    "Registro de entregas e desfazer",
+    "Exportação em CSV",
+    "Sincronização com o iCloud"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Gere códigos pelo App Store Connect",
+   "body": [
+    "Adicione sua chave de API do App Store Connect para criar ofertas e gerar códigos de uso único no app. Os códigos gerados viram um lote na hora. Sem chave, a importação de CSV e a colagem funcionam do mesmo jeito."
+   ],
+   "bullets": [
+    "Lotes de códigos de uso único",
+    "Lotes existentes importados",
+    "Novas ofertas"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Quais códigos podem ser adicionados",
+   "a": [
+    "Códigos de oferta da App Store (de assinaturas e compras dentro do app), códigos promocionais de apps e qualquer outro código. Você escolhe o tipo ao criar um lote. Com um CSV de códigos de oferta do App Store Connect, o app lê no arquivo o tipo e o app."
+   ]
+  },
+  {
+   "q": "Onde conseguir o CSV de códigos de oferta",
+   "a": [
+    "No App Store Connect, abra os códigos de oferta da assinatura ou da compra dentro do app e crie códigos de uso único. Com isso você pode baixar um CSV. Guarde o arquivo no app Arquivos e importe pela tela de adicionar códigos."
+   ]
+  },
+  {
+   "q": "Importar o mesmo arquivo duas vezes",
+   "a": [
+    "Se o arquivo tiver códigos que você já adicionou, o app avisa e não adiciona nada. Se aquele lote estiver no lixo, dá para restaurar pelo aviso."
+   ]
+  },
+  {
+   "q": "Copiar o link ou o código",
+   "a": [
+    "No alto da tela de cada lote você escolhe entre link, código ou os dois. Quando o destinatário abre o link de um código de oferta, aparece a tela de resgate da App Store. Lotes de códigos de oferta sem ID da App Store e os outros códigos copiam só o código."
+   ]
+  },
+  {
+   "q": "Desfazer um código entregue por engano",
+   "a": [
+    "Use o botão de desfazer no cartão logo depois de emitir, ou deslize a entrada no registro de entregas. O código volta a ficar sem uso e o nome do destinatário que você escreveu é apagado. O app não tem como saber se um código que você já enviou foi resgatado."
+   ]
+  },
+  {
+   "q": "Ver se um código foi resgatado",
+   "a": [
+    "O app não mostra isso. O Codematic registra qual código você deu a quem. Os resgates aparecem no App Store Connect."
+   ]
+  },
+  {
+   "q": "Um lote apagado por engano",
+   "a": [
+    "Um lote apagado fica no lixo com os códigos por 30 dias. Restaure pelo lixo, no fim da lista de lotes. Depois de 30 dias, ele é removido de vez na próxima vez que o app for aberto."
+   ]
+  },
+  {
+   "q": "Outros aparelhos",
+   "a": [
+    "Os lotes e os códigos ficam guardados no iCloud e aparecem no iPhone e no iPad com a mesma Conta Apple. A tela de informações mostra o estado do iCloud. Sem uma sessão do iCloud, eles ficam guardados naquele aparelho. A chave de API do App Store Connect é adicionada em cada aparelho separadamente."
+   ]
+  },
+  {
+   "q": "Onde criar a chave de API do App Store Connect e onde ela fica",
+   "a": [
+    "Crie uma chave de equipe no App Store Connect, em Usuários e Acesso, Integrações, ou uma chave individual no seu perfil de usuário, e depois informe o ID da chave e o arquivo .p8. Uma chave de equipe também precisa do Issuer ID. O app traz um guia com os passos. A chave fica guardada só nas Chaves do aparelho em que você a adiciona e não vai para o iCloud nem para outros aparelhos. O arquivo .p8 só pode ser baixado uma vez, então guarde o original à parte."
+   ]
+  },
+  {
+   "q": "Remover a chave",
+   "a": [
+    "Abra a tela de informações, escolha a chave do App Store Connect e apague. Os lotes importados continuam. Para que a chave pare de funcionar de vez, revogue a chave no App Store Connect."
+   ]
+  },
+  {
+   "q": "Um código recém-gerado não funciona na App Store",
+   "a": [
+    "Códigos recém-criados no App Store Connect podem levar algumas horas até a Apple aceitá-los."
+   ]
+  },
+  {
+   "q": "Avisos de validade",
+   "a": [
+    "Nenhuma notificação é enviada. A data de validade aparece na tela do lote."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do Codematic",
+  "effectiveDate": "2026-10-06",
+  "summary": "O Codematic não coleta dados pessoais. Não há conta nem login. Os códigos que você adiciona e seu registro de entregas, incluindo os nomes de destinatários que você escreve, ficam guardados no seu aparelho e na sua própria conta do iCloud. A chave de API do App Store Connect fica guardada só nas Chaves do aparelho em que você a adiciona, e as requisições assinadas com ela vão diretamente para a Apple.",
+  "intro": [
+   "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app Codematic (o app) conforme descrito a seguir."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login, e o desenvolvedor não trata informações pessoais de quem o usa. O app usa os códigos que você adiciona e os nomes de destinatários que você escreve para contar os códigos restantes, mostrar seu registro de entregas e manter os lotes e os códigos iguais nos aparelhos com a mesma Conta Apple. A chave de API do App Store Connect só é usada se você adicionar uma, para enviar requisições ao seu próprio App Store Connect."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "O desenvolvedor não coleta informações pessoais. O app trabalha com os dados abaixo, guardados no armazenamento do app no seu aparelho. Se o aparelho estiver com uma sessão do iCloud iniciada, os lotes e os códigos também ficam na sua própria conta do iCloud (no banco de dados privado do CloudKit). O desenvolvedor não recebe nenhum deles."
+    ],
+    "bullets": [
+     "Lotes (nome, tipo, ajuste de cópia, ID da App Store, data de validade, quando foi criado, quando foi para o lixo e, nos lotes gerados ou importados no app, o identificador do lote no App Store Connect): para listar os lotes e contar os códigos restantes",
+     "Códigos (o código, se foi entregue e quando): para dar o próximo código e mostrar o registro de entregas",
+     "Nomes de destinatários: texto opcional que você escreve ao entregar um código e que pode ser o nome ou o apelido de outra pessoa. Aparece no registro de entregas, no cartão depois da entrega, nas imagens que você salva e no CSV que você exporta. Fica guardado com os lotes e os códigos no seu aparelho e na sua própria conta do iCloud",
+     "Chave de API do App Store Connect (ID da chave, chave privada e, numa chave de equipe, o Issuer ID): só se você adicionar uma, para ler e criar apps, produtos, ofertas e códigos no seu App Store Connect. Fica guardada só nas Chaves do aparelho em que você a adiciona e não é sincronizada pelo iCloud",
+     "Cache de ícones de apps (o ícone e o nome do app do ID da App Store de um lote): para mostrar nos lotes e nas imagens salvas. Fica na pasta de cache do aparelho e é baixado de novo depois de 7 dias"
+    ]
+   },
+   {
+    "title": "Período de retenção",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais. Os lotes, os códigos e os nomes de destinatários ficam até você apagá-los. Um lote enviado ao lixo é removido de vez, com os códigos, quando o app é aberto depois de 30 dias, e você também pode apagá-lo do lixo na hora. O que você apaga num aparelho é apagado também da cópia no iCloud e dos seus outros aparelhos. Apagar o app remove o que ele guardava naquele aparelho, mas a cópia no iCloud continua na sua conta do iCloud. A chave de API do App Store Connect fica nas Chaves daquele aparelho até você apagá-la na tela de informações do app."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Fornecimento a terceiros",
+    "paragraphs": [
+     "Informações pessoais não são fornecidas a terceiros."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "Nenhum tratamento é terceirizado. O armazenamento dos lotes e dos códigos e a sincronização entre aparelhos rodam no iCloud da Apple (CloudKit). Esses dados pertencem à sua Conta Apple e seguem a política de privacidade da Apple. O desenvolvedor não pode vê-los nem os recebe. Quando um lote tem um ID da App Store, o app busca o ícone e o nome daquele app nas informações públicas da App Store da Apple (itunes.apple.com). Ele envia o ID do app e um código de região e, como em qualquer requisição da web, a Apple recebe o endereço IP do seu aparelho. Cookies e dados de login não são enviados. Se você adicionar uma chave de API do App Store Connect, o app envia requisições assinadas com essa chave diretamente para a API do App Store Connect da Apple (api.appstoreconnect.apple.com) para ler e criar apps, produtos, ofertas e códigos. Essas requisições não passam por nenhum servidor do desenvolvedor."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar de vez um lote do lixo apaga junto os códigos e os nomes de destinatários dele, e desfazer um código entregue apaga o nome do destinatário escrito para ele. Ao apagar o app, tudo que ele guardava neste aparelho some. Apague a chave de API do App Store Connect na tela de informações do app antes de apagar o app. Para apagar a cópia no iCloud, vá em Ajustes > seu nome > iCloud > Gerenciar Armazenamento > Codematic."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de representantes legais",
+    "paragraphs": [
+     "Como o desenvolvedor não guarda informações pessoais suas, não há o que acessar, corrigir ou excluir. Em caso de dúvida, escreva para o endereço abaixo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "O que o app usa fica no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor. O armazenamento no iCloud usa o banco de dados privado (CloudKit) da sua própria conta do iCloud. O app não tem um botão para desativá-lo e, num aparelho sem sessão do iCloud, os dados ficam guardados só naquele aparelho. A chave de API do App Store Connect é conferida com a Apple uma vez quando você a adiciona e depois fica guardada só nas Chaves daquele aparelho, pode ser lida só com o aparelho desbloqueado e não é sincronizada pelas Chaves do iCloud. Em outro aparelho, ela é adicionada à parte. Quando um arquivo .p8 é passado ao app pelo app Arquivos ou pelo AirDrop, a cópia que fica no app é apagada depois de lida. As fotos são apenas adicionadas, com permissão só de adição, quando você salva um cartão como imagem, e o app não lê sua fototeca. O app coloca um código ou link na área de transferência quando você entrega ou copia de novo um código, e só lê a área de transferência quando você toca no botão de colar. Se você faz backup do aparelho (por exemplo, com o Backup do iCloud), os dados do armazenamento do app entram como os de qualquer outro app, e esse backup fica a cargo da Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies e outra coleta automática",
+    "paragraphs": [
+     "O app não usa cookies, identificador de publicidade nem ferramentas de análise."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página trará o novo texto e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

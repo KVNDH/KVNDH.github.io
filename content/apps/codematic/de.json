@@ -1,0 +1,266 @@
+{
+ "name": "Codematic",
+ "subtitle": "Gutscheine, einzeln verteilt",
+ "summary": "Sammeln Sie die Angebotscodes und App-Promo-Codes, die Sie verteilen, an einem Ort und halten Sie fest, wer welchen Code bekommen hat",
+ "hero": {
+  "hook": "Sammeln Sie die Angebotscodes und App-Promo-Codes, die Sie verteilen, an einem Ort und halten Sie fest, wer welchen Code bekommen hat",
+  "shotAlt": "Die Karte, die Codematic nach dem Weitergeben eines Codes zeigt, mit Code, QR-Code, Zeitpunkt und Empfänger."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Drei Wege, Codes hinzuzufügen",
+   "body": [
+    "Importieren Sie die CSV-Datei mit Angebotscodes, die Sie in App Store Connect laden, so wie sie ist. Codematic liest die App und die Art der Codes aus der Datei und überspringt Codes, die schon vorhanden sind. Ohne Datei fügen Sie die Codes als Text ein. Mit einem API-Schlüssel erstellen Sie Codes in der App und übernehmen sie direkt."
+   ],
+   "bullets": [
+    "CSV-Import",
+    "Eingefügte Codes",
+    "Vorhandene Codes übersprungen"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-215px",
+    "alt": "Der Bildschirm zum Hinzufügen von Codes, auf Koreanisch. Er führt den CSV-Import, das Einfügen von Codes und das Erstellen über App Store Connect auf.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Ausgeben drücken, und der nächste Code ist kopiert",
+   "body": [
+    "Drücken Sie auf Ausgeben, wird der nächste Code kopiert und als verteilt markiert. Für jeden Stapel legen Sie fest, ob der Einlöse-Link, der Code oder beides kopiert wird. Bei einem Treffen zeigen Sie die Karte mit dem QR-Code oder sichern sie als Bild und senden sie."
+   ],
+   "bullets": [
+    "Code oder Einlöse-Link kopiert",
+    "QR-Karte, als Bild zu sichern",
+    "Verbleibende Codes je Stapel"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-175px",
+    "alt": "Die Karte nach dem Weitergeben eines Codes, auf Koreanisch. Sie zeigt Code, QR-Code, Zeitpunkt und Empfänger, darunter Tasten zum Sichern als Bild, zum erneuten Kopieren und zum Widerrufen.",
+    "caption": "Nahansicht der App"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Wer welchen Code bekommen hat",
+   "body": [
+    "Tragen Sie beim Weitergeben den Namen des Empfängers ein, dann hält jeder Code fest, wer ihn wann bekommen hat. Einen versehentlich verteilten Code widerrufen Sie, und den Verlauf exportieren Sie als CSV. Stapel und Codes liegen in iCloud und erscheinen auf dem iPhone und iPad, die mit demselben Apple Account angemeldet sind."
+   ],
+   "bullets": [
+    "Verlauf und Widerrufen",
+    "CSV-Export",
+    "iCloud-Synchronisierung"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Codes über App Store Connect erstellen",
+   "body": [
+    "Mit Ihrem API-Schlüssel für App Store Connect erstellen Sie Angebote und Einmalcodes direkt in der App. Erstellte Codes werden sofort zu einem Stapel. Ohne Schlüssel funktionieren CSV-Import und Einfügen genauso."
+   ],
+   "bullets": [
+    "Stapel mit Einmalcodes",
+    "Vorhandene Stapel importiert",
+    "Neue Angebote"
+   ]
+  }
+ ],
+ "faq": [
+  {
+   "q": "Welche Codes sich hinzufügen lassen",
+   "a": [
+    "Angebotscodes des App Store (für Abos und In-App-Käufe), App-Promo-Codes und beliebige andere Codes. Die Art wählen Sie beim Anlegen eines Stapels. Bei einer CSV-Datei mit Angebotscodes aus App Store Connect liest die App die Art und die App aus der Datei."
+   ]
+  },
+  {
+   "q": "Woher die CSV-Datei mit Angebotscodes kommt",
+   "a": [
+    "Öffnen Sie in App Store Connect die Angebotscodes des Abos oder In-App-Kaufs und erstellen Sie Einmalcodes. Danach können Sie eine CSV-Datei laden. Legen Sie sie in der App Dateien ab und importieren Sie sie über den Bildschirm zum Hinzufügen von Codes."
+   ]
+  },
+  {
+   "q": "Dieselbe Datei zweimal importieren",
+   "a": [
+    "Enthält die Datei Codes, die schon vorhanden sind, weist die App darauf hin und fügt nichts hinzu. Liegt der Stapel im Papierkorb, können Sie ihn aus dem Hinweis heraus wiederherstellen."
+   ]
+  },
+  {
+   "q": "Link oder Code kopieren",
+   "a": [
+    "Oben im Bildschirm eines Stapels wählen Sie zwischen Link, Code oder beidem. Öffnet der Empfänger den Link eines Angebotscodes, erscheint der Einlösebildschirm des App Store. Stapel mit Angebotscodes ohne App-Store-ID und andere Codes kopieren nur den Code."
+   ]
+  },
+  {
+   "q": "Einen versehentlich verteilten Code widerrufen",
+   "a": [
+    "Tippen Sie direkt nach dem Ausgeben auf der Karte auf Widerrufen oder streichen Sie im Verlauf über den Eintrag. Der Code gilt wieder als unbenutzt, und der dazu eingetragene Empfängername wird entfernt. Ob ein bereits weitergegebener Code eingelöst wurde, kann die App nicht feststellen."
+   ]
+  },
+  {
+   "q": "Sehen, ob ein Code eingelöst wurde",
+   "a": [
+    "Das zeigt die App nicht an. Codematic hält fest, welchen Code Sie wem gegeben haben. Einlösungen sehen Sie in App Store Connect."
+   ]
+  },
+  {
+   "q": "Einen Stapel versehentlich gelöscht",
+   "a": [
+    "Ein gelöschter Stapel bleibt mit seinen Codes 30 Tage im Papierkorb. Stellen Sie ihn über den Papierkorb am Ende der Stapelliste wieder her. Nach 30 Tagen wird er beim nächsten Öffnen der App endgültig entfernt."
+   ]
+  },
+  {
+   "q": "Andere Geräte",
+   "a": [
+    "Stapel und Codes liegen in iCloud und erscheinen auf dem iPhone und iPad, die mit demselben Apple Account angemeldet sind. Der Infobildschirm zeigt den iCloud-Status. Ohne iCloud-Anmeldung werden sie auf dem jeweiligen Gerät gespeichert. Einen API-Schlüssel für App Store Connect fügen Sie auf jedem Gerät einzeln hinzu."
+   ]
+  },
+  {
+   "q": "Wo der API-Schlüssel für App Store Connect erstellt und gespeichert wird",
+   "a": [
+    "Einen Teamschlüssel erstellen Sie in App Store Connect unter Benutzer und Zugriff, Integrationen, einen persönlichen Schlüssel in Ihrem Benutzerprofil. Geben Sie dann die Schlüssel-ID und die .p8-Datei an. Ein Teamschlüssel braucht zusätzlich die Issuer ID. Die App enthält eine Anleitung mit den Schritten. Der Schlüssel wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und gelangt weder in iCloud noch auf andere Geräte. Die .p8-Datei lässt sich nur einmal laden, bewahren Sie das Original daher gesondert auf."
+   ]
+  },
+  {
+   "q": "Den Schlüssel entfernen",
+   "a": [
+    "Öffnen Sie den Infobildschirm, wählen Sie den Schlüssel für App Store Connect und löschen Sie ihn. Importierte Stapel bleiben erhalten. Soll der Schlüssel gar nicht mehr funktionieren, widerrufen Sie ihn in App Store Connect."
+   ]
+  },
+  {
+   "q": "Ein gerade erstellter Code funktioniert im App Store nicht",
+   "a": [
+    "Bei Codes, die gerade in App Store Connect erstellt wurden, kann es einige Stunden dauern, bis Apple sie annimmt."
+   ]
+  },
+  {
+   "q": "Erinnerung vor dem Ablauf",
+   "a": [
+    "Es werden keine Mitteilungen gesendet. Das Ablaufdatum steht im Bildschirm des Stapels."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Codematic Datenschutzerklärung",
+  "effectiveDate": "2026-10-06",
+  "summary": "Codematic erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Die Codes, die Sie hinzufügen, und Ihr Verlauf, einschließlich der Empfängernamen, die Sie eintragen, liegen auf Ihrem Gerät und in Ihrem eigenen iCloud-Account. Ein API-Schlüssel für App Store Connect wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und damit signierte Anfragen gehen direkt an Apple.",
+  "intro": [
+   "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Codematic (die App) wie folgt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat keine Registrierung und keine Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten ihrer Nutzerinnen und Nutzer. Die App verwendet die Codes, die Sie hinzufügen, und die Empfängernamen, die Sie eintragen, um die verbleibenden Codes zu zählen, Ihren Verlauf zu zeigen und Stapel und Codes auf Geräten mit demselben Apple Account gleich zu halten. Ein API-Schlüssel für App Store Connect wird nur verwendet, wenn Sie einen hinzufügen, und zwar für Anfragen an Ihr eigenes App Store Connect."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die im Speicher der App auf Ihrem Gerät liegen. Ist das Gerät bei iCloud angemeldet, liegen Stapel und Codes zusätzlich in Ihrem eigenen iCloud-Account (in der privaten CloudKit-Datenbank). Der Entwickler erhält nichts davon."
+    ],
+    "bullets": [
+     "Stapel (Name, Art, Kopiereinstellung, App-Store-ID, Ablaufdatum, Zeitpunkt des Anlegens, Zeitpunkt des Verschiebens in den Papierkorb und bei in der App erstellten oder importierten Stapeln die Kennung des Stapels in App Store Connect): um Stapel aufzulisten und die verbleibenden Codes zu zählen",
+     "Codes (der Code, ob er verteilt wurde und wann): um den nächsten Code auszugeben und den Verlauf zu zeigen",
+     "Empfängernamen: freiwilliger Text, den Sie beim Weitergeben eines Codes eintragen und der der Name oder Spitzname einer anderen Person sein kann. Erscheint im Verlauf, auf der Karte nach dem Weitergeben, in gesicherten Bildern und in der exportierten CSV-Datei. Liegt zusammen mit Stapeln und Codes auf Ihrem Gerät und in Ihrem eigenen iCloud-Account",
+     "API-Schlüssel für App Store Connect (Schlüssel-ID, privater Schlüssel und bei einem Teamschlüssel die Issuer ID): nur wenn Sie einen hinzufügen, um in Ihrem App Store Connect Apps, Produkte, Angebote und Codes zu lesen und zu erstellen. Wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und nicht über iCloud synchronisiert",
+     "Zwischenspeicher für App-Symbole (Symbol und Name der App zur App-Store-ID eines Stapels): für die Anzeige bei Stapeln und in gesicherten Bildern. Liegt im Cache-Ordner des Geräts und wird nach 7 Tagen neu geladen"
+    ]
+   },
+   {
+    "title": "Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler speichert keine personenbezogenen Daten. Stapel, Codes und Empfängernamen bleiben, bis Sie sie löschen. Ein Stapel im Papierkorb wird samt seinen Codes endgültig entfernt, wenn die App nach 30 Tagen geöffnet wird, und Sie können ihn im Papierkorb auch sofort endgültig löschen. Löschen Sie etwas auf einem Gerät, wird es auch in der iCloud-Kopie und auf Ihren anderen Geräten gelöscht. Beim Löschen der App wird entfernt, was sie auf dem Gerät gespeichert hat, die Kopie in iCloud bleibt jedoch in Ihrem iCloud-Account. Ein API-Schlüssel für App Store Connect bleibt im Schlüsselbund des Geräts, bis Sie ihn im Infobildschirm der App löschen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Es wird keine Verarbeitung ausgelagert. Das Speichern von Stapeln und Codes und ihr Abgleich zwischen Geräten laufen über Apples iCloud (CloudKit). Diese Daten gehören zu Ihrem Apple Account und unterliegen der Datenschutzrichtlinie von Apple. Der Entwickler kann sie weder einsehen noch erhält er sie. Hat ein Stapel eine App-Store-ID, lädt die App das Symbol und den Namen dieser App aus den öffentlichen App-Store-Informationen von Apple (itunes.apple.com). Dabei sendet sie die App-ID und einen Regionscode, und wie bei jeder Webanfrage erhält Apple die IP-Adresse Ihres Geräts. Cookies und Anmeldedaten werden nicht gesendet. Wenn Sie einen API-Schlüssel für App Store Connect hinzufügen, sendet die App mit diesem Schlüssel signierte Anfragen direkt an die App Store Connect API von Apple (api.appstoreconnect.apple.com), um Apps, Produkte, Angebote und Codes zu lesen und zu erstellen. Diese Anfragen laufen über keinen Server des Entwicklers."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Löschen Sie einen Stapel im Papierkorb endgültig, werden seine Codes und Empfängernamen mit entfernt, und beim Widerrufen eines verteilten Codes wird der dazu eingetragene Empfängername entfernt. Beim Löschen der App wird alles entfernt, was sie auf diesem Gerät gespeichert hat. Löschen Sie einen API-Schlüssel für App Store Connect im Infobildschirm der App, bevor Sie die App löschen. Die Kopie in iCloud löschen Sie unter Einstellungen > Ihr Name > iCloud > Speicher verwalten > Codematic."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Was die App verwendet, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server. Die iCloud-Speicherung nutzt die private Datenbank (CloudKit) in Ihrem eigenen iCloud-Account. In der App gibt es keinen Schalter, um sie auszuschalten, und auf einem Gerät ohne iCloud-Anmeldung werden die Daten nur auf diesem Gerät gespeichert. Ein API-Schlüssel für App Store Connect wird beim Hinzufügen einmal bei Apple geprüft und dann nur im Schlüsselbund dieses Geräts gespeichert, ist nur bei entsperrtem Gerät lesbar und wird nicht über den iCloud-Schlüsselbund synchronisiert. Auf einem anderen Gerät fügen Sie ihn gesondert hinzu. Wird eine .p8-Datei aus der App Dateien oder per AirDrop an die App übergeben, wird die Kopie in der App nach dem Lesen gelöscht. Fotos werden nur hinzugefügt, mit der Berechtigung zum reinen Hinzufügen, wenn Sie eine Karte als Bild sichern, und die App liest Ihre Fotomediathek nicht. Die App legt einen Code oder Link in die Zwischenablage, wenn Sie einen Code weitergeben oder erneut kopieren, und liest die Zwischenablage nur, wenn Sie auf die Taste zum Einfügen tippen. Wenn Sie Ihr Gerät sichern (etwa mit dem iCloud-Backup), sind die Daten im Speicher der App wie die jeder anderen App enthalten, und um dieses Backup kümmert sich Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Cookies und andere automatische Erfassung",
+    "paragraphs": [
+     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

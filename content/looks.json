@@ -46,6 +46,23 @@
    ]
   }
  },
+ "codematic": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {
+   "ko": [
+    "코드를 한 장씩 뽑아 건넵니다",
+    "발급할 때마다 영수증이 나옵니다",
+    "코드 묶음은 선반의 롤이 됩니다"
+   ],
+   "en": [
+    "Hand out codes one ticket at a time",
+    "Every code prints as a receipt",
+    "Each batch becomes a roll on the shelf"
+   ]
+  }
+ },
  "dice-master": {
   "mode": "line",
   "ink": "dark",
