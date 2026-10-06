@@ -21,8 +21,8 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-300px",
-    "alt": "The Issue codes screen, with Quantity, Expiration date and Sandbox codes, and a note below about when the codes can be used.",
+    "focus": "-179px",
+    "alt": "The New codes screen, with Import CSV file, Paste directly and Issue from App Store Connect in order.",
     "caption": "Close view of the app"
    }
   },

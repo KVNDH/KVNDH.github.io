@@ -110,6 +110,6 @@
   "Codematic/docs/store/metadata.json (ae59771, 언어별 부제와 용어)",
   "Codematic/docs/store/asc-answers.md (문안 기준, 개인정보 설문)",
   "앱 코드 Codematic ae59771 (1c3520e 까지 앱 코드 변경 없음): Model/Models.swift, ASC/ASCKeyStore.swift, ASC/ASCModels.swift, Logic/CloudSync.swift, Logic/AppIconFetcher.swift, Logic/AppIconStore.swift, Views/Give/NewRollSheet.swift, Views/Give/RollDetailView.swift, Views/Give/TrashView.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCKeyView.swift, Views/ASC/ASCKeyGuideView.swift, Resources/PrivacyInfo.xcprivacy, project.yml",
-  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). 절 그림 ko 는 원본 캡처 build/store/shots-src/asc/asc-1-add.png (커밋 밖, 2026-10-06 08:48 파일. 아래쪽 화면 글자 한 줄 위에서 잘라 쓴다), ko/iphone/card.png (2026-10-06 17:57 파일, light-main/card.png 와 같은 파일. 카드 시각이 19:08 이라 스토어 합성본 ko 의 18:36 과 다르다), 나머지 일곱 언어는 build/store/shots-src/en-US/iphone/asc-issue.png, card.png (커밋 밖, 2026-10-06 17:59 파일, 영어 화면). 영어 New codes 화면 캡처는 없다"
+  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). 절 그림 ko 는 원본 캡처 build/store/shots-src/asc/asc-1-add.png (커밋 밖, 2026-10-06 08:48 파일. 아래쪽 화면 글자 한 줄 위에서 잘라 쓴다), ko/iphone/card.png (2026-10-06 17:57 파일, light-main/card.png 와 같은 파일. 카드 시각이 19:08 이라 스토어 합성본 ko 의 18:36 과 다르다), 나머지 일곱 언어는 build/store/shots-src/en-US/iphone/new-codes.png (커밋 밖, 2026-10-07 01:13 파일), card.png (커밋 밖, 2026-10-06 17:59 파일, 영어 화면)"
  ]
 }

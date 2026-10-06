@@ -21,8 +21,8 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-300px",
-    "alt": "A tela “Issue codes”, de gerar códigos, com “Quantity”, “Expiration date” e “Sandbox codes”, e abaixo uma nota sobre quando os códigos podem ser usados.",
+    "focus": "-179px",
+    "alt": "A tela “New codes”, de adicionar códigos, com “Import CSV file”, “Paste directly” e “Issue from App Store Connect”, nessa ordem.",
     "caption": "Vista aproximada do app"
    }
   },

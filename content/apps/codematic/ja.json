@@ -21,8 +21,8 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-300px",
-    "alt": "コードを発行する「Issue codes」の画面。「Quantity」「Expiration date」「Sandbox codes」が並び、下にコードを使えるようになる時期の説明があります。",
+    "focus": "-179px",
+    "alt": "コードを追加する「New codes」の画面。「Import CSV file」「Paste directly」「Issue from App Store Connect」が順に並んでいます。",
     "caption": "アプリ画面の拡大"
    }
   },

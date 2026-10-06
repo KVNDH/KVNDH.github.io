@@ -21,8 +21,8 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-300px",
-    "alt": "生成代码的“Issue codes”界面。依次是“Quantity”“Expiration date”和“Sandbox codes”，下方有一段关于代码何时可以使用的说明。",
+    "focus": "-179px",
+    "alt": "添加代码的“New codes”界面。依次是“Import CSV file”“Paste directly”和“Issue from App Store Connect”。",
     "caption": "应用界面放大"
    }
   },
