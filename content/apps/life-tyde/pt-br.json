@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Life Tyde",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-07",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Life Tyde (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia. Esta política explica como."
   ],
@@ -194,7 +194,7 @@
     "title": "Fornecimento a terceiros",
     "paragraphs": [
      "Informações pessoais não são fornecidas a terceiros.",
-     "Trocar por perto é um recurso que você mesmo inicia. Quando os dois aparelhos aceitam, eles trocam o nome e o emoji da linha do tempo atual e os registros dela (título, nota, data, tags, destaque). Os registros recebidos são apenas para visualização e só são salvos no aparelho que recebe se você tocar em Manter como linha do tempo."
+     "Trocar por perto é um recurso que você mesmo inicia. Quando os dois aparelhos aceitam, eles trocam o nome e o emoji da linha do tempo atual, o ano-base da idade (normalmente o ano de nascimento) e os registros dela (título, nota, data, tags, destaque). Os registros recebidos são apenas para visualização e só são salvos no aparelho que recebe se você tocar em Manter como linha do tempo."
     ],
     "bullets": []
    },

@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Life Tyde",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-07",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Life Tyde (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea. Esta política explica cómo lo hace."
   ],
@@ -194,7 +194,7 @@
     "title": "Cesión a terceros",
     "paragraphs": [
      "La información personal no se cede a terceros.",
-     "Intercambiar cerca es una función que inicias tú. Cuando los dos dispositivos aceptan, se envían el nombre y el emoji de la línea de tiempo actual y sus entradas (título, nota, fecha, etiquetas, destacado). Las entradas recibidas solo se pueden ver, y únicamente se guardan en el dispositivo receptor si tocas Guardar como línea de tiempo."
+     "Intercambiar cerca es una función que inicias tú. Cuando los dos dispositivos aceptan, se envían el nombre y el emoji de la línea de tiempo actual, su año base de edad (normalmente el año de nacimiento) y sus entradas (título, nota, fecha, etiquetas, destacado). Las entradas recibidas solo se pueden ver, y únicamente se guardan en el dispositivo receptor si tocas Guardar como línea de tiempo."
     ],
     "bullets": []
    },

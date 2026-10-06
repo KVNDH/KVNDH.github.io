@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Life Tyde Privacy Policy",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-07",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Life Tyde app (\"the app\") in accordance with the Personal Information Protection Act of Korea. This policy explains how."
   ],
@@ -194,7 +194,7 @@
     "title": "Sharing with third parties",
     "paragraphs": [
      "Personal information is not shared with third parties.",
-     "Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as timeline."
+     "Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji, its age base year (usually the birth year), and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as timeline."
     ],
     "bullets": []
    },
