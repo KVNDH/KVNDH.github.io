@@ -152,7 +152,7 @@
  ],
  "privacy": {
   "title": "Codematic 隱私政策",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-07",
   "summary": "Codematic 不收集個人資料。沒有註冊和登入，加入的代碼和送出記錄（包括使用者填寫的領取人名字）保存在使用者的裝置和使用者本人的 iCloud 帳號中。App Store Connect API 金鑰只儲存在加入它的那台裝置的鑰匙圈中，用金鑰簽署的請求直接傳送給 Apple。",
   "intro": [
    "kvndh（以下稱開發者）按下列方式處理 Codematic 應用（以下稱本應用）使用者的個人資訊。"

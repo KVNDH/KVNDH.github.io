@@ -152,7 +152,7 @@
  ],
  "privacy": {
   "title": "Codematic Privacy Policy",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-07",
   "summary": "Codematic collects no personal data. There is no account and no sign-in. The codes you add and your hand-out record, including any recipient names you type, are kept on your device and in your own iCloud account. An App Store Connect API key is stored only in the Keychain of the device you add it on, and requests signed with it go directly to Apple.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Codematic app (the app) as described below."

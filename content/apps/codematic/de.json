@@ -152,7 +152,7 @@
  ],
  "privacy": {
   "title": "Codematic Datenschutzerklärung",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-07",
   "summary": "Codematic erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Die Codes, die Sie hinzufügen, und Ihr Verlauf, einschließlich der Empfängernamen, die Sie eintragen, liegen auf Ihrem Gerät und in Ihrem eigenen iCloud-Account. Ein API-Schlüssel für App Store Connect wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und damit signierte Anfragen gehen direkt an Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Codematic (die App) wie folgt."

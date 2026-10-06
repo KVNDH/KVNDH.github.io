@@ -152,7 +152,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Codematic",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-07",
   "summary": "Codematic no recoge datos personales. No hay cuenta ni inicio de sesión. Los códigos que añades y tu registro de entregas, incluidos los nombres de destinatarios que escribes, se guardan en tu dispositivo y en tu propia cuenta de iCloud. La clave de API de App Store Connect se guarda solo en el llavero del dispositivo donde la añades, y las solicitudes firmadas con ella van directamente a Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Codematic (la app) del modo que se indica a continuación."
