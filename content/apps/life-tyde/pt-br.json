@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Só os momentos que pesaram",
    "body": [
-    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho."
+    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho. Toque na nota de um registro para ir direto à edição dela."
    ],
    "bullets": [
     "Idade ou anos decorridos ao lado de cada registro",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Uma hashtag, uma crônica",
    "body": [
-    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem."
+    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem. Em Tags, nos Ajustes, você adiciona, renomeia, une e exclui tags."
    ],
    "bullets": [
     "Filtro de tags e visão só dos destaques",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Voltar pelos anos",
    "body": [
-    "O Rever passa seus registros um a um, começando pelos mais antigos. O Mapa da vida espalha cada registro numa grade de anos e meses, e o Lado a lado alinha duas linhas do tempo por idade ou por ano."
+    "O Rever passa seus registros um a um, começando pelos mais antigos. O Mapa da vida espalha cada registro numa grade de anos e meses, e o Lado a lado alinha duas linhas do tempo por idade ou por ano. Com 2 ou mais linhas do tempo, toque no título no alto da tela para trocar de uma para outra."
    ],
    "bullets": [
     "Avanço automático para o registro seguinte",
@@ -111,6 +111,13 @@
    "a": [
     "Dá para manter até 100 eventos, 1 linha do tempo e 10 tags de graça, e trazer do Mercado de eventos o pacote de história principal do idioma do app. Chegar a um limite nunca tranca o que já foi escrito: você continua lendo e editando.",
     "Com o Pro, eventos e tags não têm limite, e você cria até 3 linhas do tempo."
+   ]
+  },
+  {
+   "q": "Trocar de linha do tempo e base da idade",
+   "a": [
+    "Com 2 ou mais linhas do tempo, toque no título no alto da tela, ao centro, para passar a outra. No mesmo menu, Gerenciar linhas do tempo é onde você adiciona ou edita uma linha do tempo. Num iPad com iPadOS 26 ou posterior também dá para trocar pelo menu Linha do tempo da barra de menus e, com um teclado conectado, com Control-1, Control-2 e Control-3.",
+    "Numa linha do tempo que não seja a principal, Editar linha do tempo, em Gerenciar linhas do tempo, tem Base da idade, com duas opções: Igual à linha do tempo principal e Personalizada. Escolha Personalizada e defina uma data de nascimento, e as idades dessa linha do tempo passam a ser contadas a partir dessa data."
    ]
   },
   {
@@ -186,7 +193,7 @@
     "title": "Fornecimento a terceiros",
     "paragraphs": [
      "Informações pessoais não são fornecidas a terceiros.",
-     "Trocar por perto é um recurso que você mesmo inicia. Quando os dois aparelhos aceitam, eles trocam o nome e o emoji da linha do tempo atual e os registros dela (título, nota, data, tags, destaque). Os registros recebidos são apenas para visualização e só são salvos no aparelho que recebe se você tocar em Manter como perfil."
+     "Trocar por perto é um recurso que você mesmo inicia. Quando os dois aparelhos aceitam, eles trocam o nome e o emoji da linha do tempo atual e os registros dela (título, nota, data, tags, destaque). Os registros recebidos são apenas para visualização e só são salvos no aparelho que recebe se você tocar em Manter como linha do tempo."
     ],
     "bullets": []
    },

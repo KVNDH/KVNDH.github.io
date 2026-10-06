@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Only the moments that mattered",
    "body": [
-    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title."
+    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title. Tap an entry's note to go straight into editing that note."
    ],
    "bullets": [
     "Age or year count beside each entry",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "One hashtag, one chronicle",
    "body": [
-    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top."
+    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top. Tags in Settings is where you add, rename, merge, and delete tags."
    ],
    "bullets": [
     "Tag filter with a highlights-only view",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Go back over the years",
    "body": [
-    "Replay turns through your entries one at a time, oldest first. Life Map spreads every entry across a grid of years and months, and Side by Side lines up two timelines by age or by year."
+    "Replay turns through your entries one at a time, oldest first. Life Map spreads every entry across a grid of years and months, and Side by Side lines up two timelines by age or by year. With 2 or more timelines, tap the title at the top of the screen to switch between them."
    ],
    "bullets": [
     "Automatic advance to the next entry",
@@ -111,6 +111,13 @@
    "a": [
     "You can keep up to 100 events, 1 timeline, and 10 tags for free, and add the major history pack for your app language from the Event market. Reaching a limit never locks what you have already written, and you can still read and edit it.",
     "With Pro, events and tags have no limit, and you can create up to 3 timelines."
+   ]
+  },
+  {
+   "q": "Switching timelines and the age base",
+   "a": [
+    "When you have 2 or more timelines, tap the title at the top center of the screen to switch to another one. Manage Timelines in the same menu is where you add or edit a timeline. On an iPad running iPadOS 26 or later you can also switch from the Timeline menu in the menu bar and, with a keyboard connected, with Control-1, Control-2, and Control-3.",
+    "For a timeline other than the main one, Edit Timeline in Manage Timelines has Age base, with two options: Same as main timeline and Separate. Choose Separate and set a birthday, and ages on that timeline count from that date."
    ]
   },
   {
@@ -186,7 +193,7 @@
     "title": "Sharing with third parties",
     "paragraphs": [
      "Personal information is not shared with third parties.",
-     "Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as profile."
+     "Exchange nearby is a feature you start yourself. Once both devices accept, they swap the current timeline's name and emoji and its entries (title, note, date, tags, highlight). Received entries are view-only and are saved on the receiving device only if you tap Keep as timeline."
     ],
     "bullets": []
    },

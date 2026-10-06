@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Nur die Momente, auf die es ankam",
    "body": [
-    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel."
+    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel. Ein Tipp auf die Notiz eines Eintrags öffnet sie direkt zum Bearbeiten."
    ],
    "bullets": [
     "Alter oder Jahre neben jedem Eintrag",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Ein Hashtag, eine Chronik",
    "body": [
-    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum."
+    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum. Unter Tags in den Einstellungen fügen Sie Tags hinzu, benennen sie um, führen sie zusammen oder löschen sie."
    ],
    "bullets": [
     "Tag-Filter und Ansicht nur mit Highlights",
@@ -50,7 +50,7 @@
    "layout": "card",
    "title": "Zurück durch die Jahre",
    "body": [
-    "Die Rückschau blättert Ihre Einträge einzeln durch, die ältesten zuerst. Die Lebenskarte breitet jeden Eintrag über ein Raster aus Jahren und Monaten aus, und Nebeneinander stellt zwei Timelines nach Alter oder nach Jahr gegenüber."
+    "Die Rückschau blättert Ihre Einträge einzeln durch, die ältesten zuerst. Die Lebenskarte breitet jeden Eintrag über ein Raster aus Jahren und Monaten aus, und Nebeneinander stellt zwei Timelines nach Alter oder nach Jahr gegenüber. Bei 2 oder mehr Timelines wechseln Sie mit einem Tipp auf den Titel oben auf dem Bildschirm zwischen ihnen."
    ],
    "bullets": [
     "Automatisch zum nächsten Eintrag",
@@ -111,6 +111,13 @@
    "a": [
     "Kostenlos halten Sie bis zu 100 Ereignisse, 1 Timeline und 10 Tags und holen sich aus dem Ereignis-Markt das große Geschichtspack Ihrer App-Sprache. Ein erreichtes Limit sperrt nie, was schon geschrieben ist, Sie können es weiter lesen und bearbeiten.",
     "Mit Pro haben Ereignisse und Tags kein Limit, und Sie legen bis zu 3 Timelines an."
+   ]
+  },
+  {
+   "q": "Timeline wechseln und Altersbezug",
+   "a": [
+    "Haben Sie 2 oder mehr Timelines, tippen Sie oben in der Mitte des Bildschirms auf den Titel und wechseln zu einer anderen. Im selben Menü legen Sie unter Timelines verwalten eine Timeline an oder bearbeiten sie. Auf einem iPad mit iPadOS 26 oder neuer wechseln Sie auch über das Menü Timeline in der Menüleiste und, mit angeschlossener Tastatur, mit Control-1, Control-2 und Control-3.",
+    "Für jede Timeline außer der Haupt-Timeline finden Sie unter Timelines verwalten in Timeline bearbeiten den Punkt Altersbezug mit den Optionen Wie die Haupt-Timeline und Eigenes Datum. Wählen Sie Eigenes Datum und legen einen Geburtstag fest, zählt das Alter auf dieser Timeline ab diesem Datum."
    ]
   },
   {
@@ -186,7 +193,7 @@
     "title": "Weitergabe an Dritte",
     "paragraphs": [
      "Personenbezogene Daten werden nicht an Dritte weitergegeben.",
-     "In der Nähe austauschen ist eine Funktion, die Sie selbst starten. Sobald beide Geräte zustimmen, tauschen sie Namen und Emoji der aktuellen Timeline sowie deren Einträge (Titel, Notiz, Datum, Tags, Highlight). Empfangene Einträge lassen sich nur ansehen und werden nur dann auf dem empfangenden Gerät gesichert, wenn Sie auf Als Profil behalten tippen."
+     "In der Nähe austauschen ist eine Funktion, die Sie selbst starten. Sobald beide Geräte zustimmen, tauschen sie Namen und Emoji der aktuellen Timeline sowie deren Einträge (Titel, Notiz, Datum, Tags, Highlight). Empfangene Einträge lassen sich nur ansehen und werden nur dann auf dem empfangenden Gerät gesichert, wenn Sie auf Als Timeline behalten tippen."
     ],
     "bullets": []
    },
