@@ -206,7 +206,7 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Al borrar un documento se borra su carpeta, y al borrar la app se borra todo lo que contiene en este dispositivo. Para borrar la copia de iCloud, ve a Ajustes > tu nombre > iCloud > Gestionar almacenamiento > Readride. Después, Readride deja de sincronizar y mantiene la estantería de este dispositivo como está, y en los ajustes de Readride eliges si volver a subirla."
+     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Al borrar un documento se borra su carpeta, y al borrar la app se borra todo lo que contiene en este dispositivo. Para borrar la copia de iCloud, ve a Ajustes > tu nombre > iCloud > Almacenamiento > Readride. Después, Readride deja de sincronizar y mantiene la estantería de este dispositivo como está, y en los ajustes de Readride eliges si volver a subirla."
     ],
     "bullets": []
    },

@@ -206,7 +206,7 @@
    {
     "title": "Destruction of personal information",
     "paragraphs": [
-     "The developer holds no personal data, so there is nothing to destroy. Deleting a document removes its folder, and deleting the app removes everything it kept on this device. To delete the copy in iCloud, go to Settings > your name > iCloud > Manage Storage > Readride. Readride then stops syncing and leaves the shelf on this device as it is, and you choose in Readride's Settings whether to upload it again."
+     "The developer holds no personal data, so there is nothing to destroy. Deleting a document removes its folder, and deleting the app removes everything it kept on this device. To delete the copy in iCloud, go to Settings > your name > iCloud > Storage > Readride. Readride then stops syncing and leaves the shelf on this device as it is, and you choose in Readride's Settings whether to upload it again."
     ],
     "bullets": []
    },

@@ -96,5 +96,6 @@
   "tmp/readride-site-2026-09-26/facts-from-session.md",
   "Readride/Readride/Resources/Localizable.xcstrings",
   "Readride cb56df5 (1.0.2 (1) a699b1d, iPad 95e4f2c, iCloud 59a8fda 98294ee, 스키마 5a85f07, Pro 목록 68ea110, 속도 c2b44c6), Readride/docs/store/metadata.json 1.0.2"
- ]
+ ],
+ "icloudDeletePathNote": "iCloud 사본 지우는 경로의 마지막 칸 이름: ko '저장 공간'은 사용자 iPhone 확인(10-03). en Storage, de Speicher, es Almacenamiento, pt-br Armazenamento, zh-hans 储存空间, zh-hant 儲存空間 은 iOS 27.0 시뮬레이터 런타임 iCloudSettings.framework 문자열에서 읽음(2026-10-08, Readride 세션). ja 는 미확정(容量 과 ストレージ 가 갈림)이라 'ストレージを管理' 그대로 둠."
 }

@@ -206,7 +206,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar um documento apaga a pasta dele e, ao apagar o app, tudo que estava nele neste aparelho some. Para apagar a cópia no iCloud, vá em Ajustes > seu nome > iCloud > Gerenciar Armazenamento > Readride. Depois disso, o Readride para de sincronizar e mantém a estante deste aparelho como está, e você escolhe nos ajustes do Readride se quer enviá-la de novo."
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Apagar um documento apaga a pasta dele e, ao apagar o app, tudo que estava nele neste aparelho some. Para apagar a cópia no iCloud, vá em Ajustes > seu nome > iCloud > Armazenamento > Readride. Depois disso, o Readride para de sincronizar e mantém a estante deste aparelho como está, e você escolhe nos ajustes do Readride se quer enviá-la de novo."
     ],
     "bullets": []
    },

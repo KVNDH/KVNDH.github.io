@@ -206,7 +206,7 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Beim Löschen eines Dokuments wird sein Ordner entfernt, und beim Löschen der App alles, was sie auf diesem Gerät enthält. Die Kopie in iCloud löschen Sie unter Einstellungen > Ihr Name > iCloud > Speicher verwalten > Readride. Danach hält Readride die Synchronisierung an und lässt das Regal auf diesem Gerät, wie es ist. Ob es erneut hochgeladen wird, wählen Sie in den Einstellungen von Readride."
+     "Der Entwickler speichert keine personenbezogenen Daten, daher gibt es nichts zu vernichten. Beim Löschen eines Dokuments wird sein Ordner entfernt, und beim Löschen der App alles, was sie auf diesem Gerät enthält. Die Kopie in iCloud löschen Sie unter Einstellungen > Ihr Name > iCloud > Speicher > Readride. Danach hält Readride die Synchronisierung an und lässt das Regal auf diesem Gerät, wie es ist. Ob es erneut hochgeladen wird, wählen Sie in den Einstellungen von Readride."
     ],
     "bullets": []
    },
