@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Se lee desde la pantalla bloqueada",
    "body": [
-    "Tres widgets de pantalla bloqueada, tres de pantalla de inicio y, además, un widget de pila que muestra varios tramos a la vez. En cualquier tamaño va el nombre del tramo, así se sabe a qué pertenece el porcentaje. En StandBy se ven los mismos widgets en grande. Si giras el teléfono, la app también pasa a una pantalla negra con el anillo y un porcentaje grande. Se vuelven a dibujar en el momento exacto en que cambia el número, así que a mediodía el día marca justo el 50 por ciento."
+    "Tres widgets de pantalla bloqueada, tres de pantalla de inicio y, además, un widget de pila que muestra varios tramos a la vez. En cualquier tamaño va el nombre del tramo, así se sabe a qué pertenece el porcentaje. Si mantienes pulsado un widget de temporizador y en Editar widget eliges «Temporizador más reciente», mostrará siempre el último temporizador que creaste. En StandBy se ven los mismos widgets en grande. Si giras el teléfono, la app también pasa a una pantalla negra con el anillo y un porcentaje grande. Se vuelven a dibujar en el momento exacto en que cambia el número, así que a mediodía el día marca justo el 50 por ciento."
    ],
    "bullets": [
     "Circular, rectangular y en línea en la pantalla bloqueada",
@@ -105,7 +105,8 @@
    "title": "Pon un temporizador desde ahora o con la voz",
    "body": [
     "Arriba a la derecha de Nuevo temporizador hay un icono de tres hebras. Tócalo y la app escucha al momento. Frases como «hasta las 2», «3 horas» o «reunión 1 hora y media» rellenan el inicio, la meta y el nombre en cuanto dejas de hablar. Después tocas Guardar. El icono aparece en todos los idiomas de la app salvo los 11 que no tienen reconocimiento de voz de Apple.",
-    "A mano, eliges entre «Desde ahora» e «Inicio y meta». Con «Desde ahora» solo giras una rueda de horas y minutos, y la cuenta empieza en el momento en que guardas. Si dejas el nombre vacío, recibe un número, como «Temporizador 1» o «Temporizador 2»."
+    "A mano, eliges entre «Desde ahora» e «Inicio y meta». Con «Desde ahora» solo giras una rueda de horas y minutos, y la cuenta empieza en el momento en que guardas. Si dejas el nombre vacío, recibe un número, como «Temporizador 1» o «Temporizador 2».",
+    "Si pones el botón «Temporizador por voz» en el Centro de control, en un hueco de controles de la parte inferior de la pantalla bloqueada o en el botón de acción, al pulsarlo se abre Nuevo temporizador y la app ya está escuchando. En la app Atajos, la acción «Crear temporizador» toma una frase como «hasta el viernes a las 6 de la tarde» y crea el temporizador sin abrir la app."
    ],
    "bullets": [
     "Inicio, meta y nombre a partir de una frase dicha",
@@ -183,7 +184,7 @@
   {
    "q": "El anillo del centro de la pantalla completa",
    "a": [
-    "El tramo se corta en casillas y se dispone alrededor de un anillo. En el centro va el porcentaje en grande y debajo el número de casillas llenas. Un tramo que no se divide en casillas se dibuja como un anillo continuo.",
+    "El tramo se corta en casillas y se dispone alrededor de un anillo. En el centro va el porcentaje en grande y debajo una línea que alterna entre el número de casillas llenas y el momento de la casilla que se está llenando, como «Este tramo: 2026». Un tramo que no se divide en casillas se dibuja como un anillo continuo.",
     "Hay tres colores. Las casillas pasadas fijadas en tinta, la única casilla que se está llenando en el color de acento, y las que faltan como una línea tenue. Cuando el tramo se llena, el acento deja la pantalla. Así se muestra la llegada."
    ]
   },
@@ -207,7 +208,16 @@
    "a": [
     "Toca el icono de tres hebras arriba a la derecha de Nuevo temporizador y la app escucha al momento. Cuando dejas de hablar, rellena el inicio, la meta y el nombre con lo que ha entendido, y eres tú quien toca Guardar. El icono solo está al crear un temporizador nuevo y se oculta si activas Horas por día de la semana.",
     "«hasta las 2» llega hasta las 2 o las 14, lo que llegue antes, y «3 horas» cuenta tres horas desde ahora. «del 5 de noviembre al 31 de diciembre» va del 5 de noviembre a las 0:00 al 31 de diciembre a las 24:00. También entiende «hasta el viernes a las 18:00» y «100 días». Con «reunión 1 hora y media», reunión pasa a ser el nombre.",
-    "El icono aparece en todos los idiomas de la app salvo los 11 que no tienen reconocimiento de voz de Apple, como el bengalí y el tamil. Al usarlo por primera vez, la app pide una sola vez acceso al micrófono y al reconocimiento de voz. En un iPhone que no puede reconocer la voz en el propio dispositivo, se abre un campo para escribir y ahí escribes la frase."
+    "El icono aparece en todos los idiomas de la app salvo los 11 que no tienen reconocimiento de voz de Apple, como el bengalí y el tamil. Al usarlo por primera vez, la app pide una sola vez acceso al micrófono y al reconocimiento de voz. En un iPhone que no puede reconocer la voz en el propio dispositivo, se abre un campo para escribir y ahí escribes la frase.",
+    "En el Centro de control, en los huecos de controles de la parte inferior de la pantalla bloqueada y en el botón de acción puedes poner el botón «Temporizador por voz». Al pulsarlo se abre Nuevo temporizador y la app escucha al momento. También aquí eres tú quien toca Guardar. En un idioma sin «Dilo», se abre Nuevo temporizador sin escuchar.",
+    "En la app Atajos se usa la acción «Crear temporizador». Escribe en el campo «Hasta cuándo» una frase como «hasta el viernes a las 6 de la tarde» o «1 hora 30 minutos» y el temporizador se crea sin abrir la app. También puedes asignar ese atajo al botón de acción. Los temporizadores creados con el botón o con un atajo cuentan dentro de los tres propios."
+   ]
+  },
+  {
+   "q": "Preguntar el progreso a Siri y a Atajos",
+   "a": [
+    "Pregúntale a Siri algo como «Cuánto va de este año en Percentime» y responde con el nombre, el progreso y el tiempo que queda, sin abrir la app. Puedes preguntar por hoy, esta semana, este mes, este trimestre, este año y los años 2020. Por tus propios temporizadores se pregunta con el nombre, como «Consulta Horario de trabajo en Percentime», o con «Temporizador más reciente».",
+    "En la app Atajos, las acciones «Consultar progreso» y «Consultar temporizador» dan las mismas respuestas. Las frases de Siri solo existen en los idiomas de la app que tienen «Dilo»; en los 11 idiomas sin reconocimiento de voz de Apple, usa las acciones de la app Atajos."
    ]
   },
   {
@@ -227,19 +237,19 @@
   {
    "q": "Qué se usa sin Pro",
    "a": [
-    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. Un tramo con Horas por día de la semana también funciona sin Pro. El progreso muestra un decimal sin Pro. Poner un temporizador nuevo con la rueda de «Desde ahora» también funciona sin Pro. Ponerlo con la voz también funciona sin Pro (salvo en los 11 idiomas sin reconocimiento de voz de Apple)."
+    "Los seis tramos del calendario, los seis tamaños de widget, el widget de pila y la sincronización entre dispositivos funcionan sin Pro. Se quedan tres tramos propios, y los del calendario no cuentan para ese número. Un tramo con Horas por día de la semana también funciona sin Pro. El progreso muestra un decimal sin Pro. Poner un temporizador nuevo con la rueda de «Desde ahora» también funciona sin Pro. Ponerlo con la voz también funciona sin Pro (salvo en los 11 idiomas sin reconocimiento de voz de Apple). Consultar el progreso con Siri y Atajos, la acción «Crear temporizador», el botón «Temporizador por voz» y «Temporizador más reciente» en los widgets también funcionan sin Pro."
    ]
   },
   {
    "q": "Dispositivo e internet",
    "a": [
-    "Funciona en iPhone con iOS 18 o posterior. La app y sus widgets están en 46 idiomas y siguen el idioma del dispositivo. Se usa en vertical y, al girarla, muestra una pantalla negra grande. El fondo claro es lo normal y pasa a negro cuando el sistema está en oscuro."
+    "Funciona en iPhone con iOS 18 o posterior. La app y sus widgets están en 46 idiomas y siguen el idioma del dispositivo. Se usa en vertical y, al girarla, muestra una pantalla negra grande. El fondo claro es lo normal y pasa a negro cuando el sistema está en oscuro. En la pantalla ancha de un iPhone plegable abierto, la lista de la pantalla principal se recoge en 600 puntos de ancho en el centro, y la pantalla completa pone el anillo a la izquierda y el nombre y el tiempo restante a la derecha."
    ]
   }
  ],
  "privacy": {
   "title": "Política de privacidad de Percentime",
-  "effectiveDate": "2026-09-28",
+  "effectiveDate": "2026-10-13",
   "summary": "Percentime no recoge datos personales. No hay cuenta ni inicio de sesión, y Apple gestiona la compra de Pro.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Percentime (la app) del modo que se indica a continuación."
@@ -262,7 +272,8 @@
      "Ajustes (qué filas van en la pila): se usan para componer la app",
      "El mes y el día de tu cumpleaños: solo para contar los cumpleaños que faltan cuando eliges esa unidad de vida",
      "Si se ha comprado Pro: para decidir qué funciones se abren en la app y en los widgets",
-     "Lo que dices al poner un temporizador con la voz: se reconoce en el dispositivo y solo se usa para rellenar el inicio, la meta y el nombre de un temporizador nuevo. No se conservan ni el audio ni la transcripción completa; al tocar Guardar, solo los valores del inicio, la meta y el nombre pasan a tus tramos de arriba (el acceso al micrófono y al reconocimiento de voz es opcional y se pide una sola vez, la primera vez que lo usas; si lo rechazas, el campo para escribir y todas las demás funciones siguen funcionando, y puedes desactivarlo en la app Ajustes)"
+     "Lo que dices al poner un temporizador con la voz: se reconoce en el dispositivo y solo se usa para rellenar el inicio, la meta y el nombre de un temporizador nuevo. No se conservan ni el audio ni la transcripción completa; al tocar Guardar, solo los valores del inicio, la meta y el nombre pasan a tus tramos de arriba (el acceso al micrófono y al reconocimiento de voz es opcional y se pide una sola vez, la primera vez que lo usas; si lo rechazas, el campo para escribir y todas las demás funciones siguen funcionando, y puedes desactivarlo en la app Ajustes)",
+     "Los nombres de tus temporizadores: se comunican a Siri y a Atajos en el dispositivo para que Siri entienda frases como «Consulta Horario de trabajo en Percentime». Lo que le dices a Siri lo procesa Siri de Apple; la app solo recibe el tramo o el temporizador elegido y devuelve como respuesta el nombre, el progreso y el tiempo que queda. El desarrollador no recibe ni la lista de nombres ni lo que le dices a Siri"
     ]
    },
    {
@@ -351,6 +362,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-10-13: se añadió a «Información que se trata» la lista de nombres de temporizador que se comunica a Siri y a Atajos en el dispositivo para que Siri los entienda. La fecha de entrada en vigor anterior era el 2026-09-28.",
      "2026-09-28: se añadieron el micrófono y el reconocimiento de voz que se usan al poner un temporizador con la voz a «Información que se trata» y a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-20."
     ],
     "bullets": []

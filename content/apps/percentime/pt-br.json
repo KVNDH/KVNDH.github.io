@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Dá para ler na tela bloqueada",
    "body": [
-    "Três widgets de tela bloqueada, três de tela de início e ainda um widget de pilha que mostra vários períodos de uma vez. Em qualquer tamanho vai o nome do período, então dá para saber a que pertence a porcentagem. No StandBy aparecem os mesmos widgets em tamanho grande. Se você virar o telefone de lado, o app também muda para uma tela preta com o anel e uma porcentagem grande. Eles se redesenham no instante exato em que o número muda, então ao meio-dia o dia marca exatamente 50 por cento."
+    "Três widgets de tela bloqueada, três de tela de início e ainda um widget de pilha que mostra vários períodos de uma vez. Em qualquer tamanho vai o nome do período, então dá para saber a que pertence a porcentagem. Toque e segure um widget de timer, escolha “Timer mais recente” em Editar widget e ele passa a mostrar sempre o último timer que você criou. No StandBy aparecem os mesmos widgets em tamanho grande. Se você virar o telefone de lado, o app também muda para uma tela preta com o anel e uma porcentagem grande. Eles se redesenham no instante exato em que o número muda, então ao meio-dia o dia marca exatamente 50 por cento."
    ],
    "bullets": [
     "Circular, retangular e em linha na tela bloqueada",
@@ -105,7 +105,8 @@
    "title": "Um timer a partir de agora ou pela voz",
    "body": [
     "No canto superior direito de Novo timer fica um ícone de três fios. Toque nele e o app começa a ouvir na hora. Frases como “até as 14h”, “3 horas” ou “reunião 1 hora e meia” preenchem o início, a meta e o nome assim que você para de falar. Depois você toca em Salvar. O ícone aparece em todos os idiomas do app, menos nos 11 que não têm reconhecimento de fala da Apple.",
-    "Manualmente, você escolhe entre “A partir de agora” e “Início e meta”. Em “A partir de agora” você só gira uma roda de horas e minutos, e a contagem começa no momento em que você salva. Se o nome ficar vazio, entra um número, como “Timer 1” ou “Timer 2”."
+    "Manualmente, você escolhe entre “A partir de agora” e “Início e meta”. Em “A partir de agora” você só gira uma roda de horas e minutos, e a contagem começa no momento em que você salva. Se o nome ficar vazio, entra um número, como “Timer 1” ou “Timer 2”.",
+    "Coloque o botão “Timer por voz” na Central de Controle, num espaço de controles na parte de baixo da tela bloqueada ou no botão de Ação, e um toque abre o app em Novo timer, já ouvindo. No app Atalhos, a ação “Criar timer” recebe uma frase como “até sexta às 18h” e cria o timer sem abrir o app."
    ],
    "bullets": [
     "Início, meta e nome a partir de uma frase falada",
@@ -183,7 +184,7 @@
   {
    "q": "O anel no meio da tela cheia",
    "a": [
-    "O período é cortado em células e disposto em volta de um anel. No centro fica a porcentagem em tamanho grande e abaixo o número de células cheias. Um período que não se divide em células é desenhado como um anel contínuo.",
+    "O período é cortado em células e disposto em volta de um anel. No centro fica a porcentagem em tamanho grande e abaixo uma linha que alterna entre o número de células cheias e o momento da célula que está enchendo, como “Este segmento: 2026”. Um período que não se divide em células é desenhado como um anel contínuo.",
     "São três cores. As células que passaram fixadas em tinta, a única célula que está enchendo na cor de destaque, e as que faltam como uma linha clara. Quando o período enche, o destaque deixa a tela. É assim que a chegada aparece."
    ]
   },
@@ -207,7 +208,16 @@
    "a": [
     "Toque no ícone de três fios no canto superior direito de Novo timer e o app começa a ouvir na hora. Quando você para de falar, ele preenche o início, a meta e o nome com o que entendeu, e quem toca em Salvar é você. O ícone só aparece ao criar um timer novo e some quando Horas por dia da semana está ativado.",
     "“até as 14h” vai até as 14h de hoje, ou de amanhã se esse horário já passou, e “3 horas” conta três horas a partir de agora. “de 5 de novembro a 31 de dezembro” vai de 5 de novembro às 0h até 31 de dezembro às 24h. Ele também entende “até sexta às 18h” e “100 dias”. Com “reunião 1 hora e meia”, reunião vira o nome.",
-    "O ícone aparece em todos os idiomas do app, menos nos 11 que não têm reconhecimento de fala da Apple, como bengali e tâmil. No primeiro uso, o app pede uma única vez acesso ao microfone e ao reconhecimento de fala. Num iPhone que não consegue reconhecer a fala no próprio aparelho, abre um campo para digitar, e você digita a frase ali."
+    "O ícone aparece em todos os idiomas do app, menos nos 11 que não têm reconhecimento de fala da Apple, como bengali e tâmil. No primeiro uso, o app pede uma única vez acesso ao microfone e ao reconhecimento de fala. Num iPhone que não consegue reconhecer a fala no próprio aparelho, abre um campo para digitar, e você digita a frase ali.",
+    "A Central de Controle, os espaços de controles na parte de baixo da tela bloqueada e o botão de Ação podem receber o botão “Timer por voz”. Ao tocar nele, o app abre em Novo timer e começa a ouvir na hora. Aqui também quem toca em Salvar é você. Num idioma sem “Diga”, abre só Novo timer, sem ouvir.",
+    "No app Atalhos, use a ação “Criar timer”. Escreva no campo “Até quando” uma frase como “até sexta às 18h” ou “1 hora e 30 minutos”, e o timer é criado sem abrir o app. Dá para colocar esse atalho no botão de Ação também. Os timers criados pelo botão ou por um atalho contam dentro dos três seus."
+   ]
+  },
+  {
+   "q": "Perguntar o progresso à Siri e aos Atalhos",
+   "a": [
+    "Pergunte à Siri algo como “Como está este ano no Percentime” e ela responde com o nome, o progresso e o tempo que falta, sem abrir o app. Dá para perguntar por hoje, esta semana, este mês, este trimestre, este ano e os anos 2020. Para os seus próprios timers, pergunte pelo nome, como “Verifique Horário de trabalho no Percentime”, ou por “Timer mais recente”.",
+    "No app Atalhos, as ações “Verificar progresso” e “Verificar timer” dão as mesmas respostas. As frases da Siri só existem nos idiomas do app que têm “Diga”; nos 11 idiomas sem reconhecimento de fala da Apple, use as ações do app Atalhos."
    ]
   },
   {
@@ -227,19 +237,19 @@
   {
    "q": "O que dá para usar sem o Pro",
    "a": [
-    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. Um período com Horas por dia da semana também funciona sem o Pro. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz também funciona sem o Pro (menos nos 11 idiomas sem reconhecimento de fala da Apple)."
+    "Os seis períodos do calendário, os seis tamanhos de widget, o widget de pilha e a sincronização entre aparelhos funcionam sem o Pro. Ficam três períodos seus, e os do calendário não contam nesse número. Um período com Horas por dia da semana também funciona sem o Pro. O progresso mostra uma casa decimal sem o Pro. Criar um timer novo com a roda de “A partir de agora” também funciona sem o Pro. Criar pela voz também funciona sem o Pro (menos nos 11 idiomas sem reconhecimento de fala da Apple). Verificar o progresso pela Siri e pelos Atalhos, a ação “Criar timer”, o botão “Timer por voz” e “Timer mais recente” nos widgets também funcionam sem o Pro."
    ]
   },
   {
    "q": "Aparelho e internet",
    "a": [
-    "Funciona no iPhone com iOS 18 ou mais recente. O app e os widgets estão em 46 idiomas e seguem o idioma do aparelho. Use na vertical e, ao virar de lado, aparece uma tela preta grande. O fundo claro é o padrão e vira preto quando o sistema está no escuro."
+    "Funciona no iPhone com iOS 18 ou mais recente. O app e os widgets estão em 46 idiomas e seguem o idioma do aparelho. Use na vertical e, ao virar de lado, aparece uma tela preta grande. O fundo claro é o padrão e vira preto quando o sistema está no escuro. Na tela larga de um iPhone dobrável aberto, a lista da tela inicial fica com 600 pontos de largura no meio, e a tela cheia põe o anel à esquerda e o nome e o tempo restante à direita."
    ]
   }
  ],
  "privacy": {
   "title": "Política de Privacidade do Percentime",
-  "effectiveDate": "2026-09-28",
+  "effectiveDate": "2026-10-13",
   "summary": "O Percentime não coleta dados pessoais. Não há conta nem login, e a compra do Pro é feita pela Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app Percentime (o app) conforme descrito a seguir."
@@ -262,7 +272,8 @@
      "Ajustes (quais linhas ficam na pilha): usados para montar o app",
      "O mês e o dia do seu aniversário: só para contar os aniversários que faltam quando você escolhe essa unidade de vida",
      "Se o Pro foi comprado: para definir quais recursos ficam abertos no app e nos widgets",
-     "O que você fala ao criar um timer pela voz: reconhecido no aparelho e usado só para preencher o início, a meta e o nome de um timer novo. Nem o áudio nem a transcrição completa são guardados; ao tocar em Salvar, só os valores do início, da meta e do nome entram nos seus períodos listados acima (o acesso ao microfone e ao reconhecimento de fala é opcional e é pedido uma única vez, no primeiro uso; se você recusar, o campo para digitar e todas as outras funções continuam funcionando, e dá para desativá-lo no app Ajustes)"
+     "O que você fala ao criar um timer pela voz: reconhecido no aparelho e usado só para preencher o início, a meta e o nome de um timer novo. Nem o áudio nem a transcrição completa são guardados; ao tocar em Salvar, só os valores do início, da meta e do nome entram nos seus períodos listados acima (o acesso ao microfone e ao reconhecimento de fala é opcional e é pedido uma única vez, no primeiro uso; se você recusar, o campo para digitar e todas as outras funções continuam funcionando, e dá para desativá-lo no app Ajustes)",
+     "Os nomes dos seus timers: informados à Siri e aos Atalhos no aparelho para que a Siri entenda frases como “Verifique Horário de trabalho no Percentime”. O que você fala à Siri é processado pela Siri da Apple; o app recebe só o período ou o timer escolhido e devolve como resposta o nome, o progresso e o tempo que falta. O desenvolvedor não recebe nem a lista de nomes nem o que você fala à Siri"
     ]
    },
    {
@@ -351,6 +362,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
+     "2026-10-13: a lista de nomes de timer informada à Siri e aos Atalhos no aparelho, para que a Siri os entenda, foi incluída em “Informações tratadas”. A data de vigência anterior era 2026-09-28.",
      "2026-09-28: o microfone e o reconhecimento de fala usados para criar um timer pela voz foram incluídos em “Informações tratadas” e em “Medidas de segurança”. A data de vigência anterior era 2026-09-20."
     ],
     "bullets": []

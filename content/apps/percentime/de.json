@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Direkt vom Sperrbildschirm ablesen",
    "body": [
-    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. In StandBy erscheinen dieselben Widgets groß. Drehen Sie das Telefon quer, wechselt auch die App zu einem schwarzen Bildschirm mit dem Ring und einer großen Prozentzahl. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
+    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. Halten Sie ein Timer-Widget gedrückt und wählen Sie unter „Widget bearbeiten“ den Eintrag „Neuester Timer“, dann zeigt es immer den Timer, den Sie zuletzt angelegt haben. In StandBy erscheinen dieselben Widgets groß. Drehen Sie das Telefon quer, wechselt auch die App zu einem schwarzen Bildschirm mit dem Ring und einer großen Prozentzahl. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
    ],
    "bullets": [
     "Rund, rechteckig und einzeilig auf dem Sperrbildschirm",
@@ -105,7 +105,8 @@
    "title": "Timer ab jetzt oder per Sprache stellen",
    "body": [
     "Oben rechts im Bildschirm Neuer Timer steht ein Symbol mit drei Strängen. Ein Tipp darauf, und die App hört sofort zu. Sätze wie „bis 14 Uhr“, „3 Stunden“ oder „Meeting 1 Stunde 30 Minuten“ füllen Beginn, Ziel und Name, sobald Sie aufhören zu sprechen. Auf Sichern tippen Sie selbst. Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple.",
-    "Von Hand wählen Sie zwischen „Ab jetzt“ und „Beginn und Ziel“. Bei „Ab jetzt“ drehen Sie nur ein Rad aus Stunden und Minuten, gezählt wird ab dem Moment, in dem Sie sichern. Bleibt der Name leer, bekommt der Timer eine Nummer wie „Timer 1“ oder „Timer 2“."
+    "Von Hand wählen Sie zwischen „Ab jetzt“ und „Beginn und Ziel“. Bei „Ab jetzt“ drehen Sie nur ein Rad aus Stunden und Minuten, gezählt wird ab dem Moment, in dem Sie sichern. Bleibt der Name leer, bekommt der Timer eine Nummer wie „Timer 1“ oder „Timer 2“.",
+    "Legen Sie die Taste „Timer in Worten“ ins Kontrollzentrum, auf einen Platz für Steuerelemente unten auf dem Sperrbildschirm oder auf die Aktionstaste, dann öffnet ein Druck die App bei Neuer Timer, und sie hört sofort zu. In der Kurzbefehle-App legt die Aktion „Timer anlegen“ aus einem Satz wie „bis Freitag 18 Uhr“ einen Timer an, ohne dass sich die App öffnet."
    ],
    "bullets": [
     "Beginn, Ziel und Name aus einem gesprochenen Satz",
@@ -183,7 +184,7 @@
   {
    "q": "Der Ring in der Mitte des Vollbilds",
    "a": [
-    "Der Zeitraum wird in Zellen geschnitten und um einen Ring gelegt. In der Mitte steht der Prozentwert groß, darunter die Zahl der gefüllten Zellen. Ein Zeitraum, der sich nicht in Zellen teilt, wird als durchgehender Ring gezeichnet.",
+    "Der Zeitraum wird in Zellen geschnitten und um einen Ring gelegt. In der Mitte steht der Prozentwert groß, darunter eine Zeile, die zwischen der Zahl der gefüllten Zellen und der Zeit der Zelle wechselt, die gerade füllt, etwa „Dieses Segment: 2026“. Ein Zeitraum, der sich nicht in Zellen teilt, wird als durchgehender Ring gezeichnet.",
     "Es gibt drei Farben. Zellen hinter Ihnen in Tinte, die eine Zelle, die gerade füllt, in der Akzentfarbe, und die Zellen davor als blasse Linie. Ist der Zeitraum voll, verlässt die Akzentfarbe den Bildschirm. So wird das Ankommen gezeigt."
    ]
   },
@@ -207,7 +208,16 @@
    "a": [
     "Tippen Sie oben rechts im Bildschirm Neuer Timer auf das Symbol mit drei Strängen, dann hört die App sofort zu. Sobald Sie aufhören zu sprechen, füllt sie Beginn, Ziel und Name mit dem, was sie verstanden hat; auf Sichern tippen Sie selbst. Das Symbol gibt es nur beim Anlegen eines neuen Timers, und es verschwindet, wenn Stunden je Wochentag eingeschaltet ist.",
     "„bis 14 Uhr“ reicht bis 14 Uhr, heute oder, wenn es schon später ist, morgen, und „3 Stunden“ zählt drei Stunden ab jetzt. „vom 5. November bis 31. Dezember“ reicht vom 5. November 0 Uhr bis zum 31. Dezember 24 Uhr. Auch „bis Freitag 18 Uhr“ und „100 Tage“ werden verstanden. Bei „Meeting 1 Stunde 30 Minuten“ wird Meeting zum Namen.",
-    "Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple, etwa Bengalisch und Tamil. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein."
+    "Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple, etwa Bengalisch und Tamil. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein.",
+    "Ins Kontrollzentrum, auf die Plätze für Steuerelemente unten auf dem Sperrbildschirm und auf die Aktionstaste lässt sich die Taste „Timer in Worten“ legen. Ein Druck darauf öffnet die App bei Neuer Timer, und sie hört sofort zu. Auf Sichern tippen Sie auch hier selbst. In einer Sprache ohne „In Worten“ öffnet sich nur Neuer Timer, ohne zuzuhören.",
+    "In der Kurzbefehle-App nutzen Sie die Aktion „Timer anlegen“. Schreiben Sie in das Feld „Bis wann“ einen Satz wie „bis Freitag 18 Uhr“ oder „1 Stunde 30 Minuten“, und der Timer entsteht, ohne dass sich die App öffnet. Diesen Kurzbefehl können Sie auch auf die Aktionstaste legen. Timer aus der Taste oder einem Kurzbefehl zählen zu den drei eigenen."
+   ]
+  },
+  {
+   "q": "Siri und Kurzbefehle nach dem Fortschritt fragen",
+   "a": [
+    "Fragen Sie Siri etwa „Wie weit ist dieses Jahr in Percentime“, dann antwortet sie mit Name, Fortschritt und verbleibender Zeit, ohne die App zu öffnen. Fragen lässt sich nach heute, dieser Woche, diesem Monat, diesem Quartal, diesem Jahr und den 2020ern. Nach eigenen Timern fragen Sie mit dem Namen, etwa „Prüfe Arbeitszeit in Percentime“, oder nach „Neuester Timer“.",
+    "In der Kurzbefehle-App geben die Aktionen „Fortschritt prüfen“ und „Timer prüfen“ dieselben Antworten. Die Siri-Sätze gibt es nur in den App-Sprachen, in denen „In Worten“ verfügbar ist; in den 11 Sprachen ohne Spracherkennung von Apple nutzen Sie die Aktionen in der Kurzbefehle-App."
    ]
   },
   {
@@ -227,19 +237,19 @@
   {
    "q": "Was ist ohne Pro nutzbar",
    "a": [
-    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Ein Zeitraum mit Stunden je Wochentag geht ebenfalls ohne Pro. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Auch das Stellen per Sprache geht ohne Pro (außer in den 11 Sprachen ohne Spracherkennung von Apple)."
+    "Die sechs Kalenderzeiträume, alle sechs Widget-Größen, das Stapel-Widget und der Abgleich zwischen Geräten gehen ohne Pro. Drei eigene Zeiträume bleiben frei, und die Kalenderzeiträume zählen dabei nicht mit. Ein Zeitraum mit Stunden je Wochentag geht ebenfalls ohne Pro. Der Fortschritt zeigt ohne Pro eine Nachkommastelle. Einen neuen Timer mit dem Rad bei „Ab jetzt“ zu stellen, geht ebenfalls ohne Pro. Auch das Stellen per Sprache geht ohne Pro (außer in den 11 Sprachen ohne Spracherkennung von Apple). Auch das Abfragen des Fortschritts mit Siri und Kurzbefehlen, die Aktion „Timer anlegen“, die Taste „Timer in Worten“ und „Neuester Timer“ in Widgets gehen ohne Pro."
    ]
   },
   {
    "q": "Gerät und Internet",
    "a": [
-    "Läuft auf dem iPhone ab iOS 18. App und Widgets gibt es in 46 Sprachen, sie folgen der Sprache des Geräts. Im Hochformat nutzen Sie sie wie gewohnt, quer gedreht zeigt sie einen großen schwarzen Bildschirm. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz."
+    "Läuft auf dem iPhone ab iOS 18. App und Widgets gibt es in 46 Sprachen, sie folgen der Sprache des Geräts. Im Hochformat nutzen Sie sie wie gewohnt, quer gedreht zeigt sie einen großen schwarzen Bildschirm. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone steht die Liste auf dem Startbildschirm 600 Punkt breit in der Mitte, und im Vollbild sitzt der Ring links, Name und verbleibende Zeit rechts."
    ]
   }
  ],
  "privacy": {
   "title": "Percentime Datenschutzerklärung",
-  "effectiveDate": "2026-09-28",
+  "effectiveDate": "2026-10-13",
   "summary": "Percentime erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung, und den Pro-Kauf wickelt Apple ab.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Percentime (die App) wie folgt."
@@ -262,7 +272,8 @@
      "Einstellungen (welche Zeilen im Stapel liegen): um die App zu gestalten",
      "Monat und Tag Ihres Geburtstags: nur um kommende Geburtstage zu zählen, wenn Sie diese Lebenseinheit wählen",
      "Ob Pro gekauft wurde: um zu bestimmen, welche Funktionen in App und Widgets offen sind",
-     "Was Sie beim Stellen eines Timers per Sprache sagen: auf dem Gerät erkannt und nur genutzt, um Beginn, Ziel und Name eines neuen Timers zu füllen. Weder die Aufnahme noch der ganze erkannte Text wird aufbewahrt; tippen Sie auf Sichern, kommen nur die Werte aus Beginn, Ziel und Name zu Ihren oben genannten Zeiträumen (der Zugriff auf Mikrofon und Spracherkennung ist freiwillig und wird einmal erfragt, bei der ersten Nutzung; lehnen Sie ab, funktionieren das Feld zum Schreiben und alle anderen Funktionen weiter, und in der App „Einstellungen“ lässt sich der Zugriff ausschalten)"
+     "Was Sie beim Stellen eines Timers per Sprache sagen: auf dem Gerät erkannt und nur genutzt, um Beginn, Ziel und Name eines neuen Timers zu füllen. Weder die Aufnahme noch der ganze erkannte Text wird aufbewahrt; tippen Sie auf Sichern, kommen nur die Werte aus Beginn, Ziel und Name zu Ihren oben genannten Zeiträumen (der Zugriff auf Mikrofon und Spracherkennung ist freiwillig und wird einmal erfragt, bei der ersten Nutzung; lehnen Sie ab, funktionieren das Feld zum Schreiben und alle anderen Funktionen weiter, und in der App „Einstellungen“ lässt sich der Zugriff ausschalten)",
+     "Die Namen Ihrer Timer: werden Siri und Kurzbefehlen auf dem Gerät mitgeteilt, damit Siri Sätze wie „Prüfe Arbeitszeit in Percentime“ versteht. Was Sie zu Siri sagen, verarbeitet Siri von Apple; die App erhält nur den gewählten Zeitraum oder Timer und gibt Name, Fortschritt und verbleibende Zeit als Antwort zurück. Der Entwickler erhält weder die Liste der Timernamen noch das, was Sie zu Siri sagen"
     ]
    },
    {
@@ -351,6 +362,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-10-13: Die Liste der Timernamen, die Siri und Kurzbefehlen auf dem Gerät mitgeteilt wird, damit Siri sie versteht, wurde unter „Verarbeitete Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-09-28.",
      "2026-09-28: Mikrofon und Spracherkennung für das Stellen eines Timers per Sprache wurden unter „Verarbeitete Daten“ und „Maßnahmen zur Sicherheit“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-09-20."
     ],
     "bullets": []

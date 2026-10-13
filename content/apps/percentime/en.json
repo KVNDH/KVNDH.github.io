@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Read it from the Lock Screen",
    "body": [
-    "Three Lock Screen widgets, three Home Screen widgets, and a stack widget that holds several spans at once. Every size carries the timer name, so you know which span the percentage belongs to. The same widgets come up large in StandBy. Turn the phone sideways and the app itself switches to a black screen with the ring and a large percentage. They redraw at the very moment the number changes, so at noon the day reads exactly 50 percent."
+    "Three Lock Screen widgets, three Home Screen widgets, and a stack widget that holds several spans at once. Every size carries the timer name, so you know which span the percentage belongs to. Touch and hold a timer widget, open Edit Widget and choose Latest timer, and it keeps showing the timer you made most recently. The same widgets come up large in StandBy. Turn the phone sideways and the app itself switches to a black screen with the ring and a large percentage. They redraw at the very moment the number changes, so at noon the day reads exactly 50 percent."
    ],
    "bullets": [
     "Lock Screen circular, rectangular and inline",
@@ -105,7 +105,8 @@
    "title": "Say it, and the start and goal fill in",
    "body": [
     "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. Say \"until 2\", \"3 hours\" or \"meeting 1 hour 30 minutes\", stop, and the start, goal and title fill in. You tap Save yourself. The icon is there in every app language except the 11 that have no Apple speech recognizer.",
-    "By hand, you choose between \"From now\" and \"Start and goal\". With \"From now\" you turn only an hours and minutes wheel, and the count starts the moment you save. Leave the title blank and it takes a number, as in \"Timer 1\" and \"Timer 2\"."
+    "By hand, you choose between \"From now\" and \"Start and goal\". With \"From now\" you turn only an hours and minutes wheel, and the count starts the moment you save. Leave the title blank and it takes a number, as in \"Timer 1\" and \"Timer 2\".",
+    "Put the Say a Timer button in Control Center, in a control spot at the bottom of the Lock Screen or on the Action button, and one press opens the app on New Timer, already listening. In the Shortcuts app, give the Make a Timer action a phrase such as \"until Friday 6pm\" and the timer is made without opening the app."
    ],
    "bullets": [
     "Start, goal and title from one spoken line",
@@ -183,7 +184,7 @@
   {
    "q": "The ring in the middle of the full screen",
    "a": [
-    "The span is cut into cells and laid around a ring. The percentage sits large in the centre with the count of filled cells beneath it. A span that does not divide into cells is drawn as one unbroken ring.",
+    "The span is cut into cells and laid around a ring. The percentage sits large in the centre with a line beneath it that alternates between the count of filled cells and the time of the cell filling now, as in \"This cell: 2026\". A span that does not divide into cells is drawn as one unbroken ring.",
     "There are three colours. Cells behind you set in ink, the one cell filling now in the accent, and the cells ahead left as a pale line. When the span fills, the accent leaves the screen. That is how arrival is shown."
    ]
   },
@@ -207,7 +208,16 @@
    "a": [
     "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. When you stop speaking, it fills the start, goal and title with what it understood, and you tap Save yourself. The icon is there only when making a new timer, and it hides when Weekly hours is on.",
     "\"until 2\" runs to the next 2 o'clock, and \"3 hours\" or \"1 hour 30 minutes\" run that long from now. \"from Nov 5 to Dec 31\" runs from the start of November 5 to the end of December 31. It also understands \"until tomorrow\", \"until Friday 6pm\" and \"100 days\". Say \"meeting 1 hour 30 minutes\" and meeting becomes the title.",
-    "The icon appears in every app language except the 11 that have no Apple speech recognizer, such as Bengali and Tamil. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there."
+    "The icon appears in every app language except the 11 that have no Apple speech recognizer, such as Bengali and Tamil. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there.",
+    "Control Center, the control spots at the bottom of the Lock Screen and the Action button can hold a Say a Timer button. Press it and the app opens on New Timer, already listening. You still tap Save yourself. In a language without Say it, New Timer opens without listening.",
+    "In the Shortcuts app, use the Make a Timer action. Type a phrase such as \"until Friday 6pm\" or \"1 hour 30 minutes\" into Until when, and the timer is made without opening the app. You can put that shortcut on the Action button too. Timers made from the button or a shortcut count toward your three."
+   ]
+  },
+  {
+   "q": "Asking Siri and Shortcuts for progress",
+   "a": [
+    "Ask Siri something like \"How far through this year in Percentime\" and it answers with the name, the progress and the time left, without opening the app. You can ask about today, this week, this month, this quarter, this year and the 2020s. For one of your own timers, ask by name, as in \"Check Work hours in Percentime\", or ask for Latest timer.",
+    "In the Shortcuts app, the Check Progress and Check a Timer actions give the same answers. The Siri phrases exist only in the app languages that have Say it; in the 11 languages with no Apple speech recognizer, use the actions in the Shortcuts app."
    ]
   },
   {
@@ -227,19 +237,19 @@
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. One timer with Weekly hours works without Pro too. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer)."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. One timer with Weekly hours works without Pro too. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer). Checking progress with Siri and Shortcuts, the Make a Timer action, the Say a Timer button and Latest timer in widgets work without Pro too."
    ]
   },
   {
    "q": "Device and internet",
    "a": [
-    "Runs on iPhone with iOS 18 or later. The app and its widgets come in 46 languages and follow your device language. Use it upright, or turn it sideways for a large black screen. Light is the default and it flips to black when the system is dark."
+    "Runs on iPhone with iOS 18 or later. The app and its widgets come in 46 languages and follow your device language. Use it upright, or turn it sideways for a large black screen. Light is the default and it flips to black when the system is dark. On the wide screen of a foldable iPhone opened out, the home list is held to a width of 600 points in the middle, and the full screen puts the ring on the left with the name and time remaining on the right."
    ]
   }
  ],
  "privacy": {
   "title": "Percentime Privacy Policy",
-  "effectiveDate": "2026-09-28",
+  "effectiveDate": "2026-10-13",
   "summary": "Percentime collects no personal data. There is no account and no sign-in, and Apple handles the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Percentime app (the app) as described below."
@@ -262,7 +272,8 @@
      "Settings (which rows go in the stack): used to lay out the app",
      "The month and day of your birthday: used only to count birthdays ahead when you pick that life unit",
      "Whether Pro was bought: used to decide which features open in the app and widgets",
-     "What you say when setting a timer by voice: recognized on the device and used only to fill the start, goal and title of a new timer. The audio and the full transcript are not kept; when you tap Save, only the values in the start, goal and title fields go into your timers above (microphone and speech recognition access is optional and asked for once, on first use; if you decline, the typing field and every other feature still work, and you can turn access off in the Settings app)"
+     "What you say when setting a timer by voice: recognized on the device and used only to fill the start, goal and title of a new timer. The audio and the full transcript are not kept; when you tap Save, only the values in the start, goal and title fields go into your timers above (microphone and speech recognition access is optional and asked for once, on first use; if you decline, the typing field and every other feature still work, and you can turn access off in the Settings app)",
+     "Your timer names: shared with Siri and Shortcuts on your device so that Siri understands phrases such as \"Check Work hours in Percentime\". What you say to Siri is handled by Apple's Siri; the app receives only the span or timer chosen and returns the name, progress and time remaining as the answer. The developer receives neither the list of timer names nor what you say to Siri"
     ]
    },
    {
@@ -351,6 +362,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-10-13: Added to Personal information processed the list of timer names shared with Siri and Shortcuts on the device so that Siri can understand them. The previous effective date was 2026-09-28.",
      "2026-09-28: Added the microphone and speech recognition used for setting a timer by voice to Personal information processed and to Security measures. The previous effective date was 2026-09-20."
     ],
     "bullets": []
