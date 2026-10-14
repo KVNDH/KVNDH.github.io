@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Continua de onde você parou",
    "body": [
-    "O app abre com a configuração de dados da última vez. Sem conta, e a rolagem funciona sem internet."
+    "O app abre com a configuração de dados da última vez. Sem conta, e a rolagem funciona sem internet. Na tela larga de um iPhone dobrável aberto, o layout se amplia como no iPad. Quando a tela tem uma faixa do sistema na lateral, os botões de cima ficam empilhados na vertical nessa faixa."
    ],
    "bullets": [],
    "visual": {
@@ -101,7 +101,7 @@
   "items": [
    "Dados com mais de 10 faces (d12, d20, d100)",
    "Role até 20 dados de uma vez",
-   "Aparências Neon, Trovão, Ouro e Chama",
+   "Aparências Neon, Trovão, Ouro, Chama, Madeira e Mármore",
    "Ícones personalizados para as faces dos dados",
    "Predefinições salvas sem limite",
    "Histórico e estatísticas completos"
@@ -131,7 +131,7 @@
   {
    "q": "O que precisa do Pro",
    "a": [
-    "Dados com mais de 10 faces, mais de 10 dados de uma vez, as aparências Neon, Trovão, Ouro e Chama e os ícones personalizados precisam do Pro. O mesmo vale para o resultado depois de você mudar as regras de uma predefinição rápida. A predefinição rápida Rolagem d20 rola sem o Pro.",
+    "Dados com mais de 10 faces, mais de 10 dados de uma vez, as aparências Neon, Trovão, Ouro, Chama, Madeira e Mármore e os ícones personalizados precisam do Pro. O mesmo vale para o resultado depois de você mudar as regras de uma predefinição rápida. A predefinição rápida Rolagem d20 rola sem o Pro.",
     "Sem o Pro você salva 2 predefinições, e o Histórico e as Estatísticas mostram as suas últimas 50 rolagens. As mais antigas continuam guardadas no app e aparecem todas com o Pro."
    ]
   },

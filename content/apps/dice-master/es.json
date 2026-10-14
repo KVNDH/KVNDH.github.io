@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Sigue donde lo dejaste",
    "body": [
-    "La app abre con la configuración de dados de la última vez. Sin cuenta, y se lanza aunque no haya conexión."
+    "La app abre con la configuración de dados de la última vez. Sin cuenta, y se lanza aunque no haya conexión. En la pantalla ancha de un iPhone plegable abierto, la disposición se amplía como en el iPad. Si la pantalla tiene una franja del sistema a un lado, los botones de arriba se colocan en vertical en esa franja."
    ],
    "bullets": [],
    "visual": {
@@ -101,7 +101,7 @@
   "items": [
    "Dados de más de 10 caras (d12, d20, d100)",
    "Lanza hasta 20 dados a la vez",
-   "Apariencias Neón, Trueno, Oro y Llama",
+   "Apariencias Neón, Trueno, Oro, Llama, Madera y Mármol",
    "Iconos personalizados para las caras de los dados",
    "Preajustes guardados sin límite",
    "Historial y estadísticas completos"
@@ -131,7 +131,7 @@
   {
    "q": "Qué necesita Pro",
    "a": [
-    "Los dados de más de 10 caras, más de 10 dados a la vez, las apariencias Neón, Trueno, Oro y Llama, y los iconos personalizados necesitan Pro. También el resultado después de cambiar las reglas de un ajuste rápido. El ajuste rápido Tirada d20 se lanza sin Pro.",
+    "Los dados de más de 10 caras, más de 10 dados a la vez, las apariencias Neón, Trueno, Oro, Llama, Madera y Mármol, y los iconos personalizados necesitan Pro. También el resultado después de cambiar las reglas de un ajuste rápido. El ajuste rápido Tirada d20 se lanza sin Pro.",
     "Sin Pro guardas 2 preajustes, y el Historial y las Estadísticas muestran tus últimos 50 lanzamientos. Los más antiguos siguen guardados en la app y aparecen todos con Pro."
    ]
   },

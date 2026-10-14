@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.1.1",
+ "describesVersion": "1.1.3",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -30,7 +30,7 @@
  "pro": [
   "11면 이상 주사위(커스텀 면 수 최대 100)",
   "한 번에 11~20개",
-  "스킨 neon, thunder, gold, flame",
+  "스킨 neon, thunder, gold, flame, wood, marble(wood, marble 은 1.1.2 부터)",
   "커스텀 아이콘 표시 방식(기본 프리셋 LCR, 포커 다이스 포함)",
   "프리셋 저장 제한 없음",
   "기록과 통계 전체 표시(저장 상한 30,000건)",
@@ -44,7 +44,7 @@
   "view3D": "2~20면, 21면 이상은 2D",
   "formulas": ["표시만", "합", "곱", "합 × 횟수", "최댓값", "최솟값"],
   "diceColors": 7,
-  "skins": 6,
+  "skins": 8,
   "builtInPresets": 17,
   "verdictGames": 10,
   "languages": 13
@@ -64,9 +64,9 @@
   "999"
  ],
  "sources": [
-  "diceMaster main dbb3f11 기준. 1.1.1(빌드 24, 제출 60127bd, 중국어 스크린샷 교체 뒤 다시 제출 15015ce, 2026-10-01 출시, HQ 가 ASC 와 App Store 로 확인)이 1.1.0(0354339)과 다른 것은 3D 벽을 보이는 영역 끝에 세움(638ff93, Views/Dice3D/Dice3DArenaView.swift, Views/MainDiceView.swift), 중국어 Plex SC와 TC 사본과 언어별 글꼴(f0fdebe~fcbc8b8, Views/Components/PlexFont.swift, Views/AppSettingsSheet.swift), 밝은 판 아이콘 외곽선(081d54d), 설정 적용 안내 둘째 줄 12개 언어(759eae6, Models/L10n.swift)뿐이다. ProStore, Dice3DShapeFactory(supports3D 2...20), Models, ProUnlockSheet, DiceRulesSheet, HistorySheet, Info.plist, PrivacyInfo.xcprivacy, DiceMaster.storekit, 스토어 문안(whatsNew 밖)은 0354339 와 같아 본문 사실은 그대로 맞다",
+  "diceMaster main 0077438 기준. 1.1.3(빌드 26, Xcode 27.1, 제출 b539d6e, 2026-10-15 07:11 KST HQ 가 ASC READY_FOR_SALE 확인)이 1.1.1 과 다른 것: 1.1.2(빌드 25, 477c9e5, 2026-10-08 출시) 나무, 대리석 스킨(Pro, DiceSkin.isProOnly 는 classic, aqua 만 무료)과 스킨 전용 굴림음, 충돌음, 앱 전체 글자 대비(6b62684, 4b1ff26, 사이트 문장 해당 없음). 1.1.3 접는 iPhone(사이트 표기, 기기 상표명 안 씀): 넓은 배치를 idiom 대신 창 폭으로(폭 500 이상이고 세로 compact 아님, 사이드바 700 이상, fe39842, 6f53a39), 옆 안전 영역 76pt 이상이면 위 막대 단추(사이드바, 3D, 팔레트, 기록, 설정, +, -)를 그 띠에 세로로(b4f89ef, Views/MainDiceView.swift:94~97). 펼친 채 세로는 띠 없음. iPhone, iPad 화면은 그대로. whatsNew ko '• iPhone Duo 지원 • 세부 다듬기와 안정성 개선'. 1.1.1 이전 사실: dbb3f11 기준(1.1.1 빌드 24, 2026-10-01 출시)",
   "그림(2026-10-02): 아이콘 AppIcon-1024.png(081d54d)로 icon-180, icon-360, og 를 다시 뽑고, 간체와 번체만 스토어 그림 docs/store/screenshots/iphone/zh-Hans|zh-Hant/01~03.png(15015ce 때 다시 찍은 합성본)과 확대 캡처 docs/store/shots-raw/iphone/zh-Hans|zh-Hant/01.png 로 바꿨다. 나머지 여섯 언어는 다시 뽑아도 바이트가 같다. 1.1.1 이 뜬 tw, cn 스토어(iTunes lookup)의 아이콘과 첫 세 장이 새 파일과 맞는 것을 대조했다",
-  "diceMaster/diceMaster.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.1, 빌드 24, 패키지 의존성 없음)",
+  "diceMaster/diceMaster.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.3, 빌드 26, 패키지 의존성 없음)",
   "diceMaster/DiceMaster.storekit (NonConsumable com.kimdh.dicemaster.pro)",
   "diceMaster/diceMaster/ViewModels/ProStore.swift (freeMaxFaces 10, freeMaxCount 10, freeMaxPresets 2, freeMaxHistory 50, d20판정 예외)",
   "diceMaster/diceMaster/Views/ProUnlockSheet.swift (Pro 기능 목록, 구매 복원 버튼)",
@@ -79,7 +79,7 @@
   "diceMaster/diceMaster/ViewModels/DiceEngineViewModel.swift (기록 파일, 30,000건 상한, 마지막 설정 복원)",
   "diceMaster/diceMaster/ViewModels/PresetStore.swift (UserDefaults)",
   "diceMaster/diceMaster/Models/AppSettings.swift (13개 언어, 7색, 기본값, 앱 초기화)",
-  "diceMaster/diceMaster/Models/DiceSkin.swift (6종, classic과 aqua 무료)",
+  "diceMaster/diceMaster/Models/DiceSkin.swift (8종, classic과 aqua 무료)",
   "diceMaster/diceMaster/Models/DiceConfig.swift (계산식 6종)",
   "diceMaster/diceMaster/Models/Preset.swift (기본 프리셋 17종, 4분류)",
   "diceMaster/diceMaster/Models/GameRule.swift (판정 10종)",
@@ -87,7 +87,7 @@
   "diceMaster/diceMaster/Info.plist",
   "diceMaster/diceMaster/PrivacyInfo.xcprivacy",
   "diceMaster/docs/store/metadata.json (대조용)",
-  "diceMaster/results/CHANGELOG.md (v1.1.1 절, v1.1.0 출시)",
+  "diceMaster/results/CHANGELOG.md (v1.1.3, v1.1.2 절)",
   "support/dicemaster.html"
  ]
 }

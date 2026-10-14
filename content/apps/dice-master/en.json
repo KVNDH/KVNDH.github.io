@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Picks up where you left off",
    "body": [
-    "The app opens with last time's dice setup. No account, and rolling works offline."
+    "The app opens with last time's dice setup. No account, and rolling works offline. On the wide screen of a foldable iPhone opened out, the layout spreads out as on iPad. When the screen has a system strip along one side, the top buttons stand in that strip."
    ],
    "bullets": [],
    "visual": {
@@ -101,7 +101,7 @@
   "items": [
    "Dice beyond 10 faces (d12, d20, d100)",
    "Roll up to 20 dice at once",
-   "Neon, Thunder, Gold and Flame skins",
+   "Neon, Thunder, Gold, Flame, Wood and Marble skins",
    "Custom dice face icons",
    "Unlimited saved presets",
    "Full roll history and statistics"
@@ -131,7 +131,7 @@
   {
    "q": "What needs Pro",
    "a": [
-    "Dice beyond 10 faces, more than 10 dice at once, the Neon, Thunder, Gold and Flame skins, and custom icons need Pro. So do verdicts after you change a Quick Preset's rules. The d20 Check preset rolls without Pro.",
+    "Dice beyond 10 faces, more than 10 dice at once, the Neon, Thunder, Gold, Flame, Wood and Marble skins, and custom icons need Pro. So do verdicts after you change a Quick Preset's rules. The d20 Check preset rolls without Pro.",
     "Without Pro you can save 2 presets, and Roll History and Statistics show your latest 50 rolls. Older rolls are still kept in the app, and all of them appear with Pro."
    ]
   },

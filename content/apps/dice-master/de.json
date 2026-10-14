@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Es geht dort weiter, wo Sie aufgehört haben",
    "body": [
-    "Die App öffnet mit dem Würfelaufbau vom letzten Mal. Kein Konto, und gewürfelt wird auch ohne Netz."
+    "Die App öffnet mit dem Würfelaufbau vom letzten Mal. Kein Konto, und gewürfelt wird auch ohne Netz. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird das Layout breit wie auf dem iPad. Hat der Bildschirm seitlich einen Systemstreifen, stehen die oberen Schaltflächen senkrecht in diesem Streifen."
    ],
    "bullets": [],
    "visual": {
@@ -101,7 +101,7 @@
   "items": [
    "Würfel mit mehr als 10 Seiten (d12, d20, d100)",
    "Bis zu 20 Würfel gleichzeitig werfen",
-   "Skins Neon, Donner, Gold und Flamme",
+   "Skins Neon, Donner, Gold, Flamme, Holz und Marmor",
    "Eigene Symbole für Würfelseiten",
    "Unbegrenzt Vorlagen speichern",
    "Vollständiger Würfelverlauf und Statistik"
@@ -131,7 +131,7 @@
   {
    "q": "Was Pro braucht",
    "a": [
-    "Würfel mit mehr als 10 Seiten, mehr als 10 Würfel auf einmal, die Skins Neon, Donner, Gold und Flamme sowie eigene Symbole brauchen Pro. Ebenso die Wertung, nachdem Sie die Regeln einer Schnellvoreinstellung geändert haben. Die Schnellvoreinstellung d20-Probe würfelt ohne Pro.",
+    "Würfel mit mehr als 10 Seiten, mehr als 10 Würfel auf einmal, die Skins Neon, Donner, Gold, Flamme, Holz und Marmor sowie eigene Symbole brauchen Pro. Ebenso die Wertung, nachdem Sie die Regeln einer Schnellvoreinstellung geändert haben. Die Schnellvoreinstellung d20-Probe würfelt ohne Pro.",
     "Ohne Pro sichern Sie 2 Vorlagen, und Würfelverlauf und Statistik zeigen Ihre letzten 50 Würfe. Ältere Würfe bleiben in der App erhalten und erscheinen mit Pro alle."
    ]
   },
