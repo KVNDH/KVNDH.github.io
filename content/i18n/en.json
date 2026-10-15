@@ -19,10 +19,10 @@
  "summaryLabel": "Summary",
  "toc": "Contents",
  "notFound": "This page does not exist. Pick a language below to see the apps.",
- "shelfLabel": "App shelf",
- "shelfBack": "Back",
- "shelfSound": "Sound",
- "shelfVeiled": "Unreleased app, covered with a cloth",
- "shelfSoon": "Not released yet",
- "shelfMoreLabel": "{name} details"
+ "albumLede": "Scroll down and each app takes its place.",
+ "albumHint": "Tap an icon to see it up close.",
+ "viewLarge": "View larger",
+ "viewLargeLabel": "View {name} larger",
+ "close": "Close",
+ "dragHint": "Drag to turn it."
 }

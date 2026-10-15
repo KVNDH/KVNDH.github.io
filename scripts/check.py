@@ -265,7 +265,7 @@ class PageParser(HTMLParser):
         if a.get("src"):
             self.srcs.append(a["src"])
         if a.get("data-src"):
-            # 늦게 읽는 스크립트(허브 선반)도 있는 파일인지 본다
+            # 늦게 읽는 스크립트(화첩 판 묶음)도 있는 파일인지 본다
             self.srcs.append(a["data-src"])
         if tag == "link" and a.get("rel") == "alternate" and a.get("hreflang"):
             self.alternates[a["hreflang"]] = a.get("href", "")
@@ -344,13 +344,14 @@ def check_fresh(site: Site, out: Path) -> list[str]:
     return []
 
 
-SHELF_SOURCES = ["build.mjs", "main.js", "shelf.css", "shelf.js", "three-lite.js", "package-lock.json"]
+CANVAS_SOURCES = ["build.mjs", "main.js", "package-lock.json"]
+CANVAS_BUNDLE = "assets/kvndh-canvas.js"
 
 
-def shelf_source_hash(src: Path) -> str:
-    """shelf/build.mjs 의 sourceHash 와 같은 방법(상대 경로와 내용을 차례로 sha256, 앞 16자)."""
+def canvas_source_hash(src: Path) -> str:
+    """canvas/build.mjs 의 sourceHash 와 같은 방법(상대 경로와 내용을 차례로 sha256, 앞 16자)."""
     h = hashlib.sha256()
-    files = SHELF_SOURCES + sorted(f"stubs/{p.name}" for p in (src / "stubs").iterdir() if p.is_file())
+    files = CANVAS_SOURCES + sorted(f"stubs/{p.name}" for p in (src / "stubs").iterdir() if p.is_file())
     for rel in files:
         h.update(rel.encode() + b"\0")
         h.update((src / rel).read_bytes())
@@ -358,14 +359,16 @@ def shelf_source_hash(src: Path) -> str:
     return h.hexdigest()[:16]
 
 
-def check_shelf_bundle(root: Path) -> list[str]:
-    """static/hub-shelf.js 머리 주석의 원본 해시가 지금 shelf/ 와 같은지. 원본이 없는 저장소(시험 사이트)는 건너뛴다."""
-    src, bundle = root / "shelf", root / "static" / "hub-shelf.js"
-    if not src.is_dir() or not bundle.exists():
+def check_canvas_bundle(root: Path) -> list[str]:
+    """assets/kvndh-canvas.js 머리 주석의 원본 해시가 지금 canvas/ 와 같은지. 원본이 없는 저장소(시험 사이트)는 건너뛴다."""
+    src, bundle = root / "canvas", root / CANVAS_BUNDLE
+    if not src.is_dir():
         return []
+    if not bundle.exists():
+        return [f"{CANVAS_BUNDLE} 없음. node canvas/build.mjs 로 묶음을 만들 것"]
     m = re.search(r"src:([0-9a-f]{16})", bundle.read_text(encoding="utf-8", errors="replace")[:600])
-    if not m or m.group(1) != shelf_source_hash(src):
-        return ["static/hub-shelf.js 가 shelf/ 원본과 다름. node shelf/build.mjs 로 묶음을 다시 만들 것"]
+    if not m or m.group(1) != canvas_source_hash(src):
+        return [f"{CANVAS_BUNDLE} 가 canvas/ 원본과 다름. node canvas/build.mjs 로 묶음을 다시 만들 것"]
     return []
 
 
@@ -373,7 +376,7 @@ def main(argv: list[str] | None = None) -> int:
     argv = sys.argv[1:] if argv is None else argv
     site = Site(ROOT)
     out = ROOT / "docs"
-    problems = check_copy(site) + check_structure(site, "--release" in argv) + check_facts(site) + check_shelf_bundle(ROOT)
+    problems = check_copy(site) + check_structure(site, "--release" in argv) + check_facts(site) + check_canvas_bundle(ROOT)
     if "--content" in argv:
         pass
     elif out.exists():

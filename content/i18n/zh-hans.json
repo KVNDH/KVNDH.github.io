@@ -19,10 +19,10 @@
  "summaryLabel": "摘要",
  "toc": "目录",
  "notFound": "找不到这个页面。在下面选一种语言，就能看到 App 列表。",
- "shelfLabel": "App 陈列架",
- "shelfBack": "返回",
- "shelfSound": "声音",
- "shelfVeiled": "尚未发布的 App，盖着一块布",
- "shelfSoon": "尚未发布",
- "shelfMoreLabel": "{name} 详情"
+ "albumLede": "向下滚动，App 会逐一归位。",
+ "albumHint": "点按图标即可放大查看。",
+ "viewLarge": "放大查看",
+ "viewLargeLabel": "放大查看 {name}",
+ "close": "关闭",
+ "dragHint": "拖动即可旋转。"
 }

@@ -19,10 +19,10 @@
  "summaryLabel": "Zusammenfassung",
  "toc": "Inhalt",
  "notFound": "Diese Seite gibt es nicht. Wählen Sie unten eine Sprache, dann geht es zur Übersicht der Apps.",
- "shelfLabel": "App-Regal",
- "shelfBack": "Zurück",
- "shelfSound": "Ton",
- "shelfVeiled": "Noch nicht veröffentlichte App, mit einem Tuch verhüllt",
- "shelfSoon": "Noch nicht veröffentlicht",
- "shelfMoreLabel": "Mehr über {name} erfahren"
+ "albumLede": "Scrollen Sie nach unten, und jede App rückt an ihren Platz.",
+ "albumHint": "Tippen Sie auf ein Symbol, um es groß zu sehen.",
+ "viewLarge": "Groß ansehen",
+ "viewLargeLabel": "{name} groß ansehen",
+ "close": "Schließen",
+ "dragHint": "Zum Drehen ziehen."
 }

@@ -2,7 +2,7 @@
 <html lang="$html_lang">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>$title</title>
 <meta name="description" content="$description">
 <link rel="canonical" href="$canonical">
@@ -14,25 +14,30 @@ $alternates
 <meta property="og:image" content="$og_image">
 <meta property="og:locale" content="$og_locale">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="$theme_color">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#E7E6E2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 $extra_head
 <style>$css</style>
+$loader
 </head>
-<body class="$body_class"$body_style>
+<body class="$body_class">
 <a class="skip" href="#main">$skip_label</a>
-<div class="page" style="$page_style">
-<header class="sh">
-<a class="wm" href="$hub_path">kvndh</a>
-$lang_menu
+$gl
+<header class="top">
+<a class="wm" href="$hub_path">$mark<span>kvndh</span></a>
+<div class="top-r">$now$lang_menu</div>
 </header>
+<main class="sheet" id="main">
+<span class="ruler" aria-hidden="true"></span>
 $app_bar
-<main id="main">
 $content
-</main>
 $footer
-</div>
+</main>
+$after
+<script>$page_js</script>
 </body>
 </html>

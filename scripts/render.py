@@ -1,7 +1,9 @@
 """페이지 HTML 을 만든다. 틀은 templates/*.html (string.Template).
 
-모양은 2026-09-26 B안: 앱 페이지 바탕이 그 앱 스토어 스크린샷의 번짐 색이고, 첫 화면에 스토어 첫 세 장을 늘어놓는다.
-허브는 밝은 회색 바탕에 앱마다 제 번짐 색 타일.
+모양은 2026-10-16 화첩 A안(전면 3D): 세로로 긴 흰 종이 한 장(.sheet)에 앱 아이콘 판을 원화처럼 걸고,
+고정 WebGL 장면(canvas/main.js -> assets/kvndh-canvas.js)이 DOM 의 자리([data-plate])를 따라 두께 있는 판을 놓는다.
+허브는 첫 화면 더미에서 스크롤로 판이 제자리를 찾고, 소개는 판 하나가 크게 뜨고, 지원과 개인정보는 머리에 작은 판 하나.
+동작 줄이기, WebGL 없음, 스크립트 실패에서는 같은 배치의 멈춘 그림(DOM 의 img)이 그대로 보인다.
 """
 from __future__ import annotations
 
@@ -12,39 +14,49 @@ from string import Template
 from sitelib import Site, app_store_url, esc, page_path
 
 KIND_UI_KEY = {"about": "navAbout", "support": "navSupport", "privacy": "navPrivacy"}
-TILE_POSITIONS = ["t-feature", "t-p2", "t-p3", "t-p4", "t-p5"]
-# 출시된 앱이 여섯이면 셋째 줄에 둘, 넷째 줄에 하나(2026-09-25 BrushWorks 출시로 여섯이 됐다)
-TILE_POSITIONS_6 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-r3"]
-# 일곱이면 셋째와 넷째 줄에 둘씩(2026-09-26 OnPace 심사 제출로 미리 둔다. 셋씩 두면 타일이 좁아 글과 그림이 겹친다)
-TILE_POSITIONS_7 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-q1", "t-q2"]
-# 여덟이면 다섯째 줄에 한 줄을 다 쓰는 타일 하나를 더한다(2026-10-01 OnPace 출시)
-TILE_POSITIONS_8 = ["t-feature", "t-p2", "t-p3", "t-r1", "t-r2", "t-q1", "t-q2", "t-z1"]
 GLOBE = (
     '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/>'
     '<path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg>'
 )
+# 낱말표 앞의 k (파비콘과 같은 글자꼴). 색은 글자색을 따른다
+MARK = ('<svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)">'
+        '<path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg>')
+CANVAS_SCRIPT = "/assets/kvndh-canvas.js"
+# head 에서 돈다. 동작 줄이기가 아니고 WebGL 컨텍스트가 실제로 만들어질 때만 멈춘 그림을 숨기고(gl-wait) 묶음을 부른다.
+# 묶음이 실패하거나 6초 안에 판이 서지 않으면 gl-off 로 멈춘 그림에 돌아가고, 판은 다시 오지 않는다
+CANVAS_LOADER = (
+    '<script>(function(){var r=document.documentElement;r.classList.add("js");'
+    'try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;'
+    'var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;'
+    'var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext()}catch(e){return}'
+    'r.classList.add("gl-wait");function off(){if(r.classList.contains("gl-on"))return;r.classList.remove("gl-wait");r.classList.add("gl-off")}'
+    'setTimeout(off,6000);addEventListener("DOMContentLoaded",function(){var s=document.createElement("script"),h=document.getElementById("gl");'
+    'if(!h)return off();s.src=h.getAttribute("data-src");s.async=true;s.onerror=off;document.head.appendChild(s)})})()</script>'
+)
+GL_CANVAS = f'<canvas id="gl" data-src="{CANVAS_SCRIPT}" aria-hidden="true"></canvas>'
 
 
 def tpl(site: Site, name: str) -> Template:
     return Template((site.root / "templates" / name).read_text(encoding="utf-8"))
 
 
+def text(site: Site, name: str) -> str:
+    return (site.root / "templates" / name).read_text(encoding="utf-8")
+
+
 def css(site: Site) -> str:
-    return (site.root / "templates" / "style.css").read_text(encoding="utf-8")
-
-
-def accent_style(app: dict) -> str:
-    style = (
-        f"--acc:{app['accent']};--ink:{app['accentText']};--glow:{app['glow']};"
-        f"--p-acc:{app['paperAccent']}"
-    )
-    if app.get("button"):
-        style += f";--btn:{app['button']};--btn-tx:{app['buttonText']}"
-    return style
+    return text(site, "style.css")
 
 
 def asset(slug: str, name: str) -> str:
     return f"/assets/{slug}/{name}"
+
+
+def icon(site: Site, slug: str, big: bool = True) -> str:
+    """판에 쓰는 아이콘. 큰 판은 640 이 있으면 그것을, 없으면 360."""
+    if big and (site.root / "assets" / slug / "icon-640.webp").exists():
+        return asset(slug, "icon-640.webp")
+    return asset(slug, "icon-360.webp")
 
 
 DEFAULT_LOOK = {"mode": "plain", "ink": "dark", "color": "#F5F5F7"}
@@ -52,16 +64,6 @@ DEFAULT_LOOK = {"mode": "plain", "ink": "dark", "color": "#F5F5F7"}
 
 def look(site: Site, slug: str) -> dict:
     return site.looks.get(slug) or DEFAULT_LOOK
-
-
-def theme(site: Site, slug: str) -> tuple[str, str, str]:
-    """스토어 스크린샷의 번짐에서 온 바탕. (클래스, CSS 변수, 바탕색). 글자가 밝으면 어두운 바탕이다."""
-    lk = look(site, slug)
-    cls = "th-dark" if lk.get("ink") == "light" else "th-light"
-    style = f"--fc:{lk['color']}"
-    if (site.root / "assets" / slug / "field.webp").exists():
-        style += f";--fld:url({asset(slug, 'field.webp')})"
-    return cls, style, lk["color"]
 
 
 def store_code(site: Site, slug: str, lang: str) -> str | None:
@@ -96,21 +98,14 @@ def store_images(site: Site, slug: str, lang: str, copy: dict, count: int) -> li
 
 
 def panorama(site: Site, slug: str, lang: str, copy: dict) -> str:
-    """첫 화면에 스토어 첫 세 장을 App Store 처럼 늘어놓는다. 첫 장만 바로 읽는다."""
+    """스토어 첫 세 장을 매트 위 원화처럼 건다. 첫 장만 바로 읽는다."""
     lazy = ' loading="lazy"'
-    imgs = "".join(
-        f'<img src="{src}" alt="{esc(alt)}"{lazy if i else ""}>'
+    prints = "".join(
+        f'<figure class="print"><img src="{src}" alt="{esc(alt)}"{lazy if i else ""}>'
+        f'<span class="lab" aria-hidden="true">Pl. {i + 1:02d}</span></figure>'
         for i, (src, alt) in enumerate(store_images(site, slug, lang, copy, 3))
     )
-    return f'<div class="pano">{imgs}</div>'
-
-
-def tile_shot(site: Site, app: dict, copy: dict, lang: str) -> str:
-    slug = app["slug"]
-    src, alt = store_images(site, slug, lang, copy, 1)[0]
-    if "/store/" in src:
-        return f'<div class="shot shot-store"><img src="{src}" alt="{esc(alt)}" loading="lazy"></div>'
-    return f'<div class="shot" style="{esc(app.get("shotCrop", ""))}"><img src="{src}" alt="{esc(alt)}" loading="lazy"></div>'
+    return f'<section class="pano">{prints}</section>'
 
 
 def shot_path(site: Site, slug: str, lang: str, index: int = 1) -> str:
@@ -121,10 +116,10 @@ def shot_path(site: Site, slug: str, lang: str, index: int = 1) -> str:
     raise FileNotFoundError(f"no screenshot {name} for {slug}")
 
 
-def fill(text: str, **values: str) -> str:
-    for key, value in values.items():
-        text = text.replace("{" + key + "}", value)
-    return text
+def fill(value: str, **values: str) -> str:
+    for key, v in values.items():
+        value = value.replace("{" + key + "}", v)
+    return value
 
 
 def items(values: list[str]) -> str:
@@ -175,6 +170,36 @@ def lang_menu(site: Site, lang: str, slug: str | None, kind: str) -> str:
     )
 
 
+def released(app: dict) -> bool:
+    """출시된 앱인가. 아직 나오지 않은 앱은 App Store 링크를 걸지 않는다."""
+    return not app.get("unreleased")
+
+
+def listed(site: Site, lang: str) -> list[dict]:
+    """허브에 원화로 거는 앱(출시됐고 이 언어 문구가 있는 앱). 순서는 site.json 그대로이고 번호도 이 순서다."""
+    return [a for a in site.apps if released(a) and site.app_copy(a["slug"], lang)]
+
+
+def quiet_apps(site: Site) -> list[dict]:
+    """출시 전 앱 가운데 아이콘이 있는 것. 이름, 링크, 설명 없이 흐린 아이콘으로만 둔다."""
+    return [a for a in site.apps if not released(a) and (site.root / "assets" / a["slug"] / "icon-180.webp").exists()]
+
+
+def number(site: Site, lang: str, slug: str) -> tuple[str, str] | None:
+    """허브 화첩의 번호(No. 03 / 08). 출시 전 앱은 번호가 없다."""
+    slugs = [a["slug"] for a in listed(site, lang)]
+    if slug not in slugs:
+        return None
+    return f"{slugs.index(slug) + 1:02d}", f"{len(slugs):02d}"
+
+
+def store_button(site: Site, lang: str, app: dict, small: bool = False) -> str:
+    if not released(app):
+        return ""
+    cls = "btn btn-s" if small else "btn"
+    return f'<a class="{cls}" href="{app_store_url(app["appStoreId"])}">{esc(site.ui[lang]["getOnAppStore"])}</a>'
+
+
 def hub_footer(site: Site, lang: str) -> str:
     ui = site.ui[lang]
     email = site.config["contact"]
@@ -184,11 +209,11 @@ def hub_footer(site: Site, lang: str) -> str:
     )
     privacy_block = f'<div><h2>{esc(ui["navPrivacy"])}</h2><ul>{privacy}</ul></div>' if privacy else "<div></div>"
     return (
-        '<footer class="sf">'
-        f'<div class="sf-l"><a class="wm" href="{page_path(lang)}">kvndh</a></div>'
+        '<footer class="foot">'
+        f'<div><a class="wm" href="{page_path(lang)}">{MARK}<span>kvndh</span></a></div>'
         f'<div><h2>{esc(ui["contactTitle"])}</h2><ul><li><a href="mailto:{email}">{email}</a></li></ul></div>'
         f"{privacy_block}"
-        f'<div class="sf-l"><h2>{esc(ui["language"])}</h2><ul class="langs">{lang_links(site, lang, None, "about")}</ul></div>'
+        f'<div><h2>{esc(ui["language"])}</h2><ul class="langs">{lang_links(site, lang, None, "about")}</ul></div>'
         '<p class="copy">© kvndh</p>'
         "</footer>"
     )
@@ -199,102 +224,24 @@ def app_footer(site: Site, lang: str, slug: str) -> str:
     email = site.config["contact"]
     name = site.app_copy(slug, lang)["name"]
     return (
-        '<footer class="sf-c">'
-        f'<a class="wm" href="{page_path(lang)}">kvndh</a>'
-        f'<span>{esc(ui["contactTitle"])} <a href="mailto:{email}">{email}</a></span>'
-        f'<a href="{page_path(lang, slug, "privacy")}">{esc(name)} {esc(ui["navPrivacy"])}</a>'
+        '<footer class="foot foot-s">'
+        f'<a class="wm" href="{page_path(lang)}">{MARK}<span>kvndh</span></a>'
+        f'<p>{esc(ui["contactTitle"])} <a href="mailto:{email}">{email}</a>'
+        f'<span aria-hidden="true">  /  </span><a href="{page_path(lang, slug, "privacy")}">{esc(name)} {esc(ui["navPrivacy"])}</a></p>'
         '<p class="copy">© kvndh</p>'
         "</footer>"
     )
 
 
-def released(app: dict) -> bool:
-    """출시된 앱인가. 아직 나오지 않은 앱은 App Store 링크를 걸지 않는다."""
-    return not app.get("unreleased")
+def canvas_json(data: dict) -> str:
+    """판 데이터. 문구가 스크립트를 닫지 못하게 </ 를 바꾼다."""
+    body = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return f'<script type="application/json" id="canvas-data">{body}</script>'
 
 
-def store_button(site: Site, lang: str, app: dict, small: bool = False) -> str:
-    if not released(app):
-        return ""
-    cls = "btn btn-s" if small else "btn"
-    return f'<a class="{cls}" href="{app_store_url(app["appStoreId"])}">{esc(site.ui[lang]["getOnAppStore"])}</a>'
-
-
-def quiet_row(site: Site, lang: str) -> str:
-    """아직 나오지 않은 앱은 아이콘만 조용히 둔다. 이름도 링크도 설명도 붙이지 않는다."""
-    icons = "".join(
-        f'<img src="{asset(app["slug"], "icon-180.webp")}" alt="" width="44" height="44" loading="lazy">'
-        for app in site.apps
-        if not released(app) and (site.root / "assets" / app["slug"] / "icon-180.webp").exists()
-    )
-    return f'<div class="quiet" aria-hidden="true">{icons}</div>' if icons else ""
-
-
-SHELF_SCRIPT = "/hub-shelf.js"
-# 선반 자리 높이와, 선반을 기다리는 동안(shelf-wait)과 선반이 선 뒤(shelf-on) 벤토를 숨기는 규칙. 허브 head 에만 넣는다
-SHELF_STYLE = (
-    "<style>.shelf{position:relative;height:calc(100vh - 73px);height:calc(100svh - 73px);min-height:520px;max-height:1000px}"
-    "@media (max-width:900px){.shelf{height:calc(100vh - 59px);height:calc(100svh - 59px);min-height:560px}}"
-    "body.shelf-wait .bento,body.shelf-wait .quiet,body.shelf-on .bento,body.shelf-on .quiet{display:none}</style>"
-)
-# 벤토보다 먼저 돈다. WebGL 이 실제로 만들어질 때만 벤토를 그리기 전에 숨기고 자리를 잡고, 아이콘을 미리 받는다.
-# 묶음은 첫 그림 뒤(load)에 읽는다. 묶음이 실패하거나 5초 안에 선반이 서지 않으면 벤토로 돌아가고 선반은 다시 오지 않는다
-SHELF_LOADER = (
-    '<script>(function(){var b=document.body,h=document.getElementById("shelf"),d;if(!h)return;'
-    'try{var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;'
-    'var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext();d=JSON.parse(document.getElementById("shelf-data").textContent)}catch(e){return}'
-    'b.classList.add("shelf-wait");h.hidden=false;'
-    'h.off=function(){if(b.classList.contains("shelf-on"))return;h.setAttribute("data-off","1");h.hidden=true;b.classList.remove("shelf-wait")};'
-    'd.apps.forEach(function(a){if(a.icon)(new Image).src=a.icon});setTimeout(h.off,5000);'
-    'addEventListener("load",function(){if(h.getAttribute("data-off"))return;var s=document.createElement("script");'
-    's.src=h.getAttribute("data-src");s.async=true;s.onerror=h.off;document.head.appendChild(s)})})()</script>'
-)
-
-
-def shelf_data(site: Site, lang: str) -> dict:
-    """허브 선반(shelf/shelf.js)이 읽는 언어별 데이터. 순서는 site.json 그대로.
-    출시 전 앱은 흐린 아이콘 줄과 같은 조건으로 넣되 이름, 링크, 그림 없이 unreleased 만 둔다(천으로 덮인 자리).
-    스토어 그림은 타일과 같은 규칙(그 언어, 없으면 en, ko)이고 고를 때만 읽는다."""
-    ui = site.ui[lang]
-    apps = []
-    for app in site.apps:
-        slug = app["slug"]
-        if not released(app):
-            if (site.root / "assets" / slug / "icon-180.webp").exists():
-                apps.append({"slug": slug, "unreleased": True})
-            continue
-        copy = site.app_copy(slug, lang)
-        if not copy:
-            continue
-        lk = look(site, slug)
-        field = site.root / "assets" / slug / "field.webp"
-        apps.append({
-            "slug": slug,
-            "name": copy["name"],
-            "subtitle": copy["subtitle"],
-            "href": page_path(lang, slug) if site.has_pages(slug, lang) else None,
-            "icon": asset(slug, "icon-360.webp"),
-            "shots": [src for src, _ in store_images(site, slug, lang, copy, 3)],
-            "field": asset(slug, "field.webp") if field.exists() else None,
-            "color": lk["color"],
-            "accent": app["accent"],
-            "ink": lk.get("ink", "dark"),
-            "unreleased": False,
-        })
-    labels = {"shelf": ui["shelfLabel"], "back": ui["shelfBack"], "sound": ui["shelfSound"],
-              "veiled": ui["shelfVeiled"], "soon": ui["shelfSoon"], "more": ui["learnMore"],
-              "moreLabel": ui["shelfMoreLabel"]}
-    return {"lang": lang, "ui": labels, "apps": apps}
-
-
-def shelf_block(site: Site, lang: str) -> str:
-    """선반 자리(처음엔 숨김), 데이터 JSON, 늦게 읽는 스크립트. 벤토는 그대로 남아 검색과 JS 없는 환경을 맡는다."""
-    data = json.dumps(shelf_data(site, lang), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    return (
-        f'<div class="shelf" id="shelf" data-src="{SHELF_SCRIPT}" hidden></div>\n'
-        f'<script type="application/json" id="shelf-data">{data}</script>\n'
-        f"{SHELF_LOADER}"
-    )
+def now_pill(label: str = "", on: bool = False) -> str:
+    """오른쪽 위 번호 점. 버밀리언은 이 점 한 자리만 쓴다."""
+    return f'<p class="now" data-on="{1 if on else 0}" aria-hidden="true"><i></i><b>{esc(label)}</b></p>'
 
 
 def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
@@ -313,17 +260,11 @@ def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
 
 
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
-         content: str, footer: str, bar: str = "", page_style: str = "", extra_head: str = "",
-         og_image: str = "/assets/og.jpg") -> str:
+         content: str, footer: str, body_class: str, bar: str = "", now: str = "", after: str = "",
+         extra_head: str = "", og_image: str = "/assets/og.jpg") -> str:
     option = site.lang(lang)
-    if slug is None:
-        body_class, body_style, color = "hub", "", DEFAULT_LOOK["color"]
-    else:
-        body_class, body_style, color = theme(site, slug)
     return tpl(site, "base.html").substitute(
         body_class=body_class,
-        body_style=f' style="{esc(body_style)}"' if body_style else "",
-        theme_color=esc(color),
         html_lang=esc(option["htmlLang"]),
         title=esc(title),
         description=esc(description),
@@ -333,58 +274,103 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
         og_locale=esc(option["ogLocale"]),
         extra_head=extra_head,
         css=css(site),
+        loader=CANVAS_LOADER,
+        gl=GL_CANVAS,
         skip_label=esc(site.ui[lang]["skip"]),
-        page_style=esc(page_style),
         hub_path=page_path(lang),
+        mark=MARK,
+        now=now,
         lang_menu=lang_menu(site, lang, slug, kind),
         app_bar=bar,
         content=content,
         footer=footer,
+        after=after,
+        page_js=text(site, "page.js"),
     )
 
 
-def tile_positions(count: int) -> list[str]:
-    """허브 타일 자리. zip 은 넘치는 앱을 조용히 버리므로, 자리보다 앱이 많으면 빌드를 멈춘다."""
-    positions = {6: TILE_POSITIONS_6, 7: TILE_POSITIONS_7, 8: TILE_POSITIONS_8}.get(count, TILE_POSITIONS)
-    if count > len(positions):
-        raise SystemExit(f"허브 타일 자리가 {len(positions)}개인데 출시된 앱이 {count}개다. "
-                         "render.py 의 타일 자리와 style.css 를 늘린다")
-    return positions
+def bullets_of(copy: dict, count: int = 4) -> list[str]:
+    out: list[str] = []
+    for section in copy.get("sections", []):
+        out += section.get("bullets", [])
+    return out[:count]
 
 
 def render_hub(site: Site, lang: str) -> str:
     ui = site.ui[lang]
-    tiles = []
-    listed = [a for a in site.apps if released(a) and site.app_copy(a["slug"], lang)]
-    for position, app in zip(tile_positions(len(listed)), listed):
+    apps, quiet = listed(site, lang), quiet_apps(site)
+    total = f"{len(apps):02d}"
+    plates, pieces = [], []
+    for i, app in enumerate(apps):
         slug = app["slug"]
         copy = site.app_copy(slug, lang)
         linked = site.has_pages(slug, lang)
-        name = (
-            f'<a class="tile-link" href="{page_path(lang, slug)}">{esc(copy["name"])}</a>' if linked
-            else esc(copy["name"])
-        )
-        cls, field, _ = theme(site, slug)
-        light = f";--ink:{app['paperAccent']};--acc:{app['paperAccent']}" if cls == "th-light" else ""
-        tiles.append(tpl(site, "tile.html").substitute(
-            position=position,
-            theme=cls,
-            style=esc(f"{accent_style(app)};{field}{light}"),
-            icon=asset(slug, "icon-180.webp"),
-            name=name,
-            subtitle=esc(copy["subtitle"]),
-            hook=f'<p class="hook">{esc(copy["summary"])}</p>' if position == "t-feature" else "",
-            more=f'<span class="more" aria-hidden="true">{esc(ui["learnMore"])} →</span>' if linked else "",
-            store=app_store_url(app["appStoreId"]),
-            store_label=esc(fill(ui["storeLabel"], name=copy["name"])),
-            shot=tile_shot(site, app, copy, lang),
+        no = f"{i + 1:02d}"
+        store = app_store_url(app["appStoreId"])
+        store_label = fill(ui["storeLabel"], name=copy["name"])
+        plates.append({
+            "icon": icon(site, slug), "big": icon(site, slug), "name": copy["name"], "no": no,
+            "sub": copy["subtitle"], "hook": copy["summary"], "bullets": bullets_of(copy),
+            "store": store, "storeLabel": store_label,
+            "href": page_path(lang, slug) if linked else None,
+            "support": page_path(lang, slug, "support") if linked else None,
+        })
+        name = f'<a href="{page_path(lang, slug)}">{esc(copy["name"])}</a>' if linked else esc(copy["name"])
+        pieces.append(tpl(site, "piece.html").substitute(
+            slug=esc(slug), no=no, total=total, i=i,
+            view_label=esc(fill(ui["viewLargeLabel"], name=copy["name"])),
+            icon=icon(site, slug), name=name,
+            subtitle=esc(copy["subtitle"]), summary=esc(copy["summary"]),
+            store=store, store_label=esc(store_label),
+            more=f'<a class="lnk" href="{page_path(lang, slug)}">{esc(ui["learnMore"])}</a>' if linked else "",
+            view=esc(ui["viewLarge"]),
         ))
-    names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in listed)
+    slots = []
+    for j, app in enumerate(quiet, len(apps)):
+        plates.append({"icon": asset(app["slug"], "icon-360.webp"), "soon": True})
+        slots.append(f'<span class="qslot" data-plate="{j}"><img src="{asset(app["slug"], "icon-180.webp")}" alt="" '
+                     'width="64" height="64" loading="lazy"></span>')
+    quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
+    # 첫 화면 더미: 위에서부터 1, 2, 3, 4 줄. 맨 위(가장 먼저 눈에 띄는 자리)가 출시된 첫 앱이다
+    soon = ' class="soon"'
+    fan_imgs = [
+        f'<img src="{asset(a["slug"], "icon-180.webp")}" alt="" width="72" height="72"{"" if released(a) else soon}>'
+        for a in apps + quiet
+    ]
+    rows, k, n = [], 0, 1
+    while k < len(fan_imgs):
+        rows.append('<span class="row">' + "".join(fan_imgs[k:k + n]) + "</span>")
+        k, n = k + n, n + 1
     content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubMetaTitle"]), tiles="\n".join(tiles), quiet=quiet_row(site, lang),
-        shelf=shelf_block(site, lang))
+        title=esc(ui["hubMetaTitle"]), lede=esc(ui["albumLede"]), hint=esc(ui["albumHint"]),
+        fan="".join(rows), pieces="\n".join(pieces), quiet=quiet_html)
+    data = {"page": "hub", "plates": plates,
+            "ui": {"total": total, "more": ui["learnMore"], "support": ui["navSupport"]}}
+    viewer = tpl(site, "viewer.html").substitute(
+        label=esc(ui["viewLarge"]), close=esc(ui["close"]), drag=esc(ui["dragHint"]))
+    after = f"{viewer}\n{canvas_json(data)}\n<script>{text(site, 'hub.js')}</script>"
+    names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in apps)
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
-                content=content, footer=hub_footer(site, lang), extra_head=SHELF_STYLE)
+                content=content, footer=hub_footer(site, lang), body_class="hub", now=now_pill(),
+                after=after)
+
+
+def single_plate(site: Site, slug: str, lang: str) -> str:
+    """소개, 지원, 개인정보의 판 하나. 출시 전 앱도 제 페이지에서는 제 아이콘을 그대로 쓴다."""
+    copy = site.app_copy(slug, lang)
+    return canvas_json({"page": "single", "plates": [{"icon": icon(site, slug), "name": copy["name"],
+                                                      "no": (number(site, lang, slug) or ("", ""))[0]}]})
+
+
+def app_now(site: Site, lang: str, slug: str) -> str:
+    n = number(site, lang, slug)
+    name = site.app_copy(slug, lang)["name"]
+    return now_pill(f"{n[0]} / {n[1]}  {name}" if n else name, on=True)
+
+
+def number_label(site: Site, lang: str, slug: str) -> str:
+    n = number(site, lang, slug)
+    return f"No. {n[0]} / {n[1]}" if n else ""
 
 
 def glyph(site: Site, slug: str, name: str) -> str:
@@ -505,13 +491,16 @@ def render_pro(site: Site, lang: str, pro: dict | None) -> str:
 def render_app(site: Site, lang: str, slug: str) -> str:
     ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
     email = site.config["contact"]
+    label = number_label(site, lang, slug)
     content = tpl(site, "app.html").substitute(
-        icon=asset(slug, "icon-360.webp"),
+        icon=icon(site, slug),
+        lab=f'<span class="lab">{label}</span>' if label else "",
         name=esc(copy["name"]),
         subtitle=esc(copy["subtitle"]),
         hook=esc(copy["hero"]["hook"]),
         store_btn=store_button(site, lang, app),
         meta=f'<span class="meta">{esc(copy["hero"]["meta"])}</span>' if copy["hero"].get("meta") else "",
+        drag=esc(ui["dragHint"]),
         pano=panorama(site, slug, lang, copy),
         sections=render_sections(site, lang, slug, copy["sections"]),
         pro=render_pro(site, lang, copy.get("pro")),
@@ -523,20 +512,27 @@ def render_app(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="about",
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
-                content=content, footer=app_footer(site, lang, slug),
-                bar=app_bar(site, lang, slug, "about"), page_style=accent_style(app),
+                content=content, footer=app_footer(site, lang, slug), body_class="app",
+                bar=app_bar(site, lang, slug, "about"), now=app_now(site, lang, slug),
+                after=single_plate(site, slug, lang),
                 # ASC 레코드가 없는 출시 전 앱(2026-09-26 Readride)은 스마트 배너를 달지 않는다
                 extra_head=(f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">'
                             if app.get("appStoreId") else ""),
                 og_image=asset(slug, "og.jpg"))
 
 
+def doc_plate(site: Site, slug: str) -> str:
+    return (f'<span class="slot slot-s" data-plate="0"><img src="{asset(slug, "icon-180.webp")}" alt="" '
+            'width="76" height="76"></span>')
+
+
 def render_support(site: Site, lang: str, slug: str) -> str:
-    ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
+    ui, copy = site.ui[lang], site.app_copy(slug, lang)
     faq = "".join(f'<details><summary>{esc(f["q"])}</summary>{paragraphs(f["a"])}</details>' for f in copy["faq"])
     content = tpl(site, "support.html").substitute(
-        icon=asset(slug, "icon-180.webp"),
+        plate=doc_plate(site, slug),
         name=esc(copy["name"]),
+        kind=number_label(site, lang, slug),
         title=esc(ui["faqTitle"]),
         faq=faq,
         contact_title=esc(ui["contactTitle"]),
@@ -545,8 +541,8 @@ def render_support(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="support", title=f'{copy["name"]} {ui["navSupport"]}',
                 description=copy["summary"], content=content, footer=app_footer(site, lang, slug),
-                bar=app_bar(site, lang, slug, "support"), page_style=accent_style(app),
-                og_image=asset(slug, "og.jpg"))
+                body_class="page-doc", bar=app_bar(site, lang, slug, "support"), now=app_now(site, lang, slug),
+                after=single_plate(site, slug, lang), og_image=asset(slug, "og.jpg"))
 
 
 def privacy_section(number: int, section: dict) -> str:
@@ -566,7 +562,7 @@ def privacy_section(number: int, section: dict) -> str:
 
 
 def render_privacy(site: Site, lang: str, slug: str) -> str:
-    ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
+    ui, copy = site.ui[lang], site.app_copy(slug, lang)
     policy = copy["privacy"]
     toc = "".join(f'<li><a href="#p{i}">{esc(s["title"])}</a></li>' for i, s in enumerate(policy["sections"], 1))
     body = "".join(privacy_section(i, s) for i, s in enumerate(policy["sections"], 1))
@@ -574,8 +570,9 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     content = tpl(site, "privacy.html").substitute(
         toc_label=esc(ui["toc"]),
         toc=toc,
-        icon=asset(slug, "icon-180.webp"),
+        plate=doc_plate(site, slug),
         name=esc(copy["name"]),
+        kind=number_label(site, lang, slug),
         title=esc(ui["navPrivacy"]),
         effective_label=esc(ui["effectiveDate"]),
         date=date,
@@ -586,9 +583,9 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
         end=fill(esc(ui["effectiveFrom"]), date=date),
     )
     return page(site, lang=lang, slug=slug, kind="privacy", title=policy["title"], description=policy["summary"],
-                content=content, footer=app_footer(site, lang, slug),
-                bar=app_bar(site, lang, slug, "privacy"), page_style=accent_style(app),
-                og_image=asset(slug, "og.jpg"))
+                content=content, footer=app_footer(site, lang, slug), body_class="page-doc",
+                bar=app_bar(site, lang, slug, "privacy"), now=app_now(site, lang, slug),
+                after=single_plate(site, slug, lang), og_image=asset(slug, "og.jpg"))
 
 
 def language_items(site: Site) -> str:
@@ -601,6 +598,7 @@ def language_items(site: Site) -> str:
 def render_root(site: Site) -> str:
     return tpl(site, "root.html").substitute(
         base=site.base_url, langs_json=json.dumps(site.lang_codes()), css=css(site), items=language_items(site),
+        mark=MARK,
     )
 
 
@@ -609,7 +607,7 @@ def render_404(site: Site) -> str:
         f'<p lang="{esc(option["htmlLang"])}">{esc(site.ui[option["code"]]["notFound"])}</p>'
         for option in site.langs
     )
-    return tpl(site, "404.html").substitute(css=css(site), messages=messages, items=language_items(site))
+    return tpl(site, "404.html").substitute(css=css(site), messages=messages, items=language_items(site), mark=MARK)
 
 
 def render_sitemap(site: Site, paths: list[str]) -> str:

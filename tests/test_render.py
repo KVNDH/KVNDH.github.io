@@ -13,32 +13,28 @@ class HubTest(unittest.TestCase):
     def setUp(self):
         self.site = Site(make_site())
 
-    def test_hub_tile_links_whole_tile_and_store(self):
+    def test_hub_piece_links_page_and_store(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<html lang="ko">', html)
-        self.assertIn('<article class="tile t-feature th-light"', html)
-        self.assertIn('<a class="tile-link" href="/ko/demo/">Demo</a>', html)
+        self.assertIn('<article class="piece" id="demo">', html)
+        self.assertIn('<h2><a href="/ko/demo/">Demo</a></h2>', html)
+        self.assertIn('<a class="lnk" href="/ko/demo/">ko learnMore</a>', html)
         self.assertIn('aria-label="Demo store"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
-        self.assertIn('<div class="shot" style="--sw:196px">', html)
+        self.assertIn('<span class="lab">No. 01 / 01</span>', html)
 
-    def test_hub_is_the_light_page(self):
-        self.assertIn('<body class="hub">', render.render_hub(self.site, "ko"))
+    def test_hub_is_the_album_page(self):
+        html = render.render_hub(self.site, "ko")
+        self.assertIn('<body class="hub">', html)
+        self.assertIn('<main class="sheet" id="main">', html)
+        self.assertIn('<p class="lede">ko albumLede</p>', html)
 
-    def test_tile_uses_the_store_screenshot_when_present(self):
-        store(self.site.root, "en", 1)
-        html = render.render_hub(Site(self.site.root), "ko")
-        self.assertIn('<div class="shot shot-store"><img src="/assets/demo/store/en/01.webp"', html)
-        self.assertNotIn('--sw:196px', html)
-
-    def test_tile_takes_the_app_field_and_ink(self):
-        look(self.site.root, ink="light", color="#101418")
-        html = render.render_hub(Site(self.site.root), "ko")
-        self.assertIn('<article class="tile t-feature th-dark"', html)
-        self.assertIn("--fc:#101418;--fld:url(/assets/demo/field.webp)", html)
-
-    def test_feature_tile_shows_summary(self):
-        self.assertIn('<p class="hook">summary</p>', render.render_hub(self.site, "ko"))
+    def test_piece_slot_is_a_button_with_the_icon(self):
+        html = render.render_hub(self.site, "ko")
+        self.assertIn('<button class="slot" type="button" data-plate="0" data-open="0" aria-label="Demo larger">'
+                      '<img src="/assets/demo/icon-360.webp"', html)
+        (self.site.root / "assets" / "demo" / "icon-640.webp").write_bytes(b"x")
+        self.assertIn('<img src="/assets/demo/icon-640.webp"', render.render_hub(Site(self.site.root), "ko"))
 
     def test_hub_has_no_summary_sentence(self):
         html = render.render_hub(self.site, "ko")
@@ -47,21 +43,22 @@ class HubTest(unittest.TestCase):
 
     def test_hub_footer_lists_privacy_and_languages(self):
         html = render.render_hub(self.site, "ko")
-        self.assertIn('<footer class="sf">', html)
+        self.assertIn('<footer class="foot">', html)
         self.assertIn('href="/ko/demo/privacy/"', html)
         self.assertIn('<ul class="langs">', html)
 
     def test_hub_without_pages_has_no_detail_link(self):
         html = render.render_hub(Site(make_site(with_pages=False)), "ko")
         self.assertNotIn('href="/ko/demo/"', html)
-        self.assertNotIn('class="tile-link"', html)
+        self.assertIn("<h2>Demo</h2>", html)
         self.assertIn("https://apps.apple.com/app/id123", html)
 
     def test_unreleased_app_shows_only_its_icon(self):
         site = Site(make_site(unreleased=True))
         html = render.render_hub(site, "ko")
-        self.assertIn('<div class="quiet" aria-hidden="true">', html)
+        self.assertIn('<section class="quiet" aria-hidden="true"><span class="qslot" data-plate="1">', html)
         self.assertIn('src="/assets/soon/icon-180.webp"', html)
+        self.assertIn('<img src="/assets/soon/icon-180.webp" alt="" width="72" height="72" class="soon">', html)
         self.assertNotIn("Soon", html)
         self.assertNotIn("/ko/soon/", html)
         self.assertNotIn("https://apps.apple.com/app/id456", html)
@@ -88,24 +85,6 @@ class HubTest(unittest.TestCase):
         self.assertIn("Soon", render.render_privacy(site, "ko", "soon"))
 
 
-class TilePositionTest(unittest.TestCase):
-    def test_five_or_fewer_keep_the_grid(self):
-        self.assertEqual(render.tile_positions(5), render.TILE_POSITIONS)
-
-    def test_six_apps_split_the_third_row(self):
-        self.assertEqual(render.tile_positions(6)[3:], ["t-r1", "t-r2", "t-r3"])
-
-    def test_seven_apps_make_two_rows_of_two(self):
-        self.assertEqual(render.tile_positions(7)[3:], ["t-r1", "t-r2", "t-q1", "t-q2"])
-
-    def test_eight_apps_add_a_full_fifth_row(self):
-        self.assertEqual(render.tile_positions(8)[3:], ["t-r1", "t-r2", "t-q1", "t-q2", "t-z1"])
-
-    def test_more_apps_than_tiles_stops_the_build(self):
-        with self.assertRaises(SystemExit):
-            render.tile_positions(9)
-
-
 class AppPageTest(unittest.TestCase):
     def setUp(self):
         self.site = Site(make_site())
@@ -117,10 +96,9 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('hreflang="x-default" href="https://kvndh.com/en/demo/"', html)
         self.assertNotIn('hreflang="ja"', html)
 
-    def test_app_bar_accent_and_banner(self):
+    def test_app_bar_and_banner(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('content="app-id=123"', html)
-        self.assertIn("--acc:#A05B42;--ink:#E39C80;--glow:rgba(160,91,66,.5);--p-acc:#8A4A34;--btn:#A05B42", html)
         self.assertIn('<nav class="ab"', html)
         self.assertIn('<a href="/ko/demo/" aria-current="page">ko navAbout</a>', html)
         self.assertIn('href="/ko/demo/support/"', html)
@@ -128,7 +106,9 @@ class AppPageTest(unittest.TestCase):
     def test_hero_and_sections(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<h1 class="hero-n">Demo</h1>', html)
-        self.assertIn('<div class="pano"><img src="/assets/demo/shots/en/01.webp" alt="Demo ko screenshot"', html)
+        self.assertIn('<div class="slot slot-l" data-plate="0"><img class="ic-l" src="/assets/demo/icon-360.webp"', html)
+        self.assertIn('<span class="lab">No. 01 / 01</span>', html)
+        self.assertIn('<section class="pano"><figure class="print"><img src="/assets/demo/shots/en/01.webp" alt="Demo ko screenshot"', html)
         self.assertNotIn('class="meta"', html)
         self.assertIn('<section class="feat"><figure class="feat-vis crop">', html)
         self.assertIn('<section class="feat feat-rev"><div class="feat-vis kit"', html)
@@ -138,20 +118,18 @@ class AppPageTest(unittest.TestCase):
         self.assertIn('<div class="play" aria-hidden="true">', html)
         self.assertIn('<ul class="chips"><li>c</li></ul>', html)
 
-    def test_page_takes_the_app_field(self):
+    def test_page_is_the_album_paper(self):
         html = render.render_app(self.site, "ko", "demo")
-        self.assertIn('<body class="th-light" style="--fc:#F5F5F7">', html)
-        look(self.site.root, ink="light", color="#101418")
-        html = render.render_app(Site(self.site.root), "ko", "demo")
-        self.assertIn('<body class="th-dark" style="--fc:#101418;--fld:url(/assets/demo/field.webp)">', html)
-        self.assertIn('<meta name="theme-color" content="#101418">', html)
+        self.assertIn('<body class="app">', html)
+        self.assertIn('<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">', html)
+        self.assertIn('<p class="now" data-on="1" aria-hidden="true"><i></i><b>01 / 01  Demo</b></p>', html)
 
     def test_panorama_shows_the_store_screenshots_in_the_page_language(self):
         for i in (1, 2, 3):
             store(self.site.root, "en", i)
         look(self.site.root, ink="dark", color="#EEE8DD", alts={"en": ["one", "two", "three"]})
         html = render.render_app(Site(self.site.root), "ko", "demo")
-        self.assertIn('<div class="pano"><img src="/assets/demo/store/en/01.webp" alt="one"', html)
+        self.assertIn('<figure class="print"><img src="/assets/demo/store/en/01.webp" alt="one">', html)
         self.assertIn('<img src="/assets/demo/store/en/03.webp" alt="three"', html)
         store(self.site.root, "ko", 1)
         html = render.render_app(Site(self.site.root), "ko", "demo")
@@ -227,7 +205,8 @@ class OtherPagesTest(unittest.TestCase):
 
     def test_privacy_sheet(self):
         html = render.render_privacy(self.site, "en", "demo")
-        self.assertIn('<div class="sheet">', html)
+        self.assertIn('<div class="pv">', html)
+        self.assertIn('<body class="page-doc">', html)
         self.assertIn('<section id="p12"><h2><span>12</span>s12</h2>', html)
         self.assertIn('href="#p1"', html)
         self.assertIn('<time datetime="2026-09-17">2026-09-17</time>', html)
@@ -242,80 +221,67 @@ class OtherPagesTest(unittest.TestCase):
             self.assertNotIn('rel="stylesheet"', html)
             self.assertIn("<style>", html)
 
-    # 허브 선반(2026-10-01): 벤토는 그대로 두고, 선반이 읽을 언어별 데이터를 JSON 으로 넣는다
-    def shelf(self, site, lang):
-        html = render.render_hub(site, lang)
-        m = re.search(r'<script type="application/json" id="shelf-data">(.*?)</script>', html, re.S)
+    # 화첩(2026-10-16): 판이 읽을 언어별 데이터를 JSON 으로 넣는다
+    def canvas(self, html):
+        m = re.search(r'<script type="application/json" id="canvas-data">(.*?)</script>', html, re.S)
         self.assertIsNotNone(m)
-        return html, json.loads(m.group(1))
+        return json.loads(m.group(1))
 
-    def test_hub_keeps_bento_and_adds_hidden_shelf(self):
-        html, data = self.shelf(self.site, "ko")
-        self.assertIn('<div class="shelf" id="shelf" data-src="/hub-shelf.js" hidden></div>', html)
-        self.assertIn('<div class="bento">', html)
-        self.assertIn('<article class="tile t-feature th-light"', html)
-        self.assertIn('<a class="tile-link" href="/ko/demo/">Demo</a>', html)
-        self.assertLess(html.index('id="shelf"'), html.index('class="bento"'))
-        self.assertIn('addEventListener("load"', html)
-        self.assertNotIn('<script src=', html)
+    def test_every_page_loads_the_canvas_only_when_webgl_works(self):
+        # 로더는 head 에서 돌고, 동작 줄이기가 아니고 WebGL 컨텍스트가 실제로 만들어질 때만 멈춘 그림을 숨겨 기다린다.
+        # 묶음이 실패하거나 늦으면(6초) 멈춘 그림으로 돌아간다. 묶음 주소는 check.py 가 볼 수 있게 data-src 에 둔다
+        for html in (render.render_hub(self.site, "ko"), render.render_app(self.site, "ko", "demo"),
+                     render.render_support(self.site, "ko", "demo"), render.render_privacy(self.site, "ko", "demo")):
+            self.assertLess(html.index('getContext("webgl2")'), html.index("</head>"))
+            self.assertIn("prefers-reduced-motion: reduce", html)
+            self.assertIn('classList.add("gl-wait")', html)
+            self.assertIn("s.onerror=off", html)
+            self.assertIn("setTimeout(off,6000)", html)
+            self.assertIn('<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>', html)
+            self.assertNotIn('<script src=', html)
 
-    def test_hub_waits_for_shelf_only_when_webgl_works(self):
-        # 로더는 벤토보다 먼저 돌고, WebGL 컨텍스트가 실제로 만들어질 때만 벤토를 숨겨 기다린다.
-        # 묶음이 실패하거나 늦으면(5초) 벤토로 돌아간다. 자리 높이와 숨김 규칙은 허브 head 에만 있다
-        html, _ = self.shelf(self.site, "ko")
-        loader = html.index('getContext("webgl2")')
-        self.assertLess(loader, html.index('class="bento"'))
-        self.assertIn('classList.add("shelf-wait")', html)
-        self.assertIn("s.onerror=h.off", html)
-        self.assertIn("setTimeout(h.off,5000)", html)
-        self.assertIn("body.shelf-wait .bento", html)
-        self.assertLess(html.index("body.shelf-wait .bento"), html.index("</head>"))
-        about = render.render_app(self.site, "ko", "demo")
-        self.assertNotIn("shelf-wait", about)
-
-    def test_shelf_data_is_per_language(self):
-        store(self.site.root, "en", 1)
-        store(self.site.root, "en", 2)
-        site = Site(self.site.root)
-        _, ko = self.shelf(site, "ko")
-        _, en = self.shelf(site, "en")
-        self.assertEqual(ko["lang"], "ko")
-        self.assertEqual(ko["ui"]["more"], "ko learnMore")
-        self.assertEqual(en["ui"]["shelf"], "en shelfLabel")
-        self.assertEqual(en["ui"]["moreLabel"], "{name} more")
-        app = ko["apps"][0]
-        self.assertEqual(app["slug"], "demo")
-        self.assertEqual(app["href"], "/ko/demo/")
-        self.assertEqual(en["apps"][0]["href"], "/en/demo/")
+    def test_canvas_data_is_per_language(self):
+        ko = self.canvas(render.render_hub(self.site, "ko"))
+        en = self.canvas(render.render_hub(self.site, "en"))
+        self.assertEqual(ko["page"], "hub")
+        self.assertEqual(ko["ui"], {"total": "01", "more": "ko learnMore", "support": "ko navSupport"})
+        app = ko["plates"][0]
+        self.assertEqual((app["name"], app["no"], app["href"], app["support"]), ("Demo", "01", "/ko/demo/", "/ko/demo/support/"))
+        self.assertEqual(en["plates"][0]["href"], "/en/demo/")
         self.assertEqual(app["icon"], "/assets/demo/icon-360.webp")
-        # 스토어 그림: 그 언어가 없으면 en (타일과 같은 규칙)
-        self.assertEqual(app["shots"], ["/assets/demo/store/en/01.webp", "/assets/demo/store/en/02.webp"])
-        self.assertFalse(app["unreleased"])
-        self.assertIsNone(app["field"])
+        self.assertEqual(app["bullets"], ["x", "y"])
+        self.assertEqual(app["storeLabel"], "Demo store")
 
-    def test_shelf_data_takes_field_and_ink(self):
-        look(self.site.root, ink="light", color="#101418")
-        _, data = self.shelf(Site(self.site.root), "ko")
-        app = data["apps"][0]
-        self.assertEqual(app["field"], "/assets/demo/field.webp")
-        self.assertEqual((app["color"], app["ink"], app["accent"]), ("#101418", "light", "#A05B42"))
+    def test_single_page_has_one_plate(self):
+        for html in (render.render_app(self.site, "ko", "demo"), render.render_privacy(self.site, "ko", "demo")):
+            self.assertEqual(self.canvas(html), {"page": "single", "plates": [
+                {"icon": "/assets/demo/icon-360.webp", "name": "Demo", "no": "01"}]})
+            self.assertEqual(html.count('data-plate="'), 1)
 
-    def test_shelf_without_pages_has_no_link(self):
-        _, data = self.shelf(Site(make_site(with_pages=False)), "ko")
-        self.assertIsNone(data["apps"][0]["href"])
+    def test_canvas_without_pages_has_no_link(self):
+        data = self.canvas(render.render_hub(Site(make_site(with_pages=False)), "ko"))
+        self.assertIsNone(data["plates"][0]["href"])
 
-    def test_unreleased_app_is_a_veiled_slot(self):
-        html, data = self.shelf(Site(make_site(unreleased=True)), "ko")
-        self.assertEqual([a["slug"] for a in data["apps"]], ["demo", "soon"])
-        self.assertEqual(data["apps"][1], {"slug": "soon", "unreleased": True})
+    def test_unreleased_app_is_a_nameless_blurred_plate(self):
+        html = render.render_hub(Site(make_site(unreleased=True)), "ko")
+        data = self.canvas(html)
+        self.assertEqual(len(data["plates"]), 2)
+        self.assertEqual(data["plates"][1], {"icon": "/assets/soon/icon-360.webp", "soon": True})
         self.assertNotIn("Soon", html)
         self.assertNotIn("/ko/soon/", html)
 
-    def test_shelf_json_cannot_close_its_script(self):
+    def test_first_released_app_tops_the_pile(self):
+        # 첫 화면 더미는 위에서부터 1, 2, ... 줄이고 맨 위가 출시된 첫 앱(출시 전 앱은 뒤로)
+        html = render.render_hub(Site(make_site(unreleased=True)), "ko")
+        fan = re.search(r'<div class="fan">(.*?)</div>', html).group(1)
+        self.assertTrue(fan.startswith('<span class="row"><img src="/assets/demo/icon-180.webp"'))
+        self.assertEqual(fan.count('<span class="row">'), 2)
+
+    def test_canvas_json_cannot_close_its_script(self):
         site = Site(make_site())
         site.copy[("demo", "ko")]["subtitle"] = "a</script><b>"
-        html, data = self.shelf(site, "ko")
-        self.assertEqual(data["apps"][0]["subtitle"], "a</script><b>")
+        html = render.render_hub(site, "ko")
+        self.assertEqual(self.canvas(html)["plates"][0]["sub"], "a</script><b>")
         self.assertNotIn("a</script>", html)
 
     def test_root_redirect_and_language_list(self):
@@ -329,31 +295,35 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIn('href="/ko/"', html)
         self.assertIn("ko notFound", html)
 
-    # 2026-10-02 하위 페이지를 허브 선반 말투로: CSS 와 마크업만 바꾸고 스크립트는 허브(선반)와 첫 화면(언어 이동)에만 둔다
-    def test_scripts_stay_on_hub_and_root(self):
+    def test_scripts_stay_inline_and_off_404(self):
         site = Site(make_site())
         for html in (render.render_app(site, "ko", "demo"), render.render_support(site, "ko", "demo"),
-                     render.render_privacy(site, "ko", "demo"), render.render_404(site)):
-            self.assertNotIn("<script", html)
+                     render.render_privacy(site, "ko", "demo")):
+            self.assertNotIn("__open", html)   # 크게 보기는 허브에만
+        self.assertIn("__open", render.render_hub(site, "ko"))
+        self.assertNotIn("<script", render.render_404(site))
         self.assertEqual(render.render_root(site).count("<script"), 1)
 
-    def test_sub_pages_use_shelf_marks(self):
+    def test_sub_pages_use_album_marks(self):
         site = Site(make_site())
         about = render.render_app(site, "ko", "demo")
-        self.assertIn('<div class="dais"><img class="ic ic-l" src="/assets/demo/icon-360.webp"', about)
         self.assertIn('<a class="ab-id" href="/ko/demo/"><img class="ic"', about)
         self.assertIn('<span>Demo</span></a>', about)
-        self.assertIn('<p class="doc-k"><img class="ic"', render.render_privacy(site, "ko", "demo"))
-        self.assertIn('<p class="sup-k"><img class="ic"', render.render_support(site, "ko", "demo"))
+        for html in (render.render_privacy(site, "ko", "demo"), render.render_support(site, "ko", "demo")):
+            self.assertIn('<div class="doc-head"><span class="slot slot-s" data-plate="0">', html)
+            self.assertIn('<p class="doc-k"><span>Demo</span><span class="mono">No. 01 / 01</span></p>', html)
 
-    def test_style_has_no_glass_or_blurred_shadow(self):
+    def test_vermilion_sits_only_on_the_number_dot(self):
         css = render.css(Site(make_site()))
-        self.assertNotIn("backdrop-filter", css)
-        # 흐린 그림자(세 번째 길이가 0 이 아닌 box-shadow)가 없다
-        for rule in re.findall(r"box-shadow:([^;}]*)", css):
-            for layer in re.split(r",(?![^(]*\))", rule):
-                parts = re.findall(r"calc\([^)]*\)\)?|var\(--[\w-]+\)|[-\d.]+px|\b0\b", layer)
-                self.assertTrue(len(parts) < 3 or parts[2] in ("0", "0px"), layer)
+        self.assertEqual(css.upper().count("#E63946"), 1)
+        self.assertEqual(css.count("var(--dot)"), 1)
+        self.assertIn(".now i{", css.split("var(--dot)")[0].rsplit("}", 1)[1])
+
+    def test_dark_mode_is_pure_black(self):
+        css = render.css(Site(make_site()))
+        dark = css.split("@media (prefers-color-scheme:dark){:root{", 1)[1].split("}}", 1)[0]
+        self.assertIn("--paper:#000000", dark)
+        self.assertIn("--desk:#000000", dark)
 
     def test_sitemap_lists_only_directory_pages(self):
         xml = render.render_sitemap(self.site, ["/", "/404.html", "/ko/"])

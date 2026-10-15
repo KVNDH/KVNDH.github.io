@@ -19,10 +19,10 @@
  "summaryLabel": "Resumo",
  "toc": "Conteúdo",
  "notFound": "Esta página não existe. Escolha um idioma abaixo para chegar à lista de apps.",
- "shelfLabel": "Estante de apps",
- "shelfBack": "Voltar",
- "shelfSound": "Som",
- "shelfVeiled": "App ainda não lançado, coberto com um pano",
- "shelfSoon": "Ainda não foi lançado",
- "shelfMoreLabel": "Ver mais sobre {name}"
+ "albumLede": "Role para baixo e cada app vai para o seu lugar.",
+ "albumHint": "Toque em um ícone para vê-lo em tamanho grande.",
+ "viewLarge": "Ver em tamanho grande",
+ "viewLargeLabel": "Ver {name} em tamanho grande",
+ "close": "Fechar",
+ "dragHint": "Arraste para girar."
 }

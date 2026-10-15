@@ -39,7 +39,7 @@ def import_app(slug: str) -> None:
     dest = ROOT / "assets" / slug
     dest.mkdir(parents=True, exist_ok=True)
     icon = CODING / spec["icon"]
-    for size in (180, 360):
+    for size in (180, 360, 640):  # 640 은 화첩 판의 앞면(2026-10-16)
         magick(icon, "-strip", "-resize", f"{size}x{size}", "-quality", "85", dest / f"icon-{size}.webp")
     for lang, shots in spec["shots"].items():
         for i, rel in enumerate(shots, 1):
