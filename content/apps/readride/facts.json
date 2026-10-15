@@ -1,9 +1,9 @@
 {
- "describesVersion": "1.0.2",
+ "describesVersion": "1.0.3",
  "purchase": "one-time",
  "ads": false,
  "account": false,
- "platform": "iOS 18.0 이상, iPhone(세로만)과 iPad(네 방향, Split View 와 창 크기 조절, UIRequiresFullScreen 없음). TARGETED_DEVICE_FAMILY 1,2 (앱, 공유 확장). iPad 는 같은 화면을 읽기 좋은 폭 700pt 로 넓힘, 두 칸 배치 없음 (project.yml, 95e4f2c). Mac, Vision Pro 설치 막음",
+ "platform": "iOS 18.0 이상, iPhone(세로만)과 iPad(네 방향, Split View 와 창 크기 조절, UIRequiresFullScreen 없음). TARGETED_DEVICE_FAMILY 1,2 (앱, 공유 확장). iPad 는 같은 화면을 읽기 좋은 폭 700pt 로 넓힘, 두 칸 배치 없음 (project.yml, 95e4f2c). Mac, Vision Pro 설치 막음. 1.0.3(빌드 4, 2f43919): 접는 iPhone(사이트 표기, 기기 상표명 안 씀). 창 오른쪽 안전 영역 76pt 이상(접힘 세로, 펼침 가로의 84pt 띠)이면 읽기 화면의 단추 일곱(재생, 한 문장 뒤로, 다음 문장으로, 속도 +, 속도 −, 문서 지도, 설정)을 띠에 세로로, 속도는 + 와 − 사이 숫자(ReadingRail, StepControl vertical, f7933fa). ✕ 와 진행률은 머리에 남음. 오른쪽에서 왼쪽 언어에서도 띠는 기기 오른쪽(97fc798). 머리가 창 모서리를 비키는 조건을 창 크기로(8493ef7). 펼친 넓은 화면은 iPad 처럼 기둥 700pt(ReadableWidth.column). 보통 iPhone, iPad 화면은 그대로",
  "products": [
   "Readride Pro: 비소모성 1개 (com.kimdh.Readride.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (StoreKit/Readride.storekit). ASC 앱 6816576585, 이 상품은 1.0.0 과 함께 2026-09-30 출시(HQ 가 ASC 로 확인)"
  ],
@@ -92,6 +92,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 무료 문서 3개, 쉼 5단계(ja, zh 는 숫자로 씀), 읽는 언어 44개, 분당 100~1,000단어(ko 와 알파벳 언어, 1.0.2), ko 묶기 예 '120억 원'. 1.0.1 부터 앱 화면이 46개 언어라 다른 언어 페이지의 UI 이름은 Localizable.xcstrings 의 그 언어 이름을 쓴다. 기능 절 캡처는 영어판이라 캡처 대체 문구(shotAlt, 기능 절 alt)만 영어 UI 이름으로 둔다",
  "sources": [
+  "1.0.3 앱 코드: Readride 2f43919(1.0.3 빌드 4, project.yml CFBundleShortVersionString 1.0.3, CFBundleVersion 4, 2026-10-15 출시 HQ 확인). 1.0.2 의 마지막 앱 코드 95e4f2c 와 비교하면 Readride/ 에서 바뀐 것은 RSVPView, RSVPContextView, Components, StepControl 뿐(Duo 띠와 앞뒤 본문 윗줄 맞춤 27d13e0, 3f0b887). ProRules, StoreKit, 권한, 엔타이틀먼트, PrivacyInfo, 네트워크 코드는 그대로라 무료/Pro 경계와 처리방침은 바꾸지 않음. 단추 이름은 Readride/Resources/Localizable.xcstrings(2f43919). whatsNew ko 'iPhone Duo 지원'(d281a97)",
   "Readride/docs/SITE_DRAFT.md (cb56df5, '1.0.2(iCloud 동기화, iPad)에서 바꿀 것')",
   "tmp/readride-site-2026-09-26/facts-from-session.md",
   "Readride/Readride/Resources/Localizable.xcstrings",
