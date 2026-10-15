@@ -1,5 +1,5 @@
 {
- "describesVersion": "2.0.0",
+ "describesVersion": "2.0.1",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -18,7 +18,7 @@
  "permissions": [
   "추적 허용(ATT, NSUserTrackingUsageDescription): 앱을 켠 뒤 광고를 준비할 때, UMP 동의 다음에, 미결정이고 광고 요청이 가능할 때만 요청. 저장할 때 묻지 않음. Tapey Pro 는 묻지 않음. 거부해도 앱 사용 가능 (swift/Tapey/Ads/AdsService.swift:71-97; swift/Tapey/Ads/GoogleAdsSDK.swift:44-46)",
   "사진 추가 전용(PHPhotoLibrary .addOnly): 완성한 배경화면을 저장할 때. 거부되면 '설정 > Tapey에서 사진 접근을 허용하면 저장할 수 있습니다' 알림 (swift/Tapey/Services/AlbumSaver.swift:24-25; swift/Tapey/Editor/WallStore+Save.swift:111)",
-  "카메라: 앱 안에 촬영 경로 없음. 사진은 시스템 사진 선택기(PhotosPicker, 이미지만)와 끌어다 놓기로만 들어옴. Info.plist 에 NSCameraUsageDescription, NSPhotoLibraryUsageDescription 문구는 남아 있으나 요청하는 코드는 없음 (swift/Tapey/RootView.swift:134,156-157; swift/Tapey/Info.plist:57-62)",
+  "카메라(AVCaptureDevice .video, NSCameraUsageDescription): 2.0.1 에서 사진 찍기가 다시 들어옴. ⋯ 메뉴의 사진 찍기, 교체와 배경 내 사진의 선택 창(사진 보관함, 사진 찍기, 파일 선택)에서 사진 찍기를 누를 때 권한을 봄: 처음이면 시스템 창으로 묻고, 거부면 '설정 > Tapey에서 카메라 접근을 허용하면 사진을 찍을 수 있습니다' 알림과 설정 열기. 카메라 없는 기기는 줄이 없음. 촬영은 UIImagePickerController(.camera), 찍은 한 장은 JPEG 로 바꿔 고른 사진과 같은 가져오기(handlePicked)로 작업 파일 current/files 에 사본. 사진 앱에 따로 저장하는 코드 없음(PHPhotoLibrary 쓰기는 완성 배경화면 저장 AlbumSaver 하나), 네트워크 없음. 사진 보관함 읽기 권한은 요청하지 않음(PhotosPicker). NSPhotoLibraryUsageDescription 문구는 남아 있으나 요청 코드 없음 (swift/Tapey/Services/CameraAccess.swift:1-25; swift/Tapey/Services/CameraCapture.swift:17-45; swift/Tapey/Editor/WallStore.swift openPicker(_:from:); swift/Tapey/RootView.swift:189-201; swift/Tapey/Shell/AppMenu.swift; swift/Tapey/Services/AlbumSaver.swift:34-35; swift/Tapey/Info.plist:57-62)",
   "위치, 연락처, 마이크 권한 없음"
  ],
  "storage": [
@@ -27,7 +27,7 @@
   "UserDefaults: tapey.locale(언어 선택), tapey.adfree(Tapey Pro 구매 캐시), tapey.saveCount(저장 횟수), tapey.reviewAsked(평가 요청 여부), tapey.onboarded(온보딩 봄), tapey.coach.drag 와 tapey.coach.memo(안내 봄), tapey.camera.view(자동 보기, 전체 보기 선택), 옛 웹판에서 옮겨 온 tapey.dock, tapey.dock.risen, tapey.tabs.seen(2.0.0 은 읽지 않고 값만 남음) (swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/LegacyLocalStorage.swift:10-14,34-42; swift/Tapey/Localization/AppLocale.swift:12; swift/Tapey/Store/ProEntitlement.swift:53; swift/Tapey/Services/ReviewPrompt.swift:8-9; swift/Tapey/Shell/Onboarding.swift:8; swift/Tapey/Shell/EditorTips.swift:53-54; swift/Tapey/Shell/CameraViewChoice.swift:11)",
   "옛 웹 데이터 옮기기: 2.0.0 첫 실행 때 숨은 WKWebView 로 옛 웹판(1.2.x)의 localStorage, IndexedDB 를 읽어 새 파일 저장소와 UserDefaults 로 한 번 옮김. 옛 데이터는 지우지 않음. 끝나기 전에는 기다림 화면(최대 30초), 실패해도 빈 벽으로 시작. 옛 구매 캐시 값도 옮겨 구매자에게 광고가 켜지지 않게 함 (swift/Tapey/Migration/WebDataMigration.swift:6-19,28-34,67-80; swift/Tapey/Migration/MigrationGate.swift:13-17)",
   "저장 파일: 화면과 같은 합성 함수로 고른 해상도 크기 그대로의 PNG 를 만들어 사진 앱에 추가 (swift/Packages/TapeyCore/Sources/TapeyCore/Render/Export.swift:28-40,89; swift/Tapey/Services/AlbumSaver.swift:24,40-43)",
-  "공유용 미리보기: 저장이 성공할 때마다 폭 540 JPEG 를 임시 폴더에 써 둠(공유하기를 누르지 않아도 만들어지고, 공유하기는 그 파일을 시스템 공유 시트에 건넴). 임시 파일은 앱을 켤 때 지움 (swift/Tapey/Editor/WallStore+Save.swift:120-122; swift/Tapey/Services/ShareFiles.swift:5-25)",
+  "공유용 사본: 저장이 성공할 때마다 앨범에 넣은 것과 같은 PNG 를 임시 폴더에 써 둠(공유하기를 누르지 않아도 만들어지고, 공유하기는 그 파일을 시스템 공유 시트에 건넴). 임시 파일은 앱을 켤 때 지움 (swift/Tapey/Editor/WallStore+Save.swift:131; swift/Tapey/Services/ShareFiles.swift:3-27)",
   "앱 자체 PrivacyInfo.xcprivacy 있음: NSPrivacyTracking false, 추적 도메인 없음, 수집 데이터 유형 없음, Required Reason API 는 UserDefaults CA92.1 하나. Google Mobile Ads SDK 매니페스트: 기기 ID, 광고 데이터, 제품 상호작용, 대략적 위치, 성능 데이터, 충돌 데이터, 기타 진단 데이터 (swift/Tapey/PrivacyInfo.xcprivacy:4-20,24-40)"
  ],
  "iap": {
@@ -55,16 +55,16 @@
   "familyShareable": "가족 공유로 받은 사람도 Pro(ownershipType 을 보지 않음). Tapey.storekit 에 familyShareable true. ASC 실제 값은 저장소 밖(Tapey 세션 요약은 true)이라 사이트 문구에는 쓰지 않음 (swift/Tapey/Store/ProEntitlement.swift:63-67; swift/StoreKit/Tapey.storekit:7)"
  },
  "features": {
-  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 빌드 19 (swift/project.yml:6,37,38,167)",
+  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 2.0.1 빌드 21 (swift/project.yml:6,37,38,167)",
   "maxPhotos": {
    "free": 12,
    "pro": 30
   },
   "photoSources": [
-   "시작 화면의 사진 붙이기",
+   "시작 화면의 사진 붙이기(사진 보관함)",
    "사진 단계의 추가(가득이면 가득)",
-   "사진 모드의 교체",
-   "배경의 내 사진",
+   "⋯ 메뉴의 사진 찍기와 파일 선택(2.0.1, 가득이면 추가 칸과 같은 규칙: 무료는 Tapey Pro 시트, Pro 는 누를 수 없음. 파일은 남은 칸만큼만 읽음)",
+   "사진 모드의 교체와 배경의 내 사진: 사진 보관함, 사진 찍기, 파일 선택 가운데 고르는 선택 창(2.0.1)",
    "이미지 끌어다 놓기(마무리 창이 떠 있는 동안은 받지 않음)"
   ],
   "steps": [
@@ -179,7 +179,14 @@
   "ipad": "TARGETED_DEVICE_FAMILY 1,2. iPad 는 정사각 결과물을 만들고, 창 폭 640pt 이상이면 사이드바가 있는 화면에서 세로와 가로 가이드를 바꿔 봄. 좁은 창은 폰 화면. 해상도에서 iPhone 크기를 고르면 폰용 배경화면을 만듦 (swift/Packages/TapeyCore/Sources/TapeyCore/Editor/AtelierLayout.swift:6-17; swift/Tapey/Shell/AtelierSidebar.swift:164,174)",
   "languages": 31,
   "saveFormat": "PNG",
-  "saveButtons": "편집 화면 오른쪽 위의 아이콘 버튼(글자 없음, 접근성 이름 저장)과 아래 시트 마지막 단계의 글자 버튼 저장 (swift/Tapey/Shell/EditorToolbar.swift:35-39,125-148; swift/Tapey/Shell/EditorSheet.swift:230-236)"
+  "saveButtons": "편집 화면 오른쪽 위의 아이콘 버튼(글자 없음, 접근성 이름 저장)과 아래 시트 마지막 단계의 글자 버튼 저장 (swift/Tapey/Shell/EditorToolbar.swift:35-39,125-148; swift/Tapey/Shell/EditorSheet.swift:230-236)",
+  "undoScope": "2.0.1 부터 꾸미기 아홉(벽 톤, 테이프 색, 자리, 무늬, 찢기, 프레임, 사진별 흑백, 메모, 텍스처 끄기)도 되돌리기에 쌓임. 같은 줄을 이어 고르는 동안은 한 칸 (Tapey 1304992; swift/Tapey/Editor/WallStore.swift StyleRun)",
+  "resetArchive": "다시 시작 확인 카드에 다시 시작과 보관하고 다시 시작(2.0.1). 보관은 지금 벽을 최근 프로젝트에 남김, 셋이 차 있으면 가장 오래된 것이 지워진다고 미리 알림 (Tapey 82d7852; native.reset.archive, native.reset.archiveEvicts)",
+  "finishSteps": "마무리 창 배경화면으로 설정하는 법 세 줄: finish.step1, native.finish.step2('배경화면 지정'), native.finish.step3('추가' 뒤 '한 쌍의 배경화면으로 설정'). 2.0.1 에서 지금 iOS 단추 이름으로 (swift/Tapey/Shell/FinishSheet.swift:24; Tapey ab7e10c)",
+  "photoDeniedNotice": "사진 추가 권한이 거부되면 알림에 설정 열기(10초), 카메라 거부 알림도 같음 (Tapey 3754e71; swift/Tapey/Editor/WallStore.swift:211)",
+  "accessibility": "시트와 트레이 글자가 큰 글자 설정을 1.3배까지 따름(82c00fa). VoiceOver 사용자 지정 동작 여덟(위, 아래, 왼쪽, 오른쪽으로 옮기기, 키우기, 줄이기, 왼쪽, 오른쪽으로 기울이기)과 하드웨어 키보드 ⌥ 방향키로 크기와 각도(4dd46f9)",
+  "duo": "iPhone Duo(접는 iPhone, 2.0.1): 해상도에 Duo 바깥 화면(1398 × 2034)과 Duo 안쪽 화면(2007 × 2853), 켠 화면 쪽이 목록 맨 앞, Duo 에는 내기기맞춤 없음(Presets.duoResolutions, WallStore.swift:1024-1032). 접은 화면은 오른쪽 상태 띠(84pt)를 비켜 크롬을 두고 단계 선택이 시트 오른쪽 띠 칸의 세로 기둥(EditorSheet.railEdge, a0e4405), 키운 벽은 띠까지 바탕을 이음(stripBleed). 펼친 넓은 화면은 폰 셸 기둥이 띠를 뺀 폭 가운데(ShellLayout, ba297b5). 잠금화면 가이드는 바깥 화면에서 띠를 뺀 폭 가운데",
+  "shareFile": "공유하기는 앨범에 넣은 그 PNG 를 임시 폴더(tmp/Tapey-share-<UUID>.png)에 써서 건넴, 2.0.0 의 폭 540 JPEG 미리보기에서 바뀜. 앱을 켤 때 지움 (swift/Tapey/Services/ShareFiles.swift; Tapey dad5915)"
  },
  "numbers": [
   "12",
@@ -192,8 +199,9 @@
  ],
  "numbersNote": "12 무료 사진 수, 30 Tapey Pro 사진 수, 8 테이프 색과 프리미엄 테이프(Pro 무늬)와 배경 톤, 4 무료 테이프 무늬, 10 배경 견본 수(톤 8 + 코르크보드, 패브릭), 6 하트 배치가 나오는 사진 수(FAQ), 31 앱 언어 수. sections[0] crop 의 focus 는 검사 대상이 아님",
  "sources": [
-  "Tapey 커밋 25ccd02 (2.0.0 빌드 19). 아래 경로는 Tapey/ 기준",
-  "swift/project.yml (MARKETING_VERSION 2.0.0, 빌드 19, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
+  "Tapey 커밋 256c647 (2.0.1 빌드 21 아카이브가 뜬 커밋, 2026-10-15 READY_FOR_SALE). 2.0.0 기준은 25ccd02. 아래 경로는 Tapey/ 기준",
+  "swift/Tapey/Services/CameraAccess.swift, swift/Tapey/Services/CameraCapture.swift, swift/Tapey/Services/IntakeFiles.swift (2.0.1 사진 찍기, 파일 선택)",
+  "swift/project.yml (MARKETING_VERSION 2.0.1, 빌드 21, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
   "swift/Tapey/Info.plist",
   "swift/Tapey/PrivacyInfo.xcprivacy",
   "swift/StoreKit/Tapey.storekit",

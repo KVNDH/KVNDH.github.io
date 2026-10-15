@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Tape und Rahmen",
    "body": [
-    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz."
+    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz. Auch Änderungen an Hintergrund, Tape und Rahmen lassen sich rückgängig machen."
    ],
    "bullets": [
     "8 Tape-Farben, 4 Muster und 8 Pro-Muster",
@@ -73,19 +73,19 @@
    "layout": "card",
    "title": "Auf den Sperrbildschirm zugeschnitten",
    "body": [
-    "Die aktuelle Uhrzeit steht auf der Leinwand wie die Uhr Ihres Sperrbildschirms. Ziehen Sie am Griff, um den Uhrplatz festzulegen, und die Fotos rücken darunter. Platz für Widgets lässt sich ebenso freihalten, und die Auflösung passt von Anfang an zu Ihrem Gerät."
+    "Die aktuelle Uhrzeit steht auf der Leinwand wie die Uhr Ihres Sperrbildschirms. Ziehen Sie am Griff, um den Uhrplatz festzulegen, und die Fotos rücken darunter. Platz für Widgets lässt sich ebenso freihalten, und die Auflösung passt von Anfang an zu Ihrem Gerät. Auf einem faltbaren iPhone bietet Auflösung das Duo-Außendisplay und das Duo-Innendisplay getrennt an. Zugeklappt stehen die Schritt-Tasten senkrecht im Streifen neben dem Bildschirm, aufgeklappt sitzt der Editor in der Mitte des breiten Bildschirms."
    ],
    "bullets": [
     "Einstellbarer Uhrplatz",
     "Reservierter Widget-Platz",
-    "Auflösungen für iPhone und iPad"
+    "Auflösungen für iPhone, iPad und faltbares iPhone"
    ]
   },
   {
    "layout": "card",
    "title": "Es beginnt mit Ihren Fotos",
    "body": [
-    "Kein Konto und nichts, wobei man sich anmelden müsste. Mit Weiter gehen Sie durch Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen, und der letzte Schritt sichert. Ihre Wand ist noch da, wenn Sie wiederkommen, und Neu erstellen nach dem Sichern legt sie unter Zuletzt ab."
+    "Kein Konto und nichts, wobei man sich anmelden müsste. Mit Weiter gehen Sie durch Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen, und der letzte Schritt sichert. Ihre Wand ist noch da, wenn Sie wiederkommen, und Neu erstellen nach dem Sichern legt sie unter Zuletzt ab. Wenn Sie neu beginnen, behält Behalten und neu beginnen die aktuelle Arbeit unter Zuletzt. Die Schrift im unteren Bereich folgt der Textgröße von iOS, und mit VoiceOver können Sie Fotos ebenfalls verschieben und Größe und Winkel ändern."
    ],
    "bullets": [],
    "visual": {
@@ -114,7 +114,7 @@
   {
    "q": "Fotos hinzufügen",
    "a": [
-    "Tippen Sie auf dem Startbildschirm auf Fotos hinzufügen und wählen Sie Ihre Fotos aus. Sie können Fotos auch aus einer anderen App hineinziehen. Beim Bearbeiten tippen Sie im Schritt Fotos auf Hinzufügen.",
+    "Tippen Sie auf dem Startbildschirm auf Fotos hinzufügen und wählen Sie Ihre Fotos aus. Sie können Fotos auch aus einer anderen App hineinziehen. Beim Bearbeiten tippen Sie im Schritt Fotos auf Hinzufügen. Mit Foto aufnehmen und Datei auswählen im Menü nehmen Sie direkt ein Foto auf oder wählen ein Bild aus Dateien. Wenn Sie ein Foto ersetzen oder Mein Foto als Hintergrund wählen, entscheiden Sie zwischen Fotomediathek, Foto aufnehmen und Datei auswählen.",
     "In einen Hintergrund passen bis zu 12 Fotos, mit Tapey Pro 30. Das Layout Herz erscheint, sobald Sie 6 oder mehr haben. Kreis braucht 8 oder mehr, und Stern, ein Layout von Tapey Pro, 10 oder mehr."
    ]
   },
@@ -122,7 +122,7 @@
    "q": "Wohin gesicherte Hintergründe kommen",
    "a": [
     "Tippen Sie oben rechts im Editor auf die Taste zum Speichern oder im letzten Schritt auf Speichern. Der Hintergrund landet als PNG in der Fotos-App, in der Auflösung, die Sie in den Einstellungen gewählt haben. Beim ersten Mal fragt iOS, ob Tapey Fotos hinzufügen darf.",
-    "Klappt das Sichern nicht, erlauben Sie den Fotozugriff unter Einstellungen > Tapey."
+    "Klappt das Sichern nicht, erlauben Sie den Fotozugriff unter Einstellungen > Tapey. Einstellungen öffnen im Hinweis führt Sie direkt dorthin."
    ]
   },
   {
@@ -149,14 +149,14 @@
   {
    "q": "Wo Ihre Arbeit liegt",
    "a": [
-    "Kopien der gewählten Fotos und Hintergrundfotos liegen zusammen mit Layout und Notizen im Speicher der App, damit Sie dort weitermachen können, wo Sie aufgehört haben. Neu beginnen im Menü löscht die aktuelle Arbeit, und mit dem Löschen der App verschwindet alles.",
+    "Kopien der gewählten Fotos und Hintergrundfotos liegen zusammen mit Layout und Notizen im Speicher der App, damit Sie dort weitermachen können, wo Sie aufgehört haben. Neu beginnen im Menü und dann Neu beginnen löscht die aktuelle Arbeit. Behalten und neu beginnen legt sie zuerst unter Zuletzt ab und beginnt dann neu. Mit dem Löschen der App verschwindet alles.",
     "Tippen Sie nach dem Sichern auf Neu erstellen, wandert die aktuelle Arbeit zu Zuletzt. Dort bleiben 3 Projekte, und das älteste weicht, wenn ein neues dazukommt."
    ]
   },
   {
    "q": "Als Hintergrundbild festlegen",
    "a": [
-    "Öffnen Sie das gerade gesicherte Bild in der Fotos-App, tippen Sie auf Teilen und wählen Sie Als Hintergrundbild. Wählen Sie Sperrbildschirm und tippen Sie auf Festlegen.",
+    "Öffnen Sie das gerade gesicherte Bild in der Fotos-App, tippen Sie auf Teilen und wählen Sie Als Hintergrund. Tippen Sie auf Hinzufügen und wählen Sie Als Hintergrundbildpaar festlegen.",
     "Dieselben Schritte stehen unter „So legst du es als Hintergrundbild fest“ auf dem Bildschirm, der nach dem Sichern erscheint."
    ]
   },
@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Tapey",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-15",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Die Werbung beim Sichern kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Tapey Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Tapey (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -204,7 +204,7 @@
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Kopien der gewählten Fotos und Hintergrundfotos: zum Wiederöffnen Ihrer Arbeit",
+     "Kopien der gewählten oder aufgenommenen Fotos und Hintergrundfotos: zum Wiederöffnen Ihrer Arbeit",
      "Layout, Einstellungen zur Gestaltung, Fotonotizen: zum Wiederöffnen Ihrer Arbeit",
      "Bis zu 3 letzte Projekte mit Vorschaubildern: für Zuletzt auf dem Startbildschirm",
      "Sprachwahl, Kaufstatus von Tapey Pro, Zahl der Sicherungen und ob die Bewertungsanfrage schon gezeigt wurde, ob die Hinweise zum Einstieg schon gezeigt wurden, gewählter Ansichtsmodus, aus einer früheren Version übernommene Einstellungen zur Bildschirmaufteilung: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage"
@@ -213,7 +213,7 @@
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Die Vorschaudatei, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Hintergründe, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Die Kopie des Hintergrunds, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Hintergründe, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +256,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "An die App gehen nur die Fotos, die Sie in der Fotoauswahl von iOS aussuchen oder in die App ziehen. Die App fragt weder nach dem Zugriff auf die Kamera noch nach der Berechtigung, Ihre Mediathek zu lesen. Zum Sichern eines fertigen Hintergrunds nutzt die App allein die Berechtigung, Fotos hinzuzufügen."
+     "An die App gehen nur Fotos, die Sie in der Fotoauswahl oder der Dateiauswahl von iOS aussuchen, in die App ziehen oder mit Foto aufnehmen aufnehmen. Nach dem Kamerazugriff fragt iOS, wenn Sie zum ersten Mal auf Foto aufnehmen tippen. Lehnen Sie ab, können Sie Fotos weiterhin auf die anderen Arten hinzufügen. Ein aufgenommenes Foto liegt wie die gewählten Fotos als Kopie im Speicher der App und dient nur der Arbeit an Ihrem Hintergrund. Es wird nicht eigens in der Fotos-App gesichert, und der Entwickler erhält es nicht. Die App fragt nicht nach der Berechtigung, Ihre Mediathek zu lesen. Zum Sichern eines fertigen Hintergrunds nutzt die App allein die Berechtigung, Fotos hinzuzufügen."
     ],
     "bullets": []
    },
@@ -311,7 +311,8 @@
    {
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
-     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
+     "2026-10-15: Mit Foto aufnehmen aufgenommene Fotos, mit Datei auswählen gewählte Bilder und der Kamerazugriff wurden unter „Verarbeitete Daten“ und „Maßnahmen zur Sicherheit“ ergänzt. Die temporäre Datei zum Teilen ist jetzt als Kopie des gesicherten Hintergrunds beschrieben. Das vorherige Datum des Inkrafttretens war der 2026-10-06."
     ],
     "bullets": []
    }

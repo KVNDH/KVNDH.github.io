@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Fita e molduras",
    "body": [
-    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão."
+    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão. As mudanças de fundo, fita e moldura também podem ser desfeitas."
    ],
    "bullets": [
     "8 cores de fita, 4 padrões e 8 padrões Pro",
@@ -73,19 +73,19 @@
    "layout": "card",
    "title": "Sob medida para a tela bloqueada",
    "body": [
-    "A hora atual fica sobre a área de edição igual ao relógio da sua tela bloqueada. Arraste a alça para definir o espaço do relógio e as fotos descem para baixo dele. Dá para reservar lugar para os widgets também, e a resolução já vem ajustada ao seu aparelho."
+    "A hora atual fica sobre a área de edição igual ao relógio da sua tela bloqueada. Arraste a alça para definir o espaço do relógio e as fotos descem para baixo dele. Dá para reservar lugar para os widgets também, e a resolução já vem ajustada ao seu aparelho. Num iPhone dobrável, Resolução oferece separadamente Tela externa do Duo e Tela interna do Duo. Dobrado, os botões das etapas ficam em pé na faixa ao lado da tela. Aberto, o editor fica no meio da tela larga."
    ],
    "bullets": [
     "Espaço do relógio ajustável",
     "Área de widgets reservada",
-    "Resoluções de iPhone e iPad"
+    "Resoluções de iPhone, iPad e iPhone dobrável"
    ]
   },
   {
    "layout": "card",
    "title": "Comece pelas suas fotos",
    "body": [
-    "Sem conta e sem nada para entrar. Passe por Fotos, Relógio, Layout, Fundo, Fita e Moldura com Avançar, e a última etapa salva. Sua parede continua ali quando você volta, e Criar um novo depois de salvar manda a anterior para Recentes."
+    "Sem conta e sem nada para entrar. Passe por Fotos, Relógio, Layout, Fundo, Fita e Moldura com Avançar, e a última etapa salva. Sua parede continua ali quando você volta, e Criar um novo depois de salvar manda a anterior para Recentes. Ao recomeçar, Guardar e recomeçar deixa o trabalho atual em Recentes. O texto da folha de baixo segue o ajuste de tamanho do texto do iOS, e com o VoiceOver você também move fotos e muda o tamanho e o ângulo delas."
    ],
    "bullets": [],
    "visual": {
@@ -114,7 +114,7 @@
   {
    "q": "Adicionar fotos",
    "a": [
-    "Na tela inicial, toque em Adicionar fotos e escolha suas fotos. Também dá para arrastar fotos de outro app. Durante a edição, toque em Adicionar na etapa Fotos.",
+    "Na tela inicial, toque em Adicionar fotos e escolha suas fotos. Também dá para arrastar fotos de outro app. Durante a edição, toque em Adicionar na etapa Fotos. Com Tirar Foto e Escolher Arquivo, no menu, você tira uma foto na hora ou escolhe uma imagem do app Arquivos. Ao trocar uma foto ou escolher Minha foto como fundo, você escolhe entre Fototeca, Tirar Foto e Escolher Arquivo.",
     "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, um layout do Tapey Pro, 10 ou mais."
    ]
   },
@@ -122,7 +122,7 @@
    "q": "Para onde vão os papéis de parede salvos",
    "a": [
     "Toque no botão de salvar, no canto superior direito do editor, ou em Salvar na última etapa. O papel de parede vai para o app Fotos como PNG, na resolução escolhida nos Ajustes. Na primeira vez, o iOS pergunta se o Tapey pode adicionar fotos.",
-    "Se o salvamento falhar, permita o acesso às fotos em Ajustes > Tapey."
+    "Se o salvamento falhar, permita o acesso às fotos em Ajustes > Tapey. Abrir Ajustes, no aviso, leva você direto até lá."
    ]
   },
   {
@@ -149,14 +149,14 @@
   {
    "q": "Onde o seu trabalho fica guardado",
    "a": [
-    "As cópias das fotos e das fotos de fundo que você escolhe, junto com o layout e as notas, ficam no armazenamento do app para você continuar de onde parou. Recomeçar, no menu, limpa o trabalho atual, e excluir o app leva tudo junto.",
+    "As cópias das fotos e das fotos de fundo que você escolhe, junto com o layout e as notas, ficam no armazenamento do app para você continuar de onde parou. Recomeçar, no menu, e depois Recomeçar limpa o trabalho atual. Guardar e recomeçar manda o trabalho para Recentes antes de começar de novo. Excluir o app leva tudo junto.",
     "Tocar em Criar um novo depois de salvar manda o trabalho atual para Recentes. Recentes guarda 3 projetos e descarta o mais antigo quando um novo entra."
    ]
   },
   {
    "q": "Definir como papel de parede",
    "a": [
-    "Abra no app Fotos a imagem que você acabou de salvar, toque em Compartilhar e escolha Usar como Papel de Parede. Escolha Tela Bloqueada e toque em Definir.",
+    "Abra no app Fotos a imagem que você acabou de salvar, toque em Compartilhar e escolha Imagem de Fundo. Toque em Adicionar e escolha Definir como Par de Imagens de Fundo.",
     "Os mesmos passos estão em Como definir como papel de parede, na tela que aparece depois de salvar."
    ]
   },
@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-15",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -204,7 +204,7 @@
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
-     "Cópias das fotos e das fotos de fundo que você escolhe: usadas para reabrir o trabalho",
+     "Cópias das fotos e das fotos de fundo que você escolhe ou tira: usadas para reabrir o trabalho",
      "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
      "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
      "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação"
@@ -213,7 +213,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. O arquivo de prévia para compartilhar, criado quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +256,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos do iOS ou arrasta para o app. O app não pede acesso à câmera nem permissão para ler a sua fototeca. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
+     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos ou de arquivos do iOS, arrasta para o app ou tira com Tirar Foto. O iOS pede acesso à câmera na primeira vez que você toca em Tirar Foto. Se não permitir, você ainda pode adicionar fotos das outras formas. A foto que você tira fica como cópia no armazenamento do app, como as fotos que você escolhe, e é usada só no trabalho do papel de parede. Ela não é salva à parte no app Fotos, e o desenvolvedor não a recebe. O app não pede permissão para ler a sua fototeca. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
     ],
     "bullets": []
    },
@@ -311,7 +311,8 @@
    {
     "title": "Mudanças nesta política",
     "paragraphs": [
-     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência."
+     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-10-15: as fotos tiradas com Tirar Foto, as imagens escolhidas com Escolher Arquivo e o acesso à câmera foram incluídos em “Informações tratadas” e “Medidas de segurança”. O arquivo temporário para compartilhar agora é descrito como uma cópia do papel de parede salvo. A data de vigência anterior era 2026-10-06."
     ],
     "bullets": []
    }

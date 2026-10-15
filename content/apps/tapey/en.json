@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Tape and frames",
    "body": [
-    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note."
+    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note. Changes to the background, tape, and frame can be undone too."
    ],
    "bullets": [
     "8 tape colors, 4 patterns, and 8 Pro patterns",
@@ -73,19 +73,19 @@
    "layout": "card",
    "title": "Fitted to the lock screen",
    "body": [
-    "The current time sits on the canvas just like your lock screen clock. Drag the handle to set the clock space, and the photos move down below it. You can keep room for widgets as well, and the resolution is matched to your device from the start."
+    "The current time sits on the canvas just like your lock screen clock. Drag the handle to set the clock space, and the photos move down below it. You can keep room for widgets as well, and the resolution is matched to your device from the start. On a foldable iPhone, Resolution offers Duo outer screen and Duo inner screen separately. Folded, the step buttons stand in a column in the strip beside the screen. Unfolded, the editor sits in the middle of the wide screen."
    ],
    "bullets": [
     "Adjustable clock space",
     "Reserved widget space",
-    "iPhone and iPad resolutions"
+    "iPhone, iPad, and foldable iPhone resolutions"
    ]
   },
   {
    "layout": "card",
    "title": "Start with your photos",
    "body": [
-    "No account and nothing to sign in to. Go through Photos, Clock, Layout, Background, Tape, and Frame with Next, and the last step saves. Your wall is still there when you come back, and Make a new one after saving moves it to Recent."
+    "No account and nothing to sign in to. Go through Photos, Clock, Layout, Background, Tape, and Frame with Next, and the last step saves. Your wall is still there when you come back, and Make a new one after saving moves it to Recent. When you start over, Keep and start over leaves the current work in Recent. Text in the bottom sheet follows the iOS text size setting, and with VoiceOver you can also move photos and change their size and angle."
    ],
    "bullets": [],
    "visual": {
@@ -114,7 +114,7 @@
   {
    "q": "Adding photos",
    "a": [
-    "On the start screen, tap Add photos, then choose your photos. You can also drag photos in from another app. While editing, tap Add in the Photos step.",
+    "On the start screen, tap Add photos, then choose your photos. You can also drag photos in from another app. While editing, tap Add in the Photos step. Take Photo and Choose File in the menu let you shoot a photo or pick an image from Files. When you replace a photo or pick My photo as the background, you choose Photo Library, Take Photo, or Choose File.",
     "Each wallpaper holds up to 12 photos, or 30 with Tapey Pro. The Heart layout appears once you have 6 or more. Circle needs 8 or more, and Star, a Tapey Pro layout, needs 10 or more."
    ]
   },
@@ -122,7 +122,7 @@
    "q": "Where saved wallpapers go",
    "a": [
     "Tap the save button at the top right of the editor, or Save on the last step. The wallpaper goes to the Photos app as a PNG at the resolution chosen in Settings. The first time, iOS asks whether Tapey may add photos.",
-    "If saving fails, allow photo access in Settings > Tapey."
+    "If saving fails, allow photo access in Settings > Tapey. Open Settings in the notice takes you straight there."
    ]
   },
   {
@@ -149,14 +149,14 @@
   {
    "q": "Where your work is kept",
    "a": [
-    "Copies of the photos and background photos you pick, along with the layout and notes, are kept in the app's storage so you can pick up where you left off. Start over in the menu clears the current work, and deleting the app removes everything.",
+    "Copies of the photos and background photos you pick, along with the layout and notes, are kept in the app's storage so you can pick up where you left off. Start over in the menu, then Start over, clears the current work. Keep and start over moves it to Recent before starting fresh. Deleting the app removes everything.",
     "Tapping Make a new one after saving moves the current work to Recent. Recent keeps 3 projects and drops the oldest when a new one comes in."
    ]
   },
   {
    "q": "Setting the wallpaper",
    "a": [
-    "Open the image you just saved in the Photos app, tap Share, then choose Use as Wallpaper. Pick Lock Screen and tap Set.",
+    "Open the image you just saved in the Photos app, tap Share, then choose Use as Wallpaper. Tap Add, then choose Set as Wallpaper Pair.",
     "The same steps are under How to set it as wallpaper on the screen that appears after saving."
    ]
   },
@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Tapey Privacy Policy",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-15",
   "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Tapey Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -204,7 +204,7 @@
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [
-     "Copies of the photos and background photos you pick: used to reopen your work",
+     "Copies of the photos and background photos you pick or take: used to reopen your work",
      "Layout and decoration settings, photo notes: used to reopen your work",
      "Up to 3 recent projects with preview images: used for Recent on the start screen",
      "Language choice, Tapey Pro purchase status, save count and whether the rating request was shown, whether the first-run guides were shown, view mode choice, screen layout settings carried over from an earlier version: used to run the app and to time the rating request"
@@ -213,7 +213,7 @@
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The preview file made for sharing when you save is kept in a temporary folder and removed the next time the app opens. Wallpapers saved to the Photos app are deleted in the Photos app.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. Wallpapers saved to the Photos app are deleted in the Photos app.",
      "Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +256,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "Only the photos you choose in the iOS photo picker or drag into the app are passed to the app. The app does not ask for camera access or for permission to read your photo library. When saving a finished wallpaper, the app uses only the permission to add photos."
+     "Only photos you choose in the iOS photo picker or file picker, drag into the app, or take with Take Photo are passed to the app. iOS asks for camera access the first time you tap Take Photo. If you decline, you can still add photos the other ways. A photo you take is kept as a copy in the app's storage, like the photos you pick, and is used only for your wallpaper work. It is not saved separately to the Photos app, and the developer does not receive it. The app does not ask for permission to read your photo library. When saving a finished wallpaper, the app uses only the permission to add photos."
     ],
     "bullets": []
    },
@@ -311,7 +311,8 @@
    {
     "title": "Changes to this policy",
     "paragraphs": [
-     "If this policy changes, this page will show what changed and the new effective date."
+     "If this policy changes, this page will show what changed and the new effective date.",
+     "2026-10-15: Added photos taken with Take Photo, images chosen with Choose File, and camera access to Information processed and Security measures. Corrected the temporary file for sharing to a copy of the saved wallpaper. The previous effective date was 2026-10-06."
     ],
     "bullets": []
    }

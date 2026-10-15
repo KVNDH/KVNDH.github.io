@@ -30,7 +30,7 @@
    "layout": "feat",
    "title": "Cinta y marcos",
    "body": [
-    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano."
+    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano. Los cambios de fondo, cinta y marco también se pueden deshacer."
    ],
    "bullets": [
     "8 colores de cinta, 4 patrones y 8 patrones Pro",
@@ -73,19 +73,19 @@
    "layout": "card",
    "title": "A la medida de la pantalla bloqueada",
    "body": [
-    "La hora actual está sobre el lienzo igual que el reloj de tu pantalla bloqueada. Arrastra el tirador para fijar el espacio del reloj y las fotos bajan por debajo. También puedes dejar sitio para los widgets, y la resolución se ajusta a tu dispositivo desde el principio."
+    "La hora actual está sobre el lienzo igual que el reloj de tu pantalla bloqueada. Arrastra el tirador para fijar el espacio del reloj y las fotos bajan por debajo. También puedes dejar sitio para los widgets, y la resolución se ajusta a tu dispositivo desde el principio. En un iPhone plegable, Resolución ofrece por separado Pantalla exterior del Duo y Pantalla interior del Duo. Plegado, los botones de los pasos se colocan en vertical en la franja junto a la pantalla. Desplegado, el editor queda en el centro de la pantalla ancha."
    ],
    "bullets": [
     "Espacio del reloj ajustable",
     "Zona de widgets reservada",
-    "Resoluciones de iPhone y iPad"
+    "Resoluciones de iPhone, iPad e iPhone plegable"
    ]
   },
   {
    "layout": "card",
    "title": "Empieza por tus fotos",
    "body": [
-    "Sin cuenta y sin nada que iniciar. Pasa por Fotos, Reloj, Diseño, Fondo, Cinta y Marco con Siguiente, y el último paso guarda. Tu fondo sigue ahí cuando vuelves, y Crear uno nuevo después de guardar lo manda a Recientes."
+    "Sin cuenta y sin nada que iniciar. Pasa por Fotos, Reloj, Diseño, Fondo, Cinta y Marco con Siguiente, y el último paso guarda. Tu fondo sigue ahí cuando vuelves, y Crear uno nuevo después de guardar lo manda a Recientes. Al empezar de nuevo, Conservar y empezar de nuevo deja el trabajo actual en Recientes. El texto de la hoja inferior sigue el ajuste de tamaño de texto de iOS, y con VoiceOver también puedes mover fotos y cambiar su tamaño y ángulo."
    ],
    "bullets": [],
    "visual": {
@@ -114,7 +114,7 @@
   {
    "q": "Añadir fotos",
    "a": [
-    "En la pantalla de inicio, toca Añadir fotos y elige tus fotos. También puedes arrastrar fotos desde otra app. Mientras editas, toca Añadir en el paso Fotos.",
+    "En la pantalla de inicio, toca Añadir fotos y elige tus fotos. También puedes arrastrar fotos desde otra app. Mientras editas, toca Añadir en el paso Fotos. Con Hacer foto y Seleccionar archivo, en el menú, puedes hacer una foto al momento o elegir una imagen de Archivos. Al cambiar una foto o elegir Mi foto como fondo, eliges entre Fototeca, Hacer foto y Seleccionar archivo.",
     "En cada fondo caben hasta 12 fotos, o 30 con Tapey Pro. El diseño Corazón aparece cuando tienes 6 o más. Círculo necesita 8 o más, y Estrella, un diseño de Tapey Pro, 10 o más."
    ]
   },
@@ -122,7 +122,7 @@
    "q": "Dónde van los fondos guardados",
    "a": [
     "Toca el botón de guardar, arriba a la derecha del editor, o Guardar en el último paso. El fondo pasa a la app Fotos como PNG, en la resolución elegida en Ajustes. La primera vez, iOS pregunta si Tapey puede añadir fotos.",
-    "Si guardar falla, permite el acceso a fotos en Ajustes > Tapey."
+    "Si guardar falla, permite el acceso a fotos en Ajustes > Tapey. Abrir Ajustes, en el aviso, te lleva directamente ahí."
    ]
   },
   {
@@ -149,14 +149,14 @@
   {
    "q": "Dónde se guarda tu trabajo",
    "a": [
-    "Las copias de las fotos y de las fotos de fondo que eliges, junto con la disposición y las notas, se guardan en el almacenamiento de la app para que puedas seguir donde lo dejaste. Empezar de nuevo, en el menú, borra el trabajo actual, y al eliminar la app desaparece todo.",
+    "Las copias de las fotos y de las fotos de fondo que eliges, junto con la disposición y las notas, se guardan en el almacenamiento de la app para que puedas seguir donde lo dejaste. Empezar de nuevo, en el menú, y después Empezar de nuevo borra el trabajo actual. Conservar y empezar de nuevo lo pasa antes a Recientes y luego empieza de cero. Al eliminar la app desaparece todo.",
     "Si tocas Crear uno nuevo después de guardar, el trabajo actual pasa a Recientes. Recientes conserva 3 proyectos y retira el más antiguo cuando entra uno nuevo."
    ]
   },
   {
    "q": "Poner el fondo de pantalla",
    "a": [
-    "Abre en la app Fotos la imagen que acabas de guardar, toca Compartir y elige Usar como fondo de pantalla. Elige Pantalla bloqueada y toca Establecer.",
+    "Abre en la app Fotos la imagen que acabas de guardar, toca Compartir y elige Usar de fondo de pantalla. Toca Añadir y elige Definir como pareja de fondos.",
     "Esos mismos pasos están en Cómo ponerlo de fondo de pantalla, en la pantalla que aparece después de guardar."
    ]
   },
@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Tapey",
-  "effectiveDate": "2026-10-06",
+  "effectiveDate": "2026-10-15",
   "summary": "El desarrollador no recoge información personal. El anuncio que aparece al guardar viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Tapey Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Tapey (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -204,7 +204,7 @@
      "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
     ],
     "bullets": [
-     "Copias de las fotos y de las fotos de fondo que eliges: para volver a abrir tu trabajo",
+     "Copias de las fotos y de las fotos de fondo que eliges o haces: para volver a abrir tu trabajo",
      "Disposición, ajustes de decoración y notas de las fotos: para volver a abrir tu trabajo",
      "Hasta 3 proyectos recientes con imágenes de vista previa: para Recientes en la pantalla de inicio",
      "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, si ya se mostraron las guías iniciales, modo de vista elegido y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración"
@@ -213,7 +213,7 @@
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. El archivo de vista previa para compartir, que se crea al guardar, queda en una carpeta temporal y se elimina la próxima vez que se abre la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. La copia del fondo para compartir, que se crea al guardar, queda en una carpeta temporal y se elimina la próxima vez que se abre la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +256,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "A la app solo llegan las fotos que eliges en el selector de fotos de iOS o que arrastras a la app. La app no pide acceso a la cámara ni permiso para leer tu fototeca. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
+     "A la app solo llegan las fotos que eliges en el selector de fotos o de archivos de iOS, que arrastras a la app o que haces con Hacer foto. iOS pide acceso a la cámara la primera vez que tocas Hacer foto. Si no lo permites, puedes seguir añadiendo fotos de las otras formas. Una foto que haces se guarda como copia en el almacenamiento de la app, igual que las fotos que eliges, y solo se usa para el trabajo de tu fondo. No se guarda aparte en la app Fotos, y el desarrollador no la recibe. La app no pide permiso para leer tu fototeca. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
     ],
     "bullets": []
    },
@@ -311,7 +311,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor.",
+     "2026-10-15: se añadieron a «Información que se trata» y a «Medidas de seguridad» las fotos hechas con Hacer foto, las imágenes elegidas con Seleccionar archivo y el acceso a la cámara. El archivo temporal para compartir ahora se describe como una copia del fondo guardado. La fecha de entrada en vigor anterior era el 2026-10-06."
     ],
     "bullets": []
    }
