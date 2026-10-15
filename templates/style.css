@@ -83,7 +83,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /*h*/.acts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:22px;font-size:14.5px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;background:var(--k);color:var(--on);font-size:15px;font-weight:650;white-space:nowrap;transition:transform .2s}
 .btn:hover{transform:translateY(-1px)}
-.btn-s{min-height:40px;padding:0 14px;font-size:13.5px}
+.btn-s{min-height:44px;padding:0 14px;font-size:13.5px}
 .btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--ln)}
 /*h*/.lnk{display:inline-flex;align-items:center;min-height:44px;font-weight:650;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}
 /*h*/.lnk:hover{text-decoration-color:currentColor}
@@ -96,7 +96,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* 끝 */
 .foot{position:relative;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.4fr;gap:28px 40px;margin:0 22px;padding:56px 64px 64px;border-top:1px solid var(--ln);font-size:14px;color:var(--t2)}
 .foot h2{margin-bottom:6px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
-.foot a{display:inline-flex;align-items:center;min-height:36px}
+.foot a{display:inline-flex;align-items:center;min-height:44px}
 .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px}
 .foot .wm{color:var(--tx)}
 /*h*/.foot .langs{display:flex;flex-wrap:wrap;gap:0 16px}
@@ -326,7 +326,7 @@ html{scroll-padding-top:72px}
 .print{flex:0 0 68%;padding:10px 10px 32px;scroll-snap-align:center}
 .print:nth-child(2){margin-top:0}
 .print .lab{left:10px;bottom:9px}
-.feat{grid-template-columns:1fr;gap:28px;margin:0 10px;padding:52px 20px}
+.feat{grid-template-columns:minmax(0,1fr);gap:28px;margin:0 10px;padding:52px 20px}
 .feat-rev .feat-vis{order:0}
 .feat h2,.card h2{font-size:30px}
 .body,.card .body{margin-top:12px;font-size:16px}
@@ -348,6 +348,8 @@ html{scroll-padding-top:72px}
 .cells{width:100%;gap:3px}
 .cells i{height:12px}
 .ticks{gap:6px}
+.lv{max-width:100%}
+.lv i{flex:0 1 26px;min-width:0;height:auto;aspect-ratio:1}
 .duo{grid-template-columns:minmax(0,1fr);margin:0 10px}
 .card{padding:44px 20px}
 .card+.card{border-left:0;border-top:1px solid var(--ln)}
