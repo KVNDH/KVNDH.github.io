@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Quanto de atraso, checkpoint por checkpoint",
    "body": [
-    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo."
+    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo. Quando você caminha até um checkpoint com Early is fine ou até um ponto de onde sai sua condução, uma linha como Plenty of time ou Tight diz se você chega a tempo no passo atual."
    ],
    "bullets": [
     "Minutos e segundos de adiantamento ou atraso",
@@ -50,12 +50,12 @@
    "layout": "card",
    "title": "Sem tirar o iPhone do bolso",
    "body": [
-    "Na hora de sair, toca o lembrete de saída que você ativou para o trajeto, e um toque nele inicia esse trajeto. Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. Se você sair da janela de horário, recebe um alerta. Ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto para a hora do dia; o trajeto para sozinho dois minutos depois da chegada."
+    "Na hora de sair, toca o lembrete de saída que você ativou para o trajeto, e um toque nele inicia esse trajeto. Durante o trajeto, o cartão na Tela Bloqueada e a Dynamic Island mostram a diferença e o próximo checkpoint. A Pilha Inteligente do Apple Watch e o CarPlay também mostram isso num cartão pequeno. Se você se atrasar, um som toca a cada minuto de atraso, até cinco, com tantas notas quanto os minutos, e assim você sabe pelo som quanto está atrasado. Adiantado, fica em silêncio. Ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto para a hora do dia; o trajeto para sozinho dois minutos depois da chegada."
    ],
    "bullets": [
     "Lembrete de saída para cada trajeto",
     "Cartão na Tela Bloqueada e Dynamic Island",
-    "Alerta ao sair da janela de horário",
+    "Um som a cada minuto de atraso",
     "Início pela Central de Controle e pela Siri"
    ]
   },
@@ -102,19 +102,25 @@
   {
    "q": "O cartão na Tela Bloqueada não aparece",
    "a": [
-    "Ative Ajustes > OnPace > Atividades ao Vivo. Se o cartão não puder aparecer, o app avisa com uma notificação, desde que as notificações estejam ativadas."
+    "Ative Ajustes > OnPace > Atividades ao Vivo. Mesmo sem o cartão, o som de atraso continua tocando."
+   ]
+  },
+  {
+   "q": "O som de atraso",
+   "a": [
+    "Com um minuto de atraso toca uma nota, com dois minutos tocam duas, e assim por diante até cinco. Conta só minutos inteiros, seja qual for a janela de horário, e adiantado fica em silêncio. O som usa o volume de mídia mesmo com o iPhone no modo silencioso, e a música que você ouve abaixa por um instante. Nos ajustes do OnPace, em Pace, você desativa Sound when running late ou ouve em Preview os sons de um a cinco minutos."
    ]
   },
   {
    "q": "Ativar um lembrete de saída",
    "a": [
-    "Na tela Route, em Schedule, defina Departure reminder como At departure, 5 min before, 10 min before ou 15 min before. Na primeira vez que você ativa um, o OnPace pede permissão para notificações. Tocar no lembrete inicia esse trajeto. Com o Pro você escolhe Days para um trajeto, e o lembrete toca só nesses dias. Se as notificações estiverem desativadas, ative em Ajustes > OnPace > Notificações."
+    "Na tela Route, em Schedule, defina Departure reminder como At departure, 5 min before, 10 min before ou 15 min before. Na primeira vez que você ativa um, o OnPace pede permissão para notificações. As notificações servem só para os lembretes de saída. Tocar no lembrete inicia esse trajeto. Com o Pro você escolhe Days para um trajeto, e o lembrete toca só nesses dias. Se as notificações estiverem desativadas, ative em Ajustes > OnPace > Notificações."
    ]
   },
   {
    "q": "O trajeto escolhido muda sozinho",
    "a": [
-    "Com dois trajetos ou mais, ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto cuja próxima saída está mais perto. Se você disser à Siri o nome de um trajeto, é esse que começa. Uma saída que passou há menos de uma hora ainda conta. Um trajeto que você mesmo escolheu na última hora fica como está. Abrir o app no meio do caminho não muda nada, e o trajeto em andamento segue o mesmo até o fim."
+    "Com dois trajetos ou mais, ao abrir o app ou começar pela Central de Controle ou pela Siri sem indicar um trajeto, o OnPace escolhe o trajeto cuja próxima saída está mais perto. Se você disser à Siri o nome de um trajeto, é esse que começa. Uma saída que passou há menos de uma hora ainda conta. Um trajeto que você mesmo escolheu na última hora fica como está. Abrir o app no meio do caminho não muda nada, e o trajeto em andamento segue o mesmo até o fim. Se você começar de novo pela Central de Controle ou pela Siri no meio do trajeto, o trajeto escolhido não muda e a Siri responde que ele já está em andamento."
    ]
   },
   {
@@ -144,7 +150,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do OnPace",
-  "effectiveDate": "2026-10-02",
+  "effectiveDate": "2026-10-15",
   "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas, a busca de lugares próximos para nomear os checkpoints e a compra do Pro ficam a cargo da Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app OnPace (o app) conforme descrito a seguir."
@@ -208,7 +214,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir caminhada de deslocamento em veículo. Os alertas de janela de horário e os lembretes de saída que você ativa são notificações locais: criadas no aparelho e tocadas no aparelho."
+     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir caminhada de deslocamento em veículo. Os lembretes de saída que você ativa são notificações locais: criados no aparelho e tocados no aparelho. O som de atraso é um arquivo de som do próprio app, tocado no aparelho."
     ],
     "bullets": []
    },
@@ -256,6 +262,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
+     "2026-10-15: a versão 1.0.2 trocou os alertas de janela de horário pelo som de atraso, e a frase sobre notificações em “Medidas de segurança” foi corrigida. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-02.",
      "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca no Mapas da Apple de nomes para checkpoints sem nome próprio foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
     ],
     "bullets": []

@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Wie spät, Punkt für Punkt",
    "body": [
-    "Legen Sie fest, wann Sie ein paar Punkte auf Ihrem Weg passieren: Haustür, Straßenecke, Bushaltestelle, Büro. Unterwegs vergleicht OnPace, wo Sie sind, mit der Stelle, an der Sie laut Plan sein sollten, und zeigt den Abstand in großen Minuten und Sekunden. Die App navigiert nicht. Sie sagt Ihnen, ob Sie sich beeilen müssen."
+    "Legen Sie fest, wann Sie ein paar Punkte auf Ihrem Weg passieren: Haustür, Straßenecke, Bushaltestelle, Büro. Unterwegs vergleicht OnPace, wo Sie sind, mit der Stelle, an der Sie laut Plan sein sollten, und zeigt den Abstand in großen Minuten und Sekunden. Die App navigiert nicht. Sie sagt Ihnen, ob Sie sich beeilen müssen. Gehen Sie auf einen Kontrollpunkt mit Early is fine zu oder auf eine Haltestelle, an der Ihr Bus oder Zug abfährt, sagt eine Zeile wie Plenty of time oder Tight, ob Sie es im jetzigen Tempo rechtzeitig schaffen."
    ],
    "bullets": [
     "Vorsprung oder Rückstand in Minuten und Sekunden",
@@ -50,12 +50,12 @@
    "layout": "card",
    "title": "Ohne das iPhone herauszuholen",
    "body": [
-    "Ist es Zeit zum Aufbruch, meldet sich die Abfahrtserinnerung, die Sie für die Route eingeschaltet haben; ein Tippen darauf startet diese Route. Unterwegs zeigen die Karte auf dem Sperrbildschirm und die Dynamic Island den Abstand und den nächsten Kontrollpunkt. Verlassen Sie das Zeitfenster, kommt einmal ein Hinweis. Öffnen Sie die App oder starten Sie über das Kontrollzentrum oder Siri, ohne eine Route zu nennen, wählt OnPace die Route zur Tageszeit; zwei Minuten nach der Ankunft endet der Weg von selbst."
+    "Ist es Zeit zum Aufbruch, meldet sich die Abfahrtserinnerung, die Sie für die Route eingeschaltet haben; ein Tippen darauf startet diese Route. Unterwegs zeigen die Karte auf dem Sperrbildschirm und die Dynamic Island den Abstand und den nächsten Kontrollpunkt. Auch der Smart Stack der Apple Watch und CarPlay zeigen das auf einer kleinen Karte. Geraten Sie in Verzug, erklingt bis zur fünften Minute zu jeder vollen Minute ein Ton, mit so vielen Noten wie Minuten, sodass Sie schon am Klang hören, wie spät Sie dran sind. Sind Sie früh, bleibt es still. Öffnen Sie die App oder starten Sie über das Kontrollzentrum oder Siri, ohne eine Route zu nennen, wählt OnPace die Route zur Tageszeit; zwei Minuten nach der Ankunft endet der Weg von selbst."
    ],
    "bullets": [
     "Abfahrtserinnerung für jede Route",
     "Karte auf dem Sperrbildschirm und Dynamic Island",
-    "Hinweis beim Verlassen des Zeitfensters",
+    "Ein Ton für jede Minute Verspätung",
     "Start über Kontrollzentrum und Siri"
    ]
   },
@@ -102,19 +102,25 @@
   {
    "q": "Die Karte auf dem Sperrbildschirm erscheint nicht",
    "a": [
-    "Schalten Sie Einstellungen > OnPace > Live-Aktivitäten ein. Kann die Karte nicht erscheinen, meldet sich die App stattdessen mit einer Mitteilung, sofern Mitteilungen erlaubt sind."
+    "Schalten Sie Einstellungen > OnPace > Live-Aktivitäten ein. Auch ohne Karte erklingt der Ton bei Verspätung."
+   ]
+  },
+  {
+   "q": "Der Ton bei Verspätung",
+   "a": [
+    "Eine Minute zu spät spielt eine Note, zwei Minuten spielen zwei, und so weiter bis fünf. Gezählt werden nur volle Minuten, unabhängig vom Zeitfenster; sind Sie früh, bleibt es still. Der Ton kommt auch im Stummmodus mit der Medienlautstärke, und laufende Musik wird kurz leiser. In den Einstellungen von OnPace unter Pace schalten Sie Sound when running late aus oder hören sich mit Preview die Töne für eine bis fünf Minuten an."
    ]
   },
   {
    "q": "Abfahrtserinnerung einschalten",
    "a": [
-    "Stellen Sie auf dem Bildschirm Route unter Schedule die Departure reminder auf At departure, 5 min before, 10 min before oder 15 min before. Beim ersten Einschalten fragt OnPace nach der Erlaubnis für Mitteilungen. Ein Tippen auf die Erinnerung startet diese Route. Mit Pro wählen Sie unter Days die Tage einer Route, und die Erinnerung kommt nur an diesen Tagen. Sind Mitteilungen aus, schalten Sie sie unter Einstellungen > OnPace > Mitteilungen ein."
+    "Stellen Sie auf dem Bildschirm Route unter Schedule die Departure reminder auf At departure, 5 min before, 10 min before oder 15 min before. Beim ersten Einschalten fragt OnPace nach der Erlaubnis für Mitteilungen. Mitteilungen dienen nur den Abfahrtserinnerungen. Ein Tippen auf die Erinnerung startet diese Route. Mit Pro wählen Sie unter Days die Tage einer Route, und die Erinnerung kommt nur an diesen Tagen. Sind Mitteilungen aus, schalten Sie sie unter Einstellungen > OnPace > Mitteilungen ein."
    ]
   },
   {
    "q": "Die gewählte Route wechselt von selbst",
    "a": [
-    "Bei zwei oder mehr Routen wählt OnPace beim Öffnen der App und beim Start über das Kontrollzentrum oder Siri ohne Angabe einer Route die Route, deren nächste Abfahrt am nächsten liegt. Nennen Sie Siri eine Route, startet diese. Eine Abfahrt, die weniger als eine Stunde zurückliegt, zählt noch mit. Eine Route, die Sie in der letzten Stunde selbst gewählt haben, bleibt. Öffnen Sie die App während eines Wegs, wechselt nichts, und der laufende Weg behält seine Route bis zum Ende."
+    "Bei zwei oder mehr Routen wählt OnPace beim Öffnen der App und beim Start über das Kontrollzentrum oder Siri ohne Angabe einer Route die Route, deren nächste Abfahrt am nächsten liegt. Nennen Sie Siri eine Route, startet diese. Eine Abfahrt, die weniger als eine Stunde zurückliegt, zählt noch mit. Eine Route, die Sie in der letzten Stunde selbst gewählt haben, bleibt. Öffnen Sie die App während eines Wegs, wechselt nichts, und der laufende Weg behält seine Route bis zum Ende. Starten Sie während eines Wegs erneut über das Kontrollzentrum oder Siri, bleibt die gewählte Route, und Siri antwortet, dass sie schon läuft."
    ]
   },
   {
@@ -144,7 +150,7 @@
  ],
  "privacy": {
   "title": "OnPace Datenschutzerklärung",
-  "effectiveDate": "2026-10-02",
+  "effectiveDate": "2026-10-15",
   "summary": "OnPace erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Routen und Wege liegen auf Ihrem Gerät, und Ortssuche, Routenplanung, die Suche nach Orten in der Nähe für Namen von Kontrollpunkten und den Kauf von Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App OnPace (die App) wie folgt."
@@ -208,7 +214,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App nutzt, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt kein iCloud. Den Standort fragt die App nur „Beim Verwenden der App“ an; im Hintergrund nutzt sie ihn nur während eines Wegs, den Sie gestartet haben, und so lange bleibt die Karte auf dem Sperrbildschirm sichtbar. Bewegungs- und Fitnessdaten dienen nur dazu, Gehen und Fahren zu unterscheiden. Hinweise zum Zeitfenster und die Abfahrtserinnerungen, die Sie einschalten, sind lokale Mitteilungen: auf dem Gerät erzeugt und auf dem Gerät zugestellt."
+     "Was die App nutzt, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt kein iCloud. Den Standort fragt die App nur „Beim Verwenden der App“ an; im Hintergrund nutzt sie ihn nur während eines Wegs, den Sie gestartet haben, und so lange bleibt die Karte auf dem Sperrbildschirm sichtbar. Bewegungs- und Fitnessdaten dienen nur dazu, Gehen und Fahren zu unterscheiden. Die Abfahrtserinnerungen, die Sie einschalten, sind lokale Mitteilungen: auf dem Gerät erzeugt und auf dem Gerät zugestellt. Der Ton bei Verspätung ist eine Tondatei in der App und wird auf dem Gerät abgespielt."
     ],
     "bullets": []
    },
@@ -256,6 +262,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-10-15: Mit Version 1.0.2 wurden die Hinweise zum Zeitfenster durch den Ton bei Verspätung ersetzt; der Satz zu Mitteilungen unter „Maßnahmen zur Sicherheit“ wurde angepasst. Es werden keine neuen Daten verarbeitet. Das vorherige Datum des Inkrafttretens war der 2026-10-02.",
      "2026-10-02: Für Version 1.0.1 wurden Abfahrtserinnerung, Tage und der Zeitpunkt, zu dem Sie zuletzt selbst eine Route gewählt haben, unter „Verarbeitete Daten“ ergänzt, die Suche nach Namen in Apple Karten für Kontrollpunkte ohne eigenen Namen unter „Auftragsverarbeitung“ und Abfahrtserinnerungen unter „Maßnahmen zur Sicherheit“. Das vorherige Datum des Inkrafttretens war der 2026-09-26."
     ],
     "bullets": []

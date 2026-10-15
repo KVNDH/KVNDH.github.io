@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "How late, checkpoint by checkpoint",
    "body": [
-    "Set the times you pass a few points on the way: leaving home, the corner, the bus stop, the office. While you move, OnPace compares where you are with where the plan says you should be and shows the gap in minutes and seconds, in large type. It does not give directions. It tells you whether to hurry."
+    "Set the times you pass a few points on the way: leaving home, the corner, the bus stop, the office. While you move, OnPace compares where you are with where the plan says you should be and shows the gap in minutes and seconds, in large type. It does not give directions. It tells you whether to hurry. When you walk toward a checkpoint set to Early is fine, or a stop where your ride leaves, one line says whether you will make it at your current pace, from Plenty of time to You may miss it."
    ],
    "bullets": [
     "Minutes and seconds ahead of or behind plan",
@@ -50,12 +50,12 @@
    "layout": "card",
    "title": "Without taking out your phone",
    "body": [
-    "When it is time to leave, the departure reminder you turned on for the route goes off, and tapping it starts that route. During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. Drift out of the window and you get one alert. When you open the app, or start from Control Center or Siri without naming a route, OnPace picks the route for the time of day, and the trip stops on its own two minutes after you arrive."
+    "When it is time to leave, the departure reminder you turned on for the route goes off, and tapping it starts that route. During a trip the Lock Screen card and the Dynamic Island show the gap and the next checkpoint. The Apple Watch Smart Stack and CarPlay show it too, on a small card. Fall behind and a sound plays at each minute late, up to five, with one note for each minute, so you can tell how late you are by ear. Running early stays silent. When you open the app, or start from Control Center or Siri without naming a route, OnPace picks the route for the time of day, and the trip stops on its own two minutes after you arrive."
    ],
    "bullets": [
     "A departure reminder for each route",
     "Lock Screen card and Dynamic Island",
-    "An alert when you drift out of the window",
+    "A sound for each minute late",
     "Start from Control Center or Siri"
    ]
   },
@@ -102,19 +102,25 @@
   {
    "q": "The Lock Screen card doesn't appear",
    "a": [
-    "Turn on Settings > OnPace > Live Activities. If the card can't be shown, the app sends a notification instead, as long as notifications are on."
+    "Turn on Settings > OnPace > Live Activities. Without the card, the late sound still plays."
+   ]
+  },
+  {
+   "q": "The sound when you run late",
+   "a": [
+    "One minute late plays one note, two minutes plays two, and so on up to five. It counts whole minutes whatever the window, and running early stays silent. The sound plays at media volume even in silent mode, and music you are playing dips for a moment. In OnPace settings, under Pace, turn off Sound when running late, or use Preview to hear the sounds for one to five minutes."
    ]
   },
   {
    "q": "Turning on a departure reminder",
    "a": [
-    "On the Route screen, under Schedule, set Departure reminder to At departure, 5 min before, 10 min before or 15 min before. OnPace asks for notification permission the first time you turn one on. Tap the reminder to start that route. With Pro you can choose Days for a route, and the reminder goes off only on those days. If notifications are off, turn them on in Settings > OnPace > Notifications."
+    "On the Route screen, under Schedule, set Departure reminder to At departure, 5 min before, 10 min before or 15 min before. OnPace asks for notification permission the first time you turn one on. Notifications are used only for departure reminders. Tap the reminder to start that route. With Pro you can choose Days for a route, and the reminder goes off only on those days. If notifications are off, turn them on in Settings > OnPace > Notifications."
    ]
   },
   {
    "q": "The chosen route changes on its own",
    "a": [
-    "With two or more routes, OnPace picks the one whose next departure is closest when you open the app, or when you start from Control Center or Siri without naming a route. Name a route to Siri and that route starts. A departure that passed less than an hour ago still counts. A route you chose yourself in the last hour stays as it is. Opening the app during a trip changes nothing, and the trip keeps its route until it ends."
+    "With two or more routes, OnPace picks the one whose next departure is closest when you open the app, or when you start from Control Center or Siri without naming a route. Name a route to Siri and that route starts. A departure that passed less than an hour ago still counts. A route you chose yourself in the last hour stays as it is. Opening the app during a trip changes nothing, and the trip keeps its route until it ends. Starting again from Control Center or Siri during a trip leaves the chosen route as it is, and Siri says the route is already running."
    ]
   },
   {
@@ -144,7 +150,7 @@
  ],
  "privacy": {
   "title": "OnPace Privacy Policy",
-  "effectiveDate": "2026-10-02",
+  "effectiveDate": "2026-10-15",
   "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions, looking up nearby places to name checkpoints and the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the OnPace app (the app) as described below."
@@ -208,7 +214,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only to tell walking from riding. Pace alerts and the departure reminders you turn on are local notifications: made on the device and delivered on the device."
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only to tell walking from riding. The departure reminders you turn on are local notifications: made on the device and delivered on the device. The late sound is a sound file inside the app, played on the device."
     ],
     "bullets": []
    },
@@ -256,6 +262,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-10-15: Version 1.0.2 replaced pace alerts with the late sound, so the sentence on notifications in Security measures was corrected. No new personal information is processed. The previous effective date was 2026-10-02.",
      "2026-10-02: For version 1.0.1, the departure reminder, days and the time you last picked a route were added to Personal information processed, looking up names in Apple Maps for checkpoints you have not named was added to Outsourcing of processing, and departure reminders were added to Security measures. The previous effective date was 2026-09-26."
     ],
     "bullets": []
