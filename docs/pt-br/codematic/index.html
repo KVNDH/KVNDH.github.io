@@ -31,7 +31,9 @@
 <meta name="apple-itunes-app" content="app-id=6819201504">
 <style>:root{--k:#1A1A1A;--tx:#1A1A1A;--t2:#707079;--ln:#D3D3D7;--dot:#E63946;--paper:#FBFAF7;--desk:#E7E6E2;--pl:#FFFFFF;--on:#FBFAF7;--grain:url(/assets/paper.png);--mono:ui-monospace,SFMono-Regular,Menlo,monospace;--slot:min(340px,34vw);--sh:0 30px 80px -30px rgba(40,36,28,.28),0 2px 6px rgba(40,36,28,.06);color-scheme:light dark}
 /* 2026-10-16 화첩: 세로로 긴 흰 종이 한 장에 앱 아이콘 판을 원화처럼 건다. 색은 먹(--k), 안개(--t2), 은(--ln) 셋이고
-   버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다 */
+   버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다.
+   줄머리 표시 h(주석)는 허브에서만, s 는 허브가 아닌 페이지(소개, 지원, 개인정보, 404)에서만 쓰는 규칙이다.
+   render.css 가 페이지에 맞지 않는 줄을 뺀다 */
 @media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#D3D3D7;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
 *,*::before,*::after{box-sizing:border-box}
 h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
@@ -44,14 +46,9 @@ img{display:block;max-width:none}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--k);outline-offset:4px;border-radius:6px}
 :focus:not(:focus-visible){outline:none}
-.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-999px;top:0;z-index:60}
 .skip:focus{left:16px;top:12px;padding:10px 14px;border-radius:8px;background:var(--k);color:var(--on)}
 .mono,.lab,.readout,.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--t2)}
-#gl{position:fixed;inset:0;width:100vw;height:100vh;z-index:30;pointer-events:none;display:block}
-html:not(.gl-on):not(.gl-wait) #gl{display:none}
-.gl-only{display:none}
-.gl-on .gl-only{display:block}
 /* 머리 띠: 낱말표, 번호 점, 언어 */
 .top{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 28px;pointer-events:none}
 .top>*{pointer-events:auto}
@@ -79,18 +76,7 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 .ruler{position:absolute;top:22px;bottom:22px;left:22px;width:14px;pointer-events:none;background:repeating-linear-gradient(to bottom,var(--ln) 0 1px,transparent 1px 48px);-webkit-mask:linear-gradient(90deg,#000 0 6px,transparent 6px);mask:linear-gradient(90deg,#000 0 6px,transparent 6px)}
 @media (prefers-color-scheme:dark){.sheet{box-shadow:none;border-left:1px solid var(--ln);border-right:1px solid var(--ln)}}
 /* 첫 화면(허브) */
-.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
-.hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
-.lede{margin-top:16px;font-size:18px;color:var(--t2)}
-.cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh)}
-.fan{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
-.fan .row{display:flex;gap:10px}
-.fan img{width:72px;height:72px;border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
-.gl-on .fan,.gl-wait .fan{visibility:hidden}
-.cue{display:flex;justify-content:center;gap:18px}
 /* 원화 한 점 */
-.piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
-.piece:nth-of-type(even) .frame{order:2}
 .frame{position:relative;justify-self:center;width:calc(var(--slot) + 96px);aspect-ratio:1;display:grid;place-items:center}
 .frame::before,.frame::after,.tick,.tick2{content:"";position:absolute;width:22px;height:22px;border:0 solid var(--k)}
 .frame::before{top:0;left:0;border-top-width:1px;border-left-width:1px}
@@ -98,55 +84,25 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 .tick{top:0;right:0;border-top-width:1px;border-right-width:1px}
 .tick2{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
 .frame .lab{position:absolute;top:-24px;left:0}
-.frame .readout{position:absolute;bottom:-24px;right:0;white-space:pre}
-html:not(.gl-on) .readout{visibility:hidden}
-.slot{position:relative;display:block;width:var(--slot);aspect-ratio:1;border-radius:22.5%}
-.slot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 24px 40px -22px rgba(26,26,26,.45),0 4px 10px -4px rgba(26,26,26,.18)}
-.gl-on [data-plate] img,.gl-wait [data-plate] img,.gl-on .vslot img{visibility:hidden}
-.slot:focus-visible{outline-offset:10px;border-radius:24%}
 .cap{max-width:30em;text-align:left}
 .cap h2{font-size:clamp(34px,4vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.04em}
 .cap h2 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
-.cap .sub,.vtext .sub{margin-top:10px;font-size:19px;font-weight:650;letter-spacing:-.015em}
-.cap .hook,.vtext .hook{margin-top:12px;color:var(--t2)}
-.acts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:22px;font-size:14.5px}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;background:var(--k);color:var(--on);font-size:15px;font-weight:650;white-space:nowrap;transition:transform .2s}
 .btn:hover{transform:translateY(-1px)}
 .btn-s{min-height:40px;padding:0 14px;font-size:13.5px}
 .btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--ln)}
-.lnk{display:inline-flex;align-items:center;min-height:44px;font-weight:650;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}
-.lnk:hover{text-decoration-color:currentColor}
-html:not(.js) .big{display:none}
 /* 출시 전 앱: 이름 없이 흐린 아이콘만 */
-.quiet{display:flex;justify-content:center;gap:28px;padding:24px 96px 88px}
-.qslot{display:block;width:64px;height:64px;border-radius:22.5%}
-.qslot img,.fan img.soon{width:100%;height:100%;border-radius:22.5%;opacity:.28;filter:grayscale(1) blur(4px)}
-.fan img.soon{width:72px;height:72px}
 /* 끝 */
 .foot{position:relative;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.4fr;gap:28px 40px;margin:0 22px;padding:56px 64px 64px;border-top:1px solid var(--ln);font-size:14px;color:var(--t2)}
 .foot h2{margin-bottom:6px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 .foot a{display:inline-flex;align-items:center;min-height:36px}
 .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px}
 .foot .wm{color:var(--tx)}
-.foot .langs{display:flex;flex-wrap:wrap;gap:0 16px}
-.langs a[aria-current]{color:var(--tx);font-weight:650}
 .foot .copy{grid-column:1/-1;font-size:12.5px}
 .foot-s{grid-template-columns:auto 1fr auto;align-items:center}
 .foot-s .copy{grid-column:auto}
 /* 크게 보기 */
-.viewer{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:28px;background:color-mix(in srgb,var(--desk) 72%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);opacity:0;visibility:hidden;transition:opacity .35s,visibility 0s .35s}
-.viewing .viewer{opacity:1;visibility:visible;transition:opacity .35s}
-.vsheet{position:relative;width:min(1080px,100%);max-height:calc(100vh - 56px);overflow:auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding:64px;background-color:var(--paper);background-image:var(--grain);background-size:320px;box-shadow:0 40px 100px -40px rgba(40,36,28,.45)}
 @media (prefers-color-scheme:dark){.vsheet{box-shadow:none;border:1px solid var(--ln)}}
-.vstage{position:relative;display:grid;place-items:center;aspect-ratio:1}
-.vslot{width:min(380px,32vw);aspect-ratio:1;touch-action:pan-y;cursor:grab}
-.vslot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 30px 60px -30px rgba(26,26,26,.5)}
-.vhint{position:absolute;left:0;right:0;bottom:-8px;text-align:center}
-.vtext h2{margin-top:10px;font-size:clamp(36px,4.4vw,60px);line-height:1.02;font-weight:800;letter-spacing:-.045em}
-.vtext ul{margin-top:18px;border-top:1px solid var(--ln)}
-.vtext li{padding:9px 0;border-bottom:1px solid var(--ln);font-size:15px}
-.vclose{position:absolute;top:16px;right:16px;display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--ln);border-radius:50%}
-.vclose svg{width:14px;height:14px;stroke:currentColor;stroke-width:1.8}
 /* 앱 머리띠: 이름, 소개, 지원, 개인정보 */
 .ab{position:relative;display:flex;align-items:center;gap:20px;margin:0 22px;padding:84px 58px 18px;border-bottom:1px solid var(--ln)}
 .ab-id{display:flex;align-items:center;gap:12px;min-height:44px;font-size:15px;font-weight:700}
@@ -158,13 +114,25 @@ html:not(.js) .big{display:none}
 /* 소개 첫 화면: 판 하나가 크게 뜬다 */
 .app-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:56px;min-height:min(86vh,860px);padding:72px 96px 64px;text-align:left}
 .app-hero .frame{--slot:min(360px,32vw)}
-.slot-l{touch-action:pan-y;cursor:grab}
 .hero-n{font-size:clamp(44px,5.4vw,76px);line-height:.98;font-weight:800;letter-spacing:-.05em}
 .hero-sub{margin-top:16px;font-size:24px;line-height:1.3;font-weight:700;letter-spacing:-.02em}
 .hero-hook{margin-top:14px;max-width:30em;font-size:17px;color:var(--t2)}
 .hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;margin-top:28px}
 .meta{font-size:14px;color:var(--t2)}
 .hint{margin-top:22px}
+/* B안 정지 판: three 없이 CSS 로 두께(겹친 그림자), 윗가장자리 빛, 비스듬한 반짝임. 마우스를 올리면 살짝 바로 선다 */
+.still{perspective:1400px}
+.plate{--d:6px;--e1:#EEEDE8;--e2:#DCDBD5;--e3:#C9C8C2;position:relative;display:block;width:var(--slot);aspect-ratio:1;border-radius:22.5%;transform:rotateX(7deg) rotateY(-11deg) rotateZ(1deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.plate img{width:100%;height:100%;border-radius:22.5%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.4),calc(var(--d)*.25) calc(var(--d)*.35) 0 var(--e1),calc(var(--d)*.5) calc(var(--d)*.7) 0 var(--e1),calc(var(--d)*.75) calc(var(--d)*1.05) 0 var(--e2),var(--d) calc(var(--d)*1.4) 0 var(--e2),calc(var(--d)*1.2) calc(var(--d)*1.7) 0 var(--e3),calc(var(--d)*3) calc(var(--d)*7) calc(var(--d)*9) calc(var(--d)*-3) rgba(40,36,28,.32),calc(var(--d)*1.5) calc(var(--d)*2.5) calc(var(--d)*2) rgba(40,36,28,.12)}
+.plate::after{content:"";position:absolute;inset:0;border-radius:22.5%;pointer-events:none;box-shadow:inset 1.5px 2px 1px rgba(255,255,255,.85),inset -1px -1px 1px rgba(0,0,0,.07);background:linear-gradient(122deg,rgba(255,255,255,.62) 0%,rgba(255,255,255,.18) 22%,transparent 36%,transparent 74%,rgba(255,255,255,.16) 90%,transparent 100%) 0 0/160% 160% no-repeat;transition:background-position .7s cubic-bezier(.2,.8,.2,1)}
+.plate-l{--slot:min(360px,32vw)}
+.plate-s{--slot:76px;--d:2.5px;flex:none;transform:rotateX(6deg) rotateY(-10deg)}
+.doc-head{perspective:600px}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+.still:hover .plate{transform:rotateX(2deg) rotateY(-3deg) translateY(-6px)}
+.still:hover .plate::after{background-position:40% 40%}
+}
+@media (prefers-color-scheme:dark){.plate{--e1:#2A2A2E;--e2:#202023;--e3:#18181A}.plate img{box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),calc(var(--d)*.25) calc(var(--d)*.35) 0 var(--e1),calc(var(--d)*.5) calc(var(--d)*.7) 0 var(--e1),calc(var(--d)*.75) calc(var(--d)*1.05) 0 var(--e2),var(--d) calc(var(--d)*1.4) 0 var(--e2),calc(var(--d)*1.2) calc(var(--d)*1.7) 0 var(--e3)}.plate::after{box-shadow:inset 0 1px 1px rgba(255,255,255,.35);opacity:.6}}
 /* 스토어 첫 세 장: 매트 위 원화처럼 */
 .pano{display:flex;justify-content:center;gap:40px;padding:24px 96px 104px}
 .print{position:relative;flex:0 1 300px;padding:14px 14px 40px;background:var(--pl);box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -24px rgba(40,36,28,.35)}
@@ -236,8 +204,6 @@ html:not(.js) .big{display:none}
 .help div:last-child{display:flex;flex-wrap:wrap;gap:10px}
 /* 지원과 개인정보: 같은 종이에 읽기 좋은 본문. 머리에 작은 판 하나 */
 .doc-head{display:flex;align-items:center;gap:20px}
-.slot-s{--slot:76px;flex:none}
-.doc-head .slot img{box-shadow:0 12px 22px -12px rgba(26,26,26,.45)}
 .doc-k{display:flex;flex-direction:column;gap:2px;font-size:15px;font-weight:700}
 .doc-k .mono{font-weight:400}
 .sup{margin:0 22px;padding:72px 74px 40px}
@@ -287,7 +253,6 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .top{background:linear-gradient(var(--paper) 55%,transparent)}
 }
 @media (max-width:900px){
-.piece{padding:40px 56px;gap:36px}
 .app-hero{padding:56px 56px 48px;gap:36px}
 .feat{padding:72px 40px;gap:40px}
 .card{padding:48px 40px}
@@ -308,25 +273,10 @@ html{scroll-padding-top:72px}
 .lang summary span{display:none}
 .sheet{width:calc(100vw - 16px)}
 .sheet::before{inset:10px}.ruler{top:10px;bottom:10px;left:10px;width:8px}
-.hero{padding:84px 26px 36px}
-.lede{font-size:16px}
-.cluster{height:min(360px,44vh)}
-.fan img,.fan img.soon{width:54px;height:54px}
-.piece{grid-template-columns:1fr;gap:34px;padding:56px 30px;min-height:auto}
-.piece:nth-of-type(even) .frame{order:0}
 .frame{width:calc(var(--slot) + 56px)}
 .cap h2{font-size:36px}
-.cap .sub{font-size:17px}
-.quiet{gap:18px;padding:8px 30px 56px}
-.qslot{width:48px;height:48px}
 .foot{grid-template-columns:1fr;gap:20px;margin:0 10px;padding:36px 24px 48px}
 .foot-s{grid-template-columns:1fr}
-.viewer{padding:8px;align-items:end}
-.vsheet{grid-template-columns:1fr;gap:18px;padding:68px 24px 32px;max-height:calc(100vh - 16px)}
-.vclose{top:10px;right:10px}
-.vstage{aspect-ratio:auto;padding:6px 0}
-.vslot{width:min(196px,50vw)}
-.vhint,.gl-on .vhint{display:none}
 .ab{flex-wrap:wrap;gap:4px;margin:0 10px;padding:66px 14px 10px}
 .ab-id{flex:1}
 .ab .btn{display:none}
@@ -335,6 +285,7 @@ html{scroll-padding-top:72px}
 .tabs a{justify-content:center;padding:0 6px;font-size:13px}
 .app-hero{grid-template-columns:1fr;gap:28px;min-height:auto;margin:0;padding:40px 28px 40px;text-align:left}
 .app-hero .frame{--slot:min(240px,62vw);width:calc(var(--slot) + 56px)}
+.plate-l{--slot:min(240px,62vw);--d:4.5px}
 .hero-n{font-size:46px}
 .hero-sub{margin-top:10px;font-size:19px}
 .hero-hook{font-size:16px}
@@ -376,7 +327,7 @@ html{scroll-padding-top:72px}
 .help{flex-direction:column;align-items:flex-start;margin:0 10px;padding:40px 20px}
 .sup{margin:0 10px;padding:44px 20px 24px}
 .sup h1,.doc h1{font-size:34px}
-.slot-s{--slot:60px}
+.plate-s{--slot:60px;--d:2px}
 .pv{margin:0 10px;padding:44px 20px 56px}
 .doc{font-size:16.5px;line-height:1.8}
 .doc-sum{margin-top:28px;padding:16px 18px 18px}
@@ -391,11 +342,11 @@ html{scroll-padding-top:72px}
 @media (max-width:359px){.tabs a{padding:0 3px;font-size:12px;line-height:1.2;text-align:center;white-space:normal;-webkit-hyphens:auto;hyphens:auto}.now{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.btn:hover{transform:none}}
 </style>
-<script>(function(){var r=document.documentElement;r.classList.add("js");try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext()}catch(e){return}r.classList.add("gl-wait");function off(){if(r.classList.contains("gl-on"))return;r.classList.remove("gl-wait");r.classList.add("gl-off")}setTimeout(off,6000);addEventListener("DOMContentLoaded",function(){var s=document.createElement("script"),h=document.getElementById("gl");if(!h)return off();s.src=h.getAttribute("data-src");s.async=true;s.onerror=off;document.head.appendChild(s)})})()</script>
+
 </head>
 <body class="app">
 <a class="skip" href="#main">Pular para o conteúdo</a>
-<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>
+
 <header class="top">
 <a class="wm" href="/pt-br/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a>
 <div class="top-r"><p class="now" data-on="1" aria-hidden="true"><i></i><b>Codematic</b></p><details class="lang"><summary aria-label="Idioma"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>Português (Brasil)</span></summary><ul aria-label="Idioma"><li><a href="/ko/codematic/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/codematic/" lang="en" hreflang="en">English</a></li><li><a href="/ja/codematic/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/codematic/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/codematic/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/codematic/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/codematic/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/codematic/" lang="pt-BR" hreflang="pt-BR" aria-current="true">Português (Brasil)</a></li></ul></details></div>
@@ -409,16 +360,14 @@ html{scroll-padding-top:72px}
 </nav>
 
 <section class="app-hero">
-<div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="readout" data-readout="0" aria-hidden="true"></span>
-<div class="slot slot-l" data-plate="0"><img class="ic-l" src="/assets/codematic/icon-640.webp" alt="" width="360" height="360"></div>
+<div class="frame still"><span class="tick"></span><span class="tick2"></span>
+<div class="plate plate-l"><img class="ic-l" src="/assets/codematic/icon-360.webp" srcset="/assets/codematic/icon-360.webp 360w, /assets/codematic/icon-640.webp 640w" sizes="(max-width:720px) 240px, 360px" alt="" width="360" height="360" fetchpriority="high"></div>
 </div>
 <div class="cap">
 <h1 class="hero-n">Codematic</h1>
 <p class="hero-sub">Ofertas e promos, uma a uma</p>
 <p class="hero-hook">Reúna em um só lugar os códigos de oferta e os códigos promocionais de apps que você distribui, com o registro de quem recebeu cada um</p>
 <div class="hero-cta"></div>
-<p class="mono hint gl-only">Arraste para girar.</p>
 </div>
 </section>
 <section class="pano"><figure class="print"><img src="/assets/codematic/store/en/01.webp" alt="The card shown after a code is handed out, with the code, a QR code, the time and the recipient."><span class="lab" aria-hidden="true">Pl. 01</span></figure><figure class="print"><img src="/assets/codematic/store/en/02.webp" alt="A roll&#x27;s screen while a code is being issued." loading="lazy"><span class="lab" aria-hidden="true">Pl. 02</span></figure><figure class="print"><img src="/assets/codematic/store/en/03.webp" alt="A roll&#x27;s screen, with the list of rolls and the codes left in each below." loading="lazy"><span class="lab" aria-hidden="true">Pl. 03</span></figure></section>
@@ -433,7 +382,7 @@ html{scroll-padding-top:72px}
 
 <footer class="foot foot-s"><a class="wm" href="/pt-br/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a><p>Contato <a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a><span aria-hidden="true">  /  </span><a href="/pt-br/codematic/privacy/">Codematic Política de Privacidade</a></p><p class="copy">© kvndh</p></footer>
 </main>
-<script type="application/json" id="canvas-data">{"page":"single","plates":[{"icon":"/assets/codematic/icon-640.webp","name":"Codematic","no":""}]}</script>
+
 <script>(function(){
   // 언어 고르기: Esc 와 바깥 누르기로 닫는다
   var lang=document.querySelector('.lang');

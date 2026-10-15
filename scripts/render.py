@@ -44,8 +44,15 @@ def text(site: Site, name: str) -> str:
     return (site.root / "templates" / name).read_text(encoding="utf-8")
 
 
-def css(site: Site) -> str:
-    return text(site, "style.css")
+HUB_ONLY, SUB_ONLY = "/*h*/", "/*s*/"
+
+
+def css(site: Site, hub: bool = False) -> str:
+    """style.css 한 벌. 줄머리 /*h*/ 는 허브에서만, /*s*/ 는 허브가 아닌 페이지에서만 쓰는 규칙이라
+    맞지 않는 쪽에서는 뺀다(B안 무게 줄이기)."""
+    keep, drop = (HUB_ONLY, SUB_ONLY) if hub else (SUB_ONLY, HUB_ONLY)
+    lines = text(site, "style.css").split("\n")
+    return "\n".join(line.removeprefix(keep) for line in lines if not line.startswith(drop))
 
 
 def asset(slug: str, name: str) -> str:
@@ -261,7 +268,8 @@ def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
 
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
          content: str, footer: str, body_class: str, bar: str = "", now: str = "", after: str = "",
-         extra_head: str = "", og_image: str = "/assets/og.jpg") -> str:
+         extra_head: str = "", og_image: str = "/assets/og.jpg", gl: bool = False) -> str:
+    """gl=True 는 허브만. B안(2026-10-16): 소개, 지원, 개인정보는 three 를 싣지 않고 CSS 정지 판만 건다."""
     option = site.lang(lang)
     return tpl(site, "base.html").substitute(
         body_class=body_class,
@@ -273,9 +281,9 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
         og_image=site.base_url + og_image,
         og_locale=esc(option["ogLocale"]),
         extra_head=extra_head,
-        css=css(site),
-        loader=CANVAS_LOADER,
-        gl=GL_CANVAS,
+        css=css(site, hub=gl),
+        loader=CANVAS_LOADER if gl else "",
+        gl=GL_CANVAS if gl else "",
         skip_label=esc(site.ui[lang]["skip"]),
         hub_path=page_path(lang),
         mark=MARK,
@@ -352,14 +360,19 @@ def render_hub(site: Site, lang: str) -> str:
     names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in apps)
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
                 content=content, footer=hub_footer(site, lang), body_class="hub", now=now_pill(),
-                after=after)
+                after=after, gl=True)
 
 
-def single_plate(site: Site, slug: str, lang: str) -> str:
-    """소개, 지원, 개인정보의 판 하나. 출시 전 앱도 제 페이지에서는 제 아이콘을 그대로 쓴다."""
-    copy = site.app_copy(slug, lang)
-    return canvas_json({"page": "single", "plates": [{"icon": icon(site, slug), "name": copy["name"],
-                                                      "no": (number(site, lang, slug) or ("", ""))[0]}]})
+def still_plate(site: Site, slug: str, size: str) -> str:
+    """CSS 만으로 그린 두께 있는 정지 판(B안). l 은 소개 첫 화면, s 는 지원과 개인정보 머리."""
+    if size == "l":
+        big = (site.root / "assets" / slug / "icon-640.webp").exists()
+        srcset = (f' srcset="{asset(slug, "icon-360.webp")} 360w, {asset(slug, "icon-640.webp")} 640w"'
+                  ' sizes="(max-width:720px) 240px, 360px"') if big else ""
+        return (f'<div class="plate plate-l"><img class="ic-l" src="{asset(slug, "icon-360.webp")}"{srcset} alt="" '
+                'width="360" height="360" fetchpriority="high"></div>')
+    return (f'<span class="plate plate-s"><img src="{asset(slug, "icon-180.webp")}" alt="" '
+            'width="76" height="76"></span>')
 
 
 def app_now(site: Site, lang: str, slug: str) -> str:
@@ -493,14 +506,13 @@ def render_app(site: Site, lang: str, slug: str) -> str:
     email = site.config["contact"]
     label = number_label(site, lang, slug)
     content = tpl(site, "app.html").substitute(
-        icon=icon(site, slug),
+        plate=still_plate(site, slug, "l"),
         lab=f'<span class="lab">{label}</span>' if label else "",
         name=esc(copy["name"]),
         subtitle=esc(copy["subtitle"]),
         hook=esc(copy["hero"]["hook"]),
         store_btn=store_button(site, lang, app),
         meta=f'<span class="meta">{esc(copy["hero"]["meta"])}</span>' if copy["hero"].get("meta") else "",
-        drag=esc(ui["dragHint"]),
         pano=panorama(site, slug, lang, copy),
         sections=render_sections(site, lang, slug, copy["sections"]),
         pro=render_pro(site, lang, copy.get("pro")),
@@ -514,23 +526,17 @@ def render_app(site: Site, lang: str, slug: str) -> str:
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
                 content=content, footer=app_footer(site, lang, slug), body_class="app",
                 bar=app_bar(site, lang, slug, "about"), now=app_now(site, lang, slug),
-                after=single_plate(site, slug, lang),
                 # ASC 레코드가 없는 출시 전 앱(2026-09-26 Readride)은 스마트 배너를 달지 않는다
                 extra_head=(f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">'
                             if app.get("appStoreId") else ""),
                 og_image=asset(slug, "og.jpg"))
 
 
-def doc_plate(site: Site, slug: str) -> str:
-    return (f'<span class="slot slot-s" data-plate="0"><img src="{asset(slug, "icon-180.webp")}" alt="" '
-            'width="76" height="76"></span>')
-
-
 def render_support(site: Site, lang: str, slug: str) -> str:
     ui, copy = site.ui[lang], site.app_copy(slug, lang)
     faq = "".join(f'<details><summary>{esc(f["q"])}</summary>{paragraphs(f["a"])}</details>' for f in copy["faq"])
     content = tpl(site, "support.html").substitute(
-        plate=doc_plate(site, slug),
+        plate=still_plate(site, slug, "s"),
         name=esc(copy["name"]),
         kind=number_label(site, lang, slug),
         title=esc(ui["faqTitle"]),
@@ -542,7 +548,7 @@ def render_support(site: Site, lang: str, slug: str) -> str:
     return page(site, lang=lang, slug=slug, kind="support", title=f'{copy["name"]} {ui["navSupport"]}',
                 description=copy["summary"], content=content, footer=app_footer(site, lang, slug),
                 body_class="page-doc", bar=app_bar(site, lang, slug, "support"), now=app_now(site, lang, slug),
-                after=single_plate(site, slug, lang), og_image=asset(slug, "og.jpg"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def privacy_section(number: int, section: dict) -> str:
@@ -570,7 +576,7 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     content = tpl(site, "privacy.html").substitute(
         toc_label=esc(ui["toc"]),
         toc=toc,
-        plate=doc_plate(site, slug),
+        plate=still_plate(site, slug, "s"),
         name=esc(copy["name"]),
         kind=number_label(site, lang, slug),
         title=esc(ui["navPrivacy"]),
@@ -585,7 +591,7 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     return page(site, lang=lang, slug=slug, kind="privacy", title=policy["title"], description=policy["summary"],
                 content=content, footer=app_footer(site, lang, slug), body_class="page-doc",
                 bar=app_bar(site, lang, slug, "privacy"), now=app_now(site, lang, slug),
-                after=single_plate(site, slug, lang), og_image=asset(slug, "og.jpg"))
+                og_image=asset(slug, "og.jpg"))
 
 
 def language_items(site: Site) -> str:

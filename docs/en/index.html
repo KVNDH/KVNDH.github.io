@@ -31,7 +31,9 @@
 
 <style>:root{--k:#1A1A1A;--tx:#1A1A1A;--t2:#707079;--ln:#D3D3D7;--dot:#E63946;--paper:#FBFAF7;--desk:#E7E6E2;--pl:#FFFFFF;--on:#FBFAF7;--grain:url(/assets/paper.png);--mono:ui-monospace,SFMono-Regular,Menlo,monospace;--slot:min(340px,34vw);--sh:0 30px 80px -30px rgba(40,36,28,.28),0 2px 6px rgba(40,36,28,.06);color-scheme:light dark}
 /* 2026-10-16 화첩: 세로로 긴 흰 종이 한 장에 앱 아이콘 판을 원화처럼 건다. 색은 먹(--k), 안개(--t2), 은(--ln) 셋이고
-   버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다 */
+   버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다.
+   줄머리 표시 h(주석)는 허브에서만, s 는 허브가 아닌 페이지(소개, 지원, 개인정보, 404)에서만 쓰는 규칙이다.
+   render.css 가 페이지에 맞지 않는 줄을 뺀다 */
 @media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#D3D3D7;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
 *,*::before,*::after{box-sizing:border-box}
 h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
@@ -158,7 +160,6 @@ html:not(.js) .big{display:none}
 /* 소개 첫 화면: 판 하나가 크게 뜬다 */
 .app-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:56px;min-height:min(86vh,860px);padding:72px 96px 64px;text-align:left}
 .app-hero .frame{--slot:min(360px,32vw)}
-.slot-l{touch-action:pan-y;cursor:grab}
 .hero-n{font-size:clamp(44px,5.4vw,76px);line-height:.98;font-weight:800;letter-spacing:-.05em}
 .hero-sub{margin-top:16px;font-size:24px;line-height:1.3;font-weight:700;letter-spacing:-.02em}
 .hero-hook{margin-top:14px;max-width:30em;font-size:17px;color:var(--t2)}
@@ -236,8 +237,6 @@ html:not(.js) .big{display:none}
 .help div:last-child{display:flex;flex-wrap:wrap;gap:10px}
 /* 지원과 개인정보: 같은 종이에 읽기 좋은 본문. 머리에 작은 판 하나 */
 .doc-head{display:flex;align-items:center;gap:20px}
-.slot-s{--slot:76px;flex:none}
-.doc-head .slot img{box-shadow:0 12px 22px -12px rgba(26,26,26,.45)}
 .doc-k{display:flex;flex-direction:column;gap:2px;font-size:15px;font-weight:700}
 .doc-k .mono{font-weight:400}
 .sup{margin:0 22px;padding:72px 74px 40px}
@@ -376,7 +375,6 @@ html{scroll-padding-top:72px}
 .help{flex-direction:column;align-items:flex-start;margin:0 10px;padding:40px 20px}
 .sup{margin:0 10px;padding:44px 20px 24px}
 .sup h1,.doc h1{font-size:34px}
-.slot-s{--slot:60px}
 .pv{margin:0 10px;padding:44px 20px 56px}
 .doc{font-size:16.5px;line-height:1.8}
 .doc-sum{margin-top:28px;padding:16px 18px 18px}

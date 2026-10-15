@@ -106,7 +106,8 @@ class AppPageTest(unittest.TestCase):
     def test_hero_and_sections(self):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<h1 class="hero-n">Demo</h1>', html)
-        self.assertIn('<div class="slot slot-l" data-plate="0"><img class="ic-l" src="/assets/demo/icon-360.webp"', html)
+        self.assertIn('<div class="frame still">', html)
+        self.assertIn('<div class="plate plate-l"><img class="ic-l" src="/assets/demo/icon-360.webp" alt=""', html)
         self.assertIn('<span class="lab">No. 01 / 01</span>', html)
         self.assertIn('<section class="pano"><figure class="print"><img src="/assets/demo/shots/en/01.webp" alt="Demo ko screenshot"', html)
         self.assertNotIn('class="meta"', html)
@@ -227,18 +228,17 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIsNotNone(m)
         return json.loads(m.group(1))
 
-    def test_every_page_loads_the_canvas_only_when_webgl_works(self):
+    def test_hub_loads_the_canvas_only_when_webgl_works(self):
         # 로더는 head 에서 돌고, 동작 줄이기가 아니고 WebGL 컨텍스트가 실제로 만들어질 때만 멈춘 그림을 숨겨 기다린다.
         # 묶음이 실패하거나 늦으면(6초) 멈춘 그림으로 돌아간다. 묶음 주소는 check.py 가 볼 수 있게 data-src 에 둔다
-        for html in (render.render_hub(self.site, "ko"), render.render_app(self.site, "ko", "demo"),
-                     render.render_support(self.site, "ko", "demo"), render.render_privacy(self.site, "ko", "demo")):
-            self.assertLess(html.index('getContext("webgl2")'), html.index("</head>"))
-            self.assertIn("prefers-reduced-motion: reduce", html)
-            self.assertIn('classList.add("gl-wait")', html)
-            self.assertIn("s.onerror=off", html)
-            self.assertIn("setTimeout(off,6000)", html)
-            self.assertIn('<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>', html)
-            self.assertNotIn('<script src=', html)
+        html = render.render_hub(self.site, "ko")
+        self.assertLess(html.index('getContext("webgl2")'), html.index("</head>"))
+        self.assertIn("prefers-reduced-motion: reduce", html)
+        self.assertIn('classList.add("gl-wait")', html)
+        self.assertIn("s.onerror=off", html)
+        self.assertIn("setTimeout(off,6000)", html)
+        self.assertIn('<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>', html)
+        self.assertNotIn('<script src=', html)
 
     def test_canvas_data_is_per_language(self):
         ko = self.canvas(render.render_hub(self.site, "ko"))
@@ -252,11 +252,20 @@ class OtherPagesTest(unittest.TestCase):
         self.assertEqual(app["bullets"], ["x", "y"])
         self.assertEqual(app["storeLabel"], "Demo store")
 
-    def test_single_page_has_one_plate(self):
-        for html in (render.render_app(self.site, "ko", "demo"), render.render_privacy(self.site, "ko", "demo")):
-            self.assertEqual(self.canvas(html), {"page": "single", "plates": [
-                {"icon": "/assets/demo/icon-360.webp", "name": "Demo", "no": "01"}]})
-            self.assertEqual(html.count('data-plate="'), 1)
+    def test_sub_pages_carry_no_three(self):
+        # B안(2026-10-16): 소개, 지원, 개인정보는 판 묶음도 로더도 판 데이터도 싣지 않고 CSS 정지 판 하나만 건다
+        for html in (render.render_app(self.site, "ko", "demo"), render.render_support(self.site, "ko", "demo"),
+                     render.render_privacy(self.site, "ko", "demo")):
+            markup = re.sub(r"<style>.*?</style>", "", html, flags=re.S)
+            for needle in ("kvndh-canvas.js", "webgl", 'id="gl"', "canvas-data", "data-plate", "gl-only", "readout"):
+                self.assertNotIn(needle, markup)
+            self.assertEqual(html.count('class="plate plate-'), 1)
+
+    def test_still_plate_tilt_stops_for_reduced_motion(self):
+        css = render.css(Site(make_site()))
+        self.assertIn("@media (hover:hover) and (prefers-reduced-motion:no-preference){\n.still:hover .plate{", css)
+        self.assertEqual(css.count("{\n.still:hover"), 1)
+        self.assertNotRegex(css.split("@media (hover:hover) and (prefers-reduced-motion:no-preference)")[0], r":hover \.plate")
 
     def test_canvas_without_pages_has_no_link(self):
         data = self.canvas(render.render_hub(Site(make_site(with_pages=False)), "ko"))
@@ -310,14 +319,28 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIn('<a class="ab-id" href="/ko/demo/"><img class="ic"', about)
         self.assertIn('<span>Demo</span></a>', about)
         for html in (render.render_privacy(site, "ko", "demo"), render.render_support(site, "ko", "demo")):
-            self.assertIn('<div class="doc-head"><span class="slot slot-s" data-plate="0">', html)
+            self.assertIn('<div class="doc-head"><span class="plate plate-s"><img src="/assets/demo/icon-180.webp"', html)
             self.assertIn('<p class="doc-k"><span>Demo</span><span class="mono">No. 01 / 01</span></p>', html)
 
+    def test_hub_only_css_stays_on_the_hub(self):
+        site = Site(make_site())
+        sub, hub = render.css(site), render.css(site, hub=True)
+        self.assertNotIn("/*h*/", sub + hub)
+        self.assertNotIn("/*s*/", sub + hub)
+        self.assertNotIn(".plate{", hub)
+        self.assertNotIn(".viewer{", sub)
+        self.assertNotIn("#gl{", sub)
+        self.assertIn(".viewer{", hub)
+        self.assertIn(".plate{", sub)
+        self.assertLess(len(sub), len(hub))
+        self.assertIn(".viewer{", render.render_hub(site, "ko"))
+        self.assertNotIn(".viewer{", render.render_app(site, "ko", "demo"))
+
     def test_vermilion_sits_only_on_the_number_dot(self):
-        css = render.css(Site(make_site()))
-        self.assertEqual(css.upper().count("#E63946"), 1)
-        self.assertEqual(css.count("var(--dot)"), 1)
-        self.assertIn(".now i{", css.split("var(--dot)")[0].rsplit("}", 1)[1])
+        for css in (render.css(Site(make_site())), render.css(Site(make_site()), hub=True)):
+            self.assertEqual(css.upper().count("#E63946"), 1)
+            self.assertEqual(css.count("var(--dot)"), 1)
+            self.assertIn(".now i{", css.split("var(--dot)")[0].rsplit("}", 1)[1])
 
     def test_dark_mode_is_pure_black(self):
         css = render.css(Site(make_site()))
