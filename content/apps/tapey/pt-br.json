@@ -129,7 +129,8 @@
    "q": "O anúncio ao salvar",
    "a": [
     "O Tapey mostra um anúncio em tela cheia quando você salva um papel de parede. O Google AdMob escolhe e exibe esse anúncio.",
-    "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio."
+    "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio. O Tapey espera o anúncio por até 60 segundos, e um anúncio que chega depois não é mostrado.",
+    "Em um aparelho que já viu o anúncio três vezes ou mais, a tela que aparece depois de salvar mostra, depois do anúncio, uma linha sobre o Tapey Pro. Se você fechar, ela só volta depois que você vir o anúncio mais três vezes."
    ]
   },
   {
@@ -183,7 +184,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-10-15",
+  "effectiveDate": "2026-10-19",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -207,7 +208,7 @@
      "Cópias das fotos e das fotos de fundo que você escolhe ou tira: usadas para reabrir o trabalho",
      "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
      "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
-     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação"
+     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, número de anúncios vistos e quando o aviso do Tapey Pro foi fechado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação e do aviso do Tapey Pro"
     ]
    },
    {
@@ -312,6 +313,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-10-19: o número de anúncios vistos e quando o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",
      "2026-10-15: as fotos tiradas com Tirar Foto, as imagens escolhidas com Escolher Arquivo e o acesso à câmera foram incluídos em “Informações tratadas” e “Medidas de segurança”. O arquivo temporário para compartilhar agora é descrito como uma cópia do papel de parede salvo. A data de vigência anterior era 2026-10-06."
     ],
     "bullets": []
