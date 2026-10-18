@@ -164,7 +164,7 @@
   {
    "q": "Später weitermachen",
    "a": [
-    "Wenn Sie ein Foto schließen oder die App verlassen, bleibt Ihre Arbeit als Miniatur auf dem Startbildschirm. Tippen Sie sie an, um ohne neue Fotoauswahl weiterzuarbeiten, oder halten Sie sie gedrückt und wählen Löschen.",
+    "Wenn Sie ein Foto schließen oder die App verlassen, bleibt Ihre Arbeit als Miniatur auf dem Startbildschirm. Tippen Sie sie an, um ohne neue Fotoauswahl weiterzuarbeiten, oder halten Sie sie gedrückt und wählen Löschen. Vor dem Löschen fragt SnapLine noch einmal nach.",
     "SnapLine legt eine Kopie des Originalfotos zum Projekt, deshalb können Sie auch dann in voller Auflösung weiterarbeiten und exportieren, wenn Sie das Original in Fotos gelöscht haben. Ältere Projekte weichen neuen."
    ]
   },
@@ -172,6 +172,12 @@
    "q": "Einen Pro-Kauf wiederherstellen",
    "a": [
     "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie im Kaufbildschirm auf Kauf wiederherstellen. Dorthin kommen Sie so: Foto öffnen, im Modus Linien die Einstellungen aufklappen und das Pro-Zeichen neben Stil antippen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "SnapLine auf dem iPad und dem faltbaren iPhone",
+   "a": [
+    "SnapLine läuft auch auf dem iPad. iPhone und iPad funktionieren auch im Querformat. Ist der Bildschirm breiter als hoch, rücken Werkzeuge und Einstellungen neben das Foto, damit es die volle Höhe behält. Hat der Bildschirm eines faltbaren iPhone an einer Seite einen Systemstreifen, stehen Schließen, Export, Linien, Radieren, Auto-Maske, Widerrufen, Wiederholen und Einstellungen senkrecht in diesem Streifen, und das Foto wird um den frei gewordenen Platz größer."
    ]
   },
   {

@@ -164,7 +164,7 @@
   {
    "q": "Retomar o trabalho",
    "a": [
-    "Quando você fecha uma foto ou sai do app, o trabalho fica na tela inicial como miniatura. Toque nela para continuar editando sem escolher a foto de novo, ou toque e segure e escolha Excluir.",
+    "Quando você fecha uma foto ou sai do app, o trabalho fica na tela inicial como miniatura. Toque nela para continuar editando sem escolher a foto de novo, ou toque e segure e escolha Excluir. O SnapLine pede confirmação antes de excluir.",
     "O SnapLine guarda uma cópia da foto original junto com o projeto, então dá para continuar editando e exportar na resolução cheia mesmo depois de apagar o original em Fotos. Os projetos mais antigos saem conforme novos entram."
    ]
   },
@@ -172,6 +172,12 @@
    "q": "Restaurar uma compra do Pro",
    "a": [
     "Se você trocou de aparelho ou reinstalou o app, toque em Restaurar Compra na tela de compra. Para chegar lá, abra uma foto, expanda os Ajustes ainda em Linhas e toque no selo Pro ao lado de Estilo. Com a mesma Conta Apple não há nova cobrança."
+   ]
+  },
+  {
+   "q": "O SnapLine no iPad e no iPhone dobrável",
+   "a": [
+    "O SnapLine também funciona no iPad. iPhone e iPad funcionam também na horizontal e, quando a tela é mais larga do que alta, as ferramentas e os ajustes vão para o lado da foto, que fica com a altura inteira. Num iPhone dobrável, quando a tela tem uma faixa do sistema de um lado, Fechar, Exportar, Linhas, Apagar, Máscara auto, Desfazer, Refazer e Ajustes ficam na vertical nessa faixa, e a foto cresce com o espaço que sobra."
    ]
   },
   {
