@@ -164,7 +164,7 @@
   {
    "q": "Picking up where you left off",
    "a": [
-    "When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold and choose Delete.",
+    "When you close a photo or leave the app, your work stays on the home screen as a thumbnail. Tap it to keep editing without choosing the photo again, or press and hold and choose Delete. SnapLine asks once more before deleting.",
     "SnapLine keeps a copy of the original photo with the project, so you can keep editing and export at full resolution even after deleting the original from Photos. Older projects drop off as new ones are saved."
    ]
   },
@@ -172,6 +172,12 @@
    "q": "Restoring a Pro purchase",
    "a": [
     "If you switched devices or reinstalled the app, tap Restore Purchase on the purchase screen. To get there, open a photo, expand Settings while in Lines and tap the Pro badge next to Style. With the same Apple Account you won't be charged again."
+   ]
+  },
+  {
+   "q": "Using SnapLine on iPad and foldable iPhone",
+   "a": [
+    "SnapLine runs on iPad too. iPhone and iPad both work in landscape, and when the screen is wider than it is tall, the tools and settings move beside the photo so it keeps the full height. On a foldable iPhone, when the screen has a system strip along one side, Close, Export, Lines, Erase, Auto mask, Undo, Redo and Settings stand in that strip, and the photo grows into the room they leave."
    ]
   },
   {
