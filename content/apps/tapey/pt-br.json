@@ -208,7 +208,7 @@
      "Cópias das fotos e das fotos de fundo que você escolhe ou tira: usadas para reabrir o trabalho",
      "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
      "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
-     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, número de anúncios vistos e quando o aviso do Tapey Pro foi fechado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação e do aviso do Tapey Pro"
+     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação e do aviso do Tapey Pro"
     ]
    },
    {
@@ -313,7 +313,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
-     "2026-10-19: o número de anúncios vistos e quando o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",
+     "2026-10-19: o número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",
      "2026-10-15: as fotos tiradas com Tirar Foto, as imagens escolhidas com Escolher Arquivo e o acesso à câmera foram incluídos em “Informações tratadas” e “Medidas de segurança”. O arquivo temporário para compartilhar agora é descrito como uma cópia do papel de parede salvo. A data de vigência anterior era 2026-10-06."
     ],
     "bullets": []

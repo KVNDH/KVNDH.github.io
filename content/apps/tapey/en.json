@@ -208,7 +208,7 @@
      "Copies of the photos and background photos you pick or take: used to reopen your work",
      "Layout and decoration settings, photo notes: used to reopen your work",
      "Up to 3 recent projects with preview images: used for Recent on the start screen",
-     "Language choice, Tapey Pro purchase status, save count and whether the rating request was shown, number of ads seen and when the Tapey Pro note was closed, whether the first-run guides were shown, view mode choice, screen layout settings carried over from an earlier version: used to run the app and to time the rating request and the Tapey Pro note"
+     "Language choice, Tapey Pro purchase status, save count and whether the rating request was shown, number of ads seen and a record of closing the Tapey Pro note, whether the first-run guides were shown, view mode choice, screen layout settings carried over from an earlier version: used to run the app and to time the rating request and the Tapey Pro note"
     ]
    },
    {
@@ -313,7 +313,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show what changed and the new effective date.",
-     "2026-10-19: Added the number of ads seen and when the Tapey Pro note was closed, used in 2.0.2 for the Tapey Pro note on the screen after saving, to Information processed. The previous effective date was 2026-10-15.",
+     "2026-10-19: Added the number of ads seen and a record of closing the Tapey Pro note, used in 2.0.2 for the Tapey Pro note on the screen after saving, to Information processed. The previous effective date was 2026-10-15.",
      "2026-10-15: Added photos taken with Take Photo, images chosen with Choose File, and camera access to Information processed and Security measures. Corrected the temporary file for sharing to a copy of the saved wallpaper. The previous effective date was 2026-10-06."
     ],
     "bullets": []

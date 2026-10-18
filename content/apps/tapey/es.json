@@ -208,7 +208,7 @@
      "Copias de las fotos y de las fotos de fondo que eliges o haces: para volver a abrir tu trabajo",
      "Disposición, ajustes de decoración y notas de las fotos: para volver a abrir tu trabajo",
      "Hasta 3 proyectos recientes con imágenes de vista previa: para Recientes en la pantalla de inicio",
-     "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, número de anuncios vistos y cuándo se cerró el aviso de Tapey Pro, si ya se mostraron las guías iniciales, modo de vista elegido y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración y del aviso de Tapey Pro"
+     "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, número de anuncios vistos y un registro de haber cerrado el aviso de Tapey Pro, si ya se mostraron las guías iniciales, modo de vista elegido y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración y del aviso de Tapey Pro"
     ]
    },
    {
@@ -313,7 +313,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor.",
-     "2026-10-19: se añadieron a «Información que se trata» el número de anuncios vistos y cuándo se cerró el aviso de Tapey Pro, que la versión 2.0.2 usa para el aviso de Tapey Pro en la pantalla después de guardar. La fecha de entrada en vigor anterior era el 2026-10-15.",
+     "2026-10-19: se añadieron a «Información que se trata» el número de anuncios vistos y un registro de haber cerrado el aviso de Tapey Pro, que la versión 2.0.2 usa para el aviso de Tapey Pro en la pantalla después de guardar. La fecha de entrada en vigor anterior era el 2026-10-15.",
      "2026-10-15: se añadieron a «Información que se trata» y a «Medidas de seguridad» las fotos hechas con Hacer foto, las imágenes elegidas con Seleccionar archivo y el acceso a la cámara. El archivo temporal para compartir ahora se describe como una copia del fondo guardado. La fecha de entrada en vigor anterior era el 2026-10-06."
     ],
     "bullets": []

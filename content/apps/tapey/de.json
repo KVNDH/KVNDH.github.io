@@ -208,7 +208,7 @@
      "Kopien der gewählten oder aufgenommenen Fotos und Hintergrundfotos: zum Wiederöffnen Ihrer Arbeit",
      "Layout, Einstellungen zur Gestaltung, Fotonotizen: zum Wiederöffnen Ihrer Arbeit",
      "Bis zu 3 letzte Projekte mit Vorschaubildern: für Zuletzt auf dem Startbildschirm",
-     "Sprachwahl, Kaufstatus von Tapey Pro, Zahl der Sicherungen und ob die Bewertungsanfrage schon gezeigt wurde, Zahl der gesehenen Werbungen und wann der Hinweis auf Tapey Pro geschlossen wurde, ob die Hinweise zum Einstieg schon gezeigt wurden, gewählter Ansichtsmodus, aus einer früheren Version übernommene Einstellungen zur Bildschirmaufteilung: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage und des Hinweises auf Tapey Pro"
+     "Sprachwahl, Kaufstatus von Tapey Pro, Zahl der Sicherungen und ob die Bewertungsanfrage schon gezeigt wurde, Zahl der gesehenen Werbungen und ein Vermerk, dass der Hinweis auf Tapey Pro geschlossen wurde, ob die Hinweise zum Einstieg schon gezeigt wurden, gewählter Ansichtsmodus, aus einer früheren Version übernommene Einstellungen zur Bildschirmaufteilung: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage und des Hinweises auf Tapey Pro"
     ]
    },
    {
@@ -313,7 +313,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
-     "2026-10-19: Die Zahl der gesehenen Werbungen und wann der Hinweis auf Tapey Pro geschlossen wurde, genutzt in 2.0.2 für den Hinweis auf Tapey Pro auf dem Bildschirm nach dem Sichern, wurden unter „Verarbeitete Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-10-15.",
+     "2026-10-19: Die Zahl der gesehenen Werbungen und ein Vermerk, dass der Hinweis auf Tapey Pro geschlossen wurde, genutzt in 2.0.2 für den Hinweis auf Tapey Pro auf dem Bildschirm nach dem Sichern, wurden unter „Verarbeitete Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-10-15.",
      "2026-10-15: Mit Foto aufnehmen aufgenommene Fotos, mit Datei auswählen gewählte Bilder und der Kamerazugriff wurden unter „Verarbeitete Daten“ und „Maßnahmen zur Sicherheit“ ergänzt. Die temporäre Datei zum Teilen ist jetzt als Kopie des gesicherten Hintergrunds beschrieben. Das vorherige Datum des Inkrafttretens war der 2026-10-06."
     ],
     "bullets": []
