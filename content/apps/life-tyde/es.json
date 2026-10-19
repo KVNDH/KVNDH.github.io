@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Life Tyde",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Life Tyde (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea. Esta política explica cómo lo hace."
   ],
@@ -177,6 +177,7 @@
     ],
     "bullets": [
      "Eventos (año, mes, día, título, nota, destacado, ajustes de fecha y recordatorio), etiquetas y nombres de líneas de tiempo: para mostrar tu línea de tiempo",
+     "Fotos añadidas a los eventos, con pequeñas imágenes de vista previa: para mostrar las fotos junto a tus entradas",
      "Ajustes como tu fecha de nacimiento o año base, opciones de visualización e idioma de la app: para lo que aparece en pantalla",
      "Títulos y borradores de libro: para retomar el trabajo en un libro (PDF)",
      "Títulos y años de los eventos: para el índice de búsqueda del dispositivo mientras la Búsqueda de Spotlight está activada",
@@ -208,7 +209,8 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las entradas eliminadas se quedan 7 días en la Papelera y luego desaparecen, o puedes quitarlas al momento con Eliminar de forma permanente. Al eliminar la app desaparecen del dispositivo todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las entradas eliminadas se quedan 7 días en la Papelera y luego desaparecen, o puedes quitarlas al momento con Eliminar de forma permanente. Al eliminar la app desaparecen del dispositivo todos sus datos.",
+     "Puedes eliminar las fotos de una entrada una a una, y al eliminar una entrada de forma permanente también se eliminan sus fotos."
     ],
     "bullets": []
    },
@@ -223,6 +225,7 @@
     "title": "Medidas de seguridad",
     "paragraphs": [
      "La sincronización con iCloud usa la base de datos privada de tu propia cuenta de iCloud. Intercambiar cerca funciona solo sobre una conexión cifrada. La app pide únicamente permiso para añadir imágenes de la línea de tiempo a Fotos y no pide permiso para leer tu fototeca. El permiso de notificaciones se pide solo cuando guardas un evento con recordatorio.",
+     "Las fotos llegan solo desde el selector de fotos del sistema, y solo las que eliges. La app no usa permiso de lectura de la fototeca ni permiso de cámara. Antes de guardarlas se reduce su tamaño, y los metadatos del original, como la ubicación y los datos del dispositivo, no se conservan. Con la Búsqueda de Spotlight activada, una pequeña vista previa de la primera foto aparece en los resultados de búsqueda del dispositivo. Las fotos no se incluyen en los resúmenes y borradores de IA, Intercambiar cerca, las imágenes de la línea de tiempo, los libros (PDF) ni los archivos CSV.",
      "La Búsqueda de Spotlight indexa solo títulos y años de los eventos, y al desactivarla en Ajustes se borra el índice. Los resúmenes y borradores de IA los escribe el modelo de Apple Intelligence de tu dispositivo."
     ],
     "bullets": []

@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Life Tyde Privacy Policy",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Life Tyde app (\"the app\") in accordance with the Personal Information Protection Act of Korea. This policy explains how."
   ],
@@ -177,6 +177,7 @@
     ],
     "bullets": [
      "Events (year, month, day, title, note, highlight, schedule and reminder settings), tags, and timeline names: used to show your timeline",
+     "Photos attached to events, with small preview images: used to show photos with your entries",
      "Settings such as your birthday or base year, display options, and app language: used for what appears on screen",
      "Book titles and drafts: used to pick up work on a book (PDF)",
      "Event titles and years: used for the device search index while Spotlight search is on",
@@ -208,7 +209,8 @@
    {
     "title": "Destruction of information",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to destroy. Deleted entries stay in Trash for 7 days and are then removed, or you can remove them at once with Delete Permanently. Deleting the app removes all of its data from the device."
+     "The developer holds no personal information, so there is nothing to destroy. Deleted entries stay in Trash for 7 days and are then removed, or you can remove them at once with Delete Permanently. Deleting the app removes all of its data from the device.",
+     "You can delete photos from an entry one at a time, and an entry's photos are deleted when the entry is permanently deleted."
     ],
     "bullets": []
    },
@@ -223,6 +225,7 @@
     "title": "Security measures",
     "paragraphs": [
      "iCloud sync uses the private database in your own iCloud account. Exchange nearby works only over an encrypted connection. The app asks only for permission to add timeline images to Photos and does not ask to read your photo library. Notification permission is requested only when you save an event with a reminder.",
+     "Photos come only from the system photo picker, and only the ones you choose. The app does not use photo library read permission or camera permission. Photos are resized before saving, and metadata from the original such as location and device information is not carried over. With Spotlight search on, a small preview of an event's first photo appears in device search results. Photos are not included in AI summaries and drafts, Exchange nearby, timeline images, books (PDF), or CSV files.",
      "Spotlight search indexes only event titles and years, and turning it off in Settings clears the index. AI summaries and drafts are written by the Apple Intelligence model on your device."
     ],
     "bullets": []

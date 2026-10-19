@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Life Tyde",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Life Tyde (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
   ],
@@ -177,6 +177,7 @@
     ],
     "bullets": [
      "Ereignisse (Jahr, Monat, Tag, Titel, Notiz, Highlight, Termin- und Erinnerungseinstellungen), Tags und Timeline-Namen: für die Anzeige Ihrer Timeline",
+     "Fotos zu Ereignissen samt kleinen Vorschaubildern: um Fotos mit Ihren Einträgen anzuzeigen",
      "Einstellungen wie Geburtstag oder Basisjahr, Anzeigeoptionen und App-Sprache: für das, was auf dem Bildschirm erscheint",
      "Buchtitel und Entwürfe: um die Arbeit an einem Buch (PDF) fortzusetzen",
      "Ereignistitel und Jahre: für den Suchindex des Geräts, solange die Spotlight-Suche eingeschaltet ist",
@@ -208,7 +209,8 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gelöschte Einträge bleiben 7 Tage im Papierkorb und werden dann entfernt, oder Sie entfernen sie sofort mit Endgültig löschen. Mit dem Löschen der App verschwinden alle ihre Daten vom Gerät."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gelöschte Einträge bleiben 7 Tage im Papierkorb und werden dann entfernt, oder Sie entfernen sie sofort mit Endgültig löschen. Mit dem Löschen der App verschwinden alle ihre Daten vom Gerät.",
+     "Fotos lassen sich einzeln aus einem Eintrag löschen, und wird ein Eintrag endgültig gelöscht, verschwinden auch seine Fotos."
     ],
     "bullets": []
    },
@@ -223,6 +225,7 @@
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
      "Der iCloud-Sync nutzt die private Datenbank in Ihrem eigenen iCloud-Account. In der Nähe austauschen arbeitet nur über eine verschlüsselte Verbindung. Die App bittet allein um die Berechtigung, Timeline-Bilder zu Fotos hinzuzufügen, und fordert keine Leseberechtigung für Ihre Mediathek an. Nach der Mitteilungsberechtigung fragt sie erst, wenn Sie ein Ereignis mit Erinnerung sichern.",
+     "Fotos erhält die App nur über die Fotoauswahl des Systems, und nur die, die Sie auswählen. Eine Leseberechtigung für die Mediathek und den Kamerazugriff nutzt sie nicht. Vor dem Sichern werden Fotos verkleinert, und Metadaten des Originals wie Ort und Geräteangaben werden nicht übernommen. Bei eingeschalteter Spotlight-Suche erscheint eine kleine Vorschau des ersten Fotos in den Suchergebnissen des Geräts. Fotos fließen nicht in KI-Zusammenfassungen und Entwürfe, In der Nähe austauschen, Timeline-Bilder, Bücher (PDF) oder CSV-Dateien ein.",
      "Die Spotlight-Suche indiziert nur Ereignistitel und Jahre; schalten Sie sie in den Einstellungen aus, wird der Index gelöscht. KI-Zusammenfassungen und Entwürfe schreibt das Apple-Intelligence-Modell auf Ihrem Gerät."
     ],
     "bullets": []

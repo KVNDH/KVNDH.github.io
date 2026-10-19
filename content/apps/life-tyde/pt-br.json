@@ -158,7 +158,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Life Tyde",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Life Tyde (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia. Esta política explica como."
   ],
@@ -177,6 +177,7 @@
     ],
     "bullets": [
      "Eventos (ano, mês, dia, título, nota, destaque, ajustes de data e lembrete), tags e nomes de linhas do tempo: usados para exibir sua linha do tempo",
+     "Fotos adicionadas aos eventos, com pequenas imagens de prévia: usadas para exibir as fotos junto aos seus registros",
      "Ajustes como data de nascimento ou ano-base, opções de exibição e idioma do app: usados para o que aparece na tela",
      "Títulos e rascunhos de livro: usados para retomar o trabalho num livro (PDF)",
      "Títulos e anos dos eventos: usados no índice de busca do aparelho enquanto a Busca do Spotlight está ligada",
@@ -208,7 +209,8 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Os registros apagados ficam 7 dias na Lixeira e depois somem, ou você os remove na hora com Excluir permanentemente. Excluir o app leva junto todos os dados dele do aparelho."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Os registros apagados ficam 7 dias na Lixeira e depois somem, ou você os remove na hora com Excluir permanentemente. Excluir o app leva junto todos os dados dele do aparelho.",
+     "Você pode apagar as fotos de um registro uma a uma, e quando um registro é excluído permanentemente as fotos dele também são apagadas."
     ],
     "bullets": []
    },
@@ -223,6 +225,7 @@
     "title": "Medidas de segurança",
     "paragraphs": [
      "A sincronização com iCloud usa o banco de dados privado da sua própria conta do iCloud. Trocar por perto funciona apenas por uma conexão criptografada. O app pede somente a permissão de adicionar imagens da linha do tempo a Fotos e não pede permissão para ler a sua fototeca. A permissão de notificações é pedida apenas quando você salva um evento com lembrete.",
+     "As fotos chegam apenas pelo seletor de fotos do sistema, e só as que você escolhe. O app não usa a permissão de leitura da fototeca nem a permissão de câmera. Antes de salvar, as fotos são reduzidas, e os metadados do original, como localização e dados do aparelho, não são mantidos. Com a Busca do Spotlight ligada, uma pequena prévia da primeira foto aparece nos resultados de busca do aparelho. As fotos não entram nos resumos e rascunhos de IA, no Trocar por perto, nas imagens da linha do tempo, nos livros (PDF) nem nos arquivos CSV.",
      "A Busca do Spotlight indexa apenas títulos e anos dos eventos, e desligá-la nos Ajustes apaga o índice. Os resumos e rascunhos de IA são escritos pelo modelo da Apple Intelligence no seu aparelho."
     ],
     "bullets": []
