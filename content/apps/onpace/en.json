@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "How late, checkpoint by checkpoint",
    "body": [
-    "Set the times you pass a few points on the way: leaving home, the corner, the bus stop, the office. While you move, OnPace compares where you are with where the plan says you should be and shows the gap in minutes and seconds, in large type. It does not give directions. It tells you whether to hurry. When you walk toward a checkpoint set to Early is fine, or a stop where your ride leaves, one line says whether you will make it at your current pace, from Plenty of time to You may miss it."
+    "Set the times you pass a few points on the way: leaving home, the corner, the bus stop, the office. While you move, OnPace compares where you are with where the plan says you should be and shows the gap in minutes and seconds, in large type. It does not give directions. It tells you whether to hurry. When you walk toward a checkpoint set to Early is fine, or a stop where your ride leaves, one line says whether you will make it at your current pace, from Plenty of time to You may miss it. Once you have a few trips, the arrival estimate for the next checkpoint follows how long each leg took on similar weekdays and departure times."
    ],
    "bullets": [
     "Minutes and seconds ahead of or behind plan",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Tuned from your trips",
    "body": [
-    "Each trip adds real times. OnPace looks at the median of your recent trips and suggests moving a checkpoint you always reach late, or loosening a leg that is too tight. Moving your departure earlier from a single trip is open to everyone."
+    "Each trip adds real times. Leg times count from when you actually left, and leaving late is counted separately. On a day you were late because you left late, OnPace says so instead of telling you to leave earlier. It looks at the median of your recent trips, suggests moving a checkpoint you always reach late or loosening a leg that is too tight, names each one by its pin number, and points out legs that take longer on certain weekdays or departure times. Your last trip on the home screen shows how late you left and how long the trip took. When a trip took longer than planned even though you left on time, moving your departure earlier from that single trip is open to everyone."
    ],
    "bullets": [],
    "visual": {
@@ -72,7 +72,7 @@
      "The median of recent trips",
      "Checkpoints reached late",
      "Legs that are too tight",
-     "Leaving earlier"
+     "Weekdays and departure times"
     ]
    }
   }
@@ -126,25 +126,37 @@
   {
    "q": "Bus and subway legs",
    "a": [
-    "When you edit a checkpoint, or on the Edit route map, choose Bus or Subway under To the next checkpoint. On those legs the gap you boarded with carries until you get off, even when the signal drops underground. Live bus and subway data is not used."
+    "When you edit a checkpoint, or in Edit on map, choose Bus or Subway under To the next checkpoint. On those legs the gap you boarded with carries until you get off, even when the signal drops underground. Live bus and subway data is not used."
    ]
   },
   {
    "q": "Waiting at a stop",
    "a": [
-    "Put two checkpoints at the same place with their times apart, and that becomes a waiting leg. Arrive early and it shows Wait here until it is time to go."
+    "Put two checkpoints at the same place with their times apart, and that becomes a waiting leg. Arrive early and it shows Wait here until it is time to go. On the route map, overlapping pins are grouped into one, and tapping the group zooms in until they separate."
    ]
   },
   {
-   "q": "A route deleted by mistake",
+   "q": "Tune from trips suggestions",
    "a": [
-    "Recently Deleted on the home screen keeps the last three routes you deleted. Tap Recover to bring one back. A recovered route counts toward your routes again."
+    "On the route screen, tap the Tune from trips row under the map to see suggestions and Good to know. Leg times count from when you actually left. Leaving late is shown on its own, as in You usually leave 7m late, together with when you would arrive if you left on time. Differences by weekday or departure time appear only when that group has 3 or more trips. Suggestions name checkpoints by pin number, as in #3 Seohyeon-ro, and tapping one shows the change before you apply it. Anyone can see the suggestions. Applying them is part of Pro."
+   ]
+  },
+  {
+   "q": "A route or checkpoint deleted by mistake",
+   "a": [
+    "Recently Deleted on the home screen keeps the last three routes you deleted. Tap Recover to bring one back. A recovered route counts toward your routes again. Removing a checkpoint, Delete all, Use the path you took and applying a schedule or suggestion can be reversed once with Undo, which appears at the top of the route screen. Once you quit the app, it can no longer be undone."
    ]
   },
   {
    "q": "Pro on another device",
    "a": [
     "Tap Restore purchase on the purchase screen. Family Sharing is on, so your family can use it too."
+   ]
+  },
+  {
+   "q": "Using OnPace on a foldable iPhone",
+   "a": [
+    "On a foldable iPhone, when the screen has a system strip along one side, the map button and the Board, Get off, Enter, Exit and Other marks stand in that strip during a trip. Folded and held upright, the map fits on the first screen. Unfolded and held sideways, the trip screen shows the big number and the Remaining checkpoints on the left and the map on the right, all on one screen. When you create or edit a route on the map, the panel sits beside the map."
    ]
   }
  ],

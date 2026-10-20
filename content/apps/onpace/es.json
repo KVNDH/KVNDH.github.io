@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Cuánto tarde, punto por punto",
    "body": [
-    "Fija la hora a la que pasas por unos cuantos puntos del camino: la salida de casa, la esquina, la parada del autobús, la oficina. Mientras te mueves, OnPace compara dónde estás con dónde deberías estar según el plan y muestra la diferencia en minutos y segundos, en cifras grandes. No te indica el camino. Te dice si tienes que darte prisa. Cuando caminas hacia un punto de control con Early is fine o hacia una parada de la que sale tu vehículo, una línea como Plenty of time o Tight te dice si llegas a tiempo a tu paso actual."
+    "Fija la hora a la que pasas por unos cuantos puntos del camino: la salida de casa, la esquina, la parada del autobús, la oficina. Mientras te mueves, OnPace compara dónde estás con dónde deberías estar según el plan y muestra la diferencia en minutos y segundos, en cifras grandes. No te indica el camino. Te dice si tienes que darte prisa. Cuando caminas hacia un punto de control con Early is fine o hacia una parada de la que sale tu vehículo, una línea como Plenty of time o Tight te dice si llegas a tiempo a tu paso actual. Cuando ya hay algunos trayectos, la llegada prevista al siguiente punto de control sigue lo que tardó cada tramo en días de la semana y horas de salida parecidos."
    ],
    "bullets": [
     "Minutos y segundos de adelanto o retraso",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Ajustado con tus trayectos",
    "body": [
-    "Cada trayecto suma tiempos reales. OnPace mira la mediana de tus trayectos recientes y sugiere mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo. Adelantar la salida a partir de un solo trayecto está al alcance de todos."
+    "Cada trayecto suma tiempos reales. Los tiempos de cada tramo cuentan desde que saliste de verdad, y salir tarde se cuenta aparte. Si llegaste tarde porque saliste tarde, OnPace te lo dice en lugar de proponerte salir antes. Mira la mediana de tus trayectos recientes, sugiere con el número de pin mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo, y señala los tramos que tardan más ciertos días de la semana o a ciertas horas de salida. Your last trip, en la pantalla de inicio, muestra con cuánto retraso saliste y cuánto duró el trayecto. Si saliste a tiempo y aun así tardaste más de lo previsto, adelantar la salida a partir de ese único trayecto está al alcance de todos."
    ],
    "bullets": [],
    "visual": {
@@ -72,7 +72,7 @@
      "Mediana de los trayectos recientes",
      "Puntos a los que llegas tarde",
      "Tramos demasiado justos",
-     "Salir antes"
+     "Día y hora de salida"
     ]
    }
   }
@@ -126,25 +126,37 @@
   {
    "q": "Tramos en autobús o metro",
    "a": [
-    "Al editar un punto de control o en el mapa de Edit route, elige Bus o Subway en To the next checkpoint. En esos tramos, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
+    "Al editar un punto de control o en Edit on map, elige Bus o Subway en To the next checkpoint. En esos tramos, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
    ]
   },
   {
    "q": "Esperar en una parada",
    "a": [
-    "Pon dos puntos de control en el mismo sitio con horas separadas y se convierten en un tramo de espera. Si llegas antes, verás Wait here hasta la hora de salir."
+    "Pon dos puntos de control en el mismo sitio con horas separadas y se convierten en un tramo de espera. Si llegas antes, verás Wait here hasta la hora de salir. En el mapa de la ruta, los pines que se solapan se agrupan en uno, y al tocarlo el mapa se acerca hasta que se separan."
    ]
   },
   {
-   "q": "Una ruta borrada por error",
+   "q": "Sugerencias de Tune from trips",
    "a": [
-    "Recently Deleted, en la pantalla de inicio de la app, guarda las tres últimas rutas borradas. Toca Recover para recuperar una. Una ruta recuperada vuelve a contar entre tus rutas."
+    "En la pantalla de la ruta, toca la fila Tune from trips bajo el mapa para ver las sugerencias y Good to know. Los tiempos de cada tramo cuentan desde que saliste de verdad. Salir tarde se muestra aparte, como You usually leave 7m late, junto con la hora a la que llegarías si salieras a tiempo. Las diferencias por día de la semana u hora de salida solo aparecen cuando ese grupo tiene 3 trayectos o más. Las sugerencias nombran los puntos de control por su número de pin, como #3, y al tocar una ves el cambio antes de aplicarlo. Cualquiera puede ver las sugerencias. Aplicarlas es parte de Pro."
+   ]
+  },
+  {
+   "q": "Una ruta o un punto de control borrados por error",
+   "a": [
+    "Recently Deleted, en la pantalla de inicio de la app, guarda las tres últimas rutas borradas. Toca Recover para recuperar una. Una ruta recuperada vuelve a contar entre tus rutas. Quitar un punto de control, Delete all, Use the path you took y aplicar un horario o una sugerencia se pueden deshacer una vez con Undo, que aparece arriba en la pantalla de la ruta. Si cierras la app, ya no se puede deshacer."
    ]
   },
   {
    "q": "Pro en otro dispositivo",
    "a": [
     "Toca Restore purchase en la pantalla de compra. Pro se comparte con En familia, así que tu familia también puede usarlo."
+   ]
+  },
+  {
+   "q": "Usar OnPace en un iPhone plegable",
+   "a": [
+    "En un iPhone plegable, cuando la pantalla tiene una franja del sistema en un lado, durante el trayecto el botón del mapa y las marcas Board, Get off, Enter, Exit y Other se colocan en vertical en esa franja. Plegado y en vertical, el mapa cabe en la primera pantalla. Desplegado y en horizontal, la pantalla del trayecto muestra a la izquierda la cifra grande y la lista Remaining y a la derecha el mapa, todo en una sola pantalla. Al crear o editar una ruta en el mapa, el panel queda junto al mapa."
    ]
   }
  ],

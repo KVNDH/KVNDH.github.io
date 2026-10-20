@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.2",
+ "describesVersion": "1.0.3",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -27,10 +27,10 @@
   "type": "NonConsumable, familyShareable",
   "features": [
    "길 개수 제한 없음 (무료 2개, App/ProStore.swift freeRoutes = 2, 1.0.0 과 같음)",
-   "기록으로 다듬기(Tune from trips)의 적용. 최근 20번까지의 기록에서 지점마다 중앙값. 제안 목록은 무료에서도 보인다 (App/History.swift, App/Schedule.swift)",
+   "기록으로 다듬기(Tune from trips)의 적용. 최근 20번까지의 기록에서 지점마다 중앙값. 제안 목록은 무료에서도 보인다 (App/History.swift, App/Schedule.swift). 1.0.3 에서 다시 짬(e1d548b, 6954ace, 5bfbced): 구간 시간을 실제로 나선 순간부터 재고 늦게 나선 것은 따로 셈('You usually leave %@ late' 평소 출발이 %@ 늦습니다, 'Late on %lld of %lld trips · leaving at %@ gets you there around %@'). 늦게 나서서 늦은 날은 출발 앞당기기를 내지 않음. 요일과 나선 시각 패턴('Good to know' 알아 둘 것)은 그 묶음에 기록 3번 이상일 때만. 제안은 핀 번호로 지점을 부름('#%lld %@', ko '%1$lld번 %2$@'). 적용은 그대로 Pro(SuggestionSection.suggestion, PaywallReason.suggestion), 제안 목록과 알아 둘 것은 무료. 길 화면 지도 아래 한 줄(TuneFromTripsRow)",
    "1.0.1 부터 길마다 요일(Days for each route). 출발 알림과 시간대별 자동 선택이 요일을 따른다. 무료에서는 요일 줄에 Pro 표시가 붙고 결제 화면이 열린다 (App/Paywall.swift, PaywallReason.days, App/Views.swift DaysRow, 34e1bc5)"
   ],
-  "freeForever": "실행, 잠금 화면 카드와 다이나믹 아일랜드, 지점별 오차 범위, 다녀온 기록, 이번 기록으로 다듬기(출발 앞당기기 포함), 제어 센터와 Siri, 1.0.1 부터 길별 출발 알림과 시간대에 맞는 길 자동 선택, 버스와 지하철 구간, 근처 이름 붙이기, 1.0.2 부터 늦음 효과음, 뛰어 말어 판정, Apple Watch 스마트 스택과 CarPlay 작은 카드. 1.0.2 에서 ProStore 와 Paywall 의 무료/Pro 경계는 바뀌지 않음(599acc7..c60cf84 diff, Paywall 은 색만)"
+  "freeForever": "실행, 잠금 화면 카드와 다이나믹 아일랜드, 지점별 오차 범위, 다녀온 기록, 방금 다녀온 기록의 출발 앞당기기(1.0.3 부터 제때 나서도 계획보다 더 걸렸을 때만, Refine.swift insight.keepArrival), 제어 센터와 Siri, 1.0.1 부터 길별 출발 알림과 시간대에 맞는 길 자동 선택, 버스와 지하철 구간, 근처 이름 붙이기, 1.0.2 부터 늦음 효과음, 뛰어 말어 판정, Apple Watch 스마트 스택과 CarPlay 작은 카드. 1.0.2 에서 ProStore 와 Paywall 의 무료/Pro 경계는 바뀌지 않음(599acc7..c60cf84 diff, Paywall 은 색만). 1.0.3: 기록으로 가중한 다음 지점 도착 예상(TripStats.expected), 다녀온 뒤 시트의 늦은 까닭 한 줄(Refine.verdict), 홈 카드의 출발 지연과 가는 데 걸린 시간, 되돌리기(Undo), 접는 iPhone 화면 모두 무료. ProStore 와 Paywall 은 c60cf84..84ef3a6 diff 0"
  },
  "notOffered": [
   "홈 화면 위젯",
@@ -54,7 +54,11 @@
   "뛰어 말어 판정(1.0.2, 무료, dc6848f, be0c2b2): 'Early is fine'(빨라도 괜찮음) 지점과 차가 떠나는 정류장(기다리는 구간 앞)으로 걸어갈 때, 길 위, 800 m 안에서만. 남은 거리 ÷ 남은 시간 1.35/1.9/3.2 m/s 문턱으로 Plenty of time(여유 있습니다), Tight(빠듯합니다), Very tight(매우 빠듯합니다), You may miss it(놓칠 수 있습니다). 실행 화면과 다이나믹 아일랜드 펼친 화면에만, 알림과 진동 없음 (Shared/CatchCall.swift, PaceEngine.swift catchBy). whatsNew 에는 없지만 1.0.2 (3) 에 들어 있어 사이트에 씀",
   "Apple Watch 스마트 스택과 CarPlay 작은 카드(1.0.2, dc6848f): supplementalActivityFamilies [.small] 의 .small 화면을 다시 그림(편차와 몇 시까지, 다음 지점, 게이지). CarPlay 앱은 없고 iOS 26 이상 CarPlay 대시보드에 뜸. CarPlay 는 실기기 확인 전이라 whatsNew 가 '일부 대응'. Watch 앱은 여전히 없음 (Shared/SmallPace.swift, Widgets/PoCWidgets.swift:98)",
   "실행 중 시작 고침(1.0.2, 1b0c77d): 실행 중에 제어 센터나 Siri 로 시작하면 고른 길을 바꾸지 않고 Siri 는 '이미 ○○ 실행 중입니다'(%@ is already running.) (App/RouteIntents.swift:61)",
-  "사이트에 쓰지 않는 것: 1.0.2 (3) 에도 넓은 화면 배치(a2562fe, 2cece8c, WideLayout)가 들어 있지만 접는 iPhone 대응은 1.0.3 에서 사이트에 쓰기로 함(HQ 지시 2026-10-15). 잠금 화면 먹색 글자와 색 점(7706d93)은 1.0.3"
+  "1.0.3 접는 iPhone(439a6a0, 1.0.2 (3)의 WideLayout a2562fe, 2cece8c 와 묶어 사이트에 씀, 기기 상표명은 쓰지 않음): 옆 안전 영역 80pt 이상(RunStrip.minWidth)이면 실행 중 지도 보기와 표시 다섯(Board, Get off, Enter, Exit, Other, ko 탑승, 하차, 안으로, 밖으로, 기타)을 띠에 세로로, 편 가로는 설정도 띠에. 정지는 띠에 없고 편 가로 왼쪽 아래 작은 정지 단추(runningDuoOpen stopButton compact). 접은 세로는 표시 칸이 빠져 지도가 첫 화면에. 편 가로는 왼쪽에 큰 숫자, 게이지, 트랙, 구간 줄, 남은 지점 목록('Remaining' 남은 지점), 오른쪽에 지도. 지도에서 길 만들기와 고치기는 넓은 화면에서 옆 판(WideLayout.isWide: 세로 compact 이거나 가로 regular 이고 폭이 높이보다 큼). TARGETED_DEVICE_FAMILY 1 그대로라 iPad 는 아님",
+  "1.0.3 실행 중 다음 지점 도착 예상(e1d548b, 무료): 지난 기록의 구간 시간을 요일, 나선 시각, 최근 기록으로 가중한 중앙값(TripStats.expected, RunController.swift:244). 기록이 셋 안 되는 구간은 계획 그대로",
+  "1.0.3 다녀온 뒤(e1d548b, 5bfbced): 시트 'This trip'(이번 기록)에 출발 시각과 늦음, 가는 데 걸린 시간, 늦은 까닭 한 줄('You were late because you left late.' 출발이 늦어 늦었습니다 등, Refine.verdict), 아래에 여러 번 기록의 제안. 홈 배너 'Your last trip'(방금 다녀온 기록)에 'Left %@ late · took %lld min, plan %lld min'(출발 %1$@ 늦음 · 가는 데 %2$lld분(계획 %3$lld분)). 배너는 창을 닫아도 남고 '나중에'나 다음 실행에서 내림",
+  "1.0.3 사용성(5bfbced): 지점 빼기, 모두 지우기('Delete all'), 지나간 길로 바꾸기('Use the path you took'), 일정과 제안 적용 뒤 길 화면 맨 위에 한 단계 '되돌리기'(Undo, UndoSection, RoutineStore.lastChange 메모리에만, 앱 종료 뒤 없음). 길 지도에서 겹친 핀은 묶이고 누르면 갈라지는 축척으로 다가감(RoutineMap.groups). 지도 편집 화면 제목은 단추와 같게 'Edit on map'(지도에서 고치기), 1.0.2 의 'Edit route'(길 다듬기)는 없어짐",
+  "사이트에 쓰지 않는 것(1.0.3): 잠금 화면 카드 머리글 먹색 글자와 상태색 점(7706d93, 대비 개선, 기능 아님). 길 카드 누르면 길 화면, 동그라미는 고르기, 기록 지우기 확인 문구 등 작은 다듬기"
  ],
  "uiNames": {
   "Stop": "정지",
@@ -65,7 +69,6 @@
   "To the next checkpoint": "다음 지점까지",
   "Bus": "버스",
   "Subway": "지하철",
-  "Edit route": "길 다듬기",
   "Route": "길",
   "Schedule": "일정",
   "Departure reminder": "출발 알림",
@@ -80,16 +83,31 @@
   "Pace": "페이스",
   "Early is fine": "빨라도 괜찮음",
   "Plenty of time": "여유 있습니다",
-  "Tight": "빠듯합니다"
+  "Tight": "빠듯합니다",
+  "Edit on map": "지도에서 고치기",
+  "Undo": "되돌리기",
+  "Delete all": "모두 지우기",
+  "Use the path you took": "지나간 길로 바꾸기",
+  "Good to know": "알아 둘 것",
+  "Your last trip": "방금 다녀온 기록",
+  "You usually leave %@ late": "평소 출발이 %@ 늦습니다",
+  "#%lld %@": "%1$lld번 %2$@",
+  "Remaining": "남은 지점",
+  "Board": "탑승",
+  "Get off": "하차",
+  "Enter": "안으로",
+  "Exit": "밖으로",
+  "Other": "기타"
  },
  "numbers": [
   "1",
   "2",
   "5"
  ],
- "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개, 1.0.2 늦음 효과음 '5분까지 1분마다'(ko, ja, zh). 출발 알림의 5, 10, 15분은 지원(FAQ)에만 쓴다. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음). 1.0.0 의 Transit to the next checkpoint 스위치는 1.0.1 에서 To the next checkpoint 선택(Walk, Bus, Subway)으로 바뀌었다",
+ "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개, 1.0.2 늦음 효과음 '5분까지 1분마다'(ko, ja, zh). 출발 알림의 5, 10, 15분은 지원(FAQ)에만 쓴다. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음). 1.0.0 의 Transit to the next checkpoint 스위치는 1.0.1 에서 To the next checkpoint 선택(Walk, Bus, Subway)으로 바뀌었다. 1.0.3 의 FAQ 예시 7분(평소 출발이 7분 늦습니다), 3번(같은 묶음 기록 3번, 3번 서현로)은 지원(FAQ)에만 쓴다. 'Edit route' 는 1.0.3 에서 'Edit on map'(지도에서 고치기)으로 바뀌어 버스나 지하철 구간 FAQ 를 고쳤다",
  "sources": [
-  "1.0.2 앱 코드: OnPace c60cf84(1.0.2 빌드 3, project.yml MARKETING_VERSION 1.0.2, CURRENT_PROJECT_VERSION 3, 2026-10-15 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.1 599acc7 과 비교. 그 뒤 439852f 까지는 스크린샷과 문서뿐, 7706d93 은 1.0.3. whatsNew ko '늦는 정도에 따른 1분간격 효과음(1분부터 5분) / Apple Watch와 CarPlay Live 화면 일부 대응 / 실행 중 Siri 시작으로 길이 바뀌던 문제 수정' (docs/store/metadata.json). UI 이름은 PoC/Shared/Localizable.xcstrings(c60cf84, ko 와 en 원문뿐). 권한 문구와 StoreKit 은 바뀌지 않음, Info.plist 에 audio 백그라운드 모드 더함",
+  "1.0.3 앱 코드: OnPace 84ef3a6(1.0.3 빌드 1, project.yml MARKETING_VERSION 1.0.3, CURRENT_PROJECT_VERSION 1, 2026-10-20 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.2 c60cf84 와 비교. 그 뒤 24dbad1 까지는 whatsNew, 스크린샷, 문서뿐. 커밋: 7706d93(잠금 화면 머리글), 439a6a0(접는 iPhone 실행 화면), e1d548b, 6954ace(기록으로 다듬기, 도착 예상), 5bfbced(사용성, 되돌리기). ProStore, Paywall, InfoPlist.xcstrings, PrivacyInfo.xcprivacy diff 0, project.yml 은 버전 번호만, 새 저장 키, 파일, 네트워크 없음(History.PassRecord 에 midway 표시 하나, 실행 기록 안의 값)이라 처리방침은 그대로. whatsNew ko '• iPhone Duo 실행 화면 지원 • 기록으로 다듬기 제안 개선 • 지점 편집에 되돌리기 추가 • 잠금 화면 카드 가독성 개선 • 세부 다듬기와 안정성 개선' (docs/store/metadata.json). UI 이름은 PoC/Shared/Localizable.xcstrings(84ef3a6, ko 와 en 원문뿐)",
+  "(옛 기록) 1.0.2 앱 코드: OnPace c60cf84(1.0.2 빌드 3, project.yml MARKETING_VERSION 1.0.2, CURRENT_PROJECT_VERSION 3, 2026-10-15 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.1 599acc7 과 비교. 그 뒤 439852f 까지는 스크린샷과 문서뿐, 7706d93 은 1.0.3. whatsNew ko '늦는 정도에 따른 1분간격 효과음(1분부터 5분) / Apple Watch와 CarPlay Live 화면 일부 대응 / 실행 중 Siri 시작으로 길이 바뀌던 문제 수정' (docs/store/metadata.json). UI 이름은 PoC/Shared/Localizable.xcstrings(c60cf84, ko 와 en 원문뿐). 권한 문구와 StoreKit 은 바뀌지 않음, Info.plist 에 audio 백그라운드 모드 더함",
   "OnPace/docs/SITE_DRAFT.md (fd1057f, 1.0.1 에서 바뀌는 사실 55c3a1b, 빵집 a192fdf)",
   "OnPace/docs/store/metadata.json (599acc7, 1.0.1 whatsNew 와 기능 섹션)",
   "OnPace/PoC/Shared/Localizable.xcstrings (599acc7)",
