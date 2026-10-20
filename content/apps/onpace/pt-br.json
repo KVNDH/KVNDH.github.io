@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Quanto de atraso, checkpoint por checkpoint",
    "body": [
-    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo. Quando você caminha até um checkpoint com Early is fine ou até um ponto de onde sai sua condução, uma linha como Plenty of time ou Tight diz se você chega a tempo no passo atual."
+    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo. Quando você caminha até um checkpoint com Early is fine ou até um ponto de onde sai sua condução, uma linha como Plenty of time ou Tight diz se você chega a tempo no passo atual. Depois de algumas viagens, a chegada prevista ao próximo checkpoint segue quanto cada trecho levou em dias da semana e horários de saída parecidos."
    ],
    "bullets": [
     "Minutos e segundos de adiantamento ou atraso",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Ajustado pelas suas viagens",
    "body": [
-    "Cada viagem acrescenta tempos reais. O OnPace olha a mediana das viagens recentes e sugere mover um checkpoint em que você sempre chega atrasado ou afrouxar um trecho apertado demais. Antecipar a saída a partir de uma única viagem fica aberto a todos."
+    "Cada viagem acrescenta tempos reais. Os tempos de cada trecho contam a partir do momento em que você realmente saiu, e sair tarde é contado à parte. Se você se atrasou porque saiu tarde, o OnPace diz isso em vez de sugerir sair mais cedo. Ele olha a mediana das viagens recentes, sugere pelo número do pin mover um checkpoint em que você sempre chega atrasado ou afrouxar um trecho apertado demais e aponta trechos que levam mais tempo em certos dias da semana ou horários de saída. Your last trip, na tela inicial, mostra com quanto atraso você saiu e quanto tempo a viagem levou. Se você saiu na hora e mesmo assim levou mais do que o planejado, antecipar a saída a partir dessa única viagem fica aberto a todos."
    ],
    "bullets": [],
    "visual": {
@@ -72,7 +72,7 @@
      "Mediana das viagens recentes",
      "Checkpoints com atraso",
      "Trechos apertados demais",
-     "Sair mais cedo"
+     "Dia da semana e horário de saída"
     ]
    }
   }
@@ -126,25 +126,37 @@
   {
    "q": "Trechos de ônibus e metrô",
    "a": [
-    "Ao editar um checkpoint ou no mapa de Edit route, escolha Bus ou Subway em To the next checkpoint. Nesses trechos, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
+    "Ao editar um checkpoint ou em Edit on map, escolha Bus ou Subway em To the next checkpoint. Nesses trechos, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
    ]
   },
   {
    "q": "Esperar no ponto",
    "a": [
-    "Coloque dois checkpoints no mesmo lugar com horários separados e eles viram um trecho de espera. Se você chegar antes, aparece Wait here até a hora de sair."
+    "Coloque dois checkpoints no mesmo lugar com horários separados e eles viram um trecho de espera. Se você chegar antes, aparece Wait here até a hora de sair. No mapa do trajeto, pins sobrepostos são agrupados em um só, e ao tocar o mapa se aproxima até eles se separarem."
    ]
   },
   {
-   "q": "Um trajeto apagado por engano",
+   "q": "Sugestões de Tune from trips",
    "a": [
-    "Recently Deleted, na tela inicial do app, guarda os três últimos trajetos apagados. Toque em Recover para trazer um de volta. Um trajeto recuperado volta a contar entre os seus trajetos."
+    "Na tela do trajeto, toque na linha Tune from trips abaixo do mapa para ver as sugestões e Good to know. Os tempos de cada trecho contam a partir do momento em que você realmente saiu. Sair tarde aparece à parte, como You usually leave 7m late, junto com a hora em que você chegaria saindo na hora. Diferenças por dia da semana ou horário de saída só aparecem quando esse grupo tem 3 viagens ou mais. As sugestões indicam os checkpoints pelo número do pin, como #3, e ao tocar em uma você vê a mudança antes de aplicar. Qualquer pessoa vê as sugestões. Aplicá-las faz parte do Pro."
+   ]
+  },
+  {
+   "q": "Um trajeto ou checkpoint apagado por engano",
+   "a": [
+    "Recently Deleted, na tela inicial do app, guarda os três últimos trajetos apagados. Toque em Recover para trazer um de volta. Um trajeto recuperado volta a contar entre os seus trajetos. Remover um checkpoint, Delete all, Use the path you took e aplicar um horário ou uma sugestão podem ser desfeitos uma vez com Undo, que aparece no topo da tela do trajeto. Depois de fechar o app, não dá mais para desfazer."
    ]
   },
   {
    "q": "Pro em outro aparelho",
    "a": [
     "Toque em Restore purchase na tela de compra. O Pro funciona com o Compartilhamento Familiar, então sua família também pode usar."
+   ]
+  },
+  {
+   "q": "Usar o OnPace em um iPhone dobrável",
+   "a": [
+    "Em um iPhone dobrável, quando a tela tem uma faixa do sistema em um dos lados, durante a viagem o botão do mapa e as marcações Board, Get off, Enter, Exit e Other ficam na vertical nessa faixa. Dobrado e na vertical, o mapa cabe na primeira tela. Aberto e na horizontal, a tela da viagem mostra à esquerda o número grande e a lista Remaining e à direita o mapa, tudo em uma tela. Ao criar ou editar um trajeto no mapa, o painel fica ao lado do mapa."
    ]
   }
  ],
