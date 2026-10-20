@@ -162,7 +162,7 @@
   {
    "q": "Landscape and foldable iPhone",
    "a": [
-    "Turn iPhone sideways and the brushes and controls move beside the canvas. The screen turns, but the painting stays upright at 3:4. On a foldable iPhone, when the screen has a system strip along one side, Photo, Undo, Redo, Save, Original photo, Replay, Underlay and Settings stand in that strip, and the controls around the canvas get smaller by that much. The canvas keeps its size."
+    "Turn iPhone sideways and the brushes and controls move beside the canvas. The screen turns, but the painting stays upright at 3:4. On a foldable iPhone, when the screen has a system strip along one side, Photo, Undo, Redo, Save, Original photo, Replay, Underlay and Settings stand in that strip, and the controls around the canvas get smaller by that much. The canvas does not get smaller."
    ]
   },
   {
