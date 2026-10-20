@@ -1,32 +1,34 @@
 {
- "describesVersion": "2.0.2",
+ "describesVersion": "2.1.0",
  "purchase": "one-time",
  "ads": true,
  "account": false,
  "network": [
   "Google AdMob 전면 광고 요청과 표시: 저장할 때 한 번(Google Mobile Ads SDK 13.10.0). 상시 배너 없음. 광고를 못 불러오거나 못 띄우면, 60초 안에 답이 없으면, SDK 미준비나 동의 없음이면 광고 없이 저장. 직전 저장이 실패했으면 광고를 건너뜀. 2.0.2 부터 60초 상한이 지난 뒤 늦게 받은 광고와 받는 사이 Tapey Pro 를 산 경우의 광고는 띄우기 직전에 버림(shouldPresent). 광고 단위가 저장 자리별로 셋(그 실행의 첫 저장, 게이트의 기본 항목으로 저장, 같은 실행의 재저장), 광고 동작은 같음 (swift/Tapey/Ads/AdsService.swift:11,41,115-133; swift/Tapey/Ads/GoogleAdsSDK.swift:55-65; swift/Tapey/Ads/AdUnit.swift:15-46; swift/Tapey/Editor/WallStore+Save.swift:60-61,110-111; swift/project.yml:17,20)",
-  "시작 순서: 앱을 켤 때 StoreKit 판정과 옛 구매 값 이전을 기다린 뒤, Tapey Pro 가 아니면 UMP 동의 정보 갱신, 필요하면 동의 창, 광고 요청이 가능하고 ATT 가 미결정이면 ATT 창, SDK 시작. 동의 결과 광고를 요청할 수 없으면 ATT 를 묻지 않음. StoreKit 이 답하지 않으면 그 실행에는 광고를 켜지 않음(UserMessagingPlatform 3.1.0) (swift/Tapey/App/AppServices.swift:34-37; swift/Tapey/Store/Monetization.swift:52-67; swift/Tapey/Ads/AdsService.swift:71-97)",
+  "시작 순서: 앱을 켤 때 StoreKit 판정과 옛 구매 값 이전을 기다린 뒤, Tapey Pro 가 아니면 광고 켜기 때(AdsArming)를 기다리고 UMP 동의 정보 갱신, 필요하면 동의 창, 광고 요청이 가능하고 ATT 가 미결정이면 ATT 창, SDK 시작. 동의 결과 광고를 요청할 수 없으면 ATT 를 묻지 않음. StoreKit 이 답하지 않으면 그 실행에는 광고를 켜지 않음(UserMessagingPlatform 3.1.0). 2.1.0 부터 새로 깐 기기는 벽에 첫 사진이 붙은 뒤에야(되살리기 끝, 사진 있음, 온보딩 내려감) 동의 창, ATT 창, SDK 시작. 그전 저장은 SDK 미준비라 광고 없이. 한 번 켠 기기는 tapey.ads.armed 를 기억해 다음 실행부터 바로 켬 (swift/Tapey/Ads/AdsArming.swift:10,22-24,27-34; swift/Tapey/Store/Monetization.swift:66-75; swift/Tapey/RootView.swift:167-169) (swift/Tapey/App/AppServices.swift:34-37; swift/Tapey/Store/Monetization.swift:52-67; swift/Tapey/Ads/AdsService.swift:71-97)",
   "UMP 가 privacy options 를 required 로 알린 사용자에게만 시작 화면 맨 아래 개인정보처리방침 옆에 광고 설정 링크 (swift/Tapey/Shell/StartScreen.swift:117-131)",
   "Tapey Pro 구매자(옛 광고 제거 구매 포함)는 SDK 시작, 동의 창, ATT 창이 모두 없음. 방금 산 구매도 그 실행의 저장부터 광고 없음 (swift/Tapey/Ads/AdsService.swift:72,103; swift/Tapey/Store/Monetization.swift:65)",
   "App Store 상품 조회, 구매, 구매 복원(StoreKit 2, AppStore.sync 후 재판정) (swift/Tapey/Store/ProStore.swift:32-36,259-281)",
   "시작 화면의 개인정보처리방침 링크: https://kvndh.com/<ko|ja|zh-hans|zh-hant|de|es|pt-br|en>/tapey/privacy/ (그 밖의 언어는 en). 사이트 경로를 바꾸면 앱 링크가 깨짐 (swift/Tapey/Services/PrivacyLink.swift:5-18)",
-  "글꼴은 모두 앱에 번들: 메모 손글씨 나눔손글씨 펜(앱 언어가 한국어일 때)과 Caveat(그 밖의 언어). 두 글꼴에 한자와 가나 글리프가 없어 일본어, 중국어 메모는 시스템 글꼴로 그려짐(글꼴 파일 cmap 확인). 화면 글꼴 IBM Plex Sans 와 TapeySans KR/JP/SC/TC. 설정의 글꼴 라이선스에서 OFL 원문을 봄. 글꼴 때문에 나가는 요청 없음 (swift/Packages/TapeyCore/Sources/TapeyCore/Render/HandFonts.swift:4-34,42-46; swift/Tapey/Info.plist:268-299)",
+  "글꼴은 모두 앱에 번들(SIL OFL): 2.1.0 부터 메모 손글씨는 앱 언어가 아니라 메모 글자로 고름(글꼴 사슬). 나눔손글씨 펜, Caveat(라틴, 키릴), Mynerve(그리스, 베트남), Yomogi(가나, 일본 한자), Long Cang(간체), LXGW WenKai TC(번체), Playpen Sans Thai, Playpen Sans Deva. 한자 셋은 정해 둔 글자 범위로 좁힌 사본이라 범위 밖 글자와 글꼴에 없는 글자는 시스템 글꼴. Caveat 키릴, Mynerve 그리스와 베트남 글리프는 글꼴 파일 cmap 확인. 화면 글꼴 IBM Plex Sans 와 TapeySans KR/JP/SC/TC. 설정의 글꼴 라이선스에서 OFL 원문을 봄. 글꼴 때문에 나가는 요청 없음 (swift/Packages/TapeyCore/Sources/TapeyCore/Render/HandFonts.swift:4-35,59-95; 스토어 새 소식 '31개 언어 손글씨 폰트 추가')",
+  "단축어 [마지막 배경화면](LastWallpaperIntent, App Shortcut): 마지막으로 저장한 배경화면 PNG 를 파일로 돌려줌. openAppWhenRun false, 편집 상태를 건드리지 않고 파일 하나를 읽기만 함, 네트워크 없음. 저장한 적 없으면 native.intent.lastWallpaper.none 오류 (swift/Tapey/Intents/LastWallpaperIntent.swift:11-28,44-54; swift/Tapey/Services/LastWallpaper.swift)",
   "텍스처는 기기 안에서 번들 그림으로 만듦, 네트워크 없음 (swift/Tapey/Services/TextureMaker.swift:66-73)",
   "앱 평가 요청: 저장 성공 5회 이상이고 아직 묻지 않았으면 마무리 창의 새로 만들기나 계속 편집을 누를 때 시스템 별점 창을 한 번 청함 (swift/Tapey/Services/ReviewPrompt.swift:3-22; swift/Tapey/Shell/FinishSheet.swift:48-57,140-145)",
   "앱 코드에 URLSession 등 직접 네트워크 요청 없음. 자체 서버, 분석과 크래시 SDK, 로그인 없음. WKWebView 는 옛 데이터 옮기기에만 쓰며 로컬 스킴 페이지를 엶 (swift/Tapey/Migration/WebDataMigration.swift:75; swift/Tapey/Migration/LegacyOriginSchemeHandler.swift:23-32)"
  ],
  "permissions": [
-  "추적 허용(ATT, NSUserTrackingUsageDescription): 앱을 켠 뒤 광고를 준비할 때, UMP 동의 다음에, 미결정이고 광고 요청이 가능할 때만 요청. 저장할 때 묻지 않음. Tapey Pro 는 묻지 않음. 거부해도 앱 사용 가능 (swift/Tapey/Ads/AdsService.swift:71-97; swift/Tapey/Ads/GoogleAdsSDK.swift:44-46)",
-  "사진 추가 전용(PHPhotoLibrary .addOnly): 완성한 배경화면을 저장할 때. 거부되면 '설정 > Tapey에서 사진 접근을 허용하면 저장할 수 있습니다' 알림 (swift/Tapey/Services/AlbumSaver.swift:24-25; swift/Tapey/Editor/WallStore+Save.swift:111)",
-  "카메라(AVCaptureDevice .video, NSCameraUsageDescription): 2.0.1 에서 사진 찍기가 다시 들어옴. ⋯ 메뉴의 사진 찍기, 교체와 배경 내 사진의 선택 창(사진 보관함, 사진 찍기, 파일 선택)에서 사진 찍기를 누를 때 권한을 봄: 처음이면 시스템 창으로 묻고, 거부면 '설정 > Tapey에서 카메라 접근을 허용하면 사진을 찍을 수 있습니다' 알림과 설정 열기. 카메라 없는 기기는 줄이 없음. 촬영은 UIImagePickerController(.camera), 찍은 한 장은 JPEG 로 바꿔 고른 사진과 같은 가져오기(handlePicked)로 작업 파일 current/files 에 사본. 사진 앱에 따로 저장하는 코드 없음(PHPhotoLibrary 쓰기는 완성 배경화면 저장 AlbumSaver 하나), 네트워크 없음. 사진 보관함 읽기 권한은 요청하지 않음(PhotosPicker). NSPhotoLibraryUsageDescription 문구는 남아 있으나 요청 코드 없음 (swift/Tapey/Services/CameraAccess.swift:1-25; swift/Tapey/Services/CameraCapture.swift:17-45; swift/Tapey/Editor/WallStore.swift openPicker(_:from:); swift/Tapey/RootView.swift:189-201; swift/Tapey/Shell/AppMenu.swift; swift/Tapey/Services/AlbumSaver.swift:34-35; swift/Tapey/Info.plist:57-62)",
+  "추적 허용(ATT, NSUserTrackingUsageDescription): 광고를 준비할 때(2.1.0 부터 새로 깐 기기는 벽에 첫 사진이 붙은 뒤, 한 번 켠 기기는 앱을 켤 때), UMP 동의 다음에, 미결정이고 광고 요청이 가능할 때만 요청. 저장할 때 묻지 않음. Tapey Pro 는 묻지 않음. 거부해도 앱 사용 가능 (swift/Tapey/Ads/AdsService.swift:71-97; swift/Tapey/Ads/AdsArming.swift; swift/Tapey/Ads/GoogleAdsSDK.swift:44-46)",
+  "사진 추가 전용(PHPhotoLibrary .addOnly): 완성한 배경화면을 저장할 때, 그리고 2.1.0 설정 '찍은 사진을 사진 앱에도 저장'(native.settings.cameraCopy, 기본 꺼짐)을 켜는 순간. 켤 때 거절하면 스위치가 꺼지고 [설정 열기] 알림. 거부되면 '설정 > Tapey에서 사진 접근을 허용하면 저장할 수 있습니다' 알림 (swift/Tapey/Services/AlbumSaver.swift:19-20,24-25,33-43; swift/Tapey/Editor/WallStore+CameraCopy.swift:23-29; swift/Tapey/Editor/WallStore+Save.swift:111)",
+  "카메라(AVCaptureDevice .video, NSCameraUsageDescription): 2.0.1 에서 사진 찍기가 다시 들어옴. ⋯ 메뉴의 사진 찍기, 교체와 배경 내 사진의 선택 창(사진 보관함, 사진 찍기, 파일 선택)에서 사진 찍기를 누를 때 권한을 봄: 처음이면 시스템 창으로 묻고, 거부면 '설정 > Tapey에서 카메라 접근을 허용하면 사진을 찍을 수 있습니다' 알림과 설정 열기. 카메라 없는 기기는 줄이 없음. 촬영은 UIImagePickerController(.camera), 찍은 한 장은 JPEG 로 바꿔 고른 사진과 같은 가져오기(handlePicked)로 작업 파일 current/files 에 사본. 2.1.0 부터 설정 '찍은 사진을 사진 앱에도 저장'(tapey.cameraCopy, 기본 꺼짐)을 켜 두면 찍은 한 장을 먼저 벽에 붙인 뒤 사진 앱에도 넣음(saveCameraCopy, 추가 전용 권한). 넣기 실패는 말없이 넘기고, 권한이 없으면 설정을 끄고 [설정 열기]. 꺼져 있으면 사진 앱에 넣지 않음. 네트워크 없음. 사진 보관함 읽기 권한은 요청하지 않음(PhotosPicker). NSPhotoLibraryUsageDescription 문구는 남아 있으나 요청 코드 없음 (swift/Tapey/Editor/WallStore+CameraCopy.swift:8,33-53; swift/Tapey/Sheets/SettingsSheet.swift:59,145; swift/Tapey/Services/CameraAccess.swift:1-25; swift/Tapey/Services/CameraCapture.swift:17-45; swift/Tapey/Editor/WallStore.swift openPicker(_:from:); swift/Tapey/RootView.swift:189-201; swift/Tapey/Shell/AppMenu.swift; swift/Tapey/Services/AlbumSaver.swift:34-35; swift/Tapey/Info.plist:57-62)",
   "위치, 연락처, 마이크 권한 없음"
  ],
  "storage": [
-  "작업 파일: 기기의 Application Support/Tapey/ 아래. current/meta.json(배치, 설정, 메모), current/files(고른 사진 원본과 배경 사진, 텍스처). 앱을 다시 열면 복원, 메뉴의 다시 시작으로 삭제 (swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore.swift:3-24,44-45; swift/Tapey/Services/AppPaths.swift:5)",
+  "작업 파일: 기기의 Application Support/Tapey/ 아래. current/meta.json(배치, 설정, 메모. 2.1.0 부터 사진마다 선택 칸 cropX/cropY(보이는 자리), tape, frame(사진별 테이프, 프레임). 안 쓴 사진은 옛 판과 같음), current/files(고른 사진 원본과 배경 사진, 텍스처). 앱을 다시 열면 복원, 메뉴의 다시 시작으로 삭제 (swift/Packages/TapeyCore/Sources/TapeyCore/Model.swift:145-155,183,203; swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore.swift:3-24,44-45; swift/Tapey/Services/AppPaths.swift:5)",
   "최근 프로젝트: 저장 마무리 창의 새로 만들기를 누르면 지금 작업을 썸네일(thumb.jpg)과 함께 recents/<id>/ 에 보관, 최대 3개, 넘치면 오래된 것부터 버림 (swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore+Recents.swift:8,137; swift/Tapey/Editor/WallStore+Persist.swift:213-245)",
-  "UserDefaults: tapey.locale(언어 선택), tapey.adfree(Tapey Pro 구매 캐시), tapey.saveCount(저장 횟수), tapey.reviewAsked(평가 요청 여부), tapey.ads.seen(화면에 뜬 전면 광고 수, 2.0.2 부터 셈), tapey.proNudge.hiddenUntil(마무리 창 Pro 안내를 다시 보일 본 광고 수, 2.0.2), tapey.onboarded(온보딩 봄), tapey.coach.drag 와 tapey.coach.memo(안내 봄), tapey.camera.view(자동 보기, 전체 보기 선택), 옛 웹판에서 옮겨 온 tapey.dock, tapey.dock.risen, tapey.tabs.seen(2.0.0 은 읽지 않고 값만 남음) (swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/LegacyLocalStorage.swift:10-14,34-42; swift/Tapey/Localization/AppLocale.swift:12; swift/Tapey/Store/ProEntitlement.swift:53; swift/Tapey/Services/ReviewPrompt.swift:8-9; swift/Tapey/Ads/AdsService.swift:79-82; swift/Tapey/Services/ProNudge.swift:12; swift/Tapey/Shell/Onboarding.swift:8; swift/Tapey/Shell/EditorTips.swift:53-54; swift/Tapey/Shell/CameraViewChoice.swift:11)",
+  "UserDefaults: tapey.locale(언어 선택), tapey.adfree(Tapey Pro 구매 캐시), tapey.saveCount(저장 횟수), tapey.reviewAsked(평가 요청 여부), tapey.ads.seen(화면에 뜬 전면 광고 수, 2.0.2 부터 셈), tapey.proNudge.hiddenUntil(마무리 창 Pro 안내를 다시 보일 본 광고 수, 2.0.2), tapey.ads.armed(이 기기에서 광고를 켠 적 있음, 2.1.0), tapey.cameraCopy(찍은 사진을 사진 앱에도 저장, 2.1.0), tapey.shapeDragNotice(모양 배치 끌기 안내를 봄, 2.1.0), tapey.onboarded(온보딩 봄), tapey.coach.drag 와 tapey.coach.memo(안내 봄), tapey.camera.view(자동 보기, 전체 보기 선택), 옛 웹판에서 옮겨 온 tapey.dock, tapey.dock.risen, tapey.tabs.seen(2.0.0 은 읽지 않고 값만 남음) (swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/LegacyLocalStorage.swift:10-14,34-42; swift/Tapey/Localization/AppLocale.swift:12; swift/Tapey/Store/ProEntitlement.swift:53; swift/Tapey/Services/ReviewPrompt.swift:8-9; swift/Tapey/Ads/AdsService.swift:79-82; swift/Tapey/Services/ProNudge.swift:12; swift/Tapey/Ads/AdsArming.swift:10; swift/Tapey/Editor/WallStore+CameraCopy.swift:8; swift/Tapey/Editor/WallStore.swift:597; swift/Tapey/Shell/Onboarding.swift:8; swift/Tapey/Shell/EditorTips.swift:53-54; swift/Tapey/Shell/CameraViewChoice.swift:11)",
   "옛 웹 데이터 옮기기: 2.0.0 첫 실행 때 숨은 WKWebView 로 옛 웹판(1.2.x)의 localStorage, IndexedDB 를 읽어 새 파일 저장소와 UserDefaults 로 한 번 옮김. 옛 데이터는 지우지 않음. 끝나기 전에는 기다림 화면(최대 30초), 실패해도 빈 벽으로 시작. 옛 구매 캐시 값도 옮겨 구매자에게 광고가 켜지지 않게 함 (swift/Tapey/Migration/WebDataMigration.swift:6-19,28-34,67-80; swift/Tapey/Migration/MigrationGate.swift:13-17)",
   "저장 파일: 화면과 같은 합성 함수로 고른 해상도 크기 그대로의 PNG 를 만들어 사진 앱에 추가 (swift/Packages/TapeyCore/Sources/TapeyCore/Render/Export.swift:28-40,89; swift/Tapey/Services/AlbumSaver.swift:24,40-43)",
+  "마지막 배경화면(2.1.0): 저장이 앨범에 넣은 뒤 같은 PNG 를 Application Support/Tapey/last-wallpaper/wallpaper.png 에 .atomic 으로 덮어씀, 늘 한 장. ProjectStore 의 current, recents 밖이라 다시 시작으로 지워지지 않고 앱 삭제로 지워짐. 쓰기 실패는 저장을 막지 않음. 단축어 [마지막 배경화면]이 읽음 (swift/Tapey/Services/LastWallpaper.swift:4-41; swift/Tapey/Editor/WallStore+Save.swift:152-153)",
   "공유용 사본: 저장이 성공할 때마다 앨범에 넣은 것과 같은 PNG 를 임시 폴더에 써 둠(공유하기를 누르지 않아도 만들어지고, 공유하기는 그 파일을 시스템 공유 시트에 건넴). 임시 파일은 앱을 켤 때 지움 (swift/Tapey/Editor/WallStore+Save.swift:131; swift/Tapey/Services/ShareFiles.swift:3-27)",
   "앱 자체 PrivacyInfo.xcprivacy 있음: NSPrivacyTracking false, 추적 도메인 없음, 수집 데이터 유형 없음, Required Reason API 는 UserDefaults CA92.1 하나. Google Mobile Ads SDK 매니페스트: 기기 ID, 광고 데이터, 제품 상호작용, 대략적 위치, 성능 데이터, 충돌 데이터, 기타 진단 데이터 (swift/Tapey/PrivacyInfo.xcprivacy:4-20,24-40)"
  ],
@@ -42,13 +44,14 @@
    "en": "Remove ads"
   },
   "effect": "광고 없이 저장, 사진 30장까지(무료는 12장까지), 프리미엄 테이프 8종, 새 프레임(우표, 찢은 종이), 새 배치(빨랫줄, 별). 옛 광고 제거 상품 ID 를 그대로 이어 써서 옛 구매자는 그대로 Tapey Pro. 환불이 확인될 때만 내림 (swift/Tapey/Sheets/ProSheet.swift:75-84; swift/Tapey/Store/ProEntitlement.swift:25-29,47-53,85-97)",
-  "preview": "무료에서도 Pro 무늬, 프레임, 배치를 골라 미리 봄(칸에 Pro 칩과 자물쇠). Pro 항목이 보이는 채 저장을 누르면 'Pro 항목을 어떻게 저장할까요?' 카드에서 Tapey Pro 구매, 기본 항목으로 저장, 계속 편집 가운데 고름. 기본 항목 저장은 결과물만 무지, 테두리, 자동 배치, 앞 12장으로 그리고 작업은 그대로 둠. 사진 12장 초과는 무료 미리보기 없음 (swift/Tapey/Editor/WallStore+Save.swift:28-58; swift/Tapey/Sheets/ProGateCard.swift:20-49; swift/Packages/TapeyCore/Sources/TapeyCore/ProItems.swift:59-107)",
+  "preview": "무료에서도 Pro 무늬, 프레임, 배치를 골라 미리 봄(칸에 Pro 칩과 자물쇠). Pro 항목이 보이는 채 저장을 누르면 'Pro 항목을 어떻게 저장할까요?' 카드에서 Tapey Pro 구매, 기본 항목으로 저장, 계속 편집 가운데 고름. 기본 항목 저장은 결과물만 무지, 테두리, 자동 배치, 앞 12장으로 그리고 작업은 그대로 둠. 2.1.0 부터 사진 한 장에만 고른 Pro 무늬, 프레임도 Pro 항목으로 셈. 기본 항목 저장은 그 사진만 무지, 테두리로. 사진 12장 초과는 무료 미리보기 없음. 무료 한도에 닿으면 알림 '무료는 사진 {max}장까지입니다'와 [Pro 보기](native.toast.freeMaxPhotos, native.toast.freeAddedUpTo, native.pro.see) (swift/Tapey/Editor/WallStore+Save.swift:28-58; swift/Tapey/Sheets/ProGateCard.swift:20-49; swift/Packages/TapeyCore/Sources/TapeyCore/ProItems.swift:59-120; swift/Tapey/Editor/WallStore.swift:485)",
   "entryPoints": [
    "메뉴의 Tapey Pro(구매자는 눌리지 않는 'Tapey Pro, 이용 중' 줄)",
    "시작 화면 아래 Tapey Pro 글자 버튼(구매 전만)",
-   "저장 마무리 창의 Tapey Pro 줄(구매 전만)",
+   "저장 마무리 창의 Tapey Pro 줄(구매 전만, 2.1.0 부터 StoreKit 가격 표시, swift/Tapey/Shell/FinishSheet.swift:192-193)",
    "저장 마무리 창의 Tapey Pro 안내 한 줄(2.0.2, 광고를 세 번 이상 본 기기, 이번 저장에 광고가 떴을 때만)",
    "설정의 Tapey Pro 절 Pro 보기",
+   "사진 한도 알림의 Pro 보기(2.1.0)",
    "사진이 가득일 때 사진 단계의 가득 칸",
    "저장 게이트 카드의 Tapey Pro 구매"
   ],
@@ -56,7 +59,7 @@
   "familyShareable": "가족 공유로 받은 사람도 Pro(ownershipType 을 보지 않음). Tapey.storekit 에 familyShareable true. ASC 실제 값은 저장소 밖(Tapey 세션 요약은 true)이라 사이트 문구에는 쓰지 않음 (swift/Tapey/Store/ProEntitlement.swift:63-67; swift/StoreKit/Tapey.storekit:7)"
  },
  "features": {
-  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 2.0.2 빌드 22 (swift/project.yml:6,37,38,167)",
+  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 2.1.0 빌드 23 (swift/project.yml:6,37,38)",
   "maxPhotos": {
    "free": 12,
    "pro": 30
@@ -86,7 +89,7 @@
    "별(Pro, 사진 10장 이상일 때)",
    "빨랫줄(Pro, 1장부터)"
   ],
-  "pinning": "끌기, 크기, 각도 변경을 마친 사진은 고정되어 재배치에서 자리를 지킴. 고정과 해제 동작은 자동 배치일 때만 보임 (swift/Packages/TapeyCore/Sources/TapeyCore/Editor/WallEdits.swift:120-132,264)",
+  "pinning": "끌기, 크기, 각도 변경을 마친 사진은 고정되어 재배치에서 자리를 지킴. 고정과 해제 동작은 자동 배치일 때만 보임. 모양 배치(자동 말고 여섯)에서 손으로 옮기면 기기에 한 번 '다시 배치하면 모양대로 돌아갑니다' 안내와 [자동 배치로 바꾸기](native.layout.shapeReturns, native.layout.switchToAuto, 2.1.0, swift/Tapey/Editor/WallStore.swift:595-605) (swift/Packages/TapeyCore/Sources/TapeyCore/Editor/WallEdits.swift:120-132,264)",
   "undoSteps": 30,
   "wallSwatches": 10,
   "wallTones": 8,
@@ -129,11 +132,13 @@
    "우표",
    "찢은 종이"
   ],
-  "monochrome": "전체 흑백 토글(폰은 프레임 단계 머리 줄, iPad 사이드바는 흑백 칸)과 사진별 흑백(사진을 고르면 나오는 동작 줄)",
+  "monochrome": "전체 흑백 토글(폰은 프레임 단계 머리 줄, iPad 사이드바는 흑백 칸)과 사진별 흑백(사진을 고르면 나오는 동작 줄). 2.1.0 부터 흑백 상태를 모든 사진, 일부 사진, 끔 셋으로 보임(native.frame.monoAll, monoSome, monoOff; swift/Tapey/Shell/EditorSheet.swift:537-544)",
   "photoMode": [
    "앞으로",
    "고정 또는 해제(자동 배치일 때만)",
    "흑백 또는 컬러",
+   "자리(2.1.0, 사진이 창보다 넘칠 때만. 끌어 보일 부분을 맞추고 가운데로)",
+   "테이프(2.1.0, 그 사진에만 테이프와 프레임, 모든 사진과 같게로 되돌림)",
    "교체",
    "삭제",
    "완료"
@@ -160,7 +165,7 @@
    "계속 편집",
    "배경화면으로 설정하는 법",
    "공유하기",
-   "Tapey Pro 줄(구매 전만)"
+   "Tapey Pro 줄(구매 전만, 2.1.0 부터 가격)"
   ],
   "recentProjects": 3,
   "onboarding": "첫 실행에 환영 카드 셋, 건너뛰기 가능, 기기당 한 번. 마지막 버튼 사진 붙이며 시작하기는 사진 선택기를 엶 (swift/Tapey/Shell/Onboarding.swift:3-14,29,49)",
@@ -188,7 +193,11 @@
   "photoDeniedNotice": "사진 추가 권한이 거부되면 알림에 설정 열기(10초), 카메라 거부 알림도 같음 (Tapey 3754e71; swift/Tapey/Editor/WallStore.swift:211)",
   "accessibility": "시트와 트레이 글자가 큰 글자 설정을 1.3배까지 따름(82c00fa). VoiceOver 사용자 지정 동작 여덟(위, 아래, 왼쪽, 오른쪽으로 옮기기, 키우기, 줄이기, 왼쪽, 오른쪽으로 기울이기)과 하드웨어 키보드 ⌥ 방향키로 크기와 각도(4dd46f9)",
   "duo": "iPhone Duo(접는 iPhone, 2.0.1): 해상도에 Duo 바깥 화면(1398 × 2034)과 Duo 안쪽 화면(2007 × 2853), 켠 화면 쪽이 목록 맨 앞, Duo 에는 내기기맞춤 없음(Presets.duoResolutions, WallStore.swift:1024-1032). 접은 화면은 오른쪽 상태 띠(84pt)를 비켜 크롬을 두고 단계 선택이 시트 오른쪽 띠 칸의 세로 기둥(EditorSheet.railEdge, a0e4405), 키운 벽은 띠까지 바탕을 이음(stripBleed). 펼친 넓은 화면은 폰 셸 기둥이 띠를 뺀 폭 가운데(ShellLayout, ba297b5). 잠금화면 가이드는 바깥 화면에서 띠를 뺀 폭 가운데",
-  "shareFile": "공유하기는 앨범에 넣은 그 PNG 를 임시 폴더(tmp/Tapey-share-<UUID>.png)에 써서 건넴, 2.0.0 의 폭 540 JPEG 미리보기에서 바뀜. 앱을 켤 때 지움 (swift/Tapey/Services/ShareFiles.swift; Tapey dad5915)"
+  "shareFile": "공유하기는 앨범에 넣은 그 PNG 를 임시 폴더(tmp/Tapey-share-<UUID>.png)에 써서 건넴, 2.0.0 의 폭 540 JPEG 미리보기에서 바뀜. 앱을 켤 때 지움 (swift/Tapey/Services/ShareFiles.swift; Tapey dad5915)",
+  "photoModeNote": "일곱 칸이면 앞으로와 교체가 더 보기 메뉴로 접힘. 단계 트레이에는 따로 정한 사진 수(native.tape.overrides, native.frame.overrides)와 모두 맞추기(native.photoLook.matchAll) (swift/Tapey/Shell/PhotoActionsBar.swift:1-90,203-247; swift/Tapey/Editor/WallStore.swift:662-666)",
+  "saveLock": "2.1.0: 저장하는 동안 편집 잠금(editLocked = isSaving), 저장이 길어지면 안내 줄 '저장을 준비하고 있습니다'(native.save.preparing) (swift/Tapey/Editor/WallStore.swift:152-159; swift/Tapey/Editor/WallStore+Save.swift:157-170; swift/Tapey/Shell/NoticeLine.swift:93)",
+  "shortcut": "단축어 [마지막 배경화면](native.intent.lastWallpaper.title, short, desc, none; 영어 문구 'Get the last wallpaper from Tapey')",
+  "cameraCopy": "설정 시트 카메라 절(native.settings.camera)의 '찍은 사진을 사진 앱에도 저장'(native.settings.cameraCopy), 기본 꺼짐"
  },
  "numbers": [
   "12",
@@ -201,16 +210,17 @@
   "60",
   "3"
  ],
- "numbersNote": "12 무료 사진 수, 30 Tapey Pro 사진 수, 8 테이프 색과 프리미엄 테이프(Pro 무늬)와 배경 톤, 4 무료 테이프 무늬, 10 배경 견본 수(톤 8 + 코르크보드, 패브릭), 6 하트 배치가 나오는 사진 수(FAQ), 31 앱 언어 수, 60 광고를 기다리는 초(FAQ), 3 Pro 안내가 나오는 본 광고 수와 닫은 뒤 더 볼 수(FAQ). sections[0] crop 의 focus 는 검사 대상이 아님",
+ "numbersNote": "12 무료 사진 수, 30 Tapey Pro 사진 수, 8 테이프 색과 프리미엄 테이프(Pro 무늬)와 배경 톤, 4 무료 테이프 무늬, 10 배경 견본 수(톤 8 + 코르크보드, 패브릭), 6 하트 배치가 나오는 사진 수(FAQ), 31 앱 언어 수와 손글씨 메모 언어 수(스토어 새 소식), 60 광고를 기다리는 초(FAQ), 3 Pro 안내가 나오는 본 광고 수와 닫은 뒤 더 볼 수(FAQ). sections[0] crop 의 focus 는 검사 대상이 아님",
  "sources": [
-  "Tapey 커밋 2c66365 (2.0.2 빌드 22, 2026-10-16 5c19ccc 기록에서 심사 제출, HQ 가 ASC READY_FOR_SALE 확인). 2.0.1 은 256c647(빌드 21), 2.0.0 기준은 25ccd02. 2c66365 와 5c19ccc 사이는 기록과 시험만 바뀜. 그 뒤 '제안 2.0.2' 커밋들(9118803 부터)은 다음 판 2.1.0 작업이라 넣지 않음. 아래 경로는 Tapey/ 기준",
+  "Tapey 2.1.0 기준(2026-10-20 사이트 갱신). 아카이브 커밋 3541bfa(2.1.0 빌드 23, e378d92 기록에서 심사 제출, 09e0127 에서 HQ 가 READY_FOR_SALE 확인). 2.0.2 아카이브 a9cc4ed 와의 차이는 git diff a9cc4ed 3541bfa -- swift/Tapey swift/Packages. 아래 경로는 Tapey/ 기준이고 3541bfa 에서 읽음. (옛 기록) 2.0.2 는 2c66365(빌드 22), 2.0.1 은 256c647(빌드 21), 2.0.0 기준은 25ccd02",
+  "swift/Tapey/Ads/AdsArming.swift, swift/Tapey/Editor/WallStore+CameraCopy.swift, swift/Tapey/Services/LastWallpaper.swift, swift/Tapey/Intents/LastWallpaperIntent.swift, swift/Tapey/Shell/NoticeLine.swift, swift/Tapey/Resources/AppShortcuts.xcstrings, swift/l10n/native.json, swift/l10n/shortcuts.json (2.1.0 첫 사진 뒤 광고, 찍은 사진 사본, 마지막 배경화면, 저장 준비 안내)",
   "swift/Tapey/Ads/AdUnit.swift, swift/Tapey/Ads/GoogleAdsSDK.swift, swift/Tapey/Ads/Deadline.swift, swift/Tapey/Services/ProNudge.swift (2.0.2 늦은 광고 버리기, 저장 자리별 광고 단위, 마무리 창 Pro 안내)",
   "swift/Tapey/Services/CameraAccess.swift, swift/Tapey/Services/CameraCapture.swift, swift/Tapey/Services/IntakeFiles.swift (2.0.1 사진 찍기, 파일 선택)",
-  "swift/project.yml (MARKETING_VERSION 2.0.2, 빌드 22, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
+  "swift/project.yml (MARKETING_VERSION 2.1.0, 빌드 23, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
   "swift/Tapey/Info.plist",
   "swift/Tapey/PrivacyInfo.xcprivacy",
   "swift/StoreKit/Tapey.storekit",
-  "swift/Tapey/Resources/Localizable.xcstrings (로케일 31, 키 238. 화면 글자의 출처)",
+  "swift/Tapey/Resources/Localizable.xcstrings (로케일 31. 화면 글자의 출처)",
   "swift/Tapey/Localization/AppLanguage.swift",
   "swift/Tapey/Localization/AppLocale.swift",
   "swift/Tapey/App/AppServices.swift",
@@ -265,5 +275,6 @@
   "swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore.swift",
   "swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore+Recents.swift",
   "docs/store/shots.json, docs/store/shots-raw/iphone, docs/store/screenshots/iphone (사이트 그림의 원본)"
- ]
+ ],
+ "versionNote": "Tapey 2.1.0(빌드 23) 출시를 2026-10-20 HQ 가 ASC 에서 READY_FOR_SALE 로 확인(Tapey docs/NEXT.md 09e0127). 범위는 2.0.2 아카이브 a9cc4ed 에서 2.1.0 아카이브 3541bfa 까지 62개 커밋(docs/history.md '2.0.2 제안서 구현(1~4단계 28건)'). 8개 언어에 반영: 자리, 사진별 테이프와 프레임, 31개 언어 손글씨 메모, 자동 배치에서만 고정, 찍은 사진 사본 설정, 단축어 마지막 배경화면, 저장 중 편집 잠금과 저장 준비 안내, 사진 한 장의 Pro 항목, 무료 한도 알림의 Pro 보기, 첫 사진 뒤 광고 준비. 처리방침은 찍은 사진이 사진 앱에 저장되지 않는다는 문장이 틀려져 고침(시행일 2026-10-20). 네트워크 새 요청, Info.plist, PrivacyInfo.xcprivacy, Package.resolved(GMA 13.10.0, UMP 3.1.0), 카메라 권한, 무료/Pro 경계는 그대로"
 }

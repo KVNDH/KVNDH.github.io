@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "As fotos acham o lugar delas",
    "body": [
-    "Escolha suas fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la, ou use dois dedos para mudar o tamanho e a inclinação. A foto que você move à mão fica fixa onde você a deixou."
+    "Escolha suas fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la, ou use dois dedos para mudar o tamanho e a inclinação. No layout Auto, a foto que você move à mão fica fixa onde você a deixou. Se uma foto não cabe inteira na janela, toque em Enquadrar para escolher a parte que aparece."
    ],
    "bullets": [
     "Até 12 fotos, ou 30 com o Tapey Pro",
@@ -30,12 +30,13 @@
    "layout": "feat",
    "title": "Fita e molduras",
    "body": [
-    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão. As mudanças de fundo, fita e moldura também podem ser desfeitas."
+    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão. Selecione uma foto e toque em Fita para dar só a essa foto a própria fita e a própria moldura. As mudanças de fundo, fita e moldura também podem ser desfeitas."
    ],
    "bullets": [
     "8 cores de fita, 4 padrões e 8 padrões Pro",
     "Borda branca e moldura Polaroid",
-    "P&B no fundo inteiro ou numa foto só"
+    "P&B no fundo inteiro ou numa foto só",
+    "Notas à mão em 31 idiomas"
    ],
    "visual": {
     "type": "kit",
@@ -115,7 +116,8 @@
    "q": "Adicionar fotos",
    "a": [
     "Na tela inicial, toque em Adicionar fotos e escolha suas fotos. Também dá para arrastar fotos de outro app. Durante a edição, toque em Adicionar na etapa Fotos. Com Tirar Foto e Escolher Arquivo, no menu, você tira uma foto na hora ou escolhe uma imagem do app Arquivos. Ao trocar uma foto ou escolher Minha foto como fundo, você escolhe entre Fototeca, Tirar Foto e Escolher Arquivo.",
-    "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, um layout do Tapey Pro, 10 ou mais."
+    "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, um layout do Tapey Pro, 10 ou mais. Se passar do limite grátis, Ver Pro, no aviso, mostra o Tapey Pro.",
+    "Ative Salvar também as fotos no app Fotos nos Ajustes do app, e as fotos que você tira no app também vão para o app Fotos. No início fica desativado, e ao ativar o iOS pergunta se o Tapey pode adicionar fotos."
    ]
   },
   {
@@ -129,21 +131,21 @@
    "q": "O anúncio ao salvar",
    "a": [
     "O Tapey mostra um anúncio em tela cheia quando você salva um papel de parede. O Google AdMob escolhe e exibe esse anúncio.",
-    "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio. O Tapey espera o anúncio por até 60 segundos, e um anúncio que chega depois não é mostrado.",
+    "Se o anúncio não carregar, ou se o último salvamento falhou, o Tapey salva na hora e sem anúncio. O Tapey espera o anúncio por até 60 segundos, e um anúncio que chega depois não é mostrado. Enquanto salva, a edição fica bloqueada. Se esperar um anúncio deixar o salvamento mais demorado, aparece Preparando para salvar.",
     "Em um aparelho que já viu o anúncio três vezes ou mais, a tela que aparece depois de salvar mostra, depois do anúncio, uma linha sobre o Tapey Pro. Se você fechar, ela só volta depois que você vir o anúncio mais três vezes."
    ]
   },
   {
    "q": "Tapey Pro e restaurar a compra",
    "a": [
-    "Compre o Tapey Pro pelo menu ou pela tela inicial. É um pagamento único, não uma assinatura. Depois disso, nenhum anúncio aparece ao salvar, e você pode usar até 30 fotos, as fitas premium e as molduras e os layouts novos. Antes de comprar, você também pode escolher itens Pro para ver a prévia. Se salvar com eles aplicados, você escolhe entre Comprar Tapey Pro, Salvar com itens básicos e Continuar editando.",
+    "Compre o Tapey Pro pelo menu ou pela tela inicial. É um pagamento único, não uma assinatura. Depois disso, nenhum anúncio aparece ao salvar, e você pode usar até 30 fotos, as fitas premium e as molduras e os layouts novos. Antes de comprar, você também pode escolher itens Pro para ver a prévia. Se salvar com eles aplicados, você escolhe entre Comprar Tapey Pro, Salvar com itens básicos e Continuar editando. Um padrão ou uma moldura Pro escolhidos para uma só foto também contam como item Pro. Se você salvar com itens básicos, essa foto é salva com fita Liso e Borda.",
     "Num aparelho novo ou depois de reinstalar, abra Ajustes no menu e toque em Restaurar compras. Com a mesma Conta Apple não há nova cobrança. Se você já comprou Remover anúncios, já tem o Tapey Pro."
    ]
   },
   {
    "q": "Rastreamento e preferências de anúncios",
    "a": [
-    "Na primeira vez que você abre o app, enquanto ele prepara os anúncios, o iOS pergunta se o Tapey pode rastrear você. Se você tem o Tapey Pro, ele não pergunta. O app funciona igual de um jeito ou de outro, e você muda a resposta em Ajustes > Privacidade e Segurança > Rastreamento.",
+    "Depois de instalar o app, ele prepara os anúncios quando você coloca a primeira foto na parede, e então o iOS pergunta se o Tapey pode rastrear você. Se você tem o Tapey Pro, ele não pergunta. O app funciona igual de um jeito ou de outro, e você muda a resposta em Ajustes > Privacidade e Segurança > Rastreamento.",
     "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, mude suas escolhas em Preferências de anúncios, no rodapé da tela inicial. Lá, o formulário de consentimento aparece antes do aviso de rastreamento."
    ]
   },
@@ -158,7 +160,8 @@
    "q": "Definir como papel de parede",
    "a": [
     "Abra no app Fotos a imagem que você acabou de salvar, toque em Compartilhar e escolha Imagem de Fundo. Toque em Adicionar e escolha Definir como Par de Imagens de Fundo.",
-    "Os mesmos passos estão em Como definir como papel de parede, na tela que aparece depois de salvar."
+    "Os mesmos passos estão em Como definir como papel de parede, na tela que aparece depois de salvar.",
+    "No app Atalhos, Última imagem de fundo do Tapey obtém como imagem o último papel de parede que você salvou. Ela funciona sem abrir o app, e você pode ligá-la a uma ação do Atalhos que troca o papel de parede."
    ]
   },
   {
@@ -172,7 +175,7 @@
    "q": "Conexão com a internet",
    "a": [
     "Organizar, decorar e salvar funcionam sem conexão. Os anúncios, a compra do Tapey Pro e a restauração precisam de conexão.",
-    "As letras à mão das notas são instaladas junto com o app. Uma é usada quando o idioma do app é o coreano e outra nos demais idiomas. Os caracteres que essas letras não incluem aparecem na letra do sistema."
+    "As letras à mão das notas são instaladas junto com o app. Cada nota é desenhada numa letra à mão que combina com os caracteres dela: hangul, latino, grego, cirílico, kana, caracteres chineses, tailandês ou devanágari. Os caracteres que essas letras não incluem aparecem na letra do sistema."
    ]
   },
   {
@@ -184,7 +187,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-10-19",
+  "effectiveDate": "2026-10-20",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -206,15 +209,16 @@
     ],
     "bullets": [
      "Cópias das fotos e das fotos de fundo que você escolhe ou tira: usadas para reabrir o trabalho",
-     "Layout, ajustes de decoração e notas das fotos: usados para reabrir o trabalho",
+     "Layout, ajustes de decoração (inclusive a fita, a moldura e a parte visível escolhidas para cada foto) e notas das fotos: usados para reabrir o trabalho",
      "Até 3 projetos recentes com imagens de prévia: usados em Recentes na tela inicial",
-     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, se os guias iniciais já foram mostrados, modo de vista escolhido e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação e do aviso do Tapey Pro"
+     "Uma cópia do último papel de parede que você salvou: usada no atalho Última imagem de fundo, substituída a cada salvamento",
+     "Idioma escolhido, situação da compra do Tapey Pro, número de salvamentos e se o pedido de avaliação já foi mostrado, número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, se este aparelho já preparou anúncios alguma vez, se os guias iniciais e o aviso dos layouts com forma já foram mostrados, modo de vista escolhido, o ajuste Salvar também as fotos no app Fotos e ajustes de disposição de tela trazidos de uma versão anterior: usados para o funcionamento do app e para o momento do pedido de avaliação, do aviso do Tapey Pro e da preparação dos anúncios"
     ]
    },
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. Os papéis de parede salvos no app Fotos são apagados pelo app Fotos.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. O último papel de parede usado pelo atalho é substituído a cada salvamento, então só fica um. Recomeçar, no menu, não o apaga, e ele some quando você exclui o app. Os papéis de parede e as fotos tiradas que vão para o app Fotos são apagados pelo app Fotos.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -257,7 +261,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos ou de arquivos do iOS, arrasta para o app ou tira com Tirar Foto. O iOS pede acesso à câmera na primeira vez que você toca em Tirar Foto. Se não permitir, você ainda pode adicionar fotos das outras formas. A foto que você tira fica como cópia no armazenamento do app, como as fotos que você escolhe, e é usada só no trabalho do papel de parede. Ela não é salva à parte no app Fotos, e o desenvolvedor não a recebe. O app não pede permissão para ler a sua fototeca. Ao salvar um papel de parede pronto, o app usa somente a permissão de adicionar fotos."
+     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos ou de arquivos do iOS, arrasta para o app ou tira com Tirar Foto. O iOS pede acesso à câmera na primeira vez que você toca em Tirar Foto. Se não permitir, você ainda pode adicionar fotos das outras formas. A foto que você tira fica como cópia no armazenamento do app, como as fotos que você escolhe, e é usada só no trabalho do papel de parede. Ela só vai também para o app Fotos se você ativar Salvar também as fotos no app Fotos nos Ajustes do app. Esse ajuste começa desativado, e ao ativá-lo o iOS pede a permissão de adicionar fotos. O desenvolvedor não recebe as fotos que você tira. O app não pede permissão para ler a sua fototeca. Para colocar no app Fotos um papel de parede pronto ou uma foto que você tira, o app usa somente a permissão de adicionar fotos."
     ],
     "bullets": []
    },
@@ -265,7 +269,7 @@
     "title": "Coleta automática e como recusá-la",
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob), que pode coletar as informações de baixo quando carrega e exibe anúncios.",
-     "Quando você abre o app e ele prepara os anúncios, o iOS mostra o aviso de transparência de rastreamento (ATT), caso você ainda não tenha respondido. Ele não aparece na hora de salvar. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
+     "Num aparelho recém-instalado, o app só prepara os anúncios depois que você coloca a primeira foto na parede, e o que você salvar antes disso não tem anúncios. Depois que um aparelho preparou os anúncios uma vez, o app faz isso a cada abertura. Quando o app prepara os anúncios, o iOS mostra o aviso de transparência de rastreamento (ATT), caso você ainda não tenha respondido. Ele não aparece na hora de salvar. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
      "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se o resultado for que os anúncios não podem ser solicitados, o aviso de rastreamento também não aparece. Lá você muda suas escolhas em Preferências de anúncios, no rodapé da tela inicial.",
      "Depois da compra do Tapey Pro (ou de uma compra anterior de Remover anúncios), os anúncios não aparecem, e a partir da abertura seguinte o app deixa de iniciar o AdMob, então nem o formulário de consentimento nem o aviso de rastreamento aparecem."
     ],
@@ -313,6 +317,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-10-20: o ajuste da versão 2.1.0 que também salva no app Fotos as fotos que você tira, a cópia do último papel de parede salvo usada pelo atalho e a fita, a moldura e a parte visível escolhidas para cada foto foram incluídos em “Informações tratadas”, “Tratamento e período de retenção” e “Medidas de segurança”. O momento em que um aparelho recém-instalado prepara os anúncios foi corrigido. A data de vigência anterior era 2026-10-19.",
      "2026-10-19: o número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",
      "2026-10-15: as fotos tiradas com Tirar Foto, as imagens escolhidas com Escolher Arquivo e o acesso à câmera foram incluídos em “Informações tratadas” e “Medidas de segurança”. O arquivo temporário para compartilhar agora é descrito como uma cópia do papel de parede salvo. A data de vigência anterior era 2026-10-06."
     ],

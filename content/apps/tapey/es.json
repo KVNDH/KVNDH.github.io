@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Las fotos encuentran su sitio",
    "body": [
-    "Elige tus fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla, o usa dos dedos para cambiar su tamaño y su inclinación. La foto que mueves a mano se queda donde la has dejado."
+    "Elige tus fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla, o usa dos dedos para cambiar su tamaño y su inclinación. En el diseño Auto, la foto que mueves a mano se queda donde la has dejado. Si una foto no cabe entera en su ventana, toca Encuadre para elegir la parte que se ve."
    ],
    "bullets": [
     "Hasta 12 fotos, o 30 con Tapey Pro",
@@ -30,12 +30,13 @@
    "layout": "feat",
    "title": "Cinta y marcos",
    "body": [
-    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano. Los cambios de fondo, cinta y marco también se pueden deshacer."
+    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. Con el marco Polaroid, cada foto puede llevar su propia nota a mano. Selecciona una foto y toca Cinta para darle solo a esa foto su propia cinta y su propio marco. Los cambios de fondo, cinta y marco también se pueden deshacer."
    ],
    "bullets": [
     "8 colores de cinta, 4 patrones y 8 patrones Pro",
     "Borde blanco y marco Polaroid",
-    "B/N para todo el fondo o para una sola foto"
+    "B/N para todo el fondo o para una sola foto",
+    "Notas a mano en 31 idiomas"
    ],
    "visual": {
     "type": "kit",
@@ -115,7 +116,8 @@
    "q": "Añadir fotos",
    "a": [
     "En la pantalla de inicio, toca Añadir fotos y elige tus fotos. También puedes arrastrar fotos desde otra app. Mientras editas, toca Añadir en el paso Fotos. Con Hacer foto y Seleccionar archivo, en el menú, puedes hacer una foto al momento o elegir una imagen de Archivos. Al cambiar una foto o elegir Mi foto como fondo, eliges entre Fototeca, Hacer foto y Seleccionar archivo.",
-    "En cada fondo caben hasta 12 fotos, o 30 con Tapey Pro. El diseño Corazón aparece cuando tienes 6 o más. Círculo necesita 8 o más, y Estrella, un diseño de Tapey Pro, 10 o más."
+    "En cada fondo caben hasta 12 fotos, o 30 con Tapey Pro. El diseño Corazón aparece cuando tienes 6 o más. Círculo necesita 8 o más, y Estrella, un diseño de Tapey Pro, 10 o más. Si pasas del límite gratuito, Ver Pro, en el aviso, te muestra Tapey Pro.",
+    "Activa Guardar también las fotos en Fotos en Ajustes y las fotos que hagas en la app también irán a la app Fotos. Al principio está desactivado, y al activarlo iOS pregunta si Tapey puede añadir fotos."
    ]
   },
   {
@@ -129,21 +131,21 @@
    "q": "El anuncio al guardar",
    "a": [
     "Tapey muestra un anuncio a pantalla completa cuando guardas un fondo. Google AdMob selecciona y muestra ese anuncio.",
-    "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio. Tapey espera el anuncio como máximo 60 segundos, y un anuncio que llega después no se muestra.",
+    "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio. Tapey espera el anuncio como máximo 60 segundos, y un anuncio que llega después no se muestra. Mientras se guarda, la edición queda bloqueada. Si esperar un anuncio alarga el guardado, aparece Preparando el guardado.",
     "En un dispositivo que ya ha visto el anuncio tres veces o más, la pantalla que aparece después de guardar muestra, tras el anuncio, una línea sobre Tapey Pro. Si la cierras, no vuelve hasta que veas el anuncio tres veces más."
    ]
   },
   {
    "q": "Tapey Pro y restaurar la compra",
    "a": [
-    "Compra Tapey Pro desde el menú o desde la pantalla de inicio. Es un pago único, no una suscripción. A partir de ahí no aparece ningún anuncio al guardar, y puedes usar hasta 30 fotos, las cintas premium y los marcos y diseños nuevos. Antes de comprar también puedes elegir elementos Pro para verlos en vista previa. Si guardas con ellos puestos, eliges entre Comprar Tapey Pro, Guardar con elementos básicos y Seguir editando.",
+    "Compra Tapey Pro desde el menú o desde la pantalla de inicio. Es un pago único, no una suscripción. A partir de ahí no aparece ningún anuncio al guardar, y puedes usar hasta 30 fotos, las cintas premium y los marcos y diseños nuevos. Antes de comprar también puedes elegir elementos Pro para verlos en vista previa. Si guardas con ellos puestos, eliges entre Comprar Tapey Pro, Guardar con elementos básicos y Seguir editando. Un patrón o un marco Pro elegido para una sola foto también cuenta como elemento Pro. Si guardas con elementos básicos, esa foto se guarda con cinta Liso y Borde.",
     "En un dispositivo nuevo o después de reinstalar, abre Ajustes en el menú y toca Restaurar compras. Con la misma cuenta de Apple no se cobra de nuevo. Si ya compraste Quitar anuncios, ya tienes Tapey Pro."
    ]
   },
   {
    "q": "Rastreo y preferencias de anuncios",
    "a": [
-    "La primera vez que abres la app, mientras prepara los anuncios, iOS pregunta si Tapey puede rastrearte. Si tienes Tapey Pro, no lo pregunta. La app funciona igual en cualquier caso, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Después de instalar la app, esta prepara los anuncios cuando pegas la primera foto en la pared, y entonces iOS pregunta si Tapey puede rastrearte. Si tienes Tapey Pro, no lo pregunta. La app funciona igual en cualquier caso, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
     "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, cambia tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio. Allí, el formulario de consentimiento aparece antes que el aviso de rastreo."
    ]
   },
@@ -158,7 +160,8 @@
    "q": "Poner el fondo de pantalla",
    "a": [
     "Abre en la app Fotos la imagen que acabas de guardar, toca Compartir y elige Usar de fondo de pantalla. Toca Añadir y elige Definir como pareja de fondos.",
-    "Esos mismos pasos están en Cómo ponerlo de fondo de pantalla, en la pantalla que aparece después de guardar."
+    "Esos mismos pasos están en Cómo ponerlo de fondo de pantalla, en la pantalla que aparece después de guardar.",
+    "En la app Atajos, Último fondo de pantalla de Tapey obtiene como imagen el último fondo que guardaste. Funciona sin abrir la app, y puedes enlazarlo con una acción de Atajos que cambie el fondo de pantalla."
    ]
   },
   {
@@ -172,7 +175,7 @@
    "q": "Conexión a internet",
    "a": [
     "Colocar, decorar y guardar funcionan sin conexión. Los anuncios, la compra de Tapey Pro y la restauración necesitan conexión.",
-    "Las letras manuscritas de las notas se instalan con la app. Una se usa cuando el idioma de la app es el coreano y otra con los demás idiomas. Los caracteres que esas letras no incluyen aparecen con la letra del sistema."
+    "Las letras manuscritas de las notas se instalan con la app. Cada nota se dibuja con una letra manuscrita que encaja con sus caracteres: hangul, latino, griego, cirílico, kana, caracteres chinos, tailandés o devanagari. Los caracteres que esas letras no incluyen aparecen con la letra del sistema."
    ]
   },
   {
@@ -184,7 +187,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Tapey",
-  "effectiveDate": "2026-10-19",
+  "effectiveDate": "2026-10-20",
   "summary": "El desarrollador no recoge información personal. El anuncio que aparece al guardar viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Tapey Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Tapey (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -206,15 +209,16 @@
     ],
     "bullets": [
      "Copias de las fotos y de las fotos de fondo que eliges o haces: para volver a abrir tu trabajo",
-     "Disposición, ajustes de decoración y notas de las fotos: para volver a abrir tu trabajo",
+     "Disposición, ajustes de decoración (incluidos la cinta, el marco y la parte visible elegidos para cada foto) y notas de las fotos: para volver a abrir tu trabajo",
      "Hasta 3 proyectos recientes con imágenes de vista previa: para Recientes en la pantalla de inicio",
-     "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, número de anuncios vistos y un registro de haber cerrado el aviso de Tapey Pro, si ya se mostraron las guías iniciales, modo de vista elegido y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración y del aviso de Tapey Pro"
+     "Una copia del último fondo que guardaste: para el atajo Último fondo de pantalla, se sustituye cada vez que guardas",
+     "Idioma elegido, estado de compra de Tapey Pro, número de guardados y si ya se mostró la petición de valoración, número de anuncios vistos y un registro de haber cerrado el aviso de Tapey Pro, si este dispositivo ya preparó anuncios alguna vez, si ya se mostraron las guías iniciales y el aviso de los diseños con forma, modo de vista elegido, el ajuste Guardar también las fotos en Fotos y ajustes de disposición de pantalla traídos de una versión anterior: para el funcionamiento de la app y para el momento de la valoración, del aviso de Tapey Pro y de la preparación de los anuncios"
     ]
    },
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. La copia del fondo para compartir, que se crea al guardar, queda en una carpeta temporal y se elimina la próxima vez que se abre la app. Los fondos guardados en la app Fotos se borran desde la app Fotos.",
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. La copia del fondo para compartir, que se crea al guardar, queda en una carpeta temporal y se elimina la próxima vez que se abre la app. El último fondo que usa el atajo se sustituye cada vez que guardas, así que solo queda uno. Empezar de nuevo, en el menú, no lo borra, y desaparece al eliminar la app. Los fondos y las fotos hechas que se guardan en la app Fotos se borran desde la app Fotos.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -257,7 +261,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "A la app solo llegan las fotos que eliges en el selector de fotos o de archivos de iOS, que arrastras a la app o que haces con Hacer foto. iOS pide acceso a la cámara la primera vez que tocas Hacer foto. Si no lo permites, puedes seguir añadiendo fotos de las otras formas. Una foto que haces se guarda como copia en el almacenamiento de la app, igual que las fotos que eliges, y solo se usa para el trabajo de tu fondo. No se guarda aparte en la app Fotos, y el desarrollador no la recibe. La app no pide permiso para leer tu fototeca. Al guardar un fondo terminado, la app usa únicamente el permiso de añadir fotos."
+     "A la app solo llegan las fotos que eliges en el selector de fotos o de archivos de iOS, que arrastras a la app o que haces con Hacer foto. iOS pide acceso a la cámara la primera vez que tocas Hacer foto. Si no lo permites, puedes seguir añadiendo fotos de las otras formas. Una foto que haces se guarda como copia en el almacenamiento de la app, igual que las fotos que eliges, y solo se usa para el trabajo de tu fondo. Solo va también a la app Fotos si activas Guardar también las fotos en Fotos en Ajustes. Este ajuste está desactivado al principio, y al activarlo iOS pide el permiso de añadir fotos. El desarrollador no recibe las fotos que haces. La app no pide permiso para leer tu fototeca. Para llevar a la app Fotos un fondo terminado o una foto que haces, la app usa únicamente el permiso de añadir fotos."
     ],
     "bullets": []
    },
@@ -265,7 +269,7 @@
     "title": "Recogida automática y cómo rechazarla",
     "paragraphs": [
      "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob), que puede recoger la información de abajo cuando carga y muestra anuncios.",
-     "Cuando abres la app y esta prepara los anuncios, iOS muestra el aviso de transparencia del rastreo (ATT) si aún no lo has respondido. No aparece al guardar. Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
+     "En un dispositivo recién instalado, la app prepara los anuncios solo después de que pegues la primera foto en la pared, y lo que guardes antes no lleva anuncios. Una vez que un dispositivo ha preparado los anuncios, la app lo hace cada vez que se abre. Cuando la app prepara los anuncios, iOS muestra el aviso de transparencia del rastreo (ATT) si aún no lo has respondido. No aparece al guardar. Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
      "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si el resultado es que no se pueden solicitar anuncios, tampoco aparece el aviso de rastreo. Allí puedes cambiar tus opciones en Preferencias de anuncios, abajo en la pantalla de inicio.",
      "Después de comprar Tapey Pro (o si ya habías comprado Quitar anuncios), no aparecen anuncios, y a partir del siguiente arranque la app deja de iniciar AdMob, así que no aparecen ni el formulario de consentimiento ni el aviso de rastreo."
     ],
@@ -313,6 +317,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor.",
+     "2026-10-20: se añadieron a «Información que se trata», «Tratamiento y plazo de conservación» y «Medidas de seguridad» el ajuste de la versión 2.1.0 que guarda también en la app Fotos las fotos que haces, la copia del último fondo guardado que usa el atajo, y la cinta, el marco y la parte visible elegidos para cada foto. Se corrigió el momento en que un dispositivo recién instalado prepara los anuncios. La fecha de entrada en vigor anterior era el 2026-10-19.",
      "2026-10-19: se añadieron a «Información que se trata» el número de anuncios vistos y un registro de haber cerrado el aviso de Tapey Pro, que la versión 2.0.2 usa para el aviso de Tapey Pro en la pantalla después de guardar. La fecha de entrada en vigor anterior era el 2026-10-15.",
      "2026-10-15: se añadieron a «Información que se trata» y a «Medidas de seguridad» las fotos hechas con Hacer foto, las imágenes elegidas con Seleccionar archivo y el acceso a la cámara. El archivo temporal para compartir ahora se describe como una copia del fondo guardado. La fecha de entrada en vigor anterior era el 2026-10-06."
     ],
