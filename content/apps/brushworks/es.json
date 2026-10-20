@@ -160,6 +160,12 @@
    ]
   },
   {
+   "q": "En horizontal y en el iPhone plegable",
+   "a": [
+    "Con el iPhone en horizontal, los pinceles y los controles pasan al lado del lienzo. La pantalla gira, pero el cuadro sigue en vertical a 3:4. En un iPhone plegable, cuando la pantalla tiene una franja del sistema a un lado, Foto, Deshacer, Rehacer, Guardar, Foto original, Repetición, Foto de fondo y Ajustes se colocan en vertical en esa franja, y los controles alrededor del lienzo ocupan menos. El lienzo conserva su tamaño."
+   ]
+  },
+  {
    "q": "Conexión a internet",
    "a": [
     "Pintar, guardar y los time-lapses funcionan sin conexión a internet. Comprar Pro y restaurar compras necesitan conexión con el App Store."
