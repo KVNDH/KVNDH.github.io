@@ -197,7 +197,7 @@
   {
    "q": "Criar um período seu",
    "a": [
-    "Toque no botão de mais e escolha Novo timer ou Adicionar um intervalo do calendário. Um timer novo é definido de um de dois jeitos, “A partir de agora” ou “Início e meta”, e abre no jeito que você usou da última vez.",
+    "Toque no botão de mais e escolha Criar meu próprio timer ou Adicionar um intervalo do calendário. Um timer novo é definido de um de dois jeitos, “A partir de agora” ou “Início e meta”, e abre no jeito que você usou da última vez.",
     "Em “A partir de agora” você só gira uma roda de horas e minutos, de 1 minuto a 23 horas e 59 minutos, e a contagem começa no momento em que você salva. O que durar um dia ou mais se define em “Início e meta”.",
     "“Início e meta” abre com o início agora e a meta uma semana depois. Os chips dos dois campos mudam isso na hora: o início para o começo de hoje ou deste mês, a meta para um dia, 30 dias, 100 dias ou um ano depois, ou para um momento como o fim desta semana. Tocar num campo abre o calendário, e embaixo dele aparece uma roda separada para o horário.",
     "O nome pode ficar vazio. O timer recebe então o menor número livre, como “Timer 1” ou “Timer 2”, e depois você pode trocar o nome em Editar timer."
@@ -241,9 +241,17 @@
    ]
   },
   {
+   "q": "Formatos por país e região",
+   "a": [
+    "Datas, horários e porcentagens seguem o idioma e a região do aparelho. Em alemão, por exemplo, uma porcentagem aparece como “53,3 %”. Esta semana começa no primeiro dia da semana definido no aparelho, e a lista de dias de Horas por dia da semana começa ali também. Se o calendário do aparelho for budista, japonês ou da República da China, os anos na tela usam esse calendário, e só a década continua no gregoriano.",
+    "Num aparelho com a região no Japão entra o período do calendário Este ano fiscal, que começa em 1º de abril. Ele já aparece na primeira abertura, e num aparelho que já tinha o app você o adiciona pelo botão de mais em Adicionar um intervalo do calendário. Na Tailândia, Songkran ocupa o lugar de Primaveras nas unidades de vida, e nas regiões do hemisfério sul, como o Brasil e a Austrália, a primavera é contada a partir do equinócio de setembro.",
+    "Com o app em chinês, coreano ou vietnamita, os chips do campo da meta incluem o Ano-Novo Lunar, que põe a meta à 0h do próximo. Um período novo com Horas por dia da semana abre das 9 às 17 nos Estados Unidos, no Canadá, na Austrália e no Reino Unido, e das 9 às 18 nas outras regiões."
+   ]
+  },
+  {
    "q": "Aparelho e internet",
    "a": [
-    "Funciona no iPhone com iOS 18 ou mais recente. O app e os widgets estão em 46 idiomas e seguem o idioma do aparelho. Use na vertical e, ao virar de lado, aparece uma tela preta grande. O fundo claro é o padrão e vira preto quando o sistema está no escuro. Na tela larga de um iPhone dobrável aberto, a lista da tela inicial fica com 600 pontos de largura no meio, e a tela cheia põe o anel à esquerda e o nome e o tempo restante à direita."
+    "Funciona no iPhone com iOS 18 ou mais recente. O app e os widgets estão em 46 idiomas e seguem o idioma do aparelho. Use na vertical e, ao virar de lado, aparece uma tela preta grande. O fundo claro é o padrão e vira preto quando o sistema está no escuro. Na tela larga de um iPhone dobrável aberto, a lista da tela inicial fica com 600 pontos de largura no meio, e a tela cheia põe o anel à esquerda e o nome e o tempo restante à direita. Num iPhone dobrável, quando a tela tem uma faixa do sistema de um lado, Ajustes, Novo timer, Editar e Escolher linhas da lista ficam na vertical nessa faixa, e Fechar e Mais da tela cheia também ficam dentro dela."
    ]
   }
  ],

@@ -106,7 +106,7 @@
    "body": [
     "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. Say \"until 2\", \"3 hours\" or \"meeting 1 hour 30 minutes\", stop, and the start, goal and title fill in. You tap Save yourself. The icon is there in every app language except the 11 that have no Apple speech recognizer.",
     "By hand, you choose between \"From now\" and \"Start and goal\". With \"From now\" you turn only an hours and minutes wheel, and the count starts the moment you save. Leave the title blank and it takes a number, as in \"Timer 1\" and \"Timer 2\".",
-    "Put the Say a Timer button in Control Center, in a control spot at the bottom of the Lock Screen or on the Action button, and one press opens the app on New Timer, already listening. In the Shortcuts app, give the Make a Timer action a phrase such as \"until Friday 6pm\" and the timer is made without opening the app."
+    "Put the Voice Timer button in Control Center, in a control spot at the bottom of the Lock Screen or on the Action button, and one press opens the app on New Timer, already listening. In the Shortcuts app, give the Make a Timer action a phrase such as \"until Friday 6pm\" and the timer is made without opening the app."
    ],
    "bullets": [
     "Start, goal and title from one spoken line",
@@ -156,8 +156,8 @@
   {
    "q": "What do I see when I first open it",
    "a": [
-    "Today, this week, this month, this quarter and this year are already there. Nothing to enter. The 2020s have no card of their own and sit as one row in the stack at the top of the first screen. You can take that row out in Choose rows or pick the 2020s in a widget.",
-    "The card at the top is the stack. Short spans sit above, long ones below. Choose rows sets what goes there."
+    "Today, this week, this month, this quarter and this year are already there. Nothing to enter. The 2020s have no card of their own and sit as one row in the stack at the top of the first screen. You can take that row out in Choose Rows or pick the 2020s in a widget.",
+    "The card at the top is the stack. Short spans sit above, long ones below. Choose Rows sets what goes there."
    ]
   },
   {
@@ -197,7 +197,7 @@
   {
    "q": "Making your own timer",
    "a": [
-    "Tap the plus button and choose New timer or Add a calendar span. A new timer is set one of two ways, \"From now\" or \"Start and goal\", and it opens on the one you picked last time.",
+    "Tap the plus button and choose New Custom Timer or Add Calendar Span. A new timer is set one of two ways, \"From now\" or \"Start and goal\", and it opens on the one you picked last time.",
     "With \"From now\" you turn only an hours and minutes wheel, from 1 minute to 23 hours 59 minutes, and the count starts the moment you save. A span of a day or more is set with \"Start and goal\".",
     "\"Start and goal\" opens with the start at now and the goal a week later. Chips inside the two fields change them at once: the start to the beginning of today or this month, the goal to a day, 30 days, 100 days or a year later, or to a moment such as the end of this week. Tap a field to open its calendar, and a separate time wheel appears below it.",
     "The title can stay blank. The timer then takes the lowest free number, as in \"Timer 1\" and \"Timer 2\", and you can rename it later in Edit Timer."
@@ -209,8 +209,8 @@
     "Tap the three-strand icon at the top right of New Timer and the app starts listening at once. When you stop speaking, it fills the start, goal and title with what it understood, and you tap Save yourself. The icon is there only when making a new timer, and it hides when Weekly hours is on.",
     "\"until 2\" runs to the next 2 o'clock, and \"3 hours\" or \"1 hour 30 minutes\" run that long from now. \"from Nov 5 to Dec 31\" runs from the start of November 5 to the end of December 31. It also understands \"until tomorrow\", \"until Friday 6pm\" and \"100 days\". Say \"meeting 1 hour 30 minutes\" and meeting becomes the title.",
     "The icon appears in every app language except the 11 that have no Apple speech recognizer, such as Bengali and Tamil. On first use the app asks once for microphone and speech recognition access. On an iPhone that cannot run speech recognition on the device, a typing field opens, and you type the phrase there.",
-    "Control Center, the control spots at the bottom of the Lock Screen and the Action button can hold a Say a Timer button. Press it and the app opens on New Timer, already listening. You still tap Save yourself. In a language without Say it, New Timer opens without listening.",
-    "In the Shortcuts app, use the Make a Timer action. Type a phrase such as \"until Friday 6pm\" or \"1 hour 30 minutes\" into Until when, and the timer is made without opening the app. You can put that shortcut on the Action button too. Timers made from the button or a shortcut count toward your three."
+    "Control Center, the control spots at the bottom of the Lock Screen and the Action button can hold a Voice Timer button. Press it and the app opens on New Timer, already listening. You still tap Save yourself. In a language without Say it, New Timer opens without listening.",
+    "In the Shortcuts app, use the Make a Timer action. Type a phrase such as \"until Friday 6pm\" or \"1 hour 30 minutes\" into Duration or End, and the timer is made without opening the app. You can put that shortcut on the Action button too. Timers made from the button or a shortcut count toward your three."
    ]
   },
   {
@@ -230,20 +230,28 @@
   {
    "q": "When do notifications arrive",
    "a": [
-    "A timer with Notify me when the goal arrives turned on sends one notification at the goal. The calendar spans do not use it, so nothing arrives every night.",
+    "A timer with Notify me when the goal is reached turned on sends one notification at the goal. The calendar spans do not use it, so nothing arrives every night.",
     "Span alerts are part of Pro. They arrive when the span reaches 25, 50, 75 or 100 percent, whichever you picked. Points still ahead in this turn are scheduled, and opening the app sets up the next turn."
    ]
   },
   {
    "q": "What is free",
    "a": [
-    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. One timer with Weekly hours works without Pro too. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer). Checking progress with Siri and Shortcuts, the Make a Timer action, the Say a Timer button and Latest timer in widgets work without Pro too."
+    "The six calendar spans, all six timer widget sizes, the stack widget and syncing between devices work without Pro. You keep three timers of your own, and the calendar spans never count toward that. One timer with Weekly hours works without Pro too. Progress shows one decimal place without Pro. Setting a new timer with the From now wheel works without Pro too. Setting one by voice also works without Pro (except in the 11 languages with no Apple speech recognizer). Checking progress with Siri and Shortcuts, the Make a Timer action, the Voice Timer button and Latest timer in widgets work without Pro too."
+   ]
+  },
+  {
+   "q": "Dates, times and percentages by region",
+   "a": [
+    "Dates, times and percentages follow your device's language and region. In German, for example, a percentage reads \"53,3 %\". This week starts on the first day of the week set on your device, and the weekday list in Weekly hours starts there too. If your device calendar is Buddhist, Japanese or Republic of China, years on screen use that calendar, and only the decade stays Gregorian.",
+    "On a device with its region set to Japan, the calendar span This fiscal year, starting on April 1, is added. It is there from the first launch, and on a device that already had the app you add it from the plus button with Add Calendar Span. In Thailand, Songkran takes the place of Springs among the life units, and in southern hemisphere regions such as Brazil and Australia, spring is counted from the September equinox.",
+    "When the app is in Chinese, Korean or Vietnamese, the chips in the goal field include the Lunar New Year, which sets the goal to midnight at the start of the next one. A new Weekly hours timer opens at 9 AM to 5 PM in the US, Canada, Australia and the UK, and at 9 AM to 6 PM elsewhere."
    ]
   },
   {
    "q": "Device and internet",
    "a": [
-    "Runs on iPhone with iOS 18 or later. The app and its widgets come in 46 languages and follow your device language. Use it upright, or turn it sideways for a large black screen. Light is the default and it flips to black when the system is dark. On the wide screen of a foldable iPhone opened out, the home list is held to a width of 600 points in the middle, and the full screen puts the ring on the left with the name and time remaining on the right."
+    "Runs on iPhone with iOS 18 or later. The app and its widgets come in 46 languages and follow your device language. Use it upright, or turn it sideways for a large black screen. Light is the default and it flips to black when the system is dark. On the wide screen of a foldable iPhone opened out, the home list is held to a width of 600 points in the middle, and the full screen puts the ring on the left with the name and time remaining on the right. On a foldable iPhone, when the screen has a system strip along one side, Settings, New Timer, Edit and Choose Rows on the home list stand in that strip, and Close and More on the full screen sit inside it too."
    ]
   }
  ],
