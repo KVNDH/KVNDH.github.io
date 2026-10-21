@@ -11,11 +11,11 @@
    "layout": "feat",
    "title": "Só os momentos que pesaram",
    "body": [
-    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho. Toque na nota de um registro para ir direto à edição dela."
+    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho. Toque na nota de um registro para ir direto à edição dela. Ao adicionar fotos a um registro, um registro em destaque mostra uma foto larga abaixo da nota, e os demais mostram uma pequena na ponta direita."
    ],
    "bullets": [
     "Idade ou anos decorridos ao lado de cada registro",
-    "Pacotes de época do Mercado de eventos",
+    "O mundo naquela época, uma linha por ano registrado",
     "Lembretes e repetição para o que ainda vem"
    ],
    "visual": {
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Uma hashtag, uma crônica",
    "body": [
-    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem. Em Tags, nos Ajustes, você adiciona, renomeia, une e exclui tags."
+    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem. Em Tags, nos Ajustes, você adiciona, renomeia, une e exclui tags. Toque na lupa no alto para buscar palavras em títulos, notas e nomes de tags, e toque num resultado para ir até aquele registro."
    ],
    "bullets": [
     "Filtro de tags e visão só dos destaques",
@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abra e escreva",
    "body": [
-    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. No iPad, atalhos de teclado pulam para o ano anterior ou o seguinte, e um toque longo ou um clique com o botão direito num registro abre um menu para editar ou destacar. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio."
+    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. Um toque longo num registro abre um menu para editar ou destacar; no iPad, um clique com o botão direito abre o mesmo menu, e atalhos de teclado pulam para o ano anterior ou o seguinte. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio."
    ],
    "bullets": [],
    "visual": {
@@ -87,7 +87,6 @@
    "Livro de crônicas em PDF tamanho A4",
    "Eventos e hashtags ilimitados",
    "Até 3 linhas do tempo",
-   "Todos os pacotes de eventos",
    "Retrospectiva filtrada por década, tag ou destaque",
    "Rascunhos de ensaio e prefácios com Apple Intelligence"
   ]
@@ -96,8 +95,15 @@
   {
    "q": "Onde os registros ficam guardados",
    "a": [
-    "Os registros ficam no armazenamento do app. Com a sincronização com iCloud ligada, eles também vão para a sua própria conta do iCloud e ficam em dia com os seus outros aparelhos dessa conta.",
-    "Os registros excluídos ficam 7 dias na Lixeira, dentro dos Ajustes, e nesse prazo você pode restaurá-los."
+    "Os registros ficam no armazenamento do app. Com a sincronização com iCloud ligada, eles também vão, junto com as fotos, para a sua própria conta do iCloud e ficam em dia com os seus outros aparelhos dessa conta.",
+    "Os registros excluídos ficam 7 dias na Lixeira, dentro dos Ajustes, e nesse prazo você pode restaurá-los. Logo depois de mover um registro para a Lixeira, toque em Desfazer no aviso para trazê-lo de volta na hora."
+   ]
+  },
+  {
+   "q": "Adicionar fotos a um registro",
+   "a": [
+    "Ao editar um registro, toque no botão de foto da barra acima do teclado ou no quadro + da fileira de fotos abaixo da nota e escolha na sua fototeca. Cada registro aceita até 30 fotos, igual na versão grátis e no Pro.",
+    "Toque numa foto para vê-la grande, com a data, o título e a nota do registro, e deslize para os lados para ver as outras. Deslize para baixo para fechar e use o botão de lixeira para excluir uma foto. As fotos não entram em arquivos CSV, livros em PDF nem imagens da linha do tempo."
    ]
   },
   {
@@ -110,8 +116,15 @@
   {
    "q": "O que a versão grátis inclui",
    "a": [
-    "Dá para manter até 100 eventos, 1 linha do tempo e 10 tags de graça, e trazer do Mercado de eventos o pacote de história principal do idioma do app. Chegar a um limite nunca tranca o que já foi escrito: você continua lendo e editando.",
-    "Com o Pro, eventos e tags não têm limite, e você cria até 3 linhas do tempo."
+    "Dá para manter até 100 eventos, 1 linha do tempo e 10 tags de graça. Chegar a um limite nunca tranca o que já foi escrito: você continua lendo e editando.",
+    "Com o Pro, eventos e tags não têm limite, e você cria até 3 linhas do tempo. Busca, fotos e O mundo naquela época funcionam igual na versão grátis e no Pro."
+   ]
+  },
+  {
+   "q": "O mundo naquela época",
+   "a": [
+    "Ligue O mundo naquela época no menu Mais, acima da linha do tempo, e cada ano com registros ganha, acima do primeiro registro, uma linha clara com a marca Mundo sobre algo que aconteceu no mundo naquele ano. Começa desligado, e em Ajustes, na seção Exibição, O mundo naquela época deixa você escolher os Temas que quer ver.",
+    "As linhas do mundo não são salvas como registros e não aparecem na busca, no filtro de tags, na tela deitada, nos livros e exportações nem no Rever. Elas só aparecem quando há uma lista para o idioma do app, e os registros que você trouxe antes do Mercado de eventos continuam como estão."
    ]
   },
   {
@@ -139,6 +152,12 @@
    "a": [
     "Toque em Exportar para CSV nos Ajustes para salvar seus registros num arquivo CSV. Ao trazê-los de volta com Importar CSV, escolha entre Adicionar aos eventos existentes e Substituir todos os eventos.",
     "Um arquivo CSV é um backup que você faz quando precisa, à parte da sincronização com iCloud."
+   ]
+  },
+  {
+   "q": "Criar um livro",
+   "a": [
+    "Nos Ajustes, abra Criar um livro, defina o título, os anos e as tags, confira as páginas A4 em Pré-visualização e salve ou envie o arquivo com Exportar PDF. Criar um livro faz parte do Life Tyde Pro."
    ]
   },
   {
