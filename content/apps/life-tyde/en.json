@@ -11,11 +11,11 @@
    "layout": "feat",
    "title": "Only the moments that mattered",
    "body": [
-    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title. Tap an entry's note to go straight into editing that note."
+    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title. Tap an entry's note to go straight into editing that note. Add photos to an entry, and a highlighted entry shows one wide below its note while other entries show a small one at the right end."
    ],
    "bullets": [
     "Age or year count beside each entry",
-    "Era event packs from the Event market",
+    "The World Then, one line for each year you recorded",
     "Reminders and repeats for upcoming events"
    ],
    "visual": {
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "One hashtag, one chronicle",
    "body": [
-    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top. Tags in Settings is where you add, rename, merge, and delete tags."
+    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top. Tags in Settings is where you add, rename, merge, and delete tags. Tap the magnifying glass at the top to search titles, notes, and tag names, then tap a result to jump to that entry."
    ],
    "bullets": [
     "Tag filter with a highlights-only view",
@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Open it and write",
    "body": [
-    "No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone and iPad on the same account. On iPad, keyboard shortcuts jump to the previous or next year, and a long press or right-click on an entry opens a menu to edit or highlight it. On the wide screen of a foldable iPhone opened out, the text grows as on iPad and the timeline sits in the middle."
+    "No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone and iPad on the same account. A long press on an entry opens a menu to edit or highlight it; on iPad a right-click opens it too, and keyboard shortcuts jump to the previous or next year. On the wide screen of a foldable iPhone opened out, the text grows as on iPad and the timeline sits in the middle."
    ],
    "bullets": [],
    "visual": {
@@ -87,7 +87,6 @@
    "Chronicle book export as an A4 PDF",
    "Unlimited events and hashtags",
    "Up to 3 timelines",
-   "All event packs",
    "Replay filtered by decade, tag, or highlight",
    "Essay drafts and forewords with Apple Intelligence"
   ]
@@ -96,8 +95,15 @@
   {
    "q": "Where entries are stored",
    "a": [
-    "Entries are kept in the app's storage. With iCloud sync on, they are also saved to your own iCloud account and kept in step with your other devices on that account.",
-    "Deleted entries stay in Trash in Settings for 7 days, and you can restore them during that time."
+    "Entries are kept in the app's storage. With iCloud sync on, they are also saved, along with their photos, to your own iCloud account and kept in step with your other devices on that account.",
+    "Deleted entries stay in Trash in Settings for 7 days, and you can restore them during that time. Right after you move an entry to Trash, tap Undo in the notice to bring it straight back."
+   ]
+  },
+  {
+   "q": "Adding photos to an entry",
+   "a": [
+    "While editing an entry, tap the photo button on the bar above the keyboard, then choose from your photo library. Once an entry has photos, the + tile in the photo row below the note adds more. Each entry holds up to 30 photos, the same on free and Pro.",
+    "Tap a photo to see it large with the entry's date, title, and note, and swipe left or right for the others. Swipe down to close, and use the trash button to delete a photo. Photos are left out of CSV files, book PDFs, and timeline images."
    ]
   },
   {
@@ -110,8 +116,15 @@
   {
    "q": "What the free version includes",
    "a": [
-    "You can keep up to 100 events, 1 timeline, and 10 tags for free, and add the major history pack for your app language from the Event market. Reaching a limit never locks what you have already written, and you can still read and edit it.",
-    "With Pro, events and tags have no limit, and you can create up to 3 timelines."
+    "You can keep up to 100 events, 1 timeline, and 10 tags for free. Reaching a limit never locks what you have already written, and you can still read and edit it.",
+    "With Pro, events and tags have no limit, and you can create up to 3 timelines. Search, photos, and The World Then work the same on free and Pro."
+   ]
+  },
+  {
+   "q": "The World Then",
+   "a": [
+    "Turn on The World Then in the More menu above the timeline, and each year that has your entries gets one faint line, marked World, above its first entry about something that happened in the world that year. It starts off, and The World Then under Display in Settings is where you pick the Topics you want.",
+    "World lines are not saved as entries, and they stay out of search, the tag filter, landscape view, books and exports, and Replay. They appear only when there is a list for the app language, and entries you added from the Event market earlier stay as they are."
    ]
   },
   {
@@ -139,6 +152,12 @@
    "a": [
     "Tap Export to CSV in Settings to save your entries as a CSV file. When you bring them back with Import CSV, choose Add to existing events or Replace all events.",
     "A CSV file is a backup you make when you need one, and it is separate from iCloud sync."
+   ]
+  },
+  {
+   "q": "Making a book",
+   "a": [
+    "In Settings, open Make a book, set the book title, the years, and the tags, check the A4 pages with Preview, then save or send the file with Export PDF. Make a book is part of Life Tyde Pro."
    ]
   },
   {
