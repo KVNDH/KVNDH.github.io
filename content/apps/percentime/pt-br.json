@@ -142,12 +142,12 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Períodos sem limite de quantidade, repetições, unidades de vida\ne um aviso no ponto que você escolher",
+  "title": "Períodos sem limite de quantidade, repetições, unidades da vida\ne um aviso no ponto que você escolher",
   "items": [
    "Horários por dia da semana (de segunda a quinta das 9 às 18, sexta das 9 às 15), um período assim funciona sem o Pro",
    "Períodos sem limite de quantidade (por conta própria são três)",
    "Repetições a cada dia, semana, mês ou ano",
-   "Unidades de vida: luas cheias, fins de semana, primaveras, aniversários",
+   "Unidades da vida: luas cheias, fins de semana, primaveras, aniversários",
    "Casas decimais da segunda à sexta",
    "Avisos em 25, 50, 75 e 100 por cento"
   ]
@@ -223,7 +223,7 @@
   {
    "q": "Quais leituras existem",
    "a": [
-    "Quatro. Uma combinação de unidades como anos, meses, dias e um relógio; uma unidade em decimal; o progresso em porcentagem; e as unidades de vida. As unidades de vida contam luas cheias, fins de semana, primaveras e aniversários, e fazem parte do Pro.",
+    "Quatro. Uma combinação de unidades como anos, meses, dias e um relógio; uma unidade em decimal; o progresso em porcentagem; e as unidades da vida. As unidades da vida contam luas cheias, fins de semana, primaveras e aniversários, e fazem parte do Pro.",
     "Toque no número na tela cheia e as leituras passam uma a uma. O progresso fica fora dessa roda porque o número grande já mostra."
    ]
   },
@@ -244,7 +244,7 @@
    "q": "Formatos por país e região",
    "a": [
     "Datas, horários e porcentagens seguem o idioma e a região do aparelho. Em alemão, por exemplo, uma porcentagem aparece como “53,3 %”. Esta semana começa no primeiro dia da semana definido no aparelho, e a lista de dias de Horas por dia da semana começa ali também. Se o calendário do aparelho for budista, japonês ou da República da China, os anos na tela usam esse calendário, e só a década continua no gregoriano.",
-    "Num aparelho com a região no Japão entra o período do calendário Este ano fiscal, que começa em 1º de abril. Ele já aparece na primeira abertura, e num aparelho que já tinha o app você o adiciona pelo botão de mais em Adicionar um intervalo do calendário. Na Tailândia, Songkran ocupa o lugar de Primaveras nas unidades de vida, e nas regiões do hemisfério sul, como o Brasil e a Austrália, a primavera é contada a partir do equinócio de setembro.",
+    "Num aparelho com a região no Japão entra o intervalo do calendário Este ano fiscal, que começa em 1º de abril. Ele já aparece na primeira abertura, e num aparelho que já tinha o app você o adiciona pelo botão de mais em Adicionar um intervalo do calendário. Na Tailândia, Songkran ocupa o lugar de Primaveras nas unidades da vida, e nas regiões do hemisfério sul, como o Brasil e a Austrália, a primavera é contada a partir do equinócio de setembro. Na Indonésia, na Malásia e em Singapura, Primaveras não aparece entre as unidades da vida, e se você já a escolheu, ela continua contando.",
     "Com o app em chinês, coreano ou vietnamita, os chips do campo da meta incluem o Ano-Novo Lunar, que põe a meta à 0h do próximo. Um período novo com Horas por dia da semana abre das 9 às 17 nos Estados Unidos, no Canadá, na Austrália e no Reino Unido, e das 9 às 18 nas outras regiões."
    ]
   },

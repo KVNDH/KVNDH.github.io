@@ -142,12 +142,12 @@
  ],
  "pro": {
   "kick": "Percentime Pro",
-  "title": "Zeiträume ohne Obergrenze, Wiederholungen, Lebenseinheiten\nund ein Hinweis an dem Punkt, den Sie wählen",
+  "title": "Zeiträume ohne Obergrenze, Wiederholungen, Einheiten des Lebens\nund ein Hinweis an dem Punkt, den Sie wählen",
   "items": [
    "Uhrzeiten je Wochentag (Mo bis Do 9~18 Uhr, Fr 9~15 Uhr), ein solcher Zeitraum geht auch ohne Pro",
    "Zeiträume ohne Obergrenze (selbst angelegt sind es sonst drei)",
    "Wiederholungen für jeden Tag, jede Woche, jeden Monat, jedes Jahr",
-   "Lebenseinheiten: Vollmonde, Wochenenden, Frühlinge, Geburtstage",
+   "Einheiten des Lebens: Vollmonde, Wochenenden, Frühlinge, Geburtstage",
    "Nachkommastellen von der zweiten bis zur sechsten",
    "Hinweise bei 25, 50, 75 und 100 Prozent"
   ]
@@ -223,7 +223,7 @@
   {
    "q": "Welche Anzeigen gibt es",
    "a": [
-    "Vier. Eine Kombination von Einheiten wie Jahre, Monate, Tage und eine Uhr; eine Einheit als Dezimalwert; Fortschritt in Prozent; und Lebenseinheiten. Lebenseinheiten zählen Vollmonde, Wochenenden, Frühlinge und Geburtstage und gehören zu Pro.",
+    "Vier. Eine Kombination von Einheiten wie Jahre, Monate, Tage und eine Uhr; eine Einheit als Dezimalwert; Fortschritt in Prozent; und Einheiten des Lebens. Einheiten des Lebens zählen Vollmonde, Wochenenden, Frühlinge und Geburtstage und gehören zu Pro.",
     "Tippen Sie im Vollbild auf die Zahl, dann kommen die Anzeigen der Reihe nach. Der Fortschritt bleibt außen vor, weil die große Zahl ihn schon zeigt."
    ]
   },
@@ -244,7 +244,7 @@
    "q": "Formate nach Land und Region",
    "a": [
     "Datum, Uhrzeit und Prozent folgen der Sprache und Region des Geräts, auf Deutsch etwa „53,3 %“. Diese Woche beginnt mit dem ersten Wochentag, der auf dem Gerät eingestellt ist, und die Liste der Wochentage bei Stunden je Wochentag beginnt dort ebenfalls. Ist auf dem Gerät der buddhistische, japanische oder Minguo-Kalender eingestellt, stehen auch die Jahre auf dem Bildschirm in diesem Kalender, nur das Jahrzehnt bleibt gregorianisch.",
-    "Auf Geräten mit der Region Japan kommt der Kalenderzeitraum Dieses Geschäftsjahr dazu, der am 1. April beginnt. Er ist ab dem ersten Start da, und auf Geräten, die die App schon hatten, fügen Sie ihn über Plus und Kalenderzeitraum hinzufügen hinzu. In Thailand steht Songkran bei den Lebenseinheiten an der Stelle der Frühlinge, und in Regionen der Südhalbkugel wie Brasilien und Australien zählt der Frühling ab der Tagundnachtgleiche im September.",
+    "Auf Geräten mit der Region Japan kommt der Kalenderzeitraum Dieses Geschäftsjahr dazu, der am 1. April beginnt. Er ist ab dem ersten Start da, und auf Geräten, die die App schon hatten, fügen Sie ihn über Plus und Kalenderzeitraum hinzufügen hinzu. In Thailand steht Songkran bei den Einheiten des Lebens an der Stelle der Frühlinge, und in Regionen der Südhalbkugel wie Brasilien und Australien zählt der Frühling ab der Tagundnachtgleiche im September. In Indonesien, Malaysia und Singapur stehen Frühlinge nicht zur Wahl, schon gewählte Frühlinge zählen weiter.",
     "Ist die App auf Chinesisch, Koreanisch oder Vietnamesisch eingestellt, gibt es bei den Chips im Feld Ziel das Mondneujahr, das das Ziel auf 0 Uhr am Beginn des nächsten setzt. Ein neuer Zeitraum mit Stunden je Wochentag öffnet in den USA, Kanada, Australien und Großbritannien mit 9 bis 17 Uhr, sonst mit 9 bis 18 Uhr."
    ]
   },
