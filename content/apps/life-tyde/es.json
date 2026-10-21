@@ -102,7 +102,7 @@
   {
    "q": "Añadir fotos a una entrada",
    "a": [
-    "Mientras editas una entrada, toca el botón de foto de la barra sobre el teclado o la casilla + de la fila de fotos bajo la nota, y elige en tu fototeca. Cada entrada admite hasta 30 fotos, igual en la versión gratuita que con Pro.",
+    "Mientras editas una entrada, toca el botón de foto de la barra sobre el teclado y elige en tu fototeca. Si la entrada ya tiene fotos, la casilla + de la fila de fotos bajo la nota también añade más. Cada entrada admite hasta 30 fotos, igual en la versión gratuita que con Pro.",
     "Toca una foto para verla en grande con la fecha, el título y la nota de la entrada, y desliza a izquierda o derecha para ver las demás. Desliza hacia abajo para cerrar, y usa el botón de papelera para eliminar una foto. Las fotos no se incluyen en archivos CSV, libros en PDF ni imágenes de la línea de tiempo."
    ]
   },

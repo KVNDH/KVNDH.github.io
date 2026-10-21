@@ -102,7 +102,7 @@
   {
    "q": "Fotos zu einem Eintrag hinzufügen",
    "a": [
-    "Während Sie einen Eintrag bearbeiten, tippen Sie auf die Fototaste in der Leiste über der Tastatur oder auf das Feld + in der Fotoreihe unter der Notiz und wählen aus Ihrer Mediathek. Ein Eintrag nimmt bis zu 30 Fotos auf, kostenlos wie mit Pro.",
+    "Während Sie einen Eintrag bearbeiten, tippen Sie auf die Fototaste in der Leiste über der Tastatur und wählen aus Ihrer Mediathek. Hat ein Eintrag schon Fotos, fügt auch das Feld + in der Fotoreihe unter der Notiz weitere hinzu. Ein Eintrag nimmt bis zu 30 Fotos auf, kostenlos wie mit Pro.",
     "Ein Tipp auf ein Foto zeigt es groß, zusammen mit Datum, Titel und Notiz des Eintrags; mit einem Wisch nach links oder rechts sehen Sie die anderen. Ein Wisch nach unten schließt die Ansicht, und mit der Papierkorbtaste löschen Sie ein Foto. Fotos kommen nicht in CSV-Dateien, Buch-PDFs oder Timeline-Bilder."
    ]
   },

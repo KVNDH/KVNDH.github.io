@@ -102,7 +102,7 @@
   {
    "q": "Adicionar fotos a um registro",
    "a": [
-    "Ao editar um registro, toque no botão de foto da barra acima do teclado ou no quadro + da fileira de fotos abaixo da nota e escolha na sua fototeca. Cada registro aceita até 30 fotos, igual na versão grátis e no Pro.",
+    "Ao editar um registro, toque no botão de foto da barra acima do teclado e escolha na sua fototeca. Se o registro já tem fotos, o quadro + da fileira de fotos abaixo da nota também adiciona mais. Cada registro aceita até 30 fotos, igual na versão grátis e no Pro.",
     "Toque numa foto para vê-la grande, com a data, o título e a nota do registro, e deslize para os lados para ver as outras. Deslize para baixo para fechar e use o botão de lixeira para excluir uma foto. As fotos não entram em arquivos CSV, livros em PDF nem imagens da linha do tempo."
    ]
   },

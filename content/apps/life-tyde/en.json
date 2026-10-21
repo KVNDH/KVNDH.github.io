@@ -102,7 +102,7 @@
   {
    "q": "Adding photos to an entry",
    "a": [
-    "While editing an entry, tap the photo button on the bar above the keyboard or the + tile in the photo row below the note, then choose from your photo library. Each entry holds up to 30 photos, the same on free and Pro.",
+    "While editing an entry, tap the photo button on the bar above the keyboard, then choose from your photo library. Once an entry has photos, the + tile in the photo row below the note adds more. Each entry holds up to 30 photos, the same on free and Pro.",
     "Tap a photo to see it large with the entry's date, title, and note, and swipe left or right for the others. Swipe down to close, and use the trash button to delete a photo. Photos are left out of CSV files, book PDFs, and timeline images."
    ]
   },
