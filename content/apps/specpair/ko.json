@@ -231,5 +231,24 @@
     "bullets": []
    }
   ]
+ },
+ "partners": {
+  "notice": "이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.",
+  "title": "그림에 나온 제품",
+  "linkLabel": "쿠팡에서 보기",
+  "links": [
+   {
+    "name": "갤럭시 S25 울트라",
+    "url": "https://link.coupang.com/a/h8G9sJl5Qy"
+   },
+   {
+    "name": "iPhone 17 Pro Max",
+    "url": "https://link.coupang.com/a/h8G9J2MtNY"
+   },
+   {
+    "name": "MacBook Air 15",
+    "url": "https://link.coupang.com/a/h8G934WY1c"
+   }
+  ]
  }
 }

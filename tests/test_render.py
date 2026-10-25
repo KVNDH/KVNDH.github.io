@@ -13,6 +13,17 @@ class HubTest(unittest.TestCase):
     def setUp(self):
         self.site = Site(make_site())
 
+    def test_partner_links_put_notice_first_and_mark_sponsored(self):
+        # 10-25 SpecPair 쿠팡 파트너스: 대가성 문구는 쪽의 첫 부분(본문 첫 줄), 링크는 rel=sponsored, 문구 없는 앱에는 아무것도 없다
+        site = Site(self.site.root)
+        site.copy[("demo", "ko")]["partners"] = {"notice": "N", "title": "T", "linkLabel": "L",
+                                                 "links": [{"name": "X", "url": "https://link.example/a"}]}
+        html = render.render_app(site, "ko", "demo")
+        main = html[html.index('id="main"'):]
+        self.assertLess(main.index('<p class="pnotice">N</p>'), main.index('class="app-hero"'))
+        self.assertIn('<a class="lnk" href="https://link.example/a" rel="sponsored noopener" aria-label="X L">L ↗</a>', html)
+        self.assertNotIn('<p class="pnotice">', render.render_app(Site(self.site.root), "ko", "demo"))
+
     def test_hub_piece_links_page_and_store(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<html lang="ko">', html)
