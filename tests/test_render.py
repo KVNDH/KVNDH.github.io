@@ -47,6 +47,10 @@ class HubTest(unittest.TestCase):
         self.assertIn('<footer class="foot">', html)
         self.assertIn('href="/ko/demo/privacy/"', html)
         self.assertIn('<ul class="langs">', html)
+        # 10-25: 처리방침은 언어 다음, 맨 아래 한 줄 전체(.fpv)에 옆으로 흐르는 목록(.flow)
+        self.assertIn('<div class="fpv"><h2>ko navPrivacy</h2><ul class="flow">', html)
+        self.assertLess(html.index('class="langs"'), html.index('class="fpv"'))
+        self.assertIn(".foot .fpv{grid-column:1/-1}", html)
 
     def test_hub_without_pages_has_no_detail_link(self):
         html = render.render_hub(Site(make_site(with_pages=False)), "ko")

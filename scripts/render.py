@@ -200,13 +200,14 @@ def hub_footer(site: Site, lang: str) -> str:
         f'<li><a href="{page_path(lang, app["slug"], "privacy")}">{esc(site.app_copy(app["slug"], lang)["name"])}</a></li>'
         for app in site.apps if released(app) and site.has_pages(app["slug"], lang)
     )
-    privacy_block = f'<div><h2>{esc(ui["navPrivacy"])}</h2><ul>{privacy}</ul></div>' if privacy else "<div></div>"
+    # 10-25 사용자: 앱마다 한 줄씩 세로로 쌓이면 앱이 늘수록 길어진다 → 맨 아래 한 줄 전체를 쓰고 옆으로 흘려 접는다
+    privacy_block = f'<div class="fpv"><h2>{esc(ui["navPrivacy"])}</h2><ul class="flow">{privacy}</ul></div>' if privacy else ""
     return (
         '<footer class="foot">'
         f'<div><a class="wm" href="{page_path(lang)}">{MARK}<span>kvndh</span></a></div>'
         f'<div><h2>{esc(ui["contactTitle"])}</h2><ul><li><a href="mailto:{email}">{email}</a></li></ul></div>'
-        f"{privacy_block}"
         f'<div><h2>{esc(ui["language"])}</h2><ul class="langs">{lang_links(site, lang, None, "about")}</ul></div>'
+        f"{privacy_block}"
         '<p class="copy">© kvndh</p>'
         "</footer>"
     )
