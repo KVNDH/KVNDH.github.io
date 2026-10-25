@@ -35,7 +35,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .lang summary::after{content:"";width:6px;height:6px;margin-left:2px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
 .lang[open] summary::after{transform:translateY(1px) rotate(-135deg)}
 .lang svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6}
-.lang ul{position:absolute;right:0;top:52px;width:228px;padding:6px;border:1px solid var(--ln);border-radius:14px;background:var(--paper);background-image:var(--grain);background-size:320px;box-shadow:var(--sh)}
+.lang ul{position:absolute;right:0;top:52px;width:228px;padding:6px;border:1px solid var(--ln);border-radius:14px;background:var(--paper);background-image:var(--grain);background-size:320px;box-shadow:var(--sh);max-height:calc(100vh - 76px);max-height:calc(100dvh - 76px);overflow-y:auto;overscroll-behavior:contain}
 .lang a{display:flex;align-items:center;justify-content:space-between;min-height:44px;padding:0 12px;border-radius:8px;font-size:14px;color:var(--t2)}
 .lang a:hover{background:color-mix(in srgb,var(--k) 6%,transparent);color:var(--tx)}
 .lang a[aria-current]{color:var(--tx);font-weight:650}
@@ -48,10 +48,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /* 첫 화면(허브) */
 /*h*/.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
 /*h*/.hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
-/*h*/.cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh)}
-/*h*/.fan{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
+/*h*/.cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh);container-type:size}
+/*h*/.fan{--ic:72px;position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
 /*h*/.fan .row{display:flex;gap:10px}
-/*h*/.fan img{width:72px;height:72px;border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
+/*h*/.fan img{--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)));width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
 /* 원화 한 점 */
 /*h*/.piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
 /*h*/.piece:nth-of-type(even) .frame{order:2}
@@ -67,7 +67,6 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /*h*/.slot:focus-visible{outline-offset:10px;border-radius:24%}
 .cap{max-width:30em;text-align:left}
 .cap h2{font-size:clamp(34px,4vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.04em}
-.cap h2 a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
 /*h*/.cap .sub,.vtext .sub{margin-top:10px;font-size:19px;font-weight:650;letter-spacing:-.015em}
 /*h*/.cap .hook,.vtext .hook{margin-top:12px;color:var(--t2)}
 /*h*/.acts{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin-top:22px;font-size:14.5px}
@@ -78,20 +77,18 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /*h*/.lnk{display:inline-flex;align-items:center;min-width:44px;min-height:44px;font-weight:650;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}
 /*h*/.lnk:hover{text-decoration-color:currentColor}
 /* 출시 전 앱: 이름 없이 흐린 아이콘만 */
-/*h*/.quiet{display:flex;justify-content:center;gap:28px;padding:24px 96px 88px}
-/*h*/.qslot{display:block;width:64px;height:64px;border-radius:22.5%}
-/*h*/.qslot img,.fan img.soon{width:100%;height:100%;border-radius:22.5%;opacity:.28;filter:grayscale(1) blur(4px)}
-/*h*/.fan img.soon{width:72px;height:72px}
+/*h*/.quiet{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;padding:24px 96px 88px}
+/*h*/.qslot{display:block;flex:none;width:64px;height:64px;border-radius:22.5%}
+/*h*/.qslot img,.fan img.soon{border-radius:22.5%;opacity:.28;filter:grayscale(1) blur(4px)}
+/*h*/.qslot img{width:100%;height:100%}
 /* 끝 */
 .foot{position:relative;display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:28px 40px;margin:0 22px;padding:56px 64px 64px;border-top:1px solid var(--ln);font-size:14px;color:var(--t2)}
 .foot h2{margin-bottom:6px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 .foot a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
 .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px}
 .foot .wm{color:var(--tx)}
-/*h*/.foot .langs,.foot .flow{display:flex;flex-wrap:wrap;gap:0 16px}
 /*h*/.foot .fpv{grid-column:1/-1}
-/*h*/.foot .flow{gap:0 22px}
-/*h*/.langs a[aria-current]{color:var(--tx);font-weight:650}
+/*h*/.foot .flow{display:flex;flex-wrap:wrap;gap:0 22px}
 .foot .copy{grid-column:1/-1;font-size:12.5px}
 .foot-s{grid-template-columns:auto 1fr auto;align-items:center}
 .foot-s .copy{grid-column:auto}
@@ -289,7 +286,7 @@ html{scroll-padding-top:72px}
 .sheet::before{inset:10px}.ruler{top:10px;bottom:10px;left:10px;width:8px}
 /*h*/.hero{padding:84px 26px 36px}
 /*h*/.cluster{height:min(360px,44vh)}
-/*h*/.fan img,.fan img.soon{width:54px;height:54px}
+/*h*/.fan{--ic:54px}
 /*h*/.piece{grid-template-columns:1fr;gap:34px;padding:56px 30px;min-height:auto}
 /*h*/.piece:nth-of-type(even) .frame{order:0}
 .frame{width:calc(var(--slot) + 56px)}

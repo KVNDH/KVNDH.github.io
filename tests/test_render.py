@@ -17,7 +17,8 @@ class HubTest(unittest.TestCase):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<html lang="ko">', html)
         self.assertIn('<article class="piece" id="demo">', html)
-        self.assertIn('<h2><a href="/ko/demo/">Demo</a></h2>', html)
+        self.assertIn('<h2>Demo</h2>', html)   # 10-25 N: 이름은 글자, 소개 쪽 링크는 '자세히 보기' 하나
+        self.assertEqual(html.count('href="/ko/demo/"'), 1)
         self.assertIn('<a class="lnk" href="/ko/demo/">ko learnMore</a>', html)
         self.assertIn('aria-label="Demo store"', html)
         self.assertIn("https://apps.apple.com/app/id123", html)
@@ -42,14 +43,12 @@ class HubTest(unittest.TestCase):
         self.assertIn('<h1 class="sr-only">ko hubMetaTitle</h1>', html)
         self.assertIn('<meta name="description" content="Demo">', html)
 
-    def test_hub_footer_lists_privacy_and_languages(self):
+    def test_hub_footer_lists_privacy_in_one_flow(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<footer class="foot">', html)
         self.assertIn('href="/ko/demo/privacy/"', html)
-        self.assertIn('<ul class="langs">', html)
-        # 10-25: 처리방침은 언어 다음, 맨 아래 한 줄 전체(.fpv)에 옆으로 흐르는 목록(.flow)
+        # 10-25: 처리방침은 맨 아래 한 줄 전체(.fpv)에 옆으로 흐르는 목록(.flow)
         self.assertIn('<div class="fpv"><h2>ko navPrivacy</h2><ul class="flow">', html)
-        self.assertLess(html.index('class="langs"'), html.index('class="fpv"'))
         self.assertIn(".foot .fpv{grid-column:1/-1}", html)
 
     def test_hub_without_pages_has_no_detail_link(self):
@@ -298,7 +297,7 @@ class OtherPagesTest(unittest.TestCase):
     def test_first_released_app_tops_the_pile(self):
         # 첫 화면 더미는 위에서부터 1, 2, ... 줄이고 맨 위가 출시된 첫 앱(출시 전 앱은 뒤로)
         html = render.render_hub(Site(make_site(unreleased=True)), "ko")
-        fan = re.search(r'<div class="fan">(.*?)</div>', html).group(1)
+        fan = re.search(r'<div class="fan" style="--rows:2">(.*?)</div>', html).group(1)
         self.assertTrue(fan.startswith('<span class="row"><img src="/assets/demo/icon-180.webp"'))
         self.assertEqual(fan.count('<span class="row">'), 2)
 
@@ -318,7 +317,6 @@ class OtherPagesTest(unittest.TestCase):
     def test_404_uses_absolute_links(self):
         html = render.render_404(self.site)
         self.assertIn('href="/ko/"', html)
-        self.assertIn("ko notFound", html)
 
     def test_scripts_stay_inline_and_off_404(self):
         site = Site(make_site())
@@ -501,6 +499,94 @@ class AlternateConditionTest(unittest.TestCase):
         self.assertNotIn(".big{", self.hub)
         self.assertNotIn("html:not(.js)", self.hub)
         self.assertIn('aria-label="ko viewLarge"', html)   # 크게 보기 대화상자 이름으로는 그대로 쓴다
+
+def grow(site: Site, times: int) -> Site:
+    """출시된 demo 앱을 times 벌로 늘린 사이트(같은 문구, 다른 slug)."""
+    base = site.apps[0]
+    for k in range(2, times + 1):
+        slug = f"demo{k}"
+        site.apps.append(base | {"slug": slug, "appStoreId": str(1000 + k)})
+        for code in site.lang_codes():
+            site.copy[(slug, code)] = site.copy[(base["slug"], code)] | {"name": f"Demo{k}"}
+    return site
+
+
+def footer(html: str) -> str:
+    return html[html.index('<footer'):html.index('</footer>')]
+
+
+class ListCapTest(unittest.TestCase):
+    """10-25 사용성 제안 3단계(원인 ①): 앱 수, 언어 수만큼 쌓이거나 줄어드는 목록에 상한과 흐름."""
+
+    def setUp(self):
+        self.site = Site(make_site())
+        self.hub = render.css(self.site, hub=True)
+
+    def test_same_yardstick_with_twice_the_apps(self):
+        # 1: 앱이 두 배가 돼도 바닥 블록, 404 문단, 판 안 링크 수는 늘지 않는다(늘어나는 것은 흐르는 목록의 항목뿐)
+        one = render.render_hub(grow(Site(make_site()), 4), "ko")
+        two = render.render_hub(grow(Site(make_site()), 8), "ko")
+        for html in (one, two):
+            self.assertEqual(footer(html).count("<h2>"), 2)          # 문의, 처리방침
+            self.assertEqual(footer(html).count('<ul class="flow">'), 1)
+        self.assertEqual(footer(two).count("<li>") - footer(one).count("<li>"), 4)   # 앱 하나에 항목 하나
+        pieces = re.findall(r'<article class="piece".*?</article>', two, re.S)
+        self.assertEqual(len(pieces), 8)
+        self.assertEqual({len(re.findall(r"<a |<button ", p)) for p in pieces}, {3})   # 판 단추, App Store, 자세히 보기
+        self.assertIn('style="--rows:3"', one)   # 4개 = 1 + 2 + 1
+        self.assertIn('style="--rows:4"', two)   # 8개 = 1 + 2 + 3 + 2
+        two_langs = render.render_404(Site(make_site(langs=("ko", "en"))))
+        three_langs = render.render_404(Site(make_site(langs=("ko", "en", "ja"))))
+        self.assertEqual(len(re.findall(r"<p[ >]", two_langs)), len(re.findall(r"<p[ >]", three_langs)))
+
+    def test_hub_footer_has_no_language_block(self):
+        # M: 머리띠 메뉴와 같은 언어 목록이 바닥에 한 번 더 있었다(390폭 바닥 553 → 425px)
+        html = render.render_hub(self.site, "ko")
+        self.assertNotIn('class="langs"', html)
+        self.assertNotIn("ko language</h2>", footer(html))
+        self.assertIn('<details class="lang">', html)   # 언어는 머리띠 메뉴 하나로
+        self.assertNotIn(".foot .langs", self.hub)
+
+    def test_404_is_the_number_and_languages(self):
+        # F, G: 언어마다 안내문을 쌓아 360폭 첫 언어 링크가 794px(가시 740px), ja 셋째 줄에 '。' 한 글자
+        html = render.render_404(Site(make_site(langs=("ko", "en", "ja"))))
+        self.assertNotIn("<p lang=", html)
+        self.assertEqual(len(re.findall(r"<p[ >]", html)), 1)   # No. 404 하나
+        self.assertEqual(html.count('<li><a href="/'), 3)
+        for code in ("ko", "en"):
+            self.assertNotIn("notFound", json.dumps(Site(make_site()).ui[code]))
+
+    def test_fan_icons_divide_the_cluster_height(self):
+        # L: 844x390 에서 칸 195px 에 더미 318px, 위 아이콘이 제목을 41px 덮었다
+        self.assertIn("container-type:size", rule(self.hub, ".cluster"))
+        img = rule(self.hub, ".fan img")
+        self.assertIn("calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows))", img)
+        self.assertIn("calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows))", img)
+        self.assertIn("min(var(--ic),", img)
+        self.assertIn("--ic:72px", rule(self.hub, ".fan"))
+        self.assertIn("--ic:54px", rule(self.hub, ".fan", "(max-width:720px)"))
+        self.assertNotIn("width:72px;height:72px", self.hub)
+
+    def test_quiet_row_wraps_instead_of_squeezing(self):
+        # Q: 출시 전 아이콘이 6개부터 37x48px 로 찌그러졌다
+        self.assertIn("flex-wrap:wrap", rule(self.hub, ".quiet"))
+        self.assertIn("flex:none", rule(self.hub, ".qslot"))
+
+    def test_language_menu_scrolls_inside_the_screen(self):
+        # AE: 667x375 에서 언어 8개 중 2개가 화면 밖이라 닿을 수 없었다
+        for css in (self.hub, render.css(self.site)):
+            menu = rule(css, ".lang ul")
+            self.assertIn("max-height:calc(100dvh - 76px)", menu)
+            self.assertIn("overflow-y:auto", menu)
+
+    def test_piece_name_is_text(self):
+        # N: 판마다 이름 링크와 '자세히 보기'가 같은 주소라 Tab 이 앱당 4회였다
+        html = render.render_hub(grow(Site(make_site()), 3), "ko")
+        self.assertNotIn("<h2><a", html)
+        for slug in ("demo", "demo2", "demo3"):
+            self.assertEqual(html.count(f'href="/ko/{slug}/"'), 1)
+        self.assertNotIn(".cap h2 a", self.hub)
+
 
 if __name__ == "__main__":
     unittest.main()

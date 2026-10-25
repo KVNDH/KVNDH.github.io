@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 UI_KEYS = [
     "skip", "language", "hubMetaTitle", "learnMore", "screenshot",
     "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
-    "toc", "notFound", "viewLarge", "close",
+    "toc", "viewLarge", "close",
 ]
 
 

@@ -203,12 +203,12 @@ def hub_footer(site: Site, lang: str) -> str:
         for app in site.apps if released(app) and site.has_pages(app["slug"], lang)
     )
     # 10-25 사용자: 앱마다 한 줄씩 세로로 쌓이면 앱이 늘수록 길어진다 → 맨 아래 한 줄 전체를 쓰고 옆으로 흘려 접는다
+    # 10-25 M: 머리띠 메뉴와 같은 언어 8개를 바닥에 한 번 더 두지 않는다
     privacy_block = f'<div class="fpv"><h2>{esc(ui["navPrivacy"])}</h2><ul class="flow">{privacy}</ul></div>' if privacy else ""
     return (
         '<footer class="foot">'
         f'<div><a class="wm" href="{page_path(lang)}">{MARK}<span>kvndh</span></a></div>'
         f'<div><h2>{esc(ui["contactTitle"])}</h2><ul><li><a href="mailto:{email}">{email}</a></li></ul></div>'
-        f'<div><h2>{esc(ui["language"])}</h2><ul class="langs">{lang_links(site, lang, None, "about")}</ul></div>'
         f"{privacy_block}"
         '<p class="copy">© kvndh</p>'
         "</footer>"
@@ -310,11 +310,10 @@ def render_hub(site: Site, lang: str) -> str:
             "href": page_path(lang, slug) if linked else None,
             "support": page_path(lang, slug, "support") if linked else None,
         })
-        name = f'<a href="{page_path(lang, slug)}">{esc(copy["name"])}</a>' if linked else esc(copy["name"])
         pieces.append(tpl(site, "piece.html").substitute(
             slug=esc(slug), no=no, total=total, i=i,
             view_label=esc(fill(ui["viewLargeLabel"], name=copy["name"])),
-            icon=icon(site, slug), name=name,
+            icon=icon(site, slug), name=esc(copy["name"]),   # 10-25 N: 이름은 글자로, 링크는 '자세히 보기' 하나
             subtitle=esc(copy["subtitle"]), summary=esc(copy["summary"]),
             store=store, store_label=esc(store_label),
             more=f'<a class="lnk" href="{page_path(lang, slug)}">{esc(ui["learnMore"])}</a>' if linked else "",
@@ -335,8 +334,10 @@ def render_hub(site: Site, lang: str) -> str:
     while k < len(fan_imgs):
         rows.append('<span class="row">' + "".join(fan_imgs[k:k + n]) + "</span>")
         k, n = k + n, n + 1
+    # 10-25 L: 아이콘 = (칸 높이 - 줄 사이 10px x (줄 수 - 1)) / 줄 수, 72px(폰 54px)까지(style.css .fan img).
+    # 가로 폰이나 앱이 늘어도 더미가 칸을 넘지 않는다
     content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubMetaTitle"]),
+        title=esc(ui["hubMetaTitle"]), rows=len(rows),
         fan="".join(rows), pieces="\n".join(pieces), quiet=quiet_html)
     data = {"page": "hub", "plates": plates,
             "ui": {"total": total, "more": ui["learnMore"], "support": ui["navSupport"]}}
@@ -595,11 +596,8 @@ def render_root(site: Site) -> str:
 
 
 def render_404(site: Site) -> str:
-    messages = "".join(
-        f'<p lang="{esc(option["htmlLang"])}">{esc(site.ui[option["code"]]["notFound"])}</p>'
-        for option in site.langs
-    )
-    return tpl(site, "404.html").substitute(css=css(site), messages=messages, items=language_items(site), mark=MARK)
+    # 10-25 F: 언어마다 안내문을 쌓아 360폭 첫 화면에 언어 링크가 하나도 없었다 → 404 와 언어 목록만
+    return tpl(site, "404.html").substitute(css=css(site), items=language_items(site), mark=MARK)
 
 
 def render_sitemap(site: Site, paths: list[str]) -> str:
