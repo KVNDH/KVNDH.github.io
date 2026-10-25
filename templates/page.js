@@ -5,11 +5,12 @@
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
-  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  // 목차: 펼친 채로 내고(JS 가 없어도 보인다) 좁은 화면(900px 이하)에서만 접는다, 넓은 화면에서는 제목을 눌러도 접히지 않고 Tab 도 건너뛴다
   var toc=document.querySelector('.toc details');
-  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  if(toc){var wide=matchMedia('(min-width:901px)'),head=toc.querySelector('summary'),fit=function(){toc.open=wide.matches;if(wide.matches)head.tabIndex=-1;else head.removeAttribute('tabindex')};
+    fit();wide.addEventListener('change',fit);head.addEventListener('click',function(e){if(wide.matches)e.preventDefault()})}
   // 지원 답 주소: #q7 로 오면 7번 답을 연다
-  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  function reveal(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS')d.open=true}
   reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];

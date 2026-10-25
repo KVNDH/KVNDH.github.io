@@ -627,12 +627,16 @@ class ShortcutTest(unittest.TestCase):
     def test_privacy_toc_folds_on_narrow_screens(self):
         # E: 900px 이하에서 목차를 통째로 숨겨 de 390폭 12절 7291px 에 목차 0개였다
         html = render.render_privacy(self.site, "en", "demo")
-        self.assertIn('<nav class="toc" aria-label="en toc"><details><summary>en toc</summary><ol><li><a href="#p1">', html)
+        self.assertIn('<nav class="toc" aria-label="en toc"><details open><summary>en toc</summary><ol><li><a href="#p1">', html)   # JS 가 없어도 펼친 채
         narrow = rule(self.sub, ".toc", "(max-width:900px)")
         self.assertNotIn("display:none", narrow)
         self.assertIn("position:static", narrow)
         self.assertIn("min-height:44px", rule(self.sub, ".toc summary", "(max-width:900px)"))
         self.assertIn("matchMedia('(min-width:901px)')", self.js)      # 넓은 화면에서는 늘 펼친다
+        self.assertIn("if(wide.matches)e.preventDefault()", self.js)   # 넓은 화면에서는 제목을 눌러도 접히지 않는다
+        self.assertIn("head.tabIndex=-1", self.js)                     # 넓은 화면에서는 Tab 이 제목을 건너뛴다
+        self.assertIn("cursor:default", rule(self.sub, ".toc summary"))
+        self.assertIn("cursor:pointer", rule(self.sub, ".toc summary", "(max-width:900px)"))
         self.assertIn(".toc", self.sub.split("@media print{")[1].split("{")[0])   # 인쇄에서는 그대로 뺀다
 
     def test_faq_answers_have_addresses(self):
@@ -643,6 +647,7 @@ class ShortcutTest(unittest.TestCase):
         self.assertEqual(re.findall(r'<details id="(q\d+)">', html), [f"q{i}" for i in range(1, 8)])
         self.assertIn("addEventListener('hashchange',reveal)", self.js)
         self.assertIn("d.tagName==='DETAILS')d.open=true", self.js)
+        self.assertNotIn("decodeURIComponent", self.js)   # '#100%' 같은 주소가 URIError 로 아래 처리기를 막지 않게
 
 
 if __name__ == "__main__":
