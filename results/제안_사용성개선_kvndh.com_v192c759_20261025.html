@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>사용성 개선 제안: kvndh.com 평면 화첩 (192c759)</title>
+<style>
+/* kvndh.com 192c759 토큰. 정본 사다리 2단계: templates/style.css:1 (라이트), :6 (다크) CSS 변수.
+   레포에 DESIGN.md 없음. 정본 주석 style.css:2-5 "색은 먹(--k), 안개(--t2), 은(--ln) 셋, 버밀리언(--dot)은 번호 점 한 자리만".
+   앵커 슬롯 5개는 먹(ink)으로 함께 바꾼다. 대상에 의미색이 없어 green, amber, red, cream 은 Boardroom 기본값. */
+:root {
+  /* 앵커 슬롯 5개 = 먹. kvndh 의 채운 단추와 현재 탭이 먹 면 + 종이 글자다 */
+  --teal:        #1A1A1A;   /* style.css:1 --k 채운 단추 면, 현재 탭 면, 초점 링 */
+  --teal-soft:   #EEEDEA;   /* style.css:40 메뉴 hover 면 color-mix(--k 6%) 계산값 */
+  --teal-deep:   #1A1A1A;   /* --k 종이 위 강조 글자 */
+  --teal-ink:    #FBFAF7;   /* style.css:1 --on 먹 면 위 글자 */
+  --teal-line:   #D3D3D7;   /* style.css:1 --ln 은 */
+
+  --primary:      var(--teal);
+  --primary-ink:  var(--teal-ink);
+  --primary-press:var(--teal-deep);
+  --focus:        var(--teal);
+  --focus-ring:   0 0 0 2px rgba(26,26,26,0.45);   /* style.css:16 초점 2px --k */
+
+  --slate:       #1A1A1A;   /* --k 밴드 면과 제목 */
+  --slate2:      #707079;   /* --t2 안개 */
+  --slate-soft:  #EEEDEA;   /* 메뉴 hover 면 */
+  --slate-line:  #707079;
+  --band-ink:    #FBFAF7;   /* --on */
+  --band-meta:   #D3D3D7;   /* --ln */
+
+  --paper:        #E7E6E2;  /* style.css:1 --desk 책상 */
+  --card:         #FBFAF7;  /* style.css:1 --paper 도화지 */
+  --border:       #D3D3D7;  /* style.css:1 --ln 은, 모든 1px 선 */
+  --divider:      #EEEDEA;
+  --divider-deep: #E7E6E2;  /* --desk */
+  --ink:          #1A1A1A;  /* --tx */
+  --ink-soft:     #707079;  /* --t2 */
+  --ink-ph:       #707079;
+  --gray-fill:    #D3D3D7;
+
+  /* 의미색: 대상 침묵, Boardroom 기본 */
+  --green:      #157a47;  --green-soft: #d4f1e1;
+  --amber:      #b15a00;  --amber-soft: #fff3e0;
+  --red:        #c8392c;  --red-soft:   #fdecea;
+  --cream:      #fff8e6;
+
+  --repro-face: #f0f0f0;  --repro-line: #b0b0b0;
+  --repro-btn:  #e0e0e0;  --repro-ink:  #333333;
+
+  /* 대상 CSS 이식분 */
+  --app-dot:      #E63946;  /* style.css:30 .now i 버밀리언 점 */
+  --app-pl:       #FFFFFF;  /* style.css:1 --pl 판 */
+  --app-dk-bg:    #000000;  /* style.css:6 다크 --paper */
+  --app-dk-tx:    #F4F3EF;  /* style.css:6 다크 --tx */
+  --app-dk-t2:    #D3D3D7;  /* style.css:6 다크 --t2 지금 값 */
+  --app-dk-ln:    #2E2E33;  /* style.css:6 다크 --ln */
+  --app-dk-t2-new:#7E7E86;  /* 제안값(K): 본문 대비 3.63:1, 바탕 대비 5.22:1 */
+
+  --font:  -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang SC",
+           "Malgun Gothic", "Noto Sans KR", "Noto Sans", system-ui, sans-serif;   /* style.css:11 */
+  --mono:  ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;              /* style.css:1 */
+  --r-xs:  3px;   --r-sm: 6px;   --r-pill: 999px;
+  --wrap:  1120px;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   0. 기본 골격  (여기부터 아래는 대상이 바뀌어도 그대로 쓴다)
+   ══════════════════════════════════════════════════════════════════════════ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font); background: var(--paper); color: var(--ink);
+       font-size: 14px; line-height: 1.55; }
+
+.band { background: var(--slate); color: var(--band-ink); }
+.band .accent { height: 5px; background: var(--teal); }
+.band .inner { max-width: var(--wrap); margin: 0 auto; padding: 22px 28px 24px; }
+.band h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.3px; }
+.band .meta { color: var(--band-meta); font-size: 12px; margin-top: 6px; }
+
+main { max-width: var(--wrap); margin: 0 auto; padding: 26px 28px 60px; }
+h2 { font-size: 19px; font-weight: 700; color: var(--slate); margin: 40px 0 14px;
+     padding-top: 18px; border-top: 1px solid var(--border); letter-spacing: -0.2px; }
+h2:first-of-type { margin-top: 4px; border-top: none; padding-top: 0; }
+h2 .ph { color: var(--teal-deep); font-size: 12px; font-weight: 700; display: block;
+         letter-spacing: 1px; margin-bottom: 2px; }   /* 킥커 = 여정 단계 이름 */
+
+footer { max-width: var(--wrap); margin: 0 auto; padding: 0 28px 40px;
+         color: var(--ink-soft); font-size: 12px; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   1. 진단 지도 - 여정 플로우 + 이슈 칩
+   ══════════════════════════════════════════════════════════════════════════ */
+.flow { display: grid; grid-template-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+        align-items: stretch; margin: 14px 0 8px; }
+.flow .step { background: var(--card); border: 1px solid var(--border); padding: 10px 12px; }
+.flow .step b { display: block; font-size: 13px; color: var(--slate); margin-bottom: 6px; }
+.flow .arr { display: flex; align-items: center; justify-content: center;
+             color: var(--ink-soft); font-size: 14px; }
+/* 단계 수를 바꾸려면 grid-template-columns 를 인라인으로 덮어쓴다
+   (예: 4단계 = "1fr 24px 1fr 24px 1fr 24px 1fr") */
+
+.chip { display: inline-block; min-width: 22px; text-align: center; border-radius: var(--r-pill);
+        font-size: 11px; font-weight: 700; padding: 1px 7px; margin: 1px 2px 1px 0;
+        background: var(--teal-soft); color: var(--teal-deep); border: 1px solid transparent; }
+.chip.f  { background: var(--slate-soft); color: var(--slate2); } /* .f = 조사 중 추가 발견 */
+.chip.hi { border-color: var(--red); }                            /* .hi = 심각도 높음 */
+.legend { font-size: 12px; color: var(--ink-soft); margin: 6px 0 0; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   2. 근본원인 3장 - 개별 증상이 아니라 원인으로 묶는다
+   ══════════════════════════════════════════════════════════════════════════ */
+.cause3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 16px; }
+.cause3 .c { background: var(--card); border: 1px solid var(--border); padding: 12px 14px; }
+.cause3 .c b { display: block; font-size: 14px; color: var(--slate); margin-bottom: 4px; }
+.cause3 .c span { font-size: 12px; color: var(--ink-soft); display: block; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   3. 이슈 = 제목 1줄 + [기존 | → | 개선] duo
+      .viz 안은 도형,목업이어야 한다. 문장으로 채우면 실패다.
+      글씨는 .cap(한 줄 진단)과 .note(근거 한 줄)에만.
+   ══════════════════════════════════════════════════════════════════════════ */
+.issue { margin: 22px 0; }
+.issue .t { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.issue .t .no { color: var(--teal-deep); margin-right: 8px; }
+.duo { display: grid; grid-template-columns: 1fr 34px 1fr; align-items: stretch; }
+.duo .mid { display: flex; align-items: center; justify-content: center;
+            color: var(--teal-deep); font-size: 20px; font-weight: 700; }
+.panel { background: var(--card); border: 1px solid var(--border); display: flex;
+         flex-direction: column; }
+.panel .cap { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; padding: 6px 12px;
+              border-bottom: 1px solid var(--divider); }
+.panel.bad  .cap { color: var(--red); }
+.panel.good .cap { color: var(--green); }
+.panel .viz { padding: 14px; flex: 1; }
+/* 도형이 360px 에서 넘칠 수밖에 없을 때만 <div class="viz scroll">.
+   overflow-y 는 visible 이어야 상자 밖으로 삐져나온 조각(예산 막대의 .over)이 산다. */
+.panel .viz.scroll { overflow-x: auto; overflow-y: visible; }
+.panel .note { font-size: 12px; color: var(--ink-soft); padding: 8px 12px;
+               border-top: 1px solid var(--divider); background: var(--paper); }
+.panel .note code { font-family: var(--mono); font-size: 11px;
+                    background: var(--divider); padding: 0 4px; color: var(--slate2); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   4. 위젯 목업 부품 - 버튼 위계(§8)를 그대로 옮긴 것
+      Primary(면) > Ghost(테두리) > Chip(소형 테두리) > Quiet(텍스트형)
+      Quiet 는 순수 이동,닫기 링크에만. 기능 진입점,상태 변경에 쓰면 그게 결함이다.
+   ══════════════════════════════════════════════════════════════════════════ */
+.mbtn { display: inline-block; font-size: 13px; padding: 7px 13px; margin: 2px 4px 2px 0;
+        white-space: nowrap; }
+.mbtn.quiet   { color: var(--ink-soft); }                                   /* 텍스트형 */
+.mbtn.chip2   { color: var(--ink); background: var(--card); border: 1px solid var(--border);
+                font-weight: 600; font-size: 12px; padding: 6px 10px; }     /* 소형 진입점 */
+.mbtn.ghost   { color: var(--ink); background: var(--card); border: 1px solid var(--border);
+                font-weight: 700; }                                          /* 보조 액션 */
+.mbtn.primary { color: var(--primary-ink); background: var(--primary); border: 1px solid transparent;
+                font-weight: 700; }                                          /* 화면당 1개 CTA */
+.mbtn.done-on { color: var(--teal-deep); background: var(--teal-soft);
+                border: 1px solid var(--teal-line); font-weight: 700; }      /* 토글 ON = 상태 표시 */
+.mbtn.seg { border: 1px solid var(--border); background: var(--card); color: var(--ink-soft);
+            margin: 0; border-right: none; padding: 7px 12px; }              /* 세그먼트 탭 */
+.mbtn.seg:last-of-type { border-right: 1px solid var(--border); }
+.mbtn.seg.on { background: var(--teal-soft); color: var(--teal-deep); font-weight: 700;
+               box-shadow: inset 0 -2px 0 var(--teal); }
+.mbtn.foc { outline: 1px solid var(--focus); outline-offset: -1px;
+            box-shadow: var(--focus-ring); }                                 /* 포커스 재현 */
+
+.mchk { font-size: 13px; color: var(--ink-soft); margin-right: 16px; white-space: nowrap; }
+.mchk::before { content: "☐ "; }
+.mchk.on::before { content: "✓ "; color: var(--teal-deep); }
+
+/* 철칙 1 - 잘림은 설명하지 말고 실제로 자른다. max-width 를 인라인으로 조절해
+   "자동 갱신" → "자" 처럼 보이게 한다. */
+.clip { display: inline-block; max-width: 19px; overflow: hidden; vertical-align: bottom;
+        white-space: nowrap; }
+
+kbd { font-family: var(--mono); font-size: 11px; border: 1px solid var(--border);
+      background: var(--card); padding: 1px 6px; border-radius: var(--r-xs); color: var(--slate2); }
+
+.winrow { border-bottom: 1px solid var(--divider); padding: 7px 10px; font-size: 12px; }
+
+/* 입력칸 목업 */
+.mfield { border: 1px solid var(--border); background: var(--card); padding: 8px 11px;
+          font-size: 13px; margin-top: 4px; }
+.mfield .ph { color: var(--ink-ph); }
+.mlabel { font-size: 11px; font-weight: 700; color: var(--ink-soft); }
+.mstate { font-size: 11px; color: var(--teal-deep); margin-top: 5px; }
+.hl { background: var(--teal-soft); font-weight: 700; }
+
+/* 목록 목업 */
+.mlist { border: 1px solid var(--border); background: var(--card); font-size: 12px; }
+.mlist .row { padding: 4px 10px; border-bottom: 1px solid var(--divider); display: flex; gap: 8px; }
+.mlist .row.hq   { background: var(--slate-soft); font-weight: 700; }
+.mlist .row.done { background: var(--green-soft); }
+.mlist .row .st  { width: 14px; color: var(--green); }
+.mlist .more { padding: 4px 10px; color: var(--red); font-size: 11px; background: var(--cream); }
+
+/* 다이얼로그 푸터 스키마 - 창마다 주 액션 위치가 다른 문제를 나란히 놓아 보인다 */
+.foot3 { display: flex; flex-direction: column; gap: 8px; }
+.dfoot { border: 1px solid var(--border); background: var(--paper); padding: 6px 10px;
+         display: flex; gap: 6px; align-items: center; font-size: 11px; color: var(--ink-soft); }
+.dfoot .name { width: 84px; font-weight: 700; color: var(--slate2); }
+.dfoot .b { border: 1px solid var(--border); background: var(--card); padding: 2px 10px; }
+.dfoot .b.p { background: var(--primary); color: var(--primary-ink); border: none; font-weight: 700; }
+.dfoot .sp { flex: 1; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   5. 화면 위치 다이어그램 - 창이 어디에 뜨는가
+      .win 은 인라인 left/top/width/height(%)로 배치한다.
+   ══════════════════════════════════════════════════════════════════════════ */
+.diag { position: relative; height: 170px; background: var(--divider-deep);
+        border: 1px solid var(--border); }
+.diag .lbl { position: absolute; right: 8px; bottom: 5px; font-size: 10px; color: var(--ink-soft); }
+.diag .cross { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px;
+               margin: -5px 0 0 -5px; border: 1px solid var(--teal); border-radius: var(--r-pill); }
+.win { position: absolute; border: 1px solid var(--slate2); font-size: 11px; line-height: 1.35;
+       display: flex; align-items: center; justify-content: center; text-align: center; }
+.win.splash  { background: var(--slate); color: var(--band-ink); }
+.win.app     { background: var(--card); color: var(--ink); }
+.win.ghosted { opacity: 0.42; border-style: dashed; }   /* 이전 상태 */
+.win.cut     { border-bottom: 2px dashed var(--red); }  /* 화면 밖으로 잘림 */
+.jump { position: absolute; color: var(--red); font-size: 16px; font-weight: 700; }  /* 시선 점프 */
+.grow { position: absolute; color: var(--teal-deep); font-size: 15px; font-weight: 700; } /* 확장 */
+
+/* ══════════════════════════════════════════════════════════════════════════
+   6. 렌더 시퀀스 - 그려지는 과정이 보이는가
+      .cell.f = 채워짐 / .cell.x = 아직 없음. 프레임 3장으로 시간을 보인다.
+   ══════════════════════════════════════════════════════════════════════════ */
+.seqrow { display: grid; grid-template-columns: 1fr 20px 1fr 20px 1fr; gap: 0;
+          align-items: center; }
+.seqrow .a { text-align: center; color: var(--ink-soft); font-size: 13px; }
+.miniwin { border: 1px solid var(--border); background: var(--paper); padding: 6px; }
+.miniwin .tt { font-size: 10px; color: var(--ink-soft); margin-bottom: 4px; text-align: center; }
+.cells { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; }
+.cell   { height: 9px; background: var(--card); border: 1px solid var(--border); }
+.cell.f { background: var(--teal-soft); border-color: var(--teal-line); }
+.cell.x { background: transparent; border-color: transparent; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   7. 클릭 예산 사슬 - 목표에 닿기까지 몇 번 누르는가
+      <div class="clicks">
+        <span class="dot">메뉴바</span><span class="dot hi">조회 ▾</span>
+        <b class="n">4클릭</b><span class="rep">× 4개 품목</span>
+      </div>
+      .dot 사이 화살표는 CSS 가 자동으로 넣는다. .hi = 없어도 되는 단계.
+      .dot.free = 클릭 없이 따라오는 결과(점선) , .dot.dead = 막다른 길(✕ 병기).
+      .rep = 반복 배수. .n 숫자는 실선 .dot 수 × .rep 배수와 일치해야 한다.
+      .n 색은 부모 .panel.bad / .panel.good 이 정한다 (수동 지정 금지).
+   ══════════════════════════════════════════════════════════════════════════ */
+.clicks { display: flex; flex-wrap: wrap; align-items: center; font-size: 12px; }
+.clicks .dot { position: relative; display: inline-block; white-space: nowrap;
+               border: 1px solid var(--border); background: var(--card); color: var(--ink);
+               padding: 5px 10px; margin: 4px 0; }
+.clicks .dot + .dot { margin-left: 24px; }
+.clicks .dot + .dot::before { content: "→"; position: absolute; left: -18px; top: 50%;
+                              transform: translateY(-50%); color: var(--ink-soft); font-weight: 700; }
+.clicks .dot.hi { border-color: var(--red); color: var(--red); background: var(--red-soft); }
+.clicks .dot.free { border-style: dashed; background: var(--paper); color: var(--ink-soft); }
+.clicks .dot.dead { border-color: var(--red); color: var(--red); }
+.clicks .dot.dead::after { content: " ✕"; font-weight: 700; }   /* 색 없이도 읽힌다 */
+.clicks .rep { margin-left: 10px; font-size: 11px; font-weight: 700; white-space: nowrap;
+               color: var(--red); }
+.panel.good .clicks .rep { color: var(--teal-deep); }
+.clicks .n { margin-left: 14px; padding: 4px 10px; font-size: 13px; font-weight: 700;
+             font-variant-numeric: tabular-nums; border: 1px solid var(--border);
+             background: var(--divider); color: var(--slate); }
+.panel.bad  .clicks .n { color: var(--red); background: var(--red-soft); border-color: var(--red); }
+.panel.good .clicks .n { color: var(--teal-deep); background: var(--teal-soft);
+                         border-color: var(--teal-line); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   8. IA 깊이 트리 - 기능이 몇 단 아래 묻혀 있는가
+      .lv 를 중첩하면 깊이가 된다. 2레벨 규칙을 넘는 단에 .over 를 붙인다.
+      <div class="tree"><div class="lv"><b>메인</b>
+        <div class="lv"><b>조회 메뉴</b>
+          <div class="lv over"><b>품목검색 창</b><i>3레벨</i></div></div></div></div>
+   ══════════════════════════════════════════════════════════════════════════ */
+.tree { font-size: 12px; }
+.tree .lv { position: relative; background: var(--card); border: 1px solid var(--border);
+            padding: 6px 10px; margin-top: 5px; }
+.tree .lv .lv { margin-left: 22px; }
+.tree .lv .lv::before { content: "└"; position: absolute; left: -15px; top: 4px;
+                        color: var(--ink-soft); }
+.tree .lv b { font-weight: 700; color: var(--slate); }
+.tree .lv i { font-style: normal; color: var(--ink-soft); margin-left: 6px; }
+.tree .lv.over { border-color: var(--red); background: var(--red-soft); }
+.tree .lv.over b, .tree .lv.over i { color: var(--red); }
+.tree .lv.ok { border-color: var(--teal-line); background: var(--teal-soft); }
+.tree .lv.ok b, .tree .lv.ok i { color: var(--teal-deep); }
+/* .rule = 위반 여부를 판정한 정책 한 줄. 트리 아래에만 둔다 */
+.tree .rule { font-size: 11px; color: var(--ink-soft); border-top: 1px dashed var(--border);
+              margin-top: 8px; padding-top: 6px; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   9. 폭 예산 막대 - 필요폭 대 배정폭. 잘림을 숫자로 못 박는다
+      <div class="budget">
+        <div class="mlabel">필요폭 223px</div>
+        <div class="bar"><b style="width:22%">배정 50px</b>
+                         <span class="over" style="width:78%">잘림 173px</span></div>
+      </div>
+      b = 확보된 폭 / i = 중립 구간 / .sg = 개별 칸(열,구간) / .over = 넘쳐 잘린 구간(빗금)
+      ▸ 폭은 반드시 % 로 준다. px 고정폭을 쓰면 360px 화면에서 body 가로 스크롤이
+        생겨 Q8 을 통과할 수 없다. 그래도 넘치면 .viz 에 scroll 을 붙인다.
+      ▸ 세로(높이) 예산도 같은 막대로 그린다 - 축은 라벨이 정한다.
+   ══════════════════════════════════════════════════════════════════════════ */
+.budget { display: grid; gap: 4px; font-size: 11px; }
+.budget .bar { display: flex; align-items: stretch; height: 22px; line-height: 20px;
+               border: 1px solid var(--border); background: var(--card);
+               white-space: nowrap; font-variant-numeric: tabular-nums; }
+.budget .bar > * { padding: 0 6px; overflow: hidden; }
+.budget .bar b { background: var(--teal-soft); color: var(--teal-deep); font-weight: 700; }
+.budget .bar i { font-style: normal; background: var(--divider); color: var(--ink-soft); }
+.budget .bar .sg { background: var(--card); border-right: 1px solid var(--border);
+                   color: var(--ink-soft); text-align: center; }
+.budget .bar .sg.fit { background: var(--divider); }   /* 남는 폭을 흡수하는 자유 열 */
+.budget .over { color: var(--red); font-weight: 700; border-left: 1px dashed var(--red);
+                background: repeating-linear-gradient(45deg,
+                            var(--red-soft) 0 6px, var(--card) 6px 12px); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   10. 상태 매트릭스 - 상태 × 경우의 수. 정의되지 않은 칸이 곧 결함
+       <table class="matrix"><tr><th></th><th>정상</th><th>오류</th></tr>
+         <tr><td>저장 중</td><td class="y">✓</td><td class="n">✗ 미정의</td></tr></table>
+       .y = 정의됨,실사용(녹) / .n = 미정의(적) / .q = 불명(앰버) / .dead = 조합은
+       존재하나 쓰이지 않음(회색 면. 문자를 넣지 마라 - 면의 넓이가 곧 주장이다)
+   ══════════════════════════════════════════════════════════════════════════ */
+.matrix { border-collapse: collapse; width: 100%; font-size: 11px;
+          font-variant-numeric: tabular-nums; }
+.matrix th, .matrix td { border: 1px solid var(--border); padding: 5px 7px; text-align: center; }
+.matrix th { background: var(--divider); color: var(--slate2); font-weight: 700; }
+.matrix td:first-child, .matrix th:first-child { text-align: left; background: var(--divider);
+                                                 color: var(--slate2); font-weight: 700; }
+.matrix .y { color: var(--green); }
+.matrix .n { color: var(--red); background: var(--red-soft); font-weight: 700; }
+.matrix .q { color: var(--amber); background: var(--amber-soft); }
+.matrix .dead { background: var(--divider); border-color: var(--divider); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   11. 시간 타임라인 - 체감 시간을 임계선과 함께 본다
+       <div class="timeline"><span class="t f" style="width:20%">파싱 0.2s</span>
+         <span class="t hi" style="width:80%">전량 재렌더 1.4s</span>
+         <span class="thr" style="left:38%" data-l="체감 한계 1.0s"></span></div>
+       .t.f = 허용 / .t.hi = 초과 구간 / .t.free = 남는 여유 / .thr = 임계선(data-l 이 라벨)
+       여러 조작을 비교하려면 .mlabel + .timeline 을 세로로 쌓는다. 축척은 같게.
+   ══════════════════════════════════════════════════════════════════════════ */
+.timeline { position: relative; display: flex; height: 24px; margin: 20px 0 6px;
+            border: 1px solid var(--border); background: var(--card);
+            font-size: 10px; line-height: 22px; white-space: nowrap;
+            font-variant-numeric: tabular-nums; }
+.timeline .t { padding: 0 6px; overflow: hidden; background: var(--divider);
+               color: var(--ink-soft); }
+.timeline .t + .t { border-left: 1px solid var(--border); }
+.timeline .t.f  { background: var(--teal-soft); color: var(--teal-deep); font-weight: 700; }
+.timeline .t.hi { background: var(--red-soft); color: var(--red); font-weight: 700; }
+.timeline .t.free { background: transparent; color: var(--ink-ph); }
+.timeline .thr { position: absolute; top: -3px; bottom: -3px; width: 0; padding: 0;
+                 border-left: 1px dashed var(--red); }
+.timeline .thr::after { content: attr(data-l); position: absolute; top: -16px; left: 4px;
+                        font-size: 10px; color: var(--red); font-weight: 700; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   12. 스코어보드 - 개선 총량을 숫자로 한 화면에 (철칙 2)
+       <div class="score"><div class="d"><b>검색 진입 클릭</b>
+         <span class="from">12회</span><span class="to">1회</span>
+         <i>근거: 메뉴 3단 → 툴바 1클릭</i></div></div>
+   ══════════════════════════════════════════════════════════════════════════ */
+.score { display: grid; grid-template-columns: repeat(auto-fit, minmax(168px, 1fr));
+         gap: 12px; margin-top: 14px; }
+.score .d { background: var(--card); border: 1px solid var(--border); padding: 11px 13px; }
+.score .d b { display: block; font-size: 12px; font-weight: 600; color: var(--ink-soft);
+              margin-bottom: 5px; }
+.score .d .from { font-size: 15px; color: var(--ink-soft); text-decoration: line-through;
+                  font-variant-numeric: tabular-nums; }
+.score .d .from::after { content: " → "; display: inline-block; text-decoration: none;
+                         color: var(--teal-deep); font-weight: 700; }
+.score .d .to { font-size: 21px; font-weight: 700; color: var(--slate);
+                font-variant-numeric: tabular-nums; }
+.score .d i { display: block; font-style: normal; font-size: 11px; color: var(--ink-soft);
+              margin-top: 5px; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   13. 시선 궤적 - 눈이 화면 위를 어떤 순서로 움직이는가
+       인라인 SVG 로 그린다. viewBox 가 곧 좌표계이므로 폭이 변해도 비율이 산다.
+       xmlns 는 네임스페이스 식별자지 외부 요청이 아니다(자립성 위반 아님).
+       .fr = 화면 테두리 , .zone = 영역 면 , .zl = 영역 이름 ,
+       .pathb = 기존 궤적(붉은 점선) , .pathg = 개선 궤적(실선) ,
+       .pt / .num = 순번 점과 숫자(개선측은 .g 병기) , .gcap = 계측 한 줄
+       ▸ 좌우 SVG 의 viewBox 를 반드시 같게 유지한다.
+       ▸ 거리(px)를 이 좌표에서 계산하지 마라 - 도형 px 은 화면 px 이 아니다.
+         evidence.md gap() 실측이 없으면 방향 전환 횟수만 적는다(철칙 2).
+   ══════════════════════════════════════════════════════════════════════════ */
+.gaze svg { display: block; width: 100%; height: auto; }
+.gaze .fr    { fill: var(--card); stroke: var(--border); stroke-width: 1; }
+.gaze .zone  { fill: var(--divider); }
+.gaze .zl    { fill: var(--ink-soft); font-size: 8px; }
+.gaze .pathb { fill: none; stroke: var(--red); stroke-width: 1.4; stroke-dasharray: 5 3; }
+.gaze .pathg { fill: none; stroke: var(--teal-deep); stroke-width: 2; }
+.gaze .pt    { fill: var(--card); stroke: var(--red); stroke-width: 1.2; }
+.gaze .pt.g  { stroke: var(--teal-deep); }
+.gaze .num   { fill: var(--red); font-size: 9px; font-weight: 700; }
+.gaze .num.g { fill: var(--teal-deep); }
+.gaze .gcap  { font-size: 11px; color: var(--ink-soft); margin-top: 6px; }
+.gaze .gcap b { color: var(--ink); }
+.gaze .gcap b.ov { color: var(--red); }
+.gaze .gcap.good b { color: var(--teal-deep); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   14. 정렬 어긋남 격자 - 값이 엉뚱한 열에 떨어진다
+       <div class="shift"><div class="sg" style="grid-template-columns:repeat(6,1fr)">
+         <div class="h">단가</div> … <div class="c bad">3,400</div></div>
+         <div class="arw">↳ 한 칸 밀림 - 비고 열 소실</div></div>
+       .h = 헤더 / .c = 값 / .c.bad = 밀린 칸(빗금) / .c.fix = 제자리(개선)
+       행은 헤더 + 데이터 1행까지. 여러 행은 소음이다.
+   ══════════════════════════════════════════════════════════════════════════ */
+.shift .sg { display: grid; gap: 1px; background: var(--border);
+             border: 1px solid var(--border); font-size: 10px; }
+.shift .h, .shift .c { background: var(--card); padding: 5px 7px; white-space: nowrap;
+                       overflow: hidden; }
+.shift .h { background: var(--divider); font-weight: 700; color: var(--ink-soft); }
+.shift .c.bad { color: var(--red); font-weight: 700;
+                background: repeating-linear-gradient(135deg, var(--card) 0 4px,
+                                                      var(--red) 4px 5px); }
+.shift .c.fix { color: var(--teal-deep); font-weight: 700; background: var(--teal-soft); }
+.shift .arw { font-size: 11px; color: var(--red); margin-top: 6px; }
+.shift .arw.good { color: var(--teal-deep); }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   15. 적용 로드맵 - 위험도 순 3단계
+   ══════════════════════════════════════════════════════════════════════════ */
+.road { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 14px; }
+.road .r { background: var(--card); border: 1px solid var(--border); padding: 12px 14px; }
+.road .r b { display: block; font-size: 14px; color: var(--slate); }
+.road .r i { display: block; font-style: normal; font-size: 12px; color: var(--ink-soft);
+             margin: 2px 0 8px; }
+.road .r p { font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   16. 반응형 - 800px 이하에서 2열 구조를 1열로 접는다
+   ══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 800px) {
+  .duo { grid-template-columns: 1fr; }
+  .duo .mid { padding: 4px 0; }
+  .cause3, .road, .flow { grid-template-columns: 1fr; }
+  .flow .arr { display: none; }
+  .flow .step { border-top: none; }
+  .flow .step:first-child { border-top: 1px solid var(--border); }
+  .seqrow { grid-template-columns: 1fr; }
+  .seqrow .a { padding: 4px 0; }
+  .score { grid-template-columns: 1fr 1fr; }
+  .clicks .dot + .dot { margin-left: 24px; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   17. 인쇄 - 회의실에 펼쳐놓는 것이 최종 형태다
+   ══════════════════════════════════════════════════════════════════════════ */
+@media print {
+  /* 밴드,칩,목업의 면 색이 인쇄에서 날아가면 '기존/개선'이 구분되지 않는다 */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A4; margin: 12mm; }
+  body { background: var(--card); font-size: 11.5px; }
+  main, footer, .band .inner { max-width: none; padding-left: 0; padding-right: 0; }
+  .band .inner { padding: 14px 0 16px; }
+  /* duo 가 페이지 중간에서 끊기면 비교가 성립하지 않는다 */
+  .issue, .duo, .panel, .cause3 .c, .road .r, .score .d, .flow { break-inside: avoid;
+                                                                 page-break-inside: avoid; }
+  h2 { break-after: avoid; page-break-after: avoid; margin-top: 22px; }
+  .duo { grid-template-columns: 1fr 26px 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   == 대상 전용 부품 ==   ← CSS 본문 무수정 원칙의 유일한 예외 구획
+   카탈로그에도 위 §1~17 에도 없는 부품이 필요할 때만 여기에 추가한다.
+   규칙: 색은 반드시 var() 로 참조 , hex 리터럴을 쓰려면 :root 에 --app-* 또는
+         --repro-* 이름으로 먼저 등록한다 , 위쪽 블록은 고치지 않는다.
+   웹 앱이 대상이면 대상의 실제 CSS 를 여기에 이식하되 .viz 안으로 스코프를 가둔다.
+   ══════════════════════════════════════════════════════════════════════════ */
+/* == 대상 전용 부품 == (kvndh 화첩 재현용. 색은 var() 만) */
+.duo > .panel { min-width: 0; }   /* 좁은 화면에서 패널이 칸을 넘지 않게. 넘치는 도형은 .viz.scroll 안에서만 */
+.kv-pill { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--border);
+           border-radius: var(--r-pill); padding: 1px 9px; font: 600 10px var(--mono);
+           background: var(--card); white-space: nowrap; vertical-align: middle; }
+.kv-dot  { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--app-dot); }
+.kv .mbtn.primary, .kv .mbtn.ghost { border-radius: 8px; font-size: 11px; padding: 5px 10px; }
+.kv-ring { box-shadow: inset 0 0 0 1px var(--border); border: 0 !important; }
+.kv-ring.ok { box-shadow: inset 0 0 0 1px var(--ink-soft); }
+.kv-lnk  { font-size: 11px; font-weight: 700; text-decoration: underline; text-underline-offset: 3px;
+           text-decoration-color: var(--border); margin: 0 6px; white-space: nowrap; }
+.kv-mono { font: 10px var(--mono); color: var(--ink-soft); letter-spacing: .04em; }
+.kv-row  { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; font-size: 11px; }
+.kv-row.nw { flex-wrap: nowrap; }
+
+/* 허브 첫 화면 더미: 칸 높이 360px 을 150px 로 축척(0.417) */
+.kv-fan { position: relative; height: 150px; border: 1px dashed var(--ink-soft); display: flex;
+          flex-direction: column; justify-content: center; align-items: center; gap: 4px; margin: 26px 0; }
+.kv-fan .rw { display: flex; gap: 4px; }
+.kv-fan .cell { width: 30px; height: 30px; border-radius: 22.5%; background: var(--app-pl);
+                border: 1px solid var(--border); }
+.kv-fan.s .cell { width: 26px; height: 26px; }
+.kv-fan .rw.over { outline: 1px dashed var(--red); outline-offset: 1px; }
+.kv-q { display: flex; gap: 7px; width: 131px; margin: 6px auto 0; }
+.kv-q .cell { flex: 0 1 auto; width: 20px; height: 20px; border-radius: 22.5%; background: var(--divider);
+              border: 1px solid var(--border); }
+.kv-q.w { flex-wrap: wrap; row-gap: 7px; }
+.kv-q.w .cell { flex: none; }
+
+/* 고정 머리띠와 대화상자: 360x740 을 축척 */
+.kv-ph { width: 62%; margin: 0 auto; }
+.kv-hdr { position: absolute; left: 0; right: 0; top: 0; height: 10%; z-index: 3; display: flex;
+          align-items: center; justify-content: space-between; padding: 0 4%;
+          background: var(--card); border-bottom: 1px dashed var(--ink-soft); font-size: 10px; font-weight: 800; }
+.kv-hdr.under { z-index: 1; }
+.kv-hdr .kv-pill { font-size: 9px; padding: 1px 5px; }
+.kv-x { position: absolute; right: 4%; top: 2.4%; width: 11%; aspect-ratio: 1; border-radius: 50%;
+        border: 1px solid var(--ink); display: grid; place-items: center; font-size: 10px; z-index: 2;
+        background: var(--card); }
+.diag .win.app.top2 { z-index: 4; }
+.diag .kv-x.top2 { z-index: 5; }
+.kv-menu { position: absolute; right: 3%; top: 16.5%; width: 36%; background: var(--card);
+           border: 1px solid var(--border); border-radius: 8px; font-size: 10px; }
+.kv-menu .row { height: 20px; line-height: 20px; padding: 0 8px; border-bottom: 1px solid var(--divider);
+                white-space: nowrap; overflow: hidden; }
+.kv-menu.sc { height: 134px; overflow-y: auto; }
+
+/* 앱 머리띠 .ab 재현 */
+.kv-ab { overflow: hidden; border-bottom: 1px solid var(--border); padding: 4px 0 6px; }
+.kv-ab .in { display: flex; align-items: center; gap: 2%; width: 131.6%; font-size: 10px; white-space: nowrap; }
+.kv-ab.w .in { width: 100%; flex-wrap: wrap; row-gap: 4px; }
+.kv-id { display: flex; align-items: center; gap: 4px; font-weight: 700; }
+.kv-id i { display: inline-block; width: 14px; height: 14px; border-radius: 22.5%;
+           background: var(--app-pl); border: 1px solid var(--border); }
+.kv-tabs { display: flex; gap: 2px; margin: 0 auto; }
+.kv-ab.w .kv-tabs { order: 3; width: 100%; justify-content: space-around; flex-wrap: wrap; }
+.kv-tab { padding: 3px 7px; border-radius: var(--r-pill); color: var(--ink-soft); font-weight: 600; }
+.kv-tab.on { background: var(--teal); color: var(--teal-ink); }
+
+/* 지원 연락 칸 .help */
+.kv-help { display: flex; align-items: center; gap: 6%; font-size: 10px; }
+.kv-help > div:first-child { flex: 1; }
+.kv-help .cel { width: 22%; outline: 1px dashed var(--ink-soft); outline-offset: 2px; white-space: nowrap; }
+.kv-help .cel.fit { width: auto; flex: none; }
+
+/* 44px 탭 격자 */
+.kv-tap { display: inline-grid; place-items: center; width: 44px; height: 44px; margin: 0 6px 8px 0;
+          outline: 1px dashed var(--ink-soft); vertical-align: top; }
+.kv-tap .mbtn { margin: 0; padding: 0; height: 44px; line-height: 44px; font-size: 11px; text-align: center;
+                background: var(--teal-soft); color: var(--ink); overflow: hidden; }
+
+/* 다크 모드 재현(대상 style.css:6 값) */
+.kv-dk { background: var(--app-dk-bg); color: var(--app-dk-tx); padding: 10px 12px; border: 1px solid var(--app-dk-ln); }
+.kv-dk .h { font-size: 15px; font-weight: 800; letter-spacing: -.03em; }
+.kv-dk .t2 { color: var(--app-dk-t2); font-size: 11px; }
+.kv-dk.new .t2 { color: var(--app-dk-t2-new); }
+
+@media print { h2 { break-inside: avoid; page-break-inside: avoid; } h2 + .issue { break-before: avoid; page-break-before: avoid; } }   /* 제목이 쪽 끝에 홀로 남지 않게 */
+/* 인쇄 쪽 머리띠 겹침 */
+.kv-pg { position: relative; }
+.kv-fan.l { height: 92px; margin: 0 0 30px; }
+.kv-fan.l .cell { width: 34px; height: 34px; }
+.kv-fan.l.s .cell { width: 20px; height: 20px; }
+.kv-ttl { font-size: 34px; font-weight: 800; letter-spacing: -.05em; text-align: center; line-height: 1; margin-top: 30px; }
+.kv-ab.n .in { width: 100%; }
+.kv-lv { display: flex; gap: 4px; width: 148px;   /* 칸 197px 을 0.75 로 축척, 아이콘 줄 314px = 236px */ outline: 1px dashed var(--ink-soft); outline-offset: 2px; }
+.kv-lv i { flex: none; width: 20px; height: 20px; border-radius: 5px; background: var(--ink); opacity: .55; }
+.kv-lv.s i { flex: 0 1 20px; min-width: 0; height: auto; aspect-ratio: 1; }
+.kv-pband { position: absolute; left: 4px; right: 4px; top: 16px; height: 13px; background: var(--card);
+            border: 1px dashed var(--ink-soft); font: 8px/12px var(--mono); text-align: center; color: var(--ink); }
+</style>
+</head>
+<body>
+
+<div class="band">
+  <div class="accent"></div>
+  <div class="inner">
+    <h1>사용성 개선 제안: kvndh.com 평면 화첩, 기존 → 개선</h1>
+    <div class="meta">지적 1건 + 추가 발견 25건, 근본원인 4개, 화면 11종 전수조사(8개 언어 x 8개 앱, 250쪽) / KVNDH.github.io 192c759 / 2026-10-25</div>
+  </div>
+</div>
+
+<main>
+
+<h2>진단 지도</h2>
+<div class="flow">
+  <div class="step"><b>① 첫 화면과 언어</b><span class="chip f">L</span><span class="chip f">Q</span><span class="chip f">O</span><span class="chip f hi">AE</span></div>
+  <div class="arr">→</div>
+  <div class="step"><b>② 화첩과 크게 보기</b><span class="chip f hi">A</span><span class="chip f">C</span><span class="chip f">D</span><span class="chip f">B</span><span class="chip f">N</span><span class="chip f">J</span></div>
+  <div class="arr">→</div>
+  <div class="step"><b>③ 앱 머리띠</b><span class="chip f hi">AF</span><span class="chip f hi">AG</span><span class="chip f">H</span><span class="chip f">Y</span><span class="chip f">W</span><span class="chip f">T</span></div>
+  <div class="arr">→</div>
+  <div class="step"><b>④ 지원과 처리방침</b><span class="chip f">E</span><span class="chip f">AD</span><span class="chip f">I</span><span class="chip f">AB</span></div>
+  <div class="arr">→</div>
+  <div class="step"><b>⑤ 바닥, 404, 다크</b><span class="chip hi">1</span><span class="chip f">M</span><span class="chip f hi">F</span><span class="chip f">G</span><span class="chip f">K</span><span class="chip f">AA</span></div>
+</div>
+<div class="legend">숫자 = 사용자 지적, 영문 = 조사 중 추가 발견 / <span class="chip hi" style="margin:0 2px;">&nbsp;</span> 붉은 테두리 = 심각도 높음(조작 불가 또는 페이지 가로 흔들림) / 지적 1 은 192c759 에서 고쳐짐</div>
+
+<div class="cause3" style="grid-template-columns:1fr 1fr;">
+  <div class="c"><b>원인 ① 목록 길이 상한 규칙 부재</b><span>앱 수, 언어 수만큼 세로로 쌓이거나 줄어드는 목록. 상한도 흐름도 없음</span><span style="margin-top:4px;">→ 지적 1 + M, F, L, Q, AE, N</span></div>
+  <div class="c"><b>원인 ② 고정 띠 기준 겹침, 폭 경계 규칙 부재</b><span>머리띠 z-index 40 아래 대화상자 20, 720px 와 359px 경계 밖의 넘침, 고정 폭 칸, 같은 정보 반복</span><span style="margin-top:4px;">→ A, C, D, AF, AG, H, Y, W, I</span></div>
+  <div class="c"><b>원인 ③ 앱 사이, 문서 안 지름길 부재</b><span>더미 아이콘, 앱 사이, 폰 목차, FAQ 주소 어디에도 바로 가는 길 없음</span><span style="margin-top:4px;">→ O, T, E, AD</span></div>
+  <div class="c"><b>원인 ④ 대체 조건 점검 부재</b><span>다크, 인쇄, JS 클래스, 요소 lang, 탭 폭. 기본 조건만 확인됨</span><span style="margin-top:4px;">→ K, AA, AB, J, G, B</span></div>
+</div>
+
+<h2>개선 총량</h2>
+<div class="score">
+  <div class="d"><b>허브 바닥 높이(390폭)</b><span class="from">553px</span><span class="to">425px</span><i>M 바닥 언어 목록 걷기(계산)</i></div>
+  <div class="d"><b>닫기 단추 원 면적(375x667, 390x844 de)</b><span class="from">13%</span><span class="to">100%</span><i>A 대화상자를 머리띠 위로(CSS 주입 실측)</i></div>
+  <div class="d"><b>앱 쪽 가로 넘침(721~1054px)</b><span class="from">151px</span><span class="to">0px</span><i>AF 머리띠 단추 + AG Tapey 칸, 192쪽 CSS 주입 실측</i></div>
+  <div class="d"><b>8번째 판까지(390x844)</b><span class="from">스크롤 5388px</span><span class="to">1클릭</span><i>O 더미 아이콘을 판 링크로</i></div>
+</div>
+
+<h2><span class="ph">⑤ 바닥 / 원인 ①</span>지적 1: 바닥 처리방침 목록이 앱마다 44px 씩 세로로 쌓임(고쳐짐)</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존(b660728): 8줄 세로 쌓기, 바닥 773px</div>
+      <div class="viz">
+        <div class="mlist kv">
+          <div class="row hq">개인정보 처리방침</div>
+          <div class="row">Life Tyde</div>
+          <div class="row">Tapey</div>
+          <div class="row">Dice Master</div>
+          <div class="row">SnapLine</div>
+          <div class="row">Percentime</div>
+          <div class="row">BrushWorks</div>
+          <div class="row">Readride</div>
+          <div class="row">OnPace</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">바닥 773px / 가시 844px</div>
+          <div class="bar">
+            <span class="sg" style="flex:0 0 47.5%">그 밖 401</span>
+            <span class="over" style="flex:0 0 44.1%">처리방침 372</span>
+          </div>
+        </div>
+      </div>
+      <div class="note">앱 1개 = 44px 한 줄 <code>b660728 scripts/render.py:203</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선(192c759): 한 줄 흐름, 바닥 553px</div>
+      <div class="viz">
+        <div class="mlist kv">
+          <div class="row hq">개인정보 처리방침</div>
+          <div class="row">Life Tyde &nbsp; Tapey &nbsp; Dice Master &nbsp; SnapLine</div>
+          <div class="row">Percentime &nbsp; BrushWorks &nbsp; Readride</div>
+          <div class="row">OnPace</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">바닥 553px / 가시 844px</div>
+          <div class="bar">
+            <span class="sg" style="flex:0 0 47.5%">그 밖 401</span>
+            <span class="sg fit" style="flex:0 0 18%">152</span>
+          </div>
+        </div>
+      </div>
+      <div class="note">.fpv 전폭 + .flow 줄바꿈, 372px → 152px <code>templates/style.css:92</code> / 1280폭 541px → 369px</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">⑤ 바닥 / 원인 ①</span>M: 같은 부류가 바로 위 '언어' 목록에 남음</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 머리띠 메뉴와 같은 8개를 바닥에 한 번 더</div>
+      <div class="viz">
+        <div class="kv-row nw"><span class="kv-mono">머리띠</span><span class="kv-pill">◉ 언어 ▾</span><span class="kv-mono">8개</span></div>
+        <div class="mlist" style="margin-top:8px;">
+          <div class="row hq">언어</div>
+          <div class="row">한국어 &nbsp; English &nbsp; 日本語 &nbsp; 简体中文 &nbsp; 繁體中文</div>
+          <div class="row">Deutsch &nbsp; Español &nbsp; Português (Brasil)</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">바닥 553px / 가시 844px</div>
+          <div class="bar">
+            <span class="sg" style="flex:0 0 50.4%">그 밖 425</span>
+            <span class="over" style="flex:0 0 15.2%">언어 128</span>
+          </div>
+        </div>
+      </div>
+      <div class="note">언어 블록 108px + 간격 20px, Tab 8회, 폭 36px 링크('한국어', '日本語')도 여기 <code>scripts/render.py:209</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 바닥 언어 블록을 지우고 머리띠 메뉴 하나로</div>
+      <div class="viz">
+        <div class="kv-row nw"><span class="kv-mono">머리띠</span><span class="kv-pill">◉ 언어 ▾</span><span class="kv-mono">8개</span></div>
+        <div class="mlist" style="margin-top:8px;">
+          <div class="row hq">문의</div>
+          <div class="row">개인정보 처리방침 흐름</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">바닥 425px / 가시 844px</div>
+          <div class="bar">
+            <span class="sg" style="flex:0 0 50.4%">그 밖 425</span>
+          </div>
+        </div>
+      </div>
+      <div class="note">553 - 128 = 425px(계산), Tab 8회 → 0회 / 대가: 바닥에서 언어를 바꾸려면 고정 머리띠 1탭</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">⑤ 404 / 원인 ①</span>F (+G): 404 가 안내문 8개를 쌓아 360폭 첫 화면에 언어 링크 0개(낱말표 1개뿐)</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 안내 8개 = 583px, 첫 언어 링크 y=794px</div>
+      <div class="viz scroll">
+        <div class="mlist">
+          <div class="row hq">kvndh(낱말표) / 404</div>
+          <div class="row">ko 안내 51px</div>
+          <div class="row">en 안내 51px</div>
+          <div class="row">ja お探しのページはありません… 77px</div>
+          <div class="row">ja 。</div>
+          <div class="row">zh-hans 51, zh-hant 51, de 77, es 51, pt-BR 77px</div>
+          <div class="more">⋮ 가시 740px 끝, 첫 언어 링크 794px</div>
+          <div class="row">한국어 / English / 日本語 …</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">첫 언어 링크 794px / 가시 740px</div>
+          <div class="bar"><b style="flex:0 0 100%">0 → 740</b><span class="over" style="flex:0 0 7.3%">+54</span></div>
+        </div>
+      </div>
+      <div class="note">8언어 안내 전부 출력 <code>scripts/render.py:597</code> / G: ja 셋째 줄 '。' 한 글자 <code>templates/style.css:12</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 안내문 8개를 모두 지우고 404 + 언어 목록만</div>
+      <div class="viz scroll">
+        <div class="mlist">
+          <div class="row hq">kvndh(낱말표) / 404</div>
+          <div class="row">한국어 / English / 日本語 / 简体中文 / 繁體中文 / Deutsch / Español / Português (Brasil)</div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">첫 언어 링크 211px, 8개 모두 첫 화면(끝 659px) / 가시 740px</div>
+          <div class="bar"><b style="flex:0 0 28.5%">0 → 211</b><span class="sg fit" style="flex:0 0 71.5%">여유 529</span></div>
+        </div>
+      </div>
+      <div class="note">render.py:597 messages 제거, 794 → 211px(CSS 주입 실측), JS 판별 불필요, G 도 함께 사라짐 / 대가: 404 쪽에 문장 0개, 숫자와 언어 이름만 남음</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">① 첫 화면 / 원인 ①</span>L (+Q): 가로 폰 844x390 에서 더미 아이콘이 칸을 넘쳐 제목을 덮음, 출시 전 줄은 앱이 늘면 찌그러짐</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존(844x390 지금): 칸 195px 에 더미 318px, 위 아이콘이 제목을 41px 덮음</div>
+      <div class="viz">
+        <div class="kv-ttl">kvndh</div>
+        <div class="kv-fan l">
+          <span class="rw over"><span class="cell"></span></span>
+          <span class="rw"><span class="cell"></span><span class="cell"></span></span>
+          <span class="rw"><span class="cell"></span><span class="cell"></span><span class="cell"></span></span>
+          <span class="rw over"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></span>
+          <span class="lbl" style="position:absolute;right:4px;bottom:-28px;font-size:10px;color:var(--red);">칸 195px, 더미 163 → 481px</span>
+        </div>
+        <div class="mlabel" style="text-align:center;">앱 +1 가정: 1280x720 아이콘 11개 = 5줄 400px &gt; 칸 360px</div>
+        <div class="mlabel" style="text-align:center;margin-top:6px;">출시 전 줄, 가정 6개(지금 2개), 390폭</div>
+        <div class="kv-q"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></div>
+      </div>
+      <div class="note">n번째 줄 n개, 아이콘 72px 와 칸 높이 고정 <code>scripts/render.py:333</code> / 1280x720 은 지금 318/360px 이라 안 넘침 / Q: 6개부터 37x48px <code>templates/style.css:82</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 아이콘 크기 = 칸 높이에서 줄 간격을 빼고 줄 수로 나눔, 출시 전 줄은 줄바꿈</div>
+      <div class="viz">
+        <div class="kv-ttl">kvndh</div>
+        <div class="kv-fan l s">
+          <span class="rw"><span class="cell"></span></span>
+          <span class="rw"><span class="cell"></span><span class="cell"></span></span>
+          <span class="rw"><span class="cell"></span><span class="cell"></span><span class="cell"></span></span>
+          <span class="rw"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></span>
+          <span class="lbl" style="position:absolute;right:4px;bottom:-28px;font-size:10px;">(195 - 3 x 10) / 4 = 41px</span>
+        </div>
+        <div class="mlabel" style="text-align:center;">앱 +1 가정: (360 - 4 x 10) / 5 = 64px, 칸 안</div>
+        <div class="mlabel" style="text-align:center;margin-top:6px;">출시 전 줄, 가정 6개(지금 2개), 390폭</div>
+        <div class="kv-q w"><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span><span class="cell"></span></div>
+      </div>
+      <div class="note">844x390 아이콘 72 → 41px, 겹침 41 → 0px(계산), 1280x720 은 72px 그대로 / 출시 전 48x48px 유지 + 줄바꿈 / 대가: 가로 폰과 앱이 늘 때 더미 아이콘이 작아짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">① 언어 메뉴 / 원인 ①</span>AE: 가로 폰에서 언어 메뉴 끝 항목에 닿을 수 없음</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 667x375 에서 8개 중 2개 화면 밖</div>
+      <div class="viz">
+        <div class="diag" style="overflow:hidden;">
+          <span class="kv-pill" style="position:absolute;right:3%;top:3%;">◉ 한국어 ▾</span>
+          <div class="kv-menu">
+            <div class="row">한국어</div><div class="row">English</div><div class="row">日本語</div><div class="row">简体中文</div>
+            <div class="row">繁體中文</div><div class="row">Deutsch</div><div class="row">Español</div><div class="row">Português (Brasil)</div>
+          </div>
+          <div class="lbl" style="left:8px;right:auto;">667x375, 목록 62 → 428px</div>
+        </div>
+      </div>
+      <div class="note">고정 머리띠 안 목록, 높이 제한 없음 366px <code>templates/style.css:38</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 목록 높이를 화면 높이에 묶고 안에서 스크롤</div>
+      <div class="viz">
+        <div class="diag" style="overflow:hidden;">
+          <span class="kv-pill" style="position:absolute;right:3%;top:3%;">◉ 한국어 ▾</span>
+          <div class="kv-menu sc">
+            <div class="row">한국어</div><div class="row">English</div><div class="row">日本語</div><div class="row">简体中文</div>
+            <div class="row">繁體中文</div><div class="row">Deutsch</div><div class="row">Español</div><div class="row">Português (Brasil)</div>
+          </div>
+          <div class="lbl" style="left:8px;right:auto;">max-height 375 - 76 = 299px</div>
+        </div>
+      </div>
+      <div class="note">닿는 항목 6개 → 8개, max-height:calc(100dvh - 76px);overflow-y:auto 두 선언 <code>templates/style.css:38</code></div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">② 화첩 / 원인 ①</span>N: 판마다 이름 링크와 '자세히 보기'가 같은 주소, Tab 이 앱당 4회</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 판 안 Tab 32회, 중복 8쌍</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot">판 단추</span><span class="dot hi">이름 /ko/slug/</span><span class="dot">App Store ↗</span><span class="dot">자세히 보기 /ko/slug/</span>
+          <b class="n">32회</b><span class="rep">4회 x 8개 앱</span>
+        </div>
+      </div>
+      <div class="note">h2 이름 링크 <code>scripts/render.py:311</code> + 자세히 보기 <code>scripts/render.py:318</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 이름은 글자로, 링크는 '자세히 보기' 하나</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot">판 단추</span><span class="dot">App Store ↗</span><span class="dot">자세히 보기 /ko/slug/</span>
+          <b class="n">24회</b><span class="rep">3회 x 8개 앱</span>
+        </div>
+      </div>
+      <div class="note">앱 1개 추가당 Tab +4회 → +3회 / 대가: 이름을 눌러 들어가던 손버릇 끊김</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">② 크게 보기 / 원인 ②</span>A (+C): 375x667 은 여덟 앱 전부, 390x844 는 긴 언어에서 닫기 단추를 누르면 언어 메뉴가 열림</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 머리띠(z 40)가 대화상자(z 20) 위, 알약은 다른 앱 번호</div>
+      <div class="viz">
+        <div class="diag kv-ph" style="height:210px;">
+          <div class="win app" style="left:2%;top:1%;width:96%;height:98%;">No. 01 / 08 Life Tyde</div>
+          <div class="kv-x">✕</div>
+          <div class="kv-hdr"><span>kvndh</span><span class="kv-pill"><span class="kv-dot"></span>02 / 08 Tapey</span><span class="kv-pill">◉ ▾</span></div>
+          <div class="jump" style="right:2%;top:11%;">↑</div>
+          <div class="lbl">375x667, 닫기 원 면적 13%</div>
+        </div>
+        <div class="mlabel" style="margin-top:8px;">C: 열린 채 휠 600px, 뒤 scrollY 1220 → 1820px</div>
+      </div>
+      <div class="note">.top z-index 40 <code>templates/style.css:23</code>, .viewer 20 <code>templates/style.css:100</code> / 360x740 과 375x667 은 8개 앱 모두 13%, 390x844 de 13~100%, es 13~100%(앱마다) / 알약 '02 / 08 Tapey' 와 대화상자 01 이 어긋남</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 열린 동안 대화상자를 맨 위로, 뒤 스크롤 잠금</div>
+      <div class="viz">
+        <div class="diag kv-ph" style="height:210px;">
+          <div class="win app top2" style="left:2%;top:1%;width:96%;height:98%;">No. 01 / 08 Life Tyde</div>
+          <div class="kv-x top2">✕</div>
+          <div class="kv-hdr under"><span>kvndh</span><span class="kv-pill"><span class="kv-dot"></span>02 / 08 Tapey</span><span class="kv-pill">◉ ▾</span></div>
+          <div class="lbl" style="z-index:6;">375x667, 닫기 원 면적 100%</div>
+        </div>
+        <div class="mlabel" style="margin-top:8px;">C: 열린 채 휠 600px, 뒤 scrollY 1220 → 1220px</div>
+      </div>
+      <div class="note">.viewer z-index 50(CSS 주입 실측: 375x667, 360x740, 390x844 de, es 모두 99~100%), .viewing 때 html overflow:hidden <code>templates/hub.js:24</code> / 어긋난 알약은 덮여 안 보임 / 대가: 스크롤바 폭 15px 흔들림, scrollbar-gutter 로 보정</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">② 크게 보기 / 원인 ②</span>D: 작은 폰에서 App Store, 자세히 보기, 지원 줄이 시트 안 스크롤 아래</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 375x667 시트 안 넘침 92px 에서 148px(ko)</div>
+      <div class="viz">
+        <div class="mlist" style="max-height:150px;overflow:hidden;">
+          <div class="row hq">아이콘 196px</div>
+          <div class="row">No. 01 / 08 &nbsp; Life Tyde</div>
+          <div class="row">부제, 소개 1줄</div>
+          <div class="row">불릿 4줄</div>
+          <div class="more">⋮ 행동 줄: 시트 안 스크롤 92px 아래</div>
+          <div class="row">App Store ↗ / 자세히 보기 / 지원</div>
+        </div>
+      </div>
+      <div class="note">위 여백 68px + 아이콘 196px 고정 <code>templates/style.css:296</code>, :299 / de 166px 에서 293px</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 아이콘을 화면 높이에 묶고 행동 줄은 시트 바닥 고정</div>
+      <div class="viz">
+        <div class="mlist" style="max-height:150px;overflow:hidden;">
+          <div class="row hq">아이콘 min(196px, 24vh) = 160px</div>
+          <div class="row">No. 01 / 08 &nbsp; Life Tyde</div>
+          <div class="row">부제, 소개 1줄</div>
+          <div class="row">불릿 4줄(시트 안 스크롤)</div>
+          <div class="row">App Store ↗ / 자세히 보기 / 지원</div>
+        </div>
+      </div>
+      <div class="note">행동 줄 position:sticky; bottom:0, 넘침과 무관하게 첫 화면 안 / 대가: 높이 667 화면에서 아이콘 196 → 160px</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">③ 앱 머리띠 / 원인 ②</span>AF (+H): 721~853px(es)에서 다섯 언어의 상점 단추가 머리띠 밖으로, 페이지가 가로로 흔들림</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 머리띠 단추 숨김이 720px 이하뿐</div>
+      <div class="viz scroll">
+        <div class="kv-ab kv">
+          <div class="in">
+            <span class="kv-id"><i></i>BrushWorks</span>
+            <span class="kv-tabs"><span class="kv-tab">Información</span><span class="kv-tab">Soporte</span><span class="kv-tab on">Política de privacidad</span></span>
+            <span class="mbtn primary">Consíguelo en el App Store</span>
+          </div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">es 721폭: 필요 796px / 머리띠 605px</div>
+          <div class="bar"><b style="flex:0 0 100%">605</b><span class="over" style="flex:0 0 31.6%">+191</span></div>
+          <div class="mlabel">H, es 360폭 탭 줄: 302px / 296px</div>
+          <div class="bar"><b style="flex:0 0 100%">296</b><span class="over" style="flex:0 0 2%">+6</span></div>
+        </div>
+      </div>
+      <div class="note">.ab .btn{display:none} 이 720 이하에만 <code>templates/style.css:302</code> / 문서 넘침 721폭 en 8~45, ja 9~32, de 22~75, es 80~133, pt-BR 2~47px(앱마다), 마지막 폭 es 853, de 793, en 765px / ko, zh 은 없음 / H 경계 359px <code>templates/style.css:364</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 940px 아래에서는 머리띠 상점 단추만 숨김, 탭은 한 줄 그대로</div>
+      <div class="viz scroll">
+        <div class="kv-ab n kv">
+          <div class="in">
+            <span class="kv-id"><i></i>BrushWorks</span>
+            <span class="kv-tabs"><span class="kv-tab">Información</span><span class="kv-tab">Soporte</span><span class="kv-tab on">Política de privacidad</span></span>
+          </div>
+        </div>
+        <div class="budget" style="margin-top:10px;">
+          <div class="mlabel">es 721폭: 필요 796 - 228 = 568px / 머리띠 605px</div>
+          <div class="bar"><b style="flex:0 0 93.9%">568</b><span class="sg fit" style="flex:0 0 6.1%">37</span></div>
+          <div class="mlabel">H, es 360폭 탭 두 줄 허용(경계 374px)</div>
+          <div class="bar"><b style="flex:0 0 100%">296, 넘침 0px</b></div>
+        </div>
+      </div>
+      <div class="note">@media (max-width:940px){.ab .btn{display:none}} 한 줄, 머리띠 높이 135px 그대로 / 넘침 0px: 8언어 x 8앱 x 3쪽, 721~1300px(AG, I 고침과 함께 CSS 주입 실측) / 대가: 721~940px 의 지원, 처리방침 쪽에 상점 단추 0개(소개 쪽은 hero 단추가 남음)</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">③ 앱 페이지 / 원인 ②</span>AG: Tapey 소개 쪽 아이콘 줄(.lv)이 721~1054px 에서 칸을 넘어 여덟 언어 모두 가로로 흔들림</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 아이콘 10칸 x 26px 고정, 줄이는 규칙은 720 이하에만</div>
+      <div class="viz scroll">
+        <div class="kv-lv"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="budget" style="margin-top:12px;">
+          <div class="mlabel">en 721폭: .lv 314px / 칸 197px</div>
+          <div class="bar"><b style="flex:0 0 62.7%">197</b><span class="over" style="flex:0 0 37.3%">+117</span></div>
+        </div>
+      </div>
+      <div class="note">.lv i 26px 고정 <code>templates/style.css:187</code>, 줄이기는 <code>templates/style.css:340</code>-341(720 이하) / 문서 넘침 en, de 151px(1054px 까지), ko 113px(977px 까지), ja, zh 61px</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 줄이는 두 줄을 미디어 쿼리 밖으로</div>
+      <div class="viz scroll">
+        <div class="kv-lv s"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="budget" style="margin-top:12px;">
+          <div class="mlabel">en 721폭: .lv 197px / 칸 197px</div>
+          <div class="bar"><b style="flex:0 0 100%">197, 넘침 0px</b></div>
+        </div>
+      </div>
+      <div class="note">.lv{max-width:100%} .lv i{flex:0 1 26px;min-width:0;height:auto;aspect-ratio:1}, 넘침 151 → 0px(CSS 주입 실측) / 대가: 721~1054px 에서 칸 아이콘 26 → 약 14px((197 - 9 x 6) / 10, 계산)</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">③ 앱 머리띠 / 원인 ②</span>Y (+W): 소개 쪽 첫 200px 에 이름 2번, 번호 2번(지원, 처리방침 쪽은 첫 260px 에 이름 3번), 알약은 잘림. 상점 단추 문구는 허브와 앱 쪽이 다름</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존(ko Dice Master 소개, 390폭): 이름 2회, 번호 2회, 같은 행동 2가지 문구</div>
+      <div class="viz kv">
+        <div class="kv-row nw"><span class="kv-mono">y26</span><span class="kv-pill"><span class="kv-dot"></span><span class="clip" style="max-width:104px;">03 / 08&nbsp; Dice Master</span></span></div>
+        <div class="kv-row nw"><span class="kv-mono">y76</span><span class="kv-id">Dice Master</span></div>
+        <div class="kv-row nw"><span class="kv-mono">y185</span><span class="kv-mono">No. 03 / 08</span></div>
+        <div class="kv-row">
+          <span class="kv-mono">허브</span><span class="mbtn primary">App Store ↗</span>
+          <span class="kv-mono">앱 쪽</span><span class="mbtn primary">App Store에서 다운로드</span>
+        </div>
+      </div>
+      <div class="note">알약 필요 141 &gt; 133px <code>scripts/render.py:366</code> / 문구 11자 대 16자 <code>scripts/render.py:193</code> / es 는 'Consíguelo en el App Store' 로 같은 2종</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 앱 쪽 알약은 번호만, 상점 단추는 한 문구</div>
+      <div class="viz kv">
+        <div class="kv-row nw"><span class="kv-mono">y26</span><span class="kv-pill"><span class="kv-dot"></span>03 / 08</span></div>
+        <div class="kv-row nw"><span class="kv-mono">y76</span><span class="kv-id">Dice Master</span></div>
+        <div class="kv-row nw"><span class="kv-mono">y185</span><span class="kv-mono">No. 03 / 08</span></div>
+        <div class="kv-row">
+          <span class="kv-mono">허브</span><span class="mbtn primary">App Store ↗</span>
+          <span class="kv-mono">앱 쪽</span><span class="mbtn primary">App Store ↗</span>
+        </div>
+      </div>
+      <div class="note">이름 2 → 1회(소개 첫 200px), 한 언어 안 문구 2종 → 1종(접근 이름은 storeLabel aria-label 유지) <code>templates/hub.js:21</code> / 대가: 알약에서 앱 이름이 빠짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">④ 지원 / 원인 ②</span>I: 1280폭 지원 '연락' 칸에서 메일 단추가 칸 밖으로</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: es 칸 124px &lt; 단추 167px</div>
+      <div class="viz scroll kv">
+        <div class="kv-help">
+          <div><b>Contacto</b><br><span class="kv-mono">안내 1줄</span></div>
+          <div class="cel"><span class="mbtn ghost kv-ring" style="width:135%;">메일 주소 단추 167px</span></div>
+        </div>
+        <div class="budget" style="margin-top:14px;">
+          <div class="mlabel">es 칸 124px / 단추 167px</div>
+          <div class="bar"><b style="flex:0 0 74%">124</b><span class="over" style="flex:0 0 26%">+43</span></div>
+        </div>
+      </div>
+      <div class="note">오른쪽 칸 min-width:0 + .btn nowrap <code>templates/style.css:207</code> / de 30px, ko 10px</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 오른쪽 칸 flex:none, 단추 폭만큼 확보</div>
+      <div class="viz scroll kv">
+        <div class="kv-help">
+          <div><b>Contacto</b><br><span class="kv-mono">안내 1줄</span></div>
+          <div class="cel fit"><span class="mbtn ghost kv-ring">메일 주소 단추 167px</span></div>
+        </div>
+        <div class="budget" style="margin-top:14px;">
+          <div class="mlabel">칸 167px / 단추 167px</div>
+          <div class="bar"><b style="flex:0 0 100%">167, 넘침 0px</b></div>
+        </div>
+      </div>
+      <div class="note">.help div:last-child{flex:none} 한 줄 <code>templates/style.css:210</code> / 대가: 왼쪽 안내문 폭 43px 줄어듦</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">① 첫 화면 / 원인 ③</span>O: 첫 화면 아이콘 10개가 다 보이지만 누를 수 없음</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존(390x844): 8번째 판까지 스크롤 5388px</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot dead">더미 OnPace 누름</span><span class="dot hi">스크롤 5388px</span><span class="dot free">08 판 도착</span>
+          <b class="n">0클릭 + 5388px</b>
+        </div>
+        <div class="clicks">
+          <span class="dot">Tab</span><span class="dot hi">Tab 32회</span><span class="dot free">08 판 단추</span>
+          <b class="n">32회</b>
+        </div>
+      </div>
+      <div class="note">더미 링크 0개(aria-hidden) <code>templates/hub.html:5</code>, Tab 3 + 7 x 4 + 1 = 32회(계산) / 08 판 위치 1280x720 4349, 1280x800 4832, 375x667 5211, 360x740 5275px</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 출시 앱 더미 아이콘을 #slug 판 링크로</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot">더미 OnPace 누름</span><span class="dot free">#onpace 판 도착</span>
+          <b class="n">1클릭</b>
+        </div>
+        <div class="clicks">
+          <span class="dot">Tab</span><span class="dot">Tab 11회</span><span class="dot free">08 판</span>
+          <b class="n">11회</b>
+        </div>
+      </div>
+      <div class="note">piece id=$slug 이미 있음 <code>templates/piece.html:1</code>, Tab 3 + 8 = 11회(계산) / 대가: 첫 화면 Tab +8회</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">③ 앱 페이지 / 원인 ③</span>T: 앱 쪽에서 다른 앱까지 낱말표로 허브에 간 뒤 스크롤 5388px</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존(390x844): Life Tyde 지원 → OnPace 지원 3클릭 + 스크롤 5388px</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot">낱말표 kvndh</span><span class="dot free">스크롤 5388px</span><span class="dot">OnPace 자세히 보기</span><span class="dot">지원 탭</span>
+          <b class="n">3클릭 + 5388px</b>
+        </div>
+      </div>
+      <div class="note">앱 바닥 = 메일 + 이 앱 처리방침뿐 <code>scripts/render.py:216-227</code> / 바닥까지 지원 607, 소개 3977, 처리방침 4440px 라 바닥 줄은 지름길이 못 됨</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 새 목록 없이 O 의 더미 아이콘 링크를 그대로 씀</div>
+      <div class="viz">
+        <div class="clicks">
+          <span class="dot">낱말표 kvndh</span><span class="dot">더미 OnPace</span><span class="dot">OnPace 자세히 보기</span><span class="dot">지원 탭</span>
+          <b class="n">4클릭 + 0px</b>
+        </div>
+      </div>
+      <div class="note">고정 머리띠 낱말표 <code>templates/base.html:31</code> + O 의 #slug 링크, 앱 수만큼 자라는 줄 0개 추가 / 대가: 클릭 1회 늘고 스크롤 5388px 없어짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">④ 처리방침, 지원 / 원인 ③</span>E (+AD): 폰 처리방침에 목차 0개, FAQ 답에 주소 0개</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: de 390폭 12절 7291px, 목차 숨김</div>
+      <div class="viz">
+        <div class="mlist" style="max-height:120px;overflow:hidden;">
+          <div class="row hq">Datenschutzerklärung</div>
+          <div class="row">01 처리 목적</div>
+          <div class="more">⋮ 02부터 12절, 마지막 y=6787px</div>
+          <div class="row">12 문의처</div>
+        </div>
+        <div class="mlist" style="margin-top:8px;">
+          <div class="row">#q7 → FAQ details id 0개(Life Tyde 12개 중)</div>
+        </div>
+      </div>
+      <div class="note">.toc{display:none} 900px 이하 <code>templates/style.css:269</code> / id 없는 details <code>scripts/render.py:522</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 접힌 목차 하나, FAQ 마다 id</div>
+      <div class="viz">
+        <div class="mlist" style="max-height:120px;overflow:hidden;">
+          <div class="row hq">목차 ▾ (12개)</div>
+          <div class="row">01 처리 목적</div>
+          <div class="row">12 문의처 → 2탭</div>
+        </div>
+        <div class="mlist" style="margin-top:8px;">
+          <div class="row">#q7 → 7번 답 열림, id q1부터 qN(앱별 7~14개)</div>
+        </div>
+      </div>
+      <div class="note">ui.toc 문구 재사용, 새 문구 0자 <code>templates/privacy.html:2</code> / 대가: 문서 머리 44px 길어짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">② 화첩 / 원인 ④</span>B: '크게 보기' 단추 8개가 늘 숨음(JS 클래스를 붙이는 코드 0줄)</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 단추 16개 중 8개 display:none</div>
+      <div class="viz kv">
+        <div class="kv-row">
+          <span class="mbtn primary">App Store ↗</span><span class="kv-lnk">자세히 보기</span>
+          <span class="mbtn ghost ghosted" style="opacity:.42;border-style:dashed;">크게 보기 (display:none)</span>
+        </div>
+        <div class="kv-row nw"><span class="kv-mono">판 단추 8</span><span class="kv-mono">+ 숨은 단추 8</span></div>
+      </div>
+      <div class="note">html:not(.js) .big{display:none}, html class 0개 <code>templates/style.css:80</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 죽은 단추와 규칙을 지움, 입구는 판 단추 하나</div>
+      <div class="viz kv">
+        <div class="kv-row nw">
+          <span class="mbtn primary">App Store ↗</span><span class="kv-lnk">자세히 보기</span>
+        </div>
+        <div class="kv-row nw"><span class="kv-mono">판 단추 8</span><span class="kv-mono">+ 0</span></div>
+      </div>
+      <div class="note">DOM 단추 16개 → 8개 <code>templates/piece.html:10</code> / 대가: 아이콘을 누른다는 글자 표시는 계속 0개</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">② 크게 보기, ④ 지원 / 원인 ④</span>J: '지원', 바닥 처리방침 링크, 목차 링크가 44px 미만(AA 24px 는 통과, 44px 는 AAA)</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 높이만 44px, 폭은 글자만큼, 목차 a 는 높이 40px</div>
+      <div class="viz">
+        <span class="kv-tap"><span class="mbtn quiet" style="width:25px;">지원</span></span>
+        <span class="kv-tap"><span class="mbtn quiet" style="width:38px;">Tapey</span></span>
+        <span class="kv-tap"><span class="mbtn quiet" style="width:44px;height:40px;line-height:40px;">목차</span></span>
+        <div class="lbl" style="font-size:10px;color:var(--ink-soft);">점선 = 44 x 44px, 면 = 실측(지원 25, Tapey 38 폭, 목차 높이 40)</div>
+      </div>
+      <div class="note">.lnk, .foot a 는 min-height 만 <code>templates/style.css:78</code>, :89 / 바닥 언어 링크('한국어', '日本語' 36px)는 M 에서 지움 / WCAG 2.5.8(AA 24px) 통과, 2.5.5(AAA 44px) 미달</div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: min-width:44px 와 좌우 여백, 목차 a 44px</div>
+      <div class="viz">
+        <span class="kv-tap"><span class="mbtn quiet" style="width:44px;">지원</span></span>
+        <span class="kv-tap"><span class="mbtn quiet" style="width:44px;">Tapey</span></span>
+        <span class="kv-tap"><span class="mbtn quiet" style="width:44px;">목차</span></span>
+        <div class="lbl" style="font-size:10px;color:var(--ink-soft);">점선 = 44 x 44px, 면 = 44px</div>
+      </div>
+      <div class="note">25px, 38px → 44px, .toc a 40 → 44px <code>templates/style.css:229</code> / 대가: 바닥 처리방침 흐름 줄 폭 늘어남, 목차 12절이 48px 길어짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">⑤ 라이트와 다크 / 원인 ④</span>K (+AA): 다크에서 보조 글자가 본문과 같은 밝기, 고스트 단추 테두리는 라이트와 다크 둘 다 흐림</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 다크 본문 대 보조 1.34:1(라이트는 3.55:1)</div>
+      <div class="viz">
+        <div class="kv-dk">
+          <div class="h">Life Tyde</div>
+          <div class="t2">소개 1줄(--t2)</div>
+        </div>
+        <div class="budget" style="margin-top:8px;">
+          <div class="mlabel">본문 대 보조, 기준 = 라이트 모드와 같은 위계 3.55:1</div>
+          <div class="bar"><b style="flex:0 0 37.7%">1.34:1</b><span class="over" style="flex:0 0 62.3%">모자람</span></div>
+        </div>
+        <div class="kv-row kv"><span class="mbtn ghost kv-ring">지원 페이지</span><span class="kv-mono">테두리 라이트 1.43:1, 다크 1.55:1</span></div>
+      </div>
+      <div class="note">다크 --t2:#D3D3D7 <code>templates/style.css:6</code> / .btn-g 링 --ln(라이트 #D3D3D7, 다크 #2E2E33) <code>templates/style.css:77</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 다크 --t2 값 하나와 링 색 하나만 바꿈</div>
+      <div class="viz">
+        <div class="kv-dk new">
+          <div class="h">Life Tyde</div>
+          <div class="t2">소개 1줄(--t2)</div>
+        </div>
+        <div class="budget" style="margin-top:8px;">
+          <div class="mlabel">본문 대 보조 3.63:1, 기준 3.55:1 넘음(바탕 대비 5.22:1)</div>
+          <div class="bar"><b style="flex:0 0 100%">3.63:1</b></div>
+        </div>
+        <div class="kv-row kv"><span class="mbtn ghost kv-ring ok">지원 페이지</span><span class="kv-mono">테두리 라이트 4.70:1, 다크 5.22:1</span></div>
+      </div>
+      <div class="note">다크 --t2 #7E7E86(WCAG 식 계산) <code>templates/style.css:6</code>, 링 --t2 / 대가: 다크 보조 글자가 지금보다 어두워짐</div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="ph">④ 처리방침, 지원 / 원인 ④</span>AB: 인쇄 규칙 0줄, 머리띠가 쪽마다 본문을 덮고 FAQ 답은 0개 인쇄</h2>
+<div class="issue">
+  <div class="duo">
+    <div class="panel bad"><div class="cap">기존: 처리방침 4쪽 모두 머리띠, 지원 답 0/12</div>
+      <div class="viz">
+        <div class="seqrow">
+          <div class="miniwin kv-pg"><div class="tt">1쪽</div><div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div><div class="kv-pband">kvndh 01 / 08</div></div>
+          <div class="a">→</div>
+          <div class="miniwin kv-pg"><div class="tt">2쪽</div><div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div><div class="kv-pband">kvndh 01 / 08</div></div>
+          <div class="a">→</div>
+          <div class="miniwin"><div class="tt">지원 답 0/12</div><div class="cells"><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div><div class="cell x"></div></div></div>
+        </div>
+      </div>
+      <div class="note">@media print 0개, .top position:fixed <code>templates/style.css:23</code> / 닫힌 details <code>scripts/render.py:522</code></div>
+    </div>
+    <div class="mid">→</div>
+    <div class="panel good"><div class="cap">개선: 인쇄 때 머리띠 숨김, details 모두 열기</div>
+      <div class="viz">
+        <div class="seqrow">
+          <div class="miniwin kv-pg"><div class="tt">1쪽</div><div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div></div>
+          <div class="a">→</div>
+          <div class="miniwin kv-pg"><div class="tt">2쪽</div><div class="cells"><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div></div></div>
+          <div class="a">→</div>
+          <div class="miniwin"><div class="tt">지원 답 12/12</div><div class="cells"><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div><div class="cell f"></div></div></div>
+        </div>
+      </div>
+      <div class="note">@media print{.top,.ab,.foot,.toc{display:none}} + beforeprint 때 open <code>templates/page.js:1</code> / 머리띠 4/4쪽 → 0쪽</div>
+    </div>
+  </div>
+</div>
+
+<h2>적용 로드맵: 4단계</h2>
+<div class="road" style="grid-template-columns:1fr 1fr;">
+  <div class="r"><b>1단계, 겹침과 폭 경계(원인 ②)</b>
+    <i>위험 낮음 - style.css 규칙 몇 곳(z-index, 경계 940px 와 374px, .lv 두 줄 이동, 아이콘 24vh, .help)과 hub.js 2줄, 데이터 무변경. 되돌리기: 커밋 되돌리기로 무손실. 조작 불가(A)와 앱 쪽 가로 흔들림(AF, AG)을 여기서 해소</i>
+    <span class="chip f hi">A</span><span class="chip f">C</span><span class="chip f">D</span><span class="chip f hi">AF</span><span class="chip f hi">AG</span><span class="chip f">H</span><span class="chip f">Y</span><span class="chip f">W</span><span class="chip f">I</span>
+    <div style="font-size:12px;color:var(--ink-soft);margin-top:8px;">viewer z-index 50 + 스크롤 잠금 / 시트 아이콘 24vh / 940px 아래 머리띠 상점 단추 숨김, 좁은 경계 374px / .lv 줄이기를 미디어 쿼리 밖으로 / 알약 번호만 / 상점 문구 한 종 / 연락 칸 flex:none</div>
+  </div>
+  <div class="r"><b>2단계, 대체 조건 값(원인 ④)</b>
+    <i>위험 낮음 - CSS 값과 선택자, 인쇄 블록 1개. 되돌리기: 무손실. 다크 보조 글자 밝기만 눈에 띄게 바뀜</i>
+    <span class="chip f">K</span><span class="chip f">AA</span><span class="chip f">AB</span><span class="chip f">J</span><span class="chip f">B</span>
+    <div style="font-size:12px;color:var(--ink-soft);margin-top:8px;">다크 --t2 #7E7E86 / 고스트 링 --t2 / @media print / '지원', 처리방침, 목차 링크 44px / .big 와 죽은 규칙 삭제</div>
+  </div>
+  <div class="r"><b>3단계, 목록 상한과 흐름(원인 ①)</b>
+    <i>위험 중간 - render.py 출력 구조(바닥 언어 블록, 404 안내문 삭제)와 tests/test_render.py 가 바뀜. 되돌리기: 가능, 저장 데이터 없음</i>
+    <span class="chip hi">1</span><span class="chip f">M</span><span class="chip f hi">F</span><span class="chip f">G</span><span class="chip f">L</span><span class="chip f">Q</span><span class="chip f hi">AE</span><span class="chip f">N</span>
+    <div style="font-size:12px;color:var(--ink-soft);margin-top:8px;">지적 1 은 끝남, 같은 잣대 시험(앱 수 x 2 에서 바닥, 404, 더미 높이) 고정 / 바닥 언어 걷기 / 404 안내문 삭제 / 더미 아이콘 크기를 칸 높이로 계산 / 언어 메뉴 높이</div>
+  </div>
+  <div class="r"><b>4단계, 지름길(원인 ③)</b>
+    <i>위험 중간 - 새 링크와 aria-hidden 해제, page.js 의 hash 처리로 읽기 순서와 Tab 수가 바뀜. 되돌리기: 가능, 외부에서 걸린 #q 주소는 깨짐</i>
+    <span class="chip f">O</span><span class="chip f">T</span><span class="chip f">E</span><span class="chip f">AD</span>
+    <div style="font-size:12px;color:var(--ink-soft);margin-top:8px;">더미 아이콘 #slug 링크(T 도 이것으로) / 폰 접힌 목차 / FAQ id q1부터 qN(앱별 7~14개)</div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  조사 대상: KVNDH.github.io 커밋 192c759(templates 14개 596줄, scripts/render.py 609줄, templates/style.css 365줄), docs 250쪽. 코드 참조는 192c759 시점 라인 번호이고 지적 1 의 기존은 b660728 시점.
+  계측: Playwright Chromium headless, deviceScaleFactor 1, 1280x800, 1280x720, 390x844, 375x667, 360x740, 844x390, 667x375(폰 크기는 isMobile, hasTouch), 라이트, 다크, 동작 줄이기, 127.0.0.1 http.server. 두 조사(실화면, 소스)를 합치고 의심 값(지적 1 높이, A, AE, AF, AG, L, Q, F, G, H, I, J, Y, B, C, N, O, T, E)은 다시 쟀고, 검토 뒤 A, AF, AG, L, F, K, AA, O, Y 를 한 번 더 쟀다.
+  등급: 표시 없는 수치는 실측, '계산' 은 식을 남긴 값(M 425px, L 41px 와 64px, AG 14px, O 11회, K 와 AA 대비), 'CSS 주입 실측' 은 개선 CSS 를 실제 쪽에 넣고 잰 값(A 100%, AF 와 AG 넘침 0px, F 211px). 닫기 면적은 둥근 단추의 원 안 픽셀 기준. L 의 11개와 Q 의 6개는 앱이 늘 때의 가정.
+  식별자: 두 조사의 겹침을 합쳐 U → B, X → A 와 C, AC → E, S → F, Z → K, P → L, R → M, V → N 로 두었고 소스 조사의 M, N 은 AE, AF 로 바꿨다. AG 는 검토에서 새로 찾은 Tapey .lv 넘침.
+  팔레트: 레포에 DESIGN.md 가 없어 templates/style.css:1 과 :6 의 CSS 변수(먹, 안개, 은, 도화지, 책상, 버밀리언 점)를 옮겼고 의미색(붉은색, 초록색)은 대상에 없어 Boardroom 기본값. '기존' 목업의 문구와 색은 실제 화면 재현값이며 아이콘은 회색 사각으로 줄였다.
+  결함 없음으로 확인: 루트 언어 이동 7/7, JS 오류 0, 제목 순서, 대화상자 Tab 가두기와 초점 복귀, 동작 줄이기, 언어 메뉴 Esc, 지원 FAQ 열기.
+  미조사: Safari 와 실기기(backdrop blur, hyphens), 스크린리더 실청취, 출시 전 tailorcolor, codematic 쪽 문구. 3D, 무거운 동작, 안내 문장 추가는 제안하지 않았다.
+  회귀 확인: python3 scripts/build.py 뒤 python3 -m http.server 8771 --bind 127.0.0.1 -d docs, 측정 스크립트 /tmp/kvprop/m1.mjs 부터 m5.mjs, /tmp/kvfix/f1.mjs 부터 f5.mjs(임시 폴더).
+</footer>
+
+</body>
+</html>
