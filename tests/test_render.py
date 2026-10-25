@@ -128,7 +128,22 @@ class AppPageTest(unittest.TestCase):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<body class="app">', html)
         self.assertIn('<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">', html)
-        self.assertIn('<p class="now" data-on="1" aria-hidden="true"><i></i><b>01 / 01  Demo</b></p>', html)
+        # 10-25 Y: 앱 쪽 번호 점은 번호만. 이름은 바로 아래 머리띠에 한 번
+        self.assertIn('<p class="now" data-on="1" aria-hidden="true"><i></i><b>01 / 01</b></p>', html)
+        for kind in (render.render_support, render.render_privacy):
+            self.assertIn('<b>01 / 01</b></p>', kind(self.site, "ko", "demo"))
+
+    def test_unreleased_app_page_shows_no_number_dot(self):
+        html = render.render_app(Site(make_site(unreleased=True)), "ko", "soon")
+        self.assertIn('<p class="now" data-on="0" aria-hidden="true"><i></i><b></b></p>', html)
+
+    def test_store_button_reads_like_the_hub(self):
+        # 10-25 W: 허브와 앱 쪽이 같은 'App Store ↗' 한 문구, 앱 이름은 접근 이름에
+        html = render.render_app(self.site, "ko", "demo")
+        self.assertIn('<a class="btn" href="https://apps.apple.com/app/id123" aria-label="Demo store">App Store ↗</a>', html)
+        self.assertIn('<a class="btn btn-s" href="https://apps.apple.com/app/id123" aria-label="Demo store">App Store ↗</a>', html)
+        self.assertNotIn("getOnAppStore", html)
+        self.assertIn('aria-label="Demo store">App Store ↗</a>', render.render_hub(self.site, "ko"))
 
     def test_panorama_shows_the_store_screenshots_in_the_page_language(self):
         for i in (1, 2, 3):
@@ -353,6 +368,77 @@ class OtherPagesTest(unittest.TestCase):
         xml = render.render_sitemap(self.site, ["/", "/404.html", "/ko/"])
         self.assertIn("<loc>https://kvndh.com/ko/</loc>", xml)
         self.assertNotIn("404", xml)
+
+
+def rule(css: str, selector: str, media: str | None = None) -> str:
+    """css 에서 selector 규칙 본문. media 를 주면 그 미디어 블록 안에서만 찾는다."""
+    if media:
+        css = css.split("@media " + media + "{", 1)[1]
+        depth, end = 1, 0
+        for end, ch in enumerate(css):
+            depth += {"{": 1, "}": -1}.get(ch, 0)
+            if depth == 0:
+                break
+        css = css[:end]
+    m = re.search(r"(?:^|[}\n])" + re.escape(selector) + r"\{([^}]*)\}", css)
+    return m.group(1) if m else ""
+
+
+class OverlapAndWidthTest(unittest.TestCase):
+    """10-25 사용성 제안 1단계(원인 ②): 고정 띠 겹침과 폭 경계."""
+
+    def setUp(self):
+        site = Site(make_site())
+        self.hub, self.sub = render.css(site, hub=True), render.css(site)
+        self.js = render.text(site, "hub.js")
+
+    def z(self, css: str, selector: str) -> int:
+        return int(re.search(r"z-index:(\d+)", rule(css, selector)).group(1))
+
+    def test_viewer_sits_above_the_top_bar(self):
+        # A: 머리띠(40)가 크게 보기(20)를 덮어 닫기 단추를 누르면 언어 메뉴가 열렸다
+        self.assertGreater(self.z(self.hub, ".viewer"), self.z(self.hub, ".top"))
+        self.assertLess(self.z(self.hub, ".viewer"), self.z(self.hub, ".skip"))
+
+    def test_open_viewer_locks_the_album_scroll(self):
+        # C: 열린 채 휠을 굴리면 뒤 화첩이 600px 내려갔다
+        self.assertIn("overflow:hidden", rule(self.hub, "html.lock"))
+        self.assertIn("scrollbar-gutter:stable", self.hub)
+        self.assertIn("root.classList.add('lock')", self.js)
+        self.assertIn("root.classList.remove('lock')", self.js)
+        self.assertIn("scrollTop=0", self.js)   # 열 때마다 시트 맨 위(닫기 단추)부터
+        self.assertNotIn("html.lock", self.sub)
+
+    def test_viewer_actions_stay_in_reach_on_short_phones(self):
+        # D: 375x667 에서 App Store, 자세히 보기, 지원 줄이 시트 안 스크롤 아래에 있었다
+        acts = rule(self.hub, ".vtext .acts", "(max-width:720px)")
+        self.assertIn("position:sticky", acts)
+        bottom = int(re.search(r"padding:\d+px \d+px (\d+)px", rule(self.hub, ".vsheet", "(max-width:720px)")).group(1))
+        self.assertIn(f"bottom:-{bottom}px", acts)   # 시트 아래 여백까지 덮는다
+        self.assertIn("24vh", rule(self.hub, ".vslot", "(max-width:720px)"))
+
+    def test_bar_store_button_hides_below_940(self):
+        # AF: 721~853px 에서 상점 단추가 머리띠 밖으로 나가 페이지가 가로로 흔들렸다
+        self.assertIn("display:none", rule(self.sub, ".ab .btn", "(max-width:940px)"))
+        self.assertEqual(rule(self.sub, ".ab .btn"), "")
+
+    def test_long_tab_names_wrap_up_to_374(self):
+        # H: es 360폭 탭 줄이 6px 넘쳤다. .now 를 숨기는 경계(359)는 그대로
+        self.assertIn("white-space:normal", rule(self.sub, ".tabs a", "(max-width:374px)"))
+        self.assertIn("display:none", rule(self.sub, ".now", "(max-width:359px)"))
+
+    def test_level_icons_shrink_at_every_width(self):
+        # AG: Tapey 아이콘 줄이 720 이하에서만 줄어 721~1054px 에서 칸을 넘었다
+        self.assertIn("flex:0 1 26px", rule(self.sub, ".lv i"))
+        self.assertIn("min-width:0", rule(self.sub, ".lv i"))
+        self.assertNotIn("width:26px;height:26px", self.sub)
+        self.assertIn("max-width:100%", rule(self.sub, ".lv"))
+        self.assertIn("flex-wrap:wrap", rule(self.sub, ".kit-r:has(.lv)"))   # 이름 옆 자리가 모자라면 아이콘 줄이 다음 줄로
+
+    def test_contact_buttons_keep_their_width(self):
+        # I: 1280폭 es 지원 '연락' 칸(124px)이 메일 단추(167px)보다 좁았다
+        self.assertIn("min-width:auto", rule(self.sub, ".help div:last-child"))
+        self.assertIn("min-width:0", rule(self.sub, ".help>div"))   # 왼쪽 안내문은 그대로 줄어든다
 
 
 if __name__ == "__main__":

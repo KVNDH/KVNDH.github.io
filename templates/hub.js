@@ -14,6 +14,7 @@
   addEventListener('scroll',mark,{passive:true});addEventListener('resize',mark);mark();
   function open(i){
     var a=P[i],img=v.querySelector('.vslot img');last=document.activeElement;
+    v.querySelector('.vsheet').scrollTop=0; // 앞서 본 앱에서 내린 자리가 남으면 닫기 단추가 위로 숨는다
     img.src=a.big;img.alt='';
     v.querySelector('.vno').textContent='No. '+a.no+' / '+U.total;
     v.querySelector('h2').textContent=a.name;v.querySelector('.sub').textContent=a.sub;v.querySelector('.hook').textContent=a.hook;
@@ -21,10 +22,10 @@
     v.querySelector('.acts').innerHTML='<a class="btn" href="'+esc(a.store)+'" aria-label="'+esc(a.storeLabel)+'">App Store ↗</a>'+
       (a.href?'<a class="lnk" href="'+esc(a.href)+'">'+esc(U.more)+'</a><a class="lnk" href="'+esc(a.support)+'">'+esc(U.support)+'</a>':'');
     v.setAttribute('aria-label',a.name);
-    body.dataset.active=i;body.classList.add('viewing');v.removeAttribute('inert');v.setAttribute('aria-hidden','false');
+    body.dataset.active=i;body.classList.add('viewing');root.classList.add('lock');v.removeAttribute('inert');v.setAttribute('aria-hidden','false');
     v.querySelector('.vclose').focus({preventScroll:true});
   }
-  function close(){if(!body.classList.contains('viewing'))return;body.classList.remove('viewing');v.setAttribute('aria-hidden','true');v.setAttribute('inert','');if(last)last.focus({preventScroll:true})}
+  function close(){if(!body.classList.contains('viewing'))return;body.classList.remove('viewing');root.classList.remove('lock');v.setAttribute('aria-hidden','true');v.setAttribute('inert','');if(last)last.focus({preventScroll:true})}
   [].forEach.call(document.querySelectorAll('[data-open]'),function(b){b.addEventListener('click',function(){open(+b.dataset.open)})});
   v.addEventListener('click',function(e){if(e.target===v)close()});
   v.querySelector('.vclose').addEventListener('click',close);

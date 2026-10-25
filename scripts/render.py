@@ -190,7 +190,9 @@ def store_button(site: Site, lang: str, app: dict, small: bool = False) -> str:
     if not released(app):
         return ""
     cls = "btn btn-s" if small else "btn"
-    return f'<a class="{cls}" href="{app_store_url(app["appStoreId"])}">{esc(site.ui[lang]["getOnAppStore"])}</a>'
+    # 10-25 W: 허브와 같은 한 문구. 앱 이름은 접근 이름(storeLabel)에
+    label = fill(site.ui[lang]["storeLabel"], name=site.app_copy(app["slug"], lang)["name"])
+    return f'<a class="{cls}" href="{app_store_url(app["appStoreId"])}" aria-label="{esc(label)}">App Store ↗</a>'
 
 
 def hub_footer(site: Site, lang: str) -> str:
@@ -361,9 +363,9 @@ def still_plate(site: Site, slug: str, size: str) -> str:
 
 
 def app_now(site: Site, lang: str, slug: str) -> str:
+    """앱 쪽 번호 점은 번호만(10-25 Y: 이름은 바로 아래 머리띠에 있다). 번호가 없는 출시 전 앱은 점을 띄우지 않는다."""
     n = number(site, lang, slug)
-    name = site.app_copy(slug, lang)["name"]
-    return now_pill(f"{n[0]} / {n[1]}  {name}" if n else name, on=True)
+    return now_pill(f"{n[0]} / {n[1]}", on=True) if n else now_pill()
 
 
 def number_label(site: Site, lang: str, slug: str) -> str:
