@@ -34,7 +34,7 @@
    버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다.
    줄머리 표시 h(주석)는 허브에서만, s 는 허브가 아닌 페이지(소개, 지원, 개인정보, 404)에서만 쓰는 규칙이다.
    render.css 가 페이지에 맞지 않는 줄을 뺀다 */
-@media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#D3D3D7;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
+@media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#7E7E86;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
 *,*::before,*::after{box-sizing:border-box}
 h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
 ul,ol{padding:0;list-style:none}
@@ -90,12 +90,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;background:var(--k);color:var(--on);font-size:15px;font-weight:650;white-space:nowrap;transition:transform .2s}
 .btn:hover{transform:translateY(-1px)}
 .btn-s{min-height:44px;padding:0 14px;font-size:13.5px}
-.btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--ln)}
+.btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--t2)}
 /* 출시 전 앱: 이름 없이 흐린 아이콘만 */
 /* 끝 */
 .foot{position:relative;display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:28px 40px;margin:0 22px;padding:56px 64px 64px;border-top:1px solid var(--ln);font-size:14px;color:var(--t2)}
 .foot h2{margin-bottom:6px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
-.foot a{display:inline-flex;align-items:center;min-height:44px}
+.foot a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
 .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px}
 .foot .wm{color:var(--tx)}
 .foot .copy{grid-column:1/-1;font-size:12.5px}
@@ -223,7 +223,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
 .toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 .toc ol{border-top:1px solid var(--ln)}
-.toc a{display:flex;align-items:center;min-height:40px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
+.toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
 .doc{font-size:17px;line-height:1.85}
 .doc-meta{margin-top:12px;font-size:15px;color:var(--t2);font-variant-numeric:tabular-nums}
@@ -346,6 +346,8 @@ html{scroll-padding-top:72px}
 @media (max-width:374px){.tabs a{padding:0 3px;font-size:12px;line-height:1.2;text-align:center;white-space:normal;-webkit-hyphens:auto;hyphens:auto}}
 @media (max-width:359px){.now{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.btn:hover{transform:none}}
+/* 10-25 AB: 인쇄하면 머리띠, 앱 띠, 바닥, 목차를 빼고 지원 답은 모두 펼친다(page.js) */
+@media print{.top,.ab,.foot,.toc{display:none}.pv{grid-template-columns:minmax(0,1fr);gap:0}}
 </style>
 
 </head>
@@ -395,6 +397,10 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
+  var shut=[];
+  addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});
+  addEventListener('afterprint',function(){shut.forEach(function(d){d.open=false});shut=[]});
 })();
 </script>
 </body>

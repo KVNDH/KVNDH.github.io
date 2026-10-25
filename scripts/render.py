@@ -318,7 +318,6 @@ def render_hub(site: Site, lang: str) -> str:
             subtitle=esc(copy["subtitle"]), summary=esc(copy["summary"]),
             store=store, store_label=esc(store_label),
             more=f'<a class="lnk" href="{page_path(lang, slug)}">{esc(ui["learnMore"])}</a>' if linked else "",
-            view=esc(ui["viewLarge"]),
         ))
     slots = []
     for j, app in enumerate(quiet, len(apps)):

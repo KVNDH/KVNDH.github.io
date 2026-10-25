@@ -441,5 +441,66 @@ class OverlapAndWidthTest(unittest.TestCase):
         self.assertIn("min-width:0", rule(self.sub, ".help>div"))   # 왼쪽 안내문은 그대로 줄어든다
 
 
+def contrast(a: str, b: str) -> float:
+    def lum(h: str) -> float:
+        c = [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+        c = [v / 12.92 if v <= .03928 else ((v + .055) / 1.055) ** 2.4 for v in c]
+        return .2126 * c[0] + .7152 * c[1] + .0722 * c[2]
+    x, y = sorted((lum(a), lum(b)), reverse=True)
+    return (x + .05) / (y + .05)
+
+
+class AlternateConditionTest(unittest.TestCase):
+    """10-25 사용성 제안 2단계(원인 ④): 다크, 인쇄, JS 클래스, 누르는 자리 같은 대체 조건 값."""
+
+    def setUp(self):
+        self.site = Site(make_site())
+        self.hub, self.sub = render.css(self.site, hub=True), render.css(self.site)
+
+    def colors(self, dark: bool) -> dict:
+        body = self.sub.split("@media (prefers-color-scheme:dark){:root{", 1)[1].split("}}", 1)[0] if dark \
+            else rule(self.sub, ":root")
+        return dict(re.findall(r"--(\w+):(#[0-9A-Fa-f]{6})", body))
+
+    def test_dark_secondary_text_keeps_the_light_hierarchy(self):
+        # K: 다크 본문 대 보조 글자가 1.34:1 로 거의 같은 밝기였다(라이트 3.55:1)
+        light, dark = self.colors(False), self.colors(True)
+        self.assertGreaterEqual(contrast(dark["tx"], dark["t2"]), contrast(light["tx"], light["t2"]))
+        self.assertGreaterEqual(contrast(dark["t2"], dark["paper"]), 4.5)
+        self.assertGreaterEqual(contrast(dark["t2"], dark["pl"]), 4.5)
+
+    def test_ghost_button_ring_is_visible_in_both_modes(self):
+        # AA: 고스트 단추 테두리(--ln)가 라이트 1.43:1, 다크 1.55:1 이었다
+        self.assertIn("inset 0 0 0 1px var(--t2)", rule(self.sub, ".btn-g"))
+        for dark in (False, True):
+            c = self.colors(dark)
+            self.assertGreaterEqual(contrast(c["t2"], c["paper"]), 3)
+
+    def test_print_drops_fixed_bars_and_opens_answers(self):
+        # AB: 인쇄 규칙이 없어 머리띠가 쪽마다 본문을 덮고 지원 답은 하나도 인쇄되지 않았다
+        for css in (self.hub, self.sub):
+            self.assertIn("display:none", rule(css, ".top,.ab,.foot,.toc", "print"))
+        self.assertIn("minmax(0,1fr)", rule(self.sub, ".pv", "print"))   # 목차가 빠진 자리로 본문이 넓어진다
+        js = render.text(self.site, "page.js")
+        self.assertIn("'beforeprint'", js)
+        self.assertIn("'afterprint'", js)
+        self.assertIn('<script>', render.render_support(self.site, "en", "demo"))
+        self.assertIn("beforeprint", render.render_support(self.site, "en", "demo"))
+
+    def test_small_links_are_44_wide(self):
+        # J: '지원' 25px, 바닥 'Tapey' 38px, 목차 줄 40px 높이
+        self.assertIn("min-width:44px", rule(self.hub, ".lnk"))
+        self.assertIn("min-width:44px", rule(self.sub, ".foot a"))
+        self.assertIn("min-height:44px", rule(self.sub, ".toc a"))
+
+    def test_no_dead_view_button(self):
+        # B: html 에 js 클래스를 붙이는 코드가 없어 '크게 보기' 단추 8개가 늘 숨어 있었다. 입구는 아이콘 판 하나
+        html = render.render_hub(self.site, "ko")
+        self.assertEqual(html.count("data-open="), 1)
+        self.assertNotIn('class="lnk big"', html)
+        self.assertNotIn(".big{", self.hub)
+        self.assertNotIn("html:not(.js)", self.hub)
+        self.assertIn('aria-label="ko viewLarge"', html)   # 크게 보기 대화상자 이름으로는 그대로 쓴다
+
 if __name__ == "__main__":
     unittest.main()

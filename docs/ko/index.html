@@ -34,7 +34,7 @@
    버밀리언(--dot)은 오른쪽 위 번호 점 한 자리만. 다크 모드는 순흑 바탕에 같은 종이 결을 밝게 깐다.
    줄머리 표시 h(주석)는 허브에서만, s 는 허브가 아닌 페이지(소개, 지원, 개인정보, 404)에서만 쓰는 규칙이다.
    render.css 가 페이지에 맞지 않는 줄을 뺀다 */
-@media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#D3D3D7;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
+@media (prefers-color-scheme:dark){:root{--k:#F4F3EF;--tx:#F4F3EF;--t2:#7E7E86;--ln:#2E2E33;--paper:#000000;--desk:#000000;--pl:#0D0D0F;--on:#000000;--grain:url(/assets/paper-dark.png);--sh:none}}
 *,*::before,*::after{box-sizing:border-box}
 h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0}
 ul,ol{padding:0;list-style:none}
@@ -105,10 +105,9 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 18px;border-radius:10px;background:var(--k);color:var(--on);font-size:15px;font-weight:650;white-space:nowrap;transition:transform .2s}
 .btn:hover{transform:translateY(-1px)}
 .btn-s{min-height:44px;padding:0 14px;font-size:13.5px}
-.btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--ln)}
-.lnk{display:inline-flex;align-items:center;min-height:44px;font-weight:650;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}
+.btn-g{background:none;color:var(--tx);box-shadow:inset 0 0 0 1px var(--t2)}
+.lnk{display:inline-flex;align-items:center;min-width:44px;min-height:44px;font-weight:650;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--ln)}
 .lnk:hover{text-decoration-color:currentColor}
-html:not(.js) .big{display:none}
 /* 출시 전 앱: 이름 없이 흐린 아이콘만 */
 .quiet{display:flex;justify-content:center;gap:28px;padding:24px 96px 88px}
 .qslot{display:block;width:64px;height:64px;border-radius:22.5%}
@@ -117,7 +116,7 @@ html:not(.js) .big{display:none}
 /* 끝 */
 .foot{position:relative;display:grid;grid-template-columns:1.2fr 1fr 1.4fr;gap:28px 40px;margin:0 22px;padding:56px 64px 64px;border-top:1px solid var(--ln);font-size:14px;color:var(--t2)}
 .foot h2{margin-bottom:6px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
-.foot a{display:inline-flex;align-items:center;min-height:44px}
+.foot a{display:inline-flex;align-items:center;min-width:44px;min-height:44px}
 .foot a:hover{color:var(--tx);text-decoration:underline;text-underline-offset:3px}
 .foot .wm{color:var(--tx)}
 .foot .langs,.foot .flow{display:flex;flex-wrap:wrap;gap:0 16px}
@@ -250,7 +249,7 @@ html.lock{overflow:hidden}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
 .toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 .toc ol{border-top:1px solid var(--ln)}
-.toc a{display:flex;align-items:center;min-height:40px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
+.toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
 .doc{font-size:17px;line-height:1.85}
 .doc-meta{margin-top:12px;font-size:15px;color:var(--t2);font-variant-numeric:tabular-nums}
@@ -387,6 +386,8 @@ html{scroll-padding-top:72px}
 @media (max-width:374px){.tabs a{padding:0 3px;font-size:12px;line-height:1.2;text-align:center;white-space:normal;-webkit-hyphens:auto;hyphens:auto}}
 @media (max-width:359px){.now{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.btn:hover{transform:none}}
+/* 10-25 AB: 인쇄하면 머리띠, 앱 띠, 바닥, 목차를 빼고 지원 답은 모두 펼친다(page.js) */
+@media print{.top,.ab,.foot,.toc{display:none}.pv{grid-template-columns:minmax(0,1fr);gap:0}}
 </style>
 
 </head>
@@ -415,7 +416,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/life-tyde/">Life Tyde</a></h2>
 <p class="sub">조용히 쌓이는 나의 연대기</p>
 <p class="hook">해시태그 아래 굵직한 순간만 골라 한 줄 타임라인에 남깁니다.</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6773198369" aria-label="Life Tyde, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/life-tyde/">자세히 보기</a><button class="lnk big" type="button" data-open="0">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6773198369" aria-label="Life Tyde, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/life-tyde/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -428,7 +429,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/tapey/">Tapey</a></h2>
 <p class="sub">내 사진으로 직접 붙여 꾸민 배경화면</p>
 <p class="hook">종이테이프와 폴라로이드 프레임으로 꾸미고, 잠금화면 시계와 위젯 자리를 피해 저장합니다</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6778635856" aria-label="Tapey, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/tapey/">자세히 보기</a><button class="lnk big" type="button" data-open="1">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6778635856" aria-label="Tapey, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/tapey/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -441,7 +442,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/dice-master/">Dice Master</a></h2>
 <p class="sub">수식 자동 계산과 색상별 부분합</p>
 <p class="hook">면체와 개수를 정하고 화면을 누르면, 주사위가 멈추는 순간 합계와 계산 과정이 함께 나옵니다.</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6765857608" aria-label="Dice Master, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/dice-master/">자세히 보기</a><button class="lnk big" type="button" data-open="2">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6765857608" aria-label="Dice Master, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/dice-master/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -454,7 +455,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/snapline/">SnapLine</a></h2>
 <p class="sub">이미 찍은 한 장에 다시 얹는 격자</p>
 <p class="hook">선을 끌어 꺾고 기울이고, 피사체와 겹친 자리는 지워 선이 뒤로 지나가게 합니다</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/snapline/">자세히 보기</a><button class="lnk big" type="button" data-open="3">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6809834907" aria-label="SnapLine, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/snapline/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -467,7 +468,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/percentime/">Percentime</a></h2>
 <p class="sub">지나간 시간을 퍼센트로 보여 주는 타이머</p>
 <p class="hook">오늘이 몇 퍼센트 지났는지 잠금 화면과 위젯에서 바로 봅니다</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6814066451" aria-label="Percentime, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/percentime/">자세히 보기</a><button class="lnk big" type="button" data-open="4">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6814066451" aria-label="Percentime, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/percentime/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -480,7 +481,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/brushworks/">BrushWorks</a></h2>
 <p class="sub">그림 실력이 없어도 사진으로 완성하는 캔버스</p>
 <p class="hook">좋아하는 사진을 고르고 화면을 문질러 보세요. 그림을 잘 그리지 못해도 시간만 들이면 완성할 수 있습니다.</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6810951573" aria-label="BrushWorks, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/brushworks/">자세히 보기</a><button class="lnk big" type="button" data-open="5">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6810951573" aria-label="BrushWorks, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/brushworks/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -493,7 +494,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/readride/">Readride</a></h2>
 <p class="sub">소설부터 뉴스까지 한 줄로 보는 리더</p>
 <p class="hook">소설, 뉴스, 에세이, PDF와 ePub까지 읽기 쉬운 짧은 묶음으로 나눠 한 자리에 보여 줍니다. 시선을 옮기지 않고 읽을 수 있으며, 읽던 위치를 글자 단위로 기억합니다.</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6816576585" aria-label="Readride, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/readride/">자세히 보기</a><button class="lnk big" type="button" data-open="6">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6816576585" aria-label="Readride, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/readride/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -506,7 +507,7 @@ html{scroll-padding-top:72px}
 <h2><a href="/ko/onpace/">OnPace</a></h2>
 <p class="sub">경로 구간별 체크포인트</p>
 <p class="hook">지금 뛰어야 하는지, 걸어도 되는지 지점마다 알려 줍니다</p>
-<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6816075554" aria-label="OnPace, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/onpace/">자세히 보기</a><button class="lnk big" type="button" data-open="7">크게 보기</button></p>
+<p class="acts"><a class="btn" href="https://apps.apple.com/app/id6816075554" aria-label="OnPace, App Store에서 보기">App Store ↗</a><a class="lnk" href="/ko/onpace/">자세히 보기</a></p>
 </div>
 </article>
 
@@ -574,6 +575,10 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
+  var shut=[];
+  addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});
+  addEventListener('afterprint',function(){shut.forEach(function(d){d.open=false});shut=[]});
 })();
 </script>
 </body>
