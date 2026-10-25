@@ -345,6 +345,12 @@
    ]
   }
  },
+ "specpair": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {}
+ },
  "tailorcolor": {
   "mode": "blur",
   "ink": "dark",

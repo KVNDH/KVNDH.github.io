@@ -234,5 +234,15 @@
    ]
   },
   "store": "Codematic/docs/store"
+ },
+ "specpair": {
+  "icon": "SpecPair/SpecPair/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "SpecPair/docs/site/1-compare.png",
+    "SpecPair/docs/site/3-size-mixed.png",
+    "SpecPair/docs/site/4-conditions.png"
+   ]
+  }
  }
 }

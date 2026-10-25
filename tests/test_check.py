@@ -123,6 +123,16 @@ class StructureTest(unittest.TestCase):
         self.add_unreleased(root, "later", langs=("ko",))
         self.assertTrue(check.check_structure(Site(root), release=True))
 
+    def test_release_follows_app_languages(self):
+        # 2026-10-25 SpecPair: ko 페이지만 내는 앱은 site.json languages ["ko"] 로 다른 언어를 요구하지 않는다
+        root = make_site(langs=("ko", "en", "ja"))
+        self.add_unreleased(root, "later", langs=("ko",))
+        site_json = root / "content" / "site.json"
+        data = json.loads(site_json.read_text(encoding="utf-8"))
+        data["apps"][-1]["languages"] = ["ko"]
+        site_json.write_text(json.dumps(data), encoding="utf-8")
+        self.assertEqual(check.check_structure(Site(root), release=True), [])
+
 
 class FactsTest(unittest.TestCase):
     def test_unknown_number_in_marketing_copy_fails(self):
