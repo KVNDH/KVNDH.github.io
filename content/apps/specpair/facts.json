@@ -3,7 +3,7 @@
  "purchase": "one-time",
  "ads": false,
  "account": false,
- "unreleased": "2026-10-25 현재 출시 전. ASC 앱 레코드와 Pro 상품을 아직 만들지 않아 site.json 에 appStoreId 가 없다. 쿠팡 파트너스 활동 매체 주소로 ko 소개 페이지를 먼저 연다(SpecPair docs/SITE_DRAFT.md, 4a3955f). 출시 때 appStoreId 를 넣고 unreleased 를 뺀다",
+ "unreleased": "2026-10-25 현재 출시 전. ASC 앱 레코드와 Pro 상품을 아직 만들지 않아 site.json 에 appStoreId 가 없다. 쿠팡 파트너스 활동 매체 주소로 ko 소개 페이지를 먼저 연다(SpecPair docs/SITE_DRAFT.md, 4a3955f). 출시 때 appStoreId 를 넣고 unreleased 를 뺀다. 그때 tests/test_build.py SpecPairTest(허브 이름 없음, App Store 링크 없음)도 함께 지우거나 뒤집는다. appStoreId 가 들어가면 그 시험은 건너뛴다",
  "languages": "ko 하나. 앱 화면이 한국어뿐이다. site.json 의 languages [\"ko\"] 로 --release 가 다른 언어를 요구하지 않는다",
  "platform": [
   "iPhone 전용, iOS 26 이상, 세로만 (project.yml:8, :18, :45, :51). 사이트에 iPad, Mac 을 쓰지 않는다"
@@ -21,7 +21,8 @@
   "칸 이름을 누르면 쉬운 설명 (data/schema.json explain)",
   "검색 별칭(갤워치, 울트라, 보배), 비교 조합 저장과 지우기 (SpecPair/App/AppModel.swift:149, :159)",
   "제품 2,830대, 종류 16개. 앱에 묶은 catalog.json 하나, 앱은 사양을 내려받지 않는다",
-  "값은 제조사 공식 출처에서만, 제품마다 읽은 주소를 비교 표 아래 '출처'에 (SpecPair/Views/ContentView.swift:597). 모르는 값은 '정보 없음'"
+  "값은 제조사 공식 출처에서만, 제품마다 읽은 주소를 비교 표 아래 '출처'에 (SpecPair/Views/ContentView.swift:597). 모르는 값은 '정보 없음'",
+  "기본 칸에 '국내 출시가'(출시 때 국내 정가, catalog.json common 기본 price). 지금 파는 가격은 앱에 없고 '가격 ↗' 이 바깥 쇼핑 검색을 연다. 그래서 FAQ 4 질문은 '지금 파는 가격'이고, 히어로 그림(shots/ko/01)에 국내 출시가 줄이 보인다"
  ],
  "pro": {
   "freeLimit": "무료 세 제품까지, 조합 저장 제한 없음 (AppModel.freeSlots = 3)",
@@ -50,8 +51,8 @@
  "notOffered": [
   "가격 비교, 최저가, 가격 추이와 알림, 사용자 리뷰, 순위, 제품 사진, 회사 로고, iPad 와 Mac, 위젯, 영어 화면. 사이트에 쓰지 않는다"
  ],
- "numbers": ["3", "10", "16", "200", "2,830"],
- "numbersNote": "소개 문구의 숫자: 상위 10%, 16GB, 200g, 그림 대체 문구의 '노트북 상위 3%'. 2,830 은 FAQ(소개 문구 밖)에도 쓴다",
+ "numbers": ["10", "16", "200", "2,830"],
+ "numbersNote": "소개 문구의 숫자: 상위 10%, 16GB, 200g. 2,830 은 FAQ(소개 문구 밖)에도 쓴다",
  "sources": [
   "SpecPair docs/SITE_DRAFT.md (4a3955f), 그림 docs/site/1-compare.png, 3-size-mixed.png, 4-conditions.png. 2-size.png 는 3-size-mixed 와 겹쳐 쓰지 않음"
  ]

@@ -44,9 +44,16 @@ class BuildTest(unittest.TestCase):
         self.assertFalse((out / "ko" / "demo").exists())
 
 
+@unittest.skipIf(
+    "appStoreId" in Site(REPO).app("specpair"),
+    "SpecPair 출시됨: 출시 전 시험이라 건너뛴다. 이 클래스를 지우거나 출시 뒤 모양으로 뒤집는다",
+)
 class SpecPairTest(unittest.TestCase):
     """2026-10-25: ASC 레코드가 없는 출시 전 앱 SpecPair 는 ko 소개, 지원, 처리방침만 연다(쿠팡 파트너스 활동 매체 주소).
-    허브에는 이름 없는 흐린 아이콘으로만 남고, 어느 쪽에도 App Store 링크나 스마트 배너가 없다."""
+    허브에는 이름 없는 흐린 아이콘으로만 남고, 어느 쪽에도 App Store 링크나 스마트 배너가 없다.
+
+    출시 때(site.json 에 appStoreId 를 넣고 unreleased 를 뺄 때) 이 클래스를 지우거나 뒤집는다.
+    appStoreId 가 들어가면 위 skipIf 로 건너뛴다(content/apps/specpair/facts.json unreleased 참고)."""
 
     @classmethod
     def setUpClass(cls):
