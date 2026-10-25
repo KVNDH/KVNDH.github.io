@@ -4,7 +4,7 @@ import json
 import re
 import unittest
 
-from tests.fixture import look, make_site, store, write
+from tests.fixture import REPO, look, make_site, store, write
 import render
 from sitelib import Site
 
@@ -433,6 +433,13 @@ class OverlapAndWidthTest(unittest.TestCase):
         self.assertIn("max-width:100%", rule(self.sub, ".lv"))
         self.assertIn("flex-wrap:wrap", rule(self.sub, ".kit-r:has(.lv)"))   # 이름 옆 자리가 모자라면 아이콘 줄이 다음 줄로
 
+    def test_ticks_wrap_below_the_label(self):
+        # 3단계 후속: TailorColor 눈금 줄이 721~1120px 에서 칸 테두리를 넘고(es 최대 152px) es 721 은 문서가 10px 넘쳤다
+        self.assertIn("flex-wrap:wrap", rule(self.sub, ".kit-r:has(.ticks)"))
+        self.assertIn("flex:1 1 8em", rule(self.sub, ".kit-r:has(.ticks) p"))   # 자리가 되면(1280) 이름 옆 그대로
+        self.assertIn("gap:6px", rule(self.sub, ".ticks", "(max-width:760px)"))
+        self.assertEqual(rule(self.sub, ".ticks", "(max-width:720px)"), "")   # 720 안에만 있던 줄이기는 760 으로 옮김
+
     def test_contact_buttons_keep_their_width(self):
         # I: 1280폭 es 지원 '연락' 칸(124px)이 메일 단추(167px)보다 좁았다
         self.assertIn("min-width:auto", rule(self.sub, ".help div:last-child"))
@@ -553,8 +560,8 @@ class ListCapTest(unittest.TestCase):
         self.assertNotIn("<p lang=", html)
         self.assertEqual(len(re.findall(r"<p[ >]", html)), 1)   # No. 404 하나
         self.assertEqual(html.count('<li><a href="/'), 3)
-        for code in ("ko", "en"):
-            self.assertNotIn("notFound", json.dumps(Site(make_site()).ui[code]))
+        for path in sorted((REPO / "content" / "i18n").glob("*.json")):   # 실제 여덟 언어 파일에 다시 들어오지 않게
+            self.assertNotIn("notFound", json.loads(path.read_text(encoding="utf-8")), path.name)
 
     def test_fan_icons_divide_the_cluster_height(self):
         # L: 844x390 에서 칸 195px 에 더미 318px, 위 아이콘이 제목을 41px 덮었다
