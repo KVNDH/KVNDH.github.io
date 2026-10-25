@@ -19,10 +19,7 @@
  "summaryLabel": "Zusammenfassung",
  "toc": "Inhalt",
  "notFound": "Diese Seite gibt es nicht. Wählen Sie unten eine Sprache, dann geht es zur Übersicht der Apps.",
- "albumLede": "Scrollen Sie nach unten, und jede App rückt an ihren Platz.",
- "albumHint": "Tippen Sie auf ein Symbol, um es groß zu sehen.",
  "viewLarge": "Groß ansehen",
  "viewLargeLabel": "{name} groß ansehen",
- "close": "Schließen",
- "dragHint": "Zum Drehen ziehen."
+ "close": "Schließen"
 }

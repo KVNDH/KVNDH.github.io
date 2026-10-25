@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Wie spät, Punkt für Punkt",
    "body": [
-    "Legen Sie fest, wann Sie ein paar Punkte auf Ihrem Weg passieren: Haustür, Straßenecke, Bushaltestelle, Büro. Unterwegs vergleicht OnPace, wo Sie sind, mit der Stelle, an der Sie laut Plan sein sollten, und zeigt den Abstand in großen Minuten und Sekunden. Die App navigiert nicht. Sie sagt Ihnen, ob Sie sich beeilen müssen. Gehen Sie auf einen Kontrollpunkt mit Early is fine zu oder auf eine Haltestelle, an der Ihr Bus oder Zug abfährt, sagt eine Zeile wie Plenty of time oder Tight, ob Sie es im jetzigen Tempo rechtzeitig schaffen."
+    "Legen Sie fest, wann Sie ein paar Punkte auf Ihrem Weg passieren: Haustür, Straßenecke, Bushaltestelle, Büro. Unterwegs vergleicht OnPace, wo Sie sind, mit der Stelle, an der Sie laut Plan sein sollten, und zeigt den Abstand in großen Minuten und Sekunden. Die App navigiert nicht. Sie sagt Ihnen, ob Sie sich beeilen müssen. Gehen Sie auf einen Kontrollpunkt mit Early is fine zu oder auf eine Haltestelle, an der Ihr Bus oder Zug abfährt, sagt eine Zeile wie Plenty of time oder Tight, ob Sie es im jetzigen Tempo rechtzeitig schaffen. Sobald einige Wege gespeichert sind, richtet sich die erwartete Ankunft am nächsten Kontrollpunkt nach den Abschnittszeiten an ähnlichen Wochentagen und Abfahrtszeiten."
    ],
    "bullets": [
     "Vorsprung oder Rückstand in Minuten und Sekunden",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Aus Ihren Wegen abgestimmt",
    "body": [
-    "Jeder Weg fügt echte Zeiten hinzu. OnPace nimmt den Median Ihrer letzten Wege und schlägt vor, einen Kontrollpunkt zu verschieben, an dem Sie immer zu spät sind, oder einen zu knappen Abschnitt zu lockern. Die Abfahrt anhand eines einzigen Wegs vorzuziehen, steht allen offen."
+    "Jeder Weg fügt echte Zeiten hinzu. Abschnittszeiten zählen ab dem Moment, in dem Sie tatsächlich losgegangen sind, und ein später Aufbruch wird getrennt gezählt. Waren Sie zu spät, weil Sie spät losgegangen sind, sagt OnPace genau das, statt eine frühere Abfahrt vorzuschlagen. Die App nimmt den Median Ihrer letzten Wege, schlägt mit Pin-Nummer vor, einen Kontrollpunkt zu verschieben, an dem Sie immer zu spät sind, oder einen zu knappen Abschnitt zu lockern, und zeigt Abschnitte, die an bestimmten Wochentagen oder zu bestimmten Abfahrtszeiten länger dauern. Your last trip auf dem Startbildschirm zeigt, wie spät Sie losgegangen sind und wie lange der Weg gedauert hat. Hat ein Weg trotz pünktlichem Aufbruch länger gedauert als geplant, steht es allen offen, die Abfahrt anhand dieses einen Wegs vorzuziehen."
    ],
    "bullets": [],
    "visual": {
@@ -72,7 +72,7 @@
      "Median der letzten Wege",
      "Punkte mit Verspätung",
      "Zu knappe Abschnitte",
-     "Früher aufbrechen"
+     "Wochentag und Abfahrtszeit"
     ]
    }
   }
@@ -126,25 +126,37 @@
   {
    "q": "Bus- und U-Bahn-Abschnitte",
    "a": [
-    "Wählen Sie beim Bearbeiten eines Kontrollpunkts oder auf der Karte Edit route unter To the next checkpoint Bus oder Subway. Auf diesen Abschnitten gilt der Abstand beim Einsteigen bis zum Aussteigen weiter, auch wenn unter der Erde das Signal abbricht. Echtzeitdaten zu Bus und U-Bahn werden nicht genutzt."
+    "Wählen Sie beim Bearbeiten eines Kontrollpunkts oder in Edit on map unter To the next checkpoint Bus oder Subway. Auf diesen Abschnitten gilt der Abstand beim Einsteigen bis zum Aussteigen weiter, auch wenn unter der Erde das Signal abbricht. Echtzeitdaten zu Bus und U-Bahn werden nicht genutzt."
    ]
   },
   {
    "q": "Warten an einer Haltestelle",
    "a": [
-    "Setzen Sie zwei Kontrollpunkte an dieselbe Stelle mit auseinanderliegenden Zeiten, dann entsteht ein Warteabschnitt. Sind Sie früh da, steht bis zur Abfahrtszeit Wait here."
+    "Setzen Sie zwei Kontrollpunkte an dieselbe Stelle mit auseinanderliegenden Zeiten, dann entsteht ein Warteabschnitt. Sind Sie früh da, steht bis zur Abfahrtszeit Wait here. Auf der Routenkarte werden überlappende Pins zusammengefasst. Tippen Sie darauf, zoomt die Karte heran, bis sie sich trennen."
    ]
   },
   {
-   "q": "Eine Route aus Versehen gelöscht",
+   "q": "Vorschläge in Tune from trips",
    "a": [
-    "Recently Deleted auf dem Startbildschirm der App behält die letzten drei gelöschten Routen. Tippen Sie auf Recover, um eine zurückzuholen. Eine zurückgeholte Route zählt wieder zu Ihren Routen."
+    "Tippen Sie auf dem Routenbildschirm auf die Zeile Tune from trips unter der Karte, dann sehen Sie Vorschläge und Good to know. Abschnittszeiten zählen ab dem Moment, in dem Sie tatsächlich losgegangen sind. Ein später Aufbruch wird getrennt angezeigt, etwa als You usually leave 7m late, zusammen mit der Ankunftszeit bei pünktlichem Aufbruch. Unterschiede nach Wochentag oder Abfahrtszeit erscheinen erst, wenn diese Gruppe 3 oder mehr Wege hat. Vorschläge nennen Kontrollpunkte mit ihrer Pin-Nummer, etwa #3, und ein Tippen zeigt die Änderung, bevor Sie sie übernehmen. Die Vorschläge sieht jeder. Sie zu übernehmen gehört zu Pro."
+   ]
+  },
+  {
+   "q": "Eine Route oder einen Kontrollpunkt aus Versehen gelöscht",
+   "a": [
+    "Recently Deleted auf dem Startbildschirm der App behält die letzten drei gelöschten Routen. Tippen Sie auf Recover, um eine zurückzuholen. Eine zurückgeholte Route zählt wieder zu Ihren Routen. Das Entfernen eines Kontrollpunkts, Delete all, Use the path you took und das Übernehmen eines Zeitplans oder Vorschlags lassen sich einmal mit Undo oben auf dem Routenbildschirm zurücknehmen. Nach dem Beenden der App geht das nicht mehr."
    ]
   },
   {
    "q": "Pro auf einem anderen Gerät",
    "a": [
     "Tippen Sie auf dem Kaufbildschirm auf Restore purchase. Die Familienfreigabe ist aktiviert, Ihre Familie kann Pro also mitnutzen."
+   ]
+  },
+  {
+   "q": "OnPace auf einem faltbaren iPhone",
+   "a": [
+    "Hat der Bildschirm eines faltbaren iPhone an einer Seite einen Systemstreifen, stehen während eines Wegs die Kartentaste und die Markierungen Board, Get off, Enter, Exit und Other senkrecht in diesem Streifen. Zusammengeklappt und hochkant passt die Karte auf den ersten Bildschirm. Aufgeklappt und quer zeigt der Wegbildschirm links die große Zahl und die Liste Remaining, rechts die Karte, alles auf einem Bildschirm. Beim Erstellen oder Bearbeiten einer Route auf der Karte steht das Bedienfeld neben der Karte."
    ]
   }
  ],

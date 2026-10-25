@@ -1,9 +1,0 @@
-{
-  "name": "kvndh-canvas",
-  "private": true,
-  "description": "화첩 3D 판 묶음을 만드는 데만 쓴다(node canvas/build.mjs). 사이트에는 assets/kvndh-canvas.js 만 나간다.",
-  "devDependencies": {
-    "esbuild": "0.28.2",
-    "three": "0.186.1"
-  }
-}

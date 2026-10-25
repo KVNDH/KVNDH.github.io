@@ -19,10 +19,7 @@
  "summaryLabel": "要約",
  "toc": "目次",
  "notFound": "お探しのページはありません。下から言語を選ぶとアプリの一覧に移ります。",
- "albumLede": "下へスクロールすると、アプリが一つずつ位置に収まります。",
- "albumHint": "アイコンを押すと大きく表示します。",
  "viewLarge": "大きく見る",
  "viewLargeLabel": "{name}を大きく見る",
- "close": "閉じる",
- "dragHint": "ドラッグで回せます。"
+ "close": "閉じる"
 }

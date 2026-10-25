@@ -13,7 +13,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 UI_KEYS = [
     "skip", "language", "hubMetaTitle", "learnMore", "getOnAppStore", "screenshot",
     "navAbout", "navSupport", "navPrivacy", "helpBody", "supportPage", "faqTitle", "contactTitle", "contactBody", "effectiveDate", "summaryLabel",
-    "toc", "notFound", "albumLede", "albumHint", "viewLarge", "close", "dragHint",
+    "toc", "notFound", "viewLarge", "close",
 ]
 
 
@@ -115,5 +115,4 @@ def make_site(langs=("ko", "en"), with_pages: bool = True, unreleased: bool = Fa
     (static / "app-ads.txt").write_text("google.com, pub-0, DIRECT, f08c47fec0942fa0\n")
     (static / ".nojekyll").write_text("")
     (static / "robots.txt").write_text("User-agent: *\nAllow: /\n")
-    (root / "assets" / "kvndh-canvas.js").write_text("// canvas\n")
     return root

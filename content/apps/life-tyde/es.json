@@ -11,11 +11,11 @@
    "layout": "feat",
    "title": "Solo los momentos que contaron",
    "body": [
-    "Los acontecimientos de una vida se ponen en una sola línea, por orden de año. Con un año y un título ya tienes una entrada; el mes, el día y una nota pueden esperar a que los recuerdes. Tú eliges qué momentos destacar, y esos se quedan con punto rojo y título rojo. Toca la nota de una entrada y pasas directamente a editarla."
+    "Los acontecimientos de una vida se ponen en una sola línea, por orden de año. Con un año y un título ya tienes una entrada; el mes, el día y una nota pueden esperar a que los recuerdes. Tú eliges qué momentos destacar, y esos se quedan con punto rojo y título rojo. Toca la nota de una entrada y pasas directamente a editarla. Si añades fotos a una entrada, una entrada destacada muestra una grande bajo su nota y las demás muestran una pequeña en el extremo derecho."
    ],
    "bullets": [
     "Edad o años transcurridos junto a cada entrada",
-    "Packs de época del Mercado de eventos",
+    "El mundo de entonces, una línea por cada año con entradas",
     "Recordatorios y repetición para lo que viene"
    ],
    "visual": {
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Un hashtag, una crónica",
    "body": [
-    "Marca las entradas con hashtags como #escuela o #trabajo. Elige una sola etiqueta en el filtro y se abre su Crónica de etiqueta, con las entradas de esa etiqueta desde la primera hasta la última. Arriba están el número de entradas y el periodo que abarcan. En Etiquetas, dentro de Ajustes, añades etiquetas, les cambias el nombre, las combinas o las eliminas."
+    "Marca las entradas con hashtags como #escuela o #trabajo. Elige una sola etiqueta en el filtro y se abre su Crónica de etiqueta, con las entradas de esa etiqueta desde la primera hasta la última. Arriba están el número de entradas y el periodo que abarcan. En Etiquetas, dentro de Ajustes, añades etiquetas, les cambias el nombre, las combinas o las eliminas. Toca la lupa de arriba para buscar palabras en títulos, notas y nombres de etiquetas, y toca un resultado para ir a esa entrada."
    ],
    "bullets": [
     "Filtro de etiquetas y vista solo de destacados",
@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abre y escribe",
    "body": [
-    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. En el iPad, los atajos de teclado saltan al año anterior o al siguiente, y una pulsación larga o un clic derecho sobre una entrada abre un menú para editarla o destacarla. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro."
+    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. Una pulsación larga sobre una entrada abre un menú para editarla o destacarla; en el iPad también lo abre un clic derecho, y los atajos de teclado saltan al año anterior o al siguiente. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro."
    ],
    "bullets": [],
    "visual": {
@@ -87,7 +87,6 @@
    "Libro de crónica en PDF tamaño A4",
    "Eventos y hashtags ilimitados",
    "Hasta 3 líneas de tiempo",
-   "Todos los packs de eventos",
    "Repaso filtrado por década, etiqueta o destacado",
    "Borradores de ensayo y prólogos con Apple Intelligence"
   ]
@@ -96,8 +95,15 @@
   {
    "q": "Dónde se guardan las entradas",
    "a": [
-    "Las entradas se guardan en el almacenamiento de la app. Con la sincronización con iCloud activada, también quedan en tu propia cuenta de iCloud y se mantienen al día con tus otros dispositivos de esa cuenta.",
-    "Las entradas eliminadas se quedan 7 días en la Papelera, dentro de Ajustes, y durante ese tiempo puedes restaurarlas."
+    "Las entradas se guardan en el almacenamiento de la app. Con la sincronización con iCloud activada, también quedan, junto con sus fotos, en tu propia cuenta de iCloud y se mantienen al día con tus otros dispositivos de esa cuenta.",
+    "Las entradas eliminadas se quedan 7 días en la Papelera, dentro de Ajustes, y durante ese tiempo puedes restaurarlas. Justo después de mover una entrada a la Papelera, toca Deshacer en el aviso para recuperarla al momento."
+   ]
+  },
+  {
+   "q": "Añadir fotos a una entrada",
+   "a": [
+    "Mientras editas una entrada, toca el botón de foto de la barra sobre el teclado y elige en tu fototeca. Si la entrada ya tiene fotos, la casilla + de la fila de fotos bajo la nota también añade más. Cada entrada admite hasta 30 fotos, igual en la versión gratuita que con Pro.",
+    "Toca una foto para verla en grande con la fecha, el título y la nota de la entrada, y desliza a izquierda o derecha para ver las demás. Desliza hacia abajo para cerrar, y usa el botón de papelera para eliminar una foto. Las fotos no se incluyen en archivos CSV, libros en PDF ni imágenes de la línea de tiempo."
    ]
   },
   {
@@ -110,8 +116,15 @@
   {
    "q": "Qué incluye la versión gratuita",
    "a": [
-    "Puedes tener hasta 100 eventos, 1 línea de tiempo y 10 etiquetas de forma gratuita, y añadir el pack de historia principal del idioma de la app desde el Mercado de eventos. Llegar a un límite nunca bloquea lo que ya has escrito: sigues leyéndolo y editándolo.",
-    "Con Pro, los eventos y las etiquetas no tienen límite, y puedes crear hasta 3 líneas de tiempo."
+    "Puedes tener hasta 100 eventos, 1 línea de tiempo y 10 etiquetas de forma gratuita. Llegar a un límite nunca bloquea lo que ya has escrito: sigues leyéndolo y editándolo.",
+    "Con Pro, los eventos y las etiquetas no tienen límite, y puedes crear hasta 3 líneas de tiempo. La búsqueda, las fotos y El mundo de entonces funcionan igual en la versión gratuita y con Pro."
+   ]
+  },
+  {
+   "q": "El mundo de entonces",
+   "a": [
+    "Activa El mundo de entonces en el menú Más, sobre la línea de tiempo, y cada año con entradas tendrá encima de su primera entrada una línea tenue, con la marca Mundo, sobre algo que pasó en el mundo ese año. Empieza desactivado, y en Ajustes, dentro de Visualización, El mundo de entonces te deja elegir los Temas que quieres ver.",
+    "Las líneas del mundo no se guardan como entradas y no aparecen en la búsqueda, el filtro de etiquetas, la vista horizontal, los libros y exportaciones ni en Repasar. Solo aparecen si hay una lista para el idioma de la app, y las entradas que añadiste antes desde el Mercado de eventos se quedan como están."
    ]
   },
   {
@@ -142,6 +155,12 @@
    ]
   },
   {
+   "q": "Crear un libro",
+   "a": [
+    "En Ajustes, abre Crear un libro, elige el título, los años y las etiquetas, revisa las páginas A4 con Vista previa y guarda o envía el archivo con Exportar PDF. Crear un libro forma parte de Life Tyde Pro."
+   ]
+  },
+  {
    "q": "Conexión a internet",
    "a": [
     "Escribir, Repasar y exportar funcionan sin conexión a internet. La sincronización con iCloud y comprar o restaurar Pro sí la necesitan.",
@@ -158,7 +177,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Life Tyde",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Life Tyde (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea. Esta política explica cómo lo hace."
   ],
@@ -177,6 +196,7 @@
     ],
     "bullets": [
      "Eventos (año, mes, día, título, nota, destacado, ajustes de fecha y recordatorio), etiquetas y nombres de líneas de tiempo: para mostrar tu línea de tiempo",
+     "Fotos añadidas a los eventos, con pequeñas imágenes de vista previa: para mostrar las fotos junto a tus entradas",
      "Ajustes como tu fecha de nacimiento o año base, opciones de visualización e idioma de la app: para lo que aparece en pantalla",
      "Títulos y borradores de libro: para retomar el trabajo en un libro (PDF)",
      "Títulos y años de los eventos: para el índice de búsqueda del dispositivo mientras la Búsqueda de Spotlight está activada",
@@ -208,7 +228,8 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las entradas eliminadas se quedan 7 días en la Papelera y luego desaparecen, o puedes quitarlas al momento con Eliminar de forma permanente. Al eliminar la app desaparecen del dispositivo todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las entradas eliminadas se quedan 7 días en la Papelera y luego desaparecen, o puedes quitarlas al momento con Eliminar de forma permanente. Al eliminar la app desaparecen del dispositivo todos sus datos.",
+     "Puedes eliminar las fotos de una entrada una a una, y al eliminar una entrada de forma permanente también se eliminan sus fotos."
     ],
     "bullets": []
    },
@@ -223,6 +244,7 @@
     "title": "Medidas de seguridad",
     "paragraphs": [
      "La sincronización con iCloud usa la base de datos privada de tu propia cuenta de iCloud. Intercambiar cerca funciona solo sobre una conexión cifrada. La app pide únicamente permiso para añadir imágenes de la línea de tiempo a Fotos y no pide permiso para leer tu fototeca. El permiso de notificaciones se pide solo cuando guardas un evento con recordatorio.",
+     "Las fotos llegan solo desde el selector de fotos del sistema, y solo las que eliges. La app no usa permiso de lectura de la fototeca ni permiso de cámara. Antes de guardarlas se reduce su tamaño, y los metadatos del original, como la ubicación y los datos del dispositivo, no se conservan. Con la Búsqueda de Spotlight activada, una pequeña vista previa de la primera foto aparece en los resultados de búsqueda del dispositivo. Las fotos no se incluyen en los resúmenes y borradores de IA, Intercambiar cerca, las imágenes de la línea de tiempo, los libros (PDF) ni los archivos CSV.",
      "La Búsqueda de Spotlight indexa solo títulos y años de los eventos, y al desactivarla en Ajustes se borra el índice. Los resúmenes y borradores de IA los escribe el modelo de Apple Intelligence de tu dispositivo."
     ],
     "bullets": []

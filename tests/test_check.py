@@ -183,30 +183,6 @@ class OutputTest(unittest.TestCase):
         self.assertEqual(check.check_output(site, root / "docs"), [])
         self.assertIn("later/icon-180.webp", (root / "docs" / "ko" / "index.html").read_text(encoding="utf-8"))
 
-    def test_missing_canvas_script_fails(self):
-        # 페이지가 늦게 읽는 화첩 판 묶음(data-src)도 있는 파일이어야 한다
-        site, out = self.built()
-        (out / "assets" / "kvndh-canvas.js").unlink()
-        problems = check.check_output(site, out)
-        self.assertIn("ko/index.html: 없는 파일 /assets/kvndh-canvas.js", problems)
-
-    def test_stale_canvas_bundle_fails(self):
-        # 묶음 머리 주석의 원본 해시가 canvas/ 원본과 다르면 실패한다. 원본이 없는 사이트는 건너뛴다
-        root = make_site()
-        self.assertEqual(check.check_canvas_bundle(root), [])
-        src = root / "canvas"
-        (src / "stubs").mkdir(parents=True)
-        for name in check.CANVAS_SOURCES:
-            (src / name).write_text("// " + name + "\n")
-        (src / "stubs" / "A.js").write_text("// a\n")
-        bundle = root / "assets" / "kvndh-canvas.js"
-        bundle.write_text("/* 원본: canvas/ src:" + check.canvas_source_hash(src) + " */\n")
-        self.assertEqual(check.check_canvas_bundle(root), [])
-        (src / "main.js").write_text("// changed\n")
-        self.assertEqual(len(check.check_canvas_bundle(root)), 1)
-        bundle.unlink()
-        self.assertEqual(len(check.check_canvas_bundle(root)), 1)
-
     def test_missing_app_ads_fails(self):
         site, out = self.built()
         (out / "app-ads.txt").unlink()

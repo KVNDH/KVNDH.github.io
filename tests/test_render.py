@@ -27,11 +27,12 @@ class HubTest(unittest.TestCase):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<body class="hub">', html)
         self.assertIn('<main class="sheet" id="main">', html)
-        self.assertIn('<p class="lede">ko albumLede</p>', html)
+        self.assertNotIn('class="lede"', html)     # C안(10-25): 화면 동작을 풀어 쓴 안내 문장은 두지 않는다
+        self.assertNotIn('class="cue', html)
 
     def test_piece_slot_is_a_button_with_the_icon(self):
         html = render.render_hub(self.site, "ko")
-        self.assertIn('<button class="slot" type="button" data-plate="0" data-open="0" aria-label="Demo larger">'
+        self.assertIn('<button class="slot" type="button" data-open="0" aria-label="Demo larger">'
                       '<img src="/assets/demo/icon-360.webp"', html)
         (self.site.root / "assets" / "demo" / "icon-640.webp").write_bytes(b"x")
         self.assertIn('<img src="/assets/demo/icon-640.webp"', render.render_hub(Site(self.site.root), "ko"))
@@ -56,7 +57,7 @@ class HubTest(unittest.TestCase):
     def test_unreleased_app_shows_only_its_icon(self):
         site = Site(make_site(unreleased=True))
         html = render.render_hub(site, "ko")
-        self.assertIn('<section class="quiet" aria-hidden="true"><span class="qslot" data-plate="1">', html)
+        self.assertIn('<section class="quiet" aria-hidden="true"><span class="qslot">', html)
         self.assertIn('src="/assets/soon/icon-180.webp"', html)
         self.assertIn('<img src="/assets/soon/icon-180.webp" alt="" width="72" height="72" class="soon">', html)
         self.assertNotIn("Soon", html)
@@ -228,17 +229,13 @@ class OtherPagesTest(unittest.TestCase):
         self.assertIsNotNone(m)
         return json.loads(m.group(1))
 
-    def test_hub_loads_the_canvas_only_when_webgl_works(self):
-        # 로더는 head 에서 돌고, 동작 줄이기가 아니고 WebGL 컨텍스트가 실제로 만들어질 때만 멈춘 그림을 숨겨 기다린다.
-        # 묶음이 실패하거나 늦으면(6초) 멈춘 그림으로 돌아간다. 묶음 주소는 check.py 가 볼 수 있게 data-src 에 둔다
-        html = render.render_hub(self.site, "ko")
-        self.assertLess(html.index('getContext("webgl2")'), html.index("</head>"))
-        self.assertIn("prefers-reduced-motion: reduce", html)
-        self.assertIn('classList.add("gl-wait")', html)
-        self.assertIn("s.onerror=off", html)
-        self.assertIn("setTimeout(off,6000)", html)
-        self.assertIn('<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>', html)
-        self.assertNotIn('<script src=', html)
+    def test_no_page_carries_three(self):
+        # C안(2026-10-25): 허브도 3D 를 싣지 않는다. 로더, 캔버스, 묶음 주소가 어느 페이지에도 없다
+        for html in (render.render_hub(self.site, "ko"), render.render_app(self.site, "ko", "demo"),
+                     render.render_support(self.site, "ko", "demo"), render.render_privacy(self.site, "ko", "demo")):
+            markup = re.sub(r"<style>.*?</style>", "", html, flags=re.S)
+            for needle in ("kvndh-canvas.js", "webgl", 'id="gl"', "gl-wait", "data-plate", "gl-only", "readout"):
+                self.assertNotIn(needle, markup)
 
     def test_canvas_data_is_per_language(self):
         ko = self.canvas(render.render_hub(self.site, "ko"))

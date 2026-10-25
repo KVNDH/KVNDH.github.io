@@ -19,10 +19,7 @@
  "summaryLabel": "요약",
  "toc": "목차",
  "notFound": "찾는 페이지가 없습니다. 아래에서 언어를 고르면 앱 목록으로 갑니다.",
- "albumLede": "아래로 내리면 앱이 한 점씩 자리를 잡습니다.",
- "albumHint": "아이콘을 누르면 크게 봅니다.",
  "viewLarge": "크게 보기",
  "viewLargeLabel": "{name} 크게 보기",
- "close": "닫기",
- "dragHint": "끌어서 돌려 봅니다."
+ "close": "닫기"
 }

@@ -1,8 +1,9 @@
 {
- "describesVersion": "1.0.1",
+ "describesVersion": "1.0.4",
  "purchase": "one-time",
  "ads": false,
  "account": false,
+ "platform": "iOS 17.0 이상, iPhone 과 iPad(TARGETED_DEVICE_FAMILY 1,2, 1.0.2 부터). 방향: iPhone 세로와 가로 좌우(위아래 뒤집기 없음), iPad 네 방향(project.yml). 폭이 높이보다 길면 도구와 설정을 사진 옆 기둥에 세움(EditorView.usesSideRail), 홈도 가로에서 시연을 옆으로(HomeView.isWide). 짧은 변 600 이상이면 iPad 배치(isLarge, 컨트롤 글자 하한 xLarge). 다크 고정(UIUserInterfaceStyle Dark). 1.0.4: 접는 iPhone(사이트 표기, 기기 상표명 안 씀). 옆 안전 영역 80pt 이상(EditorView.stripMinWidth, Duo 의 84pt 띠)이면 닫기, 내보내기 / 선, 지우기, 자동 마스크 / 실행 취소, 다시 실행, 설정 단추 여덟을 띠에 세로로 세우고 위 막대와 아래 도구 바를 뺌(EditorStripBar). 접은 세로, 펼친 가로는 오른쪽, 접은 가로는 왼쪽 띠, 펼친 세로와 보통 iPhone, iPad 는 그대로. 확대한 채 창 크기가 바뀌어도 보던 자리 유지(updateContainerSize)",
  "products": [
   "SnapLine Pro: 비소모성 1개 (com.kimdh.SnapLine.pro.lifetime). 구독 그룹 없음, 무료 체험 없음, familyShareable true. 한국 ₩3,300 / 미국 $1.99 (가격은 마케팅 문구에 쓰지 않는다, asc-upload 4-1)"
  ],
@@ -17,7 +18,7 @@
  "storage": [
   "최근 프로젝트: Application Support/Projects 아래 작업마다 폴더 하나(project.json 문서, photo.dat 원본 사진 사본, thumb.jpg 썸네일 짧은 변 320px). ProjectStore.keepCount 12 를 넘으면 오래된 것부터 삭제. 홈에서 썸네일을 길게 눌러 나오는 메뉴의 삭제로도 지운다",
   "무료는 홈에 최근 3개(ProjectStore.freeKeepCount), Pro 는 12개가 보인다. 저장은 둘 다 12개. **이 차이는 결제 화면 목록, 스토어 설명, IAP 설명, 사이트 문구 어디에도 적지 않는다**(2026-09-17 사용자 결정)",
-  "UserDefaults 여덟 키: install.firstVersion, install.firstLaunchDate (InstallRecord), hint.nodeDragSeen (통과점 안내를 봤는지), review.successfulSaveCount, review.lastRequestedVersion (ReviewPrompt), entitlement.isPro, entitlement.productSeen (ProEntitlement), editor.subjectSnap (꼭짓점 스냅 스위치)",
+  "UserDefaults 열 키: install.firstVersion, install.firstLaunchDate (InstallRecord), hint.nodeDragSeen (통과점 안내를 봤는지), hint.autoMaskSeen (선을 피사체 뒤로 보내기 안내를 봤는지, 1.0.2), review.successfulSaveCount, review.lastRequestedVersion (ReviewPrompt), entitlement.isPro, entitlement.productSeen (ProEntitlement), editor.subjectSnap (꼭짓점 스냅 스위치), editor.settingsExpanded (설정 패널 펼침 상태, 첫 실행은 펼침, 1.0.2)",
   "공유용 임시 JPEG: tmp/SnapLine-*.jpg, 새 합성 결과를 채택할 때와 앱 시작 때 이전 파일 삭제해 최대 1개",
   "사진 앱: 사용자가 사진에 저장을 누른 결과물(JPEG 품질 95)만"
  ],
@@ -109,9 +110,10 @@
   "95",
   "12"
  ],
- "versionNote": "SnapLine/Info.plist 는 CFBundleShortVersionString 1.0.1, CFBundleVersion 2. 1.0.1 이 2026-09-19 에 승인되어 스토어 라이브(READY_FOR_SALE)이고 Pro 상품도 APPROVED 라 사이트 문구를 1.0.1 로 되돌렸다",
+ "versionNote": "SnapLine 1.0.4(빌드 6)가 2026-10-18 출시 확인(HQ 가 ASC 에서 READY_FOR_SALE 확인, 앱 저장소 docs/roadmap.md '1.0.4'). 사이트는 1.0.1 에서 바로 1.0.4 로 올렸다(1.0.2, 1.0.3 때는 사이트를 고치지 않았다). 8개 언어에 FAQ 'iPad와 접는 iPhone에서 쓰기'(iPad, 가로 화면 옆 기둥, 접는 iPhone 옆 띠 단추 여덟)와 최근 프로젝트 삭제 확인 한 문장을 더했다. 무료/Pro 경계(ProFeature.all 넷), StoreKit 상품, 권한(NSPhotoLibraryAddUsageDescription 하나), 네트워크 코드, PrivacyInfo 는 그대로라 처리방침은 바꾸지 않았다(새 UserDefaults 키 둘은 처리방침의 '설정' 항목에 든다). / SnapLine/Info.plist 는 CFBundleShortVersionString 1.0.1, CFBundleVersion 2. 1.0.1 이 2026-09-19 에 승인되어 스토어 라이브(READY_FOR_SALE)이고 Pro 상품도 APPROVED 라 사이트 문구를 1.0.1 로 되돌렸다",
  "sources": [
-  "SnapLine 1.0.1 기준. 아래 경로는 모두 ~/Desktop/CODING/SnapLine 의 현재 작업 트리다",
+  "SnapLine 1.0.4 기준(2026-10-19 사이트 갱신). ~/Desktop/CODING/SnapLine 작업 트리, project.yml CFBundleShortVersionString 1.0.4, CFBundleVersion 6. 1.0.4 출시 확인 뒤 커밋은 CLAUDE.md, ASC_RULES 문서뿐이라 작업 트리 코드가 1.0.4 다. 1.0.2: iPad, 가로(usesSideRail, isWide), 설정 패널 상태 기억(editor.settingsExpanded), 두 번째 안내 '선을 피사체 뒤로 보내기'(hint.autoMaskSeen), 내보내기 다시 시도, 최근 프로젝트 삭제 확인('Delete this project?', HomeView confirmationDialog). 1.0.3: 새 아이콘, 두 번 탭 확대가 동작 줄이기를 따름, 확대 배지 숫자 로케일 표기(사이트 문장 해당 없음). 1.0.4: 접는 iPhone 옆 띠(EditorStripBar, EditorView.stripEdge), 결제 화면 VoiceOver 알림과 큰 글자 닫기 줄, 편집기 Pro 문은 살 길이 있을 때만(entitlement.offersProDoors), 글꼴 OFL 전문 번들(사이트 문장 해당 없음). whatsNew: docs/store/whatsNew-1.0.2.json, -1.0.3.json, -1.0.4.json (ko '• iPhone Duo 지원 • 큰 글자와 VoiceOver 지원 강화 • 세부 다듬기와 안정성 개선'). 단추 이름은 SnapLine/Resources/Localizable.xcstrings",
+  "(옛 기록) SnapLine 1.0.1 기준. 아래 경로는 2026-09-19 당시 ~/Desktop/CODING/SnapLine 작업 트리다",
   "SnapLine/Info.plist (1.0.1, 빌드 2, NSPhotoLibraryAddUsageDescription 하나)",
   "SnapLine/project.yml",
   "SnapLine/PrivacyInfo.xcprivacy (NSPrivacyTracking false, 수집 데이터 없음, UserDefaults 와 SystemBootTime 만 선언)",

@@ -11,11 +11,11 @@
    "layout": "feat",
    "title": "Nur die Momente, auf die es ankam",
    "body": [
-    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel. Ein Tipp auf die Notiz eines Eintrags öffnet sie direkt zum Bearbeiten."
+    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel. Ein Tipp auf die Notiz eines Eintrags öffnet sie direkt zum Bearbeiten. Fügen Sie einem Eintrag Fotos hinzu, zeigt ein hervorgehobener Eintrag eines breit unter der Notiz, die übrigen Einträge ein kleines am rechten Rand."
    ],
    "bullets": [
     "Alter oder Jahre neben jedem Eintrag",
-    "Zeitgeschichtliche Packs aus dem Ereignis-Markt",
+    "Die Welt damals, eine Zeile für jedes Jahr mit Eintrag",
     "Erinnerungen und Wiederholung für Anstehendes"
    ],
    "visual": {
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Ein Hashtag, eine Chronik",
    "body": [
-    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum. Unter Tags in den Einstellungen fügen Sie Tags hinzu, benennen sie um, führen sie zusammen oder löschen sie."
+    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum. Unter Tags in den Einstellungen fügen Sie Tags hinzu, benennen sie um, führen sie zusammen oder löschen sie. Ein Tipp auf die Lupe oben öffnet die Suche, die in Titeln, Notizen und Tag-Namen nach Wörtern sucht; ein Tipp auf einen Treffer springt zu diesem Eintrag."
    ],
    "bullets": [
     "Tag-Filter und Ansicht nur mit Highlights",
@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Öffnen und schreiben",
    "body": [
-    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Auf dem iPad springen Tastaturkurzbefehle zum vorigen oder nächsten Jahr, und langes Drücken oder ein Rechtsklick auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte."
+    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Langes Drücken auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben; auf dem iPad öffnet es auch ein Rechtsklick, und Tastaturkurzbefehle springen zum vorigen oder nächsten Jahr. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte."
    ],
    "bullets": [],
    "visual": {
@@ -87,7 +87,6 @@
    "Chronikbuch als PDF im A4-Format",
    "Unbegrenzte Ereignisse und Hashtags",
    "Bis zu 3 Timelines",
-   "Alle Ereignis-Packs",
    "Rückschau gefiltert nach Jahrzehnt, Tag oder Highlight",
    "Essay-Entwürfe und Vorworte mit Apple Intelligence"
   ]
@@ -96,8 +95,15 @@
   {
    "q": "Speicherort der Einträge",
    "a": [
-    "Die Einträge liegen im Speicher der App. Bei eingeschaltetem iCloud-Sync werden sie zusätzlich in Ihrem eigenen iCloud-Account gesichert und mit Ihren anderen Geräten in diesem Account abgeglichen.",
-    "Gelöschte Einträge bleiben 7 Tage im Papierkorb in den Einstellungen, und in dieser Zeit können Sie sie wiederherstellen."
+    "Die Einträge liegen im Speicher der App. Bei eingeschaltetem iCloud-Sync werden sie samt ihren Fotos zusätzlich in Ihrem eigenen iCloud-Account gesichert und mit Ihren anderen Geräten in diesem Account abgeglichen.",
+    "Gelöschte Einträge bleiben 7 Tage im Papierkorb in den Einstellungen, und in dieser Zeit können Sie sie wiederherstellen. Direkt nach dem Verschieben in den Papierkorb holt ein Tipp auf Widerrufen in der Meldung den Eintrag sofort zurück."
+   ]
+  },
+  {
+   "q": "Fotos zu einem Eintrag hinzufügen",
+   "a": [
+    "Während Sie einen Eintrag bearbeiten, tippen Sie auf die Fototaste in der Leiste über der Tastatur und wählen aus Ihrer Mediathek. Hat ein Eintrag schon Fotos, fügt auch das Feld + in der Fotoreihe unter der Notiz weitere hinzu. Ein Eintrag nimmt bis zu 30 Fotos auf, kostenlos wie mit Pro.",
+    "Ein Tipp auf ein Foto zeigt es groß, zusammen mit Datum, Titel und Notiz des Eintrags; mit einem Wisch nach links oder rechts sehen Sie die anderen. Ein Wisch nach unten schließt die Ansicht, und mit der Papierkorbtaste löschen Sie ein Foto. Fotos kommen nicht in CSV-Dateien, Buch-PDFs oder Timeline-Bilder."
    ]
   },
   {
@@ -110,8 +116,15 @@
   {
    "q": "Umfang der kostenlosen Version",
    "a": [
-    "Kostenlos halten Sie bis zu 100 Ereignisse, 1 Timeline und 10 Tags und holen sich aus dem Ereignis-Markt das große Geschichtspack Ihrer App-Sprache. Ein erreichtes Limit sperrt nie, was schon geschrieben ist, Sie können es weiter lesen und bearbeiten.",
-    "Mit Pro haben Ereignisse und Tags kein Limit, und Sie legen bis zu 3 Timelines an."
+    "Kostenlos halten Sie bis zu 100 Ereignisse, 1 Timeline und 10 Tags. Ein erreichtes Limit sperrt nie, was schon geschrieben ist, Sie können es weiter lesen und bearbeiten.",
+    "Mit Pro haben Ereignisse und Tags kein Limit, und Sie legen bis zu 3 Timelines an. Suche, Fotos und Die Welt damals funktionieren kostenlos genauso wie mit Pro."
+   ]
+  },
+  {
+   "q": "Die Welt damals",
+   "a": [
+    "Schalten Sie Die Welt damals im Menü Mehr über der Timeline ein, steht in jedem Jahr mit Einträgen über dem ersten Eintrag eine blasse Zeile mit der Markierung Welt zu etwas, das in jenem Jahr in der Welt geschah. Anfangs ist es aus, und unter Anzeige in den Einstellungen wählen Sie bei Die Welt damals die Themen, die Sie sehen möchten.",
+    "Die Welt-Zeilen werden nicht als Einträge gespeichert und fehlen in der Suche, im Tag-Filter, im Querformat, in Büchern und Exporten sowie in der Rückschau. Sie erscheinen nur, wenn es für die App-Sprache eine Liste gibt, und Einträge, die Sie früher aus dem Ereignis-Markt geholt haben, bleiben erhalten."
    ]
   },
   {
@@ -142,6 +155,12 @@
    ]
   },
   {
+   "q": "Ein Buch erstellen",
+   "a": [
+    "Öffnen Sie in den Einstellungen Buch erstellen, legen Sie Buchtitel, Jahre und Tags fest, prüfen Sie die A4-Seiten mit Vorschau und sichern oder senden Sie die Datei mit PDF exportieren. Buch erstellen gehört zu Life Tyde Pro."
+   ]
+  },
+  {
    "q": "Internetverbindung",
    "a": [
     "Schreiben, Rückschau und Export laufen ohne Internetverbindung. iCloud-Sync sowie Kauf und Wiederherstellung von Pro brauchen eine.",
@@ -158,7 +177,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Life Tyde",
-  "effectiveDate": "2026-10-07",
+  "effectiveDate": "2026-10-19",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Life Tyde (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
   ],
@@ -177,6 +196,7 @@
     ],
     "bullets": [
      "Ereignisse (Jahr, Monat, Tag, Titel, Notiz, Highlight, Termin- und Erinnerungseinstellungen), Tags und Timeline-Namen: für die Anzeige Ihrer Timeline",
+     "Fotos zu Ereignissen samt kleinen Vorschaubildern: um Fotos mit Ihren Einträgen anzuzeigen",
      "Einstellungen wie Geburtstag oder Basisjahr, Anzeigeoptionen und App-Sprache: für das, was auf dem Bildschirm erscheint",
      "Buchtitel und Entwürfe: um die Arbeit an einem Buch (PDF) fortzusetzen",
      "Ereignistitel und Jahre: für den Suchindex des Geräts, solange die Spotlight-Suche eingeschaltet ist",
@@ -208,7 +228,8 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gelöschte Einträge bleiben 7 Tage im Papierkorb und werden dann entfernt, oder Sie entfernen sie sofort mit Endgültig löschen. Mit dem Löschen der App verschwinden alle ihre Daten vom Gerät."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gelöschte Einträge bleiben 7 Tage im Papierkorb und werden dann entfernt, oder Sie entfernen sie sofort mit Endgültig löschen. Mit dem Löschen der App verschwinden alle ihre Daten vom Gerät.",
+     "Fotos lassen sich einzeln aus einem Eintrag löschen, und wird ein Eintrag endgültig gelöscht, verschwinden auch seine Fotos."
     ],
     "bullets": []
    },
@@ -223,6 +244,7 @@
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
      "Der iCloud-Sync nutzt die private Datenbank in Ihrem eigenen iCloud-Account. In der Nähe austauschen arbeitet nur über eine verschlüsselte Verbindung. Die App bittet allein um die Berechtigung, Timeline-Bilder zu Fotos hinzuzufügen, und fordert keine Leseberechtigung für Ihre Mediathek an. Nach der Mitteilungsberechtigung fragt sie erst, wenn Sie ein Ereignis mit Erinnerung sichern.",
+     "Fotos erhält die App nur über die Fotoauswahl des Systems, und nur die, die Sie auswählen. Eine Leseberechtigung für die Mediathek und den Kamerazugriff nutzt sie nicht. Vor dem Sichern werden Fotos verkleinert, und Metadaten des Originals wie Ort und Geräteangaben werden nicht übernommen. Bei eingeschalteter Spotlight-Suche erscheint eine kleine Vorschau des ersten Fotos in den Suchergebnissen des Geräts. Fotos fließen nicht in KI-Zusammenfassungen und Entwürfe, In der Nähe austauschen, Timeline-Bilder, Bücher (PDF) oder CSV-Dateien ein.",
      "Die Spotlight-Suche indiziert nur Ereignistitel und Jahre; schalten Sie sie in den Einstellungen aus, wird der Index gelöscht. KI-Zusammenfassungen und Entwürfe schreibt das Apple-Intelligence-Modell auf Ihrem Gerät."
     ],
     "bullets": []

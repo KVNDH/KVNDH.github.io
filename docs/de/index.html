@@ -49,11 +49,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-999px;top:0;z-index:60}
 .skip:focus{left:16px;top:12px;padding:10px 14px;border-radius:8px;background:var(--k);color:var(--on)}
-.mono,.lab,.readout,.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--t2)}
-#gl{position:fixed;inset:0;width:100vw;height:100vh;z-index:30;pointer-events:none;display:block}
-html:not(.gl-on):not(.gl-wait) #gl{display:none}
-.gl-only{display:none}
-.gl-on .gl-only{display:block}
+.mono,.lab,.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--t2)}
 /* 머리 띠: 낱말표, 번호 점, 언어 */
 .top{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 28px;pointer-events:none}
 .top>*{pointer-events:auto}
@@ -83,13 +79,10 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 /* 첫 화면(허브) */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
 .hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
-.lede{margin-top:16px;font-size:18px;color:var(--t2)}
 .cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh)}
 .fan{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
 .fan .row{display:flex;gap:10px}
 .fan img{width:72px;height:72px;border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
-.gl-on .fan,.gl-wait .fan{visibility:hidden}
-.cue{display:flex;justify-content:center;gap:18px}
 /* 원화 한 점 */
 .piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
 .piece:nth-of-type(even) .frame{order:2}
@@ -100,11 +93,8 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 .tick{top:0;right:0;border-top-width:1px;border-right-width:1px}
 .tick2{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
 .frame .lab{position:absolute;top:-24px;left:0}
-.frame .readout{position:absolute;bottom:-24px;right:0;white-space:pre}
-html:not(.gl-on) .readout{visibility:hidden}
 .slot{position:relative;display:block;width:var(--slot);aspect-ratio:1;border-radius:22.5%}
 .slot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 24px 40px -22px rgba(26,26,26,.45),0 4px 10px -4px rgba(26,26,26,.18)}
-.gl-on [data-plate] img,.gl-wait [data-plate] img,.gl-on .vslot img{visibility:hidden}
 .slot:focus-visible{outline-offset:10px;border-radius:24%}
 .cap{max-width:30em;text-align:left}
 .cap h2{font-size:clamp(34px,4vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.04em}
@@ -143,7 +133,6 @@ html:not(.js) .big{display:none}
 .vstage{position:relative;display:grid;place-items:center;aspect-ratio:1}
 .vslot{width:min(380px,32vw);aspect-ratio:1;touch-action:pan-y;cursor:grab}
 .vslot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 30px 60px -30px rgba(26,26,26,.5)}
-.vhint{position:absolute;left:0;right:0;bottom:-8px;text-align:center}
 .vtext h2{margin-top:10px;font-size:clamp(36px,4.4vw,60px);line-height:1.02;font-weight:800;letter-spacing:-.045em}
 .vtext ul{margin-top:18px;border-top:1px solid var(--ln)}
 .vtext li{padding:9px 0;border-bottom:1px solid var(--ln);font-size:15px}
@@ -308,7 +297,6 @@ html{scroll-padding-top:72px}
 .sheet{width:calc(100vw - 16px)}
 .sheet::before{inset:10px}.ruler{top:10px;bottom:10px;left:10px;width:8px}
 .hero{padding:84px 26px 36px}
-.lede{font-size:16px}
 .cluster{height:min(360px,44vh)}
 .fan img,.fan img.soon{width:54px;height:54px}
 .piece{grid-template-columns:1fr;gap:34px;padding:56px 30px;min-height:auto}
@@ -325,7 +313,6 @@ html{scroll-padding-top:72px}
 .vclose{top:10px;right:10px}
 .vstage{aspect-ratio:auto;padding:6px 0}
 .vslot{width:min(196px,50vw)}
-.vhint,.gl-on .vhint{display:none}
 .ab{flex-wrap:wrap;gap:4px;margin:0 10px;padding:66px 14px 10px}
 .ab-id{flex:1}
 .ab .btn{display:none}
@@ -391,11 +378,11 @@ html{scroll-padding-top:72px}
 @media (max-width:359px){.tabs a{padding:0 3px;font-size:12px;line-height:1.2;text-align:center;white-space:normal;-webkit-hyphens:auto;hyphens:auto}.now{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.btn:hover{transform:none}}
 </style>
-<script>(function(){var r=document.documentElement;r.classList.add("js");try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext()}catch(e){return}r.classList.add("gl-wait");function off(){if(r.classList.contains("gl-on"))return;r.classList.remove("gl-wait");r.classList.add("gl-off")}setTimeout(off,6000);addEventListener("DOMContentLoaded",function(){var s=document.createElement("script"),h=document.getElementById("gl");if(!h)return off();s.src=h.getAttribute("data-src");s.async=true;s.onerror=off;document.head.appendChild(s)})})()</script>
+
 </head>
 <body class="hub">
 <a class="skip" href="#main">Zum Inhalt springen</a>
-<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>
+
 <header class="top">
 <a class="wm" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a>
 <div class="top-r"><p class="now" data-on="0" aria-hidden="true"><i></i><b></b></p><details class="lang"><summary aria-label="Sprache"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>Deutsch</span></summary><ul aria-label="Sprache"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de" aria-current="true">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div>
@@ -406,14 +393,13 @@ html{scroll-padding-top:72px}
 <h1 class="sr-only">kvndh Apps</h1>
 <section class="hero">
 <p class="mono">kvndh.com</p>
-<div><p class="hero-t" aria-hidden="true">kvndh</p><p class="lede">Scrollen Sie nach unten, und jede App rückt an ihren Platz.</p>
+<div><p class="hero-t" aria-hidden="true">kvndh</p>
 <div class="cluster" aria-hidden="true"><div class="fan"><span class="row"><img src="/assets/life-tyde/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/tapey/icon-180.webp" alt="" width="72" height="72"><img src="/assets/dice-master/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/snapline/icon-180.webp" alt="" width="72" height="72"><img src="/assets/percentime/icon-180.webp" alt="" width="72" height="72"><img src="/assets/brushworks/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/readride/icon-180.webp" alt="" width="72" height="72"><img src="/assets/onpace/icon-180.webp" alt="" width="72" height="72"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="72" height="72" class="soon"><img src="/assets/codematic/icon-180.webp" alt="" width="72" height="72" class="soon"></span></div></div></div>
-<p class="cue mono"><span aria-hidden="true">↓</span><span>Tippen Sie auf ein Symbol, um es groß zu sehen.</span></p>
 </section>
 <article class="piece" id="life-tyde">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 01 / 08</span><span class="readout" data-readout="0" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="0" data-open="0" aria-label="Life Tyde groß ansehen"><img src="/assets/life-tyde/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 01 / 08</span>
+<button class="slot" type="button" data-open="0" aria-label="Life Tyde groß ansehen"><img src="/assets/life-tyde/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/life-tyde/">Life Tyde</a></h2>
@@ -425,8 +411,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="tapey">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 02 / 08</span><span class="readout" data-readout="1" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="1" data-open="1" aria-label="Tapey groß ansehen"><img src="/assets/tapey/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 02 / 08</span>
+<button class="slot" type="button" data-open="1" aria-label="Tapey groß ansehen"><img src="/assets/tapey/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/tapey/">Tapey</a></h2>
@@ -438,8 +424,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="dice-master">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 03 / 08</span><span class="readout" data-readout="2" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="2" data-open="2" aria-label="Dice Master groß ansehen"><img src="/assets/dice-master/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 03 / 08</span>
+<button class="slot" type="button" data-open="2" aria-label="Dice Master groß ansehen"><img src="/assets/dice-master/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/dice-master/">Dice Master</a></h2>
@@ -451,8 +437,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="snapline">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 04 / 08</span><span class="readout" data-readout="3" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="3" data-open="3" aria-label="SnapLine groß ansehen"><img src="/assets/snapline/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 04 / 08</span>
+<button class="slot" type="button" data-open="3" aria-label="SnapLine groß ansehen"><img src="/assets/snapline/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/snapline/">SnapLine</a></h2>
@@ -464,8 +450,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="percentime">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 05 / 08</span><span class="readout" data-readout="4" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="4" data-open="4" aria-label="Percentime groß ansehen"><img src="/assets/percentime/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 05 / 08</span>
+<button class="slot" type="button" data-open="4" aria-label="Percentime groß ansehen"><img src="/assets/percentime/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/percentime/">Percentime</a></h2>
@@ -477,8 +463,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="brushworks">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 06 / 08</span><span class="readout" data-readout="5" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="5" data-open="5" aria-label="BrushWorks groß ansehen"><img src="/assets/brushworks/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 06 / 08</span>
+<button class="slot" type="button" data-open="5" aria-label="BrushWorks groß ansehen"><img src="/assets/brushworks/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/brushworks/">BrushWorks</a></h2>
@@ -490,8 +476,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="readride">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 07 / 08</span><span class="readout" data-readout="6" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="6" data-open="6" aria-label="Readride groß ansehen"><img src="/assets/readride/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 07 / 08</span>
+<button class="slot" type="button" data-open="6" aria-label="Readride groß ansehen"><img src="/assets/readride/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/readride/">Readride</a></h2>
@@ -503,8 +489,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="onpace">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 08 / 08</span><span class="readout" data-readout="7" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="7" data-open="7" aria-label="OnPace groß ansehen"><img src="/assets/onpace/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 08 / 08</span>
+<button class="slot" type="button" data-open="7" aria-label="OnPace groß ansehen"><img src="/assets/onpace/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/de/onpace/">OnPace</a></h2>
@@ -514,19 +500,19 @@ html{scroll-padding-top:72px}
 </div>
 </article>
 
-<section class="quiet" aria-hidden="true"><span class="qslot" data-plate="8"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span><span class="qslot" data-plate="9"><img src="/assets/codematic/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span></section>
+<section class="quiet" aria-hidden="true"><span class="qslot"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span><span class="qslot"><img src="/assets/codematic/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span></section>
 
 <footer class="foot"><div><a class="wm" href="/de/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a></div><div><h2>Kontakt</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>Datenschutzerklärung</h2><ul><li><a href="/de/life-tyde/privacy/">Life Tyde</a></li><li><a href="/de/tapey/privacy/">Tapey</a></li><li><a href="/de/dice-master/privacy/">Dice Master</a></li><li><a href="/de/snapline/privacy/">SnapLine</a></li><li><a href="/de/percentime/privacy/">Percentime</a></li><li><a href="/de/brushworks/privacy/">BrushWorks</a></li><li><a href="/de/readride/privacy/">Readride</a></li><li><a href="/de/onpace/privacy/">OnPace</a></li></ul></div><div><h2>Sprache</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de" aria-current="true">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </main>
 <div class="viewer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Groß ansehen" inert>
 <div class="vsheet">
 <button class="vclose" type="button" aria-label="Schließen"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
-<div class="vstage"><div class="vslot"><img alt="" width="380" height="380"></div><p class="vhint mono gl-only">Zum Drehen ziehen.</p></div>
+<div class="vstage"><div class="vslot"><img alt="" width="380" height="380"></div></div>
 <div class="vtext"><p class="mono vno"></p><h2></h2><p class="sub"></p><p class="hook"></p><ul></ul><p class="acts"></p></div>
 </div>
 </div>
 
-<script type="application/json" id="canvas-data">{"page":"hub","plates":[{"icon":"/assets/life-tyde/icon-640.webp","big":"/assets/life-tyde/icon-640.webp","name":"Life Tyde","no":"01","sub":"Die stille Chronik Ihrer Jahre","hook":"Suchen Sie die großen Momente Ihres Lebens heraus, ordnen Sie sie Hashtags zu und halten Sie sie auf einer Timeline.","bullets":["Alter oder Jahre neben jedem Eintrag","Zeitgeschichtliche Packs aus dem Ereignis-Markt","Erinnerungen und Wiederholung für Anstehendes","Tag-Filter und Ansicht nur mit Highlights"],"store":"https://apps.apple.com/app/id6773198369","storeLabel":"Life Tyde im App Store ansehen","href":"/de/life-tyde/","support":"/de/life-tyde/support/"},{"icon":"/assets/tapey/icon-640.webp","big":"/assets/tapey/icon-640.webp","name":"Tapey","no":"02","sub":"Foto-Hintergründe mit Washi-Tape","hook":"Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.","bullets":["Bis zu 12 Fotos, mit Tapey Pro 30","Layouts Auto, Raster, Treppe, Herz und Kreis","Rückgängig und Wiederholen","8 Tape-Farben, 4 Muster und 8 Pro-Muster"],"store":"https://apps.apple.com/app/id6778635856","storeLabel":"Tapey im App Store ansehen","href":"/de/tapey/","support":"/de/tapey/support/"},{"icon":"/assets/dice-master/icon-640.webp","big":"/assets/dice-master/icon-640.webp","name":"Dice Master","no":"03","sub":"Formeln rechnen, Farben summieren","hook":"Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.","bullets":["6 Formeln, darunter Summe und Summe × Würfe","Zwischensummen nach Würfelfarbe","Wechsel zwischen 3D-Würfeln und 2D-Ansicht","Wurfmodi Simultan und Einzeln"],"store":"https://apps.apple.com/app/id6765857608","storeLabel":"Dice Master im App Store ansehen","href":"/de/dice-master/","support":"/de/dice-master/support/"},{"icon":"/assets/snapline/icon-640.webp","big":"/assets/snapline/icon-640.webp","name":"SnapLine","no":"04","sub":"Neue Linien auf schon gemachten Fotos","hook":"Legen Sie das Kameraraster über Ihr Foto und komponieren Sie das Bild mit Gespür.","bullets":["Linien knicken und kippen","Weitere Knickpunkte, eckig oder rund","Linie hinzufügen und Linie löschen","Auto-Maske für das Radieren in einem Zug"],"store":"https://apps.apple.com/app/id6809834907","storeLabel":"SnapLine im App Store ansehen","href":"/de/snapline/","support":"/de/snapline/support/"},{"icon":"/assets/percentime/icon-640.webp","big":"/assets/percentime/icon-640.webp","name":"Percentime","no":"05","sub":"Zeiträume, die sich füllen","hook":"Von heute bis in die 2020er, eine Skala, die sich füllt, so weit die Zeit gekommen ist","bullets":["Sechs Zeiträume ohne eine einzige Eingabe","Der nächste Zeitraum, der nach Mitternacht öffnet","Zellen im Maß der nächstkleineren Einheit","Nachkommastellen passend zum Zeitraum"],"store":"https://apps.apple.com/app/id6814066451","storeLabel":"Percentime im App Store ansehen","href":"/de/percentime/","support":"/de/percentime/support/"},{"icon":"/assets/brushworks/icon-640.webp","big":"/assets/brushworks/icon-640.webp","name":"BrushWorks","no":"06","sub":"Aus Sorgfalt, nicht Talent","hook":"Wählen Sie ein Foto, das Ihnen gefällt, und reiben Sie mit dem Finger über den Bildschirm. Sie müssen nicht malen können; das Gemälde füllt sich mit der Zeit, die Sie hineinstecken.","bullets":["Farbe direkt aus dem Foto darunter","Farbauftrag mit sichtbarer Dicke","Augentaste zum Blick auf das Originalfoto","Lasur, Borste und Spachtel"],"store":"https://apps.apple.com/app/id6810951573","storeLabel":"BrushWorks im App Store ansehen","href":"/de/brushworks/","support":"/de/brushworks/support/"},{"icon":"/assets/readride/icon-640.webp","big":"/assets/readride/icon-640.webp","name":"Readride","no":"07","sub":"Romane und News in Wortgruppen","hook":"Readride zeigt, was Sie lesen, ein paar Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.","bullets":["Kopfzeilen, Fußzeilen und Seitenzahlen entfernt","Mitten im Satz umbrochene Zeilen verbunden","Alles Entfernte lässt sich zurückholen","Ein paar Wörter auf einmal, an einer Stelle"],"store":"https://apps.apple.com/app/id6816576585","storeLabel":"Readride im App Store ansehen","href":"/de/readride/","support":"/de/readride/support/"},{"icon":"/assets/onpace/icon-640.webp","big":"/assets/onpace/icon-640.webp","name":"OnPace","no":"08","sub":"Zu früh oder zu spät je Halt","hook":"An jedem Kontrollpunkt sehen Sie, ob Sie vor Ihrem Plan liegen oder dahinter","bullets":["Vorsprung oder Rückstand in Minuten und Sekunden","Nächster Kontrollpunkt mit Sollzeit","Voraussichtliche Ankunft","Routen zu Fuß und mit dem Auto"],"store":"https://apps.apple.com/app/id6816075554","storeLabel":"OnPace im App Store ansehen","href":"/de/onpace/","support":"/de/onpace/support/"},{"icon":"/assets/tailorcolor/icon-360.webp","soon":true},{"icon":"/assets/codematic/icon-360.webp","soon":true}],"ui":{"total":"08","more":"Mehr erfahren","support":"Support"}}</script>
+<script type="application/json" id="canvas-data">{"page":"hub","plates":[{"icon":"/assets/life-tyde/icon-640.webp","big":"/assets/life-tyde/icon-640.webp","name":"Life Tyde","no":"01","sub":"Die stille Chronik Ihrer Jahre","hook":"Suchen Sie die großen Momente Ihres Lebens heraus, ordnen Sie sie Hashtags zu und halten Sie sie auf einer Timeline.","bullets":["Alter oder Jahre neben jedem Eintrag","Die Welt damals, eine Zeile für jedes Jahr mit Eintrag","Erinnerungen und Wiederholung für Anstehendes","Tag-Filter und Ansicht nur mit Highlights"],"store":"https://apps.apple.com/app/id6773198369","storeLabel":"Life Tyde im App Store ansehen","href":"/de/life-tyde/","support":"/de/life-tyde/support/"},{"icon":"/assets/tapey/icon-640.webp","big":"/assets/tapey/icon-640.webp","name":"Tapey","no":"02","sub":"Foto-Hintergründe mit Washi-Tape","hook":"Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.","bullets":["Bis zu 12 Fotos, mit Tapey Pro 30","Layouts Auto, Raster, Treppe, Herz und Kreis","Rückgängig und Wiederholen","8 Tape-Farben, 4 Muster und 8 Pro-Muster"],"store":"https://apps.apple.com/app/id6778635856","storeLabel":"Tapey im App Store ansehen","href":"/de/tapey/","support":"/de/tapey/support/"},{"icon":"/assets/dice-master/icon-640.webp","big":"/assets/dice-master/icon-640.webp","name":"Dice Master","no":"03","sub":"Formeln rechnen, Farben summieren","hook":"Würfel wählen, auf den Bildschirm tippen, und sobald die Würfel liegen, steht das Ergebnis da, samt allen Augen, die hineingeflossen sind.","bullets":["6 Formeln, darunter Summe und Summe × Würfe","Zwischensummen nach Würfelfarbe","Wechsel zwischen 3D-Würfeln und 2D-Ansicht","Wurfmodi Simultan und Einzeln"],"store":"https://apps.apple.com/app/id6765857608","storeLabel":"Dice Master im App Store ansehen","href":"/de/dice-master/","support":"/de/dice-master/support/"},{"icon":"/assets/snapline/icon-640.webp","big":"/assets/snapline/icon-640.webp","name":"SnapLine","no":"04","sub":"Neue Linien auf schon gemachten Fotos","hook":"Legen Sie das Kameraraster über Ihr Foto und komponieren Sie das Bild mit Gespür.","bullets":["Linien knicken und kippen","Weitere Knickpunkte, eckig oder rund","Linie hinzufügen und Linie löschen","Auto-Maske für das Radieren in einem Zug"],"store":"https://apps.apple.com/app/id6809834907","storeLabel":"SnapLine im App Store ansehen","href":"/de/snapline/","support":"/de/snapline/support/"},{"icon":"/assets/percentime/icon-640.webp","big":"/assets/percentime/icon-640.webp","name":"Percentime","no":"05","sub":"Zeiträume, die sich füllen","hook":"Von heute bis in die 2020er, eine Skala, die sich füllt, so weit die Zeit gekommen ist","bullets":["Sechs Zeiträume ohne eine einzige Eingabe","Der nächste Zeitraum, der nach Mitternacht öffnet","Zellen im Maß der nächstkleineren Einheit","Nachkommastellen passend zum Zeitraum"],"store":"https://apps.apple.com/app/id6814066451","storeLabel":"Percentime im App Store ansehen","href":"/de/percentime/","support":"/de/percentime/support/"},{"icon":"/assets/brushworks/icon-640.webp","big":"/assets/brushworks/icon-640.webp","name":"BrushWorks","no":"06","sub":"Aus Sorgfalt, nicht Talent","hook":"Wählen Sie ein Foto, das Ihnen gefällt, und reiben Sie mit dem Finger über den Bildschirm. Sie müssen nicht malen können; das Gemälde füllt sich mit der Zeit, die Sie hineinstecken.","bullets":["Farbe direkt aus dem Foto darunter","Farbauftrag mit sichtbarer Dicke","Augentaste zum Blick auf das Originalfoto","Lasur, Borste und Spachtel"],"store":"https://apps.apple.com/app/id6810951573","storeLabel":"BrushWorks im App Store ansehen","href":"/de/brushworks/","support":"/de/brushworks/support/"},{"icon":"/assets/readride/icon-640.webp","big":"/assets/readride/icon-640.webp","name":"Readride","no":"07","sub":"Romane und News in Wortgruppen","hook":"Readride zeigt, was Sie lesen, ein paar Wörter auf einmal an derselben Stelle, sodass Ihre Augen ruhig bleiben. Romane, Nachrichten, Essays, PDFs und ePubs, zuerst aufgeräumt und dann bis zum Ende gelesen.","bullets":["Kopfzeilen, Fußzeilen und Seitenzahlen entfernt","Mitten im Satz umbrochene Zeilen verbunden","Alles Entfernte lässt sich zurückholen","Ein paar Wörter auf einmal, an einer Stelle"],"store":"https://apps.apple.com/app/id6816576585","storeLabel":"Readride im App Store ansehen","href":"/de/readride/","support":"/de/readride/support/"},{"icon":"/assets/onpace/icon-640.webp","big":"/assets/onpace/icon-640.webp","name":"OnPace","no":"08","sub":"Zu früh oder zu spät je Halt","hook":"An jedem Kontrollpunkt sehen Sie, ob Sie vor Ihrem Plan liegen oder dahinter","bullets":["Vorsprung oder Rückstand in Minuten und Sekunden","Nächster Kontrollpunkt mit Sollzeit","Voraussichtliche Ankunft","Routen zu Fuß und mit dem Auto"],"store":"https://apps.apple.com/app/id6816075554","storeLabel":"OnPace im App Store ansehen","href":"/de/onpace/","support":"/de/onpace/support/"},{"icon":"/assets/tailorcolor/icon-360.webp","soon":true},{"icon":"/assets/codematic/icon-360.webp","soon":true}],"ui":{"total":"08","more":"Mehr erfahren","support":"Support"}}</script>
 <script>(function(){
   // 허브 화첩: 지금 보는 앱 번호(오른쪽 위 버밀리언 점은 여기 한 곳)와 크게 보기
   var D=JSON.parse(document.getElementById('canvas-data').textContent),P=D.plates,U=D.ui;

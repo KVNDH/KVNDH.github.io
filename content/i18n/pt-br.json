@@ -19,10 +19,7 @@
  "summaryLabel": "Resumo",
  "toc": "Conteúdo",
  "notFound": "Esta página não existe. Escolha um idioma abaixo para chegar à lista de apps.",
- "albumLede": "Role para baixo e cada app vai para o seu lugar.",
- "albumHint": "Toque em um ícone para vê-lo em tamanho grande.",
  "viewLarge": "Ver em tamanho grande",
  "viewLargeLabel": "Ver {name} em tamanho grande",
- "close": "Fechar",
- "dragHint": "Arraste para girar."
+ "close": "Fechar"
 }

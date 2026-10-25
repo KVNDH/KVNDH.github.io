@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Die Fotos finden ihren Platz",
    "body": [
-    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben, oder ändern Sie mit zwei Fingern Größe und Winkel. Was Sie von Hand bewegt haben, bleibt dort, wo Sie es abgelegt haben."
+    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben, oder ändern Sie mit zwei Fingern Größe und Winkel. Im Layout Auto bleibt, was Sie von Hand bewegt haben, dort, wo Sie es abgelegt haben. Passt ein Foto nicht ganz in sein Fenster, wählen Sie mit Ausschnitt den sichtbaren Teil."
    ],
    "bullets": [
     "Bis zu 12 Fotos, mit Tapey Pro 30",
@@ -30,12 +30,13 @@
    "layout": "feat",
    "title": "Tape und Rahmen",
    "body": [
-    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz. Auch Änderungen an Hintergrund, Tape und Rahmen lassen sich rückgängig machen."
+    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz. Wählen Sie ein Foto und tippen Sie auf Tape, um nur diesem Foto ein eigenes Tape und einen eigenen Rahmen zu geben. Auch Änderungen an Hintergrund, Tape und Rahmen lassen sich rückgängig machen."
    ],
    "bullets": [
     "8 Tape-Farben, 4 Muster und 8 Pro-Muster",
     "Weißer Rand und Polaroid-Rahmen",
-    "S/W für die ganze Wand oder ein einzelnes Foto"
+    "S/W für die ganze Wand oder ein einzelnes Foto",
+    "Handschriftliche Notizen in 31 Sprachen"
    ],
    "visual": {
     "type": "kit",
@@ -115,7 +116,8 @@
    "q": "Fotos hinzufügen",
    "a": [
     "Tippen Sie auf dem Startbildschirm auf Fotos hinzufügen und wählen Sie Ihre Fotos aus. Sie können Fotos auch aus einer anderen App hineinziehen. Beim Bearbeiten tippen Sie im Schritt Fotos auf Hinzufügen. Mit Foto aufnehmen und Datei auswählen im Menü nehmen Sie direkt ein Foto auf oder wählen ein Bild aus Dateien. Wenn Sie ein Foto ersetzen oder Mein Foto als Hintergrund wählen, entscheiden Sie zwischen Fotomediathek, Foto aufnehmen und Datei auswählen.",
-    "In einen Hintergrund passen bis zu 12 Fotos, mit Tapey Pro 30. Das Layout Herz erscheint, sobald Sie 6 oder mehr haben. Kreis braucht 8 oder mehr, und Stern, ein Layout von Tapey Pro, 10 oder mehr."
+    "In einen Hintergrund passen bis zu 12 Fotos, mit Tapey Pro 30. Das Layout Herz erscheint, sobald Sie 6 oder mehr haben. Kreis braucht 8 oder mehr, und Stern, ein Layout von Tapey Pro, 10 oder mehr. Überschreiten Sie die Grenze der Gratisversion, zeigt Ihnen Pro ansehen im Hinweis Tapey Pro.",
+    "Schalten Sie in den Einstellungen Aufnahmen auch in Fotos sichern ein, landen Fotos, die Sie in der App aufnehmen, auch in der Fotos-App. Die Option ist anfangs aus, und beim Einschalten fragt iOS, ob Tapey Fotos hinzufügen darf."
    ]
   },
   {
@@ -129,20 +131,21 @@
    "q": "Die Werbung beim Sichern",
    "a": [
     "Beim Sichern eines Hintergrunds zeigt Tapey eine bildschirmfüllende Werbung. Ausgewählt und ausgeliefert wird sie von Google AdMob.",
-    "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung."
+    "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung. Tapey wartet höchstens 60 Sekunden auf die Werbung. Werbung, die danach eintrifft, wird nicht gezeigt. Während des Sicherns ist das Bearbeiten gesperrt. Dauert das Sichern länger, weil die App auf eine Werbung wartet, erscheint Speichern wird vorbereitet.",
+    "Auf einem Gerät, auf dem die Werbung schon mindestens dreimal zu sehen war, zeigt der Bildschirm nach dem Sichern nach der Werbung einen einzeiligen Hinweis auf Tapey Pro. Schließt du ihn, erscheint er erst wieder, wenn du die Werbung dreimal mehr gesehen hast."
    ]
   },
   {
    "q": "Tapey Pro und den Kauf wiederherstellen",
    "a": [
-    "Tapey Pro kaufen Sie im Menü oder auf dem Startbildschirm. Sie zahlen einmal, ein Abo ist es nicht. Danach erscheint beim Sichern keine Werbung mehr, und Sie nutzen bis zu 30 Fotos, die Premium-Tapes sowie die neuen Rahmen und Layouts. Pro-Elemente können Sie schon vor dem Kauf auswählen und in der Vorschau ansehen. Speichern Sie, solange sie im Bild sind, wählen Sie zwischen Tapey Pro kaufen, Mit Basis-Elementen speichern und Weiter bearbeiten.",
+    "Tapey Pro kaufen Sie im Menü oder auf dem Startbildschirm. Sie zahlen einmal, ein Abo ist es nicht. Danach erscheint beim Sichern keine Werbung mehr, und Sie nutzen bis zu 30 Fotos, die Premium-Tapes sowie die neuen Rahmen und Layouts. Pro-Elemente können Sie schon vor dem Kauf auswählen und in der Vorschau ansehen. Speichern Sie, solange sie im Bild sind, wählen Sie zwischen Tapey Pro kaufen, Mit Basis-Elementen speichern und Weiter bearbeiten. Ein Pro-Muster oder Pro-Rahmen, den Sie nur für ein Foto wählen, zählt ebenfalls als Pro-Element. Speichern Sie mit Basis-Elementen, wird dieses Foto mit Tape in Uni und mit Rand gesichert.",
     "Auf einem neuen Gerät oder nach einer Neuinstallation öffnen Sie Einstellungen im Menü und tippen auf Einkäufe wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht. Wer früher Werbung entfernen gekauft hat, hat Tapey Pro bereits."
    ]
   },
   {
    "q": "Tracking und Werbeeinstellungen",
    "a": [
-    "Beim ersten Öffnen, während die App die Werbung vorbereitet, fragt iOS, ob Tapey Sie tracken darf. Mit Tapey Pro kommt diese Frage nicht. Die App funktioniert so oder so gleich, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Nach der Installation bereitet die App die Werbung vor, sobald Sie das erste Foto an die Wand bringen, und dann fragt iOS, ob Tapey Sie tracken darf. Mit Tapey Pro kommt diese Frage nicht. Die App funktioniert so oder so gleich, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
     "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, ändern Sie Ihre Auswahl unter Werbeeinstellungen am unteren Rand des Startbildschirms. Dort erscheint das Einwilligungsformular vor der Tracking-Abfrage."
    ]
   },
@@ -157,7 +160,8 @@
    "q": "Als Hintergrundbild festlegen",
    "a": [
     "Öffnen Sie das gerade gesicherte Bild in der Fotos-App, tippen Sie auf Teilen und wählen Sie Als Hintergrund. Tippen Sie auf Hinzufügen und wählen Sie Als Hintergrundbildpaar festlegen.",
-    "Dieselben Schritte stehen unter „So legst du es als Hintergrundbild fest“ auf dem Bildschirm, der nach dem Sichern erscheint."
+    "Dieselben Schritte stehen unter „So legst du es als Hintergrundbild fest“ auf dem Bildschirm, der nach dem Sichern erscheint.",
+    "In der Kurzbefehle-App holt Letztes Hintergrundbild von Tapey das zuletzt gesicherte Hintergrundbild als Bild. Es läuft, ohne die App zu öffnen, und lässt sich mit einer Aktion der Kurzbefehle verbinden, die das Hintergrundbild wechselt."
    ]
   },
   {
@@ -171,7 +175,7 @@
    "q": "Internetverbindung",
    "a": [
     "Anordnen, Verzieren und Sichern laufen offline. Werbung, der Kauf von Tapey Pro und das Wiederherstellen brauchen eine Verbindung.",
-    "Die Handschriften für Notizen werden mit der App installiert. Eine davon kommt zum Einsatz, wenn die App auf Koreanisch eingestellt ist, die andere bei allen übrigen Sprachen. Zeichen, die diese Schriften nicht enthalten, erscheinen in der Systemschrift."
+    "Die Handschriften für Notizen werden mit der App installiert. Jede Notiz erscheint in einer Handschrift, die zu ihren Zeichen passt: Hangul, lateinische, griechische und kyrillische Schrift, Kana, chinesische Schriftzeichen, Thai oder Devanagari. Zeichen, die diese Schriften nicht enthalten, erscheinen in der Systemschrift."
    ]
   },
   {
@@ -183,7 +187,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Tapey",
-  "effectiveDate": "2026-10-15",
+  "effectiveDate": "2026-10-20",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Die Werbung beim Sichern kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Tapey Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Tapey (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -205,15 +209,16 @@
     ],
     "bullets": [
      "Kopien der gewählten oder aufgenommenen Fotos und Hintergrundfotos: zum Wiederöffnen Ihrer Arbeit",
-     "Layout, Einstellungen zur Gestaltung, Fotonotizen: zum Wiederöffnen Ihrer Arbeit",
+     "Layout, Einstellungen zur Gestaltung (auch Tape, Rahmen und sichtbarer Ausschnitt, die für einzelne Fotos festgelegt wurden), Fotonotizen: zum Wiederöffnen Ihrer Arbeit",
      "Bis zu 3 letzte Projekte mit Vorschaubildern: für Zuletzt auf dem Startbildschirm",
-     "Sprachwahl, Kaufstatus von Tapey Pro, Zahl der Sicherungen und ob die Bewertungsanfrage schon gezeigt wurde, ob die Hinweise zum Einstieg schon gezeigt wurden, gewählter Ansichtsmodus, aus einer früheren Version übernommene Einstellungen zur Bildschirmaufteilung: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage"
+     "Eine Kopie des zuletzt gesicherten Hintergrunds: für den Kurzbefehl Letztes Hintergrundbild, wird bei jedem Sichern ersetzt",
+     "Sprachwahl, Kaufstatus von Tapey Pro, Zahl der Sicherungen und ob die Bewertungsanfrage schon gezeigt wurde, Zahl der gesehenen Werbungen und ein Vermerk, dass der Hinweis auf Tapey Pro geschlossen wurde, ob dieses Gerät schon einmal Werbung vorbereitet hat, ob die Hinweise zum Einstieg und der Hinweis zu Form-Layouts schon gezeigt wurden, gewählter Ansichtsmodus und die Einstellung Aufnahmen auch in Fotos sichern, aus einer früheren Version übernommene Einstellungen zur Bildschirmaufteilung: für den Betrieb der App und den Zeitpunkt der Bewertungsanfrage, des Hinweises auf Tapey Pro und der Vorbereitung der Werbung"
     ]
    },
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Die Kopie des Hintergrunds, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Hintergründe, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Die Kopie des Hintergrunds, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Der letzte Hintergrund für den Kurzbefehl wird bei jedem Sichern ersetzt, es bleibt also nur einer. Neu beginnen im Menü entfernt ihn nicht, er verschwindet mit dem Löschen der App. Hintergründe und aufgenommene Fotos, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +261,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "An die App gehen nur Fotos, die Sie in der Fotoauswahl oder der Dateiauswahl von iOS aussuchen, in die App ziehen oder mit Foto aufnehmen aufnehmen. Nach dem Kamerazugriff fragt iOS, wenn Sie zum ersten Mal auf Foto aufnehmen tippen. Lehnen Sie ab, können Sie Fotos weiterhin auf die anderen Arten hinzufügen. Ein aufgenommenes Foto liegt wie die gewählten Fotos als Kopie im Speicher der App und dient nur der Arbeit an Ihrem Hintergrund. Es wird nicht eigens in der Fotos-App gesichert, und der Entwickler erhält es nicht. Die App fragt nicht nach der Berechtigung, Ihre Mediathek zu lesen. Zum Sichern eines fertigen Hintergrunds nutzt die App allein die Berechtigung, Fotos hinzuzufügen."
+     "An die App gehen nur Fotos, die Sie in der Fotoauswahl oder der Dateiauswahl von iOS aussuchen, in die App ziehen oder mit Foto aufnehmen aufnehmen. Nach dem Kamerazugriff fragt iOS, wenn Sie zum ersten Mal auf Foto aufnehmen tippen. Lehnen Sie ab, können Sie Fotos weiterhin auf die anderen Arten hinzufügen. Ein aufgenommenes Foto liegt wie die gewählten Fotos als Kopie im Speicher der App und dient nur der Arbeit an Ihrem Hintergrund. In die Fotos-App kommt es nur, wenn Sie in den Einstellungen Aufnahmen auch in Fotos sichern einschalten. Diese Einstellung ist anfangs aus, und beim Einschalten fragt iOS nach der Berechtigung, Fotos hinzuzufügen. Der Entwickler erhält aufgenommene Fotos nicht. Die App fragt nicht nach der Berechtigung, Ihre Mediathek zu lesen. Um einen fertigen Hintergrund oder ein aufgenommenes Foto in die Fotos-App zu legen, nutzt die App allein die Berechtigung, Fotos hinzuzufügen."
     ],
     "bullets": []
    },
@@ -264,7 +269,7 @@
     "title": "Automatische Erfassung und wie Sie sie ablehnen",
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob), das beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen kann.",
-     "Wenn Sie die App öffnen und sie die Werbung vorbereitet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT), sofern Sie sie noch nicht beantwortet haben. Beim Sichern erscheint sie nicht. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Auf einem neu eingerichteten Gerät bereitet die App die Werbung erst vor, nachdem Sie das erste Foto an die Wand gebracht haben, und Sicherungen davor kommen ohne Werbung aus. Hat ein Gerät die Werbung einmal vorbereitet, geschieht das danach bei jedem Öffnen der App. Wenn die App die Werbung vorbereitet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT), sofern Sie sie noch nicht beantwortet haben. Beim Sichern erscheint sie nicht. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
      "In Regionen, in denen eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Ergibt sich daraus, dass keine Werbung angefragt werden kann, erscheint auch die Tracking-Abfrage nicht. Dort ändern Sie Ihre Auswahl später unter Werbeeinstellungen am unteren Rand des Startbildschirms.",
      "Nach dem Kauf von Tapey Pro (auch nach einem früheren Kauf von Werbung entfernen) erscheint keine Werbung mehr, und ab dem nächsten Öffnen startet die App AdMob nicht mehr, sodass weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
     ],
@@ -312,6 +317,8 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
+     "2026-10-20: Die Einstellung, mit der aufgenommene Fotos auch in der Fotos-App gesichert werden, der eine zuletzt gesicherte Hintergrund für den Kurzbefehl sowie Tape, Rahmen und sichtbarer Ausschnitt für einzelne Fotos aus 2.1.0 wurden unter „Verarbeitete Daten“, „Verarbeitung und Aufbewahrungsdauer“ und „Maßnahmen zur Sicherheit“ ergänzt. Der Zeitpunkt, zu dem ein neu eingerichtetes Gerät die Werbung vorbereitet, wurde berichtigt. Das vorherige Datum des Inkrafttretens war der 2026-10-19.",
+     "2026-10-19: Die Zahl der gesehenen Werbungen und ein Vermerk, dass der Hinweis auf Tapey Pro geschlossen wurde, genutzt in 2.0.2 für den Hinweis auf Tapey Pro auf dem Bildschirm nach dem Sichern, wurden unter „Verarbeitete Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-10-15.",
      "2026-10-15: Mit Foto aufnehmen aufgenommene Fotos, mit Datei auswählen gewählte Bilder und der Kamerazugriff wurden unter „Verarbeitete Daten“ und „Maßnahmen zur Sicherheit“ ergänzt. Die temporäre Datei zum Teilen ist jetzt als Kopie des gesicherten Hintergrunds beschrieben. Das vorherige Datum des Inkrafttretens war der 2026-10-06."
     ],
     "bullets": []

@@ -1,9 +1,8 @@
 """페이지 HTML 을 만든다. 틀은 templates/*.html (string.Template).
 
-모양은 2026-10-16 화첩 A안(전면 3D): 세로로 긴 흰 종이 한 장(.sheet)에 앱 아이콘 판을 원화처럼 걸고,
-고정 WebGL 장면(canvas/main.js -> assets/kvndh-canvas.js)이 DOM 의 자리([data-plate])를 따라 두께 있는 판을 놓는다.
-허브는 첫 화면 더미에서 스크롤로 판이 제자리를 찾고, 소개는 판 하나가 크게 뜨고, 지원과 개인정보는 머리에 작은 판 하나.
-동작 줄이기, WebGL 없음, 스크립트 실패에서는 같은 배치의 멈춘 그림(DOM 의 img)이 그대로 보인다.
+모양은 2026-10-25 화첩 C안(평면): 세로로 긴 흰 종이 한 장(.sheet)에 앱 아이콘 판을 원화처럼 건다.
+3D(WebGL)는 쓰지 않는다(사용자 10-25 "C로 가자", A 전면 3D 와 B 허브만 3D 는 부담스럽다고 접음).
+허브는 첫 화면 더미 그림 아래로 앱 판이 차례로 걸리고, 소개는 판 하나가 크게, 지원과 개인정보는 머리에 작은 판 하나.
 """
 from __future__ import annotations
 
@@ -21,19 +20,6 @@ GLOBE = (
 # 낱말표 앞의 k (파비콘과 같은 글자꼴). 색은 글자색을 따른다
 MARK = ('<svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)">'
         '<path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg>')
-CANVAS_SCRIPT = "/assets/kvndh-canvas.js"
-# head 에서 돈다. 동작 줄이기가 아니고 WebGL 컨텍스트가 실제로 만들어질 때만 멈춘 그림을 숨기고(gl-wait) 묶음을 부른다.
-# 묶음이 실패하거나 6초 안에 판이 서지 않으면 gl-off 로 멈춘 그림에 돌아가고, 판은 다시 오지 않는다
-CANVAS_LOADER = (
-    '<script>(function(){var r=document.documentElement;r.classList.add("js");'
-    'try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;'
-    'var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;'
-    'var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext()}catch(e){return}'
-    'r.classList.add("gl-wait");function off(){if(r.classList.contains("gl-on"))return;r.classList.remove("gl-wait");r.classList.add("gl-off")}'
-    'setTimeout(off,6000);addEventListener("DOMContentLoaded",function(){var s=document.createElement("script"),h=document.getElementById("gl");'
-    'if(!h)return off();s.src=h.getAttribute("data-src");s.async=true;s.onerror=off;document.head.appendChild(s)})})()</script>'
-)
-GL_CANVAS = f'<canvas id="gl" data-src="{CANVAS_SCRIPT}" aria-hidden="true"></canvas>'
 
 
 def tpl(site: Site, name: str) -> Template:
@@ -268,8 +254,8 @@ def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
 
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
          content: str, footer: str, body_class: str, bar: str = "", now: str = "", after: str = "",
-         extra_head: str = "", og_image: str = "/assets/og.jpg", gl: bool = False) -> str:
-    """gl=True 는 허브만. B안(2026-10-16): 소개, 지원, 개인정보는 three 를 싣지 않고 CSS 정지 판만 건다."""
+         extra_head: str = "", og_image: str = "/assets/og.jpg", hub: bool = False) -> str:
+    """hub=True 면 허브 전용 CSS 규칙(/*h*/)을 싣는다."""
     option = site.lang(lang)
     return tpl(site, "base.html").substitute(
         body_class=body_class,
@@ -281,9 +267,7 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
         og_image=site.base_url + og_image,
         og_locale=esc(option["ogLocale"]),
         extra_head=extra_head,
-        css=css(site, hub=gl),
-        loader=CANVAS_LOADER if gl else "",
-        gl=GL_CANVAS if gl else "",
+        css=css(site, hub=hub),
         skip_label=esc(site.ui[lang]["skip"]),
         hub_path=page_path(lang),
         mark=MARK,
@@ -336,7 +320,7 @@ def render_hub(site: Site, lang: str) -> str:
     slots = []
     for j, app in enumerate(quiet, len(apps)):
         plates.append({"icon": asset(app["slug"], "icon-360.webp"), "soon": True})
-        slots.append(f'<span class="qslot" data-plate="{j}"><img src="{asset(app["slug"], "icon-180.webp")}" alt="" '
+        slots.append(f'<span class="qslot"><img src="{asset(app["slug"], "icon-180.webp")}" alt="" '
                      'width="64" height="64" loading="lazy"></span>')
     quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
     # 첫 화면 더미: 위에서부터 1, 2, 3, 4 줄. 맨 위(가장 먼저 눈에 띄는 자리)가 출시된 첫 앱이다
@@ -350,17 +334,17 @@ def render_hub(site: Site, lang: str) -> str:
         rows.append('<span class="row">' + "".join(fan_imgs[k:k + n]) + "</span>")
         k, n = k + n, n + 1
     content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubMetaTitle"]), lede=esc(ui["albumLede"]), hint=esc(ui["albumHint"]),
+        title=esc(ui["hubMetaTitle"]),
         fan="".join(rows), pieces="\n".join(pieces), quiet=quiet_html)
     data = {"page": "hub", "plates": plates,
             "ui": {"total": total, "more": ui["learnMore"], "support": ui["navSupport"]}}
     viewer = tpl(site, "viewer.html").substitute(
-        label=esc(ui["viewLarge"]), close=esc(ui["close"]), drag=esc(ui["dragHint"]))
+        label=esc(ui["viewLarge"]), close=esc(ui["close"]))
     after = f"{viewer}\n{canvas_json(data)}\n<script>{text(site, 'hub.js')}</script>"
     names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in apps)
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
                 content=content, footer=hub_footer(site, lang), body_class="hub", now=now_pill(),
-                after=after, gl=True)
+                after=after, hub=True)
 
 
 def still_plate(site: Site, slug: str, size: str) -> str:

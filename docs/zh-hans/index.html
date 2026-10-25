@@ -49,11 +49,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .skip{position:absolute;left:-999px;top:0;z-index:60}
 .skip:focus{left:16px;top:12px;padding:10px 14px;border-radius:8px;background:var(--k);color:var(--on)}
-.mono,.lab,.readout,.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--t2)}
-#gl{position:fixed;inset:0;width:100vw;height:100vh;z-index:30;pointer-events:none;display:block}
-html:not(.gl-on):not(.gl-wait) #gl{display:none}
-.gl-only{display:none}
-.gl-on .gl-only{display:block}
+.mono,.lab,.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--t2)}
 /* 머리 띠: 낱말표, 번호 점, 언어 */
 .top{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 28px;pointer-events:none}
 .top>*{pointer-events:auto}
@@ -83,13 +79,10 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 /* 첫 화면(허브) */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
 .hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
-.lede{margin-top:16px;font-size:18px;color:var(--t2)}
 .cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh)}
 .fan{position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
 .fan .row{display:flex;gap:10px}
 .fan img{width:72px;height:72px;border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
-.gl-on .fan,.gl-wait .fan{visibility:hidden}
-.cue{display:flex;justify-content:center;gap:18px}
 /* 원화 한 점 */
 .piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
 .piece:nth-of-type(even) .frame{order:2}
@@ -100,11 +93,8 @@ html:not(.gl-on):not(.gl-wait) #gl{display:none}
 .tick{top:0;right:0;border-top-width:1px;border-right-width:1px}
 .tick2{bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
 .frame .lab{position:absolute;top:-24px;left:0}
-.frame .readout{position:absolute;bottom:-24px;right:0;white-space:pre}
-html:not(.gl-on) .readout{visibility:hidden}
 .slot{position:relative;display:block;width:var(--slot);aspect-ratio:1;border-radius:22.5%}
 .slot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 1px 0 rgba(255,255,255,.6) inset,0 24px 40px -22px rgba(26,26,26,.45),0 4px 10px -4px rgba(26,26,26,.18)}
-.gl-on [data-plate] img,.gl-wait [data-plate] img,.gl-on .vslot img{visibility:hidden}
 .slot:focus-visible{outline-offset:10px;border-radius:24%}
 .cap{max-width:30em;text-align:left}
 .cap h2{font-size:clamp(34px,4vw,52px);line-height:1.05;font-weight:800;letter-spacing:-.04em}
@@ -143,7 +133,6 @@ html:not(.js) .big{display:none}
 .vstage{position:relative;display:grid;place-items:center;aspect-ratio:1}
 .vslot{width:min(380px,32vw);aspect-ratio:1;touch-action:pan-y;cursor:grab}
 .vslot img{width:100%;height:100%;border-radius:22.5%;box-shadow:0 30px 60px -30px rgba(26,26,26,.5)}
-.vhint{position:absolute;left:0;right:0;bottom:-8px;text-align:center}
 .vtext h2{margin-top:10px;font-size:clamp(36px,4.4vw,60px);line-height:1.02;font-weight:800;letter-spacing:-.045em}
 .vtext ul{margin-top:18px;border-top:1px solid var(--ln)}
 .vtext li{padding:9px 0;border-bottom:1px solid var(--ln);font-size:15px}
@@ -308,7 +297,6 @@ html{scroll-padding-top:72px}
 .sheet{width:calc(100vw - 16px)}
 .sheet::before{inset:10px}.ruler{top:10px;bottom:10px;left:10px;width:8px}
 .hero{padding:84px 26px 36px}
-.lede{font-size:16px}
 .cluster{height:min(360px,44vh)}
 .fan img,.fan img.soon{width:54px;height:54px}
 .piece{grid-template-columns:1fr;gap:34px;padding:56px 30px;min-height:auto}
@@ -325,7 +313,6 @@ html{scroll-padding-top:72px}
 .vclose{top:10px;right:10px}
 .vstage{aspect-ratio:auto;padding:6px 0}
 .vslot{width:min(196px,50vw)}
-.vhint,.gl-on .vhint{display:none}
 .ab{flex-wrap:wrap;gap:4px;margin:0 10px;padding:66px 14px 10px}
 .ab-id{flex:1}
 .ab .btn{display:none}
@@ -391,11 +378,11 @@ html{scroll-padding-top:72px}
 @media (max-width:359px){.tabs a{padding:0 3px;font-size:12px;line-height:1.2;text-align:center;white-space:normal;-webkit-hyphens:auto;hyphens:auto}.now{display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.btn:hover{transform:none}}
 </style>
-<script>(function(){var r=document.documentElement;r.classList.add("js");try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return;var c=document.createElement("canvas"),g=c.getContext("webgl2")||c.getContext("webgl");if(!g)return;var x=g.getExtension("WEBGL_lose_context");if(x)x.loseContext()}catch(e){return}r.classList.add("gl-wait");function off(){if(r.classList.contains("gl-on"))return;r.classList.remove("gl-wait");r.classList.add("gl-off")}setTimeout(off,6000);addEventListener("DOMContentLoaded",function(){var s=document.createElement("script"),h=document.getElementById("gl");if(!h)return off();s.src=h.getAttribute("data-src");s.async=true;s.onerror=off;document.head.appendChild(s)})})()</script>
+
 </head>
 <body class="hub">
 <a class="skip" href="#main">跳到正文</a>
-<canvas id="gl" data-src="/assets/kvndh-canvas.js" aria-hidden="true"></canvas>
+
 <header class="top">
 <a class="wm" href="/zh-hans/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a>
 <div class="top-r"><p class="now" data-on="0" aria-hidden="true"><i></i><b></b></p><details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.6 3.7 5.6 3.7 9s-1.3 6.4-3.7 9c-2.4-2.6-3.7-5.6-3.7-9S9.6 5.6 12 3z"/></svg><span>简体中文</span></summary><ul aria-label="语言"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></details></div>
@@ -406,14 +393,13 @@ html{scroll-padding-top:72px}
 <h1 class="sr-only">kvndh App</h1>
 <section class="hero">
 <p class="mono">kvndh.com</p>
-<div><p class="hero-t" aria-hidden="true">kvndh</p><p class="lede">向下滚动，App 会逐一归位。</p>
+<div><p class="hero-t" aria-hidden="true">kvndh</p>
 <div class="cluster" aria-hidden="true"><div class="fan"><span class="row"><img src="/assets/life-tyde/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/tapey/icon-180.webp" alt="" width="72" height="72"><img src="/assets/dice-master/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/snapline/icon-180.webp" alt="" width="72" height="72"><img src="/assets/percentime/icon-180.webp" alt="" width="72" height="72"><img src="/assets/brushworks/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/readride/icon-180.webp" alt="" width="72" height="72"><img src="/assets/onpace/icon-180.webp" alt="" width="72" height="72"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="72" height="72" class="soon"><img src="/assets/codematic/icon-180.webp" alt="" width="72" height="72" class="soon"></span></div></div></div>
-<p class="cue mono"><span aria-hidden="true">↓</span><span>点按图标即可放大查看。</span></p>
 </section>
 <article class="piece" id="life-tyde">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 01 / 08</span><span class="readout" data-readout="0" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="0" data-open="0" aria-label="放大查看 Life Tyde"><img src="/assets/life-tyde/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 01 / 08</span>
+<button class="slot" type="button" data-open="0" aria-label="放大查看 Life Tyde"><img src="/assets/life-tyde/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/life-tyde/">Life Tyde</a></h2>
@@ -425,8 +411,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="tapey">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 02 / 08</span><span class="readout" data-readout="1" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="1" data-open="1" aria-label="放大查看 Tapey"><img src="/assets/tapey/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 02 / 08</span>
+<button class="slot" type="button" data-open="1" aria-label="放大查看 Tapey"><img src="/assets/tapey/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/tapey/">Tapey</a></h2>
@@ -438,8 +424,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="dice-master">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 03 / 08</span><span class="readout" data-readout="2" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="2" data-open="2" aria-label="放大查看 Dice Master"><img src="/assets/dice-master/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 03 / 08</span>
+<button class="slot" type="button" data-open="2" aria-label="放大查看 Dice Master"><img src="/assets/dice-master/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/dice-master/">Dice Master</a></h2>
@@ -451,8 +437,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="snapline">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 04 / 08</span><span class="readout" data-readout="3" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="3" data-open="3" aria-label="放大查看 SnapLine"><img src="/assets/snapline/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 04 / 08</span>
+<button class="slot" type="button" data-open="3" aria-label="放大查看 SnapLine"><img src="/assets/snapline/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/snapline/">SnapLine</a></h2>
@@ -464,8 +450,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="percentime">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 05 / 08</span><span class="readout" data-readout="4" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="4" data-open="4" aria-label="放大查看 Percentime"><img src="/assets/percentime/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 05 / 08</span>
+<button class="slot" type="button" data-open="4" aria-label="放大查看 Percentime"><img src="/assets/percentime/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/percentime/">Percentime</a></h2>
@@ -477,8 +463,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="brushworks">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 06 / 08</span><span class="readout" data-readout="5" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="5" data-open="5" aria-label="放大查看 BrushWorks"><img src="/assets/brushworks/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 06 / 08</span>
+<button class="slot" type="button" data-open="5" aria-label="放大查看 BrushWorks"><img src="/assets/brushworks/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/brushworks/">BrushWorks</a></h2>
@@ -490,8 +476,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="readride">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 07 / 08</span><span class="readout" data-readout="6" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="6" data-open="6" aria-label="放大查看 Readride"><img src="/assets/readride/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 07 / 08</span>
+<button class="slot" type="button" data-open="6" aria-label="放大查看 Readride"><img src="/assets/readride/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/readride/">Readride</a></h2>
@@ -503,8 +489,8 @@ html{scroll-padding-top:72px}
 
 <article class="piece" id="onpace">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
-<span class="lab">No. 08 / 08</span><span class="readout" data-readout="7" aria-hidden="true"></span>
-<button class="slot" type="button" data-plate="7" data-open="7" aria-label="放大查看 OnPace"><img src="/assets/onpace/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
+<span class="lab">No. 08 / 08</span>
+<button class="slot" type="button" data-open="7" aria-label="放大查看 OnPace"><img src="/assets/onpace/icon-640.webp" alt="" width="340" height="340" loading="lazy"></button>
 </div>
 <div class="cap">
 <h2><a href="/zh-hans/onpace/">OnPace</a></h2>
@@ -514,19 +500,19 @@ html{scroll-padding-top:72px}
 </div>
 </article>
 
-<section class="quiet" aria-hidden="true"><span class="qslot" data-plate="8"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span><span class="qslot" data-plate="9"><img src="/assets/codematic/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span></section>
+<section class="quiet" aria-hidden="true"><span class="qslot"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span><span class="qslot"><img src="/assets/codematic/icon-180.webp" alt="" width="64" height="64" loading="lazy"></span></section>
 
 <footer class="foot"><div><a class="wm" href="/zh-hans/"><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="translate(5.524 28) scale(0.03243 -0.03243)"><path d="M69 0V740H217V415V303H223L288 400L393 525H557L382 324L577 0H401L283 222L217 148V0Z"/></g></svg><span>kvndh</span></a></div><div><h2>联系</h2><ul><li><a href="mailto:kvndh36@naver.com">kvndh36@naver.com</a></li></ul></div><div><h2>隐私政策</h2><ul><li><a href="/zh-hans/life-tyde/privacy/">Life Tyde</a></li><li><a href="/zh-hans/tapey/privacy/">Tapey</a></li><li><a href="/zh-hans/dice-master/privacy/">Dice Master</a></li><li><a href="/zh-hans/snapline/privacy/">SnapLine</a></li><li><a href="/zh-hans/percentime/privacy/">Percentime</a></li><li><a href="/zh-hans/brushworks/privacy/">BrushWorks</a></li><li><a href="/zh-hans/readride/privacy/">Readride</a></li><li><a href="/zh-hans/onpace/privacy/">OnPace</a></li></ul></div><div><h2>语言</h2><ul class="langs"><li><a href="/ko/" lang="ko" hreflang="ko">한국어</a></li><li><a href="/en/" lang="en" hreflang="en">English</a></li><li><a href="/ja/" lang="ja" hreflang="ja">日本語</a></li><li><a href="/zh-hans/" lang="zh-Hans" hreflang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="/zh-hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li><li><a href="/de/" lang="de" hreflang="de">Deutsch</a></li><li><a href="/es/" lang="es" hreflang="es">Español</a></li><li><a href="/pt-br/" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li></ul></div><p class="copy">© kvndh</p></footer>
 </main>
 <div class="viewer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="放大查看" inert>
 <div class="vsheet">
 <button class="vclose" type="button" aria-label="关闭"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg></button>
-<div class="vstage"><div class="vslot"><img alt="" width="380" height="380"></div><p class="vhint mono gl-only">拖动即可旋转。</p></div>
+<div class="vstage"><div class="vslot"><img alt="" width="380" height="380"></div></div>
 <div class="vtext"><p class="mono vno"></p><h2></h2><p class="sub"></p><p class="hook"></p><ul></ul><p class="acts"></p></div>
 </div>
 </div>
 
-<script type="application/json" id="canvas-data">{"page":"hub","plates":[{"icon":"/assets/life-tyde/icon-640.webp","big":"/assets/life-tyde/icon-640.webp","name":"Life Tyde","no":"01","sub":"悄悄累积的个人编年史","hook":"只挑出人生里要紧的时刻，收在话题标签下，留在一条时间轴上。","bullets":["每条记录旁的年龄或经过年数","事件市集里的年代事件合集","未来日程的提醒和重复","标签筛选和仅标记的视图"],"store":"https://apps.apple.com/app/id6773198369","storeLabel":"在 App Store 上查看 Life Tyde","href":"/zh-hans/life-tyde/","support":"/zh-hans/life-tyde/support/"},{"icon":"/assets/tapey/icon-640.webp","big":"/assets/tapey/icon-640.webp","name":"Tapey","no":"02","sub":"像贴在墙上的照片拼贴","hook":"选好照片，它们就像冲印出来贴在墙上一样各自落位。加上和纸胶带和相框，看到什么样就存成什么样的墙纸。","bullets":["最多 12 张照片，Tapey Pro 最多 30 张","自动、网格、阶梯、心形、圆形布局","撤销和重做","8 种胶带颜色，4 种图案，另有 8 种 Pro 图案"],"store":"https://apps.apple.com/app/id6778635856","storeLabel":"在 App Store 上查看 Tapey","href":"/zh-hans/tapey/","support":"/zh-hans/tapey/support/"},{"icon":"/assets/dice-master/icon-640.webp","big":"/assets/dice-master/icon-640.webp","name":"Dice Master","no":"03","sub":"计算公式自动结算，按颜色分小计","hook":"定好面数和个数后轻点屏幕，骰子停住的那一刻，总和连同算式一并显示。","bullets":["求和、求积、最大值等 6 种计算公式","按骰子颜色分的小计","3D 骰子和 2D 视图切换","全部同时和逐个投掷两种进行方式"],"store":"https://apps.apple.com/app/id6765857608","storeLabel":"在 App Store 上查看 Dice Master","href":"/zh-hans/dice-master/","support":"/zh-hans/dice-master/support/"},{"icon":"/assets/snapline/icon-640.webp","big":"/assets/snapline/icon-640.webp","name":"SnapLine","no":"04","sub":"给拍好的照片重新铺格线","hook":"在照片上铺一层相机网格，凭感觉摆出想要的构图。","bullets":["线条的折弯和倾斜","增加折点，尖角或平滑","添加线条和删除线条","自动蒙版一次擦净"],"store":"https://apps.apple.com/app/id6809834907","storeLabel":"在 App Store 上查看 SnapLine","href":"/zh-hans/snapline/","support":"/zh-hans/snapline/support/"},{"icon":"/assets/percentime/icon-640.webp","big":"/assets/percentime/icon-640.webp","name":"Percentime","no":"05","sub":"走多远就填多满的时段","hook":"从今天到 2020 年代，走到哪里就填到哪里的刻度","bullets":["六个不用输入的时段","过了午夜就打开的下一段","按下一级单位切开的格子","与时段相称的小数位"],"store":"https://apps.apple.com/app/id6814066451","storeLabel":"在 App Store 上查看 Percentime","href":"/zh-hans/percentime/","support":"/zh-hans/percentime/support/"},{"icon":"/assets/brushworks/icon-640.webp","big":"/assets/brushworks/icon-640.webp","name":"BrushWorks","no":"06","sub":"靠用心而非天赋的作品","hook":"选一张喜欢的照片，用手指在屏幕上涂抹。不会画画也没关系，花时间一点点涂满就行。","bullets":["直接从照片取来的颜色","有厚度的颜料表现","眼睛按钮对照原始照片","薄涂、笔触、厚涂三支画笔"],"store":"https://apps.apple.com/app/id6810951573","storeLabel":"在 App Store 上查看 BrushWorks","href":"/zh-hans/brushworks/","support":"/zh-hans/brushworks/support/"},{"icon":"/assets/readride/icon-640.webp","big":"/assets/readride/icon-640.webp","name":"Readride","no":"07","sub":"从小说到新闻，一次几个词","hook":"Readride 把要读的文字一次几个词地显示在同一个位置，眼睛不用来回移动。小说、新闻、随笔、PDF 和 ePub，先整理干净，再一直读到最后。","bullets":["去掉页眉、页脚和页码","接上句子中间断开的行","去掉的内容可逐项恢复","同一位置，一次几个词"],"store":"https://apps.apple.com/app/id6816576585","storeLabel":"在 App Store 上查看 Readride","href":"/zh-hans/readride/","support":"/zh-hans/readride/support/"},{"icon":"/assets/onpace/icon-640.webp","big":"/assets/onpace/icon-640.webp","name":"OnPace","no":"08","sub":"每一站的提前与落后","hook":"每到一个检查点，都能知道自己比计划快了还是慢了","bullets":["以分和秒显示的领先与落后","下一个检查点及通过时间","预计到达时间","步行和驾车路线"],"store":"https://apps.apple.com/app/id6816075554","storeLabel":"在 App Store 上查看 OnPace","href":"/zh-hans/onpace/","support":"/zh-hans/onpace/support/"},{"icon":"/assets/tailorcolor/icon-360.webp","soon":true},{"icon":"/assets/codematic/icon-360.webp","soon":true}],"ui":{"total":"08","more":"详情","support":"支持"}}</script>
+<script type="application/json" id="canvas-data">{"page":"hub","plates":[{"icon":"/assets/life-tyde/icon-640.webp","big":"/assets/life-tyde/icon-640.webp","name":"Life Tyde","no":"01","sub":"悄悄累积的个人编年史","hook":"只挑出人生里要紧的时刻，收在话题标签下，留在一条时间轴上。","bullets":["每条记录旁的年龄或经过年数","每个有记录的年份一行“那时的世界”","未来日程的提醒和重复","标签筛选和仅标记的视图"],"store":"https://apps.apple.com/app/id6773198369","storeLabel":"在 App Store 上查看 Life Tyde","href":"/zh-hans/life-tyde/","support":"/zh-hans/life-tyde/support/"},{"icon":"/assets/tapey/icon-640.webp","big":"/assets/tapey/icon-640.webp","name":"Tapey","no":"02","sub":"像贴在墙上的照片拼贴","hook":"选好照片，它们就像冲印出来贴在墙上一样各自落位。加上和纸胶带和相框，看到什么样就存成什么样的墙纸。","bullets":["最多 12 张照片，Tapey Pro 最多 30 张","自动、网格、阶梯、心形、圆形布局","撤销和重做","8 种胶带颜色，4 种图案，另有 8 种 Pro 图案"],"store":"https://apps.apple.com/app/id6778635856","storeLabel":"在 App Store 上查看 Tapey","href":"/zh-hans/tapey/","support":"/zh-hans/tapey/support/"},{"icon":"/assets/dice-master/icon-640.webp","big":"/assets/dice-master/icon-640.webp","name":"Dice Master","no":"03","sub":"计算公式自动结算，按颜色分小计","hook":"定好面数和个数后轻点屏幕，骰子停住的那一刻，总和连同算式一并显示。","bullets":["求和、求积、最大值等 6 种计算公式","按骰子颜色分的小计","3D 骰子和 2D 视图切换","全部同时和逐个投掷两种进行方式"],"store":"https://apps.apple.com/app/id6765857608","storeLabel":"在 App Store 上查看 Dice Master","href":"/zh-hans/dice-master/","support":"/zh-hans/dice-master/support/"},{"icon":"/assets/snapline/icon-640.webp","big":"/assets/snapline/icon-640.webp","name":"SnapLine","no":"04","sub":"给拍好的照片重新铺格线","hook":"在照片上铺一层相机网格，凭感觉摆出想要的构图。","bullets":["线条的折弯和倾斜","增加折点，尖角或平滑","添加线条和删除线条","自动蒙版一次擦净"],"store":"https://apps.apple.com/app/id6809834907","storeLabel":"在 App Store 上查看 SnapLine","href":"/zh-hans/snapline/","support":"/zh-hans/snapline/support/"},{"icon":"/assets/percentime/icon-640.webp","big":"/assets/percentime/icon-640.webp","name":"Percentime","no":"05","sub":"走多远就填多满的时段","hook":"从今天到 2020 年代，走到哪里就填到哪里的刻度","bullets":["六个不用输入的时段","过了午夜就打开的下一段","按下一级单位切开的格子","与时段相称的小数位"],"store":"https://apps.apple.com/app/id6814066451","storeLabel":"在 App Store 上查看 Percentime","href":"/zh-hans/percentime/","support":"/zh-hans/percentime/support/"},{"icon":"/assets/brushworks/icon-640.webp","big":"/assets/brushworks/icon-640.webp","name":"BrushWorks","no":"06","sub":"靠用心而非天赋的作品","hook":"选一张喜欢的照片，用手指在屏幕上涂抹。不会画画也没关系，花时间一点点涂满就行。","bullets":["直接从照片取来的颜色","有厚度的颜料表现","眼睛按钮对照原始照片","薄涂、笔触、厚涂三支画笔"],"store":"https://apps.apple.com/app/id6810951573","storeLabel":"在 App Store 上查看 BrushWorks","href":"/zh-hans/brushworks/","support":"/zh-hans/brushworks/support/"},{"icon":"/assets/readride/icon-640.webp","big":"/assets/readride/icon-640.webp","name":"Readride","no":"07","sub":"从小说到新闻，一次几个词","hook":"Readride 把要读的文字一次几个词地显示在同一个位置，眼睛不用来回移动。小说、新闻、随笔、PDF 和 ePub，先整理干净，再一直读到最后。","bullets":["去掉页眉、页脚和页码","接上句子中间断开的行","去掉的内容可逐项恢复","同一位置，一次几个词"],"store":"https://apps.apple.com/app/id6816576585","storeLabel":"在 App Store 上查看 Readride","href":"/zh-hans/readride/","support":"/zh-hans/readride/support/"},{"icon":"/assets/onpace/icon-640.webp","big":"/assets/onpace/icon-640.webp","name":"OnPace","no":"08","sub":"每一站的提前与落后","hook":"每到一个检查点，都能知道自己比计划快了还是慢了","bullets":["以分和秒显示的领先与落后","下一个检查点及通过时间","预计到达时间","步行和驾车路线"],"store":"https://apps.apple.com/app/id6816075554","storeLabel":"在 App Store 上查看 OnPace","href":"/zh-hans/onpace/","support":"/zh-hans/onpace/support/"},{"icon":"/assets/tailorcolor/icon-360.webp","soon":true},{"icon":"/assets/codematic/icon-360.webp","soon":true}],"ui":{"total":"08","more":"详情","support":"支持"}}</script>
 <script>(function(){
   // 허브 화첩: 지금 보는 앱 번호(오른쪽 위 버밀리언 점은 여기 한 곳)와 크게 보기
   var D=JSON.parse(document.getElementById('canvas-data').textContent),P=D.plates,U=D.ui;

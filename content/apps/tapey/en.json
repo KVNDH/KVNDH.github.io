@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Photos find their place",
    "body": [
-    "Pick your photos and Tapey lays them out like prints on a wall. Drag a photo to move it, or use two fingers to resize and turn it. Any photo you move by hand stays pinned where you put it."
+    "Pick your photos and Tapey lays them out like prints on a wall. Drag a photo to move it, or use two fingers to resize and turn it. In the Auto layout, any photo you move by hand stays pinned where you put it. When a photo doesn't fit its window, tap Reframe to choose the part that shows."
    ],
    "bullets": [
     "Up to 12 photos, or 30 with Tapey Pro",
@@ -30,12 +30,13 @@
    "layout": "feat",
    "title": "Tape and frames",
    "body": [
-    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note. Changes to the background, tape, and frame can be undone too."
+    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note. Select a photo and tap Tape to give just that photo its own tape and frame. Changes to the background, tape, and frame can be undone too."
    ],
    "bullets": [
     "8 tape colors, 4 patterns, and 8 Pro patterns",
     "White borders and Polaroid frames",
-    "B&W for the whole wall or a single photo"
+    "B&W for the whole wall or a single photo",
+    "Handwritten notes in 31 languages"
    ],
    "visual": {
     "type": "kit",
@@ -115,7 +116,8 @@
    "q": "Adding photos",
    "a": [
     "On the start screen, tap Add photos, then choose your photos. You can also drag photos in from another app. While editing, tap Add in the Photos step. Take Photo and Choose File in the menu let you shoot a photo or pick an image from Files. When you replace a photo or pick My photo as the background, you choose Photo Library, Take Photo, or Choose File.",
-    "Each wallpaper holds up to 12 photos, or 30 with Tapey Pro. The Heart layout appears once you have 6 or more. Circle needs 8 or more, and Star, a Tapey Pro layout, needs 10 or more."
+    "Each wallpaper holds up to 12 photos, or 30 with Tapey Pro. The Heart layout appears once you have 6 or more. Circle needs 8 or more, and Star, a Tapey Pro layout, needs 10 or more. If you go over the free limit, See Pro in the notice shows you Tapey Pro.",
+    "Turn on Also save shots to Photos in Settings, and photos you take in the app go to the Photos app as well. It's off at first, and when you turn it on, iOS asks whether Tapey may add photos."
    ]
   },
   {
@@ -129,20 +131,21 @@
    "q": "The ad when you save",
    "a": [
     "Tapey shows one full-screen ad when you save a wallpaper. Google AdMob picks and serves that ad.",
-    "If the ad can't load, or your last save failed, Tapey saves right away without an ad."
+    "If the ad can't load, or your last save failed, Tapey saves right away without an ad. Tapey waits up to 60 seconds for the ad, and an ad that arrives later is not shown. Editing is locked while saving. If waiting for an ad makes saving take longer, Getting ready to save appears.",
+    "On a device that has seen the ad three or more times, the screen that appears after saving shows a one-line Tapey Pro note after the ad. If you close it, it stays hidden until you have seen the ad three more times."
    ]
   },
   {
    "q": "Tapey Pro and restoring the purchase",
    "a": [
-    "Buy Tapey Pro from the menu or the start screen. You pay once, and it is not a subscription. After that, no ad appears when you save, and you can use up to 30 photos, the premium tapes, and the new frames and layouts. Before buying, you can still pick Pro items to preview them. If you save with them in place, you choose between Buy Tapey Pro, Save with basic items, and Keep editing.",
+    "Buy Tapey Pro from the menu or the start screen. You pay once, and it is not a subscription. After that, no ad appears when you save, and you can use up to 30 photos, the premium tapes, and the new frames and layouts. Before buying, you can still pick Pro items to preview them. If you save with them in place, you choose between Buy Tapey Pro, Save with basic items, and Keep editing. A Pro pattern or frame chosen for a single photo also counts as a Pro item. If you save with basic items, that photo is saved with Solid tape and a Border.",
     "On a new device or after reinstalling, open Settings from the menu and tap Restore purchase. With the same Apple Account, you won't be charged again. If you bought Remove ads earlier, you already have Tapey Pro."
    ]
   },
   {
    "q": "Tracking and ad preferences",
    "a": [
-    "The first time you open the app, as it gets ads ready, iOS asks whether Tapey may track you. If you have Tapey Pro, it doesn't ask. The app works the same either way, and you can change your answer in Settings > Privacy & Security > Tracking.",
+    "After you install the app, it gets ads ready once you first add a photo to the wall, and iOS then asks whether Tapey may track you. If you have Tapey Pro, it doesn't ask. The app works the same either way, and you can change your answer in Settings > Privacy & Security > Tracking.",
     "Where ad consent is required, such as the European Economic Area, change your choices under Ad preferences at the bottom of the start screen. There, the consent form appears before the tracking prompt."
    ]
   },
@@ -157,7 +160,8 @@
    "q": "Setting the wallpaper",
    "a": [
     "Open the image you just saved in the Photos app, tap Share, then choose Use as Wallpaper. Tap Add, then choose Set as Wallpaper Pair.",
-    "The same steps are under How to set it as wallpaper on the screen that appears after saving."
+    "The same steps are under How to set it as wallpaper on the screen that appears after saving.",
+    "In the Shortcuts app, Tapey's Last Wallpaper gets the wallpaper you last saved as an image. It runs without opening the app, and you can follow it with a Shortcuts action that changes your wallpaper."
    ]
   },
   {
@@ -171,7 +175,7 @@
    "q": "Internet connection",
    "a": [
     "Arranging, decorating, and saving work offline. Ads, buying Tapey Pro, and restoring the purchase need a connection.",
-    "The handwriting fonts for notes are installed with the app. One is used when the app language is Korean, another for all other languages. Characters those fonts don't include appear in the system font."
+    "The handwriting fonts for notes are installed with the app. Each note is drawn in a handwriting font that matches its characters: Hangul, Latin, Greek, Cyrillic, kana, Chinese characters, Thai, or Devanagari. Characters those fonts don't include appear in the system font."
    ]
   },
   {
@@ -183,7 +187,7 @@
  ],
  "privacy": {
   "title": "Tapey Privacy Policy",
-  "effectiveDate": "2026-10-15",
+  "effectiveDate": "2026-10-20",
   "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Tapey Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -205,15 +209,16 @@
     ],
     "bullets": [
      "Copies of the photos and background photos you pick or take: used to reopen your work",
-     "Layout and decoration settings, photo notes: used to reopen your work",
+     "Layout and decoration settings (including the tape, frame, and visible part set for each photo), photo notes: used to reopen your work",
      "Up to 3 recent projects with preview images: used for Recent on the start screen",
-     "Language choice, Tapey Pro purchase status, save count and whether the rating request was shown, whether the first-run guides were shown, view mode choice, screen layout settings carried over from an earlier version: used to run the app and to time the rating request"
+     "One copy of the wallpaper you saved last: used for the Last Wallpaper shortcut, replaced each time you save",
+     "Language choice, Tapey Pro purchase status, save count and whether the rating request was shown, number of ads seen and a record of closing the Tapey Pro note, whether this device has gotten ads ready before, whether the first-run guides and the shape layout notice were shown, view mode choice and the Also save shots to Photos setting, screen layout settings carried over from an earlier version: used to run the app and to time the rating request, the Tapey Pro note, and ad preparation"
     ]
    },
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. Wallpapers saved to the Photos app are deleted in the Photos app.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. The last wallpaper used by the shortcut is replaced each time you save, so only one is kept. Start over in the menu does not remove it, and it is deleted when you delete the app. Wallpapers and photos you take that are saved to the Photos app are deleted in the Photos app.",
      "Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -256,7 +261,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "Only photos you choose in the iOS photo picker or file picker, drag into the app, or take with Take Photo are passed to the app. iOS asks for camera access the first time you tap Take Photo. If you decline, you can still add photos the other ways. A photo you take is kept as a copy in the app's storage, like the photos you pick, and is used only for your wallpaper work. It is not saved separately to the Photos app, and the developer does not receive it. The app does not ask for permission to read your photo library. When saving a finished wallpaper, the app uses only the permission to add photos."
+     "Only photos you choose in the iOS photo picker or file picker, drag into the app, or take with Take Photo are passed to the app. iOS asks for camera access the first time you tap Take Photo. If you decline, you can still add photos the other ways. A photo you take is kept as a copy in the app's storage, like the photos you pick, and is used only for your wallpaper work. It also goes to the Photos app only if you turn on Also save shots to Photos in Settings. This setting is off at first, and iOS asks for the permission to add photos when you turn it on. The developer does not receive photos you take. The app does not ask for permission to read your photo library. When adding a finished wallpaper or a photo you take to the Photos app, the app uses only the permission to add photos."
     ],
     "bullets": []
    },
@@ -264,7 +269,7 @@
     "title": "Automatic collection and how to refuse it",
     "paragraphs": [
      "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) for advertising, which may collect the information below when it loads and shows ads.",
-     "When you open the app and it gets ads ready, iOS shows the App Tracking Transparency (ATT) prompt if you haven't answered it yet. It is not shown when you save. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and ads still appear. You can change this in iOS Settings > Privacy & Security > Tracking.",
+     "On a newly installed device, the app gets ads ready only after you first add a photo to the wall, and saves before that have no ads. Once a device has gotten ads ready, the app does so each time it opens. When it gets ads ready, iOS shows the App Tracking Transparency (ATT) prompt if you haven't answered it yet. It is not shown when you save. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and ads still appear. You can change this in iOS Settings > Privacy & Security > Tracking.",
      "In regions where ad consent is required, such as the European Economic Area, Google's consent form appears first. If the result is that ads can't be requested, the tracking prompt is not shown either. There, you can change your choices under Ad preferences at the bottom of the start screen.",
      "After you buy Tapey Pro (including an earlier Remove ads purchase), no ads appear, and from the next launch the app no longer starts AdMob, so neither the consent form nor the tracking prompt appears."
     ],
@@ -312,6 +317,8 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show what changed and the new effective date.",
+     "2026-10-20: Added the setting that also saves photos you take to the Photos app, the one last saved wallpaper kept for the shortcut, and the tape, frame, and visible part set for each photo in 2.1.0 to Information processed, Processing and retention period, and Security measures. Corrected when ads are prepared on a newly installed device. The previous effective date was 2026-10-19.",
+     "2026-10-19: Added the number of ads seen and a record of closing the Tapey Pro note, used in 2.0.2 for the Tapey Pro note on the screen after saving, to Information processed. The previous effective date was 2026-10-15.",
      "2026-10-15: Added photos taken with Take Photo, images chosen with Choose File, and camera access to Information processed and Security measures. Corrected the temporary file for sharing to a copy of the saved wallpaper. The previous effective date was 2026-10-06."
     ],
     "bullets": []
