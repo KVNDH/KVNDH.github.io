@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -371,7 +377,7 @@ html{scroll-padding-top:72px}
 <section class="sup">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/codematic/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>Codematic</span><span class="mono"></span></p></div>
 <h1>よくある質問</h1>
-<div class="faq"><details><summary>入れられるコードの種類</summary><p>App Store のオファーコード（サブスクリプションとアプリ内課金）、アプリのプロモーションコード、そのほかのコードを入れられます。種類はコードを追加するときに「Offer code」（オファーコード）「App promo code」（アプリのプロモーションコード）「Other code」（そのほかのコード）から選びます。App Store Connect のオファーコード CSV は、種類とアプリをファイルから読み取ります。</p></details><details><summary>オファーコードの CSV を入手する場所</summary><p>App Store Connect で対象のサブスクリプションまたはアプリ内課金のオファーコードの画面を開き、ワンタイムコードを作成すると CSV をダウンロードできます。そのファイルを「ファイル」アプリに置き、「Add codes」（コードを追加）を押して「Import CSV file」（CSV の読み込み）を選んでください。</p></details><details><summary>同じファイルを二度読み込んだとき</summary><p>ファイルのコードがすでにほかのセットに入っていると、アプリが「File already imported」（読み込み済みのファイル）と知らせ、何も追加しません。そのセットが「Trash」（ゴミ箱）にあるときは、その通知から元に戻せます。</p></details><details><summary>リンクとコードのどちらをコピーするか</summary><p>セットの画面の上部で、「Link」（リンク）「Code」（コード）「Both」（両方）から選びます。オファーコードのリンクを受け取った人が開くと、App Store のコード引き換え画面が開きます。App Store の ID がないオファーコードのセットと、そのほかのコードは、コードだけをコピーします。</p></details><details><summary>間違えて渡したコードの取り消し</summary><p>発行した直後のカードにある「Undo」（取り消し）を押すか、メニューの「Handed out」（渡した記録）でその行をスワイプして取り消します。取り消したコードは未使用に戻り、書いておいた受け取る人の名前も消えます。すでに相手に伝えたコードが使われたかどうかは、アプリではわかりません。</p></details><details><summary>渡したコードが使われたかどうかの確認</summary><p>アプリでは確認できません。Codematic はどのコードを誰に渡したかだけを記録します。使用状況は App Store Connect で確認してください。</p></details><details><summary>セットを間違えて削除したとき</summary><p>削除したセットは、コードと一緒にゴミ箱に 30 日間残ります。セットの一覧の端にある「Trash」から元に戻せます。30 日を過ぎると、次にアプリを開いたときに完全に削除されます。</p></details><details><summary>ほかの端末での表示</summary><p>セットとコードは iCloud に保存され、同じ Apple Account でサインインした iPhone と iPad に表示されます。「Info」（情報）画面の「iCloud storage」（iCloud 保存）の行に状態が出ます。iCloud にサインインしていない場合は、その端末に保存されます。App Store Connect API キーは端末ごとに登録します。</p></details><details><summary>App Store Connect API キーの作成場所と保存場所</summary><p>チームキーは App Store Connect の「ユーザとアクセス」&gt;「統合」で、個人キーは自分のユーザプロフィールで作成し、キー ID と .p8 ファイルを登録します。チームキーは Issuer ID も入力します。手順はアプリ内の「How to create a key」（キーの作り方）にあります。キーは登録した端末のキーチェーンにだけ保存され、iCloud やほかの端末には送られません。.p8 ファイルは一度しかダウンロードできないため、元のファイルを別に保管してください。</p></details><details><summary>キーの削除</summary><p>「Info」画面で「App Store Connect key」（App Store Connect キー）を開き、「Delete key」（キーを削除）を押してください。読み込んだセットはそのまま残ります。キーそのものを使えなくするには、App Store Connect でそのキーを無効にします。</p></details><details><summary>発行したばかりのコードが App Store で使えないとき</summary><p>App Store Connect で作成したばかりのコードは、Apple で使えるようになるまで数時間かかることがあります。</p></details><details><summary>有効期限の通知</summary><p>通知は送りません。有効期限はセットの画面に表示されます。</p></details><details><summary>アプリの言語</summary><p>アプリの画面は英語と韓国語です。端末の優先する言語のリストで、この二つのうち先にあるほうで表示され、どちらもなければ英語で表示されます。このページでかぎ括弧に入れた英語の名前は、英語の画面に出る名前です。</p></details></div>
+<div class="faq"><details id="q1"><summary>入れられるコードの種類</summary><p>App Store のオファーコード（サブスクリプションとアプリ内課金）、アプリのプロモーションコード、そのほかのコードを入れられます。種類はコードを追加するときに「Offer code」（オファーコード）「App promo code」（アプリのプロモーションコード）「Other code」（そのほかのコード）から選びます。App Store Connect のオファーコード CSV は、種類とアプリをファイルから読み取ります。</p></details><details id="q2"><summary>オファーコードの CSV を入手する場所</summary><p>App Store Connect で対象のサブスクリプションまたはアプリ内課金のオファーコードの画面を開き、ワンタイムコードを作成すると CSV をダウンロードできます。そのファイルを「ファイル」アプリに置き、「Add codes」（コードを追加）を押して「Import CSV file」（CSV の読み込み）を選んでください。</p></details><details id="q3"><summary>同じファイルを二度読み込んだとき</summary><p>ファイルのコードがすでにほかのセットに入っていると、アプリが「File already imported」（読み込み済みのファイル）と知らせ、何も追加しません。そのセットが「Trash」（ゴミ箱）にあるときは、その通知から元に戻せます。</p></details><details id="q4"><summary>リンクとコードのどちらをコピーするか</summary><p>セットの画面の上部で、「Link」（リンク）「Code」（コード）「Both」（両方）から選びます。オファーコードのリンクを受け取った人が開くと、App Store のコード引き換え画面が開きます。App Store の ID がないオファーコードのセットと、そのほかのコードは、コードだけをコピーします。</p></details><details id="q5"><summary>間違えて渡したコードの取り消し</summary><p>発行した直後のカードにある「Undo」（取り消し）を押すか、メニューの「Handed out」（渡した記録）でその行をスワイプして取り消します。取り消したコードは未使用に戻り、書いておいた受け取る人の名前も消えます。すでに相手に伝えたコードが使われたかどうかは、アプリではわかりません。</p></details><details id="q6"><summary>渡したコードが使われたかどうかの確認</summary><p>アプリでは確認できません。Codematic はどのコードを誰に渡したかだけを記録します。使用状況は App Store Connect で確認してください。</p></details><details id="q7"><summary>セットを間違えて削除したとき</summary><p>削除したセットは、コードと一緒にゴミ箱に 30 日間残ります。セットの一覧の端にある「Trash」から元に戻せます。30 日を過ぎると、次にアプリを開いたときに完全に削除されます。</p></details><details id="q8"><summary>ほかの端末での表示</summary><p>セットとコードは iCloud に保存され、同じ Apple Account でサインインした iPhone と iPad に表示されます。「Info」（情報）画面の「iCloud storage」（iCloud 保存）の行に状態が出ます。iCloud にサインインしていない場合は、その端末に保存されます。App Store Connect API キーは端末ごとに登録します。</p></details><details id="q9"><summary>App Store Connect API キーの作成場所と保存場所</summary><p>チームキーは App Store Connect の「ユーザとアクセス」&gt;「統合」で、個人キーは自分のユーザプロフィールで作成し、キー ID と .p8 ファイルを登録します。チームキーは Issuer ID も入力します。手順はアプリ内の「How to create a key」（キーの作り方）にあります。キーは登録した端末のキーチェーンにだけ保存され、iCloud やほかの端末には送られません。.p8 ファイルは一度しかダウンロードできないため、元のファイルを別に保管してください。</p></details><details id="q10"><summary>キーの削除</summary><p>「Info」画面で「App Store Connect key」（App Store Connect キー）を開き、「Delete key」（キーを削除）を押してください。読み込んだセットはそのまま残ります。キーそのものを使えなくするには、App Store Connect でそのキーを無効にします。</p></details><details id="q11"><summary>発行したばかりのコードが App Store で使えないとき</summary><p>App Store Connect で作成したばかりのコードは、Apple で使えるようになるまで数時間かかることがあります。</p></details><details id="q12"><summary>有効期限の通知</summary><p>通知は送りません。有効期限はセットの画面に表示されます。</p></details><details id="q13"><summary>アプリの言語</summary><p>アプリの画面は英語と韓国語です。端末の優先する言語のリストで、この二つのうち先にあるほうで表示され、どちらもなければ英語で表示されます。このページでかぎ括弧に入れた英語の名前は、英語の画面に出る名前です。</p></details></div>
 </section>
 <section class="help">
 <div><h2>お問い合わせ</h2><p>ご質問や不具合はメールでお送りください。お使いの機種と iOS のバージョンを書き添えていただけると、確認が早く進みます。</p></div>
@@ -388,6 +394,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

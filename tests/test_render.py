@@ -298,7 +298,7 @@ class OtherPagesTest(unittest.TestCase):
         # 첫 화면 더미는 위에서부터 1, 2, ... 줄이고 맨 위가 출시된 첫 앱(출시 전 앱은 뒤로)
         html = render.render_hub(Site(make_site(unreleased=True)), "ko")
         fan = re.search(r'<div class="fan" style="--rows:2">(.*?)</div>', html).group(1)
-        self.assertTrue(fan.startswith('<span class="row"><img src="/assets/demo/icon-180.webp"'))
+        self.assertTrue(fan.startswith('<span class="row"><a href="#demo"><img src="/assets/demo/icon-180.webp"'))
         self.assertEqual(fan.count('<span class="row">'), 2)
 
     def test_canvas_json_cannot_close_its_script(self):
@@ -593,6 +593,56 @@ class ListCapTest(unittest.TestCase):
         for slug in ("demo", "demo2", "demo3"):
             self.assertEqual(html.count(f'href="/ko/{slug}/"'), 1)
         self.assertNotIn(".cap h2 a", self.hub)
+
+
+class ShortcutTest(unittest.TestCase):
+    """10-25 사용성 제안 4단계(원인 ③): 앱 사이, 문서 안 지름길."""
+
+    def setUp(self):
+        self.site = Site(make_site())
+        self.sub = render.css(self.site)
+        self.js = render.text(self.site, "page.js")
+
+    def test_fan_icons_link_to_their_plates(self):
+        # O: 첫 화면 더미 아이콘이 다 보이지만 누를 수 없어 8번째 판까지 390x844 스크롤 5388px, Tab 25회
+        html = render.render_hub(grow(Site(make_site(unreleased=True)), 3), "ko")
+        fan = re.search(r'<div class="fan" style="--rows:\d+">(.*?)</div>', html).group(1)
+        self.assertNotIn('<div class="cluster" aria-hidden', html)
+        links = re.findall(r'<a href="#([^"]+)"><img [^>]*alt="([^"]+)"', fan)
+        self.assertEqual(links, [("demo", "Demo"), ("demo2", "Demo2"), ("demo3", "Demo3")])
+        for slug, _ in links:
+            self.assertIn(f'<article class="piece" id="{slug}">', html)
+        self.assertNotIn('href="#soon"', html)                           # 출시 전 앱은 흐린 그림 그대로
+        self.assertIn('alt="" width="72" height="72" class="soon">', fan)
+        self.assertIn(".fan a{display:block", render.css(self.site, hub=True))
+
+    def test_other_app_is_reached_through_the_wordmark_and_fan(self):
+        # T: 앱 쪽에서 다른 앱으로 가는 새 목록은 두지 않고 낱말표(허브) 다음 더미 링크로 간다
+        site = grow(Site(make_site()), 2)
+        support = render.render_support(site, "ko", "demo")
+        self.assertIn('<a class="wm" href="/ko/">', support)
+        self.assertEqual(support.count('href="/ko/demo2/'), 0)
+        self.assertIn('<a href="#demo2">', render.render_hub(site, "ko"))
+
+    def test_privacy_toc_folds_on_narrow_screens(self):
+        # E: 900px 이하에서 목차를 통째로 숨겨 de 390폭 12절 7291px 에 목차 0개였다
+        html = render.render_privacy(self.site, "en", "demo")
+        self.assertIn('<nav class="toc" aria-label="en toc"><details><summary>en toc</summary><ol><li><a href="#p1">', html)
+        narrow = rule(self.sub, ".toc", "(max-width:900px)")
+        self.assertNotIn("display:none", narrow)
+        self.assertIn("position:static", narrow)
+        self.assertIn("min-height:44px", rule(self.sub, ".toc summary", "(max-width:900px)"))
+        self.assertIn("matchMedia('(min-width:901px)')", self.js)      # 넓은 화면에서는 늘 펼친다
+        self.assertIn(".toc", self.sub.split("@media print{")[1].split("{")[0])   # 인쇄에서는 그대로 뺀다
+
+    def test_faq_answers_have_addresses(self):
+        # AD: 지원 답에 주소가 없어 #q7 같은 링크로 답을 가리킬 수 없었다
+        site = Site(make_site())
+        site.copy[("demo", "en")] = site.copy[("demo", "en")] | {"faq": [{"q": f"q{i}", "a": ["a"]} for i in range(1, 8)]}
+        html = render.render_support(site, "en", "demo")
+        self.assertEqual(re.findall(r'<details id="(q\d+)">', html), [f"q{i}" for i in range(1, 8)])
+        self.assertIn("addEventListener('hashchange',reveal)", self.js)
+        self.assertIn("d.tagName==='DETAILS')d.open=true", self.js)
 
 
 if __name__ == "__main__":

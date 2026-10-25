@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -371,7 +377,7 @@ html{scroll-padding-top:72px}
 <section class="sup">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/tapey/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>Tapey</span><span class="mono">No. 02 / 08</span></p></div>
 <h1>常见问题</h1>
-<div class="faq"><details><summary>添加照片的方法</summary><p>在起始画面点添加照片，然后挑选照片。也可以从其他 App 把照片拖进来。编辑过程中，点照片步骤里的添加。也可以用菜单里的拍照当场拍一张，或用选取文件挑选文件里的图片。替换照片或者选择背景的我的照片时，可以在照片图库、拍照、选取文件中选一个。</p><p>一张墙纸最多放 12 张照片，Tapey Pro 最多 30 张。布局步骤里的心形，要照片满 6 张才会出现。圆形要满 8 张，Tapey Pro 的星形要满 10 张。超出免费上限时，点提示里的查看 Pro 就能看到 Tapey Pro。</p><p>在设置里打开拍摄的照片同时存入「照片」，App 里拍的照片也会存进照片 App。这个选项一开始是关闭的，打开时 iOS 会问要不要让 Tapey 添加照片。</p></details><details><summary>保存好的墙纸在哪里</summary><p>点编辑画面右上角的保存按钮，或者最后一步的保存，墙纸就以设置里选的分辨率存成 PNG 文件，放进照片 App。第一次保存时，iOS 会问要不要让 Tapey 添加照片。</p><p>如果保存失败，请在设置 &gt; Tapey 里允许访问照片。点提示里的打开设置，就会直接打开那个页面。</p></details><details><summary>保存时出现的广告</summary><p>保存墙纸时会出现一次全屏广告。广告由 Google AdMob 挑选和展示。</p><p>广告没有加载成功，或者上一次保存失败时，会不显示广告直接保存。等待广告最多 60 秒，之后才到的广告不会显示。保存过程中无法编辑。如果等广告让保存变慢，会显示正在准备保存。</p><p>在已经看过 3 次以上广告的设备上，广告之后，保存完成的窗口里会出现一行 Tapey Pro 的提示。关掉后，要再看 3 次广告才会再出现。</p></details><details><summary>Tapey Pro 和恢复购买</summary><p>在菜单或者起始画面的 Tapey Pro 里购买。只需付费一次，不是订阅。购买之后，保存时不再出现广告，还能用到 30 张照片、高级胶带以及新相框和新布局。购买前也可以选用 Pro 项目先预览，这时点保存，就在购买 Tapey Pro、用基本项目保存和继续编辑之间选一个。只为一张照片选的 Pro 图案和相框也算 Pro 项目。选用基本项目保存时，这张照片会以纯色胶带和边框保存。</p><p>更换设备或者重新安装 App 后，打开菜单里的设置，点恢复购买。使用同一个 Apple 账户不会再次收费。以前买过移除广告的话，直接就能用 Tapey Pro。</p></details><details><summary>跟踪许可和广告设置</summary><p>安装 App 后，第一次往墙上添加照片时才开始准备广告，这时 iOS 会询问是否允许跟踪。已购买 Tapey Pro 的话不会询问。不允许也不影响使用，这个选择可以在 iOS 设置 &gt; 隐私与安全性 &gt; 跟踪里更改。</p><p>在欧洲经济区这类需要广告同意的地区，可以在起始画面下方的广告设置里更改同意内容。在这些地区，同意窗口会先于跟踪许可窗口出现。</p></details><details><summary>作品内容的存放位置</summary><p>选定的照片和背景照片的副本、布局和备注，都保存在 App 的存储空间里，以便下次打开 App 时接着编辑。在菜单的重新开始里选择重新开始，当前的作品就会清空。选择保留并重新开始，会先把当前的作品移到最近作品，再重新开始。删除 App 则会全部删除。</p><p>保存之后点新建，当前的作品就会移到最近作品。最近作品最多保留 3 个，超出时从最旧的开始删除。</p></details><details><summary>设为墙纸的方法</summary><p>在照片 App 里打开刚保存的图片，点共享，选择用作墙纸。点添加，再选择设为墙纸组合即可。</p><p>保存完成的窗口里，如何设为墙纸下面也是同样的步骤。</p><p>在快捷指令 App 里使用 Tapey 的最近保存的墙纸，可以把最后保存的墙纸作为图片取出。它不用打开 App 就能运行，可以接在更换墙纸的快捷指令操作后面使用。</p></details><details><summary>在 iPad 上使用</summary><p>Tapey 在 iPad 上也可以使用。在 iPad 上做的是竖屏和横屏共用的正方形墙纸，编辑画面里可以在两种方向之间切换查看。</p><p>在设置的分辨率里选择 iPhone 的尺寸，用 iPad 也能做 iPhone 的墙纸。</p></details><details><summary>网络连接</summary><p>排列照片、装饰和保存都不需要联网。广告、购买 Tapey Pro 和恢复购买需要联网。</p><p>备注的手写字体随 App 一起安装。App 会按备注里写的字，用手写字体画出韩文、拉丁字母、希腊字母、西里尔字母、假名、汉字、泰文和天城文。字体里没有的字用系统字体显示。</p></details><details><summary>App 出问题时</summary><p>先把 App 完全关闭再重新打开，并在 App Store 确认是否为最新版本。如果问题仍然存在，请写明在哪个画面、做什么操作时出现的问题，发邮件说明。</p></details></div>
+<div class="faq"><details id="q1"><summary>添加照片的方法</summary><p>在起始画面点添加照片，然后挑选照片。也可以从其他 App 把照片拖进来。编辑过程中，点照片步骤里的添加。也可以用菜单里的拍照当场拍一张，或用选取文件挑选文件里的图片。替换照片或者选择背景的我的照片时，可以在照片图库、拍照、选取文件中选一个。</p><p>一张墙纸最多放 12 张照片，Tapey Pro 最多 30 张。布局步骤里的心形，要照片满 6 张才会出现。圆形要满 8 张，Tapey Pro 的星形要满 10 张。超出免费上限时，点提示里的查看 Pro 就能看到 Tapey Pro。</p><p>在设置里打开拍摄的照片同时存入「照片」，App 里拍的照片也会存进照片 App。这个选项一开始是关闭的，打开时 iOS 会问要不要让 Tapey 添加照片。</p></details><details id="q2"><summary>保存好的墙纸在哪里</summary><p>点编辑画面右上角的保存按钮，或者最后一步的保存，墙纸就以设置里选的分辨率存成 PNG 文件，放进照片 App。第一次保存时，iOS 会问要不要让 Tapey 添加照片。</p><p>如果保存失败，请在设置 &gt; Tapey 里允许访问照片。点提示里的打开设置，就会直接打开那个页面。</p></details><details id="q3"><summary>保存时出现的广告</summary><p>保存墙纸时会出现一次全屏广告。广告由 Google AdMob 挑选和展示。</p><p>广告没有加载成功，或者上一次保存失败时，会不显示广告直接保存。等待广告最多 60 秒，之后才到的广告不会显示。保存过程中无法编辑。如果等广告让保存变慢，会显示正在准备保存。</p><p>在已经看过 3 次以上广告的设备上，广告之后，保存完成的窗口里会出现一行 Tapey Pro 的提示。关掉后，要再看 3 次广告才会再出现。</p></details><details id="q4"><summary>Tapey Pro 和恢复购买</summary><p>在菜单或者起始画面的 Tapey Pro 里购买。只需付费一次，不是订阅。购买之后，保存时不再出现广告，还能用到 30 张照片、高级胶带以及新相框和新布局。购买前也可以选用 Pro 项目先预览，这时点保存，就在购买 Tapey Pro、用基本项目保存和继续编辑之间选一个。只为一张照片选的 Pro 图案和相框也算 Pro 项目。选用基本项目保存时，这张照片会以纯色胶带和边框保存。</p><p>更换设备或者重新安装 App 后，打开菜单里的设置，点恢复购买。使用同一个 Apple 账户不会再次收费。以前买过移除广告的话，直接就能用 Tapey Pro。</p></details><details id="q5"><summary>跟踪许可和广告设置</summary><p>安装 App 后，第一次往墙上添加照片时才开始准备广告，这时 iOS 会询问是否允许跟踪。已购买 Tapey Pro 的话不会询问。不允许也不影响使用，这个选择可以在 iOS 设置 &gt; 隐私与安全性 &gt; 跟踪里更改。</p><p>在欧洲经济区这类需要广告同意的地区，可以在起始画面下方的广告设置里更改同意内容。在这些地区，同意窗口会先于跟踪许可窗口出现。</p></details><details id="q6"><summary>作品内容的存放位置</summary><p>选定的照片和背景照片的副本、布局和备注，都保存在 App 的存储空间里，以便下次打开 App 时接着编辑。在菜单的重新开始里选择重新开始，当前的作品就会清空。选择保留并重新开始，会先把当前的作品移到最近作品，再重新开始。删除 App 则会全部删除。</p><p>保存之后点新建，当前的作品就会移到最近作品。最近作品最多保留 3 个，超出时从最旧的开始删除。</p></details><details id="q7"><summary>设为墙纸的方法</summary><p>在照片 App 里打开刚保存的图片，点共享，选择用作墙纸。点添加，再选择设为墙纸组合即可。</p><p>保存完成的窗口里，如何设为墙纸下面也是同样的步骤。</p><p>在快捷指令 App 里使用 Tapey 的最近保存的墙纸，可以把最后保存的墙纸作为图片取出。它不用打开 App 就能运行，可以接在更换墙纸的快捷指令操作后面使用。</p></details><details id="q8"><summary>在 iPad 上使用</summary><p>Tapey 在 iPad 上也可以使用。在 iPad 上做的是竖屏和横屏共用的正方形墙纸，编辑画面里可以在两种方向之间切换查看。</p><p>在设置的分辨率里选择 iPhone 的尺寸，用 iPad 也能做 iPhone 的墙纸。</p></details><details id="q9"><summary>网络连接</summary><p>排列照片、装饰和保存都不需要联网。广告、购买 Tapey Pro 和恢复购买需要联网。</p><p>备注的手写字体随 App 一起安装。App 会按备注里写的字，用手写字体画出韩文、拉丁字母、希腊字母、西里尔字母、假名、汉字、泰文和天城文。字体里没有的字用系统字体显示。</p></details><details id="q10"><summary>App 出问题时</summary><p>先把 App 完全关闭再重新打开，并在 App Store 确认是否为最新版本。如果问题仍然存在，请写明在哪个画面、做什么操作时出现的问题，发邮件说明。</p></details></div>
 </section>
 <section class="help">
 <div><h2>联系</h2><p>有疑问或发现问题，请发邮件过来。写上设备型号和 iOS 版本，确认会更快。</p></div>
@@ -388,6 +394,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

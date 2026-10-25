@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -369,7 +375,7 @@ html{scroll-padding-top:72px}
 </nav>
 
 <div class="pv">
-<nav class="toc" aria-label="Contenido"><p>Contenido</p><ol><li><a href="#p1">Finalidad del tratamiento</a></li><li><a href="#p2">Información que se trata</a></li><li><a href="#p3">Plazo de conservación</a></li><li><a href="#p4">Cesión a terceros</a></li><li><a href="#p5">Encargo del tratamiento</a></li><li><a href="#p6">Destrucción de la información</a></li><li><a href="#p7">Tus derechos y cómo ejercerlos</a></li><li><a href="#p8">Medidas de seguridad</a></li><li><a href="#p9">Herramientas de recogida automática</a></li><li><a href="#p10">Responsable de privacidad</a></li><li><a href="#p11">Vías de reclamación</a></li><li><a href="#p12">Cambios en esta política</a></li></ol></nav>
+<nav class="toc" aria-label="Contenido"><details><summary>Contenido</summary><ol><li><a href="#p1">Finalidad del tratamiento</a></li><li><a href="#p2">Información que se trata</a></li><li><a href="#p3">Plazo de conservación</a></li><li><a href="#p4">Cesión a terceros</a></li><li><a href="#p5">Encargo del tratamiento</a></li><li><a href="#p6">Destrucción de la información</a></li><li><a href="#p7">Tus derechos y cómo ejercerlos</a></li><li><a href="#p8">Medidas de seguridad</a></li><li><a href="#p9">Herramientas de recogida automática</a></li><li><a href="#p10">Responsable de privacidad</a></li><li><a href="#p11">Vías de reclamación</a></li><li><a href="#p12">Cambios en esta política</a></li></ol></details></nav>
 <article class="doc">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/life-tyde/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>Life Tyde</span><span class="mono">No. 01 / 08</span></p></div>
 <h1>Política de privacidad</h1>
@@ -391,6 +397,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

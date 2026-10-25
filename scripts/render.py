@@ -326,8 +326,12 @@ def render_hub(site: Site, lang: str) -> str:
     quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
     # 첫 화면 더미: 위에서부터 1, 2, 3, 4 줄. 맨 위(가장 먼저 눈에 띄는 자리)가 출시된 첫 앱이다
     soon = ' class="soon"'
+    # 10-25 O: 출시된 앱의 더미 아이콘은 그 앱 판(#slug)으로 가는 링크, 출시 전 앱은 흐린 그림 그대로
     fan_imgs = [
-        f'<img src="{asset(a["slug"], "icon-180.webp")}" alt="" width="72" height="72"{"" if released(a) else soon}>'
+        f'<a href="#{esc(a["slug"])}"><img src="{asset(a["slug"], "icon-180.webp")}" '
+        f'alt="{esc(site.app_copy(a["slug"], lang)["name"])}" width="72" height="72"></a>'
+        if released(a) else
+        f'<img src="{asset(a["slug"], "icon-180.webp")}" alt="" width="72" height="72"{soon}>'
         for a in apps + quiet
     ]
     rows, k, n = [], 0, 1
@@ -521,7 +525,9 @@ def render_app(site: Site, lang: str, slug: str) -> str:
 
 def render_support(site: Site, lang: str, slug: str) -> str:
     ui, copy = site.ui[lang], site.app_copy(slug, lang)
-    faq = "".join(f'<details><summary>{esc(f["q"])}</summary>{paragraphs(f["a"])}</details>' for f in copy["faq"])
+    # 10-25 AD: 답마다 주소 #q1 부터 #qN(page.js 가 그 주소로 오면 답을 연다)
+    faq = "".join(f'<details id="q{i}"><summary>{esc(f["q"])}</summary>{paragraphs(f["a"])}</details>'
+                  for i, f in enumerate(copy["faq"], 1))
     content = tpl(site, "support.html").substitute(
         plate=still_plate(site, slug, "s"),
         name=esc(copy["name"]),

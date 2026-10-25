@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -371,7 +377,7 @@ html{scroll-padding-top:72px}
 <section class="sup">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>TailorColor</span><span class="mono"></span></p></div>
 <h1>よくある質問</h1>
-<div class="faq"><details><summary>六つの部位と表示の切り替え</summary><p>トップス、ボトムス、シューズは常にオンです。帽子、アウター、バッグは部位のチップでオンとオフを切り替えます。オフにするとマネキンから消え、おすすめの対象からも外れます。</p><p>部位を押すとシートが開きます。上で服の種類を、下で色を選びます。選んだものはすぐにマネキンに反映されます。</p></details><details><summary>選べる色</summary><p>色は24色です。無彩色が6色、デニムが3色、アースカラーが5色、ネイビー、差し色が9色という内訳です。服によく使われる色を絞り込んで固定しているため、色を自分で作ったり hex 値を入力したりする方法はありません。</p><p>写真から取った色も、24色のうち一番近い色に置き換わります。</p></details><details><summary>Another combination が選ぶ順番</summary><p>ランダムではありません。11のルールで点数をつけ、高い順に最大12通りをあらかじめ選んでおき、Another combination を押すたびにその順で次へ進みます。最後まで行くと最初に戻ります。</p><p>ボトムスとシューズの組ごとに、一番いいものだけを残します。色がひとつ違うだけの似た装いが続けて出ないようにするためです。マネキンを左右にスワイプしても、同じリストを前後に行き来します。</p></details><details><summary>Lock が留めるもの</summary><p>Lock が留めるのは色だけです。その部位の色はそのままに、ほかの部位だけを選び直します。服の種類は別に選ぶ値なので、Lock とは関係なくそのまま残ります。</p><p>Lock を外すには、同じボタンをもう一度押します。Let TailorColor choose を押すと、その部位をまたおすすめに任せます。</p></details><details><summary>組み合わせに添えられる理由</summary><p>濃いトップスに明るいボトムス、近い色同士のトーンオントーン、差し色はひとつ、バッグとシューズを同じ色に、デニムが全体をまとめる、といった理由が九つあります。一つの組み合わせに二つか三つが付きます。</p><p>組み合わせの名前は五通りです。差し色があるときはその色の名前で呼び、ないときは Earth tones、Denim basics、Monotone、Basic のどれかになります。</p></details><details><summary>写真から色を取る</summary><p>色のシートで Pick a color from a photo を選ぶと、写真を撮るか選ぶかできます。写真が表示されたら色を取りたい場所を押し、下に出た色でよければ Use this color を押します。</p><p>写真を選ぶときは iOS の写真選択画面を使います。写真ライブラリへのアクセス許可は求めず、選んだ写真1枚だけがアプリに渡されます。カメラの許可は Take a photo を押したときにだけ求めます。</p></details><details><summary>Saved と Closet の違い</summary><p>Saved は Looks と Closet の二つのタブに分かれています。Looks には六つの部位をまとめて入れます。あとで押すと、その装いがそのままマネキンに戻ります。</p><p>Closet には服を一着ずつ入れます。種類と色が一組で入るので、実際に持っている服を入れておき、ほかの色と合わせてみるときに使います。どちらも数の上限はありません。</p></details><details><summary>コーディネートの共有</summary><p>Share this look を押すと、いまの装いを 1080 x 1350 の画像にして iOS の共有シートに渡します。送り先は自由に選べます。「写真」に保存すると PNG として残ります。</p></details><details><summary>使える服</summary><p>いま選べる服は9着です。トップス2着、ボトムス2着、アウター1着、シューズ2足、帽子1つ、バッグ1つです。シートでグレーになっていて押せない項目は、まだ準備中の服です。</p><p>服が増えても、保存した配色と Closet の中身はそのまま残ります。</p></details><details><summary>対応する端末と画面</summary><p>iOS 17 以降の iPhone で使えます。iPad にはまだ対応しておらず、画面は縦向きに固定されます。</p><p>画面は常に明るい色で表示されます。色を見て選ぶアプリなので、端末のダークモードには合わせず、ひとつの背景で色を見比べられるようにしています。</p></details><details><summary>インターネット接続</summary><p>色を選ぶ、保存する、共有するといった操作は、インターネット接続なしでできます。アプリ自体が行う通信はありません。About 画面の Support と Privacy Policy のリンクを押したときだけ Safari が開きます。</p></details></div>
+<div class="faq"><details id="q1"><summary>六つの部位と表示の切り替え</summary><p>トップス、ボトムス、シューズは常にオンです。帽子、アウター、バッグは部位のチップでオンとオフを切り替えます。オフにするとマネキンから消え、おすすめの対象からも外れます。</p><p>部位を押すとシートが開きます。上で服の種類を、下で色を選びます。選んだものはすぐにマネキンに反映されます。</p></details><details id="q2"><summary>選べる色</summary><p>色は24色です。無彩色が6色、デニムが3色、アースカラーが5色、ネイビー、差し色が9色という内訳です。服によく使われる色を絞り込んで固定しているため、色を自分で作ったり hex 値を入力したりする方法はありません。</p><p>写真から取った色も、24色のうち一番近い色に置き換わります。</p></details><details id="q3"><summary>Another combination が選ぶ順番</summary><p>ランダムではありません。11のルールで点数をつけ、高い順に最大12通りをあらかじめ選んでおき、Another combination を押すたびにその順で次へ進みます。最後まで行くと最初に戻ります。</p><p>ボトムスとシューズの組ごとに、一番いいものだけを残します。色がひとつ違うだけの似た装いが続けて出ないようにするためです。マネキンを左右にスワイプしても、同じリストを前後に行き来します。</p></details><details id="q4"><summary>Lock が留めるもの</summary><p>Lock が留めるのは色だけです。その部位の色はそのままに、ほかの部位だけを選び直します。服の種類は別に選ぶ値なので、Lock とは関係なくそのまま残ります。</p><p>Lock を外すには、同じボタンをもう一度押します。Let TailorColor choose を押すと、その部位をまたおすすめに任せます。</p></details><details id="q5"><summary>組み合わせに添えられる理由</summary><p>濃いトップスに明るいボトムス、近い色同士のトーンオントーン、差し色はひとつ、バッグとシューズを同じ色に、デニムが全体をまとめる、といった理由が九つあります。一つの組み合わせに二つか三つが付きます。</p><p>組み合わせの名前は五通りです。差し色があるときはその色の名前で呼び、ないときは Earth tones、Denim basics、Monotone、Basic のどれかになります。</p></details><details id="q6"><summary>写真から色を取る</summary><p>色のシートで Pick a color from a photo を選ぶと、写真を撮るか選ぶかできます。写真が表示されたら色を取りたい場所を押し、下に出た色でよければ Use this color を押します。</p><p>写真を選ぶときは iOS の写真選択画面を使います。写真ライブラリへのアクセス許可は求めず、選んだ写真1枚だけがアプリに渡されます。カメラの許可は Take a photo を押したときにだけ求めます。</p></details><details id="q7"><summary>Saved と Closet の違い</summary><p>Saved は Looks と Closet の二つのタブに分かれています。Looks には六つの部位をまとめて入れます。あとで押すと、その装いがそのままマネキンに戻ります。</p><p>Closet には服を一着ずつ入れます。種類と色が一組で入るので、実際に持っている服を入れておき、ほかの色と合わせてみるときに使います。どちらも数の上限はありません。</p></details><details id="q8"><summary>コーディネートの共有</summary><p>Share this look を押すと、いまの装いを 1080 x 1350 の画像にして iOS の共有シートに渡します。送り先は自由に選べます。「写真」に保存すると PNG として残ります。</p></details><details id="q9"><summary>使える服</summary><p>いま選べる服は9着です。トップス2着、ボトムス2着、アウター1着、シューズ2足、帽子1つ、バッグ1つです。シートでグレーになっていて押せない項目は、まだ準備中の服です。</p><p>服が増えても、保存した配色と Closet の中身はそのまま残ります。</p></details><details id="q10"><summary>対応する端末と画面</summary><p>iOS 17 以降の iPhone で使えます。iPad にはまだ対応しておらず、画面は縦向きに固定されます。</p><p>画面は常に明るい色で表示されます。色を見て選ぶアプリなので、端末のダークモードには合わせず、ひとつの背景で色を見比べられるようにしています。</p></details><details id="q11"><summary>インターネット接続</summary><p>色を選ぶ、保存する、共有するといった操作は、インターネット接続なしでできます。アプリ自体が行う通信はありません。About 画面の Support と Privacy Policy のリンクを押したときだけ Safari が開きます。</p></details></div>
 </section>
 <section class="help">
 <div><h2>お問い合わせ</h2><p>ご質問や不具合はメールでお送りください。お使いの機種と iOS のバージョンを書き添えていただけると、確認が早く進みます。</p></div>
@@ -388,6 +394,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

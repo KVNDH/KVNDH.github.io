@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -371,7 +377,7 @@ html{scroll-padding-top:72px}
 <section class="sup">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/life-tyde/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>Life Tyde</span><span class="mono">No. 01 / 08</span></p></div>
 <h1>よくある質問</h1>
-<div class="faq"><details><summary>記録の保存先</summary><p>記録はアプリの保存領域に保管されます。iCloud同期が入になっていれば、記録に付けた写真とともにご自身の iCloud アカウントにも保存され、同じアカウントのほかの端末と揃います。</p><p>削除した記録は設定のゴミ箱に7日間残り、その間は復元できます。ゴミ箱に入れた直後なら、お知らせの取り消すを押してすぐに戻せます。</p></details><details><summary>記録に写真を付ける</summary><p>記録を押して編集しているときに、キーボードの上のバーにある写真ボタンを押して、写真ライブラリから選びます。写真のある記録は、メモの下の写真の列にある + からも追加できます。写真は1件の記録に30枚まで付けられ、無料でも Pro でも同じです。</p><p>写真を押すと、その記録の日付、タイトル、メモと一緒に大きく表示され、左右にめくって見られます。下にスワイプすると閉じ、ゴミ箱ボタンで写真を削除します。写真は CSV、ブックの PDF、タイムライン画像には入りません。</p></details><details><summary>iCloud同期の切り替え</summary><p>iCloud同期は最初から入になっていて、設定で切ったり入れ直したりできます。変えた設定は、App スイッチャーでアプリを閉じてから開き直すと反映されます。</p><p>ほかの端末でも同じ iCloud アカウントでサインインし、iCloud同期を入にしておきます。端末どうしの最初の同期には数分かかることがあります。</p></details><details><summary>無料で使える範囲</summary><p>出来事100件、タイムライン1つ、タグ10個まで無料で使えます。上限に達しても、すでに書いた記録はそのまま読んで直せます。</p><p>Pro では出来事とタグの数に制限がなく、タイムラインを3つまで作れます。検索、写真、あの頃の世界は無料でも Pro でも同じです。</p></details><details><summary>あの頃の世界</summary><p>タイムラインの上のもっと見るメニューであの頃の世界を入にすると、記録のある年ごとに、その年の最初の記録の上に、世界の印とともにその年の世の中の出来事が1行、淡く置かれます。最初は切になっていて、設定の表示にあるあの頃の世界で、見たい分野を選べます。</p><p>世界の行は記録として保存されず、検索、タグのフィルタ、横向きの画面、ブックと書き出し、振り返りには出ません。アプリの言語に合う一覧があるときだけ表示され、以前に出来事マーケットで追加した記録はそのまま残ります。</p></details><details><summary>タイムラインの切り替えと年齢基準</summary><p>タイムラインが2つ以上あるときは、画面上部中央のタイトルを押して別のタイムラインに切り替えます。同じメニューのタイムラインを管理で、タイムラインを追加したり編集したりできます。iPadOS 26 以降の iPad ではメニューバーのタイムラインメニューから、キーボードをつないでいれば Control-1、Control-2、Control-3 でも切り替えられます。</p><p>メインではないタイムラインでは、タイムラインを管理から開くタイムラインを編集に年齢基準があり、メインタイムラインと同じか個別に設定のどちらかを選びます。個別に設定を選んで誕生日を決めると、そのタイムラインの年齢はその日付から数えます。</p></details><details><summary>Pro の復元</summary><p>機種を変えたときやアプリを入れ直したときは、設定を開いてProにアップグレードを押し、右上の復元を押します。同じ Apple アカウントであれば、もう一度支払う必要はありません。</p></details><details><summary>今後の予定とリマインド</summary><p>明日以降の日付で書いた記録は今後の予定になります。月と日を決めると、リマインドするで当日、1日前、1週間前、1か月前から選べます。通知の許可は、リマインドを入にした予定を初めて保存するときに尋ねます。</p><p>日付が過ぎた予定は、完了として記録を押すと通常の記録になります。繰り返しを決めてあれば、このとき次の回が登録されます。</p></details><details><summary>CSV でのバックアップ</summary><p>設定のCSVに書き出すを押すと、記録を CSV ファイルとして保存します。CSVを読み込むで戻すときは、既存の出来事に追加とすべての出来事を置き換えるのどちらかを選びます。</p><p>CSV ファイルは必要なときに作るバックアップで、iCloud同期とは別のものです。</p></details><details><summary>本をつくる</summary><p>設定の本をつくるで本のタイトル、年の範囲、タグを決め、プレビューで A4 のページを確かめてから、PDF を書き出すでファイルを保存したり送ったりします。本をつくるは Life Tyde Pro の機能です。</p></details><details><summary>インターネット接続</summary><p>記録すること、振り返り、書き出しはインターネット接続なしでできます。iCloud同期と Pro の購入、復元には接続が必要です。</p><p>近くの端末と交換は、インターネットを使わずに近くの二台を直接つなぎます。どちらの端末でも Life Tyde で近くの端末と交換の画面を開いておきます。</p></details><details><summary>AI の機能に対応する端末</summary><p>この年代記を要約、AI まえがきを追加、エッセイの下書きは、iOS 26 以降で Apple Intelligence を入にした対応端末に表示されます。アプリの言語を端末の AI モデルが扱えない場合は表示されません。</p><p>対象の記録が5件より少ないときは、AI の文章を作りません。作った文章は書き出す前に自由に直せます。</p></details></div>
+<div class="faq"><details id="q1"><summary>記録の保存先</summary><p>記録はアプリの保存領域に保管されます。iCloud同期が入になっていれば、記録に付けた写真とともにご自身の iCloud アカウントにも保存され、同じアカウントのほかの端末と揃います。</p><p>削除した記録は設定のゴミ箱に7日間残り、その間は復元できます。ゴミ箱に入れた直後なら、お知らせの取り消すを押してすぐに戻せます。</p></details><details id="q2"><summary>記録に写真を付ける</summary><p>記録を押して編集しているときに、キーボードの上のバーにある写真ボタンを押して、写真ライブラリから選びます。写真のある記録は、メモの下の写真の列にある + からも追加できます。写真は1件の記録に30枚まで付けられ、無料でも Pro でも同じです。</p><p>写真を押すと、その記録の日付、タイトル、メモと一緒に大きく表示され、左右にめくって見られます。下にスワイプすると閉じ、ゴミ箱ボタンで写真を削除します。写真は CSV、ブックの PDF、タイムライン画像には入りません。</p></details><details id="q3"><summary>iCloud同期の切り替え</summary><p>iCloud同期は最初から入になっていて、設定で切ったり入れ直したりできます。変えた設定は、App スイッチャーでアプリを閉じてから開き直すと反映されます。</p><p>ほかの端末でも同じ iCloud アカウントでサインインし、iCloud同期を入にしておきます。端末どうしの最初の同期には数分かかることがあります。</p></details><details id="q4"><summary>無料で使える範囲</summary><p>出来事100件、タイムライン1つ、タグ10個まで無料で使えます。上限に達しても、すでに書いた記録はそのまま読んで直せます。</p><p>Pro では出来事とタグの数に制限がなく、タイムラインを3つまで作れます。検索、写真、あの頃の世界は無料でも Pro でも同じです。</p></details><details id="q5"><summary>あの頃の世界</summary><p>タイムラインの上のもっと見るメニューであの頃の世界を入にすると、記録のある年ごとに、その年の最初の記録の上に、世界の印とともにその年の世の中の出来事が1行、淡く置かれます。最初は切になっていて、設定の表示にあるあの頃の世界で、見たい分野を選べます。</p><p>世界の行は記録として保存されず、検索、タグのフィルタ、横向きの画面、ブックと書き出し、振り返りには出ません。アプリの言語に合う一覧があるときだけ表示され、以前に出来事マーケットで追加した記録はそのまま残ります。</p></details><details id="q6"><summary>タイムラインの切り替えと年齢基準</summary><p>タイムラインが2つ以上あるときは、画面上部中央のタイトルを押して別のタイムラインに切り替えます。同じメニューのタイムラインを管理で、タイムラインを追加したり編集したりできます。iPadOS 26 以降の iPad ではメニューバーのタイムラインメニューから、キーボードをつないでいれば Control-1、Control-2、Control-3 でも切り替えられます。</p><p>メインではないタイムラインでは、タイムラインを管理から開くタイムラインを編集に年齢基準があり、メインタイムラインと同じか個別に設定のどちらかを選びます。個別に設定を選んで誕生日を決めると、そのタイムラインの年齢はその日付から数えます。</p></details><details id="q7"><summary>Pro の復元</summary><p>機種を変えたときやアプリを入れ直したときは、設定を開いてProにアップグレードを押し、右上の復元を押します。同じ Apple アカウントであれば、もう一度支払う必要はありません。</p></details><details id="q8"><summary>今後の予定とリマインド</summary><p>明日以降の日付で書いた記録は今後の予定になります。月と日を決めると、リマインドするで当日、1日前、1週間前、1か月前から選べます。通知の許可は、リマインドを入にした予定を初めて保存するときに尋ねます。</p><p>日付が過ぎた予定は、完了として記録を押すと通常の記録になります。繰り返しを決めてあれば、このとき次の回が登録されます。</p></details><details id="q9"><summary>CSV でのバックアップ</summary><p>設定のCSVに書き出すを押すと、記録を CSV ファイルとして保存します。CSVを読み込むで戻すときは、既存の出来事に追加とすべての出来事を置き換えるのどちらかを選びます。</p><p>CSV ファイルは必要なときに作るバックアップで、iCloud同期とは別のものです。</p></details><details id="q10"><summary>本をつくる</summary><p>設定の本をつくるで本のタイトル、年の範囲、タグを決め、プレビューで A4 のページを確かめてから、PDF を書き出すでファイルを保存したり送ったりします。本をつくるは Life Tyde Pro の機能です。</p></details><details id="q11"><summary>インターネット接続</summary><p>記録すること、振り返り、書き出しはインターネット接続なしでできます。iCloud同期と Pro の購入、復元には接続が必要です。</p><p>近くの端末と交換は、インターネットを使わずに近くの二台を直接つなぎます。どちらの端末でも Life Tyde で近くの端末と交換の画面を開いておきます。</p></details><details id="q12"><summary>AI の機能に対応する端末</summary><p>この年代記を要約、AI まえがきを追加、エッセイの下書きは、iOS 26 以降で Apple Intelligence を入にした対応端末に表示されます。アプリの言語を端末の AI モデルが扱えない場合は表示されません。</p><p>対象の記録が5件より少ないときは、AI の文章を作りません。作った文章は書き出す前に自由に直せます。</p></details></div>
 </section>
 <section class="help">
 <div><h2>お問い合わせ</h2><p>ご質問や不具合はメールでお送りください。お使いの機種と iOS のバージョンを書き添えていただけると、確認が早く進みます。</p></div>
@@ -388,6 +394,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

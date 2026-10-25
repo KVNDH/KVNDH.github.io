@@ -223,7 +223,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -264,7 +265,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -371,7 +377,7 @@ html{scroll-padding-top:72px}
 <section class="sup">
 <div class="doc-head"><span class="plate plate-s"><img src="/assets/dice-master/icon-180.webp" alt="" width="76" height="76"></span><p class="doc-k"><span>Dice Master</span><span class="mono">No. 03 / 08</span></p></div>
 <h1>常见问题</h1>
-<div class="faq"><details><summary>设置和记录的存放位置</summary><p>骰子设置、我的预设和投掷记录均保存在 App 的存储空间中。删除 App 时一并删除，不支持 iCloud 同步。</p><p>功能设置最下方的重置应用会清除全部设置、预设和投掷记录，且无法恢复。Pro 购买不受影响。</p></details><details><summary>列表里没有的面数</summary><p>轻点画面上方的面数标签，即可打开骰子设置。点选铅笔一栏，在自定义面数中填入 2 到 100 之间的数字，便可使用该面数投掷。超过 10 面需要 Pro。</p><p>3D 视图支持 2 到 20 面，更大的面数以 2D 显示。</p></details><details><summary>App 的显示语言</summary><p>初次启动时跟随设备语言。在功能设置的“语言”中选择 13 种语言之一，App 内即刻切换。</p></details><details><summary>需要 Pro 的配置</summary><p>超过 10 面的骰子、一次投掷 11 个以上、霓虹、雷霆、黄金、火焰、原木、大理石皮肤以及自定义图标均需要 Pro。修改快速预设的规则后继续查看判定，同样需要 Pro。快速预设中的 d20 判定无需 Pro 即可投掷。</p><p>未购买 Pro 时，我的预设可保存 2 个。投掷记录和统计显示最近 50 条，更早的记录仍保留在 App 中，购买 Pro 后即可全部查看。</p></details><details><summary>恢复 Pro 购买</summary><p>更换设备或重新安装 App 后，轻点右上角的齿轮打开功能设置。点选最上方的 Dice Master Pro，再点下方的恢复购买即可。使用同一 Apple 账户不会重复收费。</p></details><details><summary>网络连接</summary><p>投掷骰子、记录和预设均无需联网。仅购买和恢复 Pro 需要连接 App Store。</p></details><details><summary>关掉摇一摇掷骰</summary><p>在功能设置的操作方式中关闭摇一摇掷骰后，摇动设备便不再投掷骰子。</p></details></div>
+<div class="faq"><details id="q1"><summary>设置和记录的存放位置</summary><p>骰子设置、我的预设和投掷记录均保存在 App 的存储空间中。删除 App 时一并删除，不支持 iCloud 同步。</p><p>功能设置最下方的重置应用会清除全部设置、预设和投掷记录，且无法恢复。Pro 购买不受影响。</p></details><details id="q2"><summary>列表里没有的面数</summary><p>轻点画面上方的面数标签，即可打开骰子设置。点选铅笔一栏，在自定义面数中填入 2 到 100 之间的数字，便可使用该面数投掷。超过 10 面需要 Pro。</p><p>3D 视图支持 2 到 20 面，更大的面数以 2D 显示。</p></details><details id="q3"><summary>App 的显示语言</summary><p>初次启动时跟随设备语言。在功能设置的“语言”中选择 13 种语言之一，App 内即刻切换。</p></details><details id="q4"><summary>需要 Pro 的配置</summary><p>超过 10 面的骰子、一次投掷 11 个以上、霓虹、雷霆、黄金、火焰、原木、大理石皮肤以及自定义图标均需要 Pro。修改快速预设的规则后继续查看判定，同样需要 Pro。快速预设中的 d20 判定无需 Pro 即可投掷。</p><p>未购买 Pro 时，我的预设可保存 2 个。投掷记录和统计显示最近 50 条，更早的记录仍保留在 App 中，购买 Pro 后即可全部查看。</p></details><details id="q5"><summary>恢复 Pro 购买</summary><p>更换设备或重新安装 App 后，轻点右上角的齿轮打开功能设置。点选最上方的 Dice Master Pro，再点下方的恢复购买即可。使用同一 Apple 账户不会重复收费。</p></details><details id="q6"><summary>网络连接</summary><p>投掷骰子、记录和预设均无需联网。仅购买和恢复 Pro 需要连接 App Store。</p></details><details id="q7"><summary>关掉摇一摇掷骰</summary><p>在功能设置的操作方式中关闭摇一摇掷骰后，摇动设备便不再投掷骰子。</p></details></div>
 </section>
 <section class="help">
 <div><h2>联系</h2><p>有疑问或发现问题，请发邮件过来。写上设备型号和 iOS 版本，确认会更快。</p></div>
@@ -388,6 +394,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});

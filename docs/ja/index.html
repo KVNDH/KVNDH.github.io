@@ -82,6 +82,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh);container-type:size}
 .fan{--ic:72px;position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
 .fan .row{display:flex;gap:10px}
+.fan a{display:block;border-radius:22.5%}
+.fan a:focus-visible{outline-offset:3px;border-radius:24%}
 .fan img{--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)));width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
 /* 원화 한 점 */
 .piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
@@ -247,7 +249,8 @@ html.lock{overflow:hidden}
 .faq details p:last-child{padding-bottom:24px}
 .pv{display:grid;grid-template-columns:210px minmax(0,var(--mw,65ch));justify-content:center;gap:72px;margin:0 22px;padding:72px 56px 96px}
 .toc{position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow-y:auto;font-size:13.5px;line-height:1.4}
-.toc p{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
+.toc summary{margin-bottom:8px;font:600 11.5px var(--mono);letter-spacing:.06em;color:var(--t2);list-style:none;cursor:pointer}
+.toc summary::-webkit-details-marker{display:none}
 .toc ol{border-top:1px solid var(--ln)}
 .toc a{display:flex;align-items:center;min-height:44px;padding:6px 0;border-bottom:1px solid var(--ln);color:var(--t2)}
 .toc a:hover{color:var(--tx)}
@@ -289,7 +292,12 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 .pro,.help{padding:56px 40px}
 .pano{padding:16px 40px 72px;gap:20px}
 .pv{grid-template-columns:minmax(0,1fr);gap:0;padding:56px 40px 72px}
-.toc{display:none}
+/* 10-25 E: 좁은 화면의 목차는 문서 머리에 접힌 한 줄(page.js 가 901px 부터 펼친다) */
+.toc{position:static;max-height:none;overflow:visible;margin-bottom:36px;font-size:15px}
+.toc summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:44px;margin:0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+.toc summary::after{content:"";flex:none;width:7px;height:7px;margin-right:3px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg)}
+.toc details[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.toc ol{border-top:0}
 .ab{padding:76px 32px 14px}
 .foot{grid-template-columns:1fr 1fr;padding:44px 40px 52px}
 }
@@ -405,7 +413,7 @@ html{scroll-padding-top:72px}
 <section class="hero">
 <p class="mono">kvndh.com</p>
 <div><p class="hero-t" aria-hidden="true">kvndh</p>
-<div class="cluster" aria-hidden="true"><div class="fan" style="--rows:4"><span class="row"><img src="/assets/life-tyde/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/tapey/icon-180.webp" alt="" width="72" height="72"><img src="/assets/dice-master/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/snapline/icon-180.webp" alt="" width="72" height="72"><img src="/assets/percentime/icon-180.webp" alt="" width="72" height="72"><img src="/assets/brushworks/icon-180.webp" alt="" width="72" height="72"></span><span class="row"><img src="/assets/readride/icon-180.webp" alt="" width="72" height="72"><img src="/assets/onpace/icon-180.webp" alt="" width="72" height="72"><img src="/assets/tailorcolor/icon-180.webp" alt="" width="72" height="72" class="soon"><img src="/assets/codematic/icon-180.webp" alt="" width="72" height="72" class="soon"></span></div></div></div>
+<div class="cluster"><div class="fan" style="--rows:4"><span class="row"><a href="#life-tyde"><img src="/assets/life-tyde/icon-180.webp" alt="Life Tyde" width="72" height="72"></a></span><span class="row"><a href="#tapey"><img src="/assets/tapey/icon-180.webp" alt="Tapey" width="72" height="72"></a><a href="#dice-master"><img src="/assets/dice-master/icon-180.webp" alt="Dice Master" width="72" height="72"></a></span><span class="row"><a href="#snapline"><img src="/assets/snapline/icon-180.webp" alt="SnapLine" width="72" height="72"></a><a href="#percentime"><img src="/assets/percentime/icon-180.webp" alt="Percentime" width="72" height="72"></a><a href="#brushworks"><img src="/assets/brushworks/icon-180.webp" alt="BrushWorks" width="72" height="72"></a></span><span class="row"><a href="#readride"><img src="/assets/readride/icon-180.webp" alt="Readride" width="72" height="72"></a><a href="#onpace"><img src="/assets/onpace/icon-180.webp" alt="OnPace" width="72" height="72"></a><img src="/assets/tailorcolor/icon-180.webp" alt="" width="72" height="72" class="soon"><img src="/assets/codematic/icon-180.webp" alt="" width="72" height="72" class="soon"></span></div></div></div>
 </section>
 <article class="piece" id="life-tyde">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>
@@ -575,6 +583,12 @@ html{scroll-padding-top:72px}
     addEventListener('keydown',function(e){if(e.key==='Escape'&&lang.open){lang.open=false;lang.querySelector('summary').focus()}});
     addEventListener('click',function(e){if(lang.open&&!lang.contains(e.target))lang.open=false});
   }
+  // 목차: 넓은 화면(901px 부터)에서는 늘 펼치고 좁은 화면에서는 접어 둔다
+  var toc=document.querySelector('.toc details');
+  if(toc){var wide=matchMedia('(min-width:901px)'),fit=function(){toc.open=wide.matches};fit();wide.addEventListener('change',fit)}
+  // 지원 답 주소: #q7 로 오면 7번 답을 연다
+  function reveal(){var d=location.hash&&document.getElementById(decodeURIComponent(location.hash.slice(1)));if(d&&d.tagName==='DETAILS')d.open=true}
+  reveal();addEventListener('hashchange',reveal);
   // 인쇄: 닫힌 지원 답을 모두 펼쳤다가 인쇄가 끝나면 그 답만 다시 닫는다
   var shut=[];
   addEventListener('beforeprint',function(){shut=[].filter.call(document.querySelectorAll('.faq details'),function(d){return !d.open});shut.forEach(function(d){d.open=true})});
