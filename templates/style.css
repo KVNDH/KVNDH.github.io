@@ -285,6 +285,7 @@ html:is([lang=en],[lang=de],[lang=es],[lang=pt-BR]){--mw:34em;--fw:33em}
 }
 /* 10-25 AF: 머리띠에 이름, 탭 셋, 상점 단추가 다 들어가지 못하는 폭(es 853, de 793, en 765px 까지 넘침)에서는 상점 단추만 숨긴다 */
 @media (max-width:940px){.ab .btn{display:none}}
+/*h*/@media (max-height:500px) and (min-width:721px){.vsheet{padding:28px 32px;gap:24px;align-items:start}.vstage{aspect-ratio:auto;position:sticky;top:0}.vslot{width:min(380px,32vw,52vh)}.vtext .acts{position:sticky;bottom:-28px;margin:12px 0 -28px;padding:10px 0 28px;background-color:var(--paper);background-image:var(--grain);background-size:320px}}
 @media (max-width:720px){
 :root{--slot:min(232px,62vw)}
 html{scroll-padding-top:72px}
