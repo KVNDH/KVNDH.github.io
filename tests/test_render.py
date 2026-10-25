@@ -38,6 +38,12 @@ class HubTest(unittest.TestCase):
         (self.site.root / "assets" / "demo" / "icon-640.webp").write_bytes(b"x")
         self.assertIn('<img src="/assets/demo/icon-640.webp"', render.render_hub(Site(self.site.root), "ko"))
 
+    def test_viewer_actions_stay_in_view_on_landscape_phones(self):
+        # 10-25: 가로 폰(844x390)에서 크게 보기의 상점, 자세히 보기, 지원 줄이 시트 스크롤 아래에 숨지 않게 바닥에 붙인다
+        html = render.render_hub(self.site, "ko")
+        self.assertIn("@media (max-height:500px) and (min-width:721px){", html)
+        self.assertIn(".vtext .acts{position:sticky;bottom:-28px", html)
+
     def test_hub_has_no_summary_sentence(self):
         html = render.render_hub(self.site, "ko")
         self.assertIn('<h1 class="sr-only">ko hubMetaTitle</h1>', html)
