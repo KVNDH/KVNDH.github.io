@@ -1,5 +1,5 @@
 {
- "describesVersion": "2.1.0",
+ "describesVersion": "2.1.1",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -59,7 +59,7 @@
   "familyShareable": "가족 공유로 받은 사람도 Pro(ownershipType 을 보지 않음). Tapey.storekit 에 familyShareable true. ASC 실제 값은 저장소 밖(Tapey 세션 요약은 true)이라 사이트 문구에는 쓰지 않음 (swift/Tapey/Store/ProEntitlement.swift:63-67; swift/StoreKit/Tapey.storekit:7)"
  },
  "features": {
-  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 2.1.0 빌드 23 (swift/project.yml:6,37,38)",
+  "engine": "SwiftUI + Core Graphics(1.x 의 웹 Capacitor 에서 바뀜). 최소 iOS 17.0, 2.1.1 빌드 24 (swift/project.yml:6,37,38)",
   "maxPhotos": {
    "free": 12,
    "pro": 30
@@ -151,7 +151,7 @@
    "상단(시계 작게 언저리일 때만)",
    "하단"
   ],
-  "view": "폰 편집 화면에 자동 보기와 전체 보기(메뉴에서 고름). 빈 벽을 두 손가락으로 확대, 축소하고 끌어 옮김 (swift/Tapey/Shell/AppMenu.swift:32-40; swift/Tapey/Editor/CanvasGestureController.swift:203-291)",
+  "view": "폰 편집 화면에 자동 보기와 전체 보기(메뉴에서 고름). 빈 벽을 한 손가락으로 끌어 옮김. 2.1.1 부터 두 손가락은 보기(화면) 확대, 축소가 기본: 사진 크기와 각도는 손짓 전에 고른 사진의 몸통(첫 손가락이나 두 손가락 중심)이나 손잡이에 닿을 때만 바뀌고, 고르지 않은 사진 위나 빈 벽은 보기 핀치(선택을 풂). 고르지 않은 사진을 끌면 사진은 따라오되 선택, 진동, 들림은 10pt 를 넘어야 붙고, 끌다 두 번째 손가락이 오면 12pt 아래는 제자리로 되돌리고 보기 핀치로. 아이패드 아뜰리에도 같은 컨트롤러 (swift/Tapey/Shell/AppMenu.swift:32-40; swift/Tapey/Editor/CanvasGestureController.swift:51-56,228-235,262-272,317-338,344-355; swift/Tapey/Shell/AtelierShell.swift:8,35,45; Tapey 스토어 새 소식 2.1.1 '화면 확대 방식 개선', docs/store/whatsnew.json)",
   "menu": [
    "자동 보기, 전체 보기(폰 편집 화면만)",
    "최근 프로젝트",
@@ -212,11 +212,12 @@
  ],
  "numbersNote": "12 무료 사진 수, 30 Tapey Pro 사진 수, 8 테이프 색과 프리미엄 테이프(Pro 무늬)와 배경 톤, 4 무료 테이프 무늬, 10 배경 견본 수(톤 8 + 코르크보드, 패브릭), 6 하트 배치가 나오는 사진 수(FAQ), 31 앱 언어 수와 손글씨 메모 언어 수(스토어 새 소식), 60 광고를 기다리는 초(FAQ), 3 Pro 안내가 나오는 본 광고 수와 닫은 뒤 더 볼 수(FAQ). sections[0] crop 의 focus 는 검사 대상이 아님",
  "sources": [
-  "Tapey 2.1.0 기준(2026-10-20 사이트 갱신). 아카이브 커밋 3541bfa(2.1.0 빌드 23, e378d92 기록에서 심사 제출, 09e0127 에서 HQ 가 READY_FOR_SALE 확인). 2.0.2 아카이브 a9cc4ed 와의 차이는 git diff a9cc4ed 3541bfa -- swift/Tapey swift/Packages. 아래 경로는 Tapey/ 기준이고 3541bfa 에서 읽음. (옛 기록) 2.0.2 는 2c66365(빌드 22), 2.0.1 은 256c647(빌드 21), 2.0.0 기준은 25ccd02",
+  "Tapey 2.1.1 기준(2026-10-28 사이트 갱신). 아카이브 커밋 da37d83(2.1.1 빌드 24, eb6f87b 에서 심사 제출, cb6db4a 에서 HQ 가 READY_FOR_SALE 확인). 2.1.0 아카이브 3541bfa 와의 앱 코드 차이는 git diff 3541bfa da37d83 -- swift/Tapey swift/Packages 로 CanvasGestureController.swift, CanvasRecognizers.swift 둘뿐. 아래 경로는 Tapey/ 기준이고 da37d83 에서 읽음. (옛 기록) 2.1.0 은 3541bfa(빌드 23), 2.0.2 는 2c66365(빌드 22), 2.0.1 은 256c647(빌드 21), 2.0.0 기준은 25ccd02",
   "swift/Tapey/Ads/AdsArming.swift, swift/Tapey/Editor/WallStore+CameraCopy.swift, swift/Tapey/Services/LastWallpaper.swift, swift/Tapey/Intents/LastWallpaperIntent.swift, swift/Tapey/Shell/NoticeLine.swift, swift/Tapey/Resources/AppShortcuts.xcstrings, swift/l10n/native.json, swift/l10n/shortcuts.json (2.1.0 첫 사진 뒤 광고, 찍은 사진 사본, 마지막 배경화면, 저장 준비 안내)",
   "swift/Tapey/Ads/AdUnit.swift, swift/Tapey/Ads/GoogleAdsSDK.swift, swift/Tapey/Ads/Deadline.swift, swift/Tapey/Services/ProNudge.swift (2.0.2 늦은 광고 버리기, 저장 자리별 광고 단위, 마무리 창 Pro 안내)",
   "swift/Tapey/Services/CameraAccess.swift, swift/Tapey/Services/CameraCapture.swift, swift/Tapey/Services/IntakeFiles.swift (2.0.1 사진 찍기, 파일 선택)",
-  "swift/project.yml (MARKETING_VERSION 2.1.0, 빌드 23, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
+  "swift/Tapey/Editor/CanvasGestureController.swift, swift/Tapey/Editor/CanvasRecognizers.swift (2.1.1 두 손가락은 보기 확대가 기본, 사진 크기는 고른 사진만)",
+  "swift/project.yml (MARKETING_VERSION 2.1.1, 빌드 24, iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, GoogleMobileAds 13.10.0, UMP 3.1.0)",
   "swift/Tapey/Info.plist",
   "swift/Tapey/PrivacyInfo.xcprivacy",
   "swift/StoreKit/Tapey.storekit",
@@ -276,5 +277,5 @@
   "swift/Packages/TapeyCore/Sources/TapeyCore/Persistence/ProjectStore+Recents.swift",
   "docs/store/shots.json, docs/store/shots-raw/iphone, docs/store/screenshots/iphone (사이트 그림의 원본)"
  ],
- "versionNote": "Tapey 2.1.0(빌드 23) 출시를 2026-10-20 HQ 가 ASC 에서 READY_FOR_SALE 로 확인(Tapey docs/NEXT.md 09e0127). 범위는 2.0.2 아카이브 a9cc4ed 에서 2.1.0 아카이브 3541bfa 까지 62개 커밋(docs/history.md '2.0.2 제안서 구현(1~4단계 28건)'). 8개 언어에 반영: 자리, 사진별 테이프와 프레임, 31개 언어 손글씨 메모, 자동 배치에서만 고정, 찍은 사진 사본 설정, 단축어 마지막 배경화면, 저장 중 편집 잠금과 저장 준비 안내, 사진 한 장의 Pro 항목, 무료 한도 알림의 Pro 보기, 첫 사진 뒤 광고 준비. 처리방침은 찍은 사진이 사진 앱에 저장되지 않는다는 문장이 틀려져 고침(시행일 2026-10-20). 네트워크 새 요청, Info.plist, PrivacyInfo.xcprivacy, Package.resolved(GMA 13.10.0, UMP 3.1.0), 카메라 권한, 무료/Pro 경계는 그대로"
+ "versionNote": "Tapey 2.1.1(빌드 24) 출시를 2026-10-28 HQ 가 ASC 에서 READY_FOR_SALE 로 확인(Tapey docs/NEXT.md cb6db4a). 범위는 2.1.0 아카이브 3541bfa 에서 2.1.1 아카이브 da37d83 까지 12개 커밋, 앱 코드는 핀치 줌 고침 fa66d9d 하나(Decide 2026-10-27-8 A). 8개 언어 첫 절에 반영: 먼저 누른 사진만 두 손가락으로 크기와 각도, 다른 곳의 두 손가락은 화면 확대. 처리방침은 처리하는 데이터가 바뀌지 않아 그대로(시행일 2026-10-20 유지). 네트워크 요청, Info.plist, PrivacyInfo.xcprivacy, 광고 SDK, 권한, 무료/Pro 경계, 스토어 스크린샷(2.1.0 것 그대로, MD5 일치)은 그대로. (옛 기록) Tapey 2.1.0(빌드 23) 출시를 2026-10-20 HQ 가 ASC 에서 READY_FOR_SALE 로 확인(Tapey docs/NEXT.md 09e0127). 범위는 2.0.2 아카이브 a9cc4ed 에서 2.1.0 아카이브 3541bfa 까지 62개 커밋(docs/history.md '2.0.2 제안서 구현(1~4단계 28건)'). 8개 언어에 반영: 자리, 사진별 테이프와 프레임, 31개 언어 손글씨 메모, 자동 배치에서만 고정, 찍은 사진 사본 설정, 단축어 마지막 배경화면, 저장 중 편집 잠금과 저장 준비 안내, 사진 한 장의 Pro 항목, 무료 한도 알림의 Pro 보기, 첫 사진 뒤 광고 준비. 처리방침은 찍은 사진이 사진 앱에 저장되지 않는다는 문장이 틀려져 고침(시행일 2026-10-20). 네트워크 새 요청, Info.plist, PrivacyInfo.xcprivacy, Package.resolved(GMA 13.10.0, UMP 3.1.0), 카메라 권한, 무료/Pro 경계는 그대로"
 }
