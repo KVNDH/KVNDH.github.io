@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.3",
+ "describesVersion": "1.0.4",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -58,6 +58,8 @@
   "1.0.3 실행 중 다음 지점 도착 예상(e1d548b, 무료): 지난 기록의 구간 시간을 요일, 나선 시각, 최근 기록으로 가중한 중앙값(TripStats.expected, RunController.swift:244). 기록이 셋 안 되는 구간은 계획 그대로",
   "1.0.3 다녀온 뒤(e1d548b, 5bfbced): 시트 'This trip'(이번 기록)에 출발 시각과 늦음, 가는 데 걸린 시간, 늦은 까닭 한 줄('You were late because you left late.' 출발이 늦어 늦었습니다 등, Refine.verdict), 아래에 여러 번 기록의 제안. 홈 배너 'Your last trip'(방금 다녀온 기록)에 'Left %@ late · took %lld min, plan %lld min'(출발 %1$@ 늦음 · 가는 데 %2$lld분(계획 %3$lld분)). 배너는 창을 닫아도 남고 '나중에'나 다음 실행에서 내림",
   "1.0.3 사용성(5bfbced): 지점 빼기, 모두 지우기('Delete all'), 지나간 길로 바꾸기('Use the path you took'), 일정과 제안 적용 뒤 길 화면 맨 위에 한 단계 '되돌리기'(Undo, UndoSection, RoutineStore.lastChange 메모리에만, 앱 종료 뒤 없음). 길 지도에서 겹친 핀은 묶이고 누르면 갈라지는 축척으로 다가감(RoutineMap.groups). 지도 편집 화면 제목은 단추와 같게 'Edit on map'(지도에서 고치기), 1.0.2 의 'Edit route'(길 다듬기)는 없어짐",
+  "1.0.4 접는 iPhone 길 편집 지도(dbab3b8, 무료): 가로 세로 size class 가 모두 regular(편 화면)일 때 길 화면의 '지도에서 만들기', '지도에서 고치기'와 길 지도 누르기가 지도 편집 화면을 전체 화면(fullScreenCover)으로 연다. 아이폰과 접은 화면은 시트 그대로. 열 때 한 번 정해 연 뒤 접고 펴도 닫고 다시 열지 않는다 (App/Views.swift:1410~1413, 1438~1441 openMapEditor). 지원 FAQ '접는 iPhone에서 쓰기' 끝 문장에 씀. 옆 판은 가로일 때만(WideLayout.isWide), 편 세로와 접은 세로는 아래 판이라 끝 문장은 '펼친 상태에서 전체 화면, 가로로 두면 옆 판'으로 씀",
+  "사이트에 쓰지 않는 것(1.0.4, dbab3b8): 접고 펴거나 돌릴 때 실행 지도 보기(RunMap.Follow, Views.swift:57, 139), 지점 통과 알림(passWatcher 판 밖, Views.swift:138), 지금 출발로 맞추기 접힘 타이머(Views.swift:142), 멈춤 확인 화면, 길 편집 판의 시각 맞추기(PinSession, RouteBuilder.swift:78)가 이어짐. 길 지도가 칸 폭이 바뀌면 다시 맞춤(RoutineMap.swift:133), 이름 칸 키보드로 판이 옮겨 가지 않음(WideLayoutFlag.swift), 좁은 판에서 단추 줄을 두 줄로(RouteBuilder.swift StopsPanel ViewThatFits). whatsNew 의 'iPhone Duo 지원 개선', '세부 다듬기와 안정성 개선'에 해당, 고침이라 페이지에는 쓰지 않음",
   "사이트에 쓰지 않는 것(1.0.3): 잠금 화면 카드 머리글 먹색 글자와 상태색 점(7706d93, 대비 개선, 기능 아님). 길 카드 누르면 길 화면, 동그라미는 고르기, 기록 지우기 확인 문구 등 작은 다듬기"
  ],
  "uiNames": {
@@ -106,6 +108,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개, 1.0.2 늦음 효과음 '5분까지 1분마다'(ko, ja, zh). 출발 알림의 5, 10, 15분은 지원(FAQ)에만 쓴다. 앱 화면은 영어와 한국어뿐이라 다른 언어 페이지는 UI 이름을 영어로 둔다(스토어 문안과 같음). 1.0.0 의 Transit to the next checkpoint 스위치는 1.0.1 에서 To the next checkpoint 선택(Walk, Bus, Subway)으로 바뀌었다. 1.0.3 의 FAQ 예시 7분(평소 출발이 7분 늦습니다), 3번(같은 묶음 기록 3번, 3번 서현로)은 지원(FAQ)에만 쓴다. 'Edit route' 는 1.0.3 에서 'Edit on map'(지도에서 고치기)으로 바뀌어 버스나 지하철 구간 FAQ 를 고쳤다",
  "sources": [
+  "1.0.4 앱 코드: OnPace dbab3b8(project.yml MARKETING_VERSION 1.0.4, CURRENT_PROJECT_VERSION 1, 제출 0e6fc86, 2026-10-28 READY_FOR_SALE, ASC 확인)의 PoC/ 를 1.0.3 84ef3a6 과 비교. 바뀐 앱 파일은 App/MapLook.swift, RouteBuilder.swift, RoutineMap.swift, Views.swift, WideLayoutFlag.swift 다섯과 project.yml 버전 번호뿐(나머지는 PoC/scripts). Shared, Widgets, StoreKit, ProStore, Paywall, InfoPlist, PrivacyInfo, Localizable.xcstrings diff 0, 새 저장 키, 파일, 네트워크, 권한 없음이라 처리방침과 무료, Pro 범위는 그대로. 0e6fc86..7d4f77c 는 스크립트와 문서뿐. whatsNew ko '• 펼친 iPhone Duo에서 넓은 지도로 길 편집 • iPhone Duo 지원 개선 • 세부 다듬기와 안정성 개선' (docs/store/metadata.json). 스토어 스크린샷: iPhone 세트(en-US, ko)와 shots-raw 는 1.0.3(65ea563, 10-19 캡처) 그대로, 1.0.4 에서 Duo 세트 50 로케일을 새로 올림(e77fe63, docs/store/screenshots/duo)",
   "1.0.3 앱 코드: OnPace 84ef3a6(1.0.3 빌드 1, project.yml MARKETING_VERSION 1.0.3, CURRENT_PROJECT_VERSION 1, 2026-10-20 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.2 c60cf84 와 비교. 그 뒤 24dbad1 까지는 whatsNew, 스크린샷, 문서뿐. 커밋: 7706d93(잠금 화면 머리글), 439a6a0(접는 iPhone 실행 화면), e1d548b, 6954ace(기록으로 다듬기, 도착 예상), 5bfbced(사용성, 되돌리기). ProStore, Paywall, InfoPlist.xcstrings, PrivacyInfo.xcprivacy diff 0, project.yml 은 버전 번호만, 새 저장 키, 파일, 네트워크 없음(History.PassRecord 에 midway 표시 하나, 실행 기록 안의 값)이라 처리방침은 그대로. whatsNew ko '• iPhone Duo 실행 화면 지원 • 기록으로 다듬기 제안 개선 • 지점 편집에 되돌리기 추가 • 잠금 화면 카드 가독성 개선 • 세부 다듬기와 안정성 개선' (docs/store/metadata.json). UI 이름은 PoC/Shared/Localizable.xcstrings(84ef3a6, ko 와 en 원문뿐)",
   "(옛 기록) 1.0.2 앱 코드: OnPace c60cf84(1.0.2 빌드 3, project.yml MARKETING_VERSION 1.0.2, CURRENT_PROJECT_VERSION 3, 2026-10-15 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.1 599acc7 과 비교. 그 뒤 439852f 까지는 스크린샷과 문서뿐, 7706d93 은 1.0.3. whatsNew ko '늦는 정도에 따른 1분간격 효과음(1분부터 5분) / Apple Watch와 CarPlay Live 화면 일부 대응 / 실행 중 Siri 시작으로 길이 바뀌던 문제 수정' (docs/store/metadata.json). UI 이름은 PoC/Shared/Localizable.xcstrings(c60cf84, ko 와 en 원문뿐). 권한 문구와 StoreKit 은 바뀌지 않음, Info.plist 에 audio 백그라운드 모드 더함",
   "OnPace/docs/SITE_DRAFT.md (fd1057f, 1.0.1 에서 바뀌는 사실 55c3a1b, 빵집 a192fdf)",
