@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.3",
+ "describesVersion": "1.0.4",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -89,6 +89,7 @@
   "3072"
  ],
  "sources": [
+  "BrushWorks 1.0.4 기준(2026-10-28 사이트 갱신). 커밋 범위 3795448(1.0.3 출시 기록)..9bc5a2d(아카이브 172601, 마지막 앱 코드 커밋), 제출 기록 2f5587a(NEXT, STATUS). project.yml MARKETING_VERSION 1.0.4. Sources 변경 3개 파일: Sources/Engine/CanvasRenderer.swift:603 undo 와 :627 redo 가 제스처 단위(:612 gestureStart, Sources/Model/StrokeLog.swift:480 continuesGesture), Sources/App/ReplaySheet.swift:126 끌기는 지난 이벤트와의 차이만 더하고 :189 배율 0.05 를 없애 캔버스 폭 전체가 영상 전체, 오른쪽에서 왼쪽 언어는 부호를 바꿈, CanvasRenderer.restoreSliceLimit(:1182) 앱을 켤 때 다시 그리기를 칠하는 면적으로 나눔. UserDefaults, 네트워크, 권한, PrivacyInfo 변경 없음. whatsNew ko '• 되돌리기를 한 획 단위로 개선 • 리플레이 끌기 개선 • 그리던 그림 불러오기 개선'(docs/store/metadata.json)",
   "BrushWorks 1.0.3 기준(2026-10-20 사이트 갱신). 커밋 범위 8a79890(1.0.2, 09-28)..1bd0ae9(마지막 코드 커밋, 10-16), 출시 기록 3795448(NEXT, STATUS). project.yml MARKETING_VERSION 1.0.3, TARGETED_DEVICE_FAMILY 1, UISupportedInterfaceOrientations 세로와 가로 좌우. 1.0.2(8a79890) 뒤 Sources 변경 7개 파일에 UserDefaults, 네트워크, 권한 줄 추가 없음. Sources/App/CanvasLayout.swift(usesRail, minStripWidth, iconStripEdge), Sources/App/CanvasScreen.swift(iconButtonsHead, iconButtonsTail, sideStripColumn). 단추 이름은 Sources/Resources/Localizable.xcstrings(Photo, Undo, Redo, Save, Original photo, Replay, Underlay, Settings). whatsNew ko '• iPhone Duo 지원 • 붓 질감 세기 조정 • 다크 모드에서 잠금 해제 버튼 글자색 조정'(docs/store/metadata.json)",
   "BrushWorks main(1.0.1 제출, 2026-09-25) 기준. 1.0.2(빌드 1, 2026-09-30 출시, HQ 가 ASC READY_FOR_SALE 확인)는 붓 질감 표현(조명 v2, 질감 세대 5)만 바뀌었고 기능, 가격, Pro 혜택, 저장 규격, 스토어 문안, 스크린샷은 1.0.1 과 같다(BrushWorks 세션 09-30 보고, HQ 가 커밋 8cfa2c0~e9d8f37 로 대조)",
   "BrushWorks/project.yml (MARKETING_VERSION 1.0.1, 사진 권한 문구)",
@@ -113,5 +114,5 @@
   "BrushWorks/docs/STATUS.md",
   "support/brushworks.html"
  ],
- "versionNote": "BrushWorks 1.0.3(빌드 1)이 2026-10-20 출시(HQ 가 ASC READY_FOR_SALE 확인, BrushWorks 세션이 같은 날 ASC 에서 다시 읽음). 1.0.2 뒤 바뀐 것: 접는 iPhone 옆 띠의 아이콘 열, 붓 질감 세기(Bristle 끌림 결, Glaze 색 쪽 천 결), 다크 모드 결제 화면 가격 단추 글자색. 사이트에는 FAQ '가로 화면과 접는 iPhone에서 쓰기' 하나를 8개 언어에 더했다(가로 레일은 1.0.1 부터 있었으나 사이트에 없던 것을 같이 적었다). 질감 세기와 단추 글자색은 사이트 문장에 해당 없음. 무료/Pro 경계, 상품, 권한, 네트워크 코드, PrivacyInfo, UserDefaults 키는 1.0.2 와 같아 처리방침은 바꾸지 않았다"
+ "versionNote": "BrushWorks 1.0.4(빌드 1)이 2026-10-28 출시(ASC READY_FOR_SALE 확인). 1.0.3 뒤 바뀐 것: 되돌리기와 다시하기가 손가락을 대고 뗄 때까지의 한 획 단위(멈췄다 이어 그어 쪼개진 세그먼트도 한 번), 리플레이 끌기가 끈 거리만큼 이동, 앱을 켤 때 그리던 그림 다시 그리기와 불러오는 막대를 칠하는 면적 기준으로 고르게. 스토어 iPhone 칸 스크린샷을 지금 앱 화면으로 다시 찍고 iPhone Duo 칸을 새로 채웠다. 사이트 문장은 바꾸지 않았다: 되돌리기 단위는 사이트에 적힌 적이 없고, 리플레이 FAQ '캔버스를 좌우로 끌면 원하는 지점으로 이동합니다' 는 그대로 맞으며, 불러오기 매끄러움은 사이트 문장에 해당 없음. 무료/Pro 경계, 상품, 권한, 네트워크 코드, PrivacyInfo, UserDefaults 키는 1.0.3 과 같아 처리방침은 바꾸지 않았다"
 }
