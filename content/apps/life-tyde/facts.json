@@ -1,6 +1,6 @@
 {
- "describesVersion": "1.3.0",
- "platform": "iOS 17 이상, iPhone과 iPad (TARGETED_DEVICE_FAMILY 1,2). 위젯 확장 포함. 저장소의 LifeTyde-Android 는 이 사이트에서 다루지 않음",
+ "describesVersion": "1.4.0",
+ "platform": "iOS 17 이상, iPhone과 iPad (TARGETED_DEVICE_FAMILY 1,2). 위젯 확장 포함. 저장소의 LifeTyde-Android 는 이 사이트에서 다루지 않음. 1.4.0 부터 같은 대상에 macOS 14 판(SUPPORTED_PLATFORMS 에 macosx, MACOSX_DEPLOYMENT_TARGET 14.0)이 있으나 2026-10-28 ASC 에서 macOS 1.4.0 은 IN_REVIEW 라 사이트에 Mac 판, Mac App Store 이야기를 싣지 않음(출시 뒤 따로)",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -36,6 +36,8 @@
   "타임라인별 나이 기준(1.2.8): 메인이 아닌 타임라인에서 메인 타임라인과 같게(기본) 또는 따로 설정. 설정의 나이 / 경과 연수 표시 아래(둘째 타임라인을 보고 있을 때만 보임)와 타임라인 관리의 타임라인 편집 시트. 나란히 보기와 근처에서 교환도 같은 기준",
   "과거의 오늘 카드(1.2.8): 태그로 거르는 중에도 남음",
   "iPhone Duo(1.2.9, 사이트 표기는 접는 iPhone): 펼친 넓은 화면은 regular 폭이라 iPad 배치(글씨 두 단계, 본문 600 가운데, 연도 레일). 옆에 시스템 띠가 있으면 본문 칸 480(LinearTimelineView.swift:71, :76, :103, :899, 74c1fa5). 접고 펼 때 시트 내용과 책 읽던 자리 유지(2b35fcc). 편집 중 메모 칸이 키보드에 가리지 않게(9524c7c). 사이트는 기기 상표명을 쓰지 않는다",
+  "접는 iPhone 자리 지키기(1.4.0, 9017d5c, 빌드 40 = d8f975f): 접고 펼 때(isWideLayout 바뀜) 편집 중이 아니면 바뀌기 직전 가운데 기록으로 다시 옮김(LinearTimelineView.swift:1313-1321). 펼친 세로로 든 채 접으면 바깥 화면이 잠깐 가로가 되는데, 가로로 갈 때 가운데 기록을 적어 두고(EditRevealGeometry.swift:25 portraitReturnID) 세로로 돌아오면 그 기록으로 옮김(LinearTimelineView.swift:1322-1337). 편집 중이면 편집 올리기가 자리를 맡음. 사이트 문구 '접거나 펼쳐도 보던 기록은 제자리에 남습니다'. 책 읽기(BookReaderView)의 두 쪽 펼침은 폭 720 이상에서만(BookReaderView.swift:106-107), 사이트에는 쓰지 않음",
+  "iPad 편집 메뉴의 기록 명령(1.4.0, 132e312): 편집 중인 기록에 메뉴 막대 편집 메뉴(CommandGroup after: .pasteboard)의 Done, Cancel, Highlight(강조 해제), 날짜 선택, 태그 선택, Add photos(저장된 기록만), 이전 이벤트(⌃⌘↑), 다음 이벤트(⌃⌘↓), Move to Trash(TimelineCommands.swift:93-131, d8f975f, #if os(iOS) 밖이라 iPad 에도). 키보드 위 편집 막대와 같은 함수(LinearTimelineView+Commands.swift:50-69 recordEditActions, makeEditBar). iPad 의 여러 줄 입력 칸은 ⌘↩ 와 Esc 를 먼저 가져가 그 두 단축키는 먹지 않음(코드 주석 :94-96). 사이트 문구는 iPadOS 26 이상 메뉴 막대의 편집 메뉴에 강조, 날짜, 태그 명령(단축키는 쓰지 않음). de 는 메뉴 항목 글자가 'Highlight'(키 Highlight 의 de 값)라 'Befehle für Highlight, Datum und Tags'. 편집 메뉴 이름은 시스템 메뉴라 각 언어 iPadOS 이름(편집, Edit, 編集, 编辑, 編輯, Bearbeiten, Edición, Editar), 1.4.0 whatsNew 와 같음",
   "iCloud 동기화, Spotlight 검색, 타임라인 이미지 내보내기, CSV 내보내기와 불러오기, 휴지통(7일 보관)",
   "이 연대기 요약하기(Apple Intelligence), 태그 제안(NaturalLanguage, 전 기기)",
   "앱 안 검색(1.3.0, 무료): 툴바 기어 옆 돋보기 단추(접근성 큰 글자에서는 더보기 메뉴 맨 위, LinearTimelineView+Toolbar.swift:150-157, :213-215, 606de72), 맨 위를 당겨도 검색칸(.searchable navigationBarDrawer, LinearTimelineView.swift:1283). 제목, 메모, 태그 이름, 대소문자와 악센트와 폭 무시, 낱말 여럿이면 모두 맞아야 함(TimelineSearch.swift). 결과를 누르면 그 기록으로 이동",
@@ -44,7 +46,9 @@
   "길게 누르기 메뉴(1.3.0): iPhone 세로에서도 행을 길게 누르면 편집, 강조, 날짜 선택, 태그, 휴지통으로 이동(LinearTimelineView+Commands.swift:98-121). iPad 는 오른쪽 클릭도",
   "휴지통으로 옮기면 'Moved to Trash' 토스트에 '실행 취소'(Undo) 단추, 약 4초(VoiceOver 12초) (ToastModifier.swift:22, :25, :40-42, LinearTimelineView+Commands.swift withUndo). 편집 막대, 선택 모드, iPad 행 메뉴의 지우기 확인창은 없앰",
   "빈 타임라인 이정표 칩(1.3.0, 8ee519f): 'Pick a first moment to start', 칩을 누르면 제목을 채운 초안. 사이트에는 쓰지 않음",
-  "사이트에 쓰지 않는 1.3.0 변경: 다시보기 연출(축 긋기, 연도 굴림, b7f74c2, 7f647af), 내리면 해가 넘어가는 움직임(d524d6c), iPhone 연도 눈금(YearScrubber.swift), 날짜 칸이 같은 편집기로 열림, 날짜 시트 취소, 두 줄 제목, 가로 보기 '보기 전용', 강조 아이콘 원, 편집 진입 튐 수정. whatsNew 의 '세부 다듬기와 안정성 개선'에 묶임"
+  "사이트에 쓰지 않는 1.3.0 변경: 다시보기 연출(축 긋기, 연도 굴림, b7f74c2, 7f647af), 내리면 해가 넘어가는 움직임(d524d6c), iPhone 연도 눈금(YearScrubber.swift), 날짜 칸이 같은 편집기로 열림, 날짜 시트 취소, 두 줄 제목, 가로 보기 '보기 전용', 강조 아이콘 원, 편집 진입 튐 수정. whatsNew 의 '세부 다듬기와 안정성 개선'에 묶임",
+  "사이트에 쓰지 않는 1.3.1, 1.3.2 변경(아래 de 두 곳 말고는 사이트 문장과 어긋나는 것 없음): 1.3.1 새 기록의 월과 일을 오늘로 채우고, 손대지 않은 채 연도만 다른 해로 바꾸면 월과 일을 비움(EditSession.swift:18, :26-35, 253a4d5, 0f2e5ab, 0494c7d. 사이트 '월과 일, 메모는 아는 만큼 채웁니다' 그대로 맞음), 읽기 모드 메모를 5줄에서 자르지 않고 다 보임(253a4d5). 1.3.2 앱 독일어 다듬기(749209f, 사이트 de 에 걸린 두 곳은 1.4.0 반영 때 맞춤: 알림 칩 'Same day' 가 Am Tag 에서 Am Tag selbst 로, 다시보기 필터 설명 'Replay by decade, tag, or highlight.' 가 Tag 에서 Hashtag 로), PDF 책을 처음 저장하거나 공유한 뒤 평점을 한 번 묻기(BookReviewPrompt.swift:10-19, UserDefaults reviewAskedAfterBook, e638fdd)",
+  "사이트에 쓰지 않는 1.4.0 변경: Mac 판 전부(132e312 의 Mac 쪽, 1ee2b6c, 429cc86, c6aaf8b, 6c0de01, 41ca55b, a1bf3b8, 대부분 #if os(macOS)). iOS 화면은 1ee2b6c 에서 '그대로'(커밋 글)"
  ],
  "network": [
   "App Store 결제와 구매 복원, 상품 불러오기 (StoreKit 2)",
@@ -71,7 +75,8 @@
   "휴지통: 지운 이벤트를 7일 보관 후 삭제, 영구 삭제 버튼 있음",
   "사진(1.3.0): Attachment.imageData 긴 변 2048px JPEG(.externalStorage, CloudKit CD_imageData_ckAsset), thumbnailData 긴 변 240px, sortOrder. 이벤트당 30장(PhotoLimits, 무료와 Pro 같음). 새 CGImageDestination 으로 다시 인코딩해 EXIF(위치, 기기) 없음(PhotoProcessing.swift:36-60). 캐시는 메모리 NSCache 뿐. Spotlight 항목에 첫 사진 썸네일(attrs.thumbnailData, 검색 대상 아님). AI, 근처에서 교환(GuestPayload), 타임라인 이미지, 책 PDF, CSV 에는 안 들어감. Event.attachments cascade, 한 장씩 삭제 가능",
   "그때의 세상 설정: UserDefaults worldThenEnabled(기본 false), worldThenPackToggles(기본값과 다르게 바꾼 팩 id, 쉼표 목록). 기기마다, DB와 CloudKit 에 두지 않음(WorldThenSettingsView.swift:10-11, WorldThenSource.swift packTogglesKey). 처리방침의 '표시 방식 같은 설정'에 들어가므로 처리방침은 고치지 않음",
-  "1.3.0 에서 그 밖의 새 저장 키, 파일, 네트워크 요청 없음(225fffa..3f94c86 diff 에서 추가된 UserDefaults 와 파일 쓰기는 #if DEBUG 스크린샷과 PhotoLoadSeed, DebugStore 뿐). Info.plist, PrivacyInfo.xcprivacy, entitlements, Configuration.storekit diff 0. 검색은 저장하지 않음(최근 검색 없음)"
+  "1.3.0 에서 그 밖의 새 저장 키, 파일, 네트워크 요청 없음(225fffa..3f94c86 diff 에서 추가된 UserDefaults 와 파일 쓰기는 #if DEBUG 스크린샷과 PhotoLoadSeed, DebugStore 뿐). Info.plist, PrivacyInfo.xcprivacy, entitlements, Configuration.storekit diff 0. 검색은 저장하지 않음(최근 검색 없음)",
+  "1.3.1부터 1.4.0까지(3f94c86..d8f975f): 새 저장 키는 1.3.2 평점 물음 여부 reviewAskedAfterBook(UserDefaults Bool, BookReviewPrompt.swift:10) 하나로 처리방침의 '설정'에 해당. Info.plist, PrivacyInfo.xcprivacy, iOS entitlements, Configuration.storekit diff 0(새로 생긴 것은 macOS entitlements 셋뿐). 새 네트워크 코드 없음. 처리방침은 고치지 않음, 시행일 2026-10-19 그대로"
  ],
  "tracking": "NSPrivacyTracking false, NSPrivacyCollectedDataTypes 비어 있음, 필수 사유 API는 UserDefaults(CA92.1)뿐. 광고 식별자와 분석 도구 없음",
  "uiNames": {
@@ -154,7 +159,7 @@
  ],
  "numbersNote": "3, 4 는 Pro 블록(타임라인 최대 3개, A4). 170 은 문구가 아니라 sections[1].visual.focus(-170px) 값으로, 검사기가 이 값도 숫자로 세기 때문에 넣었다. 나머지는 FAQ 에 쓴 숫자(100, 1, 10, 7, 5, 26, 2). 2 는 1.2.8부터 소개 문구(타임라인이 2개 이상이면)에도 쓴다. 30 은 1.3.0 사진 한도로 FAQ 에만 쓴다(검사기는 FAQ 숫자를 세지 않지만 근거로 적어 둔다)",
  "sources": [
-  "Life Tyde/Life Tyde.xcodeproj/project.pbxproj (MARKETING_VERSION 1.3.0, 빌드 37. 아카이브 LifeTyde-1.3.0-b37-r4(2026-10-20 19:24, Xcode 27.1)는 3f94c86 시점, 그 뒤 1e52fe3 까지는 docs/ 와 results/ 뿐. 1.2.9 빌드 36 은 225fffa. iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, 사진 추가 권한 문구, 패키지 의존성 없음)",
+  "Life Tyde/Life Tyde.xcodeproj/project.pbxproj (MARKETING_VERSION 1.4.0, 빌드 40. iOS 아카이브 LifeTyde-1.4.0-b40.xcarchive(Archives/2026-10-26, 21:48)는 판올림 커밋 d8f975f(21:46) 시점. 그 뒤 f6c0a15 는 Mac 아이콘과 Mac 앱 분류(Mac 아카이브용), 나머지는 docs 와 도구. 1.3.2 빌드 39 는 c9b1215, 1.3.0 빌드 37 은 3f94c86. iOS 17.0, TARGETED_DEVICE_FAMILY 1,2, 사진 추가 권한 문구, 패키지 의존성 없음)",
   "Life Tyde/Life Tyde/Features/Subscription/FeatureGate.swift (FreeLimits 100, 1, 10, ProLimits.profileCount 3, PhotoLimits 30(1.3.0), filteredReview, exportBook. FreePacks 는 1.3.0 에서 없앰)",
   "Life Tyde/Life Tyde/Features/Subscription/Configuration.storekit (NonConsumable 1개, subscriptionGroups 없음)",
   "Life Tyde/Life Tyde/Features/Subscription/ProStore.swift (상품 ID, AppStore.sync 복원)",
@@ -194,7 +199,9 @@
   "Life Tyde/Life Tyde/Features/Photos/ (EventPhotos, PhotoViewer, PhotoProcessing, EventPhotoIndex), Models/Attachment.swift, Features/Timeline/Linear/LinearTimelineView+Photos.swift, EventRow.swift (1.3.0 사진)",
   "Life Tyde/Life Tyde/Features/WorldThen/ (WorldThenSource, WorldThenSettingsView, WorldLineRow), LinearTimelineView+WorldThen.swift (1.3.0 그때의 세상)",
   "Life Tyde/Life Tyde/Features/Export/ChronologyExportSheet.swift (1.3.0 책 만들기: 미리보기, PDF 내보내기)",
-  "Life Tyde/docs/store/metadata.json (1.3.0 설명: 기능 절 '기록한 해마다 그때의 세상 한 줄', zh-Hant 는 '為紀錄加入照片', Pro 절 이벤트 팩 줄 없음, whatsNew 네 줄), Life Tyde/docs/store/PENDING.md (빌드 37 = 798fd5be, 2026-10-21 WAITING_FOR_REVIEW), Life Tyde/docs/NEXT.md, Life Tyde/results/release-notes-1.3.0.txt, results/기능소개_LifeTyde_v1.3.0_20261019.html (10-19 기준, 책으로 읽기와 샘플 둘러보기는 그 뒤 뺌)"
+  "Life Tyde/docs/store/metadata.json (1.3.0 설명: 기능 절 '기록한 해마다 그때의 세상 한 줄', zh-Hant 는 '為紀錄加入照片', Pro 절 이벤트 팩 줄 없음, whatsNew 네 줄), Life Tyde/docs/store/PENDING.md (빌드 37 = 798fd5be, 2026-10-21 WAITING_FOR_REVIEW), Life Tyde/docs/NEXT.md, Life Tyde/results/release-notes-1.3.0.txt, results/기능소개_LifeTyde_v1.3.0_20261019.html (10-19 기준, 책으로 읽기와 샘플 둘러보기는 그 뒤 뺌)",
+  "Life Tyde/docs/store/metadata.json (1.4.0 whatsNew ko: Mac 지원, iPhone Duo 화면 개선, iPad 편집 메뉴에 기록 명령 추가, 세부 다듬기와 안정성 개선. 사이트는 Mac 줄을 빼고 둘째, 셋째 줄만), Life Tyde/docs/store/PENDING.md (1.4.0 빌드 40 iOS 와 Mac 제출, iOS 2.3.2 반려 뒤 다시 제출), Life Tyde/docs/NEXT.md",
+  "Life Tyde/Life Tyde/App/TimelineCommands.swift:93-131, Features/Timeline/Linear/LinearTimelineView+Commands.swift:45-69 (1.4.0 편집 메뉴 기록 명령), LinearTimelineView.swift:1313-1337, EditRevealGeometry.swift:25, EventRow.swift titleFieldEpoch, Features/Export/BookReaderView.swift:106-107 (1.4.0 접고 펴기, 모두 d8f975f 기준)"
  ],
- "versionNote": "Life Tyde 1.3.0(빌드 37)이 2026-10-21 출시(HQ 가 ASC READY_FOR_SALE 확인). 범위는 1.2.9 빌드 36(225fffa)에서 빌드 37 아카이브 r4(3f94c86)까지. 8개 언어에 반영: 첫 절 본문에 사진(강조한 기록은 넓게, 나머지는 오른쪽 끝 작게), 불릿 '이벤트 마켓의 시대 사건 팩'을 '기록한 해마다 그때의 세상 한 줄'로(zh-hant 는 그때의 세상이 앱에 없어 스토어처럼 '為記錄加入照片'), 둘째 절 본문에 검색, 넷째 절에 길게 누르기 메뉴가 iPhone 에도, Pro 목록에서 '모든 이벤트 팩' 삭제, FAQ 보관 위치에 사진 동기화와 실행 취소, 무료 범위에서 마켓 문장 삭제와 검색, 사진, 그때의 세상은 무료와 Pro 같음, 새 FAQ 셋(기록에 사진 붙이기, 그때의 세상, 책 만들기). 샘플 둘러보기와 책으로 읽기는 1.2.9 사이트 문구에 없었다. 처리방침은 사진 내용을 91d9a19(2026-10-19)에 이미 넣었고, 그 뒤 바뀐 저장, 권한, 네트워크가 없어(그때의 세상 설정 두 키는 기존 '표시 방식 같은 설정'에 들어감) 고치지 않았다. 시행일 2026-10-19 그대로"
+ "versionNote": "Life Tyde iOS 1.4.0(빌드 40)이 출시(2026-10-28 ASC READY_FOR_SALE, HQ 확인). macOS 1.4.0(Mac 첫 판)은 같은 날 IN_REVIEW 라 사이트에 싣지 않음. 범위는 1.3.0 빌드 37(3f94c86)에서 1.4.0 빌드 40 iOS 아카이브(d8f975f)까지(1.3.1, 1.3.2 포함, 1.3.2 때는 de 부제만 7751939d 로 맞춤). 8개 언어에 반영: 넷째 절 본문에 두 문장, iPadOS 26 이상 iPad 메뉴 막대의 편집 메뉴에 편집 중인 기록의 강조, 날짜, 태그 명령(132e312)과 접는 iPhone 을 접거나 펼쳐도 보던 기록이 제자리에 남음(9017d5c). de 는 1.3.2 앱 독일어에 맞춰 FAQ 알림 칩 Am Tag selbst, Pro 목록 'Rückschau gefiltert nach Jahrzehnt, Hashtag oder Highlight'(749209f). 1.3.1 의 새 기록 오늘 날짜와 긴 메모 다 보이기, 1.3.2 의 평점 물음, 책 두 쪽 폭 조건은 사이트 문장과 어긋나지 않아 싣지 않음. 처리방침은 그대로(새 키는 평점 물음 여부 하나, 권한, 네트워크, 추적 변화 없음), 시행일 2026-10-19 유지. 스토어 그림: 1.4.0 에서 iPhone Duo 스크린샷 50개 로케일 x 6장과 Mac 스크린샷이 새로 올라감, iPhone 과 iPad 스크린샷은 바뀌지 않음(de-DE 는 1.3.2 에서 교체), iOS 앱 아이콘은 그대로(f6c0a15 는 Mac 크기만 더함). 사이트 그림은 이번에 바꾸지 않음"
 }

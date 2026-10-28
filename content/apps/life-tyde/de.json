@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Öffnen und schreiben",
    "body": [
-    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Langes Drücken auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben; auf dem iPad öffnet es auch ein Rechtsklick, und Tastaturkurzbefehle springen zum vorigen oder nächsten Jahr. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte."
+    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Langes Drücken auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben; auf dem iPad öffnet es auch ein Rechtsklick, und Tastaturkurzbefehle springen zum vorigen oder nächsten Jahr. Auf einem iPad mit iPadOS 26 oder neuer finden Sie die Befehle für Highlight, Datum und Tags des Eintrags, den Sie gerade bearbeiten, auch im Menü Bearbeiten der Menüleiste. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte. Beim Zu- und Aufklappen bleibt der Eintrag, den Sie gerade ansehen, an seiner Stelle."
    ],
    "bullets": [],
    "visual": {
@@ -87,7 +87,7 @@
    "Chronikbuch als PDF im A4-Format",
    "Unbegrenzte Ereignisse und Hashtags",
    "Bis zu 3 Timelines",
-   "Rückschau gefiltert nach Jahrzehnt, Tag oder Highlight",
+   "Rückschau gefiltert nach Jahrzehnt, Hashtag oder Highlight",
    "Essay-Entwürfe und Vorworte mit Apple Intelligence"
   ]
  },
@@ -143,7 +143,7 @@
   {
    "q": "Anstehendes und Erinnerungen",
    "a": [
-    "Ein Eintrag mit einem Datum ab morgen wird zu einem anstehenden Ereignis. Sobald Monat und Tag feststehen, bietet Erinnere mich Am Tag, 1 Tag vorher, 1 Woche vorher oder 1 Monat vorher an. Die App fragt beim ersten Sichern eines Ereignisses mit Erinnerung nach der Mitteilungsberechtigung.",
+    "Ein Eintrag mit einem Datum ab morgen wird zu einem anstehenden Ereignis. Sobald Monat und Tag feststehen, bietet Erinnere mich Am Tag selbst, 1 Tag vorher, 1 Woche vorher oder 1 Monat vorher an. Die App fragt beim ersten Sichern eines Ereignisses mit Erinnerung nach der Mitteilungsberechtigung.",
     "Ist das Datum vorbei, tippen Sie auf Als erledigt markieren, und das Ereignis wird zu einem gewöhnlichen Eintrag. Haben Sie eine Wiederholung gesetzt, wird in diesem Moment der nächste Termin eingeplant."
    ]
   },

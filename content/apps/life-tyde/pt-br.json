@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abra e escreva",
    "body": [
-    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. Um toque longo num registro abre um menu para editar ou destacar; no iPad, um clique com o botão direito abre o mesmo menu, e atalhos de teclado pulam para o ano anterior ou o seguinte. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio."
+    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. Um toque longo num registro abre um menu para editar ou destacar; no iPad, um clique com o botão direito abre o mesmo menu, e atalhos de teclado pulam para o ano anterior ou o seguinte. Num iPad com iPadOS 26 ou posterior, o menu Editar da barra de menus também tem os comandos para destacar o registro que você está editando e escolher a data e as tags. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio. Ao dobrar ou abrir o aparelho, o registro que você estava vendo continua no lugar."
    ],
    "bullets": [],
    "visual": {

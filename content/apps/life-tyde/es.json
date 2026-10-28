@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abre y escribe",
    "body": [
-    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. Una pulsación larga sobre una entrada abre un menú para editarla o destacarla; en el iPad también lo abre un clic derecho, y los atajos de teclado saltan al año anterior o al siguiente. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro."
+    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. Una pulsación larga sobre una entrada abre un menú para editarla o destacarla; en el iPad también lo abre un clic derecho, y los atajos de teclado saltan al año anterior o al siguiente. En un iPad con iPadOS 26 o posterior, el menú Edición de la barra de menús también tiene los comandos para destacar la entrada que estás editando y elegir su fecha y sus etiquetas. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro. Al plegarlo o desplegarlo, la entrada que estabas viendo se queda en su sitio."
    ],
    "bullets": [],
    "visual": {
