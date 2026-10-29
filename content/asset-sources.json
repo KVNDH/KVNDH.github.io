@@ -90,28 +90,28 @@
   "icon": "diceMaster/diceMaster/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
   "shots": {
    "ko": [
-    "diceMaster/docs/store/shots-raw/iphone/ko/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/ko/02.png"
    ],
    "en": [
-    "diceMaster/docs/store/shots-raw/iphone/en-US/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/en-US/02.png"
    ],
    "ja": [
-    "diceMaster/docs/store/shots-raw/iphone/ja/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/ja/02.png"
    ],
    "zh-hans": [
-    "diceMaster/docs/store/shots-raw/iphone/zh-Hans/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/zh-Hans/02.png"
    ],
    "zh-hant": [
-    "diceMaster/docs/store/shots-raw/iphone/zh-Hant/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/zh-Hant/02.png"
    ],
    "de": [
-    "diceMaster/docs/store/shots-raw/iphone/de-DE/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/de-DE/02.png"
    ],
    "es": [
-    "diceMaster/docs/store/shots-raw/iphone/es-ES/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/es-ES/02.png"
    ],
    "pt-br": [
-    "diceMaster/docs/store/shots-raw/iphone/pt-BR/01.png"
+    "diceMaster/docs/store/shots-raw/iphone/pt-BR/02.png"
    ]
   },
   "store": "diceMaster/docs/store"

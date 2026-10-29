@@ -1,23 +1,27 @@
 {
- "describesVersion": "1.1.3",
+ "describesVersion": "1.2.0",
  "purchase": "one-time",
  "ads": false,
  "account": false,
  "network": [
   "App Store 결제와 구매 복원(StoreKit 2, 비소모성 com.kimdh.dicemaster.pro)",
   "App Store 평가 요청 창(AppStore.requestReview, Apple 시스템 창)",
-  "굴리기 결과 공유(ShareLink, 텍스트만, 이용자가 누를 때만)"
+  "굴리기 결과 공유(ShareLink, 텍스트만, 이용자가 누를 때만)",
+  "함께 굴리기(1.2.0, 무료): MultipeerConnectivity, 서비스 dm-room(Room/RoomSession.swift:13), MCSession encryptionPreference .required(:237), 방장 중심 별 모양, 방장 포함 최대 8명(maxMembers :14, 초대 수락 정원 :751-755). 인터넷, 서버 없음. 방장 알림 discoveryInfo 는 방장 이름(이름 칸 20자, Views/RoomSheet.swift:20-22)과 인원 n(RoomSession.swift:263-265). 방 안에서 주고받는 것: hello(실행마다 만든 UUID, 이름, 방장 여부), 판 설정(DiceConfig, 숨겨 굴리기, 방장 스킨과 보기 방식), 굴린 눈, 판 상태, 3D 굴림 대본, 시계 맞추기 ping/pong(Room/RoomMessage.swift:4-75). 참가 초대 context 에 기기 표지(RoomSession.swift:184-198). MCPeerID 표시 이름은 이름이 아니라 내부 UUID 앞 8자(:114-115). 근처 방 찾기는 함께 굴리기 시트를 연 동안만(RoomSheet.swift:68-74). 사이트 표기 '같은 와이파이나 블루투스'는 앱 문구 roomLobbyDetail 과 같음",
+  "결과 카드 보내기(1.2.0): 한 번에 굴린 2개 이상이 모두 같은 눈이고 희귀 이상이면(Views/Components/ResultCardView.swift:47-52) 정렬 옆 단추와 기록 행 메뉴에서 1080px PNG 를 공유 시트로(ResultCardView.swift:81-111, MainDiceView.swift:4473-4493, HistorySheet.swift:105-114). 이용자가 누를 때만. 사이트 본문에는 쓰지 않고 처리방침 제3자 제공 문장에만 '결과 카드 그림'",
+  "방 시트의 App Store 링크 보내기(1.2.0, RoomSheet.swift:18, :339 ShareLink, 이용자가 누를 때만)"
  ],
  "permissions": [
-  "Info.plist 에 *UsageDescription 없음, 요청하는 권한 없음",
+  "Info.plist 의 권한 문구는 1.2.0 부터 NSLocalNetworkUsageDescription 하나(함께 굴리기, 13개 언어는 InfoPlist.xcstrings)와 NSBonjourServices _dm-room._tcp, _dm-room._udp (Info.plist:25-31). 그 밖에 요청하는 권한 없음",
   "흔들어서 굴리기: CMMotionManager 가속도계, 포그라운드에서만 구동, 값 저장 없음(권한 불필요)",
-  "PrivacyInfo.xcprivacy: 수집 데이터 없음, 추적 없음, UserDefaults(CA92.1)만 선언"
+  "PrivacyInfo.xcprivacy: 수집 데이터 없음, 추적 없음, UserDefaults(CA92.1)만 선언(1.1.3 에서 1.2.0 까지 diff 0)"
  ],
  "storage": [
   "주사위 설정, 나만의 프리셋, 숨긴 기본 프리셋, 앱 설정, Pro 캐시: UserDefaults",
   "굴리기 기록: Library/Application Support/DiceMaster_sessionLog.json, 최대 30,000건",
   "iCloud 동기화 없음, 백업 제외 설정 없음",
-  "앱 초기화: 설정, 프리셋, 굴리기 기록 삭제, Pro 구매 상태는 유지"
+  "앱 초기화: 설정, 프리셋, 굴리기 기록 삭제, Pro 구매 상태는 유지",
+  "함께 굴리기(1.2.0): 내 이름 roomNickname(UserDefaults, RoomSheet.swift:10), 기기 표지 roomDeviceTag(UserDefaults, 처음 쓸 때 만든 무작위 UUID, 기기 고유 식별자 아님, RoomSession.swift:191-198), 방에 들어가기 전 내 판 설정 roomMyConfig_v1(방을 나가 되돌리면 지움, RoomSheet.swift:666-682). 방 사람 목록과 남의 이름은 메모리에만 있고 방을 나가면 비움(RoomSession.swift teardown). 같은 판 굴림은 각 기기가 재생해 자기 기록에 남기지만 RollSession 에 이름 칸 없음(Models 의 기록 형식 1.2.0 diff 0). 방장 스킨과 보기 방식은 방 안에서만 덮고 저장하지 않음(Models/AppSettings.swift roomSkin, roomViewMode). 앱 초기화는 removePersistentDomain 이라 이 키들도 지움(AppSettings.swift:584-587)"
  ],
  "free": {
   "maxFaces": 10,
@@ -47,7 +51,8 @@
   "skins": 8,
   "builtInPresets": 17,
   "verdictGames": 10,
-  "languages": 13
+  "languages": 13,
+  "roomMembers": 8
  },
  "numbers": [
   "1",
@@ -55,6 +60,7 @@
   "3",
   "5",
   "6",
+  "8",
   "10",
   "11",
   "12",
@@ -64,6 +70,7 @@
   "999"
  ],
  "sources": [
+  "diceMaster 1.2.0 기준(2026-10-29 사이트 갱신, HQ 가 ASC READY_FOR_SALE 확인). 커밋 범위 15f7c16(1.1.3 출시 확인)..f9cec67(빌드 32 아카이브와 업로드, 마지막 앱 코드 커밋), 제출 02a36fe(문안만). 1.1.4(빌드 27~31)는 올리지 않고 1.2.0 으로 합침(results/CHANGELOG.md). project.pbxproj MARKETING_VERSION 1.2.0, CURRENT_PROJECT_VERSION 32. 새 파일 Room/RoomSession.swift, Room/RoomMessage.swift, Views/RoomSheet.swift, Views/Dice3D/Dice3DRoomSimulator.swift, Views/Components/ResultCardView.swift, InfoPlist.xcstrings. 아래 도구 막대(MainDiceView.swift:1482 toolBarInTopBar 는 iPhone 가로만, :1486-1504 순서 프리셋, 3D/2D, 함께, 팔레트, 기록, 설정, :1527 bottomToolBar). 접는 iPhone 옆 띠에는 사이드바 단추(펼쳐 넓을 때)와 주사위 수 −|+ 만(:1390-1401). 아이콘, PrivacyInfo, 무료/Pro 경계(ProStore.swift) diff 0. whatsNew ko '• 근처 친구와 '함께 굴리기' 추가 • 결과 화면에 '카드로 보내기' 추가 • 파클 다시 굴리기 판정 수정 • 세부 다듬기와 안정성 개선'(docs/store/metadata.json). 스토어 스크린샷 9e35595 에서 새 배치로 다시 찍고 1장을 함께 굴리기 방으로(여섯 장, shots.json, shots-raw 01~05 가 02~06 으로 밀림)",
   "diceMaster main 0077438 기준. 1.1.3(빌드 26, Xcode 27.1, 제출 b539d6e, 2026-10-15 07:11 KST HQ 가 ASC READY_FOR_SALE 확인)이 1.1.1 과 다른 것: 1.1.2(빌드 25, 477c9e5, 2026-10-08 출시) 나무, 대리석 스킨(Pro, DiceSkin.isProOnly 는 classic, aqua 만 무료)과 스킨 전용 굴림음, 충돌음, 앱 전체 글자 대비(6b62684, 4b1ff26, 사이트 문장 해당 없음). 1.1.3 접는 iPhone(사이트 표기, 기기 상표명 안 씀): 넓은 배치를 idiom 대신 창 폭으로(폭 500 이상이고 세로 compact 아님, 사이드바 700 이상, fe39842, 6f53a39), 옆 안전 영역 76pt 이상이면 위 막대 단추(사이드바, 3D, 팔레트, 기록, 설정, +, -)를 그 띠에 세로로(b4f89ef, Views/MainDiceView.swift:94~97). 펼친 채 세로는 띠 없음. iPhone, iPad 화면은 그대로. whatsNew ko '• iPhone Duo 지원 • 세부 다듬기와 안정성 개선'. 1.1.1 이전 사실: dbb3f11 기준(1.1.1 빌드 24, 2026-10-01 출시)",
   "그림(2026-10-02): 아이콘 AppIcon-1024.png(081d54d)로 icon-180, icon-360, og 를 다시 뽑고, 간체와 번체만 스토어 그림 docs/store/screenshots/iphone/zh-Hans|zh-Hant/01~03.png(15015ce 때 다시 찍은 합성본)과 확대 캡처 docs/store/shots-raw/iphone/zh-Hans|zh-Hant/01.png 로 바꿨다. 나머지 여섯 언어는 다시 뽑아도 바이트가 같다. 1.1.1 이 뜬 tw, cn 스토어(iTunes lookup)의 아이콘과 첫 세 장이 새 파일과 맞는 것을 대조했다",
   "diceMaster/diceMaster.xcodeproj/project.pbxproj (MARKETING_VERSION 1.1.3, 빌드 26, 패키지 의존성 없음)",
@@ -89,5 +96,6 @@
   "diceMaster/docs/store/metadata.json (대조용)",
   "diceMaster/results/CHANGELOG.md (v1.1.3, v1.1.2 절)",
   "support/dicemaster.html"
- ]
+ ],
+ "versionNote": "Dice Master 1.2.0(빌드 32)이 출시(HQ 가 ASC READY_FOR_SALE 확인, 2026-10-29 사이트 반영). 범위는 1.1.3 빌드 26 출시 뒤(15f7c16)부터 빌드 32 아카이브(f9cec67)까지, 올리지 않은 1.1.4 포함. 8개 언어에 반영: 셋째 절 본문에 함께 굴리기 두 문장(같은 와이파이나 블루투스로 근처 기기를 이어 최대 8명, 누가 굴려도 같은 주사위, 숨겨 굴리기면 공개 전까지 남의 주사위 가림), 넷째 절 접는 iPhone 띠 문장을 '위쪽 단추'에서 '주사위 수 단추'로(1.2.0 띠에는 −|+ 와 사이드바 단추만), FAQ 구매 복원의 톱니바퀴 위치를 화면 아래로(iPhone 가로는 오른쪽 위), FAQ 인터넷 연결에 함께 굴리기, 새 FAQ '함께 굴리기에서 서로 보이지 않을 때'(로컬 네트워크 권한). 처리방침 8개 언어: 처리 항목에 함께 굴리기 이름과 무작위 기기 표지, 제3자 제공에 결과 카드 그림과 함께 굴리기 문단(함께 굴리기 화면을 연 동안만 근처 방을 찾고 방을 만들거나 참가할 때만 이어짐(RoomSheet.swift:68-74, RoomSession.swift:233, :642), 방장 이름과 인원은 근처에서 방을 찾는 기기에 보임, 방 안에서 주고받는 것, 남의 이름은 저장하지 않고 기록에 남지 않음), 파기에 앱 초기화가 이름과 기기 표지도 지움, 안전성 조치에 로컬 네트워크 권한은 함께 굴리기에서 근처 기기를 찾고 잇는 데만(방장 알림과 방 연결도 이 권한), 암호화 연결. 시행일 2026-09-19 에서 2026-10-29 로. 요약 한 줄은 그대로(수집 없음, 회원가입 없음 모두 맞음). 첫 화면 스토어 합성본 세 장을 1.2.0 iPhone 스토어 스크린샷으로(1장이 함께 굴리기 방, 대체 문구는 shots.json 캡션), 첫 절 확대 캡처는 asset-sources 를 shots-raw 02.png(예전 01 과 같은 d6 셋 합산 장면, 아래 도구 막대 배치)로 바꿔 다시 뽑음. 사이트에 쓰지 않는 1.2.0 변경: 결과 카드 보내기(본문 없음, 처리방침에만), 파클 다시 굴리기 판정 수정(이번에 굴린 주사위만 판정, 사이트 문장 '굴릴 때마다 결과를 판정' 그대로 맞음), 라이어 다이스 눈 세기, 방 App Store 링크, 아랍어 배치 고정, VoiceOver 다듬기, 굴리는 중 접고 펴기, 참가자는 방 안에서 방장 판 설정과 스킨을 따름(Pro 스킨, 11면 이상도 방장 것을 따르는지는 사이트에 쓰지 않음)"
 }

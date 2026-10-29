@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Predefinições rápidas para muitos jogos",
    "body": [
-    "Já vêm prontas configurações de dados para jogos de tabuleiro, jogos de festa, jogos de cassino e RPGs de mesa. Em jogos como Craps, Sic Bo e Farkle, cada rolagem recebe o resultado dela."
+    "Já vêm prontas configurações de dados para jogos de tabuleiro, jogos de festa, jogos de cassino e RPGs de mesa. Em jogos como Craps, Sic Bo e Farkle, cada rolagem recebe o resultado dela. Rolar juntos conecta aparelhos por perto pelo mesmo Wi-Fi ou Bluetooth para que até 8 pessoas rolem na mesma sala. Não importa quem role, todos veem os mesmos dados na tela, e quando o anfitrião ativa Rolagens ocultas, cada um rola por conta própria e os dados dos outros ficam ocultos até a revelação."
    ],
    "bullets": [
     "17 predefinições rápidas",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Continua de onde você parou",
    "body": [
-    "O app abre com a configuração de dados da última vez. Sem conta, e a rolagem funciona sem internet. Na tela larga de um iPhone dobrável aberto, o layout se amplia como no iPad. Quando a tela tem uma faixa do sistema na lateral, os botões de cima ficam empilhados na vertical nessa faixa."
+    "O app abre com a configuração de dados da última vez. Sem conta, e a rolagem funciona sem internet. Na tela larga de um iPhone dobrável aberto, o layout se amplia como no iPad. Quando a tela tem uma faixa do sistema na lateral, os botões do número de dados ficam empilhados na vertical nessa faixa."
    ],
    "bullets": [],
    "visual": {
@@ -138,13 +138,19 @@
   {
    "q": "Restaurar o Pro",
    "a": [
-    "Se você trocou de aparelho ou reinstalou o app, toque na engrenagem no canto superior direito e abra Config. do app. Toque em Dice Master Pro no alto e depois em Restaurar compra, perto do fim da folha. Com a mesma Conta Apple não há nova cobrança."
+    "Se você trocou de aparelho ou reinstalou o app, toque na engrenagem na parte de baixo da tela e abra Config. do app. Com o iPhone na horizontal, a engrenagem fica no canto superior direito. Toque em Dice Master Pro no alto e depois em Restaurar compra, perto do fim da folha. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
   {
    "q": "Conexão com a internet",
    "a": [
-    "Rolar, o histórico e as predefinições funcionam sem conexão com a internet. Só comprar e restaurar o Pro precisam de conexão com a App Store."
+    "Rolar, o histórico, as predefinições e Rolar juntos funcionam sem conexão com a internet. Só comprar e restaurar o Pro precisam de conexão com a App Store."
+   ]
+  },
+  {
+   "q": "Quando ninguém aparece em Rolar juntos",
+   "a": [
+    "Rolar juntos usa a permissão de Rede Local para encontrar aparelhos por perto. Se você não permitiu quando o app perguntou, ative Rede Local para Dice Master no app Ajustes."
    ]
   },
   {
@@ -156,7 +162,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Dice Master",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-29",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Dice Master (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia. Esta política explica como."
   ],
@@ -176,7 +182,8 @@
     "bullets": [
      "Configurações dos dados e Minhas predefinições: usadas para continuar na próxima vez de onde você parou",
      "Histórico de rolagens: usado na lista do histórico e nas estatísticas",
-     "Ajustes do app (aparência, som, idioma e afins): usados para a exibição e o som"
+     "Ajustes do app (aparência, som, idioma e afins): usados para a exibição e o som",
+     "Seu nome no Rolar juntos e uma identificação aleatória de aparelho criada pelo app: usados para mostrar seu nome na sala e reconhecer um aparelho que volta a entrar"
     ]
    },
    {
@@ -189,7 +196,8 @@
    {
     "title": "Divulgação a terceiros",
     "paragraphs": [
-     "Informações pessoais não são fornecidas a terceiros. Se você mandar um resultado pelo botão Compartilhar, o texto enviado segue a política do app que você escolher."
+     "Informações pessoais não são fornecidas a terceiros. Se você mandar um resultado ou a imagem de um cartão de resultado pelo botão Compartilhar, o que for enviado segue a política do app que você escolher.",
+     "Rolar juntos procura salas por perto só enquanto a tela dele está aberta, e só se conecta a outros aparelhos quando você cria uma sala ou entra em uma. Ao criar uma sala, o nome do anfitrião e o número de pessoas aparecem para os aparelhos por perto que procuram salas. Dentro da sala, os aparelhos da mesma sala trocam nomes, configurações dos dados, valores rolados, aparência e modo de exibição, e o aparelho que entra manda a sua identificação de aparelho para o aparelho do anfitrião. Os nomes das outras pessoas são usados só enquanto você está na sala, não são salvos e também não ficam no Histórico."
     ],
     "bullets": []
    },
@@ -203,7 +211,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. Limpar histórico, dentro do Histórico, remove as suas rolagens, e Redefinir app, em Config. do app, remove ajustes, predefinições e histórico de uma vez. Excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. Limpar histórico, dentro do Histórico, remove as suas rolagens, e Redefinir app, em Config. do app, remove de uma vez ajustes, predefinições, seu nome e sua identificação de aparelho do Rolar juntos e o histórico. Excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },
@@ -217,7 +225,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O app não pede acesso a fotos, localização, contatos, câmera nem microfone. Agitar para rolar lê o acelerômetro do aparelho apenas para perceber o movimento, e não guarda essas leituras."
+     "O app não pede acesso a fotos, localização, contatos, câmera nem microfone. A permissão de Rede Local é usada só para encontrar aparelhos por perto e se conectar a eles no Rolar juntos, e as conexões da sala são sempre criptografadas. Agitar para rolar lê o acelerômetro do aparelho apenas para perceber o movimento, e não guarda essas leituras."
     ],
     "bullets": []
    },

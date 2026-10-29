@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Schnellvoreinstellungen für viele Spiele",
    "body": [
-    "Würfelaufbauten für Brettspiele, Partyspiele, Casinospiele und Pen-and-Paper-Rollenspiele sind schon dabei. Bei Spielen wie Craps, Sic Bo und Farkle steht nach jedem Wurf das Ergebnis der Runde da."
+    "Würfelaufbauten für Brettspiele, Partyspiele, Casinospiele und Pen-and-Paper-Rollenspiele sind schon dabei. Bei Spielen wie Craps, Sic Bo und Farkle steht nach jedem Wurf das Ergebnis der Runde da. Gemeinsam würfeln verbindet Geräte in der Nähe über dasselbe WLAN oder Bluetooth, sodass bis zu 8 Personen in einem Raum würfeln. Egal wer würfelt, auf allen Bildschirmen erscheinen dieselben Würfel, und schaltet der Gastgeber Verdeckt würfeln ein, würfelt jeder für sich, und die Würfel der anderen bleiben bis zum Aufdecken verdeckt."
    ],
    "bullets": [
     "17 Schnellvoreinstellungen",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Es geht dort weiter, wo Sie aufgehört haben",
    "body": [
-    "Die App öffnet mit dem Würfelaufbau vom letzten Mal. Kein Konto, und gewürfelt wird auch ohne Netz. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird das Layout breit wie auf dem iPad. Hat der Bildschirm seitlich einen Systemstreifen, stehen die oberen Schaltflächen senkrecht in diesem Streifen."
+    "Die App öffnet mit dem Würfelaufbau vom letzten Mal. Kein Konto, und gewürfelt wird auch ohne Netz. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird das Layout breit wie auf dem iPad. Hat der Bildschirm seitlich einen Systemstreifen, stehen die Schaltflächen für die Würfelanzahl senkrecht in diesem Streifen."
    ],
    "bullets": [],
    "visual": {
@@ -138,13 +138,19 @@
   {
    "q": "Pro wiederherstellen",
    "a": [
-    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie oben rechts auf das Zahnrad und öffnen die App-Einstellungen. Tippen Sie oben auf Dice Master Pro und dann unten im Blatt auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie unten auf dem Bildschirm auf das Zahnrad und öffnen die App-Einstellungen. Halten Sie das iPhone quer, sitzt das Zahnrad oben rechts. Tippen Sie oben auf Dice Master Pro und dann unten im Blatt auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
   {
    "q": "Internetverbindung",
    "a": [
-    "Würfeln, Verlauf und Vorlagen laufen ohne Internetverbindung. Nur der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung zum App Store."
+    "Würfeln, Verlauf, Vorlagen und Gemeinsam würfeln laufen ohne Internetverbindung. Nur der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung zum App Store."
+   ]
+  },
+  {
+   "q": "Wenn sich bei Gemeinsam würfeln niemand findet",
+   "a": [
+    "Gemeinsam würfeln nutzt die Berechtigung Lokales Netzwerk, um Geräte in der Nähe zu finden. Haben Sie sie bei der ersten Abfrage nicht erlaubt, schalten Sie in der App Einstellungen bei Dice Master Lokales Netzwerk ein."
    ]
   },
   {
@@ -156,7 +162,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Dice Master",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-29",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Dice Master (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
   ],
@@ -176,7 +182,8 @@
     "bullets": [
      "Würfeleinstellungen und Meine Vorlagen: um beim nächsten Mal dort weiterzumachen",
      "Würfelverlauf: für die Liste des Verlaufs und die Statistik",
-     "App-Einstellungen (Skin, Sound, Sprache und Ähnliches): für Darstellung und Ton"
+     "App-Einstellungen (Skin, Sound, Sprache und Ähnliches): für Darstellung und Ton",
+     "Ihr Name für Gemeinsam würfeln und eine zufällige Gerätekennung, die die App erzeugt: um Ihren Namen im Raum zu zeigen und ein Gerät zu erkennen, das wieder beitritt"
     ]
    },
    {
@@ -189,7 +196,8 @@
    {
     "title": "Weitergabe an Dritte",
     "paragraphs": [
-     "Personenbezogene Daten werden nicht an Dritte weitergegeben. Wenn Sie ein Wurfergebnis über die Taste Teilen verschicken, unterliegt der versendete Text der Erklärung der App, die Sie dafür wählen."
+     "Personenbezogene Daten werden nicht an Dritte weitergegeben. Wenn Sie ein Wurfergebnis oder das Bild einer Ergebniskarte über die Taste Teilen verschicken, unterliegt das Versendete der Erklärung der App, die Sie dafür wählen.",
+     "Gemeinsam würfeln sucht nur nach Räumen in der Nähe, solange sein Bildschirm geöffnet ist, und verbindet sich nur dann mit anderen Geräten, wenn Sie einen Raum erstellen oder ihm beitreten. Erstellen Sie einen Raum, sehen Geräte in der Nähe, die nach Räumen suchen, den Namen des Gastgebers und die Zahl der Personen. Im Raum tauschen die Geräte desselben Raums Namen, Würfeleinstellungen, gewürfelte Augen, Skin und Ansicht aus, und ein beitretendes Gerät schickt seine Gerätekennung an das Gerät des Gastgebers. Die Namen anderer werden nur genutzt, solange Sie im Raum sind, nicht gespeichert und erscheinen auch nicht im Würfelverlauf."
     ],
     "bullets": []
    },
@@ -203,7 +211,7 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also auf seiner Seite nichts zu löschen. Verlauf löschen im Würfelverlauf entfernt Ihre Würfe, und App zurücksetzen in den App-Einstellungen entfernt Einstellungen, Vorlagen und Verlauf zusammen. Mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also auf seiner Seite nichts zu löschen. Verlauf löschen im Würfelverlauf entfernt Ihre Würfe, und App zurücksetzen in den App-Einstellungen entfernt Einstellungen, Vorlagen, Ihren Namen und Ihre Gerätekennung für Gemeinsam würfeln sowie den Verlauf zusammen. Mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },
@@ -217,7 +225,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die App fordert keinen Zugriff auf Fotos, Standort, Kontakte, Kamera oder Mikrofon an. Schütteln zum Würfeln liest den Beschleunigungssensor des Geräts allein dafür, das Schütteln zu erkennen, und speichert diese Messwerte nicht."
+     "Die App fordert keinen Zugriff auf Fotos, Standort, Kontakte, Kamera oder Mikrofon an. Die Berechtigung Lokales Netzwerk dient nur dazu, bei Gemeinsam würfeln Geräte in der Nähe zu finden und mit ihnen zu verbinden, und die Verbindungen im Raum sind immer verschlüsselt. Schütteln zum Würfeln liest den Beschleunigungssensor des Geräts allein dafür, das Schütteln zu erkennen, und speichert diese Messwerte nicht."
     ],
     "bullets": []
    },

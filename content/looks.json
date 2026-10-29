@@ -99,44 +99,44 @@
   "color": "#FFFFFF",
   "alts": {
    "ko": [
+    "근처 친구와 방을 열고 함께 굴립니다",
     "굴리는 순간 합계가 나옵니다",
-    "주사위 열 개를 더하고 색상별로 나눠 셉니다",
-    "2~20면을 3D로 굴리고 11면부터는 Pro입니다"
+    "주사위 열 개를 더하고 색상별로 나눠 셉니다"
    ],
    "en": [
+    "Roll together with friends nearby",
     "Roll, and the total is already there",
-    "Ten dice added up, subtotals by color",
-    "2 to 20 sides in 3D, over 10 with Pro"
+    "Ten dice added up, subtotals by color"
    ],
    "ja": [
+    "近くの友だちと みんなで振ります",
     "振った瞬間に 合計が出ます",
-    "ダイス10個を合計し カラー別に小計します",
-    "2〜20面を3Dで振り 11面以上はProです"
+    "ダイス10個を合計し カラー別に小計します"
    ],
    "zh-hans": [
+    "和身边的朋友 一起掷骰",
     "掷出的瞬间 总和已经算好",
-    "10个骰子一起求和 按颜色分别小计",
-    "3D投掷支持2~20面 11面以上需要Pro"
+    "10个骰子一起求和 按颜色分别小计"
    ],
    "zh-hant": [
+    "和身邊的朋友 一起擲骰",
     "擲出的瞬間 加總已經算好",
-    "10顆骰子一起加總 依顏色分別小計",
-    "3D擲骰支援2~20面 11面以上需要Pro"
+    "10顆骰子一起加總 依顏色分別小計"
    ],
    "de": [
+    "Mit Freunden in der Nähe gemeinsam würfeln",
     "Würfeln, und schon steht die Summe da",
-    "Zehn Würfel addiert, Teilsummen nach Farbe",
-    "2 bis 20 Seiten in 3D, ab 11 Seiten mit Pro"
+    "Zehn Würfel addiert, Teilsummen nach Farbe"
    ],
    "es": [
+    "Tira con tus amigos que están cerca",
     "Tira y la suma aparece al instante",
-    "Diez dados sumados, subtotales por color",
-    "De 2 a 20 caras en 3D, más de 10 con Pro"
+    "Diez dados sumados, subtotales por color"
    ],
    "pt-br": [
+    "Role com os amigos que estão por perto",
     "Role e a soma aparece na hora",
-    "Dez dados somados, subtotais por cor",
-    "De 2 a 20 faces em 3D, mais de 10 com Pro"
+    "Dez dados somados, subtotais por cor"
    ]
   }
  },

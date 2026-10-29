@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Quick Presets for many games",
    "body": [
-    "Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll."
+    "Dice setups for board games, party games, casino games and tabletop RPGs come built in. Games such as Craps, Sic Bo and Farkle get a verdict after every roll. Roll together connects nearby devices over the same Wi-Fi or Bluetooth so up to 8 people can roll in one room. Whoever rolls, everyone sees the same dice on screen, and when the host turns on Hidden rolls, each person rolls on their own and the others' dice stay hidden until the reveal."
    ],
    "bullets": [
     "17 Quick Presets",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Picks up where you left off",
    "body": [
-    "The app opens with last time's dice setup. No account, and rolling works offline. On the wide screen of a foldable iPhone opened out, the layout spreads out as on iPad. When the screen has a system strip along one side, the top buttons stand in that strip."
+    "The app opens with last time's dice setup. No account, and rolling works offline. On the wide screen of a foldable iPhone opened out, the layout spreads out as on iPad. When the screen has a system strip along one side, the dice count buttons stand in that strip."
    ],
    "bullets": [],
    "visual": {
@@ -138,13 +138,19 @@
   {
    "q": "Restoring Pro",
    "a": [
-    "If you switched devices or reinstalled the app, tap the gear at the top right and open App Settings. Tap Dice Master Pro at the top, then Restore Purchase near the bottom of the sheet. With the same Apple Account you are not charged again."
+    "If you switched devices or reinstalled the app, tap the gear at the bottom of the screen and open App Settings. With iPhone held sideways, the gear is at the top right. Tap Dice Master Pro at the top, then Restore Purchase near the bottom of the sheet. With the same Apple Account you are not charged again."
    ]
   },
   {
    "q": "Internet connection",
    "a": [
-    "Rolling, history and presets work without an internet connection. Only buying and restoring Pro need a connection to the App Store."
+    "Rolling, history, presets and Roll together work without an internet connection. Only buying and restoring Pro need a connection to the App Store."
+   ]
+  },
+  {
+   "q": "When people nearby don't show up in Roll together",
+   "a": [
+    "Roll together uses the Local Network permission to find nearby devices. If you did not allow it when asked, turn on Local Network for Dice Master in the Settings app."
    ]
   },
   {
@@ -156,7 +162,7 @@
  ],
  "privacy": {
   "title": "Dice Master Privacy Policy",
-  "effectiveDate": "2026-09-19",
+  "effectiveDate": "2026-10-29",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Dice Master app (\"the app\") in line with Korea's Personal Information Protection Act. This policy sets out how."
   ],
@@ -176,7 +182,8 @@
     "bullets": [
      "Dice settings and My Presets: used to pick up where you left off next time",
      "Roll history: used for the history list and statistics",
-     "App settings (skin, sound, language and similar): used for display and sound"
+     "App settings (skin, sound, language and similar): used for display and sound",
+     "Your name for Roll together and a random device tag the app creates: used to show your name in a room and to recognize a device that rejoins"
     ]
    },
    {
@@ -189,7 +196,8 @@
    {
     "title": "Disclosure to third parties",
     "paragraphs": [
-     "Personal information is not provided to third parties. If you send a roll result with the Share button, the text you send is handled under the policy of the app you choose."
+     "Personal information is not provided to third parties. If you send a roll result or a result card image with the Share button, what you send is handled under the policy of the app you choose.",
+     "Roll together looks for nearby rooms only while its screen is open, and connects to other devices only when you create or join a room. When you create a room, the host's name and the number of people are visible to nearby devices that are looking for rooms. Inside a room, names, dice settings, rolled values, skin and view mode pass between the devices in that room, and a joining device sends its device tag to the host's device. Other people's names are used only while you are in the room, are not saved, and do not appear in Roll History."
     ],
     "bullets": []
    },
@@ -203,7 +211,7 @@
    {
     "title": "Deletion",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to delete on the developer's side. Clear History in Roll History removes your rolls, and Reset App in App Settings removes settings, presets and history together. Deleting the app removes all of its data."
+     "The developer holds no personal information, so there is nothing to delete on the developer's side. Clear History in Roll History removes your rolls, and Reset App in App Settings removes settings, presets, your Roll together name and device tag, and history together. Deleting the app removes all of its data."
     ],
     "bullets": []
    },
@@ -217,7 +225,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "The app does not ask for access to photos, location, contacts, the camera or the microphone. Shake to Roll reads the device's accelerometer only to detect shaking and does not store those readings."
+     "The app does not ask for access to photos, location, contacts, the camera or the microphone. The Local Network permission is used only to find and connect to nearby devices for Roll together, and connections in a room are always encrypted. Shake to Roll reads the device's accelerometer only to detect shaking and does not store those readings."
     ],
     "bullets": []
    },
