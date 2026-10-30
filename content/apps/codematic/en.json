@@ -1,6 +1,6 @@
 {
  "name": "Codematic",
- "subtitle": "Promo giveaways, one at a time",
+ "subtitle": "Redeem links and handout log",
  "summary": "Keep the offer codes and app promo codes you give away in one place, with a record of who got each one",
  "hero": {
   "hook": "Keep the offer codes and app promo codes you give away in one place, with a record of who got each one",
@@ -49,7 +49,7 @@
    "layout": "card",
    "title": "Who got which code",
    "body": [
-    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Rolls and codes are stored in iCloud and show up on the iPhone and iPad signed in to the same Apple Account."
+    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Rolls and codes are stored in iCloud and show up on other iPhones signed in to the same Apple Account."
    ],
    "bullets": [
     "Handed out list and Undo",
@@ -70,6 +70,15 @@
    ]
   }
  ],
+ "pro": {
+  "kick": "Codematic Pro",
+  "title": "Connect directly to\nApp Store Connect",
+  "items": [
+   "Issue offer codes in the app and add them as a new roll",
+   "Import offer code batches you already created",
+   "App Store Connect rolls without a limit (3 to begin with)"
+  ]
+ },
  "faq": [
   {
    "q": "Which kinds of codes can be added",
@@ -116,7 +125,7 @@
   {
    "q": "Other devices",
    "a": [
-    "Rolls and codes are stored in iCloud and appear on the iPhone and iPad signed in to the same Apple Account. The Info screen shows the status under iCloud storage. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
+    "Rolls and codes are stored in iCloud and appear on other iPhones signed in to the same Apple Account. The Info screen shows the status under iCloud storage. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
    ]
   },
   {
@@ -144,6 +153,31 @@
    ]
   },
   {
+   "q": "What Codematic Pro adds",
+   "a": [
+    "Pro connects the app directly to App Store Connect. Issue offer codes in the app and add them as a new roll, or import offer code batches you already created. Without Pro you can try up to 3 rolls created from App Store Connect. Rolls in the Trash count toward the 3.",
+    "Import CSV file, Paste directly, issuing, the handed-out history and app promo codes have nothing to do with Pro, and there's no limit on the number of rolls or codes."
+   ]
+  },
+  {
+   "q": "Buying Pro and Family Sharing",
+   "a": [
+    "Codematic Pro is an in-app purchase you buy once and keep, and it supports Family Sharing. The price for your country is shown on the purchase screen."
+   ]
+  },
+  {
+   "q": "Restoring a purchase",
+   "a": [
+    "Open Info and tap Restore Purchases under In-App Purchase. The same button is at the bottom of the Codematic Pro purchase screen. Pro bought with the same Apple Account, or shared with you through Family Sharing, comes back. If you were given a Pro offer code, enter it with Redeem Code in the same place."
+   ]
+  },
+  {
+   "q": "If Pro goes away",
+   "a": [
+    "After a refund, or when you leave Family Sharing, rolls you brought in from App Store Connect stay, and you can still issue, export and delete them. You can also remove your key at any time. Only creating new rolls from App Store Connect follows the limit of 3."
+   ]
+  },
+  {
    "q": "App languages",
    "a": [
     "The app is in English and Korean. It follows whichever of the two comes first in the device's preferred languages, and appears in English when neither is listed."
@@ -152,8 +186,8 @@
  ],
  "privacy": {
   "title": "Codematic Privacy Policy",
-  "effectiveDate": "2026-10-07",
-  "summary": "Codematic collects no personal data. There is no account and no sign-in. The codes you add and your hand-out record, including any recipient names you type, are kept on your device and in your own iCloud account. An App Store Connect API key is stored only in the Keychain of the device you add it on, and requests signed with it go directly to Apple.",
+  "effectiveDate": "2026-10-30",
+  "summary": "Codematic collects no personal data. There is no account and no sign-in. The codes you add and your hand-out record, including any recipient names you type, are kept on your device and in your own iCloud account. An App Store Connect API key is stored only in the Keychain of the device you add it on, and requests signed with it go directly to Apple. Apple handles the Codematic Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the Codematic app (the app) as described below."
   ],
@@ -175,7 +209,8 @@
      "Codes (the code, whether it was handed out, and when): used to give the next code and show the Handed out list",
      "Recipient names: optional text you type when you hand out a code, which may be another person's name or nickname. Shown in the Handed out list, on the card after a hand-out, in images you save and in the CSV you export. Kept with rolls and codes on your device and in your own iCloud account",
      "App Store Connect API key (Key ID, private key, and the Issuer ID for a team key): used only if you add one, to read and create apps' products, offers and codes in your App Store Connect. Stored only in the Keychain of the device you add it on and not synced through iCloud",
-     "App icon cache (the icon and name of the app for a roll's App Store ID): shown on rolls and in saved images. Kept in the device's cache folder and fetched again after 7 days"
+     "App icon cache (the icon and name of the app for a roll's App Store ID): shown on rolls and in saved images. Kept in the device's cache folder and fetched again after 7 days",
+     "App flags (whether the sample roll was added and the how-to was seen) and whether Codematic Pro was bought: to show the sample roll and the how-to once on a device opening the app for the first time, and to decide whether a new roll can be created from App Store Connect. Kept on the device and not synced to iCloud"
     ]
    },
    {
@@ -195,7 +230,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "No processing is outsourced. Storing rolls and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. When a roll has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com) and from the icon image address given in that response. It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If the public information has no entry for the app and an App Store Connect API key is added, the icon and name come from App Store Connect instead. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
+     "No processing is outsourced. Storing rolls and codes and syncing them between devices runs on Apple's iCloud (CloudKit). That data belongs to your Apple Account and is covered by Apple's privacy policy. The developer can't see it and doesn't receive it. The Codematic Pro purchase and restore are handled by Apple on the App Store, and payment information follows Apple's privacy policy. The developer doesn't receive your payment method or Apple Account information. When a roll has an App Store ID, the app gets that app's icon and name from Apple's public App Store information (itunes.apple.com) and from the icon image address given in that response. It sends the App Store ID and a region code, and as with any web request Apple receives your device's IP address. No cookies or sign-in details are sent. If the public information has no entry for the app and an App Store Connect API key is added, the icon and name come from App Store Connect instead. If you add an App Store Connect API key, the app sends requests signed with that key directly to Apple's App Store Connect API (api.appstoreconnect.apple.com) to read and create apps' products, offers and codes. These requests don't go through any developer server."
     ],
     "bullets": []
    },

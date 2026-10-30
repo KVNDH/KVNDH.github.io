@@ -1,6 +1,6 @@
 {
  "name": "Codematic",
- "subtitle": "Ofertas y promos, una a una",
+ "subtitle": "Enlaces de canje y registro",
  "summary": "Guarda en un solo lugar los códigos de oferta y los códigos promocionales de apps que repartes, con un registro de quién recibió cada uno",
  "hero": {
   "hook": "Guarda en un solo lugar los códigos de oferta y los códigos promocionales de apps que repartes, con un registro de quién recibió cada uno",
@@ -49,7 +49,7 @@
    "layout": "card",
    "title": "Quién recibió cada código",
    "body": [
-    "Escribe el nombre del destinatario al entregar un código y cada código guarda quién lo recibió y cuándo. Deshaz un código entregado por error y exporta el registro en CSV. Los lotes y los códigos se guardan en iCloud y aparecen en el iPhone y el iPad con la misma cuenta de Apple."
+    "Escribe el nombre del destinatario al entregar un código y cada código guarda quién lo recibió y cuándo. Deshaz un código entregado por error y exporta el registro en CSV. Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone con la misma cuenta de Apple."
    ],
    "bullets": [
     "Registro de entregas y deshacer",
@@ -70,6 +70,15 @@
    ]
   }
  ],
+ "pro": {
+  "kick": "Codematic Pro",
+  "title": "Conexión directa\ncon App Store Connect",
+  "items": [
+   "Genera códigos de oferta en la app y añádelos como un lote nuevo",
+   "Importa códigos de oferta que ya creaste",
+   "Lotes de App Store Connect sin límite (3 para empezar)"
+  ]
+ },
  "faq": [
   {
    "q": "Qué códigos se pueden añadir",
@@ -116,7 +125,7 @@
   {
    "q": "Otros dispositivos",
    "a": [
-    "Los lotes y los códigos se guardan en iCloud y aparecen en el iPhone y el iPad con la misma cuenta de Apple. La pantalla «Info» (información) muestra el estado en la fila «iCloud storage» (almacenamiento en iCloud). Sin una sesión de iCloud, se guardan en ese dispositivo. La clave de API de App Store Connect se añade en cada dispositivo por separado."
+    "Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone con la misma cuenta de Apple. La pantalla «Info» (información) muestra el estado en la fila «iCloud storage» (almacenamiento en iCloud). Sin una sesión de iCloud, se guardan en ese dispositivo. La clave de API de App Store Connect se añade en cada dispositivo por separado."
    ]
   },
   {
@@ -144,6 +153,31 @@
    ]
   },
   {
+   "q": "Qué añade Codematic Pro",
+   "a": [
+    "Pro conecta la app directamente con App Store Connect. Genera códigos de oferta en la app y añádelos como un lote nuevo, o importa códigos de oferta que ya creaste. Sin Pro puedes probar hasta 3 lotes creados desde App Store Connect. Los lotes de la papelera también cuentan.",
+    "«Import CSV file» (importar CSV), «Paste directly» (pegar directamente), emitir, «Handed out» (registro de entregas) y los códigos promocionales de apps no tienen nada que ver con Pro, y no hay límite en el número de lotes ni de códigos."
+   ]
+  },
+  {
+   "q": "Comprar Pro y En familia",
+   "a": [
+    "Codematic Pro es una compra dentro de la app que pagas una vez y conservas, y admite En familia. El precio de tu país aparece en la pantalla de compra."
+   ]
+  },
+  {
+   "q": "Restaurar una compra",
+   "a": [
+    "Abre «Info» y pulsa «Restore Purchases» (restaurar compras) en «In-App Purchase» (compra dentro de la app). El mismo botón está en la parte inferior de la pantalla de compra de Codematic Pro. Vuelve el Pro comprado con la misma cuenta de Apple y el compartido contigo mediante En familia. Si te dieron un código de oferta de Pro, introdúcelo en «Redeem Code» (canjear código), en ese mismo lugar."
+   ]
+  },
+  {
+   "q": "Si dejas de tener Pro",
+   "a": [
+    "Tras un reembolso, o si sales de En familia, los lotes que trajiste de App Store Connect se quedan y puedes seguir emitiendo, exportando y borrando. También puedes quitar tu clave en cualquier momento. Solo la creación de lotes nuevos desde App Store Connect sigue el límite de 3."
+   ]
+  },
+  {
    "q": "Idioma de la app",
    "a": [
     "La app está en inglés y en coreano. Usa el que aparezca antes en los idiomas preferidos del dispositivo y, si no está ninguno de los dos, aparece en inglés. Los nombres entre comillas de esta página son los de las pantallas en inglés."
@@ -152,8 +186,8 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Codematic",
-  "effectiveDate": "2026-10-07",
-  "summary": "Codematic no recoge datos personales. No hay cuenta ni inicio de sesión. Los códigos que añades y tu registro de entregas, incluidos los nombres de destinatarios que escribes, se guardan en tu dispositivo y en tu propia cuenta de iCloud. La clave de API de App Store Connect se guarda solo en el llavero del dispositivo donde la añades, y las solicitudes firmadas con ella van directamente a Apple.",
+  "effectiveDate": "2026-10-30",
+  "summary": "Codematic no recoge datos personales. No hay cuenta ni inicio de sesión. Los códigos que añades y tu registro de entregas, incluidos los nombres de destinatarios que escribes, se guardan en tu dispositivo y en tu propia cuenta de iCloud. La clave de API de App Store Connect se guarda solo en el llavero del dispositivo donde la añades, y las solicitudes firmadas con ella van directamente a Apple. La compra de Codematic Pro la gestiona Apple.",
   "intro": [
    "kvndh (el desarrollador) trata los datos personales de quienes usan la app Codematic (la app) del modo que se indica a continuación."
   ],
@@ -175,7 +209,8 @@
      "Códigos (el código, si se entregó y cuándo): para dar el siguiente código y mostrar el registro de entregas",
      "Nombres de destinatarios: texto opcional que escribes al entregar un código y que puede ser el nombre o el apodo de otra persona. Aparece en el registro de entregas, en la tarjeta posterior a la entrega, en las imágenes que guardas y en el CSV que exportas. Se guarda junto con los lotes y los códigos en tu dispositivo y en tu propia cuenta de iCloud",
      "Clave de API de App Store Connect (ID de la clave, clave privada y, en una clave de equipo, el Issuer ID): solo si añades una, para leer y crear apps, productos, ofertas y códigos en tu App Store Connect. Se guarda solo en el llavero del dispositivo donde la añades y no se sincroniza con iCloud",
-     "Caché de iconos de apps (el icono y el nombre de la app del ID del App Store de un lote): para mostrarlos en los lotes y en las imágenes guardadas. Está en la carpeta de caché del dispositivo y se vuelve a descargar pasados 7 días"
+     "Caché de iconos de apps (el icono y el nombre de la app del ID del App Store de un lote): para mostrarlos en los lotes y en las imágenes guardadas. Está en la carpeta de caché del dispositivo y se vuelve a descargar pasados 7 días",
+     "Marcas de la app (si se añadió el lote de ejemplo y si se vio la guía de uso) y si se compró Codematic Pro: para mostrar el lote de ejemplo y la guía una sola vez en un dispositivo que abre la app por primera vez, y para decidir si se puede crear un lote nuevo desde App Store Connect. Están en el dispositivo y no se sincronizan con iCloud"
     ]
    },
    {
@@ -195,7 +230,7 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. El guardado de los lotes y los códigos y su sincronización entre dispositivos funcionan sobre iCloud de Apple (CloudKit). Esos datos pertenecen a tu cuenta de Apple y se rigen por la política de privacidad de Apple. El desarrollador no puede verlos ni los recibe. Cuando un lote tiene un ID del App Store, la app obtiene el icono y el nombre de esa app de la información pública del App Store de Apple (itunes.apple.com) y de la dirección de la imagen que figura en esa respuesta. Envía el ID de la app y un código de región y, como en cualquier solicitud web, Apple recibe la dirección IP de tu dispositivo. No se envían cookies ni datos de inicio de sesión. Si la información pública no incluye la app y hay una clave de API de App Store Connect añadida, el icono y el nombre se obtienen de App Store Connect. Si añades una clave de API de App Store Connect, la app envía solicitudes firmadas con esa clave directamente a la API de App Store Connect de Apple (api.appstoreconnect.apple.com) para leer y crear apps, productos, ofertas y códigos. Estas solicitudes no pasan por ningún servidor del desarrollador."
+     "No se encarga ningún tratamiento a terceros. El guardado de los lotes y los códigos y su sincronización entre dispositivos funcionan sobre iCloud de Apple (CloudKit). Esos datos pertenecen a tu cuenta de Apple y se rigen por la política de privacidad de Apple. El desarrollador no puede verlos ni los recibe. La compra y la restauración de Codematic Pro las gestiona Apple en el App Store, y los datos de pago siguen la política de privacidad de Apple. El desarrollador no recibe ningún medio de pago ni datos de tu cuenta de Apple. Cuando un lote tiene un ID del App Store, la app obtiene el icono y el nombre de esa app de la información pública del App Store de Apple (itunes.apple.com) y de la dirección de la imagen que figura en esa respuesta. Envía el ID de la app y un código de región y, como en cualquier solicitud web, Apple recibe la dirección IP de tu dispositivo. No se envían cookies ni datos de inicio de sesión. Si la información pública no incluye la app y hay una clave de API de App Store Connect añadida, el icono y el nombre se obtienen de App Store Connect. Si añades una clave de API de App Store Connect, la app envía solicitudes firmadas con esa clave directamente a la API de App Store Connect de Apple (api.appstoreconnect.apple.com) para leer y crear apps, productos, ofertas y códigos. Estas solicitudes no pasan por ningún servidor del desarrollador."
     ],
     "bullets": []
    },

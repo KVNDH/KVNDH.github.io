@@ -1,12 +1,13 @@
 {
  "describesVersion": "1.0.0",
- "purchase": "none",
+ "purchase": "one-time",
  "ads": false,
  "account": false,
- "unreleased": "2026-10-06 현재 출시 전(ASC 1.0.0 초안, 앱 ID 6819201504). site.json 의 unreleased 를 출시 때 뺀다",
- "products": [],
+ "products": [
+  "Codematic Pro: 비소모성 1개 (com.kimdh.Codematic.pro.lifetime), 가족 공유 켬. 구독 그룹 없음, 무료 체험 없음. 미국 $1.99 기준, 한국 ₩3,300(Apple 자동), 175곳. 가격은 문구에 쓰지 않고 앱은 Product.displayPrice 로만 그린다 (Store/ProRules.swift, docs/store/iap.json). 2026-10-30 1.0.0 과 함께 APPROVED(HQ 가 ASC 로 확인)"
+ ],
  "platform": [
-  "iPhone 과 iPad, iOS 26 이상. iPhone 은 세로만 (project.yml)",
+  "iPhone 전용, iOS 26 이상, 세로만 (project.yml TARGETED_DEVICE_FAMILY \"1\", deploymentTarget 26.0). iPad 는 빌드 6(2026-10-16)에서 뺐다. iTunes lookup 의 supportedDevices 에 iPad 가 나오는 것은 iPhone 앱 호환 실행이라 사이트에 iPad 를 쓰지 않는다. iPad 다운 배치는 다음 판 후보(IDEA.md 2-18)",
   "앱 화면은 영어가 기본이고 한국어를 현지화한다(Resources/Localizable.xcstrings, sourceLanguage en, ko 값). 한국어도 영어도 아닌 기기에서는 영어 화면이 뜬다",
   "ko 페이지는 한국어 화면 글자를, 나머지 일곱 언어 페이지는 영어 화면 글자를 그대로 쓴다(uiNames)"
  ],
@@ -14,6 +15,7 @@
   "iCloud: CloudKit 개인 데이터베이스, 컨테이너 iCloud.com.kimdh.Codematic (Codematic.entitlements, App/CodematicApp.swift cloudKitDatabase .private)",
   "App Store 공개 정보: itunes.apple.com/lookup?id=<앱 ID>&country=<지역> 과 거기서 받은 아이콘 그림 주소. 지역은 기기 지역, us, kr 차례. 쿠키와 인증 헤더 없음(URLSessionConfiguration.ephemeral, Logic/AppIconFetcher.swift)",
   "App Store Connect API: api.appstoreconnect.apple.com, 사용자가 등록한 키로 서명한 요청(ASC/ASCTransport.swift, ASC/ASCJWT.swift)",
+  "App Store 구입, 구매 복원, 코드 사용, 상품 불러오기: StoreKit 2 (Store/ProStore.swift, Views/Shared/InfoSheet.swift offerCodeRedemption). Apple 시스템 창으로 이루어지고 개발자는 결제 정보를 받지 않는다",
   "서드파티 SDK 없음, 개발자 서버 없음, 분석과 광고 없음 (PrivacyInfo.xcprivacy: 추적 없음, 수집 데이터 없음)"
  ],
  "permissions": [
@@ -25,7 +27,7 @@
   "SwiftData 저장소(앱 저장공간) + 사용자의 iCloud 개인 데이터베이스: Roll(name, kind, copyMode, appStoreID, expiresAt, createdAt, deletedAt, ascSourceID), Ticket(value, status, order, usedAt, recipient) (Model/Models.swift)",
   "키체인: App Store Connect 키(kind, keyID, issuerID, privateKeyPEM). kSecAttrAccessibleWhenUnlockedThisDeviceOnly, kSecAttrSynchronizable false (ASC/ASCKeyStore.swift)",
   "캐시 폴더 Caches/AppIcons: 앱 아이콘(<appID>.png)과 앱 이름(<appID>.name), 7일 뒤 다시 받음 (Logic/AppIconStore.swift maxAge)",
-  "UserDefaults 는 쓰지 않는다 (PrivacyInfo.xcprivacy 주석)"
+  "UserDefaults(이 앱만, PrivacyInfo.xcprivacy CA92.1): 첫 실행 표시 둘 sampleRollSeeded, onboardingSeen(빌드 4, App/FirstRun.swift, Views/Give/GiveListView.swift)과 Pro 자격 캐시 pro.entitled(표시용, Store/ProEntitlement.swift). iCloud 로 가지 않는다. 처리방침 처리 항목의 '앱 안 표시와 Codematic Pro 구매 여부' 불릿이 이것이다"
  ],
  "features": [
   "묶음 종류 셋: 오퍼 코드, 앱 프로모 코드, 그 밖의 코드 (RollKind)",
@@ -36,7 +38,11 @@
   "되돌리기(Ticket.restore)는 상태, 건넨 시각, 받는 사람 이름을 지운다",
   "휴지통: 묶음째 들어가고 30일 뒤 앱을 열 때 영구히 지운다 (Trash.keepDays, Trash.purge)",
   "App Store Connect 키 종류 둘: 팀 키(Issuer ID 필요), 개인 키(Issuer ID 없음) (ASC/ASCModels.swift ASCKeyKind)",
-  "방금 만든 코드는 Apple 에서 쓸 수 있게 되기까지 몇 시간 걸릴 수 있다 (Views/Give/TicketCloseup.swift 안내 글). 코드 발급 화면의 안내 글은 '한 시간쯤'(about an hour)이라 앱 문자열이 둘이다. 영어 01 절 그림에 그 글이 보인다. FAQ 는 '몇 시간'을 따른다"
+  "방금 만든 코드는 Apple 에서 쓸 수 있게 되기까지 몇 시간 걸릴 수 있다 (Views/Give/TicketCloseup.swift 안내 글). 코드 발급 화면의 안내 글은 '한 시간쯤'(about an hour)이라 앱 문자열이 둘이다. 영어 01 절 그림에 그 글이 보인다. FAQ 는 '몇 시간'을 따른다",
+  "Codematic Pro(빌드 5): App Store Connect 로 만드는 묶음(앱 안 발급과 배치 가져오기, ascSourceID 가 빈 문자열이 아닌 것)이 Pro 없이 3개까지(ProRules.freeASCRolls). 휴지통에 든 묶음도 세고 영구 삭제된 것은 세지 않는다. 4번째를 만들려 할 때와 그때 키를 등록할 때 구매 화면이 열린다(Views/ASC/ASCAccess.swift, ProEntitlement.ascRollCount)",
+  "Pro 와 관계없음: CSV 파일 가져오기, 직접 붙여넣기, 발급, 건넨 기록, 앱 프로모 코드. 묶음과 코드 수에 한도 없음 (Views/Shared/ProSheet.swift 안내 글)",
+  "Pro 를 잃으면(환불, 가족 공유 해제): 이미 들여온 묶음의 읽기, 발급, 내보내기, 삭제와 키 보기, 지우기는 그대로. 막히는 것은 새로 만드는 입구뿐(ProRules.allowsNewASCRoll, 소프트 게이트)",
+  "구매 복원 자리: 정보 > 앱 내 구입 > 구매 복원. 같은 칸에 Codematic Pro, 코드 사용. Pro 구매 화면 아래에도 구매 복원과 코드 사용 (InfoSheet.swift proSection, ProSheet.swift secondaryButtons)"
  ],
  "notOffered": [
   "코드 사용 여부 확인(사용 집계)",
@@ -44,10 +50,10 @@
   "위젯",
   "공유 확장",
   "Apple Watch 앱",
+  "iPad 앱",
   "Mac 앱",
   "Face ID 잠금",
   "메시지 보내기",
-  "인앱 구입",
   "iPhone 가로 화면"
  ],
  "notWritten": [
@@ -55,7 +61,9 @@
   "화면 움직임과 외관(상자, 롤, 프린터, 영수증): 이 앱만의 사용자 결정(docs/store/asc-answers.md '문안 기준')",
   "앱을 지우면 키체인의 키가 지워지는지: iOS 동작이라 단정하지 않고 '지우기 전에 키 삭제'로 안내한다",
   "FAQ 2 의 App Store Connect 웹 메뉴 이름: 실제 화면과 맞춰 보지 않아 메뉴 이름을 적지 않았다",
-  "아이콘 그림을 받는 주소의 호스트 이름: 코드는 lookup 응답에 적힌 https 주소를 그대로 쓰므로 처리방침에 호스트를 못박지 않고 '그 응답에 적힌 그림 주소'라고 쓴다"
+  "아이콘 그림을 받는 주소의 호스트 이름: 코드는 lookup 응답에 적힌 https 주소를 그대로 쓰므로 처리방침에 호스트를 못박지 않고 '그 응답에 적힌 그림 주소'라고 쓴다",
+  "처음 여는 기기의 예시 묶음(SAMPLE-0001 부터 셋, '그 밖의 코드')과 사용법 시트(빌드 4): 사이트 소개와 FAQ 에 쓰지 않는다. 처리방침의 앱 안 표시 불릿에만 쓴다",
+  "빌드 3과 7의 입력 길이 상한, 만료 지난 묶음 표시와 발급 전 확인, 만들기 중 연결 끊김 '결과 모름': 사이트에 쓰지 않는다. 지금 문장과 어긋나지 않는다"
  ],
  "uiNames": {
   "Roll": "묶음",
@@ -99,17 +107,28 @@
   "Expiration date": "만료일",
   "Sandbox codes": "샌드박스 코드",
   "Create new offer": "새 오퍼 만들기",
-  "Deactivate offer": "오퍼 비활성화"
+  "Deactivate offer": "오퍼 비활성화",
+  "In-App Purchase": "앱 내 구입",
+  "Restore Purchases": "구매 복원",
+  "Redeem Code": "코드 사용"
  },
  "uiNamesNote": "키는 Localizable.xcstrings 의 키 그대로다. 묶음은 카탈로그 키가 Roll 이고 문장 안에서는 roll 로 쓴다. Handed out %lld 는 건수가 붙는 메뉴 항목과 제목이라 문구에는 숫자 없이 Handed out, 건넨 기록으로 쓴다. More 는 글자 없는 메뉴 단추(…)의 접근성 이름이라 문구에는 '메뉴'라고만 쓴다",
- "numbers": [],
- "numbersNote": "소개 문구(요약, 부제, 절)에는 숫자를 쓰지 않는다. 30일(휴지통)과 7일(아이콘 캐시)은 지원과 처리방침에만 쓴다",
+ "numbers": [
+  "3"
+ ],
+ "numbersNote": "3 은 Pro 블록의 App Store Connect 묶음 무료 한도로 쓴다(ProRules.freeASCRolls, 스토어 설명과 같은 숫자). 절 본문, 요약, 부제에는 숫자를 쓰지 않는다. 30일(휴지통)과 7일(아이콘 캐시)은 지원과 처리방침에만 쓴다",
  "sources": [
+  "Codematic 1.0.0 빌드 7 기준(2026-10-30 사이트 갱신, HQ 가 ASC READY_FOR_SALE 확인, 공개 App Store releaseDate 2026-10-30). 마지막 앱 코드 커밋 1f09f4e(빌드 7), 출시 기록 a603d08. 범위는 이전 사이트 근거 ae59771(빌드 2)에서 1f09f4e 까지",
+  "Codematic/docs/SUPPORT_PRO_DRAFT.md (b0659f4, ko 와 en FAQ 넷의 글과 '같은 게시 때 고칠 곳')",
+  "Codematic/Codematic/Store/ProRules.swift, Store/ProEntitlement.swift, Store/ProStore.swift, Views/Shared/ProSheet.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCAccess.swift (Pro 범위와 복원 자리, 1f09f4e)",
+  "Codematic/docs/store/iap.json, docs/IAP.md (상품, 가격, 가족 공유)",
+  "Codematic/project.yml (TARGETED_DEVICE_FAMILY \"1\", 1f09f4e), Codematic/Resources/PrivacyInfo.xcprivacy (UserDefaults CA92.1), App/FirstRun.swift (첫 실행 표시 둘)",
   "Codematic/docs/SITE_DRAFT.md (ae59771: 영어 기본 화면, 5절 화면 이름 표. 첫 판 8ec7225)",
-  "Codematic/Codematic/Resources/Localizable.xcstrings (ae59771, 화면 글자의 정본: 영어 키와 한국어 값)",
-  "Codematic/docs/store/metadata.json (ae59771, 언어별 부제와 용어)",
+  "Codematic/Codematic/Resources/Localizable.xcstrings (1f09f4e, 화면 글자의 정본: 영어 키와 한국어 값)",
+  "Codematic/docs/store/metadata.json (39f3512, 언어별 부제와 용어. 부제는 08be300(10-14)에 '리딤 링크 복사와 건넨 기록'으로 바뀌어 사이트 부제 여덟을 이 파일에 맞췄다)",
   "Codematic/docs/store/asc-answers.md (문안 기준, 개인정보 설문)",
   "앱 코드 Codematic ae59771 (1c3520e 까지 앱 코드 변경 없음): Model/Models.swift, ASC/ASCKeyStore.swift, ASC/ASCModels.swift, Logic/CloudSync.swift, Logic/AppIconFetcher.swift, Logic/AppIconStore.swift, Views/Give/NewRollSheet.swift, Views/Give/RollDetailView.swift, Views/Give/TrashView.swift, Views/Shared/InfoSheet.swift, Views/ASC/ASCKeyView.swift, Views/ASC/ASCKeyGuideView.swift, Resources/PrivacyInfo.xcprivacy, project.yml",
-  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). 절 그림 ko 는 원본 캡처 build/store/shots-src/asc/asc-1-add.png (커밋 밖, 2026-10-06 08:48 파일. 아래쪽 화면 글자 한 줄 위에서 잘라 쓴다), ko/iphone/card.png (2026-10-06 17:57 파일, light-main/card.png 와 같은 파일. 카드 시각이 19:08 이라 스토어 합성본 ko 의 18:36 과 다르다), 나머지 일곱 언어는 build/store/shots-src/en-US/iphone/new-codes.png (커밋 밖, 2026-10-07 01:13 파일), card.png (커밋 밖, 2026-10-06 17:59 파일, 영어 화면)"
- ]
+  "그림: 첫 화면은 스토어 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (2026-10-30 다시 가져옴, 4a2f414 의 기능 설명 캡션. en-US 는 영어 화면, ko 가 아닌 일곱 언어가 쓴다). import_assets --looks 는 alts 를 캡션으로 덮어 쓰므로 looks.json 의 여덟 언어 alts 는 그대로 두고 그림만 가져왔다. 절 그림은 asset-sources.json 의 build/store/shots-src/<ko|en-US>/iphone/new-codes.png, card.png (커밋 밖, 2026-10-08 빌드 3 화면. 빌드 5 에서 'App Store Connect 에서 발급' 줄 끝에 더해진 Pro 글자가 새 코드 그림에 없다. 시뮬레이터로 다시 찍을 때 맞춘다)"
+ ],
+ "versionNote": "Codematic 1.0.0(빌드 7) 출시(2026-10-30 ASC READY_FOR_SALE, Codematic Pro APPROVED, HQ 확인. 공개 App Store releaseDate 2026-10-30). site.json 의 unreleased 를 빼서 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 사이트는 빌드 2 기준이었고 빌드 7 과 다른 것을 8개 언어에 반영: iPhone 전용(셋째 절과 FAQ 다른 기기에서 보기의 iPhone과 iPad 를 다른 iPhone 으로), FAQ 넷 더함(Codematic Pro로 되는 것, Pro 구입과 가족 공유, 구매 복원, Pro가 없어졌을 때. ko, en 은 SUPPORT_PRO_DRAFT.md 그대로, 나머지 여섯은 옮기고 영어 화면 글자), 다른 출시 앱과 같은 Pro 블록(ProSheet 글, 숫자 3), 부제 여덟을 지금 스토어 부제로, 첫 화면 합성본 ko 와 en 여섯 장을 지금 스토어 캡션으로. 처리방침: Codematic Pro 구매와 복원은 Apple 이 처리, 처리 항목에 앱 안 표시와 Pro 구매 여부(UserDefaults), 요약에 한 문장, 시행일 2026-10-07 에서 2026-10-30 으로. 처리방침에 iPad 말은 없었다"
 }

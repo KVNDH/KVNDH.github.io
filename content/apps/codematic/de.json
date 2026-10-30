@@ -1,6 +1,6 @@
 {
  "name": "Codematic",
- "subtitle": "Gutscheine, einzeln verteilt",
+ "subtitle": "Einlöselinks und Ausgabeliste",
  "summary": "Sammeln Sie die Angebotscodes und App-Promo-Codes, die Sie verteilen, an einem Ort und halten Sie fest, wer welchen Code bekommen hat",
  "hero": {
   "hook": "Sammeln Sie die Angebotscodes und App-Promo-Codes, die Sie verteilen, an einem Ort und halten Sie fest, wer welchen Code bekommen hat",
@@ -49,7 +49,7 @@
    "layout": "card",
    "title": "Wer welchen Code bekommen hat",
    "body": [
-    "Tragen Sie beim Weitergeben den Namen des Empfängers ein, dann hält jeder Code fest, wer ihn wann bekommen hat. Einen versehentlich verteilten Code widerrufen Sie, und den Verlauf exportieren Sie als CSV. Stapel und Codes liegen in iCloud und erscheinen auf dem iPhone und iPad, die mit demselben Apple Account angemeldet sind."
+    "Tragen Sie beim Weitergeben den Namen des Empfängers ein, dann hält jeder Code fest, wer ihn wann bekommen hat. Einen versehentlich verteilten Code widerrufen Sie, und den Verlauf exportieren Sie als CSV. Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones, die mit demselben Apple Account angemeldet sind."
    ],
    "bullets": [
     "Verlauf und Widerrufen",
@@ -70,6 +70,15 @@
    ]
   }
  ],
+ "pro": {
+  "kick": "Codematic Pro",
+  "title": "Direkt mit\nApp Store Connect verbinden",
+  "items": [
+   "Angebotscodes in der App erstellen und als neuen Stapel übernehmen",
+   "Bereits erstellte Angebotscodes importieren",
+   "Stapel über App Store Connect ohne Begrenzung (anfangs bis zu 3)"
+  ]
+ },
  "faq": [
   {
    "q": "Welche Codes sich hinzufügen lassen",
@@ -116,7 +125,7 @@
   {
    "q": "Andere Geräte",
    "a": [
-    "Stapel und Codes liegen in iCloud und erscheinen auf dem iPhone und iPad, die mit demselben Apple Account angemeldet sind. Der Bildschirm „Info“ zeigt den Status in der Zeile „iCloud storage“ (iCloud-Speicher). Ohne iCloud-Anmeldung werden sie auf dem jeweiligen Gerät gespeichert. Einen API-Schlüssel für App Store Connect fügen Sie auf jedem Gerät einzeln hinzu."
+    "Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones, die mit demselben Apple Account angemeldet sind. Der Bildschirm „Info“ zeigt den Status in der Zeile „iCloud storage“ (iCloud-Speicher). Ohne iCloud-Anmeldung werden sie auf dem jeweiligen Gerät gespeichert. Einen API-Schlüssel für App Store Connect fügen Sie auf jedem Gerät einzeln hinzu."
    ]
   },
   {
@@ -144,6 +153,31 @@
    ]
   },
   {
+   "q": "Was Codematic Pro bietet",
+   "a": [
+    "Pro verbindet die App direkt mit App Store Connect. Erstellen Sie Angebotscodes in der App und übernehmen Sie sie als neuen Stapel, oder importieren Sie bereits erstellte Angebotscodes. Ohne Pro können Sie bis zu 3 über App Store Connect erstellte Stapel ausprobieren. Stapel im Papierkorb zählen mit.",
+    "„Import CSV file“ (CSV-Import), „Paste directly“ (direkt einfügen), das Ausgeben, „Handed out“ (Verlauf) und App-Promo-Codes haben nichts mit Pro zu tun, und die Anzahl der Stapel und Codes ist nicht begrenzt."
+   ]
+  },
+  {
+   "q": "Pro kaufen und Familienfreigabe",
+   "a": [
+    "Codematic Pro ist ein In-App-Kauf, den Sie einmal bezahlen und behalten, und unterstützt die Familienfreigabe. Den Preis für Ihr Land sehen Sie im Kaufbildschirm."
+   ]
+  },
+  {
+   "q": "Kauf wiederherstellen",
+   "a": [
+    "Öffnen Sie „Info“ und tippen Sie unter „In-App Purchase“ (In-App-Kauf) auf „Restore Purchases“ (Käufe wiederherstellen). Dieselbe Taste finden Sie unten im Kaufbildschirm von Codematic Pro. Mit demselben Apple Account gekauftes Pro und über die Familienfreigabe geteiltes Pro kommen zurück. Haben Sie einen Angebotscode für Pro bekommen, geben Sie ihn an derselben Stelle unter „Redeem Code“ (Code einlösen) ein."
+   ]
+  },
+  {
+   "q": "Wenn Pro wegfällt",
+   "a": [
+    "Nach einer Erstattung oder wenn Sie die Familienfreigabe verlassen, bleiben aus App Store Connect übernommene Stapel erhalten, und Sie können daraus weiter Codes ausgeben, sie exportieren und löschen. Auch Ihren Schlüssel können Sie jederzeit entfernen. Nur für neue Stapel über App Store Connect gilt die Grenze von 3."
+   ]
+  },
+  {
    "q": "Sprache der App",
    "a": [
     "Die App gibt es auf Englisch und Koreanisch. Sie richtet sich danach, welche der beiden Sprachen in den bevorzugten Sprachen des Geräts weiter oben steht, und erscheint auf Englisch, wenn keine von beiden dabei ist. Die Namen in Anführungszeichen auf dieser Seite sind die Namen der englischen Bildschirme."
@@ -152,8 +186,8 @@
  ],
  "privacy": {
   "title": "Codematic Datenschutzerklärung",
-  "effectiveDate": "2026-10-07",
-  "summary": "Codematic erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Die Codes, die Sie hinzufügen, und Ihr Verlauf, einschließlich der Empfängernamen, die Sie eintragen, liegen auf Ihrem Gerät und in Ihrem eigenen iCloud-Account. Ein API-Schlüssel für App Store Connect wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und damit signierte Anfragen gehen direkt an Apple.",
+  "effectiveDate": "2026-10-30",
+  "summary": "Codematic erhebt keine personenbezogenen Daten. Es gibt kein Konto und keine Anmeldung. Die Codes, die Sie hinzufügen, und Ihr Verlauf, einschließlich der Empfängernamen, die Sie eintragen, liegen auf Ihrem Gerät und in Ihrem eigenen iCloud-Account. Ein API-Schlüssel für App Store Connect wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und damit signierte Anfragen gehen direkt an Apple. Den Kauf von Codematic Pro übernimmt Apple.",
   "intro": [
    "kvndh (der Entwickler) verarbeitet personenbezogene Daten der Nutzerinnen und Nutzer der App Codematic (die App) wie folgt."
   ],
@@ -175,7 +209,8 @@
      "Codes (der Code, ob er verteilt wurde und wann): um den nächsten Code auszugeben und den Verlauf zu zeigen",
      "Empfängernamen: freiwilliger Text, den Sie beim Weitergeben eines Codes eintragen und der der Name oder Spitzname einer anderen Person sein kann. Erscheint im Verlauf, auf der Karte nach dem Weitergeben, in gesicherten Bildern und in der exportierten CSV-Datei. Liegt zusammen mit Stapeln und Codes auf Ihrem Gerät und in Ihrem eigenen iCloud-Account",
      "API-Schlüssel für App Store Connect (Schlüssel-ID, privater Schlüssel und bei einem Teamschlüssel die Issuer ID): nur wenn Sie einen hinzufügen, um in Ihrem App Store Connect Apps, Produkte, Angebote und Codes zu lesen und zu erstellen. Wird nur im Schlüsselbund des Geräts gespeichert, auf dem Sie ihn hinzufügen, und nicht über iCloud synchronisiert",
-     "Zwischenspeicher für App-Symbole (Symbol und Name der App zur App-Store-ID eines Stapels): für die Anzeige bei Stapeln und in gesicherten Bildern. Liegt im Cache-Ordner des Geräts und wird nach 7 Tagen neu geladen"
+     "Zwischenspeicher für App-Symbole (Symbol und Name der App zur App-Store-ID eines Stapels): für die Anzeige bei Stapeln und in gesicherten Bildern. Liegt im Cache-Ordner des Geräts und wird nach 7 Tagen neu geladen",
+     "App-Vermerke (ob der Beispielstapel angelegt und die Anleitung gesehen wurde) und ob Codematic Pro gekauft wurde: um den Beispielstapel und die Anleitung auf einem Gerät beim ersten Öffnen einmal zu zeigen und um festzulegen, ob ein neuer Stapel über App Store Connect erstellt werden kann. Liegen auf dem Gerät und werden nicht mit iCloud synchronisiert"
     ]
    },
    {
@@ -195,7 +230,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Es wird keine Verarbeitung ausgelagert. Das Speichern von Stapeln und Codes und ihr Abgleich zwischen Geräten laufen über Apples iCloud (CloudKit). Diese Daten gehören zu Ihrem Apple Account und unterliegen der Datenschutzrichtlinie von Apple. Der Entwickler kann sie weder einsehen noch erhält er sie. Hat ein Stapel eine App-Store-ID, lädt die App das Symbol und den Namen dieser App aus den öffentlichen App-Store-Informationen von Apple (itunes.apple.com) und von der Bildadresse, die in dieser Antwort steht. Dabei sendet sie die App-ID und einen Regionscode, und wie bei jeder Webanfrage erhält Apple die IP-Adresse Ihres Geräts. Cookies und Anmeldedaten werden nicht gesendet. Kennen die öffentlichen Informationen die App nicht und ist ein API-Schlüssel für App Store Connect hinzugefügt, kommen Symbol und Name aus App Store Connect. Wenn Sie einen API-Schlüssel für App Store Connect hinzufügen, sendet die App mit diesem Schlüssel signierte Anfragen direkt an die App Store Connect API von Apple (api.appstoreconnect.apple.com), um Apps, Produkte, Angebote und Codes zu lesen und zu erstellen. Diese Anfragen laufen über keinen Server des Entwicklers."
+     "Es wird keine Verarbeitung ausgelagert. Das Speichern von Stapeln und Codes und ihr Abgleich zwischen Geräten laufen über Apples iCloud (CloudKit). Diese Daten gehören zu Ihrem Apple Account und unterliegen der Datenschutzrichtlinie von Apple. Der Entwickler kann sie weder einsehen noch erhält er sie. Kauf und Wiederherstellung von Codematic Pro übernimmt Apple im App Store, und für Zahlungsdaten gilt die Datenschutzrichtlinie von Apple. Der Entwickler erhält weder Zahlungsmittel noch Informationen zu Ihrem Apple Account. Hat ein Stapel eine App-Store-ID, lädt die App das Symbol und den Namen dieser App aus den öffentlichen App-Store-Informationen von Apple (itunes.apple.com) und von der Bildadresse, die in dieser Antwort steht. Dabei sendet sie die App-ID und einen Regionscode, und wie bei jeder Webanfrage erhält Apple die IP-Adresse Ihres Geräts. Cookies und Anmeldedaten werden nicht gesendet. Kennen die öffentlichen Informationen die App nicht und ist ein API-Schlüssel für App Store Connect hinzugefügt, kommen Symbol und Name aus App Store Connect. Wenn Sie einen API-Schlüssel für App Store Connect hinzufügen, sendet die App mit diesem Schlüssel signierte Anfragen direkt an die App Store Connect API von Apple (api.appstoreconnect.apple.com), um Apps, Produkte, Angebote und Codes zu lesen und zu erstellen. Diese Anfragen laufen über keinen Server des Entwicklers."
     ],
     "bullets": []
    },
