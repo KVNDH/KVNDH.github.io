@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abre y escribe",
    "body": [
-    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone y al iPad de la misma cuenta. Una pulsación larga sobre una entrada abre un menú para editarla o destacarla; en el iPad también lo abre un clic derecho, y los atajos de teclado saltan al año anterior o al siguiente. En un iPad con iPadOS 26 o posterior, el menú Edición de la barra de menús también tiene los comandos para destacar la entrada que estás editando y elegir su fecha y sus etiquetas. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro. Al plegarlo o desplegarlo, la entrada que estabas viendo se queda en su sitio."
+    "No hace falta cuenta. Las entradas viven en la app y, con la sincronización con iCloud activada, te siguen al iPhone, al iPad y al Mac de la misma cuenta. Una pulsación larga sobre una entrada abre un menú para editarla o destacarla; en el iPad y el Mac también lo abre un clic derecho, y los atajos de teclado saltan al año anterior o al siguiente. En un iPad con iPadOS 26 o posterior y en el Mac, el menú Edición de la barra de menús también tiene los comandos para destacar la entrada que estás editando y elegir su fecha y sus etiquetas. En la pantalla ancha de un iPhone plegable abierto, el texto se agranda como en el iPad y la línea de tiempo queda en el centro. Al plegarlo o desplegarlo, la entrada que estabas viendo se queda en su sitio."
    ],
    "bullets": [],
    "visual": {
@@ -109,7 +109,7 @@
   {
    "q": "Activar o desactivar la sincronización con iCloud",
    "a": [
-    "La sincronización con iCloud viene activada de inicio, y puedes desactivarla o volver a activarla en Ajustes. El cambio se aplica después de cerrar la app desde el selector de apps y abrirla otra vez.",
+    "La sincronización con iCloud viene activada de inicio, y puedes desactivarla o volver a activarla en Ajustes. El cambio se aplica después de cerrar la app desde el selector de apps y abrirla otra vez. En el Mac, se aplica después de salir de Life Tyde y abrirla otra vez.",
     "En tus otros dispositivos, inicia sesión en la misma cuenta de iCloud y deja la sincronización activada. La primera sincronización entre dispositivos puede tardar unos minutos."
    ]
   },
@@ -130,7 +130,7 @@
   {
    "q": "Cambiar de línea de tiempo y base de edad",
    "a": [
-    "Si tienes 2 o más líneas de tiempo, toca el título que está arriba, en el centro de la pantalla, para pasar a otra. En ese mismo menú, Gestionar líneas de tiempo sirve para añadir o editar líneas de tiempo. En un iPad con iPadOS 26 o posterior también puedes cambiar desde el menú Línea de tiempo de la barra de menús y, con un teclado conectado, con Control-1, Control-2 y Control-3.",
+    "Si tienes 2 o más líneas de tiempo, toca el título que está arriba, en el centro de la pantalla, para pasar a otra. En ese mismo menú, Gestionar líneas de tiempo sirve para añadir o editar líneas de tiempo. En un iPad con iPadOS 26 o posterior y en el Mac también puedes cambiar desde el menú Línea de tiempo de la barra de menús y, desde el teclado, con Control-1, Control-2 y Control-3.",
     "En una línea de tiempo que no sea la principal, Editar línea de tiempo, dentro de Gestionar líneas de tiempo, tiene Base de edad, con dos opciones: Igual que la línea de tiempo principal y Propia. Si eliges Propia y pones una fecha de nacimiento, las edades de esa línea de tiempo se cuentan desde esa fecha."
    ]
   },
@@ -170,8 +170,15 @@
   {
    "q": "Dispositivos compatibles con las funciones de IA",
    "a": [
-    "Resumir esta crónica, Añadir prólogo con IA y los borradores de ensayo aparecen en dispositivos compatibles con Apple Intelligence, con iOS 26 o posterior y Apple Intelligence activado. Si el modelo del dispositivo no admite el idioma de la app, quedan ocultos.",
+    "Resumir esta crónica, Añadir prólogo con IA y los borradores de ensayo aparecen en dispositivos compatibles con Apple Intelligence, con iOS 26 o posterior, o macOS 26 o posterior, y Apple Intelligence activado. Si el modelo del dispositivo no admite el idioma de la app, quedan ocultos.",
     "Un texto de IA necesita al menos 5 entradas de las que partir. Puedes editar cualquier cosa que escriba antes de exportar."
+   ]
+  },
+  {
+   "q": "Usar Life Tyde en el Mac",
+   "a": [
+    "La versión para Mac funciona con macOS 14 o posterior. Es la misma app que en el iPhone y el iPad, así que con la misma cuenta de Apple no se cobra Pro de nuevo. Los ajustes se abren en una ventana aparte desde Ajustes en el menú de la app, y la línea de tiempo se cambia desde su nombre, arriba a la izquierda de la ventana.",
+    "Pulsa Comando-Retorno para terminar la entrada que estás editando y Esc para cancelar. Control-Comando-Flecha arriba y Control-Comando-Flecha abajo pasan a la entrada anterior y a la siguiente, y las flechas izquierda y derecha pasan las fotos abiertas en grande. Exportar una imagen de la línea de tiempo solo se puede en el iPhone y el iPad."
    ]
   }
  ],

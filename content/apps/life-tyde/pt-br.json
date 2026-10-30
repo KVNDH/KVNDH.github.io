@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Abra e escreva",
    "body": [
-    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone e no iPad da mesma conta. Um toque longo num registro abre um menu para editar ou destacar; no iPad, um clique com o botão direito abre o mesmo menu, e atalhos de teclado pulam para o ano anterior ou o seguinte. Num iPad com iPadOS 26 ou posterior, o menu Editar da barra de menus também tem os comandos para destacar o registro que você está editando e escolher a data e as tags. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio. Ao dobrar ou abrir o aparelho, o registro que você estava vendo continua no lugar."
+    "Não precisa de conta. Os registros ficam no app e, com a sincronização com iCloud ligada, acompanham você no iPhone, no iPad e no Mac da mesma conta. Um toque longo num registro abre um menu para editar ou destacar; no iPad e no Mac, um clique com o botão direito abre o mesmo menu, e atalhos de teclado pulam para o ano anterior ou o seguinte. Num iPad com iPadOS 26 ou posterior e no Mac, o menu Editar da barra de menus também tem os comandos para destacar o registro que você está editando e escolher a data e as tags. Na tela larga de um iPhone dobrável aberto, o texto fica maior, como no iPad, e a linha do tempo fica no meio. Ao dobrar ou abrir o aparelho, o registro que você estava vendo continua no lugar."
    ],
    "bullets": [],
    "visual": {
@@ -109,7 +109,7 @@
   {
    "q": "Ligar ou desligar a sincronização com iCloud",
    "a": [
-    "A sincronização com iCloud já vem ligada, e você pode desligá-la ou ligá-la de novo nos Ajustes. A mudança vale depois que você fecha o app pelo alternador de apps e abre outra vez.",
+    "A sincronização com iCloud já vem ligada, e você pode desligá-la ou ligá-la de novo nos Ajustes. A mudança vale depois que você fecha o app pelo alternador de apps e abre outra vez. No Mac, ela vale depois que você encerra o Life Tyde e abre outra vez.",
     "Nos seus outros aparelhos, entre na mesma conta do iCloud e deixe a sincronização ligada. A primeira sincronização entre aparelhos pode levar alguns minutos."
    ]
   },
@@ -130,7 +130,7 @@
   {
    "q": "Trocar de linha do tempo e base da idade",
    "a": [
-    "Com 2 ou mais linhas do tempo, toque no título no alto da tela, ao centro, para passar a outra. No mesmo menu, Gerenciar linhas do tempo é onde você adiciona ou edita uma linha do tempo. Num iPad com iPadOS 26 ou posterior também dá para trocar pelo menu Linha do tempo da barra de menus e, com um teclado conectado, com Control-1, Control-2 e Control-3.",
+    "Com 2 ou mais linhas do tempo, toque no título no alto da tela, ao centro, para passar a outra. No mesmo menu, Gerenciar linhas do tempo é onde você adiciona ou edita uma linha do tempo. Num iPad com iPadOS 26 ou posterior e no Mac também dá para trocar pelo menu Linha do tempo da barra de menus e, pelo teclado, com Control-1, Control-2 e Control-3.",
     "Numa linha do tempo que não seja a principal, Editar linha do tempo, em Gerenciar linhas do tempo, tem Base da idade, com duas opções: Igual à linha do tempo principal e Personalizada. Escolha Personalizada e defina uma data de nascimento, e as idades dessa linha do tempo passam a ser contadas a partir dessa data."
    ]
   },
@@ -170,8 +170,15 @@
   {
    "q": "Aparelhos compatíveis com os recursos de IA",
    "a": [
-    "Resumir esta crônica, Adicionar prefácio por IA e os rascunhos de ensaio aparecem em aparelhos compatíveis com a Apple Intelligence, com iOS 26 ou posterior e Apple Intelligence ativada. Se o modelo do aparelho não der conta do idioma do app, eles ficam ocultos.",
+    "Resumir esta crônica, Adicionar prefácio por IA e os rascunhos de ensaio aparecem em aparelhos compatíveis com a Apple Intelligence, com iOS 26 ou posterior, ou macOS 26 ou posterior, e Apple Intelligence ativada. Se o modelo do aparelho não der conta do idioma do app, eles ficam ocultos.",
     "Um texto de IA precisa de pelo menos 5 registros como base. Tudo o que ele escrever pode ser editado antes de exportar."
+   ]
+  },
+  {
+   "q": "Usar no Mac",
+   "a": [
+    "A versão para Mac funciona no macOS 14 ou posterior. É o mesmo app do iPhone e do iPad, então com a mesma Conta Apple não há nova cobrança do Pro. Os Ajustes abrem numa janela própria pelo item Ajustes do menu do app, e a troca de linha do tempo fica no nome da linha do tempo, no canto superior esquerdo da janela.",
+    "Pressione Command-Return para terminar o registro que está editando e Esc para cancelar. Control-Command-Seta para cima e Control-Command-Seta para baixo levam ao registro anterior e ao seguinte, e as setas para a esquerda e para a direita passam as fotos abertas em tamanho grande. Exportar uma imagem da linha do tempo só dá no iPhone e no iPad."
    ]
   }
  ],

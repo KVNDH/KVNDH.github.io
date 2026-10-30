@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Open it and write",
    "body": [
-    "No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone and iPad on the same account. A long press on an entry opens a menu to edit or highlight it; on iPad a right-click opens it too, and keyboard shortcuts jump to the previous or next year. On an iPad running iPadOS 26 or later, the Edit menu in the menu bar also has highlight, date, and tag commands for the entry you are editing. On the wide screen of a foldable iPhone opened out, the text grows as on iPad and the timeline sits in the middle. Fold it or open it out, and the entry you were looking at stays in place."
+    "No account needed. Entries live in the app, and with iCloud sync on they follow you to your iPhone, iPad, and Mac on the same account. A long press on an entry opens a menu to edit or highlight it; on iPad and Mac a right-click opens it too, and keyboard shortcuts jump to the previous or next year. On an iPad running iPadOS 26 or later and on a Mac, the Edit menu in the menu bar also has highlight, date, and tag commands for the entry you are editing. On the wide screen of a foldable iPhone opened out, the text grows as on iPad and the timeline sits in the middle. Fold it or open it out, and the entry you were looking at stays in place."
    ],
    "bullets": [],
    "visual": {
@@ -109,7 +109,7 @@
   {
    "q": "Turning iCloud sync on or off",
    "a": [
-    "iCloud sync is on from the start, and you can turn it off or back on in Settings. The change applies after you close the app from the app switcher and open it again.",
+    "iCloud sync is on from the start, and you can turn it off or back on in Settings. The change applies after you close the app from the app switcher and open it again. On a Mac, it applies after you quit Life Tyde and open it again.",
     "On your other devices, sign in to the same iCloud account and keep iCloud sync on. The first sync between devices can take a few minutes."
    ]
   },
@@ -130,7 +130,7 @@
   {
    "q": "Switching timelines and the age base",
    "a": [
-    "When you have 2 or more timelines, tap the title at the top center of the screen to switch to another one. Manage Timelines in the same menu is where you add or edit a timeline. On an iPad running iPadOS 26 or later you can also switch from the Timeline menu in the menu bar and, with a keyboard connected, with Control-1, Control-2, and Control-3.",
+    "When you have 2 or more timelines, tap the title at the top center of the screen to switch to another one. Manage Timelines in the same menu is where you add or edit a timeline. On an iPad running iPadOS 26 or later and on a Mac you can also switch from the Timeline menu in the menu bar and, from the keyboard, with Control-1, Control-2, and Control-3.",
     "For a timeline other than the main one, Edit Timeline in Manage Timelines has Age base, with two options: Same as main timeline and Separate. Choose Separate and set a birthday, and ages on that timeline count from that date."
    ]
   },
@@ -170,8 +170,15 @@
   {
    "q": "Devices that support the AI features",
    "a": [
-    "Summarize this chronicle, Add AI foreword, and essay drafts appear on devices that support Apple Intelligence, running iOS 26 or later with Apple Intelligence turned on. They stay hidden if the on-device model does not support the app language.",
+    "Summarize this chronicle, Add AI foreword, and essay drafts appear on devices that support Apple Intelligence, running iOS 26 or later or macOS 26 or later with Apple Intelligence turned on. They stay hidden if the on-device model does not support the app language.",
     "AI text needs at least 5 entries to work from. You can edit anything it writes before exporting."
+   ]
+  },
+  {
+   "q": "Using it on a Mac",
+   "a": [
+    "The Mac version runs on macOS 14 or later. It is the same app as on iPhone and iPad, so on the same Apple Account you won't be charged again for Pro. Settings opens in its own window from Settings in the app menu, and you switch timelines from the timeline name at the top left of the window.",
+    "Press Command-Return to finish the entry you are editing and Esc to cancel. Control-Command-Up Arrow and Control-Command-Down Arrow move to the previous and next entry, and the Left and Right Arrow keys page through a photo opened large. Exporting a timeline image is only on iPhone and iPad."
    ]
   }
  ],

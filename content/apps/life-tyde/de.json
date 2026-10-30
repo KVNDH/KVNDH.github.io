@@ -67,7 +67,7 @@
    "layout": "card",
    "title": "Öffnen und schreiben",
    "body": [
-    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone und iPad desselben Accounts da. Langes Drücken auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben; auf dem iPad öffnet es auch ein Rechtsklick, und Tastaturkurzbefehle springen zum vorigen oder nächsten Jahr. Auf einem iPad mit iPadOS 26 oder neuer finden Sie die Befehle für Highlight, Datum und Tags des Eintrags, den Sie gerade bearbeiten, auch im Menü Bearbeiten der Menüleiste. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte. Beim Zu- und Aufklappen bleibt der Eintrag, den Sie gerade ansehen, an seiner Stelle."
+    "Kein Konto nötig. Die Einträge liegen in der App, und mit eingeschaltetem iCloud-Sync sind sie auf iPhone, iPad und Mac desselben Accounts da. Langes Drücken auf einen Eintrag öffnet ein Menü zum Bearbeiten oder Hervorheben; auf iPad und Mac öffnet es auch ein Rechtsklick, und Tastaturkurzbefehle springen zum vorigen oder nächsten Jahr. Auf einem iPad mit iPadOS 26 oder neuer und auf dem Mac finden Sie die Befehle für Highlight, Datum und Tags des Eintrags, den Sie gerade bearbeiten, auch im Menü Bearbeiten der Menüleiste. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird die Schrift wie auf dem iPad größer, und die Timeline steht in der Mitte. Beim Zu- und Aufklappen bleibt der Eintrag, den Sie gerade ansehen, an seiner Stelle."
    ],
    "bullets": [],
    "visual": {
@@ -109,7 +109,7 @@
   {
    "q": "iCloud-Sync ein- und ausschalten",
    "a": [
-    "iCloud-Sync ist von Anfang an eingeschaltet und lässt sich in den Einstellungen aus- und wieder einschalten. Die Änderung greift, nachdem Sie die App im App-Umschalter geschlossen und neu geöffnet haben.",
+    "iCloud-Sync ist von Anfang an eingeschaltet und lässt sich in den Einstellungen aus- und wieder einschalten. Die Änderung greift, nachdem Sie die App im App-Umschalter geschlossen und neu geöffnet haben. Auf dem Mac greift sie, nachdem Sie Life Tyde beendet und neu geöffnet haben.",
     "Melden Sie sich auf Ihren anderen Geräten im selben iCloud-Account an und lassen Sie iCloud-Sync dort eingeschaltet. Der erste Abgleich zwischen Geräten kann einige Minuten dauern."
    ]
   },
@@ -130,7 +130,7 @@
   {
    "q": "Timeline wechseln und Altersbezug",
    "a": [
-    "Haben Sie 2 oder mehr Timelines, tippen Sie oben in der Mitte des Bildschirms auf den Titel und wechseln zu einer anderen. Im selben Menü legen Sie unter Timelines verwalten eine Timeline an oder bearbeiten sie. Auf einem iPad mit iPadOS 26 oder neuer wechseln Sie auch über das Menü Timeline in der Menüleiste und, mit angeschlossener Tastatur, mit Control-1, Control-2 und Control-3.",
+    "Haben Sie 2 oder mehr Timelines, tippen Sie oben in der Mitte des Bildschirms auf den Titel und wechseln zu einer anderen. Im selben Menü legen Sie unter Timelines verwalten eine Timeline an oder bearbeiten sie. Auf einem iPad mit iPadOS 26 oder neuer und auf dem Mac wechseln Sie auch über das Menü Timeline in der Menüleiste und auf der Tastatur mit Control-1, Control-2 und Control-3.",
     "Für jede Timeline außer der Haupt-Timeline finden Sie unter Timelines verwalten in Timeline bearbeiten den Punkt Altersbezug mit den Optionen Wie die Haupt-Timeline und Eigenes Datum. Wählen Sie Eigenes Datum und legen einen Geburtstag fest, zählt das Alter auf dieser Timeline ab diesem Datum."
    ]
   },
@@ -170,8 +170,15 @@
   {
    "q": "Geräte für die KI-Funktionen",
    "a": [
-    "Diese Chronik zusammenfassen, KI-Vorwort hinzufügen und Essay-Entwürfe erscheinen auf Geräten, die Apple Intelligence unterstützen, ab iOS 26 und mit eingeschaltetem Apple Intelligence. Unterstützt das Modell auf dem Gerät die App-Sprache nicht, bleiben sie verborgen.",
+    "Diese Chronik zusammenfassen, KI-Vorwort hinzufügen und Essay-Entwürfe erscheinen auf Geräten, die Apple Intelligence unterstützen, ab iOS 26 oder macOS 26 und mit eingeschaltetem Apple Intelligence. Unterstützt das Modell auf dem Gerät die App-Sprache nicht, bleiben sie verborgen.",
     "Für einen KI-Text braucht es mindestens 5 Einträge als Grundlage. Alles, was dabei entsteht, können Sie vor dem Export bearbeiten."
+   ]
+  },
+  {
+   "q": "Auf dem Mac verwenden",
+   "a": [
+    "Die Mac-Version läuft ab macOS 14. Sie ist dieselbe App wie auf iPhone und iPad, daher wird Pro mit demselben Apple-Account nicht erneut abgebucht. Die Einstellungen öffnen Sie in einem eigenen Fenster über Einstellungen im App-Menü, und die Timeline wechseln Sie über den Timeline-Namen oben links im Fenster.",
+    "Mit Command-Return schließen Sie die Bearbeitung eines Eintrags ab, mit Esc brechen Sie sie ab. Mit Control-Command-Pfeil nach oben und Control-Command-Pfeil nach unten gehen Sie zum vorigen und nächsten Eintrag, und ein groß geöffnetes Foto blättern Sie mit den Pfeiltasten nach links und rechts weiter. Ein Timeline-Bild exportieren können Sie nur auf iPhone und iPad."
    ]
   }
  ],
