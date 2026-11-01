@@ -179,14 +179,13 @@
      "Sound, voice cue, vibration and display settings: used for how the app behaves",
      "Total workout time: a single sum of seconds in work segments, with no records by date",
      "Whether the first-run guide has been seen: used to show it only once",
-     "A copy of a save file that could not be read: the same kinds of data as above, kept when a save file is damaged",
-     "Rep counting motion logs: one file per work segment for each counting source, holding the start time, count, round, set, number of samples, source, and for each sample the acceleration and gravity direction values, sample time and whether the app was in front. These logs are for checking rep counting and are not used on any app screen"
+     "A copy of a save file that could not be read: the same kinds of data as above, kept when a save file is damaged"
     ]
    },
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Only the latest 20 motion log files are kept, and older ones are removed first. Workouts can be removed in the app, and 누적 지우기 (Clear total) in Settings sets the total workout time back to 0.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Workouts can be removed in the app, and 누적 지우기 (Clear total) in Settings sets the total workout time back to 0.",
      "Information collected by AdMob is kept as set out in Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []

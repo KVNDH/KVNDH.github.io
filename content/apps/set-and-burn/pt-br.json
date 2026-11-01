@@ -179,14 +179,13 @@
      "Ajustes de som, avisos de voz, vibração e tela: usados para o comportamento do app",
      "Tempo total de treino: uma única soma de segundos nas fases de exercício, sem registros por data",
      "Se o guia inicial já foi visto: usado para mostrá-lo só uma vez",
-     "Uma cópia de um arquivo salvo que não pôde ser lido: os mesmos tipos de dados acima, mantida quando um arquivo salvo está danificado",
-     "Registros de movimento da contagem de repetições: um arquivo por fase de exercício para cada fonte de contagem, com o horário de início, a contagem, a rodada, a série, o número de amostras, a fonte e, para cada amostra, os valores de aceleração e direção da gravidade, o horário da amostra e se o app estava em primeiro plano. Esses registros servem para verificar a contagem de repetições e não são usados em nenhuma tela do app"
+     "Uma cópia de um arquivo salvo que não pôde ser lido: os mesmos tipos de dados acima, mantida quando um arquivo salvo está danificado"
     ]
    },
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Só os 20 arquivos de registro de movimento mais recentes são mantidos, e os mais antigos são removidos primeiro. Os treinos podem ser removidos no app, e 누적 지우기 (Limpar total), em Ajustes, volta o tempo total de treino para 0.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos podem ser removidos no app, e 누적 지우기 (Limpar total), em Ajustes, volta o tempo total de treino para 0.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []

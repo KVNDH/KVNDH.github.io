@@ -17,10 +17,10 @@
  ],
  "motion": [
   "받기: 뛴 수 세기를 켠 운동이 도는 동안만, 멈춤과 끝에서 끈다 (App/RunController.swift:518, :528)",
-  "기록 CSV: Documents/jumprope 최근 20개. 출시판에서도 켜져 있다(liveLogDirectory 에 DEBUG 조건 없음). 끄면 처리방침 2절, 3절의 줄을 뺀다"
+  "기록 CSV: 출시판에서 끔, Debug 설치판에만 남음(IntervalTimer b6f4c71)"
  ],
  "storage": [
-  "앱 컨테이너 Library/Application Support/state.json(운동, 설정, workTotal, introSeen), state.v1.json, state.v2.json, state.broken.json, Documents/jumprope/*.csv. iCloud, CloudKit, App Group 없음, 백업 제외 표시 없음"
+  "앱 컨테이너 Library/Application Support/state.json(운동, 설정, workTotal, introSeen), state.v1.json, state.v2.json, state.broken.json, CloudKit, App Group 없음, 백업 제외 표시 없음"
  ],
  "permissions": [
   "동작 및 피트니스(에어팟 움직임), 추적 허용(ATT). 폰 가속도는 iOS 권한 없음"

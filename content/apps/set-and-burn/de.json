@@ -179,14 +179,13 @@
      "Einstellungen zu Ton, Sprachansagen, Vibration und Anzeige: für das Verhalten der App",
      "Gesamte Trainingszeit: eine einzige Summe der Sekunden in Trainingsphasen, Aufzeichnungen nach Datum gibt es nicht",
      "Ob der Einstiegshinweis schon gesehen wurde: damit er nur einmal erscheint",
-     "Eine Kopie einer Speicherdatei, die nicht gelesen werden konnte: dieselben Arten von Daten wie oben, aufbewahrt, wenn eine Speicherdatei beschädigt ist",
-     "Bewegungsprotokolle der Wiederholungszählung: eine Datei pro Trainingsphase und Zählquelle mit Startzeit, Zählwert, Runde, Satz, Anzahl der Messwerte und Zählquelle sowie für jeden Messwert die Werte für Beschleunigung und Schwerkraftrichtung, den Zeitpunkt des Messwerts und die Angabe, ob die App im Vordergrund war. Diese Protokolle dienen zur Prüfung der Wiederholungszählung und werden auf keinem Bildschirm der App verwendet"
+     "Eine Kopie einer Speicherdatei, die nicht gelesen werden konnte: dieselben Arten von Daten wie oben, aufbewahrt, wenn eine Speicherdatei beschädigt ist"
     ]
    },
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Nur die neuesten 20 Dateien mit Bewegungsprotokollen bleiben erhalten, ältere werden zuerst entfernt. Workouts lassen sich in der App entfernen, und 누적 지우기 (Gesamtzeit löschen) in den Einstellungen setzt die gesamte Trainingszeit auf 0 zurück.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Workouts lassen sich in der App entfernen, und 누적 지우기 (Gesamtzeit löschen) in den Einstellungen setzt die gesamte Trainingszeit auf 0 zurück.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
