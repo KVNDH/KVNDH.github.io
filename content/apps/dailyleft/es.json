@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Elige los días que cuentan",
    "body": [
-    "De forma predeterminada cuentan todos los días. Activa 평일만 세기 (Contar solo días laborables) para dejar fuera los fines de semana y los festivos de Corea. Para dejar fuera un día en que no vayas a gastar, tócalo en el calendario. Con un presupuesto mensual, el importe diario se vuelve a dividir entre los días que quedan. Los días pasados del calendario muestran lo que gastaste."
+    "De forma predeterminada cuentan todos los días. Activa Count Weekdays Only (Contar solo días laborables) para dejar fuera los fines de semana y, si la región de tu iPhone es Corea del Sur, también los festivos coreanos. Para dejar fuera un día en que no vayas a gastar, tócalo en el calendario. Con un presupuesto mensual, el importe diario se vuelve a dividir entre los días que quedan. Los días pasados del calendario muestran lo que gastaste."
    ],
    "bullets": [
     "Contar solo días laborables",
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Ajústalo a tu presupuesto",
    "body": [
-    "De forma predeterminada te ayuda a no pasarte del presupuesto. Si el dinero desaparece cuando termina el periodo, como los puntos de empresa o una ayuda, activa 남으면 사라짐 (Caduca si no se usa), y la app te avisa para que lo uses todo a tiempo. Elige el día en que empieza tu presupuesto, del 1 al 28. El dinero que queda también aparece en widgets de la pantalla de inicio y de la pantalla de bloqueo."
+    "De forma predeterminada te ayuda a no pasarte del presupuesto. Si el dinero desaparece cuando termina el periodo, como los puntos de empresa o una ayuda, activa Expires If Unspent (Caduca si no se usa), y la app te avisa para que lo uses todo a tiempo. Elige el día en que empieza tu presupuesto, del 1 al 28. El dinero que queda también aparece en widgets de la pantalla de inicio y de la pantalla de bloqueo."
    ],
    "bullets": [
     "Opción «Caduca si no se usa»",
@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Registrar los pagos",
    "body": [
-    "Si los pagos con tarjeta te llegan por mensaje de texto, puedes crear una automatización de Atajos para registrarlos sin abrir la app. Si te llegan por la app de la tarjeta o por KakaoTalk, pega el aviso o introduce el importe tú mismo. Introduce los últimos 4 dígitos de una tarjeta para registrar solo los mensajes de esa tarjeta, o déjalos vacíos para registrar los mensajes de pago de todas las tarjetas."
+    "Puedes añadir cualquier pago a mano. Si la región de tu iPhone es Corea del Sur, también puedes registrar pagos con tarjeta desde mensajes. Si los pagos con tarjeta te llegan por mensaje de texto, puedes crear una automatización de Atajos para registrarlos sin abrir la app. Si te llegan por la app de la tarjeta o por KakaoTalk, pega el aviso o introduce el importe tú mismo. Introduce los últimos 4 dígitos de una tarjeta para registrar solo los mensajes de esa tarjeta, o déjalos vacíos para registrar los mensajes de pago de todas las tarjetas."
    ],
    "bullets": [
     "Automatización de Atajos",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Si el saldo no cuadra",
    "body": [
-    "Si el registro y tu saldo real no coinciden, toca el número grande e introduce el importe real. Una línea de 잔액 조정 (Ajuste de saldo) recoge la diferencia, y tus transacciones originales se quedan como están."
+    "Si el registro y tu saldo real no coinciden, toca el número grande e introduce el importe real. Una línea de Balance adjustment (Ajuste de saldo) recoge la diferencia, y tus transacciones originales se quedan como están."
    ],
    "bullets": [],
    "visual": {
@@ -100,82 +100,82 @@
   {
    "q": "Primeros pasos",
    "a": [
-    "Elige un presupuesto mensual o diario, introduce un importe y toca 시작 (Empezar). No hay cuenta ni inicio de sesión.",
-    "Si empiezas un presupuesto mensual a mitad de un periodo, introduce el importe real que te queda en el campo 지금 남은 돈 (Dinero que queda ahora). Si lo dejas vacío, se usa el presupuesto completo. El día de inicio del periodo, «Contar solo días laborables», «Caduca si no se usa», los avisos de pago y los últimos 4 dígitos de la tarjeta están en 더 정하기 (Más opciones), y puedes cambiarlos después en Ajustes."
+    "Elige un presupuesto mensual o diario, introduce un importe y toca Start (Empezar). No hay cuenta ni inicio de sesión.",
+    "Si empiezas un presupuesto mensual a mitad de un periodo, introduce el importe real que te queda en el campo Money Left This Month (Dinero que queda ahora). Si lo dejas vacío, se usa el presupuesto completo. El día de inicio del periodo, «Contar solo días laborables», «Caduca si no se usa», los avisos de pago y los últimos 4 dígitos de la tarjeta están en More Options (Más opciones), y puedes cambiarlos después en Ajustes."
    ]
   },
   {
    "q": "Días que cuentan y festivos",
    "a": [
-    "De forma predeterminada cuentan todos los días. Si el dinero no es para los fines de semana, activa 평일만 세기 (Contar solo días laborables) en Ajustes. Los fines de semana y los festivos quedan fuera. Para dejar fuera un día concreto, tócalo en el calendario de la pantalla principal. Cuando el calendario está plegado solo muestra esta semana, así que toca 달력 펼치기 (Desplegar calendario) para llegar a otras semanas. Los días pasados no se pueden dejar fuera.",
-    "Los festivos de Corea de 2026 a 2028 están incluidos en la app, y los años siguientes se añaden con actualizaciones de la app. Los de 2028 se calcularon con los datos de calendario del Korea Astronomy and Space Science Institute y se revisarán cuando se publiquen las fechas oficiales. En los años que no están en la lista, solo quedan fuera los fines de semana. Si hay un festivo temporal que no está en la lista, tócalo en el calendario para dejarlo fuera."
+    "De forma predeterminada cuentan todos los días. Si el dinero no es para los fines de semana, activa Count Weekdays Only (Contar solo días laborables) en Ajustes. Los fines de semana quedan fuera y, si la región de tu iPhone es Corea del Sur, también los festivos. Para dejar fuera un día concreto, tócalo en el calendario de la pantalla principal. Cuando el calendario está plegado solo muestra esta semana, así que toca Expand Calendar (Desplegar calendario) para llegar a otras semanas. Los días pasados no se pueden dejar fuera.",
+    "Para la región Corea del Sur, los festivos de 2026 a 2028 están incluidos en la app, y los años siguientes se añaden con actualizaciones de la app. Los de 2028 se calcularon con los datos de calendario del Korea Astronomy and Space Science Institute y se revisarán cuando se publiquen las fechas oficiales. En los años que no están en la lista, solo quedan fuera los fines de semana. Si hay un festivo temporal que no está en la lista, tócalo en el calendario para dejarlo fuera."
    ]
   },
   {
    "q": "El dinero que queda al terminar un periodo",
    "a": [
     "El dinero que queda no pasa al periodo siguiente. Cuando termina un periodo, el presupuesto empieza de nuevo.",
-    "Si el dinero desaparece cuando no se gasta, como los puntos de empresa o una ayuda, activa 남으면 사라짐 (Caduca si no se usa) en Ajustes. La app te avisa entonces para que lo uses todo dentro del periodo."
+    "Si el dinero desaparece cuando no se gasta, como los puntos de empresa o una ayuda, activa Expires If Unspent (Caduca si no se usa) en Ajustes. La app te avisa entonces para que lo uses todo dentro del periodo."
    ]
   },
   {
    "q": "Presupuesto diario y día de inicio del periodo",
    "a": [
-    "Para llevar el presupuesto por días, cambia el tipo de presupuesto en Ajustes a 하루 예산 (Presupuesto diario). Cada día que cuenta aparece una parte nueva, y los días que no cuentan tienen una parte de 0 wones.",
-    "Si tu presupuesto no empieza el día 1, elige un día del 1 al 28 en 기간 시작일 (Día de inicio del periodo), en Ajustes."
+    "Para llevar el presupuesto por días, cambia el tipo de presupuesto en Ajustes a Daily Budget (Presupuesto diario). Cada día que cuenta aparece una parte nueva, y los días que no cuentan no tienen parte.",
+    "Si tu presupuesto no empieza el día 1, elige un día del 1 al 28 en Period Start Day (Día de inicio del periodo), en Ajustes."
    ]
   },
   {
    "q": "El importe diario el día que pagas",
    "a": [
-    "Con un presupuesto mensual, si hoy es un día que cuenta y tienes un pago hoy, el cálculo de hoy termina y el dinero que queda se vuelve a dividir a partir de mañana. La pantalla muestra 오늘 계산 끝 (Cálculo de hoy terminado). Si cancelas todos los pagos de ese día, hoy vuelve a contar. Los ajustes de saldo no cuentan como pagos."
+    "Con un presupuesto mensual, si hoy es un día que cuenta y tienes un pago hoy, el cálculo de hoy termina y el dinero que queda se vuelve a dividir a partir de mañana. La pantalla muestra Done for today (Cálculo de hoy terminado). Si cancelas todos los pagos de ese día, hoy vuelve a contar. Los ajustes de saldo no cuentan como pagos."
    ]
   },
   {
-   "q": "Registrar mensajes de texto con una automatización de Atajos",
+   "q": "Registrar mensajes de texto con una automatización de Atajos (Corea del Sur)",
    "a": [
-    "Si los avisos de pago te llegan por mensaje de texto, puedes crear una automatización de Atajos. Abre la app una vez y luego abre 직접 만들기 (Crearla tú mismo) en 단축어 자동화 (Automatización de Atajos), en Ajustes, para ver los pasos. La acción de la app que debes añadir a la automatización se llama 결제 문자 기록 (Registrar mensaje de pago). Los pasos siguen las pantallas de iOS 27.",
-    "La app no puede leer directamente tu app Mensajes. Solo lee el texto que le pasa la automatización o el texto que pegas. El campo 다음을 포함 (Contiene) de la automatización decide qué mensajes se pasan. Si solo pones 승인 (aprobado), puede que los mensajes de cancelación no se registren. Para recibirlos también, pon en ese campo los últimos 4 dígitos de tu tarjeta."
+    "Esto solo funciona si la región de tu iPhone era Corea del Sur al configurar la app por primera vez. En otros lugares, usa Add by Hand (Añadir a mano). Si los avisos de pago te llegan por mensaje de texto, puedes crear una automatización de Atajos. Abre la app una vez y luego abre Build It Yourself (Crearla tú mismo) en Shortcuts Automation (Automatización de Atajos), en Ajustes, para ver los pasos. La acción de la app que debes añadir a la automatización se llama Record Payment Message (Registrar mensaje de pago). Los pasos siguen las pantallas de iOS 27.",
+    "La app no puede leer directamente tu app Mensajes. Solo lee el texto que le pasa la automatización o el texto que pegas. El campo Contains (Contiene) de la automatización decide qué mensajes se pasan. Si solo pones 승인 (aprobado), puede que los mensajes de cancelación no se registren. Para recibirlos también, pon en ese campo los últimos 4 dígitos de tu tarjeta."
    ]
   },
   {
    "q": "Avisos de la app de la tarjeta y de KakaoTalk",
    "a": [
-    "Por los límites de iOS, la app no puede leer de forma automática los avisos de la app de la tarjeta ni los de KakaoTalk. Copia el aviso y pégalo en 문자로 추가 (Añadir desde mensaje), o usa 직접 추가 (Añadir a mano)."
+    "Por los límites de iOS, la app no puede leer de forma automática los avisos de la app de la tarjeta ni los de KakaoTalk. Copia el aviso y pégalo en Add from Message (Añadir desde mensaje), o usa Add by Hand (Añadir a mano). Add from Message solo aparece para la región Corea del Sur."
    ]
   },
   {
-   "q": "Últimos 4 dígitos de la tarjeta",
+   "q": "Últimos 4 dígitos de la tarjeta (Corea del Sur)",
    "a": [
     "Si los introduces, solo se registran los mensajes de la tarjeta con esos últimos 4 dígitos. Si los dejas vacíos, se registran los mensajes de pago de todas las tarjetas. En ese caso se registran los mensajes con fecha, hora e importe legibles, y no se registran los mensajes que contienen las palabras coreanas para depósito, retirada, transferencia, préstamo, facturación o extracto. Los mensajes que contienen las palabras coreanas para rechazado, fallido, no posible, saldo insuficiente o límite superado cuentan como rechazados y nunca se registran, con o sin los dígitos de la tarjeta."
    ]
   },
   {
-   "q": "Si un mensaje no se registra",
+   "q": "Si un mensaje no se registra (Corea del Sur)",
    "a": [
-    "Comprueba que el campo 문자 본문 (Texto del mensaje) de la automatización contiene 메시지 (Mensaje) del disparador. Si introdujiste los últimos 4 dígitos de tu tarjeta, el mensaje debe mostrar esos 4 dígitos completos para poder leerse. Con otros mensajes, vacía el campo de la tarjeta o usa 직접 추가 (Añadir a mano).",
+    "Comprueba que el campo Message Text (Texto del mensaje) de la automatización contiene Message (Mensaje) del disparador. Si introdujiste los últimos 4 dígitos de tu tarjeta, el mensaje debe mostrar esos 4 dígitos completos para poder leerse. Con otros mensajes, vacía el campo de la tarjeta o usa Add by Hand (Añadir a mano).",
     "Los mensajes se leen tomando como base el formato de Hana Card, y los de otras compañías de tarjetas se leen buscando el importe, la fecha y los últimos 4 dígitos. Los mensajes sin fecha ni hora no se pueden leer, y los pagos que no son en wones no se registran."
    ]
   },
   {
-   "q": "Reportar un mensaje",
+   "q": "Reportar un mensaje (Corea del Sur)",
    "a": [
-    "Si 문자로 추가 (Añadir desde mensaje) no puede leer un mensaje, aparece 문자 제보 (Reportar mensaje) debajo del resultado. Tócalo para abrir un borrador de correo con el texto original. Puedes eliminar o cambiar el nombre, el comercio o el número de tarjeta antes de enviarlo. Lo envías tú mismo desde tu propia app de correo.",
+    "Si Add from Message (Añadir desde mensaje) no puede leer un mensaje, aparece Report Message (Reportar mensaje) debajo del resultado. Tócalo para abrir un borrador de correo con el texto original. Puedes eliminar o cambiar el nombre, el comercio o el número de tarjeta antes de enviarlo. Lo envías tú mismo desde tu propia app de correo.",
     "Los mensajes reportados solo se usan para enseñar a la app ese formato y para responderte."
    ]
   },
   {
    "q": "Si el saldo no coincide",
    "a": [
-    "Toca el número grande o 잔액 맞추기 (Igualar saldo) e introduce el importe real. Una línea de 잔액 조정 (Ajuste de saldo) recoge la diferencia, y tus transacciones originales se quedan como están. Desliza en la lista para eliminar líneas de ajuste y transacciones.",
-    "Para introducir a mano una cancelación o un reembolso, activa 취소나 환불 (Cancelación o reembolso) en 직접 추가 (Añadir a mano)."
+    "Toca el número grande o Adjust Balance (Igualar saldo) e introduce el importe real. Una línea de Balance adjustment (Ajuste de saldo) recoge la diferencia, y tus transacciones originales se quedan como están. Desliza en la lista para eliminar líneas de ajuste y transacciones.",
+    "Para introducir a mano una cancelación o un reembolso, activa Cancellation or Refund (Cancelación o reembolso) en Add by Hand (Añadir a mano)."
    ]
   },
   {
    "q": "Widgets",
    "a": [
     "Los widgets de la pantalla de inicio tienen tamaño pequeño y mediano. Muestran el dinero que queda y lo que puedes gastar hoy, y el tamaño mediano también incluye tus 2 últimas transacciones.",
-    "Hay tres widgets para la pantalla de bloqueo. El rectangular muestra el dinero que queda y lo que puedes gastar hoy, el circular muestra la proporción que queda, y el de una línea muestra el dinero que queda. Hasta que introduzcas un presupuesto en la app, muestran 설정 전 (Sin configurar) o un signo de interrogación."
+    "Hay tres widgets para la pantalla de bloqueo. El rectangular muestra el dinero que queda y lo que puedes gastar hoy, el circular muestra la proporción que queda, y el de una línea muestra el dinero que queda. Hasta que introduzcas un presupuesto en la app, muestran Not set up (Sin configurar) o un signo de interrogación."
    ]
   },
   {
@@ -187,8 +187,8 @@
   {
    "q": "Rastreo y preferencias de anuncios",
    "a": [
-    "iOS pregunta si permites el rastreo después de que toques 시작 (Empezar) en la pantalla del primer uso. La app funciona igual si no lo permites, y puedes cambiar esta opción en Ajustes de iOS > Privacidad y seguridad > Rastreo.",
-    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en 개인정보 선택 (Opciones de privacidad), en Ajustes."
+    "iOS pregunta si permites el rastreo después de que toques Start (Empezar) en la pantalla del primer uso. La app funciona igual si no lo permites, y puedes cambiar esta opción en Ajustes de iOS > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en Privacy Choices (Opciones de privacidad), en Ajustes."
    ]
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Dispositivos e idiomas compatibles",
    "a": [
-    "Solo iPhone, con iOS 26 o posterior. Las pantallas de la app están solo en coreano. Los importes van en wones coreanos, y el registro de mensajes solo admite pagos en wones. Admite orientación vertical y horizontal."
+    "Solo para iPhone, con iOS 26 o posterior. La app está en inglés y coreano, y en otros idiomas del dispositivo aparece en inglés. Admite vertical y horizontal. Los importes son números enteros en la moneda de tu región, fijada al configurar la app por primera vez. No hay decimales ni tipos de cambio, así que no puedes introducir 12,50. El registro desde mensajes solo acepta pagos en wones."
    ]
   },
   {
@@ -218,7 +218,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de DailyLeft",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "Los registros de la app se guardan en un archivo en tu dispositivo, y el desarrollador no recibe ese archivo. Si decides enviar un correo de reporte de mensaje, el desarrollador lo recibe. Solo se usa para enseñar a la app ese formato de mensaje y para responderte. Se elimina sin demora después de que el desarrollador decida si añade ese formato a la app, y como máximo 1 año después de recibirlo. Los anuncios de banner vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app DailyLeft (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -237,12 +237,12 @@
     "title": "Información que se trata",
     "paragraphs": [
      "Los datos que la app guarda en tu dispositivo figuran al final de este apartado. El desarrollador no los recibe. La app no recibe contactos, ubicación ni fotos.",
-     "La app no puede leer directamente tu app Mensajes. Solo lee el texto que le pasa una automatización de Atajos que hayas creado o el texto que pegas. Tú decides en la app Atajos qué mensajes se pasan. El texto que se lee pero no se registra no se guarda.",
+     "La app no puede leer directamente tu app Mensajes. Solo lee el texto que le pasa una automatización de Atajos que hayas creado o el texto que pegas. Tú decides en la app Atajos qué mensajes se pasan. El texto que se lee pero no se registra no se guarda. Estas funciones de mensajes solo aparecen para la región Corea del Sur.",
      "Si envías un correo de reporte de mensaje, el desarrollador recibe tu dirección de correo, el texto original del mensaje que hayas elegido enviar (que puede incluir parte del nombre del titular que aprobó el pago, el comercio, los últimos 4 dígitos de la tarjeta, el importe y la hora), el motivo por el que no se pudo leer, las versiones de la app y de iOS, y la información que añade tu app de correo (como tu nombre de remitente, según los ajustes de tu cuenta de correo). La app no envía este correo. Lo envías tú mismo desde tu propia app de correo, y puedes eliminarlo o cambiarlo antes de enviarlo.",
      "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
     ],
     "bullets": [
-     "Ajustes del presupuesto (tipo e importe del presupuesto, día de inicio del periodo, «Contar solo días laborables», «Caduca si no se usa», si los pagos se aceptan por encima del presupuesto, cómo llegan los avisos de pago, días dejados fuera en el calendario): para calcular el dinero que queda y el importe diario",
+     "Ajustes del presupuesto (tipo, moneda e importe del presupuesto, día de inicio del periodo, «Contar solo días laborables», «Caduca si no se usa», si los pagos se aceptan por encima del presupuesto, cómo llegan los avisos de pago, días dejados fuera en el calendario): para calcular el dinero que queda y el importe diario",
      "Últimos 4 dígitos de la tarjeta (si se han introducido): para descartar mensajes de otras tarjetas",
      "Transacciones (fecha, importe, comercio o nota, hora en que entró en la app, cómo se registró): para calcular el dinero que queda y para la lista de transacciones",
      "El texto original de los mensajes de pago registrados: se guarda tal cual en el archivo guardado y se usa para que el mismo mensaje no se registre dos veces. Puede incluir parte del nombre del titular que aprobó el pago (por ejemplo, H*D), el comercio, los últimos 4 dígitos de la tarjeta, el importe y la hora",
@@ -300,7 +300,7 @@
     "title": "Medidas de seguridad",
     "paragraphs": [
      "Los registros y ajustes de la app están en un archivo (ledger.json) en el almacenamiento que la app y su widget comparten en tu dispositivo (un App Group). El widget solo lee este archivo y no usa el SDK de anuncios. Los valores que se usan para dibujar la pantalla están en UserDefaults de la app. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Este archivo puede incluirse en las copias de seguridad de iCloud o del Mac que tengas activadas.",
-     "La app no envía correos por sí misma. Al tocar 문자 제보 (Reportar mensaje) solo se rellenan el destinatario, el asunto y el cuerpo de un borrador de correo, y eres tú quien toca enviar o cancelar. Si no hay ninguna cuenta de correo configurada, se abre una app de correo que elijas con el mismo contenido.",
+     "La app no envía correos por sí misma. Al tocar Report Message (Reportar mensaje) solo se rellenan el destinatario, el asunto y el cuerpo de un borrador de correo, y eres tú quien toca enviar o cancelar. Si no hay ninguna cuenta de correo configurada, se abre una app de correo que elijas con el mismo contenido.",
      "El único permiso que pide la app es el de rastreo (ATT). No pide fotos, ubicación, notificaciones, cámara ni contactos. La app solo toma texto del portapapeles cuando lo pegas. Aparte de los anuncios, las únicas direcciones externas que abre la app son el correo de reporte de mensaje y esta página de política de privacidad, y solo cuando las tocas.",
      "Lo que la app pasa al SDK de anuncios es la solicitud del anuncio y el tamaño del banner. No pasa presupuestos, transacciones, mensajes ni números de tarjeta."
     ],
@@ -310,8 +310,8 @@
     "title": "Recogida automática y cómo rechazarla",
     "paragraphs": [
      "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento de anuncios y cuando cargan y muestran anuncios. La lista de abajo es lo que declaran los manifiestos de privacidad de los dos SDK.",
-     "La app comprueba la información de consentimiento de anuncios después de que toques 시작 (Empezar) en la pantalla del primer uso. Si ya has empezado, la comprueba al abrirse. Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta opción en Ajustes de iOS > Privacidad y seguridad > Rastreo.",
-     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, el aviso de rastreo no aparece y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en 개인정보 선택 (Opciones de privacidad), en Ajustes."
+     "La app comprueba la información de consentimiento de anuncios después de que toques Start (Empezar) en la pantalla del primer uso. Si ya has empezado, la comprueba al abrirse. Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta opción en Ajustes de iOS > Privacidad y seguridad > Rastreo.",
+     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, el aviso de rastreo no aparece y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en Privacy Choices (Opciones de privacidad), en Ajustes."
     ],
     "bullets": [
      "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",

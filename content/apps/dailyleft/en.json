@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Choose the days that count",
    "body": [
-    "Every day counts by default. Turn on 평일만 세기 (Count weekdays only) to leave out weekends and Korean public holidays. To leave out a day you won't spend, tap it in the calendar. With a monthly budget, the daily amount is then divided again over the days left. Past days in the calendar show what you spent."
+    "Every day counts by default. Turn on Count Weekdays Only to leave out weekends, plus Korean public holidays if your iPhone's region is South Korea. To leave out a day you won't spend, tap it in the calendar. With a monthly budget, the daily amount is then divided again over the days left. Past days in the calendar show what you spent."
    ],
    "bullets": [
     "Count weekdays only",
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Set it up for your budget",
    "body": [
-    "By default it helps you stay within budget. If the money disappears when the period ends, as with welfare points or a grant, turn on 남으면 사라짐 (Expires if unspent), and it tells you to use it all in time. Choose the day your budget starts, from the 1st to the 28th. The money left also shows in Home Screen and Lock Screen widgets."
+    "By default it helps you stay within budget. If the money disappears when the period ends, as with welfare points or a grant, turn on Expires If Unspent, and it tells you to use it all in time. Choose the day your budget starts, from the 1st to the 28th. The money left also shows in Home Screen and Lock Screen widgets."
    ],
    "bullets": [
     "An Expires if unspent setting",
@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Recording payments",
    "body": [
-    "If card payments reach you by text message, you can set up a Shortcuts automation to record them without opening the app. If they come through a card app or KakaoTalk, paste the notice or enter the amount yourself. Enter a card's last 4 digits to record only that card's messages, or leave them empty to record payment messages from every card."
+    "You can add any payment by hand. If your iPhone's region is South Korea, you can also record card payments from messages. If card payments reach you by text message, you can set up a Shortcuts automation to record them without opening the app. If they come through a card app or KakaoTalk, paste the notice or enter the amount yourself. Enter a card's last 4 digits to record only that card's messages, or leave them empty to record payment messages from every card."
    ],
    "bullets": [
     "Shortcuts automation",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "When the balance is off",
    "body": [
-    "If the record and your real balance differ, tap the big number and enter the real amount. One 잔액 조정 (Balance adjustment) line records the difference, and your original transactions stay as they are."
+    "If the record and your real balance differ, tap the big number and enter the real amount. One Balance adjustment line records the difference, and your original transactions stay as they are."
    ],
    "bullets": [],
    "visual": {
@@ -100,82 +100,82 @@
   {
    "q": "Getting started",
    "a": [
-    "Choose a monthly or daily budget, enter one amount, and tap 시작 (Start). There is no account or login.",
-    "If you start a monthly budget partway through a period, enter the real amount left in the 지금 남은 돈 (Money left now) field. If you leave it empty, the full budget is used. The period start day, Count weekdays only, Expires if unspent, payment notices and card last 4 digits are under 더 정하기 (More options), and you can change them later in Settings."
+    "Choose a monthly or daily budget, enter one amount, and tap Start. There is no account or login.",
+    "If you start a monthly budget partway through a period, enter the real amount left in the Money Left This Month field. If you leave it empty, the full budget is used. The period start day, Count weekdays only, Expires if unspent, payment notices and card last 4 digits are under More Options, and you can change them later in Settings."
    ]
   },
   {
    "q": "Counted days and public holidays",
    "a": [
-    "Every day counts by default. If the money isn't for weekends, turn on 평일만 세기 (Count weekdays only) in Settings. Weekends and public holidays are left out. To leave out a specific day, tap it in the calendar on the main screen. When the calendar is collapsed it shows only this week, so tap 달력 펼치기 (Expand calendar) to reach other weeks. You can't leave out past days.",
-    "Korean public holidays for 2026 to 2028 are built into the app, and later years are added in app updates. 2028 was worked out from the Korea Astronomy and Space Science Institute calendar data and will be checked again once the official dates are published. In years not on the list, only weekends are left out. Tap any temporary holiday that isn't on the list to leave it out in the calendar."
+    "Every day counts by default. If the money isn't for weekends, turn on Count Weekdays Only in Settings. Weekends are left out, plus public holidays if your iPhone's region is South Korea. To leave out a specific day, tap it in the calendar on the main screen. When the calendar is collapsed it shows only this week, so tap Expand Calendar to reach other weeks. You can't leave out past days.",
+    "For the South Korea region, public holidays for 2026 to 2028 are built into the app, and later years are added in app updates. 2028 was worked out from the Korea Astronomy and Space Science Institute calendar data and will be checked again once the official dates are published. In years not on the list, only weekends are left out. Tap any temporary holiday that isn't on the list to leave it out in the calendar."
    ]
   },
   {
    "q": "Money left at the end of a period",
    "a": [
     "Money left does not carry over to the next period. When a period ends, the budget starts again.",
-    "If the money disappears when unspent, as with welfare points or a grant, turn on 남으면 사라짐 (Expires if unspent) in Settings. The app then tells you to use it all within the period."
+    "If the money disappears when unspent, as with welfare points or a grant, turn on Expires If Unspent in Settings. The app then tells you to use it all within the period."
    ]
   },
   {
    "q": "Daily budgets and the period start day",
    "a": [
-    "To budget by the day, change the budget type in Settings to 하루 예산 (Daily budget). A new share appears on each counted day, and days that don't count have a share of 0 won.",
-    "If your budget doesn't start on the 1st, pick a day from the 1st to the 28th in 기간 시작일 (Period start day) in Settings."
+    "To budget by the day, change the budget type in Settings to Daily Budget. A new share appears on each counted day, and days that don't count have no share.",
+    "If your budget doesn't start on the 1st, pick a day from the 1st to the 28th in Period Start Day in Settings."
    ]
   },
   {
    "q": "The daily amount on a day you pay",
    "a": [
-    "With a monthly budget, if today is a counted day and you have a payment today, today's count ends and the money left is divided again from tomorrow. The screen shows 오늘 계산 끝 (Done for today). If you cancel every payment that day, today counts again. Balance adjustments don't count as payments."
+    "With a monthly budget, if today is a counted day and you have a payment today, today's count ends and the money left is divided again from tomorrow. The screen shows Done for today. If you cancel every payment that day, today counts again. Balance adjustments don't count as payments."
    ]
   },
   {
-   "q": "Recording text messages with a Shortcuts automation",
+   "q": "Recording text messages with a Shortcuts automation (South Korea)",
    "a": [
-    "If payment notices reach you by text message, you can set up a Shortcuts automation. Open the app once, then open 직접 만들기 (Make it yourself) under 단축어 자동화 (Shortcuts automation) in Settings to see the steps. The app action to add to the automation is called 결제 문자 기록 (Record payment message). The steps follow the iOS 27 screens.",
-    "The app can't read your Messages directly. It reads only text passed by the automation or text you paste. The automation's 다음을 포함 (Contains) field decides which messages are passed. With only 승인 (approved) there, cancellation messages may not be recorded. To catch those too, put your card's last 4 digits in that field."
+    "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Open the app once, then open Build It Yourself under Shortcuts Automation in Settings to see the steps. The app action to add to the automation is called Record Payment Message. The steps follow the iOS 27 screens.",
+    "The app can't read your Messages directly. It reads only text passed by the automation or text you paste. The automation's Contains field decides which messages are passed. With only 승인 (approved) there, cancellation messages may not be recorded. To catch those too, put your card's last 4 digits in that field."
    ]
   },
   {
    "q": "Card app notices and KakaoTalk notices",
    "a": [
-    "iOS limits mean the app can't read card app notices or KakaoTalk notices automatically. Copy the notice and paste it into 문자로 추가 (Add from message), or use 직접 추가 (Add manually)."
+    "iOS limits mean the app can't read card app notices or KakaoTalk notices automatically. Copy the notice and paste it into Add from Message, or use Add by Hand. Add from Message appears only for the South Korea region."
    ]
   },
   {
-   "q": "Card last 4 digits",
+   "q": "Card last 4 digits (South Korea)",
    "a": [
     "If you enter them, only messages from the card with those last 4 digits are recorded. If you leave them empty, payment messages from every card are recorded. In that case, messages with a readable date, time and amount are recorded, and messages containing the Korean words for deposit, withdrawal, transfer, loan, billing or statement are not recorded. Messages containing the Korean words for declined, failed, not possible, insufficient balance or over the limit count as declined and are never recorded, with or without the card digits."
    ]
   },
   {
-   "q": "If a message isn't recorded",
+   "q": "If a message isn't recorded (South Korea)",
    "a": [
-    "Check that the automation's 문자 본문 (Message text) field holds the trigger's 메시지 (Message). If you entered your card's last 4 digits, a message must show those 4 digits in full to be read. For other messages, empty the card field or use 직접 추가 (Add manually).",
+    "Check that the automation's Message Text field holds the trigger's Message. If you entered your card's last 4 digits, a message must show those 4 digits in full to be read. For other messages, empty the card field or use Add by Hand.",
     "Messages are read using the Hana Card format as the base, and other card companies' messages are read by finding the amount, date and last 4 digits. Messages with no date or time can't be read, and payments not in won are not recorded."
    ]
   },
   {
-   "q": "Reporting a message",
+   "q": "Reporting a message (South Korea)",
    "a": [
-    "If 문자로 추가 (Add from message) can't read a message, 문자 제보 (Report message) appears under the result. Tap it to open a mail draft with the original text. You can delete or change the name, merchant or card number before sending. You send it yourself from your own mail app.",
+    "If Add from Message can't read a message, Report Message appears under the result. Tap it to open a mail draft with the original text. You can delete or change the name, merchant or card number before sending. You send it yourself from your own mail app.",
     "Reported messages are used only to teach the app that format and to reply to you."
    ]
   },
   {
    "q": "If the balance doesn't match",
    "a": [
-    "Tap the big number or 잔액 맞추기 (Match balance) and enter the real amount. One 잔액 조정 (Balance adjustment) line records the difference, and your original transactions stay as they are. Swipe in the list to delete adjustment lines and transactions.",
-    "To enter a cancellation or refund by hand, turn on 취소나 환불 (Cancel or refund) in 직접 추가 (Add manually)."
+    "Tap the big number or Adjust Balance and enter the real amount. One Balance adjustment line records the difference, and your original transactions stay as they are. Swipe in the list to delete adjustment lines and transactions.",
+    "To enter a cancellation or refund by hand, turn on Cancellation or Refund in Add by Hand."
    ]
   },
   {
    "q": "Widgets",
    "a": [
     "Home Screen widgets come in small and medium sizes. They show the money left and what you can spend today, and the medium size also lists your 2 latest transactions.",
-    "There are three Lock Screen widgets. The rectangular one shows the money left and what you can spend today, the circular one shows the share left, and the inline one shows the money left. Until you enter a budget in the app, they show 설정 전 (Not set up) or a question mark."
+    "There are three Lock Screen widgets. The rectangular one shows the money left and what you can spend today, the circular one shows the share left, and the inline one shows the money left. Until you enter a budget in the app, they show Not set up or a question mark."
    ]
   },
   {
@@ -187,8 +187,8 @@
   {
    "q": "Tracking permission and ad settings",
    "a": [
-    "iOS asks whether to allow tracking after you tap 시작 (Start) on the first-run screen. You can use the app the same way if you don't allow it, and you can change this choice in iOS Settings > Privacy & Security > Tracking.",
-    "Where ad consent is required, such as the European Economic Area, the consent form appears before the tracking prompt. In those places you can change your consent from 개인정보 선택 (Privacy choices) in Settings."
+    "iOS asks whether to allow tracking after you tap Start on the first-run screen. You can use the app the same way if you don't allow it, and you can change this choice in iOS Settings > Privacy & Security > Tracking.",
+    "Where ad consent is required, such as the European Economic Area, the consent form appears before the tracking prompt. In those places you can change your consent from Privacy Choices in Settings."
    ]
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Supported devices and languages",
    "a": [
-    "iPhone only, with iOS 26 or later. The app's screens support Korean only. Amounts are in Korean won, and message recording takes only payments in won. Portrait and landscape are supported."
+    "iPhone only, with iOS 26 or later. The app's screens are in English and Korean, and other device languages show English. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
    ]
   },
   {
@@ -218,7 +218,7 @@
  ],
  "privacy": {
   "title": "DailyLeft Privacy Policy",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the DailyLeft app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -237,12 +237,12 @@
     "title": "Information processed",
     "paragraphs": [
      "The data the app saves on your device is listed at the end of this section. The developer does not receive it. The app does not receive contacts, location or photos.",
-     "The app can't read your Messages directly. It reads only text passed by a Shortcuts automation you made or text you paste. You decide in the Shortcuts app which messages are passed. Text that is read but not recorded is not saved.",
+     "The app can't read your Messages directly. It reads only text passed by a Shortcuts automation you made or text you paste. You decide in the Shortcuts app which messages are passed. Text that is read but not recorded is not saved. These message features appear only for the South Korea region.",
      "If you send a message report email, the developer receives your email address, the original message text you chose to send (which may include part of the approver's name, the merchant, the card's last 4 digits, the amount and the time), the reason it could not be read, the app and iOS versions, and information your mail app adds (such as your sender name, depending on your mail account settings). The app does not send this email. You send it yourself from your own mail app, and you can delete or change it before sending.",
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [
-     "Budget settings (budget type and amount, period start day, Count weekdays only, Expires if unspent, whether payments go through over budget, how payment notices arrive, days left out in the calendar): used to work out the money left and the daily amount",
+     "Budget settings (budget type, currency and amount, period start day, Count weekdays only, Expires if unspent, whether payments go through over budget, how payment notices arrive, days left out in the calendar): used to work out the money left and the daily amount",
      "Card last 4 digits (if entered): used to skip messages from other cards",
      "Transactions (date, amount, merchant or memo, time added to the app, how it was recorded): used to work out the money left and for the transaction list",
      "The original text of recorded payment messages: saved as is in the saved file and used so the same message isn't recorded twice. It may include part of the approver's name (for example H*D), the merchant, the card's last 4 digits, the amount and the time",
@@ -300,7 +300,7 @@
     "title": "Security measures",
     "paragraphs": [
      "The app's records and settings sit in one file (ledger.json) in storage the app and its widget share on your device (an App Group). The widget only reads this file and does not use the ad SDK. Values used to draw the screen are in the app's UserDefaults. The developer runs no server, and the app does not use iCloud sync. This file can be included in iCloud or Mac backups you turn on.",
-     "The app does not send email itself. Tapping 문자 제보 (Report message) only fills in the recipient, subject and body of a mail draft, and you tap send or cancel. If no mail account is set up, it opens a mail app you choose with the same content.",
+     "The app does not send email itself. Tapping Report Message only fills in the recipient, subject and body of a mail draft, and you tap send or cancel. If no mail account is set up, it opens a mail app you choose with the same content.",
      "The only permission the app asks for is tracking (ATT). It does not ask for photos, location, notifications, camera or contacts. The app takes clipboard text only when you paste it. Apart from ads, the only outside addresses the app opens are the message report email and this privacy policy page, and only when you tap them.",
      "What the app passes to the ad SDK is the ad request and the banner size. It does not pass budgets, transactions, messages or card numbers."
     ],
@@ -310,8 +310,8 @@
     "title": "Automatic collection and how to refuse it",
     "paragraphs": [
      "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) and the Google User Messaging Platform SDK for advertising, which may collect the information below when they check ad consent and when they load and show ads. The list below is what the privacy manifests of the two SDKs declare.",
-     "The app checks ad consent information after you tap 시작 (Start) on the first-run screen. If you have already started, it checks when the app opens. Where ad consent is required, such as the European Economic Area, Google's consent form appears first. If ads can be requested and you haven't answered yet, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not get the advertising identifier (IDFA), and ads keep appearing. You can change this choice in iOS Settings > Privacy & Security > Tracking.",
-     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from 개인정보 선택 (Privacy choices) in Settings."
+     "The app checks ad consent information after you tap Start on the first-run screen. If you have already started, it checks when the app opens. Where ad consent is required, such as the European Economic Area, Google's consent form appears first. If ads can be requested and you haven't answered yet, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not get the advertising identifier (IDFA), and ads keep appearing. You can change this choice in iOS Settings > Privacy & Security > Tracking.",
+     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from Privacy Choices in Settings."
     ],
     "bullets": [
      "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",

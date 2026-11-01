@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Wählen Sie die Tage, die zählen",
    "body": [
-    "Standardmäßig zählt jeder Tag. Schalten Sie 평일만 세기 (Nur Werktage zählen) ein, um Wochenenden und koreanische Feiertage auszulassen. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben."
+    "Standardmäßig zählt jeder Tag. Schalten Sie Count Weekdays Only (Nur Werktage zählen) ein, um Wochenenden auszulassen, und wenn die Region Ihres iPhones Südkorea ist, auch koreanische Feiertage. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben."
    ],
    "bullets": [
     "Nur Werktage zählen",
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Passend zu Ihrem Budget einstellen",
    "body": [
-    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie 남으면 사라짐 (Verfällt ungenutzt) ein. Dann weist die App Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
+    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie Expires If Unspent (Verfällt ungenutzt) ein. Dann weist die App Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
    ],
    "bullets": [
     "Einstellung Verfällt ungenutzt",
@@ -71,7 +71,7 @@
    "layout": "card",
    "title": "Zahlungen erfassen",
    "body": [
-    "Kommen Kartenzahlungen per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten, die sie erfasst, ohne dass Sie die App öffnen. Kommen sie über eine Karten-App oder KakaoTalk, fügen Sie den Hinweis ein oder tragen den Betrag selbst ein. Tragen Sie die letzten 4 Ziffern einer Karte ein, werden nur die Nachrichten dieser Karte erfasst. Bleibt das Feld leer, werden Zahlungsnachrichten aller Karten erfasst."
+    "Jede Zahlung können Sie von Hand eintragen. Wenn die Region Ihres iPhones Südkorea ist, lassen sich Kartenzahlungen auch aus Nachrichten erfassen. Kommen Kartenzahlungen per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten, die sie erfasst, ohne dass Sie die App öffnen. Kommen sie über eine Karten-App oder KakaoTalk, fügen Sie den Hinweis ein oder tragen den Betrag selbst ein. Tragen Sie die letzten 4 Ziffern einer Karte ein, werden nur die Nachrichten dieser Karte erfasst. Bleibt das Feld leer, werden Zahlungsnachrichten aller Karten erfasst."
    ],
    "bullets": [
     "Kurzbefehl-Automation",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Wenn der Saldo nicht stimmt",
    "body": [
-    "Weichen die Einträge von Ihrem tatsächlichen Saldo ab, tippen Sie auf die große Zahl und tragen den tatsächlichen Betrag ein. Eine Zeile 잔액 조정 (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind."
+    "Weichen die Einträge von Ihrem tatsächlichen Saldo ab, tippen Sie auf die große Zahl und tragen den tatsächlichen Betrag ein. Eine Zeile Balance adjustment (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind."
    ],
    "bullets": [],
    "visual": {
@@ -100,82 +100,82 @@
   {
    "q": "Erste Schritte",
    "a": [
-    "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf 시작 (Start). Konto und Anmeldung gibt es nicht.",
-    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld 지금 남은 돈 (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, Zahlungshinweise und die letzten 4 Kartenziffern finden Sie unter 더 정하기 (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
+    "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf Start. Konto und Anmeldung gibt es nicht.",
+    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, Zahlungshinweise und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
    ]
   },
   {
    "q": "Gezählte Tage und Feiertage",
    "a": [
-    "Standardmäßig zählt jeder Tag. Ist das Geld nicht für Wochenenden gedacht, schalten Sie in den Einstellungen 평일만 세기 (Nur Werktage zählen) ein. Wochenenden und Feiertage fallen dann weg. Um einen bestimmten Tag auszulassen, tippen Sie ihn im Kalender auf dem Hauptbildschirm an. Ist der Kalender eingeklappt, zeigt er nur diese Woche. Für andere Wochen tippen Sie auf 달력 펼치기 (Kalender aufklappen). Vergangene Tage lassen sich nicht auslassen.",
-    "Die koreanischen Feiertage für 2026 bis 2028 sind in der App enthalten, spätere Jahre kommen mit App-Updates hinzu. 2028 wurde aus den Kalenderdaten des Korea Astronomy and Space Science Institute ermittelt und wird erneut geprüft, sobald die offiziellen Termine vorliegen. In Jahren, die nicht in der Liste stehen, fallen nur die Wochenenden weg. Temporäre Feiertage, die nicht in der Liste stehen, tippen Sie im Kalender an, um sie auszulassen."
+    "Standardmäßig zählt jeder Tag. Ist das Geld nicht für Wochenenden gedacht, schalten Sie in den Einstellungen Count Weekdays Only (Nur Werktage zählen) ein. Wochenenden fallen dann weg, und wenn die Region Ihres iPhones Südkorea ist, auch Feiertage. Um einen bestimmten Tag auszulassen, tippen Sie ihn im Kalender auf dem Hauptbildschirm an. Ist der Kalender eingeklappt, zeigt er nur diese Woche. Für andere Wochen tippen Sie auf Expand Calendar (Kalender aufklappen). Vergangene Tage lassen sich nicht auslassen.",
+    "Für die Region Südkorea sind die Feiertage für 2026 bis 2028 in der App enthalten, spätere Jahre kommen mit App-Updates hinzu. 2028 wurde aus den Kalenderdaten des Korea Astronomy and Space Science Institute ermittelt und wird erneut geprüft, sobald die offiziellen Termine vorliegen. In Jahren, die nicht in der Liste stehen, fallen nur die Wochenenden weg. Temporäre Feiertage, die nicht in der Liste stehen, tippen Sie im Kalender an, um sie auszulassen."
    ]
   },
   {
    "q": "Übriges Geld am Ende eines Zeitraums",
    "a": [
     "Übriges Geld geht nicht in den nächsten Zeitraum über. Endet ein Zeitraum, beginnt das Budget neu.",
-    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen 남으면 사라짐 (Verfällt ungenutzt) ein. Die App weist Sie dann darauf hin, alles innerhalb des Zeitraums auszugeben."
+    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen Expires If Unspent (Verfällt ungenutzt) ein. Die App weist Sie dann darauf hin, alles innerhalb des Zeitraums auszugeben."
    ]
   },
   {
    "q": "Tagesbudgets und der Starttag des Zeitraums",
    "a": [
-    "Um nach Tagen zu planen, stellen Sie die Budgetart in den Einstellungen auf 하루 예산 (Tagesbudget). An jedem gezählten Tag kommt ein neuer Anteil hinzu, und Tage, die nicht zählen, haben einen Anteil von 0 Won.",
-    "Beginnt Ihr Budget nicht am 1., wählen Sie in den Einstellungen unter 기간 시작일 (Starttag des Zeitraums) einen Tag vom 1. bis zum 28."
+    "Um nach Tagen zu planen, stellen Sie die Budgetart in den Einstellungen auf Daily Budget (Tagesbudget). An jedem gezählten Tag kommt ein neuer Anteil hinzu, und Tage, die nicht zählen, haben keinen Anteil.",
+    "Beginnt Ihr Budget nicht am 1., wählen Sie in den Einstellungen unter Period Start Day (Starttag des Zeitraums) einen Tag vom 1. bis zum 28."
    ]
   },
   {
    "q": "Der Tagesbetrag an einem Tag mit Zahlung",
    "a": [
-    "Bei einem Monatsbudget gilt: Ist heute ein gezählter Tag und gibt es heute eine Zahlung, endet die Berechnung für heute, und das übrige Geld wird ab morgen neu verteilt. Auf dem Bildschirm steht 오늘 계산 끝 (Für heute fertig). Stornieren Sie alle Zahlungen dieses Tages, zählt der heutige Tag wieder. Saldoanpassungen gelten nicht als Zahlungen."
+    "Bei einem Monatsbudget gilt: Ist heute ein gezählter Tag und gibt es heute eine Zahlung, endet die Berechnung für heute, und das übrige Geld wird ab morgen neu verteilt. Auf dem Bildschirm steht Done for today (Für heute fertig). Stornieren Sie alle Zahlungen dieses Tages, zählt der heutige Tag wieder. Saldoanpassungen gelten nicht als Zahlungen."
    ]
   },
   {
-   "q": "SMS mit einer Kurzbefehl-Automation erfassen",
+   "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
-    "Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal, und öffnen Sie dann in den Einstellungen unter 단축어 자동화 (Kurzbefehl-Automation) den Punkt 직접 만들기 (Selbst erstellen). Dort stehen die Schritte. Die App-Aktion für die Automation heißt 결제 문자 기록 (Zahlungsnachricht erfassen). Die Schritte folgen den Bildschirmen von iOS 27.",
-    "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld 다음을 포함 (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
+    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal, und öffnen Sie dann in den Einstellungen unter Shortcuts Automation (Kurzbefehl-Automation) den Punkt Build It Yourself (Selbst erstellen). Dort stehen die Schritte. Die App-Aktion für die Automation heißt Record Payment Message (Zahlungsnachricht erfassen). Die Schritte folgen den Bildschirmen von iOS 27.",
+    "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld Contains (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
    ]
   },
   {
    "q": "Hinweise aus Karten-Apps und KakaoTalk",
    "a": [
-    "Wegen der Einschränkungen von iOS kann die App Hinweise aus Karten-Apps und KakaoTalk nicht automatisch lesen. Kopieren Sie den Hinweis und fügen Sie ihn unter 문자로 추가 (Aus Nachricht hinzufügen) ein, oder nutzen Sie 직접 추가 (Manuell hinzufügen)."
+    "Wegen der Einschränkungen von iOS kann die App Hinweise aus Karten-Apps und KakaoTalk nicht automatisch lesen. Kopieren Sie den Hinweis und fügen Sie ihn unter Add from Message (Aus Nachricht hinzufügen) ein, oder nutzen Sie Add by Hand (Manuell hinzufügen). Add from Message gibt es nur für die Region Südkorea."
    ]
   },
   {
-   "q": "Die letzten 4 Kartenziffern",
+   "q": "Die letzten 4 Kartenziffern (Südkorea)",
    "a": [
     "Tragen Sie sie ein, werden nur Nachrichten der Karte mit diesen letzten 4 Ziffern erfasst. Bleibt das Feld leer, werden Zahlungsnachrichten aller Karten erfasst. In diesem Fall werden Nachrichten mit lesbarem Datum, lesbarer Uhrzeit und lesbarem Betrag erfasst, Nachrichten mit den koreanischen Wörtern für Einzahlung, Auszahlung, Überweisung, Kredit, Rechnung oder Abrechnung dagegen nicht. Nachrichten mit den koreanischen Wörtern für abgelehnt, fehlgeschlagen, nicht möglich, unzureichendes Guthaben oder Limit überschritten gelten als abgelehnt und werden nie erfasst, egal ob Kartenziffern eingetragen sind oder nicht."
    ]
   },
   {
-   "q": "Wenn eine Nachricht nicht erfasst wird",
+   "q": "Wenn eine Nachricht nicht erfasst wird (Südkorea)",
    "a": [
-    "Prüfen Sie, ob im Feld 문자 본문 (Nachrichtentext) der Automation die 메시지 (Nachricht) des Auslösers steht. Haben Sie die letzten 4 Ziffern Ihrer Karte eingetragen, muss eine Nachricht diese 4 Ziffern vollständig zeigen, damit sie gelesen wird. Bei anderen Nachrichten leeren Sie das Kartenfeld oder nutzen 직접 추가 (Manuell hinzufügen).",
+    "Prüfen Sie, ob im Feld Message Text (Nachrichtentext) der Automation die Message (Nachricht) des Auslösers steht. Haben Sie die letzten 4 Ziffern Ihrer Karte eingetragen, muss eine Nachricht diese 4 Ziffern vollständig zeigen, damit sie gelesen wird. Bei anderen Nachrichten leeren Sie das Kartenfeld oder nutzen Add by Hand (Manuell hinzufügen).",
     "Nachrichten werden auf Grundlage des Formats von Hana Card gelesen, und bei anderen Kartenfirmen sucht die App nach Betrag, Datum und den letzten 4 Ziffern. Nachrichten ohne Datum oder Uhrzeit lassen sich nicht lesen, und Zahlungen, die nicht in Won erfolgen, werden nicht erfasst."
    ]
   },
   {
-   "q": "Eine Nachricht melden",
+   "q": "Eine Nachricht melden (Südkorea)",
    "a": [
-    "Kann 문자로 추가 (Aus Nachricht hinzufügen) eine Nachricht nicht lesen, erscheint unter dem Ergebnis 문자 제보 (Nachricht melden). Tippen Sie darauf, öffnet sich ein E-Mail-Entwurf mit dem Originaltext. Vor dem Senden können Sie Namen, Händler oder Kartennummer löschen oder ändern. Sie senden die E-Mail selbst aus Ihrer eigenen Mail-App.",
+    "Kann Add from Message (Aus Nachricht hinzufügen) eine Nachricht nicht lesen, erscheint unter dem Ergebnis Report Message (Nachricht melden). Tippen Sie darauf, öffnet sich ein E-Mail-Entwurf mit dem Originaltext. Vor dem Senden können Sie Namen, Händler oder Kartennummer löschen oder ändern. Sie senden die E-Mail selbst aus Ihrer eigenen Mail-App.",
     "Gemeldete Nachrichten dienen nur dazu, die App auf dieses Format einzustellen und Ihnen zu antworten."
    ]
   },
   {
    "q": "Wenn der Saldo nicht passt",
    "a": [
-    "Tippen Sie auf die große Zahl oder auf 잔액 맞추기 (Saldo angleichen) und tragen Sie den tatsächlichen Betrag ein. Eine Zeile 잔액 조정 (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind. Anpassungszeilen und Transaktionen löschen Sie durch Wischen in der Liste.",
-    "Um eine Stornierung oder Erstattung von Hand einzutragen, schalten Sie unter 직접 추가 (Manuell hinzufügen) die Option 취소나 환불 (Storno oder Erstattung) ein."
+    "Tippen Sie auf die große Zahl oder auf Adjust Balance (Saldo angleichen) und tragen Sie den tatsächlichen Betrag ein. Eine Zeile Balance adjustment (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind. Anpassungszeilen und Transaktionen löschen Sie durch Wischen in der Liste.",
+    "Um eine Stornierung oder Erstattung von Hand einzutragen, schalten Sie unter Add by Hand (Manuell hinzufügen) die Option Cancellation or Refund (Storno oder Erstattung) ein."
    ]
   },
   {
    "q": "Widgets",
    "a": [
     "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 2 letzten Transaktionen.",
-    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie 설정 전 (Nicht eingerichtet) oder ein Fragezeichen."
+    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie Not set up (Nicht eingerichtet) oder ein Fragezeichen."
    ]
   },
   {
@@ -187,8 +187,8 @@
   {
    "q": "Tracking und Werbeeinstellungen",
    "a": [
-    "Nachdem Sie auf dem Bildschirm beim ersten Start 시작 (Start) angetippt haben, fragt iOS, ob Tracking erlaubt ist. Die App funktioniert auch dann gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
-    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter 개인정보 선택 (Datenschutzoptionen) in den Einstellungen."
+    "Nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben, fragt iOS, ob Tracking erlaubt ist. Die App funktioniert auch dann gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter Privacy Choices (Datenschutzoptionen) in den Einstellungen."
    ]
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Unterstützte Geräte und Sprachen",
    "a": [
-    "Nur iPhone, mit iOS 26 oder neuer. Die Bildschirme der App gibt es nur auf Koreanisch. Beträge sind in koreanischen Won angegeben, und beim Erfassen von Nachrichten zählen nur Zahlungen in Won. Hoch- und Querformat werden unterstützt."
+    "Nur für iPhone, ab iOS 26. Die App zeigt Englisch und Koreanisch, in anderen Gerätesprachen erscheint sie auf Englisch. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
    ]
   },
   {
@@ -218,7 +218,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -237,12 +237,12 @@
     "title": "Verarbeitete Daten",
     "paragraphs": [
      "Die Daten, die die App auf Ihrem Gerät speichert, stehen am Ende dieses Abschnitts. Der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort oder Fotos.",
-     "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den eine von Ihnen erstellte Kurzbefehl-Automation übergibt, oder Text, den Sie einfügen. Welche Nachrichten übergeben werden, legen Sie in der App Kurzbefehle fest. Text, der gelesen, aber nicht erfasst wird, wird nicht gespeichert.",
+     "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den eine von Ihnen erstellte Kurzbefehl-Automation übergibt, oder Text, den Sie einfügen. Welche Nachrichten übergeben werden, legen Sie in der App Kurzbefehle fest. Text, der gelesen, aber nicht erfasst wird, wird nicht gespeichert. Diese Nachrichtenfunktionen gibt es nur für die Region Südkorea.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler Ihre E-Mail-Adresse, den Originaltext der Nachricht, den Sie senden wollten (er kann einen Teil des Namens der zahlenden Person, den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten), den Grund, warum er nicht gelesen werden konnte, die Versionen von App und iOS sowie Informationen, die Ihre Mail-App hinzufügt (etwa Ihren Absendernamen, je nach den Einstellungen Ihres Mail-Accounts). Diese E-Mail sendet nicht die App. Sie senden sie selbst aus Ihrer eigenen Mail-App und können sie vor dem Senden löschen oder ändern.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Budgeteinstellungen (Budgetart und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
+     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
      "Letzte 4 Kartenziffern (falls eingetragen): um Nachrichten anderer Karten auszusortieren",
      "Transaktionen (Datum, Betrag, Händler oder Notiz, Zeitpunkt der Aufnahme in die App, Art der Erfassung): um das übrige Geld zu berechnen und für die Transaktionsliste",
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
@@ -300,7 +300,7 @@
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
      "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Datei kann in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
-     "Die App sendet selbst keine E-Mails. Das Antippen von 문자 제보 (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
+     "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
      "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail und diese Seite mit der Datenschutzerklärung, und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
     ],
@@ -310,8 +310,8 @@
     "title": "Automatische Erfassung und wie Sie sie ablehnen",
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können. Die Liste unten gibt wieder, was in den Datenschutzmanifesten der beiden SDKs steht.",
-     "Die App prüft die Angaben zur Einwilligung in Werbung, nachdem Sie auf dem Bildschirm beim ersten Start 시작 (Start) angetippt haben. Haben Sie schon begonnen, prüft sie beim Öffnen der App. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
-     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter 개인정보 선택 (Datenschutzoptionen) in den Einstellungen."
+     "Die App prüft die Angaben zur Einwilligung in Werbung, nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben. Haben Sie schon begonnen, prüft sie beim Öffnen der App. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Privacy Choices (Datenschutzoptionen) in den Einstellungen."
     ],
     "bullets": [
      "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
