@@ -365,6 +365,16 @@
     "Official specs, side by side",
     "A dot marks every value that differs",
     "Sizes overlaid at one scale"
+   ],
+   "ja": [
+    "公式スペックを 並べて比べる",
+    "違う値には点が付き ひと目でわかる",
+    "大きさを同じ比率で 重ねて見る"
+   ],
+   "de": [
+    "Offizielle Daten im Vergleich",
+    "Ein Punkt markiert jeden Unterschied",
+    "Größen im selben Maßstab überlagert"
    ]
   }
  },
