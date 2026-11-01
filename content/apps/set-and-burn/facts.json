@@ -3,7 +3,7 @@
  "purchase": "one-time",
  "ads": true,
  "account": false,
- "unreleased": "2026-11-01 출시 전. ASC 앱 기록이 아직 없어 site.json 에 appStoreId 가 없다. 저장소 이름은 IntervalTimer. 소리 소재가 정해지기 전이라 소리 출처와 고지를 쓰지 않는다",
+ "unreleased": "2026-11-01 출시 전. ASC 앱 기록(6829377551)은 있고 출시 전이라 site.json 에 appStoreId 가 없다. 저장소 이름은 IntervalTimer. 소리 소재가 정해지기 전이라 소리 출처와 고지를 쓰지 않는다",
  "platform": [
   "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 ko 하나 (IntervalTimer project.yml CFBundleLocalizations, TARGETED_DEVICE_FAMILY)"
  ],

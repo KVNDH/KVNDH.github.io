@@ -252,12 +252,12 @@
   "store": "SpecTable/docs/store"
  },
  "set-and-burn": {
-  "icon": "IntervalTimer/IntervalTimer/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "icon": "SetAndBurn/SetAndBurn/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "IntervalTimer/build/shots/runWork-light.png",
-    "IntervalTimer/build/shots/countRound-light.png",
-    "IntervalTimer/build/shots/editorSwitches-light.png"
+    "SetAndBurn/build/shots/runWork-light.png",
+    "SetAndBurn/build/shots/countRound-light.png",
+    "SetAndBurn/build/shots/editorSwitches-light.png"
    ]
   }
  }
