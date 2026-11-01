@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "メイン画面の上部。金額が大きな数字で表示され、その下にバーと状態を示す一行があります。",
     "caption": "アプリ画面の拡大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "期間カレンダー。曜日の下に日付のマスが並んでいます。",
     "caption": "アプリ画面の拡大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "DailyLeft 画面の拡大。予算か残りのお金の金額が書かれています。",
     "caption": "アプリ画面の拡大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {

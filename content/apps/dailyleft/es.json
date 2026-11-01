@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "La parte superior de la pantalla principal. Un importe aparece en números grandes, y debajo hay una barra y una línea de estado.",
     "caption": "Pantalla de la app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "El calendario del periodo. Las celdas de las fechas están debajo de los días de la semana.",
     "caption": "Pantalla de la app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "Primer plano de DailyLeft, con un importe de presupuesto o de dinero restante.",
     "caption": "Pantalla de la app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {

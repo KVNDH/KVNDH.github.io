@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "起始畫面上半部。金額以大型數字顯示，下面是長條和一行狀態。",
     "caption": "App 畫面放大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "期間月曆。星期下方排著日期格。",
     "caption": "App 畫面放大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "DailyLeft 畫面放大，顯示預算或剩餘金額。",
     "caption": "App 畫面放大",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {

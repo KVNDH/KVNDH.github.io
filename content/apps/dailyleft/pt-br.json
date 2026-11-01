@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "A parte de cima da tela principal. Um valor aparece em números grandes, com uma barra e uma linha de status embaixo.",
     "caption": "Tela do app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "O calendário do período. As células das datas ficam abaixo dos dias da semana.",
     "caption": "Tela do app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "Um detalhe do DailyLeft, com um valor de orçamento ou de dinheiro restante.",
     "caption": "Tela do app, ampliada",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {

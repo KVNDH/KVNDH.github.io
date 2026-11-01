@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "The top of the main screen. An amount shows in large numbers, with a bar and a one-line status below it.",
     "caption": "App screen, zoomed in",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "The period calendar. Date cells sit under the days of the week.",
     "caption": "App screen, zoomed in",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "A close-up of DailyLeft, showing a budget or remaining amount.",
     "caption": "App screen, zoomed in",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {

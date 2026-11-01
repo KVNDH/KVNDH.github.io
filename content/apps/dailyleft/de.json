@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-110px",
+    "focus": "-100px",
     "alt": "Der obere Teil des Hauptbildschirms. Ein Betrag steht in großen Zahlen da, darunter ein Balken und eine Statuszeile.",
     "caption": "App-Ansicht, vergrößert",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-310px",
+    "focus": "-282px",
     "alt": "Der Zeitraumkalender. Datumsfelder stehen unter den Wochentagen.",
     "caption": "App-Ansicht, vergrößert",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "DailyLeft aus der Nähe, mit einem Budget oder verbleibenden Betrag.",
     "caption": "App-Ansicht, vergrößert",
-    "focusW": "440px"
+    "focusW": "400px"
    }
   },
   {
