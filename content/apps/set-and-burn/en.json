@@ -1,0 +1,296 @@
+{
+ "name": "Set & Burn",
+ "subtitle": "Interval timer for rounds and sets",
+ "summary": "Set your work and rest, then follow the signals and voice through rounds and sets",
+ "hero": {
+  "hook": "Set your work and rest, then follow the signals and voice through rounds and sets",
+  "shotAlt": "The Set & Burn workout screen. The segment name and time left show in large numbers, with the round number and total time left below. The app's screens are in Korean."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "One workout, your shape",
+   "body": [
+    "Set the work time and rounds, then shape the workout with three switches: rest, sets and rep counting. You can add a warm-up and a cooldown too. The total time and the order of segments show at the top of the edit screen."
+   ],
+   "bullets": [
+    "Work time and rounds",
+    "Rest between rounds, and sets",
+    "Warm-up and cooldown"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-280px",
+    "alt": "The workout edit screen in Korean. The total time and segment strip are at the top, with rows for work time, rounds, rest and sets below.",
+    "caption": "App screen, zoomed in",
+    "focusX": "70px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "It counts your reps",
+   "body": [
+    "With rep counting on, the motion of your AirPods or iPhone counts jump rope jumps and running steps. The app chooses which one to count with. Set the end rule to a count, and a round ends only when you reach its number."
+   ],
+   "bullets": [
+    "Jump rope jumps and running steps",
+    "Rounds that end by time or by count",
+    "AirPods with motion sensors, or iPhone"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-200px",
+    "alt": "The rep counting screen in Korean. The count left shows in large numbers, with what is counting and the next segment below it.",
+    "caption": "App screen, zoomed in",
+    "focusX": "-25px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Without watching the screen",
+   "body": [
+    "Each change between work and rest comes with a sound and a voice, and rounds and sets are counted for you. The clock keeps going with the screen off. Music you are listening to keeps playing alongside."
+   ],
+   "bullets": [
+    "Segment signals and voice cues",
+    "A clock that runs with the screen off",
+    "Plays alongside your music"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Segments you can read from afar",
+   "body": [
+    "The screen inverts during work and returns to normal during rest. Light and dark appearance, portrait and landscape are supported. Time in work segments adds up in one running total."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "Portrait and landscape",
+     "Light and dark"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Set & Burn Pro",
+  "title": "Make more workouts,\nturn ads off",
+  "items": [
+   "No limit on workouts (1 to begin with)",
+   "Banner ads off on the finish screen and workout list",
+   "Family Sharing"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Making a workout",
+   "a": [
+    "Tap the workout name at the top left of the main screen to open the workout list, then tap 새 운동 (New workout). To change the current workout's values, tap 편집 (Edit) on the main screen.",
+    "To begin with you can keep 1 workout, including the example. Making more takes Pro. Workouts you already have can still be used and edited."
+   ]
+  },
+  {
+   "q": "Rep counting",
+   "a": [
+    "In the workout editor, turn on 뛴 수 세기 (rep counting) and set the end rule to time or count. The first time you start a workout with rep counting on, the app asks once for Motion & Fitness permission for AirPods motion. If you don't allow it, the iPhone's motion is used.",
+    "When motion comes in from your AirPods, they do the counting. If it stops, counting moves to the iPhone. One line on the screen shows which is counting. Earphones that don't send motion can't count."
+   ]
+  },
+  {
+   "q": "With the screen off, or when a call comes in",
+   "a": [
+    "While the timer runs, the clock, signals and voice cues continue with the screen off. If a call or alarm comes in, the timer pauses and one line shows why. Tap 이어서 (Resume) to go on."
+   ]
+  },
+  {
+   "q": "Total workout time",
+   "a": [
+    "Only time in work segments is added. Rest is not counted, and there are no records by date. 누적 지우기 (Clear total) at the bottom of Settings sets it back to 0."
+   ]
+  },
+  {
+   "q": "Pro and restoring your purchase",
+   "a": [
+    "Buy it from Pro in the bar at the top of Settings. You pay once, and it is not a subscription. Pro turns ads off and lets you make more than one workout. Family Sharing is supported.",
+    "If you change devices or reinstall the app, tap 구입 복원 (Restore purchase) on the Pro screen. With the same Apple Account you won't pay again."
+   ]
+  },
+  {
+   "q": "Where ads appear",
+   "a": [
+    "Ads appear in two banner spots: the finish screen after a workout and the workout list. They do not appear while the timer runs."
+   ]
+  },
+  {
+   "q": "Tracking permission and ad settings",
+   "a": [
+    "iOS asks whether to allow tracking after the first-run guide closes. It does not ask if you have bought Pro. You can use the app the same way if you don't allow it, and you can change this choice in iOS Settings > Privacy & Security > Tracking.",
+    "Where ad consent is required, such as the European Economic Area, the UK and Switzerland, the consent form appears before the tracking prompt. In those places you can change your consent from 광고 개인정보 선택 (Ad privacy choices) at the bottom of Settings or the Pro screen."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "The timer and rep counting work without a connection. Ads, buying Pro and restoring it need a connection."
+   ]
+  },
+  {
+   "q": "Supported devices and languages",
+   "a": [
+    "iPhone with iOS 26 or later. The app's screens and voice cues are in Korean for now."
+   ]
+  },
+  {
+   "q": "If the app misbehaves",
+   "a": [
+    "Close the app fully, open it again, and check the App Store for the latest version. If the problem continues, email us with the screen you were on and what you were doing."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Set & Burn Privacy Policy",
+  "effectiveDate": "2026-11-01",
+  "summary": "The developer does not collect personal information. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Motion values are used to count reps, and the developer does not receive them. Apple handles payment for Pro.",
+  "intro": [
+   "kvndh (\"the developer\") handles the personal information of people who use the Set & Burn app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
+  ],
+  "sections": [
+   {
+    "title": "Purpose of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not collect personal information from users.",
+     "The app shows banner ads on the finish screen and in the workout list. Google's ad service AdMob selects and displays those ads, and uses device information to show ads and measure how they perform.",
+     "While a workout with rep counting on is running, the app counts jumps and steps from the motion values of your AirPods or iPhone. This happens on your device."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it. The app does not receive contacts, location, photos, heart rate or Health app data.",
+     "Information that AdMob may collect when showing ads is listed in section 9."
+    ],
+    "bullets": [
+     "The workout list (names, times, rounds, sets, switches, end rule, counts) and the chosen workout: used to run the timer and when the app reopens",
+     "Sound, voice cue, vibration and display settings: used for how the app behaves",
+     "Total workout time: a single sum of seconds in work segments, with no records by date",
+     "Whether the first-run guide has been seen: used to show it only once",
+     "A copy of a save file that could not be read: the same kinds of data as above, kept when a save file is damaged",
+     "Rep counting motion logs: one file per work segment for each counting source, holding the start time, count, round, set, number of samples, source, and for each sample the acceleration and gravity direction values, sample time and whether the app was in front. These logs are for checking rep counting and are not used on any app screen"
+    ]
+   },
+   {
+    "title": "Processing and retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Only the latest 20 motion log files are kept, and older ones are removed first. Workouts can be removed in the app, and 누적 지우기 (Clear total) in Settings sets the total workout time back to 0.",
+     "Information collected by AdMob is kept as set out in Google's Privacy Policy (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Disclosure to third parties",
+    "paragraphs": [
+     "The developer does not provide users' personal information to third parties. However, unless you have Pro, the Google Mobile Ads SDK and Google User Messaging Platform SDK built into the app send the information in section 9 directly to Google, as follows."
+    ],
+    "bullets": [
+     "Recipient: Google LLC (United States), AdMob",
+     "Purpose: checking ad consent, showing ads and measuring ad performance",
+     "Information: the device information and ad interaction records listed in section 9",
+     "When and how: sent over the internet when consent is checked and the SDK starts, and when an ad is loaded and shown",
+     "Retention: as set out in Google's Privacy Policy"
+    ]
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "The developer does not outsource the processing of personal information. Apple processes payment for Pro and restoring it through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. Workouts can be removed in the app, and deleting the app removes all of its data."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal guardians, and how to exercise them",
+    "paragraphs": [
+     "Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, email us at the address below.",
+     "You can ask Google to give you access to, or delete, information collected by AdMob (policies.google.com/privacy). To refuse use of the advertising identifier, follow section 9. Payment information is held by Apple and is covered by Apple's privacy policy (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud sync. These files can be included in iCloud or Mac backups you turn on.",
+     "Motion values are received only while a workout with rep counting on is running, including warm-up and rest, and receiving stops when it is paused or ends. AirPods motion is received only if you allow Motion & Fitness. iPhone motion is a value iOS does not ask permission for. The app asks for two permissions, Motion & Fitness and tracking (ATT). It does not ask for location, camera, microphone, photos, contacts, notifications or Health.",
+     "While a rep counting workout is running or paused, the proximity sensor is on to prevent screen touches in a pocket, and its values are not stored. To choose the counting message, the app reads the kind of audio output in use, and this is not stored either."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic collection and how to refuse it",
+    "paragraphs": [
+     "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) and the Google User Messaging Platform SDK for advertising, which may collect the information below when they check ad consent and when they load and show ads.",
+     "After the first-run guide closes, or after the first screen appears if you have already seen it, the app checks whether you have Pro. If not, it checks ad consent information. Where ad consent is required, such as the European Economic Area, the UK and Switzerland, Google's consent form appears first. If ads can be requested and you haven't answered yet, iOS shows the App Tracking Transparency (ATT) prompt. These prompts are not shown while the timer is running or paused. If you don't allow tracking, AdMob does not get the advertising identifier (IDFA), and ads keep appearing. You can change this choice in iOS Settings > Privacy & Security > Tracking.",
+     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from 광고 개인정보 선택 (Ad privacy choices) at the bottom of Settings or the Pro screen.",
+     "If you buy Pro, ads stop appearing, and from the next launch the app does not start the ad SDK, so the consent form and tracking prompt do not appear."
+    ],
+    "bullets": [
+     "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",
+     "Approximate location estimated from the IP address",
+     "Ad interaction records such as impressions and taps, and app usage records",
+     "App performance, crash and diagnostic information",
+     "Ad consent status"
+    ]
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies for privacy concerns",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show what changed and the new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,296 @@
+{
+ "name": "SpecTable",
+ "subtitle": "Compara especificaciones y elige con claridad",
+ "summary": "Pon lado a lado las especificaciones oficiales de dos productos y mira solo lo que cambia",
+ "hero": {
+  "hook": "Pon lado a lado las especificaciones oficiales de dos productos y mira solo lo que cambia",
+  "shotAlt": "La pantalla de comparación de SpecTable. Arriba hay dos productos, y debajo, el interruptor Differences only y la tabla de especificaciones."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Solo lo que cambia",
+   "body": [
+    "Elige dos productos y sus especificaciones oficiales se colocan lado a lado, con los valores iguales plegados. Un punto marca cada fila que difiere, y puedes saltar directamente a las mayores diferencias. Los números van sobre la misma escala. Puedes comparar hasta 5 productos."
+   ],
+   "bullets": [
+    "Solo las filas que difieren",
+    "Salto a las mayores diferencias",
+    "Números en una misma escala"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-120px",
+    "alt": "La pantalla de comparación. Bajo los nombres de los dos productos están el interruptor Differences only, una fila con las mayores diferencias y la tabla de especificaciones.",
+    "caption": "Pantalla de la app, ampliada",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Tamaños a la misma escala",
+   "body": [
+    "La altura y la anchura que da el fabricante se superponen a la misma escala, para comparar los tamaños de un vistazo. Las formas son plantillas por categoría. Productos de categorías distintas pueden compartir tabla, y las filas que tienen en común, como el tamaño y el peso, se comparan fila por fila. Se marcan los valores dentro del 10 % superior de su categoría."
+   ],
+   "bullets": [
+    "Tamaños superpuestos a la misma escala",
+    "Comparación entre categorías",
+    "Una marca para el 10 % superior de una categoría"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-270px",
+    "alt": "La figura de tamaño. Los contornos de dos productos se superponen a la misma escala, con la altura y la anchura al lado. Debajo siguen las filas de altura, anchura, grosor y peso.",
+    "caption": "Pantalla de la app, ampliada",
+    "focusX": "60px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Busca por números",
+   "body": [
+    "Elige una categoría y pon límites en las filas numéricas, como memoria de 16 GB o más y peso de 200 g o menos, y solo quedan los productos que encajan. La búsqueda también admite nombres cortos y apodos."
+   ],
+   "bullets": [
+    "Varios filtros numéricos",
+    "Búsqueda por nombre corto o apodo",
+    "Productos por categoría"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-290px",
+    "alt": "El selector de productos. Están puestos los filtros de memoria de 16 GB o más y peso de 200 g o menos, y debajo aparecen los productos que encajan.",
+    "caption": "Pantalla de la app, ampliada",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Guarda y comparte",
+   "body": [
+    "Guarda como combinaciones las comparaciones a las que vuelves. Convierte una comparación en imagen para compartirla."
+   ],
+   "bullets": [
+    "Combinaciones guardadas",
+    "Imagen de la tabla para compartir"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Valores y fuentes",
+   "body": [
+    "Más de 3.000 productos en 16 categorías, entre ellas teléfonos, relojes, portátiles, auriculares y monitores. Los valores vienen de las especificaciones que publican los fabricantes, y las fuentes se muestran junto a ellos. Lo que no se ha confirmado queda marcado como sin información. SpecTable no está afiliada a ningún fabricante, y las marcas pertenecen a sus propietarios."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "16 categorías",
+     "Una fuente por producto"
+    ]
+   }
+  }
+ ],
+ "faq": [
+  {
+   "q": "Qué productos incluye",
+   "a": [
+    "Más de 3.000 productos en 16 categorías: teléfonos, relojes, tabletas, portátiles, auriculares, baterías externas, cargadores, cables, teclados y ratones, monitores, altavoces, cámaras de acción, lectores de libros electrónicos, consolas, etiquetas de localización y anillos inteligentes. Productos de categorías distintas pueden compartir tabla."
+   ]
+  },
+  {
+   "q": "De dónde salen los valores",
+   "a": [
+    "Solo datos, tomados de sitios oficiales de los fabricantes, notas de prensa y manuales, y de distribuidores oficiales. Para productos descatalogados se usan copias archivadas de las páginas oficiales. Sources, bajo la tabla de comparación, muestra de dónde se leyeron los valores de cada producto. Lo que no se ha confirmado queda marcado como sin información."
+   ]
+  },
+  {
+   "q": "Un valor está mal o falta un producto",
+   "a": [
+    "Escribe a kvndh36@naver.com con el nombre del producto y la fila. Se comprobará con una fuente oficial y se corregirá en la próxima actualización de datos."
+   ]
+  },
+  {
+   "q": "El enlace de precio de un producto",
+   "a": [
+    "El enlace de precio de un producto abre en tu navegador una búsqueda de compras para la región de tu dispositivo. La app no muestra precios actuales. En algunas regiones el enlace no aparece."
+   ]
+  },
+  {
+   "q": "Remove ads y restaurar la compra",
+   "a": [
+    "Cómpralo desde Remove ads, encima del banner de la pantalla de comparación, o desde la fila Remove ads, abajo en la pantalla de inicio. Es un pago único y es compatible con En familia. Después de comprar, el banner deja de aparecer. Todas las demás funciones se pueden usar sin comprar.",
+    "Si cambias de dispositivo o reinstalas la app, toca Restore purchase en esa misma pantalla. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Permiso de rastreo y preferencias de anuncios",
+   "a": [
+    "iOS pregunta si permites el rastreo después de que se cierre la introducción. Puedes usar la app igual si no lo permites, y puedes cambiar esta elección en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en Ad privacy choices, en la pantalla Remove ads."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Comparar especificaciones, buscar por números y las combinaciones guardadas funcionan sin conexión, porque las especificaciones están en la app. Los anuncios, la compra de Remove ads, su restauración y los enlaces externos necesitan conexión."
+   ]
+  },
+  {
+   "q": "Dispositivos compatibles",
+   "a": [
+    "iPhone con iOS 26 o posterior, en vertical y en horizontal."
+   ]
+  },
+  {
+   "q": "Si algo va mal",
+   "a": [
+    "Cierra la app del todo, ábrela otra vez y comprueba en el App Store que tienes la última versión. Si el problema sigue, escríbenos contando en qué pantalla estabas y qué estabas haciendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de SpecTable",
+  "effectiveDate": "2026-11-01",
+  "summary": "El desarrollador no recoge información personal. El banner de publicidad bajo la pantalla de comparación viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Remove ads se encarga Apple.",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app SpecTable (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
+     "La app muestra un banner de publicidad bajo la pantalla de comparación. El servicio publicitario de Google, AdMob, elige y muestra ese anuncio, y usa información del dispositivo para mostrar anuncios y medir su rendimiento."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno de estos datos. La app no trata nombres, contactos, ubicación, fotos ni formas de pago.",
+     "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
+    ],
+    "bullets": [
+     "Los productos elegidos para comparar: para mostrar la misma comparación al volver a abrir la app",
+     "Combinaciones guardadas: para volver a abrirlas",
+     "El interruptor Differences only: para elegir qué filas muestra la tabla",
+     "La elección de idioma de la app: para fijar el idioma de la pantalla",
+     "Si ya se ha visto la introducción: para mostrarla solo una vez"
+    ]
+   },
+   {
+    "title": "Tratamiento y plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Las combinaciones guardadas se quedan hasta que las quites en la app o elimines la app.",
+     "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Comunicación a terceros",
+    "paragraphs": [
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, el SDK de Google Mobile Ads y el SDK de Google User Messaging Platform incluidos en la app envían a Google directamente la información del apartado 9, del modo siguiente."
+    ],
+    "bullets": [
+     "Destinatario: Google LLC (Estados Unidos), AdMob",
+     "Finalidad: comprobar el consentimiento de anuncios, mostrar anuncios y medir su rendimiento",
+     "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
+     "Cuándo y cómo: se envía por internet cuando la app se abre, comprueba el consentimiento e inicia el SDK, y cuando se carga y se muestra un anuncio",
+     "Conservación: la indicada en la Política de Privacidad de Google"
+    ]
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Remove ads y su restauración a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple.",
+     "El enlace de precio de un producto abre en tu navegador predeterminado la búsqueda de Danawa o la búsqueda de Amazon de tu país, según la región de tu dispositivo. En Taiwán y Hong Kong este enlace no aparece. Una dirección en Sources abre la página del fabricante en tu navegador predeterminado. En el sitio que abres se aplica su política de privacidad, y el desarrollador no recibe lo que ves en ese sitio."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las combinaciones guardadas se pueden quitar en la app, y al eliminar la app desaparecen todos sus datos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo.",
+     "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9. Los datos de pago están en manos de Apple y se rigen por la política de privacidad de Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "Lo que usa la app está en el almacenamiento de la app en tu dispositivo. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Estos datos pueden incluirse en las copias de seguridad del dispositivo que actives. La lista de especificaciones de productos viene integrada en la app, así que la app no descarga especificaciones. El único permiso que pide la app es el de rastreo (ATT). No pide fotos, ubicación, notificaciones, cámara ni contactos. Una imagen de comparación se crea en tu dispositivo y pasa a la hoja para compartir del sistema solo cuando tocas compartir, y tú eliges adónde va. Copiar una dirección de fuente solo la coloca en el portapapeles. Lo que la app pasa al SDK de anuncios es la solicitud de anuncio y el tamaño del banner. No pasa los productos que elegiste ni tus combinaciones guardadas."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Recogida automática y cómo rechazarla",
+    "paragraphs": [
+     "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento de anuncios y cuando cargan y muestran anuncios.",
+     "Después de que se cierre la introducción, o al abrir la app si ya la has visto, la app comprueba la información de consentimiento de anuncios. En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta elección en Ajustes > Privacidad y seguridad > Rastreo.",
+     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, no aparece el aviso de rastreo y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en Ad privacy choices, en la pantalla Remove ads, que se abre desde la fila inferior de la pantalla de inicio.",
+     "Después de comprar Remove ads, la app no crea el banner, así que no se solicitan anuncios. Aun después de comprar, la comprobación del consentimiento, el aviso de rastreo si aún no has respondido y el inicio del SDK se siguen produciendo al abrir la app, y el SDK puede recoger en ese momento la información de abajo.",
+     "Las cookies de los sitios externos que abres desde la app las gestionan esos sitios y se rigen por sus políticas."
+    ],
+    "bullets": [
+     "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",
+     "Ubicación aproximada estimada a partir de tu dirección IP",
+     "Registros de interacción con los anuncios, como impresiones y toques, y registros de uso de la app",
+     "Información de rendimiento, fallos y diagnóstico de la app",
+     "Estado del consentimiento de anuncios"
+    ]
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación en materia de privacidad",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a los organismos coreanos que se indican abajo. Si vives fuera de Corea, también puedes dirigirte a la autoridad de protección de datos de tu país."
+    ],
+    "bullets": [
+     "Comité de Mediación de Conflictos sobre Información Personal: 1833-6972 en Corea (www.kopico.go.kr)",
+     "Centro de Denuncias por Vulneración de la Información Personal: 118 en Corea (privacy.kisa.or.kr)",
+     "Fiscalía Suprema: 1301 en Corea (www.spo.go.kr)",
+     "Agencia Nacional de Policía: 182 en Corea (ecrm.police.go.kr)",
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

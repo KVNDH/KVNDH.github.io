@@ -1,0 +1,296 @@
+{
+ "name": "Set & Burn",
+ "subtitle": "Intervall-Timer für Runden und Sätze",
+ "summary": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
+ "hero": {
+  "hook": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
+  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Die Bildschirme der App sind auf Koreanisch."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Ein Workout, Ihre Form",
+   "body": [
+    "Legen Sie Trainingszeit und Runden fest und formen Sie das Workout mit drei Schaltern: Pause, Sätze und Wiederholungen zählen. Aufwärmen und Cool-down lassen sich ebenfalls hinzufügen. Gesamtzeit und Reihenfolge der Phasen stehen oben im Bearbeitungsbildschirm."
+   ],
+   "bullets": [
+    "Trainingszeit und Runden",
+    "Pause zwischen den Runden, dazu Sätze",
+    "Aufwärmen und Cool-down"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-280px",
+    "alt": "Der Bearbeitungsbildschirm für Workouts auf Koreanisch. Oben stehen Gesamtzeit und Phasenleiste, darunter Zeilen für Trainingszeit, Runden, Pause und Sätze.",
+    "caption": "App-Ansicht, vergrößert",
+    "focusX": "70px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Die App zählt Ihre Wiederholungen",
+   "body": [
+    "Ist das Zählen der Wiederholungen eingeschaltet, zählt die Bewegung Ihrer AirPods oder Ihres iPhone Seilsprünge und Laufschritte. Welches der beiden Geräte zählt, wählt die App. Legen Sie als Endbedingung eine Anzahl fest, endet eine Runde erst, wenn Sie ihre Zahl erreichen."
+   ],
+   "bullets": [
+    "Seilsprünge und Laufschritte",
+    "Runden, die nach Zeit oder Anzahl enden",
+    "AirPods mit Bewegungssensoren oder iPhone"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-200px",
+    "alt": "Der Bildschirm zum Zählen der Wiederholungen auf Koreanisch. Die verbleibende Anzahl steht in großen Zahlen da, darunter, was gerade zählt, und die nächste Phase.",
+    "caption": "App-Ansicht, vergrößert",
+    "focusX": "-25px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Ohne auf den Bildschirm zu schauen",
+   "body": [
+    "Jeder Wechsel zwischen Training und Pause kommt mit Ton und Stimme, und Runden und Sätze werden für Sie mitgezählt. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter."
+   ],
+   "bullets": [
+    "Phasensignale und Sprachansagen",
+    "Eine Uhr, die bei ausgeschaltetem Bildschirm läuft",
+    "Läuft parallel zu Ihrer Musik"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Phasen, die Sie von Weitem erkennen",
+   "body": [
+    "Im Training invertiert sich der Bildschirm, in der Pause wird er wieder normal. Helles und dunkles Erscheinungsbild sowie Hoch- und Querformat werden unterstützt. Die Zeit in Trainingsphasen summiert sich zu einer laufenden Gesamtzeit."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "Hoch- und Querformat",
+     "Hell und dunkel"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Set & Burn Pro",
+  "title": "Mehr Workouts erstellen,\nWerbung ausschalten",
+  "items": [
+   "Keine Begrenzung bei Workouts (anfangs 1)",
+   "Bannerwerbung auf dem Abschlussbildschirm und in der Workout-Liste aus",
+   "Familienfreigabe"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Ein Workout erstellen",
+   "a": [
+    "Tippen Sie oben links auf dem Hauptbildschirm auf den Workout-Namen, um die Workout-Liste zu öffnen, und dann auf 새 운동 (Neues Workout). Um die Werte des aktuellen Workouts zu ändern, tippen Sie auf dem Hauptbildschirm auf 편집 (Bearbeiten).",
+    "Anfangs können Sie 1 Workout behalten, das Beispiel eingerechnet. Für mehr brauchen Sie Pro. Vorhandene Workouts lassen sich weiter nutzen und bearbeiten."
+   ]
+  },
+  {
+   "q": "Wiederholungen zählen",
+   "a": [
+    "Schalten Sie im Workout-Editor 뛴 수 세기 (Wiederholungen zählen) ein und legen Sie als Endbedingung Zeit oder Anzahl fest. Wenn Sie zum ersten Mal ein Workout mit eingeschaltetem Zählen starten, fragt die App einmal nach der Berechtigung für Bewegung & Fitness, um die Bewegung der AirPods zu nutzen. Erlauben Sie das nicht, wird die Bewegung des iPhone verwendet.",
+    "Kommt Bewegung von Ihren AirPods an, zählen diese. Bricht sie ab, wechselt das Zählen zum iPhone. Eine Zeile auf dem Bildschirm zeigt, was gerade zählt. Kopfhörer, die keine Bewegung senden, können nicht zählen."
+   ]
+  },
+  {
+   "q": "Bei ausgeschaltetem Bildschirm oder eingehendem Anruf",
+   "a": [
+    "Während der Timer läuft, gehen Uhr, Signale und Sprachansagen bei ausgeschaltetem Bildschirm weiter. Bei einem Anruf oder Wecker pausiert der Timer, und eine Zeile nennt den Grund. Tippen Sie auf 이어서 (Fortsetzen), um weiterzumachen."
+   ]
+  },
+  {
+   "q": "Gesamte Trainingszeit",
+   "a": [
+    "Nur die Zeit in Trainingsphasen wird addiert. Pausen zählen nicht, und Aufzeichnungen nach Datum gibt es nicht. 누적 지우기 (Gesamtzeit löschen) ganz unten in den Einstellungen setzt sie auf 0 zurück."
+   ]
+  },
+  {
+   "q": "Pro und den Kauf wiederherstellen",
+   "a": [
+    "Sie kaufen es über Pro in der Leiste oben in den Einstellungen. Sie zahlen einmal, ein Abo ist es nicht. Pro schaltet die Werbung aus und lässt Sie mehr als ein Workout erstellen. Familienfreigabe wird unterstützt.",
+    "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf dem Pro-Bildschirm auf 구입 복원 (Kauf wiederherstellen). Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Wo Werbung erscheint",
+   "a": [
+    "Werbung erscheint an zwei Bannerplätzen: auf dem Abschlussbildschirm nach einem Workout und in der Workout-Liste. Während der Timer läuft, erscheint sie nicht."
+   ]
+  },
+  {
+   "q": "Tracking und Werbeeinstellungen",
+   "a": [
+    "Nachdem sich der Einstiegshinweis geschlossen hat, fragt iOS, ob Tracking erlaubt ist. Wenn Sie Pro gekauft haben, kommt diese Frage nicht. Die App funktioniert auch dann gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter 광고 개인정보 선택 (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Timer und Wiederholungszählung laufen offline. Werbung, der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung."
+   ]
+  },
+  {
+   "q": "Unterstützte Geräte und Sprachen",
+   "a": [
+    "iPhone mit iOS 26 oder neuer. Die Bildschirme der App und die Sprachansagen sind vorerst auf Koreanisch."
+   ]
+  },
+  {
+   "q": "Wenn etwas klemmt",
+   "a": [
+    "Schließen Sie die App ganz, öffnen Sie sie neu und prüfen Sie im App Store, ob Sie die neueste Version haben. Hält das Problem an, schreiben Sie uns, auf welchem Bildschirm Sie waren und was Sie gerade gemacht haben."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für Set & Burn",
+  "effectiveDate": "2026-11-01",
+  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Bewegungswerte dienen dem Zählen der Wiederholungen, und der Entwickler erhält sie nicht. Die Zahlung für Pro wickelt Apple ab.",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Set & Burn (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
+     "Die App zeigt Bannerwerbung auf dem Abschlussbildschirm und in der Workout-Liste. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
+     "Während ein Workout mit eingeschaltetem Zählen läuft, zählt die App Sprünge und Schritte anhand der Bewegungswerte Ihrer AirPods oder Ihres iPhone. Das geschieht auf Ihrem Gerät."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät, und der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort, Fotos, Herzfrequenz oder Daten der Health-App.",
+     "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
+    ],
+    "bullets": [
+     "Die Workout-Liste (Namen, Zeiten, Runden, Sätze, Schalter, Endbedingung, Anzahlen) und das gewählte Workout: für den Betrieb des Timers und beim erneuten Öffnen der App",
+     "Einstellungen zu Ton, Sprachansagen, Vibration und Anzeige: für das Verhalten der App",
+     "Gesamte Trainingszeit: eine einzige Summe der Sekunden in Trainingsphasen, Aufzeichnungen nach Datum gibt es nicht",
+     "Ob der Einstiegshinweis schon gesehen wurde: damit er nur einmal erscheint",
+     "Eine Kopie einer Speicherdatei, die nicht gelesen werden konnte: dieselben Arten von Daten wie oben, aufbewahrt, wenn eine Speicherdatei beschädigt ist",
+     "Bewegungsprotokolle der Wiederholungszählung: eine Datei pro Trainingsphase und Zählquelle mit Startzeit, Zählwert, Runde, Satz, Anzahl der Messwerte und Zählquelle sowie für jeden Messwert die Werte für Beschleunigung und Schwerkraftrichtung, den Zeitpunkt des Messwerts und die Angabe, ob die App im Vordergrund war. Diese Protokolle dienen zur Prüfung der Wiederholungszählung und werden auf keinem Bildschirm der App verwendet"
+    ]
+   },
+   {
+    "title": "Verarbeitung und Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Nur die neuesten 20 Dateien mit Bewegungsprotokollen bleiben erhalten, ältere werden zuerst entfernt. Workouts lassen sich in der App entfernen, und 누적 지우기 (Gesamtzeit löschen) in den Einstellungen setzt die gesamte Trainingszeit auf 0 zurück.",
+     "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Sofern Sie Pro nicht haben, senden jedoch das Google Mobile Ads SDK und das Google User Messaging Platform SDK, die in der App enthalten sind, die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
+    ],
+    "bullets": [
+     "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
+     "Zweck: Prüfung der Einwilligung in Werbung, Ausspielen von Werbung und Messung ihrer Wirkung",
+     "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
+     "Zeitpunkt und Weg: über das Internet, wenn die Einwilligung geprüft und das SDK gestartet wird und wenn eine Werbung geladen und angezeigt wird",
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+    ]
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Pro und das Wiederherstellen über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Workouts lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Nutzerinnen und Nutzer sowie der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
+     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Was die App nutzt, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Dateien können in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Bewegungswerte werden nur empfangen, während ein Workout mit eingeschaltetem Zählen läuft, einschließlich Aufwärmen und Pause, und der Empfang stoppt, wenn es pausiert oder endet. Die Bewegung der AirPods wird nur empfangen, wenn Sie Bewegung & Fitness erlauben. Die Bewegung des iPhone ist ein Wert, für den iOS nicht um Erlaubnis fragt. Die App fragt nach zwei Berechtigungen: Bewegung & Fitness und Tracking (ATT). Nach Standort, Kamera, Mikrofon, Fotos, Kontakten, Mitteilungen oder Health fragt sie nicht.",
+     "Während ein Workout mit Wiederholungszählung läuft oder pausiert ist, ist der Näherungssensor eingeschaltet, um Berührungen des Bildschirms in der Tasche zu verhindern, und seine Werte werden nicht gespeichert. Um den passenden Zählhinweis zu wählen, liest die App die Art der verwendeten Audioausgabe, und auch das wird nicht gespeichert."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatische Erfassung und wie Sie sie ablehnen",
+    "paragraphs": [
+     "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können.",
+     "Nachdem sich der Einstiegshinweis geschlossen hat, oder nachdem der erste Bildschirm erschienen ist, falls Sie den Hinweis schon gesehen haben, prüft die App, ob Sie Pro haben. Falls nicht, prüft sie die Angaben zur Einwilligung in Werbung. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Diese Abfragen erscheinen nicht, während der Timer läuft oder pausiert ist. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter 광고 개인정보 선택 (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm.",
+     "Wenn Sie Pro kaufen, erscheint Werbung nicht mehr, und ab dem nächsten Öffnen startet die App das Werbe-SDK nicht mehr, sodass weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
+    ],
+    "bullets": [
+     "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
+     "Ungefährer Standort, geschätzt anhand der IP-Adresse",
+     "Interaktionsdaten zu Werbung wie Einblendungen und Antippen sowie Daten zur App-Nutzung",
+     "Informationen zu Leistung, Abstürzen und Diagnose der App",
+     "Status der Einwilligung in Werbung"
+    ]
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe in Datenschutzfragen",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

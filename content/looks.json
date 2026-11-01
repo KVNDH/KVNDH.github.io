@@ -298,6 +298,12 @@
    ]
   }
  },
+ "set-and-burn": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {}
+ },
  "snapline": {
   "mode": "blur",
   "ink": "light",
@@ -350,6 +356,23 @@
   "ink": "dark",
   "color": "#FFFFFF",
   "alts": {}
+ },
+ "spectable": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {
+   "ko": [
+    "공식 사양을 나란히 견줍니다",
+    "다른 값에는 점이 찍혀 한눈에 보입니다",
+    "크기를 같은 비율로 겹쳐 봅니다"
+   ],
+   "en": [
+    "Official specs, side by side",
+    "A dot marks every value that differs",
+    "Sizes overlaid at one scale"
+   ]
+  }
  },
  "tailorcolor": {
   "mode": "blur",

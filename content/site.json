@@ -153,6 +153,22 @@
    "languages": [
     "ko"
    ]
+  },
+  {
+   "slug": "spectable",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37",
+   "unreleased": true
+  },
+  {
+   "slug": "set-and-burn",
+   "accent": "#E63946",
+   "accentText": "#F46A74",
+   "glow": "rgba(230,57,70,.28)",
+   "paperAccent": "#B02C37",
+   "unreleased": true
   }
  ]
 }

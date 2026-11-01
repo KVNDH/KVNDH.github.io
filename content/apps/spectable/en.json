@@ -1,0 +1,296 @@
+{
+ "name": "SpecTable",
+ "subtitle": "Know specs. Make the choice.",
+ "summary": "Put the official specs of two products side by side and see only what differs",
+ "hero": {
+  "hook": "Put the official specs of two products side by side and see only what differs",
+  "shotAlt": "The SpecTable comparison screen. Two products sit at the top, with the Differences only switch and the spec table below."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Only what differs",
+   "body": [
+    "Pick two products and their official specs sit side by side, with matching values folded away. A dot marks each row that differs, and you can jump straight to the biggest gaps. Numbers sit on the same scale. You can compare up to 5 products."
+   ],
+   "bullets": [
+    "Only the rows that differ",
+    "A jump to the biggest gaps",
+    "Numbers on one scale"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-120px",
+    "alt": "The comparison screen. Under the two product names are the Differences only switch, a row of the biggest gaps and the spec table.",
+    "caption": "App screen, zoomed in",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Sizes at one scale",
+   "body": [
+    "Height and width from the maker overlay at one scale, so sizes compare at a glance. Shapes are type templates. Products of different kinds can share a table, and rows they have in common, such as size and weight, compare row by row. Values in the top 10% of their kind are marked."
+   ],
+   "bullets": [
+    "Sizes overlaid at one scale",
+    "Comparison across kinds",
+    "A mark for the top 10% of a kind"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-270px",
+    "alt": "The size figure. The outlines of two products overlap at one scale, with height and width beside them. Height, width, thickness and weight rows follow below.",
+    "caption": "App screen, zoomed in",
+    "focusX": "60px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Find by numbers",
+   "body": [
+    "Choose a kind and set limits on number rows, such as memory of 16 GB or more and weight of 200 g or less, and only matching products stay. Search also takes short names and nicknames."
+   ],
+   "bullets": [
+    "Several number filters",
+    "Search by short name or nickname",
+    "Products by kind"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-290px",
+    "alt": "The product picker. Filters for memory of 16 GB or more and weight of 200 g or less are set, with the matching products listed below.",
+    "caption": "App screen, zoomed in",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Save and share",
+   "body": [
+    "Save the comparisons you return to as combos. Turn a comparison into an image to share."
+   ],
+   "bullets": [
+    "Saved combos",
+    "Table image sharing"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Values and sources",
+   "body": [
+    "Over 3,000 products in 16 kinds, including phones, watches, laptops, earbuds and monitors. Values come from specs the makers publish, and the sources are shown with them. Anything unconfirmed stays marked as no info. SpecTable is not affiliated with any manufacturer, and trademarks belong to their owners."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "No account",
+     "16 kinds",
+     "A source for each product"
+    ]
+   }
+  }
+ ],
+ "faq": [
+  {
+   "q": "Which products are included",
+   "a": [
+    "Over 3,000 products in 16 kinds: phones, watches, tablets, laptops, earbuds, power banks, chargers, cables, keyboards and mice, monitors, speakers, action cameras, e-readers, game consoles, location tags and smart rings. Products of different kinds can share a table."
+   ]
+  },
+  {
+   "q": "Where the values come from",
+   "a": [
+    "Facts only, from official manufacturer sites, press releases and manuals, and from official distributors. For discontinued products, archived copies of the official pages are used. Sources under the comparison table shows where each product's values were read. Anything unconfirmed stays marked as no info."
+   ]
+  },
+  {
+   "q": "A value is wrong or a product is missing",
+   "a": [
+    "Email kvndh36@naver.com with the product name and the row. It will be checked against an official source and fixed in the next data update."
+   ]
+  },
+  {
+   "q": "The price link on a product",
+   "a": [
+    "The price link on a product opens a shopping search for your device's region in your browser. The app does not show current prices. In some regions the link does not appear."
+   ]
+  },
+  {
+   "q": "Remove ads and restoring your purchase",
+   "a": [
+    "Buy it from Remove ads above the banner on the comparison screen, or from the Remove ads row at the bottom of the first screen. You pay once, and Family Sharing is supported. After you buy, the banner no longer appears. Every other feature works without buying.",
+    "If you change devices or reinstall the app, tap Restore purchase on the same screen. With the same Apple Account you won't pay again."
+   ]
+  },
+  {
+   "q": "Tracking permission and ad settings",
+   "a": [
+    "iOS asks whether to allow tracking after the intro closes. You can use the app the same way if you don't allow it, and you can change this choice in iOS Settings > Privacy & Security > Tracking.",
+    "Where ad consent is required, such as the European Economic Area, the consent form appears before the tracking prompt. In those places you can change your consent from Ad privacy choices on the Remove ads screen."
+   ]
+  },
+  {
+   "q": "Internet connection",
+   "a": [
+    "Comparing specs, finding by numbers and saved combos work without a connection, because the specs are in the app. Ads, buying Remove ads, restoring it and outside links need a connection."
+   ]
+  },
+  {
+   "q": "Supported devices",
+   "a": [
+    "iPhone with iOS 26 or later, in portrait and landscape."
+   ]
+  },
+  {
+   "q": "If the app misbehaves",
+   "a": [
+    "Close the app fully, open it again, and check the App Store for the latest version. If the problem continues, email us with the screen you were on and what you were doing."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "SpecTable Privacy Policy",
+  "effectiveDate": "2026-11-01",
+  "summary": "The developer does not collect personal information. The banner ad under the comparison screen comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove ads.",
+  "intro": [
+   "kvndh (\"the developer\") handles the personal information of people who use the SpecTable app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
+  ],
+  "sections": [
+   {
+    "title": "Purpose of processing",
+    "paragraphs": [
+     "The app has no sign-up or login, and the developer does not collect personal information from users.",
+     "The app shows a banner ad under the comparison screen. Google's ad service AdMob selects and displays that ad, and uses device information to show ads and measure how they perform."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Information processed",
+    "paragraphs": [
+     "The developer collects no personal information. The data the app uses is listed below. All of it is kept in the app's storage on your device, and the developer does not receive it. The app does not handle names, contacts, location, photos or payment methods.",
+     "Information that AdMob may collect when showing ads is listed in section 9."
+    ],
+    "bullets": [
+     "The products chosen for comparison: used to show the same comparison when the app reopens",
+     "Saved combos: used to reopen them",
+     "The Differences only switch: used to choose which rows the table shows",
+     "App language choice: used to set the screen language",
+     "Whether the intro has been seen: used to show it only once"
+    ]
+   },
+   {
+    "title": "Processing and retention period",
+    "paragraphs": [
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Saved combos stay until you remove them in the app or delete the app.",
+     "Information collected by AdMob is kept as set out in Google's Privacy Policy (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Disclosure to third parties",
+    "paragraphs": [
+     "The developer does not provide users' personal information to third parties. However, the Google Mobile Ads SDK and Google User Messaging Platform SDK built into the app send the information in section 9 directly to Google, as follows."
+    ],
+    "bullets": [
+     "Recipient: Google LLC (United States), AdMob",
+     "Purpose: checking ad consent, showing ads and measuring ad performance",
+     "Information: the device information and ad interaction records listed in section 9",
+     "When and how: sent over the internet when the app opens, checks consent and starts the SDK, and when an ad is loaded and shown",
+     "Retention: as set out in Google's Privacy Policy"
+    ]
+   },
+   {
+    "title": "Outsourcing of processing",
+    "paragraphs": [
+     "The developer does not outsource the processing of personal information. Apple processes payment for Remove ads and restoring it through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details.",
+     "The price link on a product opens Danawa search or the Amazon search of your country in your default browser, depending on your device's region. In Taiwan and Hong Kong this link does not appear. An address under Sources opens the maker's page in your default browser. The privacy policy of the site you open applies there, and the developer does not receive what you view on that site."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destruction of information",
+    "paragraphs": [
+     "The developer holds no personal information, so there is nothing to destroy. Saved combos can be removed in the app, and deleting the app removes all of its data."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rights of users and legal guardians, and how to exercise them",
+    "paragraphs": [
+     "Because the developer holds no personal information, there is nothing to access, correct, or delete. If you have questions, email us at the address below.",
+     "You can ask Google to give you access to, or delete, information collected by AdMob (policies.google.com/privacy). To refuse use of the advertising identifier, follow section 9. Payment information is held by Apple and is covered by Apple's privacy policy (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Security measures",
+    "paragraphs": [
+     "What the app uses sits in the app's storage on your device. The developer runs no server, and the app does not use iCloud sync. This data can be included in device backups you turn on. The product spec list is built into the app, so the app does not download specs. The only permission the app asks for is tracking (ATT). It does not ask for photos, location, notifications, camera or contacts. A comparison image is made on your device and passed to the system share sheet only when you tap share, and you choose where it goes. Copying a source address only places it on the clipboard. What the app passes to the ad SDK is the ad request and the banner size. It does not pass the products you chose or your saved combos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatic collection and how to refuse it",
+    "paragraphs": [
+     "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) and the Google User Messaging Platform SDK for advertising, which may collect the information below when they check ad consent and when they load and show ads.",
+     "After the intro closes, or when the app opens if you have already seen the intro, the app checks ad consent information. Where ad consent is required, such as the European Economic Area, Google's consent form appears first. If ads can be requested and you haven't answered yet, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not get the advertising identifier (IDFA), and ads keep appearing. You can change this choice in iOS Settings > Privacy & Security > Tracking.",
+     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from Ad privacy choices on the Remove ads screen, which opens from the bottom row of the first screen.",
+     "After you buy Remove ads, the app does not create the banner, so ads are not requested. Even after you buy, the consent check, the tracking prompt if you haven't answered yet, and the SDK start still happen when the app opens, and the SDK may collect the information below at that time.",
+     "Cookies on outside sites you open from the app are run by those sites and follow their policies."
+    ],
+    "bullets": [
+     "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",
+     "Approximate location estimated from the IP address",
+     "Ad interaction records such as impressions and taps, and app usage records",
+     "App performance, crash and diagnostic information",
+     "Ad consent status"
+    ]
+   },
+   {
+    "title": "Privacy officer",
+    "paragraphs": [
+     "If you have questions about personal information, email us at the address below."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Officer",
+      "value": "kvndh"
+     },
+     {
+      "label": "Email",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Remedies for privacy concerns",
+    "paragraphs": [
+     "If you need advice about a privacy concern or help settling a dispute, you can contact the Korean bodies listed below. If you live outside Korea, you can also contact the data protection authority in your country."
+    ],
+    "bullets": [
+     "Personal Information Dispute Mediation Committee: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Personal Information Infringement Report Center: 118 in Korea (privacy.kisa.or.kr)",
+     "Supreme Prosecutors' Office: 1301 in Korea (www.spo.go.kr)",
+     "National Police Agency: 182 in Korea (ecrm.police.go.kr)",
+     "European Union and EEA: the data protection authority of your country (edpb.europa.eu)",
+     "United Kingdom: Information Commissioner's Office (ico.org.uk)",
+     "United States: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Other countries: the data protection or consumer protection authority where you live"
+    ]
+   },
+   {
+    "title": "Changes to this policy",
+    "paragraphs": [
+     "If this policy changes, this page will show what changed and the new effective date."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

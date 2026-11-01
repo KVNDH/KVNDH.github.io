@@ -1,0 +1,296 @@
+{
+ "name": "Set & Burn",
+ "subtitle": "Temporizador de intervalos por rondas y series",
+ "summary": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
+ "hero": {
+  "hook": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
+  "shotAlt": "La pantalla de entrenamiento de Set & Burn. El nombre de la fase y el tiempo restante aparecen en números grandes, y debajo están el número de ronda y el tiempo total restante. Las pantallas de la app están en coreano."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Un entrenamiento, a tu manera",
+   "body": [
+    "Define el tiempo de trabajo y las rondas, y dale forma al entrenamiento con tres interruptores: descanso, series y conteo de repeticiones. También puedes añadir calentamiento y enfriamiento. El tiempo total y el orden de las fases se ven arriba en la pantalla de edición."
+   ],
+   "bullets": [
+    "Tiempo de trabajo y rondas",
+    "Descanso entre rondas, y series",
+    "Calentamiento y enfriamiento"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-280px",
+    "alt": "La pantalla de edición del entrenamiento, en coreano. Arriba están el tiempo total y la franja de fases, y debajo las filas de tiempo de trabajo, rondas, descanso y series.",
+    "caption": "Pantalla de la app, ampliada",
+    "focusX": "70px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Cuenta tus repeticiones",
+   "body": [
+    "Con el conteo de repeticiones activado, el movimiento de tus AirPods o tu iPhone cuenta los saltos de cuerda y los pasos de carrera. La app elige con cuál de los dos contar. Si la condición de fin es un conteo, la ronda solo termina al llegar a su número."
+   ],
+   "bullets": [
+    "Saltos de cuerda y pasos de carrera",
+    "Rondas que terminan por tiempo o por conteo",
+    "AirPods con sensores de movimiento, o iPhone"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-200px",
+    "alt": "La pantalla de conteo de repeticiones, en coreano. Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
+    "caption": "Pantalla de la app, ampliada",
+    "focusX": "-25px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Sin mirar la pantalla",
+   "body": [
+    "Cada cambio entre trabajo y descanso llega con un sonido y una voz, y las rondas y las series se cuentan por ti. El reloj sigue con la pantalla apagada. La música que estás escuchando sigue sonando a la vez."
+   ],
+   "bullets": [
+    "Señales de fase y avisos de voz",
+    "Un reloj que sigue con la pantalla apagada",
+    "Suena junto con tu música"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Fases que se leen de lejos",
+   "body": [
+    "La pantalla se invierte durante el trabajo y vuelve a la normalidad durante el descanso. Admite aspecto claro y oscuro, y orientación vertical y horizontal. El tiempo de las fases de trabajo se suma en un único total acumulado."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Vertical y horizontal",
+     "Claro y oscuro"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Set & Burn Pro",
+  "title": "Crea más entrenamientos,\ndesactiva los anuncios",
+  "items": [
+   "Sin límite de entrenamientos (1 al principio)",
+   "Anuncios de banner desactivados en la pantalla final y en la lista de entrenamientos",
+   "En familia"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Crear un entrenamiento",
+   "a": [
+    "Toca el nombre del entrenamiento arriba a la izquierda de la pantalla principal para abrir la lista de entrenamientos, y luego toca 새 운동 (Nuevo entrenamiento). Para cambiar los valores del entrenamiento actual, toca 편집 (Editar) en la pantalla principal.",
+    "Al principio puedes tener 1 entrenamiento, incluido el de ejemplo. Para crear más necesitas Pro. Los entrenamientos que ya tienes se pueden seguir usando y editando."
+   ]
+  },
+  {
+   "q": "Conteo de repeticiones",
+   "a": [
+    "En el editor del entrenamiento, activa 뛴 수 세기 (conteo de repeticiones) y elige como condición de fin el tiempo o el conteo. La primera vez que empiezas un entrenamiento con el conteo activado, la app pide una vez el permiso de Movimiento y forma física para el movimiento de los AirPods. Si no lo permites, se usa el movimiento del iPhone.",
+    "Cuando llega movimiento de tus AirPods, ellos cuentan. Si deja de llegar, el conteo pasa al iPhone. Una línea en la pantalla muestra qué está contando. Los auriculares que no envían movimiento no pueden contar."
+   ]
+  },
+  {
+   "q": "Con la pantalla apagada o si entra una llamada",
+   "a": [
+    "Mientras el temporizador corre, el reloj, las señales y los avisos de voz continúan con la pantalla apagada. Si entra una llamada o suena una alarma, el temporizador se pausa y una línea muestra el motivo. Toca 이어서 (Continuar) para seguir."
+   ]
+  },
+  {
+   "q": "Tiempo total de entrenamiento",
+   "a": [
+    "Solo se suma el tiempo de las fases de trabajo. El descanso no cuenta y no hay registros por fecha. 누적 지우기 (Borrar total), abajo del todo en Ajustes, lo devuelve a 0."
+   ]
+  },
+  {
+   "q": "Pro y restaurar la compra",
+   "a": [
+    "Cómpralo desde Pro en la barra superior de Ajustes. Es un pago único, no una suscripción. Pro desactiva los anuncios y te deja crear más de un entrenamiento. Es compatible con En familia.",
+    "Si cambias de dispositivo o reinstalas la app, toca 구입 복원 (Restaurar compra) en la pantalla de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Dónde aparecen los anuncios",
+   "a": [
+    "Los anuncios aparecen en dos espacios de banner: la pantalla final después de un entrenamiento y la lista de entrenamientos. No aparecen mientras el temporizador corre."
+   ]
+  },
+  {
+   "q": "Rastreo y preferencias de anuncios",
+   "a": [
+    "iOS pregunta si permites el rastreo después de que se cierre la guía inicial. Si has comprado Pro, no lo pregunta. La app funciona igual si no lo permites, y puedes cambiar esta opción en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el Reino Unido y Suiza, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en 광고 개인정보 선택 (Opciones de privacidad de anuncios), abajo del todo en Ajustes o en la pantalla de Pro."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "El temporizador y el conteo de repeticiones funcionan sin conexión. Los anuncios, la compra de Pro y la restauración necesitan conexión."
+   ]
+  },
+  {
+   "q": "Dispositivos e idiomas compatibles",
+   "a": [
+    "iPhone con iOS 26 o posterior. Por ahora, las pantallas de la app y los avisos de voz están en coreano."
+   ]
+  },
+  {
+   "q": "Si algo va mal",
+   "a": [
+    "Cierra la app del todo, ábrela otra vez y comprueba en el App Store que tienes la última versión. Si el problema sigue, escríbenos contando en qué pantalla estabas y qué estabas haciendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Set & Burn",
+  "effectiveDate": "2026-11-01",
+  "summary": "El desarrollador no recoge información personal. Los anuncios de banner vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Los valores de movimiento se usan para contar repeticiones, y el desarrollador no los recibe. Del pago de Pro se encarga Apple.",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Set & Burn (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
+     "La app muestra anuncios de banner en la pantalla final y en la lista de entrenamientos. El servicio publicitario de Google, AdMob, elige y muestra esos anuncios, y usa información del dispositivo para mostrar anuncios y medir su rendimiento.",
+     "Mientras se ejecuta un entrenamiento con el conteo de repeticiones activado, la app cuenta saltos y pasos a partir de los valores de movimiento de tus AirPods o tu iPhone. Esto ocurre en tu dispositivo."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo, y el desarrollador no los recibe. La app no recibe contactos, ubicación, fotos, frecuencia cardiaca ni datos de la app Salud.",
+     "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
+    ],
+    "bullets": [
+     "La lista de entrenamientos (nombres, tiempos, rondas, series, interruptores, condición de fin, conteos) y el entrenamiento elegido: para ejecutar el temporizador y al volver a abrir la app",
+     "Ajustes de sonido, avisos de voz, vibración y pantalla: para el comportamiento de la app",
+     "Tiempo total de entrenamiento: una única suma de segundos en fases de trabajo, sin registros por fecha",
+     "Si ya se vio la guía inicial: para mostrarla solo una vez",
+     "Una copia de un archivo guardado que no se pudo leer: los mismos tipos de datos de arriba, conservada cuando un archivo guardado está dañado",
+     "Registros de movimiento del conteo de repeticiones: un archivo por cada fase de trabajo y cada fuente de conteo, con la hora de inicio, el conteo, la ronda, la serie, el número de muestras, la fuente y, para cada muestra, los valores de aceleración y dirección de la gravedad, la hora de la muestra y si la app estaba en primer plano. Estos registros sirven para comprobar el conteo de repeticiones y no se usan en ninguna pantalla de la app"
+    ]
+   },
+   {
+    "title": "Tratamiento y plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Solo se conservan los 20 archivos de registro de movimiento más recientes, y los más antiguos se eliminan primero. Los entrenamientos se pueden eliminar en la app, y 누적 지우기 (Borrar total), en Ajustes, devuelve a 0 el tiempo total de entrenamiento.",
+     "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Comunicación a terceros",
+    "paragraphs": [
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, si no tienes Pro, el SDK de Google Mobile Ads y el SDK de Google User Messaging Platform incluidos en la app envían a Google directamente la información del apartado 9, del modo siguiente."
+    ],
+    "bullets": [
+     "Destinatario: Google LLC (Estados Unidos), AdMob",
+     "Finalidad: comprobar el consentimiento de anuncios, mostrar anuncios y medir su rendimiento",
+     "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
+     "Cuándo y cómo: se envía por internet cuando se comprueba el consentimiento y se inicia el SDK, y cuando se carga y se muestra un anuncio",
+     "Conservación: la indicada en la Política de Privacidad de Google"
+    ]
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Pro y su restauración a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Los entrenamientos se pueden eliminar en la app, y al eliminar la app desaparecen todos sus datos."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo.",
+     "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9. Los datos de pago están en manos de Apple y se rigen por la política de privacidad de Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "Lo que usa la app está en forma de archivos en el almacenamiento de la app en tu dispositivo. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Estos archivos pueden incluirse en las copias de seguridad de iCloud o del Mac que tengas activadas.",
+     "Los valores de movimiento solo se reciben mientras se ejecuta un entrenamiento con el conteo de repeticiones activado, incluidos el calentamiento y el descanso, y la recepción se detiene cuando se pausa o termina. El movimiento de los AirPods solo se recibe si permites Movimiento y forma física. El movimiento del iPhone es un valor para el que iOS no pide permiso. La app pide dos permisos, Movimiento y forma física y rastreo (ATT). No pide ubicación, cámara, micrófono, fotos, contactos, notificaciones ni Salud.",
+     "Mientras un entrenamiento con conteo de repeticiones está en marcha o en pausa, el sensor de proximidad se mantiene activado para evitar toques en la pantalla dentro del bolsillo, y sus valores no se guardan. Para elegir el mensaje de conteo, la app lee el tipo de salida de audio en uso, y esto tampoco se guarda."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Recogida automática y cómo rechazarla",
+    "paragraphs": [
+     "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento de anuncios y cuando cargan y muestran anuncios.",
+     "Después de que se cierre la guía inicial, o después de que aparezca la primera pantalla si ya la has visto, la app comprueba si tienes Pro. Si no, comprueba la información de consentimiento de anuncios. Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el Reino Unido y Suiza, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Estos avisos no aparecen mientras el temporizador está en marcha o en pausa. Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta opción en Ajustes > Privacidad y seguridad > Rastreo.",
+     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, el aviso de rastreo no aparece y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en 광고 개인정보 선택 (Opciones de privacidad de anuncios), abajo del todo en Ajustes o en la pantalla de Pro.",
+     "Si compras Pro, los anuncios dejan de aparecer, y a partir del siguiente arranque la app no inicia el SDK de anuncios, así que no aparecen ni el formulario de consentimiento ni el aviso de rastreo."
+    ],
+    "bullets": [
+     "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",
+     "Ubicación aproximada estimada a partir de la dirección IP",
+     "Registros de interacción con los anuncios, como impresiones y toques, y registros de uso de la app",
+     "Información de rendimiento, fallos y diagnóstico de la app",
+     "Estado del consentimiento de anuncios"
+    ]
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación en materia de privacidad",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a los organismos coreanos que se indican abajo. Si vives fuera de Corea, también puedes dirigirte a la autoridad de protección de datos de tu país."
+    ],
+    "bullets": [
+     "Comité de Mediación de Conflictos sobre Información Personal: 1833-6972 en Corea (www.kopico.go.kr)",
+     "Centro de Denuncias por Vulneración de la Información Personal: 118 en Corea (privacy.kisa.or.kr)",
+     "Fiscalía Suprema: 1301 en Corea (www.spo.go.kr)",
+     "Agencia Nacional de Policía: 182 en Corea (ecrm.police.go.kr)",
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

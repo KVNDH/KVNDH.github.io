@@ -244,5 +244,31 @@
     "SpecPair/docs/site/4-conditions.png"
    ]
   }
+ },
+ "spectable": {
+  "icon": "SpecPair/SpecPair/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "SpecPair/docs/store/shots-raw/iphone/ko/compare.png",
+    "SpecPair/docs/store/shots-raw/iphone/ko/size.png",
+    "SpecPair/docs/store/shots-raw/iphone/ko/filter.png"
+   ],
+   "en": [
+    "SpecPair/docs/store/shots-raw/iphone/en-US/compare.png",
+    "SpecPair/docs/store/shots-raw/iphone/en-US/size.png",
+    "SpecPair/docs/store/shots-raw/iphone/en-US/filter.png"
+   ]
+  },
+  "store": "SpecPair/docs/store"
+ },
+ "set-and-burn": {
+  "icon": "IntervalTimer/IntervalTimer/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "IntervalTimer/build/shots/runWork-light.png",
+    "IntervalTimer/build/shots/countRound-light.png",
+    "IntervalTimer/build/shots/editorSwitches-light.png"
+   ]
+  }
  }
 }

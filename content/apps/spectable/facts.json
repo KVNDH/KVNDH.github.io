@@ -1,0 +1,46 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "one-time",
+ "ads": true,
+ "account": false,
+ "unreleased": "2026-11-01 출시 전. ASC 앱 기록이 아직 없어 site.json 에 appStoreId 가 없다. 저장소 이름은 SpecPair, 슬러그는 spectable. 옛 specpair 페이지(ko, 쿠팡 파트너스 활동 매체 주소)는 그대로 둔다",
+ "platform": [
+  "iPhone 전용, iOS 26 이상, 세로와 가로 (SpecPair project.yml TARGETED_DEVICE_FAMILY, UISupportedInterfaceOrientations)"
+ ],
+ "products": [
+  "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecPair/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
+ ],
+ "ads_detail": [
+  "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:104, Ads/AdBanner.swift). 시트와 공유 이미지에는 없다",
+  "순서: 소개 뒤 ads.start() (ContentView.swift:201). 활성 대기, UMP 갱신, 필요하면 동의 양식, canRequestAds 면 ATT(아직 안 정했을 때), SDK 시작 (Ads/AdsModel.swift)",
+  "광고 제거를 사도 ads.start() 는 그대로 돈다. store.adFree 는 AdBanner 만 막는다. Tapey, Set & Burn 과 다르다",
+  "광고 개인정보 선택 줄은 광고 제거 시트에, UMP 가 요구할 때만 (Store/RemoveAdsSheet.swift)",
+  "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (Ads/GoogleAdsSDK.swift)"
+ ],
+ "externalLinks": [
+  "가격 링크: PriceLink.choose. KR 과 그 밖 다나와 검색, US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색, TW HK 는 링크 없음. Affiliate.settings 는 모두 꺼짐이라 제휴 꼬리표 없음. 켜기 전에 처리방침을 고친다 (Packages/SpecCore/Sources/SpecCore/PriceLink.swift, ContentView.swift:1025)",
+  "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink, :981)"
+ ],
+ "storage": [
+  "UserDefaults: selection, combos, onlyDifferences, onboarded (App/AppModel.swift:72-77), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"
+ ],
+ "permissions": [
+  "추적 허용(ATT) 하나. 카메라, 사진, 위치, 알림 없음"
+ ],
+ "notOffered": [
+  "지금 파는 가격, 가격 비교, 가격 추이, 사용자 리뷰, 제품 사진, 회사 로고, iPad 맞춤 화면, 위젯. 사이트에 쓰지 않는다"
+ ],
+ "numbers": [
+  "5",
+  "10",
+  "16",
+  "200",
+  "3,000"
+ ],
+ "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(catalog.json 3,081대, 2026-10-29 판, metadata.json 문구)",
+ "sources": [
+  "SpecPair 92cbac7: 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30), docs/store/metadata.json",
+  "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
+  "그림: docs/store/screenshots(ko, en-US), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
+ ]
+}

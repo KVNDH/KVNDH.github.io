@@ -1,0 +1,296 @@
+{
+ "name": "SpecTable",
+ "subtitle": "Technische Daten vergleichen, klar entscheiden",
+ "summary": "Stellen Sie die offiziellen Daten zweier Produkte nebeneinander und sehen Sie nur die Unterschiede",
+ "hero": {
+  "hook": "Stellen Sie die offiziellen Daten zweier Produkte nebeneinander und sehen Sie nur die Unterschiede",
+  "shotAlt": "Der Vergleichsbildschirm von SpecTable. Oben stehen zwei Produkte, darunter der Schalter Nur Unterschiede und die Datentabelle."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Nur die Unterschiede",
+   "body": [
+    "Wählen Sie zwei Produkte, und ihre offiziellen Daten stehen nebeneinander, gleiche Werte sind eingeklappt. Ein Punkt markiert jede Zeile, die sich unterscheidet, und Sie springen direkt zu den größten Unterschieden. Zahlen stehen auf derselben Skala. Sie können bis zu 5 Produkte vergleichen."
+   ],
+   "bullets": [
+    "Nur die Zeilen, die sich unterscheiden",
+    "Direkt zu den größten Unterschieden",
+    "Zahlen auf einer Skala"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-120px",
+    "alt": "Der Vergleichsbildschirm. Unter den beiden Produktnamen folgen der Schalter Nur Unterschiede, eine Reihe mit den größten Unterschieden und die Datentabelle.",
+    "caption": "App-Ansicht, vergrößert",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Größen im selben Maßstab",
+   "body": [
+    "Höhe und Breite laut Hersteller liegen im selben Maßstab übereinander, sodass sich Größen auf einen Blick vergleichen lassen. Die Formen sind Vorlagen je Kategorie. Produkte verschiedener Kategorien können in einer Tabelle stehen, und gemeinsame Zeilen wie Größe und Gewicht werden Zeile für Zeile verglichen. Werte unter den oberen 10 % ihrer Kategorie werden markiert."
+   ],
+   "bullets": [
+    "Größen im selben Maßstab übereinander",
+    "Vergleich über Kategorien hinweg",
+    "Markierung für die oberen 10 % einer Kategorie"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-270px",
+    "alt": "Die Größengrafik. Die Umrisse zweier Produkte liegen im selben Maßstab übereinander, daneben stehen Höhe und Breite. Darunter folgen die Zeilen für Höhe, Breite, Tiefe und Gewicht.",
+    "caption": "App-Ansicht, vergrößert",
+    "focusX": "60px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Nach Zahlen finden",
+   "body": [
+    "Wählen Sie eine Kategorie und setzen Sie Grenzen für Zahlenzeilen, etwa Arbeitsspeicher ab 16 GB und Gewicht bis 200 g, dann bleiben nur passende Produkte übrig. Die Suche versteht auch Kurznamen und Spitznamen."
+   ],
+   "bullets": [
+    "Mehrere Zahlenfilter",
+    "Suche nach Kurzname oder Spitzname",
+    "Produkte nach Kategorie"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-290px",
+    "alt": "Die Produktauswahl. Die Filter Arbeitsspeicher ab 16 GB und Gewicht bis 200 g sind gesetzt, darunter stehen die passenden Produkte.",
+    "caption": "App-Ansicht, vergrößert",
+    "focusX": "80px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Speichern und teilen",
+   "body": [
+    "Vergleiche, zu denen Sie zurückkehren, speichern Sie als Kombinationen. Einen Vergleich machen Sie zum Bild und teilen ihn."
+   ],
+   "bullets": [
+    "Gespeicherte Kombinationen",
+    "Tabellenbild teilen"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Werte und Quellen",
+   "body": [
+    "Über 3.000 Produkte in 16 Kategorien, darunter Smartphones, Smartwatches, Laptops, Ohrhörer und Monitore. Die Werte stammen aus den Daten, die die Hersteller veröffentlichen, und die Quellen stehen dabei. Was nicht bestätigt ist, bleibt als fehlende Angabe markiert. SpecTable steht mit keinem Hersteller in Verbindung, und Marken gehören ihren Inhabern."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Kein Konto",
+     "16 Kategorien",
+     "Eine Quelle je Produkt"
+    ]
+   }
+  }
+ ],
+ "faq": [
+  {
+   "q": "Welche Produkte enthalten sind",
+   "a": [
+    "Über 3.000 Produkte in 16 Kategorien: Smartphones, Smartwatches, Tablets, Laptops, Ohrhörer, Powerbanks, Ladegeräte, Kabel, Tastaturen und Mäuse, Monitore, Lautsprecher, Action-Cams, E-Reader, Spielkonsolen, Tracker und Smart Rings. Produkte verschiedener Kategorien können in einer Tabelle stehen."
+   ]
+  },
+  {
+   "q": "Woher die Werte kommen",
+   "a": [
+    "Nur Fakten, aus offiziellen Herstellerseiten, Pressemitteilungen und Handbüchern sowie von offiziellen Vertriebspartnern. Bei nicht mehr angebotenen Produkten dienen archivierte Kopien der offiziellen Seiten. Quellen unterhalb der Vergleichstabelle zeigt, woher die Werte jedes Produkts stammen. Was nicht bestätigt ist, bleibt als fehlende Angabe markiert."
+   ]
+  },
+  {
+   "q": "Ein Wert ist falsch oder ein Produkt fehlt",
+   "a": [
+    "Schreiben Sie an kvndh36@naver.com und nennen Sie den Produktnamen und die Zeile. Das wird anhand einer offiziellen Quelle geprüft und mit der nächsten Datenaktualisierung korrigiert."
+   ]
+  },
+  {
+   "q": "Der Preislink bei einem Produkt",
+   "a": [
+    "Der Preislink bei einem Produkt öffnet in Ihrem Browser eine Shopping-Suche für die Region Ihres Geräts. Die App zeigt keine aktuellen Preise. In manchen Regionen erscheint der Link nicht."
+   ]
+  },
+  {
+   "q": "Werbung entfernen und Kauf wiederherstellen",
+   "a": [
+    "Kaufen Sie es über Werbung entfernen oberhalb des Banners auf dem Vergleichsbildschirm oder über die Zeile Werbung entfernen am unteren Rand des Startbildschirms. Sie zahlen einmal, und die Familienfreigabe wird unterstützt. Nach dem Kauf erscheint das Banner nicht mehr. Alle anderen Funktionen stehen auch ohne Kauf bereit.",
+    "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf demselben Bildschirm auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
+   ]
+  },
+  {
+   "q": "Tracking-Erlaubnis und Werbeeinstellungen",
+   "a": [
+    "Nach dem Schließen der Einführung fragt iOS, ob Tracking erlaubt ist. Die App funktioniert gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter Datenschutz für Werbung auf dem Bildschirm Werbung entfernen."
+   ]
+  },
+  {
+   "q": "Internetverbindung",
+   "a": [
+    "Der Vergleich von Daten, das Finden nach Zahlen und gespeicherte Kombinationen laufen offline, weil die Daten in der App liegen. Werbung, der Kauf von Werbung entfernen, das Wiederherstellen und externe Links brauchen eine Verbindung."
+   ]
+  },
+  {
+   "q": "Unterstützte Geräte",
+   "a": [
+    "iPhone mit iOS 26 oder neuer, im Hoch- und Querformat."
+   ]
+  },
+  {
+   "q": "Wenn etwas klemmt",
+   "a": [
+    "Schließen Sie die App ganz, öffnen Sie sie neu und prüfen Sie im App Store, ob Sie die neueste Version haben. Hält das Problem an, schreiben Sie uns, auf welchem Bildschirm Sie waren und was Sie gerade gemacht haben."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Datenschutzerklärung für SpecTable",
+  "effectiveDate": "2026-11-01",
+  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Das Werbebanner unter dem Vergleichsbildschirm kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
+  "intro": [
+   "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SpecTable (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
+  ],
+  "sections": [
+   {
+    "title": "Zweck der Verarbeitung",
+    "paragraphs": [
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
+     "Die App zeigt unter dem Vergleichsbildschirm ein Werbebanner. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Verarbeitete Daten",
+    "paragraphs": [
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät. Der Entwickler erhält keine dieser Daten. Die App verarbeitet weder Namen noch Kontakte, Standorte, Fotos oder Zahlungsmittel.",
+     "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
+    ],
+    "bullets": [
+     "Die für den Vergleich gewählten Produkte: um beim erneuten Öffnen der App denselben Vergleich zu zeigen",
+     "Gespeicherte Kombinationen: zum Wiederöffnen",
+     "Der Schalter Nur Unterschiede: um festzulegen, welche Zeilen die Tabelle zeigt",
+     "Sprachauswahl der App: um die Sprache der Oberfläche festzulegen",
+     "Ob die Einführung schon gezeigt wurde: um sie nur einmal zu zeigen"
+    ]
+   },
+   {
+    "title": "Verarbeitung und Aufbewahrungsdauer",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Gespeicherte Kombinationen bleiben, bis Sie sie in der App entfernen oder die App löschen.",
+     "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Weitergabe an Dritte",
+    "paragraphs": [
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Das in der App enthaltene Google Mobile Ads SDK und das Google User Messaging Platform SDK senden jedoch die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
+    ],
+    "bullets": [
+     "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
+     "Zweck: Prüfen der Einwilligung in Werbung, Ausspielen von Werbung und Messung ihrer Wirkung",
+     "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
+     "Zeitpunkt und Weg: über das Internet, wenn die App geöffnet wird, die Einwilligung prüft und das SDK startet, und wenn eine Werbung geladen und angezeigt wird",
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+    ]
+   },
+   {
+    "title": "Auftragsverarbeitung",
+    "paragraphs": [
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Werbung entfernen und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account.",
+     "Der Preislink bei einem Produkt öffnet je nach Region Ihres Geräts die Danawa-Suche oder die Amazon-Suche Ihres Landes in Ihrem Standardbrowser. In Taiwan und Hongkong erscheint dieser Link nicht. Eine Adresse unter Quellen öffnet die Seite des Herstellers in Ihrem Standardbrowser. Dort gilt die Datenschutzerklärung der geöffneten Website, und der Entwickler erhält nicht, was Sie auf dieser Website ansehen."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Löschung der Daten",
+    "paragraphs": [
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Kombinationen lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Rechte der Nutzerinnen und Nutzer sowie der gesetzlichen Vertretung",
+    "paragraphs": [
+     "Da der Entwickler keine personenbezogenen Daten aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
+     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Maßnahmen zur Sicherheit",
+    "paragraphs": [
+     "Was die App nutzt, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Daten können in Gerätebackups enthalten sein, die Sie einschalten. Die Liste der Produktdaten ist in die App eingebaut, die App lädt also keine Daten herunter. Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Ein Vergleichsbild entsteht auf Ihrem Gerät und geht nur dann an das Teilen-Menü des Systems, wenn Sie auf Teilen tippen, und Sie wählen das Ziel. Das Kopieren einer Quellenadresse legt sie nur in die Zwischenablage. An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Die gewählten Produkte und Ihre gespeicherten Kombinationen gibt sie nicht weiter."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Automatische Erfassung und wie Sie sie ablehnen",
+    "paragraphs": [
+     "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können.",
+     "Nach dem Schließen der Einführung, oder beim Öffnen der App, wenn Sie die Einführung schon gesehen haben, prüft die App die Angaben zur Einwilligung in Werbung. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Ergibt die Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Datenschutz für Werbung auf dem Bildschirm Werbung entfernen, den Sie über die untere Zeile des Startbildschirms öffnen.",
+     "Nach dem Kauf von Werbung entfernen erstellt die App das Banner nicht, und Werbung wird nicht angefragt. Auch nach dem Kauf finden beim Öffnen der App die Prüfung der Einwilligung, die Tracking-Abfrage, falls Sie noch nicht geantwortet haben, und der Start des SDK weiterhin statt, und das SDK kann dabei die unten genannten Informationen erfassen.",
+     "Cookies externer Websites, die Sie aus der App öffnen, werden von diesen Websites betrieben und unterliegen deren Richtlinien."
+    ],
+    "bullets": [
+     "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
+     "Ungefährer Standort, geschätzt anhand Ihrer IP-Adresse",
+     "Interaktionsdaten zu Werbung wie Einblendungen und Antippen sowie Nutzungsdaten der App",
+     "Informationen zu Leistung, Abstürzen und Diagnose der App",
+     "Status der Einwilligung in Werbung"
+    ]
+   },
+   {
+    "title": "Verantwortlich für den Datenschutz",
+    "paragraphs": [
+     "Bei Fragen zum Datenschutz schreiben Sie an die unten genannte Adresse."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Verantwortlich",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-Mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Rechtsbehelfe in Datenschutzfragen",
+    "paragraphs": [
+     "Wenn Sie Beratung in einer Datenschutzfrage oder Hilfe bei einem Streitfall brauchen, wenden Sie sich an die unten genannten koreanischen Stellen. Wenn Sie außerhalb Koreas leben, können Sie sich auch an die Datenschutzbehörde in Ihrem Land wenden."
+    ],
+    "bullets": [
+     "Schlichtungsausschuss für Datenschutzstreitigkeiten: 1833-6972 in Korea (www.kopico.go.kr)",
+     "Meldestelle für Datenschutzverstöße: 118 in Korea (privacy.kisa.or.kr)",
+     "Oberste Staatsanwaltschaft: 1301 in Korea (www.spo.go.kr)",
+     "Nationale Polizeibehörde: 182 in Korea (ecrm.police.go.kr)",
+     "Europäische Union und EWR: die Datenschutzbehörde Ihres Landes (edpb.europa.eu)",
+     "Vereinigtes Königreich: Information Commissioner's Office (ico.org.uk)",
+     "Vereinigte Staaten: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Andere Länder: die Datenschutz- oder Verbraucherschutzbehörde in Ihrem Land"
+    ]
+   },
+   {
+    "title": "Änderungen dieser Erklärung",
+    "paragraphs": [
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}
