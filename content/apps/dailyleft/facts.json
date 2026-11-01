@@ -5,7 +5,7 @@
  "account": false,
  "unreleased": "2026-11-02 출시 전, 제출 전. ASC 앱 기록 6829438107 은 있으나 공개 전이라 appStoreId 를 넣지 않는다. 저장소 이름은 DailyLeft, 슬러그 dailyleft(DailyLeft/App/PrivacyLink.swift:8). 표시 이름 ko 하루 얼마, 다른 언어 DailyLeft. 옛 앱 이름은 사이트에 쓰지 않고 처리방침에는 이전 앱으로 적는다",
  "platform": [
-  "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 en(원문)과 ko(번역) 둘, 그 밖의 기기 언어는 영어 (DailyLeft project.yml CFBundleLocalizations, Decide 11-01-36 A)",
+  "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 en(원문)과 ko(번역) 둘, 기기 언어 목록에서 둘 중 먼저 나오는 쪽, 둘 다 없으면 영어 (DailyLeft project.yml CFBundleLocalizations, Decide 11-01-36 A)",
   "금액은 첫 설정 때 기기 지역의 통화로 저장하고 바꾸는 화면이 없다(LedgerSettings.currencyCode), 정수만, 소수와 환율 없음. isKorea 는 통화가 KRW 인지로 본다 (DailyLeft/Views/OnboardingView.swift:22). 원화가 아닌 승인 문자는 기록하지 않는다",
   "대한민국 지역만: 문자로 추가, 문자 제보, 결제 알림, 카드 칸, 단축어 안내. 다른 지역은 직접 추가만, 평일만 세기는 주말만 뺀다 (docs/PRIVACY_FACTS_for_HQ.md 맨 위 줄, ContentView.swift:424, OnboardingView.swift:328)"
  ],
@@ -69,6 +69,6 @@
   "DailyLeft 6b8f2f0(영어 기본과 지역 동작): 코드, docs/PRIVACY_FACTS_for_HQ.md(맨 위 줄이 옛 본문보다 앞선다), docs/COPY-en.md, docs/superpowers/specs/2026-11-01-general-budget-design.md, DESIGN.md. 화면 이름은 en 카탈로그 값, en 외 언어는 '영어 이름(뜻)'",
   "SDK 매니페스트: PrivacyInfo.xcprivacy 주석, docs/PRIVACY_FACTS_for_HQ.md 4절",
   "처리방침 10, 11절과 12절 첫 문단: Tapey 같은 언어 문장",
-  "그림: DailyLeft/build/shots/ 1-today.png(shot 1, alt, focus -120px 확인), 2-calendar.png(shot 2, 달력 전체가 들어오게 focus -300px), 3-widgets.png 는 2026-11-01 판에 지도와 캘린더 위젯만 있는 홈 화면이라 shot 3 로 쓰지 못한다. 하루 얼마 위젯이나 설정 화면으로 다시 찍은 뒤 shot 3 의 alt, focus 를 다시 본다"
+  "그림: en 은 DailyLeft/build/shots-en(8082e42, 예시 값 $600), ko 는 DailyLeft/build/shots/ 1-today.png(shot 1, alt, focus -120px 확인), 2-calendar.png(shot 2, 달력 전체가 들어오게 focus -300px), 3-widgets.png 는 2026-11-01 판에 지도와 캘린더 위젯만 있는 홈 화면이라 shot 3 로 쓰지 못한다. 하루 얼마 위젯이나 설정 화면으로 다시 찍은 뒤 shot 3 의 alt, focus 를 다시 본다"
  ]
 }

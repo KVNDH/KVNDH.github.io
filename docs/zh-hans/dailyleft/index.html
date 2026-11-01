@@ -149,7 +149,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .pts li{position:relative;padding:13px 0 13px 24px;border-bottom:1px solid var(--ln);font-size:15.5px}
 .pts li::before{content:"";position:absolute;left:3px;top:22px;width:7px;height:7px;border-radius:50%;background:var(--k)}
 .crop{position:relative;height:500px;overflow:hidden;border:14px solid var(--pl);background:var(--pl);box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -24px rgba(40,36,28,.35)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px));border-radius:6px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:var(--cw,560px);margin-left:calc(var(--cw,560px) / -2 + var(--cx,0px));border-radius:6px}
 .crop figcaption{position:absolute;left:0;bottom:0;padding:6px 10px 0 0;background:var(--pl);font:500 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 @media (prefers-color-scheme:dark){.crop{box-shadow:0 0 0 1px var(--ln)}}
 .kit{padding:22px;border:1px solid var(--ln);background:var(--pl)}
@@ -320,7 +320,7 @@ html{scroll-padding-top:72px}
 .pts{margin-top:20px}
 .pts li{font-size:15px}
 .crop{height:330px;border-width:10px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
+.crop img{top:calc(var(--cy,-200px) * .75);width:calc(var(--cw,560px) * .75);margin-left:calc(var(--cw,560px) * -.375 + var(--cx,0px) * .75)}
 .kit{padding:12px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -393,10 +393,10 @@ html{scroll-padding-top:72px}
 <div class="hero-cta"></div>
 </div>
 </section>
-<section class="pano"><figure class="print"><img src="/assets/dailyleft/shots/ko/01.webp" alt="DailyLeft 的主画面。金额以大号数字显示，下方是横条、一行状态和日历。App 画面为韩语。"><span class="lab" aria-hidden="true">Pl. 01</span></figure><figure class="print"><img src="/assets/dailyleft/shots/ko/02.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 02</span></figure><figure class="print"><img src="/assets/dailyleft/shots/ko/03.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 03</span></figure></section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-120px;--cx:82px"><img src="/assets/dailyleft/shots/ko/01.webp" alt="韩语主画面的上部。金额以大号数字显示，下方是横条和一行状态。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">01</p><h2>算出今天能花多少</h2><p class="body">输入月度预算后，App 用剩下的钱除以剩下的天数，显示每天能花的金额。花了钱，每日金额也会重新计算。下面用一行告诉你现在的节奏是宽裕还是紧张。选择每日预算时，今天剩下的金额以大号数字显示。</p><ul class="pts"><li>月度预算和每日预算</li><li>按剩余天数算出的每日金额</li><li>从一个金额开始</li></ul></div></section>
-<section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-300px;--cx:82px"><img src="/assets/dailyleft/shots/ko/02.webp" alt="韩语的期间日历。星期下方排着日期格。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">02</p><h2>选择要计入的日子</h2><p class="body">默认每天都计入。打开 Count Weekdays Only（只算工作日）后，周末不计入。iPhone 地区为韩国时，韩国公休日也不计入。不花钱的日子，在日历上点一下就能去掉。使用月度预算时，每日金额会按剩下的天数重新分配。日历上过去的日子显示当天花了多少。</p><ul class="pts"><li>只算工作日</li><li>在日历上去掉某一天</li><li>显示每天花的金额</li></ul></div></section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-70px;--cx:70px"><img src="/assets/dailyleft/shots/ko/03.webp" alt="韩语的 DailyLeft 画面放大，显示预算或剩余金额。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">03</p><h2>按你的预算来设置</h2><p class="body">默认帮你不超出预算。如果钱在期间结束后就没了，比如福利积分或补贴，打开 Expires If Unspent（剩余作废），App 会提醒你在期间内用完。预算的开始日可以在 1 日到 28 日之间选择。剩下的钱也能在主屏幕和锁定屏幕的小组件上看到。</p><ul class="pts"><li>剩余作废设置</li><li>期间开始日 1 日到 28 日</li><li>主屏幕和锁定屏幕小组件</li></ul></div></section>
+<section class="pano"><figure class="print"><img src="/assets/dailyleft/shots/en/01.webp" alt="DailyLeft 的主画面。金额以大号数字显示，下方是横条、一行状态和日历。"><span class="lab" aria-hidden="true">Pl. 01</span></figure><figure class="print"><img src="/assets/dailyleft/shots/en/02.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 02</span></figure><figure class="print"><img src="/assets/dailyleft/shots/en/03.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 03</span></figure></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-110px;--cw:440px"><img src="/assets/dailyleft/shots/en/01.webp" alt="主画面的上部。金额以大号数字显示，下方是横条和一行状态。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">01</p><h2>算出今天能花多少</h2><p class="body">输入月度预算后，App 用剩下的钱除以剩下的天数，显示每天能花的金额。花了钱，每日金额也会重新计算。下面用一行告诉你现在的节奏是宽裕还是紧张。选择每日预算时，今天剩下的金额以大号数字显示。</p><ul class="pts"><li>月度预算和每日预算</li><li>按剩余天数算出的每日金额</li><li>从一个金额开始</li></ul></div></section>
+<section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-310px;--cw:440px"><img src="/assets/dailyleft/shots/en/02.webp" alt="期间日历。星期下方排着日期格。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">02</p><h2>选择要计入的日子</h2><p class="body">默认每天都计入。打开 Count Weekdays Only（只算工作日）后，周末不计入。iPhone 地区为韩国时，韩国公休日也不计入。不花钱的日子，在日历上点一下就能去掉。使用月度预算时，每日金额会按剩下的天数重新分配。日历上过去的日子显示当天花了多少。</p><ul class="pts"><li>只算工作日</li><li>在日历上去掉某一天</li><li>显示每天花的金额</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-70px;--cw:440px"><img src="/assets/dailyleft/shots/en/03.webp" alt="DailyLeft 画面放大，显示预算或剩余金额。" loading="lazy"><figcaption>App 画面放大</figcaption></figure><div><p class="kick">03</p><h2>按你的预算来设置</h2><p class="body">默认帮你不超出预算。如果钱在期间结束后就没了，比如福利积分或补贴，打开 Expires If Unspent（剩余作废），App 会提醒你在期间内用完。预算的开始日可以在 1 日到 28 日之间选择。剩下的钱也能在主屏幕和锁定屏幕的小组件上看到。</p><ul class="pts"><li>剩余作废设置</li><li>期间开始日 1 日到 28 日</li><li>主屏幕和锁定屏幕小组件</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">04</p><h2>记录付款</h2><p class="body">任何付款都可以手动添加。iPhone 地区为韩国时，还可以从短信记录银行卡付款。如果付款通知以短信发来，可以设置快捷指令自动化，不打开 App 也能记录。如果通知来自发卡公司 App 或 KakaoTalk 通知消息，粘贴通知内容，或者自己输入金额。输入卡号后 4 位就只记录这张卡的短信，留空则记录所有卡的付款短信。</p><ul class="pts"><li>快捷指令自动化</li><li>粘贴付款通知</li><li>手动添加</li></ul></div><div class="card"><p class="kick">05</p><h2>余额不对时校正</h2><p class="body">记录和实际余额不一致时，点大号数字，输入实际金额。差额记为一行 Balance adjustment（余额调整），原来的交易保持不变。</p><ul class="chips"><li>没有账户</li><li>竖屏和横屏</li><li>浅色和深色</li></ul></div></section>
 
 <section class="help">

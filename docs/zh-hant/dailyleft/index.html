@@ -149,7 +149,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .pts li{position:relative;padding:13px 0 13px 24px;border-bottom:1px solid var(--ln);font-size:15.5px}
 .pts li::before{content:"";position:absolute;left:3px;top:22px;width:7px;height:7px;border-radius:50%;background:var(--k)}
 .crop{position:relative;height:500px;overflow:hidden;border:14px solid var(--pl);background:var(--pl);box-shadow:0 1px 0 rgba(0,0,0,.04),0 18px 40px -24px rgba(40,36,28,.35)}
-.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:560px;margin-left:calc(-280px + var(--cx,0px));border-radius:6px}
+.crop img{position:absolute;left:50%;top:var(--cy,-200px);width:var(--cw,560px);margin-left:calc(var(--cw,560px) / -2 + var(--cx,0px));border-radius:6px}
 .crop figcaption{position:absolute;left:0;bottom:0;padding:6px 10px 0 0;background:var(--pl);font:500 11.5px var(--mono);letter-spacing:.06em;color:var(--t2)}
 @media (prefers-color-scheme:dark){.crop{box-shadow:0 0 0 1px var(--ln)}}
 .kit{padding:22px;border:1px solid var(--ln);background:var(--pl)}
@@ -320,7 +320,7 @@ html{scroll-padding-top:72px}
 .pts{margin-top:20px}
 .pts li{font-size:15px}
 .crop{height:330px;border-width:10px}
-.crop img{top:calc(var(--cy,-200px) * .75);width:420px;margin-left:calc(-210px + var(--cx,0px) * .75)}
+.crop img{top:calc(var(--cy,-200px) * .75);width:calc(var(--cw,560px) * .75);margin-left:calc(var(--cw,560px) * -.375 + var(--cx,0px) * .75)}
 .kit{padding:12px}
 .kit-b{grid-template-columns:1fr;gap:8px}
 .kit-b li{display:grid;grid-template-columns:40px 1fr;gap:0 14px;align-items:center;padding:14px}
@@ -393,10 +393,10 @@ html{scroll-padding-top:72px}
 <div class="hero-cta"></div>
 </div>
 </section>
-<section class="pano"><figure class="print"><img src="/assets/dailyleft/shots/ko/01.webp" alt="DailyLeft 的起始畫面。上方以大型數字顯示金額，下方依序是長條、一行狀態和月曆。App 畫面為韓文。"><span class="lab" aria-hidden="true">Pl. 01</span></figure><figure class="print"><img src="/assets/dailyleft/shots/ko/02.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 02</span></figure><figure class="print"><img src="/assets/dailyleft/shots/ko/03.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 03</span></figure></section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-120px;--cx:82px"><img src="/assets/dailyleft/shots/ko/01.webp" alt="韓文的起始畫面上半部。金額以大型數字顯示，下面是長條和一行狀態。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>算出今天能花多少</h2><p class="body">輸入每月預算，App 會用剩下的錢除以剩下的天數，顯示每天可以花的金額。花了錢，每日金額也會重新計算。目前的花費速度是寬裕還是吃緊，下方用一行告訴你。選擇每日預算時，今天剩下的金額會以大型數字顯示。</p><ul class="pts"><li>每月預算和每日預算</li><li>依剩餘天數計算的每日金額</li><li>輸入一個金額就能開始</li></ul></div></section>
-<section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-300px;--cx:82px"><img src="/assets/dailyleft/shots/ko/02.webp" alt="韓文的期間月曆。星期下方排著日期格。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">02</p><h2>選擇要計算的日子</h2><p class="body">預設每天都計算。開啟 Count Weekdays Only（只計平日）後，週末不計算。iPhone 地區為韓國時，韓國國定假日也不計算。不打算花錢的日子，在月曆上點一下就能排除。使用每月預算時，每日金額會按剩下的天數重新分配。月曆上過去的日子會顯示當天花的錢。</p><ul class="pts"><li>只計平日</li><li>在月曆上排除日子</li><li>顯示每天花的錢</li></ul></div></section>
-<section class="feat"><figure class="feat-vis crop" style="--cy:-70px;--cx:70px"><img src="/assets/dailyleft/shots/ko/03.webp" alt="DailyLeft 的韓文畫面放大，顯示預算或剩餘金額。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">03</p><h2>配合你的預算來設定</h2><p class="body">預設會提醒你不要超出預算。如果是福利點數或補助金這類期間結束就失效的錢，開啟 Expires If Unspent（未用完即失效），App 會提醒你在期間內用完。預算的開始日可以在 1 到 28 日之間選擇。剩下的錢也能在主畫面和鎖定畫面的小工具上查看。</p><ul class="pts"><li>未用完即失效設定</li><li>期間開始日 1 到 28 日</li><li>主畫面和鎖定畫面小工具</li></ul></div></section>
+<section class="pano"><figure class="print"><img src="/assets/dailyleft/shots/en/01.webp" alt="DailyLeft 的起始畫面。上方以大型數字顯示金額，下方依序是長條、一行狀態和月曆。"><span class="lab" aria-hidden="true">Pl. 01</span></figure><figure class="print"><img src="/assets/dailyleft/shots/en/02.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 02</span></figure><figure class="print"><img src="/assets/dailyleft/shots/en/03.webp" alt="" loading="lazy"><span class="lab" aria-hidden="true">Pl. 03</span></figure></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-110px;--cw:440px"><img src="/assets/dailyleft/shots/en/01.webp" alt="起始畫面上半部。金額以大型數字顯示，下面是長條和一行狀態。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">01</p><h2>算出今天能花多少</h2><p class="body">輸入每月預算，App 會用剩下的錢除以剩下的天數，顯示每天可以花的金額。花了錢，每日金額也會重新計算。目前的花費速度是寬裕還是吃緊，下方用一行告訴你。選擇每日預算時，今天剩下的金額會以大型數字顯示。</p><ul class="pts"><li>每月預算和每日預算</li><li>依剩餘天數計算的每日金額</li><li>輸入一個金額就能開始</li></ul></div></section>
+<section class="feat feat-rev"><figure class="feat-vis crop" style="--cy:-310px;--cw:440px"><img src="/assets/dailyleft/shots/en/02.webp" alt="期間月曆。星期下方排著日期格。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">02</p><h2>選擇要計算的日子</h2><p class="body">預設每天都計算。開啟 Count Weekdays Only（只計平日）後，週末不計算。iPhone 地區為韓國時，韓國國定假日也不計算。不打算花錢的日子，在月曆上點一下就能排除。使用每月預算時，每日金額會按剩下的天數重新分配。月曆上過去的日子會顯示當天花的錢。</p><ul class="pts"><li>只計平日</li><li>在月曆上排除日子</li><li>顯示每天花的錢</li></ul></div></section>
+<section class="feat"><figure class="feat-vis crop" style="--cy:-70px;--cw:440px"><img src="/assets/dailyleft/shots/en/03.webp" alt="DailyLeft 畫面放大，顯示預算或剩餘金額。" loading="lazy"><figcaption>App 畫面放大</figcaption></figure><div><p class="kick">03</p><h2>配合你的預算來設定</h2><p class="body">預設會提醒你不要超出預算。如果是福利點數或補助金這類期間結束就失效的錢，開啟 Expires If Unspent（未用完即失效），App 會提醒你在期間內用完。預算的開始日可以在 1 到 28 日之間選擇。剩下的錢也能在主畫面和鎖定畫面的小工具上查看。</p><ul class="pts"><li>未用完即失效設定</li><li>期間開始日 1 到 28 日</li><li>主畫面和鎖定畫面小工具</li></ul></div></section>
 <section class="duo"><div class="card"><p class="kick">04</p><h2>記錄付款</h2><p class="body">任何付款都可以手動新增。iPhone 地區為韓國時，還可以從簡訊記錄信用卡付款。如果付款通知是以簡訊傳來，可以建立捷徑自動化，不必打開 App 就能記錄。如果是透過信用卡 App 或 KakaoTalk 傳來，就貼上通知內容或自己輸入金額。輸入卡號末 4 碼就只記錄那張卡的簡訊，留空則記錄所有卡片的付款簡訊。</p><ul class="pts"><li>捷徑自動化</li><li>貼上付款通知</li><li>手動新增</li></ul></div><div class="card"><p class="kick">05</p><h2>餘額不符時就調整</h2><p class="body">記錄和實際餘額不同時，點大型數字，輸入實際金額。差額會留下一行 Balance adjustment（餘額調整），原本的交易不變。</p><ul class="chips"><li>沒有帳號</li><li>直向和橫向</li><li>淺色和深色</li></ul></div></section>
 
 <section class="help">

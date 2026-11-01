@@ -4,7 +4,7 @@
  "summary": "Legen Sie ein Budget fest und sehen Sie, was Sie heute ausgeben können, berechnet aus dem übrigen Geld und den verbleibenden Tagen",
  "hero": {
   "hook": "Legen Sie ein Budget fest und sehen Sie, was Sie heute ausgeben können, berechnet aus dem übrigen Geld und den verbleibenden Tagen",
-  "shotAlt": "Der Hauptbildschirm von DailyLeft auf Koreanisch. Ein Betrag steht in großen Zahlen da, darunter ein Balken, eine Statuszeile und ein Kalender."
+  "shotAlt": "Der Hauptbildschirm von DailyLeft. Ein Betrag steht in großen Zahlen da, darunter ein Balken, eine Statuszeile und ein Kalender."
  },
  "sections": [
   {
@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "Der obere Teil des Hauptbildschirms auf Koreanisch. Ein Betrag steht in großen Zahlen da, darunter ein Balken und eine Statuszeile.",
+    "focus": "-110px",
+    "alt": "Der obere Teil des Hauptbildschirms. Ein Betrag steht in großen Zahlen da, darunter ein Balken und eine Statuszeile.",
     "caption": "App-Ansicht, vergrößert",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-300px",
-    "alt": "Der Zeitraumkalender auf Koreanisch. Datumsfelder stehen unter den Wochentagen.",
+    "focus": "-310px",
+    "alt": "Der Zeitraumkalender. Datumsfelder stehen unter den Wochentagen.",
     "caption": "App-Ansicht, vergrößert",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -62,9 +62,9 @@
     "type": "crop",
     "shot": 3,
     "focus": "-70px",
-    "alt": "DailyLeft aus der Nähe auf Koreanisch, mit einem Budget oder verbleibenden Betrag.",
+    "alt": "DailyLeft aus der Nähe, mit einem Budget oder verbleibenden Betrag.",
     "caption": "App-Ansicht, vergrößert",
-    "focusX": "70px"
+    "focusW": "440px"
    }
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Unterstützte Geräte und Sprachen",
    "a": [
-    "Nur für iPhone, ab iOS 26. Die App zeigt Englisch und Koreanisch, in anderen Gerätesprachen erscheint sie auf Englisch. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
+    "Nur für iPhone, ab iOS 26. Die App zeigt Englisch und Koreanisch: die Sprache, die in der Sprachliste Ihres Geräts zuerst steht, oder Englisch, wenn keine von beiden vorkommt. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
    ]
   },
   {

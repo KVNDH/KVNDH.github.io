@@ -4,7 +4,7 @@
  "summary": "Set a budget and see what you can spend today, worked out from the money and days you have left",
  "hero": {
   "hook": "Set a budget and see what you can spend today, worked out from the money and days you have left",
-  "shotAlt": "The DailyLeft main screen in Korean. An amount shows in large numbers, with a bar, a one-line status and a calendar below."
+  "shotAlt": "The DailyLeft main screen. An amount shows in large numbers, with a bar, a one-line status and a calendar below."
  },
  "sections": [
   {
@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "The top of the main screen in Korean. An amount shows in large numbers, with a bar and a one-line status below it.",
+    "focus": "-110px",
+    "alt": "The top of the main screen. An amount shows in large numbers, with a bar and a one-line status below it.",
     "caption": "App screen, zoomed in",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-300px",
-    "alt": "The period calendar in Korean. Date cells sit under the days of the week.",
+    "focus": "-310px",
+    "alt": "The period calendar. Date cells sit under the days of the week.",
     "caption": "App screen, zoomed in",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -62,9 +62,9 @@
     "type": "crop",
     "shot": 3,
     "focus": "-70px",
-    "alt": "A close-up of DailyLeft in Korean, showing a budget or remaining amount.",
+    "alt": "A close-up of DailyLeft, showing a budget or remaining amount.",
     "caption": "App screen, zoomed in",
-    "focusX": "70px"
+    "focusW": "440px"
    }
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Supported devices and languages",
    "a": [
-    "iPhone only, with iOS 26 or later. The app's screens are in English and Korean, and other device languages show English. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
+    "iPhone only, with iOS 26 or later. The app's screens are in English and Korean. It uses whichever of the two comes first in your device's language list, or English if neither is there. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
    ]
   },
   {

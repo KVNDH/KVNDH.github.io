@@ -397,6 +397,8 @@ def render_visual(site: Site, lang: str, slug: str, visual: dict) -> str:
             offsets.append(f'--cy:{esc(visual["focus"])}')
         if visual.get("focusX"):
             offsets.append(f'--cx:{esc(visual["focusX"])}')
+        if visual.get("focusW"):
+            offsets.append(f'--cw:{esc(visual["focusW"])}')
         focus = f' style="{";".join(offsets)}"' if offsets else ""
         return (
             f'<figure class="feat-vis crop"{focus}><img src="{shot_path(site, slug, lang, visual.get("shot", 1))}" '

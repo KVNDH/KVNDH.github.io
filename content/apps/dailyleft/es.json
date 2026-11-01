@@ -4,7 +4,7 @@
  "summary": "Define un presupuesto y mira lo que puedes gastar hoy, calculado con el dinero y los días que te quedan",
  "hero": {
   "hook": "Define un presupuesto y mira lo que puedes gastar hoy, calculado con el dinero y los días que te quedan",
-  "shotAlt": "La pantalla principal de DailyLeft, en coreano. Un importe aparece en números grandes, y debajo hay una barra, una línea de estado y un calendario."
+  "shotAlt": "La pantalla principal de DailyLeft. Un importe aparece en números grandes, y debajo hay una barra, una línea de estado y un calendario."
  },
  "sections": [
   {
@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "La parte superior de la pantalla principal, en coreano. Un importe aparece en números grandes, y debajo hay una barra y una línea de estado.",
+    "focus": "-110px",
+    "alt": "La parte superior de la pantalla principal. Un importe aparece en números grandes, y debajo hay una barra y una línea de estado.",
     "caption": "Pantalla de la app, ampliada",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-300px",
-    "alt": "El calendario del periodo, en coreano. Las celdas de las fechas están debajo de los días de la semana.",
+    "focus": "-310px",
+    "alt": "El calendario del periodo. Las celdas de las fechas están debajo de los días de la semana.",
     "caption": "Pantalla de la app, ampliada",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -62,9 +62,9 @@
     "type": "crop",
     "shot": 3,
     "focus": "-70px",
-    "alt": "Primer plano de DailyLeft, en coreano, con un importe de presupuesto o de dinero restante.",
+    "alt": "Primer plano de DailyLeft, con un importe de presupuesto o de dinero restante.",
     "caption": "Pantalla de la app, ampliada",
-    "focusX": "70px"
+    "focusW": "440px"
    }
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Dispositivos e idiomas compatibles",
    "a": [
-    "Solo para iPhone, con iOS 26 o posterior. La app está en inglés y coreano, y en otros idiomas del dispositivo aparece en inglés. Admite vertical y horizontal. Los importes son números enteros en la moneda de tu región, fijada al configurar la app por primera vez. No hay decimales ni tipos de cambio, así que no puedes introducir 12,50. El registro desde mensajes solo acepta pagos en wones."
+    "Solo para iPhone, con iOS 26 o posterior. La app está en inglés y coreano: usa el que aparezca primero en la lista de idiomas del dispositivo, o inglés si no hay ninguno de los dos. Admite vertical y horizontal. Los importes son números enteros en la moneda de tu región, fijada al configurar la app por primera vez. No hay decimales ni tipos de cambio, así que no puedes introducir 12,50. El registro desde mensajes solo acepta pagos en wones."
    ]
   },
   {

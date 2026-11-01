@@ -4,7 +4,7 @@
  "summary": "Defina um orçamento e veja quanto pode gastar hoje, calculado com o dinheiro e os dias que restam",
  "hero": {
   "hook": "Defina um orçamento e veja quanto pode gastar hoje, calculado com o dinheiro e os dias que restam",
-  "shotAlt": "A tela principal do DailyLeft em coreano. Um valor aparece em números grandes, com uma barra, uma linha de status e um calendário embaixo."
+  "shotAlt": "A tela principal do DailyLeft. Um valor aparece em números grandes, com uma barra, uma linha de status e um calendário embaixo."
  },
  "sections": [
   {
@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "A parte de cima da tela principal em coreano. Um valor aparece em números grandes, com uma barra e uma linha de status embaixo.",
+    "focus": "-110px",
+    "alt": "A parte de cima da tela principal. Um valor aparece em números grandes, com uma barra e uma linha de status embaixo.",
     "caption": "Tela do app, ampliada",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-300px",
-    "alt": "O calendário do período em coreano. As células das datas ficam abaixo dos dias da semana.",
+    "focus": "-310px",
+    "alt": "O calendário do período. As células das datas ficam abaixo dos dias da semana.",
     "caption": "Tela do app, ampliada",
-    "focusX": "82px"
+    "focusW": "440px"
    }
   },
   {
@@ -62,9 +62,9 @@
     "type": "crop",
     "shot": 3,
     "focus": "-70px",
-    "alt": "Um detalhe do DailyLeft em coreano, com um valor de orçamento ou de dinheiro restante.",
+    "alt": "Um detalhe do DailyLeft, com um valor de orçamento ou de dinheiro restante.",
     "caption": "Tela do app, ampliada",
-    "focusX": "70px"
+    "focusW": "440px"
    }
   },
   {
@@ -206,7 +206,7 @@
   {
    "q": "Aparelhos e idiomas compatíveis",
    "a": [
-    "Só para iPhone, com iOS 26 ou posterior. O app está em inglês e coreano, e em outros idiomas do aparelho aparece em inglês. Funciona em retrato e paisagem. Os valores são números inteiros na moeda da sua região, definida na primeira configuração do app. Não há casas decimais nem câmbio, então não dá para digitar 12,50. O registro por mensagem só aceita pagamentos em won."
+    "Só para iPhone, com iOS 26 ou posterior. O app está em inglês e coreano: usa o que vier primeiro na lista de idiomas do aparelho, ou inglês se nenhum dos dois estiver nela. Funciona em retrato e paisagem. Os valores são números inteiros na moeda da sua região, definida na primeira configuração do app. Não há casas decimais nem câmbio, então não dá para digitar 12,50. O registro por mensagem só aceita pagamentos em won."
    ]
   },
   {
