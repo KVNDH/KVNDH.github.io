@@ -43,8 +43,8 @@ def build(site: Site, out: Path) -> list[str]:
             emit(page_path(lang, slug), render.render_app(site, lang, slug))
             emit(page_path(lang, slug, "support"), render.render_support(site, lang, slug))
             emit(page_path(lang, slug, "privacy"), render.render_privacy(site, lang, slug))
-    for src in sorted((site.root / "static").iterdir()):
-        shutil.copyfile(src, out / src.name)
+    # 2026-11-01: 하위 폴더도 그대로 옮긴다(static/ko/specpair 는 옛 주소 연결 쪽이라 사이트맵에 넣지 않는다)
+    shutil.copytree(site.root / "static", out, dirs_exist_ok=True)
     if (site.root / "assets").exists():
         shutil.copytree(site.root / "assets", out / "assets")
     (out / "sitemap.xml").write_text(render.render_sitemap(site, written), encoding="utf-8")

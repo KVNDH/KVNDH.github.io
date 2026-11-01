@@ -3,12 +3,12 @@
  "purchase": "one-time",
  "ads": true,
  "account": false,
- "unreleased": "2026-11-01 출시 전. ASC 앱 기록이 아직 없어 site.json 에 appStoreId 가 없다. 저장소 이름은 SpecPair, 슬러그는 spectable. 옛 specpair 페이지(ko, 쿠팡 파트너스 활동 매체 주소)는 그대로 둔다",
+ "unreleased": "2026-11-01 출시 전. ASC 앱 기록이 아직 없어 site.json 에 appStoreId 가 없다. 저장소 이름은 SpecPair, 슬러그는 spectable. 옛 specpair 앱 항목은 2026-11-01 뺐고, 쿠팡 파트너스 활동 매체에 옛 주소 등록이 남아 있어 static/ko/specpair 가 옛 주소 셋을 같은 자리로 보낸다",
  "platform": [
   "iPhone 전용, iOS 26 이상, 세로와 가로 (SpecPair project.yml TARGETED_DEVICE_FAMILY, UISupportedInterfaceOrientations)"
  ],
  "products": [
-  "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecPair/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
+  "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecTable/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
  ],
  "ads_detail": [
   "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:104, Ads/AdBanner.swift). 시트와 공유 이미지에는 없다",
@@ -19,7 +19,8 @@
  ],
  "externalLinks": [
   "가격 링크: PriceLink.choose. KR 과 그 밖 다나와 검색, US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색, TW HK 는 링크 없음. Affiliate.settings 는 모두 꺼짐이라 제휴 꼬리표 없음. 켜기 전에 처리방침을 고친다 (Packages/SpecCore/Sources/SpecCore/PriceLink.swift, ContentView.swift:1025)",
-  "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink, :981)"
+  "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink, :981)",
+  "사이트 ko 소개 쪽 쿠팡 파트너스 링크 셋과 대가성 문구: 옛 specpair ko 쪽 값을 2026-11-01 그대로 옮김 (ko.json partners, SpecPair docs/SITE_DRAFT.md 5절). 활동 매체 https://kvndh.com/ko/spectable/. 앱 안 링크와는 별개다"
  ],
  "storage": [
   "UserDefaults: selection, combos, onlyDifferences, onboarded (App/AppModel.swift:72-77), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"

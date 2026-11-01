@@ -14,7 +14,7 @@ class HubTest(unittest.TestCase):
         self.site = Site(make_site())
 
     def test_partner_links_put_notice_first_and_mark_sponsored(self):
-        # 10-25 SpecPair 쿠팡 파트너스: 대가성 문구는 쪽의 첫 부분(본문 첫 줄), 링크는 rel=sponsored, 문구 없는 앱에는 아무것도 없다
+        # 10-25 쿠팡 파트너스: 대가성 문구는 쪽의 첫 부분(본문 첫 줄), 링크는 rel=sponsored, 문구 없는 앱에는 아무것도 없다
         site = Site(self.site.root)
         site.copy[("demo", "ko")]["partners"] = {"notice": "N", "title": "T", "linkLabel": "L",
                                                  "links": [{"name": "X", "url": "https://link.example/a"}]}

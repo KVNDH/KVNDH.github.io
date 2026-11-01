@@ -493,7 +493,7 @@ def render_pro(site: Site, lang: str, pro: dict | None) -> str:
 
 
 def partner_blocks(copy: dict) -> tuple[str, str]:
-    """제휴 링크(2026-10-25 SpecPair 쿠팡 파트너스). 대가성 문구는 쪽의 첫 부분에(쿠팡 가이드), 링크는 도움 칸 앞에.
+    """제휴 링크(2026-10-25 쿠팡 파트너스, 지금은 spectable ko). 대가성 문구는 쪽의 첫 부분에(쿠팡 가이드), 링크는 도움 칸 앞에.
     rel=sponsored 로 광고 링크임을 밝힌다. 라벨에 '최저가' 같은 말을 쓰지 않는다."""
     pt = copy.get("partners")
     if not pt:

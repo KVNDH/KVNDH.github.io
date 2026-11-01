@@ -36,6 +36,19 @@ class BuildTest(unittest.TestCase):
         self.assertEqual(first, build.snapshot(out))
         self.assertFalse((out / "stale.html").exists())
 
+    def test_static_subfolders_survive_the_build(self):
+        # 2026-11-01: docs/ 는 빌드마다 지워진다. 옛 주소 연결 쪽은 static/ 아래 경로 그대로 다시 놓인다
+        root = make_site()
+        moved = root / "static" / "ko" / "old" / "index.html"
+        moved.parent.mkdir(parents=True)
+        moved.write_text("moved")
+        out = root / "docs"
+        written = build.build(Site(root), out)
+        self.assertEqual((out / "ko" / "old" / "index.html").read_text(), "moved")
+        self.assertTrue((out / "ko" / "index.html").exists())
+        self.assertNotIn("/ko/old/", written)
+        self.assertNotIn("/ko/old/", (out / "sitemap.xml").read_text())
+
     def test_apps_without_pages_are_skipped(self):
         root = make_site(with_pages=False)
         out = root / "docs"
@@ -44,16 +57,17 @@ class BuildTest(unittest.TestCase):
         self.assertFalse((out / "ko" / "demo").exists())
 
 
-@unittest.skipIf(
-    "appStoreId" in Site(REPO).app("specpair"),
-    "SpecPair 출시됨: 출시 전 시험이라 건너뛴다. 이 클래스를 지우거나 출시 뒤 모양으로 뒤집는다",
-)
-class SpecPairTest(unittest.TestCase):
-    """2026-10-25: ASC 레코드가 없는 출시 전 앱 SpecPair 는 ko 소개, 지원, 처리방침만 연다(쿠팡 파트너스 활동 매체 주소).
-    허브에는 이름 없는 흐린 아이콘으로만 남고, 어느 쪽에도 App Store 링크나 스마트 배너가 없다.
+class SpecPairRetiredTest(unittest.TestCase):
+    """2026-11-01: 옛 가칭 specpair 를 spectable 로 합쳤다. 쿠팡 파트너스 활동 매체에 옛 주소 등록이 남아 있어
+    옛 주소 셋은 끊지 않고 새 주소로 보낸다(static/ko/specpair). 제휴 링크와 대가성 문구는 spectable ko 쪽으로 옮겼다."""
 
-    출시 때(site.json 에 appStoreId 를 넣고 unreleased 를 뺄 때) 이 클래스를 지우거나 뒤집는다.
-    appStoreId 가 들어가면 위 skipIf 로 건너뛴다(content/apps/specpair/facts.json unreleased 참고)."""
+    MOVED = {
+        "ko/specpair/": "/ko/spectable/",
+        "ko/specpair/support/": "/ko/spectable/support/",
+        "ko/specpair/privacy/": "/ko/spectable/privacy/",
+    }
+    PARTNER_LINKS = ("https://link.coupang.com/a/h8G9sJl5Qy", "https://link.coupang.com/a/h8G9J2MtNY",
+                     "https://link.coupang.com/a/h8G934WY1c")
 
     @classmethod
     def setUpClass(cls):
@@ -64,28 +78,56 @@ class SpecPairTest(unittest.TestCase):
     def tearDownClass(cls):
         shutil.rmtree(cls.out.parent, ignore_errors=True)
 
-    def test_ko_pages_exist_without_store_link(self):
-        for path in ("/ko/specpair/", "/ko/specpair/support/", "/ko/specpair/privacy/"):
-            self.assertIn(path, self.written)
-            html = (self.out / path.lstrip("/") / "index.html").read_text(encoding="utf-8")
-            self.assertIn("스펙페어", html)
-            self.assertNotIn("apps.apple.com", html)
-            self.assertNotIn("apple-itunes-app", html)
-        sitemap = (self.out / "sitemap.xml").read_text()
-        self.assertIn("<loc>https://kvndh.com/ko/specpair/</loc>", sitemap)
+    def test_old_addresses_lead_to_the_same_page_of_spectable(self):
+        for old, new in self.MOVED.items():
+            html = (self.out / old / "index.html").read_text(encoding="utf-8")
+            self.assertIn(f'<meta http-equiv="refresh" content="0; url={new}">', html)
+            self.assertIn(f'<link rel="canonical" href="https://kvndh.com{new}">', html)
+            self.assertIn(f'<a href="{new}">', html)
+            self.assertIn('<meta name="robots" content="noindex">', html)
+            self.assertIn("스펙페어는 스펙테이블이 되었습니다.", html)
+            self.assertTrue((self.out / new.lstrip("/") / "index.html").exists(), new)
+            self.assertIn(new, self.written)
 
-    def test_ko_only(self):
+    def test_old_addresses_leave_the_sitemap_and_page_list(self):
+        sitemap = (self.out / "sitemap.xml").read_text()
+        self.assertNotIn("specpair", sitemap)
+        self.assertIn("<loc>https://kvndh.com/ko/spectable/</loc>", sitemap)
+        self.assertFalse([path for path in self.written if "specpair" in path])
+
+    def test_old_app_is_gone_from_content_and_assets(self):
+        site = Site(REPO)
+        self.assertNotIn("specpair", [app["slug"] for app in site.apps])
+        self.assertNotIn("specpair", site.looks)
+        self.assertFalse((self.out / "assets" / "specpair").exists())
+
+    def test_old_address_was_only_ko(self):
         for code in Site(REPO).lang_codes():
             if code != "ko":
                 self.assertFalse((self.out / code / "specpair").exists(), code)
                 self.assertTrue((self.out / code / "index.html").exists(), code)
 
-    def test_hub_keeps_it_nameless(self):
+    def test_hub_has_spectable_and_no_specpair(self):
         for code in Site(REPO).lang_codes():
             hub = (self.out / code / "index.html").read_text(encoding="utf-8")
-            self.assertIn('src="/assets/specpair/icon-180.webp" alt="" width="72" height="72" class="soon"', hub)
-            self.assertNotIn("/specpair/", hub.replace("/assets/specpair/", ""))
+            self.assertNotIn("specpair", hub.lower())
             self.assertNotIn("스펙페어", hub)
+            self.assertIn('src="/assets/spectable/icon-180.webp"', hub)
+
+    def test_partner_links_moved_to_spectable_ko_with_notice_first(self):
+        html = (self.out / "ko" / "spectable" / "index.html").read_text(encoding="utf-8")
+        main = html[html.index('id="main"'):]
+        notice = '<p class="pnotice">이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>'
+        self.assertLess(main.index(notice), main.index('class="app-hero"'))
+        for url in self.PARTNER_LINKS:
+            self.assertIn(f'href="{url}" rel="sponsored noopener"', html)
+
+    def test_partner_links_stay_ko_only(self):
+        for code in Site(REPO).lang_codes():
+            if code != "ko":
+                html = (self.out / code / "spectable" / "index.html").read_text(encoding="utf-8")
+                self.assertNotIn("pnotice", html.split("</style>", 1)[1], code)
+                self.assertNotIn("link.coupang.com", html, code)
 
 
 if __name__ == "__main__":

@@ -177,7 +177,7 @@ def check_structure(site: Site, release: bool) -> list[str]:
             for app in site.apps:
                 if icon_only(site, app):
                     continue
-                # site.json 의 languages 로 페이지 언어를 좁힌 앱(2026-10-25 SpecPair ko 하나)은 그 언어만 요구한다
+                # site.json 의 languages 로 페이지 언어를 좁힌 앱은 그 언어만 요구한다(2026-11-01 지금 쓰는 앱은 없다)
                 if code not in app.get("languages", [code]):
                     continue
                 if not site.has_pages(app["slug"], code):

@@ -351,12 +351,6 @@
    ]
   }
  },
- "specpair": {
-  "mode": "line",
-  "ink": "dark",
-  "color": "#FFFFFF",
-  "alts": {}
- },
  "spectable": {
   "mode": "line",
   "ink": "dark",
