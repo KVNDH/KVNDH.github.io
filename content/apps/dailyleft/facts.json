@@ -1,0 +1,73 @@
+{
+ "describesVersion": "1.0.0",
+ "purchase": "none",
+ "ads": true,
+ "account": false,
+ "unreleased": "2026-11-01 출시 전, 제출 전. ASC 앱 기록 대기(launch-2026-10-30/STATUS.md:29)라 appStoreId 가 없다. site.json 줄과 언어 여섯, 그림 세 장은 이 파일 밖 일이다. 저장소 이름은 DailyLeft, 슬러그 dailyleft(DailyLeft/App/PrivacyLink.swift:6). 표시 이름 ko 하루 얼마, 다른 언어 DailyLeft. 옛 앱 이름은 사이트에 쓰지 않고 처리방침에는 이전 앱으로 적는다",
+ "platform": [
+  "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 ko 하나 (DailyLeft project.yml:8, :55, :63, :133)",
+  "금액은 원 고정 (Packages/DailyCore/Sources/DailyCore/Won.swift:17). 원화가 아닌 승인 문자는 기록하지 않는다 (MealRecorder.swift:42, :92)"
+ ],
+ "products": [
+  "앱 내 구입 없음, 광고 제거 구매 없음 (DESIGN.md:345 Decide 10-28-11). pro 블록 없음. 가격은 문구에 쓰지 않는다"
+ ],
+ "ads_detail": [
+  "Google Mobile Ads 13.10.0, UMP 3.1.0, 앱 타깃만 (project.yml:17, :20, :44~:47). 위젯 타깃에는 없다 (project.yml 위젯 dependencies)",
+  "첫 화면 맨 아래 배너 하나 (DailyLeft/Views/ContentView.swift:102, DailyLeft/Ads/AdBanner.swift:3). 시트, 첫 실행 화면, 위젯, 단축어 결과에는 없다. 사이트 소개에는 없는 자리를 쓰지 않는다",
+  "순서: 첫 실행을 끝낸 첫 화면이나 설정 끝난 사용자의 앱 켜기 (ContentView.swift:125~:126). 활성 대기, UMP 갱신, 필요하면 동의 양식, canRequestAds 면 ATT(아직 안 정했을 때), SDK 시작 (DailyLeft/Ads/AdsModel.swift:44~:58, :74~:86). canRequestAds 가 거짓이면 광고를 요청하지 않는다 (:75~:78)",
+  "개인정보 선택 줄은 설정 시트에, UMP 가 요구할 때만 (DailyLeft/Views/Sheets.swift:337~:344). 개인정보처리방침 줄은 늘 보인다 (Sheets.swift:347)",
+  "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (DailyLeft/Ads/GoogleAdsSDK.swift:96~:100)",
+  "SDK 신고 수집: DailyLeft/Resources/PrivacyInfo.xcprivacy:15~:23 주석, docs/PRIVACY_FACTS_for_HQ.md:55~:57. GMA: 기기 ID, 광고 데이터, 제품 상호작용, 대략적 위치, 성능, 기타 진단, 충돌. UMP: 대략적 위치, 성능, 제품 상호작용. 처리방침 9절 목록은 이 신고 항목만 적는다. Tapey 문장의 'IP 주소로 추정한', '광고 동의 상태' 는 신고에 없어 뺐다"
+ ],
+ "reportMail": [
+  "제보 단추는 문자로 추가에서 읽지 못했을 때만 (DailyLeft/App/ReportMail.swift:15~:18, DailyLeft/Views/Sheets.swift:142~:145). 단축어 길에는 없다",
+  "보내는 사람은 이용자. 메일 작성 화면에 받는 사람, 제목, 본문을 채울 뿐 (DailyLeft/Views/MailComposeView.swift:15~:19). 없으면 mailto (Sheets.swift:203~:209), 그것도 안 되면 주소와 복사 (Sheets.swift:153~:159)",
+  "받는 주소 kvndh36@naver.com (ReportMail.swift:8), 본문: 안내 한 줄, 원문, 읽지 못한 이유, 앱과 iOS 버전 (ReportMail.swift:11, :28~:37). 제목은 코드 값 '하루 얼마 문자 제보' (ReportMail.swift:9). 사실 문서 7-1 의 옛 제목과 DESIGN.md:332 의 '남은 돈 문자 제보' 는 코드와 다르다",
+  "처리방침 문장: docs/PRIVACY_FACTS_for_HQ.md:94~:97(7-2). 권리 절은 Tapey 의 '개발자가 보유한 개인정보가 없으므로' 문장을 쓰지 않는다. 같은 까닭으로 요약, 1, 3, 6절의 '수집하지 않습니다', '보유하는 개인정보가 없습니다' 도 쓰지 않는다"
+ ],
+ "messages": [
+  "읽는 글은 자동화가 넘긴 글이나 붙여넣은 글뿐 (DailyLeft/Intents/RecordMealMessageIntent.swift:30~:35, :47~:48, DailyLeft/Views/Sheets.swift:121). 클립보드는 이용자가 붙여넣을 때만 받는다: PasteButton 과 TextEditor (Sheets.swift:109, :121). 앱이 UIPasteboard 를 쓰는 곳은 주소 복사 쓰기 하나 (Sheets.swift:159)",
+  "기록할 때만 원문을 raw 칸에 저장 (Packages/DailyCore/Sources/DailyCore/MealRecorder.swift:103, :106, Model.swift:23). 기록하지 않은 결과는 파일을 쓰지 않는다 (LedgerStore.swift:76)",
+  "승인 거절은 카드 칸과 상관없이 넘어감: 거절, 실패, 불가, 잔액부족, 한도초과 (MessageParser.swift:120~:123, :132). 카드 칸이 비면 입금, 출금, 이체, 대출, 청구, 명세서 도 넘어가고 나머지는 날짜, 시각, 금액을 읽으면 기록 (MessageParser.swift:127~:130, :133, MealRecorder.swift:84). 카드 칸이 있으면 다른 카드는 넘어감",
+  "하나카드 꼴 기준, 나머지는 일반 규칙 (DESIGN.md:72). 카드 칸이 있는데 끝 4자리가 그대로 없으면 noCard (MessageParser.swift:145), 날짜 시각 없으면 noDateTime (MessageParser.swift:148)",
+  "단축어 동작 이름은 '결제 문자 기록' (RecordMealMessageIntent.swift:21), 앱을 열지 않는다 (RecordMealMessageIntent.swift:25~:26). 바로 추가 링크는 지금 nil 이라 단추가 숨어 있어 사이트에 쓰지 않는다 (DailyLeft/Views/ContentView.swift:7). 만드는 법은 설정 '직접 만들기' (Sheets.swift:283~:325), 제목이 iOS 27 기준 (Sheets.swift:319)"
+ ],
+ "budget": [
+  "금액 하나로 시작: canStart 는 금액, 카드 칸, 지금 남은 돈만 본다 (DailyLeft/Views/OnboardingView.swift:47, :57)",
+  "새 사용자 기본: 매일, 남아도 됨, 넘어도 결제됨, 카드사 앱 알림톡 (Packages/DailyCore/Sources/DailyCore/Model.swift newUser)",
+  "오늘 계산 끝: 월 한도형, 세는 날, 오늘 거래(조정 뺌) 합이 0보다 클 때 (DailyBudget.swift:110~:111, :158~:162)",
+  "달력: 지난 날은 쓴 돈, 오늘과 앞날만 누름 (PeriodCalendar.swift:59, DailyLeft/Views/PeriodCalendarView.swift:99). 기본 접힘이라 오늘이 든 주 한 줄, '달력 펼치기'로 전체 (PeriodCalendarView.swift:15, :36, :75~:78)",
+  "공휴일 표 2026~2028 (Workdays.swift:127), 출처 DESIGN.md:169~:184",
+  "기간 시작일 1~28 (Model.swift startDayRange, OnboardingView.swift:205). 남은 돈은 넘기지 않는다 (specs/2026-11-01-general-budget-design.md:26)",
+  "잔액 맞추기: 차이만큼 잔액 조정 한 줄 (Model.swift:237~:241, DailyLeft/Views/Sheets.swift:396~:448). 거래 삭제 (ContentView.swift:237)"
+ ],
+ "widget": [
+  "systemSmall, systemMedium, accessoryRectangular, accessoryCircular, accessoryInline (DailyLeftWidget/DailyLeftWidget.swift:314). 저장 파일은 읽기만 (DailyLeftWidget.swift:76~:77). 설정 전 표시 (:26)",
+  "표시: 작게는 머리글, 큰 숫자, 막대, 짧은 줄(DailyLeftWidget.swift:147~:164). 중간은 사용 줄, 하루 줄, 최근 거래 2건(:166~:226, :197). 네모는 짧은 줄과 큰 숫자(:228~:253). 원형은 남은 비율 게이지(:255~:264). 한 줄은 '남은 X'(:266~:268). 설정 전은 머리글 '설정 전', 금액 자리 '?'(:103, :133)"
+ ],
+ "storage": [
+  "App Group group.com.kimdh.dailyleft 의 ledger.json 하나: 설정과 거래(날짜, 금액, 가맹점, raw, receivedAt, source) (LedgerStore.swift:19~:20, :30, Model.swift:14~:26, DESIGN.md:40). 앱, 위젯, 인텐트가 같은 파일",
+  "UserDefaults: seen.month, seen.remaining, seen.at, launched, celebrated.day (DailyLeft/App/LedgerModel.swift:43~:49), calendar.expanded (PeriodCalendarView.swift:15)",
+  "iCloud, CloudKit 없음, URLSession 없음, 백업 제외 표시 없음 (2026-11-01 grep, DailyLeft/Resources/DailyLeft.entitlements:5~:8)",
+  "옛 기록 옮기기: 앱 시작 때 새 파일이 없고 옛 파일을 읽을 수 있으면 복사, 옛 파일은 그대로 (DailyLeft/App/DailyLeftApp.swift:18, :31~:34, LedgerStore.swift:35, :46~:51, project.yml:123)",
+  "옛 today-menu.json 을 지우는 일은 옛 판 찌꺼기라 처리방침에 쓰지 않는다 (DailyLeftApp.swift:25~:28)"
+ ],
+ "permissions": [
+  "추적 허용(ATT) 하나 (project.yml:66, Info.plist 에 다른 UsageDescription 없음, 2026-11-01 grep). 메일 작성과 PasteButton 은 권한이 없다"
+ ],
+ "notOffered": [
+  "카테고리, 여러 예산, 수입 기록, 은행 연동, 기기 간 동기화, 저축 목표, 이월 금액 계산, 메뉴 추천, 언어 모델, 카드사 앱 알림과 알림톡 자동 읽기, iPad, Apple Watch, 자동화 바로 추가 링크. 사이트에 쓰지 않는다 (specs/2026-11-01-general-budget-design.md:25~:27)"
+ ],
+ "numbers": [
+  "1",
+  "4",
+  "28"
+ ],
+ "numbersNote": "소개 문구의 숫자: 카드 끝 4자리, 기간 시작일 1~28일",
+ "sources": [
+  "DailyLeft 5ec001f(isDeclined, 카드 칸 거름 변경 포함, b18f1c4 뒤로는 상태 문구 3줄과 그림용 -noads 만 바뀌어 사이트 문구에 영향 없음): 코드, docs/PRIVACY_FACTS_for_HQ.md(맨 위 줄이 옛 본문보다 앞선다), docs/superpowers/specs/2026-11-01-general-budget-design.md, docs/COPY.md, DESIGN.md",
+  "SDK 매니페스트: PrivacyInfo.xcprivacy 주석, docs/PRIVACY_FACTS_for_HQ.md 4절",
+  "처리방침 10, 11절과 12절 첫 문단: Tapey 같은 언어 문장",
+  "그림: DailyLeft/build/shots/ 1-today.png(shot 1, alt, focus -120px 확인), 2-calendar.png(shot 2, 달력 전체가 들어오게 focus -300px), 3-widgets.png 는 2026-11-01 판에 지도와 캘린더 위젯만 있는 홈 화면이라 shot 3 로 쓰지 못한다. 하루 얼마 위젯이나 설정 화면으로 다시 찍은 뒤 shot 3 의 alt, focus 를 다시 본다"
+ ]
+}

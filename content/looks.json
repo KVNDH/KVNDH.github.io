@@ -430,5 +430,11 @@
     "Escolha algumas fotos, o layout se monta sozinho"
    ]
   }
+ },
+ "dailyleft": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#FFFFFF",
+  "alts": {}
  }
 }

@@ -1,0 +1,365 @@
+{
+ "name": "DailyLeft",
+ "subtitle": "Orçamento mensal e mesada",
+ "summary": "Defina um orçamento e veja quanto pode gastar hoje, calculado com o dinheiro e os dias que restam",
+ "hero": {
+  "hook": "Defina um orçamento e veja quanto pode gastar hoje, calculado com o dinheiro e os dias que restam",
+  "shotAlt": "A tela principal do DailyLeft em coreano. Um valor aparece em números grandes, com uma barra, uma linha de status e um calendário embaixo."
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "O que você pode gastar hoje",
+   "body": [
+    "Informe um orçamento mensal, e o dinheiro restante é dividido pelos dias restantes para mostrar quanto você pode gastar por dia. Quando você gasta, o valor diário é recalculado. Uma linha embaixo diz se o seu ritmo está folgado ou apertado. Com um orçamento diário, o que resta para hoje aparece em números grandes."
+   ],
+   "bullets": [
+    "Orçamento mensal e diário",
+    "Valor diário com base nos dias restantes",
+    "Comece com um único valor"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 1,
+    "focus": "-120px",
+    "alt": "A parte de cima da tela principal em coreano. Um valor aparece em números grandes, com uma barra e uma linha de status embaixo.",
+    "caption": "Tela do app, ampliada",
+    "focusX": "82px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Escolha os dias que contam",
+   "body": [
+    "Por padrão, todos os dias contam. Ligue 평일만 세기 (Contar só dias úteis) para deixar de fora fins de semana e feriados coreanos. Para tirar um dia em que você não vai gastar, toque nele no calendário. Com um orçamento mensal, o valor diário é então dividido de novo pelos dias restantes. Os dias passados no calendário mostram quanto você gastou."
+   ],
+   "bullets": [
+    "Contar só dias úteis",
+    "Dias retirados no calendário",
+    "Quanto você gastou em cada dia"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 2,
+    "focus": "-300px",
+    "alt": "O calendário do período em coreano. As células das datas ficam abaixo dos dias da semana.",
+    "caption": "Tela do app, ampliada",
+    "focusX": "82px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Ajuste ao seu orçamento",
+   "body": [
+    "Por padrão, o app ajuda você a não passar do orçamento. Se o dinheiro some quando o período termina, como pontos de benefício ou um auxílio, ligue 남으면 사라짐 (Expira se sobrar), e ele avisa para você usar tudo a tempo. Escolha o dia em que o orçamento começa, do dia 1 ao dia 28. O dinheiro restante também aparece nos widgets da Tela de Início e da Tela Bloqueada."
+   ],
+   "bullets": [
+    "Ajuste Expira se sobrar",
+    "Início do período do dia 1 ao dia 28",
+    "Widgets da Tela de Início e da Tela Bloqueada"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "focus": "-70px",
+    "alt": "Um detalhe do DailyLeft em coreano, com um valor de orçamento ou de dinheiro restante.",
+    "caption": "Tela do app, ampliada",
+    "focusX": "70px"
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Registrar pagamentos",
+   "body": [
+    "Se os pagamentos com cartão chegam para você por mensagem de texto, você pode criar uma automação de Atalhos para registrá-los sem abrir o app. Se chegam por um app de cartão ou pelo KakaoTalk, cole o aviso ou informe o valor você mesmo. Informe os 4 últimos dígitos de um cartão para registrar só as mensagens dele, ou deixe em branco para registrar as mensagens de pagamento de todos os cartões."
+   ],
+   "bullets": [
+    "Automação de Atalhos",
+    "Colar um aviso de pagamento",
+    "Adicionar manualmente"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Quando o saldo não bate",
+   "body": [
+    "Se o registro e o seu saldo real forem diferentes, toque no número grande e informe o valor real. Uma linha de 잔액 조정 (Ajuste de saldo) registra a diferença, e as transações originais ficam como estão."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sem conta",
+     "Retrato e paisagem",
+     "Claro e escuro"
+    ]
+   }
+  }
+ ],
+ "faq": [
+  {
+   "q": "Como começar",
+   "a": [
+    "Escolha um orçamento mensal ou diário, informe um valor e toque em 시작 (Começar). Não há conta nem login.",
+    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo 지금 남은 돈 (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, Expira se sobrar, os avisos de pagamento e os 4 últimos dígitos do cartão ficam em 더 정하기 (Mais opções), e você pode mudá-los depois em Ajustes."
+   ]
+  },
+  {
+   "q": "Dias contados e feriados",
+   "a": [
+    "Por padrão, todos os dias contam. Se o dinheiro não é para os fins de semana, ligue 평일만 세기 (Contar só dias úteis) em Ajustes. Fins de semana e feriados ficam de fora. Para tirar um dia específico, toque nele no calendário da tela principal. Com o calendário recolhido só aparece esta semana, então toque em 달력 펼치기 (Expandir calendário) para chegar às outras semanas. Dias passados não podem ser retirados.",
+    "Os feriados coreanos de 2026 a 2028 já vêm no app, e os anos seguintes são acrescentados em atualizações. O ano de 2028 foi calculado com os dados de calendário do Instituto Coreano de Astronomia e Ciências Espaciais e será conferido de novo quando as datas oficiais forem publicadas. Nos anos fora da lista, só os fins de semana ficam de fora. Se houver um feriado temporário fora da lista, toque nele no calendário para tirá-lo."
+   ]
+  },
+  {
+   "q": "Dinheiro restante no fim do período",
+   "a": [
+    "O dinheiro restante não passa para o período seguinte. Quando um período termina, o orçamento começa de novo.",
+    "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, ligue 남으면 사라짐 (Expira se sobrar) em Ajustes. O app então avisa para você usar tudo dentro do período."
+   ]
+  },
+  {
+   "q": "Orçamento diário e dia de início do período",
+   "a": [
+    "Para fazer o orçamento por dia, mude o tipo de orçamento em Ajustes para 하루 예산 (Orçamento diário). Uma nova parte surge a cada dia contado, e os dias que não contam têm parte de 0 won.",
+    "Se o seu orçamento não começa no dia 1, escolha um dia do 1 ao 28 em 기간 시작일 (Dia de início do período), em Ajustes."
+   ]
+  },
+  {
+   "q": "O valor diário no dia de um pagamento",
+   "a": [
+    "Com um orçamento mensal, se hoje é um dia contado e há um pagamento hoje, a conta de hoje termina e o dinheiro restante é dividido de novo a partir de amanhã. A tela mostra 오늘 계산 끝 (Conta de hoje encerrada). Se você cancelar todos os pagamentos desse dia, hoje volta a contar. Ajustes de saldo não contam como pagamentos."
+   ]
+  },
+  {
+   "q": "Registrar mensagens de texto com uma automação de Atalhos",
+   "a": [
+    "Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois abra 직접 만들기 (Criar você mesmo), em 단축어 자동화 (Automação de Atalhos), nos Ajustes, para ver os passos. A ação do app a acrescentar na automação se chama 결제 문자 기록 (Registrar mensagem de pagamento). Os passos seguem as telas do iOS 27.",
+    "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado pela automação ou o texto que você cola. O campo 다음을 포함 (Contém) da automação decide quais mensagens são passadas. Só com 승인 (aprovado) ali, as mensagens de cancelamento podem não ser registradas. Para pegar essas também, coloque nesse campo os 4 últimos dígitos do seu cartão."
+   ]
+  },
+  {
+   "q": "Avisos de apps de cartão e do KakaoTalk",
+   "a": [
+    "Por limitações do iOS, o app não consegue ler automaticamente os avisos de apps de cartão nem os avisos do KakaoTalk. Copie o aviso e cole em 문자로 추가 (Adicionar por mensagem), ou use 직접 추가 (Adicionar manualmente)."
+   ]
+  },
+  {
+   "q": "Os 4 últimos dígitos do cartão",
+   "a": [
+    "Se você informar, só as mensagens do cartão com esses 4 últimos dígitos são registradas. Se deixar em branco, as mensagens de pagamento de todos os cartões são registradas. Nesse caso, são registradas as mensagens com data, hora e valor legíveis, e não são registradas as mensagens que têm as palavras coreanas para depósito, saque, transferência, empréstimo, cobrança ou fatura. As mensagens que têm as palavras coreanas para recusado, falhou, não permitido, saldo insuficiente ou limite excedido contam como recusa e nunca são registradas, com ou sem os dígitos do cartão."
+   ]
+  },
+  {
+   "q": "Se uma mensagem não for registrada",
+   "a": [
+    "Confira se o campo 문자 본문 (Texto da mensagem) da automação contém a 메시지 (Mensagem) do gatilho. Se você informou os 4 últimos dígitos do cartão, a mensagem precisa mostrar esses 4 dígitos por inteiro para ser lida. Para outras mensagens, esvazie o campo do cartão ou use 직접 추가 (Adicionar manualmente).",
+    "As mensagens são lidas com o formato do Hana Card como base, e as de outras administradoras de cartão são lidas procurando o valor, a data e os 4 últimos dígitos. Mensagens sem data ou hora não podem ser lidas, e pagamentos que não sejam em won não são registrados."
+   ]
+  },
+  {
+   "q": "Reportar uma mensagem",
+   "a": [
+    "Se 문자로 추가 (Adicionar por mensagem) não conseguir ler uma mensagem, 문자 제보 (Reportar mensagem) aparece embaixo do resultado. Toque para abrir um rascunho de e-mail com o texto original. Você pode apagar ou mudar o nome, o estabelecimento ou o número do cartão antes de enviar. Quem envia é você, pelo seu próprio app de e-mail.",
+    "As mensagens reportadas são usadas só para ensinar esse formato ao app e para responder a você."
+   ]
+  },
+  {
+   "q": "Se o saldo não bater",
+   "a": [
+    "Toque no número grande ou em 잔액 맞추기 (Acertar saldo) e informe o valor real. Uma linha de 잔액 조정 (Ajuste de saldo) registra a diferença, e as transações originais ficam como estão. Deslize na lista para apagar linhas de ajuste e transações.",
+    "Para informar um cancelamento ou reembolso manualmente, ligue 취소나 환불 (Cancelamento ou reembolso) em 직접 추가 (Adicionar manualmente)."
+   ]
+  },
+  {
+   "q": "Widgets",
+   "a": [
+    "Os widgets da Tela de Início vêm nos tamanhos pequeno e médio. Eles mostram o dinheiro restante e o que você pode gastar hoje, e o tamanho médio também lista as suas 2 transações mais recentes.",
+    "Há três widgets da Tela Bloqueada. O retangular mostra o dinheiro restante e o que você pode gastar hoje, o circular mostra a proporção restante, e o de uma linha mostra o dinheiro restante. Até você informar um orçamento no app, eles mostram 설정 전 (Não configurado) ou um ponto de interrogação."
+   ]
+  },
+  {
+   "q": "Onde os anúncios aparecem",
+   "a": [
+    "Os anúncios aparecem em um espaço de banner na parte de baixo da tela principal."
+   ]
+  },
+  {
+   "q": "Rastreamento e preferências de anúncios",
+   "a": [
+    "O iOS pergunta se você permite o rastreamento depois que você toca em 시작 (Começar) na tela da primeira abertura. O app funciona igual se você não permitir, e você muda essa escolha em Ajustes > Privacidade e Segurança > Rastreamento.",
+    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, o formulário de consentimento aparece antes do aviso de rastreamento. Nesses lugares, você muda seu consentimento em 개인정보 선택 (Opções de privacidade), em Ajustes."
+   ]
+  },
+  {
+   "q": "Conexão com a internet",
+   "a": [
+    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
+   ]
+  },
+  {
+   "q": "Trocar de aparelho",
+   "a": [
+    "O app não usa a sincronização do iCloud, então os registros não passam sozinhos para um aparelho novo."
+   ]
+  },
+  {
+   "q": "Aparelhos e idiomas compatíveis",
+   "a": [
+    "Somente iPhone, com iOS 26 ou posterior. As telas do app estão disponíveis só em coreano. Os valores são em won coreano, e o registro por mensagem aceita só pagamentos em won. Retrato e paisagem são compatíveis."
+   ]
+  },
+  {
+   "q": "Quando algo dá errado",
+   "a": [
+    "Feche o app por completo, abra de novo e confira na App Store se você está com a última versão. Se o problema continuar, escreva para a gente contando em que tela você estava e o que estava fazendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de Privacidade do DailyLeft",
+  "effectiveDate": "2026-11-01",
+  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade.",
+  "intro": [
+   "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
+  ],
+  "sections": [
+   {
+    "title": "Finalidade do tratamento",
+    "paragraphs": [
+     "O app não tem cadastro nem login. Ele usa o orçamento e os registros de pagamento que você informa para calcular o dinheiro restante e o que você pode gastar hoje. Esses registros ficam em um arquivo salvo no seu aparelho, e o desenvolvedor não recebe esse arquivo.",
+     "O app mostra um anúncio em banner na parte de baixo da tela principal. O serviço de publicidade do Google, o AdMob, escolhe e exibe esse anúncio e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
+     "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. O desenvolvedor o usa para ensinar ao app o formato de mensagem daquela administradora de cartão e para responder a você, e para nenhuma outra finalidade."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Informações tratadas",
+    "paragraphs": [
+     "Os dados que o app salva no seu aparelho estão listados no fim desta seção. O desenvolvedor não os recebe. O app não recebe contatos, localização nem fotos.",
+     "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado por uma automação de Atalhos que você criou ou o texto que você cola. Você decide no app Atalhos quais mensagens são passadas. O texto lido mas não registrado não é salvo.",
+     "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor recebe o seu endereço de e-mail, o texto original da mensagem que você escolheu enviar (que pode incluir parte do nome de quem aprovou o pagamento, o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora), o motivo de não ter sido lida, as versões do app e do iOS e as informações que o seu app de e-mail acrescenta (como o nome do remetente, conforme as configurações da sua conta de e-mail). Não é o app que envia esse e-mail. Você mesmo o envia pelo seu próprio app de e-mail e pode apagá-lo ou alterá-lo antes de enviar.",
+     "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
+    ],
+    "bullets": [
+     "Ajustes do orçamento (tipo e valor do orçamento, dia de início do período, Contar só dias úteis, Expira se sobrar, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
+     "4 últimos dígitos do cartão (se informados): usados para deixar de fora as mensagens de outros cartões",
+     "Transações (data, valor, estabelecimento ou nota, hora em que entraram no app, como foram registradas): usadas para calcular o dinheiro restante e para a lista de transações",
+     "O texto original das mensagens de pagamento registradas: guardado como está no arquivo salvo e usado para que a mesma mensagem não seja registrada duas vezes. Pode incluir parte do nome de quem aprovou o pagamento (por exemplo, H*D), o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora",
+     "O último saldo visto e quando, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela"
+    ]
+   },
+   {
+    "title": "Tratamento e período de retenção",
+    "paragraphs": [
+     "Os registros no seu aparelho ficam até você excluí-los ou excluir o app. Para excluir uma transação, deslize-a na lista. Se não houver no aparelho outro app do desenvolvedor que use o mesmo App Group, excluir o app remove junto os registros e os ajustes.",
+     "Um e-mail de reporte de mensagem é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido.",
+     "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Divulgação a terceiros",
+    "paragraphs": [
+     "O desenvolvedor não fornece a terceiros as informações pessoais de quem usa o app nem os e-mails de reporte de mensagem. Porém, o SDK do Google Mobile Ads e o SDK do Google User Messaging Platform embutidos no app enviam diretamente ao Google as informações da seção 9, do seguinte modo."
+    ],
+    "bullets": [
+     "Destinatário: Google LLC (Estados Unidos), AdMob",
+     "Finalidade: verificar o consentimento de anúncios, exibir anúncios e medir o desempenho deles",
+     "Informações: as informações do aparelho e os registros de interação com anúncios da seção 9",
+     "Quando e como: enviadas pela internet quando o app abre, verifica o consentimento e inicia o SDK, e quando um anúncio é carregado e exibido",
+     "Retenção: conforme a Política de Privacidade do Google"
+    ]
+   },
+   {
+    "title": "Tratamento por prestadores de serviço",
+    "paragraphs": [
+     "O desenvolvedor não terceiriza o tratamento de informações pessoais.",
+     "Um e-mail de reporte de mensagem passa pelo seu serviço de e-mail até a caixa de correio do desenvolvedor no Naver (kvndh36@naver.com)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Exclusão das informações",
+    "paragraphs": [
+     "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app.",
+     "Um e-mail de reporte de mensagem é excluído da caixa de correio sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Direitos dos usuários e de responsáveis legais, e como exercê-los",
+    "paragraphs": [
+     "Se você enviou um e-mail de reporte de mensagem, pode pedir para ver ou excluir esse e-mail no endereço abaixo. Em caso de dúvida, escreva para o mesmo endereço.",
+     "Você mesmo pode conferir e excluir no app os registros do seu aparelho.",
+     "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas (policies.google.com/privacy). Para recusar o uso do identificador de publicidade, siga a seção 9."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de segurança",
+    "paragraphs": [
+     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esse arquivo pode entrar nos backups do iCloud ou do Mac que você ativar.",
+     "O app não envia e-mail por conta própria. Tocar em 문자 제보 (Reportar mensagem) só preenche o destinatário, o assunto e o corpo de um rascunho de e-mail, e quem toca em enviar ou cancelar é você. Se não houver conta de e-mail configurada, ele abre um app de e-mail que você escolher com o mesmo conteúdo.",
+     "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem e esta página da política de privacidade, e só quando você toca neles.",
+     "O que o app passa ao SDK de anúncios é a solicitação de anúncio e o tamanho do banner. Ele não passa orçamentos, transações, mensagens nem números de cartão."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Coleta automática e como recusá-la",
+    "paragraphs": [
+     "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento de anúncios e quando carregam e exibem anúncios. A lista abaixo é o que os manifestos de privacidade dos dois SDKs declaram.",
+     "O app verifica as informações de consentimento de anúncios depois que você toca em 시작 (Começar) na tela da primeira abertura. Se você já começou, ele verifica quando o app abre. Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se os anúncios puderem ser solicitados e você ainda não tiver respondido, o iOS mostra o aviso de transparência de rastreamento (ATT). Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Essa escolha pode ser alterada em Ajustes > Privacidade e Segurança > Rastreamento.",
+     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em 개인정보 선택 (Opções de privacidade), em Ajustes."
+    ],
+    "bullets": [
+     "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",
+     "Localização aproximada",
+     "Registros de interação com os anúncios, como exibições e toques, e registros de uso do app",
+     "Informações de desempenho, falhas e diagnóstico do app"
+    ]
+   },
+   {
+    "title": "Responsável pela privacidade",
+    "paragraphs": [
+     "Em caso de dúvida sobre informações pessoais, escreva para o endereço abaixo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsável",
+      "value": "kvndh"
+     },
+     {
+      "label": "E-mail",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vias de reclamação sobre privacidade",
+    "paragraphs": [
+     "Se você precisar de orientação sobre privacidade ou de ajuda para resolver um conflito, pode procurar os órgãos coreanos indicados abaixo. Se você mora fora da Coreia, também pode procurar a autoridade de proteção de dados do seu país."
+    ],
+    "bullets": [
+     "Comitê de Mediação de Conflitos sobre Informações Pessoais: 1833-6972 na Coreia (www.kopico.go.kr)",
+     "Centro de Denúncias de Violação de Informações Pessoais: 118 na Coreia (privacy.kisa.or.kr)",
+     "Procuradoria-Geral: 1301 na Coreia (www.spo.go.kr)",
+     "Agência Nacional de Polícia: 182 na Coreia (ecrm.police.go.kr)",
+     "União Europeia e EEE: a autoridade de proteção de dados do seu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Outros países: a autoridade de proteção de dados ou de defesa do consumidor do lugar onde mora"
+    ]
+   },
+   {
+    "title": "Mudanças nesta política",
+    "paragraphs": [
+     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

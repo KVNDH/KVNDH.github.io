@@ -260,5 +260,15 @@
     "SetAndBurn/build/shots/editorSwitches-light.png"
    ]
   }
+ },
+ "dailyleft": {
+  "icon": "DailyLeft/DailyLeft/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "shots": {
+   "ko": [
+    "DailyLeft/build/shots/1-today.png",
+    "DailyLeft/build/shots/2-calendar.png",
+    "DailyLeft/build/shots/3-widgets.png"
+   ]
+  }
  }
 }
