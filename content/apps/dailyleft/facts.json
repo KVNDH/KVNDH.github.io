@@ -69,6 +69,7 @@
   "DailyLeft 6b8f2f0(영어 기본과 지역 동작): 코드, docs/PRIVACY_FACTS_for_HQ.md(맨 위 줄이 옛 본문보다 앞선다), docs/COPY-en.md, docs/superpowers/specs/2026-11-01-general-budget-design.md, DESIGN.md. 화면 이름은 en 카탈로그 값, en 외 언어는 '영어 이름(뜻)'",
   "SDK 매니페스트: PrivacyInfo.xcprivacy 주석, docs/PRIVACY_FACTS_for_HQ.md 4절",
   "처리방침 10, 11절과 12절 첫 문단: Tapey 같은 언어 문장",
-  "그림: en 은 DailyLeft/build/shots-en(8082e42, 예시 값 $600), ko 는 DailyLeft/build/shots/ 1-today.png(shot 1, alt, focus -120px 확인), 2-calendar.png(shot 2, 달력 전체가 들어오게 focus -300px), 3-widgets.png 는 2026-11-01 판에 지도와 캘린더 위젯만 있는 홈 화면이라 shot 3 로 쓰지 못한다. 하루 얼마 위젯이나 설정 화면으로 다시 찍은 뒤 shot 3 의 alt, focus 를 다시 본다"
+  "그림: en 은 DailyLeft/build/shots-en(8082e42, 예시 값 $600), ko 는 DailyLeft/build/shots/ 1-today.png(shot 1, alt, focus -120px 확인), 2-calendar.png(shot 2, 달력 전체가 들어오게 focus -300px), 3-widgets.png 는 2026-11-01 판에 지도와 캘린더 위젯만 있는 홈 화면이라 shot 3 로 쓰지 못한다. 하루 얼마 위젯이나 설정 화면으로 다시 찍은 뒤 shot 3 의 alt, focus 를 다시 본다",
+  "광고 신고(지침 2.5.18)와 제3자 보호 문장(지침 5.1.1(i)): App Review Guidelines, Google Ads Controller-Controller Data Protection Terms v8.0(2024-05-30) 4.1(c), 2026-11-02 읽음"
  ]
 }

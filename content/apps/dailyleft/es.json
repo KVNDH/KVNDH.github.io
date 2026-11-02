@@ -185,6 +185,12 @@
    ]
   },
   {
+   "q": "Denunciar un anuncio",
+   "a": [
+    "Si ves un anuncio inapropiado o que no encaja con la clasificación por edad de la app, escribe a kvndh36@naver.com indicando cuándo apareció y qué mostraba. El desarrollador lo revisará y lo bloqueará en AdMob."
+   ]
+  },
+  {
    "q": "Rastreo y preferencias de anuncios",
    "a": [
     "iOS pregunta si permites el rastreo después de que toques Start (Empezar) en la pantalla del primer uso. La app funciona igual si no lo permites, y puedes cambiar esta opción en Ajustes de iOS > Privacidad y seguridad > Rastreo.",
@@ -268,7 +274,8 @@
      "Finalidad: comprobar el consentimiento de anuncios, mostrar anuncios y medir su rendimiento",
      "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
      "Cuándo y cómo: se envía por internet cuando la app se abre, comprueba el consentimiento e inicia el SDK, y cuando se carga y se muestra un anuncio",
-     "Conservación: la indicada en la Política de Privacidad de Google"
+     "Conservación: la indicada en la Política de Privacidad de Google",
+     "Nivel de protección: Google cumple la legislación de protección de datos aplicable según los Google Ads Controller-Controller Data Protection Terms. El desarrollador solo deja que la información llegue a terceros que ofrezcan la misma protección que esta política o una equivalente"
     ]
    },
    {

@@ -185,6 +185,12 @@
    ]
   },
   {
+   "q": "Reporting an ad",
+   "a": [
+    "If you see an ad that's inappropriate or unsuitable for the app's age rating, email kvndh36@naver.com with when it appeared and what it showed. The developer will review it and block it in AdMob."
+   ]
+  },
+  {
    "q": "Tracking permission and ad settings",
    "a": [
     "iOS asks whether to allow tracking after you tap Start on the first-run screen. You can use the app the same way if you don't allow it, and you can change this choice in iOS Settings > Privacy & Security > Tracking.",
@@ -268,7 +274,8 @@
      "Purpose: checking ad consent, showing ads and measuring ad performance",
      "Information: the device information and ad interaction records listed in section 9",
      "When and how: sent over the internet when the app opens, checks consent and starts the SDK, and when an ad is loaded and shown",
-     "Retention: as set out in Google's Privacy Policy"
+     "Retention: as set out in Google's Privacy Policy",
+     "Level of protection: Google complies with applicable data protection law under the Google Ads Controller-Controller Data Protection Terms. The developer lets information go only to third parties that provide the same or equal protection as this policy"
     ]
    },
    {
