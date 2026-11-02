@@ -4,14 +4,14 @@
  "summary": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
  "hero": {
   "hook": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
-  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Die Bildschirme der App sind auf Koreanisch."
+  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Das Bild zeigt die App auf Koreanisch."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Ein Workout, Ihre Form",
    "body": [
-    "Legen Sie Trainingszeit und Runden fest und formen Sie das Workout mit drei Schaltern: Pause, Sätze und Wiederholungen zählen. Aufwärmen und Cool-down lassen sich ebenfalls hinzufügen. Gesamtzeit und Reihenfolge der Phasen stehen oben im Bearbeitungsbildschirm."
+    "Legen Sie Trainingszeit und Runden fest und formen Sie das Workout mit drei Schaltern: Rest (Pause), Sets (Sätze) und Count jumps (Sprünge zählen). Aufwärmen und Cool-down lassen sich ebenfalls hinzufügen. Gesamtzeit und Reihenfolge der Phasen stehen oben im Bearbeitungsbildschirm."
    ],
    "bullets": [
     "Trainingszeit und Runden",
@@ -29,9 +29,9 @@
   },
   {
    "layout": "feat",
-   "title": "Die App zählt Ihre Wiederholungen",
+   "title": "Die App zählt Ihre Sprünge",
    "body": [
-    "Ist das Zählen der Wiederholungen eingeschaltet, zählt die Bewegung Ihrer AirPods oder Ihres iPhone Seilsprünge und Laufschritte. Welches der beiden Geräte zählt, wählt die App. Legen Sie als Endbedingung eine Anzahl fest, endet eine Runde erst, wenn Sie ihre Zahl erreichen."
+    "Ist Count jumps (Sprünge zählen) eingeschaltet, zählt die Bewegung Ihrer AirPods oder Ihres iPhone Seilsprünge und Laufschritte und zeigt beides als jumps (Sprünge). Welches der beiden Geräte zählt, wählt die App. Legen Sie als Endbedingung eine Anzahl fest, endet eine Runde erst, wenn Sie ihre Zahl erreichen."
    ],
    "bullets": [
     "Seilsprünge und Laufschritte",
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-200px",
-    "alt": "Der Bildschirm zum Zählen der Wiederholungen auf Koreanisch. Die verbleibende Anzahl steht in großen Zahlen da, darunter, was gerade zählt, und die nächste Phase.",
+    "alt": "Der Bildschirm von Count jumps (Sprünge zählen) auf Koreanisch. Die verbleibende Anzahl steht in großen Zahlen da, darunter, was gerade zählt, und die nächste Phase.",
     "caption": "App-Ansicht, vergrößert",
     "focusX": "-25px"
    }
@@ -51,7 +51,7 @@
    "layout": "card",
    "title": "Ohne auf den Bildschirm zu schauen",
    "body": [
-    "Jeder Wechsel zwischen Training und Pause kommt mit Ton und Stimme, und Runden und Sätze werden für Sie mitgezählt. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter."
+    "Jeder Wechsel zwischen Training und Pause kommt mit Signalton und Sprachansage, und Runden und Sätze werden für Sie mitgezählt. Die 13 Signaltöne sind in der App enthalten, und die Sprachansagen spricht die iOS-Stimme auf Ihrem Gerät. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter."
    ],
    "bullets": [
     "Phasensignale und Sprachansagen",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Phasen, die Sie von Weitem erkennen",
    "body": [
-    "Im Training invertiert sich der Bildschirm, in der Pause wird er wieder normal. Helles und dunkles Erscheinungsbild sowie Hoch- und Querformat werden unterstützt. Die Zeit in Trainingsphasen summiert sich zu einer laufenden Gesamtzeit."
+    "Im Training invertiert sich der Bildschirm, in der Pause wird er wieder normal. Helles und dunkles Erscheinungsbild sowie Hoch- und Querformat werden unterstützt. Die Zeit in Trainingsphasen summiert sich in Lifetime work time (gesamte Trainingszeit)."
    ],
    "bullets": [],
    "visual": {
@@ -89,34 +89,41 @@
   {
    "q": "Ein Workout erstellen",
    "a": [
-    "Tippen Sie oben links auf dem Hauptbildschirm auf den Workout-Namen, um die Workout-Liste zu öffnen, und dann auf 새 운동 (Neues Workout). Um die Werte des aktuellen Workouts zu ändern, tippen Sie auf dem Hauptbildschirm auf 편집 (Bearbeiten).",
+    "Tippen Sie oben links auf dem Hauptbildschirm auf den Workout-Namen, um die Workout-Liste zu öffnen, und dann auf New workout (Neues Workout). Um die Werte des aktuellen Workouts zu ändern, tippen Sie auf dem Hauptbildschirm auf Edit (Bearbeiten).",
     "Anfangs können Sie 1 Workout behalten, das Beispiel eingerechnet. Für mehr brauchen Sie Pro. Vorhandene Workouts lassen sich weiter nutzen und bearbeiten."
    ]
   },
   {
-   "q": "Wiederholungen zählen",
+   "q": "Sprünge zählen",
    "a": [
-    "Schalten Sie im Workout-Editor 뛴 수 세기 (Wiederholungen zählen) ein und legen Sie als Endbedingung Zeit oder Anzahl fest. Wenn Sie zum ersten Mal ein Workout mit eingeschaltetem Zählen starten, fragt die App einmal nach der Berechtigung für Bewegung & Fitness, um die Bewegung der AirPods zu nutzen. Erlauben Sie das nicht, wird die Bewegung des iPhone verwendet.",
-    "Kommt Bewegung von Ihren AirPods an, zählen diese. Bricht sie ab, wechselt das Zählen zum iPhone. Eine Zeile auf dem Bildschirm zeigt, was gerade zählt. Kopfhörer, die keine Bewegung senden, können nicht zählen."
+    "Schalten Sie im Workout-Editor Count jumps (Sprünge zählen) ein und legen Sie als Endbedingung Zeit oder Anzahl fest. Wenn Sie zum ersten Mal ein Workout mit eingeschaltetem Count jumps starten, fragt die App einmal nach der Berechtigung für Bewegung & Fitness, um die Bewegung der AirPods zu nutzen. Erlauben Sie das nicht, wird die Bewegung des iPhone verwendet.",
+    "Kommt Bewegung von Ihren AirPods an, zählen diese. Bricht sie ab, wechselt das Zählen zum iPhone. Eine Zeile auf dem Bildschirm zeigt, was gerade zählt. Kopfhörer, die keine Bewegung senden, können nicht zählen. Seilsprünge und Laufschritte erscheinen beide als jumps (Sprünge)."
    ]
   },
   {
    "q": "Bei ausgeschaltetem Bildschirm oder eingehendem Anruf",
    "a": [
-    "Während der Timer läuft, gehen Uhr, Signale und Sprachansagen bei ausgeschaltetem Bildschirm weiter. Bei einem Anruf oder Wecker pausiert der Timer, und eine Zeile nennt den Grund. Tippen Sie auf 이어서 (Fortsetzen), um weiterzumachen."
+    "Während der Timer läuft, gehen Uhr, Signale und Sprachansagen bei ausgeschaltetem Bildschirm weiter. Bei einem Anruf oder Wecker pausiert der Timer, und eine Zeile nennt den Grund. Tippen Sie auf Resume (Fortsetzen), um weiterzumachen."
+   ]
+  },
+  {
+   "q": "Signaltöne und Stimme",
+   "a": [
+    "In der App sind 13 Signaltöne enthalten, erstellt mit ElevenLabs. Sie erklingen, wenn Training oder Pause beginnt, in den letzten 3 Sekunden und am Ende. Zum Ausschalten schalten Sie Signal sound (Signalton) in den Einstellungen aus.",
+    "Die Sprachansagen kommen nur in der Sprache des Bildschirms: Englisch bei englischem Bildschirm, Koreanisch bei koreanischem. Es spricht die iOS-Stimme auf Ihrem Gerät, keine Aufnahme, daher ist keine Verbindung nötig, und Stimme und Qualität unterscheiden sich je nach Gerät. Die App nimmt die Stimme mit der höchsten Qualität, die auf dem Gerät geladen ist. Ist keine erweiterte Stimme installiert, erscheint in den Einstellungen neben Voice (Stimme) ein (i), das zeigt, wo Sie eine bekommen. Zum Ausschalten der Sprachansagen schalten Sie Voice (Stimme) in den Einstellungen aus."
    ]
   },
   {
    "q": "Gesamte Trainingszeit",
    "a": [
-    "Nur die Zeit in Trainingsphasen wird addiert. Pausen zählen nicht, und Aufzeichnungen nach Datum gibt es nicht. 누적 지우기 (Gesamtzeit löschen) ganz unten in den Einstellungen setzt sie auf 0 zurück."
+    "Nur die Zeit in Trainingsphasen wird addiert. Pausen zählen nicht, und Aufzeichnungen nach Datum gibt es nicht. Clear lifetime total (Gesamtzeit löschen) ganz unten in den Einstellungen setzt sie auf 0 zurück."
    ]
   },
   {
    "q": "Pro und den Kauf wiederherstellen",
    "a": [
     "Sie kaufen es über Pro in der Leiste oben in den Einstellungen. Sie zahlen einmal, ein Abo ist es nicht. Pro schaltet die Werbung aus und lässt Sie mehr als ein Workout erstellen. Familienfreigabe wird unterstützt.",
-    "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf dem Pro-Bildschirm auf 구입 복원 (Kauf wiederherstellen). Mit demselben Apple-Account wird nichts erneut abgebucht."
+    "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf dem Pro-Bildschirm auf Restore purchase (Kauf wiederherstellen). Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
   {
@@ -126,22 +133,28 @@
    ]
   },
   {
+   "q": "Anzeige melden",
+   "a": [
+    "Wenn Sie eine Anzeige sehen, die unangemessen ist oder nicht zur Altersfreigabe der App passt, schreiben Sie an kvndh36@naver.com, wann sie erschien und was sie zeigte. Der Entwickler prüft sie und sperrt sie in AdMob."
+   ]
+  },
+  {
    "q": "Tracking und Werbeeinstellungen",
    "a": [
     "Nachdem sich der Einstiegshinweis geschlossen hat, fragt iOS, ob Tracking erlaubt ist. Wenn Sie Pro gekauft haben, kommt diese Frage nicht. Die App funktioniert auch dann gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
-    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter 광고 개인정보 선택 (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm."
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter Ad privacy choices (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm."
    ]
   },
   {
    "q": "Internetverbindung",
    "a": [
-    "Timer und Wiederholungszählung laufen offline. Werbung, der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung."
+    "Timer, Count jumps (Sprünge zählen) und Sprachansagen laufen offline. Werbung, der Kauf von Pro und das Wiederherstellen brauchen eine Verbindung."
    ]
   },
   {
    "q": "Unterstützte Geräte und Sprachen",
    "a": [
-    "iPhone mit iOS 26 oder neuer. Die Bildschirme der App und die Sprachansagen sind vorerst auf Koreanisch."
+    "iPhone mit iOS 26 oder neuer. Die App zeigt Englisch und Koreanisch: die Sprache, die in der Sprachliste Ihres Geräts zuerst steht, oder Englisch, wenn keine von beiden vorkommt. Ein Gerät nur mit Japanisch zeigt also Englisch, eines mit Japanisch und danach Koreanisch zeigt Koreanisch. Eine Sprachauswahl in der App gibt es nicht, sie folgt der Reihenfolge in den iOS-Einstellungen. Die Sprachansagen kommen in derselben Sprache wie der Bildschirm."
    ]
   },
   {
@@ -153,8 +166,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Set & Burn",
-  "effectiveDate": "2026-11-01",
-  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Bewegungswerte dienen dem Zählen der Wiederholungen, und der Entwickler erhält sie nicht. Die Zahlung für Pro wickelt Apple ab.",
+  "effectiveDate": "2026-11-02",
+  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Bewegungswerte dienen dem Zählen der Sprünge, und der Entwickler erhält sie nicht. Die Zahlung für Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Set & Burn (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -164,7 +177,7 @@
     "paragraphs": [
      "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
      "Die App zeigt Bannerwerbung auf dem Abschlussbildschirm und in der Workout-Liste. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
-     "Während ein Workout mit eingeschaltetem Zählen läuft, zählt die App Sprünge und Schritte anhand der Bewegungswerte Ihrer AirPods oder Ihres iPhone. Das geschieht auf Ihrem Gerät."
+     "Während ein Workout mit eingeschaltetem Count jumps (Sprünge zählen) läuft, zählt die App Sprünge und Schritte anhand der Bewegungswerte Ihrer AirPods oder Ihres iPhone. Das geschieht auf Ihrem Gerät."
     ],
     "bullets": []
    },
@@ -177,7 +190,7 @@
     "bullets": [
      "Die Workout-Liste (Namen, Zeiten, Runden, Sätze, Schalter, Endbedingung, Anzahlen) und das gewählte Workout: für den Betrieb des Timers und beim erneuten Öffnen der App",
      "Einstellungen zu Ton, Sprachansagen, Vibration und Anzeige: für das Verhalten der App",
-     "Gesamte Trainingszeit: eine einzige Summe der Sekunden in Trainingsphasen, Aufzeichnungen nach Datum gibt es nicht",
+     "Lifetime work time (gesamte Trainingszeit): eine einzige Summe der Sekunden in Trainingsphasen, Aufzeichnungen nach Datum gibt es nicht",
      "Ob der Einstiegshinweis schon gesehen wurde: damit er nur einmal erscheint",
      "Eine Kopie einer Speicherdatei, die nicht gelesen werden konnte: dieselben Arten von Daten wie oben, aufbewahrt, wenn eine Speicherdatei beschädigt ist"
     ]
@@ -185,7 +198,7 @@
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Workouts lassen sich in der App entfernen, und 누적 지우기 (Gesamtzeit löschen) in den Einstellungen setzt die gesamte Trainingszeit auf 0 zurück.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Workouts lassen sich in der App entfernen, und Clear lifetime total (Gesamtzeit löschen) in den Einstellungen setzt die gesamte Trainingszeit auf 0 zurück.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -200,7 +213,8 @@
      "Zweck: Prüfung der Einwilligung in Werbung, Ausspielen von Werbung und Messung ihrer Wirkung",
      "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
      "Zeitpunkt und Weg: über das Internet, wenn die Einwilligung geprüft und das SDK gestartet wird und wenn eine Werbung geladen und angezeigt wird",
-     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben",
+     "Schutzniveau: Google hält nach den Google Ads Controller-Controller Data Protection Terms das geltende Datenschutzrecht ein. Der Entwickler lässt Informationen nur an Dritte gehen, die denselben oder einen gleichwertigen Schutz wie diese Erklärung bieten"
     ]
    },
    {
@@ -229,8 +243,8 @@
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
      "Was die App nutzt, liegt als Dateien im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Dateien können in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
-     "Bewegungswerte werden nur empfangen, während ein Workout mit eingeschaltetem Zählen läuft, einschließlich Aufwärmen und Pause, und der Empfang stoppt, wenn es pausiert oder endet. Die Bewegung der AirPods wird nur empfangen, wenn Sie Bewegung & Fitness erlauben. Die Bewegung des iPhone ist ein Wert, für den iOS nicht um Erlaubnis fragt. Die App fragt nach zwei Berechtigungen: Bewegung & Fitness und Tracking (ATT). Nach Standort, Kamera, Mikrofon, Fotos, Kontakten, Mitteilungen oder Health fragt sie nicht.",
-     "Während ein Workout mit Wiederholungszählung läuft oder pausiert ist, ist der Näherungssensor eingeschaltet, um Berührungen des Bildschirms in der Tasche zu verhindern, und seine Werte werden nicht gespeichert. Um den passenden Zählhinweis zu wählen, liest die App die Art der verwendeten Audioausgabe, und auch das wird nicht gespeichert."
+     "Bewegungswerte werden nur empfangen, während ein Workout mit eingeschaltetem Count jumps läuft, einschließlich Aufwärmen und Pause, und der Empfang stoppt, wenn es pausiert oder endet. Die Bewegung der AirPods wird nur empfangen, wenn Sie Bewegung & Fitness erlauben. Die Bewegung des iPhone ist ein Wert, für den iOS nicht um Erlaubnis fragt. Die App fragt nach zwei Berechtigungen: Bewegung & Fitness und Tracking (ATT). Nach Standort, Kamera, Mikrofon, Fotos, Kontakten, Mitteilungen oder Health fragt sie nicht.",
+     "Während ein Workout mit Count jumps läuft oder pausiert ist, ist der Näherungssensor eingeschaltet, um Berührungen des Bildschirms in der Tasche zu verhindern, und seine Werte werden nicht gespeichert. Um den passenden Zählhinweis zu wählen, liest die App die Art der verwendeten Audioausgabe, und auch das wird nicht gespeichert."
     ],
     "bullets": []
    },
@@ -239,7 +253,7 @@
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können.",
      "Nachdem sich der Einstiegshinweis geschlossen hat, oder nachdem der erste Bildschirm erschienen ist, falls Sie den Hinweis schon gesehen haben, prüft die App, ob Sie Pro haben. Falls nicht, prüft sie die Angaben zur Einwilligung in Werbung. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Diese Abfragen erscheinen nicht, während der Timer läuft oder pausiert ist. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
-     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter 광고 개인정보 선택 (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm.",
+     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Ad privacy choices (Datenschutzoptionen für Werbung) ganz unten in den Einstellungen oder auf dem Pro-Bildschirm.",
      "Wenn Sie Pro kaufen, erscheint Werbung nicht mehr, und ab dem nächsten Öffnen startet die App das Werbe-SDK nicht mehr, sodass weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
     ],
     "bullets": [

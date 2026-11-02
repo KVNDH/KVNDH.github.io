@@ -4,14 +4,14 @@
  "summary": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
  "hero": {
   "hook": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
-  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo. As telas do app estão em coreano."
+  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo. A imagem mostra o app em coreano."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Um treino, do seu jeito",
    "body": [
-    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: descanso, séries e contagem de repetições. Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição."
+    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: Rest (Descanso), Sets (Séries) e Count jumps (Contar pulos). Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição."
    ],
    "bullets": [
     "Tempo de exercício e rodadas",
@@ -29,9 +29,9 @@
   },
   {
    "layout": "feat",
-   "title": "Ele conta suas repetições",
+   "title": "Ele conta seus pulos",
    "body": [
-    "Com a contagem de repetições ligada, o movimento dos seus AirPods ou do iPhone conta pulos de corda e passos de corrida. O app escolhe com qual dos dois contar. Se você definir o critério de término como contagem, a rodada só termina quando você chegar ao número dela."
+    "Com Count jumps (Contar pulos) ligado, o movimento dos seus AirPods ou do iPhone conta pulos de corda e passos de corrida, e mostra os dois como jumps (pulos). O app escolhe com qual dos dois contar. Se você definir o critério de término como contagem, a rodada só termina quando você chegar ao número dela."
    ],
    "bullets": [
     "Pulos de corda e passos de corrida",
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-200px",
-    "alt": "A tela de contagem de repetições em coreano. A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
+    "alt": "A tela de Count jumps (Contar pulos) em coreano. A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
     "caption": "Tela do app, ampliada",
     "focusX": "-25px"
    }
@@ -51,7 +51,7 @@
    "layout": "card",
    "title": "Sem olhar para a tela",
    "body": [
-    "Cada troca entre exercício e descanso vem com um som e uma voz, e as rodadas e séries são contadas para você. O relógio continua com a tela apagada. A música que você está ouvindo continua tocando junto."
+    "Cada troca entre exercício e descanso vem com um som de sinal e um aviso de voz, e as rodadas e séries são contadas para você. Os 13 sons de sinal vêm dentro do app, e quem lê os avisos de voz é a voz do iOS do seu aparelho. O relógio continua com a tela apagada. A música que você está ouvindo continua tocando junto."
    ],
    "bullets": [
     "Sinais de fase e avisos de voz",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Fases que dá para ler de longe",
    "body": [
-    "A tela inverte durante o exercício e volta ao normal durante o descanso. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em um único total acumulado."
+    "A tela inverte durante o exercício e volta ao normal durante o descanso. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em Lifetime work time (tempo de exercício acumulado)."
    ],
    "bullets": [],
    "visual": {
@@ -89,34 +89,41 @@
   {
    "q": "Criar um treino",
    "a": [
-    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em 새 운동 (Novo treino). Para mudar os valores do treino atual, toque em 편집 (Editar) na tela principal.",
+    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em New workout (Novo treino). Para mudar os valores do treino atual, toque em Edit (Editar) na tela principal.",
     "No começo você pode manter 1 treino, incluindo o exemplo. Para criar mais é preciso ter o Pro. Os treinos que você já tem continuam podendo ser usados e editados."
    ]
   },
   {
-   "q": "Contagem de repetições",
+   "q": "Contar pulos",
    "a": [
-    "No editor de treino, ligue 뛴 수 세기 (contagem de repetições) e defina o critério de término como tempo ou contagem. Na primeira vez que você inicia um treino com a contagem ligada, o app pede uma vez a permissão de Movimento e Preparo Físico para o movimento dos AirPods. Se você não permitir, é usado o movimento do iPhone.",
-    "Quando chega movimento dos seus AirPods, eles fazem a contagem. Se parar de chegar, a contagem passa para o iPhone. Uma linha na tela mostra o que está contando. Fones que não enviam movimento não conseguem contar."
+    "No editor de treino, ligue Count jumps (Contar pulos) e defina o critério de término como tempo ou contagem. Na primeira vez que você inicia um treino com Count jumps ligado, o app pede uma vez a permissão de Movimento e Preparo Físico para o movimento dos AirPods. Se você não permitir, é usado o movimento do iPhone.",
+    "Quando chega movimento dos seus AirPods, eles fazem a contagem. Se parar de chegar, a contagem passa para o iPhone. Uma linha na tela mostra o que está contando. Fones que não enviam movimento não conseguem contar. Pulos de corda e passos de corrida aparecem como jumps (pulos)."
    ]
   },
   {
    "q": "Com a tela apagada ou quando chega uma ligação",
    "a": [
-    "Enquanto o timer roda, o relógio, os sinais e os avisos de voz continuam com a tela apagada. Se chegar uma ligação ou tocar um alarme, o timer pausa e uma linha mostra o motivo. Toque em 이어서 (Continuar) para seguir."
+    "Enquanto o timer roda, o relógio, os sinais e os avisos de voz continuam com a tela apagada. Se chegar uma ligação ou tocar um alarme, o timer pausa e uma linha mostra o motivo. Toque em Resume (Continuar) para seguir."
    ]
   },
   {
-   "q": "Tempo total de treino",
+   "q": "Sons de sinal e voz",
    "a": [
-    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. 누적 지우기 (Limpar total), no fim de Ajustes, volta o total para 0."
+    "O app traz 13 sons de sinal, feitos com o ElevenLabs. Eles tocam quando começam o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue Signal sound (Som de sinal) em Ajustes.",
+    "Os avisos de voz são lidos só no idioma da tela: inglês com a tela em inglês, coreano com a tela em coreano. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de Voice (Voz) em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue Voice (Voz) em Ajustes."
+   ]
+  },
+  {
+   "q": "Tempo de exercício acumulado",
+   "a": [
+    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. Clear lifetime total (Limpar total acumulado), no fim de Ajustes, volta o total para 0."
    ]
   },
   {
    "q": "Pro e restaurar a compra",
    "a": [
     "Compre em Pro, na barra no topo de Ajustes. É um pagamento único, não uma assinatura. O Pro desliga os anúncios e permite criar mais de um treino. Compatível com o Compartilhamento Familiar.",
-    "Se você trocar de aparelho ou reinstalar o app, toque em 구입 복원 (Restaurar compra) na tela do Pro. Com a mesma Conta Apple não há nova cobrança."
+    "Se você trocar de aparelho ou reinstalar o app, toque em Restore purchase (Restaurar compra) na tela do Pro. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
   {
@@ -126,22 +133,28 @@
    ]
   },
   {
+   "q": "Denunciar um anúncio",
+   "a": [
+    "Se aparecer um anúncio inadequado ou que não combine com a classificação etária do app, escreva para kvndh36@naver.com dizendo quando ele apareceu e o que mostrava. O desenvolvedor vai analisar e bloquear no AdMob."
+   ]
+  },
+  {
    "q": "Rastreamento e preferências de anúncios",
    "a": [
     "O iOS pergunta se você permite o rastreamento depois que o guia inicial fecha. Se você comprou o Pro, ele não pergunta. O app funciona igual se você não permitir, e você muda essa escolha em Ajustes > Privacidade e Segurança > Rastreamento.",
-    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento aparece antes do aviso de rastreamento. Nesses lugares, você muda seu consentimento em 광고 개인정보 선택 (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro."
+    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento aparece antes do aviso de rastreamento. Nesses lugares, você muda seu consentimento em Ad privacy choices (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro."
    ]
   },
   {
    "q": "Conexão com a internet",
    "a": [
-    "O timer e a contagem de repetições funcionam sem conexão. Os anúncios, a compra do Pro e a restauração precisam de conexão."
+    "O timer, Count jumps (Contar pulos) e os avisos de voz funcionam sem conexão. Os anúncios, a compra do Pro e a restauração precisam de conexão."
    ]
   },
   {
    "q": "Aparelhos e idiomas compatíveis",
    "a": [
-    "iPhone com iOS 26 ou posterior. As telas do app e os avisos de voz estão em coreano por enquanto."
+    "iPhone com iOS 26 ou posterior. O app está em inglês e coreano: usa o que vier primeiro na lista de idiomas do aparelho, ou inglês se nenhum dos dois estiver nela. Por exemplo, um aparelho só em japonês mostra inglês, e um com japonês e depois coreano mostra coreano. Não há escolha de idioma dentro do app, que segue a ordem de idiomas dos Ajustes do iOS. Os avisos de voz são lidos no mesmo idioma da tela."
    ]
   },
   {
@@ -153,8 +166,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Set & Burn",
-  "effectiveDate": "2026-11-01",
-  "summary": "O desenvolvedor não coleta informações pessoais. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. Os valores de movimento são usados para contar repetições, e o desenvolvedor não os recebe. O pagamento do Pro é processado pela Apple.",
+  "effectiveDate": "2026-11-02",
+  "summary": "O desenvolvedor não coleta informações pessoais. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. Os valores de movimento são usados para contar pulos, e o desenvolvedor não os recebe. O pagamento do Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Set & Burn (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -164,7 +177,7 @@
     "paragraphs": [
      "O app não tem cadastro nem login, e o desenvolvedor não coleta informações pessoais de quem o usa.",
      "O app mostra anúncios em banner na tela final e na lista de treinos. O serviço de publicidade do Google, o AdMob, escolhe e exibe esses anúncios e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
-     "Enquanto um treino com a contagem de repetições ligada está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho."
+     "Enquanto um treino com Count jumps (Contar pulos) ligado está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho."
     ],
     "bullets": []
    },
@@ -177,7 +190,7 @@
     "bullets": [
      "A lista de treinos (nomes, tempos, rodadas, séries, interruptores, critério de término, contagens) e o treino escolhido: usados para rodar o timer e ao reabrir o app",
      "Ajustes de som, avisos de voz, vibração e tela: usados para o comportamento do app",
-     "Tempo total de treino: uma única soma de segundos nas fases de exercício, sem registros por data",
+     "Lifetime work time (tempo de exercício acumulado): uma única soma de segundos nas fases de exercício, sem registros por data",
      "Se o guia inicial já foi visto: usado para mostrá-lo só uma vez",
      "Uma cópia de um arquivo salvo que não pôde ser lido: os mesmos tipos de dados acima, mantida quando um arquivo salvo está danificado"
     ]
@@ -185,7 +198,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos podem ser removidos no app, e 누적 지우기 (Limpar total), em Ajustes, volta o tempo total de treino para 0.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos podem ser removidos no app, e Clear lifetime total (Limpar total acumulado), em Ajustes, volta o tempo de exercício acumulado para 0.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -200,7 +213,8 @@
      "Finalidade: verificar o consentimento de anúncios, exibir anúncios e medir o desempenho deles",
      "Informações: as informações do aparelho e os registros de interação com anúncios da seção 9",
      "Quando e como: enviadas pela internet quando o consentimento é verificado e o SDK é iniciado, e quando um anúncio é carregado e exibido",
-     "Retenção: conforme a Política de Privacidade do Google"
+     "Retenção: conforme a Política de Privacidade do Google",
+     "Nível de proteção: o Google cumpre a legislação de proteção de dados aplicável conforme os Google Ads Controller-Controller Data Protection Terms. O desenvolvedor só deixa as informações chegarem a terceiros que ofereçam a mesma proteção desta política ou uma equivalente"
     ]
    },
    {
@@ -229,8 +243,8 @@
     "title": "Medidas de segurança",
     "paragraphs": [
      "O que o app usa fica em arquivos no armazenamento do app no seu aparelho. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esses arquivos podem entrar nos backups do iCloud ou do Mac que você ativar.",
-     "Os valores de movimento só são recebidos enquanto um treino com a contagem de repetições ligada está rodando, incluindo aquecimento e descanso, e o recebimento para quando ele é pausado ou termina. O movimento dos AirPods só é recebido se você permitir Movimento e Preparo Físico. O movimento do iPhone é um valor para o qual o iOS não pede permissão. O app pede duas permissões, Movimento e Preparo Físico e rastreamento (ATT). Ele não pede localização, câmera, microfone, fotos, contatos, notificações nem Saúde.",
-     "Enquanto um treino com contagem de repetições está rodando ou pausado, o sensor de proximidade fica ligado para evitar toques na tela dentro do bolso, e os valores dele não são armazenados. Para escolher a mensagem de contagem, o app lê o tipo de saída de áudio em uso, e isso também não é armazenado."
+     "Os valores de movimento só são recebidos enquanto um treino com Count jumps ligado está rodando, incluindo aquecimento e descanso, e o recebimento para quando ele é pausado ou termina. O movimento dos AirPods só é recebido se você permitir Movimento e Preparo Físico. O movimento do iPhone é um valor para o qual o iOS não pede permissão. O app pede duas permissões, Movimento e Preparo Físico e rastreamento (ATT). Ele não pede localização, câmera, microfone, fotos, contatos, notificações nem Saúde.",
+     "Enquanto um treino com Count jumps está rodando ou pausado, o sensor de proximidade fica ligado para evitar toques na tela dentro do bolso, e os valores dele não são armazenados. Para escolher a mensagem de contagem, o app lê o tipo de saída de áudio em uso, e isso também não é armazenado."
     ],
     "bullets": []
    },
@@ -239,7 +253,7 @@
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento de anúncios e quando carregam e exibem anúncios.",
      "Depois que o guia inicial fecha, ou depois que a primeira tela aparece se você já o viu, o app verifica se você tem o Pro. Se não tiver, ele verifica as informações de consentimento de anúncios. Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento do Google aparece primeiro. Se os anúncios puderem ser solicitados e você ainda não tiver respondido, o iOS mostra o aviso de transparência de rastreamento (ATT). Esses avisos não aparecem enquanto o timer está rodando ou pausado. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Essa escolha pode ser alterada em Ajustes > Privacidade e Segurança > Rastreamento.",
-     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em 광고 개인정보 선택 (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro.",
+     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em Ad privacy choices (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro.",
      "Se você comprar o Pro, os anúncios param de aparecer, e a partir da abertura seguinte o app não inicia o SDK de anúncios, então nem o formulário de consentimento nem o aviso de rastreamento aparecem."
     ],
     "bullets": [

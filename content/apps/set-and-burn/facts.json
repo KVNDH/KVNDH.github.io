@@ -3,9 +3,9 @@
  "purchase": "one-time",
  "ads": true,
  "account": false,
- "unreleased": "2026-11-01 출시 전. ASC 앱 기록(6829377551)은 있고 출시 전이라 site.json 에 appStoreId 가 없다. 저장소 이름은 IntervalTimer. 소리 소재가 정해지기 전이라 소리 출처와 고지를 쓰지 않는다",
+ "unreleased": "2026-11-02 출시 전. ASC 앱 기록(6829377551)은 있고 출시 전이라 site.json 에 appStoreId 가 없다. 저장소 이름은 SetAndBurn(2026-11-01 IntervalTimer 에서 바꿈, 번들 com.kimdh.setandburn 그대로)",
  "platform": [
-  "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 ko 하나 (IntervalTimer project.yml CFBundleLocalizations, TARGETED_DEVICE_FAMILY)"
+  "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 en(원문)과 ko(번역) 둘. 기기 선호 언어 목록을 위에서부터 보아 en, ko 가운데 먼저 나오는 쪽, 둘 다 없으면 영어. (ja) 는 영어, (ja,ko) 는 한국어. 앱 안 언어 고르기는 없고 iOS 설정을 따른다 (SetAndBurn project.yml developmentLanguage en, CFBundleLocalizations [en, ko], docs/PRIVACY_FACTS_for_HQ.md 1절, docs/design/english-copy.md 3절)"
  ],
  "products": [
   "Pro: 비소모성 1개 (com.kimdh.setandburn.pro, 가족 공유, IntervalTimer/Store/ProStore.swift). 광고를 끄고 운동을 둘 이상 만든다. 처음에는 예시 포함 운동 1개(Allowance.freeWorkouts). 있는 운동은 잠그지 않는다. 가격은 문구에 쓰지 않는다"
@@ -14,6 +14,22 @@
   "Google Mobile Ads 13.10.0, UMP 3.1.0. 배너 두 자리: 끝 화면, 운동 목록 시트(Packages/TimerCore/Sources/TimerCore/Revenue.swift AdGate)",
   "순서: 첫 안내 뒤 afterIntro, Pro 확인, 도는 중과 멈춤이 아닐 때 ads.start() (App/AppModel.swift startAdsIfFree). Pro 면 SDK 를 시작하지 않는다",
   "광고 개인정보 선택 줄은 설정 맨 아래와 Pro 화면 맨 아래, UMP 가 요구할 때만 (Views/SettingsView.swift privacyButton, Views/ProView.swift)"
+ ],
+ "uiNames": [
+  "en 화면 이름(Localizable.xcstrings 값): New workout, Edit, Resume, Count jumps, 단위 jump/jumps(1 jump, 500 jumps), 끝 합계 Total 500 jumps, Work, Rest, Round, Sets, Lifetime work time, Clear lifetime total, Restore purchase, Ad privacy choices, Signal sound, Voice. 누적 지우기의 영어는 Clear lifetime total 이다(Clear total 아님)",
+  "ko 화면 이름: 새 운동, 편집, 이어서, 뛴 수 세기, 회, 운동, 휴식, 누적 운동 시간, 누적 지우기, 구입 복원, 광고 개인정보 선택, 신호 소리, 목소리. 천 자리 쉼표는 두 언어 모두(1,000 h, 1,000시간)",
+  "뛴 수 세기(Count jumps)는 줄넘기와 달리기를 모두 세고 단위는 어느 쪽이든 jumps(회). 사이트 ko 는 한국어 이름, en 은 영어 이름만, 그 밖 언어는 '영어 이름(그 언어 뜻)'"
+ ],
+ "voice": [
+  "음성 안내는 화면과 같은 언어로만 읽는다(en 화면 영어, ko 화면 한국어, 그 밖 언어 없음). 기기 안 AVSpeechSynthesizer 의 iOS 시스템 목소리, 녹음 아님, 인터넷 필요 없음 (SetAndBurn/Audio/Speech.swift:5, docs/PRIVACY_FACTS_for_HQ.md 3절)",
+  "목소리는 기기에 받은 앱 언어 목소리 가운데 품질이 가장 높은 것(premium, enhanced, default 순, Speech.swift bestVoice). 기기마다 목소리와 품질이 다르다. enhanced 이상이 없으면 설정 Voice 줄 옆에 (i), 누르면 받는 곳 안내 (Speech.swift hasNaturalVoice, SetAndBurn/Views/SettingsView.swift 목소리 줄)",
+  "끄기: 설정 > Voice 스위치. 영어 목소리는 폰에서 아무도 듣지 않았다(english-copy.md 머리). '자연스러운 목소리' 같은 품질 주장은 쓰지 않는다"
+ ],
+ "sounds": [
+  "신호 소리 13개가 앱 번들에 들어 있다(SetAndBurn/Resources/Sounds/*.wav, 고르는 곳 TimerCore Tone.swift). 설정은 Signal sound(신호 소리) 스위치 하나 (SettingsView.swift toggle.sound). 운동 시작, 휴식 시작, 끝 3초, 끝에 난다(Signal sound 힌트 문구)",
+  "출처: ElevenLabs eleven_text_to_sound_v2, Starter 유료 구독 기간(2026-11-01)에 만든 재료로 앱 세션이 다듬은 한 벌 (SetAndBurn DESIGN.md:211, docs/design/sounds-pop/README.md 10절, 약관 docs/launch/elevenlabs-terms.md)",
+  "크레딧 줄: 사이트 FAQ '신호 소리와 목소리' 첫 문단에 'ElevenLabs 로 만든 신호 소리 13개'. 앱 저장소에 정해진 크레딧 문구는 없다. 유료 플랜에 출처 표시가 필요 없다는 문장은 ElevenLabs 마케팅 페이지뿐이고 약관 본문에서는 확인하지 못했다(elevenlabs-terms.md 3절)",
+  "상업 사용은 미확인 넷(v2 의 Beta Services 여부, 출처 표시, 'more permissive' 조건, Community Sharing 설정)이 남아 위험 중간(docs/launch/review-risk.md 4-1). 라이선스를 '문제없음' 으로 쓰지 않는다. 낱개 소리 파일 공개는 약관 금지라 사이트에 소리 파일을 올리지 않는다"
  ],
  "motion": [
   "받기: 뛴 수 세기를 켠 운동이 도는 동안만, 멈춤과 끝에서 끈다 (App/RunController.swift:518, :528)",
@@ -29,12 +45,17 @@
   "날짜별 운동 기록, 연속 기록, Apple Watch, iPad, 위젯, 알림. 사이트에 쓰지 않는다"
  ],
  "numbers": [
-  "1"
+  "1",
+  "13"
  ],
- "numbersNote": "소개 문구의 숫자: 처음 운동 1개. 뛴 수 정확도 숫자는 쓰지 않는다(실제 몸 기록이 아직 없다)",
+ "numbersNote": "소개 문구의 숫자: 처음 운동 1개, 신호 소리 13개. 뛴 수 정확도 숫자는 쓰지 않는다(실제 몸 기록이 아직 없다)",
  "sources": [
   "IntervalTimer 57c93d0: 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30, 10-31 고침), DESIGN.md",
   "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
-  "그림: build/shots/runWork-light.png, countRound-light.png, editorSwitches-light.png(커밋 밖, 2026-10-31 찍음)"
+  "그림: build/shots/runWork-light.png, countRound-light.png, editorSwitches-light.png(커밋 밖, 2026-10-31 찍음)",
+  "SetAndBurn 3a5ccdb(영어 기본, Decide 2026-11-02-3 답 A 로 jumps, Work, Lifetime work time 확정): Packages/TimerCore/Sources/TimerCore/Resources/Localizable.xcstrings, docs/design/english-copy.md, docs/PRIVACY_FACTS_for_HQ.md(맨 위 줄이 옛 본문보다 앞선다), SetAndBurn/Audio/Speech.swift, SetAndBurn/Views/SettingsView.swift",
+  "소리: docs/launch/elevenlabs-terms.md(2026-10-31, 11-02 고침), docs/design/sounds-pop/README.md 10절, docs/launch/review-risk.md 4-1 (모두 SetAndBurn 3a5ccdb)",
+  "광고 신고(지침 2.5.18)와 제3자 보호 문장(지침 5.1.1(i)): DailyLeft 같은 언어 문장(e992d4c9), Google Ads Controller-Controller Data Protection Terms",
+  "그림은 바꾸지 않았다. 지금 그림은 한국어 화면이라 alt 가 '한국어 화면' 이라고 적는다. 영어 그림은 앱 세션이 다시 찍고 HQ 가 들여온다. 그때 hero.shotAlt 와 sections visual.alt 의 언어 말을 고친다"
  ]
 }
