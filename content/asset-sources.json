@@ -255,9 +255,14 @@
   "icon": "SetAndBurn/SetAndBurn/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "SetAndBurn/build/shots/runWork-light.png",
-    "SetAndBurn/build/shots/countRound-light.png",
-    "SetAndBurn/build/shots/editorSwitches-light.png"
+    "SetAndBurn/build/shots-ko/runWork-light.png",
+    "SetAndBurn/build/shots-ko/countRound-light.png",
+    "SetAndBurn/build/shots-ko/editorSwitches-light.png"
+   ],
+   "en": [
+    "SetAndBurn/build/shots-en/runWork-light.png",
+    "SetAndBurn/build/shots-en/countRound-light.png",
+    "SetAndBurn/build/shots-en/editorSwitches-light.png"
    ]
   }
  },

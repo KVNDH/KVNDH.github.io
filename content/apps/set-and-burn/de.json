@@ -4,7 +4,7 @@
  "summary": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
  "hero": {
   "hook": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
-  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Das Bild zeigt die App auf Koreanisch."
+  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit."
  },
  "sections": [
   {
@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-280px",
-    "alt": "Der Bearbeitungsbildschirm für Workouts auf Koreanisch. Oben stehen Gesamtzeit und Phasenleiste, darunter Zeilen für Trainingszeit, Runden, Pause und Sätze.",
+    "alt": "Der Bearbeitungsbildschirm für Workouts. Oben stehen Gesamtzeit und Phasenleiste, darunter Zeilen für Trainingszeit, Runden, Pause und Sätze.",
     "caption": "App-Ansicht, vergrößert",
     "focusX": "70px"
    }
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-200px",
-    "alt": "Der Bildschirm von Count jumps (Sprünge zählen) auf Koreanisch. Die verbleibende Anzahl steht in großen Zahlen da, darunter, was gerade zählt, und die nächste Phase.",
+    "alt": "Der Bildschirm von Count jumps (Sprünge zählen). Die verbleibende Anzahl steht in großen Zahlen da, darunter, was gerade zählt, und die nächste Phase.",
     "caption": "App-Ansicht, vergrößert",
     "focusX": "-25px"
    }

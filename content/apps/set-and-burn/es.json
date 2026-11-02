@@ -4,7 +4,7 @@
  "summary": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
  "hero": {
   "hook": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
-  "shotAlt": "La pantalla de entrenamiento de Set & Burn. El nombre de la fase y el tiempo restante aparecen en números grandes, y debajo están el número de ronda y el tiempo total restante. La imagen muestra la app en coreano."
+  "shotAlt": "La pantalla de entrenamiento de Set & Burn. El nombre de la fase y el tiempo restante aparecen en números grandes, y debajo están el número de ronda y el tiempo total restante."
  },
  "sections": [
   {
@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-280px",
-    "alt": "La pantalla de edición del entrenamiento, en coreano. Arriba están el tiempo total y la franja de fases, y debajo las filas de tiempo de trabajo, rondas, descanso y series.",
+    "alt": "La pantalla de edición del entrenamiento. Arriba están el tiempo total y la franja de fases, y debajo las filas de tiempo de trabajo, rondas, descanso y series.",
     "caption": "Pantalla de la app, ampliada",
     "focusX": "70px"
    }
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-200px",
-    "alt": "La pantalla de Count jumps (Contar saltos), en coreano. Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
+    "alt": "La pantalla de Count jumps (Contar saltos). Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
     "caption": "Pantalla de la app, ampliada",
     "focusX": "-25px"
    }

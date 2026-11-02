@@ -4,7 +4,7 @@
  "summary": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
  "hero": {
   "hook": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
-  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo. A imagem mostra o app em coreano."
+  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo."
  },
  "sections": [
   {
@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-280px",
-    "alt": "A tela de edição do treino em coreano. No topo ficam o tempo total e a faixa de fases, com linhas de tempo de exercício, rodadas, descanso e séries embaixo.",
+    "alt": "A tela de edição do treino. No topo ficam o tempo total e a faixa de fases, com linhas de tempo de exercício, rodadas, descanso e séries embaixo.",
     "caption": "Tela do app, ampliada",
     "focusX": "70px"
    }
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-200px",
-    "alt": "A tela de Count jumps (Contar pulos) em coreano. A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
+    "alt": "A tela de Count jumps (Contar pulos). A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
     "caption": "Tela do app, ampliada",
     "focusX": "-25px"
    }
