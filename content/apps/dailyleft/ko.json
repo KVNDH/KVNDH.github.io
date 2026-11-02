@@ -21,10 +21,10 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
+    "focus": "-100px",
     "alt": "첫 화면 윗부분. 금액이 큰 숫자로 뜨고 그 아래에 막대와 상태 한 줄이 있습니다.",
     "caption": "앱 화면 확대",
-    "focusX": "82px"
+    "focusW": "400px"
    }
   },
   {
@@ -41,10 +41,10 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-300px",
+    "focus": "-282px",
     "alt": "기간 달력. 요일 아래에 날짜 칸이 놓여 있습니다.",
     "caption": "앱 화면 확대",
-    "focusX": "82px"
+    "focusW": "400px"
    }
   },
   {
@@ -61,10 +61,10 @@
    "visual": {
     "type": "crop",
     "shot": 3,
-    "focus": "-70px",
+    "focus": "-64px",
     "alt": "하루 얼마 화면 확대. 예산이나 남은 돈 금액이 적혀 있습니다.",
     "caption": "앱 화면 확대",
-    "focusX": "70px"
+    "focusW": "400px"
    }
   },
   {
