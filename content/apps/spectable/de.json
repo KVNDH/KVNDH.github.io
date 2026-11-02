@@ -135,6 +135,12 @@
    ]
   },
   {
+   "q": "Anzeige melden",
+   "a": [
+    "Wenn Sie eine Anzeige sehen, die unangemessen ist oder nicht zur Altersfreigabe der App passt, schreiben Sie an kvndh36@naver.com, wann sie erschien und was sie zeigte. Der Entwickler prüft sie und sperrt sie in AdMob."
+   ]
+  },
+  {
    "q": "Internetverbindung",
    "a": [
     "Der Vergleich von Daten, das Finden nach Zahlen und gespeicherte Kombinationen laufen offline, weil die Daten in der App liegen. Werbung, der Kauf von Werbung entfernen, das Wiederherstellen und externe Links brauchen eine Verbindung."
@@ -155,7 +161,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für SpecTable",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Das Werbebanner unter dem Vergleichsbildschirm kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SpecTable (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -201,7 +207,8 @@
      "Zweck: Prüfen der Einwilligung in Werbung, Ausspielen von Werbung und Messung ihrer Wirkung",
      "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
      "Zeitpunkt und Weg: über das Internet, wenn die App geöffnet wird, die Einwilligung prüft und das SDK startet, und wenn eine Werbung geladen und angezeigt wird",
-     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben",
+     "Schutzniveau: Google hält nach den Google Ads Controller-Controller Data Protection Terms das geltende Datenschutzrecht ein. Der Entwickler lässt Informationen nur an Dritte gehen, die denselben oder einen gleichwertigen Schutz wie diese Erklärung bieten"
     ]
    },
    {

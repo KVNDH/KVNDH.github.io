@@ -135,6 +135,12 @@
    ]
   },
   {
+   "q": "Denunciar um anúncio",
+   "a": [
+    "Se aparecer um anúncio inadequado ou que não combine com a classificação etária do app, escreva para kvndh36@naver.com dizendo quando ele apareceu e o que mostrava. O desenvolvedor vai analisar e bloquear no AdMob."
+   ]
+  },
+  {
    "q": "Conexão com a internet",
    "a": [
     "Comparar especificações, encontrar por números e as combinações salvas funcionam sem conexão, porque as especificações estão no app. Os anúncios, a compra de Remove ads, a restauração e os links externos precisam de conexão."
@@ -155,7 +161,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do SpecTable",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "O desenvolvedor não coleta informações pessoais. O banner de anúncio abaixo da tela de comparação vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remove ads é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app SpecTable (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -201,7 +207,8 @@
      "Finalidade: verificar o consentimento de anúncios, exibir anúncios e medir o desempenho deles",
      "Informações: as informações do aparelho e os registros de interação com anúncios da seção 9",
      "Quando e como: enviadas pela internet quando o app abre, verifica o consentimento e inicia o SDK, e quando um anúncio é carregado e exibido",
-     "Retenção: conforme a Política de Privacidade do Google"
+     "Retenção: conforme a Política de Privacidade do Google",
+     "Nível de proteção: o Google cumpre a legislação de proteção de dados aplicável conforme os Google Ads Controller-Controller Data Protection Terms. O desenvolvedor só deixa as informações chegarem a terceiros que ofereçam a mesma proteção desta política ou uma equivalente"
     ]
    },
    {

@@ -135,6 +135,12 @@
    ]
   },
   {
+   "q": "Denunciar un anuncio",
+   "a": [
+    "Si ves un anuncio inapropiado o que no encaja con la clasificación por edad de la app, escribe a kvndh36@naver.com indicando cuándo apareció y qué mostraba. El desarrollador lo revisará y lo bloqueará en AdMob."
+   ]
+  },
+  {
    "q": "Conexión a internet",
    "a": [
     "Comparar especificaciones, buscar por números y las combinaciones guardadas funcionan sin conexión, porque las especificaciones están en la app. Los anuncios, la compra de Remove ads, su restauración y los enlaces externos necesitan conexión."
@@ -155,7 +161,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de SpecTable",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "El desarrollador no recoge información personal. El banner de publicidad bajo la pantalla de comparación viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Remove ads se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app SpecTable (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -201,7 +207,8 @@
      "Finalidad: comprobar el consentimiento de anuncios, mostrar anuncios y medir su rendimiento",
      "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
      "Cuándo y cómo: se envía por internet cuando la app se abre, comprueba el consentimiento e inicia el SDK, y cuando se carga y se muestra un anuncio",
-     "Conservación: la indicada en la Política de Privacidad de Google"
+     "Conservación: la indicada en la Política de Privacidad de Google",
+     "Nivel de protección: Google cumple la legislación de protección de datos aplicable según los Google Ads Controller-Controller Data Protection Terms. El desarrollador solo deja que la información llegue a terceros que ofrezcan la misma protección que esta política o una equivalente"
     ]
    },
    {

@@ -135,6 +135,12 @@
    ]
   },
   {
+   "q": "Reporting an ad",
+   "a": [
+    "If you see an ad that's inappropriate or unsuitable for the app's age rating, email kvndh36@naver.com with when it appeared and what it showed. The developer will review it and block it in AdMob."
+   ]
+  },
+  {
    "q": "Internet connection",
    "a": [
     "Comparing specs, finding by numbers and saved combos work without a connection, because the specs are in the app. Ads, buying Remove ads, restoring it and outside links need a connection."
@@ -155,7 +161,7 @@
  ],
  "privacy": {
   "title": "SpecTable Privacy Policy",
-  "effectiveDate": "2026-11-01",
+  "effectiveDate": "2026-11-02",
   "summary": "The developer does not collect personal information. The banner ad under the comparison screen comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove ads.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the SpecTable app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -201,7 +207,8 @@
      "Purpose: checking ad consent, showing ads and measuring ad performance",
      "Information: the device information and ad interaction records listed in section 9",
      "When and how: sent over the internet when the app opens, checks consent and starts the SDK, and when an ad is loaded and shown",
-     "Retention: as set out in Google's Privacy Policy"
+     "Retention: as set out in Google's Privacy Policy",
+     "Level of protection: Google complies with applicable data protection law under the Google Ads Controller-Controller Data Protection Terms. The developer lets information go only to third parties that provide the same or equal protection as this policy"
     ]
    },
    {
