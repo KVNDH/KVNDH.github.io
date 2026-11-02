@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.0",
+ "describesVersion": "1.0.1",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -9,7 +9,8 @@
  "platform": [
   "iPhone 전용, iOS 26 이상, 세로만 (project.yml TARGETED_DEVICE_FAMILY \"1\", deploymentTarget 26.0). iPad 는 빌드 6(2026-10-16)에서 뺐다. iTunes lookup 의 supportedDevices 에 iPad 가 나오는 것은 iPhone 앱 호환 실행이라 사이트에 iPad 를 쓰지 않는다. iPad 다운 배치는 다음 판 후보(IDEA.md 2-18)",
   "앱 화면은 영어가 기본이고 한국어를 현지화한다(Resources/Localizable.xcstrings, sourceLanguage en, ko 값). 한국어도 영어도 아닌 기기에서는 영어 화면이 뜬다",
-  "ko 페이지는 한국어 화면 글자를, 나머지 일곱 언어 페이지는 영어 화면 글자를 그대로 쓴다(uiNames)"
+  "ko 페이지는 한국어 화면 글자를, 나머지 일곱 언어 페이지는 영어 화면 글자를 그대로 쓴다(uiNames)",
+  "iPhone Duo(1.0.1, 2026-11-02 출시, 사이트 표기는 접는 iPhone): 펼친 넓은 화면에서 좌우 두 칸, 카드는 왼쪽, 안내와 단추는 오른쪽. 접으면 보통 iPhone 화면과 같음. 일반 iPhone 화면은 그대로(codematic-ad 11-03 보고, 새 소식 'iPhone Duo 지원', '세부 다듬기와 안정성 개선'). 사이트는 기기 상표명을 쓰지 않는다"
  ],
  "network": [
   "iCloud: CloudKit 개인 데이터베이스, 컨테이너 iCloud.com.kimdh.Codematic (Codematic.entitlements, App/CodematicApp.swift cloudKitDatabase .private)",

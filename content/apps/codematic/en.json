@@ -21,16 +21,18 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-142px",
+    "focus": "-122px",
     "alt": "The New codes screen, with Import CSV file, Paste directly and Issue from App Store Connect in order, and a short note under the first and the last.",
-    "caption": "Close view of the app"
+    "caption": "Close view of the app",
+    "focusW": "480px",
+    "focusX": "-14px"
    }
   },
   {
    "layout": "feat",
    "title": "Tap Issue and the next code is copied",
    "body": [
-    "The copied code is marked as handed out. Each roll can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it."
+    "The copied code is marked as handed out. Each roll can copy the redeem link, the code, or both. In person, show the card with its QR code, or save it as an image and send it. On the wide screen of a foldable iPhone opened out, the screen splits into two columns, with the card on the left and the guide and buttons on the right."
    ],
    "bullets": [
     "Code or redeem link copied",

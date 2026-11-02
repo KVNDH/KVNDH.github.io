@@ -21,16 +21,18 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-142px",
+    "focus": "-122px",
     "alt": "La pantalla «New codes» para añadir códigos, con «Import CSV file», «Paste directly» e «Issue from App Store Connect», en ese orden.",
-    "caption": "Vista cercana de la app"
+    "caption": "Vista cercana de la app",
+    "focusW": "480px",
+    "focusX": "-14px"
    }
   },
   {
    "layout": "feat",
    "title": "Pulsa «Issue» (emitir) y se copia el siguiente código",
    "body": [
-    "El código copiado queda marcado como entregado. En cada lote, que la app llama «roll», eliges si se copia el enlace de canje, el código o ambos. En persona, enseña la tarjeta con su código QR o guárdala como imagen y envíala."
+    "El código copiado queda marcado como entregado. En cada lote, que la app llama «roll», eliges si se copia el enlace de canje, el código o ambos. En persona, enseña la tarjeta con su código QR o guárdala como imagen y envíala. En la pantalla ancha de un iPhone plegable abierto, la vista se divide en dos columnas, con la tarjeta a la izquierda y las indicaciones y los botones a la derecha."
    ],
    "bullets": [
     "Copia del código o del enlace de canje",

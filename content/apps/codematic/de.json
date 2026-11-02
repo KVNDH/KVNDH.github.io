@@ -21,16 +21,18 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-142px",
+    "focus": "-122px",
     "alt": "Der Bildschirm „New codes“ zum Hinzufügen von Codes, untereinander „Import CSV file“, „Paste directly“ und „Issue from App Store Connect“.",
-    "caption": "Nahansicht der App"
+    "caption": "Nahansicht der App",
+    "focusW": "480px",
+    "focusX": "-14px"
    }
   },
   {
    "layout": "feat",
    "title": "Auf „Issue“ (Ausgeben) tippen, und der nächste Code ist kopiert",
    "body": [
-    "Der kopierte Code wird als verteilt markiert. Für jeden Stapel, in der App „roll“ genannt, legen Sie fest, ob der Einlöse-Link, der Code oder beides kopiert wird. Bei einem Treffen zeigen Sie die Karte mit dem QR-Code oder sichern sie als Bild und senden sie."
+    "Der kopierte Code wird als verteilt markiert. Für jeden Stapel, in der App „roll“ genannt, legen Sie fest, ob der Einlöse-Link, der Code oder beides kopiert wird. Bei einem Treffen zeigen Sie die Karte mit dem QR-Code oder sichern sie als Bild und senden sie. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone teilt sich die Ansicht in zwei Spalten, links die Karte, rechts Hinweise und Tasten."
    ],
    "bullets": [
     "Code oder Einlöse-Link kopiert",

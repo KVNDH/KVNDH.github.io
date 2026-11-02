@@ -21,16 +21,18 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-142px",
+    "focus": "-122px",
     "alt": "添加代码的“New codes”界面。依次是“Import CSV file”“Paste directly”和“Issue from App Store Connect”。",
-    "caption": "应用界面放大"
+    "caption": "应用界面放大",
+    "focusW": "480px",
+    "focusX": "-14px"
    }
   },
   {
    "layout": "feat",
    "title": "按下“Issue”（发放），就会拷贝下一个代码",
    "body": [
-    "拷贝的代码会标记为已送出。每个批次（App 中称为“roll”）可以分别设定拷贝兑换链接、代码，或者两者都拷贝。当面送出时，可以出示带二维码的卡片，或者存成图片再发送。"
+    "拷贝的代码会标记为已送出。每个批次（App 中称为“roll”）可以分别设定拷贝兑换链接、代码，或者两者都拷贝。当面送出时，可以出示带二维码的卡片，或者存成图片再发送。在折叠 iPhone 展开后的宽屏上，画面分成左右两栏，卡片在左，说明和按钮在右。"
    ],
    "bullets": [
     "拷贝代码或兑换链接",

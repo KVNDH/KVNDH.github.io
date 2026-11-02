@@ -21,16 +21,18 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-142px",
+    "focus": "-122px",
     "alt": "加入代碼的「New codes」畫面。依序是「Import CSV file」、「Paste directly」和「Issue from App Store Connect」。",
-    "caption": "應用畫面放大"
+    "caption": "應用畫面放大",
+    "focusW": "480px",
+    "focusX": "-14px"
    }
   },
   {
    "layout": "feat",
    "title": "按下「Issue」（發放），就會拷貝下一個代碼",
    "body": [
-    "拷貝的代碼會標示為已送出。每個批次（App 中稱為「roll」）可以分別設定拷貝兌換連結、代碼，或者兩者都拷貝。當面送出時，可以出示帶 QR Code 的卡片，或者儲存成圖片再傳送。"
+    "拷貝的代碼會標示為已送出。每個批次（App 中稱為「roll」）可以分別設定拷貝兌換連結、代碼，或者兩者都拷貝。當面送出時，可以出示帶 QR Code 的卡片，或者儲存成圖片再傳送。在摺疊 iPhone 展開後的寬螢幕上，畫面分成左右兩欄，卡片在左，說明和按鈕在右。"
    ],
    "bullets": [
     "拷貝代碼或兌換連結",
