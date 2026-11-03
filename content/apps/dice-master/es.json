@@ -211,7 +211,7 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir por su parte. Borrar historial, dentro del Historial, quita tus lanzamientos, y Restablecer app, en Ajustes de app, quita a la vez ajustes, preajustes, tu nombre y tu etiqueta de dispositivo de Tirar juntos, e historial. Al eliminar la app desaparecen todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir por su parte. En el Historial, desliza un lanzamiento y toca Eliminar para quitarlo, o usa Borrar historial para quitarlos todos, y Restablecer app, en Ajustes de app, quita a la vez ajustes, preajustes, tu nombre y tu etiqueta de dispositivo de Tirar juntos, e historial. Al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },

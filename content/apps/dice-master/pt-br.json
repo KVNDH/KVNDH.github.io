@@ -211,7 +211,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. Limpar histórico, dentro do Histórico, remove as suas rolagens, e Redefinir app, em Config. do app, remove de uma vez ajustes, predefinições, seu nome e sua identificação de aparelho do Rolar juntos e o histórico. Excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir do lado dele. No Histórico, deslize uma rolagem e toque em Excluir para removê-la, ou use Limpar histórico para remover todas, e Redefinir app, em Config. do app, remove de uma vez ajustes, predefinições, seu nome e sua identificação de aparelho do Rolar juntos e o histórico. Excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },

@@ -211,7 +211,7 @@
    {
     "title": "Deletion",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to delete on the developer's side. Clear History in Roll History removes your rolls, and Reset App in App Settings removes settings, presets, your Roll together name and device tag, and history together. Deleting the app removes all of its data."
+     "The developer holds no personal information, so there is nothing to delete on the developer's side. In Roll History, swipe a roll and tap Delete to remove it, or use Clear History to remove them all, and Reset App in App Settings removes settings, presets, your Roll together name and device tag, and history together. Deleting the app removes all of its data."
     ],
     "bullets": []
    },
