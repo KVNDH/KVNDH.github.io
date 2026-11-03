@@ -185,6 +185,13 @@
    ]
   },
   {
+   "q": "Remover anúncios e restaurar a compra",
+   "a": [
+    "Ao comprar uma vez Remove Ads (remover anúncios) no fim dos Ajustes, o banner da tela principal some. O formulário de consentimento de anúncios e o pedido de rastreamento também deixam de aparecer.",
+    "Se trocar de aparelho ou reinstalar o app, toque em Restore Purchases (restaurar compras) nos Ajustes. Com a mesma Conta Apple, você não paga de novo."
+   ]
+  },
+  {
    "q": "Denunciar um anúncio",
    "a": [
     "Se aparecer um anúncio inadequado ou que não combine com a classificação etária do app, escreva para kvndh36@naver.com dizendo quando ele apareceu e o que mostrava. O desenvolvedor vai analisar e bloquear no AdMob."
@@ -200,7 +207,7 @@
   {
    "q": "Conexão com a internet",
    "a": [
-    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
+    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, a compra de Remove Ads, a restauração de compras, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
    ]
   },
   {

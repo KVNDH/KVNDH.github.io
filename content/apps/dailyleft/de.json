@@ -185,6 +185,13 @@
    ]
   },
   {
+   "q": "Werbung entfernen und Kauf wiederherstellen",
+   "a": [
+    "Wenn Sie Remove Ads (Werbung entfernen) unten in den Einstellungen einmal kaufen, verschwindet das Werbebanner auf dem Hauptbildschirm. Auch das Einwilligungsformular und die Tracking-Abfrage erscheinen danach nicht mehr.",
+    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen auf Restore Purchases (Käufe wiederherstellen). Mit demselben Apple Account zahlen Sie nicht noch einmal."
+   ]
+  },
+  {
    "q": "Anzeige melden",
    "a": [
     "Wenn Sie eine Anzeige sehen, die unangemessen ist oder nicht zur Altersfreigabe der App passt, schreiben Sie an kvndh36@naver.com, wann sie erschien und was sie zeigte. Der Entwickler prüft sie und sperrt sie in AdMob."
@@ -200,7 +207,7 @@
   {
    "q": "Internetverbindung",
    "a": [
-    "Budgetberechnung, Erfassen und Widgets laufen offline. Werbung, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
+    "Budgetberechnung, Erfassen und Widgets laufen offline. Werbung, der Kauf von Remove Ads, das Wiederherstellen von Käufen, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
    ]
   },
   {

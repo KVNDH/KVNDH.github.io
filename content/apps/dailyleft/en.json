@@ -185,6 +185,13 @@
    ]
   },
   {
+   "q": "Remove Ads and restoring a purchase",
+   "a": [
+    "Buy Remove Ads once at the bottom of Settings and the ad banner on the main screen goes away. The ad consent form and the tracking prompt stop appearing too.",
+    "If you switch devices or reinstall the app, tap Restore Purchases in Settings. With the same Apple Account you won't pay again."
+   ]
+  },
+  {
    "q": "Reporting an ad",
    "a": [
     "If you see an ad that's inappropriate or unsuitable for the app's age rating, email kvndh36@naver.com with when it appeared and what it showed. The developer will review it and block it in AdMob."
@@ -200,7 +207,7 @@
   {
    "q": "Internet connection",
    "a": [
-    "Budget calculations, recording and widgets work without a connection. Ads, sending a report email and opening the privacy policy need a connection."
+    "Budget calculations, recording and widgets work without a connection. Ads, buying Remove Ads, Restore Purchases, sending a report email and opening the privacy policy need a connection."
    ]
   },
   {
