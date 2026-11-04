@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.2.2",
+ "describesVersion": "1.2.3",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -107,5 +107,5 @@
   "diceMaster/results/CHANGELOG.md (v1.1.3, v1.1.2 절)",
   "support/dicemaster.html"
  ],
- "versionNote": "Dice Master 1.2.2(빌드 34)이 출시(diceMaster 와 HQ 가 ASC READY_FOR_SALE 확인, 2026-11-03 사이트 반영). 바뀐 사실: 굴리기 기록에서 한 건씩 밀어 삭제(diceMaster/Views/HistorySheet.swift:107, L10n .delete), 전체 지우기는 목록 끝, 실행 취소는 이번 판의 방금 굴림만, 프리셋 편집은 ✓ 로 저장(results/CHANGELOG.md v1.2.2). 8개 언어 처리방침 파기 절에 한 건 지우기를 넣음. 이전: Dice Master 1.2.0(빌드 32)이 출시(HQ 가 ASC READY_FOR_SALE 확인, 2026-10-29 사이트 반영). 범위는 1.1.3 빌드 26 출시 뒤(15f7c16)부터 빌드 32 아카이브(f9cec67)까지, 올리지 않은 1.1.4 포함. 8개 언어에 반영: 셋째 절 본문에 함께 굴리기 두 문장(같은 와이파이나 블루투스로 근처 기기를 이어 최대 8명, 누가 굴려도 같은 주사위, 숨겨 굴리기면 공개 전까지 남의 주사위 가림), 넷째 절 접는 iPhone 띠 문장을 '위쪽 단추'에서 '주사위 수 단추'로(1."
+ "versionNote": "Dice Master 1.2.3(빌드 35)이 출시(HQ 가 ASC READY_FOR_SALE 확인, 2026-11-05 사이트 반영). 바뀐 것: 기능 설정 시트의 섹션 순서와 구성(ee14c29, 조작 방식이 Pro 배너 다음 첫 섹션, 소리 스타일은 메뉴, 숫자 표기 형식은 시트 안 목록), 3D 공중 판독 수정과 합계 제한 판 비움 수정(4422306). 사이트 문장 확인(diceMaster 회신, AppSettingsSheet.swift 60093cd): 앱 초기화는 맨 아래 단추(:105-125), Pro 배너는 비Pro 에게 맨 위(:77), 구매 복원은 Pro 시트(ProUnlockSheet.swift:214), 언어 섹션(:1086, 13개 언어), 조작 방식의 흔들어서 굴리기(:611-647). 제목, 섹션 이름, 단추 글자는 그대로라 본문 고칠 곳 없음. 섹션 순서를 말하는 문장은 사이트에 없음"
 }
