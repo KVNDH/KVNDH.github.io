@@ -215,7 +215,7 @@
     "title": "Auftragsverarbeitung",
     "paragraphs": [
      "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Werbung entfernen und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account.",
-     "Der Preislink bei einem Produkt öffnet je nach Region Ihres Geräts die Danawa-Suche oder die Amazon-Suche Ihres Landes in Ihrem Standardbrowser. In Taiwan und Hongkong erscheint dieser Link nicht. Eine Adresse unter Quellen öffnet die Seite des Herstellers in Ihrem Standardbrowser. Dort gilt die Datenschutzerklärung der geöffneten Website, und der Entwickler erhält nicht, was Sie auf dieser Website ansehen."
+     "Der Preislink bei einem Produkt öffnet je nach Region Ihres Geräts Coupang oder die Amazon-Suche Ihres Landes in Ihrem Standardbrowser. Bei einigen Produkten ist der Coupang-Link ein Partnerlink von Coupang Partners, und unter diesen Produkten steht ein entsprechender Hinweis. Wenn Sie einen Partnerlink öffnen, kann Coupang den Klick erfassen, um Käufe zu zählen. Dafür gilt die Datenschutzerklärung von Coupang. Der Entwickler erfährt nicht, wer was gekauft hat, sondern sieht nur die Summen von Klicks und Käufen, die Coupang meldet. In Taiwan und Hongkong erscheint dieser Link nicht. Eine Adresse unter Quellen öffnet die Seite des Herstellers in Ihrem Standardbrowser. Dort gilt die Datenschutzerklärung der geöffneten Website, und der Entwickler erhält nicht, was Sie auf dieser Website ansehen."
     ],
     "bullets": []
    },

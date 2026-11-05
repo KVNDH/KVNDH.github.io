@@ -18,7 +18,7 @@
   "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (Ads/GoogleAdsSDK.swift)"
  ],
  "externalLinks": [
-  "가격 링크: PriceLink.choose. KR 과 그 밖 다나와 검색, US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색, TW HK 는 링크 없음. Affiliate.settings 는 모두 꺼짐이라 제휴 꼬리표 없음. 켜기 전에 처리방침을 고친다 (Packages/SpecCore/Sources/SpecCore/PriceLink.swift, ContentView.swift:1025)",
+  "가격 링크: PriceLink.choose. KR 과 Amazon 나라 밖은 쿠팡(data/links/coupang.json 에 link.coupang.com 링크가 있는 기기는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없으면 꼬리표 없는 쿠팡 검색), US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(꼬리표 없음), TW HK 는 링크 없음. 다나와 링크는 없앰(SpecTable 630cc15) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift, ContentView.swift:1025)",
   "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink, :981)",
   "사이트 ko 소개 쪽 쿠팡 파트너스 링크 셋과 대가성 문구: 옛 specpair ko 쪽 값을 2026-11-01 그대로 옮김 (ko.json partners, SpecPair docs/SITE_DRAFT.md 5절). 활동 매체 https://kvndh.com/ko/spectable/. 앱 안 링크와는 별개다"
  ],

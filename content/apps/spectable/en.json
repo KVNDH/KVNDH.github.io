@@ -215,7 +215,7 @@
     "title": "Outsourcing of processing",
     "paragraphs": [
      "The developer does not outsource the processing of personal information. Apple processes payment for Remove ads and restoring it through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details.",
-     "The price link on a product opens Danawa search or the Amazon search of your country in your default browser, depending on your device's region. In Taiwan and Hong Kong this link does not appear. An address under Sources opens the maker's page in your default browser. The privacy policy of the site you open applies there, and the developer does not receive what you view on that site."
+     "The price link on a product opens Coupang or the Amazon search of your country in your default browser, depending on your device's region. For some products the Coupang link is a Coupang Partners affiliate link, and a disclosure appears below those products. When you open an affiliate link, Coupang may record the click to count purchases, and Coupang's privacy policy applies to that record. The developer does not receive who bought what, only the click and purchase totals Coupang reports. In Taiwan and Hong Kong this link does not appear. An address under Sources opens the maker's page in your default browser. The privacy policy of the site you open applies there, and the developer does not receive what you view on that site."
     ],
     "bullets": []
    },

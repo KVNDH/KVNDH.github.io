@@ -215,7 +215,7 @@
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
      "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento de Remove ads e a restauração dele pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple.",
-     "O link de preço de um produto abre no seu navegador padrão a busca do Danawa ou a busca da Amazon do seu país, conforme a região do aparelho. Em Taiwan e Hong Kong esse link não aparece. Um endereço em Sources abre a página do fabricante no seu navegador padrão. No site aberto vale a política de privacidade dele, e o desenvolvedor não recebe o que você vê nesse site."
+     "O link de preço de um produto abre no seu navegador padrão a Coupang ou a busca da Amazon do seu país, conforme a região do aparelho. Em alguns produtos o link da Coupang é um link de afiliado do Coupang Partners, e um aviso aparece abaixo desses produtos. Ao abrir um link de afiliado, a Coupang pode registrar o clique para contar compras, e a política de privacidade da Coupang vale para esse registro. O desenvolvedor não recebe quem comprou o quê, só os totais de cliques e compras que a Coupang informa. Em Taiwan e Hong Kong esse link não aparece. Um endereço em Sources abre a página do fabricante no seu navegador padrão. No site aberto vale a política de privacidade dele, e o desenvolvedor não recebe o que você vê nesse site."
     ],
     "bullets": []
    },
