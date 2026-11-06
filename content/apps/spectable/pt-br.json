@@ -117,7 +117,7 @@
   {
    "q": "O link de preço de um produto",
    "a": [
-    "O link de preço de um produto abre no navegador uma busca de compras para a região do seu aparelho. O app não mostra preços atuais. Em algumas regiões o link não aparece."
+    "O link de preço de um produto abre no navegador uma loja para a região do seu aparelho. Nos Estados Unidos, Canadá, Reino Unido, Alemanha, França, Itália, Espanha e Japão é a busca da Amazon do país, e na Coreia e em outras regiões é a Coupang. Em Taiwan e Hong Kong o link não aparece. Em alguns produtos o link da Coupang é um link de afiliado do Coupang Partners, e ao escolher um deles aparece um aviso logo abaixo da linha de produtos. O app não mostra preços atuais."
    ]
   },
   {
@@ -161,7 +161,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do SpecTable",
-  "effectiveDate": "2026-11-02",
+  "effectiveDate": "2026-11-05",
   "summary": "O desenvolvedor não coleta informações pessoais. O banner de anúncio abaixo da tela de comparação vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remove ads é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app SpecTable (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."

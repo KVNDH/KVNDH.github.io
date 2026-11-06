@@ -51,10 +51,10 @@
    "layout": "feat",
    "title": "Passend zu Ihrem Budget einstellen",
    "body": [
-    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie Expires If Unspent (Verfällt ungenutzt) ein. Dann weist die App Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
+    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Bei einem Monatsbudget wird das übrige Geld am Ende des Zeitraums zum Budget des nächsten Zeitraums addiert. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie Expires If Unspent (Verfällt ungenutzt) ein. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
    ],
    "bullets": [
-    "Einstellung Verfällt ungenutzt",
+    "Übertrag oder Verfällt ungenutzt",
     "Starttag des Zeitraums, 1. bis 28.",
     "Widgets für Home-Bildschirm und Sperrbildschirm"
    ],
@@ -62,7 +62,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-64px",
-    "alt": "DailyLeft aus der Nähe, mit einem Budget oder verbleibenden Betrag.",
+    "alt": "DailyLeft-Widgets auf dem Home-Bildschirm mit dem übrigen Geld des Zeitraums und dem Tagesbetrag.",
     "caption": "App-Ansicht, vergrößert",
     "focusW": "400px"
    }
@@ -114,8 +114,8 @@
   {
    "q": "Übriges Geld am Ende eines Zeitraums",
    "a": [
-    "Übriges Geld geht nicht in den nächsten Zeitraum über. Endet ein Zeitraum, beginnt das Budget neu.",
-    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen Expires If Unspent (Verfällt ungenutzt) ein. Die App weist Sie dann darauf hin, alles innerhalb des Zeitraums auszugeben."
+    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Expires If Unspent (Verfällt ungenutzt) ausgeschaltet oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
+    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen Expires If Unspent (Verfällt ungenutzt) ein. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
    ]
   },
   {
@@ -129,6 +129,12 @@
    "q": "Der Tagesbetrag an einem Tag mit Zahlung",
    "a": [
     "Bei einem Monatsbudget gilt: Ist heute ein gezählter Tag und gibt es heute eine Zahlung, endet die Berechnung für heute, und das übrige Geld wird ab morgen neu verteilt. Auf dem Bildschirm steht Done for today (Für heute fertig). Stornieren Sie alle Zahlungen dieses Tages, zählt der heutige Tag wieder. Saldoanpassungen gelten nicht als Zahlungen."
+   ]
+  },
+  {
+   "q": "Rundung des Tagesbetrags",
+   "a": [
+    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets auf volle 1.000 Won abgerundet, aus 18.383 Won werden also 18.000 Won. Beträge unter 1.000 Won bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo, Buchungsbeträge und andere Währungen werden nicht gerundet."
    ]
   },
   {
@@ -231,8 +237,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
-  "effectiveDate": "2026-11-02",
-  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet.",
+  "effectiveDate": "2026-11-07",
+  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -255,11 +261,12 @@
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
+     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, der Tag, ab dem der Übertrag gezählt wird, und der in diesen Zeitraum übertragene Betrag, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
      "Letzte 4 Kartenziffern (falls eingetragen): um Nachrichten anderer Karten auszusortieren",
      "Transaktionen (Datum, Betrag, Händler oder Notiz, Zeitpunkt der Aufnahme in die App, Art der Erfassung): um das übrige Geld zu berechnen und für die Transaktionsliste",
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
-     "Der zuletzt gesehene Saldo und sein Zeitpunkt, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige"
+     "Der zuletzt gesehene Saldo und sein Zeitpunkt, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige",
+     "Ob Sie Remove Ads (Werbung entfernen) gekauft haben: um das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen"
     ]
    },
    {
@@ -288,7 +295,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus.",
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Remove Ads (Werbung entfernen) und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple Account.",
      "Eine Melde-E-Mail gelangt über Ihren Mail-Dienst in das Naver-Postfach des Entwicklers (kvndh36@naver.com)."
     ],
     "bullets": []
@@ -313,7 +320,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Datei kann in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Datei kann in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
      "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
      "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail und diese Seite mit der Datenschutzerklärung, und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
@@ -325,7 +332,8 @@
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können. Die Liste unten gibt wieder, was in den Datenschutzmanifesten der beiden SDKs steht.",
      "Die App prüft die Angaben zur Einwilligung in Werbung, nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben. Haben Sie schon begonnen, prüft sie beim Öffnen der App. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
-     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Privacy Choices (Datenschutzoptionen) in den Einstellungen."
+     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Privacy Choices (Datenschutzoptionen) in den Einstellungen.",
+     "Nach dem Kauf von Remove Ads (Werbung entfernen) prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK. Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden."
     ],
     "bullets": [
      "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",

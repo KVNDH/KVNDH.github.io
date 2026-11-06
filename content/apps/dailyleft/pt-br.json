@@ -51,10 +51,10 @@
    "layout": "feat",
    "title": "Ajuste ao seu orçamento",
    "body": [
-    "Por padrão, o app ajuda você a não passar do orçamento. Se o dinheiro some quando o período termina, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar), e ele avisa para você usar tudo a tempo. Escolha o dia em que o orçamento começa, do dia 1 ao dia 28. O dinheiro restante também aparece nos widgets da Tela de Início e da Tela Bloqueada."
+    "Por padrão, o app ajuda você a não passar do orçamento. Com um orçamento mensal, o dinheiro restante no fim do período é somado ao orçamento do período seguinte. Se o dinheiro some quando o período termina, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar). Assim nada passa para o período seguinte, e o app avisa para você usar tudo a tempo. Escolha o dia em que o orçamento começa, do dia 1 ao dia 28. O dinheiro restante também aparece nos widgets da Tela de Início e da Tela Bloqueada."
    ],
    "bullets": [
-    "Ajuste Expira se sobrar",
+    "Transferência ou Expira se sobrar",
     "Início do período do dia 1 ao dia 28",
     "Widgets da Tela de Início e da Tela Bloqueada"
    ],
@@ -62,7 +62,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-64px",
-    "alt": "Um detalhe do DailyLeft, com um valor de orçamento ou de dinheiro restante.",
+    "alt": "Widgets do DailyLeft na Tela de Início com o dinheiro restante do período e o valor diário.",
     "caption": "Tela do app, ampliada",
     "focusW": "400px"
    }
@@ -114,8 +114,8 @@
   {
    "q": "Dinheiro restante no fim do período",
    "a": [
-    "O dinheiro restante não passa para o período seguinte. Quando um período termina, o orçamento começa de novo.",
-    "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar) em Ajustes. O app então avisa para você usar tudo dentro do período."
+    "Com um orçamento mensal, o dinheiro restante no fim de um período é somado ao orçamento do período seguinte. Só passa o dinheiro que sobrou, e o que você gastar acima do orçamento não é descontado do período seguinte. A transferência começa no período em que você configura o app, desliga Expires If Unspent (Expira se sobrar) ou muda para Monthly Budget (Orçamento mensal). Se depois você mudar o valor ou o dia de início, o dinheiro que já passou não é recalculado. O orçamento diário não passa para o período seguinte.",
+    "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar) em Ajustes. Assim nada passa para o período seguinte, e o app avisa para você usar tudo dentro do período."
    ]
   },
   {
@@ -129,6 +129,12 @@
    "q": "O valor diário no dia de um pagamento",
    "a": [
     "Com um orçamento mensal, se hoje é um dia contado e há um pagamento hoje, a conta de hoje termina e o dinheiro restante é dividido de novo a partir de amanhã. A tela mostra Done for today (Conta de hoje encerrada). Se você cancelar todos os pagamentos desse dia, hoje volta a contar. Ajustes de saldo não contam como pagamentos."
+   ]
+  },
+  {
+   "q": "Arredondamento do valor diário",
+   "a": [
+    "Em wons, o valor diário do número grande, da linha de status e dos widgets é arredondado para baixo até os 1.000 wons, então 18.383 wons aparecem como 18.000 wons. Valores abaixo de 1.000 wons ficam como estão, e quando resta um só dia aparece todo o dinheiro restante. O saldo total, os valores das transações e as outras moedas não são arredondados."
    ]
   },
   {
@@ -231,8 +237,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do DailyLeft",
-  "effectiveDate": "2026-11-02",
-  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade.",
+  "effectiveDate": "2026-11-07",
+  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -255,11 +261,12 @@
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
-     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, Contar só dias úteis, Expira se sobrar, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
+     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, Contar só dias úteis, Expira se sobrar, o dia a partir do qual a transferência é contada e o dinheiro transferido para esse período, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
      "4 últimos dígitos do cartão (se informados): usados para deixar de fora as mensagens de outros cartões",
      "Transações (data, valor, estabelecimento ou nota, hora em que entraram no app, como foram registradas): usadas para calcular o dinheiro restante e para a lista de transações",
      "O texto original das mensagens de pagamento registradas: guardado como está no arquivo salvo e usado para que a mesma mensagem não seja registrada duas vezes. Pode incluir parte do nome de quem aprovou o pagamento (por exemplo, H*D), o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora",
-     "O último saldo visto e quando, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela"
+     "O último saldo visto e quando, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela",
+     "Se você comprou Remove Ads (remover anúncios): usado para esconder o banner e pular a verificação do consentimento de anúncios, o pedido de rastreamento e o início do SDK de anúncios"
     ]
    },
    {
@@ -288,7 +295,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "O desenvolvedor não terceiriza o tratamento de informações pessoais.",
+     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento de Remove Ads (remover anúncios) e a restauração dele pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple.",
      "Um e-mail de reporte de mensagem passa pelo seu serviço de e-mail até a caixa de correio do desenvolvedor no Naver (kvndh36@naver.com)."
     ],
     "bullets": []
@@ -313,7 +320,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esse arquivo pode entrar nos backups do iCloud ou do Mac que você ativar.",
+     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esse arquivo pode entrar nos backups do iCloud ou do Mac que você ativar.",
      "O app não envia e-mail por conta própria. Tocar em Report Message (Reportar mensagem) só preenche o destinatário, o assunto e o corpo de um rascunho de e-mail, e quem toca em enviar ou cancelar é você. Se não houver conta de e-mail configurada, ele abre um app de e-mail que você escolher com o mesmo conteúdo.",
      "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem e esta página da política de privacidade, e só quando você toca neles.",
      "O que o app passa ao SDK de anúncios é a solicitação de anúncio e o tamanho do banner. Ele não passa orçamentos, transações, mensagens nem números de cartão."
@@ -325,7 +332,8 @@
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento de anúncios e quando carregam e exibem anúncios. A lista abaixo é o que os manifestos de privacidade dos dois SDKs declaram.",
      "O app verifica as informações de consentimento de anúncios depois que você toca em Start (Começar) na tela da primeira abertura. Se você já começou, ele verifica quando o app abre. Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se os anúncios puderem ser solicitados e você ainda não tiver respondido, o iOS mostra o aviso de transparência de rastreamento (ATT). Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Essa escolha pode ser alterada em Ajustes > Privacidade e Segurança > Rastreamento.",
-     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em Privacy Choices (Opções de privacidade), em Ajustes."
+     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em Privacy Choices (Opções de privacidade), em Ajustes.",
+     "Depois da compra de Remove Ads (remover anúncios), o app verifica a compra ao abrir e deixa de fazer a verificação do consentimento, o pedido de rastreamento e o início do SDK, e os anúncios não são solicitados. Se você comprar com o app aberto, o banner some na hora, mas o SDK que já tiver iniciado continua ativo até você fechar o app."
     ],
     "bullets": [
      "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",

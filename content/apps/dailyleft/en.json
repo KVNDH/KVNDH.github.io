@@ -51,10 +51,10 @@
    "layout": "feat",
    "title": "Set it up for your budget",
    "body": [
-    "By default it helps you stay within budget. If the money disappears when the period ends, as with welfare points or a grant, turn on Expires If Unspent, and it tells you to use it all in time. Choose the day your budget starts, from the 1st to the 28th. The money left also shows in Home Screen and Lock Screen widgets."
+    "By default it helps you stay within budget. With a monthly budget, money left at the end of a period is added to the next period's budget. If the money disappears when the period ends, as with welfare points or a grant, turn on Expires If Unspent. Then nothing carries over, and it tells you to use it all in time. Choose the day your budget starts, from the 1st to the 28th. The money left also shows in Home Screen and Lock Screen widgets."
    ],
    "bullets": [
-    "An Expires if unspent setting",
+    "Carry-over or Expires if unspent",
     "Period start day, 1st to 28th",
     "Home Screen and Lock Screen widgets"
    ],
@@ -62,7 +62,7 @@
     "type": "crop",
     "shot": 3,
     "focus": "-64px",
-    "alt": "A close-up of DailyLeft, showing a budget or remaining amount.",
+    "alt": "DailyLeft widgets on the Home Screen, showing the money left this period and the daily amount.",
     "caption": "App screen, zoomed in",
     "focusW": "400px"
    }
@@ -114,8 +114,8 @@
   {
    "q": "Money left at the end of a period",
    "a": [
-    "Money left does not carry over to the next period. When a period ends, the budget starts again.",
-    "If the money disappears when unspent, as with welfare points or a grant, turn on Expires If Unspent in Settings. The app then tells you to use it all within the period."
+    "With a monthly budget, money left when a period ends is added to the next period's budget. Only money left over carries over, and spending over budget is not taken from the next period. Carry-over starts from the period you first set up, or the period where you turned off Expires If Unspent or switched to Monthly Budget. Changing the budget amount or start day after that does not recalculate money that has already carried over. A daily budget does not carry over.",
+    "If the money disappears when unspent, as with welfare points or a grant, turn on Expires If Unspent in Settings. Nothing carries over then, and the app tells you to use it all within the period."
    ]
   },
   {
@@ -129,6 +129,12 @@
    "q": "The daily amount on a day you pay",
    "a": [
     "With a monthly budget, if today is a counted day and you have a payment today, today's count ends and the money left is divided again from tomorrow. The screen shows Done for today. If you cancel every payment that day, today counts again. Balance adjustments don't count as payments."
+   ]
+  },
+  {
+   "q": "How the daily amount is rounded",
+   "a": [
+    "In won, the daily amount in the big number, the status line and the widgets is rounded down to the thousand, so 18,383 won shows as 18,000 won. Amounts under 1,000 won stay as they are, and when one day is left the whole amount left shows. The total left, transaction amounts and other currencies are not rounded."
    ]
   },
   {
@@ -231,8 +237,8 @@
  ],
  "privacy": {
   "title": "DailyLeft Privacy Policy",
-  "effectiveDate": "2026-11-02",
-  "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier.",
+  "effectiveDate": "2026-11-07",
+  "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove Ads and restoring it.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the DailyLeft app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
   ],
@@ -255,11 +261,12 @@
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [
-     "Budget settings (budget type, currency and amount, period start day, Count weekdays only, Expires if unspent, whether payments go through over budget, how payment notices arrive, days left out in the calendar): used to work out the money left and the daily amount",
+     "Budget settings (budget type, currency and amount, period start day, Count weekdays only, Expires if unspent, the day carry-over started counting and the money carried into that period, whether payments go through over budget, how payment notices arrive, days left out in the calendar): used to work out the money left and the daily amount",
      "Card last 4 digits (if entered): used to skip messages from other cards",
      "Transactions (date, amount, merchant or memo, time added to the app, how it was recorded): used to work out the money left and for the transaction list",
      "The original text of recorded payment messages: saved as is in the saved file and used so the same message isn't recorded twice. It may include part of the approver's name (for example H*D), the merchant, the card's last 4 digits, the amount and the time",
-     "The last balance seen and when, a first-run mark, the day a celebration was shown, and whether the calendar is expanded: used to draw the screen"
+     "The last balance seen and when, a first-run mark, the day a celebration was shown, and whether the calendar is expanded: used to draw the screen",
+     "Whether you bought Remove Ads: used to hide the banner and skip the ad consent check, the tracking prompt and the ad SDK start"
     ]
    },
    {
@@ -288,7 +295,7 @@
    {
     "title": "Outsourcing of processing",
     "paragraphs": [
-     "The developer does not outsource the processing of personal information.",
+     "The developer does not outsource the processing of personal information. Apple processes payment for Remove Ads and Restore Purchases through the App Store, and payment information is governed by Apple's privacy policy. The developer does not receive your payment method or Apple Account details.",
      "A message report email travels through your mail service to the developer's Naver mailbox (kvndh36@naver.com)."
     ],
     "bullets": []
@@ -313,7 +320,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "The app's records and settings sit in one file (ledger.json) in storage the app and its widget share on your device (an App Group). The widget only reads this file and does not use the ad SDK. Values used to draw the screen are in the app's UserDefaults. The developer runs no server, and the app does not use iCloud sync. This file can be included in iCloud or Mac backups you turn on.",
+     "The app's records and settings sit in one file (ledger.json) in storage the app and its widget share on your device (an App Group). The widget only reads this file and does not use the ad SDK. Values used to draw the screen and whether you bought Remove Ads are in the app's UserDefaults. The developer runs no server, and the app does not use iCloud sync. This file can be included in iCloud or Mac backups you turn on.",
      "The app does not send email itself. Tapping Report Message only fills in the recipient, subject and body of a mail draft, and you tap send or cancel. If no mail account is set up, it opens a mail app you choose with the same content.",
      "The only permission the app asks for is tracking (ATT). It does not ask for photos, location, notifications, camera or contacts. The app takes clipboard text only when you paste it. Apart from ads, the only outside addresses the app opens are the message report email and this privacy policy page, and only when you tap them.",
      "What the app passes to the ad SDK is the ad request and the banner size. It does not pass budgets, transactions, messages or card numbers."
@@ -325,7 +332,8 @@
     "paragraphs": [
      "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) and the Google User Messaging Platform SDK for advertising, which may collect the information below when they check ad consent and when they load and show ads. The list below is what the privacy manifests of the two SDKs declare.",
      "The app checks ad consent information after you tap Start on the first-run screen. If you have already started, it checks when the app opens. Where ad consent is required, such as the European Economic Area, Google's consent form appears first. If ads can be requested and you haven't answered yet, iOS shows the App Tracking Transparency (ATT) prompt. If you don't allow tracking, AdMob does not get the advertising identifier (IDFA), and ads keep appearing. You can change this choice in iOS Settings > Privacy & Security > Tracking.",
-     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from Privacy Choices in Settings."
+     "If the consent result means ads can't be requested, the tracking prompt is not shown and ads are not requested. Where consent is required, change it from Privacy Choices in Settings.",
+     "After you buy Remove Ads, the app checks your purchase when it opens and then skips the consent check, the tracking prompt and the SDK start, and ads are not requested. If you buy while the app is open, the banner goes away at once, but an SDK that has already started stays until you quit the app."
     ],
     "bullets": [
      "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",

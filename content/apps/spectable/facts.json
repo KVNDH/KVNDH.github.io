@@ -3,7 +3,6 @@
  "purchase": "one-time",
  "ads": true,
  "account": false,
- "unreleased": "2026-11-01 출시 전. ASC 앱 기록(6829383480)은 있고 출시 전이라 site.json 에 appStoreId 가 없다. 저장소 이름은 SpecPair, 슬러그는 spectable. 옛 specpair 앱 항목은 2026-11-01 뺐고, 쿠팡 파트너스 활동 매체에 옛 주소 등록이 남아 있어 static/ko/specpair 가 옛 주소 셋을 같은 자리로 보낸다",
  "platform": [
   "iPhone 전용, iOS 26 이상, 세로와 가로 (SpecPair project.yml TARGETED_DEVICE_FAMILY, UISupportedInterfaceOrientations)"
  ],
@@ -11,15 +10,16 @@
   "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecTable/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
  ],
  "ads_detail": [
-  "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:104, Ads/AdBanner.swift). 시트와 공유 이미지에는 없다",
-  "순서: 소개 뒤 ads.start() (ContentView.swift:201). 활성 대기, UMP 갱신, 필요하면 동의 양식, canRequestAds 면 ATT(아직 안 정했을 때), SDK 시작 (Ads/AdsModel.swift)",
-  "광고 제거를 사도 ads.start() 는 그대로 돈다. store.adFree 는 AdBanner 만 막는다. Tapey, Set & Burn 과 다르다",
-  "광고 개인정보 선택 줄은 광고 제거 시트에, UMP 가 요구할 때만 (Store/RemoveAdsSheet.swift)",
+  "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:110~:113, Ads/AdBanner.swift, 배너 안 'Remove ads' 단추). 시트와 공유 이미지에는 없다",
+  "순서: 소개가 끝나고 구매 판정이 끝난 뒤 ads.startIfWanted(onboarded, storeChecked, adFree) (ContentView.swift:217~:218, Ads/AdsModel.swift:68~:69). 활성 대기, UMP 갱신, 필요하면 동의 양식, canRequestAds 면 ATT(아직 안 정했을 때), SDK 시작",
+  "광고 제거를 산 사람은 startIfWanted 가 멈춰 동의 확인, ATT, SDK 시작을 하지 않는다(AdsModel.swift:69). 켠 채로 사면 배너만 바로 사라지고 그 실행에서 시작된 SDK 는 남는다(처리방침 9절, SpecTable 34baba1 뒤 판, 빌드 5 40c9612 에서 다시 확인)",
+  "광고 제거 시트: 첫 화면 바닥 줄 'Remove ads/광고 제거'와 배너 안 단추로 연다(ContentView.swift:301~:302, AdBanner.swift:43~:44). 시트에 'One-time purchase/한 번 구매', 'Restore purchase/구매 복원', UMP 가 요구할 때만 'Ad privacy choices/광고 개인정보 선택', 개인정보 처리방침 링크 (Store/RemoveAdsSheet.swift)",
   "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (Ads/GoogleAdsSDK.swift)"
  ],
  "externalLinks": [
-  "가격 링크: PriceLink.choose. KR 과 Amazon 나라 밖은 쿠팡(data/links/coupang.json 에 link.coupang.com 링크가 있는 기기는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없으면 꼬리표 없는 쿠팡 검색), US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(꼬리표 없음), TW HK 는 링크 없음. 다나와 링크는 없앰(SpecTable 630cc15) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift, ContentView.swift:1025)",
-  "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink, :981)",
+  "가격 링크(빌드 5 40c9612): PriceLink.choose. US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(amazonTags 가 비어 꼬리표 없음, 대가성 문구 없음), TW HK 는 링크 없음, 한국과 그 밖의 지역은 쿠팡. 쿠팡 스위치 켬(ContentView.swift:1105 Settings(coupang: true)). data/links/coupang.json 에 link.coupang.com 링크가 있는 13대(Apple 최신 10대와 갤럭시 S25 울트라, iPhone 17 Pro Max, MacBook Air 15 M5)는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없는 기기는 꼬리표 없는 쿠팡 검색. 링크 이름 'Coupang ↗', 'Amazon ↗'(ContentView.swift:701~:702). 다나와 링크는 없앰(SpecTable 6247694) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift)",
+  "대가성 문구: 쿠팡 파트너스 가이드 권장 문구 원문 \"이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\"(PriceLink.coupangDisclosure). 고른 제품 가운데 파트너스 링크가 하나라도 있으면 비교 화면 맨 위 제품 칸 바로 아래에 15pt 먹 글자, 화면이 영어, 일본어, 독일어면 번역 한 줄 더 (ContentView.swift:639~:647, docs/COUPANG_DISCLOSURE.md). 사이트 FAQ 는 개수 13 을 쓰지 않고 '일부 제품'으로 쓴다(링크는 사용자가 손으로 늘린다)",
+  "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink)",
   "사이트 ko 소개 쪽 쿠팡 파트너스 링크 셋과 대가성 문구: 옛 specpair ko 쪽 값을 2026-11-01 그대로 옮김 (ko.json partners, SpecPair docs/SITE_DRAFT.md 5절). 활동 매체 https://kvndh.com/ko/spectable/. 앱 안 링크와는 별개다"
  ],
  "storage": [
@@ -38,10 +38,12 @@
   "200",
   "3,000"
  ],
- "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(catalog.json 3,081대, 2026-10-29 판, metadata.json 문구)",
+ "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(빌드 5 catalog 3,769대, 기준일 2026-11-04, metadata.json 문구 그대로)",
  "sources": [
-  "SpecPair 92cbac7: 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30), docs/store/metadata.json",
+  "SpecTable 40c9612(빌드 1.0.0 (5), 2026-11-06 ASC READY_FOR_SALE 판, 광고 제거 상품 APPROVED): 코드, docs/HANDOFF.md, docs/COUPANG_DISCLOSURE.md, docs/store/metadata.json(라이브와 글자까지 같음, 세션 11-05 대조)",
+  "그 전 근거: SpecPair 92cbac7 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30)",
   "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
-  "그림: docs/store/screenshots(ko, en-US), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
- ]
+  "그림: docs/store/screenshots(ko, en-US, ja, de-DE), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
+ ],
+ "versionNote": "스펙테이블(SpecTable) 1.0.0(빌드 5) 출시(2026-11-06 ASC READY_FOR_SALE, 광고 제거 상품 com.kimdh.spectable.removeads APPROVED, kr, us 스토어 페이지 200, HQ 확인). site.json 의 unreleased 를 빼고 appStoreId 6829383480 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 빌드 5 와 대조: 가격 링크가 쿠팡으로 바뀐 것은 처리방침 5절에 6cad6e30 에서 반영돼 있었고, 이번에 지원 FAQ '제품 칸의 가격 링크' 8개 언어를 나라별(Amazon 8개 나라, 대만과 홍콩 없음, 한국과 그 밖은 쿠팡)과 일부 제품의 쿠팡 파트너스 제휴 링크, 제품 칸 아래 대가성 문구로 고쳤다. 빌드 5 에 합친 사용성 개선 17개(7db815e, 2ede745: 고르기 시트 키보드, 되돌리기 띠, 빼기, 종류 칩, 조건 줄 개수, 조합 이름과 점, 소개 첫 장 그림, 출처 줄 ›, 바깥 링크 ↗, 광고 제거 시트 링크 묶음 등)는 사이트 문장이 말하지 않는 화면 다듬기라 본문을 고칠 곳이 없었다. 광고 제거 FAQ 의 단추 자리(배너 안, 첫 화면 바닥 줄)와 화면 이름(광고 제거, 구매 복원, 광고 개인정보 선택)은 빌드 5 와 같다. 숫자 5, 10%, 16개 종류, 3,000개가 넘는(3,769대)도 그대로 맞다"
 }

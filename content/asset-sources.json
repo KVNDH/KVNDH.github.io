@@ -270,15 +270,16 @@
   "icon": "DailyLeft/DailyLeft/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "DailyLeft/build/shots/1-today.png",
-    "DailyLeft/build/shots/2-calendar.png",
-    "DailyLeft/build/shots/3-widgets.png"
+    "DailyLeft/docs/store/shots-raw/iphone/ko/01-today.png",
+    "DailyLeft/docs/store/shots-raw/iphone/ko/02-calendar.png",
+    "DailyLeft/docs/store/shots-raw/iphone/ko/03-widgets.png"
    ],
    "en": [
-    "DailyLeft/build/shots-en/1-today.png",
-    "DailyLeft/build/shots-en/2-calendar.png",
-    "DailyLeft/build/shots-en/3-widgets.png"
+    "DailyLeft/docs/store/shots-raw/iphone/en-US/01-today.png",
+    "DailyLeft/docs/store/shots-raw/iphone/en-US/02-calendar.png",
+    "DailyLeft/docs/store/shots-raw/iphone/en-US/03-widgets.png"
    ]
-  }
+  },
+  "store": "DailyLeft/docs/store"
  }
 }

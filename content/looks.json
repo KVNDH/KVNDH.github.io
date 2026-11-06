@@ -93,6 +93,23 @@
    ]
   }
  },
+ "dailyleft": {
+  "mode": "line",
+  "ink": "dark",
+  "color": "#F5F5F0",
+  "alts": {
+   "ko": [
+    "오늘의 예산을 바로 확인 가능합니다",
+    "달력으로 남은 예산을 확인합니다",
+    "위젯으로도 빠른 확인이 가능합니다"
+   ],
+   "en": [
+    "See today's budget at a glance",
+    "Check the budget left on the calendar",
+    "Check it fast from a widget"
+   ]
+  }
+ },
  "dice-master": {
   "mode": "line",
   "ink": "dark",
@@ -430,11 +447,5 @@
     "Escolha algumas fotos, o layout se monta sozinho"
    ]
   }
- },
- "dailyleft": {
-  "mode": "line",
-  "ink": "dark",
-  "color": "#FFFFFF",
-  "alts": {}
  }
 }
