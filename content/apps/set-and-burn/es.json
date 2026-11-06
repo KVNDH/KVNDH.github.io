@@ -4,14 +4,14 @@
  "summary": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
  "hero": {
   "hook": "Define el trabajo y el descanso, y sigue las señales y la voz por rondas y series",
-  "shotAlt": "La pantalla de entrenamiento de Set & Burn. El nombre de la fase y el tiempo restante aparecen en números grandes, y debajo están el número de ronda y el tiempo total restante."
+  "shotAlt": "La pantalla de entrenamiento de Set & Burn. El nombre de la fase y el tiempo restante aparecen en números grandes, y debajo están el número de ronda y el tiempo total restante. La tinta negra baja con el tiempo restante."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Un entrenamiento, a tu manera",
    "body": [
-    "Define el tiempo de trabajo y las rondas, y dale forma al entrenamiento con tres interruptores: Rest (Descanso), Sets (Series) y Count jumps (Contar saltos). También puedes añadir calentamiento y enfriamiento. El tiempo total y el orden de las fases se ven arriba en la pantalla de edición."
+    "Define el tiempo de trabajo y las rondas, y dale forma al entrenamiento con tres interruptores: Rest (Descanso), Sets (Series) y Count jumps (Contar saltos). También puedes añadir calentamiento y enfriamiento. El tiempo total y el orden de las fases se ven arriba en la pantalla de edición. Los cambios pasan al entrenamiento solo al tocar Save (Guardar) arriba, y Cancel (Cancelar) lo deja como estaba."
    ],
    "bullets": [
     "Tiempo de trabajo y rondas",
@@ -41,10 +41,11 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-200px",
+    "focus": "-60px",
     "alt": "La pantalla de Count jumps (Contar saltos). Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
     "caption": "Pantalla de la app, ampliada",
-    "focusX": "-25px"
+    "focusX": "0px",
+    "focusW": "390px"
    }
   },
   {
@@ -63,7 +64,7 @@
    "layout": "card",
    "title": "Fases que se leen de lejos",
    "body": [
-    "La pantalla se invierte durante el trabajo y vuelve a la normalidad durante el descanso. Admite aspecto claro y oscuro, y orientación vertical y horizontal. El tiempo de las fases de trabajo se suma en Lifetime work time (tiempo de trabajo acumulado)."
+    "La pantalla se invierte durante el trabajo y vuelve a la normalidad durante el descanso. Con Ink level (Nivel de tinta) activado, durante el trabajo y el descanso la tinta baja desde arriba con el tiempo restante. Admite aspecto claro y oscuro, y orientación vertical y horizontal. El tiempo de las fases de trabajo se suma en Lifetime work time (tiempo de trabajo acumulado)."
    ],
    "bullets": [],
    "visual": {
@@ -78,9 +79,10 @@
  ],
  "pro": {
   "kick": "Set & Burn Pro",
-  "title": "Crea más entrenamientos,\ndesactiva los anuncios",
+  "title": "Crea y encadena más entrenamientos,\ndesactiva los anuncios",
   "items": [
    "Sin límite de entrenamientos (1 al principio)",
+   "Cadenas que juntan varios entrenamientos seguidos",
    "Anuncios de banner desactivados en la pantalla final y en la lista de entrenamientos",
    "En familia"
   ]
@@ -89,8 +91,15 @@
   {
    "q": "Crear un entrenamiento",
    "a": [
-    "Toca el nombre del entrenamiento arriba a la izquierda de la pantalla principal para abrir la lista de entrenamientos, y luego toca New workout (Nuevo entrenamiento). Para cambiar los valores del entrenamiento actual, toca Edit (Editar) en la pantalla principal.",
+    "Toca el nombre del entrenamiento arriba a la izquierda de la pantalla principal para abrir la lista de entrenamientos, y luego toca New workout (Nuevo entrenamiento) para abrir la pantalla de edición. Toca Save (Guardar) arriba para añadirlo a la lista, o Cancel (Cancelar) para no crearlo. Para cambiar los valores del entrenamiento actual, toca Edit (Editar) en la pantalla principal y conserva los cambios con Save (Guardar). Si tocas Cancel (Cancelar) después de cambiar algo, la app pregunta una vez si quieres descartar los cambios.",
     "Al principio puedes tener 1 entrenamiento, incluido el de ejemplo. Para crear más necesitas Pro. Los entrenamientos que ya tienes se pueden seguir usando y editando."
+   ]
+  },
+  {
+   "q": "Cadenas de entrenamientos",
+   "a": [
+    "Con Pro puedes unir varios entrenamientos en una cadena y hacerlos uno tras otro. En la lista de entrenamientos, toca New chain (Nueva cadena) en Chains (Cadenas), añade entrenamientos, fija Rest between workouts (Descanso entre entrenamientos) y toca Save (Guardar). Una cadena admite de 2 a 12 entrenamientos, y el mismo entrenamiento puede ir dos veces. El descanso entre entrenamientos empieza en 1 minuto, y en 0 el siguiente entrenamiento empieza enseguida.",
+    "Elige una cadena y empiézala, y los entrenamientos se suceden en el orden en que los añadiste. Desde el segundo entrenamiento no hay calentamiento. Una cadena apunta a tus entrenamientos en lugar de copiarlos, así que al editar un entrenamiento, todas las cadenas que lo incluyen se ejecutan con los nuevos valores. El descanso entre entrenamientos no se suma a Lifetime work time (tiempo de trabajo acumulado)."
    ]
   },
   {
@@ -109,7 +118,7 @@
   {
    "q": "Sonidos de señal y voz",
    "a": [
-    "La app trae 13 sonidos de señal, creados con ElevenLabs. Suenan al empezar el trabajo y el descanso, en los últimos 3 segundos y al final. Para apagarlos, desactiva Signal sound (Sonido de señal) en Ajustes.",
+    "La app trae 13 sonidos de señal de marimba, creados con ElevenLabs. Suenan al empezar el trabajo y el descanso, en los últimos 3 segundos y al final. Para apagarlos, desactiva Signal sound (Sonido de señal) en Ajustes.",
     "Los avisos de voz se leen solo en el idioma de la pantalla: inglés si la pantalla está en inglés, coreano si está en coreano. Los lee la voz de iOS de tu dispositivo, no una grabación, así que no necesitan conexión, y la voz y su calidad cambian según el dispositivo. La app usa la voz de mayor calidad descargada en el dispositivo. Si no hay ninguna voz mejorada instalada, aparece una (i) junto a Voice (Voz) en Ajustes que indica dónde conseguirla. Para apagar los avisos de voz, desactiva Voice (Voz) en Ajustes."
    ]
   },
@@ -122,7 +131,7 @@
   {
    "q": "Pro y restaurar la compra",
    "a": [
-    "Cómpralo desde Pro en la barra superior de Ajustes. Es un pago único, no una suscripción. Pro desactiva los anuncios y te deja crear más de un entrenamiento. Es compatible con En familia.",
+    "Cómpralo desde Pro en la barra superior de Ajustes. Es un pago único, no una suscripción. Pro quita el límite de entrenamientos, te deja crear cadenas y desactiva los anuncios. Es compatible con En familia.",
     "Si cambias de dispositivo o reinstalas la app, toca Restore purchase (Restaurar compra) en la pantalla de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
    ]
   },
@@ -166,7 +175,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Set & Burn",
-  "effectiveDate": "2026-11-02",
+  "effectiveDate": "2026-11-07",
   "summary": "El desarrollador no recoge información personal. Los anuncios de banner vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Los valores de movimiento se usan para contar saltos, y el desarrollador no los recibe. Del pago de Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Set & Burn (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -189,6 +198,7 @@
     ],
     "bullets": [
      "La lista de entrenamientos (nombres, tiempos, rondas, series, interruptores, condición de fin, conteos) y el entrenamiento elegido: para ejecutar el temporizador y al volver a abrir la app",
+     "Las cadenas de entrenamientos (nombres, entrenamientos incluidos y su orden, descanso entre entrenamientos) y la cadena elegida: para hacer varios entrenamientos seguidos",
      "Ajustes de sonido, avisos de voz, vibración y pantalla: para el comportamiento de la app",
      "Lifetime work time (tiempo de trabajo acumulado): una única suma de segundos en fases de trabajo, sin registros por fecha",
      "Si ya se vio la guía inicial: para mostrarla solo una vez",
@@ -198,7 +208,7 @@
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los entrenamientos se pueden eliminar en la app, y Clear lifetime total (Borrar total acumulado), en Ajustes, devuelve a 0 el tiempo de trabajo acumulado.",
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los entrenamientos y las cadenas se pueden eliminar en la app, y Clear lifetime total (Borrar total acumulado), en Ajustes, devuelve a 0 el tiempo de trabajo acumulado.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,7 +237,7 @@
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Los entrenamientos se pueden eliminar en la app, y al eliminar la app desaparecen todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Los entrenamientos y las cadenas se pueden eliminar en la app, y al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },

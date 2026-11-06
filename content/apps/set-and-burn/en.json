@@ -4,14 +4,14 @@
  "summary": "Set your work and rest, then follow the signals and voice through rounds and sets",
  "hero": {
   "hook": "Set your work and rest, then follow the signals and voice through rounds and sets",
-  "shotAlt": "The Set & Burn workout screen. The segment name and time left show in large numbers, with the round number and total time left below."
+  "shotAlt": "The Set & Burn workout screen. The segment name and time left show in large numbers, with the round number and total time left below. The black ink has fallen in step with the time left."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "One workout, your shape",
    "body": [
-    "Set the work time and rounds, then shape the workout with three switches: Rest, Sets and Count jumps. You can add a warm-up and a cooldown too. The total time and the order of segments show at the top of the edit screen."
+    "Set the work time and rounds, then shape the workout with three switches: Rest, Sets and Count jumps. You can add a warm-up and a cooldown too. The total time and the order of segments show at the top of the edit screen. Changes go into the workout only when you tap Save at the top, and Cancel leaves it as it was."
    ],
    "bullets": [
     "Work time and rounds",
@@ -41,10 +41,11 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-200px",
+    "focus": "-60px",
     "alt": "The Count jumps screen. The count left shows in large numbers, with what is counting and the next segment below it.",
     "caption": "App screen, zoomed in",
-    "focusX": "-25px"
+    "focusX": "0px",
+    "focusW": "390px"
    }
   },
   {
@@ -63,7 +64,7 @@
    "layout": "card",
    "title": "Segments you can read from afar",
    "body": [
-    "The screen inverts during work and returns to normal during rest. Light and dark appearance, portrait and landscape are supported. Time in work segments adds up in Lifetime work time."
+    "The screen inverts during work and returns to normal during rest. With Ink level on, the ink falls from the top with the time left during work and rest. Light and dark appearance, portrait and landscape are supported. Time in work segments adds up in Lifetime work time."
    ],
    "bullets": [],
    "visual": {
@@ -78,9 +79,10 @@
  ],
  "pro": {
   "kick": "Set & Burn Pro",
-  "title": "Make more workouts,\nturn ads off",
+  "title": "Make more workouts and chain them,\nturn ads off",
   "items": [
    "No limit on workouts (1 to begin with)",
+   "Workout chains that run several workouts in a row",
    "Banner ads off on the finish screen and workout list",
    "Family Sharing"
   ]
@@ -89,8 +91,15 @@
   {
    "q": "Making a workout",
    "a": [
-    "Tap the workout name at the top left of the main screen to open the workout list, then tap New workout. To change the current workout's values, tap Edit on the main screen.",
+    "Tap the workout name at the top left of the main screen to open the workout list, then tap New workout to open the editor. Tap Save at the top to add it to the list, or Cancel to leave it out. To change the current workout's values, tap Edit on the main screen and keep the changes with Save. If you tap Cancel after changing something, the app asks once whether to discard the changes.",
     "To begin with you can keep 1 workout, including the example. Making more takes Pro. Workouts you already have can still be used and edited."
+   ]
+  },
+  {
+   "q": "Workout chains",
+   "a": [
+    "With Pro you can join several workouts into a chain and run them in a row. In the workout list, tap New chain under Chains, add workouts, set Rest between workouts, then tap Save. A chain holds 2 to 12 workouts, and the same workout can go in twice. Rest between workouts starts at 1 minute, and at 0 the next workout follows straight away.",
+    "Choose a chain and start it, and the workouts run in the order you added them. From the second workout on, Get ready is skipped. A chain points to your workouts instead of copying them, so when you edit a workout, every chain that holds it runs with the new values. Rest between workouts is not added to Lifetime work time."
    ]
   },
   {
@@ -109,7 +118,7 @@
   {
    "q": "Signal sounds and voice",
    "a": [
-    "A set of 13 signal sounds is built into the app, made with ElevenLabs. They play when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings.",
+    "A set of 13 marimba signal sounds is built into the app, made with ElevenLabs. They play when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings.",
     "Voice cues are read only in the screen's language: English for an English screen, Korean for a Korean screen. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice in Settings and shows where to get one. To turn voice cues off, switch off Voice in Settings."
    ]
   },
@@ -122,7 +131,7 @@
   {
    "q": "Pro and restoring your purchase",
    "a": [
-    "Buy it from Pro in the bar at the top of Settings. You pay once, and it is not a subscription. Pro turns ads off and lets you make more than one workout. Family Sharing is supported.",
+    "Buy it from Pro in the bar at the top of Settings. You pay once, and it is not a subscription. Pro removes the workout limit, lets you make workout chains, and turns ads off. Family Sharing is supported.",
     "If you change devices or reinstall the app, tap Restore purchase on the Pro screen. With the same Apple Account you won't pay again."
    ]
   },
@@ -166,7 +175,7 @@
  ],
  "privacy": {
   "title": "Set & Burn Privacy Policy",
-  "effectiveDate": "2026-11-02",
+  "effectiveDate": "2026-11-07",
   "summary": "The developer does not collect personal information. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Motion values are used to count jumps, and the developer does not receive them. Apple handles payment for Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Set & Burn app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -189,6 +198,7 @@
     ],
     "bullets": [
      "The workout list (names, times, rounds, sets, switches, end rule, counts) and the chosen workout: used to run the timer and when the app reopens",
+     "Workout chains (names, the workouts in them and their order, rest between workouts) and the chosen chain: used to run several workouts in a row",
      "Sound, voice cue, vibration and display settings: used for how the app behaves",
      "Lifetime work time: a single sum of seconds in work segments, with no records by date",
      "Whether the first-run guide has been seen: used to show it only once",
@@ -198,7 +208,7 @@
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Workouts can be removed in the app, and Clear lifetime total in Settings sets lifetime work time back to 0.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Workouts and chains can be removed in the app, and Clear lifetime total in Settings sets lifetime work time back to 0.",
      "Information collected by AdMob is kept as set out in Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,7 +237,7 @@
    {
     "title": "Destruction of information",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to destroy. Workouts can be removed in the app, and deleting the app removes all of its data."
+     "The developer holds no personal information, so there is nothing to destroy. Workouts and chains can be removed in the app, and deleting the app removes all of its data."
     ],
     "bullets": []
    },

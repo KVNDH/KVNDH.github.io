@@ -255,14 +255,14 @@
   "icon": "SetAndBurn/SetAndBurn/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "SetAndBurn/build/shots-ko/runWork-light.png",
-    "SetAndBurn/build/shots-ko/countRound-light.png",
-    "SetAndBurn/build/shots-ko/editorSwitches-light.png"
+    "SetAndBurn/docs/store/screenshots/iphone/ko/02.png",
+    "SetAndBurn/docs/store/screenshots/iphone/ko/01.png",
+    "SetAndBurn/docs/store/screenshots/iphone/ko/03.png"
    ],
    "en": [
-    "SetAndBurn/build/shots-en/runWork-light.png",
-    "SetAndBurn/build/shots-en/countRound-light.png",
-    "SetAndBurn/build/shots-en/editorSwitches-light.png"
+    "SetAndBurn/docs/store/screenshots/iphone/en-US/02.png",
+    "SetAndBurn/docs/store/screenshots/iphone/en-US/01.png",
+    "SetAndBurn/docs/store/screenshots/iphone/en-US/03.png"
    ]
   }
  },

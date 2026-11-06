@@ -4,14 +4,14 @@
  "summary": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
  "hero": {
   "hook": "Defina exercício e descanso e siga os sinais e a voz por rodadas e séries",
-  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo."
+  "shotAlt": "A tela de treino do Set & Burn. O nome da fase e o tempo restante aparecem em números grandes, com o número da rodada e o tempo total restante embaixo. A tinta preta desce conforme o tempo restante."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Um treino, do seu jeito",
    "body": [
-    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: Rest (Descanso), Sets (Séries) e Count jumps (Contar pulos). Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição."
+    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: Rest (Descanso), Sets (Séries) e Count jumps (Contar pulos). Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição. As mudanças só entram no treino quando você toca em Save (Salvar) no topo, e Cancel (Cancelar) deixa tudo como estava."
    ],
    "bullets": [
     "Tempo de exercício e rodadas",
@@ -41,10 +41,11 @@
    "visual": {
     "type": "crop",
     "shot": 2,
-    "focus": "-200px",
+    "focus": "-60px",
     "alt": "A tela de Count jumps (Contar pulos). A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
     "caption": "Tela do app, ampliada",
-    "focusX": "-25px"
+    "focusX": "0px",
+    "focusW": "390px"
    }
   },
   {
@@ -63,7 +64,7 @@
    "layout": "card",
    "title": "Fases que dá para ler de longe",
    "body": [
-    "A tela inverte durante o exercício e volta ao normal durante o descanso. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em Lifetime work time (tempo de exercício acumulado)."
+    "A tela inverte durante o exercício e volta ao normal durante o descanso. Com Ink level (Nível de tinta) ligado, durante o exercício e o descanso a tinta desce do topo conforme o tempo restante. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em Lifetime work time (tempo de exercício acumulado)."
    ],
    "bullets": [],
    "visual": {
@@ -78,9 +79,10 @@
  ],
  "pro": {
   "kick": "Set & Burn Pro",
-  "title": "Crie mais treinos,\ndesligue os anúncios",
+  "title": "Crie e encadeie mais treinos,\ndesligue os anúncios",
   "items": [
    "Treinos sem limite (1 no começo)",
+   "Sequências que juntam vários treinos seguidos",
    "Anúncios em banner desligados na tela final e na lista de treinos",
    "Compartilhamento Familiar"
   ]
@@ -89,8 +91,15 @@
   {
    "q": "Criar um treino",
    "a": [
-    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em New workout (Novo treino). Para mudar os valores do treino atual, toque em Edit (Editar) na tela principal.",
+    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em New workout (Novo treino) para abrir a tela de edição. Toque em Save (Salvar) no topo para colocá-lo na lista, ou em Cancel (Cancelar) para não criá-lo. Para mudar os valores do treino atual, toque em Edit (Editar) na tela principal e guarde as mudanças com Save (Salvar). Se você tocar em Cancel (Cancelar) depois de mudar algo, o app pergunta uma vez se quer descartar as mudanças.",
     "No começo você pode manter 1 treino, incluindo o exemplo. Para criar mais é preciso ter o Pro. Os treinos que você já tem continuam podendo ser usados e editados."
+   ]
+  },
+  {
+   "q": "Sequências de treinos",
+   "a": [
+    "Com o Pro você junta vários treinos em uma sequência e faz um depois do outro. Na lista de treinos, toque em New chain (Nova sequência) em Chains (Sequências), adicione treinos, defina Rest between workouts (Descanso entre treinos) e toque em Save (Salvar). Uma sequência aceita de 2 a 12 treinos, e o mesmo treino pode entrar duas vezes. O descanso entre treinos começa em 1 minuto, e em 0 o próximo treino começa logo em seguida.",
+    "Escolha uma sequência e comece, e os treinos seguem na ordem em que você os adicionou. A partir do segundo treino não há aquecimento. Uma sequência aponta para os seus treinos em vez de copiá-los, então, quando você edita um treino, todas as sequências que o incluem rodam com os novos valores. O descanso entre treinos não se soma ao Lifetime work time (tempo de exercício acumulado)."
    ]
   },
   {
@@ -109,7 +118,7 @@
   {
    "q": "Sons de sinal e voz",
    "a": [
-    "O app traz 13 sons de sinal, feitos com o ElevenLabs. Eles tocam quando começam o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue Signal sound (Som de sinal) em Ajustes.",
+    "O app traz 13 sons de sinal de marimba, feitos com o ElevenLabs. Eles tocam quando começam o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue Signal sound (Som de sinal) em Ajustes.",
     "Os avisos de voz são lidos só no idioma da tela: inglês com a tela em inglês, coreano com a tela em coreano. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de Voice (Voz) em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue Voice (Voz) em Ajustes."
    ]
   },
@@ -122,7 +131,7 @@
   {
    "q": "Pro e restaurar a compra",
    "a": [
-    "Compre em Pro, na barra no topo de Ajustes. É um pagamento único, não uma assinatura. O Pro desliga os anúncios e permite criar mais de um treino. Compatível com o Compartilhamento Familiar.",
+    "Compre em Pro, na barra no topo de Ajustes. É um pagamento único, não uma assinatura. O Pro tira o limite de treinos, permite criar sequências e desliga os anúncios. Compatível com o Compartilhamento Familiar.",
     "Se você trocar de aparelho ou reinstalar o app, toque em Restore purchase (Restaurar compra) na tela do Pro. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
@@ -166,7 +175,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Set & Burn",
-  "effectiveDate": "2026-11-02",
+  "effectiveDate": "2026-11-07",
   "summary": "O desenvolvedor não coleta informações pessoais. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. Os valores de movimento são usados para contar pulos, e o desenvolvedor não os recebe. O pagamento do Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Set & Burn (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -189,6 +198,7 @@
     ],
     "bullets": [
      "A lista de treinos (nomes, tempos, rodadas, séries, interruptores, critério de término, contagens) e o treino escolhido: usados para rodar o timer e ao reabrir o app",
+     "As sequências de treinos (nomes, treinos incluídos e sua ordem, descanso entre treinos) e a sequência escolhida: usadas para fazer vários treinos seguidos",
      "Ajustes de som, avisos de voz, vibração e tela: usados para o comportamento do app",
      "Lifetime work time (tempo de exercício acumulado): uma única soma de segundos nas fases de exercício, sem registros por data",
      "Se o guia inicial já foi visto: usado para mostrá-lo só uma vez",
@@ -198,7 +208,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos podem ser removidos no app, e Clear lifetime total (Limpar total acumulado), em Ajustes, volta o tempo de exercício acumulado para 0.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos e as sequências podem ser removidos no app, e Clear lifetime total (Limpar total acumulado), em Ajustes, volta o tempo de exercício acumulado para 0.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,7 +237,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Os treinos podem ser removidos no app, e excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Os treinos e as sequências podem ser removidos no app, e excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },
