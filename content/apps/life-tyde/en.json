@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Only the moments that mattered",
    "body": [
-    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title. Tap an entry's note to go straight into editing that note. Add photos to an entry, and a highlighted entry shows one wide below its note while other entries show a small one at the right end."
+    "Life events sit on a single line in order of year. A year and a title make an entry; the month, the day, and a note can wait until you remember them. You choose which moments to highlight, and those keep a red dot and a red title. Tap an entry's note to go straight into editing that note. Add photos to an entry, and a highlighted entry shows one wide below its note while other entries show a small one at the right end. The + button at the bottom right of the timeline starts a new entry right away."
    ],
    "bullets": [
     "Age or year count beside each entry",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "One hashtag, one chronicle",
    "body": [
-    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top. Tags in Settings is where you add, rename, merge, and delete tags. Tap the magnifying glass at the top to search titles, notes, and tag names, then tap a result to jump to that entry."
+    "Tag entries with hashtags such as #school or #work. Choose a single tag in the tag filter and its Tag Chronicle opens, with only that tag's entries running from the first to the latest. The entry count and the time span sit at the top. Tags in Settings is where you add, rename, merge, and delete tags. Tap the magnifying glass at the top to search titles, notes, and tag names, then tap a result to jump to that entry. While the tag filter is on, the tag button is filled in red."
    ],
    "bullets": [
     "Tag filter with a highlights-only view",
@@ -157,7 +157,7 @@
   {
    "q": "Making a book",
    "a": [
-    "In Settings, open Make a book, set the book title, the years, and the tags, check the A4 pages with Preview, then save or send the file with Export PDF. Make a book is part of Life Tyde Pro."
+    "Open Make a book from the More menu above the timeline or from Settings, set the book title, the years, and the tags, check the A4 pages with Preview, then save or send the file with Export PDF. Make a book is part of Life Tyde Pro."
    ]
   },
   {
@@ -178,7 +178,8 @@
    "q": "Using it on a Mac",
    "a": [
     "The Mac version runs on macOS 14 or later. It is the same app as on iPhone and iPad, so on the same Apple Account you won't be charged again for Pro. Settings opens in its own window from Settings in the app menu, and you switch timelines from the timeline name at the top left of the window.",
-    "Press Command-Return to finish the entry you are editing and Esc to cancel. Control-Command-Up Arrow and Control-Command-Down Arrow move to the previous and next entry, and the Left and Right Arrow keys page through a photo opened large. Exporting a timeline image is only on iPhone and iPad."
+    "Press Command-Return to finish the entry you are editing and Esc to cancel. Control-Command-Up Arrow and Control-Command-Down Arrow move to the previous and next entry, and the Left and Right Arrow keys page through a photo opened large. Exporting a timeline image is only on iPhone and iPad.",
+    "Life Map opens in its own window. The File menu has Import CSV and Export to CSV, and the View menu has Make Text Bigger and Make Text Smaller. An entry you were writing without a title comes back the next time the timeline opens, even after you close the window."
    ]
   }
  ],

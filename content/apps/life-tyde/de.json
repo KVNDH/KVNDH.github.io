@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Nur die Momente, auf die es ankam",
    "body": [
-    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel. Ein Tipp auf die Notiz eines Eintrags öffnet sie direkt zum Bearbeiten. Fügen Sie einem Eintrag Fotos hinzu, zeigt ein hervorgehobener Eintrag eines breit unter der Notiz, die übrigen Einträge ein kleines am rechten Rand."
+    "Die Ereignisse eines Lebens stehen nach Jahren geordnet auf einer Linie. Ein Jahr und ein Titel ergeben schon einen Eintrag; Monat, Tag und eine Notiz dürfen warten, bis Sie sich erinnern. Welche Momente ein Highlight bekommen, entscheiden Sie, und die behalten roten Punkt und roten Titel. Ein Tipp auf die Notiz eines Eintrags öffnet sie direkt zum Bearbeiten. Fügen Sie einem Eintrag Fotos hinzu, zeigt ein hervorgehobener Eintrag eines breit unter der Notiz, die übrigen Einträge ein kleines am rechten Rand. Mit der Taste + unten rechts auf der Zeitleiste legen Sie sofort einen neuen Eintrag an."
    ],
    "bullets": [
     "Alter oder Jahre neben jedem Eintrag",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Ein Hashtag, eine Chronik",
    "body": [
-    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum. Unter Tags in den Einstellungen fügen Sie Tags hinzu, benennen sie um, führen sie zusammen oder löschen sie. Ein Tipp auf die Lupe oben öffnet die Suche, die in Titeln, Notizen und Tag-Namen nach Wörtern sucht; ein Tipp auf einen Treffer springt zu diesem Eintrag."
+    "Versehen Sie Einträge mit Hashtags wie #Schule oder #Arbeit. Wählen Sie im Tag-Filter einen einzigen Tag, öffnet sich seine Tag-Chronik, in der nur die Einträge dieses Tags vom ersten bis zum letzten laufen. Oben stehen die Zahl der Einträge und der Zeitraum. Unter Tags in den Einstellungen fügen Sie Tags hinzu, benennen sie um, führen sie zusammen oder löschen sie. Ein Tipp auf die Lupe oben öffnet die Suche, die in Titeln, Notizen und Tag-Namen nach Wörtern sucht; ein Tipp auf einen Treffer springt zu diesem Eintrag. Solange der Tag-Filter aktiv ist, ist die Tag-Taste rot gefüllt."
    ],
    "bullets": [
     "Tag-Filter und Ansicht nur mit Highlights",
@@ -157,7 +157,7 @@
   {
    "q": "Ein Buch erstellen",
    "a": [
-    "Öffnen Sie in den Einstellungen Buch erstellen, legen Sie Buchtitel, Jahre und Tags fest, prüfen Sie die A4-Seiten mit Vorschau und sichern oder senden Sie die Datei mit PDF exportieren. Buch erstellen gehört zu Life Tyde Pro."
+    "Öffnen Sie Buch erstellen über das Menü Mehr oben auf der Zeitleiste oder in den Einstellungen, legen Sie Buchtitel, Jahre und Tags fest, prüfen Sie die A4-Seiten mit Vorschau und sichern oder senden Sie die Datei mit PDF exportieren. Buch erstellen gehört zu Life Tyde Pro."
    ]
   },
   {
@@ -178,7 +178,8 @@
    "q": "Auf dem Mac verwenden",
    "a": [
     "Die Mac-Version läuft ab macOS 14. Sie ist dieselbe App wie auf iPhone und iPad, daher wird Pro mit demselben Apple-Account nicht erneut abgebucht. Die Einstellungen öffnen Sie in einem eigenen Fenster über Einstellungen im App-Menü, und die Timeline wechseln Sie über den Timeline-Namen oben links im Fenster.",
-    "Mit Command-Return schließen Sie die Bearbeitung eines Eintrags ab, mit Esc brechen Sie sie ab. Mit Control-Command-Pfeil nach oben und Control-Command-Pfeil nach unten gehen Sie zum vorigen und nächsten Eintrag, und ein groß geöffnetes Foto blättern Sie mit den Pfeiltasten nach links und rechts weiter. Ein Timeline-Bild exportieren können Sie nur auf iPhone und iPad."
+    "Mit Command-Return schließen Sie die Bearbeitung eines Eintrags ab, mit Esc brechen Sie sie ab. Mit Control-Command-Pfeil nach oben und Control-Command-Pfeil nach unten gehen Sie zum vorigen und nächsten Eintrag, und ein groß geöffnetes Foto blättern Sie mit den Pfeiltasten nach links und rechts weiter. Ein Timeline-Bild exportieren können Sie nur auf iPhone und iPad.",
+    "Die Lebenskarte öffnet sich in einem eigenen Fenster. Im Menü Ablage finden Sie CSV importieren und Als CSV exportieren, im Menü Darstellung Text vergrößern und Text verkleinern. Ein Eintrag, den Sie ohne Titel begonnen haben, ist auch nach dem Schließen des Fensters beim nächsten Öffnen der Zeitleiste wieder da."
    ]
   }
  ],

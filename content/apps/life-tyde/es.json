@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Solo los momentos que contaron",
    "body": [
-    "Los acontecimientos de una vida se ponen en una sola línea, por orden de año. Con un año y un título ya tienes una entrada; el mes, el día y una nota pueden esperar a que los recuerdes. Tú eliges qué momentos destacar, y esos se quedan con punto rojo y título rojo. Toca la nota de una entrada y pasas directamente a editarla. Si añades fotos a una entrada, una entrada destacada muestra una grande bajo su nota y las demás muestran una pequeña en el extremo derecho."
+    "Los acontecimientos de una vida se ponen en una sola línea, por orden de año. Con un año y un título ya tienes una entrada; el mes, el día y una nota pueden esperar a que los recuerdes. Tú eliges qué momentos destacar, y esos se quedan con punto rojo y título rojo. Toca la nota de una entrada y pasas directamente a editarla. Si añades fotos a una entrada, una entrada destacada muestra una grande bajo su nota y las demás muestran una pequeña en el extremo derecho. El botón + de la esquina inferior derecha de la línea de tiempo abre una entrada nueva al instante."
    ],
    "bullets": [
     "Edad o años transcurridos junto a cada entrada",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Un hashtag, una crónica",
    "body": [
-    "Marca las entradas con hashtags como #escuela o #trabajo. Elige una sola etiqueta en el filtro y se abre su Crónica de etiqueta, con las entradas de esa etiqueta desde la primera hasta la última. Arriba están el número de entradas y el periodo que abarcan. En Etiquetas, dentro de Ajustes, añades etiquetas, les cambias el nombre, las combinas o las eliminas. Toca la lupa de arriba para buscar palabras en títulos, notas y nombres de etiquetas, y toca un resultado para ir a esa entrada."
+    "Marca las entradas con hashtags como #escuela o #trabajo. Elige una sola etiqueta en el filtro y se abre su Crónica de etiqueta, con las entradas de esa etiqueta desde la primera hasta la última. Arriba están el número de entradas y el periodo que abarcan. En Etiquetas, dentro de Ajustes, añades etiquetas, les cambias el nombre, las combinas o las eliminas. Toca la lupa de arriba para buscar palabras en títulos, notas y nombres de etiquetas, y toca un resultado para ir a esa entrada. Mientras el filtro de etiquetas está activo, el botón de etiquetas se ve relleno de rojo."
    ],
    "bullets": [
     "Filtro de etiquetas y vista solo de destacados",
@@ -157,7 +157,7 @@
   {
    "q": "Crear un libro",
    "a": [
-    "En Ajustes, abre Crear un libro, elige el título, los años y las etiquetas, revisa las páginas A4 con Vista previa y guarda o envía el archivo con Exportar PDF. Crear un libro forma parte de Life Tyde Pro."
+    "Abre Crear un libro desde el menú Más sobre la línea de tiempo o desde Ajustes, elige el título, los años y las etiquetas, revisa las páginas A4 con Vista previa y guarda o envía el archivo con Exportar PDF. Crear un libro forma parte de Life Tyde Pro."
    ]
   },
   {
@@ -178,7 +178,8 @@
    "q": "Usar Life Tyde en el Mac",
    "a": [
     "La versión para Mac funciona con macOS 14 o posterior. Es la misma app que en el iPhone y el iPad, así que con la misma cuenta de Apple no se cobra Pro de nuevo. Los ajustes se abren en una ventana aparte desde Ajustes en el menú de la app, y la línea de tiempo se cambia desde su nombre, arriba a la izquierda de la ventana.",
-    "Pulsa Comando-Retorno para terminar la entrada que estás editando y Esc para cancelar. Control-Comando-Flecha arriba y Control-Comando-Flecha abajo pasan a la entrada anterior y a la siguiente, y las flechas izquierda y derecha pasan las fotos abiertas en grande. Exportar una imagen de la línea de tiempo solo se puede en el iPhone y el iPad."
+    "Pulsa Comando-Retorno para terminar la entrada que estás editando y Esc para cancelar. Control-Comando-Flecha arriba y Control-Comando-Flecha abajo pasan a la entrada anterior y a la siguiente, y las flechas izquierda y derecha pasan las fotos abiertas en grande. Exportar una imagen de la línea de tiempo solo se puede en el iPhone y el iPad.",
+    "El Mapa de vida se abre en su propia ventana. El menú Archivo tiene Importar CSV y Exportar a CSV, y el menú Visualización tiene Aumentar el texto y Reducir el texto. Una entrada que escribías sin título vuelve la próxima vez que se abre la línea de tiempo, aunque cierres la ventana."
    ]
   }
  ],

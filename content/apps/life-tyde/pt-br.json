@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Só os momentos que pesaram",
    "body": [
-    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho. Toque na nota de um registro para ir direto à edição dela. Ao adicionar fotos a um registro, um registro em destaque mostra uma foto larga abaixo da nota, e os demais mostram uma pequena na ponta direita."
+    "Os acontecimentos de uma vida ficam numa linha só, em ordem de ano. Um ano e um título já viram um registro; o mês, o dia e uma nota podem esperar até você lembrar. Você escolhe quais momentos recebem destaque, e esses ficam com ponto vermelho e título vermelho. Toque na nota de um registro para ir direto à edição dela. Ao adicionar fotos a um registro, um registro em destaque mostra uma foto larga abaixo da nota, e os demais mostram uma pequena na ponta direita. O botão + no canto inferior direito da linha do tempo abre um registro novo na hora."
    ],
    "bullets": [
     "Idade ou anos decorridos ao lado de cada registro",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Uma hashtag, uma crônica",
    "body": [
-    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem. Em Tags, nos Ajustes, você adiciona, renomeia, une e exclui tags. Toque na lupa no alto para buscar palavras em títulos, notas e nomes de tags, e toque num resultado para ir até aquele registro."
+    "Marque os registros com hashtags como #escola ou #trabalho. Escolha uma única tag no filtro e a Crônica da tag se abre, com os registros daquela tag do primeiro ao mais recente. No alto ficam a quantidade de registros e o período que eles cobrem. Em Tags, nos Ajustes, você adiciona, renomeia, une e exclui tags. Toque na lupa no alto para buscar palavras em títulos, notas e nomes de tags, e toque num resultado para ir até aquele registro. Enquanto o filtro de tags está ativo, o botão de tags fica preenchido de vermelho."
    ],
    "bullets": [
     "Filtro de tags e visão só dos destaques",
@@ -157,7 +157,7 @@
   {
    "q": "Criar um livro",
    "a": [
-    "Nos Ajustes, abra Criar um livro, defina o título, os anos e as tags, confira as páginas A4 em Pré-visualização e salve ou envie o arquivo com Exportar PDF. Criar um livro faz parte do Life Tyde Pro."
+    "Abra Criar um livro pelo menu Mais acima da linha do tempo ou pelos Ajustes, defina o título, os anos e as tags, confira as páginas A4 em Pré-visualização e salve ou envie o arquivo com Exportar PDF. Criar um livro faz parte do Life Tyde Pro."
    ]
   },
   {
@@ -178,7 +178,8 @@
    "q": "Usar no Mac",
    "a": [
     "A versão para Mac funciona no macOS 14 ou posterior. É o mesmo app do iPhone e do iPad, então com a mesma Conta Apple não há nova cobrança do Pro. Os Ajustes abrem numa janela própria pelo item Ajustes do menu do app, e a troca de linha do tempo fica no nome da linha do tempo, no canto superior esquerdo da janela.",
-    "Pressione Command-Return para terminar o registro que está editando e Esc para cancelar. Control-Command-Seta para cima e Control-Command-Seta para baixo levam ao registro anterior e ao seguinte, e as setas para a esquerda e para a direita passam as fotos abertas em tamanho grande. Exportar uma imagem da linha do tempo só dá no iPhone e no iPad."
+    "Pressione Command-Return para terminar o registro que está editando e Esc para cancelar. Control-Command-Seta para cima e Control-Command-Seta para baixo levam ao registro anterior e ao seguinte, e as setas para a esquerda e para a direita passam as fotos abertas em tamanho grande. Exportar uma imagem da linha do tempo só dá no iPhone e no iPad.",
+    "O Mapa da vida abre em uma janela própria. O menu Arquivo tem Importar CSV e Exportar para CSV, e o menu Visualizar tem Aumentar o texto e Diminuir o texto. Um registro que você escrevia sem título volta na próxima vez que a linha do tempo abrir, mesmo depois de fechar a janela."
    ]
   }
  ],
