@@ -114,7 +114,7 @@
   {
    "q": "Money left at the end of a period",
    "a": [
-    "With a monthly budget, money left when a period ends is added to the next period's budget. Only money left over carries over, and spending over budget is not taken from the next period. Carry-over starts from the period you first set up, or the period where you turned off Expires If Unspent or switched to Monthly Budget. Changing the budget amount or start day after that does not recalculate money that has already carried over. A daily budget does not carry over.",
+    "With a monthly budget, money left when a period ends is added to the next period's budget. Only money left over carries over, and spending over budget is not taken from the next period. When money has carried over, the line under the bar on the main screen also shows the amount carried over from last period. Carry-over starts from the period you first set up, or the period where you turned off Expires If Unspent or switched to Monthly Budget. Changing the budget amount or start day after that does not recalculate money that has already carried over. A daily budget does not carry over.",
     "If the money disappears when unspent, as with welfare points or a grant, turn on Expires If Unspent in Settings. Nothing carries over then, and the app tells you to use it all within the period."
    ]
   },
@@ -193,7 +193,7 @@
   {
    "q": "Remove Ads and restoring a purchase",
    "a": [
-    "Buy Remove Ads once at the bottom of Settings and the ad banner on the main screen goes away. The ad consent form and the tracking prompt stop appearing too.",
+    "Buy Remove Ads once in Settings, right below Budget and Period, and the ad banner on the main screen goes away. The ad consent form and the tracking prompt stop appearing too.",
     "If you switch devices or reinstall the app, tap Restore Purchases in Settings. With the same Apple Account you won't pay again."
    ]
   },

@@ -114,7 +114,7 @@
   {
    "q": "Übriges Geld am Ende eines Zeitraums",
    "a": [
-    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Expires If Unspent (Verfällt ungenutzt) ausgeschaltet oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
+    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Wurde Geld übertragen, zeigt die Zeile unter dem Balken auf dem Hauptbildschirm auch den Betrag, der aus dem letzten Zeitraum übertragen wurde. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Expires If Unspent (Verfällt ungenutzt) ausgeschaltet oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
     "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen Expires If Unspent (Verfällt ungenutzt) ein. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
    ]
   },
@@ -193,7 +193,7 @@
   {
    "q": "Werbung entfernen und Kauf wiederherstellen",
    "a": [
-    "Wenn Sie Remove Ads (Werbung entfernen) unten in den Einstellungen einmal kaufen, verschwindet das Werbebanner auf dem Hauptbildschirm. Auch das Einwilligungsformular und die Tracking-Abfrage erscheinen danach nicht mehr.",
+    "Wenn Sie Remove Ads (Werbung entfernen) in den Einstellungen direkt unter Budget and Period (Budget und Zeitraum) einmal kaufen, verschwindet das Werbebanner auf dem Hauptbildschirm. Auch das Einwilligungsformular und die Tracking-Abfrage erscheinen danach nicht mehr.",
     "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen auf Restore Purchases (Käufe wiederherstellen). Mit demselben Apple Account zahlen Sie nicht noch einmal."
    ]
   },

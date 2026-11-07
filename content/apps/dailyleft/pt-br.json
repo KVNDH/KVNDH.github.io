@@ -114,7 +114,7 @@
   {
    "q": "Dinheiro restante no fim do período",
    "a": [
-    "Com um orçamento mensal, o dinheiro restante no fim de um período é somado ao orçamento do período seguinte. Só passa o dinheiro que sobrou, e o que você gastar acima do orçamento não é descontado do período seguinte. A transferência começa no período em que você configura o app, desliga Expires If Unspent (Expira se sobrar) ou muda para Monthly Budget (Orçamento mensal). Se depois você mudar o valor ou o dia de início, o dinheiro que já passou não é recalculado. O orçamento diário não passa para o período seguinte.",
+    "Com um orçamento mensal, o dinheiro restante no fim de um período é somado ao orçamento do período seguinte. Só passa o dinheiro que sobrou, e o que você gastar acima do orçamento não é descontado do período seguinte. Quando há dinheiro transferido, a linha abaixo da barra na tela principal também mostra quanto veio do período anterior. A transferência começa no período em que você configura o app, desliga Expires If Unspent (Expira se sobrar) ou muda para Monthly Budget (Orçamento mensal). Se depois você mudar o valor ou o dia de início, o dinheiro que já passou não é recalculado. O orçamento diário não passa para o período seguinte.",
     "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar) em Ajustes. Assim nada passa para o período seguinte, e o app avisa para você usar tudo dentro do período."
    ]
   },
@@ -193,7 +193,7 @@
   {
    "q": "Remover anúncios e restaurar a compra",
    "a": [
-    "Ao comprar uma vez Remove Ads (remover anúncios) no fim dos Ajustes, o banner da tela principal some. O formulário de consentimento de anúncios e o pedido de rastreamento também deixam de aparecer.",
+    "Ao comprar uma vez Remove Ads (remover anúncios) nos Ajustes, logo abaixo de Budget and Period (orçamento e período), o banner da tela principal some. O formulário de consentimento de anúncios e o pedido de rastreamento também deixam de aparecer.",
     "Se trocar de aparelho ou reinstalar o app, toque em Restore Purchases (restaurar compras) nos Ajustes. Com a mesma Conta Apple, você não paga de novo."
    ]
   },

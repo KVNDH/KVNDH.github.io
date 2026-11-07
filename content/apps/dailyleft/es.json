@@ -114,7 +114,7 @@
   {
    "q": "El dinero que queda al terminar un periodo",
    "a": [
-    "Con un presupuesto mensual, el dinero que queda al terminar un periodo se suma al presupuesto del periodo siguiente. Solo pasa el dinero que sobra, y lo que gastes por encima del presupuesto no se resta del periodo siguiente. El traspaso empieza en el periodo en que configuras la app, desactivas Expires If Unspent (Caduca si no se usa) o cambias a Monthly Budget (Presupuesto mensual). Si después cambias el importe o el día de inicio, el dinero que ya pasó no se vuelve a calcular. El presupuesto diario no pasa al periodo siguiente.",
+    "Con un presupuesto mensual, el dinero que queda al terminar un periodo se suma al presupuesto del periodo siguiente. Solo pasa el dinero que sobra, y lo que gastes por encima del presupuesto no se resta del periodo siguiente. Cuando ha pasado dinero, la línea bajo la barra de la pantalla principal también muestra cuánto pasó del periodo anterior. El traspaso empieza en el periodo en que configuras la app, desactivas Expires If Unspent (Caduca si no se usa) o cambias a Monthly Budget (Presupuesto mensual). Si después cambias el importe o el día de inicio, el dinero que ya pasó no se vuelve a calcular. El presupuesto diario no pasa al periodo siguiente.",
     "Si el dinero desaparece cuando no se gasta, como los puntos de empresa o una ayuda, activa Expires If Unspent (Caduca si no se usa) en Ajustes. Así no pasa nada al periodo siguiente y la app te avisa para que lo uses todo dentro del periodo."
    ]
   },
@@ -193,7 +193,7 @@
   {
    "q": "Quitar anuncios y restaurar la compra",
    "a": [
-    "Si compras una vez Remove Ads (quitar anuncios) al final de Ajustes, desaparece el banner de la pantalla principal. Tampoco vuelven a aparecer el formulario de consentimiento de anuncios ni el aviso de rastreo.",
+    "Si compras una vez Remove Ads (quitar anuncios) en Ajustes, justo debajo de Budget and Period (presupuesto y periodo), desaparece el banner de la pantalla principal. Tampoco vuelven a aparecer el formulario de consentimiento de anuncios ni el aviso de rastreo.",
     "Si cambias de dispositivo o reinstalas la app, toca Restore Purchases (restaurar compras) en Ajustes. Con la misma cuenta de Apple no vuelves a pagar."
    ]
   },
