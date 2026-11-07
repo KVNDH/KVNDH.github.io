@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.0",
+ "describesVersion": "1.0.1",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -40,10 +40,11 @@
  ],
  "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(빌드 5 catalog 3,769대, 기준일 2026-11-04, metadata.json 문구 그대로)",
  "sources": [
-  "SpecTable 40c9612(빌드 1.0.0 (5), 2026-11-06 ASC READY_FOR_SALE 판, 광고 제거 상품 APPROVED): 코드, docs/HANDOFF.md, docs/COUPANG_DISCLOSURE.md, docs/store/metadata.json(라이브와 글자까지 같음, 세션 11-05 대조)",
+  "SpecTable 197103c(빌드 1.0.1 (6) 70ac6ef 를 main 에 합친 판, 2026-11-08 ASC READY_FOR_SALE, HQ 확인): 코드, docs/HANDOFF.md, docs/COUPANG_DISCLOSURE.md, docs/store/metadata.json whatsNew. 1.0.0 (5) 40c9612 과 코드 차이는 AppModel.swift, ShareImage.swift, Sheets.swift, Localizable.xcstrings, 아이콘뿐(카탈로그, 쿠팡 링크 파일, PriceLink 그대로). metadata.json 의 50개 로케일 문안(584822c)은 다음 판 준비라 사이트 근거로 쓰지 않는다",
+  "1.0.0 근거: SpecTable 40c9612(빌드 1.0.0 (5), 2026-11-06 READY_FOR_SALE, 광고 제거 상품 APPROVED), metadata.json 라이브와 글자까지 같음(세션 11-05 대조)",
   "그 전 근거: SpecPair 92cbac7 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30)",
   "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
   "그림: docs/store/screenshots(ko, en-US, ja, de-DE), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
  ],
- "versionNote": "스펙테이블(SpecTable) 1.0.0(빌드 5) 출시(2026-11-06 ASC READY_FOR_SALE, 광고 제거 상품 com.kimdh.spectable.removeads APPROVED, kr, us 스토어 페이지 200, HQ 확인). site.json 의 unreleased 를 빼고 appStoreId 6829383480 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 빌드 5 와 대조: 가격 링크가 쿠팡으로 바뀐 것은 처리방침 5절에 6cad6e30 에서 반영돼 있었고, 이번에 지원 FAQ '제품 칸의 가격 링크' 8개 언어를 나라별(Amazon 8개 나라, 대만과 홍콩 없음, 한국과 그 밖은 쿠팡)과 일부 제품의 쿠팡 파트너스 제휴 링크, 제품 칸 아래 대가성 문구로 고쳤다. 빌드 5 에 합친 사용성 개선 17개(7db815e, 2ede745: 고르기 시트 키보드, 되돌리기 띠, 빼기, 종류 칩, 조건 줄 개수, 조합 이름과 점, 소개 첫 장 그림, 출처 줄 ›, 바깥 링크 ↗, 광고 제거 시트 링크 묶음 등)는 사이트 문장이 말하지 않는 화면 다듬기라 본문을 고칠 곳이 없었다. 광고 제거 FAQ 의 단추 자리(배너 안, 첫 화면 바닥 줄)와 화면 이름(광고 제거, 구매 복원, 광고 개인정보 선택)은 빌드 5 와 같다. 숫자 5, 10%, 16개 종류, 3,000개가 넘는(3,769대)도 그대로 맞다"
+ "versionNote": "스펙테이블(SpecTable) 1.0.1(빌드 6) 출시(2026-11-08 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '세부 다듬기와 안정성 개선' 한 줄이다. 빌드 5 와 대조: 공유 그림 격자를 기본 글자 크기로 고정, 저장한 조합 빈 시트 문구('저장한 조합이 없습니다', 비교 중이 아니면 책갈피 안내 한 줄 더), 고르기 조건 막대를 끄는 동안 목록을 거르지 않고 손을 뗄 때 반영, 비교와 권하는 조합을 저장값으로(5d5d3ee). 모두 사이트 문장이 말하지 않는 화면 다듬기라 본문과 FAQ 를 고칠 곳이 없었다. 카탈로그(3,769대, 기준일 2026-11-04), 16개 종류, 제품 5개, 상위 10%, 가격 링크 나라 나눔과 쿠팡 파트너스 링크 13대, 대가성 문구 자리와 원문, 저장 항목(UserDefaults 다섯), 권한(ATT 하나), 광고 순서는 빌드 5 와 같아 처리방침도 그대로 두고 시행일 2026-11-05 를 유지했다. 1.0.1 에 실린 아이콘 흰 바탕(밝은 판 #F4F4F2 에서 #FFFFFF, f152079)에 맞춰 사이트 아이콘 icon-180, 360, 640 과 og.jpg 를 앱 AppIcon.png 에서 import_assets.py 와 같은 명령으로 다시 뽑았다(그림은 그대로 둠)"
 }
