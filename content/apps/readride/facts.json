@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.3",
+ "describesVersion": "1.0.4",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -92,11 +92,13 @@
  ],
  "numbersNote": "소개 문구의 숫자: 무료 문서 3개, 쉼 5단계(ja, zh 는 숫자로 씀), 읽는 언어 44개, 분당 100~1,000단어(ko 와 알파벳 언어, 1.0.2), ko 묶기 예 '120억 원'. 1.0.1 부터 앱 화면이 46개 언어라 다른 언어 페이지의 UI 이름은 Localizable.xcstrings 의 그 언어 이름을 쓴다. 기능 절 캡처는 영어판이라 캡처 대체 문구(shotAlt, 기능 절 alt)만 영어 UI 이름으로 둔다",
  "sources": [
+  "Readride 1.0.4 기준(2026-11-11 사이트 갱신). 커밋 범위 2f43919(1.0.3 빌드 4)..ba067e5(1.0.4 (1) 아카이브, ASC 빌드 fbe2d98c, 2026-11-10 제출), 마지막 앱 코드 커밋 5725797. project.yml CFBundleShortVersionString 1.0.4, CFBundleVersion 1. 앱에 실린 것은 아이콘 흰 바탕(e7a6447, AppIcon.png 밝은 바탕 #FFFFFF, 다크와 틴트 #000000)과 impeccable polish(ea8c74c): 멈춘 화면 앞뒤 본문의 빈 줄 접기(RSVPContextView.swift collapseBlankLines), 다크 준비 화면 순흑(CanvasRows), 꺼진 기호 단추 흐림(dimmedWhenDisabled), 밀어 지우기 빨강, 문서 지도 닫기 아이콘 단추, 섹션 사이 32pt, ko 확인창 '이 문서를 삭제할까요?'. 엔타이틀먼트, PrivacyInfo, Info.plist, ProRules, StoreKit, 네트워크 코드 diff 0 이라 무료/Pro 경계와 처리방침은 그대로. whatsNew ko '읽기를 멈춘 화면의 문단 간격 개선, 다크 모드의 준비 화면 개선, 세부 다듬기와 안정성 개선'(docs/store/metadata.json, c335635). 그림: 아이콘 AppIcon.png(blob 823fc74)로 icon-180, icon-360, icon-640, og 를 import_assets.py readride 로 다시 뽑음, 사이트 캡처(바이트 같음)와 스토어 합성본은 그대로",
   "1.0.3 앱 코드: Readride 2f43919(1.0.3 빌드 4, project.yml CFBundleShortVersionString 1.0.3, CFBundleVersion 4, 2026-10-15 출시 HQ 확인). 1.0.2 의 마지막 앱 코드 95e4f2c 와 비교하면 Readride/ 에서 바뀐 것은 RSVPView, RSVPContextView, Components, StepControl 뿐(Duo 띠와 앞뒤 본문 윗줄 맞춤 27d13e0, 3f0b887). ProRules, StoreKit, 권한, 엔타이틀먼트, PrivacyInfo, 네트워크 코드는 그대로라 무료/Pro 경계와 처리방침은 바꾸지 않음. 단추 이름은 Readride/Resources/Localizable.xcstrings(2f43919). whatsNew ko 'iPhone Duo 지원'(d281a97)",
   "Readride/docs/SITE_DRAFT.md (cb56df5, '1.0.2(iCloud 동기화, iPad)에서 바꿀 것')",
   "tmp/readride-site-2026-09-26/facts-from-session.md",
   "Readride/Readride/Resources/Localizable.xcstrings",
   "Readride cb56df5 (1.0.2 (1) a699b1d, iPad 95e4f2c, iCloud 59a8fda 98294ee, 스키마 5a85f07, Pro 목록 68ea110, 속도 c2b44c6), Readride/docs/store/metadata.json 1.0.2"
  ],
- "icloudDeletePathNote": "iCloud 사본 지우는 경로의 마지막 칸 이름: ko '저장 공간'은 사용자 iPhone 확인(10-03). en Storage, de Speicher, es Almacenamiento, pt-br Armazenamento, zh-hans 储存空间, zh-hant 儲存空間 은 iOS 27.0 시뮬레이터 런타임 iCloudSettings.framework 문자열에서 읽음(2026-10-08, Readride 세션). ja 는 미확정(容量 과 ストレージ 가 갈림)이라 'ストレージを管理' 그대로 둠."
+ "icloudDeletePathNote": "iCloud 사본 지우는 경로의 마지막 칸 이름: ko '저장 공간'은 사용자 iPhone 확인(10-03). en Storage, de Speicher, es Almacenamiento, pt-br Armazenamento, zh-hans 储存空间, zh-hant 儲存空間 은 iOS 27.0 시뮬레이터 런타임 iCloudSettings.framework 문자열에서 읽음(2026-10-08, Readride 세션). ja 는 미확정(容量 과 ストレージ 가 갈림)이라 'ストレージを管理' 그대로 둠.",
+ "versionNote": "Readride 1.0.4(빌드 1) 출시 반영(2026-11-11 HQ 확인). 바뀐 것: 흰 바탕 아이콘(e7a6447)과 화면 다듬기(ea8c74c, 멈춘 화면 문단 간격, 다크 준비 화면, 꺼진 단추 흐림 등). 사이트 반영: 아이콘 icon-180, icon-360, icon-640, og 를 흰 바탕 아이콘으로 다시 뽑음. 본문, FAQ, Pro 목록, 숫자, UI 이름(uiNames)은 그대로 맞음. 다듬기는 사이트에 쓰지 않음. 기능 절 둘째 그림(멈춘 화면, 9월 27일 촬영)은 1.0.4 전 문단 간격이 보이지만 다시 찍지 않음. 처리방침: 저장 항목, 권한, SDK, 결제 변화가 없어 본문과 시행일 2026-10-06 그대로"
 }
