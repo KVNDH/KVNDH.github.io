@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "O que você pode gastar hoje",
    "body": [
-    "Informe um orçamento mensal, e o dinheiro restante é dividido pelos dias restantes para mostrar quanto você pode gastar por dia. Quando você gasta, o valor diário é recalculado. Uma linha embaixo diz se o seu ritmo está folgado ou apertado. Com um orçamento diário, o que resta para hoje aparece em números grandes."
+    "Informe um orçamento mensal, e o dinheiro restante é dividido pelos dias restantes para mostrar quanto você pode gastar por dia. Quando você gasta, o valor diário é recalculado. Se você passar do orçamento ou chegar ao último dia, uma linha embaixo avisa. Com um orçamento diário, o que resta para hoje aparece em números grandes."
    ],
    "bullets": [
     "Orçamento mensal e diário",
@@ -31,12 +31,12 @@
    "layout": "feat",
    "title": "Escolha os dias que contam",
    "body": [
-    "Por padrão, todos os dias contam. Ligue Count Weekdays Only (Contar só dias úteis) para deixar de fora os fins de semana e, se a região do seu iPhone for Coreia do Sul, também os feriados coreanos. Para tirar um dia em que você não vai gastar, toque nele no calendário. Com um orçamento mensal, o valor diário é então dividido de novo pelos dias restantes. Os dias passados no calendário mostram quanto você gastou."
+    "Por padrão, todos os dias contam. Ligue Count Weekdays Only (Contar só dias úteis) para deixar de fora os fins de semana e, se a região do seu iPhone for Coreia do Sul, também os feriados coreanos. Para tirar um dia em que você não vai gastar, toque nele no calendário. Com um orçamento mensal, o valor diário é então dividido de novo pelos dias restantes. Os dias passados no calendário mostram quanto você gastou. Toque em um dia com estabelecimento registrado para ver onde você gastou, ou toque e segure um dia passado ou o de hoje para adicionar um pagamento nessa data."
    ],
    "bullets": [
     "Contar só dias úteis",
     "Dias retirados no calendário",
-    "Quanto você gastou em cada dia"
+    "Quanto e onde você gastou em cada dia"
    ],
    "visual": {
     "type": "crop",
@@ -51,10 +51,10 @@
    "layout": "feat",
    "title": "Ajuste ao seu orçamento",
    "body": [
-    "Por padrão, o app ajuda você a não passar do orçamento. Com um orçamento mensal, o dinheiro restante no fim do período é somado ao orçamento do período seguinte. Se o dinheiro some quando o período termina, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar). Assim nada passa para o período seguinte, e o app avisa para você usar tudo a tempo. Escolha o dia em que o orçamento começa, do dia 1 ao dia 28. O dinheiro restante também aparece nos widgets da Tela de Início e da Tela Bloqueada."
+    "Por padrão, o app ajuda você a não passar do orçamento. Com um orçamento mensal, o dinheiro restante no fim do período é somado ao orçamento do período seguinte. Se o dinheiro some quando o período termina, como pontos de benefício ou um auxílio, escolha Expires (Expira) em Leftover Handling (O que fazer com o que sobra). Assim nada passa para o período seguinte, e o app avisa para você usar tudo a tempo. Escolha o dia em que o orçamento começa, do dia 1 ao dia 28. O dinheiro restante também aparece nos widgets da Tela de Início e da Tela Bloqueada."
    ],
    "bullets": [
-    "Transferência ou Expira se sobrar",
+    "Transferência ou expiração",
     "Início do período do dia 1 ao dia 28",
     "Widgets da Tela de Início e da Tela Bloqueada"
    ],
@@ -101,7 +101,7 @@
    "q": "Como começar",
    "a": [
     "Escolha um orçamento mensal ou diário, informe um valor e toque em Start (Começar). Não há conta nem login.",
-    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo Money Left This Month (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, Expira se sobrar, os avisos de pagamento e os 4 últimos dígitos do cartão ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
+    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo Money Left This Month (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, O que fazer com o que sobra, os avisos de pagamento e os 4 últimos dígitos do cartão ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
    ]
   },
   {
@@ -114,8 +114,8 @@
   {
    "q": "Dinheiro restante no fim do período",
    "a": [
-    "Com um orçamento mensal, o dinheiro restante no fim de um período é somado ao orçamento do período seguinte. Só passa o dinheiro que sobrou, e o que você gastar acima do orçamento não é descontado do período seguinte. Quando há dinheiro transferido, a linha abaixo da barra na tela principal também mostra quanto veio do período anterior. A transferência começa no período em que você configura o app, desliga Expires If Unspent (Expira se sobrar) ou muda para Monthly Budget (Orçamento mensal). Se depois você mudar o valor ou o dia de início, o dinheiro que já passou não é recalculado. O orçamento diário não passa para o período seguinte.",
-    "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, ligue Expires If Unspent (Expira se sobrar) em Ajustes. Assim nada passa para o período seguinte, e o app avisa para você usar tudo dentro do período."
+    "Com um orçamento mensal, o dinheiro restante no fim de um período é somado ao orçamento do período seguinte. Só passa o dinheiro que sobrou, e o que você gastar acima do orçamento não é descontado do período seguinte. Quando há dinheiro transferido, a linha abaixo da barra na tela principal também mostra quanto veio do período anterior. Na primeira vez que você abre o app em um período novo, um aviso curto mostra uma vez quanto passou. A transferência começa no período em que você configura o app, muda Leftover Handling (O que fazer com o que sobra) para Carries Over (Passa adiante) ou muda para Monthly Budget (Orçamento mensal). Se depois você mudar o valor ou o dia de início, o dinheiro que já passou não é recalculado. O orçamento diário não passa para o período seguinte.",
+    "Se o dinheiro some quando não é usado, como pontos de benefício ou um auxílio, escolha Expires (Expira) em Leftover Handling (O que fazer com o que sobra), dentro de More Rules (Mais regras) nos Ajustes. Assim nada passa para o período seguinte, e o app avisa para você usar tudo dentro do período."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "Arredondamento do valor diário",
    "a": [
-    "Em wons, o valor diário do número grande, da linha de status e dos widgets é arredondado para baixo até os 1.000 wons, então 18.383 wons aparecem como 18.000 wons. Valores abaixo de 1.000 wons ficam como estão, e quando resta um só dia aparece todo o dinheiro restante. O saldo total, os valores das transações e as outras moedas não são arredondados."
+    "Em wons, o valor diário do número grande, da linha de status e dos widgets é arredondado por padrão para baixo até os 1.000 wons, então 18.383 wons aparecem como 18.000 wons. Com um orçamento mensal, escolha 1.000, 100, 10 ou 1 won em Daily Amount Unit (Unidade do valor diário), dentro de More Rules (Mais regras) nos Ajustes. Valores abaixo da unidade escolhida ficam como estão, e quando resta um só dia aparece todo o dinheiro restante. O saldo total e os valores das transações não são arredondados. As outras moedas não são arredondadas por padrão, e você pode escolher uma unidade para elas no mesmo lugar."
    ]
   },
   {
    "q": "Registrar mensagens de texto com uma automação de Atalhos (Coreia do Sul)",
    "a": [
-    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois abra Build It Yourself (Criar você mesmo), em Shortcuts Automation (Automação de Atalhos), nos Ajustes, para ver os passos. A ação do app a acrescentar na automação se chama Record Payment Message (Registrar mensagem de pagamento). Os passos seguem as telas do iOS 27.",
+    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois, no app Atalhos, crie uma automação com Mensagem como gatilho, acrescente a ação do app Record Payment Message (Registrar mensagem de pagamento) e coloque a Message (Mensagem) do gatilho no campo Message Text (Texto da mensagem) dela.",
     "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado pela automação ou o texto que você cola. O campo Contains (Contém) da automação decide quais mensagens são passadas. Só com 승인 (aprovado) ali, as mensagens de cancelamento podem não ser registradas. Para pegar essas também, coloque nesse campo os 4 últimos dígitos do seu cartão."
    ]
   },
@@ -180,7 +180,7 @@
   {
    "q": "Widgets",
    "a": [
-    "Os widgets da Tela de Início vêm nos tamanhos pequeno e médio. Eles mostram o dinheiro restante e o que você pode gastar hoje, e o tamanho médio também lista as suas 2 transações mais recentes.",
+    "Os widgets da Tela de Início vêm nos tamanhos pequeno e médio. Eles mostram o dinheiro restante e o que você pode gastar hoje, e o tamanho médio também lista as suas 3 transações mais recentes.",
     "Há três widgets da Tela Bloqueada. O retangular mostra o dinheiro restante e o que você pode gastar hoje, o circular mostra a proporção restante, e o de uma linha mostra o dinheiro restante. Até você informar um orçamento no app, eles mostram Not set up (Não configurado) ou um ponto de interrogação."
    ]
   },
@@ -213,13 +213,13 @@
   {
    "q": "Conexão com a internet",
    "a": [
-    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, a compra de Remove Ads, a restauração de compras, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
+    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, a compra de Remove Ads, a restauração de compras, o backup no iCloud, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
    ]
   },
   {
    "q": "Trocar de aparelho",
    "a": [
-    "O app não usa a sincronização do iCloud, então os registros não passam sozinhos para um aparelho novo."
+    "Se você estiver conectado ao iCloud, um backup dos seus registros fica no seu próprio iCloud. Se você excluir e reinstalar o app, ou instalá-lo em outro iPhone com a mesma Conta Apple, os registros voltam desse backup antes de você configurar o app. Não é uma sincronização que mantém dois aparelhos iguais, e um aparelho que já tem registros nunca é sobrescrito."
    ]
   },
   {
@@ -237,8 +237,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do DailyLeft",
-  "effectiveDate": "2026-11-07",
-  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
+  "effectiveDate": "2026-11-11",
+  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -246,7 +246,7 @@
    {
     "title": "Finalidade do tratamento",
     "paragraphs": [
-     "O app não tem cadastro nem login. Ele usa o orçamento e os registros de pagamento que você informa para calcular o dinheiro restante e o que você pode gastar hoje. Esses registros ficam em um arquivo salvo no seu aparelho, e o desenvolvedor não recebe esse arquivo.",
+     "O app não tem cadastro nem login. Ele usa o orçamento e os registros de pagamento que você informa para calcular o dinheiro restante e o que você pode gastar hoje. Esses registros ficam em um arquivo salvo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud, um backup desses registros também fica no seu próprio iCloud (seção 8), e o desenvolvedor também não recebe esse backup.",
      "O app mostra um anúncio em banner na parte de baixo da tela principal. O serviço de publicidade do Google, o AdMob, escolhe e exibe esse anúncio e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
      "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. O desenvolvedor o usa para ensinar ao app o formato de mensagem daquela administradora de cartão e para responder a você, e para nenhuma outra finalidade."
     ],
@@ -255,13 +255,13 @@
    {
     "title": "Informações tratadas",
     "paragraphs": [
-     "Os dados que o app salva no seu aparelho estão listados no fim desta seção. O desenvolvedor não os recebe. O app não recebe contatos, localização nem fotos.",
+     "Os dados que o app salva no seu aparelho estão listados no fim desta seção. Desses, os ajustes do orçamento, os 4 últimos dígitos do cartão, as transações e o texto original das mensagens de pagamento também vão para o backup no iCloud (seção 8). O desenvolvedor não os recebe. O app não recebe contatos, localização nem fotos.",
      "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado por uma automação de Atalhos que você criou ou o texto que você cola. Você decide no app Atalhos quais mensagens são passadas. O texto lido mas não registrado não é salvo. Esses recursos de mensagem só aparecem para a região Coreia do Sul.",
      "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor recebe o seu endereço de e-mail, o texto original da mensagem que você escolheu enviar (que pode incluir parte do nome de quem aprovou o pagamento, o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora), o motivo de não ter sido lida, as versões do app e do iOS e as informações que o seu app de e-mail acrescenta (como o nome do remetente, conforme as configurações da sua conta de e-mail). Não é o app que envia esse e-mail. Você mesmo o envia pelo seu próprio app de e-mail e pode apagá-lo ou alterá-lo antes de enviar.",
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
-     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, Contar só dias úteis, Expira se sobrar, o dia a partir do qual a transferência é contada e o dinheiro transferido para esse período, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
+     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, Contar só dias úteis, O que fazer com o que sobra, a unidade do valor diário, o dia a partir do qual a transferência é contada e o dinheiro transferido para esse período, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
      "4 últimos dígitos do cartão (se informados): usados para deixar de fora as mensagens de outros cartões",
      "Transações (data, valor, estabelecimento ou nota, hora em que entraram no app, como foram registradas): usadas para calcular o dinheiro restante e para a lista de transações",
      "O texto original das mensagens de pagamento registradas: guardado como está no arquivo salvo e usado para que a mesma mensagem não seja registrada duas vezes. Pode incluir parte do nome de quem aprovou o pagamento (por exemplo, H*D), o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora",
@@ -273,6 +273,7 @@
     "title": "Tratamento e período de retenção",
     "paragraphs": [
      "Os registros no seu aparelho ficam até você excluí-los ou excluir o app. Para excluir uma transação, deslize-a na lista. Se não houver no aparelho outro app do desenvolvedor que use o mesmo App Group, excluir o app remove junto os registros e os ajustes.",
+     "O backup no iCloud continua no seu iCloud mesmo depois que você exclui o app e é usado quando você o instala de novo.",
      "Um e-mail de reporte de mensagem é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
@@ -320,7 +321,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esse arquivo pode entrar nos backups do iCloud ou do Mac que você ativar.",
+     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor. Se você estiver conectado ao iCloud, o app compacta o conteúdo desse arquivo e faz backup dele no armazenamento de chave-valor do seu próprio iCloud. Não é uma sincronização entre aparelhos, e o app só restaura desse backup quando a configuração não foi concluída no aparelho e não há transações. Esse arquivo também pode entrar nos backups do aparelho no iCloud ou do Mac que você ativar.",
      "O app não envia e-mail por conta própria. Tocar em Report Message (Reportar mensagem) só preenche o destinatário, o assunto e o corpo de um rascunho de e-mail, e quem toca em enviar ou cancelar é você. Se não houver conta de e-mail configurada, ele abre um app de e-mail que você escolher com o mesmo conteúdo.",
      "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem e esta página da política de privacidade, e só quando você toca neles.",
      "O que o app passa ao SDK de anúncios é a solicitação de anúncio e o tamanho do banner. Ele não passa orçamentos, transações, mensagens nem números de cartão."

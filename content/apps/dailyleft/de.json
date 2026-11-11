@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Was Sie heute ausgeben können",
    "body": [
-    "Tragen Sie ein Monatsbudget ein, und das übrige Geld wird durch die verbleibenden Tage geteilt. So sehen Sie, was Sie pro Tag ausgeben können. Geben Sie etwas aus, wird der Tagesbetrag neu berechnet. Eine Zeile darunter zeigt, ob Ihr Tempo entspannt oder knapp ist. Mit einem Tagesbudget steht der heutige Rest in großen Zahlen da."
+    "Tragen Sie ein Monatsbudget ein, und das übrige Geld wird durch die verbleibenden Tage geteilt. So sehen Sie, was Sie pro Tag ausgeben können. Geben Sie etwas aus, wird der Tagesbetrag neu berechnet. Wenn Sie über dem Budget sind oder der letzte Tag erreicht ist, sagt Ihnen eine Zeile darunter Bescheid. Mit einem Tagesbudget steht der heutige Rest in großen Zahlen da."
    ],
    "bullets": [
     "Monats- und Tagesbudgets",
@@ -31,12 +31,12 @@
    "layout": "feat",
    "title": "Wählen Sie die Tage, die zählen",
    "body": [
-    "Standardmäßig zählt jeder Tag. Schalten Sie Count Weekdays Only (Nur Werktage zählen) ein, um Wochenenden auszulassen, und wenn die Region Ihres iPhones Südkorea ist, auch koreanische Feiertage. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben."
+    "Standardmäßig zählt jeder Tag. Schalten Sie Count Weekdays Only (Nur Werktage zählen) ein, um Wochenenden auszulassen, und wenn die Region Ihres iPhones Südkorea ist, auch koreanische Feiertage. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben. Tippen Sie auf einen Tag mit erfasstem Händler, um zu sehen, wo Sie bezahlt haben. Halten Sie einen vergangenen Tag oder heute gedrückt, um eine Zahlung mit diesem Datum einzutragen."
    ],
    "bullets": [
     "Nur Werktage zählen",
     "Tage im Kalender auslassen",
-    "Ausgaben pro Tag"
+    "Ausgaben und Händler pro Tag"
    ],
    "visual": {
     "type": "crop",
@@ -51,10 +51,10 @@
    "layout": "feat",
    "title": "Passend zu Ihrem Budget einstellen",
    "body": [
-    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Bei einem Monatsbudget wird das übrige Geld am Ende des Zeitraums zum Budget des nächsten Zeitraums addiert. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie Expires If Unspent (Verfällt ungenutzt) ein. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
+    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Bei einem Monatsbudget wird das übrige Geld am Ende des Zeitraums zum Budget des nächsten Zeitraums addiert. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, wählen Sie bei Leftover Handling (Umgang mit dem Rest) die Option Expires (Verfällt). Dann wird nichts übertragen, und die App weist Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
    ],
    "bullets": [
-    "Übertrag oder Verfällt ungenutzt",
+    "Übertrag oder Verfall",
     "Starttag des Zeitraums, 1. bis 28.",
     "Widgets für Home-Bildschirm und Sperrbildschirm"
    ],
@@ -101,7 +101,7 @@
    "q": "Erste Schritte",
    "a": [
     "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf Start. Konto und Anmeldung gibt es nicht.",
-    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, Zahlungshinweise und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
+    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest, Zahlungshinweise und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
    ]
   },
   {
@@ -114,8 +114,8 @@
   {
    "q": "Übriges Geld am Ende eines Zeitraums",
    "a": [
-    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Wurde Geld übertragen, zeigt die Zeile unter dem Balken auf dem Hauptbildschirm auch den Betrag, der aus dem letzten Zeitraum übertragen wurde. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Expires If Unspent (Verfällt ungenutzt) ausgeschaltet oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
-    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, schalten Sie in den Einstellungen Expires If Unspent (Verfällt ungenutzt) ein. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
+    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Wurde Geld übertragen, zeigt die Zeile unter dem Balken auf dem Hauptbildschirm auch den Betrag, der aus dem letzten Zeitraum übertragen wurde. Wenn Sie die App in einem neuen Zeitraum zum ersten Mal öffnen, zeigt ein kurzer Hinweis einmal, wie viel übertragen wurde. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Leftover Handling (Umgang mit dem Rest) auf Carries Over (Übertragen) gestellt oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
+    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, stellen Sie in den Einstellungen unter More Rules (Weitere Regeln) Leftover Handling (Umgang mit dem Rest) auf Expires (Verfällt). Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "Rundung des Tagesbetrags",
    "a": [
-    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets auf volle 1.000 Won abgerundet, aus 18.383 Won werden also 18.000 Won. Beträge unter 1.000 Won bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo, Buchungsbeträge und andere Währungen werden nicht gerundet."
+    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets standardmäßig auf volle 1.000 Won abgerundet, aus 18.383 Won werden also 18.000 Won. Bei einem Monatsbudget wählen Sie in den Einstellungen unter More Rules (Weitere Regeln) bei Daily Amount Unit (Einheit des Tagesbetrags) 1.000, 100, 10 oder 1 Won. Beträge unter der gewählten Einheit bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo und Buchungsbeträge werden nicht gerundet. Andere Währungen werden standardmäßig nicht gerundet, eine Einheit lässt sich dort aber ebenfalls wählen."
    ]
   },
   {
    "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
-    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal, und öffnen Sie dann in den Einstellungen unter Shortcuts Automation (Kurzbefehl-Automation) den Punkt Build It Yourself (Selbst erstellen). Dort stehen die Schritte. Die App-Aktion für die Automation heißt Record Payment Message (Zahlungsnachricht erfassen). Die Schritte folgen den Bildschirmen von iOS 27.",
+    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal. Erstellen Sie dann in der Kurzbefehle-App eine Automation mit Nachricht als Auslöser, fügen Sie die App-Aktion Record Payment Message (Zahlungsnachricht erfassen) hinzu, und setzen Sie in deren Feld Message Text (Nachrichtentext) die Message (Nachricht) des Auslösers ein.",
     "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld Contains (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
    ]
   },
@@ -180,7 +180,7 @@
   {
    "q": "Widgets",
    "a": [
-    "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 2 letzten Transaktionen.",
+    "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 3 letzten Transaktionen.",
     "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie Not set up (Nicht eingerichtet) oder ein Fragezeichen."
    ]
   },
@@ -213,13 +213,13 @@
   {
    "q": "Internetverbindung",
    "a": [
-    "Budgetberechnung, Erfassen und Widgets laufen offline. Werbung, der Kauf von Remove Ads, das Wiederherstellen von Käufen, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
+    "Budgetberechnung, Erfassen und Widgets laufen offline. Werbung, der Kauf von Remove Ads, das Wiederherstellen von Käufen, das iCloud-Backup, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
    ]
   },
   {
    "q": "Beim Gerätewechsel",
    "a": [
-    "Die App nutzt keine iCloud-Synchronisierung, daher kommen die Einträge nicht von selbst auf ein neues Gerät."
+    "Wenn Sie bei iCloud angemeldet sind, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
    ]
   },
   {
@@ -237,8 +237,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
-  "effectiveDate": "2026-11-07",
-  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
+  "effectiveDate": "2026-11-11",
+  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -246,7 +246,7 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht.",
+     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet, liegt außerdem eine Sicherung dieser Einträge in Ihrer eigenen iCloud (Abschnitt 8). Auch diese Sicherung erhält der Entwickler nicht.",
      "Die App zeigt eine Bannerwerbung ganz unten auf dem Hauptbildschirm. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Der Entwickler nutzt sie, um die App auf das Nachrichtenformat dieser Kartenfirma einzustellen und Ihnen zu antworten, und zu keinem anderen Zweck."
     ],
@@ -255,13 +255,13 @@
    {
     "title": "Verarbeitete Daten",
     "paragraphs": [
-     "Die Daten, die die App auf Ihrem Gerät speichert, stehen am Ende dieses Abschnitts. Der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort oder Fotos.",
+     "Die Daten, die die App auf Ihrem Gerät speichert, stehen am Ende dieses Abschnitts. Davon gehen die Budgeteinstellungen, die letzten 4 Kartenziffern, die Transaktionen und der Originaltext der Zahlungsnachrichten auch in die iCloud-Sicherung (Abschnitt 8). Der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort oder Fotos.",
      "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den eine von Ihnen erstellte Kurzbefehl-Automation übergibt, oder Text, den Sie einfügen. Welche Nachrichten übergeben werden, legen Sie in der App Kurzbefehle fest. Text, der gelesen, aber nicht erfasst wird, wird nicht gespeichert. Diese Nachrichtenfunktionen gibt es nur für die Region Südkorea.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler Ihre E-Mail-Adresse, den Originaltext der Nachricht, den Sie senden wollten (er kann einen Teil des Namens der zahlenden Person, den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten), den Grund, warum er nicht gelesen werden konnte, die Versionen von App und iOS sowie Informationen, die Ihre Mail-App hinzufügt (etwa Ihren Absendernamen, je nach den Einstellungen Ihres Mail-Accounts). Diese E-Mail sendet nicht die App. Sie senden sie selbst aus Ihrer eigenen Mail-App und können sie vor dem Senden löschen oder ändern.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Verfällt ungenutzt, der Tag, ab dem der Übertrag gezählt wird, und der in diesen Zeitraum übertragene Betrag, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
+     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest, Einheit des Tagesbetrags, der Tag, ab dem der Übertrag gezählt wird, und der in diesen Zeitraum übertragene Betrag, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
      "Letzte 4 Kartenziffern (falls eingetragen): um Nachrichten anderer Karten auszusortieren",
      "Transaktionen (Datum, Betrag, Händler oder Notiz, Zeitpunkt der Aufnahme in die App, Art der Erfassung): um das übrige Geld zu berechnen und für die Transaktionsliste",
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
@@ -273,6 +273,7 @@
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
      "Einträge auf Ihrem Gerät bleiben, bis Sie sie oder die App löschen. Eine Transaktion löschen Sie durch Wischen in der Liste. Ist keine andere App des Entwicklers mit derselben App Group auf dem Gerät, werden Einträge und Einstellungen mit der App gelöscht.",
+     "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer iCloud und wird bei einer Neuinstallation verwendet.",
      "Eine Melde-E-Mail wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
@@ -320,7 +321,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Datei kann in iCloud- oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet, komprimiert die App den Inhalt dieser Datei und sichert ihn im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus dieser Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Datei kann außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
      "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
      "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail und diese Seite mit der Datenschutzerklärung, und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
