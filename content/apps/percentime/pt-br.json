@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Você escolhe como ler",
    "body": [
-    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. As casas decimais do progresso são definidas por você com um toque numa fileira de células de 0 a 6: uma casa de saída, da segunda em diante com o Pro."
+    "O mesmo período se lê de várias formas. Toque no número na tela cheia e as leituras escolhidas passam uma a uma. O número grande no centro alterna entre Progresso, Tempo restante e Tempo decorrido a cada toque. As casas decimais do progresso são definidas por você com um toque numa fileira de células de 0 a 6: uma casa de saída, da segunda em diante com o Pro."
    ],
    "bullets": [],
    "visual": {
@@ -184,7 +184,7 @@
   {
    "q": "O anel no meio da tela cheia",
    "a": [
-    "O período é cortado em células e disposto em volta de um anel. No centro fica a porcentagem em tamanho grande e abaixo uma linha que alterna entre o número de células cheias e o momento da célula que está enchendo, como “Este segmento: 2026”. Um período que não se divide em células é desenhado como um anel contínuo.",
+    "O período é cortado em células e disposto em volta de um anel. No centro fica a porcentagem em tamanho grande e abaixo uma linha que alterna entre o número de células cheias e o momento da célula que está enchendo, como “Este segmento: 2026”. Toque no centro para ver ali Tempo restante ou Tempo decorrido no lugar da porcentagem. Um período que não se divide em células é desenhado como um anel contínuo.",
     "São três cores. As células que passaram fixadas em tinta, a única célula que está enchendo na cor de destaque, e as que faltam como uma linha clara. Quando o período enche, o destaque deixa a tela. É assim que a chegada aparece."
    ]
   },

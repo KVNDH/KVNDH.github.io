@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Pick how you read it",
    "body": [
-    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. You set the decimal places on the progress reading with one tap on a row of cells from 0 to 6: one place as it comes, the second onward with Pro."
+    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. The big figure in the centre changes between Progress, Time remaining and Time elapsed each time you tap it. You set the decimal places on the progress reading with one tap on a row of cells from 0 to 6: one place as it comes, the second onward with Pro."
    ],
    "bullets": [],
    "visual": {
@@ -184,7 +184,7 @@
   {
    "q": "The ring in the middle of the full screen",
    "a": [
-    "The span is cut into cells and laid around a ring. The percentage sits large in the centre with a line beneath it that alternates between the count of filled cells and the time of the cell filling now, as in \"This cell: 2026\". A span that does not divide into cells is drawn as one unbroken ring.",
+    "The span is cut into cells and laid around a ring. The percentage sits large in the centre with a line beneath it that alternates between the count of filled cells and the time of the cell filling now, as in \"This cell: 2026\". Tap the centre to show Time remaining or Time elapsed there instead. A span that does not divide into cells is drawn as one unbroken ring.",
     "There are three colours. Cells behind you set in ink, the one cell filling now in the accent, and the cells ahead left as a pale line. When the span fills, the accent leaves the screen. That is how arrival is shown."
    ]
   },

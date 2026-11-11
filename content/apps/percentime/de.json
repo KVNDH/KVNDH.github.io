@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Wählen Sie, wie Sie es lesen",
    "body": [
-    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die Nachkommastellen des Fortschritts legen Sie mit einem Tipp auf eine Reihe von Feldern von 0 bis 6 fest: eine Stelle ohne Weiteres, ab der zweiten mit Pro."
+    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die große Anzeige in der Mitte wechselt bei jedem Tippen zwischen Fortschritt, Verbleibende Zeit und Vergangene Zeit. Die Nachkommastellen des Fortschritts legen Sie mit einem Tipp auf eine Reihe von Feldern von 0 bis 6 fest: eine Stelle ohne Weiteres, ab der zweiten mit Pro."
    ],
    "bullets": [],
    "visual": {
@@ -184,7 +184,7 @@
   {
    "q": "Der Ring in der Mitte des Vollbilds",
    "a": [
-    "Der Zeitraum wird in Zellen geschnitten und um einen Ring gelegt. In der Mitte steht der Prozentwert groß, darunter eine Zeile, die zwischen der Zahl der gefüllten Zellen und der Zeit der Zelle wechselt, die gerade füllt, etwa „Dieses Segment: 2026“. Ein Zeitraum, der sich nicht in Zellen teilt, wird als durchgehender Ring gezeichnet.",
+    "Der Zeitraum wird in Zellen geschnitten und um einen Ring gelegt. In der Mitte steht der Prozentwert groß, darunter eine Zeile, die zwischen der Zahl der gefüllten Zellen und der Zeit der Zelle wechselt, die gerade füllt, etwa „Dieses Segment: 2026“. Ein Tipp auf die Mitte zeigt dort stattdessen Verbleibende Zeit oder Vergangene Zeit. Ein Zeitraum, der sich nicht in Zellen teilt, wird als durchgehender Ring gezeichnet.",
     "Es gibt drei Farben. Zellen hinter Ihnen in Tinte, die eine Zelle, die gerade füllt, in der Akzentfarbe, und die Zellen davor als blasse Linie. Ist der Zeitraum voll, verlässt die Akzentfarbe den Bildschirm. So wird das Ankommen gezeigt."
    ]
   },

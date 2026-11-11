@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Eliges cómo leerlo",
    "body": [
-    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. Los decimales del progreso los fijas tú con un toque en una fila de casillas del 0 al 6: uno sin más, del segundo en adelante con Pro."
+    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. La cifra grande del centro cambia entre Progreso, Tiempo restante y Tiempo transcurrido cada vez que la tocas. Los decimales del progreso los fijas tú con un toque en una fila de casillas del 0 al 6: uno sin más, del segundo en adelante con Pro."
    ],
    "bullets": [],
    "visual": {
@@ -184,7 +184,7 @@
   {
    "q": "El anillo del centro de la pantalla completa",
    "a": [
-    "El tramo se corta en casillas y se dispone alrededor de un anillo. En el centro va el porcentaje en grande y debajo una línea que alterna entre el número de casillas llenas y el momento de la casilla que se está llenando, como «Casilla actual: 2026». Un tramo que no se divide en casillas se dibuja como un anillo continuo.",
+    "El tramo se corta en casillas y se dispone alrededor de un anillo. En el centro va el porcentaje en grande y debajo una línea que alterna entre el número de casillas llenas y el momento de la casilla que se está llenando, como «Casilla actual: 2026». Si tocas el centro, la cifra grande pasa a mostrar Tiempo restante o Tiempo transcurrido. Un tramo que no se divide en casillas se dibuja como un anillo continuo.",
     "Hay tres colores. Las casillas pasadas fijadas en tinta, la única casilla que se está llenando en el color de acento, y las que faltan como una línea tenue. Cuando el tramo se llena, el acento deja la pantalla. Así se muestra la llegada."
    ]
   },
