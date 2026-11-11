@@ -305,7 +305,7 @@
     "title": "Destruction of information",
     "paragraphs": [
      "Records on your device are removed when you delete them from the transaction list or delete the app.",
-        "The iCloud backup stays in your own iCloud even after you delete the app, and installing the app again with the same Apple Account brings the records back. The current version of the app has no way to delete the iCloud backup.",
+        "The iCloud backup stays in your own iCloud even after you delete the app, and installing the app again with the same Apple Account brings the records back. In the current version, neither the app nor iOS Settings offers a way to delete an iCloud backup that has already been uploaded.",
      "A message report email is deleted from the mailbox without delay after the developer decides whether to add that message format to the app, and at most 1 year after it was received."
     ],
     "bullets": []

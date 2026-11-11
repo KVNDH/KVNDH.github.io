@@ -305,7 +305,7 @@
     "title": "Exclusão das informações",
     "paragraphs": [
      "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app.",
-        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. A versão atual do app não tem como excluir o backup no iCloud.",
+        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. Na versão atual, nem o app nem os Ajustes do iOS permitem excluir um backup no iCloud que já foi enviado.",
      "Um e-mail de reporte de mensagem é excluído da caixa de correio sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido."
     ],
     "bullets": []

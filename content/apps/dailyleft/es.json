@@ -305,7 +305,7 @@
     "title": "Destrucción de la información",
     "paragraphs": [
      "Los registros de tu dispositivo se eliminan cuando los borras de la lista de transacciones o eliminas la app.",
-        "La copia de seguridad de iCloud se queda en tu propio iCloud aunque elimines la app, y si vuelves a instalarla con la misma cuenta de Apple, los registros se recuperan. La versión actual de la app no tiene forma de eliminar la copia de seguridad de iCloud.",
+        "La copia de seguridad de iCloud se queda en tu propio iCloud aunque elimines la app, y si vuelves a instalarla con la misma cuenta de Apple, los registros se recuperan. En la versión actual, ni la app ni los Ajustes de iOS permiten eliminar una copia de seguridad de iCloud ya subida.",
      "Un correo de reporte de mensaje se elimina del buzón sin demora después de que el desarrollador decida si añade ese formato de mensaje a la app, y como máximo 1 año después de recibirlo."
     ],
     "bullets": []
