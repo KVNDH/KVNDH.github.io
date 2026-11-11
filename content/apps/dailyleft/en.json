@@ -101,7 +101,7 @@
    "q": "Getting started",
    "a": [
     "Choose a monthly or daily budget, enter one amount, and tap Start. There is no account or login.",
-    "If you start a monthly budget partway through a period, enter the real amount left in the Money Left This Month field. If you leave it empty, the full budget is used. The period start day, Count weekdays only, Leftover Handling, payment notices and card last 4 digits are under More Options, and you can change them later in Settings."
+    "If you start a monthly budget partway through a period, enter the real amount left in the Money Left This Month field. If you leave it empty, the full budget is used. The period start day, Count weekdays only, Leftover Handling and card last 4 digits are under More Options, and you can change them later in Settings."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "How the daily amount is rounded",
    "a": [
-    "In won, the daily amount in the big number, the status line and the widgets is rounded down to the thousand by default, so 18,383 won shows as 18,000 won. With a monthly budget, choose 1,000, 100, 10 or 1 won in Daily Amount Unit under More Rules in Settings. Amounts under the unit you chose stay as they are, and when one day is left the whole amount left shows. The total left and transaction amounts are not rounded. Other currencies are not rounded by default, and you can pick a unit for them in the same place."
+    "In won, the daily amount in the big number, the status line and the widgets is rounded down to the hundred by default, so 18,383 won shows as 18,300 won. With a monthly budget, choose 1,000, 100, 10 or 1 won in Daily Amount Unit under More Rules in Settings. Amounts under the unit you chose stay as they are, and when one day is left the whole amount left shows. The total left and transaction amounts are not rounded. Other currencies are not rounded by default, and you can pick a unit for them in the same place."
    ]
   },
   {
    "q": "Recording text messages with a Shortcuts automation (South Korea)",
    "a": [
-    "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Open the app once, then in the Shortcuts app make an automation with Message as the trigger, add the app action Record Payment Message, and put the trigger's Message in its Message Text field.",
+    "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Open the app once, then in the Shortcuts app make an automation with Message as the trigger, add the app action Record Payment Message, and put the trigger's Message in its Message Text field. The steps are listed in order under Shortcuts Automation in Settings, and once the automation has run, that row shows Working.",
     "The app can't read your Messages directly. It reads only text passed by the automation or text you paste. The automation's Contains field decides which messages are passed. With only 승인 (approved) there, cancellation messages may not be recorded. To catch those too, put your card's last 4 digits in that field."
    ]
   },
@@ -237,7 +237,7 @@
  ],
  "privacy": {
   "title": "DailyLeft Privacy Policy",
-  "effectiveDate": "2026-11-11",
+  "effectiveDate": "2026-11-12",
   "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you're signed in to iCloud, a backup of the same records is also kept in your own iCloud so they can come back when you reinstall the app, and the developer does not receive that backup either. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove Ads and restoring it.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the DailyLeft app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -266,6 +266,7 @@
      "Transactions (date, amount, merchant or memo, time added to the app, how it was recorded): used to work out the money left and for the transaction list",
      "The original text of recorded payment messages: saved as is in the saved file and used so the same message isn't recorded twice. It may include part of the approver's name (for example H*D), the merchant, the card's last 4 digits, the amount and the time",
      "The last balance seen and when, a first-run mark, the day a celebration was shown, and whether the calendar is expanded: used to draw the screen",
+     "When the Shortcuts automation last ran and whether the message text it passed was empty: used to show under Shortcuts Automation in Settings whether the automation is working",
      "Whether you bought Remove Ads: used to hide the banner and skip the ad consent check, the tracking prompt and the ad SDK start"
     ]
    },

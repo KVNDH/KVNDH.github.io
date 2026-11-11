@@ -101,7 +101,7 @@
    "q": "Como começar",
    "a": [
     "Escolha um orçamento mensal ou diário, informe um valor e toque em Start (Começar). Não há conta nem login.",
-    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo Money Left This Month (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, O que fazer com o que sobra, os avisos de pagamento e os 4 últimos dígitos do cartão ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
+    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo Money Left This Month (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, O que fazer com o que sobra e os 4 últimos dígitos do cartão ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "Arredondamento do valor diário",
    "a": [
-    "Em wons, o valor diário do número grande, da linha de status e dos widgets é arredondado por padrão para baixo até os 1.000 wons, então 18.383 wons aparecem como 18.000 wons. Com um orçamento mensal, escolha 1.000, 100, 10 ou 1 won em Daily Amount Unit (Unidade do valor diário), dentro de More Rules (Mais regras) nos Ajustes. Valores abaixo da unidade escolhida ficam como estão, e quando resta um só dia aparece todo o dinheiro restante. O saldo total e os valores das transações não são arredondados. As outras moedas não são arredondadas por padrão, e você pode escolher uma unidade para elas no mesmo lugar."
+    "Em wons, o valor diário do número grande, da linha de status e dos widgets é arredondado por padrão para baixo até os 100 wons, então 18.383 wons aparecem como 18.300 wons. Com um orçamento mensal, escolha 1.000, 100, 10 ou 1 won em Daily Amount Unit (Unidade do valor diário), dentro de More Rules (Mais regras) nos Ajustes. Valores abaixo da unidade escolhida ficam como estão, e quando resta um só dia aparece todo o dinheiro restante. O saldo total e os valores das transações não são arredondados. As outras moedas não são arredondadas por padrão, e você pode escolher uma unidade para elas no mesmo lugar."
    ]
   },
   {
    "q": "Registrar mensagens de texto com uma automação de Atalhos (Coreia do Sul)",
    "a": [
-    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois, no app Atalhos, crie uma automação com Mensagem como gatilho, acrescente a ação do app Record Payment Message (Registrar mensagem de pagamento) e coloque a Message (Mensagem) do gatilho no campo Message Text (Texto da mensagem) dela.",
+    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois, no app Atalhos, crie uma automação com Mensagem como gatilho, acrescente a ação do app Record Payment Message (Registrar mensagem de pagamento) e coloque a Message (Mensagem) do gatilho no campo Message Text (Texto da mensagem) dela. Os passos aparecem em ordem nos Ajustes, em Shortcuts Automation (Automação de Atalhos), e depois que a automação roda uma vez essa linha mostra Working (Funcionando).",
     "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado pela automação ou o texto que você cola. O campo Contains (Contém) da automação decide quais mensagens são passadas. Só com 승인 (aprovado) ali, as mensagens de cancelamento podem não ser registradas. Para pegar essas também, coloque nesse campo os 4 últimos dígitos do seu cartão."
    ]
   },
@@ -237,7 +237,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do DailyLeft",
-  "effectiveDate": "2026-11-11",
+  "effectiveDate": "2026-11-12",
   "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -266,6 +266,7 @@
      "Transações (data, valor, estabelecimento ou nota, hora em que entraram no app, como foram registradas): usadas para calcular o dinheiro restante e para a lista de transações",
      "O texto original das mensagens de pagamento registradas: guardado como está no arquivo salvo e usado para que a mesma mensagem não seja registrada duas vezes. Pode incluir parte do nome de quem aprovou o pagamento (por exemplo, H*D), o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora",
      "O último saldo visto e quando, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela",
+     "Quando a automação de Atalhos rodou pela última vez e se o texto da mensagem que ela passou estava vazio: usados para mostrar nos Ajustes, em Shortcuts Automation, se a automação está funcionando",
      "Se você comprou Remove Ads (remover anúncios): usado para esconder o banner e pular a verificação do consentimento de anúncios, o pedido de rastreamento e o início do SDK de anúncios"
     ]
    },

@@ -101,7 +101,7 @@
    "q": "Erste Schritte",
    "a": [
     "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf Start. Konto und Anmeldung gibt es nicht.",
-    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest, Zahlungshinweise und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
+    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "Rundung des Tagesbetrags",
    "a": [
-    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets standardmäßig auf volle 1.000 Won abgerundet, aus 18.383 Won werden also 18.000 Won. Bei einem Monatsbudget wählen Sie in den Einstellungen unter More Rules (Weitere Regeln) bei Daily Amount Unit (Einheit des Tagesbetrags) 1.000, 100, 10 oder 1 Won. Beträge unter der gewählten Einheit bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo und Buchungsbeträge werden nicht gerundet. Andere Währungen werden standardmäßig nicht gerundet, eine Einheit lässt sich dort aber ebenfalls wählen."
+    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets standardmäßig auf volle 100 Won abgerundet, aus 18.383 Won werden also 18.300 Won. Bei einem Monatsbudget wählen Sie in den Einstellungen unter More Rules (Weitere Regeln) bei Daily Amount Unit (Einheit des Tagesbetrags) 1.000, 100, 10 oder 1 Won. Beträge unter der gewählten Einheit bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo und Buchungsbeträge werden nicht gerundet. Andere Währungen werden standardmäßig nicht gerundet, eine Einheit lässt sich dort aber ebenfalls wählen."
    ]
   },
   {
    "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
-    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal. Erstellen Sie dann in der Kurzbefehle-App eine Automation mit Nachricht als Auslöser, fügen Sie die App-Aktion Record Payment Message (Zahlungsnachricht erfassen) hinzu, und setzen Sie in deren Feld Message Text (Nachrichtentext) die Message (Nachricht) des Auslösers ein.",
+    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal. Erstellen Sie dann in der Kurzbefehle-App eine Automation mit Nachricht als Auslöser, fügen Sie die App-Aktion Record Payment Message (Zahlungsnachricht erfassen) hinzu, und setzen Sie in deren Feld Message Text (Nachrichtentext) die Message (Nachricht) des Auslösers ein. Die Schritte stehen der Reihe nach in den Einstellungen unter Shortcuts Automation (Kurzbefehl-Automation). Sobald die Automation einmal gelaufen ist, zeigt diese Zeile Working (Läuft).",
     "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld Contains (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
    ]
   },
@@ -237,7 +237,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
-  "effectiveDate": "2026-11-11",
+  "effectiveDate": "2026-11-12",
   "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -266,6 +266,7 @@
      "Transaktionen (Datum, Betrag, Händler oder Notiz, Zeitpunkt der Aufnahme in die App, Art der Erfassung): um das übrige Geld zu berechnen und für die Transaktionsliste",
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
      "Der zuletzt gesehene Saldo und sein Zeitpunkt, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige",
+     "Wann die Kurzbefehl-Automation zuletzt lief und ob der übergebene Nachrichtentext dabei leer war: um in den Einstellungen unter Shortcuts Automation anzuzeigen, ob die Automation läuft",
      "Ob Sie Remove Ads (Werbung entfernen) gekauft haben: um das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen"
     ]
    },

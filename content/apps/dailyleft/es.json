@@ -101,7 +101,7 @@
    "q": "Primeros pasos",
    "a": [
     "Elige un presupuesto mensual o diario, introduce un importe y toca Start (Empezar). No hay cuenta ni inicio de sesión.",
-    "Si empiezas un presupuesto mensual a mitad de un periodo, introduce el importe real que te queda en el campo Money Left This Month (Dinero que queda ahora). Si lo dejas vacío, se usa el presupuesto completo. El día de inicio del periodo, «Contar solo días laborables», «Qué hacer con lo que sobra», los avisos de pago y los últimos 4 dígitos de la tarjeta están en More Options (Más opciones), y puedes cambiarlos después en Ajustes."
+    "Si empiezas un presupuesto mensual a mitad de un periodo, introduce el importe real que te queda en el campo Money Left This Month (Dinero que queda ahora). Si lo dejas vacío, se usa el presupuesto completo. El día de inicio del periodo, «Contar solo días laborables», «Qué hacer con lo que sobra» y los últimos 4 dígitos de la tarjeta están en More Options (Más opciones), y puedes cambiarlos después en Ajustes."
    ]
   },
   {
@@ -134,13 +134,13 @@
   {
    "q": "Redondeo del importe diario",
    "a": [
-    "En wones, el importe diario del número grande, la línea de estado y los widgets se redondea de forma predeterminada hacia abajo a los 1.000 wones, así que 18.383 wones se muestran como 18.000 wones. Con un presupuesto mensual, elige 1.000, 100, 10 o 1 won en Daily Amount Unit (Unidad del importe diario), dentro de More Rules (Más reglas) en Ajustes. Los importes por debajo de la unidad elegida se quedan igual, y cuando queda un solo día se muestra todo el dinero que queda. El saldo total y los importes de las transacciones no se redondean. Las otras monedas no se redondean de forma predeterminada, y en el mismo lugar puedes elegir una unidad para ellas."
+    "En wones, el importe diario del número grande, la línea de estado y los widgets se redondea de forma predeterminada hacia abajo a los 100 wones, así que 18.383 wones se muestran como 18.300 wones. Con un presupuesto mensual, elige 1.000, 100, 10 o 1 won en Daily Amount Unit (Unidad del importe diario), dentro de More Rules (Más reglas) en Ajustes. Los importes por debajo de la unidad elegida se quedan igual, y cuando queda un solo día se muestra todo el dinero que queda. El saldo total y los importes de las transacciones no se redondean. Las otras monedas no se redondean de forma predeterminada, y en el mismo lugar puedes elegir una unidad para ellas."
    ]
   },
   {
    "q": "Registrar mensajes de texto con una automatización de Atajos (Corea del Sur)",
    "a": [
-    "Esto solo funciona si la región de tu iPhone era Corea del Sur al configurar la app por primera vez. En otros lugares, usa Add by Hand (Añadir a mano). Si los avisos de pago te llegan por mensaje de texto, puedes crear una automatización de Atajos. Abre la app una vez y luego, en la app Atajos, crea una automatización con Mensaje como disparador, añade la acción de la app Record Payment Message (Registrar mensaje de pago) y pon Message (Mensaje) del disparador en su campo Message Text (Texto del mensaje).",
+    "Esto solo funciona si la región de tu iPhone era Corea del Sur al configurar la app por primera vez. En otros lugares, usa Add by Hand (Añadir a mano). Si los avisos de pago te llegan por mensaje de texto, puedes crear una automatización de Atajos. Abre la app una vez y luego, en la app Atajos, crea una automatización con Mensaje como disparador, añade la acción de la app Record Payment Message (Registrar mensaje de pago) y pon Message (Mensaje) del disparador en su campo Message Text (Texto del mensaje). Los pasos aparecen en orden en Ajustes, en Shortcuts Automation (Automatización de Atajos), y cuando la automatización se ha ejecutado una vez, esa fila muestra Working (Funciona).",
     "La app no puede leer directamente tu app Mensajes. Solo lee el texto que le pasa la automatización o el texto que pegas. El campo Contains (Contiene) de la automatización decide qué mensajes se pasan. Si solo pones 승인 (aprobado), puede que los mensajes de cancelación no se registren. Para recibirlos también, pon en ese campo los últimos 4 dígitos de tu tarjeta."
    ]
   },
@@ -237,7 +237,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de DailyLeft",
-  "effectiveDate": "2026-11-11",
+  "effectiveDate": "2026-11-12",
   "summary": "Los registros de la app se guardan en un archivo en tu dispositivo, y el desarrollador no recibe ese archivo. Si tienes la sesión iniciada en iCloud, también se guarda una copia de seguridad de esos registros en tu propio iCloud para recuperarlos si vuelves a instalar la app, y el desarrollador tampoco recibe esa copia. Si decides enviar un correo de reporte de mensaje, el desarrollador lo recibe. Solo se usa para enseñar a la app ese formato de mensaje y para responderte. Se elimina sin demora después de que el desarrollador decida si añade ese formato a la app, y como máximo 1 año después de recibirlo. Los anuncios de banner vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Apple procesa el pago y la restauración de Remove Ads.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app DailyLeft (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -266,6 +266,7 @@
      "Transacciones (fecha, importe, comercio o nota, hora en que entró en la app, cómo se registró): para calcular el dinero que queda y para la lista de transacciones",
      "El texto original de los mensajes de pago registrados: se guarda tal cual en el archivo guardado y se usa para que el mismo mensaje no se registre dos veces. Puede incluir parte del nombre del titular que aprobó el pago (por ejemplo, H*D), el comercio, los últimos 4 dígitos de la tarjeta, el importe y la hora",
      "El último saldo visto y cuándo se vio, una marca de primer uso, el día en que se mostró una celebración y si el calendario está desplegado: para dibujar la pantalla",
+     "Cuándo se ejecutó por última vez la automatización de Atajos y si el texto del mensaje que pasó estaba vacío: para mostrar en Ajustes, en Shortcuts Automation, si la automatización funciona",
      "Si compraste Remove Ads (quitar anuncios): para ocultar el banner y saltar la comprobación del consentimiento de anuncios, el aviso de rastreo y el inicio del SDK de anuncios"
     ]
    },
