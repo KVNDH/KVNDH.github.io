@@ -185,7 +185,7 @@
  ],
  "privacy": {
   "title": "Life Tyde Privacy Policy",
-  "effectiveDate": "2026-10-19",
+  "effectiveDate": "2026-11-12",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Life Tyde app (\"the app\") in accordance with the Personal Information Protection Act of Korea. This policy explains how."
   ],
@@ -207,7 +207,7 @@
      "Photos attached to events, with small preview images: used to show photos with your entries",
      "Settings such as your birthday or base year, display options, and app language: used for what appears on screen",
      "Book titles and drafts: used to pick up work on a book (PDF)",
-     "Event titles and years: used for the device search index while Spotlight search is on",
+     "Event titles, dates, tags and notes: used for the search indexes on the device while Spotlight search is on (search results show only titles and years)",
      "On this day items: used to show the Home Screen widget"
     ]
    },
@@ -253,7 +253,7 @@
     "paragraphs": [
      "iCloud sync uses the private database in your own iCloud account. Exchange nearby works only over an encrypted connection. The app asks only for permission to add timeline images to Photos and does not ask to read your photo library. Notification permission is requested only when you save an event with a reminder.",
      "Photos come only from the system photo picker, and only the ones you choose. The app does not use photo library read permission or camera permission. Photos are resized before saving, and metadata from the original such as location and device information is not carried over. With Spotlight search on, a small preview of an event's first photo appears in device search results. Photos are not included in AI summaries and drafts, Exchange nearby, timeline images, books (PDF), or CSV files.",
-     "Spotlight search indexes only event titles and years, and turning it off in Settings clears the index. AI summaries and drafts are written by the Apple Intelligence model on your device."
+     "With Spotlight search on, the only text in device search results is event titles and years. With the same setting on, on iOS 18.4 and macOS 15.4 or later, titles, dates, tags and notes also go into an on-device semantic index that Siri uses to find your records. Its contents do not appear in search results. Events moved to the Trash are left out of both indexes, and turning off Spotlight search in Settings clears both. The app does not send these indexes anywhere, and the developer does not collect them. AI summaries and drafts are written by the Apple Intelligence model on your device."
     ],
     "bullets": []
    },

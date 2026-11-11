@@ -185,7 +185,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Life Tyde",
-  "effectiveDate": "2026-10-19",
+  "effectiveDate": "2026-11-12",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Life Tyde (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea. Diese Erklärung legt dar, wie."
   ],
@@ -207,7 +207,7 @@
      "Fotos zu Ereignissen samt kleinen Vorschaubildern: um Fotos mit Ihren Einträgen anzuzeigen",
      "Einstellungen wie Geburtstag oder Basisjahr, Anzeigeoptionen und App-Sprache: für das, was auf dem Bildschirm erscheint",
      "Buchtitel und Entwürfe: um die Arbeit an einem Buch (PDF) fortzusetzen",
-     "Ereignistitel und Jahre: für den Suchindex des Geräts, solange die Spotlight-Suche eingeschaltet ist",
+     "Ereignistitel, Daten, Tags und Notizen: für die Suchindizes auf dem Gerät, solange die Spotlight-Suche eingeschaltet ist (in Suchergebnissen erscheinen nur Titel und Jahre)",
      "Einträge für An diesem Tag: für die Anzeige des Home-Bildschirm-Widgets"
     ]
    },
@@ -253,7 +253,7 @@
     "paragraphs": [
      "Der iCloud-Sync nutzt die private Datenbank in Ihrem eigenen iCloud-Account. In der Nähe austauschen arbeitet nur über eine verschlüsselte Verbindung. Die App bittet allein um die Berechtigung, Timeline-Bilder zu Fotos hinzuzufügen, und fordert keine Leseberechtigung für Ihre Mediathek an. Nach der Mitteilungsberechtigung fragt sie erst, wenn Sie ein Ereignis mit Erinnerung sichern.",
      "Fotos erhält die App nur über die Fotoauswahl des Systems, und nur die, die Sie auswählen. Eine Leseberechtigung für die Mediathek und den Kamerazugriff nutzt sie nicht. Vor dem Sichern werden Fotos verkleinert, und Metadaten des Originals wie Ort und Geräteangaben werden nicht übernommen. Bei eingeschalteter Spotlight-Suche erscheint eine kleine Vorschau des ersten Fotos in den Suchergebnissen des Geräts. Fotos fließen nicht in KI-Zusammenfassungen und Entwürfe, In der Nähe austauschen, Timeline-Bilder, Bücher (PDF) oder CSV-Dateien ein.",
-     "Die Spotlight-Suche indiziert nur Ereignistitel und Jahre; schalten Sie sie in den Einstellungen aus, wird der Index gelöscht. KI-Zusammenfassungen und Entwürfe schreibt das Apple-Intelligence-Modell auf Ihrem Gerät."
+     "Bei eingeschalteter Spotlight-Suche erscheinen in den Suchergebnissen des Geräts als Text nur Ereignistitel und Jahre. Ist dieselbe Einstellung eingeschaltet, kommen unter iOS 18.4 und macOS 15.4 oder neuer Titel, Daten, Tags und Notizen außerdem in einen semantischen Index auf dem Gerät, mit dem Siri Ihre Einträge findet. Sein Inhalt erscheint nicht in Suchergebnissen. In den Papierkorb verschobene Ereignisse fallen aus beiden Indizes heraus, und wenn Sie die Spotlight-Suche in den Einstellungen ausschalten, werden beide gelöscht. Die App sendet diese Indizes nirgendwohin, und der Entwickler erhebt sie nicht. KI-Zusammenfassungen und Entwürfe schreibt das Apple-Intelligence-Modell auf Ihrem Gerät."
     ],
     "bullets": []
    },
