@@ -138,7 +138,7 @@
   {
    "q": "Changing line style and color",
    "a": [
-    "Open Settings while in Lines and you get the style chips, the Width and Opacity sliders and the color buttons. The styles are Solid, Dashed, Double and Glow, and whichever you tap is drawn on the canvas right away. The colors are White and Black, and when you open a photo the app measures the brightness of the background without the subject and picks the one that reads better.",
+    "Open Settings while in Lines and you get the style chips, the Width and Opacity sliders and the color buttons. Next to Width you see the line's thickness in pixels in the exported photo, and next to Opacity a percentage. The styles are Solid, Dashed, Double and Glow, and whichever you tap is drawn on the canvas right away. The colors are White and Black, and when you open a photo the app measures the brightness of the background without the subject and picks the one that reads better.",
     "Dashed, Double, Glow and any color beyond white and black are saved the way you set them with SnapLine Pro. Add line drops in a new line, alternating horizontal and vertical. Delete line removes the one you selected."
    ]
   },

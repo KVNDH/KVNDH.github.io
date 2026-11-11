@@ -138,7 +138,7 @@
   {
    "q": "Cambiar el estilo y el color de la línea",
    "a": [
-    "Abre Ajustes con la herramienta Líneas activa y verás los botones de estilo, los reguladores de Grosor y Opacidad y los botones de color. Los estilos son Continua, Discontinua, Doble y Brillo, y el que toques se dibuja al momento en el lienzo. Los colores son Blanco y Negro: al abrir una foto, la app mide el brillo del fondo sin el sujeto y elige el que se ve mejor.",
+    "Abre Ajustes con la herramienta Líneas activa y verás los botones de estilo, los reguladores de Grosor y Opacidad y los botones de color. Junto a Grosor aparece el grosor de la línea en píxeles en la foto exportada, y junto a Opacidad, un porcentaje. Los estilos son Continua, Discontinua, Doble y Brillo, y el que toques se dibuja al momento en el lienzo. Los colores son Blanco y Negro: al abrir una foto, la app mide el brillo del fondo sin el sujeto y elige el que se ve mejor.",
     "La línea discontinua, la doble, el brillo y cualquier color más allá del blanco y el negro se guardan tal como los dejaste con SnapLine Pro. Añadir línea coloca una línea nueva, alternando horizontal y vertical. Eliminar línea quita la que tengas seleccionada."
    ]
   },

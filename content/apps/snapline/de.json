@@ -138,7 +138,7 @@
   {
    "q": "Linienstil und Farbe ändern",
    "a": [
-    "Öffnen Sie im Modus Linien die Einstellungen, dann erscheinen die Stiltasten, die Regler für Stärke und Deckkraft und die Farbtasten. Zur Wahl stehen Durchgezogen, Gestrichelt, Doppelt und Leuchten, und was Sie antippen, liegt sofort auf der Leinwand. Als Farbe stehen Weiß und Schwarz bereit: Beim Öffnen eines Fotos misst die App die Helligkeit des Hintergrunds ohne das Motiv und wählt die Farbe, die besser zu sehen ist.",
+    "Öffnen Sie im Modus Linien die Einstellungen, dann erscheinen die Stiltasten, die Regler für Stärke und Deckkraft und die Farbtasten. Neben Stärke steht die Linienstärke im exportierten Foto in Pixeln, neben Deckkraft ein Prozentwert. Zur Wahl stehen Durchgezogen, Gestrichelt, Doppelt und Leuchten, und was Sie antippen, liegt sofort auf der Leinwand. Als Farbe stehen Weiß und Schwarz bereit: Beim Öffnen eines Fotos misst die App die Helligkeit des Hintergrunds ohne das Motiv und wählt die Farbe, die besser zu sehen ist.",
     "Gestrichelt, Doppelt, Leuchten und jede Farbe jenseits von Weiß und Schwarz werden mit SnapLine Pro so gesichert, wie Sie sie eingestellt haben. Linie hinzufügen legt abwechselnd eine waagerechte und eine senkrechte Linie an; Linie löschen entfernt die ausgewählte."
    ]
   },

@@ -138,7 +138,7 @@
   {
    "q": "Mudar o estilo e a cor da linha",
    "a": [
-    "Abra os Ajustes com a ferramenta Linhas ativa e aparecem os botões de estilo, os controles de Espessura e Opacidade e os botões de cor. Os estilos são Contínua, Tracejada, Dupla e Brilho, e o que você tocar já aparece na área de edição. As cores são Branco e Preto: ao abrir uma foto, o app mede o brilho do fundo sem o objeto e escolhe a que fica mais visível.",
+    "Abra os Ajustes com a ferramenta Linhas ativa e aparecem os botões de estilo, os controles de Espessura e Opacidade e os botões de cor. Ao lado de Espessura aparece a espessura da linha em pixels na foto exportada e, ao lado de Opacidade, uma porcentagem. Os estilos são Contínua, Tracejada, Dupla e Brilho, e o que você tocar já aparece na área de edição. As cores são Branco e Preto: ao abrir uma foto, o app mede o brilho do fundo sem o objeto e escolhe a que fica mais visível.",
     "A linha tracejada, a dupla, o brilho e qualquer cor além do branco e do preto são salvos como você deixou com o SnapLine Pro. Adicionar linha coloca uma linha nova, alternando horizontal e vertical. Excluir linha tira a que estiver selecionada."
    ]
   },
