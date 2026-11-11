@@ -56,7 +56,8 @@
    "bullets": [
     "Vários filtros numéricos",
     "Busca por nome curto ou apelido",
-    "Produtos por categoria"
+    "Produtos por categoria",
+    "Lista Recently picked"
    ],
    "visual": {
     "type": "crop",
@@ -149,7 +150,7 @@
   {
    "q": "Aparelhos compatíveis",
    "a": [
-    "iPhone com iOS 26 ou mais recente, na vertical e na horizontal."
+    "iPhone com iOS 26 ou mais recente e iPad com iPadOS 26 ou mais recente, na vertical e na horizontal."
    ]
   },
   {
@@ -161,7 +162,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do SpecTable",
-  "effectiveDate": "2026-11-05",
+  "effectiveDate": "2026-11-11",
   "summary": "O desenvolvedor não coleta informações pessoais. O banner de anúncio abaixo da tela de comparação vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento de Remove ads é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app SpecTable (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -184,6 +185,7 @@
     "bullets": [
      "Os produtos escolhidos para comparar: usados para mostrar a mesma comparação quando o app abre de novo",
      "Combinações salvas: usadas para reabri-las",
+     "A lista Recently picked: usada para mostrá-la no topo de Choose a product",
      "A chave Differences only: usada para escolher quais linhas a tabela mostra",
      "A escolha de idioma do app: usada para definir o idioma da tela",
      "Se a introdução já foi vista: usado para mostrá-la só uma vez"
@@ -192,7 +194,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. As combinações salvas ficam até você removê-las no app ou excluir o app.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. As combinações salvas ficam até você removê-las no app ou excluir o app. A lista Recently picked guarda os últimos 8 produtos e se esvazia com Clear em Choose a product.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -222,7 +224,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. As combinações salvas podem ser removidas no app, e excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. As combinações salvas e a lista Recently picked podem ser removidas no app, e excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },
@@ -237,7 +239,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica no armazenamento do app no seu aparelho. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esses dados podem entrar nos backups do aparelho que você ativar. A lista de especificações dos produtos vem embutida no app, então o app não baixa especificações. A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. Uma imagem de comparação é criada no seu aparelho e passa para a tela de compartilhamento do sistema só quando você toca em compartilhar, e você escolhe para onde ela vai. Copiar um endereço de fonte apenas o coloca na área de transferência. O que o app passa ao SDK de anúncios é o pedido de anúncio e o tamanho do banner. Ele não passa os produtos escolhidos nem as combinações salvas."
+     "O que o app usa fica no armazenamento do app no seu aparelho. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esses dados podem entrar nos backups do aparelho que você ativar. A lista de especificações dos produtos vem embutida no app, então o app não baixa especificações. A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. Uma imagem de comparação é criada no seu aparelho e passa para a tela de compartilhamento do sistema só quando você toca em compartilhar, e você escolhe para onde ela vai. Copiar um endereço de fonte apenas o coloca na área de transferência. O que o app passa ao SDK de anúncios é o pedido de anúncio e o tamanho do banner. Ele não passa os produtos escolhidos, a lista Recently picked nem as combinações salvas."
     ],
     "bullets": []
    },

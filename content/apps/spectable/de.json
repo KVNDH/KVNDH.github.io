@@ -56,7 +56,8 @@
    "bullets": [
     "Mehrere Zahlenfilter",
     "Suche nach Kurzname oder Spitzname",
-    "Produkte nach Kategorie"
+    "Produkte nach Kategorie",
+    "Liste Zuletzt gewählt"
    ],
    "visual": {
     "type": "crop",
@@ -149,7 +150,7 @@
   {
    "q": "Unterstützte Geräte",
    "a": [
-    "iPhone mit iOS 26 oder neuer, im Hoch- und Querformat."
+    "iPhone mit iOS 26 oder neuer und iPad mit iPadOS 26 oder neuer, im Hoch- und Querformat."
    ]
   },
   {
@@ -161,7 +162,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für SpecTable",
-  "effectiveDate": "2026-11-05",
+  "effectiveDate": "2026-11-11",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Das Werbebanner unter dem Vergleichsbildschirm kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SpecTable (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -184,6 +185,7 @@
     "bullets": [
      "Die für den Vergleich gewählten Produkte: um beim erneuten Öffnen der App denselben Vergleich zu zeigen",
      "Gespeicherte Kombinationen: zum Wiederöffnen",
+     "Die Liste Zuletzt gewählt: um sie oben in Produkt wählen zu zeigen",
      "Der Schalter Nur Unterschiede: um festzulegen, welche Zeilen die Tabelle zeigt",
      "Sprachauswahl der App: um die Sprache der Oberfläche festzulegen",
      "Ob die Einführung schon gezeigt wurde: um sie nur einmal zu zeigen"
@@ -192,7 +194,7 @@
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Gespeicherte Kombinationen bleiben, bis Sie sie in der App entfernen oder die App löschen.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Gespeicherte Kombinationen bleiben, bis Sie sie in der App entfernen oder die App löschen. Die Liste Zuletzt gewählt behält die letzten 8 Produkte, und Löschen in Produkt wählen leert sie.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -222,7 +224,7 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Kombinationen lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Kombinationen und die Liste Zuletzt gewählt lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },
@@ -237,7 +239,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App nutzt, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Daten können in Gerätebackups enthalten sein, die Sie einschalten. Die Liste der Produktdaten ist in die App eingebaut, die App lädt also keine Daten herunter. Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Ein Vergleichsbild entsteht auf Ihrem Gerät und geht nur dann an das Teilen-Menü des Systems, wenn Sie auf Teilen tippen, und Sie wählen das Ziel. Das Kopieren einer Quellenadresse legt sie nur in die Zwischenablage. An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Die gewählten Produkte und Ihre gespeicherten Kombinationen gibt sie nicht weiter."
+     "Was die App nutzt, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Daten können in Gerätebackups enthalten sein, die Sie einschalten. Die Liste der Produktdaten ist in die App eingebaut, die App lädt also keine Daten herunter. Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Ein Vergleichsbild entsteht auf Ihrem Gerät und geht nur dann an das Teilen-Menü des Systems, wenn Sie auf Teilen tippen, und Sie wählen das Ziel. Das Kopieren einer Quellenadresse legt sie nur in die Zwischenablage. An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Die gewählten Produkte, die Liste Zuletzt gewählt und Ihre gespeicherten Kombinationen gibt sie nicht weiter."
     ],
     "bullets": []
    },

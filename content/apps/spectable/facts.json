@@ -1,10 +1,10 @@
 {
- "describesVersion": "1.0.1",
+ "describesVersion": "1.0.2",
  "purchase": "one-time",
  "ads": true,
  "account": false,
  "platform": [
-  "iPhone 전용, iOS 26 이상, 세로와 가로 (SpecPair project.yml TARGETED_DEVICE_FAMILY, UISupportedInterfaceOrientations)"
+  "iPhone 과 iPad, iOS 26 과 iPadOS 26 이상. iPhone 은 세로와 가로 좌우, iPad 는 네 방향. iPad 폭 1000pt 이상이면 비교가 두 열(왼쪽 380pt), 좁으면 한 열 720pt, 고르기 시트는 쪽 크기 (SpecTable 633a2bc project.yml:60, :129, ContentView.swift:29~:39, :213)"
  ],
  "products": [
   "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecTable/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
@@ -17,19 +17,19 @@
   "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (Ads/GoogleAdsSDK.swift)"
  ],
  "externalLinks": [
-  "가격 링크(빌드 5 40c9612): PriceLink.choose. US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(amazonTags 가 비어 꼬리표 없음, 대가성 문구 없음), TW HK 는 링크 없음, 한국과 그 밖의 지역은 쿠팡. 쿠팡 스위치 켬(ContentView.swift:1105 Settings(coupang: true)). data/links/coupang.json 에 link.coupang.com 링크가 있는 13대(Apple 최신 10대와 갤럭시 S25 울트라, iPhone 17 Pro Max, MacBook Air 15 M5)는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없는 기기는 꼬리표 없는 쿠팡 검색. 링크 이름 'Coupang ↗', 'Amazon ↗'(ContentView.swift:701~:702). 다나와 링크는 없앰(SpecTable 6247694) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift)",
+  "가격 링크(빌드 5 40c9612): PriceLink.choose. US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(amazonTags 가 비어 꼬리표 없음, 대가성 문구 없음), TW HK 는 링크 없음, 한국과 그 밖의 지역은 쿠팡. 쿠팡 스위치 켬(ContentView.swift:1121 Settings(coupang: true)). link.coupang.com 링크가 있는 318대(data/links/coupang.json, tools/build_catalog.py 가 catalog.json device.coupang 으로 붙임, 빌드 7 633a2bc. 1.0.1 까지는 13대)는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없는 기기는 꼬리표 없는 쿠팡 검색. 링크 이름 'Coupang ↗', 'Amazon ↗'(ContentView.swift:701~:702). 다나와 링크는 없앰(SpecTable 6247694) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift)",
   "대가성 문구: 쿠팡 파트너스 가이드 권장 문구 원문 \"이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\"(PriceLink.coupangDisclosure). 고른 제품 가운데 파트너스 링크가 하나라도 있으면 비교 화면 맨 위 제품 칸 바로 아래에 15pt 먹 글자, 화면이 영어, 일본어, 독일어면 번역 한 줄 더 (ContentView.swift:639~:647, docs/COUPANG_DISCLOSURE.md). 사이트 FAQ 는 개수 13 을 쓰지 않고 '일부 제품'으로 쓴다(링크는 사용자가 손으로 늘린다)",
   "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink)",
   "사이트 ko 소개 쪽 쿠팡 파트너스 링크 셋과 대가성 문구: 옛 specpair ko 쪽 값을 2026-11-01 그대로 옮김 (ko.json partners, SpecPair docs/SITE_DRAFT.md 5절). 활동 매체 https://kvndh.com/ko/spectable/. 앱 안 링크와는 별개다"
  ],
  "storage": [
-  "UserDefaults: selection, combos, onlyDifferences, onboarded (App/AppModel.swift:72-77), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"
+  "UserDefaults: selection, combos, onlyDifferences, onboarded, recent(최근 고른 제품 8개, 1.0.2, 고르기 시트 맨 위에 5개, '지우기'로 비움) (App/AppModel.swift:57~:60, :81~:85, :195~:207, Views/Sheets.swift:302~:330), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"
  ],
  "permissions": [
   "추적 허용(ATT) 하나. 카메라, 사진, 위치, 알림 없음"
  ],
  "notOffered": [
-  "지금 파는 가격, 가격 비교, 가격 추이, 사용자 리뷰, 제품 사진, 회사 로고, iPad 맞춤 화면, 위젯. 사이트에 쓰지 않는다"
+  "지금 파는 가격, 가격 비교, 가격 추이, 사용자 리뷰, 제품 사진, 회사 로고, 위젯. 사이트에 쓰지 않는다"
  ],
  "numbers": [
   "5",
@@ -40,11 +40,12 @@
  ],
  "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(빌드 5 catalog 3,769대, 기준일 2026-11-04, metadata.json 문구 그대로)",
  "sources": [
+  "SpecTable 633a2bc(빌드 1.0.2 (7), 088fa98 에서 제출, 출시는 HQ 확인): 코드, docs/HANDOFF.md:125, docs/store/metadata.json whatsNew. 1.0.1 197103c 와 코드 차이는 project.yml(기기 \"1,2\", iPad 네 방향), Info.plist, AppModel.swift(recent), Sheets.swift(최근 고른 제품), ContentView.swift(iPad 배치), Localizable.xcstrings 두 줄, catalog.json(쿠팡 링크 318대와 검색어). 기기 3,769대, 기준일 2026-11-04, 16개 종류는 그대로. 앱 화면 언어는 en, ko, ja, de 넷 그대로이고 50개 로케일은 스토어 문안뿐이다",
   "SpecTable 197103c(빌드 1.0.1 (6) 70ac6ef 를 main 에 합친 판, 2026-11-08 ASC READY_FOR_SALE, HQ 확인): 코드, docs/HANDOFF.md, docs/COUPANG_DISCLOSURE.md, docs/store/metadata.json whatsNew. 1.0.0 (5) 40c9612 과 코드 차이는 AppModel.swift, ShareImage.swift, Sheets.swift, Localizable.xcstrings, 아이콘뿐(카탈로그, 쿠팡 링크 파일, PriceLink 그대로). metadata.json 의 50개 로케일 문안(584822c)은 다음 판 준비라 사이트 근거로 쓰지 않는다",
   "1.0.0 근거: SpecTable 40c9612(빌드 1.0.0 (5), 2026-11-06 READY_FOR_SALE, 광고 제거 상품 APPROVED), metadata.json 라이브와 글자까지 같음(세션 11-05 대조)",
   "그 전 근거: SpecPair 92cbac7 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30)",
   "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
   "그림: docs/store/screenshots(ko, en-US, ja, de-DE), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
  ],
- "versionNote": "스펙테이블(SpecTable) 1.0.1(빌드 6) 출시(2026-11-08 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '세부 다듬기와 안정성 개선' 한 줄이다. 빌드 5 와 대조: 공유 그림 격자를 기본 글자 크기로 고정, 저장한 조합 빈 시트 문구('저장한 조합이 없습니다', 비교 중이 아니면 책갈피 안내 한 줄 더), 고르기 조건 막대를 끄는 동안 목록을 거르지 않고 손을 뗄 때 반영, 비교와 권하는 조합을 저장값으로(5d5d3ee). 모두 사이트 문장이 말하지 않는 화면 다듬기라 본문과 FAQ 를 고칠 곳이 없었다. 카탈로그(3,769대, 기준일 2026-11-04), 16개 종류, 제품 5개, 상위 10%, 가격 링크 나라 나눔과 쿠팡 파트너스 링크 13대, 대가성 문구 자리와 원문, 저장 항목(UserDefaults 다섯), 권한(ATT 하나), 광고 순서는 빌드 5 와 같아 처리방침도 그대로 두고 시행일 2026-11-05 를 유지했다. 1.0.1 에 실린 아이콘 흰 바탕(밝은 판 #F4F4F2 에서 #FFFFFF, f152079)에 맞춰 사이트 아이콘 icon-180, 360, 640 과 og.jpg 를 앱 AppIcon.png 에서 import_assets.py 와 같은 명령으로 다시 뽑았다(그림은 그대로 둠)"
+ "versionNote": "스펙테이블(SpecTable) 1.0.2(빌드 7) 출시(2026-11-11 HQ 확인). 새 소식은 'iPad 지원', '제품 고르기에 최근 고른 제품 추가', '세부 다듬기와 안정성 개선'. 빌드 6 과 대조: iPad 지원(TARGETED_DEVICE_FAMILY \"1,2\", iPad 네 방향, 폭 1000pt 이상이면 두 열, 고르기 시트는 쪽 크기), 제품 고르기 맨 위의 최근 고른 제품 5개와 지우기(저장은 recent 8개), 쿠팡 파트너스 링크 13대에서 318대로. 사이트에는 지원 FAQ 의 기기 문장, 숫자로 찾습니다 bullet 하나, 처리방침 2절 항목, 3절 보유, 6절 파기, 8절 SDK 문장을 반영했고 시행일은 2026-11-11. 카탈로그 숫자, 가격 링크 나라 나눔, 대가성 문구, 권한, 광고 순서는 그대로. 아이콘과 iPhone 캡처도 그대로라 그림은 바꾸지 않았다. 앱 화면 언어는 네 개 그대로라 사이트에 언어 수를 쓰지 않는다. 이전 기록: 스펙테이블(SpecTable) 1.0.1(빌드 6) 출시(2026-11-08 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '세부 다듬기와 안정성 개선' 한 줄이다. 빌드 5 와 대조: 공유 그림 격자를 기본 글자 크기로 고정, 저장한 조합 빈 시트 문구('저장한 조합이 없습니다', 비교 중이 아니면 책갈피 안내 한 줄 더), 고르기 조건 막대를 끄는 동안 목록을 거르지 않고 손을 뗄 때 반영, 비교와 권하는 조합을 저장값으로(5d5d3ee). 모두 사이트 문장이 말하지 않는 화면 다듬기라 본문과 FAQ 를 고칠 곳이 없었다. 카탈로그(3,769대, 기준일 2026-11-04), 16개 종류, 제품 5개, 상위 10%, 가격 링크 나라 나눔과 쿠팡 파트너스 링크 13대, 대가성 문구 자리와 원문, 저장 항목(UserDefaults 다섯), 권한(ATT 하나), 광고 순서는 빌드 5 와 같아 처리방침도 그대로 두고 시행일 2026-11-05 를 유지했다. 1.0.1 에 실린 아이콘 흰 바탕(밝은 판 #F4F4F2 에서 #FFFFFF, f152079)에 맞춰 사이트 아이콘 icon-180, 360, 640 과 og.jpg 를 앱 AppIcon.png 에서 import_assets.py 와 같은 명령으로 다시 뽑았다(그림은 그대로 둠)"
 }
