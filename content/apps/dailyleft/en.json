@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 1,
     "focus": "-100px",
-    "alt": "The top of the main screen. An amount shows in large numbers, with a bar and a one-line status below it.",
+    "alt": "The top of the main screen. An amount shows in large numbers, with a bar below it.",
     "caption": "App screen, zoomed in",
     "focusW": "400px"
    }

@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 1,
     "focus": "-100px",
-    "alt": "Der obere Teil des Hauptbildschirms. Ein Betrag steht in großen Zahlen da, darunter ein Balken und eine Statuszeile.",
+    "alt": "Der obere Teil des Hauptbildschirms. Ein Betrag steht in großen Zahlen da, darunter ein Balken.",
     "caption": "App-Ansicht, vergrößert",
     "focusW": "400px"
    }

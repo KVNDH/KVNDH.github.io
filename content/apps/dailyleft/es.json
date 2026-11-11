@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 1,
     "focus": "-100px",
-    "alt": "La parte superior de la pantalla principal. Un importe aparece en números grandes, y debajo hay una barra y una línea de estado.",
+    "alt": "La parte superior de la pantalla principal. Un importe aparece en números grandes, y debajo hay una barra.",
     "caption": "Pantalla de la app, ampliada",
     "focusW": "400px"
    }

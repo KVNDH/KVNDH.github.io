@@ -22,7 +22,7 @@
     "type": "crop",
     "shot": 1,
     "focus": "-100px",
-    "alt": "A parte de cima da tela principal. Um valor aparece em números grandes, com uma barra e uma linha de status embaixo.",
+    "alt": "A parte de cima da tela principal. Um valor aparece em números grandes, com uma barra embaixo.",
     "caption": "Tela do app, ampliada",
     "focusW": "400px"
    }
