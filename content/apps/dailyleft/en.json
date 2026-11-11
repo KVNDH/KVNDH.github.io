@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "What you can spend today",
    "body": [
-    "Enter a monthly budget, and the money left is divided by the days left to show what you can spend each day. When you spend, the daily amount is worked out again. If you go over budget or reach the last day, one line below tells you. With a daily budget, what is left for today shows in large numbers."
+    "Enter a monthly budget, and the money left is divided by the days left to show what you can spend each day. When you spend, the daily amount is worked out again. When there is something to flag, such as going over budget or using up what is left, one line below tells you. With a daily budget, what is left for today shows in large numbers."
    ],
    "bullets": [
     "Monthly and daily budgets",

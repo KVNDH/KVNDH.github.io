@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "O que você pode gastar hoje",
    "body": [
-    "Informe um orçamento mensal, e o dinheiro restante é dividido pelos dias restantes para mostrar quanto você pode gastar por dia. Quando você gasta, o valor diário é recalculado. Se você passar do orçamento ou chegar ao último dia, uma linha embaixo avisa. Com um orçamento diário, o que resta para hoje aparece em números grandes."
+    "Informe um orçamento mensal, e o dinheiro restante é dividido pelos dias restantes para mostrar quanto você pode gastar por dia. Quando você gasta, o valor diário é recalculado. Quando há algo a avisar, como passar do orçamento ou gastar tudo o que resta, uma linha embaixo avisa. Com um orçamento diário, o que resta para hoje aparece em números grandes."
    ],
    "bullets": [
     "Orçamento mensal e diário",

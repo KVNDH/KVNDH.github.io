@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Eliges cómo leerlo",
    "body": [
-    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. La cifra grande del centro cambia entre Progreso, Tiempo restante y Tiempo transcurrido cada vez que la tocas. Los decimales del progreso los fijas tú con un toque en una fila de casillas del 0 al 6: uno sin más, del segundo en adelante con Pro."
+    "El mismo tramo se lee de varias maneras. Toca el número en la pantalla completa y las lecturas que hayas elegido van pasando por turno. La cifra grande del centro cambia entre Progreso, Tiempo restante y Tiempo transcurrido cada vez que la tocas. Tiempo restante solo aparece mientras el tramo está en curso. Los decimales del progreso los fijas tú con un toque en una fila de casillas del 0 al 6: uno sin más, del segundo en adelante con Pro."
    ],
    "bullets": [],
    "visual": {

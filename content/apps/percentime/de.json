@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Wählen Sie, wie Sie es lesen",
    "body": [
-    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die große Anzeige in der Mitte wechselt bei jedem Tippen zwischen Fortschritt, Verbleibende Zeit und Vergangene Zeit. Die Nachkommastellen des Fortschritts legen Sie mit einem Tipp auf eine Reihe von Feldern von 0 bis 6 fest: eine Stelle ohne Weiteres, ab der zweiten mit Pro."
+    "Denselben Zeitraum kann man auf mehrere Arten lesen. Tippen Sie im Vollbild auf die Zahl, und die gewählten Anzeigen kommen der Reihe nach. Die große Anzeige in der Mitte wechselt bei jedem Tippen zwischen Fortschritt, Verbleibende Zeit und Vergangene Zeit. Verbleibende Zeit erscheint nur, solange der Zeitraum läuft. Die Nachkommastellen des Fortschritts legen Sie mit einem Tipp auf eine Reihe von Feldern von 0 bis 6 fest: eine Stelle ohne Weiteres, ab der zweiten mit Pro."
    ],
    "bullets": [],
    "visual": {

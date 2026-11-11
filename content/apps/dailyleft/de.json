@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Was Sie heute ausgeben können",
    "body": [
-    "Tragen Sie ein Monatsbudget ein, und das übrige Geld wird durch die verbleibenden Tage geteilt. So sehen Sie, was Sie pro Tag ausgeben können. Geben Sie etwas aus, wird der Tagesbetrag neu berechnet. Wenn Sie über dem Budget sind oder der letzte Tag erreicht ist, sagt Ihnen eine Zeile darunter Bescheid. Mit einem Tagesbudget steht der heutige Rest in großen Zahlen da."
+    "Tragen Sie ein Monatsbudget ein, und das übrige Geld wird durch die verbleibenden Tage geteilt. So sehen Sie, was Sie pro Tag ausgeben können. Geben Sie etwas aus, wird der Tagesbetrag neu berechnet. Gibt es etwas zu melden, etwa wenn Sie über dem Budget sind oder alles ausgegeben haben, sagt Ihnen eine Zeile darunter Bescheid. Mit einem Tagesbudget steht der heutige Rest in großen Zahlen da."
    ],
    "bullets": [
     "Monats- und Tagesbudgets",

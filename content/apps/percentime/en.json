@@ -87,7 +87,7 @@
    "layout": "card",
    "title": "Pick how you read it",
    "body": [
-    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. The big figure in the centre changes between Progress, Time remaining and Time elapsed each time you tap it. You set the decimal places on the progress reading with one tap on a row of cells from 0 to 6: one place as it comes, the second onward with Pro."
+    "The same span can be read several ways. Tap the number on the full screen and the readings you picked come round in turn. The big figure in the centre changes between Progress, Time remaining and Time elapsed each time you tap it. Time remaining appears only while the span is running. You set the decimal places on the progress reading with one tap on a row of cells from 0 to 6: one place as it comes, the second onward with Pro."
    ],
    "bullets": [],
    "visual": {

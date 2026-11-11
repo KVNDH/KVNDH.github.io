@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Lo que puedes gastar hoy",
    "body": [
-    "Introduce un presupuesto mensual, y el dinero que queda se divide entre los días que quedan para mostrar lo que puedes gastar cada día. Cuando gastas, el importe diario se vuelve a calcular. Si te pasas del presupuesto o llegas al último día, una línea debajo te lo dice. Con un presupuesto diario, lo que queda para hoy aparece en números grandes."
+    "Introduce un presupuesto mensual, y el dinero que queda se divide entre los días que quedan para mostrar lo que puedes gastar cada día. Cuando gastas, el importe diario se vuelve a calcular. Cuando hay algo que avisar, como pasarte del presupuesto o gastar todo lo que queda, una línea debajo te lo dice. Con un presupuesto diario, lo que queda para hoy aparece en números grandes."
    ],
    "bullets": [
     "Presupuestos mensuales y diarios",
