@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.0",
+ "describesVersion": "1.0.1",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -16,14 +16,14 @@
   "광고 개인정보 선택 줄은 설정 맨 아래와 Pro 화면 맨 아래, UMP 가 요구할 때만 (Views/SettingsView.swift privacyButton, Views/ProView.swift)"
  ],
  "uiNames": [
-  "en 화면 이름(Localizable.xcstrings 값): New workout, Edit, Resume, Count jumps, 단위 jump/jumps(1 jump, 500 jumps), 끝 합계 Total 500 jumps, Work, Rest, Round, Sets, Lifetime work time, Clear lifetime total, Restore purchase, Ad privacy choices, Signal sound, Voice, Save, Cancel, Chains, New chain, Rest between workouts, Ink level. 누적 지우기의 영어는 Clear lifetime total 이다(Clear total 아님)",
-  "ko 화면 이름: 새 운동, 편집, 이어서, 뛴 수 세기, 회, 운동, 휴식, 누적 운동 시간, 누적 지우기, 구입 복원, 광고 개인정보 선택, 신호 소리, 목소리, 저장, 취소, 묶음, 새 묶음, 운동 사이 휴식, 먹 수위. 천 자리 쉼표는 두 언어 모두(1,000 h, 1,000시간)",
+  "en 화면 이름(Localizable.xcstrings 값): New workout, Edit, Resume, Count jumps, 단위 jump/jumps(1 jump, 500 jumps), 끝 합계 Total 500 jumps, Work, Rest, Round, Sets, Lifetime work time, Clear lifetime total, Restore purchase, Ad privacy choices, Signal sound, Voice cues, Save, Cancel, Chains, New chain, Rest between workouts, Ink level. 누적 지우기의 영어는 Clear lifetime total 이다(Clear total 아님). 1.0.1 부터 Live Activities, Sound and vibration, Workout list",
+  "ko 화면 이름: 새 운동, 편집, 이어서, 뛴 수 세기, 회, 운동, 휴식, 누적 운동 시간, 누적 지우기, 구입 복원, 광고 개인정보 선택, 신호 소리, 음성 안내, 저장, 취소, 묶음, 새 묶음, 운동 사이 휴식, 먹 수위. 천 자리 쉼표는 두 언어 모두(1,000 h, 1,000시간). 1.0.1 부터 실시간 현황, 소리와 진동, 운동 목록",
   "뛴 수 세기(Count jumps)는 줄넘기와 달리기를 모두 세고 단위는 어느 쪽이든 jumps(회). 사이트 ko 는 한국어 이름, en 은 영어 이름만, 그 밖 언어는 '영어 이름(그 언어 뜻)'"
  ],
  "voice": [
   "음성 안내는 화면과 같은 언어로만 읽는다(en 화면 영어, ko 화면 한국어, 그 밖 언어 없음). 기기 안 AVSpeechSynthesizer 의 iOS 시스템 목소리, 녹음 아님, 인터넷 필요 없음 (SetAndBurn/Audio/Speech.swift:5, docs/PRIVACY_FACTS_for_HQ.md 3절)",
-  "목소리는 기기에 받은 앱 언어 목소리 가운데 품질이 가장 높은 것(premium, enhanced, default 순, Speech.swift bestVoice). 기기마다 목소리와 품질이 다르다. enhanced 이상이 없으면 설정 Voice 줄 옆에 (i), 누르면 받는 곳 안내 (Speech.swift hasNaturalVoice, SetAndBurn/Views/SettingsView.swift 목소리 줄)",
-  "끄기: 설정 > Voice 스위치. 영어 목소리는 폰에서 아무도 듣지 않았다(english-copy.md 머리). '자연스러운 목소리' 같은 품질 주장은 쓰지 않는다. 1.0.0(빌드 2) 의 스위치 이름은 Voice/목소리다(1.0.1 에서 '음성 안내'로 바뀜, 출시 전이라 사이트는 Voice/목소리)"
+  "목소리는 기기에 받은 앱 언어 목소리 가운데 품질이 가장 높은 것(premium, enhanced, default 순, Speech.swift bestVoice). 기기마다 목소리와 품질이 다르다. enhanced 이상이 없으면 설정 Voice cues 줄 옆에 (i), 누르면 받는 곳 안내 (Speech.swift hasNaturalVoice, SetAndBurn/Views/SettingsView.swift 목소리 줄)",
+  "끄기: 설정 > Voice cues(음성 안내) 스위치. 1.0.1 에서 스위치 이름이 Voice/목소리 에서 Voice cues/음성 안내 로 바뀜(Copy.swift:79), 사이트는 1.0.1 부터 음성 안내. 영어 목소리는 폰에서 아무도 듣지 않았다(english-copy.md 머리). '자연스러운 목소리' 같은 품질 주장은 쓰지 않는다. 1.0.0(빌드 2) 의 스위치 이름은 Voice/목소리다(1.0.1 에서 '음성 안내'로 바뀜, 출시 전이라 사이트는 Voice/목소리)"
  ],
  "sounds": [
   "신호 소리 13개가 앱 번들에 들어 있다(SetAndBurn/Resources/Sounds/*.wav: workStart, restStart, count_1, count_2, countLast_1, countLast_2, finish, tick, jump_1~5). 마림바 B 한 벌(사용자 2026-11-04 \"B 부드러운 채로 가자\", 67f1bca, DESIGN.md 4-7). 설정은 Signal sound(신호 소리) 스위치 하나 (SettingsView.swift toggle.sound). 운동 시작, 휴식 시작, 끝 3초, 끝에 난다(Signal sound 힌트 문구). 묶음의 운동 사이 휴식 시작은 쉼 시작 소리",
@@ -39,11 +39,11 @@
   "앱 컨테이너 Library/Application Support/state.json(운동, 설정, workTotal, introSeen, 묶음 chains 와 chainSelected), state.v1.json, state.v2.json, state.broken.json, CloudKit, App Group 없음, 백업 제외 표시 없음"
  ],
  "permissions": [
-  "동작 및 피트니스(에어팟 움직임), 추적 허용(ATT). 폰 가속도는 iOS 권한 없음"
+  "동작 및 피트니스(에어팟 움직임), 추적 허용(ATT). 폰 가속도는 iOS 권한 없음. 실시간 현황은 iOS 권한이 아님(NSSupportsLiveActivities 키만, 권한 요청 API 없음, DESIGN.md 5-10)"
  ],
  "notOffered": [
-  "날짜별 운동 기록, 연속 기록, Apple Watch, iPad, 위젯, 알림. 사이트에 쓰지 않는다",
-  "1.0.1 에만 있는 것(출시 전이라 사이트에 쓰지 않는다, SetAndBurn a4cfb6c, f7c46d8, 518ef14): 움직임, 즐거움, 마감 다듬기, 설정 스위치 이름 '음성 안내', 묶을 운동이 없을 때 빈 글 '묶을 운동이 없습니다.', 진동 다듬기. 1.0.1 이 나가면 FAQ '신호 소리와 목소리'의 '목소리' 스위치 이름을 다시 본다"
+  "날짜별 운동 기록, 연속 기록, Apple Watch 앱(워치 앱은 없고 실시간 현황 작은 칸만), iPad, 홈 화면 위젯, 알림. 사이트에 쓰지 않는다",
+  "1.0.1 에서 사이트에 싣지 않은 것: 누적 운동 시간 카드와 누적 화면, '운동 목록' 머리, 빈 글 '묶을 운동이 없습니다.', 값 조절 단추 진동, 복원 결과 문구, 화면 전환과 눌림 다듬기. char/ember-buddy, feat/button-haptics, feat/round-ramp 등 1.0.1 뒤 가지는 쓰지 않는다"
  ],
  "numbers": [
   "1",
@@ -51,6 +51,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 처음 운동 1개, 신호 소리 13개. 뛴 수 정확도 숫자는 쓰지 않는다(실제 몸 기록이 아직 없다)",
  "sources": [
+  "SetAndBurn 3c429ac(1.0.1 빌드 1, ASC 빌드 78b6f3e0, 제출 a345430, 2026-11-11 READY_FOR_SALE HQ 확인, 앱 코드는 96ef0f2 와 같음): Copy.swift, Settings.swift, SettingsView.swift, LiveActivities.swift, WatchPairing.swift, SetAndBurnLive/LiveWidget.swift, Localizable.xcstrings, DESIGN.md 5-2, 5-10, docs/launch/submit-1.0.1.md, docs/store/metadata.json whatsNew. 앱 화면 언어는 en, ko 그대로(50 로케일은 스토어 문안)",
   "SetAndBurn 490c975(1.0.0 빌드 2, 2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE): 코드(Store.swift, AppModel.swift startAdsIfFree, SettingsView.swift, Speech.swift, Resources/Sounds), DESIGN.md(4-7 소리, 4-12 묶음, 5-2-1 편집 위 막대와 묶음 편집, 5-9 수익), Localizable.xcstrings, docs/store/metadata.json(출시된 ko, en-US 설명), docs/launch/review-notes-1.0.0.md, docs/HANDOFF.md 지금 상태",
   "docs/PRIVACY_FACTS_for_HQ.md(2026-10-30, 10-31 고침)는 묶음 전 판이라 저장 목록의 묶음은 Store.swift(chains, chainSelected)로 보탰다. 광고 SDK, UMP, ATT, StoreKit, Pro 확인 3초 기다림은 그 문서와 490c975 코드가 같다",
   "그 전 근거: IntervalTimer 57c93d0, SetAndBurn 3a5ccdb(영어 기본, Decide 2026-11-02-3 답 A 로 jumps, Work, Lifetime work time 확정)",
@@ -67,5 +68,8 @@
  "editor": [
   "편집 위 막대 왼쪽 'Cancel/취소', 오른쪽 'Save/저장'(사용자 2026-11-03 \"저장과 취소\", e78a235, 시스템 뒤로 꺾쇠 숨김). 고치는 동안은 초안만 바뀌고 Save 만 목록과 지금 운동에 쓴다. 새 운동은 Save 에서 목록 맨 뒤에 생기고 Cancel 이면 생기지 않는다. 바뀐 것이 있을 때 Cancel 은 확인창 'Discard changes?/바꾼 내용을 버릴까요?'(Discard/버리기, Keep editing/계속 편집). 묶음 편집도 같은 규칙 (DESIGN.md 5-2-1 위 막대 줄)"
  ],
- "versionNote": "Set & Burn 1.0.0(빌드 2, 490c975) 출시(2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE, Pro APPROVED, kr, us 스토어 페이지 공개). site.json 의 unreleased 를 빼고 appStoreId 6829377551 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 사이트는 2026-11-02 판 기준이었고 빌드 2 와 다른 것을 8개 언어에 반영: Pro 블록 제목과 항목에 운동 묶음(4개 항목), FAQ '운동 묶음' 하나 더함(새 묶음, 운동 사이 휴식 처음 1분과 0, 2~12개, 같은 운동 두 번, 둘째 운동부터 준비 없음, 운동을 가리켜 고치면 묶음도 새 값, 사이 휴식은 누적에 안 셈), FAQ '운동 만들기'와 첫 절 본문에 저장과 취소(새 운동은 저장에서 생김, 바꾼 뒤 취소는 버릴지 물음), FAQ 'Pro와 구입 복원'의 Pro 내용(제한 해제, 묶음, 광고 끔), 신호 소리를 '마림바 신호 소리 13개'로, 넷째 절에 먹 수위 한 문장(처음 켬), 첫 화면 대체 문구에 먹 면, 절 그림 셋을 출시 스토어 스크린샷으로. 처리방침: 2절 목록에 운동 묶음과 고른 묶음, 3절과 6절 '운동과 묶음은 앱에서 지움', 시행일 2026-11-02 에서 2026-11-07(게시일)로. 광고 SDK, UMP, ATT, StoreKit, Pro 를 사면 다음 실행부터 SDK 를 시작하지 않는다는 문장은 빌드 2 코드와 같아 고치지 않았다. 1.0.1 의 '음성 안내' 이름, 빈 글, 움직임과 진동은 싣지 않음"
+ "versionNote": "Set & Burn 1.0.1(빌드 1.0.1 (1), SetAndBurn 3c429ac) 출시(2026-11-11 HQ 가 ASC READY_FOR_SALE 확인, 제출 2026-11-08). 8개 언어에 반영: FAQ '실시간 현황' 하나 더함(넷째 항목 뒤, 잠금 화면과 다이나믹 아일랜드에 구간, 남은 시간, 라운드, 횟수 라운드는 남은 횟수, 멈춤과 끝에서 사라짐, 설정 스위치와 iOS 설정 경로, Apple Watch 스마트 스택 작은 칸과 (i)), 셋째 절 본문에 실시간 현황 한 문장, FAQ '신호 소리와 목소리'의 스위치 이름 '목소리'(Voice) 를 '음성 안내'(Voice cues) 로. 처리방침은 저장 항목(liveOn 은 화면 표시 설정 안), 권한, SDK, 결제가 같아 그대로. 아이콘과 절 그림은 1.0.0 과 같아 다시 뽑지 않음. 이전 기록: Set & Burn 1.0.0(빌드 2, 490c975) 출시(2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE, Pro APPROVED, kr, us 스토어 페이지 공개). site.json 의 unreleased 를 빼고 appStoreId 6829377551 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 사이트는 2026-11-02 판 기준이었고 빌드 2 와 다른 것을 8개 언어에 반영: Pro 블록 제목과 항목에 운동 묶음(4개 항목), FAQ '운동 묶음' 하나 더함(새 묶음, 운동 사이 휴식 처음 1분과 0, 2~12개, 같은 운동 두 번, 둘째 운동부터 준비 없음, 운동을 가리켜 고치면 묶음도 새 값, 사이 휴식은 누적에 안 셈), FAQ '운동 만들기'와 첫 절 본문에 저장과 취소(새 운동은 저장에서 생김, 바꾼 뒤 취소는 버릴지 물음), FAQ 'Pro와 구입 복원'의 Pro 내용(제한 해제, 묶음, 광고 끔), 신호 소리를 '마림바 신호 소리 13개'로, 넷째 절에 먹 수위 한 문장(처음 켬), 첫 화면 대체 문구에 먹 면, 절 그림 셋을 출시 스토어 스크린샷으로. 처리방침: 2절 목록에 운동 묶음과 고른 묶음, 3절과 6절 '운동과 묶음은 앱에서 지움', 시행일 2026-11-02 에서 2026-11-07(게시일)로. 광고 SDK, UMP, ATT, StoreKit, Pro 를 사면 다음 실행부터 SDK 를 시작하지 않는다는 문장은 빌드 2 코드와 같아 고치지 않았다. 1.0.1 의 '음성 안내' 이름, 빈 글, 움직임과 진동은 싣지 않음",
+ "live": [
+  "실시간 현황(Live Activity, 1.0.1, DESIGN.md 5-10): 타이머가 도는 동안 잠금 화면과 다이나믹 아일랜드에 구간 이름, 남은 시간, 라운드, 세트, 다음 구간, 운동 이름, 횟수 라운드는 남은 횟수 (Packages/TimerCore/Sources/TimerCore/LiveStatus.swift). 워치 Smart Stack 과 CarPlay 작은 칸(.small, SetAndBurnLive/LiveWidget.swift:80), 사이트는 CarPlay 를 쓰지 않는다. 설정 화면 묶음 끝 스위치 'Live Activities/실시간 현황' 처음 켬(Settings.swift liveOn, Copy.swift:61). 멈춤, 끝, 처음으로, 끔에서 닫음. Pro 와 상관없이 켜진다. ActivityKit 기기 안, pushType 없음(SetAndBurn/App/LiveActivities.swift:54). 워치 짝 여부만 WCSession.isPaired 로 읽고(WatchPairing.swift) 짝지어졌으면 (i) 로 Watch 앱 경로 안내(Copy.swift:64). 사이트 ko 는 Watch 앱 메뉴 경로를 쓰지 않고 (i) 로 보냄(한국어 watchOS 메뉴 이름 확인 전), en 만 My Watch > Smart Stack > Live Activities"
+ ]
 }

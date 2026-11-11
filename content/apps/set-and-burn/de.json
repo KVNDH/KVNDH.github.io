@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Ohne auf den Bildschirm zu schauen",
    "body": [
-    "Jeder Wechsel zwischen Training und Pause kommt mit Signalton und Sprachansage, und Runden und Sätze werden für Sie mitgezählt. Die 13 Signaltöne sind in der App enthalten, und die Sprachansagen spricht die iOS-Stimme auf Ihrem Gerät. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter."
+    "Jeder Wechsel zwischen Training und Pause kommt mit Signalton und Sprachansage, und Runden und Sätze werden für Sie mitgezählt. Die 13 Signaltöne sind in der App enthalten, und die Sprachansagen spricht die iOS-Stimme auf Ihrem Gerät. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter. Während der Timer läuft, zeigen die Dynamic Island und der Sperrbildschirm die aktuelle Phase und die verbleibende Zeit."
    ],
    "bullets": [
     "Phasensignale und Sprachansagen",
@@ -116,10 +116,17 @@
    ]
   },
   {
+   "q": "Live Activities (Live-Aktivitäten)",
+   "a": [
+    "Während der Timer läuft, zeigen der Sperrbildschirm und die Dynamic Island die aktuelle Phase, die verbleibende Zeit und die Runde. Ist die Endbedingung eine Anzahl, steht dort die Zahl der noch fehlenden Sprünge. Beim Pausieren oder am Ende verschwindet die Anzeige. Zum Ausschalten schalten Sie Live Activities (Live-Aktivitäten) in den Einstellungen aus. Ist sie eingeschaltet und erscheint trotzdem nichts, prüfen Sie Einstellungen > Set & Burn > Live-Aktivitäten.",
+    "Auf einem iPhone, das mit einer Apple Watch gekoppelt ist, erscheint sie klein auch im Smart Stack der Uhr. Erscheint sie dort nicht, zeigt das (i) neben Live Activities (Live-Aktivitäten) in den Einstellungen, wo Sie sie einschalten."
+   ]
+  },
+  {
    "q": "Signaltöne und Stimme",
    "a": [
     "In der App sind 13 Marimba-Signaltöne enthalten, erstellt mit ElevenLabs. Sie erklingen, wenn Training oder Pause beginnt, in den letzten 3 Sekunden und am Ende. Zum Ausschalten schalten Sie Signal sound (Signalton) in den Einstellungen aus.",
-    "Die Sprachansagen kommen nur in der Sprache des Bildschirms: Englisch bei englischem Bildschirm, Koreanisch bei koreanischem. Es spricht die iOS-Stimme auf Ihrem Gerät, keine Aufnahme, daher ist keine Verbindung nötig, und Stimme und Qualität unterscheiden sich je nach Gerät. Die App nimmt die Stimme mit der höchsten Qualität, die auf dem Gerät geladen ist. Ist keine erweiterte Stimme installiert, erscheint in den Einstellungen neben Voice (Stimme) ein (i), das zeigt, wo Sie eine bekommen. Zum Ausschalten der Sprachansagen schalten Sie Voice (Stimme) in den Einstellungen aus."
+    "Die Sprachansagen kommen nur in der Sprache des Bildschirms: Englisch bei englischem Bildschirm, Koreanisch bei koreanischem. Es spricht die iOS-Stimme auf Ihrem Gerät, keine Aufnahme, daher ist keine Verbindung nötig, und Stimme und Qualität unterscheiden sich je nach Gerät. Die App nimmt die Stimme mit der höchsten Qualität, die auf dem Gerät geladen ist. Ist keine erweiterte Stimme installiert, erscheint in den Einstellungen neben Voice cues (Sprachansagen) ein (i), das zeigt, wo Sie eine bekommen. Zum Ausschalten der Sprachansagen schalten Sie Voice cues (Sprachansagen) in den Einstellungen aus."
    ]
   },
   {

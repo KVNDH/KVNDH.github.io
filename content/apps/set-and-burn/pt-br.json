@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Sem olhar para a tela",
    "body": [
-    "Cada troca entre exercício e descanso vem com um som de sinal e um aviso de voz, e as rodadas e séries são contadas para você. Os 13 sons de sinal vêm dentro do app, e quem lê os avisos de voz é a voz do iOS do seu aparelho. O relógio continua com a tela apagada. A música que você está ouvindo continua tocando junto."
+    "Cada troca entre exercício e descanso vem com um som de sinal e um aviso de voz, e as rodadas e séries são contadas para você. Os 13 sons de sinal vêm dentro do app, e quem lê os avisos de voz é a voz do iOS do seu aparelho. O relógio continua com a tela apagada. A música que você está ouvindo continua tocando junto. Enquanto o timer roda, a Dynamic Island e a Tela Bloqueada mostram a fase atual e o tempo restante."
    ],
    "bullets": [
     "Sinais de fase e avisos de voz",
@@ -116,10 +116,17 @@
    ]
   },
   {
+   "q": "Live Activities (Atividades ao Vivo)",
+   "a": [
+    "Enquanto o timer roda, a Tela Bloqueada e a Dynamic Island mostram a fase atual, o tempo restante e a rodada. Se o critério de término for contagem, mostram os pulos que faltam. A atividade some quando você pausa ou termina. Para desligar, desligue Live Activities (Atividades ao Vivo) em Ajustes. Se estiver ligada e nada aparecer, confira Ajustes > Set & Burn > Atividades ao Vivo.",
+    "Num iPhone emparelhado com um Apple Watch, ela também aparece pequena na Pilha Inteligente do relógio. Se não aparecer, o (i) ao lado de Live Activities (Atividades ao Vivo) em Ajustes mostra onde ativar."
+   ]
+  },
+  {
    "q": "Sons de sinal e voz",
    "a": [
     "O app traz 13 sons de sinal de marimba, feitos com o ElevenLabs. Eles tocam quando começam o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue Signal sound (Som de sinal) em Ajustes.",
-    "Os avisos de voz são lidos só no idioma da tela: inglês com a tela em inglês, coreano com a tela em coreano. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de Voice (Voz) em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue Voice (Voz) em Ajustes."
+    "Os avisos de voz são lidos só no idioma da tela: inglês com a tela em inglês, coreano com a tela em coreano. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de Voice cues (Avisos de voz) em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue Voice cues (Avisos de voz) em Ajustes."
    ]
   },
   {

@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Without watching the screen",
    "body": [
-    "Each change between work and rest comes with a signal sound and a voice cue, and rounds and sets are counted for you. The 13 signal sounds are built into the app, and voice cues are read by the iOS voice on your device. The clock keeps going with the screen off. Music you are listening to keeps playing alongside."
+    "Each change between work and rest comes with a signal sound and a voice cue, and rounds and sets are counted for you. The 13 signal sounds are built into the app, and voice cues are read by the iOS voice on your device. The clock keeps going with the screen off. Music you are listening to keeps playing alongside. While the timer runs, the Dynamic Island and the Lock Screen show the current segment and the time left."
    ],
    "bullets": [
     "Segment signals and voice cues",
@@ -116,10 +116,17 @@
    ]
   },
   {
+   "q": "Live Activities",
+   "a": [
+    "While the timer runs, the Lock Screen and the Dynamic Island show the current segment, the time left and the round. In rounds that end on a count, they show the jumps left. It goes away when you pause or finish. To turn it off, switch off Live Activities in Settings. If it is on and nothing appears, check that iOS Settings > Set & Burn > Live Activities is on.",
+    "On an iPhone paired with Apple Watch, it also shows small in the Smart Stack on the watch. If it does not, open the Watch app on iPhone and turn on Set & Burn under My Watch > Smart Stack > Live Activities. The (i) next to Live Activities in Settings shows the same path."
+   ]
+  },
+  {
    "q": "Signal sounds and voice",
    "a": [
     "A set of 13 marimba signal sounds is built into the app, made with ElevenLabs. They play when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings.",
-    "Voice cues are read only in the screen's language: English for an English screen, Korean for a Korean screen. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice in Settings and shows where to get one. To turn voice cues off, switch off Voice in Settings."
+    "Voice cues are read only in the screen's language: English for an English screen, Korean for a Korean screen. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice cues in Settings and shows where to get one. To turn voice cues off, switch off Voice cues in Settings."
    ]
   },
   {

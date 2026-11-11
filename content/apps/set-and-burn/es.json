@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Sin mirar la pantalla",
    "body": [
-    "Cada cambio entre trabajo y descanso llega con un sonido de señal y un aviso de voz, y las rondas y las series se cuentan por ti. Los 13 sonidos de señal vienen dentro de la app, y los avisos de voz los lee la voz de iOS de tu dispositivo. El reloj sigue con la pantalla apagada. La música que estás escuchando sigue sonando a la vez."
+    "Cada cambio entre trabajo y descanso llega con un sonido de señal y un aviso de voz, y las rondas y las series se cuentan por ti. Los 13 sonidos de señal vienen dentro de la app, y los avisos de voz los lee la voz de iOS de tu dispositivo. El reloj sigue con la pantalla apagada. La música que estás escuchando sigue sonando a la vez. Mientras el temporizador corre, la Dynamic Island y la pantalla bloqueada muestran la fase actual y el tiempo restante."
    ],
    "bullets": [
     "Señales de fase y avisos de voz",
@@ -116,10 +116,17 @@
    ]
   },
   {
+   "q": "Live Activities (Actividades en directo)",
+   "a": [
+    "Mientras el temporizador corre, la pantalla bloqueada y la Dynamic Island muestran la fase actual, el tiempo restante y la ronda. Si la condición de fin es un conteo, muestran los saltos que faltan. La actividad desaparece al pausar o al terminar. Para apagarla, desactiva Live Activities (Actividades en directo) en Ajustes. Si está activada y no aparece nada, revisa Ajustes > Set & Burn > Actividades en directo.",
+    "En un iPhone enlazado con un Apple Watch, también aparece en pequeño en la pila inteligente del reloj. Si no aparece, la (i) junto a Live Activities (Actividades en directo) en Ajustes indica dónde activarla."
+   ]
+  },
+  {
    "q": "Sonidos de señal y voz",
    "a": [
     "La app trae 13 sonidos de señal de marimba, creados con ElevenLabs. Suenan al empezar el trabajo y el descanso, en los últimos 3 segundos y al final. Para apagarlos, desactiva Signal sound (Sonido de señal) en Ajustes.",
-    "Los avisos de voz se leen solo en el idioma de la pantalla: inglés si la pantalla está en inglés, coreano si está en coreano. Los lee la voz de iOS de tu dispositivo, no una grabación, así que no necesitan conexión, y la voz y su calidad cambian según el dispositivo. La app usa la voz de mayor calidad descargada en el dispositivo. Si no hay ninguna voz mejorada instalada, aparece una (i) junto a Voice (Voz) en Ajustes que indica dónde conseguirla. Para apagar los avisos de voz, desactiva Voice (Voz) en Ajustes."
+    "Los avisos de voz se leen solo en el idioma de la pantalla: inglés si la pantalla está en inglés, coreano si está en coreano. Los lee la voz de iOS de tu dispositivo, no una grabación, así que no necesitan conexión, y la voz y su calidad cambian según el dispositivo. La app usa la voz de mayor calidad descargada en el dispositivo. Si no hay ninguna voz mejorada instalada, aparece una (i) junto a Voice cues (Avisos de voz) en Ajustes que indica dónde conseguirla. Para apagar los avisos de voz, desactiva Voice cues (Avisos de voz) en Ajustes."
    ]
   },
   {
