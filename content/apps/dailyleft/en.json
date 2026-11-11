@@ -305,6 +305,7 @@
     "title": "Destruction of information",
     "paragraphs": [
      "Records on your device are removed when you delete them from the transaction list or delete the app.",
+        "The iCloud backup stays in your own iCloud even after you delete the app, and installing the app again with the same Apple Account brings the records back. The current version of the app has no way to delete the iCloud backup.",
      "A message report email is deleted from the mailbox without delay after the developer decides whether to add that message format to the app, and at most 1 year after it was received."
     ],
     "bullets": []
@@ -314,6 +315,7 @@
     "paragraphs": [
      "If you have sent a message report email, you can ask to view or delete that email at the address below. If you have questions, email us at the same address.",
      "You can check and delete the records on your device yourself in the app.",
+        "The iCloud backup is kept in your own Apple Account, so the developer cannot view or delete it.",
      "You can ask Google to give you access to, or delete, information collected by AdMob (policies.google.com/privacy). To refuse use of the advertising identifier, follow section 9."
     ],
     "bullets": []

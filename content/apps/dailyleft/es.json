@@ -305,6 +305,7 @@
     "title": "Destrucción de la información",
     "paragraphs": [
      "Los registros de tu dispositivo se eliminan cuando los borras de la lista de transacciones o eliminas la app.",
+        "La copia de seguridad de iCloud se queda en tu propio iCloud aunque elimines la app, y si vuelves a instalarla con la misma cuenta de Apple, los registros se recuperan. La versión actual de la app no tiene forma de eliminar la copia de seguridad de iCloud.",
      "Un correo de reporte de mensaje se elimina del buzón sin demora después de que el desarrollador decida si añade ese formato de mensaje a la app, y como máximo 1 año después de recibirlo."
     ],
     "bullets": []
@@ -314,6 +315,7 @@
     "paragraphs": [
      "Si has enviado un correo de reporte de mensaje, puedes pedir ver o eliminar ese correo en la dirección de abajo. Si tienes dudas, escribe a esa misma dirección.",
      "Puedes consultar y eliminar tú mismo en la app los registros de tu dispositivo.",
+        "La copia de seguridad de iCloud está en tu propia cuenta de Apple, así que el desarrollador no puede verla ni eliminarla.",
      "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9."
     ],
     "bullets": []

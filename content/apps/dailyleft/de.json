@@ -305,6 +305,7 @@
     "title": "Löschung der Daten",
     "paragraphs": [
      "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen.",
+        "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Die aktuelle Version der App bietet keine Möglichkeit, die iCloud-Sicherung zu löschen.",
      "Eine Melde-E-Mail wird unverzüglich aus dem Postfach gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang."
     ],
     "bullets": []
@@ -314,6 +315,7 @@
     "paragraphs": [
      "Wenn Sie eine Melde-E-Mail gesendet haben, können Sie unter der unten genannten Adresse verlangen, diese E-Mail einzusehen oder zu löschen. Auch bei Fragen schreiben Sie an diese Adresse.",
      "Die Einträge auf Ihrem Gerät prüfen und löschen Sie selbst in der App.",
+        "Die iCloud-Sicherung liegt in Ihrem eigenen Apple Account. Der Entwickler kann sie weder einsehen noch löschen.",
      "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9."
     ],
     "bullets": []

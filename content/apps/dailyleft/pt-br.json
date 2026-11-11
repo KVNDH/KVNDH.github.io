@@ -305,6 +305,7 @@
     "title": "Exclusão das informações",
     "paragraphs": [
      "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app.",
+        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. A versão atual do app não tem como excluir o backup no iCloud.",
      "Um e-mail de reporte de mensagem é excluído da caixa de correio sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido."
     ],
     "bullets": []
@@ -314,6 +315,7 @@
     "paragraphs": [
      "Se você enviou um e-mail de reporte de mensagem, pode pedir para ver ou excluir esse e-mail no endereço abaixo. Em caso de dúvida, escreva para o mesmo endereço.",
      "Você mesmo pode conferir e excluir no app os registros do seu aparelho.",
+        "O backup no iCloud fica na sua própria Conta Apple, por isso o desenvolvedor não pode vê-lo nem excluí-lo.",
      "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas (policies.google.com/privacy). Para recusar o uso do identificador de publicidade, siga a seção 9."
     ],
     "bullets": []
