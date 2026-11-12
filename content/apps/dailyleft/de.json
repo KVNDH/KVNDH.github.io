@@ -140,7 +140,7 @@
   {
    "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
-    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Öffnen Sie die App einmal. Erstellen Sie dann in der Kurzbefehle-App eine Automation mit Nachricht als Auslöser, fügen Sie die App-Aktion Record Payment Message (Zahlungsnachricht erfassen) hinzu, und setzen Sie in deren Feld Message Text (Nachrichtentext) die Message (Nachricht) des Auslösers ein. Die Schritte stehen der Reihe nach in den Einstellungen unter Shortcuts Automation (Kurzbefehl-Automation). Sobald die Automation einmal gelaufen ist, zeigt diese Zeile Working (Läuft).",
+    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Automation Setup (Automation einrichten), das Sie in den Einstellungen über Shortcuts Automation (Kurzbefehl-Automation) öffnen, enthält Get Shortcut (Kurzbefehl laden). Damit laden Sie per Link einen Kurzbefehl mit der einen App-Aktion Record Payment Message (Zahlungsnachricht erfassen). Sie fügen ihn in der Kurzbefehle-App hinzu und schalten die Automation selbst ein. Die Schritte für Ihre iOS-Version stehen der Reihe nach auf demselben Bildschirm. Öffnet sich der Link nicht, folgen Sie den Schritten unter Build It Yourself (Selbst erstellen), das zunächst eingeklappt ist. Sobald die Automation einmal gelaufen ist, zeigt die Zeile Shortcuts Automation in den Einstellungen Working (Läuft).",
     "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld Contains (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
    ]
   },
@@ -219,7 +219,7 @@
   {
    "q": "Beim Gerätewechsel",
    "a": [
-    "Wenn Sie bei iCloud angemeldet sind, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
+    "Wenn Sie bei iCloud angemeldet sind und iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet ist, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
    ]
   },
   {
@@ -238,7 +238,7 @@
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
   "effectiveDate": "2026-11-12",
-  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
+  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -246,7 +246,7 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet, liegt außerdem eine Sicherung dieser Einträge in Ihrer eigenen iCloud (Abschnitt 8). Auch diese Sicherung erhält der Entwickler nicht.",
+     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung dieser Einträge in Ihrer eigenen iCloud (Abschnitt 8). Auch diese Sicherung erhält der Entwickler nicht.",
      "Die App zeigt eine Bannerwerbung ganz unten auf dem Hauptbildschirm. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Der Entwickler nutzt sie, um die App auf das Nachrichtenformat dieser Kartenfirma einzustellen und Ihnen zu antworten, und zu keinem anderen Zweck."
     ],
@@ -306,7 +306,7 @@
     "title": "Löschung der Daten",
     "paragraphs": [
      "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen.",
-        "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. In der aktuellen Version lässt sich eine bereits hochgeladene iCloud-Sicherung weder in der App noch in den iOS-Einstellungen löschen.",
+        "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Wenn Sie in den Einstellungen der App iCloud Backup (iCloud-Sicherung) ausschalten und speichern, löscht die App die Sicherung in iCloud und lädt nichts mehr hoch. Wenn Sie es wieder einschalten, lädt sie die Einträge hoch, die zu diesem Zeitpunkt vorhanden sind.",
      "Eine Melde-E-Mail wird unverzüglich aus dem Postfach gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang."
     ],
     "bullets": []
@@ -324,9 +324,9 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet, komprimiert die App den Inhalt dieser Datei und sichert ihn im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus dieser Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Datei kann außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, komprimiert die App den Inhalt dieser Datei und sichert ihn im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus dieser Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Datei kann außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
      "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
-     "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail und diese Seite mit der Datenschutzerklärung, und zwar nur, wenn Sie darauf tippen.",
+     "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail, diese Seite mit der Datenschutzerklärung und den iCloud-Link zum Kurzbefehl hinter Get Shortcut (Kurzbefehl laden), und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
     ],
     "bullets": []

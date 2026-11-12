@@ -140,7 +140,7 @@
   {
    "q": "Recording text messages with a Shortcuts automation (South Korea)",
    "a": [
-    "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Open the app once, then in the Shortcuts app make an automation with Message as the trigger, add the app action Record Payment Message, and put the trigger's Message in its Message Text field. The steps are listed in order under Shortcuts Automation in Settings, and once the automation has run, that row shows Working.",
+    "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Automation Setup, opened from Shortcuts Automation in Settings, has Get Shortcut, which gets you a shortcut with the single app action Record Payment Message through a link. You add the shortcut in the Shortcuts app and turn on the automation yourself. The steps for your iOS version are listed in order on the same screen. If the link doesn't open, follow the steps under Build It Yourself, which starts collapsed. Once the automation has run, the Shortcuts Automation row in Settings shows Working.",
     "The app can't read your Messages directly. It reads only text passed by the automation or text you paste. The automation's Contains field decides which messages are passed. With only 승인 (approved) there, cancellation messages may not be recorded. To catch those too, put your card's last 4 digits in that field."
    ]
   },
@@ -219,7 +219,7 @@
   {
    "q": "Changing devices",
    "a": [
-    "If you're signed in to iCloud, a backup of your records is kept in your own iCloud. If you delete and reinstall the app, or install it on another iPhone with the same Apple Account, the records come back from that backup before you set the app up. It is not a sync that keeps two devices matched, and a device that already has records is never overwritten."
+    "If you're signed in to iCloud and iCloud Backup is on in Settings, a backup of your records is kept in your own iCloud. If you delete and reinstall the app, or install it on another iPhone with the same Apple Account, the records come back from that backup before you set the app up. It is not a sync that keeps two devices matched, and a device that already has records is never overwritten."
    ]
   },
   {
@@ -238,7 +238,7 @@
  "privacy": {
   "title": "DailyLeft Privacy Policy",
   "effectiveDate": "2026-11-12",
-  "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you're signed in to iCloud, a backup of the same records is also kept in your own iCloud so they can come back when you reinstall the app, and the developer does not receive that backup either. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove Ads and restoring it.",
+  "summary": "The app's records are saved in a file on your device, and the developer does not receive that file. If you're signed in to iCloud and iCloud Backup is on in Settings, a backup of the same records is also kept in your own iCloud so they can come back when you reinstall the app, and the developer does not receive that backup either. If you choose to send a message report email, the developer receives it. It is used only to teach the app that message format and to reply. It is deleted without delay after the developer decides whether to add that format to the app, and at most 1 year after it was received. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Remove Ads and restoring it.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the DailyLeft app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
   ],
@@ -246,7 +246,7 @@
    {
     "title": "Purpose of processing",
     "paragraphs": [
-     "The app has no sign-up or login. It uses the budget and payment records you enter to work out the money left and what you can spend today. These records are in a saved file on your device, and the developer does not receive that file. If you're signed in to iCloud, a backup of these records is also kept in your own iCloud (section 8), and the developer does not receive that backup either.",
+     "The app has no sign-up or login. It uses the budget and payment records you enter to work out the money left and what you can spend today. These records are in a saved file on your device, and the developer does not receive that file. If you're signed in to iCloud and iCloud Backup is on in Settings, a backup of these records is also kept in your own iCloud (section 8), and the developer does not receive that backup either.",
      "The app shows a banner ad at the bottom of the main screen. Google's ad service AdMob selects and displays that ad, and uses device information to show ads and measure how they perform.",
      "If you send a message report email, the developer receives it. The developer uses it to teach the app that card company's message format and to reply to you, and for no other purpose."
     ],
@@ -306,7 +306,7 @@
     "title": "Destruction of information",
     "paragraphs": [
      "Records on your device are removed when you delete them from the transaction list or delete the app.",
-        "The iCloud backup stays in your own iCloud even after you delete the app, and installing the app again with the same Apple Account brings the records back. In the current version, neither the app nor iOS Settings offers a way to delete an iCloud backup that has already been uploaded.",
+        "The iCloud backup stays in your own iCloud even after you delete the app, and installing the app again with the same Apple Account brings the records back. If you turn off iCloud Backup in the app's Settings and save, the app deletes the backup in iCloud and stops uploading. If you turn it on again, it uploads the records at that time.",
      "A message report email is deleted from the mailbox without delay after the developer decides whether to add that message format to the app, and at most 1 year after it was received."
     ],
     "bullets": []
@@ -324,9 +324,9 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "The app's records and settings sit in one file (ledger.json) in storage the app and its widget share on your device (an App Group). The widget only reads this file and does not use the ad SDK. Values used to draw the screen and whether you bought Remove Ads are in the app's UserDefaults. The developer runs no server. If you're signed in to iCloud, the app compresses the contents of this file and backs it up to the key-value storage of your own iCloud. It is not a sync between devices, and the app restores from this backup only when setup isn't finished on the device and it has no transactions. This file can also be included in iCloud device backups or Mac backups you turn on.",
+     "The app's records and settings sit in one file (ledger.json) in storage the app and its widget share on your device (an App Group). The widget only reads this file and does not use the ad SDK. Values used to draw the screen and whether you bought Remove Ads are in the app's UserDefaults. The developer runs no server. If you're signed in to iCloud and iCloud Backup is on in Settings, the app compresses the contents of this file and backs it up to the key-value storage of your own iCloud. It is not a sync between devices, and the app restores from this backup only when setup isn't finished on the device and it has no transactions. This file can also be included in iCloud device backups or Mac backups you turn on.",
      "The app does not send email itself. Tapping Report Message only fills in the recipient, subject and body of a mail draft, and you tap send or cancel. If no mail account is set up, it opens a mail app you choose with the same content.",
-     "The only permission the app asks for is tracking (ATT). It does not ask for photos, location, notifications, camera or contacts. The app takes clipboard text only when you paste it. Apart from ads, the only outside addresses the app opens are the message report email and this privacy policy page, and only when you tap them.",
+     "The only permission the app asks for is tracking (ATT). It does not ask for photos, location, notifications, camera or contacts. The app takes clipboard text only when you paste it. Apart from ads, the only outside addresses the app opens are the message report email, this privacy policy page and the iCloud shortcut link behind Get Shortcut, and only when you tap them.",
      "What the app passes to the ad SDK is the ad request and the banner size. It does not pass budgets, transactions, messages or card numbers."
     ],
     "bullets": []

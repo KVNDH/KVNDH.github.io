@@ -140,7 +140,7 @@
   {
    "q": "Registrar mensagens de texto com uma automação de Atalhos (Coreia do Sul)",
    "a": [
-    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Abra o app uma vez e depois, no app Atalhos, crie uma automação com Mensagem como gatilho, acrescente a ação do app Record Payment Message (Registrar mensagem de pagamento) e coloque a Message (Mensagem) do gatilho no campo Message Text (Texto da mensagem) dela. Os passos aparecem em ordem nos Ajustes, em Shortcuts Automation (Automação de Atalhos), e depois que a automação roda uma vez essa linha mostra Working (Funcionando).",
+    "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use Add by Hand (Adicionar manualmente). Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. Automation Setup (Configurar automação), que você abre em Shortcuts Automation (Automação de Atalhos) nos Ajustes, tem Get Shortcut (Obter atalho), que traz por link um atalho com uma única ação do app, Record Payment Message (Registrar mensagem de pagamento). Você adiciona o atalho no app Atalhos e ativa a automação. Os passos para a sua versão do iOS aparecem em ordem na mesma tela. Se o link não abrir, siga os passos de Build It Yourself (Criar você mesmo), que fica recolhido. Depois que a automação roda uma vez, a linha Shortcuts Automation nos Ajustes mostra Working (Funcionando).",
     "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado pela automação ou o texto que você cola. O campo Contains (Contém) da automação decide quais mensagens são passadas. Só com 승인 (aprovado) ali, as mensagens de cancelamento podem não ser registradas. Para pegar essas também, coloque nesse campo os 4 últimos dígitos do seu cartão."
    ]
   },
@@ -219,7 +219,7 @@
   {
    "q": "Trocar de aparelho",
    "a": [
-    "Se você estiver conectado ao iCloud, um backup dos seus registros fica no seu próprio iCloud. Se você excluir e reinstalar o app, ou instalá-lo em outro iPhone com a mesma Conta Apple, os registros voltam desse backup antes de você configurar o app. Não é uma sincronização que mantém dois aparelhos iguais, e um aparelho que já tem registros nunca é sobrescrito."
+    "Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, um backup dos seus registros fica no seu próprio iCloud. Se você excluir e reinstalar o app, ou instalá-lo em outro iPhone com a mesma Conta Apple, os registros voltam desse backup antes de você configurar o app. Não é uma sincronização que mantém dois aparelhos iguais, e um aparelho que já tem registros nunca é sobrescrito."
    ]
   },
   {
@@ -238,7 +238,7 @@
  "privacy": {
   "title": "Política de Privacidade do DailyLeft",
   "effectiveDate": "2026-11-12",
-  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
+  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -246,7 +246,7 @@
    {
     "title": "Finalidade do tratamento",
     "paragraphs": [
-     "O app não tem cadastro nem login. Ele usa o orçamento e os registros de pagamento que você informa para calcular o dinheiro restante e o que você pode gastar hoje. Esses registros ficam em um arquivo salvo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud, um backup desses registros também fica no seu próprio iCloud (seção 8), e o desenvolvedor também não recebe esse backup.",
+     "O app não tem cadastro nem login. Ele usa o orçamento e os registros de pagamento que você informa para calcular o dinheiro restante e o que você pode gastar hoje. Esses registros ficam em um arquivo salvo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, um backup desses registros também fica no seu próprio iCloud (seção 8), e o desenvolvedor também não recebe esse backup.",
      "O app mostra um anúncio em banner na parte de baixo da tela principal. O serviço de publicidade do Google, o AdMob, escolhe e exibe esse anúncio e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
      "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. O desenvolvedor o usa para ensinar ao app o formato de mensagem daquela administradora de cartão e para responder a você, e para nenhuma outra finalidade."
     ],
@@ -306,7 +306,7 @@
     "title": "Exclusão das informações",
     "paragraphs": [
      "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app.",
-        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. Na versão atual, nem o app nem os Ajustes do iOS permitem excluir um backup no iCloud que já foi enviado.",
+        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. Se você desativar iCloud Backup (Backup do iCloud) nos Ajustes do app e salvar, o app apaga o backup no iCloud e para de enviá-lo. Se ativar de novo, ele envia os registros daquele momento.",
      "Um e-mail de reporte de mensagem é excluído da caixa de correio sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido."
     ],
     "bullets": []
@@ -324,9 +324,9 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor. Se você estiver conectado ao iCloud, o app compacta o conteúdo desse arquivo e faz backup dele no armazenamento de chave-valor do seu próprio iCloud. Não é uma sincronização entre aparelhos, e o app só restaura desse backup quando a configuração não foi concluída no aparelho e não há transações. Esse arquivo também pode entrar nos backups do aparelho no iCloud ou do Mac que você ativar.",
+     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, o app compacta o conteúdo desse arquivo e faz backup dele no armazenamento de chave-valor do seu próprio iCloud. Não é uma sincronização entre aparelhos, e o app só restaura desse backup quando a configuração não foi concluída no aparelho e não há transações. Esse arquivo também pode entrar nos backups do aparelho no iCloud ou do Mac que você ativar.",
      "O app não envia e-mail por conta própria. Tocar em Report Message (Reportar mensagem) só preenche o destinatário, o assunto e o corpo de um rascunho de e-mail, e quem toca em enviar ou cancelar é você. Se não houver conta de e-mail configurada, ele abre um app de e-mail que você escolher com o mesmo conteúdo.",
-     "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem e esta página da política de privacidade, e só quando você toca neles.",
+     "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem, esta página da política de privacidade e o link do iCloud para o atalho de Get Shortcut (Obter atalho), e só quando você toca neles.",
      "O que o app passa ao SDK de anúncios é a solicitação de anúncio e o tamanho do banner. Ele não passa orçamentos, transações, mensagens nem números de cartão."
     ],
     "bullets": []
