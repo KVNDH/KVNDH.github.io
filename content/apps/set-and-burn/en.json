@@ -4,14 +4,14 @@
  "summary": "Set your work and rest, then follow the signals and voice through rounds and sets",
  "hero": {
   "hook": "Set your work and rest, then follow the signals and voice through rounds and sets",
-  "shotAlt": "The Set & Burn workout screen. The segment name and time left show in large numbers, with the round number and total time left below. The black ink has fallen in step with the time left."
+  "shotAlt": "The Set & Burn workout screen. The segment name and time left show in large numbers, with the round number and total time left below. The black ink has fallen in step with the time left. A small ember character sits on the current round's dot."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "One workout, your shape",
    "body": [
-    "Set the work time and rounds, then shape the workout with three switches: Rest, Sets and Count jumps. You can add a warm-up and a cooldown too. The total time and the order of segments show at the top of the edit screen. Changes go into the workout only when you tap Save at the top, and Cancel leaves it as it was."
+    "Set the work time and rounds, then shape the workout with three switches: Rest, Sets and Count jumps. You can add a warm-up and a cooldown too. The total time and the order of segments show at the top of the edit screen. Changes go into the workout only when you tap Save at the top, and Cancel leaves it as it was. With Pro, work and rest can also get longer or shorter each round."
    ],
    "bullets": [
     "Work time and rounds",
@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Without watching the screen",
    "body": [
-    "Each change between work and rest comes with a signal sound and a voice cue, and rounds and sets are counted for you. The 13 signal sounds are built into the app, and voice cues are read by the iOS voice on your device. The clock keeps going with the screen off. Music you are listening to keeps playing alongside. While the timer runs, the Dynamic Island and the Lock Screen show the current segment and the time left."
+    "Each change between work and rest comes with a signal sound and a voice cue, and rounds and sets are counted for you. The 14 signal sounds are built into the app, and voice cues are read by the iOS voice on your device. The clock keeps going with the screen off. Music you are listening to keeps playing alongside. While the timer runs, the Dynamic Island and the Lock Screen show the current segment and the time left."
    ],
    "bullets": [
     "Segment signals and voice cues",
@@ -64,7 +64,7 @@
    "layout": "card",
    "title": "Segments you can read from afar",
    "body": [
-    "The screen inverts during work and returns to normal during rest. With Ink level on, the ink falls from the top with the time left during work and rest. Light and dark appearance, portrait and landscape are supported. Time in work segments adds up in Lifetime work time."
+    "The screen inverts during work and returns to normal during rest. With Ink level on, the ink falls from the top with the time left during work and rest. Light and dark appearance, portrait and landscape are supported. Time in work segments adds up in Lifetime work time. A small ember character marks the current round in the row of dots and shows up again on the finish screen."
    ],
    "bullets": [],
    "visual": {
@@ -83,6 +83,7 @@
   "items": [
    "No limit on workouts (1 to begin with)",
    "Workout chains that run several workouts in a row",
+   "Change times each round",
    "Banner ads off on the finish screen and workout list",
    "Family Sharing"
   ]
@@ -92,7 +93,7 @@
    "q": "Making a workout",
    "a": [
     "Tap the workout name at the top left of the main screen to open the workout list, then tap New workout to open the editor. Tap Save at the top to add it to the list, or Cancel to leave it out. To change the current workout's values, tap Edit on the main screen and keep the changes with Save. If you tap Cancel after changing something, the app asks once whether to discard the changes.",
-    "To begin with you can keep 1 workout, including the example. Making more takes Pro. Workouts you already have can still be used and edited."
+    "To begin with you can keep 1 workout, including the example. Making more takes Pro. Workouts you already have can still be used and edited. With Pro, Work each round and Rest each round under More in the editor make work and rest longer or shorter by the same number of seconds every round. A workout that already uses them keeps running as set without Pro."
    ]
   },
   {
@@ -125,7 +126,7 @@
   {
    "q": "Signal sounds and voice",
    "a": [
-    "A set of 13 marimba signal sounds is built into the app, made with ElevenLabs. They play when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings.",
+    "A set of 14 marimba signal sounds is built into the app, made with ElevenLabs. They play when Get ready starts, when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings. Tick in Settings adds a soft tick every second, and Double tick, shown under it while Tick is on, ticks every half second. With Vibration on, buttons and switches also give a light tap.",
     "Voice cues are read only in the screen's language: English for an English screen, Korean for a Korean screen. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice cues in Settings and shows where to get one. To turn voice cues off, switch off Voice cues in Settings."
    ]
   },
@@ -138,7 +139,7 @@
   {
    "q": "Pro and restoring your purchase",
    "a": [
-    "Buy it from Pro in the bar at the top of Settings. You pay once, and it is not a subscription. Pro removes the workout limit, lets you make workout chains, and turns ads off. Family Sharing is supported.",
+    "Buy it from Pro in the bar at the top of Settings. You pay once, and it is not a subscription. Pro removes the workout limit, lets you make workout chains and change times each round, and turns ads off. Family Sharing is supported.",
     "If you change devices or reinstall the app, tap Restore purchase on the Pro screen. With the same Apple Account you won't pay again."
    ]
   },

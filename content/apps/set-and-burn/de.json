@@ -4,14 +4,14 @@
  "summary": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
  "hero": {
   "hook": "Legen Sie Training und Pause fest und folgen Sie Signalen und Stimme durch Runden und Sätze",
-  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Die schwarze Tinte sinkt mit der verbleibenden Zeit nach unten."
+  "shotAlt": "Der Workout-Bildschirm von Set & Burn. Der Name der Phase und die verbleibende Zeit stehen in großen Zahlen da, darunter die Rundennummer und die gesamte Restzeit. Die schwarze Tinte sinkt mit der verbleibenden Zeit nach unten. Auf dem Punkt der aktuellen Runde sitzt eine kleine Glut-Figur."
  },
  "sections": [
   {
    "layout": "feat",
    "title": "Ein Workout, Ihre Form",
    "body": [
-    "Legen Sie Trainingszeit und Runden fest und formen Sie das Workout mit drei Schaltern: Rest (Pause), Sets (Sätze) und Count jumps (Sprünge zählen). Aufwärmen und Cool-down lassen sich ebenfalls hinzufügen. Gesamtzeit und Reihenfolge der Phasen stehen oben im Bearbeitungsbildschirm. Änderungen gelten erst, wenn Sie oben auf Save (Sichern) tippen. Mit Cancel (Abbrechen) bleibt das Workout, wie es war."
+    "Legen Sie Trainingszeit und Runden fest und formen Sie das Workout mit drei Schaltern: Rest (Pause), Sets (Sätze) und Count jumps (Sprünge zählen). Aufwärmen und Cool-down lassen sich ebenfalls hinzufügen. Gesamtzeit und Reihenfolge der Phasen stehen oben im Bearbeitungsbildschirm. Änderungen gelten erst, wenn Sie oben auf Save (Sichern) tippen. Mit Cancel (Abbrechen) bleibt das Workout, wie es war. Mit Pro können Training und Pause außerdem von Runde zu Runde länger oder kürzer werden."
    ],
    "bullets": [
     "Trainingszeit und Runden",
@@ -52,7 +52,7 @@
    "layout": "card",
    "title": "Ohne auf den Bildschirm zu schauen",
    "body": [
-    "Jeder Wechsel zwischen Training und Pause kommt mit Signalton und Sprachansage, und Runden und Sätze werden für Sie mitgezählt. Die 13 Signaltöne sind in der App enthalten, und die Sprachansagen spricht die iOS-Stimme auf Ihrem Gerät. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter. Während der Timer läuft, zeigen die Dynamic Island und der Sperrbildschirm die aktuelle Phase und die verbleibende Zeit."
+    "Jeder Wechsel zwischen Training und Pause kommt mit Signalton und Sprachansage, und Runden und Sätze werden für Sie mitgezählt. Die 14 Signaltöne sind in der App enthalten, und die Sprachansagen spricht die iOS-Stimme auf Ihrem Gerät. Die Uhr läuft bei ausgeschaltetem Bildschirm weiter. Musik, die Sie gerade hören, spielt nebenbei weiter. Während der Timer läuft, zeigen die Dynamic Island und der Sperrbildschirm die aktuelle Phase und die verbleibende Zeit."
    ],
    "bullets": [
     "Phasensignale und Sprachansagen",
@@ -64,7 +64,7 @@
    "layout": "card",
    "title": "Phasen, die Sie von Weitem erkennen",
    "body": [
-    "Im Training invertiert sich der Bildschirm, in der Pause wird er wieder normal. Ist Ink level (Tintenstand) eingeschaltet, sinkt die Tinte in Training und Pause mit der verbleibenden Zeit von oben nach unten. Helles und dunkles Erscheinungsbild sowie Hoch- und Querformat werden unterstützt. Die Zeit in Trainingsphasen summiert sich in Lifetime work time (gesamte Trainingszeit)."
+    "Im Training invertiert sich der Bildschirm, in der Pause wird er wieder normal. Ist Ink level (Tintenstand) eingeschaltet, sinkt die Tinte in Training und Pause mit der verbleibenden Zeit von oben nach unten. Helles und dunkles Erscheinungsbild sowie Hoch- und Querformat werden unterstützt. Die Zeit in Trainingsphasen summiert sich in Lifetime work time (gesamte Trainingszeit). Eine kleine Glut-Figur markiert in der Punktreihe die aktuelle Runde und taucht auch auf dem Abschlussbildschirm auf."
    ],
    "bullets": [],
    "visual": {
@@ -83,6 +83,7 @@
   "items": [
    "Keine Begrenzung bei Workouts (anfangs 1)",
    "Workout-Ketten für mehrere Workouts nacheinander",
+   "Trainings- und Pausenzeit pro Runde verlängern oder verkürzen",
    "Bannerwerbung auf dem Abschlussbildschirm und in der Workout-Liste aus",
    "Familienfreigabe"
   ]
@@ -92,7 +93,7 @@
    "q": "Ein Workout erstellen",
    "a": [
     "Tippen Sie oben links auf dem Hauptbildschirm auf den Workout-Namen, um die Workout-Liste zu öffnen, und dann auf New workout (Neues Workout). Der Bearbeitungsbildschirm öffnet sich. Mit Save (Sichern) oben kommt das Workout in die Liste, mit Cancel (Abbrechen) wird es nicht angelegt. Um die Werte des aktuellen Workouts zu ändern, tippen Sie auf dem Hauptbildschirm auf Edit (Bearbeiten) und behalten die Änderungen mit Save (Sichern). Tippen Sie nach einer Änderung auf Cancel (Abbrechen), fragt die App einmal, ob die Änderungen verworfen werden sollen.",
-    "Anfangs können Sie 1 Workout behalten, das Beispiel eingerechnet. Für mehr brauchen Sie Pro. Vorhandene Workouts lassen sich weiter nutzen und bearbeiten."
+    "Anfangs können Sie 1 Workout behalten, das Beispiel eingerechnet. Für mehr brauchen Sie Pro. Vorhandene Workouts lassen sich weiter nutzen und bearbeiten. Mit Pro machen Work each round (Training pro Runde) und Rest each round (Pause pro Runde) unter More (Mehr) im Bearbeitungsbildschirm Training und Pause in jeder Runde um dieselbe Zahl an Sekunden länger oder kürzer. Ein Workout, das diese Werte schon nutzt, läuft auch ohne Pro wie eingestellt."
    ]
   },
   {
@@ -125,7 +126,7 @@
   {
    "q": "Signaltöne und Stimme",
    "a": [
-    "In der App sind 13 Marimba-Signaltöne enthalten, erstellt mit ElevenLabs. Sie erklingen, wenn Training oder Pause beginnt, in den letzten 3 Sekunden und am Ende. Zum Ausschalten schalten Sie Signal sound (Signalton) in den Einstellungen aus.",
+    "In der App sind 14 Marimba-Signaltöne enthalten, erstellt mit ElevenLabs. Sie erklingen, wenn Aufwärmen, Training oder Pause beginnt, in den letzten 3 Sekunden und am Ende. Zum Ausschalten schalten Sie Signal sound (Signalton) in den Einstellungen aus. Tick (Ticken) in den Einstellungen gibt jede Sekunde ein leises Ticken, und Double tick (Doppeltes Ticken), das darunter erscheint, solange Tick an ist, tickt jede halbe Sekunde. Ist Vibration an, vibrieren auch Tasten und Schalter beim Antippen leicht.",
     "Die Sprachansagen kommen nur in der Sprache des Bildschirms: Englisch bei englischem Bildschirm, Koreanisch bei koreanischem. Es spricht die iOS-Stimme auf Ihrem Gerät, keine Aufnahme, daher ist keine Verbindung nötig, und Stimme und Qualität unterscheiden sich je nach Gerät. Die App nimmt die Stimme mit der höchsten Qualität, die auf dem Gerät geladen ist. Ist keine erweiterte Stimme installiert, erscheint in den Einstellungen neben Voice cues (Sprachansagen) ein (i), das zeigt, wo Sie eine bekommen. Zum Ausschalten der Sprachansagen schalten Sie Voice cues (Sprachansagen) in den Einstellungen aus."
    ]
   },
@@ -138,7 +139,7 @@
   {
    "q": "Pro und den Kauf wiederherstellen",
    "a": [
-    "Sie kaufen es über Pro in der Leiste oben in den Einstellungen. Sie zahlen einmal, ein Abo ist es nicht. Pro hebt die Begrenzung bei Workouts auf, ermöglicht Workout-Ketten und schaltet die Werbung aus. Familienfreigabe wird unterstützt.",
+    "Sie kaufen es über Pro in der Leiste oben in den Einstellungen. Sie zahlen einmal, ein Abo ist es nicht. Pro hebt die Begrenzung bei Workouts auf, ermöglicht Workout-Ketten und Zeiten, die sich pro Runde ändern, und schaltet die Werbung aus. Familienfreigabe wird unterstützt.",
     "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf dem Pro-Bildschirm auf Restore purchase (Kauf wiederherstellen). Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },

@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.1",
+ "describesVersion": "1.0.2",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -7,7 +7,7 @@
   "iPhone 전용, iOS 26 이상, 세로와 가로, 화면 언어 en(원문)과 ko(번역) 둘. 기기 선호 언어 목록을 위에서부터 보아 en, ko 가운데 먼저 나오는 쪽, 둘 다 없으면 영어. (ja) 는 영어, (ja,ko) 는 한국어. 앱 안 언어 고르기는 없고 iOS 설정을 따른다 (SetAndBurn project.yml developmentLanguage en, CFBundleLocalizations [en, ko], docs/PRIVACY_FACTS_for_HQ.md 1절, docs/design/english-copy.md 3절)"
  ],
  "products": [
-  "Pro: 비소모성 1개 (com.kimdh.setandburn.pro, 가족 공유, SetAndBurn/Store/ProStore.swift, ASC Pro 설명 'Unlimited workouts, workout chains and no ads.', docs/launch/review-notes-1.0.0.md 3절). 운동 개수 제한 없음, 운동 묶음 만들기, 광고 없음. 처음에는 예시 포함 운동 1개(Allowance.freeWorkouts). 있는 운동과 묶음은 잠그지 않는다(DESIGN.md 5-9 표). 가격은 문구에 쓰지 않는다",
+  "Pro: 비소모성 1개 (com.kimdh.setandburn.pro, 가족 공유, SetAndBurn/Store/ProStore.swift, ASC Pro 설명 'Unlimited workouts, workout chains and no ads.', docs/launch/review-notes-1.0.0.md 3절). 운동 개수 제한 없음, 운동 묶음 만들기, 광고 없음. 1.0.2 부터 Pro 혜택 줄 넷째 'Change times each round/라운드마다 시간 늘리고 줄이기'(Revenue.swift:298, 줄 순서 Unlimited workouts, Workout chains, Change times each round, No ads). 처음에는 예시 포함 운동 1개(Allowance.freeWorkouts). 있는 운동과 묶음은 잠그지 않는다(DESIGN.md 5-9 표). 가격은 문구에 쓰지 않는다",
   "가격 문구: 사이트에 가격을 쓰지 않고 '무료', '광고 없음'을 Pro 블록, Pro FAQ, 처리방침 밖에서 내세우지 않는다(HQ 규칙)"
  ],
  "ads_detail": [
@@ -18,7 +18,8 @@
  "uiNames": [
   "en 화면 이름(Localizable.xcstrings 값): New workout, Edit, Resume, Count jumps, 단위 jump/jumps(1 jump, 500 jumps), 끝 합계 Total 500 jumps, Work, Rest, Round, Sets, Lifetime work time, Clear lifetime total, Restore purchase, Ad privacy choices, Signal sound, Voice cues, Save, Cancel, Chains, New chain, Rest between workouts, Ink level. 누적 지우기의 영어는 Clear lifetime total 이다(Clear total 아님). 1.0.1 부터 Live Activities, Sound and vibration, Workout list",
   "ko 화면 이름: 새 운동, 편집, 이어서, 뛴 수 세기, 회, 운동, 휴식, 누적 운동 시간, 누적 지우기, 구입 복원, 광고 개인정보 선택, 신호 소리, 음성 안내, 저장, 취소, 묶음, 새 묶음, 운동 사이 휴식, 먹 수위. 천 자리 쉼표는 두 언어 모두(1,000 h, 1,000시간). 1.0.1 부터 실시간 현황, 소리와 진동, 운동 목록",
-  "뛴 수 세기(Count jumps)는 줄넘기와 달리기를 모두 세고 단위는 어느 쪽이든 jumps(회). 사이트 ko 는 한국어 이름, en 은 영어 이름만, 그 밖 언어는 '영어 이름(그 언어 뜻)'"
+  "뛴 수 세기(Count jumps)는 줄넘기와 달리기를 모두 세고 단위는 어느 쪽이든 jumps(회). 사이트 ko 는 한국어 이름, en 은 영어 이름만, 그 밖 언어는 '영어 이름(그 언어 뜻)'",
+  "1.0.2 부터 en: Work each round, Rest each round(편집 More 안, 값 '%@ longer', '%@ shorter', 'No change'), Change times each round(Pro 줄), Double tick(힌트 'Ticks every half second.'), Tick, Vibration, More. ko: 라운드마다 운동, 라운드마다 휴식(더 보기 안, 값 늘림, 줄임, 그대로), 라운드마다 시간 늘리고 줄이기, 똑딱 두 번(0.5초마다 똑딱합니다.), 똑딱, 진동, 더 보기 (Packages/TimerCore/Sources/TimerCore/Resources/Localizable.xcstrings, v1.0.2). 불씨 친구 캐릭터는 화면 글자 이름이 없어 사이트는 '작은 불씨 캐릭터'(en small ember character)로 쓴다"
  ],
  "voice": [
   "음성 안내는 화면과 같은 언어로만 읽는다(en 화면 영어, ko 화면 한국어, 그 밖 언어 없음). 기기 안 AVSpeechSynthesizer 의 iOS 시스템 목소리, 녹음 아님, 인터넷 필요 없음 (SetAndBurn/Audio/Speech.swift:5, docs/PRIVACY_FACTS_for_HQ.md 3절)",
@@ -26,10 +27,11 @@
   "끄기: 설정 > Voice cues(음성 안내) 스위치. 1.0.1 에서 스위치 이름이 Voice/목소리 에서 Voice cues/음성 안내 로 바뀜(Copy.swift:79), 사이트는 1.0.1 부터 음성 안내. 영어 목소리는 폰에서 아무도 듣지 않았다(english-copy.md 머리). '자연스러운 목소리' 같은 품질 주장은 쓰지 않는다. 1.0.0(빌드 2) 의 스위치 이름은 Voice/목소리다(1.0.1 에서 '음성 안내'로 바뀜, 출시 전이라 사이트는 Voice/목소리)"
  ],
  "sounds": [
-  "신호 소리 13개가 앱 번들에 들어 있다(SetAndBurn/Resources/Sounds/*.wav: workStart, restStart, count_1, count_2, countLast_1, countLast_2, finish, tick, jump_1~5). 마림바 B 한 벌(사용자 2026-11-04 \"B 부드러운 채로 가자\", 67f1bca, DESIGN.md 4-7). 설정은 Signal sound(신호 소리) 스위치 하나 (SettingsView.swift toggle.sound). 운동 시작, 휴식 시작, 끝 3초, 끝에 난다(Signal sound 힌트 문구). 묶음의 운동 사이 휴식 시작은 쉼 시작 소리",
+  "신호 소리 13개가(1.0.2 에서 prepStart 를 더해 14개) 앱 번들에 들어 있다(SetAndBurn/Resources/Sounds/*.wav: workStart, restStart, count_1, count_2, countLast_1, countLast_2, finish, tick, jump_1~5). 마림바 B 한 벌(사용자 2026-11-04 \"B 부드러운 채로 가자\", 67f1bca, DESIGN.md 4-7). 설정은 Signal sound(신호 소리) 스위치 하나 (SettingsView.swift toggle.sound). 운동 시작, 휴식 시작, 끝 3초, 끝에 난다(Signal sound 힌트 문구). 묶음의 운동 사이 휴식 시작은 쉼 시작 소리",
   "출처: ElevenLabs text_to_sound_effects(Starter 유료 구독 기간)로 뽑은 마림바 한 음(C5)을 높이와 빠르기를 바꿔 C 장조로 짠 13개 (SetAndBurn DESIGN.md 4-7, docs/design/sounds-marimba/README.md, 약관 docs/launch/elevenlabs-terms.md). 사이트 FAQ 는 'ElevenLabs 로 만든 마림바 신호 소리 13개'",
   "크레딧 줄: 사이트 FAQ '신호 소리와 목소리' 첫 문단에 'ElevenLabs 로 만든 마림바 신호 소리 13개'. 앱 저장소에 정해진 크레딧 문구는 없다. 유료 플랜은 출처 표시 의무가 없다(HQ 2026-11-05 Aside 확인, docs/launch/elevenlabs-terms.md 168줄, SetAndBurn b6b3a0a)",
-  "v2 Beta 여부와 유료 출처 표시는 HQ 2026-11-05 Aside 확인으로 막히지 않음(SetAndBurn b6b3a0a). 남는 것은 낱개 공개 금지와 Community Sharing 화면 확인. 라이선스를 '문제없음' 으로 쓰지 않는다. 낱개 소리 파일 공개는 약관 금지라 사이트에 소리 파일을 올리지 않는다"
+  "v2 Beta 여부와 유료 출처 표시는 HQ 2026-11-05 Aside 확인으로 막히지 않음(SetAndBurn b6b3a0a). 남는 것은 낱개 공개 금지와 Community Sharing 화면 확인. 라이선스를 '문제없음' 으로 쓰지 않는다. 낱개 소리 파일 공개는 약관 금지라 사이트에 소리 파일을 올리지 않는다",
+  "1.0.2: 준비 시작 소리 prepStart.wav(C5 다음 G5 로 오르는 두 음, 같은 마림바 한 음에서 2026-11-11 만듦, 원판 docs/design/sounds-start/start_1.wav). 준비 구간이 열릴 때(시작을 누른 순간) 나고 신호 소리 스위치를 따른다(Tone.swift:21, :88, AudioService.swift:83). 사이트 FAQ 는 '마림바 신호 소리 14개', 나는 자리에 '준비 시작'(en when Get ready starts, 다른 언어는 워밍업 이름)을 더함. 똑딱 두 번(Double tick, Settings.swift:31, :38, SettingsView.swift:63): 똑딱이 켜져 실제로 날 때만 똑딱 아래에 보이는 스위치, 처음 끔, 0.5초마다 똑딱"
  ],
  "motion": [
   "받기: 뛴 수 세기를 켠 운동이 도는 동안만, 멈춤과 끝에서 끈다 (App/RunController.swift:518, :528)",
@@ -43,14 +45,16 @@
  ],
  "notOffered": [
   "날짜별 운동 기록, 연속 기록, Apple Watch 앱(워치 앱은 없고 실시간 현황 작은 칸만), iPad, 홈 화면 위젯, 알림. 사이트에 쓰지 않는다",
-  "1.0.1 에서 사이트에 싣지 않은 것: 누적 운동 시간 카드와 누적 화면, '운동 목록' 머리, 빈 글 '묶을 운동이 없습니다.', 값 조절 단추 진동, 복원 결과 문구, 화면 전환과 눌림 다듬기. char/ember-buddy, feat/button-haptics, feat/round-ramp 등 1.0.1 뒤 가지는 쓰지 않는다"
+  "1.0.1 에서 사이트에 싣지 않은 것: 누적 운동 시간 카드와 누적 화면, '운동 목록' 머리, 빈 글 '묶을 운동이 없습니다.', 값 조절 단추 진동, 복원 결과 문구, 화면 전환과 눌림 다듬기. char/ember-buddy, feat/button-haptics, feat/round-ramp 등 1.0.1 뒤 가지는 쓰지 않는다",
+  "1.0.2 출시판(v1.0.2, 444831c) 뒤 앱 main 의 불씨 친구 얼굴 고침(휴식 감은 눈, 밝은 몸 놀람 색 반전, 46e2947, dae1ad5)은 미제출이라 사이트에 싣지 않는다. 누적 화면의 불씨 친구도 누적 화면을 싣지 않는 1.0.1 원칙대로 쓰지 않음. 1.0.2 에서 없앤 빠른 끝 세기(rushCount)는 1.0.1 에 없던 값이라 사이트에 쓴 적 없음"
  ],
  "numbers": [
   "1",
-  "13"
+  "14"
  ],
- "numbersNote": "소개 문구의 숫자: 처음 운동 1개, 신호 소리 13개. 뛴 수 정확도 숫자는 쓰지 않는다(실제 몸 기록이 아직 없다)",
+ "numbersNote": "소개 문구의 숫자: 처음 운동 1개, 신호 소리 14개(1.0.2 에서 준비 시작 소리 prepStart 하나 더해 13개에서 14개). 뛴 수 정확도 숫자는 쓰지 않는다(실제 몸 기록이 아직 없다)",
  "sources": [
+  "SetAndBurn v1.0.2(444831c, 1.0.2 빌드 2 제출, 2026-11-16 READY_FOR_SALE HQ 확인): Revenue.swift(:41 canRamp, :298 benefits), Workout.swift(:48, :50, :198), Settings.swift(:31, :38 tickTwice), SettingsView.swift:63, Tone.swift:21, Haptics.swift:31, :55, RoundBoardView.swift:133, MainView.swift:270, AccumViews.swift:136, Localizable.xcstrings, DESIGN.md 4-1, 5-2-1. 그림은 docs/store/site-1.0.2/shots/{ko,en}/01, 02.webp(asset-sources 의 store 02.png, 01.png 와 같은 장면, 1c3a7d4 에서 docs/store/screenshots 로 옮김)",
   "SetAndBurn 3c429ac(1.0.1 빌드 1, ASC 빌드 78b6f3e0, 제출 a345430, 2026-11-11 READY_FOR_SALE HQ 확인, 앱 코드는 96ef0f2 와 같음): Copy.swift, Settings.swift, SettingsView.swift, LiveActivities.swift, WatchPairing.swift, SetAndBurnLive/LiveWidget.swift, Localizable.xcstrings, DESIGN.md 5-2, 5-10, docs/launch/submit-1.0.1.md, docs/store/metadata.json whatsNew. 앱 화면 언어는 en, ko 그대로(50 로케일은 스토어 문안)",
   "SetAndBurn 490c975(1.0.0 빌드 2, 2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE): 코드(Store.swift, AppModel.swift startAdsIfFree, SettingsView.swift, Speech.swift, Resources/Sounds), DESIGN.md(4-7 소리, 4-12 묶음, 5-2-1 편집 위 막대와 묶음 편집, 5-9 수익), Localizable.xcstrings, docs/store/metadata.json(출시된 ko, en-US 설명), docs/launch/review-notes-1.0.0.md, docs/HANDOFF.md 지금 상태",
   "docs/PRIVACY_FACTS_for_HQ.md(2026-10-30, 10-31 고침)는 묶음 전 판이라 저장 목록의 묶음은 Store.swift(chains, chainSelected)로 보탰다. 광고 SDK, UMP, ATT, StoreKit, Pro 확인 3초 기다림은 그 문서와 490c975 코드가 같다",
@@ -68,8 +72,17 @@
  "editor": [
   "편집 위 막대 왼쪽 'Cancel/취소', 오른쪽 'Save/저장'(사용자 2026-11-03 \"저장과 취소\", e78a235, 시스템 뒤로 꺾쇠 숨김). 고치는 동안은 초안만 바뀌고 Save 만 목록과 지금 운동에 쓴다. 새 운동은 Save 에서 목록 맨 뒤에 생기고 Cancel 이면 생기지 않는다. 바뀐 것이 있을 때 Cancel 은 확인창 'Discard changes?/바꾼 내용을 버릴까요?'(Discard/버리기, Keep editing/계속 편집). 묶음 편집도 같은 규칙 (DESIGN.md 5-2-1 위 막대 줄)"
  ],
- "versionNote": "Set & Burn 1.0.1(빌드 1.0.1 (1), SetAndBurn 3c429ac) 출시(2026-11-11 HQ 가 ASC READY_FOR_SALE 확인, 제출 2026-11-08). 8개 언어에 반영: FAQ '실시간 현황' 하나 더함(넷째 항목 뒤, 잠금 화면과 다이나믹 아일랜드에 구간, 남은 시간, 라운드, 횟수 라운드는 남은 횟수, 멈춤과 끝에서 사라짐, 설정 스위치와 iOS 설정 경로, Apple Watch 스마트 스택 작은 칸과 (i)), 셋째 절 본문에 실시간 현황 한 문장, FAQ '신호 소리와 목소리'의 스위치 이름 '목소리'(Voice) 를 '음성 안내'(Voice cues) 로. 처리방침은 저장 항목(liveOn 은 화면 표시 설정 안), 권한, SDK, 결제가 같아 그대로. 아이콘과 절 그림은 1.0.0 과 같아 다시 뽑지 않음. 이전 기록: Set & Burn 1.0.0(빌드 2, 490c975) 출시(2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE, Pro APPROVED, kr, us 스토어 페이지 공개). site.json 의 unreleased 를 빼고 appStoreId 6829377551 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 사이트는 2026-11-02 판 기준이었고 빌드 2 와 다른 것을 8개 언어에 반영: Pro 블록 제목과 항목에 운동 묶음(4개 항목), FAQ '운동 묶음' 하나 더함(새 묶음, 운동 사이 휴식 처음 1분과 0, 2~12개, 같은 운동 두 번, 둘째 운동부터 준비 없음, 운동을 가리켜 고치면 묶음도 새 값, 사이 휴식은 누적에 안 셈), FAQ '운동 만들기'와 첫 절 본문에 저장과 취소(새 운동은 저장에서 생김, 바꾼 뒤 취소는 버릴지 물음), FAQ 'Pro와 구입 복원'의 Pro 내용(제한 해제, 묶음, 광고 끔), 신호 소리를 '마림바 신호 소리 13개'로, 넷째 절에 먹 수위 한 문장(처음 켬), 첫 화면 대체 문구에 먹 면, 절 그림 셋을 출시 스토어 스크린샷으로. 처리방침: 2절 목록에 운동 묶음과 고른 묶음, 3절과 6절 '운동과 묶음은 앱에서 지움', 시행일 2026-11-02 에서 2026-11-07(게시일)로. 광고 SDK, UMP, ATT, StoreKit, Pro 를 사면 다음 실행부터 SDK 를 시작하지 않는다는 문장은 빌드 2 코드와 같아 고치지 않았다. 1.0.1 의 '음성 안내' 이름, 빈 글, 움직임과 진동은 싣지 않음",
+ "versionNote": "Set & Burn 1.0.2(SetAndBurn 태그 v1.0.2, 444831c 제출, 1.0.1 제출 a345430 과 비교) 출시(2026-11-16 HQ 가 ASC READY_FOR_SALE 확인). 8개 언어에 반영: 첫 절 본문에 Pro 라운드마다 시간 늘리고 줄이기 한 문장, FAQ '운동 만들기' 둘째 문단에 Work each round, Rest each round(더 보기 안, 같은 초만큼, 값이 든 운동은 Pro 없이도 그대로), Pro 블록 셋째 항목 Change times each round(항목 4개에서 5개), FAQ 'Pro와 구입 복원' Pro 내용에 같은 것, 셋째 절과 FAQ 신호 소리 13개를 14개로, FAQ '신호 소리와 목소리'에 준비 시작 소리, 똑딱과 똑딱 두 번, 단추와 스위치 진동, 넷째 절 본문과 첫 화면 대체 문구에 불씨 캐릭터, 사이트 그림 shots ko, en 01, 02 를 1.0.2 화면(점 줄의 불씨 캐릭터, SetAndBurn docs/store/site-1.0.2/shots)으로 교체, 03 은 그대로. 처리방침은 권한, 엔타이틀먼트, PrivacyInfo, SDK, 네트워크, 광고 자리가 같고 저장은 같은 파일에 workStep, restStep, tickTwice 만 더해져 2절 목록이 이미 덮어 그대로(시행 2026-11-07 유지). 아이콘과 og 그대로. 이전 기록: Set & Burn 1.0.1(빌드 1.0.1 (1), SetAndBurn 3c429ac) 출시(2026-11-11 HQ 가 ASC READY_FOR_SALE 확인, 제출 2026-11-08). 8개 언어에 반영: FAQ '실시간 현황' 하나 더함(넷째 항목 뒤, 잠금 화면과 다이나믹 아일랜드에 구간, 남은 시간, 라운드, 횟수 라운드는 남은 횟수, 멈춤과 끝에서 사라짐, 설정 스위치와 iOS 설정 경로, Apple Watch 스마트 스택 작은 칸과 (i)), 셋째 절 본문에 실시간 현황 한 문장, FAQ '신호 소리와 목소리'의 스위치 이름 '목소리'(Voice) 를 '음성 안내'(Voice cues) 로. 처리방침은 저장 항목(liveOn 은 화면 표시 설정 안), 권한, SDK, 결제가 같아 그대로. 아이콘과 절 그림은 1.0.0 과 같아 다시 뽑지 않음. 이전 기록: Set & Burn 1.0.0(빌드 2, 490c975) 출시(2026-11-06 판매 시작, HQ 확인 READY_FOR_SALE, Pro APPROVED, kr, us 스토어 페이지 공개). site.json 의 unreleased 를 빼고 appStoreId 6829377551 을 넣어 허브 번호, 스토어 단추, 스마트 배너가 다른 출시 앱과 같아졌다. 사이트는 2026-11-02 판 기준이었고 빌드 2 와 다른 것을 8개 언어에 반영: Pro 블록 제목과 항목에 운동 묶음(4개 항목), FAQ '운동 묶음' 하나 더함(새 묶음, 운동 사이 휴식 처음 1분과 0, 2~12개, 같은 운동 두 번, 둘째 운동부터 준비 없음, 운동을 가리켜 고치면 묶음도 새 값, 사이 휴식은 누적에 안 셈), FAQ '운동 만들기'와 첫 절 본문에 저장과 취소(새 운동은 저장에서 생김, 바꾼 뒤 취소는 버릴지 물음), FAQ 'Pro와 구입 복원'의 Pro 내용(제한 해제, 묶음, 광고 끔), 신호 소리를 '마림바 신호 소리 13개'로, 넷째 절에 먹 수위 한 문장(처음 켬), 첫 화면 대체 문구에 먹 면, 절 그림 셋을 출시 스토어 스크린샷으로. 처리방침: 2절 목록에 운동 묶음과 고른 묶음, 3절과 6절 '운동과 묶음은 앱에서 지움', 시행일 2026-11-02 에서 2026-11-07(게시일)로. 광고 SDK, UMP, ATT, StoreKit, Pro 를 사면 다음 실행부터 SDK 를 시작하지 않는다는 문장은 빌드 2 코드와 같아 고치지 않았다. 1.0.1 의 '음성 안내' 이름, 빈 글, 움직임과 진동은 싣지 않음",
  "live": [
   "실시간 현황(Live Activity, 1.0.1, DESIGN.md 5-10): 타이머가 도는 동안 잠금 화면과 다이나믹 아일랜드에 구간 이름, 남은 시간, 라운드, 세트, 다음 구간, 운동 이름, 횟수 라운드는 남은 횟수 (Packages/TimerCore/Sources/TimerCore/LiveStatus.swift). 워치 Smart Stack 과 CarPlay 작은 칸(.small, SetAndBurnLive/LiveWidget.swift:80), 사이트는 CarPlay 를 쓰지 않는다. 설정 화면 묶음 끝 스위치 'Live Activities/실시간 현황' 처음 켬(Settings.swift liveOn, Copy.swift:61). 멈춤, 끝, 처음으로, 끔에서 닫음. Pro 와 상관없이 켜진다. ActivityKit 기기 안, pushType 없음(SetAndBurn/App/LiveActivities.swift:54). 워치 짝 여부만 WCSession.isPaired 로 읽고(WatchPairing.swift) 짝지어졌으면 (i) 로 Watch 앱 경로 안내(Copy.swift:64). 사이트 ko 는 Watch 앱 메뉴 경로를 쓰지 않고 (i) 로 보냄(한국어 watchOS 메뉴 이름 확인 전), en 만 My Watch > Smart Stack > Live Activities"
+ ],
+ "ramp": [
+  "라운드마다 시간 바꾸기(Pro, 1.0.2, DESIGN.md 4-1 '라운드마다 늘리기', 5-2-1): 편집 More/더 보기 안 준비와 쿨다운 아래 'Work each round/라운드마다 운동'(끝 기준이 시간일 때), 'Rest each round/라운드마다 휴식'(휴식을 쓸 때). -30...+30초, 처음 0(No change/그대로). r 라운드 운동은 운동 시간 + (r - 1) x 값, 세트마다 1라운드부터 다시 (TimerCore/Workout.swift:48, :50, :198)",
+  "무료: 줄은 보이지만 0 에서 멀어지는 값으로 바꾸려 하면 Pro 화면(Revenue.swift:41 Allowance.canRamp). 값이 든 운동은 무료여도 그대로 돈다. 사이트는 첫 절 본문 한 문장, FAQ '운동 만들기' 둘째 문단, Pro 블록 셋째 항목, FAQ 'Pro와 구입 복원'에 씀. 30초 같은 숫자는 소개 문구에 쓰지 않음",
+  "저장: state.json 운동 값에 workStep, restStep(0 이 아닐 때만), 설정에 tickTwice. 처리방침 2절 목록(운동 목록의 시간, 설정)이 이미 덮어 고치지 않음"
+ ],
+ "buddy": [
+  "불씨 친구(1.0.2, 코드로 그림 Packages/TimerCore/Sources/TimerCore/Buddy.swift, BuddyFigure.swift): 운동 중 라운드 점 줄의 지금 점 자리(SetAndBurn/Views/RoundBoardView.swift:133), 끝 화면(MainView.swift:270), 누적 화면(AccumViews.swift:136). 사이트는 넷째 절 본문과 첫 화면 대체 문구에 씀",
+  "단추 진동(1.0.2, SetAndBurn/Audio/Haptics.swift:55 tap): 단추와 스위치를 누를 때 가벼운 진동, 설정 Vibration/진동(hapticsOn, :31)을 따른다. 사이트는 FAQ '신호 소리와 목소리' 첫 문단 끝 한 문장"
  ]
 }
