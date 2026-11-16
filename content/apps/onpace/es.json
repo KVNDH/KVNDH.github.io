@@ -183,8 +183,8 @@
     "bullets": [
      "Rutas (nombre; nombre, lugar y hora de cada punto de control; márgenes; forma de la ruta; recordatorio de salida y días): para calcular el adelanto o el retraso y programar los recordatorios de salida",
      "Historial de trayectos (la hora prevista y la real en cada punto de control): para las sugerencias de Tune from trips",
-     "El recorrido de tu último trayecto (ubicaciones) y los momentos en que cambiaste entre caminar e ir en un vehículo: para dibujar por dónde fuiste al crear una ruta a partir de un trayecto o al ajustar con este trayecto, y para marcar dónde subiste y bajaste en una ruta creada a partir de un trayecto",
-     "Registro de diagnóstico (ubicaciones y horas, y el tipo de actividad, como caminar o ir en coche, con su grado de certeza): para revisar cómo se comportó la app. Al llegar a 20 MB empieza un registro nuevo, y la versión publicada no puede exportarlo",
+     "El recorrido de tu último trayecto (ubicaciones), los momentos en que cambiaste entre caminar e ir en un vehículo y las marcas que dejaste durante el trayecto (hora y nombre): para dibujar por dónde fuiste al crear una ruta a partir de un trayecto o al ajustar con este trayecto, y para marcar dónde subiste y bajaste en una ruta creada a partir de un trayecto",
+     "Registro de diagnóstico (ubicaciones y horas, y el tipo de actividad, como caminar o ir en coche, con su grado de certeza): para revisar cómo se comportó la app. Al llegar a 20 MB empieza un registro nuevo (solo se conserva el anterior), y la versión publicada no puede exportarlo",
      "Ajustes, si se compró Pro y cuándo elegiste tú una ruta por última vez: para organizar la app, decidir qué funciones se abren y elegir la ruta según la hora del día"
     ]
    },
@@ -274,7 +274,7 @@
     "title": "Cambios en esta política",
     "paragraphs": [
      "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
-     "2026-11-16: la versión 1.0.5 explica con más detalle el permiso de movimiento, y la frase sobre los datos de movimiento en «Medidas de seguridad» ahora dice que sirven, durante un trayecto, para distinguir si caminas o vas en un vehículo y marcar dónde subiste y bajaste en una ruta creada a partir de ese trayecto. En «Información que se trata» figuran ahora los momentos en que cambiaste entre caminar e ir en un vehículo, que el registro de tu último trayecto ya guardaba. No se trata información personal nueva. La fecha de entrada en vigor anterior era el 2026-10-15.",
+     "2026-11-16: la versión 1.0.5 explica con más detalle el permiso de movimiento, y la frase sobre los datos de movimiento en «Medidas de seguridad» ahora dice que sirven, durante un trayecto, para distinguir si caminas o vas en un vehículo y marcar dónde subiste y bajaste en una ruta creada a partir de ese trayecto. En «Información que se trata» figuran ahora los momentos en que cambiaste entre caminar e ir en un vehículo, que el registro de tu último trayecto ya guardaba. No se trata información personal nueva. La fecha de entrada en vigor anterior era el 2026-10-15. También se añadieron las marcas que dejas durante un trayecto y que del registro de diagnóstico solo se conserva el anterior.",
      "2026-10-15: la versión 1.0.2 sustituyó los avisos de margen por el sonido de retraso, y se corrigió la frase sobre notificaciones en «Medidas de seguridad». No se trata información personal nueva. La fecha de entrada en vigor anterior era el 2026-10-02.",
      "2026-10-02: para la versión 1.0.1 se añadieron el recordatorio de salida, los días y el momento en que elegiste tú una ruta por última vez a «Información que se trata», la búsqueda en Mapas de Apple de nombres para los puntos de control sin nombre propio a «Encargo del tratamiento» y los recordatorios de salida a «Medidas de seguridad». La fecha de entrada en vigor anterior era el 2026-09-26."
     ],

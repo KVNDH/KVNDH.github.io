@@ -183,8 +183,8 @@
     "bullets": [
      "Routen (Name; Name, Ort und Zeit jedes Kontrollpunkts; Zeitfenster; Verlauf der Strecke; Abfahrtserinnerung und Tage): um Vorsprung oder Rückstand zu berechnen und Abfahrtserinnerungen zu stellen",
      "Wegverlauf (geplante und tatsächliche Zeit an jedem Kontrollpunkt): für die Vorschläge von Tune from trips",
-     "Die Spur Ihres letzten Wegs (Standorte) und die Zeitpunkte, an denen Sie zwischen Gehen und Fahren gewechselt haben: um den zurückgelegten Weg zu zeichnen, wenn Sie eine Route aus einem Weg anlegen oder nach diesem Weg abstimmen, und um in einer Route aus einem Weg Ein- und Ausstiege zu markieren",
-     "Diagnoseprotokoll (Standorte und Zeiten, Art der Bewegung wie Gehen oder Fahren mit ihrer Sicherheit): um das Verhalten der App nachzuvollziehen. Bei 20 MB beginnt ein neues Protokoll, und die veröffentlichte Version kann es nicht exportieren",
+     "Die Spur Ihres letzten Wegs (Standorte), die Zeitpunkte, an denen Sie zwischen Gehen und Fahren gewechselt haben, und die während des Wegs gesetzten Markierungen (Zeit und Name): um den zurückgelegten Weg zu zeichnen, wenn Sie eine Route aus einem Weg anlegen oder nach diesem Weg abstimmen, und um in einer Route aus einem Weg Ein- und Ausstiege zu markieren",
+     "Diagnoseprotokoll (Standorte und Zeiten, Art der Bewegung wie Gehen oder Fahren mit ihrer Sicherheit): um das Verhalten der App nachzuvollziehen. Bei 20 MB beginnt ein neues Protokoll, nur das vorherige bleibt erhalten, und die veröffentlichte Version kann es nicht exportieren",
      "Einstellungen, ob Pro gekauft wurde, und wann Sie zuletzt selbst eine Route gewählt haben: für den Aufbau der App, die verfügbaren Funktionen und die Wahl der Route zur Tageszeit"
     ]
    },
@@ -274,7 +274,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
-     "2026-11-16: Version 1.0.5 erklärt die Freigabe für Bewegungsdaten genauer; der Satz zu Bewegungsdaten unter „Maßnahmen zur Sicherheit“ sagt jetzt, dass sie während eines Wegs Gehen und Fahren unterscheiden, damit eine Route aus diesem Weg Ein- und Ausstiege markieren kann. Unter „Verarbeitete Daten“ stehen nun auch die Zeitpunkte der Wechsel zwischen Gehen und Fahren, die schon bisher mit Ihrem letzten Weg gespeichert wurden. Es werden keine neuen Daten verarbeitet. Das vorherige Datum des Inkrafttretens war der 2026-10-15.",
+     "2026-11-16: Version 1.0.5 erklärt die Freigabe für Bewegungsdaten genauer; der Satz zu Bewegungsdaten unter „Maßnahmen zur Sicherheit“ sagt jetzt, dass sie während eines Wegs Gehen und Fahren unterscheiden, damit eine Route aus diesem Weg Ein- und Ausstiege markieren kann. Unter „Verarbeitete Daten“ stehen nun auch die Zeitpunkte der Wechsel zwischen Gehen und Fahren, die schon bisher mit Ihrem letzten Weg gespeichert wurden. Es werden keine neuen Daten verarbeitet. Das vorherige Datum des Inkrafttretens war der 2026-10-15. Ergänzt wurden außerdem die während eines Wegs gesetzten Markierungen und dass vom Diagnoseprotokoll nur das vorherige erhalten bleibt.",
      "2026-10-15: Mit Version 1.0.2 wurden die Hinweise zum Zeitfenster durch den Ton bei Verspätung ersetzt; der Satz zu Mitteilungen unter „Maßnahmen zur Sicherheit“ wurde angepasst. Es werden keine neuen Daten verarbeitet. Das vorherige Datum des Inkrafttretens war der 2026-10-02.",
      "2026-10-02: Für Version 1.0.1 wurden Abfahrtserinnerung, Tage und der Zeitpunkt, zu dem Sie zuletzt selbst eine Route gewählt haben, unter „Verarbeitete Daten“ ergänzt, die Suche nach Namen in Apple Karten für Kontrollpunkte ohne eigenen Namen unter „Auftragsverarbeitung“ und Abfahrtserinnerungen unter „Maßnahmen zur Sicherheit“. Das vorherige Datum des Inkrafttretens war der 2026-09-26."
     ],

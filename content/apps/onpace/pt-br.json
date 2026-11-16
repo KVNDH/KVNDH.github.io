@@ -183,8 +183,8 @@
     "bullets": [
      "Trajetos (nome; nome, lugar e horário de cada checkpoint; janelas de horário; forma da rota; lembrete de saída e dias): para calcular o adiantamento ou o atraso e programar os lembretes de saída",
      "Histórico de viagens (o horário previsto e o real em cada checkpoint): para as sugestões do Tune from trips",
-     "O percurso da última viagem (localizações) e os momentos em que você alternou entre caminhada e veículo: para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem, e para marcar onde você embarcou e desembarcou num trajeto criado a partir de uma viagem",
-     "Registro de diagnóstico (localizações e horários, e o tipo de atividade, como caminhar ou andar de carro, com o grau de certeza): para rever como o app se comportou. Ao chegar a 20 MB começa um registro novo, e a versão publicada não tem como exportá-lo",
+     "O percurso da última viagem (localizações), os momentos em que você alternou entre caminhada e veículo e as marcas que você deixou durante a viagem (horário e nome): para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem, e para marcar onde você embarcou e desembarcou num trajeto criado a partir de uma viagem",
+     "Registro de diagnóstico (localizações e horários, e o tipo de atividade, como caminhar ou andar de carro, com o grau de certeza): para rever como o app se comportou. Ao chegar a 20 MB começa um registro novo (só o anterior é mantido), e a versão publicada não tem como exportá-lo",
      "Ajustes, se o Pro foi comprado e quando você mesmo escolheu um trajeto pela última vez: para montar o app, decidir quais recursos ficam abertos e escolher o trajeto para a hora do dia"
     ]
    },
@@ -274,7 +274,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
-     "2026-11-16: a versão 1.0.5 explica com mais detalhe a permissão de movimento, e a frase sobre dados de movimento em “Medidas de segurança” agora diz que eles servem, durante uma viagem, para distinguir caminhada de veículo e marcar onde você embarcou e desembarcou num trajeto criado a partir dessa viagem. Em “Informações tratadas” constam agora os momentos em que você alternou entre caminhada e veículo, que o registro da sua última viagem já guardava. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-15.",
+     "2026-11-16: a versão 1.0.5 explica com mais detalhe a permissão de movimento, e a frase sobre dados de movimento em “Medidas de segurança” agora diz que eles servem, durante uma viagem, para distinguir caminhada de veículo e marcar onde você embarcou e desembarcou num trajeto criado a partir dessa viagem. Em “Informações tratadas” constam agora os momentos em que você alternou entre caminhada e veículo, que o registro da sua última viagem já guardava. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-15. Também foram acrescentadas as marcas que você deixa durante a viagem e o fato de o registro de diagnóstico manter só o anterior.",
      "2026-10-15: a versão 1.0.2 trocou os alertas de janela de horário pelo som de atraso, e a frase sobre notificações em “Medidas de segurança” foi corrigida. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-02.",
      "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca no Mapas da Apple de nomes para checkpoints sem nome próprio foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
     ],
