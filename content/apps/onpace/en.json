@@ -96,7 +96,7 @@
   {
    "q": "Which location permission to choose",
    "a": [
-    "While Using the App is enough. Always is not needed. During a trip the Lock Screen card stays up, so location keeps coming with the screen off or another app open."
+    "While Using the App is enough. Always is not needed. During a trip the Lock Screen card stays up, so location keeps coming with the screen off or another app open. If you did not allow location, tap Open Settings under Permissions in OnPace settings to change it."
    ]
   },
   {
@@ -162,7 +162,7 @@
  ],
  "privacy": {
   "title": "OnPace Privacy Policy",
-  "effectiveDate": "2026-10-15",
+  "effectiveDate": "2026-11-16",
   "summary": "OnPace collects no personal data. There is no account and no sign-in. Your routes and trips are kept on your device, and Apple handles place search, directions, looking up nearby places to name checkpoints and the Pro purchase.",
   "intro": [
    "kvndh (the developer) handles the personal data of users of the OnPace app (the app) as described below."
@@ -183,7 +183,7 @@
     "bullets": [
      "Routes (name, the name, place and time of each checkpoint, windows, route shape, departure reminder and days): used to work out how far ahead or behind you are and to set departure reminders",
      "Trip history (the planned and actual time at each checkpoint): used to make the Tune from trips suggestions",
-     "The track of your last trip (locations): used to draw the way you went when you build a route from a trip or tune from this trip",
+     "The track of your last trip (locations) and the times you switched between walking and riding: used to draw the way you went when you build a route from a trip or tune from this trip, and to mark where you got on and off in a route built from a trip",
      "Diagnostic log (locations and times, and the activity type such as walking or driving with its confidence): used to look back at how the app behaved. It rolls over to a new log at 20 MB, and the release version has no way to export it",
      "Settings, whether Pro was bought, and when you last picked a route yourself: used to lay out the app, decide which features open and pick the route for the time of day"
     ]
@@ -226,7 +226,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only to tell walking from riding. The departure reminders you turn on are local notifications: made on the device and delivered on the device. The late sound is a sound file inside the app, played on the device."
+     "What the app uses sits as files in the app's storage on your device. The developer runs no server, and the app does not use iCloud. Location is asked for While Using the App only; background location is used only during a trip you start, and the Lock Screen card stays up the whole time. Motion and fitness data is used only during a trip, to tell walking from riding so that a route built from that trip can mark where you got on and off. The departure reminders you turn on are local notifications: made on the device and delivered on the device. The late sound is a sound file inside the app, played on the device."
     ],
     "bullets": []
    },
@@ -274,6 +274,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show the new text and its new effective date.",
+     "2026-11-16: Version 1.0.5 explains the motion permission in more detail, so the sentence on motion data in Security measures now says it is used during a trip to tell walking from riding and to mark where you got on and off in a route built from that trip. Personal information processed now lists the times you switched between walking and riding, which the record of your last trip already kept. No new personal information is processed. The previous effective date was 2026-10-15.",
      "2026-10-15: Version 1.0.2 replaced pace alerts with the late sound, so the sentence on notifications in Security measures was corrected. No new personal information is processed. The previous effective date was 2026-10-02.",
      "2026-10-02: For version 1.0.1, the departure reminder, days and the time you last picked a route were added to Personal information processed, looking up names in Apple Maps for checkpoints you have not named was added to Outsourcing of processing, and departure reminders were added to Security measures. The previous effective date was 2026-09-26."
     ],

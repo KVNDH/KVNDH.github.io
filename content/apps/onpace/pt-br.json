@@ -96,7 +96,7 @@
   {
    "q": "Qual permissão de localização escolher",
    "a": [
-    "“Durante o Uso do App” basta. “Sempre” não é necessário. Durante o trajeto o cartão na Tela Bloqueada continua visível, então a localização chega mesmo com a tela apagada ou com outro app aberto."
+    "“Durante o Uso do App” basta. “Sempre” não é necessário. Durante o trajeto o cartão na Tela Bloqueada continua visível, então a localização chega mesmo com a tela apagada ou com outro app aberto. Se você não permitiu a localização, nos ajustes do OnPace, em Permissions, toque em Open Settings para mudar."
    ]
   },
   {
@@ -162,7 +162,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do OnPace",
-  "effectiveDate": "2026-10-15",
+  "effectiveDate": "2026-11-16",
   "summary": "O OnPace não coleta dados pessoais. Não há conta nem login. Seus trajetos e viagens ficam guardados no seu aparelho, e a busca de lugares, as rotas, a busca de lugares próximos para nomear os checkpoints e a compra do Pro ficam a cargo da Apple.",
   "intro": [
    "kvndh (o desenvolvedor) trata os dados pessoais de quem usa o app OnPace (o app) conforme descrito a seguir."
@@ -183,7 +183,7 @@
     "bullets": [
      "Trajetos (nome; nome, lugar e horário de cada checkpoint; janelas de horário; forma da rota; lembrete de saída e dias): para calcular o adiantamento ou o atraso e programar os lembretes de saída",
      "Histórico de viagens (o horário previsto e o real em cada checkpoint): para as sugestões do Tune from trips",
-     "O percurso da última viagem (localizações): para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem",
+     "O percurso da última viagem (localizações) e os momentos em que você alternou entre caminhada e veículo: para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem, e para marcar onde você embarcou e desembarcou num trajeto criado a partir de uma viagem",
      "Registro de diagnóstico (localizações e horários, e o tipo de atividade, como caminhar ou andar de carro, com o grau de certeza): para rever como o app se comportou. Ao chegar a 20 MB começa um registro novo, e a versão publicada não tem como exportá-lo",
      "Ajustes, se o Pro foi comprado e quando você mesmo escolheu um trajeto pela última vez: para montar o app, decidir quais recursos ficam abertos e escolher o trajeto para a hora do dia"
     ]
@@ -226,7 +226,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir caminhada de deslocamento em veículo. Os lembretes de saída que você ativa são notificações locais: criados no aparelho e tocados no aparelho. O som de atraso é um arquivo de som do próprio app, tocado no aparelho."
+     "O que o app usa fica em arquivos no armazenamento dele no seu aparelho. O desenvolvedor não tem servidor e o app não usa o iCloud. A localização é pedida só “Durante o Uso do App”; em segundo plano ela é usada só durante um trajeto que você iniciou, e nesse tempo o cartão na Tela Bloqueada fica visível. Os dados de movimento e condicionamento físico servem só para distinguir, durante uma viagem, caminhada de deslocamento em veículo, para que um trajeto criado a partir dessa viagem marque onde você embarcou e desembarcou. Os lembretes de saída que você ativa são notificações locais: criados no aparelho e tocados no aparelho. O som de atraso é um arquivo de som do próprio app, tocado no aparelho."
     ],
     "bullets": []
    },
@@ -274,6 +274,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página trará o novo texto e a nova data de vigência.",
+     "2026-11-16: a versão 1.0.5 explica com mais detalhe a permissão de movimento, e a frase sobre dados de movimento em “Medidas de segurança” agora diz que eles servem, durante uma viagem, para distinguir caminhada de veículo e marcar onde você embarcou e desembarcou num trajeto criado a partir dessa viagem. Em “Informações tratadas” constam agora os momentos em que você alternou entre caminhada e veículo, que o registro da sua última viagem já guardava. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-15.",
      "2026-10-15: a versão 1.0.2 trocou os alertas de janela de horário pelo som de atraso, e a frase sobre notificações em “Medidas de segurança” foi corrigida. Nenhuma informação pessoal nova é tratada. A data de vigência anterior era 2026-10-02.",
      "2026-10-02: para a versão 1.0.1, o lembrete de saída, os dias e o momento em que você mesmo escolheu um trajeto pela última vez foram incluídos em “Informações tratadas”, a busca no Mapas da Apple de nomes para checkpoints sem nome próprio foi incluída em “Tratamento por prestadores de serviço” e os lembretes de saída foram incluídos em “Medidas de segurança”. A data de vigência anterior era 2026-09-26."
     ],
