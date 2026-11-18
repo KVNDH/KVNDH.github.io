@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Größen im selben Maßstab",
    "body": [
-    "Höhe und Breite laut Hersteller liegen im selben Maßstab übereinander, sodass sich Größen auf einen Blick vergleichen lassen. Die Formen sind Vorlagen je Kategorie. Produkte verschiedener Kategorien können in einer Tabelle stehen, und gemeinsame Zeilen wie Größe und Gewicht werden Zeile für Zeile verglichen. Werte unter den oberen 10 % ihrer Kategorie werden markiert."
+    "Höhe und Breite laut Hersteller liegen im selben Maßstab übereinander, sodass sich Größen auf einen Blick vergleichen lassen. Die Formen dienen nur zur Orientierung. Produkte verschiedener Kategorien können in einer Tabelle stehen, und gemeinsame Zeilen wie Größe und Gewicht werden Zeile für Zeile verglichen. Werte unter den oberen 10 % ihrer Kategorie werden markiert."
    ],
    "bullets": [
     "Größen im selben Maßstab übereinander",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Werte und Quellen",
    "body": [
-    "Über 3.000 Produkte in 16 Kategorien, darunter Smartphones, Smartwatches, Laptops, Ohrhörer und Monitore. Die Werte stammen aus den Daten, die die Hersteller veröffentlichen, und die Quellen stehen dabei. Was nicht bestätigt ist, bleibt als fehlende Angabe markiert. SpecTable steht mit keinem Hersteller in Verbindung, und Marken gehören ihren Inhabern."
+    "Über 3.000 Produkte in 16 Kategorien, darunter Smartphones, Smartwatches, Laptops, Ohrhörer und Monitore. Zu jedem Produkt stehen die Quellen dabei, und was nicht bestätigt ist, bleibt als fehlende Angabe markiert. Eine unabhängige App ohne Verbindung zu Herstellern. Die Daten stammen von den offiziellen Herstellerseiten."
    ],
    "bullets": [],
    "visual": {
@@ -112,7 +112,7 @@
   {
    "q": "Ein Wert ist falsch oder ein Produkt fehlt",
    "a": [
-    "Schreiben Sie an kvndh36@naver.com und nennen Sie den Produktnamen und die Zeile. Das wird anhand einer offiziellen Quelle geprüft und mit der nächsten Datenaktualisierung korrigiert."
+    "Schreiben Sie an kvndh36@naver.com und nennen Sie den Produktnamen und die Zeile. Das wird anhand einer offiziellen Quelle geprüft und mit der nächsten Datenaktualisierung korrigiert. Findet die Suche kein Produkt, können Sie es auch über Produkt anfragen unter den Ergebnissen anfragen. Dabei öffnet sich Ihre Mail-App."
    ]
   },
   {
@@ -124,7 +124,8 @@
   {
    "q": "Werbung entfernen und Kauf wiederherstellen",
    "a": [
-    "Kaufen Sie es über Werbung entfernen oberhalb des Banners auf dem Vergleichsbildschirm oder über die Zeile Werbung entfernen am unteren Rand des Startbildschirms. Sie zahlen einmal, und die Familienfreigabe wird unterstützt. Nach dem Kauf erscheint das Banner nicht mehr. Alle anderen Funktionen stehen auch ohne Kauf bereit.",
+    "Unten auf dem Vergleichsbildschirm erscheint ein Werbebanner. Nach 10 Vergleichen erscheint beim Hinzufügen des dritten, vierten oder fünften Produkts eine Vollbildanzeige, höchstens einmal alle 10 Minuten.",
+    "Kaufen Sie es über Werbung entfernen oberhalb des Banners auf dem Vergleichsbildschirm oder über die Zeile Werbung entfernen am unteren Rand des Startbildschirms. Sie zahlen einmal, und die Familienfreigabe wird unterstützt. Nach dem Kauf erscheinen weder das Banner noch Vollbildanzeigen. Alle anderen Funktionen stehen auch ohne Kauf bereit.",
     "Wenn Sie das Gerät wechseln oder die App neu installieren, tippen Sie auf demselben Bildschirm auf Kauf wiederherstellen. Mit demselben Apple-Account wird nichts erneut abgebucht."
    ]
   },
@@ -162,8 +163,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für SpecTable",
-  "effectiveDate": "2026-11-11",
-  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Das Werbebanner unter dem Vergleichsbildschirm kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Werbung entfernen wickelt Apple ab.",
+  "effectiveDate": "2026-11-18",
+  "summary": "Die App sendet keine personenbezogenen Daten an den Entwickler. Das Werbebanner unter dem Vergleichsbildschirm und die Vollbildanzeige beim Hinzufügen eines dritten oder weiteren Produkts kommen von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Wenn Sie selbst eine E-Mail über Produkt anfragen senden, erhält der Entwickler sie und nutzt sie nur, um die Aufnahme des Produkts zu prüfen und zu antworten. Die Zahlung für Werbung entfernen wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App SpecTable (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -171,15 +172,17 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
-     "Die App zeigt unter dem Vergleichsbildschirm ein Werbebanner. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen."
+     "Die App hat weder Registrierung noch Anmeldung, und die App sendet keine personenbezogenen Daten von Nutzerinnen und Nutzern an den Entwickler.",
+     "Die App zeigt unter dem Vergleichsbildschirm ein Werbebanner und nach 10 Vergleichen beim Hinzufügen eines dritten oder weiteren Produkts eine Vollbildanzeige (höchstens einmal alle 10 Minuten). Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
+     "Wenn Sie eine E-Mail über Produkt anfragen senden, erhält der Entwickler sie. Sie dient nur dazu, die Aufnahme des angefragten Produkts zu prüfen und zu antworten, und zu keinem anderen Zweck."
     ],
     "bullets": []
    },
    {
     "title": "Verarbeitete Daten",
     "paragraphs": [
-     "Der Entwickler erhebt keine personenbezogenen Daten. Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät. Der Entwickler erhält keine dieser Daten. Die App verarbeitet weder Namen noch Kontakte, Standorte, Fotos oder Zahlungsmittel.",
+     "Die Daten, die die App nutzt, stehen unten. Sie alle liegen im Speicher der App auf Ihrem Gerät. Der Entwickler erhält keine dieser Daten. Die App verarbeitet weder Namen noch Kontakte, Standorte, Fotos oder Zahlungsmittel.",
+     "Wenn Sie eine E-Mail über Produkt anfragen senden, erhält der Entwickler die Absenderadresse, den Betreff, den Text und Angaben, die Ihre Mail-App hinzufügt (etwa den Namen des Absenders, je nach Einstellung Ihres Mail-Kontos). Die App füllt den Text mit einer Zeile mit dem, was Sie ins Suchfeld geschrieben haben, und fügt nichts anderes hinzu, etwa Ihr Gerät, gewählte Produkte oder gespeicherte Kombinationen. Die App sendet diese E-Mail nicht. Sie senden sie selbst aus Ihrer Mail-App und können sie vorher löschen oder ändern.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
@@ -188,13 +191,15 @@
      "Die Liste Zuletzt gewählt: um sie oben in Produkt wählen zu zeigen",
      "Der Schalter Nur Unterschiede: um festzulegen, welche Zeilen die Tabelle zeigt",
      "Sprachauswahl der App: um die Sprache der Oberfläche festzulegen",
-     "Ob die Einführung schon gezeigt wurde: um sie nur einmal zu zeigen"
+     "Ob die Einführung schon gezeigt wurde: um sie nur einmal zu zeigen",
+     "Die Zahl der Vergleiche und der Zeitpunkt der letzten Vollbildanzeige: um zu entscheiden, ob eine Vollbildanzeige erscheint"
     ]
    },
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Gespeicherte Kombinationen bleiben, bis Sie sie in der App entfernen oder die App löschen. Die Liste Zuletzt gewählt behält die letzten 8 Produkte, und Löschen in Produkt wählen leert sie.",
+     "Daten im Speicher der App werden mit dem Löschen der App entfernt. Gespeicherte Kombinationen bleiben, bis Sie sie in der App entfernen oder die App löschen. Die Liste Zuletzt gewählt behält die letzten 8 Produkte, und Löschen in Produkt wählen leert sie.",
+     "Eine E-Mail über Produkt anfragen wird unverzüglich gelöscht, sobald entschieden ist, ob das Produkt aufgenommen wird, und geantwortet wurde, spätestens ein Jahr nach Eingang.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -202,7 +207,7 @@
    {
     "title": "Weitergabe an Dritte",
     "paragraphs": [
-     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Das in der App enthaltene Google Mobile Ads SDK und das Google User Messaging Platform SDK senden jedoch die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern und keine E-Mails über Produkt anfragen an Dritte weiter. Das in der App enthaltene Google Mobile Ads SDK und das Google User Messaging Platform SDK senden jedoch die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
     ],
     "bullets": [
      "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
@@ -217,21 +222,22 @@
     "title": "Auftragsverarbeitung",
     "paragraphs": [
      "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Werbung entfernen und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account.",
-     "Der Preislink bei einem Produkt öffnet je nach Region Ihres Geräts Coupang oder die Amazon-Suche Ihres Landes in Ihrem Standardbrowser. Bei einigen Produkten ist der Coupang-Link ein Partnerlink von Coupang Partners, und unter diesen Produkten steht ein entsprechender Hinweis. Wenn Sie einen Partnerlink öffnen, kann Coupang den Klick erfassen, um Käufe zu zählen. Dafür gilt die Datenschutzerklärung von Coupang. Der Entwickler erfährt nicht, wer was gekauft hat, sondern sieht nur die Summen von Klicks und Käufen, die Coupang meldet. In Taiwan und Hongkong erscheint dieser Link nicht. Eine Adresse unter Quellen öffnet die Seite des Herstellers in Ihrem Standardbrowser. Dort gilt die Datenschutzerklärung der geöffneten Website, und der Entwickler erhält nicht, was Sie auf dieser Website ansehen."
+     "Der Preislink bei einem Produkt öffnet je nach Region Ihres Geräts Coupang oder die Amazon-Suche Ihres Landes in Ihrem Standardbrowser. Bei einigen Produkten ist der Coupang-Link ein Partnerlink von Coupang Partners, und unter diesen Produkten steht ein entsprechender Hinweis. Wenn Sie einen Partnerlink öffnen, kann Coupang den Klick erfassen, um Käufe zu zählen. Dafür gilt die Datenschutzerklärung von Coupang. Der Entwickler erfährt nicht, wer was gekauft hat, sondern sieht nur die Summen von Klicks und Käufen, die Coupang meldet. In Taiwan und Hongkong erscheint dieser Link nicht. Eine Adresse unter Quellen öffnet die Seite des Herstellers in Ihrem Standardbrowser. Dort gilt die Datenschutzerklärung der geöffneten Website, und der Entwickler erhält nicht, was Sie auf dieser Website ansehen.",
+     "Eine E-Mail über Produkt anfragen gelangt über den Mail-Dienst, den Sie nutzen, in das Naver-Postfach des Entwicklers."
     ],
     "bullets": []
    },
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Kombinationen und die Liste Zuletzt gewählt lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
+     "E-Mails über Produkt anfragen werden innerhalb der in Abschnitt 3 genannten Frist aus dem Postfach gelöscht. Gespeicherte Kombinationen und die Liste Zuletzt gewählt lassen sich in der App entfernen, und mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },
    {
     "title": "Rechte der Nutzerinnen und Nutzer sowie der gesetzlichen Vertretung",
     "paragraphs": [
-     "Da der Entwickler keine personenbezogenen Daten aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
+     "Wenn Sie eine E-Mail über Produkt anfragen gesendet haben, können Sie unter der unten genannten Adresse Auskunft darüber oder ihre Löschung verlangen. Darüber hinaus bewahrt der Entwickler keine personenbezogenen Daten auf. Bei Fragen schreiben Sie an dieselbe Adresse.",
      "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
@@ -239,7 +245,7 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Was die App nutzt, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Daten können in Gerätebackups enthalten sein, die Sie einschalten. Die Liste der Produktdaten ist in die App eingebaut, die App lädt also keine Daten herunter. Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Ein Vergleichsbild entsteht auf Ihrem Gerät und geht nur dann an das Teilen-Menü des Systems, wenn Sie auf Teilen tippen, und Sie wählen das Ziel. Das Kopieren einer Quellenadresse legt sie nur in die Zwischenablage. An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Die gewählten Produkte, die Liste Zuletzt gewählt und Ihre gespeicherten Kombinationen gibt sie nicht weiter."
+     "Was die App nutzt, liegt im Speicher der App auf Ihrem Gerät. Der Entwickler betreibt keinen Server, und die App nutzt keine iCloud-Synchronisierung. Diese Daten können in Gerätebackups enthalten sein, die Sie einschalten. Die Liste der Produktdaten ist in die App eingebaut, die App lädt also keine Daten herunter. Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Ein Vergleichsbild entsteht auf Ihrem Gerät und geht nur dann an das Teilen-Menü des Systems, wenn Sie auf Teilen tippen, und Sie wählen das Ziel. Das Kopieren einer Quellenadresse legt sie nur in die Zwischenablage. Die App sendet selbst keine E-Mails. Produkt anfragen füllt in Ihrer Mail-App nur Empfänger, Betreff und eine Textzeile aus, und Sie entscheiden, ob Sie sie senden. An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Die gewählten Produkte, die Liste Zuletzt gewählt, Ihre gespeicherten Kombinationen, die Zahl der Vergleiche und Ihre Suchbegriffe gibt sie nicht weiter."
     ],
     "bullets": []
    },
@@ -249,7 +255,7 @@
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können.",
      "Nach dem Schließen der Einführung, oder beim Öffnen der App, wenn Sie die Einführung schon gesehen haben, prüft die App die Angaben zur Einwilligung in Werbung. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
      "Ergibt die Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Datenschutz für Werbung auf dem Bildschirm Werbung entfernen, den Sie über die untere Zeile des Startbildschirms öffnen.",
-     "Nach dem Kauf von Werbung entfernen prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK; Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden. Sobald das SDK gestartet ist, kann es die unten genannten Informationen erfassen.",
+     "Nach dem Kauf von Werbung entfernen prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK; Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort und Vollbildanzeigen erscheinen nicht mehr, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden. Sobald das SDK gestartet ist, kann es die unten genannten Informationen erfassen.",
      "Cookies externer Websites, die Sie aus der App öffnen, werden von diesen Websites betrieben und unterliegen deren Richtlinien."
     ],
     "bullets": [
@@ -296,7 +302,8 @@
    {
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
-     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
+     "2026-11-18: Für die Vollbildanzeige und die E-Mail über Produkt anfragen in Version 1.0.3 wurden beide in den Abschnitten zu Zweck, verarbeiteten Daten, Aufbewahrung, Weitergabe an Dritte, Auftragsverarbeitung, Löschung, Rechten, Sicherheit und automatischer Erfassung ergänzt, und die auf dem Gerät gespeicherte Zahl der Vergleiche und der Zeitpunkt der letzten Vollbildanzeige wurden den verarbeiteten Daten hinzugefügt. Das vorherige Datum des Inkrafttretens war der 2026-11-11."
     ],
     "bullets": []
    }

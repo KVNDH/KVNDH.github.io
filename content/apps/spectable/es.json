@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Tamaños a la misma escala",
    "body": [
-    "La altura y la anchura que da el fabricante se superponen a la misma escala, para comparar los tamaños de un vistazo. Las formas son plantillas por categoría. Productos de categorías distintas pueden compartir tabla, y las filas que tienen en común, como el tamaño y el peso, se comparan fila por fila. Se marcan los valores dentro del 10 % superior de su categoría."
+    "La altura y la anchura que da el fabricante se superponen a la misma escala, para comparar los tamaños de un vistazo. Las formas son solo de referencia. Productos de categorías distintas pueden compartir tabla, y las filas que tienen en común, como el tamaño y el peso, se comparan fila por fila. Se marcan los valores dentro del 10 % superior de su categoría."
    ],
    "bullets": [
     "Tamaños superpuestos a la misma escala",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Valores y fuentes",
    "body": [
-    "Más de 3.000 productos en 16 categorías, entre ellas teléfonos, relojes, portátiles, auriculares y monitores. Los valores vienen de las especificaciones que publican los fabricantes, y las fuentes se muestran junto a ellos. Lo que no se ha confirmado queda marcado como sin información. SpecTable no está afiliada a ningún fabricante, y las marcas pertenecen a sus propietarios."
+    "Más de 3.000 productos en 16 categorías, entre ellas teléfonos, relojes, portátiles, auriculares y monitores. Cada producto muestra sus fuentes, y lo que no se ha confirmado queda marcado como sin información. Una app independiente, sin vínculo con ningún fabricante. Los datos vienen de las páginas oficiales de cada fabricante."
    ],
    "bullets": [],
    "visual": {
@@ -112,7 +112,7 @@
   {
    "q": "Un valor está mal o falta un producto",
    "a": [
-    "Escribe a kvndh36@naver.com con el nombre del producto y la fila. Se comprobará con una fuente oficial y se corregirá en la próxima actualización de datos."
+    "Escribe a kvndh36@naver.com con el nombre del producto y la fila. Se comprobará con una fuente oficial y se corregirá en la próxima actualización de datos. Si la búsqueda no encuentra ningún producto, también puedes pedirlo desde Request a product, debajo de los resultados, que abre tu app de correo."
    ]
   },
   {
@@ -124,7 +124,8 @@
   {
    "q": "Remove ads y restaurar la compra",
    "a": [
-    "Cómpralo desde Remove ads, encima del banner de la pantalla de comparación, o desde la fila Remove ads, abajo en la pantalla de inicio. Es un pago único y es compatible con En familia. Después de comprar, el banner deja de aparecer. Todas las demás funciones se pueden usar sin comprar.",
+    "En la parte inferior de la pantalla de comparación aparece un banner. Tras 10 comparaciones, al añadir un tercer, cuarto o quinto producto aparece un anuncio a pantalla completa, como máximo una vez cada 10 minutos.",
+    "Cómpralo desde Remove ads, encima del banner de la pantalla de comparación, o desde la fila Remove ads, abajo en la pantalla de inicio. Es un pago único y es compatible con En familia. Después de comprar, dejan de aparecer el banner y los anuncios a pantalla completa. Todas las demás funciones se pueden usar sin comprar.",
     "Si cambias de dispositivo o reinstalas la app, toca Restore purchase en esa misma pantalla. Con la misma cuenta de Apple no se cobra de nuevo."
    ]
   },
@@ -162,8 +163,8 @@
  ],
  "privacy": {
   "title": "Política de privacidad de SpecTable",
-  "effectiveDate": "2026-11-11",
-  "summary": "El desarrollador no recoge información personal. El banner de publicidad bajo la pantalla de comparación viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Remove ads se encarga Apple.",
+  "effectiveDate": "2026-11-18",
+  "summary": "La app no envía información personal al desarrollador. El banner de publicidad bajo la pantalla de comparación y el anuncio a pantalla completa que aparece al añadir un tercer producto o más vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Si envías tú mismo un correo de Request a product, el desarrollador lo recibe y solo lo usa para valorar si añade el producto y para responder. Del pago de Remove ads se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app SpecTable (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
   ],
@@ -171,15 +172,17 @@
    {
     "title": "Finalidad del tratamiento",
     "paragraphs": [
-     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
-     "La app muestra un banner de publicidad bajo la pantalla de comparación. El servicio publicitario de Google, AdMob, elige y muestra ese anuncio, y usa información del dispositivo para mostrar anuncios y medir su rendimiento."
+     "La app no tiene registro ni inicio de sesión, y la app no envía al desarrollador información personal de quienes la usan.",
+     "La app muestra un banner de publicidad bajo la pantalla de comparación y, tras 10 comparaciones, un anuncio a pantalla completa al añadir un tercer producto o más (como máximo una vez cada 10 minutos). El servicio publicitario de Google, AdMob, elige y muestra esos anuncios, y usa información del dispositivo para mostrar anuncios y medir su rendimiento.",
+     "Si envías un correo de Request a product, el desarrollador lo recibe. Solo se usa para valorar si se añade el producto pedido y para responder, y para nada más."
     ],
     "bullets": []
    },
    {
     "title": "Información que se trata",
     "paragraphs": [
-     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno de estos datos. La app no trata nombres, contactos, ubicación, fotos ni formas de pago.",
+     "Los datos que usa la app son los de abajo. Todos se guardan en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno de estos datos. La app no trata nombres, contactos, ubicación, fotos ni formas de pago.",
+     "Si envías un correo de Request a product, el desarrollador recibe la dirección de correo del remitente, el asunto, el texto y la información que añada tu app de correo (como el nombre del remitente, según la configuración de tu cuenta de correo). La app rellena el texto con una línea que contiene lo que escribiste en el campo de búsqueda, y no añade nada más, como tu dispositivo, los productos elegidos o las combinaciones guardadas. La app no envía este correo. Lo envías tú desde tu propia app de correo, y puedes borrarlo o cambiarlo antes de enviarlo.",
      "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
     ],
     "bullets": [
@@ -188,13 +191,15 @@
      "La lista Recently picked: para mostrarla arriba en Choose a product",
      "El interruptor Differences only: para elegir qué filas muestra la tabla",
      "La elección de idioma de la app: para fijar el idioma de la pantalla",
-     "Si ya se ha visto la introducción: para mostrarla solo una vez"
+     "Si ya se ha visto la introducción: para mostrarla solo una vez",
+     "El número de comparaciones y la hora en que se mostró el último anuncio a pantalla completa: para decidir si se muestra un anuncio a pantalla completa"
     ]
    },
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Las combinaciones guardadas se quedan hasta que las quites en la app o elimines la app. La lista Recently picked guarda los últimos 8 productos y se vacía con Clear en Choose a product.",
+     "Los datos del almacenamiento de la app desaparecen al eliminar la app. Las combinaciones guardadas se quedan hasta que las quites en la app o elimines la app. La lista Recently picked guarda los últimos 8 productos y se vacía con Clear en Choose a product.",
+     "Un correo de Request a product se borra sin demora una vez decidido si se añade el producto y enviada la respuesta, y como tarde un año después de recibirlo.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -202,7 +207,7 @@
    {
     "title": "Comunicación a terceros",
     "paragraphs": [
-     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, el SDK de Google Mobile Ads y el SDK de Google User Messaging Platform incluidos en la app envían a Google directamente la información del apartado 9, del modo siguiente."
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app ni los correos de Request a product. Ahora bien, el SDK de Google Mobile Ads y el SDK de Google User Messaging Platform incluidos en la app envían a Google directamente la información del apartado 9, del modo siguiente."
     ],
     "bullets": [
      "Destinatario: Google LLC (Estados Unidos), AdMob",
@@ -217,21 +222,22 @@
     "title": "Encargo del tratamiento",
     "paragraphs": [
      "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de Remove ads y su restauración a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple.",
-     "El enlace de precio de un producto abre en tu navegador predeterminado Coupang o la búsqueda de Amazon de tu país, según la región de tu dispositivo. En algunos productos el enlace de Coupang es un enlace de afiliado de Coupang Partners, y debajo de esos productos aparece un aviso. Al abrir un enlace de afiliado, Coupang puede registrar el clic para contar compras, y a ese registro se aplica la política de privacidad de Coupang. El desarrollador no recibe quién compró qué, solo los totales de clics y compras que informa Coupang. En Taiwán y Hong Kong este enlace no aparece. Una dirección en Sources abre la página del fabricante en tu navegador predeterminado. En el sitio que abres se aplica su política de privacidad, y el desarrollador no recibe lo que ves en ese sitio."
+     "El enlace de precio de un producto abre en tu navegador predeterminado Coupang o la búsqueda de Amazon de tu país, según la región de tu dispositivo. En algunos productos el enlace de Coupang es un enlace de afiliado de Coupang Partners, y debajo de esos productos aparece un aviso. Al abrir un enlace de afiliado, Coupang puede registrar el clic para contar compras, y a ese registro se aplica la política de privacidad de Coupang. El desarrollador no recibe quién compró qué, solo los totales de clics y compras que informa Coupang. En Taiwán y Hong Kong este enlace no aparece. Una dirección en Sources abre la página del fabricante en tu navegador predeterminado. En el sitio que abres se aplica su política de privacidad, y el desarrollador no recibe lo que ves en ese sitio.",
+     "Un correo de Request a product llega al buzón de Naver del desarrollador a través del servicio de correo que uses."
     ],
     "bullets": []
    },
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Las combinaciones guardadas y la lista Recently picked se pueden quitar en la app, y al eliminar la app desaparecen todos sus datos."
+     "Los correos de Request a product se borran del buzón dentro del plazo del apartado 3. Las combinaciones guardadas y la lista Recently picked se pueden quitar en la app, y al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },
    {
     "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
     "paragraphs": [
-     "Como el desarrollador no conserva información personal, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo.",
+     "Si has enviado un correo de Request a product, puedes pedir acceso a él o su supresión en la dirección de abajo. Aparte de eso, el desarrollador no conserva información personal. Si tienes dudas, escribe a la misma dirección.",
      "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9. Los datos de pago están en manos de Apple y se rigen por la política de privacidad de Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
@@ -239,7 +245,7 @@
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Lo que usa la app está en el almacenamiento de la app en tu dispositivo. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Estos datos pueden incluirse en las copias de seguridad del dispositivo que actives. La lista de especificaciones de productos viene integrada en la app, así que la app no descarga especificaciones. El único permiso que pide la app es el de rastreo (ATT). No pide fotos, ubicación, notificaciones, cámara ni contactos. Una imagen de comparación se crea en tu dispositivo y pasa a la hoja para compartir del sistema solo cuando tocas compartir, y tú eliges adónde va. Copiar una dirección de fuente solo la coloca en el portapapeles. Lo que la app pasa al SDK de anuncios es la solicitud de anuncio y el tamaño del banner. No pasa los productos que elegiste, la lista Recently picked ni tus combinaciones guardadas."
+     "Lo que usa la app está en el almacenamiento de la app en tu dispositivo. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Estos datos pueden incluirse en las copias de seguridad del dispositivo que actives. La lista de especificaciones de productos viene integrada en la app, así que la app no descarga especificaciones. El único permiso que pide la app es el de rastreo (ATT). No pide fotos, ubicación, notificaciones, cámara ni contactos. Una imagen de comparación se crea en tu dispositivo y pasa a la hoja para compartir del sistema solo cuando tocas compartir, y tú eliges adónde va. Copiar una dirección de fuente solo la coloca en el portapapeles. La app no envía correos por sí misma. Request a product solo rellena el destinatario, el asunto y una línea de texto en tu app de correo, y tú decides si lo envías. Lo que la app pasa al SDK de anuncios es la solicitud de anuncio y el tamaño del banner. No pasa los productos que elegiste, la lista Recently picked, tus combinaciones guardadas, el número de comparaciones ni lo que buscas."
     ],
     "bullets": []
    },
@@ -249,7 +255,7 @@
      "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento de anuncios y cuando cargan y muestran anuncios.",
      "Después de que se cierre la introducción, o al abrir la app si ya la has visto, la app comprueba la información de consentimiento de anuncios. En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta elección en Ajustes > Privacidad y seguridad > Rastreo.",
      "Si el resultado del consentimiento es que no se pueden solicitar anuncios, no aparece el aviso de rastreo y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en Ad privacy choices, en la pantalla Remove ads, que se abre desde la fila inferior de la pantalla de inicio.",
-     "Después de comprar Remove ads, la app comprueba la compra al abrirse y ya no hace la comprobación del consentimiento, el aviso de rastreo ni el inicio del SDK, y no se solicitan anuncios. Si compras con la app abierta, el banner desaparece enseguida, pero el SDK que ya se haya iniciado sigue activo hasta que cierres la app. Una vez iniciado, el SDK puede recoger la información de abajo.",
+     "Después de comprar Remove ads, la app comprueba la compra al abrirse y ya no hace la comprobación del consentimiento, el aviso de rastreo ni el inicio del SDK, y no se solicitan anuncios. Si compras con la app abierta, el banner desaparece enseguida y dejan de aparecer anuncios a pantalla completa, pero el SDK que ya se haya iniciado sigue activo hasta que cierres la app. Una vez iniciado, el SDK puede recoger la información de abajo.",
      "Las cookies de los sitios externos que abres desde la app las gestionan esos sitios y se rigen por sus políticas."
     ],
     "bullets": [
@@ -296,7 +302,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor.",
+     "2026-11-18: Por el anuncio a pantalla completa y el correo de Request a product de la versión 1.0.3, ambos se añadieron a los apartados de finalidad, información que se trata, conservación, comunicación a terceros, encargo del tratamiento, destrucción, derechos, medidas de seguridad y recogida automática, y el número de comparaciones y la hora del último anuncio a pantalla completa, guardados en el dispositivo, se añadieron a la información que se trata. La fecha de entrada en vigor anterior era el 2026-11-11."
     ],
     "bullets": []
    }

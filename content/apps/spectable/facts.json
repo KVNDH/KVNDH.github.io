@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.2",
+ "describesVersion": "1.0.3",
  "purchase": "one-time",
  "ads": true,
  "account": false,
@@ -7,23 +7,26 @@
   "iPhone 과 iPad, iOS 26 과 iPadOS 26 이상. iPhone 은 세로와 가로 좌우, iPad 는 네 방향. iPad 폭 1000pt 이상이면 비교가 두 열(왼쪽 380pt), 좁으면 한 열 720pt, 고르기 시트는 쪽 크기 (SpecTable 633a2bc project.yml:60, :129, ContentView.swift:29~:39, :213)"
  ],
  "products": [
-  "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecTable/Store/StoreModel.swift:9). 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
+  "광고 제거: 비소모성 1개 (com.kimdh.spectable.removeads, 가족 공유, SpecTable/Store/StoreModel.swift:9). 1.0.3 부터 배너와 전면광고를 모두 없앤다(ContentView.swift:262~:278 openSlot 의 !store.adFree, :240~:244 미리 받기 조건). ASC 상품 설명 '앱의 광고를 모두 없앱니다'는 2026-11-18 현재 심사 전이라 스토어에는 옛 설명이 보이지만 사이트는 앱 동작대로 쓴다. 가격은 문구에 쓰지 않는다. 광고 말고 다른 기능은 잠그지 않는다"
  ],
  "ads_detail": [
-  "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:110~:113, Ads/AdBanner.swift, 배너 안 'Remove ads' 단추). 시트와 공유 이미지에는 없다",
+  "Google Mobile Ads 13.10.0, UMP 3.1.0. 비교 화면 맨 아래 배너 하나(ContentView.swift:129, Ads/AdBanner.swift, 배너 안 'Remove ads' 단추)와 1.0.3 부터 제품 추가 전 전면광고(아래). 시트와 공유 이미지에는 없다",
+  "전면광고(1.0.3, 사용자 2026-11-15): 비교 횟수(AppModel.comparisons, 두 제품 이상인 표에 새 제품이 들어올 때 하나 셈, AppModel.swift:63, :232~:233)가 10 이상이면 3, 4, 5번째 빈 칸을 열 때 받아 둔 전면광고를 띄우고, 닫히면 제품 고르기를 연다. 10분에 한 번까지(lastInterstitial UserDefaults). 광고 제거를 샀거나 받아 둔 광고가 없으면 광고 없이 연다(Ads/AdGate.swift:6~:20, ContentView.swift:262~:278, Ads/AdsModel.swift:136~:175). 단위 'SpecTable 제품 추가 전면' (Ads/AdUnit.swift:21). 배너와 같은 SDK, 같은 동의 흐름",
+  "다시 받기(1.0.3, AdRetry): 배너와 전면광고 모두 처음 받기가 비면 30, 45, 60초 뒤 세 번까지 다시 받고, 그래도 없으면 앱이 다시 열릴 때 한 번 더 (Ads/AdGate.swift:26~:33, GoogleAdsSDK.swift:164~:168, :194~:200, AdsModel.swift:155~:160). 사이트에는 쓰지 않는다",
   "순서: 소개가 끝나고 구매 판정이 끝난 뒤 ads.startIfWanted(onboarded, storeChecked, adFree) (ContentView.swift:217~:218, Ads/AdsModel.swift:68~:69). 활성 대기, UMP 갱신, 필요하면 동의 양식, canRequestAds 면 ATT(아직 안 정했을 때), SDK 시작",
   "광고 제거를 산 사람은 startIfWanted 가 멈춰 동의 확인, ATT, SDK 시작을 하지 않는다(AdsModel.swift:69). 켠 채로 사면 배너만 바로 사라지고 그 실행에서 시작된 SDK 는 남는다(처리방침 9절, SpecTable 34baba1 뒤 판, 빌드 5 40c9612 에서 다시 확인)",
   "광고 제거 시트: 첫 화면 바닥 줄 'Remove ads/광고 제거'와 배너 안 단추로 연다(ContentView.swift:301~:302, AdBanner.swift:43~:44). 시트에 'One-time purchase/한 번 구매', 'Restore purchase/구매 복원', UMP 가 요구할 때만 'Ad privacy choices/광고 개인정보 선택', 개인정보 처리방침 링크 (Store/RemoveAdsSheet.swift)",
-  "SDK 에 넘기는 것은 Request() 와 배너 크기뿐 (Ads/GoogleAdsSDK.swift)"
+  "SDK 에 넘기는 것은 Request() 와 배너 크기뿐, 전면광고도 Request() 만 (Ads/GoogleAdsSDK.swift)"
  ],
  "externalLinks": [
   "가격 링크(빌드 5 40c9612): PriceLink.choose. US CA GB DE FR IT ES JP 는 그 나라 Amazon 검색(amazonTags 가 비어 꼬리표 없음, 대가성 문구 없음), TW HK 는 링크 없음, 한국과 그 밖의 지역은 쿠팡. 쿠팡 스위치 켬(ContentView.swift:1121 Settings(coupang: true)). link.coupang.com 링크가 있는 318대(data/links/coupang.json, tools/build_catalog.py 가 catalog.json device.coupang 으로 붙임, 빌드 7 633a2bc. 1.0.1 까지는 13대)는 쿠팡 파트너스 제휴 링크와 대가성 문구, 없는 기기는 꼬리표 없는 쿠팡 검색. 링크 이름 'Coupang ↗', 'Amazon ↗'(ContentView.swift:701~:702). 다나와 링크는 없앰(SpecTable 6247694) (Packages/SpecCore/Sources/SpecCore/PriceLink.swift)",
-  "대가성 문구: 쿠팡 파트너스 가이드 권장 문구 원문 \"이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\"(PriceLink.coupangDisclosure). 고른 제품 가운데 파트너스 링크가 하나라도 있으면 비교 화면 맨 위 제품 칸 바로 아래에 15pt 먹 글자, 화면이 영어, 일본어, 독일어면 번역 한 줄 더 (ContentView.swift:639~:647, docs/COUPANG_DISCLOSURE.md). 사이트 FAQ 는 개수 13 을 쓰지 않고 '일부 제품'으로 쓴다(링크는 사용자가 손으로 늘린다)",
+  "대가성 문구: 쿠팡 파트너스 가이드 권장 문구 원문 \"이 게시물은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.\"(PriceLink.coupangDisclosure). 고른 제품 가운데 파트너스 링크가 하나라도 있으면 비교 화면 맨 위 제품 칸 바로 아래에 먹 글자 한 줄(1.0.3 부터 13pt, 폭이 모자라면 줄여서 한 줄, ContentView.swift:700~:703, 1.0.2 까지는 15pt), 화면이 영어, 일본어, 독일어면 번역 한 줄 더 (ContentView.swift:639~:647, docs/COUPANG_DISCLOSURE.md). 사이트 FAQ 는 개수 13 을 쓰지 않고 '일부 제품'으로 쓴다(링크는 사용자가 손으로 늘린다)",
   "출처: 제조사 페이지 열기와 주소 복사 (ContentView.swift SourceLink)",
+  "제품 요청 메일(1.0.3): 검색 결과가 없을 때만 그 아래 '제품 요청 ↗'(첫 화면 빠른 찾기 ContentView.swift:470, 고르기 시트에서 조건 없이 찾을 때 Sheets.swift:391). mailto 로 받는 사람 SiteLink.contact(SiteLink.swift:12, 사이트 연락 주소와 같음), 제목 '스펙테이블 제품 요청', 본문 '원하는 제품이나 제조사 : <검색어>' 한 줄만 채워 메일 앱을 연다(ContentView.swift:1071~:1088). 앱은 보내지 않고 다른 정보도 넣지 않는다(docs/PRIVACY_FACTS_for_HQ.md '제품 요청 메일'). 사이트 처리방침은 DailyLeft 문자 제보 메일 꼴로 적고 보유 기한도 같은 관례(정한 뒤 지체 없이, 늦어도 1년)",
   "사이트 ko 소개 쪽 쿠팡 파트너스 링크 셋과 대가성 문구: 옛 specpair ko 쪽 값을 2026-11-01 그대로 옮김 (ko.json partners, SpecPair docs/SITE_DRAFT.md 5절). 활동 매체 https://kvndh.com/ko/spectable/. 앱 안 링크와는 별개다"
  ],
  "storage": [
-  "UserDefaults: selection, combos, onlyDifferences, onboarded, recent(최근 고른 제품 8개, 1.0.2, 고르기 시트 맨 위에 5개, '지우기'로 비움) (App/AppModel.swift:57~:60, :81~:85, :195~:207, Views/Sheets.swift:302~:330), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"
+  "UserDefaults: selection, combos, onlyDifferences, onboarded, recent(최근 고른 제품 8개, 1.0.2, 고르기 시트 맨 위에 5개, '지우기'로 비움) (App/AppModel.swift:57~:60, :81~:85, :195~:207, Views/Sheets.swift:302~:330), comparisons(비교 횟수, 1.0.3, AppModel.swift:88, :102), lastInterstitial(마지막 전면광고 시각, 1.0.3, AdsModel.swift:39~:40, :172), appLanguage (App/Language.swift:18). iCloud, CloudKit 없음"
  ],
  "permissions": [
   "추적 허용(ATT) 하나. 카메라, 사진, 위치, 알림 없음"
@@ -40,12 +43,13 @@
  ],
  "numbersNote": "소개 문구의 숫자: 제품 5개(AppModel.slots), 상위 10%(Standout.threshold), 16GB, 16개 종류, 200g, 3,000개가 넘는(빌드 5 catalog 3,769대, 기준일 2026-11-04, metadata.json 문구 그대로)",
  "sources": [
+  "SpecTable 8176ff1(태그 v1.0.3, 빌드 1.0.3 (8), 2026-11-18 ASC READY_FOR_SALE, HQ 확인): 코드, Localizable.xcstrings, docs/HANDOFF.md:7, docs/PRIVACY_FACTS_for_HQ.md, docs/store/metadata.json whatsNew. 1.0.2 633a2bc 와 코드 차이는 Ads(AdGate, AdUnit 전면 단위, AdsModel 전면광고, GoogleAdsSDK 전면광고와 다시 받기), AppModel(comparisons), ContentView(openSlot, 미리 받기, ProductRequestLink, 대가성 문구 13pt 한 줄), Sheets(제품 요청 줄), SiteLink(contact, requestMail), Localizable.xcstrings(문구 검수 36곳과 제품 요청 문자열). 카탈로그 숫자, 16개 종류, 가격 링크 나라 나눔, 권한은 그대로",
   "SpecTable 633a2bc(빌드 1.0.2 (7), 088fa98 에서 제출, 출시는 HQ 확인): 코드, docs/HANDOFF.md:125, docs/store/metadata.json whatsNew. 1.0.1 197103c 와 코드 차이는 project.yml(기기 \"1,2\", iPad 네 방향), Info.plist, AppModel.swift(recent), Sheets.swift(최근 고른 제품), ContentView.swift(iPad 배치), Localizable.xcstrings 두 줄, catalog.json(쿠팡 링크 318대와 검색어). 기기 3,769대, 기준일 2026-11-04, 16개 종류는 그대로. 앱 화면 언어는 en, ko, ja, de 넷 그대로이고 50개 로케일은 스토어 문안뿐이다",
   "SpecTable 197103c(빌드 1.0.1 (6) 70ac6ef 를 main 에 합친 판, 2026-11-08 ASC READY_FOR_SALE, HQ 확인): 코드, docs/HANDOFF.md, docs/COUPANG_DISCLOSURE.md, docs/store/metadata.json whatsNew. 1.0.0 (5) 40c9612 과 코드 차이는 AppModel.swift, ShareImage.swift, Sheets.swift, Localizable.xcstrings, 아이콘뿐(카탈로그, 쿠팡 링크 파일, PriceLink 그대로). metadata.json 의 50개 로케일 문안(584822c)은 다음 판 준비라 사이트 근거로 쓰지 않는다",
   "1.0.0 근거: SpecTable 40c9612(빌드 1.0.0 (5), 2026-11-06 READY_FOR_SALE, 광고 제거 상품 APPROVED), metadata.json 라이브와 글자까지 같음(세션 11-05 대조)",
   "그 전 근거: SpecPair 92cbac7 코드, docs/PRIVACY_FACTS_for_HQ.md(2026-10-30)",
   "SDK 매니페스트: GoogleMobileAds, UserMessagingPlatform PrivacyInfo.xcprivacy",
-  "그림: docs/store/screenshots(ko, en-US, ja, de-DE), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png"
+  "그림: docs/store/screenshots(ko, en-US, ja, de-DE, 1.0.3 판 8f31da2), docs/store/shots-raw/iphone/<locale>/compare, size, filter.png(2026-11-17 찍음, 커밋하지 않는 폴더)"
  ],
- "versionNote": "스펙테이블(SpecTable) 1.0.2(빌드 7) 출시(2026-11-11 HQ 확인). 새 소식은 'iPad 지원', '제품 고르기에 최근 고른 제품 추가', '세부 다듬기와 안정성 개선'. 빌드 6 과 대조: iPad 지원(TARGETED_DEVICE_FAMILY \"1,2\", iPad 네 방향, 폭 1000pt 이상이면 두 열, 고르기 시트는 쪽 크기), 제품 고르기 맨 위의 최근 고른 제품 5개와 지우기(저장은 recent 8개), 쿠팡 파트너스 링크 13대에서 318대로. 사이트에는 지원 FAQ 의 기기 문장, 숫자로 찾습니다 bullet 하나, 처리방침 2절 항목, 3절 보유, 6절 파기, 8절 SDK 문장을 반영했고 시행일은 2026-11-11. 카탈로그 숫자, 가격 링크 나라 나눔, 대가성 문구, 권한, 광고 순서는 그대로. 아이콘과 iPhone 캡처도 그대로라 그림은 바꾸지 않았다. 앱 화면 언어는 네 개 그대로라 사이트에 언어 수를 쓰지 않는다. 이전 기록: 스펙테이블(SpecTable) 1.0.1(빌드 6) 출시(2026-11-08 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '세부 다듬기와 안정성 개선' 한 줄이다. 빌드 5 와 대조: 공유 그림 격자를 기본 글자 크기로 고정, 저장한 조합 빈 시트 문구('저장한 조합이 없습니다', 비교 중이 아니면 책갈피 안내 한 줄 더), 고르기 조건 막대를 끄는 동안 목록을 거르지 않고 손을 뗄 때 반영, 비교와 권하는 조합을 저장값으로(5d5d3ee). 모두 사이트 문장이 말하지 않는 화면 다듬기라 본문과 FAQ 를 고칠 곳이 없었다. 카탈로그(3,769대, 기준일 2026-11-04), 16개 종류, 제품 5개, 상위 10%, 가격 링크 나라 나눔과 쿠팡 파트너스 링크 13대, 대가성 문구 자리와 원문, 저장 항목(UserDefaults 다섯), 권한(ATT 하나), 광고 순서는 빌드 5 와 같아 처리방침도 그대로 두고 시행일 2026-11-05 를 유지했다. 1.0.1 에 실린 아이콘 흰 바탕(밝은 판 #F4F4F2 에서 #FFFFFF, f152079)에 맞춰 사이트 아이콘 icon-180, 360, 640 과 og.jpg 를 앱 AppIcon.png 에서 import_assets.py 와 같은 명령으로 다시 뽑았다(그림은 그대로 둠)"
+ "versionNote": "스펙테이블(SpecTable) 1.0.3(빌드 8) 출시(2026-11-18 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '찾는 제품이 없을 때 제품 요청 추가', '화면 문구 개선', '세부 다듬기와 안정성 개선'. 빌드 7 과 대조: 비교를 10번 한 뒤 3번째 제품부터 빈 칸을 열 때 Google AdMob 전면광고(10분에 한 번까지, 광고 제거로 함께 없어짐), 광고를 못 받으면 30, 45, 60초 뒤 다시 받기, 검색 결과가 없을 때 '제품 요청' 메일 줄, 문구 검수 36곳('실측 크기'를 '참고용 크기'로, 모양은 참고용, 관계없음 표시를 '각 제조사와 무관한 별개의 앱입니다. 각 제조사가 공개한 공식 페이지 데이터를 참고하였습니다.'로 하고 상표 문장 뺌, ko 의 '값'을 '데이터'로), 쿠팡 대가성 문구 13pt 한 줄. 사이트에는 여덟 언어 모두 둘째 절 본문 모양 문장(참고용), 다섯째 카드 본문(관계없음 문구를 앱과 같게, 앱처럼 상표 문장 뺌), FAQ '값이 틀렸거나 없는 제품이 있을 때'에 '제품 요청' 한 문장, FAQ '광고 제거와 구매 복원'에 배너와 전면광고 문단을 앞에 더하고 구매 뒤 배너와 전면광고 모두 안 나온다로 고침. 처리방침은 요약, 1절(전면광고, 앱이 개인정보를 개발자에게 보내지 않음, 제품 요청 메일 용도), 2절(메일로 받는 것 문단, 비교 횟수와 마지막 전면광고 시각 항목), 3절(메일 보유 기한), 4절, 5절(메일 경로), 6절, 7절(메일 열람과 삭제), 8절(앱은 메일을 보내지 않음, SDK 에 넘기지 않는 것에 비교 횟수와 검색어), 9절(켠 채로 사면 전면광고도 멈춤), 12절 변경 이력, 시행 2026-11-18. 화면 글자는 en, ko, ja, de 카탈로그 그대로, es, pt-br, zh 는 앱이 영어로 보여 기존 관례대로 영어 이름(Request a product). 대가성 문구 크기는 사이트 문장이 말하지 않아 고칠 곳 없음(ko 전용 변화라 다른 언어에도 넣지 않음). 사이트 그림 shots ko, en 01, 02, 03 을 1.0.3 캡처(shots-raw 2026-11-17. 01 쿠팡과 Amazon 링크 이름, 02 '참고용 크기', 03 '제품 검색'과 '데이터 없는')로, 첫 화면 store ko, en, ja, de 01~03 을 1.0.3 합성본(8f31da2)으로 import_assets.py 로 바꿈. 아이콘과 og 그대로. 이전 기록: 스펙테이블(SpecTable) 1.0.2(빌드 7) 출시(2026-11-11 HQ 확인). 새 소식은 'iPad 지원', '제품 고르기에 최근 고른 제품 추가', '세부 다듬기와 안정성 개선'. 빌드 6 과 대조: iPad 지원(TARGETED_DEVICE_FAMILY \"1,2\", iPad 네 방향, 폭 1000pt 이상이면 두 열, 고르기 시트는 쪽 크기), 제품 고르기 맨 위의 최근 고른 제품 5개와 지우기(저장은 recent 8개), 쿠팡 파트너스 링크 13대에서 318대로. 사이트에는 지원 FAQ 의 기기 문장, 숫자로 찾습니다 bullet 하나, 처리방침 2절 항목, 3절 보유, 6절 파기, 8절 SDK 문장을 반영했고 시행일은 2026-11-11. 카탈로그 숫자, 가격 링크 나라 나눔, 대가성 문구, 권한, 광고 순서는 그대로. 아이콘과 iPhone 캡처도 그대로라 그림은 바꾸지 않았다. 앱 화면 언어는 네 개 그대로라 사이트에 언어 수를 쓰지 않는다. 이전 기록: 스펙테이블(SpecTable) 1.0.1(빌드 6) 출시(2026-11-08 ASC READY_FOR_SALE, HQ 확인). 새 소식은 '세부 다듬기와 안정성 개선' 한 줄이다. 빌드 5 와 대조: 공유 그림 격자를 기본 글자 크기로 고정, 저장한 조합 빈 시트 문구('저장한 조합이 없습니다', 비교 중이 아니면 책갈피 안내 한 줄 더), 고르기 조건 막대를 끄는 동안 목록을 거르지 않고 손을 뗄 때 반영, 비교와 권하는 조합을 저장값으로(5d5d3ee). 모두 사이트 문장이 말하지 않는 화면 다듬기라 본문과 FAQ 를 고칠 곳이 없었다. 카탈로그(3,769대, 기준일 2026-11-04), 16개 종류, 제품 5개, 상위 10%, 가격 링크 나라 나눔과 쿠팡 파트너스 링크 13대, 대가성 문구 자리와 원문, 저장 항목(UserDefaults 다섯), 권한(ATT 하나), 광고 순서는 빌드 5 와 같아 처리방침도 그대로 두고 시행일 2026-11-05 를 유지했다. 1.0.1 에 실린 아이콘 흰 바탕(밝은 판 #F4F4F2 에서 #FFFFFF, f152079)에 맞춰 사이트 아이콘 icon-180, 360, 640 과 og.jpg 를 앱 AppIcon.png 에서 import_assets.py 와 같은 명령으로 다시 뽑았다(그림은 그대로 둠)"
 }
