@@ -96,12 +96,24 @@
    }
   }
  ],
+ "pro": {
+  "kick": "DailyLeft Pro",
+  "title": "Orçamentos separados,\nseus próprios períodos e alertas",
+  "items": [
+   "Vários orçamentos (até 4) e um widget Budgets",
+   "Períodos semanais, a cada 2 semanas, no último dia ou por datas escolhidas",
+   "Um resumo de cada período passado",
+   "Alertas ao passar do valor diário ou ficar abaixo de 10%",
+   "Banner de anúncios desligado na tela principal",
+   "Quem comprou Remove Ads antes já tem o DailyLeft Pro"
+  ]
+ },
  "faq": [
   {
    "q": "Como começar",
    "a": [
     "Escolha um orçamento mensal ou diário, informe um valor e toque em Start (Começar). Não há conta nem login.",
-    "Se você começar um orçamento mensal no meio de um período, informe o valor real restante no campo Money Left This Month (Dinheiro restante agora). Se deixar em branco, conta o orçamento inteiro. O dia de início do período, Contar só dias úteis, O que fazer com o que sobra e os 4 últimos dígitos do cartão ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
+    "Se você começar um orçamento mensal no meio de um período, informe o saldo real no campo Money Left This Month (Saldo atual neste mês, ou Money Left This Period se o período não começa no dia 1). Se deixar em branco, conta o orçamento inteiro. Se a região do seu iPhone for a Coreia do Sul, informe os 4 últimos dígitos do cartão em Payment Notices (Avisos de pagamento). O dia de início do período, Contar só dias úteis e O que fazer com o que sobra ficam em More Options (Mais opções), e você pode mudá-los depois em Ajustes."
    ]
   },
   {
@@ -119,10 +131,10 @@
    ]
   },
   {
-   "q": "Orçamento diário e dia de início do período",
+   "q": "Orçamento diário e período de cálculo",
    "a": [
     "Para fazer o orçamento por dia, mude o tipo de orçamento em Ajustes para Daily Budget (Orçamento diário). Uma nova parte surge a cada dia contado, e os dias que não contam não têm parte.",
-    "Se o seu orçamento não começa no dia 1, escolha um dia do 1 ao 28 em Period Start Day (Dia de início do período), em Ajustes."
+    "Se o seu orçamento não começa no dia 1, abra Calculation Period (Período de cálculo) em Ajustes e escolha um dia de início do 1 ao 28 em Monthly (Mensal). Com o DailyLeft Pro você também pode escolher o dia 29, o dia 30, Last Day (Último dia), Move Earlier on Weekends and Holidays (Antecipar em fins de semana e feriados), Weekly (Semanal), Every 2 Weeks (A cada 2 semanas) e Pick Dates (Escolher datas, uma duração de 2 a 92 dias que se repete). Ao mudar o período de cálculo, os registros passados também são divididos nos novos períodos, e os períodos de antes da mudança mostram só o que você gastou. Se o tipo de período mudar, você informa o valor de novo, e o dinheiro transferido volta a contar do 0 naquele dia."
    ]
   },
   {
@@ -181,7 +193,8 @@
    "q": "Widgets",
    "a": [
     "Os widgets da Tela de Início vêm nos tamanhos pequeno e médio. Eles mostram o dinheiro restante e o que você pode gastar hoje, e o tamanho médio também lista as suas 3 transações mais recentes.",
-    "Há três widgets da Tela Bloqueada. O retangular mostra o dinheiro restante e o que você pode gastar hoje, o circular mostra a proporção restante, e o de uma linha mostra o dinheiro restante. Até você informar um orçamento no app, eles mostram Not set up (Não configurado) ou um ponto de interrogação."
+    "Há três widgets da Tela Bloqueada. O retangular mostra o dinheiro restante e o que você pode gastar hoje, o circular mostra a proporção restante, e o de uma linha mostra o dinheiro restante. Até você informar um orçamento no app, eles mostram Not set up (Não configurado) ou um ponto de interrogação.",
+    "Com o DailyLeft Pro e dois ou mais orçamentos, o widget Budgets mostra num relance quanto resta em cada orçamento. Ele vem nos tamanhos pequeno, médio e grande na Tela de Início e nos três formatos da Tela Bloqueada, e você escolhe Budgets to Show (Orçamentos mostrados) ao editar o widget. Nos tamanhos médio e grande, tocar em um orçamento abre o app nesse orçamento. O widget original sempre mostra o primeiro orçamento."
    ]
   },
   {
@@ -191,10 +204,26 @@
    ]
   },
   {
-   "q": "Remover anúncios e restaurar a compra",
+   "q": "DailyLeft Pro e restaurar a compra",
    "a": [
-    "Ao comprar uma vez Remove Ads (remover anúncios) nos Ajustes, logo abaixo de Budget and Period (orçamento e período), o banner da tela principal some. O formulário de consentimento de anúncios e o pedido de rastreamento também deixam de aparecer.",
-    "Se trocar de aparelho ou reinstalar o app, toque em Restore Purchases (restaurar compras) nos Ajustes. Com a mesma Conta Apple, você não paga de novo."
+    "Toque em DailyLeft Pro no topo dos Ajustes para ver o que o Pro inclui e o preço, e compre com Buy Pro (Comprar Pro). A mesma tela abre quando você toca em um ponto do Pro, como Add Budget (Adicionar orçamento), uma opção do Pro em Calculation Period, Period Wrap-up (Resumo do período) em um período passado ou um botão de Balance Alerts (Alertas de saldo). Depois da compra, o banner da tela principal some, e o formulário de consentimento de anúncios e o pedido de rastreamento deixam de aparecer.",
+    "Se você comprou Remove Ads (remover anúncios) antes, o DailyLeft Pro já está ativado depois da atualização. Se trocar de aparelho ou reinstalar o app, toque em Restore Purchases (restaurar compras) em Info, nos Ajustes. Com a mesma Conta Apple, você não paga de novo.",
+    "Se o Pro for desativado por um reembolso ou pelo fim do Compartilhamento Familiar, os orçamentos que você criou, o período de cálculo escolhido e os seus registros continuam e seguem contando. Só deixam de funcionar adicionar orçamentos, escolher outro tipo de período do Pro, o resumo do período e os alertas de saldo."
+   ]
+  },
+  {
+   "q": "Vários orçamentos (Pro)",
+   "a": [
+    "Com o DailyLeft Pro você pode ter até 4 orçamentos, cada um com valor, período de cálculo e tratamento do que sobra próprios. Adicione um com Add Budget (Adicionar orçamento) nos Ajustes. Na primeira vez, você também dá um nome ao orçamento que já usava. Com dois ou mais orçamentos, troque entre eles na linha no topo da tela principal. Não há um total somando todos os orçamentos.",
+    "Se a região do seu iPhone for a Coreia do Sul, uma mensagem de pagamento vai para o orçamento cujos 4 últimos dígitos do cartão coincidem, e se nenhum coincidir, para o orçamento com os 4 últimos dígitos em branco. Só um orçamento pode tê-los em branco, e os mesmos 4 últimos dígitos não podem estar em dois orçamentos. Crie uma automação por número de cartão. Get Shortcut (Obter atalho) só é preciso uma vez. Se um orçamento não tiver os 4 últimos dígitos, ou no iOS 27, uma só automação com 승인 recebe as mensagens de todos os orçamentos. Nos dois casos o app escolhe o orçamento certo para cada mensagem, e os passos ficam em Shortcuts Automation, nos Ajustes.",
+    "A partir do segundo orçamento, exclua um orçamento com Delete Budget (Excluir orçamento) na tela dele. Todos os registros dele também são excluídos e não podem ser recuperados. O primeiro orçamento não pode ser excluído."
+   ]
+  },
+  {
+   "q": "Resumos do período e alertas de saldo (Pro)",
+   "a": [
+    "Com o DailyLeft Pro, um período passado mostra um Period Wrap-up (Resumo do período) abaixo do número grande: o que você gastou e o número de pagamentos, a média diária, o dia de maior gasto, o lugar de maior gasto, o dinheiro transferido, que sobrou ou que passou do orçamento, e a diferença em relação ao período anterior. Ele não aparece em um período sem pagamentos.",
+    "Ative Balance under 10% (Saldo abaixo de 10%) e Over today's amount (Acima do valor de hoje) em Balance Alerts (Alertas de saldo), nos Ajustes. Na primeira vez, o iOS pergunta se você permite notificações. Você recebe um alerta quando um pagamento registrado cruza o limite, e um orçamento diário só recebe Over today's amount. Se você não permitiu notificações, ative as notificações do DailyLeft no app Ajustes do iOS."
    ]
   },
   {
@@ -213,7 +242,7 @@
   {
    "q": "Conexão com a internet",
    "a": [
-    "Os cálculos de orçamento, os registros e os widgets funcionam sem conexão. Os anúncios, a compra de Remove Ads, a restauração de compras, o backup no iCloud, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
+    "Os cálculos de orçamento, os registros, os widgets e os alertas de saldo funcionam sem conexão. Os anúncios, a compra do DailyLeft Pro, a restauração de compras, o backup no iCloud, o envio de um e-mail de reporte e a abertura da política de privacidade precisam de conexão."
    ]
   },
   {
@@ -237,8 +266,8 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do DailyLeft",
-  "effectiveDate": "2026-11-12",
-  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração de Remove Ads.",
+  "effectiveDate": "2026-11-18",
+  "summary": "Os registros do app ficam salvos em um arquivo no seu aparelho, e o desenvolvedor não recebe esse arquivo. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, um backup desses registros também fica no seu próprio iCloud para que eles voltem se você reinstalar o app, e o desenvolvedor também não recebe esse backup. Se você decidir enviar um e-mail de reporte de mensagem, o desenvolvedor o recebe. Ele é usado só para ensinar esse formato de mensagem ao app e para responder. Ele é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato ao app, e no máximo 1 ano depois de recebido. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. A Apple processa o pagamento e a restauração do DailyLeft Pro. Os alertas de saldo são notificações que este iPhone cria e mostra, e o desenvolvedor não recebe o conteúdo deles.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app DailyLeft (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
   ],
@@ -255,25 +284,28 @@
    {
     "title": "Informações tratadas",
     "paragraphs": [
-     "Os dados que o app salva no seu aparelho estão listados no fim desta seção. Desses, os ajustes do orçamento, os 4 últimos dígitos do cartão, as transações e o texto original das mensagens de pagamento também vão para o backup no iCloud (seção 8). O desenvolvedor não os recebe. O app não recebe contatos, localização nem fotos.",
+     "Os dados que o app salva no seu aparelho estão listados no fim desta seção. Desses, os ajustes do orçamento, os 4 últimos dígitos do cartão, as transações, o texto original das mensagens de pagamento e a lista de orçamentos também vão para o backup no iCloud (seção 8). O desenvolvedor não os recebe. O app não recebe contatos, localização nem fotos.",
      "O app não consegue ler diretamente o seu app Mensagens. Ele lê só o texto passado por uma automação de Atalhos que você criou ou o texto que você cola. Você decide no app Atalhos quais mensagens são passadas. O texto lido mas não registrado não é salvo. Esses recursos de mensagem só aparecem para a região Coreia do Sul.",
      "Se você enviar um e-mail de reporte de mensagem, o desenvolvedor recebe o seu endereço de e-mail, o texto original da mensagem que você escolheu enviar (que pode incluir parte do nome de quem aprovou o pagamento, o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora), o motivo de não ter sido lida, as versões do app e do iOS e as informações que o seu app de e-mail acrescenta (como o nome do remetente, conforme as configurações da sua conta de e-mail). Não é o app que envia esse e-mail. Você mesmo o envia pelo seu próprio app de e-mail e pode apagá-lo ou alterá-lo antes de enviar.",
      "As informações que o AdMob pode coletar ao exibir anúncios estão na seção 9."
     ],
     "bullets": [
-     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, Contar só dias úteis, O que fazer com o que sobra, a unidade do valor diário, o dia a partir do qual a transferência é contada e o dinheiro transferido para esse período, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário",
-     "4 últimos dígitos do cartão (se informados): usados para deixar de fora as mensagens de outros cartões",
+     "Ajustes do orçamento (tipo, moeda e valor do orçamento, dia de início do período, a regra do período de cálculo e o dia em que ela mudou pela última vez, Contar só dias úteis, O que fazer com o que sobra, a unidade do valor diário, o dia a partir do qual a transferência é contada e o dinheiro transferido para esse período, se os pagamentos passam acima do orçamento, como chegam os avisos de pagamento, dias retirados no calendário): usados para calcular o dinheiro restante e o valor diário, guardados separadamente para cada orçamento se você usar vários",
+     "4 últimos dígitos do cartão (se informados, por orçamento): usados para registrar uma mensagem de pagamento no orçamento certo e deixar de fora as mensagens de outros cartões",
      "Transações (data, valor, estabelecimento ou nota, hora em que entraram no app, como foram registradas): usadas para calcular o dinheiro restante e para a lista de transações",
      "O texto original das mensagens de pagamento registradas: guardado como está no arquivo salvo e usado para que a mesma mensagem não seja registrada duas vezes. Pode incluir parte do nome de quem aprovou o pagamento (por exemplo, H*D), o estabelecimento, os 4 últimos dígitos do cartão, o valor e a hora",
-     "O último saldo visto e quando, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela",
+     "A lista de orçamentos (se você adicionou orçamentos com o DailyLeft Pro: nomes dos orçamentos e um identificador interno que o app atribui): usada para distinguir os orçamentos e mostrar os nomes",
+     "O último saldo visto e quando (por orçamento), o último orçamento visto, quando foi mostrado pela última vez um aviso de registro em outro orçamento, uma marca de primeira abertura, o dia em que uma comemoração foi mostrada e se o calendário está expandido: usados para desenhar a tela",
      "Quando a automação de Atalhos rodou pela última vez e se o texto da mensagem que ela passou estava vazio: usados para mostrar nos Ajustes, em Shortcuts Automation, se a automação está funcionando",
-     "Se você comprou Remove Ads (remover anúncios): usado para esconder o banner e pular a verificação do consentimento de anúncios, o pedido de rastreamento e o início do SDK de anúncios"
+     "Se você tem o DailyLeft Pro (incluindo uma compra anterior de Remove Ads) e se deve aparecer uma vez o aviso de que uma compra anterior agora conta como Pro: usado para liberar os recursos do Pro, esconder o banner e pular a verificação do consentimento de anúncios, o pedido de rastreamento e o início do SDK de anúncios",
+     "Se os alertas de saldo estão ativados (Balance under 10%, Over today's amount): usado para decidir se um alerta é enviado depois que um pagamento é registrado",
+     "Estado do backup no iCloud (um valor aleatório que o app cria para distinguir esta instalação, se ela está ligada ao backup, quando restaurou do backup pela última vez): usado para não sobrescrever nem apagar um backup que outro aparelho enviou"
     ]
    },
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "Os registros no seu aparelho ficam até você excluí-los ou excluir o app. Para excluir uma transação, deslize-a na lista. Se não houver no aparelho outro app do desenvolvedor que use o mesmo App Group, excluir o app remove junto os registros e os ajustes.",
+     "Os registros no seu aparelho ficam até você excluí-los ou excluir o app. Para excluir uma transação, deslize-a na lista. Se não houver no aparelho outro app do desenvolvedor que use o mesmo App Group, excluir o app remove junto os registros e os ajustes. Um orçamento adicionado com o DailyLeft Pro leva os registros dele junto quando você o exclui.",
      "O backup no iCloud continua no seu iCloud mesmo depois que você exclui o app e é usado quando você o instala de novo.",
      "Um e-mail de reporte de mensagem é excluído sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
@@ -297,7 +329,7 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento de Remove Ads (remover anúncios) e a restauração dele pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple.",
+     "O desenvolvedor não terceiriza o tratamento de informações pessoais. A Apple processa o pagamento do DailyLeft Pro e a restauração dele pela App Store, e os dados de pagamento seguem a política de privacidade da Apple. O desenvolvedor não recebe a sua forma de pagamento nem os dados da Conta Apple.",
      "Um e-mail de reporte de mensagem passa pelo seu serviço de e-mail até a caixa de correio do desenvolvedor no Naver (kvndh36@naver.com)."
     ],
     "bullets": []
@@ -305,8 +337,8 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app.",
-        "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. Se você desativar iCloud Backup (Backup do iCloud) nos Ajustes do app e salvar, o app apaga o backup no iCloud e para de enviá-lo. Se ativar de novo, ele envia os registros daquele momento.",
+     "Os registros no seu aparelho são removidos quando você os exclui da lista de transações ou exclui o app. A partir do segundo orçamento, Delete Budget (Excluir orçamento) apaga o arquivo de registros desse orçamento.",
+     "O backup no iCloud continua no seu próprio iCloud mesmo depois que você exclui o app, e ao instalar o app de novo com a mesma Conta Apple os registros voltam. Se você desativar iCloud Backup (Backup do iCloud) nos Ajustes do app e salvar, o app apaga o backup no iCloud e para de enviá-lo. Se ativar de novo, ele envia os registros daquele momento.",
      "Um e-mail de reporte de mensagem é excluído da caixa de correio sem demora depois que o desenvolvedor decide se acrescenta ou não esse formato de mensagem ao app, e no máximo 1 ano depois de recebido."
     ],
     "bullets": []
@@ -316,7 +348,7 @@
     "paragraphs": [
      "Se você enviou um e-mail de reporte de mensagem, pode pedir para ver ou excluir esse e-mail no endereço abaixo. Em caso de dúvida, escreva para o mesmo endereço.",
      "Você mesmo pode conferir e excluir no app os registros do seu aparelho.",
-        "O backup no iCloud fica na sua própria Conta Apple, por isso o desenvolvedor não pode vê-lo nem excluí-lo.",
+     "O backup no iCloud fica na sua própria Conta Apple, por isso o desenvolvedor não pode vê-lo nem excluí-lo.",
      "Você pode pedir ao Google acesso às informações coletadas pelo AdMob, ou a exclusão delas (policies.google.com/privacy). Para recusar o uso do identificador de publicidade, siga a seção 9."
     ],
     "bullets": []
@@ -324,9 +356,9 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Os registros e os ajustes do app ficam em um arquivo (ledger.json) no armazenamento que o app e o widget dele compartilham no seu aparelho (um App Group). O widget só lê esse arquivo e não usa o SDK de anúncios. Os valores usados para desenhar a tela e se você comprou Remove Ads ficam no UserDefaults do app. O desenvolvedor não mantém nenhum servidor. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, o app compacta o conteúdo desse arquivo e faz backup dele no armazenamento de chave-valor do seu próprio iCloud. Não é uma sincronização entre aparelhos, e o app só restaura desse backup quando a configuração não foi concluída no aparelho e não há transações. Esse arquivo também pode entrar nos backups do aparelho no iCloud ou do Mac que você ativar.",
+     "Os registros e os ajustes do primeiro orçamento ficam em um arquivo (ledger.json) no armazenamento que o app e os widgets dele compartilham no seu aparelho (um App Group). Se você adicionar orçamentos com o DailyLeft Pro, aparecem no mesmo lugar uma lista de orçamentos (cards.json) e um arquivo por orçamento. Os widgets só leem esses arquivos e não usam o SDK de anúncios. Os valores usados para desenhar a tela ficam no UserDefaults do app, e se você tem o DailyLeft Pro e se os alertas de saldo estão ativados ficam nos ajustes do mesmo App Group (o estado da compra também tem uma cópia no UserDefaults do app). O desenvolvedor não mantém nenhum servidor. Se você estiver conectado ao iCloud e o iCloud Backup (Backup do iCloud) estiver ativado nos Ajustes, o app compacta todos esses registros e faz backup deles no armazenamento de chave-valor do seu próprio iCloud. Com dois ou mais orçamentos, os registros a partir do segundo orçamento e a lista de orçamentos vão para uma entrada de backup separada, e se as duas entradas juntas passarem do limite do iCloud, essa entrada não é enviada e os Ajustes avisam. Não é uma sincronização entre aparelhos, e o app só restaura do backup quando a configuração não foi concluída no aparelho e não há transações. Esses arquivos também podem entrar nos backups do aparelho no iCloud ou do Mac que você ativar.",
      "O app não envia e-mail por conta própria. Tocar em Report Message (Reportar mensagem) só preenche o destinatário, o assunto e o corpo de um rascunho de e-mail, e quem toca em enviar ou cancelar é você. Se não houver conta de e-mail configurada, ele abre um app de e-mail que você escolher com o mesmo conteúdo.",
-     "A única permissão que o app pede é a de rastreamento (ATT). Ele não pede fotos, localização, notificações, câmera nem contatos. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem, esta página da política de privacidade e o link do iCloud para o atalho de Get Shortcut (Obter atalho), e só quando você toca neles.",
+     "O app pede duas permissões: a de rastreamento (ATT) e a de notificações quando você ativa Balance Alerts (Alertas de saldo) no DailyLeft Pro. Ele não pede fotos, localização, câmera nem contatos. Os alertas de saldo são criados neste iPhone logo depois que um pagamento é registrado e não usam um servidor do desenvolvedor nem um serviço de push. Um alerta inclui valores e o saldo, e também o nome do orçamento se você usar vários, e aparecer ou não na Tela Bloqueada depende dos seus ajustes de notificações do iOS. O app só recebe o texto da área de transferência quando você cola. Além dos anúncios, os únicos endereços externos que o app abre são o e-mail de reporte de mensagem, esta página da política de privacidade e o link do iCloud para o atalho de Get Shortcut (Obter atalho), e só quando você toca neles.",
      "O que o app passa ao SDK de anúncios é a solicitação de anúncio e o tamanho do banner. Ele não passa orçamentos, transações, mensagens nem números de cartão."
     ],
     "bullets": []
@@ -337,7 +369,7 @@
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento de anúncios e quando carregam e exibem anúncios. A lista abaixo é o que os manifestos de privacidade dos dois SDKs declaram.",
      "O app verifica as informações de consentimento de anúncios depois que você toca em Start (Começar) na tela da primeira abertura. Se você já começou, ele verifica quando o app abre. Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se os anúncios puderem ser solicitados e você ainda não tiver respondido, o iOS mostra o aviso de transparência de rastreamento (ATT). Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Essa escolha pode ser alterada em Ajustes > Privacidade e Segurança > Rastreamento.",
      "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em Privacy Choices (Opções de privacidade), em Ajustes.",
-     "Depois da compra de Remove Ads (remover anúncios), o app verifica a compra ao abrir e deixa de fazer a verificação do consentimento, o pedido de rastreamento e o início do SDK, e os anúncios não são solicitados. Se você comprar com o app aberto, o banner some na hora, mas o SDK que já tiver iniciado continua ativo até você fechar o app."
+     "Depois da compra do DailyLeft Pro (ou se você comprou Remove Ads antes), o app verifica a compra ao abrir e deixa de fazer a verificação do consentimento, o pedido de rastreamento e o início do SDK, e os anúncios não são solicitados. Se você comprar com o app aberto, o banner some na hora, mas o SDK que já tiver iniciado continua ativo até você fechar o app."
     ],
     "bullets": [
      "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",
@@ -382,7 +414,8 @@
    {
     "title": "Mudanças nesta política",
     "paragraphs": [
-     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência."
+     "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-11-18: Para o DailyLeft Pro na versão 1.1.0, a lista de orçamentos e os arquivos de registros de cada orçamento, a regra do período de cálculo, os ajustes dos alertas de saldo e a permissão de notificações, e valores de estado do backup no iCloud foram acrescentados às seções sobre as informações tratadas, o período de retenção, a exclusão e as medidas de segurança, e o produto Remove Ads passou a se chamar DailyLeft Pro. A data de vigência anterior era 2026-11-12."
     ],
     "bullets": []
    }

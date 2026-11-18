@@ -96,12 +96,24 @@
    }
   }
  ],
+ "pro": {
+  "kick": "DailyLeft Pro",
+  "title": "Getrennte Budgets,\neigene Zeiträume und Hinweise",
+  "items": [
+   "Mehrere Budgets (bis zu 4) und ein Budgets-Widget",
+   "Zeiträume wöchentlich, alle 2 Wochen, zum Monatsletzten oder nach gewählten Daten",
+   "Ein Rückblick auf jeden vergangenen Zeitraum",
+   "Hinweise über dem Tagesbetrag oder unter 10 %",
+   "Bannerwerbung auf dem Hauptbildschirm aus",
+   "Wer früher Remove Ads gekauft hat, hat DailyLeft Pro schon"
+  ]
+ },
  "faq": [
   {
    "q": "Erste Schritte",
    "a": [
     "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf Start. Konto und Anmeldung gibt es nicht.",
-    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlich übrigen Betrag in das Feld Money Left This Month (Jetzt noch übrig) ein. Bleibt es leer, zählt das ganze Budget. Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest und die letzten 4 Kartenziffern finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
+    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlichen Saldo in das Feld Money Left This Month (Jetziger Saldo diesen Monat, bei einem anderen Starttag als dem 1. Money Left This Period) ein. Bleibt es leer, zählt das ganze Budget. Ist die Region Ihres iPhone Südkorea, tragen Sie die letzten 4 Kartenziffern unter Payment Notices (Zahlungshinweise) ein. Starttag des Zeitraums, Nur Werktage zählen und Umgang mit dem Rest finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
    ]
   },
   {
@@ -119,10 +131,10 @@
    ]
   },
   {
-   "q": "Tagesbudgets und der Starttag des Zeitraums",
+   "q": "Tagesbudgets und der Berechnungszeitraum",
    "a": [
     "Um nach Tagen zu planen, stellen Sie die Budgetart in den Einstellungen auf Daily Budget (Tagesbudget). An jedem gezählten Tag kommt ein neuer Anteil hinzu, und Tage, die nicht zählen, haben keinen Anteil.",
-    "Beginnt Ihr Budget nicht am 1., wählen Sie in den Einstellungen unter Period Start Day (Starttag des Zeitraums) einen Tag vom 1. bis zum 28."
+    "Beginnt Ihr Budget nicht am 1., öffnen Sie in den Einstellungen Calculation Period (Berechnungszeitraum) und wählen unter Monthly (Monatlich) einen Starttag vom 1. bis zum 28. Mit DailyLeft Pro wählen Sie außerdem den 29., den 30., Last Day (Monatsletzter), Move Earlier on Weekends and Holidays (An Wochenenden und Feiertagen vorziehen), Weekly (Wöchentlich), Every 2 Weeks (Alle 2 Wochen) und Pick Dates (Daten wählen, eine Länge von 2 bis 92 Tagen, die sich wiederholt). Ändern Sie den Berechnungszeitraum, werden auch frühere Einträge in die neuen Zeiträume aufgeteilt, und Zeiträume von vor der Änderung zeigen nur, was Sie ausgegeben haben. Ändert sich die Art des Zeitraums, tragen Sie den Betrag neu ein, und übertragenes Geld wird ab diesem Tag wieder von 0 gezählt."
    ]
   },
   {
@@ -181,7 +193,8 @@
    "q": "Widgets",
    "a": [
     "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 3 letzten Transaktionen.",
-    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie Not set up (Nicht eingerichtet) oder ein Fragezeichen."
+    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie Not set up (Nicht eingerichtet) oder ein Fragezeichen.",
+    "Mit DailyLeft Pro und zwei oder mehr Budgets zeigt das Widget Budgets auf einen Blick, was in jedem Budget übrig ist. Es gibt es in klein, mittel und groß für den Home-Bildschirm und in den drei Formen für den Sperrbildschirm, und beim Bearbeiten des Widgets wählen Sie Budgets to Show (Angezeigte Budgets). In mittel und groß öffnet ein Tippen auf ein Budget die App mit diesem Budget. Das ursprüngliche Widget zeigt immer das erste Budget."
    ]
   },
   {
@@ -191,10 +204,26 @@
    ]
   },
   {
-   "q": "Werbung entfernen und Kauf wiederherstellen",
+   "q": "DailyLeft Pro und Kauf wiederherstellen",
    "a": [
-    "Wenn Sie Remove Ads (Werbung entfernen) in den Einstellungen direkt unter Budget and Period (Budget und Zeitraum) einmal kaufen, verschwindet das Werbebanner auf dem Hauptbildschirm. Auch das Einwilligungsformular und die Tracking-Abfrage erscheinen danach nicht mehr.",
-    "Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen auf Restore Purchases (Käufe wiederherstellen). Mit demselben Apple Account zahlen Sie nicht noch einmal."
+    "Tippen Sie ganz oben in den Einstellungen auf DailyLeft Pro. Dort sehen Sie, was Pro enthält, und den Preis, und kaufen mit Buy Pro (Pro kaufen). Derselbe Bildschirm öffnet sich, wenn Sie auf eine Pro-Stelle tippen, etwa Add Budget (Budget hinzufügen), eine Pro-Option unter Calculation Period, Period Wrap-up (Zeitraum-Rückblick) bei einem vergangenen Zeitraum oder einen Schalter unter Balance Alerts (Saldo-Hinweise). Nach dem Kauf verschwindet das Werbebanner auf dem Hauptbildschirm, und auch das Einwilligungsformular und die Tracking-Abfrage erscheinen nicht mehr.",
+    "Haben Sie früher Remove Ads (Werbung entfernen) gekauft, ist DailyLeft Pro nach dem Update schon eingeschaltet. Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen unter Info auf Restore Purchases (Käufe wiederherstellen). Mit demselben Apple Account zahlen Sie nicht noch einmal.",
+    "Endet Pro durch eine Rückerstattung oder das Ende der Familienfreigabe, bleiben die angelegten Budgets, der gewählte Berechnungszeitraum und Ihre Einträge erhalten und werden weiter gezählt. Nur Budgets hinzufügen, eine andere Pro-Zeitraumart wählen, der Zeitraum-Rückblick und die Saldo-Hinweise gehen dann nicht mehr."
+   ]
+  },
+  {
+   "q": "Mehrere Budgets (Pro)",
+   "a": [
+    "Mit DailyLeft Pro können Sie bis zu 4 Budgets führen, jedes mit eigenem Betrag, Berechnungszeitraum und Umgang mit dem Rest. Sie fügen eines mit Add Budget (Budget hinzufügen) in den Einstellungen hinzu und benennen beim ersten Mal auch das Budget, das Sie bisher genutzt haben. Mit zwei oder mehr Budgets wechseln Sie in der Zeile oben auf dem Hauptbildschirm. Eine Gesamtsumme über alle Budgets gibt es nicht.",
+    "Ist die Region Ihres iPhone Südkorea, landet eine Zahlungsnachricht im Budget, dessen letzte 4 Kartenziffern passen, und wenn keines passt, im Budget mit leeren letzten 4 Ziffern. Nur ein Budget kann sie leer haben, und dieselben letzten 4 Ziffern können nicht in zwei Budgets stehen. Legen Sie pro Kartennummer eine Automation an. Get Shortcut (Kurzbefehl laden) brauchen Sie nur einmal. Hat ein Budget keine letzten 4 Ziffern, oder unter iOS 27, nimmt eine Automation mit 승인 die Nachrichten für alle Budgets an. In beiden Fällen wählt die App für jede Nachricht das passende Budget, und die Schritte stehen in den Einstellungen unter Shortcuts Automation.",
+    "Ab dem zweiten Budget löschen Sie ein Budget mit Delete Budget (Budget löschen) auf seinem Bildschirm. Alle seine Einträge werden mitgelöscht und lassen sich nicht zurückholen. Das erste Budget lässt sich nicht löschen."
+   ]
+  },
+  {
+   "q": "Zeitraum-Rückblicke und Saldo-Hinweise (Pro)",
+   "a": [
+    "Mit DailyLeft Pro zeigt ein vergangener Zeitraum unter der großen Zahl einen Period Wrap-up (Zeitraum-Rückblick): Ausgaben und Zahl der Zahlungen, Tagesdurchschnitt, den Tag mit den höchsten Ausgaben, den Ort mit den höchsten Ausgaben, den übertragenen oder übrig gebliebenen Betrag oder die Budgetüberschreitung und den Unterschied zum vorigen Zeitraum. Für einen Zeitraum ohne Zahlungen erscheint er nicht.",
+    "Schalten Sie in den Einstellungen unter Balance Alerts (Saldo-Hinweise) Balance under 10% (Saldo unter 10 %) und Over today's amount (Heutiger Betrag überschritten) ein. Beim ersten Mal fragt iOS, ob Mitteilungen erlaubt sind. Sie bekommen einen Hinweis, wenn eine erfasste Zahlung die Grenze überschreitet, und ein Tagesbudget bekommt nur Over today's amount. Haben Sie Mitteilungen nicht erlaubt, schalten Sie die Mitteilungen von DailyLeft in der iOS-App Einstellungen ein."
    ]
   },
   {
@@ -213,7 +242,7 @@
   {
    "q": "Internetverbindung",
    "a": [
-    "Budgetberechnung, Erfassen und Widgets laufen offline. Werbung, der Kauf von Remove Ads, das Wiederherstellen von Käufen, das iCloud-Backup, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
+    "Budgetberechnung, Erfassen, Widgets und Saldo-Hinweise laufen offline. Werbung, der Kauf von DailyLeft Pro, das Wiederherstellen von Käufen, das iCloud-Backup, das Senden einer Melde-E-Mail und das Öffnen der Datenschutzerklärung brauchen eine Verbindung."
    ]
   },
   {
@@ -237,8 +266,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
-  "effectiveDate": "2026-11-12",
-  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von Remove Ads wickelt Apple ab.",
+  "effectiveDate": "2026-11-18",
+  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von DailyLeft Pro wickelt Apple ab. Saldo-Hinweise sind Mitteilungen, die dieses iPhone erstellt und anzeigt, und der Entwickler erhält ihren Inhalt nicht.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -255,25 +284,28 @@
    {
     "title": "Verarbeitete Daten",
     "paragraphs": [
-     "Die Daten, die die App auf Ihrem Gerät speichert, stehen am Ende dieses Abschnitts. Davon gehen die Budgeteinstellungen, die letzten 4 Kartenziffern, die Transaktionen und der Originaltext der Zahlungsnachrichten auch in die iCloud-Sicherung (Abschnitt 8). Der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort oder Fotos.",
+     "Die Daten, die die App auf Ihrem Gerät speichert, stehen am Ende dieses Abschnitts. Davon gehen die Budgeteinstellungen, die letzten 4 Kartenziffern, die Transaktionen, der Originaltext der Zahlungsnachrichten und die Budgetliste auch in die iCloud-Sicherung (Abschnitt 8). Der Entwickler erhält sie nicht. Die App erhält weder Kontakte noch Standort oder Fotos.",
      "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den eine von Ihnen erstellte Kurzbefehl-Automation übergibt, oder Text, den Sie einfügen. Welche Nachrichten übergeben werden, legen Sie in der App Kurzbefehle fest. Text, der gelesen, aber nicht erfasst wird, wird nicht gespeichert. Diese Nachrichtenfunktionen gibt es nur für die Region Südkorea.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler Ihre E-Mail-Adresse, den Originaltext der Nachricht, den Sie senden wollten (er kann einen Teil des Namens der zahlenden Person, den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten), den Grund, warum er nicht gelesen werden konnte, die Versionen von App und iOS sowie Informationen, die Ihre Mail-App hinzufügt (etwa Ihren Absendernamen, je nach den Einstellungen Ihres Mail-Accounts). Diese E-Mail sendet nicht die App. Sie senden sie selbst aus Ihrer eigenen Mail-App und können sie vor dem Senden löschen oder ändern.",
      "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, Nur Werktage zählen, Umgang mit dem Rest, Einheit des Tagesbetrags, der Tag, ab dem der Übertrag gezählt wird, und der in diesen Zeitraum übertragene Betrag, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen",
-     "Letzte 4 Kartenziffern (falls eingetragen): um Nachrichten anderer Karten auszusortieren",
+     "Budgeteinstellungen (Budgetart, Währung und Betrag, Starttag des Zeitraums, die Regel des Berechnungszeitraums und der Tag ihrer letzten Änderung, Nur Werktage zählen, Umgang mit dem Rest, Einheit des Tagesbetrags, der Tag, ab dem der Übertrag gezählt wird, und der in diesen Zeitraum übertragene Betrag, ob Zahlungen auch über das Budget hinaus durchgehen, wie Zahlungshinweise ankommen, im Kalender ausgelassene Tage): um das übrige Geld und den Tagesbetrag zu berechnen, bei mehreren Budgets für jedes Budget getrennt gespeichert",
+     "Letzte 4 Kartenziffern (falls eingetragen, pro Budget): um eine Zahlungsnachricht dem passenden Budget zuzuordnen und Nachrichten anderer Karten auszusortieren",
      "Transaktionen (Datum, Betrag, Händler oder Notiz, Zeitpunkt der Aufnahme in die App, Art der Erfassung): um das übrige Geld zu berechnen und für die Transaktionsliste",
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
-     "Der zuletzt gesehene Saldo und sein Zeitpunkt, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige",
+     "Die Budgetliste (wenn Sie mit DailyLeft Pro Budgets hinzugefügt haben: Namen der Budgets und eine interne Kennung, die die App vergibt): um Budgets zu unterscheiden und ihre Namen anzuzeigen",
+     "Der zuletzt gesehene Saldo und sein Zeitpunkt (pro Budget), das zuletzt angesehene Budget, wann zuletzt ein Hinweis auf einen Eintrag in einem anderen Budget erschien, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige",
      "Wann die Kurzbefehl-Automation zuletzt lief und ob der übergebene Nachrichtentext dabei leer war: um in den Einstellungen unter Shortcuts Automation anzuzeigen, ob die Automation läuft",
-     "Ob Sie Remove Ads (Werbung entfernen) gekauft haben: um das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen"
+     "Ob Sie DailyLeft Pro haben (einschließlich eines früheren Kaufs von Remove Ads) und ob ein einmaliger Hinweis erscheinen soll, dass ein früherer Kauf jetzt als Pro gilt: um Pro-Funktionen freizugeben, das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen",
+     "Ob Saldo-Hinweise eingeschaltet sind (Balance under 10%, Over today's amount): um nach dem Erfassen einer Zahlung zu entscheiden, ob ein Hinweis gesendet wird",
+     "Status der iCloud-Sicherung (ein Zufallswert, den die App erzeugt, um diese Installation zu unterscheiden, ob sie mit der Sicherung verbunden ist, wann zuletzt aus der Sicherung wiederhergestellt wurde): damit die App keine Sicherung überschreibt oder löscht, die ein anderes Gerät hochgeladen hat"
     ]
    },
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Einträge auf Ihrem Gerät bleiben, bis Sie sie oder die App löschen. Eine Transaktion löschen Sie durch Wischen in der Liste. Ist keine andere App des Entwicklers mit derselben App Group auf dem Gerät, werden Einträge und Einstellungen mit der App gelöscht.",
+     "Einträge auf Ihrem Gerät bleiben, bis Sie sie oder die App löschen. Eine Transaktion löschen Sie durch Wischen in der Liste. Ist keine andere App des Entwicklers mit derselben App Group auf dem Gerät, werden Einträge und Einstellungen mit der App gelöscht. Ein mit DailyLeft Pro hinzugefügtes Budget nimmt beim Löschen seine Einträge mit.",
      "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer iCloud und wird bei einer Neuinstallation verwendet.",
      "Eine Melde-E-Mail wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
@@ -297,7 +329,7 @@
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für Remove Ads (Werbung entfernen) und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple Account.",
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für DailyLeft Pro und das Wiederherstellen des Kaufs über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple Account.",
      "Eine Melde-E-Mail gelangt über Ihren Mail-Dienst in das Naver-Postfach des Entwicklers (kvndh36@naver.com)."
     ],
     "bullets": []
@@ -305,8 +337,8 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen.",
-        "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Wenn Sie in den Einstellungen der App iCloud Backup (iCloud-Sicherung) ausschalten und speichern, löscht die App die Sicherung in iCloud und lädt nichts mehr hoch. Wenn Sie es wieder einschalten, lädt sie die Einträge hoch, die zu diesem Zeitpunkt vorhanden sind.",
+     "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen. Ab dem zweiten Budget löscht Delete Budget (Budget löschen) die Eintragsdatei dieses Budgets.",
+     "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Wenn Sie in den Einstellungen der App iCloud Backup (iCloud-Sicherung) ausschalten und speichern, löscht die App die Sicherung in iCloud und lädt nichts mehr hoch. Wenn Sie es wieder einschalten, lädt sie die Einträge hoch, die zu diesem Zeitpunkt vorhanden sind.",
      "Eine Melde-E-Mail wird unverzüglich aus dem Postfach gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang."
     ],
     "bullets": []
@@ -316,7 +348,7 @@
     "paragraphs": [
      "Wenn Sie eine Melde-E-Mail gesendet haben, können Sie unter der unten genannten Adresse verlangen, diese E-Mail einzusehen oder zu löschen. Auch bei Fragen schreiben Sie an diese Adresse.",
      "Die Einträge auf Ihrem Gerät prüfen und löschen Sie selbst in der App.",
-        "Die iCloud-Sicherung liegt in Ihrem eigenen Apple Account. Der Entwickler kann sie weder einsehen noch löschen.",
+     "Die iCloud-Sicherung liegt in Ihrem eigenen Apple Account. Der Entwickler kann sie weder einsehen noch löschen.",
      "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9."
     ],
     "bullets": []
@@ -324,9 +356,9 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die Einträge und Einstellungen der App liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widget auf Ihrem Gerät teilen (einer App Group). Das Widget liest diese Datei nur und nutzt das Werbe-SDK nicht. Werte für die Bildschirmanzeige und ob Sie Remove Ads gekauft haben, liegen in den UserDefaults der App. Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, komprimiert die App den Inhalt dieser Datei und sichert ihn im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus dieser Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Datei kann außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Die Einträge und Einstellungen des ersten Budgets liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widgets auf Ihrem Gerät teilen (einer App Group). Fügen Sie mit DailyLeft Pro Budgets hinzu, entstehen am selben Ort eine Budgetliste (cards.json) und eine Datei pro Budget. Die Widgets lesen diese Dateien nur und nutzen das Werbe-SDK nicht. Werte für die Bildschirmanzeige liegen in den UserDefaults der App, und ob Sie DailyLeft Pro haben und ob Saldo-Hinweise eingeschaltet sind, liegt in den Einstellungen derselben App Group (der Kaufstatus hat außerdem eine Kopie in den UserDefaults der App). Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, komprimiert die App alle diese Einträge und sichert sie im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Bei zwei oder mehr Budgets kommen die Einträge ab dem zweiten Budget und die Budgetliste in einen eigenen Sicherungseintrag. Würden beide Einträge zusammen die iCloud-Grenze überschreiten, wird dieser Eintrag nicht hochgeladen, und die Einstellungen weisen darauf hin. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus der Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Dateien können außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
      "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
-     "Die einzige Berechtigung, nach der die App fragt, ist Tracking (ATT). Nach Fotos, Standort, Mitteilungen, Kamera oder Kontakten fragt sie nicht. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail, diese Seite mit der Datenschutzerklärung und den iCloud-Link zum Kurzbefehl hinter Get Shortcut (Kurzbefehl laden), und zwar nur, wenn Sie darauf tippen.",
+     "Die App fragt nach zwei Berechtigungen: Tracking (ATT) und Mitteilungen, wenn Sie in DailyLeft Pro Balance Alerts (Saldo-Hinweise) einschalten. Nach Fotos, Standort, Kamera oder Kontakten fragt sie nicht. Saldo-Hinweise entstehen auf diesem iPhone direkt nach dem Erfassen einer Zahlung und nutzen weder einen Server des Entwicklers noch einen Push-Dienst. Ein Hinweis enthält Beträge und den Saldo, bei mehreren Budgets auch den Namen des Budgets, und ob er auf dem Sperrbildschirm erscheint, richtet sich nach Ihren iOS-Mitteilungseinstellungen. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail, diese Seite mit der Datenschutzerklärung und den iCloud-Link zum Kurzbefehl hinter Get Shortcut (Kurzbefehl laden), und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
     ],
     "bullets": []
@@ -337,7 +369,7 @@
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können. Die Liste unten gibt wieder, was in den Datenschutzmanifesten der beiden SDKs steht.",
      "Die App prüft die Angaben zur Einwilligung in Werbung, nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben. Haben Sie schon begonnen, prüft sie beim Öffnen der App. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
      "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Privacy Choices (Datenschutzoptionen) in den Einstellungen.",
-     "Nach dem Kauf von Remove Ads (Werbung entfernen) prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK. Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden."
+     "Nach dem Kauf von DailyLeft Pro (oder wenn Sie früher Remove Ads gekauft haben) prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK. Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden."
     ],
     "bullets": [
      "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
@@ -382,7 +414,8 @@
    {
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
-     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens."
+     "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
+     "2026-11-18: Für DailyLeft Pro in Version 1.1.0 wurden die Budgetliste und die Eintragsdateien pro Budget, die Regel des Berechnungszeitraums, die Einstellungen der Saldo-Hinweise und die Mitteilungsberechtigung sowie Statuswerte der iCloud-Sicherung in die Abschnitte zu verarbeiteten Daten, Speicherdauer, Löschung und Sicherheitsmaßnahmen aufgenommen, und das Produkt Remove Ads heißt jetzt DailyLeft Pro. Das vorige Datum des Inkrafttretens war der 2026-11-12."
     ],
     "bullets": []
    }
