@@ -133,7 +133,7 @@
   {
    "q": "Tempo de exercício acumulado",
    "a": [
-    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. Clear lifetime total (Limpar total acumulado), no fim de Ajustes, volta o total para 0."
+    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. A tela final mostra Lifetime work time (tempo de exercício acumulado) em horas e minutos e, ao lado, o tempo que este treino somou, por exemplo +2 min 40 sec. Clear lifetime total (Limpar total acumulado), no fim de Ajustes, volta o total para 0."
    ]
   },
   {

@@ -133,7 +133,7 @@
   {
    "q": "Tiempo de trabajo acumulado",
    "a": [
-    "Solo se suma el tiempo de las fases de trabajo. El descanso no cuenta y no hay registros por fecha. Clear lifetime total (Borrar total acumulado), abajo del todo en Ajustes, lo devuelve a 0."
+    "Solo se suma el tiempo de las fases de trabajo. El descanso no cuenta y no hay registros por fecha. La pantalla final muestra Lifetime work time (tiempo de trabajo acumulado) en horas y minutos y, al lado, el tiempo que sumó este entrenamiento, por ejemplo +2 min 40 sec. Clear lifetime total (Borrar total acumulado), abajo del todo en Ajustes, lo devuelve a 0."
    ]
   },
   {

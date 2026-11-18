@@ -133,7 +133,7 @@
   {
    "q": "Gesamte Trainingszeit",
    "a": [
-    "Nur die Zeit in Trainingsphasen wird addiert. Pausen zählen nicht, und Aufzeichnungen nach Datum gibt es nicht. Clear lifetime total (Gesamtzeit löschen) ganz unten in den Einstellungen setzt sie auf 0 zurück."
+    "Nur die Zeit in Trainingsphasen wird addiert. Pausen zählen nicht, und Aufzeichnungen nach Datum gibt es nicht. Der Abschlussbildschirm zeigt Lifetime work time (gesamte Trainingszeit) in Stunden und Minuten, daneben die Zeit, die dieses Training hinzugefügt hat, etwa +2 min 40 sec. Clear lifetime total (Gesamtzeit löschen) ganz unten in den Einstellungen setzt sie auf 0 zurück."
    ]
   },
   {

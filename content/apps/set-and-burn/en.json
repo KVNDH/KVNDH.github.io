@@ -133,7 +133,7 @@
   {
    "q": "Lifetime work time",
    "a": [
-    "Only time in work segments is added. Rest is not counted, and there are no records by date. Clear lifetime total at the bottom of Settings sets it back to 0."
+    "Only time in work segments is added. Rest is not counted, and there are no records by date. The finish screen shows Lifetime work time in hours and minutes, with the time this workout added beside it, such as +2 min 40 sec. Clear lifetime total at the bottom of Settings sets it back to 0."
    ]
   },
   {
