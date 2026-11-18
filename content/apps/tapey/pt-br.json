@@ -15,13 +15,13 @@
    ],
    "bullets": [
     "Até 12 fotos, ou 30 com o Tapey Pro",
-    "Layouts Auto, Grade, Escada, Coração e Círculo",
+    "Layouts Auto, Grade, Escada, Coração, Círculo e Estrela",
     "Desfazer e refazer"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "A etapa Layout vista de perto. Abaixo das etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura há uma fileira com cinco opções de layout, a última com a marca Pro.",
+    "alt": "A etapa Layout vista de perto. Uma fileira com sete opções de layout (Auto, Grade, Escada, Coração, Guirlanda, Filme, Mosaico) fica acima da linha Círculo 8+, Estrela 10+, e bem embaixo estão as etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura.",
     "caption": "Tela do app, ampliada",
     "focus": "-720px"
    }
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Fita e molduras",
    "body": [
-    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. Na moldura Polaroid, cada foto pode levar a própria nota à mão. Selecione uma foto e toque em Fita para dar só a essa foto a própria fita e a própria moldura. As mudanças de fundo, fita e moldura também podem ser desfeitas."
+    "Escolha uma cor de fita e a fita gruda. Mude onde ela fica e o padrão dela, ou deixe as pontas rasgadas. No lugar da fita, uma tachinha na cor que você escolher também pode prender a foto. Na moldura Polaroid, cada foto pode levar a própria nota à mão, e Data da foto acrescenta o dia em que ela foi tirada. Selecione uma foto e toque em Fita para dar só a essa foto a própria fita e a própria moldura. As mudanças de fundo, fita e moldura também podem ser desfeitas."
    ],
    "bullets": [
-    "8 cores de fita, 4 padrões e 8 padrões Pro",
+    "8 cores de fita, 4 padrões e 12 padrões Pro",
     "Borda branca e moldura Polaroid",
     "P&B no fundo inteiro ou numa foto só",
     "Notas à mão em 31 idiomas"
@@ -44,7 +44,7 @@
     "items": [
      {
       "name": "Fita",
-      "desc": "Cor, posição, padrão, pontas rasgadas"
+      "desc": "Cor, posição, padrão, pontas rasgadas, tachinha"
      },
      {
       "name": "Moldura",
@@ -104,9 +104,9 @@
   "items": [
    "Salvar sem anúncios",
    "Até 30 fotos (versão grátis: até 12)",
-   "8 fitas premium: Florzinhas, Vichy, Aquarela, Quadriculado, Renda, Ouro diagonal, Datilografia, Estrelas",
-   "Molduras novas: Selo, Papel rasgado",
-   "Layouts novos: Varal, Estrela",
+   "12 fitas premium: Florzinhas, Vichy, Aquarela, Quadriculado, Renda, Ouro diagonal, Datilografia, Estrelas, Xadrez escocês, Pesponto, Bolinhas grandes, Folha de oliveira",
+   "Molduras novas: Selo e Carimbo, Papel rasgado",
+   "Layouts novos: Guirlanda e Luzes, Filme, Mosaico",
    "Veja a prévia de padrões, molduras e layouts Pro antes de comprar",
    "Se você já comprou Remover anúncios, já tem o Tapey Pro"
   ]
@@ -116,7 +116,7 @@
    "q": "Adicionar fotos",
    "a": [
     "Na tela inicial, toque em Adicionar fotos e escolha suas fotos. Também dá para arrastar fotos de outro app. Durante a edição, toque em Adicionar na etapa Fotos. Com Tirar Foto e Escolher Arquivo, no menu, você tira uma foto na hora ou escolhe uma imagem do app Arquivos. Ao trocar uma foto ou escolher Minha foto como fundo, você escolhe entre Fototeca, Tirar Foto e Escolher Arquivo.",
-    "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, um layout do Tapey Pro, 10 ou mais. Se passar do limite grátis, Ver Pro, no aviso, mostra o Tapey Pro.",
+    "Cada papel de parede comporta até 12 fotos, ou 30 com o Tapey Pro. O layout Coração aparece quando você tem 6 ou mais. Círculo pede 8 ou mais, e Estrela, 10 ou mais. Se passar do limite grátis, Ver Pro, no aviso, mostra o Tapey Pro.",
     "Ative Salvar também as fotos no app Fotos nos Ajustes do app, e as fotos que você tira no app também vão para o app Fotos. No início fica desativado, e ao ativar o iOS pergunta se o Tapey pode adicionar fotos."
    ]
   },
@@ -124,6 +124,7 @@
    "q": "Para onde vão os papéis de parede salvos",
    "a": [
     "Toque no botão de salvar, no canto superior direito do editor, ou em Salvar na última etapa. O papel de parede vai para o app Fotos como PNG, na resolução escolhida nos Ajustes. Na primeira vez, o iOS pergunta se o Tapey pode adicionar fotos.",
+    "Se você tocar em Salvar também para a Tela de Início na tela que aparece depois de salvar, o papel de parede que você acabou de salvar, sem as fotos, também vai para o app Fotos.",
     "Se o salvamento falhar, permita o acesso às fotos em Ajustes > Tapey. Abrir Ajustes, no aviso, leva você direto até lá."
    ]
   },
@@ -187,7 +188,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-10-20",
+  "effectiveDate": "2026-11-18",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -218,7 +219,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. O último papel de parede usado pelo atalho é substituído a cada salvamento, então só fica um. Recomeçar, no menu, não o apaga, e ele some quando você exclui o app. Os papéis de parede e as fotos tiradas que vão para o app Fotos são apagados pelo app Fotos.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. O último papel de parede usado pelo atalho é substituído a cada salvamento, então só fica um. Recomeçar, no menu, não o apaga, e ele some quando você exclui o app. Os papéis de parede, as imagens para a Tela de Início e as fotos tiradas que vão para o app Fotos são apagados pelo app Fotos.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -261,7 +262,7 @@
    {
     "title": "Medidas de segurança",
     "paragraphs": [
-     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos ou de arquivos do iOS, arrasta para o app ou tira com Tirar Foto. O iOS pede acesso à câmera na primeira vez que você toca em Tirar Foto. Se não permitir, você ainda pode adicionar fotos das outras formas. A foto que você tira fica como cópia no armazenamento do app, como as fotos que você escolhe, e é usada só no trabalho do papel de parede. Ela só vai também para o app Fotos se você ativar Salvar também as fotos no app Fotos nos Ajustes do app. Esse ajuste começa desativado, e ao ativá-lo o iOS pede a permissão de adicionar fotos. O desenvolvedor não recebe as fotos que você tira. O app não pede permissão para ler a sua fototeca. Para colocar no app Fotos um papel de parede pronto ou uma foto que você tira, o app usa somente a permissão de adicionar fotos."
+     "Chegam ao app apenas as fotos que você escolhe no seletor de fotos ou de arquivos do iOS, arrasta para o app ou tira com Tirar Foto. O iOS pede acesso à câmera na primeira vez que você toca em Tirar Foto. Se não permitir, você ainda pode adicionar fotos das outras formas. A foto que você tira fica como cópia no armazenamento do app, como as fotos que você escolhe, e é usada só no trabalho do papel de parede. Ela só vai também para o app Fotos se você ativar Salvar também as fotos no app Fotos nos Ajustes do app. Esse ajuste começa desativado, e ao ativá-lo o iOS pede a permissão de adicionar fotos. O desenvolvedor não recebe as fotos que você tira. O app não pede permissão para ler a sua fototeca. Para colocar no app Fotos um papel de parede pronto ou uma foto que você tira, o app usa somente a permissão de adicionar fotos. Ao tocar em Data da foto numa nota, o app lê no aparelho a data de captura guardada na foto escolhida e a escreve como texto da nota. Ele não usa outras informações da foto, como a localização, e o desenvolvedor não recebe essa data. Salvar também para a Tela de Início usa a mesma permissão de adicionar fotos para colocar no app Fotos mais um papel de parede, sem as fotos."
     ],
     "bullets": []
    },
@@ -317,6 +318,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-11-18: foi incluído em “Tratamento e período de retenção” e “Medidas de segurança” que Data da foto, da versão 2.2.0, lê no aparelho a data de captura da foto escolhida, e que Salvar também para a Tela de Início salva mais uma imagem. A data de vigência anterior era 2026-10-20.",
      "2026-10-20: o ajuste da versão 2.1.0 que também salva no app Fotos as fotos que você tira, a cópia do último papel de parede salvo usada pelo atalho e a fita, a moldura e a parte visível escolhidas para cada foto foram incluídos em “Informações tratadas”, “Tratamento e período de retenção” e “Medidas de segurança”. O momento em que um aparelho recém-instalado prepara os anúncios foi corrigido. A data de vigência anterior era 2026-10-19.",
      "2026-10-19: o número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",
      "2026-10-15: as fotos tiradas com Tirar Foto, as imagens escolhidas com Escolher Arquivo e o acesso à câmera foram incluídos em “Informações tratadas” e “Medidas de segurança”. O arquivo temporário para compartilhar agora é descrito como uma cópia do papel de parede salvo. A data de vigência anterior era 2026-10-06."

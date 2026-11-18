@@ -15,13 +15,13 @@
    ],
    "bullets": [
     "Up to 12 photos, or 30 with Tapey Pro",
-    "Auto, Grid, Stairs, Heart, and Circle layouts",
+    "Auto, Grid, Stairs, Heart, Circle, and Star layouts",
     "Undo and redo"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Close-up of the Layout step. Below the Photos, Clock, Layout, Background, Tape, and Frame steps is a row of five layout options, the last one marked Pro.",
+    "alt": "Close-up of the Layout step. A row of seven layout options (Auto, Grid, Stairs, Heart, Garland, Film, Mosaic) sits above a line reading Circle 8+, Star 10+, with the Photos, Clock, Layout, Background, Tape, and Frame steps at the bottom.",
     "caption": "App screen, zoomed in",
     "focus": "-720px"
    }
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Tape and frames",
    "body": [
-    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. In a Polaroid frame, every photo can carry its own handwritten note. Select a photo and tap Tape to give just that photo its own tape and frame. Changes to the background, tape, and frame can be undone too."
+    "Pick a tape color and the tape goes on. Change where it sits and its pattern, or give it torn ends. A pin can hold the photo instead of tape, in a color you choose. In a Polaroid frame, every photo can carry its own handwritten note, and Date taken adds the day the photo was taken. Select a photo and tap Tape to give just that photo its own tape and frame. Changes to the background, tape, and frame can be undone too."
    ],
    "bullets": [
-    "8 tape colors, 4 patterns, and 8 Pro patterns",
+    "8 tape colors, 4 patterns, and 12 Pro patterns",
     "White borders and Polaroid frames",
     "B&W for the whole wall or a single photo",
     "Handwritten notes in 31 languages"
@@ -44,7 +44,7 @@
     "items": [
      {
       "name": "Tape",
-      "desc": "Color, placement, pattern, torn ends"
+      "desc": "Color, placement, pattern, torn ends, pins"
      },
      {
       "name": "Frame",
@@ -104,9 +104,9 @@
   "items": [
    "Save without ads",
    "Up to 30 photos (free version: up to 12)",
-   "8 premium tapes: Tiny flowers, Gingham, Watercolor, Graph paper, Lace, Gold foil, Typewriter, Starry night",
-   "New frames: Stamp, Torn paper",
-   "New layouts: Clothesline, Star",
+   "12 premium tapes: Tiny flowers, Gingham, Watercolor, Graph paper, Lace, Gold foil, Typewriter, Starry night, Tartan, Stitch, Polka dot, Olive leaf",
+   "New frames: Stamp and Postmark, Torn paper",
+   "New layouts: Garland and Lights, Film, Mosaic",
    "Preview Pro patterns, frames, and layouts before you buy",
    "If you bought Remove ads earlier, you already have Tapey Pro"
   ]
@@ -116,7 +116,7 @@
    "q": "Adding photos",
    "a": [
     "On the start screen, tap Add photos, then choose your photos. You can also drag photos in from another app. While editing, tap Add in the Photos step. Take Photo and Choose File in the menu let you shoot a photo or pick an image from Files. When you replace a photo or pick My photo as the background, you choose Photo Library, Take Photo, or Choose File.",
-    "Each wallpaper holds up to 12 photos, or 30 with Tapey Pro. The Heart layout appears once you have 6 or more. Circle needs 8 or more, and Star, a Tapey Pro layout, needs 10 or more. If you go over the free limit, See Pro in the notice shows you Tapey Pro.",
+    "Each wallpaper holds up to 12 photos, or 30 with Tapey Pro. The Heart layout appears once you have 6 or more. Circle needs 8 or more, and Star needs 10 or more. If you go over the free limit, See Pro in the notice shows you Tapey Pro.",
     "Turn on Also save shots to Photos in Settings, and photos you take in the app go to the Photos app as well. It's off at first, and when you turn it on, iOS asks whether Tapey may add photos."
    ]
   },
@@ -124,6 +124,7 @@
    "q": "Where saved wallpapers go",
    "a": [
     "Tap the save button at the top right of the editor, or Save on the last step. The wallpaper goes to the Photos app as a PNG at the resolution chosen in Settings. The first time, iOS asks whether Tapey may add photos.",
+    "Tap Also save one for the Home Screen on the screen that appears after saving, and the wallpaper you just saved, without the photos, also goes to the Photos app.",
     "If saving fails, allow photo access in Settings > Tapey. Open Settings in the notice takes you straight there."
    ]
   },
@@ -187,7 +188,7 @@
  ],
  "privacy": {
   "title": "Tapey Privacy Policy",
-  "effectiveDate": "2026-10-20",
+  "effectiveDate": "2026-11-18",
   "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Tapey Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -218,7 +219,7 @@
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. The last wallpaper used by the shortcut is replaced each time you save, so only one is kept. Start over in the menu does not remove it, and it is deleted when you delete the app. Wallpapers and photos you take that are saved to the Photos app are deleted in the Photos app.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. The last wallpaper used by the shortcut is replaced each time you save, so only one is kept. Start over in the menu does not remove it, and it is deleted when you delete the app. Wallpapers, Home Screen images, and photos you take that are saved to the Photos app are deleted in the Photos app.",
      "Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -261,7 +262,7 @@
    {
     "title": "Security measures",
     "paragraphs": [
-     "Only photos you choose in the iOS photo picker or file picker, drag into the app, or take with Take Photo are passed to the app. iOS asks for camera access the first time you tap Take Photo. If you decline, you can still add photos the other ways. A photo you take is kept as a copy in the app's storage, like the photos you pick, and is used only for your wallpaper work. It also goes to the Photos app only if you turn on Also save shots to Photos in Settings. This setting is off at first, and iOS asks for the permission to add photos when you turn it on. The developer does not receive photos you take. The app does not ask for permission to read your photo library. When adding a finished wallpaper or a photo you take to the Photos app, the app uses only the permission to add photos."
+     "Only photos you choose in the iOS photo picker or file picker, drag into the app, or take with Take Photo are passed to the app. iOS asks for camera access the first time you tap Take Photo. If you decline, you can still add photos the other ways. A photo you take is kept as a copy in the app's storage, like the photos you pick, and is used only for your wallpaper work. It also goes to the Photos app only if you turn on Also save shots to Photos in Settings. This setting is off at first, and iOS asks for the permission to add photos when you turn it on. The developer does not receive photos you take. The app does not ask for permission to read your photo library. When adding a finished wallpaper or a photo you take to the Photos app, the app uses only the permission to add photos. When you tap Date taken in a note, the app reads the capture date stored in the chosen photo on the device and writes it as note text. It does not use other photo information such as location, and the developer does not receive this date. Also save one for the Home Screen uses the same permission to add photos to put one more wallpaper, without the photos, in the Photos app."
     ],
     "bullets": []
    },
@@ -317,6 +318,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show what changed and the new effective date.",
+     "2026-11-18: Added to Processing and retention period and Security measures that Date taken in 2.2.0 reads the capture date of a chosen photo on the device, and that Also save one for the Home Screen saves one more image. The previous effective date was 2026-10-20.",
      "2026-10-20: Added the setting that also saves photos you take to the Photos app, the one last saved wallpaper kept for the shortcut, and the tape, frame, and visible part set for each photo in 2.1.0 to Information processed, Processing and retention period, and Security measures. Corrected when ads are prepared on a newly installed device. The previous effective date was 2026-10-19.",
      "2026-10-19: Added the number of ads seen and a record of closing the Tapey Pro note, used in 2.0.2 for the Tapey Pro note on the screen after saving, to Information processed. The previous effective date was 2026-10-15.",
      "2026-10-15: Added photos taken with Take Photo, images chosen with Choose File, and camera access to Information processed and Security measures. Corrected the temporary file for sharing to a copy of the saved wallpaper. The previous effective date was 2026-10-06."
