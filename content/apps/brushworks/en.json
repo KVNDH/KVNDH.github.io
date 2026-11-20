@@ -94,7 +94,7 @@
    "layout": "card",
    "title": "Paint without signing up",
    "body": [
-    "Open the app, pick a photo and start painting. There is no account to create and nothing to sign in to."
+    "Open the app, pick a photo and start painting. There is no account to create and nothing to sign in to. On a blank canvas you can also start right away with one of three sample photos: a lighthouse, an orange tree or cosmos flowers."
    ],
    "bullets": [],
    "visual": {
@@ -160,9 +160,9 @@
    ]
   },
   {
-   "q": "Landscape and foldable iPhone",
+   "q": "iPad, landscape and foldable iPhone",
    "a": [
-    "Turn iPhone sideways and the brushes and controls move beside the canvas. The screen turns, but the painting stays upright at 3:4. On a foldable iPhone, when the screen has a system strip along one side, Photo, Undo, Redo, Save, Original photo, Replay, Underlay and Settings stand in that strip, and the controls around the canvas get smaller by that much. The canvas does not get smaller."
+    "BrushWorks also runs on iPad, upright or sideways. Resize the window and the painting still stays upright at 3:4. Turn iPhone sideways and the brushes and controls move beside the canvas. The screen turns, but the painting stays upright at 3:4. On a foldable iPhone, when the screen has a system strip along one side, Photo, Undo, Redo, Save, Original photo, Replay, Underlay and Settings stand in that strip, and the controls around the canvas get smaller by that much. The canvas does not get smaller."
    ]
   },
   {

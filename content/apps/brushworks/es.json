@@ -94,7 +94,7 @@
    "layout": "card",
    "title": "A pintar sin registrarse",
    "body": [
-    "Abre la app, elige una foto y empieza a pintar. No hay cuenta que crear ni sesión que iniciar."
+    "Abre la app, elige una foto y empieza a pintar. No hay cuenta que crear ni sesión que iniciar. Con el lienzo en blanco también puedes empezar enseguida con una de tres fotos de ejemplo: un faro, un naranjo o flores de cosmos."
    ],
    "bullets": [],
    "visual": {
@@ -160,9 +160,9 @@
    ]
   },
   {
-   "q": "En horizontal y en el iPhone plegable",
+   "q": "En el iPad, en horizontal y en el iPhone plegable",
    "a": [
-    "Con el iPhone en horizontal, los pinceles y los controles pasan al lado del lienzo. La pantalla gira, pero el cuadro sigue en vertical a 3:4. En un iPhone plegable, cuando la pantalla tiene una franja del sistema a un lado, Foto, Deshacer, Rehacer, Guardar, Foto original, Repetición, Foto de fondo y Ajustes se colocan en vertical en esa franja, y los controles alrededor del lienzo ocupan menos. El lienzo no se hace más pequeño."
+    "BrushWorks también funciona en el iPad, en vertical y en horizontal. Aunque cambies el tamaño de la ventana, el cuadro sigue en vertical a 3:4. Con el iPhone en horizontal, los pinceles y los controles pasan al lado del lienzo. La pantalla gira, pero el cuadro sigue en vertical a 3:4. En un iPhone plegable, cuando la pantalla tiene una franja del sistema a un lado, Foto, Deshacer, Rehacer, Guardar, Foto original, Repetición, Foto de fondo y Ajustes se colocan en vertical en esa franja, y los controles alrededor del lienzo ocupan menos. El lienzo no se hace más pequeño."
    ]
   },
   {

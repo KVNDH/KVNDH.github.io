@@ -94,7 +94,7 @@
    "layout": "card",
    "title": "Pintar sem cadastro",
    "body": [
-    "Abra o app, escolha uma foto e comece a pintar. Não existe conta para criar nem login para fazer."
+    "Abra o app, escolha uma foto e comece a pintar. Não existe conta para criar nem login para fazer. Com a tela de pintura vazia, você também pode começar na hora com uma de três fotos de exemplo: um farol, uma laranjeira ou flores de cosmos."
    ],
    "bullets": [],
    "visual": {
@@ -160,9 +160,9 @@
    ]
   },
   {
-   "q": "Na horizontal e no iPhone dobrável",
+   "q": "No iPad, na horizontal e no iPhone dobrável",
    "a": [
-    "Com o iPhone na horizontal, os pincéis e os controles vão para o lado da tela de pintura. O aparelho gira, mas a pintura continua em pé, em 3:4. Num iPhone dobrável, quando há uma faixa do sistema num dos lados, Foto, Desfazer, Refazer, Salvar, Foto original, Rever, Foto de fundo e Ajustes ficam na vertical nessa faixa, e os controles em volta da tela de pintura ficam menores. A tela de pintura não fica menor."
+    "O BrushWorks também funciona no iPad, em pé ou deitado. Mesmo mudando o tamanho da janela, a pintura continua em pé, em 3:4. Com o iPhone na horizontal, os pincéis e os controles vão para o lado da tela de pintura. O aparelho gira, mas a pintura continua em pé, em 3:4. Num iPhone dobrável, quando há uma faixa do sistema num dos lados, Foto, Desfazer, Refazer, Salvar, Foto original, Rever, Foto de fundo e Ajustes ficam na vertical nessa faixa, e os controles em volta da tela de pintura ficam menores. A tela de pintura não fica menor."
    ]
   },
   {
