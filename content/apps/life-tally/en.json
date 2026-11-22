@@ -144,7 +144,7 @@
    "q": "Ads",
    "a": [
     "One Google AdMob banner ad appears at the bottom of the Home, People and Settings tabs. There are no ads on the screens and sheets where you write a record, on the lock screen, or in the guestbook for your own events.",
-    "With Life Tally Pro, no ads appear, and the app does not ask for personalized ad consent or tracking permission."
+    "With Life Tally Pro, ads disappear, and the app does not ask for personalized ad consent or tracking permission. From the next time you open the app, it does not start the ad SDK either."
    ]
   },
   {
@@ -206,9 +206,9 @@
      "People (name, label, relationship, memo, birthday month and day, whether it is lunar or in a leap month, year of birth): used for records per person and birthday reminders",
      "Envelopes (given or received, date, occasion, whose event, amount, method, gift item, attendance, meal, tags, memo, thank-you mark): used for records and totals",
      "Upcoming (title, type, date, place, memo): used for the Upcoming list and reminders",
-     "Your own events and their guestbook records: used for the guestbook in Life Tally Pro",
+     "Your own events (title, type, whose event, date, memo) and the envelopes received at them: used for the guestbook in Life Tally Pro",
      "Automatic copies (a copy of your records made once a day, the latest 14): used to bring back earlier records",
-     "App settings such as reminders and the lock: used to run the app"
+     "App settings (whether the lock and reminders are on, Hanja lettering on envelopes, the order of the people list, a copy of the Life Tally Pro purchase check, the relationship and type lists you edited, markers for one-time data tidy-ups): used to run the app. Records such as people and envelopes are not kept here"
     ]
    },
    {
@@ -267,7 +267,7 @@
      "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) and Google User Messaging Platform SDK for advertising, which may collect the information below when they check ad consent and load and show ads.",
      "When the app gets ads ready, iOS shows the App Tracking Transparency (ATT) prompt asking whether to allow tracking. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and you can use the app the same way. You can change this in iOS Settings > Privacy & Security > Tracking.",
      "In regions where ad consent is required, such as the European Economic Area, Google's consent form appears before the tracking prompt. There, you can change your choices under privacy choices in the Info section of Settings.",
-     "After you buy Life Tally Pro, no ads appear, and neither the consent form nor the tracking prompt appears."
+     "After you buy Life Tally Pro, no ads appear. When the app opens, it checks the purchase, and with Life Tally Pro it does not check consent, show the tracking prompt or start the SDK. If you buy while the app is open, the banner disappears right away, but an SDK already started in that session stays until you close the app and is not started from the next launch."
     ],
     "bullets": [
      "Device identifiers, and the advertising identifier (IDFA) if you allow tracking",

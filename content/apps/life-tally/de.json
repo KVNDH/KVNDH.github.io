@@ -144,7 +144,7 @@
    "q": "Werbung",
    "a": [
     "Unten in den Tabs Start, Personen und Einstellungen erscheint ein Werbebanner von Google AdMob. In den Ansichten und Blättern, in denen Sie einen Eintrag schreiben, auf dem Sperrbildschirm und im Gästebuch für eigene Feiern gibt es keine Werbung.",
-    "Mit Life Tally Pro erscheint keine Werbung, und die App fragt weder nach der Einwilligung in personalisierte Werbung noch nach Tracking."
+    "Mit Life Tally Pro verschwindet die Werbung, und die App fragt weder nach der Einwilligung in personalisierte Werbung noch nach Tracking. Ab dem nächsten Öffnen startet sie auch das Werbe-SDK nicht mehr."
    ]
   },
   {
@@ -206,9 +206,9 @@
      "Personen (Name, Kennzeichnung, Beziehung, Notiz, Monat und Tag des Geburtstags, ob nach Mondkalender oder im Schaltmonat, Geburtsjahr): für Einträge pro Person und Geburtstagserinnerungen",
      "Umschläge (gegeben oder erhalten, Datum, Anlass, wessen Feier, Betrag, Art, Sachgeschenk, Teilnahme, Essen, Tags, Notiz, Dankeszeichen): für Einträge und Summen",
      "Demnächst (Titel, Art, Datum, Ort, Notiz): für die Liste Demnächst und Erinnerungen",
-     "Eigene Feiern und ihre Gästebucheinträge: für das Gästebuch in Life Tally Pro",
+     "Eigene Feiern (Titel, Art, wessen Feier, Datum, Notiz) und die dort erhaltenen Umschläge: für das Gästebuch in Life Tally Pro",
      "Automatische Kopien (eine Kopie der Einträge einmal am Tag, die letzten 14): um frühere Einträge zurückzuholen",
-     "App-Einstellungen wie Erinnerungen und Sperre: für den Betrieb der App"
+     "App-Einstellungen (ob Sperre und Erinnerungen an sind, Hanja-Beschriftung der Umschläge, Reihenfolge der Personenliste, eine Kopie der Kaufprüfung für Life Tally Pro, die von Ihnen bearbeiteten Listen für Beziehungen und Arten, Markierungen für einmalige Datenbereinigungen): für den Betrieb der App. Einträge wie Personen und Umschläge liegen nicht hier"
     ]
    },
    {
@@ -267,7 +267,7 @@
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung und beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können.",
      "Wenn die App Werbung vorbereitet, zeigt iOS die Abfrage zu App-Tracking-Transparenz (ATT), ob Tracking erlaubt ist. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und die App lässt sich genauso nutzen. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
      "In Regionen, in denen eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular von Google vor der Tracking-Abfrage. Dort ändern Sie Ihre Auswahl unter den Datenschutzoptionen im Bereich Info der Einstellungen.",
-     "Nach dem Kauf von Life Tally Pro erscheint keine Werbung, und weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
+     "Nach dem Kauf von Life Tally Pro erscheint keine Werbung. Beim Öffnen prüft die App den Kauf und führt mit Life Tally Pro weder die Prüfung der Einwilligung noch die Tracking-Abfrage noch den Start des SDK aus. Kaufen Sie bei geöffneter App, verschwindet das Banner sofort, ein in dieser Sitzung bereits gestartetes SDK bleibt aber bis zum Schließen der App und wird ab dem nächsten Start nicht mehr gestartet."
     ],
     "bullets": [
      "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",

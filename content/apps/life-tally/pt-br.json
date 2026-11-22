@@ -144,7 +144,7 @@
    "q": "Anúncios",
    "a": [
     "Um anúncio em banner do Google AdMob aparece na parte de baixo das abas Início, Pessoas e Ajustes. Não há anúncios nas telas e painéis onde você escreve um registro, na tela de bloqueio nem no livro de visitas dos seus eventos.",
-    "Com o Life Tally Pro, nenhum anúncio aparece, e o app não pede consentimento para anúncios personalizados nem permissão de rastreamento."
+    "Com o Life Tally Pro, os anúncios somem, e o app não pede consentimento para anúncios personalizados nem permissão de rastreamento. A partir da próxima vez que você abrir o app, ele também não inicia o SDK de anúncios."
    ]
   },
   {
@@ -206,9 +206,9 @@
      "Pessoas (nome, marcação, relação, nota, mês e dia do aniversário, se é lunar ou em mês intercalar, ano de nascimento): para os registros por pessoa e os lembretes de aniversário",
      "Envelopes (dado ou recebido, data, ocasião, de quem é o evento, valor, forma, presente, presença, refeição, etiquetas, nota, marca de agradecimento): para os registros e os totais",
      "Próximos (título, tipo, data, local, nota): para a lista Próximos e os lembretes",
-     "Seus próprios eventos e os registros do livro de visitas: para o livro de visitas do Life Tally Pro",
+     "Seus próprios eventos (título, tipo, de quem é o evento, data, nota) e os envelopes recebidos neles: para o livro de visitas do Life Tally Pro",
      "Cópias automáticas (uma cópia dos registros uma vez por dia, as 14 mais recentes): para recuperar registros anteriores",
-     "Ajustes do app como lembretes e bloqueio: para o funcionamento do app"
+     "Ajustes do app (se o bloqueio e os lembretes estão ativados, a escrita em Hanja nos envelopes, a ordem da lista de pessoas, uma cópia da verificação de compra do Life Tally Pro, as listas de relações e tipos que você editou, marcas de arrumações de dados feitas uma única vez): para o funcionamento do app. Registros como pessoas e envelopes não ficam aqui"
     ]
    },
    {
@@ -267,7 +267,7 @@
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento e carregam e exibem anúncios.",
      "Quando o app prepara os anúncios, o iOS mostra o aviso de Transparência de Rastreamento de Apps (ATT) perguntando se você permite o rastreamento. Se você não permitir, o AdMob não recebe o identificador de publicidade (IDFA), e você pode usar o app do mesmo jeito. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
      "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece antes do aviso de rastreamento. Lá você muda suas escolhas nas opções de privacidade da seção Informações de Ajustes.",
-     "Depois de comprar o Life Tally Pro, nenhum anúncio aparece, e o formulário de consentimento e o aviso de rastreamento também não aparecem."
+     "Depois de comprar o Life Tally Pro, nenhum anúncio aparece. Ao abrir, o app verifica a compra e, com o Life Tally Pro, não verifica o consentimento, não mostra o aviso de rastreamento nem inicia o SDK. Se você comprar com o app aberto, o banner some na hora, mas o SDK já iniciado nessa sessão fica até você fechar o app e não é iniciado a partir da próxima vez."
     ],
     "bullets": [
      "Identificadores do aparelho e, se você permitir o rastreamento, o identificador de publicidade (IDFA)",
