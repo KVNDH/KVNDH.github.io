@@ -1,0 +1,321 @@
+{
+ "name": "Life Tally",
+ "subtitle": "Sobres de boda y funeral",
+ "summary": "Apunta, persona por persona, el dinero y los regalos que das y recibes en bodas, funerales y otras celebraciones, y te recuerda los próximos eventos y cumpleaños",
+ "hero": {
+  "hook": "Apunta, persona por persona, el dinero y los regalos que das y recibes en bodas, funerales y otras celebraciones, y te recuerda los próximos eventos y cumpleaños",
+  "shotAlt": "Icono de Life Tally"
+ },
+ "sections": [
+  {
+   "layout": "feat",
+   "title": "Lo dado y lo recibido, persona por persona",
+   "body": [
+    "Apunta lo que diste y lo que recibiste con la fecha, la ocasión, de quién era el evento, el importe y la forma de entrega. También puedes anotar un regalo, si asististe y comiste, etiquetas, una nota y una marca de agradecimiento. Los totales dados y recibidos se suman por persona, y con Te toca y la búsqueda vuelves a los registros que necesitas."
+   ],
+   "bullets": [
+    "Regalos dados y recibidos",
+    "Totales dados y recibidos por persona",
+    "Lista Te toca",
+    "Búsqueda"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Campos de un sobre: dado y recibido, personas, próximos eventos",
+    "items": [
+     {
+      "name": "Sobre",
+      "desc": "dado, recibido, fecha, importe",
+      "on": true
+     },
+     {
+      "name": "Persona",
+      "desc": "relación, nota, cumpleaños"
+     },
+     {
+      "name": "Próximos",
+      "desc": "título, fecha, lugar"
+     }
+    ]
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Recordatorios de próximos eventos y cumpleaños",
+   "body": [
+    "Apunta una ocasión futura con su título, tipo, fecha, lugar y nota, y aparece en Próximos. Cada persona puede tener su cumpleaños, también en calendario lunar y en mes intercalar. Activa los recordatorios en Ajustes y recibirás uno el día anterior y otro el mismo día de cada ocasión y cumpleaños."
+   ],
+   "bullets": [
+    "Lista Próximos",
+    "Cumpleaños lunares y de mes intercalar",
+    "Recordatorio el día anterior y el mismo día"
+   ],
+   "visual": {
+    "type": "kit",
+    "label": "Cuándo llegan los recordatorios: el día anterior y el mismo día de ocasiones y cumpleaños",
+    "items": [
+     {
+      "name": "Ocasiones",
+      "desc": "día anterior, mismo día"
+     },
+     {
+      "name": "Cumpleaños",
+      "desc": "lunar, mes intercalar",
+      "on": true
+     }
+    ]
+   }
+  },
+  {
+   "layout": "card",
+   "title": "Guardado con iCloud y archivos de copia",
+   "body": [
+    "Si tienes la sesión iniciada en iCloud, los registros se mantienen iguales en los dispositivos con la misma cuenta de Apple. En Ajustes puedes crear y enviar un archivo de copia, y al combinar desde un archivo de copia solo se añaden los registros que faltan, sin sobrescribir los que ya tienes. Una vez al día la app también guarda una copia automática en este iPhone y conserva las últimas 14."
+   ],
+   "bullets": [
+    "Sincronización con iCloud",
+    "Enviar y combinar archivos de copia",
+    "Copia automática diaria"
+   ]
+  },
+  {
+   "layout": "card",
+   "title": "Empieza sin cuenta",
+   "body": [
+    "No hay registro ni inicio de sesión. Activa el bloqueo en Ajustes y la app pedirá Face ID o el código del dispositivo al abrirse."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "Sin cuenta",
+     "Bloqueo con Face ID"
+    ]
+   }
+  }
+ ],
+ "pro": {
+  "kick": "Life Tally Pro",
+  "title": "Sin anuncios,\ny con libro de firmas, exportación, estadísticas y relleno",
+  "items": [
+   "Sin anuncios",
+   "Libro de firmas para tus propios eventos",
+   "Exportación a Excel (archivo CSV)",
+   "Estadísticas anuales",
+   "Relleno desde enlaces o fotos de invitaciones y esquelas"
+  ]
+ },
+ "faq": [
+  {
+   "q": "Cambiar de dispositivo",
+   "a": [
+    "Los dispositivos con la sesión iniciada en iCloud con la misma cuenta de Apple mantienen los registros iguales a través de iCloud.",
+    "Sin iCloud, crea un archivo de copia en Ajustes, envíalo al dispositivo nuevo y combínalo allí desde ese archivo de copia. Al combinar solo se añaden los registros que faltan y no se sobrescriben los que tienes."
+   ]
+  },
+  {
+   "q": "Recuperar registros de una copia automática",
+   "a": [
+    "Una vez al día la app guarda una copia de tus registros en este iPhone y conserva las últimas 14. Toca una fecha en las copias automáticas de Ajustes para añadir los registros de ese día que ya no tienes."
+   ]
+  },
+  {
+   "q": "Si no llegan los recordatorios",
+   "a": [
+    "Los recordatorios están desactivados al principio. Al activarlos en Ajustes, iOS pregunta si permites notificaciones. Si las permites, llega un recordatorio el día anterior y el mismo día de cada ocasión y cumpleaños próximos.",
+    "Si no permitiste las notificaciones, actívalas en Ajustes > Notificaciones > Life Tally."
+   ]
+  },
+  {
+   "q": "Bloqueo con Face ID",
+   "a": [
+    "Con el bloqueo activado en Ajustes, la app se abre con Face ID o el código del dispositivo. iOS comprueba tu cara y la app no recibe datos faciales.",
+    "Si después de activar el bloqueo desactivas el código del dispositivo en los Ajustes del iPhone, la app quita el bloqueo y se abre."
+   ]
+  },
+  {
+   "q": "Rellenar desde invitaciones y esquelas",
+   "a": [
+    "Con Life Tally Pro, pega el enlace o el texto de una invitación de boda digital o de una esquela, o elige una foto, y se rellenan el nombre, la fecha, el lugar y la cuenta bancaria.",
+    "El enlace se abre en una vista web oculta dentro de la app para leer el texto, y la foto se lee en el iPhone. La app no envía a ningún otro sitio el texto ni la foto que lee."
+   ]
+  },
+  {
+   "q": "Anuncios",
+   "a": [
+    "En la parte inferior de las pestañas Inicio, Personas y Ajustes aparece un anuncio de banner de Google AdMob. No hay anuncios en las pantallas y hojas donde escribes un registro, en la pantalla de bloqueo ni en el libro de firmas de tus propios eventos.",
+    "Con Life Tally Pro no aparecen anuncios, y la app no pide consentimiento para anuncios personalizados ni permiso de rastreo."
+   ]
+  },
+  {
+   "q": "Rastreo y opciones de privacidad",
+   "a": [
+    "Cuando la app prepara los anuncios, iOS pregunta si Life Tally puede rastrearte. La app funciona igual en ambos casos, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el formulario de consentimiento de Google aparece antes del aviso de rastreo, y puedes volver a elegir en las opciones de privacidad de la sección Información de Ajustes."
+   ]
+  },
+  {
+   "q": "Life Tally Pro y restaurar la compra",
+   "a": [
+    "Toca la fila Pro en Ajustes para abrir Life Tally Pro y cómpralo allí. Es un pago único, no una suscripción. Los registros, Próximos, los recordatorios, las copias y iCloud, y el bloqueo funcionan sin comprar.",
+    "En un dispositivo nuevo o después de reinstalar, toca restaurar compra al final de esa misma pantalla. Con la misma cuenta de Apple no se cobra de nuevo."
+   ]
+  },
+  {
+   "q": "Exportar a Excel",
+   "a": [
+    "La exportación a Excel de Life Tally Pro convierte todos tus registros en un archivo CSV que se abre en Excel y lo pasa a la hoja para compartir de iOS. Tú eliges allí adónde va el archivo."
+   ]
+  },
+  {
+   "q": "Conexión a internet",
+   "a": [
+    "Escribir y ver registros funciona sin conexión. La sincronización con iCloud, los anuncios, la compra y la restauración de Life Tally Pro y el relleno desde un enlace necesitan conexión."
+   ]
+  },
+  {
+   "q": "Si algo va mal",
+   "a": [
+    "Cierra la app del todo, ábrela otra vez y comprueba en el App Store que tienes la última versión. Si el problema sigue, escríbenos contando en qué pantalla estabas y qué estabas haciendo."
+   ]
+  }
+ ],
+ "privacy": {
+  "title": "Política de privacidad de Life Tally",
+  "effectiveDate": "2026-11-23",
+  "summary": "El desarrollador no recoge información personal. Los registros se guardan en tu dispositivo y, si tienes la sesión iniciada en iCloud, se sincronizan a través de tu propio iCloud. El anuncio de banner viene de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de Life Tally Pro se encarga Apple.",
+  "intro": [
+   "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Life Tally (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
+  ],
+  "sections": [
+   {
+    "title": "Finalidad del tratamiento",
+    "paragraphs": [
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan. Con los registros que escribes, la app muestra los totales por persona, Te toca, los próximos eventos y los recordatorios. El desarrollador no tiene servidor.",
+     "La app muestra un anuncio de banner en la parte inferior de las pestañas Inicio, Personas y Ajustes. El servicio publicitario de Google, AdMob, elige y muestra ese anuncio, y usa información del dispositivo para mostrar anuncios y medir su rendimiento."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Información que se trata",
+    "paragraphs": [
+     "El desarrollador no recoge información personal. Los datos que usa la app son los de abajo y se guardan en el almacenamiento de la app en tu dispositivo. Si tienes la sesión iniciada en iCloud, los registros de personas, sobres y próximos eventos también se guardan en tu propio iCloud. Los registros pueden incluir nombres y cumpleaños de otras personas y los importes intercambiados, tal como los escribes. El desarrollador no recibe estos datos.",
+     "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
+    ],
+    "bullets": [
+     "Personas (nombre, marca, relación, nota, mes y día del cumpleaños, si es lunar o de mes intercalar, año de nacimiento): para los registros por persona y los recordatorios de cumpleaños",
+     "Sobres (dado o recibido, fecha, ocasión, de quién es el evento, importe, forma, regalo, asistencia, comida, etiquetas, nota, marca de agradecimiento): para los registros y los totales",
+     "Próximos (título, tipo, fecha, lugar, nota): para la lista Próximos y los recordatorios",
+     "Tus propios eventos y los registros de su libro de firmas: para el libro de firmas de Life Tally Pro",
+     "Copias automáticas (una copia de los registros una vez al día, las últimas 14): para recuperar registros anteriores",
+     "Ajustes de la app como los recordatorios y el bloqueo: para el funcionamiento de la app"
+    ]
+   },
+   {
+    "title": "Tratamiento y plazo de conservación",
+    "paragraphs": [
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app y las copias automáticas se borran al eliminar la app, y de las copias automáticas solo quedan las últimas 14, las anteriores se borran. Los registros sincronizados con iCloud permanecen en tu propia cuenta de iCloud. Los archivos de copia y los archivos CSV que envías con la hoja para compartir quedan donde los pongas y puedes borrarlos allí.",
+     "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Comunicación a terceros",
+    "paragraphs": [
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, el SDK de Google Mobile Ads y el SDK de Google User Messaging Platform incluidos en la app envían a Google directamente la información del apartado 9, del modo siguiente."
+    ],
+    "bullets": [
+     "Destinatario: Google LLC (Estados Unidos), AdMob",
+     "Finalidad: comprobar el consentimiento de anuncios, mostrar anuncios y medir su rendimiento",
+     "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
+     "Cuándo y cómo: se envía por internet cuando se comprueba el consentimiento y cuando se carga y se muestra un anuncio",
+     "Conservación: la indicada en la Política de Privacidad de Google"
+    ]
+   },
+   {
+    "title": "Encargo del tratamiento",
+    "paragraphs": [
+     "El desarrollador no encarga a terceros el tratamiento de información personal. La sincronización con iCloud funciona con iCloud de Apple (CloudKit), y los datos sincronizados se rigen por la política de privacidad de Apple. Apple procesa el pago de Life Tally Pro a través del App Store. El desarrollador no recibe tu forma de pago, los datos de tu cuenta de Apple ni el contenido de tu iCloud."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Destrucción de la información",
+    "paragraphs": [
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Los datos del almacenamiento de la app y las copias automáticas se borran al eliminar la app. Los registros sincronizados con iCloud se gestionan en tu propia cuenta de Apple."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
+    "paragraphs": [
+     "Como el desarrollador no conserva información personal, no hay nada a lo que acceder ni que rectificar o suprimir. Los registros sincronizados con iCloud están en tu propia cuenta de Apple, y el desarrollador no puede verlos ni borrarlos. Si tienes dudas, escribe a la dirección de abajo.",
+     "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9. Los datos de pago están en manos de Apple y se rigen por la política de privacidad de Apple (apple.com/legal/privacy)."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Medidas de seguridad",
+    "paragraphs": [
+     "Los registros se guardan en el almacenamiento de la app en el dispositivo, y la sincronización con iCloud usa la base de datos privada (CloudKit) de tu propia cuenta de iCloud. El desarrollador no tiene servidor. Con el bloqueo activado en Ajustes, la app pide la autenticación del dispositivo de iOS (Face ID o el código del dispositivo) al abrirse, y los datos faciales no pasan a la app. La app pide permiso de notificaciones solo cuando activas los recordatorios en Ajustes, y los recordatorios de ocasiones y cumpleaños son notificaciones locales programadas en el dispositivo. El relleno desde una foto de Life Tally Pro recibe solo la foto que eliges en el selector de fotos de iOS y lee su texto en el dispositivo. La app no envía la foto a ningún sitio ni la guarda. La app no pide acceso a tu fototeca. El relleno desde un enlace abre la página de invitación o esquela que pegas en una vista web oculta que no guarda cookies ni historial, y lee su texto. El servidor de esa página recibe la solicitud como en cualquier visita web, y la app no envía a ningún otro sitio el texto que lee. Los archivos de copia y CSV solo se crean cuando tocas y se pasan a la hoja para compartir de iOS."
+    ],
+    "bullets": []
+   },
+   {
+    "title": "Recogida automática y cómo rechazarla",
+    "paragraphs": [
+     "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento y cargan y muestran anuncios.",
+     "Cuando la app prepara los anuncios, iOS muestra el aviso de Transparencia de rastreo de apps (ATT) para preguntar si permites el rastreo. Si no lo permites, AdMob no recibe el identificador de publicidad (IDFA), y puedes usar la app igual. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
+     "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, el formulario de consentimiento de Google aparece antes del aviso de rastreo. Allí puedes cambiar tus opciones en las opciones de privacidad de la sección Información de Ajustes.",
+     "Después de comprar Life Tally Pro no aparecen anuncios, y tampoco aparecen el formulario de consentimiento ni el aviso de rastreo."
+    ],
+    "bullets": [
+     "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",
+     "Ubicación aproximada estimada a partir de tu dirección IP",
+     "Registros de interacción con los anuncios, como impresiones y toques",
+     "Información de rendimiento, fallos y diagnóstico de la app"
+    ]
+   },
+   {
+    "title": "Responsable de privacidad",
+    "paragraphs": [
+     "Si tienes dudas sobre información personal, escribe a la dirección de abajo."
+    ],
+    "bullets": [],
+    "pairs": [
+     {
+      "label": "Responsable",
+      "value": "kvndh"
+     },
+     {
+      "label": "Correo",
+      "value": "kvndh36@naver.com"
+     }
+    ]
+   },
+   {
+    "title": "Vías de reclamación en materia de privacidad",
+    "paragraphs": [
+     "Si necesitas asesoramiento sobre privacidad o ayuda para resolver un conflicto, puedes dirigirte a los organismos coreanos que se indican abajo. Si vives fuera de Corea, también puedes dirigirte a la autoridad de protección de datos de tu país."
+    ],
+    "bullets": [
+     "Comité de Mediación de Conflictos sobre Información Personal: 1833-6972 en Corea (www.kopico.go.kr)",
+     "Centro de Denuncias por Vulneración de la Información Personal: 118 en Corea (privacy.kisa.or.kr)",
+     "Fiscalía Suprema: 1301 en Corea (www.spo.go.kr)",
+     "Agencia Nacional de Policía: 182 en Corea (ecrm.police.go.kr)",
+     "Unión Europea y EEE: la autoridad de protección de datos de tu país (edpb.europa.eu)",
+     "Reino Unido: Information Commissioner's Office (ico.org.uk)",
+     "Estados Unidos: Federal Trade Commission (reportfraud.ftc.gov)",
+     "Otros países: la autoridad de protección de datos o de consumo del lugar donde vives"
+    ]
+   },
+   {
+    "title": "Cambios en esta política",
+    "paragraphs": [
+     "Si esta política cambia, en esta página aparecerá qué ha cambiado y la nueva fecha de entrada en vigor."
+    ],
+    "bullets": []
+   }
+  ]
+ }
+}

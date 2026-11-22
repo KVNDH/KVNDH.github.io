@@ -281,5 +281,9 @@
    ]
   },
   "store": "DailyLeft/docs/store"
+ },
+ "life-tally": {
+  "icon": "LifeTally/LifeTally/Resources/Assets.xcassets/AppIcon.appiconset/icon.png",
+  "shots": {}
  }
 }
