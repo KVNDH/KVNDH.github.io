@@ -300,14 +300,14 @@
   "icon": "DailyLeft/DailyLeft/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
   "shots": {
    "ko": [
-    "DailyLeft/build/shots/1-today.png",
-    "DailyLeft/build/shots/2-calendar.png",
-    "DailyLeft/build/shots/3-widgets.png"
+    "DailyLeft/build/site-112/ko/1-today.png",
+    "DailyLeft/build/site-112/ko/2-calendar.png",
+    "DailyLeft/build/site-112/ko/3-widgets.png"
    ],
    "en": [
-    "DailyLeft/build/shots-en/1-today.png",
-    "DailyLeft/build/shots-en/2-calendar.png",
-    "DailyLeft/build/shots-en/3-widgets.png"
+    "DailyLeft/build/site-112/en/1-today.png",
+    "DailyLeft/build/site-112/en/2-calendar.png",
+    "DailyLeft/build/site-112/en/3-widgets.png"
    ]
   },
   "store": "DailyLeft/docs/store"
