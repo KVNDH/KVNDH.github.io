@@ -208,7 +208,7 @@
      "Upcoming (title, type, date, place, memo): used for the Upcoming list and reminders",
      "Your own events (title, type, whose event, date, memo) and the envelopes received at them: used for the guestbook in Life Tally Pro",
      "Automatic copies (a copy of your records made once a day, the latest 14): used to bring back earlier records",
-     "App settings (whether the lock and reminders are on, Hanja lettering on envelopes, the order of the people list, a copy of the Life Tally Pro purchase check, the relationship and type lists you edited, markers for one-time data tidy-ups): used to run the app. Records such as people and envelopes are not kept here"
+     "App settings (whether the lock and reminders are on, Hanja lettering on envelopes, the ledger currency, the order of the people list, a copy of the Life Tally Pro purchase check, the relationship and type lists you edited, markers for one-time data tidy-ups): used to run the app. Records such as people and envelopes are not kept here"
     ]
    },
    {

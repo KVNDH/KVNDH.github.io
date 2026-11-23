@@ -4,7 +4,8 @@
  "ads": true,
  "account": false,
  "platform": [
-  "iPhone. 홈 화면 이름 ko '경조 노트', 그 밖의 언어 'Life Tally' (project.yml CFBundleDisplayName, LifeTally/Resources/ko.lproj/InfoPlist.strings:2). 번들 com.kimdh.Life-Tally"
+  "iPhone. 홈 화면 이름 ko '경조 노트', 그 밖의 언어 'Life Tally' (project.yml CFBundleDisplayName, LifeTally/Resources/ko.lproj/InfoPlist.strings:2). 번들 com.kimdh.Life-Tally",
+  "금액은 장부 통화 하나로 적음(원, 엔, 위안, 대만 달러, 달러, 처음 켤 때 기기 지역으로 정하고 설정에서 바꿈, LifeTally/Model/Money.swift)"
  ],
  "products": [
   "Life Tally Pro: 비소모성 1회 구매 com.kimdh.lifetally.pro (LifeTally/Model/Pro.swift:56). 열리는 것: 광고 없음, 내 경조사 방명록, 엑셀로 내보내기(CSV), 해마다 통계, 청첩장과 부고로 채우기 (Pro.swift:15-29). 광고 없음은 그 빌드에 광고가 켜져 있을 때만 Pro 혜택으로 보임 (Pro.swift:7, 34). 기록, 다가오는 일, 알림, 백업과 iCloud, 잠금은 Pro 없이 모두 씀 (Pro.swift:5). 구매 복원은 설정 Pro 줄로 여는 Pro 쪽지 아래 (LifeTally/Views/ProSheet.swift:51, Pro.swift:174). 가격은 쓰지 않음"
@@ -13,14 +14,14 @@
   "Google Mobile Ads 13.10.0, UMP 3.1.0 (project.yml). 배너 하나, 홈, 사람, 설정 세 탭 아래. 입력 화면, 시트, 잠금 화면, 내 경조사 방명록에는 없음 (LifeTally CLAUDE.md, 사용자 2026-11-22)",
   "UMP 동의(필요한 지역만, LifeTally/Ads/GoogleAdsSDK.swift:23) 뒤 ATT (GoogleAdsSDK.swift:46-50). 허용하지 않아도 앱은 그대로 (ko.lproj/InfoPlist.strings:4). EEA 등에서는 설정 '정보' 구역에 '개인정보 선택' 줄 (LifeTally/Views/SettingsView.swift:155)",
   "Pro 는 광고 없고 맞춤 광고 동의와 추적 허용도 묻지 않음 (Pro.swift:25). Pro 면 광고 SDK 를 시작하지 않음: 첫 Pro 확인을 3초까지 기다려 Pro 면 멈추고, 동의, ATT, SDK 시작 사이마다 다시 확인 (LifeTally/App/LifeTallyApp.swift:158-161, LifeTally/Ads/AdsModel.swift:111-115). SDK 가 시작된 뒤 사면 배너를 숨기고(AdBanner.swift:22) 그 실행 동안 SDK 는 남고 다음 실행부터 시작하지 않음",
-  "광고는 1.0.0 에 켜고 나감(Commander 2026-11-23). 사실 초안은 Release 의 AdMob 실제 ID 가 비어 있다고 적음(LifeTally/Ads/AdUnit.swift:20, 24-39), 제출 판에 실제 ID 가 들어가야 사이트 문장과 맞음"
+  "Release(스토어 판)도 AdMob 실제 앱 ID 와 배너 단위로 광고를 켬, 1.0.0 부터 (LifeTally/Ads/AdUnit.swift:19, project.yml Release GAD_APP_ID, 사실 초안 b33fc98)"
  ],
  "storage": [
   "SwiftData 기기 저장. 사람(이름, 구분 표시, 관계, 메모, 생일 월, 일, 음력, 윤달, 연, Models.swift:27-40), 봉투(보냄/받음, 날짜, 구분, 누구의 일, 금액, 방법, 물품, 참석, 식사, 태그, 메모, 감사 표시, Models.swift:68-91), 다가오는 일(제목, 구분, 날짜, 장소, 메모, Models.swift:115-127), 내 경조사(Pro 방명록, 제목, 구분, 누구의 일, 날짜, 메모, 그 행사에서 받은 봉투가 이어짐, Models.swift:141-150)",
   "iCloud 로그인 때 CloudKit private 로 동기화 (LifeTally/App/LifeTallyApp.swift:34-41, 컨테이너 iCloud.com.kimdh.Life-Tally, Cloud.swift:6). 설정 문구: 기록(사람, 주고받은 것, 다가오는 일)은 iCloud 로 같은 Apple 계정 기기끼리 맞춤 (SettingsView.swift:112). 개발자 서버 없음",
   "자동 사본: 하루 한 번 Application Support/Snapshots 에 JSON, 최근 14개 (LifeTally/Model/Backup.swift:159-176). 날짜를 누르면 그날 기록 가운데 없는 것만 더함 (SettingsView.swift:149)",
   "백업 파일 보내기, 엑셀로 내보내기는 누를 때 공유 시트로 (SettingsView.swift:119, 125). 백업 파일에서 합치기는 지금 기록을 덮어쓰지 않고 없는 기록만 더함 (SettingsView.swift:131)",
-  "UserDefaults(CA92.1, PrivacyInfo.xcprivacy) 키 전부: lock.on(AppLock.swift:8), reminders.enabled(Reminders.swift:7), envelope.hanja(QuickEntry.swift:105), people.sort(PeopleSort.swift:7), pro.owned Pro 확인 값 사본(Pro.swift:57), list.relations, list.kinds 사용자가 고친 관계와 구분 목록(ListStore.swift:4-5), precision.v1, seeded.v1 한 번만 하는 정리 표시(Backup.swift:136, 147). 개인 기록은 두지 않음(관계, 구분 목록의 낱말만)"
+  "UserDefaults(CA92.1, PrivacyInfo.xcprivacy) 키 전부: lock.on(AppLock.swift:8), reminders.enabled(Reminders.swift:7), envelope.hanja(QuickEntry.swift:105), ledger.currency 장부 통화(LifeTally/Model/Money.swift, 50a0f30), people.sort(PeopleSort.swift:7), pro.owned Pro 확인 값 사본(Pro.swift:57), list.relations, list.kinds 사용자가 고친 관계와 구분 목록(ListStore.swift:4-5), precision.v1, seeded.v1 한 번만 하는 정리 표시(Backup.swift:136, 147). 개인 기록은 두지 않음(관계, 구분 목록의 낱말만)"
  ],
  "permissions": [
   "알림: 설정에서 켤 때만 묻고 처음엔 꺼짐. 다가오는 일과 생일 전날, 당일 로컬 알림. 독려 알림, 배지 없음 (LifeTally/Model/Reminders.swift:5-40)",
@@ -31,7 +32,7 @@
  ],
  "names": {
   "ko": "스토어 이름 'Life Tally 경조 노트', 부제 '축의금과 부의금 장부' (LifeTally docs/store/metadata.json)",
-  "other": "스토어 이름과 부제, 목록 이름(Your turn/Upcoming, お返しの番/これからの予定, 该回礼了/即将到来, 該回禮了/即將到來, Du bist dran/Demnächst, Te toca/Próximos, Sua vez/Próximos)은 metadata.json 의 그 로케일 문안에서 가져옴. 앱 화면은 아직 한국어뿐이라(사실 초안 0절) ko 밖 일곱 언어의 단추 이름은 따옴표 없이 풀어 씀. 앱 번역이 들어가면 그 화면 이름으로 맞출 것"
+  "other": "스토어 이름과 부제, 목록 이름(Your turn/Upcoming, お返しの番/これからの予定, 该回礼了/即将到来, 該回禮了/即將到來, Du bist dran/Demnächst, Te toca/Próximos, Sua vez/Próximos)은 metadata.json 의 그 로케일 문안에서 가져옴. 앱 화면은 2026-11-24 부터 영어(기본), 한국어, 일본어, 중국어 간체, 번체(사실 초안 50a0f30). 앱 설정의 처리방침과 지원 링크는 화면 언어를 따라 /{ko,en,ja,zh-hans,zh-hant}/life-tally/ 로 감(SettingsView.swift AppLinks.siteLang). de, es, pt-br 화면은 영어. 사이트 단추 이름은 따옴표 없이 풀어 쓴 그대로이며 앱 카탈로그와 맞추는 일은 남음. 베트남어는 사용자 확인 중이라 넣지 않음"
  },
  "numbers": [
   "1",
@@ -42,6 +43,7 @@
  "sources": [
   "LifeTally docs/PRIVACY_FACTS_for_HQ.md (main df657c0, 2026-11-23, 보탬 2f6cb60: 내 경조사 칸, UserDefaults 키, Pro 면 SDK 시작 안 함)",
   "LifeTally df657c0 코드에서 확인: Reminders.swift:5(전날과 당일), AppLock.swift:49-59, SettingsView.swift:112-162, ProSheet.swift:51, Pro.swift:5-29",
-  "LifeTally docs/store/metadata.json(4b055c5 다음 판): 로케일별 이름, 부제, 목록 이름"
+  "LifeTally docs/store/metadata.json(4b055c5 다음 판): 로케일별 이름, 부제, 목록 이름",
+  "LifeTally docs/PRIVACY_FACTS_for_HQ.md 50a0f30(화면 다섯 언어, 링크 언어, 장부 통화), b33fc98(Release 광고 켬)"
  ]
 }
