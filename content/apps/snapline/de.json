@@ -112,7 +112,7 @@
    "q": "Eine Linie knicken und kippen",
    "a": [
     "Jede Linie hat drei Punkte. Die beiden Enden sitzen am Fotorand, der mittlere bewegt sich frei. Ziehen Sie den Mittelpunkt, knickt die Linie, die Enden bleiben liegen. Ziehen Sie einen Randpunkt, rutscht er an dieser Kante entlang und die Linie kippt.",
-    "Tippen Sie eine Linie an, erscheinen kleine Marken darauf. Ziehen Sie eine Marke, kommt ein Knickpunkt dazu; tippen Sie einen Punkt an, können Sie ihn löschen oder rund machen. Randpunkte lassen sich nicht löschen, und eine Linie fasst bis zu 8 Punkte."
+    "Tippen Sie eine Linie an, erscheinen kleine Marken darauf. Ziehen Sie eine Marke, kommt ein Knickpunkt dazu; tippen Sie einen Punkt an, erscheinen daneben Punkt löschen, Rund und Linie löschen, das die Linie dieses Punkts entfernt. Randpunkte lassen sich nicht löschen, und eine Linie fasst bis zu 8 Punkte."
    ]
   },
   {

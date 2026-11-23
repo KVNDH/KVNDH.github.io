@@ -112,7 +112,7 @@
    "q": "Dobrar e inclinar uma linha",
    "a": [
     "Cada linha tem três pontos. As duas pontas ficam na borda da foto e o ponto central se move livremente. Arraste o ponto central e a linha dobra com as pontas paradas. Arraste um ponto da borda e ele desliza por aquele lado, inclinando a linha.",
-    "Toque numa linha e aparecem marcas pequenas ao longo dela. Arraste uma marca para criar um ponto de dobra, ou toque em qualquer ponto para excluí-lo ou transformá-lo em curva. Os pontos da borda não podem ser excluídos, e uma linha aceita até 8 pontos."
+    "Toque numa linha e aparecem marcas pequenas ao longo dela. Arraste uma marca para criar um ponto de dobra, ou toque em qualquer ponto e ao lado aparecem Excluir ponto, Curva e Excluir linha, que tira a linha em que o ponto está. Os pontos da borda não podem ser excluídos, e uma linha aceita até 8 pontos."
    ]
   },
   {

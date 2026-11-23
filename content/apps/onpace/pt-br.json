@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Quanto de atraso, checkpoint por checkpoint",
    "body": [
-    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo. Quando você caminha até um checkpoint com Early is fine ou até um ponto de onde sai sua condução, uma linha como Plenty of time ou Tight diz se você chega a tempo no passo atual. Depois de algumas viagens, a chegada prevista ao próximo checkpoint segue quanto cada trecho levou em dias da semana e horários de saída parecidos."
+    "Defina os horários em que você passa por alguns pontos do caminho: a saída de casa, a esquina, o ponto de ônibus, o escritório. Enquanto você se desloca, o OnPace compara onde você está com onde o plano diz que deveria estar e mostra a diferença em minutos e segundos, em números grandes. O app não indica o caminho. Ele diz se é hora de apertar o passo. Quando você caminha até um checkpoint com “Cedo não tem problema” ou até um ponto de onde sai sua condução, uma linha como “Tempo de sobra” ou “Apertado” diz se você chega a tempo no passo atual. Depois de algumas viagens, a chegada prevista ao próximo checkpoint segue quanto cada trecho levou em dias da semana e horários de saída parecidos."
    ],
    "bullets": [
     "Minutos e segundos de adiantamento ou atraso",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Ajustado pelas suas viagens",
    "body": [
-    "Cada viagem acrescenta tempos reais. Os tempos de cada trecho contam a partir do momento em que você realmente saiu, e sair tarde é contado à parte. Se você se atrasou porque saiu tarde, o OnPace diz isso em vez de sugerir sair mais cedo. Ele olha a mediana das viagens recentes, sugere pelo número do pin mover um checkpoint em que você sempre chega atrasado ou afrouxar um trecho apertado demais e aponta trechos que levam mais tempo em certos dias da semana ou horários de saída. Your last trip, na tela inicial, mostra com quanto atraso você saiu e quanto tempo a viagem levou. Se você saiu na hora e mesmo assim levou mais do que o planejado, antecipar a saída a partir dessa única viagem fica aberto a todos."
+    "Cada viagem acrescenta tempos reais. Os tempos de cada trecho contam a partir do momento em que você realmente saiu, e sair tarde é contado à parte. Se você se atrasou porque saiu tarde, o OnPace diz isso em vez de sugerir sair mais cedo. Ele olha a mediana das viagens recentes, sugere pelo número do pin mover um checkpoint em que você sempre chega atrasado ou afrouxar um trecho apertado demais e aponta trechos que levam mais tempo em certos dias da semana ou horários de saída. “Seu último trajeto”, na tela inicial, mostra com quanto atraso você saiu e quanto tempo a viagem levou. Se você saiu na hora e mesmo assim levou mais do que o planejado, antecipar a saída a partir dessa única viagem fica aberto a todos."
    ],
    "bullets": [],
    "visual": {
@@ -82,7 +82,7 @@
   "title": "Trajetos sem limite,\nhorários ajustados pelas viagens e dias para cada trajeto",
   "items": [
    "Trajetos sem limite de quantidade (para começar são dois)",
-   "Tune from trips: aplica as sugestões aos horários dos checkpoints",
+   "“Ajustar pelos trajetos”: aplica as sugestões aos horários dos checkpoints",
    "Dias de cada trajeto: os lembretes de saída e a escolha automática seguem esses dias"
   ]
  },
@@ -90,13 +90,13 @@
   {
    "q": "A seta de localização continua depois do trajeto",
    "a": [
-    "O OnPace usa a localização junto com o cartão na Tela Bloqueada enquanto o trajeto está em andamento e para ao tocar em Stop ou dois minutos depois da chegada. Se o app for encerrado à força ou reinstalado no meio do trajeto, o iOS pode manter o indicador. Reiniciar o iPhone faz ele sumir."
+    "O OnPace usa a localização junto com o cartão na Tela Bloqueada enquanto o trajeto está em andamento e para ao tocar em “Parar” ou dois minutos depois da chegada. Se o app for encerrado à força ou reinstalado no meio do trajeto, o iOS pode manter o indicador. Reiniciar o iPhone faz ele sumir."
    ]
   },
   {
    "q": "Qual permissão de localização escolher",
    "a": [
-    "“Durante o Uso do App” basta. “Sempre” não é necessário. Durante o trajeto o cartão na Tela Bloqueada continua visível, então a localização chega mesmo com a tela apagada ou com outro app aberto. Se você não permitiu a localização, nos ajustes do OnPace, em Permissions, toque em Open Settings para mudar."
+    "“Durante o Uso do App” basta. “Sempre” não é necessário. Durante o trajeto o cartão na Tela Bloqueada continua visível, então a localização chega mesmo com a tela apagada ou com outro app aberto. Se você não permitiu a localização, nos ajustes do OnPace, em “Permissões”, toque em “Abrir Ajustes” para mudar."
    ]
   },
   {
@@ -108,13 +108,13 @@
   {
    "q": "O som de atraso",
    "a": [
-    "Com um minuto de atraso toca uma nota, com dois minutos tocam duas, e assim por diante até cinco. Conta só minutos inteiros, seja qual for a janela de horário, e adiantado fica em silêncio. O som usa o volume de mídia mesmo com o iPhone no modo silencioso, e a música que você ouve abaixa por um instante. Nos ajustes do OnPace, em Pace, você desativa Sound when running late ou ouve em Preview os sons de um a cinco minutos."
+    "Com um minuto de atraso toca uma nota, com dois minutos tocam duas, e assim por diante até cinco. Conta só minutos inteiros, seja qual for a janela de horário, e adiantado fica em silêncio. O som usa o volume de mídia mesmo com o iPhone no modo silencioso, e a música que você ouve abaixa por um instante. Nos ajustes do OnPace, em “Diferença do plano”, você desativa “Som ao se atrasar” ou ouve em “Ouvir” os sons de um a cinco minutos."
    ]
   },
   {
    "q": "Ativar um lembrete de saída",
    "a": [
-    "Na tela Route, em Schedule, defina Departure reminder como At departure, 5 min before, 10 min before ou 15 min before. Na primeira vez que você ativa um, o OnPace pede permissão para notificações. As notificações servem só para os lembretes de saída. Tocar no lembrete inicia esse trajeto. Com o Pro você escolhe Days para um trajeto, e o lembrete toca só nesses dias. Se as notificações estiverem desativadas, ative em Ajustes > OnPace > Notificações."
+    "Na tela “Rota”, em “Horários”, defina “Lembrete de saída” como “Na hora da saída”, “5 min antes”, “10 min antes” ou “15 min antes”. Na primeira vez que você ativa um, o OnPace pede permissão para notificações. As notificações servem só para os lembretes de saída. Tocar no lembrete inicia esse trajeto. Com o Pro você escolhe “Dias” para um trajeto, e o lembrete toca só nesses dias. Se as notificações estiverem desativadas, ative em Ajustes > OnPace > Notificações."
    ]
   },
   {
@@ -126,37 +126,37 @@
   {
    "q": "Trechos de ônibus e metrô",
    "a": [
-    "Ao editar um checkpoint ou em Edit on map, escolha Bus ou Subway em To the next checkpoint. Nesses trechos, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
+    "Ao editar um checkpoint ou em “Editar no mapa”, escolha “Ônibus” ou “Metrô” em “Até o próximo ponto”. Nesses trechos, a diferença com que você embarcou continua valendo até o desembarque, mesmo quando o sinal cai no subterrâneo. Dados de ônibus e metrô em tempo real não são usados."
    ]
   },
   {
    "q": "Esperar no ponto",
    "a": [
-    "Coloque dois checkpoints no mesmo lugar com horários separados e eles viram um trecho de espera. Se você chegar antes, aparece Wait here até a hora de sair. No mapa do trajeto, pins sobrepostos são agrupados em um só, e ao tocar o mapa se aproxima até eles se separarem."
+    "Coloque dois checkpoints no mesmo lugar com horários separados e eles viram um trecho de espera. Se você chegar antes, aparece “Aguarde aqui” até a hora de sair. No mapa do trajeto, pins sobrepostos são agrupados em um só, e ao tocar o mapa se aproxima até eles se separarem."
    ]
   },
   {
-   "q": "Sugestões de Tune from trips",
+   "q": "Sugestões de “Ajustar pelos trajetos”",
    "a": [
-    "Na tela do trajeto, toque na linha Tune from trips abaixo do mapa para ver as sugestões e Good to know. Os tempos de cada trecho contam a partir do momento em que você realmente saiu. Sair tarde aparece à parte, como You usually leave 7m late, junto com a hora em que você chegaria saindo na hora. Diferenças por dia da semana ou horário de saída só aparecem quando esse grupo tem 3 viagens ou mais. As sugestões indicam os checkpoints pelo número do pin, como #3, e ao tocar em uma você vê a mudança antes de aplicar. Qualquer pessoa vê as sugestões. Aplicá-las faz parte do Pro."
+    "Na tela do trajeto, toque na linha “Ajustar pelos trajetos” abaixo do mapa para ver as sugestões e “Bom saber”. Os tempos de cada trecho contam a partir do momento em que você realmente saiu. Sair tarde aparece à parte, como “Você costuma sair com 7 min de atraso”, junto com a hora em que você chegaria saindo na hora. Diferenças por dia da semana ou horário de saída só aparecem quando esse grupo tem 3 viagens ou mais. As sugestões indicam os checkpoints pelo número do pin, como #3, e ao tocar em uma você vê a mudança antes de aplicar. Qualquer pessoa vê as sugestões. Aplicá-las faz parte do Pro."
    ]
   },
   {
    "q": "Um trajeto ou checkpoint apagado por engano",
    "a": [
-    "Recently Deleted, na tela inicial do app, guarda os três últimos trajetos apagados. Toque em Recover para trazer um de volta. Um trajeto recuperado volta a contar entre os seus trajetos. Remover um checkpoint, Delete all, Use the path you took e aplicar um horário ou uma sugestão podem ser desfeitos uma vez com Undo, que aparece no topo da tela do trajeto. Depois de fechar o app, não dá mais para desfazer."
+    "“Apagados”, na tela inicial do app, guarda os três últimos trajetos apagados. Toque em “Recuperar” para trazer um de volta. Um trajeto recuperado volta a contar entre os seus trajetos. Remover um checkpoint, “Apagar tudo”, “Usar o caminho que você fez” e aplicar um horário ou uma sugestão podem ser desfeitos uma vez com “Desfazer”, que aparece no topo da tela do trajeto. Depois de fechar o app, não dá mais para desfazer."
    ]
   },
   {
    "q": "Pro em outro aparelho",
    "a": [
-    "Toque em Restore purchase na tela de compra. O Pro funciona com o Compartilhamento Familiar, então sua família também pode usar."
+    "Toque em “Restaurar compra” na tela de compra. O Pro funciona com o Compartilhamento Familiar, então sua família também pode usar."
    ]
   },
   {
    "q": "Usar o OnPace em um iPhone dobrável",
    "a": [
-    "Em um iPhone dobrável, quando a tela tem uma faixa do sistema em um dos lados, durante a viagem o botão do mapa e as marcações Board, Get off, Enter, Exit e Other ficam na vertical nessa faixa. Dobrado e na vertical, o mapa cabe na primeira tela. Aberto e na horizontal, a tela da viagem mostra à esquerda o número grande e a lista Remaining e à direita o mapa, tudo em uma tela. Ao criar ou editar um trajeto no mapa, com o iPhone aberto o mapa abre em tela cheia e, na horizontal, o painel fica ao lado do mapa."
+    "Em um iPhone dobrável, quando a tela tem uma faixa do sistema em um dos lados, durante a viagem o botão do mapa e as marcações “Embarcar”, “Desembarcar”, “Entrar”, “Sair” e “Outro” ficam na vertical nessa faixa. Dobrado e na vertical, o mapa cabe na primeira tela. Aberto e na horizontal, a tela da viagem mostra à esquerda o número grande e a lista “Restantes” e à direita o mapa, tudo em uma tela. Ao criar ou editar um trajeto no mapa, com o iPhone aberto o mapa abre em tela cheia e, na horizontal, o painel fica ao lado do mapa."
    ]
   }
  ],
@@ -182,7 +182,7 @@
     ],
     "bullets": [
      "Trajetos (nome; nome, lugar e horário de cada checkpoint; janelas de horário; forma da rota; lembrete de saída e dias): para calcular o adiantamento ou o atraso e programar os lembretes de saída",
-     "Histórico de viagens (o horário previsto e o real em cada checkpoint): para as sugestões do Tune from trips",
+     "Histórico de viagens (o horário previsto e o real em cada checkpoint): para as sugestões do “Ajustar pelos trajetos”",
      "O percurso da última viagem (localizações), os momentos em que você alternou entre caminhada e veículo e as marcas que você deixou durante a viagem (horário e nome): para desenhar por onde você passou ao criar um trajeto a partir de uma viagem ou ao ajustar por esta viagem, e para marcar onde você embarcou e desembarcou num trajeto criado a partir de uma viagem",
      "Registro de diagnóstico (localizações e horários, e o tipo de atividade, como caminhar ou andar de carro, com o grau de certeza): para rever como o app se comportou. Ao chegar a 20 MB começa um registro novo (só o anterior é mantido), e a versão publicada não tem como exportá-lo",
      "Ajustes, se o Pro foi comprado e quando você mesmo escolheu um trajeto pela última vez: para montar o app, decidir quais recursos ficam abertos e escolher o trajeto para a hora do dia"
@@ -191,7 +191,7 @@
    {
     "title": "Período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda dados pessoais. Tudo que está no armazenamento do app some junto com o app. Os trajetos ficam até você apagar, e o histórico de viagens se apaga com Clear history nos ajustes do app. Trajetos apagados ficam em Recently Deleted, que guarda os três últimos."
+     "O desenvolvedor não guarda dados pessoais. Tudo que está no armazenamento do app some junto com o app. Os trajetos ficam até você apagar, e o histórico de viagens se apaga com “Limpar histórico” nos ajustes do app. Trajetos apagados ficam em “Apagados”, que guarda os três últimos."
     ],
     "bullets": []
    },
@@ -205,14 +205,14 @@
    {
     "title": "Tratamento por prestadores de serviço",
     "paragraphs": [
-     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. Checkpoints que você não nomeou, os que têm só um número como Checkpoint 3, recebem do app o nome de uma estação ou rua próxima, e para isso ele procura no Mapas da Apple os lugares e o endereço próximos da localização desse checkpoint. Isso vale para os checkpoints que o app distribuiu, os que você colocou no mapa sem nome, os adicionados com Add current location e os criados a partir de uma viagem. Ao abrir o app, ele também faz essa busca para checkpoints desse tipo que ficaram em trajetos criados antes. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
+     "Nenhum tratamento é terceirizado. A compra do OnPace Pro é feita pela Apple na App Store e os dados de pagamento seguem a política de privacidade da Apple. A busca de lugares, as rotas a pé e de carro e o mapa ficam a cargo do Mapas da Apple, também conforme a política de privacidade da Apple. Checkpoints que você não nomeou, os que têm só um número como “Ponto 3”, recebem do app o nome de uma estação ou rua próxima, e para isso ele procura no Mapas da Apple os lugares e o endereço próximos da localização desse checkpoint. Isso vale para os checkpoints que o app distribuiu, os que você colocou no mapa sem nome, os adicionados com “Adicionar localização atual” e os criados a partir de uma viagem. Ao abrir o app, ele também faz essa busca para checkpoints desse tipo que ficaram em trajetos criados antes. O desenvolvedor não recebe meio de pagamento, dados da sua Conta Apple nem o que você pesquisa."
     ],
     "bullets": []
    },
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Um trajeto apagado vai para Recently Deleted, o histórico de viagens se apaga com Clear history nos ajustes do app e, ao apagar o app, tudo que estava nele some."
+     "O desenvolvedor não guarda dados pessoais, então não há o que destruir. Um trajeto apagado vai para “Apagados”, o histórico de viagens se apaga com “Limpar histórico” nos ajustes do app e, ao apagar o app, tudo que estava nele some."
     ],
     "bullets": []
    },

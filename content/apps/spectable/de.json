@@ -11,18 +11,18 @@
    "layout": "feat",
    "title": "Nur die Unterschiede",
    "body": [
-    "Wählen Sie zwei Produkte, und ihre offiziellen Daten stehen nebeneinander, gleiche Werte sind eingeklappt. Ein Punkt markiert jede Zeile, die sich unterscheidet, und Sie springen direkt zu den größten Unterschieden. Zahlen stehen auf derselben Skala. Sie können bis zu 5 Produkte vergleichen."
+    "Wählen Sie zwei Produkte, und ihre offiziellen Daten stehen in je einer Spalte nebeneinander, gleiche Werte sind eingeklappt. Ein Punkt markiert jede Zeile, die sich unterscheidet, der bessere Wert steht fett, und unter dem Zeilennamen steht, um welches Vielfache oder wie viel Prozent die Werte auseinanderliegen. Unter „Nur Unterschiede“ zählt eine Zeile, bei wie vielen Angaben jedes Produkt vorn liegt, und Sie springen direkt zu den größten Unterschieden. Sie können bis zu 5 Produkte vergleichen; ab vier wischen Sie die Tabelle seitlich oder drehen das iPhone ins Querformat."
    ],
    "bullets": [
-    "Nur die Zeilen, die sich unterscheiden",
-    "Direkt zu den größten Unterschieden",
-    "Zahlen auf einer Skala"
+    "Eine Spalte je Produkt",
+    "Bessere Werte fett",
+    "Direkt zu den größten Unterschieden"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "Der Vergleichsbildschirm. Unter den beiden Produktnamen folgen der Schalter Nur Unterschiede, eine Reihe mit den größten Unterschieden und die Datentabelle.",
+    "focus": "-360px",
+    "alt": "Der Vergleichsbildschirm. Unter dem Schalter Nur Unterschiede folgen die Zahl der besseren Werte und eine Reihe mit den größten Unterschieden, darunter die Datentabelle mit einer Spalte je Produkt.",
     "caption": "App-Ansicht, vergrößert",
     "focusX": "80px"
    }
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Nach Zahlen finden",
    "body": [
-    "Wählen Sie eine Kategorie und setzen Sie Grenzen für Zahlenzeilen, etwa Arbeitsspeicher ab 16 GB und Gewicht bis 200 g, dann bleiben nur passende Produkte übrig. Die Suche versteht auch Kurznamen und Spitznamen."
+    "Wählen Sie eine Kategorie und setzen Sie Grenzen für Zahlenzeilen, etwa Arbeitsspeicher ab 16 GB und Gewicht bis 200 g, dann bleiben nur passende Produkte übrig. Die Suche versteht auch Kurznamen und Spitznamen. In der Liste steht bei jedem Produkt der Einführungspreis."
    ],
    "bullets": [
     "Mehrere Zahlenfilter",

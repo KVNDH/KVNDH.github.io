@@ -11,18 +11,18 @@
    "layout": "feat",
    "title": "Only what differs",
    "body": [
-    "Pick two products and their official specs sit side by side, with matching values folded away. A dot marks each row that differs, and you can jump straight to the biggest gaps. Numbers sit on the same scale. You can compare up to 5 products."
+    "Pick two products and their official specs sit side by side, one column per product, with matching values folded away. A dot marks each row that differs, the better number is set in bold, and under the row name you see how far apart the values are, as a multiple or a percentage. Under Differences only, a line counts how many specs each product leads on, and you can jump straight to the biggest gaps. You can compare up to 5 products; from four on, swipe the table sideways or turn your iPhone to landscape."
    ],
    "bullets": [
-    "Only the rows that differ",
-    "A jump to the biggest gaps",
-    "Numbers on one scale"
+    "One column per product",
+    "Better numbers in bold",
+    "A jump to the biggest gaps"
    ],
    "visual": {
     "type": "crop",
     "shot": 1,
-    "focus": "-120px",
-    "alt": "The comparison screen. Under the two product names are the Differences only switch, a row of the biggest gaps and the spec table.",
+    "focus": "-360px",
+    "alt": "The comparison screen. Below the Differences only switch are a count of better numbers and a row of the biggest gaps, with the spec table below in one column per product.",
     "caption": "App screen, zoomed in",
     "focusX": "80px"
    }
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Find by numbers",
    "body": [
-    "Choose a kind and set limits on number rows, such as memory of 16 GB or more and weight of 200 g or less, and only matching products stay. Search also takes short names and nicknames."
+    "Choose a kind and set limits on number rows, such as memory of 16 GB or more and weight of 200 g or less, and only matching products stay. Search also takes short names and nicknames. Each product in the list shows its launch price."
    ],
    "bullets": [
     "Several number filters",

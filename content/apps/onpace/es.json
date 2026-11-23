@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Cuánto tarde, punto por punto",
    "body": [
-    "Fija la hora a la que pasas por unos cuantos puntos del camino: la salida de casa, la esquina, la parada del autobús, la oficina. Mientras te mueves, OnPace compara dónde estás con dónde deberías estar según el plan y muestra la diferencia en minutos y segundos, en cifras grandes. No te indica el camino. Te dice si tienes que darte prisa. Cuando caminas hacia un punto de control con Early is fine o hacia una parada de la que sale tu vehículo, una línea como Plenty of time o Tight te dice si llegas a tiempo a tu paso actual. Cuando ya hay algunos trayectos, la llegada prevista al siguiente punto de control sigue lo que tardó cada tramo en días de la semana y horas de salida parecidos."
+    "Fija la hora a la que pasas por unos cuantos puntos del camino: la salida de casa, la esquina, la parada del autobús, la oficina. Mientras te mueves, OnPace compara dónde estás con dónde deberías estar según el plan y muestra la diferencia en minutos y segundos, en cifras grandes. No te indica el camino. Te dice si tienes que darte prisa. Cuando caminas hacia un punto de control con «Llegar pronto no importa» o hacia una parada de la que sale tu vehículo, una línea como «Tiempo de sobra» o «Justo de tiempo» te dice si llegas a tiempo a tu paso actual. Cuando ya hay algunos trayectos, la llegada prevista al siguiente punto de control sigue lo que tardó cada tramo en días de la semana y horas de salida parecidos."
    ],
    "bullets": [
     "Minutos y segundos de adelanto o retraso",
@@ -63,7 +63,7 @@
    "layout": "card",
    "title": "Ajustado con tus trayectos",
    "body": [
-    "Cada trayecto suma tiempos reales. Los tiempos de cada tramo cuentan desde que saliste de verdad, y salir tarde se cuenta aparte. Si llegaste tarde porque saliste tarde, OnPace te lo dice en lugar de proponerte salir antes. Mira la mediana de tus trayectos recientes, sugiere con el número de pin mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo, y señala los tramos que tardan más ciertos días de la semana o a ciertas horas de salida. Your last trip, en la pantalla de inicio, muestra con cuánto retraso saliste y cuánto duró el trayecto. Si saliste a tiempo y aun así tardaste más de lo previsto, adelantar la salida a partir de ese único trayecto está al alcance de todos."
+    "Cada trayecto suma tiempos reales. Los tiempos de cada tramo cuentan desde que saliste de verdad, y salir tarde se cuenta aparte. Si llegaste tarde porque saliste tarde, OnPace te lo dice en lugar de proponerte salir antes. Mira la mediana de tus trayectos recientes, sugiere con el número de pin mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo, y señala los tramos que tardan más ciertos días de la semana o a ciertas horas de salida. «Tu último trayecto», en la pantalla de inicio, muestra con cuánto retraso saliste y cuánto duró el trayecto. Si saliste a tiempo y aun así tardaste más de lo previsto, adelantar la salida a partir de ese único trayecto está al alcance de todos."
    ],
    "bullets": [],
    "visual": {
@@ -82,7 +82,7 @@
   "title": "Rutas sin límite,\nhoras ajustadas con tus trayectos y días para cada ruta",
   "items": [
    "Rutas sin límite de cantidad (para empezar son dos)",
-   "Tune from trips: aplica las sugerencias a las horas de los puntos de control",
+   "«Ajustar con trayectos»: aplica las sugerencias a las horas de los puntos de control",
    "Días para cada ruta: los recordatorios de salida y la elección automática los siguen"
   ]
  },
@@ -90,13 +90,13 @@
   {
    "q": "La flecha de ubicación sigue tras un trayecto",
    "a": [
-    "OnPace usa la ubicación junto con la tarjeta de la pantalla bloqueada mientras dura un trayecto, y deja de usarla al tocar Stop o dos minutos después de llegar. Si la app se cierra a la fuerza o se reinstala a mitad de trayecto, iOS puede dejar el indicador. Al reiniciar el iPhone desaparece."
+    "OnPace usa la ubicación junto con la tarjeta de la pantalla bloqueada mientras dura un trayecto, y deja de usarla al tocar «Detener» o dos minutos después de llegar. Si la app se cierra a la fuerza o se reinstala a mitad de trayecto, iOS puede dejar el indicador. Al reiniciar el iPhone desaparece."
    ]
   },
   {
    "q": "Qué permiso de ubicación elegir",
    "a": [
-    "Basta con «Al usar la app». «Siempre» no hace falta. Durante el trayecto la tarjeta de la pantalla bloqueada sigue visible, así que la ubicación llega aunque apagues la pantalla o uses otra app. Si no permitiste la ubicación, en los ajustes de OnPace, en Permissions, toca Open Settings para cambiarlo."
+    "Basta con «Al usar la app». «Siempre» no hace falta. Durante el trayecto la tarjeta de la pantalla bloqueada sigue visible, así que la ubicación llega aunque apagues la pantalla o uses otra app. Si no permitiste la ubicación, en los ajustes de OnPace, en «Permisos», toca «Abrir Ajustes» para cambiarlo."
    ]
   },
   {
@@ -108,13 +108,13 @@
   {
    "q": "El sonido de retraso",
    "a": [
-    "Con un minuto de retraso suena una nota, con dos minutos suenan dos, y así hasta cinco. Cuenta solo minutos enteros, sea cual sea el margen, y si vas adelantado no suena nada. El sonido usa el volumen multimedia aunque el iPhone esté en modo silencio, y la música que escuchas baja un momento. En los ajustes de OnPace, en Pace, puedes desactivar Sound when running late o escuchar con Preview los sonidos de uno a cinco minutos."
+    "Con un minuto de retraso suena una nota, con dos minutos suenan dos, y así hasta cinco. Cuenta solo minutos enteros, sea cual sea el margen, y si vas adelantado no suena nada. El sonido usa el volumen multimedia aunque el iPhone esté en modo silencio, y la música que escuchas baja un momento. En los ajustes de OnPace, en «Desfase», puedes desactivar «Sonido al ir con retraso» o escuchar con «Escuchar» los sonidos de uno a cinco minutos."
    ]
   },
   {
    "q": "Activar un recordatorio de salida",
    "a": [
-    "En la pantalla Route, dentro de Schedule, pon Departure reminder en At departure, 5 min before, 10 min before o 15 min before. La primera vez que lo activas, OnPace pide permiso para las notificaciones. Las notificaciones solo se usan para los recordatorios de salida. Al tocar el recordatorio empieza esa ruta. Con Pro puedes elegir Days para una ruta, y el recordatorio suena solo esos días. Si las notificaciones están desactivadas, actívalas en Ajustes > OnPace > Notificaciones."
+    "En la pantalla «Ruta», dentro de «Horario», pon «Aviso de salida» en «A la hora de salida», «5 min antes», «10 min antes» o «15 min antes». La primera vez que lo activas, OnPace pide permiso para las notificaciones. Las notificaciones solo se usan para los recordatorios de salida. Al tocar el recordatorio empieza esa ruta. Con Pro puedes elegir «Días» para una ruta, y el recordatorio suena solo esos días. Si las notificaciones están desactivadas, actívalas en Ajustes > OnPace > Notificaciones."
    ]
   },
   {
@@ -126,37 +126,37 @@
   {
    "q": "Tramos en autobús o metro",
    "a": [
-    "Al editar un punto de control o en Edit on map, elige Bus o Subway en To the next checkpoint. En esos tramos, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
+    "Al editar un punto de control o en «Editar en el mapa», elige «Autobús» o «Metro» en «Hasta el siguiente punto de control». En esos tramos, la diferencia con la que subiste se mantiene hasta que bajas, aunque se pierda la señal bajo tierra. No se usan datos de autobús ni de metro en tiempo real."
    ]
   },
   {
    "q": "Esperar en una parada",
    "a": [
-    "Pon dos puntos de control en el mismo sitio con horas separadas y se convierten en un tramo de espera. Si llegas antes, verás Wait here hasta la hora de salir. En el mapa de la ruta, los pines que se solapan se agrupan en uno, y al tocarlo el mapa se acerca hasta que se separan."
+    "Pon dos puntos de control en el mismo sitio con horas separadas y se convierten en un tramo de espera. Si llegas antes, verás «Espera aquí» hasta la hora de salir. En el mapa de la ruta, los pines que se solapan se agrupan en uno, y al tocarlo el mapa se acerca hasta que se separan."
    ]
   },
   {
-   "q": "Sugerencias de Tune from trips",
+   "q": "Sugerencias de «Ajustar con trayectos»",
    "a": [
-    "En la pantalla de la ruta, toca la fila Tune from trips bajo el mapa para ver las sugerencias y Good to know. Los tiempos de cada tramo cuentan desde que saliste de verdad. Salir tarde se muestra aparte, como You usually leave 7m late, junto con la hora a la que llegarías si salieras a tiempo. Las diferencias por día de la semana u hora de salida solo aparecen cuando ese grupo tiene 3 trayectos o más. Las sugerencias nombran los puntos de control por su número de pin, como #3, y al tocar una ves el cambio antes de aplicarlo. Cualquiera puede ver las sugerencias. Aplicarlas es parte de Pro."
+    "En la pantalla de la ruta, toca la fila «Ajustar con trayectos» bajo el mapa para ver las sugerencias y «A tener en cuenta». Los tiempos de cada tramo cuentan desde que saliste de verdad. Salir tarde se muestra aparte, como «Sueles salir 7 min tarde», junto con la hora a la que llegarías si salieras a tiempo. Las diferencias por día de la semana u hora de salida solo aparecen cuando ese grupo tiene 3 trayectos o más. Las sugerencias nombran los puntos de control por su número de pin, como #3, y al tocar una ves el cambio antes de aplicarlo. Cualquiera puede ver las sugerencias. Aplicarlas es parte de Pro."
    ]
   },
   {
    "q": "Una ruta o un punto de control borrados por error",
    "a": [
-    "Recently Deleted, en la pantalla de inicio de la app, guarda las tres últimas rutas borradas. Toca Recover para recuperar una. Una ruta recuperada vuelve a contar entre tus rutas. Quitar un punto de control, Delete all, Use the path you took y aplicar un horario o una sugerencia se pueden deshacer una vez con Undo, que aparece arriba en la pantalla de la ruta. Si cierras la app, ya no se puede deshacer."
+    "«Eliminado recientemente», en la pantalla de inicio de la app, guarda las tres últimas rutas borradas. Toca «Recuperar» para recuperar una. Una ruta recuperada vuelve a contar entre tus rutas. Quitar un punto de control, «Eliminar todo», «Usar el recorrido que hiciste» y aplicar un horario o una sugerencia se pueden deshacer una vez con «Deshacer», que aparece arriba en la pantalla de la ruta. Si cierras la app, ya no se puede deshacer."
    ]
   },
   {
    "q": "Pro en otro dispositivo",
    "a": [
-    "Toca Restore purchase en la pantalla de compra. Pro se comparte con En familia, así que tu familia también puede usarlo."
+    "Toca «Restaurar compra» en la pantalla de compra. Pro se comparte con En familia, así que tu familia también puede usarlo."
    ]
   },
   {
    "q": "Usar OnPace en un iPhone plegable",
    "a": [
-    "En un iPhone plegable, cuando la pantalla tiene una franja del sistema en un lado, durante el trayecto el botón del mapa y las marcas Board, Get off, Enter, Exit y Other se colocan en vertical en esa franja. Plegado y en vertical, el mapa cabe en la primera pantalla. Desplegado y en horizontal, la pantalla del trayecto muestra a la izquierda la cifra grande y la lista Remaining y a la derecha el mapa, todo en una sola pantalla. Al crear o editar una ruta en el mapa, con el iPhone desplegado el mapa se abre a pantalla completa y, en horizontal, el panel queda junto al mapa."
+    "En un iPhone plegable, cuando la pantalla tiene una franja del sistema en un lado, durante el trayecto el botón del mapa y las marcas «Subir», «Bajar», «Entrar», «Salir» y «Otro» se colocan en vertical en esa franja. Plegado y en vertical, el mapa cabe en la primera pantalla. Desplegado y en horizontal, la pantalla del trayecto muestra a la izquierda la cifra grande y la lista «Pendientes» y a la derecha el mapa, todo en una sola pantalla. Al crear o editar una ruta en el mapa, con el iPhone desplegado el mapa se abre a pantalla completa y, en horizontal, el panel queda junto al mapa."
    ]
   }
  ],
@@ -182,7 +182,7 @@
     ],
     "bullets": [
      "Rutas (nombre; nombre, lugar y hora de cada punto de control; márgenes; forma de la ruta; recordatorio de salida y días): para calcular el adelanto o el retraso y programar los recordatorios de salida",
-     "Historial de trayectos (la hora prevista y la real en cada punto de control): para las sugerencias de Tune from trips",
+     "Historial de trayectos (la hora prevista y la real en cada punto de control): para las sugerencias de «Ajustar con trayectos»",
      "El recorrido de tu último trayecto (ubicaciones), los momentos en que cambiaste entre caminar e ir en un vehículo y las marcas que dejaste durante el trayecto (hora y nombre): para dibujar por dónde fuiste al crear una ruta a partir de un trayecto o al ajustar con este trayecto, y para marcar dónde subiste y bajaste en una ruta creada a partir de un trayecto",
      "Registro de diagnóstico (ubicaciones y horas, y el tipo de actividad, como caminar o ir en coche, con su grado de certeza): para revisar cómo se comportó la app. Al llegar a 20 MB empieza un registro nuevo (solo se conserva el anterior), y la versión publicada no puede exportarlo",
      "Ajustes, si se compró Pro y cuándo elegiste tú una ruta por última vez: para organizar la app, decidir qué funciones se abren y elegir la ruta según la hora del día"
@@ -191,7 +191,7 @@
    {
     "title": "Plazo de conservación",
     "paragraphs": [
-     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Las rutas se quedan hasta que las borras, y el historial de trayectos se borra con Clear history en los ajustes de la app. Las rutas borradas esperan en Recently Deleted, que guarda las tres últimas."
+     "El desarrollador no guarda datos personales. Todo lo que hay en el almacenamiento de la app se borra al borrar la app. Las rutas se quedan hasta que las borras, y el historial de trayectos se borra con «Borrar historial» en los ajustes de la app. Las rutas borradas esperan en «Eliminado recientemente», que guarda las tres últimas."
     ],
     "bullets": []
    },
@@ -205,14 +205,14 @@
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. A los puntos de control a los que no has puesto nombre, los que solo llevan un número como Checkpoint 3, la app les pone el de una estación o calle cercana, y para ello busca en Mapas de Apple los lugares y la dirección cercanos a la ubicación de ese punto. Esto incluye los puntos que repartió la app, los que colocaste en el mapa sin nombre, los añadidos con Add current location y los creados a partir de un trayecto. Al abrir la app, también hace esa búsqueda para los puntos de este tipo que quedan en rutas creadas antes. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
+     "No se encarga ningún tratamiento a terceros. La compra de OnPace Pro la gestiona Apple en el App Store y los datos de pago siguen la política de privacidad de Apple. La búsqueda de lugares, las rutas a pie y en coche y el mapa los gestiona Mapas de Apple, también según la política de privacidad de Apple. A los puntos de control a los que no has puesto nombre, los que solo llevan un número como «Punto de control 3», la app les pone el de una estación o calle cercana, y para ello busca en Mapas de Apple los lugares y la dirección cercanos a la ubicación de ese punto. Esto incluye los puntos que repartió la app, los que colocaste en el mapa sin nombre, los añadidos con «Añadir ubicación actual» y los creados a partir de un trayecto. Al abrir la app, también hace esa búsqueda para los puntos de este tipo que quedan en rutas creadas antes. El desarrollador no recibe ningún medio de pago, ni datos de tu cuenta de Apple, ni lo que buscas."
     ],
     "bullets": []
    },
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Una ruta borrada pasa a Recently Deleted, el historial de trayectos se borra con Clear history en los ajustes de la app y, al borrar la app, se borra todo lo que contiene."
+     "El desarrollador no guarda datos personales, así que no hay nada que destruir. Una ruta borrada pasa a «Eliminado recientemente», el historial de trayectos se borra con «Borrar historial» en los ajustes de la app y, al borrar la app, se borra todo lo que contiene."
     ],
     "bullets": []
    },

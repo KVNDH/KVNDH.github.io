@@ -201,6 +201,36 @@
     "OnPace/docs/store/shots-raw/iphone/en-US/run.png",
     "OnPace/docs/store/shots-raw/iphone/en-US/route.png",
     "OnPace/docs/store/shots-raw/iphone/en-US/map.png"
+   ],
+   "ja": [
+    "OnPace/docs/store/shots-raw/iphone/ja/run.png",
+    "OnPace/docs/store/shots-raw/iphone/ja/route.png",
+    "OnPace/docs/store/shots-raw/iphone/ja/map.png"
+   ],
+   "de": [
+    "OnPace/docs/store/shots-raw/iphone/de-DE/run.png",
+    "OnPace/docs/store/shots-raw/iphone/de-DE/route.png",
+    "OnPace/docs/store/shots-raw/iphone/de-DE/map.png"
+   ],
+   "es": [
+    "OnPace/docs/store/shots-raw/iphone/es-ES/run.png",
+    "OnPace/docs/store/shots-raw/iphone/es-ES/route.png",
+    "OnPace/docs/store/shots-raw/iphone/es-ES/map.png"
+   ],
+   "pt-br": [
+    "OnPace/docs/store/shots-raw/iphone/pt-BR/run.png",
+    "OnPace/docs/store/shots-raw/iphone/pt-BR/route.png",
+    "OnPace/docs/store/shots-raw/iphone/pt-BR/map.png"
+   ],
+   "zh-hans": [
+    "OnPace/docs/store/shots-raw/iphone/zh-Hans/run.png",
+    "OnPace/docs/store/shots-raw/iphone/zh-Hans/route.png",
+    "OnPace/docs/store/shots-raw/iphone/zh-Hans/map.png"
+   ],
+   "zh-hant": [
+    "OnPace/docs/store/shots-raw/iphone/zh-Hant/run.png",
+    "OnPace/docs/store/shots-raw/iphone/zh-Hant/route.png",
+    "OnPace/docs/store/shots-raw/iphone/zh-Hant/map.png"
    ]
   },
   "store": "OnPace/docs/store"

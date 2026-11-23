@@ -112,7 +112,7 @@
    "q": "Bending and tilting a line",
    "a": [
     "Each line has three points. The two ends sit on the edge of the photo, and the middle one moves freely. Drag the middle point and the line bends while its ends stay put. Drag an edge point and it slides along that edge, tilting the line.",
-    "Tap a line to show small ticks along it. Drag a tick to add a bend point, or tap any point to Delete it or make it Smooth. Edge points can't be deleted, and a line holds up to 8 points."
+    "Tap a line to show small ticks along it. Drag a tick to add a bend point, or tap any point and use the chips beside it: Delete point, Smooth, or Delete line, which removes the line the point sits on. Edge points can't be deleted, and a line holds up to 8 points."
    ]
   },
   {

@@ -388,10 +388,30 @@
     "違う値には点が付き ひと目でわかる",
     "大きさを同じ比率で 重ねて見る"
    ],
+   "zh-hans": [
+    "官方规格 并排对比",
+    "不同的数值 都有圆点标记",
+    "尺寸按同一比例 叠加对比"
+   ],
+   "zh-hant": [
+    "官方規格 並排比較",
+    "數值不同之處 都有圓點標示",
+    "尺寸以同一比例 疊合比較"
+   ],
    "de": [
     "Offizielle Daten im Vergleich",
     "Ein Punkt markiert jeden Unterschied",
     "Größen im selben Maßstab überlagert"
+   ],
+   "es": [
+    "Fichas oficiales, lado a lado",
+    "Un punto marca cada diferencia",
+    "Tamaños superpuestos a la misma escala"
+   ],
+   "pt-br": [
+    "Especificações oficiais lado a lado",
+    "Um ponto marca cada diferença",
+    "Tamanhos sobrepostos na mesma escala"
    ]
   }
  },

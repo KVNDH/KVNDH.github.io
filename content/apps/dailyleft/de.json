@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Wählen Sie die Tage, die zählen",
    "body": [
-    "Standardmäßig zählt jeder Tag. Schalten Sie Count Weekdays Only (Nur Werktage zählen) ein, um Wochenenden auszulassen, und wenn die Region Ihres iPhones Südkorea ist, auch koreanische Feiertage. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben. Tippen Sie auf einen Tag mit erfasstem Händler, um zu sehen, wo Sie bezahlt haben. Halten Sie einen vergangenen Tag oder heute gedrückt, um eine Zahlung mit diesem Datum einzutragen."
+    "Standardmäßig zählt jeder Tag. Schalten Sie „Nur Wochentage zählen“ ein, um Wochenenden auszulassen, und wenn die Region Ihres iPhones Südkorea ist, auch koreanische Feiertage. Einen Tag, an dem Sie nichts ausgeben, tippen Sie im Kalender an, um ihn auszulassen. Bei einem Monatsbudget wird der Tagesbetrag dann neu auf die verbleibenden Tage verteilt. Vergangene Tage im Kalender zeigen, was Sie ausgegeben haben. Tippen Sie auf einen Tag mit erfasstem Händler, um zu sehen, wo Sie bezahlt haben. Halten Sie einen vergangenen Tag oder heute gedrückt, um eine Zahlung mit diesem Datum einzutragen."
    ],
    "bullets": [
     "Nur Werktage zählen",
@@ -51,7 +51,7 @@
    "layout": "feat",
    "title": "Passend zu Ihrem Budget einstellen",
    "body": [
-    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Bei einem Monatsbudget wird das übrige Geld am Ende des Zeitraums zum Budget des nächsten Zeitraums addiert. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, wählen Sie bei Leftover Handling (Umgang mit dem Rest) die Option Expires (Verfällt). Dann wird nichts übertragen, und die App weist Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
+    "Standardmäßig hilft die App Ihnen, im Budget zu bleiben. Bei einem Monatsbudget wird das übrige Geld am Ende des Zeitraums zum Budget des nächsten Zeitraums addiert. Verfällt das Geld am Ende des Zeitraums, etwa bei Benefit-Punkten oder einem Zuschuss, wählen Sie bei „Umgang mit Restgeld“ die Option „Verfällt“. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles rechtzeitig auszugeben. Den Starttag Ihres Budgets wählen Sie vom 1. bis zum 28. Das übrige Geld steht auch in Widgets auf dem Home-Bildschirm und dem Sperrbildschirm."
    ],
    "bullets": [
     "Übertrag oder Verfall",
@@ -83,7 +83,7 @@
    "layout": "card",
    "title": "Wenn der Saldo nicht stimmt",
    "body": [
-    "Weichen die Einträge von Ihrem tatsächlichen Saldo ab, tippen Sie auf die große Zahl und tragen den tatsächlichen Betrag ein. Eine Zeile Balance adjustment (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind."
+    "Weichen die Einträge von Ihrem tatsächlichen Saldo ab, tippen Sie auf die große Zahl und tragen den tatsächlichen Betrag ein. Eine Zeile „Saldokorrektur“ hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind."
    ],
    "bullets": [],
    "visual": {
@@ -100,12 +100,12 @@
   "kick": "DailyLeft Pro",
   "title": "Getrennte Budgets,\neigene Zeiträume und Hinweise",
   "items": [
-   "Mehrere Budgets (bis zu 4) und ein Budgets-Widget",
+   "Mehrere Budgets (bis zu 4) und ein „Budgets“-Widget",
    "Zeiträume wöchentlich, alle 2 Wochen, zum Monatsletzten oder nach gewählten Daten",
    "Ein Rückblick auf jeden vergangenen Zeitraum",
    "Hinweise über dem Tagesbetrag oder unter 10 %",
    "Bannerwerbung auf dem Hauptbildschirm aus",
-   "Wer früher Remove Ads gekauft hat, hat DailyLeft Pro schon"
+   "Wer früher „Werbung entfernen“ gekauft hat, hat DailyLeft Pro schon"
   ]
  },
  "faq": [
@@ -113,53 +113,53 @@
    "q": "Erste Schritte",
    "a": [
     "Wählen Sie ein Monats- oder Tagesbudget, tragen Sie einen Betrag ein und tippen Sie auf Start. Konto und Anmeldung gibt es nicht.",
-    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlichen Saldo in das Feld Money Left This Month (Jetziger Saldo diesen Monat, bei einem anderen Starttag als dem 1. Money Left This Period) ein. Bleibt es leer, zählt das ganze Budget. Ist die Region Ihres iPhone Südkorea, tragen Sie die letzten 4 Kartenziffern unter Payment Notices (Zahlungshinweise) ein. Starttag des Zeitraums, Nur Werktage zählen und Umgang mit dem Rest finden Sie unter More Options (Mehr Optionen), und Sie können sie später in den Einstellungen ändern."
+    "Beginnen Sie ein Monatsbudget mitten im Zeitraum, tragen Sie den tatsächlichen Saldo in das Feld „Restgeld in diesem Monat“ (bei einem anderen Starttag als dem 1. „Restgeld in diesem Zeitraum“) ein. Bleibt es leer, zählt das ganze Budget. Ist die Region Ihres iPhone Südkorea, tragen Sie die letzten 4 Kartenziffern unter „Zahlungsmitteilungen“ ein. Starttag des Zeitraums, Nur Werktage zählen und Umgang mit dem Rest finden Sie unter „Weitere Optionen“, und Sie können sie später in den Einstellungen ändern."
    ]
   },
   {
    "q": "Gezählte Tage und Feiertage",
    "a": [
-    "Standardmäßig zählt jeder Tag. Ist das Geld nicht für Wochenenden gedacht, schalten Sie in den Einstellungen Count Weekdays Only (Nur Werktage zählen) ein. Wochenenden fallen dann weg, und wenn die Region Ihres iPhones Südkorea ist, auch Feiertage. Um einen bestimmten Tag auszulassen, tippen Sie ihn im Kalender auf dem Hauptbildschirm an. Ist der Kalender eingeklappt, zeigt er nur diese Woche. Für andere Wochen tippen Sie auf Expand Calendar (Kalender aufklappen). Vergangene Tage lassen sich nicht auslassen.",
+    "Standardmäßig zählt jeder Tag. Ist das Geld nicht für Wochenenden gedacht, schalten Sie in den Einstellungen „Nur Wochentage zählen“ ein. Wochenenden fallen dann weg, und wenn die Region Ihres iPhones Südkorea ist, auch Feiertage. Um einen bestimmten Tag auszulassen, tippen Sie ihn im Kalender auf dem Hauptbildschirm an. Ist der Kalender eingeklappt, zeigt er nur diese Woche. Für andere Wochen tippen Sie auf „Kalender ausklappen“. Vergangene Tage lassen sich nicht auslassen. Ist ein ausgelassener Tag vorbei, verschwindet die Markierung „Aus“, und er zählt wie jeder andere Tag.",
     "Für die Region Südkorea sind die Feiertage für 2026 bis 2028 in der App enthalten, spätere Jahre kommen mit App-Updates hinzu. 2028 wurde aus den Kalenderdaten des Korea Astronomy and Space Science Institute ermittelt und wird erneut geprüft, sobald die offiziellen Termine vorliegen. In Jahren, die nicht in der Liste stehen, fallen nur die Wochenenden weg. Temporäre Feiertage, die nicht in der Liste stehen, tippen Sie im Kalender an, um sie auszulassen."
    ]
   },
   {
    "q": "Übriges Geld am Ende eines Zeitraums",
    "a": [
-    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Wurde Geld übertragen, zeigt die Zeile unter dem Balken auf dem Hauptbildschirm auch den Betrag, der aus dem letzten Zeitraum übertragen wurde. Wenn Sie die App in einem neuen Zeitraum zum ersten Mal öffnen, zeigt ein kurzer Hinweis einmal, wie viel übertragen wurde. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, Leftover Handling (Umgang mit dem Rest) auf Carries Over (Übertragen) gestellt oder auf Monthly Budget (Monatsbudget) gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
-    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, stellen Sie in den Einstellungen unter More Rules (Weitere Regeln) Leftover Handling (Umgang mit dem Rest) auf Expires (Verfällt). Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
+    "Bei einem Monatsbudget wird das übrige Geld am Ende eines Zeitraums zum Budget des nächsten Zeitraums addiert. Übertragen wird nur übriges Geld, und was Sie über das Budget hinaus ausgegeben haben, wird vom nächsten Zeitraum nicht abgezogen. Wurde Geld übertragen, zeigt die Zeile unter dem Balken auf dem Hauptbildschirm auch den Betrag, der aus dem letzten Zeitraum übertragen wurde. Wenn Sie die App in einem neuen Zeitraum zum ersten Mal öffnen, zeigt ein kurzer Hinweis einmal, wie viel übertragen wurde. Der Übertrag beginnt mit dem Zeitraum, in dem Sie die App eingerichtet, „Umgang mit Restgeld“ auf „Wird übertragen“ gestellt oder auf „Monatsbudget“ gewechselt haben. Ändern Sie danach Betrag oder Starttag, wird bereits übertragenes Geld nicht neu berechnet. Ein Tagesbudget wird nicht übertragen.",
+    "Verfällt das Geld, wenn es nicht ausgegeben wird, etwa bei Benefit-Punkten oder einem Zuschuss, stellen Sie in den Einstellungen unter „Weitere Regeln“ „Umgang mit Restgeld“ auf „Verfällt“. Dann wird nichts übertragen, und die App weist Sie darauf hin, alles innerhalb des Zeitraums auszugeben."
    ]
   },
   {
    "q": "Tagesbudgets und der Berechnungszeitraum",
    "a": [
-    "Um nach Tagen zu planen, stellen Sie die Budgetart in den Einstellungen auf Daily Budget (Tagesbudget). An jedem gezählten Tag kommt ein neuer Anteil hinzu, und Tage, die nicht zählen, haben keinen Anteil.",
-    "Beginnt Ihr Budget nicht am 1., öffnen Sie in den Einstellungen Calculation Period (Berechnungszeitraum) und wählen unter Monthly (Monatlich) einen Starttag vom 1. bis zum 28. Mit DailyLeft Pro wählen Sie außerdem den 29., den 30., Last Day (Monatsletzter), Move Earlier on Weekends and Holidays (An Wochenenden und Feiertagen vorziehen), Weekly (Wöchentlich), Every 2 Weeks (Alle 2 Wochen) und Pick Dates (Daten wählen, eine Länge von 2 bis 92 Tagen, die sich wiederholt). Ändern Sie den Berechnungszeitraum, werden auch frühere Einträge in die neuen Zeiträume aufgeteilt, und Zeiträume von vor der Änderung zeigen nur, was Sie ausgegeben haben. Ändert sich die Art des Zeitraums, tragen Sie den Betrag neu ein, und übertragenes Geld wird ab diesem Tag wieder von 0 gezählt."
+    "Um nach Tagen zu planen, stellen Sie die Budgetart in den Einstellungen auf „Tagesbudget“. An jedem gezählten Tag kommt ein neuer Anteil hinzu, und Tage, die nicht zählen, haben keinen Anteil.",
+    "Beginnt Ihr Budget nicht am 1., öffnen Sie in den Einstellungen „Berechnungszeitraum“ und wählen unter „Monatlich“ einen Starttag vom 1. bis zum 28. Mit DailyLeft Pro wählen Sie außerdem den 29., den 30., „Letzter Tag“, „Bei Wochenende und Feiertag vorziehen“, „Wöchentlich“, „Alle 2 Wochen“ und „Daten wählen“ (eine Länge von 2 bis 92 Tagen, die sich wiederholt). Ändern Sie den Berechnungszeitraum, werden auch frühere Einträge in die neuen Zeiträume aufgeteilt, und Zeiträume von vor der Änderung zeigen nur, was Sie ausgegeben haben. Ändert sich die Art des Zeitraums, tragen Sie den Betrag neu ein, und übertragenes Geld wird ab diesem Tag wieder von 0 gezählt."
    ]
   },
   {
    "q": "Der Tagesbetrag an einem Tag mit Zahlung",
    "a": [
-    "Bei einem Monatsbudget gilt: Ist heute ein gezählter Tag und gibt es heute eine Zahlung, endet die Berechnung für heute, und das übrige Geld wird ab morgen neu verteilt. Auf dem Bildschirm steht Done for today (Für heute fertig). Stornieren Sie alle Zahlungen dieses Tages, zählt der heutige Tag wieder. Saldoanpassungen gelten nicht als Zahlungen."
+    "Bei einem Monatsbudget gilt: Ist heute ein gezählter Tag und gibt es heute eine Zahlung, endet die Berechnung für heute, und das übrige Geld wird ab morgen neu verteilt. Auf dem Bildschirm steht „Heute erledigt“. Stornieren Sie alle Zahlungen dieses Tages, zählt der heutige Tag wieder. Saldoanpassungen gelten nicht als Zahlungen."
    ]
   },
   {
    "q": "Rundung des Tagesbetrags",
    "a": [
-    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets standardmäßig auf volle 100 Won abgerundet, aus 18.383 Won werden also 18.300 Won. Bei einem Monatsbudget wählen Sie in den Einstellungen unter More Rules (Weitere Regeln) bei Daily Amount Unit (Einheit des Tagesbetrags) 1.000, 100, 10 oder 1 Won. Beträge unter der gewählten Einheit bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo und Buchungsbeträge werden nicht gerundet. Andere Währungen werden standardmäßig nicht gerundet, eine Einheit lässt sich dort aber ebenfalls wählen."
+    "In Won wird der Tagesbetrag in der großen Zahl, in der Statuszeile und in den Widgets standardmäßig auf volle 100 Won abgerundet, aus 18.383 Won werden also 18.300 Won. Bei einem Monatsbudget wählen Sie in den Einstellungen unter „Weitere Regeln“ bei „Rundung Tagesbetrag“ 1.000, 100, 10 oder 1 Won. Beträge unter der gewählten Einheit bleiben, wie sie sind, und ist nur noch ein Tag übrig, erscheint das gesamte übrige Geld. Gesamtsaldo und Buchungsbeträge werden nicht gerundet. Andere Währungen werden standardmäßig nicht gerundet, eine Einheit lässt sich dort aber ebenfalls wählen."
    ]
   },
   {
    "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
-    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie Add by Hand (Manuell hinzufügen). Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. Automation Setup (Automation einrichten), das Sie in den Einstellungen über Shortcuts Automation (Kurzbefehl-Automation) öffnen, enthält Get Shortcut (Kurzbefehl laden). Damit laden Sie per Link einen Kurzbefehl mit der einen App-Aktion Record Payment Message (Zahlungsnachricht erfassen). Sie fügen ihn in der Kurzbefehle-App hinzu und schalten die Automation selbst ein. Die Schritte für Ihre iOS-Version stehen der Reihe nach auf demselben Bildschirm. Öffnet sich der Link nicht, folgen Sie den Schritten unter Build It Yourself (Selbst erstellen), das zunächst eingeklappt ist. Sobald die Automation einmal gelaufen ist, zeigt die Zeile Shortcuts Automation in den Einstellungen Working (Läuft). Erfasst die Automation eine Zahlung, kommt statt eines Ergebnisfensters eine lautlose Mitteilung in einer Zeile. Nachrichten anderer Karten und Nachrichten, die keine Zahlung sind, lösen keine aus. Haben Sie Mitteilungen noch nicht erlaubt, tippen Sie in Automation Setup auf Allow Notifications (Mitteilungen erlauben); sind sie ausgeschaltet, schalten Sie sie mit Open Settings (Einstellungen öffnen) ein.",
-    "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld Contains (Enthält) der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
+    "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie „Manuell hinzufügen“. Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. „Automation einrichten“, das Sie in den Einstellungen über „Kurzbefehle-Automation“ öffnen, enthält „Kurzbefehl laden“. Damit laden Sie per Link einen Kurzbefehl mit der einen App-Aktion „Zahlungsnachricht erfassen“. Sie fügen ihn in der Kurzbefehle-App hinzu und schalten die Automation selbst ein. Die Schritte für Ihre iOS-Version stehen der Reihe nach auf demselben Bildschirm. Öffnet sich der Link nicht, folgen Sie den Schritten unter „Selbst erstellen“, das zunächst eingeklappt ist. Sobald die Automation einmal gelaufen ist, zeigt die Zeile „Kurzbefehle-Automation“ in den Einstellungen „Läuft“. Erfasst die Automation eine Zahlung, kommt statt eines Ergebnisfensters eine lautlose Mitteilung in einer Zeile. Nachrichten anderer Karten und Nachrichten, die keine Zahlung sind, lösen keine aus. Haben Sie Mitteilungen noch nicht erlaubt, tippen Sie in „Automation einrichten“ auf „Mitteilungen erlauben“; sind sie ausgeschaltet, schalten Sie sie mit „Einstellungen öffnen“ ein.",
+    "Die App kann Ihre Nachrichten nicht direkt lesen. Sie liest nur Text, den die Automation übergibt, oder Text, den Sie einfügen. Das Feld „Nachricht enthält“ der Automation bestimmt, welche Nachrichten übergeben werden. Steht dort nur 승인 (genehmigt), werden Stornonachrichten womöglich nicht erfasst. Damit auch sie ankommen, tragen Sie in dieses Feld die letzten 4 Ziffern Ihrer Karte ein."
    ]
   },
   {
    "q": "Hinweise aus Karten-Apps und KakaoTalk",
    "a": [
-    "Wegen der Einschränkungen von iOS kann die App Hinweise aus Karten-Apps und KakaoTalk nicht automatisch lesen. Kopieren Sie den Hinweis und fügen Sie ihn unter Add from Message (Aus Nachricht hinzufügen) ein, oder nutzen Sie Add by Hand (Manuell hinzufügen). Add from Message gibt es nur für die Region Südkorea."
+    "Wegen der Einschränkungen von iOS kann die App Hinweise aus Karten-Apps und KakaoTalk nicht automatisch lesen. Kopieren Sie den Hinweis und fügen Sie ihn unter „Aus Nachricht“ ein, oder nutzen Sie „Manuell hinzufügen“. Unter „Aus Nachricht“ wird ein lesbarer Hinweis gleich beim Tippen auf „Einsetzen“ erfasst. „Aus Nachricht“ gibt es nur für die Region Südkorea."
    ]
   },
   {
@@ -171,30 +171,30 @@
   {
    "q": "Wenn eine Nachricht nicht erfasst wird (Südkorea)",
    "a": [
-    "Prüfen Sie, ob im Feld Message Text (Nachrichtentext) der Automation die Message (Nachricht) des Auslösers steht. Haben Sie die letzten 4 Ziffern Ihrer Karte eingetragen, muss eine Nachricht diese 4 Ziffern vollständig zeigen, damit sie gelesen wird. Bei anderen Nachrichten leeren Sie das Kartenfeld oder nutzen Add by Hand (Manuell hinzufügen).",
+    "Prüfen Sie, ob im Feld „Nachrichtentext“ der Automation die „Nachricht“ des Auslösers steht. Haben Sie die letzten 4 Ziffern Ihrer Karte eingetragen, muss eine Nachricht diese 4 Ziffern vollständig zeigen, damit sie gelesen wird. Bei anderen Nachrichten leeren Sie das Kartenfeld oder nutzen „Manuell hinzufügen“.",
     "Nachrichten werden auf Grundlage des Formats von Hana Card gelesen, und bei anderen Kartenfirmen sucht die App nach Betrag, Datum und den letzten 4 Ziffern. Nachrichten ohne Datum oder Uhrzeit lassen sich nicht lesen, und Zahlungen, die nicht in Won erfolgen, werden nicht erfasst."
    ]
   },
   {
    "q": "Eine Nachricht melden (Südkorea)",
    "a": [
-    "Kann Add from Message (Aus Nachricht hinzufügen) eine Nachricht nicht lesen, erscheint unter dem Ergebnis Report Message (Nachricht melden). Tippen Sie darauf, öffnet sich ein E-Mail-Entwurf mit dem Originaltext. Vor dem Senden können Sie Namen, Händler oder Kartennummer löschen oder ändern. Sie senden die E-Mail selbst aus Ihrer eigenen Mail-App.",
+    "Kann „Aus Nachricht“ eine Nachricht nicht lesen, erscheint unter dem Ergebnis „Nachricht melden“. Tippen Sie darauf, öffnet sich ein E-Mail-Entwurf mit dem Originaltext. Vor dem Senden können Sie Namen, Händler oder Kartennummer löschen oder ändern. Sie senden die E-Mail selbst aus Ihrer eigenen Mail-App.",
     "Gemeldete Nachrichten dienen nur dazu, die App auf dieses Format einzustellen und Ihnen zu antworten."
    ]
   },
   {
    "q": "Wenn der Saldo nicht passt",
    "a": [
-    "Tippen Sie auf die große Zahl oder auf Adjust Balance (Saldo angleichen) und tragen Sie den tatsächlichen Betrag ein. Eine Zeile Balance adjustment (Saldoanpassung) hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind. Anpassungszeilen und Transaktionen löschen Sie durch Wischen in der Liste.",
-    "Um eine Stornierung oder Erstattung von Hand einzutragen, schalten Sie unter Add by Hand (Manuell hinzufügen) die Option Cancellation or Refund (Storno oder Erstattung) ein."
+    "Tippen Sie auf die große Zahl oder auf „Saldo abgleichen“ und tragen Sie den tatsächlichen Betrag ein. Eine Zeile „Saldokorrektur“ hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind. Anpassungszeilen und Transaktionen löschen Sie durch Wischen in der Liste.",
+    "Um eine Stornierung oder Erstattung von Hand einzutragen, schalten Sie unter „Manuell hinzufügen“ die Option „Storno oder Erstattung“ ein."
    ]
   },
   {
    "q": "Widgets",
    "a": [
     "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 3 letzten Transaktionen.",
-    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie Not set up (Nicht eingerichtet) oder ein Fragezeichen.",
-    "Mit DailyLeft Pro und zwei oder mehr Budgets zeigt das Widget Budgets auf einen Blick, was in jedem Budget übrig ist. Es gibt es in klein, mittel und groß für den Home-Bildschirm und in den drei Formen für den Sperrbildschirm, und beim Bearbeiten des Widgets wählen Sie Budgets to Show (Angezeigte Budgets). In mittel und groß öffnet ein Tippen auf ein Budget die App mit diesem Budget. Das ursprüngliche Widget zeigt immer das erste Budget."
+    "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie „Nicht eingerichtet“ oder ein Fragezeichen.",
+    "Mit DailyLeft Pro und zwei oder mehr Budgets zeigt das Widget Budgets auf einen Blick, was in jedem Budget übrig ist. Es gibt es in klein, mittel und groß für den Home-Bildschirm und in den drei Formen für den Sperrbildschirm, und beim Bearbeiten des Widgets wählen Sie „Angezeigte Budgets“. In mittel und groß öffnet ein Tippen auf ein Budget die App mit diesem Budget. Das ursprüngliche Widget zeigt immer das erste Budget."
    ]
   },
   {
@@ -206,24 +206,24 @@
   {
    "q": "DailyLeft Pro und Kauf wiederherstellen",
    "a": [
-    "Tippen Sie ganz oben in den Einstellungen auf DailyLeft Pro. Dort sehen Sie, was Pro enthält, und den Preis, und kaufen mit Buy Pro (Pro kaufen). Derselbe Bildschirm öffnet sich, wenn Sie auf eine Pro-Stelle tippen, etwa Add Budget (Budget hinzufügen), eine Pro-Option unter Calculation Period, Period Wrap-up (Zeitraum-Rückblick) bei einem vergangenen Zeitraum oder einen Schalter unter Balance Alerts (Saldo-Hinweise). Nach dem Kauf verschwindet das Werbebanner auf dem Hauptbildschirm, und auch das Einwilligungsformular und die Tracking-Abfrage erscheinen nicht mehr.",
-    "Haben Sie früher Remove Ads (Werbung entfernen) gekauft, ist DailyLeft Pro nach dem Update schon eingeschaltet. Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen unter Info auf Restore Purchases (Käufe wiederherstellen). Mit demselben Apple Account zahlen Sie nicht noch einmal.",
+    "Tippen Sie ganz oben in den Einstellungen auf DailyLeft Pro. Dort sehen Sie, was Pro enthält, und den Preis, und kaufen mit „Pro kaufen“. Derselbe Bildschirm öffnet sich, wenn Sie auf eine Pro-Stelle tippen, etwa „Budget hinzufügen“, eine Pro-Option unter „Berechnungszeitraum“, „Abschluss des Zeitraums“ bei einem vergangenen Zeitraum oder einen Schalter unter „Restbetrag-Hinweise“. Nach dem Kauf verschwindet das Werbebanner auf dem Hauptbildschirm, und auch das Einwilligungsformular und die Tracking-Abfrage erscheinen nicht mehr.",
+    "Haben Sie früher „Werbung entfernen“ gekauft, ist DailyLeft Pro nach dem Update schon eingeschaltet. Nach einem Gerätewechsel oder einer Neuinstallation tippen Sie in den Einstellungen unter Info auf „Käufe wiederherstellen“. Mit demselben Apple Account zahlen Sie nicht noch einmal.",
     "Endet Pro durch eine Rückerstattung oder das Ende der Familienfreigabe, bleiben die angelegten Budgets, der gewählte Berechnungszeitraum und Ihre Einträge erhalten und werden weiter gezählt. Nur Budgets hinzufügen, eine andere Pro-Zeitraumart wählen, der Zeitraum-Rückblick und die Saldo-Hinweise gehen dann nicht mehr."
    ]
   },
   {
    "q": "Mehrere Budgets (Pro)",
    "a": [
-    "Mit DailyLeft Pro können Sie bis zu 4 Budgets führen, jedes mit eigenem Betrag, Berechnungszeitraum und Umgang mit dem Rest. Sie fügen eines mit Add Budget (Budget hinzufügen) in den Einstellungen hinzu und benennen beim ersten Mal auch das Budget, das Sie bisher genutzt haben. Mit zwei oder mehr Budgets wechseln Sie in der Zeile oben auf dem Hauptbildschirm. Eine Gesamtsumme über alle Budgets gibt es nicht.",
-    "Ist die Region Ihres iPhone Südkorea, landet eine Zahlungsnachricht im Budget, dessen letzte 4 Kartenziffern passen, und wenn keines passt, im Budget mit leeren letzten 4 Ziffern. Nur ein Budget kann sie leer haben, und dieselben letzten 4 Ziffern können nicht in zwei Budgets stehen. Legen Sie pro Kartennummer eine Automation an. Get Shortcut (Kurzbefehl laden) brauchen Sie nur einmal. Hat ein Budget keine letzten 4 Ziffern, oder unter iOS 27, nimmt eine Automation mit 승인 die Nachrichten für alle Budgets an. In beiden Fällen wählt die App für jede Nachricht das passende Budget, und die Schritte stehen in den Einstellungen unter Shortcuts Automation.",
-    "Ab dem zweiten Budget löschen Sie ein Budget mit Delete Budget (Budget löschen) auf seinem Bildschirm. Alle seine Einträge werden mitgelöscht und lassen sich nicht zurückholen. Das erste Budget lässt sich nicht löschen."
+    "Mit DailyLeft Pro können Sie bis zu 4 Budgets führen, jedes mit eigenem Betrag, Berechnungszeitraum und Umgang mit dem Rest. Sie fügen eines mit „Budget hinzufügen“ in den Einstellungen hinzu und benennen beim ersten Mal auch das Budget, das Sie bisher genutzt haben. Mit zwei oder mehr Budgets wechseln Sie in der Zeile oben auf dem Hauptbildschirm. Eine Gesamtsumme über alle Budgets gibt es nicht.",
+    "Ist die Region Ihres iPhone Südkorea, landet eine Zahlungsnachricht im Budget, dessen letzte 4 Kartenziffern passen, und wenn keines passt, im Budget mit leeren letzten 4 Ziffern. Nur ein Budget kann sie leer haben, und dieselben letzten 4 Ziffern können nicht in zwei Budgets stehen. Legen Sie pro Kartennummer eine Automation an. „Kurzbefehl laden“ brauchen Sie nur einmal. Hat ein Budget keine letzten 4 Ziffern, oder unter iOS 27, nimmt eine Automation mit 승인 die Nachrichten für alle Budgets an. In beiden Fällen wählt die App für jede Nachricht das passende Budget, und die Schritte stehen in den Einstellungen unter „Kurzbefehle-Automation“.",
+    "Ab dem zweiten Budget löschen Sie ein Budget mit „Budget löschen“ auf seinem Bildschirm. Alle seine Einträge werden mitgelöscht und lassen sich nicht zurückholen. Das erste Budget lässt sich nicht löschen."
    ]
   },
   {
    "q": "Zeitraum-Rückblicke und Saldo-Hinweise (Pro)",
    "a": [
-    "Mit DailyLeft Pro zeigt ein vergangener Zeitraum unter der großen Zahl einen Period Wrap-up (Zeitraum-Rückblick): Ausgaben und Zahl der Zahlungen, Tagesdurchschnitt, den Tag mit den höchsten Ausgaben, den Ort mit den höchsten Ausgaben, den übertragenen oder übrig gebliebenen Betrag oder die Budgetüberschreitung und den Unterschied zum vorigen Zeitraum. Für einen Zeitraum ohne Zahlungen erscheint er nicht.",
-    "Schalten Sie in den Einstellungen unter Balance Alerts (Saldo-Hinweise) Balance under 10% (Saldo unter 10 %) und Over today's amount (Heutiger Betrag überschritten) ein. Beim ersten Mal fragt iOS, ob Mitteilungen erlaubt sind. Sie bekommen einen Hinweis, wenn eine erfasste Zahlung die Grenze überschreitet, und ein Tagesbudget bekommt nur Over today's amount. Haben Sie Mitteilungen nicht erlaubt, schalten Sie die Mitteilungen von DailyLeft in der iOS-App Einstellungen ein."
+    "Mit DailyLeft Pro zeigt ein vergangener Zeitraum unter der großen Zahl einen „Abschluss des Zeitraums“: Ausgaben und Zahl der Zahlungen, Tagesdurchschnitt, den Tag mit den höchsten Ausgaben, den Ort mit den höchsten Ausgaben, den übertragenen oder übrig gebliebenen Betrag oder die Budgetüberschreitung und den Unterschied zum vorigen Zeitraum. Für einen Zeitraum ohne Zahlungen erscheint er nicht.",
+    "Schalten Sie in den Einstellungen unter „Restbetrag-Hinweise“ „Restbetrag unter 10 %“ und „Über Tagesbetrag“ ein. Beim ersten Mal fragt iOS, ob Mitteilungen erlaubt sind. Sie bekommen einen Hinweis, wenn eine erfasste Zahlung die Grenze überschreitet, und ein Tagesbudget bekommt nur „Über Tagesbetrag“. Haben Sie Mitteilungen nicht erlaubt, schalten Sie die Mitteilungen von DailyLeft in der iOS-App Einstellungen ein."
    ]
   },
   {
@@ -236,7 +236,7 @@
    "q": "Tracking und Werbeeinstellungen",
    "a": [
     "Nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben, fragt iOS, ob Tracking erlaubt ist. Die App funktioniert auch dann gleich, wenn Sie es nicht erlauben, und Ihre Antwort ändern Sie unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
-    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter Privacy Choices (Datenschutzoptionen) in den Einstellungen."
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter „Datenschutzoptionen“ in den Einstellungen."
    ]
   },
   {
@@ -248,13 +248,13 @@
   {
    "q": "Beim Gerätewechsel",
    "a": [
-    "Wenn Sie bei iCloud angemeldet sind und iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet ist, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
+    "Wenn Sie bei iCloud angemeldet sind und „iCloud-Backup“ in den Einstellungen eingeschaltet ist, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
    ]
   },
   {
    "q": "Unterstützte Geräte und Sprachen",
    "a": [
-    "Nur für iPhone, ab iOS 26. Die App zeigt Englisch und Koreanisch: die Sprache, die in der Sprachliste Ihres Geräts zuerst steht, oder Englisch, wenn keine von beiden vorkommt. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
+    "Nur für iPhone, ab iOS 26. Die App gibt es in 46 Sprachen: Sie zeigt die erste Sprache aus der Sprachliste Ihres Geräts, die sie unterstützt, sonst Englisch. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
    ]
   },
   {
@@ -267,7 +267,7 @@
  "privacy": {
   "title": "Datenschutzerklärung für DailyLeft",
   "effectiveDate": "2026-11-19",
-  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von DailyLeft Pro wickelt Apple ab. Saldo-Hinweise und die Eintragsmitteilungen einer Kurzbefehl-Automation sind Mitteilungen, die dieses iPhone erstellt und anzeigt, und der Entwickler erhält ihren Inhalt nicht.",
+  "summary": "Die Einträge der App liegen in einer Datei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist „iCloud-Backup“ in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung derselben Einträge in Ihrer eigenen iCloud, damit sie nach einer Neuinstallation zurückkommen. Auch diese Sicherung erhält der Entwickler nicht. Wenn Sie selbst eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Sie dient nur dazu, die App auf dieses Nachrichtenformat einzustellen und zu antworten. Sie wird unverzüglich gelöscht, nachdem der Entwickler entschieden hat, ob dieses Format in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Zahlung und Wiederherstellung von DailyLeft Pro wickelt Apple ab. Saldo-Hinweise und die Eintragsmitteilungen einer Kurzbefehl-Automation sind Mitteilungen, die dieses iPhone erstellt und anzeigt, und der Entwickler erhält ihren Inhalt nicht.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App DailyLeft (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
   ],
@@ -275,7 +275,7 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung dieser Einträge in Ihrer eigenen iCloud (Abschnitt 8). Auch diese Sicherung erhält der Entwickler nicht.",
+     "Die App hat weder Registrierung noch Anmeldung. Sie berechnet aus dem Budget und den Zahlungseinträgen, die Sie eintragen, das übrige Geld und was Sie heute ausgeben können. Diese Einträge liegen in einer Speicherdatei auf Ihrem Gerät, und der Entwickler erhält diese Datei nicht. Sind Sie bei iCloud angemeldet und ist „iCloud-Backup“ in den Einstellungen eingeschaltet, liegt außerdem eine Sicherung dieser Einträge in Ihrer eigenen iCloud (Abschnitt 8). Auch diese Sicherung erhält der Entwickler nicht.",
      "Die App zeigt eine Bannerwerbung ganz unten auf dem Hauptbildschirm. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
      "Wenn Sie eine Melde-E-Mail zu einer Nachricht senden, erhält der Entwickler sie. Der Entwickler nutzt sie, um die App auf das Nachrichtenformat dieser Kartenfirma einzustellen und Ihnen zu antworten, und zu keinem anderen Zweck."
     ],
@@ -296,9 +296,9 @@
      "Der Originaltext erfasster Zahlungsnachrichten: unverändert in der Speicherdatei gesichert, damit dieselbe Nachricht nicht zweimal erfasst wird. Er kann einen Teil des Namens der zahlenden Person (zum Beispiel H*D), den Händler, die letzten 4 Kartenziffern, den Betrag und die Uhrzeit enthalten",
      "Die Budgetliste (wenn Sie mit DailyLeft Pro Budgets hinzugefügt haben: Namen der Budgets und eine interne Kennung, die die App vergibt): um Budgets zu unterscheiden und ihre Namen anzuzeigen",
      "Der zuletzt gesehene Saldo und sein Zeitpunkt (pro Budget), das zuletzt angesehene Budget, wann zuletzt ein Hinweis auf einen Eintrag in einem anderen Budget erschien, ein Vermerk zum ersten Start, der Tag, an dem eine Glückwunschanzeige erschien, und ob der Kalender aufgeklappt ist: für die Bildschirmanzeige",
-     "Wann die Kurzbefehl-Automation zuletzt lief und ob der übergebene Nachrichtentext dabei leer war: um in den Einstellungen unter Shortcuts Automation anzuzeigen, ob die Automation läuft",
-     "Ob Sie DailyLeft Pro haben (einschließlich eines früheren Kaufs von Remove Ads) und ob ein einmaliger Hinweis erscheinen soll, dass ein früherer Kauf jetzt als Pro gilt: um Pro-Funktionen freizugeben, das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen",
-     "Ob Saldo-Hinweise eingeschaltet sind (Balance under 10%, Over today's amount): um nach dem Erfassen einer Zahlung zu entscheiden, ob ein Hinweis gesendet wird",
+     "Wann die Kurzbefehl-Automation zuletzt lief und ob der übergebene Nachrichtentext dabei leer war: um in den Einstellungen unter „Kurzbefehle-Automation“ anzuzeigen, ob die Automation läuft",
+     "Ob Sie DailyLeft Pro haben (einschließlich eines früheren Kaufs von „Werbung entfernen“) und ob ein einmaliger Hinweis erscheinen soll, dass ein früherer Kauf jetzt als Pro gilt: um Pro-Funktionen freizugeben, das Banner auszublenden und die Prüfung der Einwilligung in Werbung, die Tracking-Abfrage und den Start des Werbe-SDK zu überspringen",
+     "Ob Saldo-Hinweise eingeschaltet sind („Restbetrag unter 10 %“, „Über Tagesbetrag“): um nach dem Erfassen einer Zahlung zu entscheiden, ob ein Hinweis gesendet wird",
      "Status der iCloud-Sicherung (ein Zufallswert, den die App erzeugt, um diese Installation zu unterscheiden, ob sie mit der Sicherung verbunden ist, wann zuletzt aus der Sicherung wiederhergestellt wurde): damit die App keine Sicherung überschreibt oder löscht, die ein anderes Gerät hochgeladen hat"
     ]
    },
@@ -337,8 +337,8 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen. Ab dem zweiten Budget löscht Delete Budget (Budget löschen) die Eintragsdatei dieses Budgets.",
-     "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Wenn Sie in den Einstellungen der App iCloud Backup (iCloud-Sicherung) ausschalten und speichern, löscht die App die Sicherung in iCloud und lädt nichts mehr hoch. Wenn Sie es wieder einschalten, lädt sie die Einträge hoch, die zu diesem Zeitpunkt vorhanden sind.",
+     "Einträge auf Ihrem Gerät werden entfernt, wenn Sie sie aus der Transaktionsliste löschen oder die App löschen. Ab dem zweiten Budget löscht „Budget löschen“ die Eintragsdatei dieses Budgets.",
+     "Die iCloud-Sicherung bleibt auch nach dem Löschen der App in Ihrer eigenen iCloud. Installieren Sie die App mit demselben Apple Account erneut, werden die Einträge wiederhergestellt. Wenn Sie in den Einstellungen der App „iCloud-Backup“ ausschalten und speichern, löscht die App die Sicherung in iCloud und lädt nichts mehr hoch. Wenn Sie es wieder einschalten, lädt sie die Einträge hoch, die zu diesem Zeitpunkt vorhanden sind.",
      "Eine Melde-E-Mail wird unverzüglich aus dem Postfach gelöscht, nachdem der Entwickler entschieden hat, ob dieses Nachrichtenformat in die App aufgenommen wird, und spätestens 1 Jahr nach dem Eingang."
     ],
     "bullets": []
@@ -356,9 +356,9 @@
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Die Einträge und Einstellungen des ersten Budgets liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widgets auf Ihrem Gerät teilen (einer App Group). Fügen Sie mit DailyLeft Pro Budgets hinzu, entstehen am selben Ort eine Budgetliste (cards.json) und eine Datei pro Budget. Die Widgets lesen diese Dateien nur und nutzen das Werbe-SDK nicht. Werte für die Bildschirmanzeige liegen in den UserDefaults der App, und ob Sie DailyLeft Pro haben und ob Saldo-Hinweise eingeschaltet sind, liegt in den Einstellungen derselben App Group (der Kaufstatus hat außerdem eine Kopie in den UserDefaults der App). Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet und ist iCloud Backup (iCloud-Sicherung) in den Einstellungen eingeschaltet, komprimiert die App alle diese Einträge und sichert sie im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Bei zwei oder mehr Budgets kommen die Einträge ab dem zweiten Budget und die Budgetliste in einen eigenen Sicherungseintrag. Würden beide Einträge zusammen die iCloud-Grenze überschreiten, wird dieser Eintrag nicht hochgeladen, und die Einstellungen weisen darauf hin. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus der Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Dateien können außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
-     "Die App sendet selbst keine E-Mails. Das Antippen von Report Message (Nachricht melden) füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
-     "Die App fragt nach zwei Berechtigungen: Tracking (ATT) und Mitteilungen. Nach Mitteilungen fragt sie, wenn Sie in DailyLeft Pro Balance Alerts (Saldo-Hinweise) einschalten oder in Automation Setup auf Allow Notifications (Mitteilungen erlauben) tippen, und einmal beim Öffnen der App, wenn Sie bis Version 1.1.0 eine Kurzbefehl-Automation genutzt haben. Nach Fotos, Standort, Kamera oder Kontakten fragt sie nicht. Saldo-Hinweise und die Eintragsmitteilungen einer Kurzbefehl-Automation entstehen auf diesem iPhone direkt nach dem Erfassen einer Zahlung und nutzen weder einen Server des Entwicklers noch einen Push-Dienst. Ein Hinweis enthält Beträge und den Saldo, bei mehreren Budgets auch den Namen des Budgets, und ob er auf dem Sperrbildschirm erscheint, richtet sich nach Ihren iOS-Mitteilungseinstellungen. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail, diese Seite mit der Datenschutzerklärung und den iCloud-Link zum Kurzbefehl hinter Get Shortcut (Kurzbefehl laden), und zwar nur, wenn Sie darauf tippen.",
+     "Die Einträge und Einstellungen des ersten Budgets liegen in einer Datei (ledger.json) in einem Speicher, den sich App und Widgets auf Ihrem Gerät teilen (einer App Group). Fügen Sie mit DailyLeft Pro Budgets hinzu, entstehen am selben Ort eine Budgetliste (cards.json) und eine Datei pro Budget. Die Widgets lesen diese Dateien nur und nutzen das Werbe-SDK nicht. Werte für die Bildschirmanzeige liegen in den UserDefaults der App, und ob Sie DailyLeft Pro haben und ob Saldo-Hinweise eingeschaltet sind, liegt in den Einstellungen derselben App Group (der Kaufstatus hat außerdem eine Kopie in den UserDefaults der App). Der Entwickler betreibt keinen Server. Sind Sie bei iCloud angemeldet und ist „iCloud-Backup“ in den Einstellungen eingeschaltet, komprimiert die App alle diese Einträge und sichert sie im Schlüssel-Wert-Speicher Ihrer eigenen iCloud. Bei zwei oder mehr Budgets kommen die Einträge ab dem zweiten Budget und die Budgetliste in einen eigenen Sicherungseintrag. Würden beide Einträge zusammen die iCloud-Grenze überschreiten, wird dieser Eintrag nicht hochgeladen, und die Einstellungen weisen darauf hin. Das ist keine Synchronisierung zwischen Geräten. Die App stellt aus der Sicherung nur wieder her, wenn die Einrichtung auf dem Gerät noch nicht abgeschlossen ist und keine Transaktionen vorhanden sind. Diese Dateien können außerdem in iCloud-Gerätebackups oder Mac-Backups enthalten sein, die Sie eingeschaltet haben.",
+     "Die App sendet selbst keine E-Mails. Das Antippen von „Nachricht melden“ füllt nur Empfänger, Betreff und Text eines E-Mail-Entwurfs aus, und Senden oder Abbrechen tippen Sie selbst an. Ist kein Mail-Account eingerichtet, öffnet sie mit demselben Inhalt eine Mail-App, die Sie wählen.",
+     "Die App fragt nach zwei Berechtigungen: Tracking (ATT) und Mitteilungen. Nach Mitteilungen fragt sie, wenn Sie in DailyLeft Pro „Restbetrag-Hinweise“ einschalten oder in „Automation einrichten“ auf „Mitteilungen erlauben“ tippen, und einmal beim Öffnen der App, wenn Sie bis Version 1.1.0 eine Kurzbefehl-Automation genutzt haben. Nach Fotos, Standort, Kamera oder Kontakten fragt sie nicht. Saldo-Hinweise und die Eintragsmitteilungen einer Kurzbefehl-Automation entstehen auf diesem iPhone direkt nach dem Erfassen einer Zahlung und nutzen weder einen Server des Entwicklers noch einen Push-Dienst. Ein Hinweis enthält Beträge und den Saldo, bei mehreren Budgets auch den Namen des Budgets, und ob er auf dem Sperrbildschirm erscheint, richtet sich nach Ihren iOS-Mitteilungseinstellungen. Text aus der Zwischenablage nimmt die App nur an, wenn Sie ihn einfügen. Abgesehen von Werbung öffnet die App nach außen nur die Melde-E-Mail, diese Seite mit der Datenschutzerklärung und den iCloud-Link zum Kurzbefehl hinter „Kurzbefehl laden“, und zwar nur, wenn Sie darauf tippen.",
      "An das Werbe-SDK gibt die App die Werbeanfrage und die Bannergröße weiter. Budgets, Transaktionen, Nachrichten und Kartennummern gibt sie nicht weiter."
     ],
     "bullets": []
@@ -368,8 +368,8 @@
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob) und das Google User Messaging Platform SDK, die beim Prüfen der Einwilligung in Werbung sowie beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen können. Die Liste unten gibt wieder, was in den Datenschutzmanifesten der beiden SDKs steht.",
      "Die App prüft die Angaben zur Einwilligung in Werbung, nachdem Sie auf dem Bildschirm beim ersten Start Start angetippt haben. Haben Sie schon begonnen, prüft sie beim Öffnen der App. Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Kann Werbung angefragt werden und haben Sie noch nicht geantwortet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT). Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint weiterhin. Ändern lässt sich das unter iOS-Einstellungen > Datenschutz & Sicherheit > Tracking.",
-     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter Privacy Choices (Datenschutzoptionen) in den Einstellungen.",
-     "Nach dem Kauf von DailyLeft Pro (oder wenn Sie früher Remove Ads gekauft haben) prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK. Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden."
+     "Ergibt sich aus der Einwilligung, dass Werbung nicht angefragt werden kann, erscheint die Tracking-Abfrage nicht, und Werbung wird auch nicht angefragt. Wo eine Einwilligung nötig ist, ändern Sie sie unter „Datenschutzoptionen“ in den Einstellungen.",
+     "Nach dem Kauf von DailyLeft Pro (oder wenn Sie früher „Werbung entfernen“ gekauft haben) prüft die App beim Öffnen den Kauf und überspringt danach die Prüfung der Einwilligung, die Tracking-Abfrage und den Start des SDK. Werbung wird nicht angefragt. Wenn Sie bei geöffneter App kaufen, verschwindet das Banner sofort, ein bereits gestartetes SDK läuft aber weiter, bis Sie die App beenden."
     ],
     "bullets": [
      "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",

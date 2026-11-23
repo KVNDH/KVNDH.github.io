@@ -119,7 +119,7 @@
   {
    "q": "Counted days and public holidays",
    "a": [
-    "Every day counts by default. If the money isn't for weekends, turn on Count Weekdays Only in Settings. Weekends are left out, plus public holidays if your iPhone's region is South Korea. To leave out a specific day, tap it in the calendar on the main screen. When the calendar is collapsed it shows only this week, so tap Expand Calendar to reach other weeks. You can't leave out past days.",
+    "Every day counts by default. If the money isn't for weekends, turn on Count Weekdays Only in Settings. Weekends are left out, plus public holidays if your iPhone's region is South Korea. To leave out a specific day, tap it in the calendar on the main screen. When the calendar is collapsed it shows only this week, so tap Expand Calendar to reach other weeks. You can't leave out past days. Once a day you left out has passed, its Out mark goes away and it counts like any other day.",
     "For the South Korea region, public holidays for 2026 to 2028 are built into the app, and later years are added in app updates. 2028 was worked out from the Korea Astronomy and Space Science Institute calendar data and will be checked again once the official dates are published. In years not on the list, only weekends are left out. Tap any temporary holiday that isn't on the list to leave it out in the calendar."
    ]
   },
@@ -159,7 +159,7 @@
   {
    "q": "Card app notices and KakaoTalk notices",
    "a": [
-    "iOS limits mean the app can't read card app notices or KakaoTalk notices automatically. Copy the notice and paste it into Add from Message, or use Add by Hand. Add from Message appears only for the South Korea region."
+    "iOS limits mean the app can't read card app notices or KakaoTalk notices automatically. Copy the notice and paste it into Add from Message, or use Add by Hand. In Add from Message, tapping Paste records a notice the app can read right away. Add from Message appears only for the South Korea region."
    ]
   },
   {
@@ -254,7 +254,7 @@
   {
    "q": "Supported devices and languages",
    "a": [
-    "iPhone only, with iOS 26 or later. The app's screens are in English and Korean. It uses whichever of the two comes first in your device's language list, or English if neither is there. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
+    "iPhone only, with iOS 26 or later. The app's screens are in 46 languages. It uses the first language in your device's language list that the app supports, or English if none is supported. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
    ]
   },
   {
