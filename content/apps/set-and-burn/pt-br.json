@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Um treino, do seu jeito",
    "body": [
-    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: Rest (Descanso), Sets (Séries) e Count jumps (Contar pulos). Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição. As mudanças só entram no treino quando você toca em Save (Salvar) no topo, e Cancel (Cancelar) deixa tudo como estava. Com o Pro, o exercício e o descanso também podem ficar mais longos ou mais curtos a cada rodada."
+    "Defina o tempo de exercício e as rodadas e dê forma ao treino com três interruptores: “Descanso”, “Séries” e “Contagem de pulos”. Você também pode acrescentar aquecimento e desaquecimento. O tempo total e a ordem das fases aparecem no topo da tela de edição. As mudanças só entram no treino quando você toca em “Salvar” no topo, e “Cancelar” deixa tudo como estava. Com o Pro, o exercício e o descanso também podem ficar mais longos ou mais curtos a cada rodada."
    ],
    "bullets": [
     "Tempo de exercício e rodadas",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Ele conta seus pulos",
    "body": [
-    "Com Count jumps (Contar pulos) ligado, o movimento dos seus AirPods ou do iPhone conta pulos de corda e passos de corrida, e mostra os dois como jumps (pulos). O app escolhe com qual dos dois contar. Se você definir o critério de término como contagem, a rodada só termina quando você chegar ao número dela."
+    "Com “Contagem de pulos” ligado, o movimento dos seus AirPods ou do iPhone conta pulos de corda e passos de corrida, e mostra os dois como “pulos”. O app escolhe com qual dos dois contar. Se você definir o critério de término como contagem, a rodada só termina quando você chegar ao número dela."
    ],
    "bullets": [
     "Pulos de corda e passos de corrida",
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-60px",
-    "alt": "A tela de Count jumps (Contar pulos). A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
+    "alt": "A tela de “Contagem de pulos”. A contagem restante aparece em números grandes, com o que está contando e a fase seguinte embaixo.",
     "caption": "Tela do app, ampliada",
     "focusX": "0px",
     "focusW": "390px"
@@ -64,7 +64,7 @@
    "layout": "card",
    "title": "Fases que dá para ler de longe",
    "body": [
-    "A tela inverte durante o exercício e volta ao normal durante o descanso. Com Ink level (Nível de tinta) ligado, durante o exercício e o descanso a tinta desce do topo conforme o tempo restante. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em Lifetime work time (tempo de exercício acumulado). Um pequeno personagem de brasa marca a rodada atual na fileira de pontos e aparece também na tela final."
+    "A tela inverte durante o exercício e volta ao normal durante o descanso. Com “Nível da tinta” ligado, durante o exercício e o descanso a tinta desce do topo conforme o tempo restante. Funciona com aparência clara e escura, em retrato e paisagem. O tempo nas fases de exercício se soma em “Tempo acumulado”. Um pequeno personagem de brasa marca a rodada atual na fileira de pontos e aparece também na tela final."
    ],
    "bullets": [],
    "visual": {
@@ -92,55 +92,55 @@
   {
    "q": "Criar um treino",
    "a": [
-    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em New workout (Novo treino) para abrir a tela de edição. Toque em Save (Salvar) no topo para colocá-lo na lista, ou em Cancel (Cancelar) para não criá-lo. Para mudar os valores do treino atual, toque em Edit (Editar) na tela principal e guarde as mudanças com Save (Salvar). Se você tocar em Cancel (Cancelar) depois de mudar algo, o app pergunta uma vez se quer descartar as mudanças.",
-    "No começo você pode manter 1 treino, incluindo o exemplo. Para criar mais é preciso ter o Pro. Os treinos que você já tem continuam podendo ser usados e editados. Com o Pro, Work each round (Exercício por rodada) e Rest each round (Descanso por rodada), em More (Mais) na tela de edição, deixam o exercício e o descanso mais longos ou mais curtos pelo mesmo número de segundos a cada rodada. Um treino que já usa esses valores continua rodando como foi definido, mesmo sem o Pro."
+    "Toque no nome do treino no canto superior esquerdo da tela principal para abrir a lista de treinos e depois toque em “Novo treino” para abrir a tela de edição. Toque em “Salvar” no topo para colocá-lo na lista, ou em “Cancelar” para não criá-lo. Para mudar os valores do treino atual, toque em “Editar” na tela principal e guarde as mudanças com “Salvar”. Se você tocar em “Cancelar” depois de mudar algo, o app pergunta uma vez se quer descartar as mudanças.",
+    "No começo você pode manter 1 treino, incluindo o exemplo. Para criar mais é preciso ter o Pro. Os treinos que você já tem continuam podendo ser usados e editados. Com o Pro, “Exercício a cada round” e “Descanso a cada round”, em “Mais” na tela de edição, deixam o exercício e o descanso mais longos ou mais curtos pelo mesmo número de segundos a cada rodada. Um treino que já usa esses valores continua rodando como foi definido, mesmo sem o Pro."
    ]
   },
   {
    "q": "Sequências de treinos",
    "a": [
-    "Com o Pro você junta vários treinos em uma sequência e faz um depois do outro. Na lista de treinos, toque em New chain (Nova sequência) em Chains (Sequências), adicione treinos, defina Rest between workouts (Descanso entre treinos) e toque em Save (Salvar). Uma sequência aceita de 2 a 12 treinos, e o mesmo treino pode entrar duas vezes. O descanso entre treinos começa em 1 minuto, e em 0 o próximo treino começa logo em seguida.",
-    "Escolha uma sequência e comece, e os treinos seguem na ordem em que você os adicionou. A partir do segundo treino não há aquecimento. Uma sequência aponta para os seus treinos em vez de copiá-los, então, quando você edita um treino, todas as sequências que o incluem rodam com os novos valores. O descanso entre treinos não se soma ao Lifetime work time (tempo de exercício acumulado)."
+    "Com o Pro você junta vários treinos em uma sequência e faz um depois do outro. Na lista de treinos, toque em “Nova sequência” em “Sequências”, adicione treinos, defina “Descanso entre treinos” e toque em “Salvar”. Uma sequência aceita de 2 a 12 treinos, e o mesmo treino pode entrar duas vezes. O descanso entre treinos começa em 1 minuto, e em 0 o próximo treino começa logo em seguida.",
+    "Escolha uma sequência e comece, e os treinos seguem na ordem em que você os adicionou. A partir do segundo treino não há aquecimento. Uma sequência aponta para os seus treinos em vez de copiá-los, então, quando você edita um treino, todas as sequências que o incluem rodam com os novos valores. O descanso entre treinos não se soma ao “Tempo acumulado”."
    ]
   },
   {
    "q": "Contar pulos",
    "a": [
-    "No editor de treino, ligue Count jumps (Contar pulos) e defina o critério de término como tempo ou contagem. Na primeira vez que você inicia um treino com Count jumps ligado, o app pede uma vez a permissão de Movimento e Preparo Físico para o movimento dos AirPods. Se você não permitir, é usado o movimento do iPhone.",
-    "Quando chega movimento dos seus AirPods, eles fazem a contagem. Se parar de chegar, a contagem passa para o iPhone. Uma linha na tela mostra o que está contando. Fones que não enviam movimento não conseguem contar. Pulos de corda e passos de corrida aparecem como jumps (pulos)."
+    "No editor de treino, ligue “Contagem de pulos” e defina o critério de término como tempo ou contagem. Na primeira vez que você inicia um treino com “Contagem de pulos” ligado, o app pede uma vez a permissão de Movimento e Preparo Físico para o movimento dos AirPods. Se você não permitir, é usado o movimento do iPhone.",
+    "Quando chega movimento dos seus AirPods, eles fazem a contagem. Se parar de chegar, a contagem passa para o iPhone. Uma linha na tela mostra o que está contando. Fones que não enviam movimento não conseguem contar. Pulos de corda e passos de corrida aparecem como “pulos”."
    ]
   },
   {
    "q": "Com a tela apagada ou quando chega uma ligação",
    "a": [
-    "Enquanto o timer roda, o relógio, os sinais e os avisos de voz continuam com a tela apagada. Se chegar uma ligação ou tocar um alarme, o timer pausa e uma linha mostra o motivo. Toque em Resume (Continuar) para seguir."
+    "Enquanto o timer roda, o relógio, os sinais e os avisos de voz continuam com a tela apagada. Se chegar uma ligação ou tocar um alarme, o timer pausa e uma linha mostra o motivo. Toque em “Retomar” para seguir."
    ]
   },
   {
-   "q": "Live Activities (Atividades ao Vivo)",
+   "q": "Atividades ao Vivo",
    "a": [
-    "Enquanto o timer roda, a Tela Bloqueada e a Dynamic Island mostram a fase atual, o tempo restante e a rodada. Se o critério de término for contagem, mostram os pulos que faltam. A atividade some quando você pausa ou termina. Para desligar, desligue Live Activities (Atividades ao Vivo) em Ajustes. Se estiver ligada e nada aparecer, confira Ajustes > Set & Burn > Atividades ao Vivo.",
-    "Num iPhone emparelhado com um Apple Watch, ela também aparece pequena na Pilha Inteligente do relógio. Se não aparecer, o (i) ao lado de Live Activities (Atividades ao Vivo) em Ajustes mostra onde ativar."
+    "Enquanto o timer roda, a Tela Bloqueada e a Dynamic Island mostram a fase atual, o tempo restante e a rodada. Se o critério de término for contagem, mostram os pulos que faltam. A atividade some quando você pausa ou termina. Para desligar, desligue “Atividades ao Vivo” em Ajustes. Se estiver ligada e nada aparecer, confira Ajustes > Set & Burn > Atividades ao Vivo.",
+    "Num iPhone emparelhado com um Apple Watch, ela também aparece pequena na Pilha Inteligente do relógio. Se não aparecer, o (i) ao lado de “Atividades ao Vivo” em Ajustes mostra onde ativar."
    ]
   },
   {
    "q": "Sons de sinal e voz",
    "a": [
-    "O app traz 14 sons de sinal de marimba, feitos com o ElevenLabs. Eles tocam quando começam o aquecimento, o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue Signal sound (Som de sinal) em Ajustes. Tick (Tique) em Ajustes acrescenta um tique suave a cada segundo, e Double tick (Tique duplo), que aparece logo abaixo enquanto Tick está ligado, faz o tique a cada meio segundo. Com Vibration (Vibração) ligada, os botões e os interruptores também vibram de leve ao toque.",
-    "Os avisos de voz são lidos só no idioma da tela: inglês com a tela em inglês, coreano com a tela em coreano. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de Voice cues (Avisos de voz) em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue Voice cues (Avisos de voz) em Ajustes."
+    "O app traz 14 sons de sinal de marimba, feitos com o ElevenLabs. Eles tocam quando começam o aquecimento, o exercício e o descanso, nos últimos 3 segundos e no fim. Para desligá-los, desligue “Sinais sonoros” em Ajustes. “Tique” em Ajustes acrescenta um tique suave a cada segundo, e “Tique duplo”, que aparece logo abaixo enquanto “Tique” está ligado, faz o tique a cada meio segundo. Com “Vibração” ligada, os botões e os interruptores também vibram de leve ao toque.",
+    "Os avisos de voz são lidos no idioma da tela do app. Se o aparelho não tiver uma voz do iOS para esse idioma, eles são lidos em inglês, e o (i) ao lado de “Avisos de voz” em Ajustes explica o motivo. Quem lê é a voz do iOS do seu aparelho, não uma gravação, então não é preciso conexão, e a voz e a qualidade mudam de aparelho para aparelho. O app usa a voz de maior qualidade baixada no aparelho. Se nenhuma voz aprimorada estiver instalada, aparece um (i) ao lado de “Avisos de voz” em Ajustes, mostrando onde baixar uma. Para desligar os avisos de voz, desligue “Avisos de voz” em Ajustes."
    ]
   },
   {
    "q": "Tempo de exercício acumulado",
    "a": [
-    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. A tela final mostra Lifetime work time (tempo de exercício acumulado) em horas e minutos e, ao lado, o tempo que este treino somou, por exemplo +2 min 40 sec. Clear lifetime total (Limpar total acumulado), no fim de Ajustes, volta o total para 0."
+    "Só o tempo nas fases de exercício é somado. O descanso não conta, e não há registros por data. A tela final mostra “Tempo acumulado” em horas e minutos e, ao lado, o tempo que este treino somou, por exemplo +2 min 40 s. “Zerar tempo acumulado”, no fim de Ajustes, volta o total para 0."
    ]
   },
   {
    "q": "Pro e restaurar a compra",
    "a": [
     "Compre em Pro, na barra no topo de Ajustes. É um pagamento único, não uma assinatura. O Pro tira o limite de treinos, permite criar sequências e mudar os tempos a cada rodada, e desliga os anúncios. Compatível com o Compartilhamento Familiar.",
-    "Se você trocar de aparelho ou reinstalar o app, toque em Restore purchase (Restaurar compra) na tela do Pro. Com a mesma Conta Apple não há nova cobrança."
+    "Se você trocar de aparelho ou reinstalar o app, toque em “Restaurar compra” na tela do Pro. Com a mesma Conta Apple não há nova cobrança."
    ]
   },
   {
@@ -159,19 +159,19 @@
    "q": "Rastreamento e preferências de anúncios",
    "a": [
     "O iOS pergunta se você permite o rastreamento depois que o guia inicial fecha. Se você comprou o Pro, ele não pergunta. O app funciona igual se você não permitir, e você muda essa escolha em Ajustes > Privacidade e Segurança > Rastreamento.",
-    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento aparece antes do aviso de rastreamento. Nesses lugares, você muda seu consentimento em Ad privacy choices (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro."
+    "Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento aparece antes do aviso de rastreamento. Nesses lugares, você muda seu consentimento em “Opções de privacidade dos anúncios”, no fim de Ajustes ou da tela do Pro."
    ]
   },
   {
    "q": "Conexão com a internet",
    "a": [
-    "O timer, Count jumps (Contar pulos) e os avisos de voz funcionam sem conexão. Os anúncios, a compra do Pro e a restauração precisam de conexão."
+    "O timer, “Contagem de pulos” e os avisos de voz funcionam sem conexão. Os anúncios, a compra do Pro e a restauração precisam de conexão."
    ]
   },
   {
    "q": "Aparelhos e idiomas compatíveis",
    "a": [
-    "iPhone com iOS 26 ou posterior. O app está em inglês e coreano: usa o que vier primeiro na lista de idiomas do aparelho, ou inglês se nenhum dos dois estiver nela. Por exemplo, um aparelho só em japonês mostra inglês, e um com japonês e depois coreano mostra coreano. Não há escolha de idioma dentro do app, que segue a ordem de idiomas dos Ajustes do iOS. Os avisos de voz são lidos no mesmo idioma da tela."
+    "iPhone com iOS 26 ou posterior. O app está em 46 idiomas. Ele usa o primeiro idioma da lista de idiomas do aparelho que o app aceita, ou inglês se nenhum estiver nela. Não há escolha de idioma dentro do app, que segue os ajustes de idioma do iOS. Os avisos de voz são lidos no mesmo idioma da tela."
    ]
   },
   {
@@ -194,7 +194,7 @@
     "paragraphs": [
      "O app não tem cadastro nem login, e o desenvolvedor não coleta informações pessoais de quem o usa.",
      "O app mostra anúncios em banner na tela final e na lista de treinos. O serviço de publicidade do Google, o AdMob, escolhe e exibe esses anúncios e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
-     "Enquanto um treino com Count jumps (Contar pulos) ligado está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho."
+     "Enquanto um treino com “Contagem de pulos” ligado está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho."
     ],
     "bullets": []
    },
@@ -208,7 +208,7 @@
      "A lista de treinos (nomes, tempos, rodadas, séries, interruptores, critério de término, contagens) e o treino escolhido: usados para rodar o timer e ao reabrir o app",
      "As sequências de treinos (nomes, treinos incluídos e sua ordem, descanso entre treinos) e a sequência escolhida: usadas para fazer vários treinos seguidos",
      "Ajustes de som, avisos de voz, vibração e tela: usados para o comportamento do app",
-     "Lifetime work time (tempo de exercício acumulado): uma única soma de segundos nas fases de exercício, sem registros por data",
+     "“Tempo acumulado”: uma única soma de segundos nas fases de exercício, sem registros por data",
      "Se o guia inicial já foi visto: usado para mostrá-lo só uma vez",
      "Uma cópia de um arquivo salvo que não pôde ser lido: os mesmos tipos de dados acima, mantida quando um arquivo salvo está danificado"
     ]
@@ -216,7 +216,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos e as sequências podem ser removidos no app, e Clear lifetime total (Limpar total acumulado), em Ajustes, volta o tempo de exercício acumulado para 0.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Os treinos e as sequências podem ser removidos no app, e “Zerar tempo acumulado”, em Ajustes, volta o tempo de exercício acumulado para 0.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -261,8 +261,8 @@
     "title": "Medidas de segurança",
     "paragraphs": [
      "O que o app usa fica em arquivos no armazenamento do app no seu aparelho. O desenvolvedor não mantém nenhum servidor, e o app não usa a sincronização do iCloud. Esses arquivos podem entrar nos backups do iCloud ou do Mac que você ativar.",
-     "Os valores de movimento só são recebidos enquanto um treino com Count jumps ligado está rodando, incluindo aquecimento e descanso, e o recebimento para quando ele é pausado ou termina. O movimento dos AirPods só é recebido se você permitir Movimento e Preparo Físico. O movimento do iPhone é um valor para o qual o iOS não pede permissão. O app pede duas permissões, Movimento e Preparo Físico e rastreamento (ATT). Ele não pede localização, câmera, microfone, fotos, contatos, notificações nem Saúde.",
-     "Enquanto um treino com Count jumps está rodando ou pausado, o sensor de proximidade fica ligado para evitar toques na tela dentro do bolso, e os valores dele não são armazenados. Para escolher a mensagem de contagem, o app lê o tipo de saída de áudio em uso, e isso também não é armazenado."
+     "Os valores de movimento só são recebidos enquanto um treino com “Contagem de pulos” ligado está rodando, incluindo aquecimento e descanso, e o recebimento para quando ele é pausado ou termina. O movimento dos AirPods só é recebido se você permitir Movimento e Preparo Físico. O movimento do iPhone é um valor para o qual o iOS não pede permissão. O app pede duas permissões, Movimento e Preparo Físico e rastreamento (ATT). Ele não pede localização, câmera, microfone, fotos, contatos, notificações nem Saúde.",
+     "Enquanto um treino com “Contagem de pulos” está rodando ou pausado, o sensor de proximidade fica ligado para evitar toques na tela dentro do bolso, e os valores dele não são armazenados. Para escolher a mensagem de contagem, o app lê o tipo de saída de áudio em uso, e isso também não é armazenado."
     ],
     "bullets": []
    },
@@ -271,7 +271,7 @@
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob) e o SDK do Google User Messaging Platform, que podem coletar as informações de baixo quando verificam o consentimento de anúncios e quando carregam e exibem anúncios.",
      "Depois que o guia inicial fecha, ou depois que a primeira tela aparece se você já o viu, o app verifica se você tem o Pro. Se não tiver, ele verifica as informações de consentimento de anúncios. Onde o consentimento de anúncios é exigido, como no Espaço Econômico Europeu, no Reino Unido e na Suíça, o formulário de consentimento do Google aparece primeiro. Se os anúncios puderem ser solicitados e você ainda não tiver respondido, o iOS mostra o aviso de transparência de rastreamento (ATT). Esses avisos não aparecem enquanto o timer está rodando ou pausado. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Essa escolha pode ser alterada em Ajustes > Privacidade e Segurança > Rastreamento.",
-     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em Ad privacy choices (Opções de privacidade de anúncios), no fim de Ajustes ou da tela do Pro.",
+     "Se o resultado do consentimento for que os anúncios não podem ser solicitados, o aviso de rastreamento não aparece e os anúncios não são solicitados. Onde o consentimento é exigido, mude-o em “Opções de privacidade dos anúncios”, no fim de Ajustes ou da tela do Pro.",
      "Se você comprar o Pro, os anúncios param de aparecer, e a partir da abertura seguinte o app não inicia o SDK de anúncios, então nem o formulário de consentimento nem o aviso de rastreamento aparecem."
     ],
     "bullets": [

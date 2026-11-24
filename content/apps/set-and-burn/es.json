@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Un entrenamiento, a tu manera",
    "body": [
-    "Define el tiempo de trabajo y las rondas, y dale forma al entrenamiento con tres interruptores: Rest (Descanso), Sets (Series) y Count jumps (Contar saltos). También puedes añadir calentamiento y enfriamiento. El tiempo total y el orden de las fases se ven arriba en la pantalla de edición. Los cambios pasan al entrenamiento solo al tocar Save (Guardar) arriba, y Cancel (Cancelar) lo deja como estaba. Con Pro, el trabajo y el descanso también pueden alargarse o acortarse en cada ronda."
+    "Define el tiempo de trabajo y las rondas, y dale forma al entrenamiento con tres interruptores: «Descanso», «Series» y «Contar saltos». También puedes añadir calentamiento y enfriamiento. El tiempo total y el orden de las fases se ven arriba en la pantalla de edición. Los cambios pasan al entrenamiento solo al tocar «Guardar» arriba, y «Cancelar» lo deja como estaba. Con Pro, el trabajo y el descanso también pueden alargarse o acortarse en cada ronda."
    ],
    "bullets": [
     "Tiempo de trabajo y rondas",
@@ -31,7 +31,7 @@
    "layout": "feat",
    "title": "Cuenta tus saltos",
    "body": [
-    "Con Count jumps (Contar saltos) activado, el movimiento de tus AirPods o tu iPhone cuenta los saltos de cuerda y los pasos de carrera, y muestra ambos como jumps (saltos). La app elige con cuál de los dos contar. Si la condición de fin es un conteo, la ronda solo termina al llegar a su número."
+    "Con «Contar saltos» activado, el movimiento de tus AirPods o tu iPhone cuenta los saltos de cuerda y los pasos de carrera, y muestra ambos como «saltos». La app elige con cuál de los dos contar. Si la condición de fin es un conteo, la ronda solo termina al llegar a su número."
    ],
    "bullets": [
     "Saltos de cuerda y pasos de carrera",
@@ -42,7 +42,7 @@
     "type": "crop",
     "shot": 2,
     "focus": "-60px",
-    "alt": "La pantalla de Count jumps (Contar saltos). Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
+    "alt": "La pantalla de «Contar saltos». Lo que queda por contar aparece en números grandes, y debajo se indica qué está contando y la fase siguiente.",
     "caption": "Pantalla de la app, ampliada",
     "focusX": "0px",
     "focusW": "390px"
@@ -64,7 +64,7 @@
    "layout": "card",
    "title": "Fases que se leen de lejos",
    "body": [
-    "La pantalla se invierte durante el trabajo y vuelve a la normalidad durante el descanso. Con Ink level (Nivel de tinta) activado, durante el trabajo y el descanso la tinta baja desde arriba con el tiempo restante. Admite aspecto claro y oscuro, y orientación vertical y horizontal. El tiempo de las fases de trabajo se suma en Lifetime work time (tiempo de trabajo acumulado). Un pequeño personaje de brasa marca la ronda actual en la fila de puntos y aparece también en la pantalla final."
+    "La pantalla se invierte durante el trabajo y vuelve a la normalidad durante el descanso. Con «Nivel de tinta» activado, durante el trabajo y el descanso la tinta baja desde arriba con el tiempo restante. Admite aspecto claro y oscuro, y orientación vertical y horizontal. El tiempo de las fases de trabajo se suma en «Trabajo acumulado». Un pequeño personaje de brasa marca la ronda actual en la fila de puntos y aparece también en la pantalla final."
    ],
    "bullets": [],
    "visual": {
@@ -92,55 +92,55 @@
   {
    "q": "Crear un entrenamiento",
    "a": [
-    "Toca el nombre del entrenamiento arriba a la izquierda de la pantalla principal para abrir la lista de entrenamientos, y luego toca New workout (Nuevo entrenamiento) para abrir la pantalla de edición. Toca Save (Guardar) arriba para añadirlo a la lista, o Cancel (Cancelar) para no crearlo. Para cambiar los valores del entrenamiento actual, toca Edit (Editar) en la pantalla principal y conserva los cambios con Save (Guardar). Si tocas Cancel (Cancelar) después de cambiar algo, la app pregunta una vez si quieres descartar los cambios.",
-    "Al principio puedes tener 1 entrenamiento, incluido el de ejemplo. Para crear más necesitas Pro. Los entrenamientos que ya tienes se pueden seguir usando y editando. Con Pro, Work each round (Trabajo por ronda) y Rest each round (Descanso por ronda), dentro de More (Más) en la pantalla de edición, alargan o acortan el trabajo y el descanso los mismos segundos en cada ronda. Un entrenamiento que ya los usa sigue funcionando tal como está sin Pro."
+    "Toca el nombre del entrenamiento arriba a la izquierda de la pantalla principal para abrir la lista de entrenamientos, y luego toca «Nuevo entreno» para abrir la pantalla de edición. Toca «Guardar» arriba para añadirlo a la lista, o «Cancelar» para no crearlo. Para cambiar los valores del entrenamiento actual, toca «Editar» en la pantalla principal y conserva los cambios con «Guardar». Si tocas «Cancelar» después de cambiar algo, la app pregunta una vez si quieres descartar los cambios.",
+    "Al principio puedes tener 1 entrenamiento, incluido el de ejemplo. Para crear más necesitas Pro. Los entrenamientos que ya tienes se pueden seguir usando y editando. Con Pro, «Trabajo en cada ronda» y «Descanso en cada ronda», dentro de «Más» en la pantalla de edición, alargan o acortan el trabajo y el descanso los mismos segundos en cada ronda. Un entrenamiento que ya los usa sigue funcionando tal como está sin Pro."
    ]
   },
   {
    "q": "Cadenas de entrenamientos",
    "a": [
-    "Con Pro puedes unir varios entrenamientos en una cadena y hacerlos uno tras otro. En la lista de entrenamientos, toca New chain (Nueva cadena) en Chains (Cadenas), añade entrenamientos, fija Rest between workouts (Descanso entre entrenamientos) y toca Save (Guardar). Una cadena admite de 2 a 12 entrenamientos, y el mismo entrenamiento puede ir dos veces. El descanso entre entrenamientos empieza en 1 minuto, y en 0 el siguiente entrenamiento empieza enseguida.",
-    "Elige una cadena y empiézala, y los entrenamientos se suceden en el orden en que los añadiste. Desde el segundo entrenamiento no hay calentamiento. Una cadena apunta a tus entrenamientos en lugar de copiarlos, así que al editar un entrenamiento, todas las cadenas que lo incluyen se ejecutan con los nuevos valores. El descanso entre entrenamientos no se suma a Lifetime work time (tiempo de trabajo acumulado)."
+    "Con Pro puedes unir varios entrenamientos en una cadena y hacerlos uno tras otro. En la lista de entrenamientos, toca «Nueva cadena» en «Cadenas», añade entrenamientos, fija «Descanso entre entrenos» y toca «Guardar». Una cadena admite de 2 a 12 entrenamientos, y el mismo entrenamiento puede ir dos veces. El descanso entre entrenamientos empieza en 1 minuto, y en 0 el siguiente entrenamiento empieza enseguida.",
+    "Elige una cadena y empiézala, y los entrenamientos se suceden en el orden en que los añadiste. Desde el segundo entrenamiento no hay calentamiento. Una cadena apunta a tus entrenamientos en lugar de copiarlos, así que al editar un entrenamiento, todas las cadenas que lo incluyen se ejecutan con los nuevos valores. El descanso entre entrenamientos no se suma a «Trabajo acumulado»."
    ]
   },
   {
    "q": "Contar saltos",
    "a": [
-    "En el editor del entrenamiento, activa Count jumps (Contar saltos) y elige como condición de fin el tiempo o el conteo. La primera vez que empiezas un entrenamiento con Count jumps activado, la app pide una vez el permiso de Movimiento y forma física para el movimiento de los AirPods. Si no lo permites, se usa el movimiento del iPhone.",
-    "Cuando llega movimiento de tus AirPods, ellos cuentan. Si deja de llegar, el conteo pasa al iPhone. Una línea en la pantalla muestra qué está contando. Los auriculares que no envían movimiento no pueden contar. Los saltos de cuerda y los pasos de carrera se muestran como jumps (saltos)."
+    "En el editor del entrenamiento, activa «Contar saltos» y elige como condición de fin el tiempo o el conteo. La primera vez que empiezas un entrenamiento con «Contar saltos» activado, la app pide una vez el permiso de Movimiento y forma física para el movimiento de los AirPods. Si no lo permites, se usa el movimiento del iPhone.",
+    "Cuando llega movimiento de tus AirPods, ellos cuentan. Si deja de llegar, el conteo pasa al iPhone. Una línea en la pantalla muestra qué está contando. Los auriculares que no envían movimiento no pueden contar. Los saltos de cuerda y los pasos de carrera se muestran como «saltos»."
    ]
   },
   {
    "q": "Con la pantalla apagada o si entra una llamada",
    "a": [
-    "Mientras el temporizador corre, el reloj, las señales y los avisos de voz continúan con la pantalla apagada. Si entra una llamada o suena una alarma, el temporizador se pausa y una línea muestra el motivo. Toca Resume (Continuar) para seguir."
+    "Mientras el temporizador corre, el reloj, las señales y los avisos de voz continúan con la pantalla apagada. Si entra una llamada o suena una alarma, el temporizador se pausa y una línea muestra el motivo. Toca «Reanudar» para seguir."
    ]
   },
   {
-   "q": "Live Activities (Actividades en directo)",
+   "q": "Actividades en directo",
    "a": [
-    "Mientras el temporizador corre, la pantalla bloqueada y la Dynamic Island muestran la fase actual, el tiempo restante y la ronda. Si la condición de fin es un conteo, muestran los saltos que faltan. La actividad desaparece al pausar o al terminar. Para apagarla, desactiva Live Activities (Actividades en directo) en Ajustes. Si está activada y no aparece nada, revisa Ajustes > Set & Burn > Actividades en directo.",
-    "En un iPhone enlazado con un Apple Watch, también aparece en pequeño en la pila inteligente del reloj. Si no aparece, la (i) junto a Live Activities (Actividades en directo) en Ajustes indica dónde activarla."
+    "Mientras el temporizador corre, la pantalla bloqueada y la Dynamic Island muestran la fase actual, el tiempo restante y la ronda. Si la condición de fin es un conteo, muestran los saltos que faltan. La actividad desaparece al pausar o al terminar. Para apagarla, desactiva «Actividades en directo» en Ajustes. Si está activada y no aparece nada, revisa Ajustes > Set & Burn > Actividades en directo.",
+    "En un iPhone enlazado con un Apple Watch, también aparece en pequeño en la pila inteligente del reloj. Si no aparece, la (i) junto a «Actividades en directo» en Ajustes indica dónde activarla."
    ]
   },
   {
    "q": "Sonidos de señal y voz",
    "a": [
-    "La app trae 14 sonidos de señal de marimba, creados con ElevenLabs. Suenan al empezar el calentamiento, el trabajo y el descanso, en los últimos 3 segundos y al final. Para apagarlos, desactiva Signal sound (Sonido de señal) en Ajustes. Tick (Tictac) en Ajustes añade un tictac suave cada segundo, y Double tick (Tictac doble), que aparece debajo mientras Tick está activado, lo hace cada medio segundo. Con Vibration (Vibración) activada, los botones y los interruptores también vibran un poco al tocarlos.",
-    "Los avisos de voz se leen solo en el idioma de la pantalla: inglés si la pantalla está en inglés, coreano si está en coreano. Los lee la voz de iOS de tu dispositivo, no una grabación, así que no necesitan conexión, y la voz y su calidad cambian según el dispositivo. La app usa la voz de mayor calidad descargada en el dispositivo. Si no hay ninguna voz mejorada instalada, aparece una (i) junto a Voice cues (Avisos de voz) en Ajustes que indica dónde conseguirla. Para apagar los avisos de voz, desactiva Voice cues (Avisos de voz) en Ajustes."
+    "La app trae 14 sonidos de señal de marimba, creados con ElevenLabs. Suenan al empezar el calentamiento, el trabajo y el descanso, en los últimos 3 segundos y al final. Para apagarlos, desactiva «Señales sonoras» en Ajustes. «Tictac» en Ajustes añade un tictac suave cada segundo, y «Tictac doble», que aparece debajo mientras «Tictac» está activado, lo hace cada medio segundo. Con «Vibración» activada, los botones y los interruptores también vibran un poco al tocarlos.",
+    "Los avisos de voz se leen en el idioma de la pantalla de la app. Si el dispositivo no tiene una voz de iOS para ese idioma, se leen en inglés, y la (i) junto a «Indicaciones de voz» en Ajustes explica por qué. Los lee la voz de iOS de tu dispositivo, no una grabación, así que no necesitan conexión, y la voz y su calidad cambian según el dispositivo. La app usa la voz de mayor calidad descargada en el dispositivo. Si no hay ninguna voz mejorada instalada, aparece una (i) junto a «Indicaciones de voz» en Ajustes que indica dónde conseguirla. Para apagar los avisos de voz, desactiva «Indicaciones de voz» en Ajustes."
    ]
   },
   {
    "q": "Tiempo de trabajo acumulado",
    "a": [
-    "Solo se suma el tiempo de las fases de trabajo. El descanso no cuenta y no hay registros por fecha. La pantalla final muestra Lifetime work time (tiempo de trabajo acumulado) en horas y minutos y, al lado, el tiempo que sumó este entrenamiento, por ejemplo +2 min 40 sec. Clear lifetime total (Borrar total acumulado), abajo del todo en Ajustes, lo devuelve a 0."
+    "Solo se suma el tiempo de las fases de trabajo. El descanso no cuenta y no hay registros por fecha. La pantalla final muestra «Trabajo acumulado» en horas y minutos y, al lado, el tiempo que sumó este entrenamiento, por ejemplo +2 min 40 s. «Borrar total acumulado», abajo del todo en Ajustes, lo devuelve a 0."
    ]
   },
   {
    "q": "Pro y restaurar la compra",
    "a": [
     "Cómpralo desde Pro en la barra superior de Ajustes. Es un pago único, no una suscripción. Pro quita el límite de entrenamientos, te deja crear cadenas y cambiar los tiempos en cada ronda, y desactiva los anuncios. Es compatible con En familia.",
-    "Si cambias de dispositivo o reinstalas la app, toca Restore purchase (Restaurar compra) en la pantalla de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
+    "Si cambias de dispositivo o reinstalas la app, toca «Restaurar compra» en la pantalla de Pro. Con la misma cuenta de Apple no se cobra de nuevo."
    ]
   },
   {
@@ -159,19 +159,19 @@
    "q": "Rastreo y preferencias de anuncios",
    "a": [
     "iOS pregunta si permites el rastreo después de que se cierre la guía inicial. Si has comprado Pro, no lo pregunta. La app funciona igual si no lo permites, y puedes cambiar esta opción en Ajustes > Privacidad y seguridad > Rastreo.",
-    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el Reino Unido y Suiza, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en Ad privacy choices (Opciones de privacidad de anuncios), abajo del todo en Ajustes o en la pantalla de Pro."
+    "Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el Reino Unido y Suiza, el formulario de consentimiento aparece antes que el aviso de rastreo. Allí puedes cambiar tu consentimiento en «Opciones de privacidad de anuncios», abajo del todo en Ajustes o en la pantalla de Pro."
    ]
   },
   {
    "q": "Conexión a internet",
    "a": [
-    "El temporizador, Count jumps (Contar saltos) y los avisos de voz funcionan sin conexión. Los anuncios, la compra de Pro y la restauración necesitan conexión."
+    "El temporizador, «Contar saltos» y los avisos de voz funcionan sin conexión. Los anuncios, la compra de Pro y la restauración necesitan conexión."
    ]
   },
   {
    "q": "Dispositivos e idiomas compatibles",
    "a": [
-    "iPhone con iOS 26 o posterior. La app está en inglés y coreano: usa el que aparezca primero en la lista de idiomas del dispositivo, o inglés si no hay ninguno de los dos. Por ejemplo, un dispositivo solo en japonés muestra inglés, y uno con japonés y después coreano muestra coreano. La app no tiene un selector de idioma propio y sigue el orden de idiomas de Ajustes de iOS. Los avisos de voz se leen en el mismo idioma que la pantalla."
+    "iPhone con iOS 26 o posterior. La app está en 46 idiomas. Usa el primer idioma de la lista de idiomas del dispositivo que la app admite, o inglés si no hay ninguno. La app no tiene un selector de idioma propio y sigue los ajustes de idioma de iOS. Los avisos de voz se leen en el mismo idioma que la pantalla."
    ]
   },
   {
@@ -194,7 +194,7 @@
     "paragraphs": [
      "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
      "La app muestra anuncios de banner en la pantalla final y en la lista de entrenamientos. El servicio publicitario de Google, AdMob, elige y muestra esos anuncios, y usa información del dispositivo para mostrar anuncios y medir su rendimiento.",
-     "Mientras se ejecuta un entrenamiento con Count jumps (Contar saltos) activado, la app cuenta saltos y pasos a partir de los valores de movimiento de tus AirPods o tu iPhone. Esto ocurre en tu dispositivo."
+     "Mientras se ejecuta un entrenamiento con «Contar saltos» activado, la app cuenta saltos y pasos a partir de los valores de movimiento de tus AirPods o tu iPhone. Esto ocurre en tu dispositivo."
     ],
     "bullets": []
    },
@@ -208,7 +208,7 @@
      "La lista de entrenamientos (nombres, tiempos, rondas, series, interruptores, condición de fin, conteos) y el entrenamiento elegido: para ejecutar el temporizador y al volver a abrir la app",
      "Las cadenas de entrenamientos (nombres, entrenamientos incluidos y su orden, descanso entre entrenamientos) y la cadena elegida: para hacer varios entrenamientos seguidos",
      "Ajustes de sonido, avisos de voz, vibración y pantalla: para el comportamiento de la app",
-     "Lifetime work time (tiempo de trabajo acumulado): una única suma de segundos en fases de trabajo, sin registros por fecha",
+     "«Trabajo acumulado»: una única suma de segundos en fases de trabajo, sin registros por fecha",
      "Si ya se vio la guía inicial: para mostrarla solo una vez",
      "Una copia de un archivo guardado que no se pudo leer: los mismos tipos de datos de arriba, conservada cuando un archivo guardado está dañado"
     ]
@@ -216,7 +216,7 @@
    {
     "title": "Tratamiento y plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los entrenamientos y las cadenas se pueden eliminar en la app, y Clear lifetime total (Borrar total acumulado), en Ajustes, devuelve a 0 el tiempo de trabajo acumulado.",
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Los entrenamientos y las cadenas se pueden eliminar en la app, y «Borrar total acumulado», en Ajustes, devuelve a 0 el tiempo de trabajo acumulado.",
      "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -261,8 +261,8 @@
     "title": "Medidas de seguridad",
     "paragraphs": [
      "Lo que usa la app está en forma de archivos en el almacenamiento de la app en tu dispositivo. El desarrollador no tiene ningún servidor, y la app no usa la sincronización de iCloud. Estos archivos pueden incluirse en las copias de seguridad de iCloud o del Mac que tengas activadas.",
-     "Los valores de movimiento solo se reciben mientras se ejecuta un entrenamiento con Count jumps activado, incluidos el calentamiento y el descanso, y la recepción se detiene cuando se pausa o termina. El movimiento de los AirPods solo se recibe si permites Movimiento y forma física. El movimiento del iPhone es un valor para el que iOS no pide permiso. La app pide dos permisos, Movimiento y forma física y rastreo (ATT). No pide ubicación, cámara, micrófono, fotos, contactos, notificaciones ni Salud.",
-     "Mientras un entrenamiento con Count jumps está en marcha o en pausa, el sensor de proximidad se mantiene activado para evitar toques en la pantalla dentro del bolsillo, y sus valores no se guardan. Para elegir el mensaje de conteo, la app lee el tipo de salida de audio en uso, y esto tampoco se guarda."
+     "Los valores de movimiento solo se reciben mientras se ejecuta un entrenamiento con «Contar saltos» activado, incluidos el calentamiento y el descanso, y la recepción se detiene cuando se pausa o termina. El movimiento de los AirPods solo se recibe si permites Movimiento y forma física. El movimiento del iPhone es un valor para el que iOS no pide permiso. La app pide dos permisos, Movimiento y forma física y rastreo (ATT). No pide ubicación, cámara, micrófono, fotos, contactos, notificaciones ni Salud.",
+     "Mientras un entrenamiento con «Contar saltos» está en marcha o en pausa, el sensor de proximidad se mantiene activado para evitar toques en la pantalla dentro del bolsillo, y sus valores no se guardan. Para elegir el mensaje de conteo, la app lee el tipo de salida de audio en uso, y esto tampoco se guarda."
     ],
     "bullets": []
    },
@@ -271,7 +271,7 @@
     "paragraphs": [
      "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob) y el SDK de Google User Messaging Platform, que pueden recoger la información de abajo cuando comprueban el consentimiento de anuncios y cuando cargan y muestran anuncios.",
      "Después de que se cierre la guía inicial, o después de que aparezca la primera pantalla si ya la has visto, la app comprueba si tienes Pro. Si no, comprueba la información de consentimiento de anuncios. Donde hace falta consentimiento de anuncios, como en el Espacio Económico Europeo, el Reino Unido y Suiza, primero aparece el formulario de consentimiento de Google. Si se pueden solicitar anuncios y aún no has respondido, iOS muestra el aviso de transparencia del rastreo (ATT). Estos avisos no aparecen mientras el temporizador está en marcha o en pausa. Si no permites el rastreo, AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiar esta opción en Ajustes > Privacidad y seguridad > Rastreo.",
-     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, el aviso de rastreo no aparece y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en Ad privacy choices (Opciones de privacidad de anuncios), abajo del todo en Ajustes o en la pantalla de Pro.",
+     "Si el resultado del consentimiento es que no se pueden solicitar anuncios, el aviso de rastreo no aparece y no se solicitan anuncios. Donde hace falta consentimiento, cámbialo en «Opciones de privacidad de anuncios», abajo del todo en Ajustes o en la pantalla de Pro.",
      "Si compras Pro, los anuncios dejan de aparecer, y a partir del siguiente arranque la app no inicia el SDK de anuncios, así que no aparecen ni el formulario de consentimiento ni el aviso de rastreo."
     ],
     "bullets": [

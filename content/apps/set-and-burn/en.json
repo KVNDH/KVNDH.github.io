@@ -127,7 +127,7 @@
    "q": "Signal sounds and voice",
    "a": [
     "A set of 14 marimba signal sounds is built into the app, made with ElevenLabs. They play when Get ready starts, when work starts, when rest starts, in the last 3 seconds and at the finish. To turn them off, switch off Signal sound in Settings. Tick in Settings adds a soft tick every second, and Double tick, shown under it while Tick is on, ticks every half second. With Vibration on, buttons and switches also give a light tap.",
-    "Voice cues are read only in the screen's language: English for an English screen, Korean for a Korean screen. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice cues in Settings and shows where to get one. To turn voice cues off, switch off Voice cues in Settings."
+    "Voice cues are read in the language of the app's screen. If the device has no iOS voice for that language, they are read in English, and the (i) next to Voice cues in Settings explains why. They are read by the iOS voice on your device, not a recording, so they need no connection, and the voice and its quality differ by device. The app uses the highest-quality voice downloaded on the device. If no enhanced voice is installed, an (i) appears next to Voice cues in Settings and shows where to get one. To turn voice cues off, switch off Voice cues in Settings."
    ]
   },
   {
@@ -171,7 +171,7 @@
   {
    "q": "Supported devices and languages",
    "a": [
-    "iPhone with iOS 26 or later. The app's screens are in English and Korean. It uses whichever of the two comes first in your device's language list, or English if neither is there. For example, a device set to Japanese only shows English, and one with Japanese and then Korean shows Korean. There is no language setting in the app. It follows the language order in iOS Settings. Voice cues are read in the same language as the screen."
+    "iPhone with iOS 26 or later. The app's screens come in 46 languages. It uses the first language in your device's language list that the app supports, or English if none is there. There is no language setting in the app. It follows the language settings in iOS. Voice cues are read in the same language as the screen."
    ]
   },
   {
