@@ -176,8 +176,8 @@
  ],
  "privacy": {
   "title": "Política de privacidad de TailorColor",
-  "effectiveDate": "2026-09-20",
-  "summary": "TailorColor no recoge información personal. No hay registro ni inicio de sesión, y la app no incluye publicidad ni herramientas de analítica.",
+  "effectiveDate": "2026-11-24",
+  "summary": "El desarrollador no recoge información personal. No hay registro, inicio de sesión ni servidor del desarrollador, y tus registros se guardan en el almacenamiento de la app en tu dispositivo. Los anuncios vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Del pago de TailorColor Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app TailorColor (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, y expone a continuación sus criterios."
   ],
@@ -185,69 +185,91 @@
    {
     "title": "Finalidad del tratamiento",
     "paragraphs": [
-     "La app no tiene registro ni inicio de sesión, y el desarrollador no trata información personal de quienes la usan, de modo que no hay ninguna finalidad que declarar."
+     "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
+     "La app muestra anuncios de banner en la parte inferior de las pestañas Hoy y Registro, y puede mostrar un anuncio a pantalla completa justo antes de guardar el look de hoy. El servicio publicitario de Google, AdMob, elige y muestra esos anuncios, y usa información del dispositivo para mostrar anuncios y medir su rendimiento."
     ],
     "bullets": []
    },
    {
     "title": "Información que se trata",
     "paragraphs": [
-     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno."
+     "El desarrollador no recoge información personal. La app trabaja con los datos que figuran abajo, todos ellos guardados en el almacenamiento de la app en tu dispositivo. El desarrollador no recibe ninguno.",
+     "La información que AdMob puede recoger al mostrar anuncios figura en el apartado 9."
     ],
     "bullets": [
-     "Looks guardados (la prenda y el color de cada zona, y cuándo se guardaron): para recuperar un look",
-     "Prendas de Closet (zona, prenda, color y cuándo se guardaron): para recuperar una prenda",
-     "Si ya has visto la introducción: para saber si es el primer arranque"
+     "El look de hoy y el look guardado de cada día (aspecto del personaje, tipo y color de cada prenda y accesorio, fondo, fecha y momento en que se guardó): para verlos y volver a ponerlos desde la pestaña Registro",
+     "Colores y prendas marcados como no usados, sección del armario, zonas fijadas, colores recientes y la elección de día o noche de los fondos: para las sugerencias y el editor",
+     "Si permites la ubicación, la latitud y la longitud redondeadas a un decimal y cuándo se leyeron: para ajustar el día y la noche del fondo",
+     "Idioma elegido, si Mostrar eventos del calendario está activado, si se ha comprado TailorColor Pro, si ya has visto la introducción, cuándo se abrió la app por primera vez y cuándo apareció el último anuncio a pantalla completa: para el funcionamiento de la app y para espaciar los anuncios a pantalla completa"
     ]
    },
    {
     "title": "Plazo de conservación",
     "paragraphs": [
-     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Las imágenes que compartiste y guardaste en Fotos se borran desde Fotos."
+     "El desarrollador no conserva información personal. Los datos del almacenamiento de la app desaparecen al eliminar la app. Un look guardado se puede eliminar día a día en la pestaña Registro. La ubicación aproximada se lee una vez y se conserva. Mientras el día y la noche del fondo están en Auto, la app la vuelve a leer al pasar a primer plano si el valor tiene más de una semana, y lo sustituye. Las fotos y los títulos de los eventos del calendario no se conservan.",
+     "La información recogida por AdMob se conserva conforme a la Política de Privacidad de Google (policies.google.com/privacy)."
     ],
     "bullets": []
    },
    {
     "title": "Cesión a terceros",
     "paragraphs": [
-     "La información personal no se cede a terceros."
+     "El desarrollador no comunica a terceros la información personal de quienes usan la app. Ahora bien, cuando se carga y se muestra un anuncio, el SDK de Google Mobile Ads incluido en la app envía a Google directamente la información del apartado 9, del modo siguiente."
     ],
-    "bullets": []
+    "bullets": [
+     "Destinatario: Google LLC (Estados Unidos), AdMob",
+     "Finalidad: mostrar anuncios y medir su rendimiento",
+     "Información: la información del dispositivo y los registros de interacción con anuncios del apartado 9",
+     "Cuándo y cómo: se envía por internet cuando se carga y se muestra un anuncio",
+     "Conservación: la indicada en la Política de Privacidad de Google"
+    ]
    },
    {
     "title": "Encargo del tratamiento",
     "paragraphs": [
-     "El tratamiento de información personal no se encarga a terceros. No hay compras dentro de la app, así que no se manejan datos de pago, y la app no incluye publicidad ni herramientas de analítica."
+     "El desarrollador no encarga a terceros el tratamiento de información personal. Apple procesa el pago de TailorColor Pro a través del App Store, y los datos de pago se rigen por la política de privacidad de Apple. El desarrollador no recibe tu forma de pago ni los datos de tu cuenta de Apple."
     ],
     "bullets": []
    },
    {
     "title": "Destrucción de la información",
     "paragraphs": [
-     "El desarrollador no conserva información personal, así que no hay nada que destruir. Los looks guardados y las prendas de Closet se eliminan de uno en uno desde la pantalla Saved, y al eliminar la app desaparecen todos sus datos."
+     "El desarrollador no conserva información personal, así que no hay nada que destruir. Para quitar un look guardado, elige su día en la pestaña Registro y toca Eliminar. Al eliminar la app desaparecen todos sus datos."
     ],
     "bullets": []
    },
    {
     "title": "Derechos de los usuarios y de sus representantes legales, y cómo ejercerlos",
     "paragraphs": [
-     "Como el desarrollador no conserva información personal sobre ti, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo."
+     "Como el desarrollador no conserva información personal sobre ti, no hay nada a lo que acceder ni que rectificar o suprimir. Si tienes dudas, escribe a la dirección de abajo.",
+     "Puedes pedir a Google acceso a la información recogida por AdMob o su supresión (policies.google.com/privacy). Para rechazar el uso del identificador de publicidad, sigue el apartado 9. Los datos de pago están en manos de Apple y se rigen por la política de privacidad de Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
    },
    {
     "title": "Medidas de seguridad",
     "paragraphs": [
-     "Las fotos llegan a la app de una en una a través del selector de fotos de iOS, y no se pide permiso para acceder a la fototeca. La cámara solo pide permiso cuando tocas Take a photo. La foto que recibe la app se usa solo mientras se lee su color y no se guarda en la app."
+     "Cuando tomas un color de una foto o usas Vestir a partir de una foto, la app recibe una sola foto: la que haces con Hacer una foto o la que eliges en el selector de fotos de iOS. iOS pide permiso para la cámara la primera vez que tocas Hacer una foto, y la app no pide permiso para acceder a la fototeca. La foto se lee en el dispositivo. Al tomar un color se lee el color del punto que tocas, y Vestir a partir de una foto usa Vision de Apple para estimar los colores y los tipos de las prendas. La foto se mantiene en memoria mientras esa pantalla está abierta y no se guarda en un archivo, y el desarrollador no la recibe.",
+     "iOS pide permiso para el calendario solo cuando activas Mostrar eventos del calendario en la pestaña Registro. Si lo permites, la tarjeta de fecha de la pestaña Registro muestra hasta dos títulos de los eventos de ese día. iOS lo presenta como acceso total al calendario, pero la app solo lee los títulos, las horas de inicio, si duran todo el día y el número de eventos de ese día, y no crea ni modifica eventos. Los títulos no se guardan y se vuelven a leer cada vez que se muestra una tarjeta, y el desarrollador no los recibe.",
+     "iOS pide permiso de ubicación solo cuando eliges un fondo o pones el día y la noche del fondo en Auto, y no al abrir la app. La app solicita la ubicación aproximada con precisión reducida, redondea las coordenadas a un decimal (unos 11 km) y las conserva en los ajustes de la app en el dispositivo. El valor se usa para calcular en el dispositivo la salida y la puesta del sol en ese lugar, de modo que el fondo siga el día, el atardecer y la noche, y no se escribe en los looks guardados. Si no lo permites, la app hace una estimación a partir de la zona horaria del dispositivo. La app no usa este valor para los anuncios, y el desarrollador no recibe tu ubicación."
     ],
     "bullets": []
    },
    {
     "title": "Cookies y otra recogida automática",
     "paragraphs": [
-     "La app no usa cookies, ni identificador de publicidad, ni herramientas de analítica."
+     "La app no usa cookies ni herramientas de analítica. Para la publicidad incluye el SDK de Google Mobile Ads (AdMob), que puede recoger la información de abajo cuando carga y muestra anuncios.",
+     "La app prepara los anuncios cuando terminan las pantallas de introducción. Cuando la app prepara los anuncios, iOS muestra el aviso de transparencia del rastreo (ATT) si aún no lo has respondido. La app funciona igual si no permites el rastreo. En ese caso AdMob no recibe el identificador de publicidad (IDFA), y los anuncios siguen apareciendo. Puedes cambiarlo en Ajustes > Privacidad y seguridad > Rastreo.",
+     "Los anuncios de banner aparecen en la parte inferior de las pestañas Hoy y Registro. El anuncio a pantalla completa aparece justo antes de guardar el look de hoy. No aparece durante los 3 primeros días desde que la app se abre por primera vez, y después como máximo una vez cada 24 horas. El guardado se hace aunque no se cargue un anuncio.",
+     "En las regiones donde hace falta consentimiento de anuncios, como el Espacio Económico Europeo, primero aparece el formulario de consentimiento de Google. Si el resultado es que no se pueden solicitar anuncios, tampoco aparece el aviso de rastreo. Allí puedes cambiar tus opciones en Opciones de privacidad, en la pantalla Acerca de.",
+     "Después de comprar TailorColor Pro no aparecen anuncios de banner ni a pantalla completa. A partir de entonces la app comprueba primero la compra al abrirse y, una vez confirmada, no inicia AdMob, así que no aparecen ni el formulario de consentimiento ni el aviso de rastreo."
     ],
-    "bullets": []
+    "bullets": [
+     "Identificadores del dispositivo, y el identificador de publicidad (IDFA) si permites el rastreo",
+     "Ubicación aproximada estimada a partir de tu dirección IP",
+     "Registros de interacción con los anuncios, como impresiones y toques, y registros de uso de la app",
+     "Información de rendimiento, fallos y diagnóstico de la app"
+    ]
    },
    {
     "title": "Responsable de privacidad",
@@ -285,7 +307,8 @@
    {
     "title": "Cambios en esta política",
     "paragraphs": [
-     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor."
+     "Si esta política cambia, en esta página aparecerá el texto nuevo y su nueva fecha de entrada en vigor.",
+     "2026-11-24: se reescribió por completo para la versión 1.0.0. Ahora recoge los anuncios de Google AdMob y el consentimiento de anuncios, el aviso de rastreo, el pago de TailorColor Pro, el uso de los permisos de cámara, calendario y ubicación, y los datos que se conservan en el dispositivo. La fecha de entrada en vigor anterior era el 2026-09-20."
     ],
     "bullets": []
    }

@@ -176,8 +176,8 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für TailorColor",
-  "effectiveDate": "2026-09-20",
-  "summary": "TailorColor erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung, und die App enthält weder Werbung noch Analysewerkzeuge.",
+  "effectiveDate": "2026-11-24",
+  "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Es gibt weder Registrierung noch Anmeldung noch einen Server des Entwicklers, und Ihre Einträge liegen im Speicher der App auf Ihrem Gerät. Die Werbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für TailorColor Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App TailorColor (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea und legt die Grundsätze dafür wie folgt dar."
   ],
@@ -185,69 +185,91 @@
    {
     "title": "Zweck der Verarbeitung",
     "paragraphs": [
-     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler verarbeitet keine personenbezogenen Daten der Nutzerinnen und Nutzer. Es gibt daher keinen Zweck anzugeben."
+     "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
+     "Die App zeigt Bannerwerbung am unteren Rand der Tabs Heute und Verlauf und kann unmittelbar vor dem Speichern des heutigen Outfits eine bildschirmfüllende Werbung zeigen. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen."
     ],
     "bullets": []
    },
    {
     "title": "Verarbeitete Daten",
     "paragraphs": [
-     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät liegen. Der Entwickler erhält nichts davon."
+     "Der Entwickler erhebt keine personenbezogenen Daten. Die App arbeitet mit den unten genannten Daten, die alle im Speicher der App auf Ihrem Gerät liegen. Der Entwickler erhält nichts davon.",
+     "Welche Informationen AdMob beim Anzeigen von Werbung erfassen kann, steht in Abschnitt 9."
     ],
     "bullets": [
-     "Gespeicherte Looks (Kleidungsstück und Farbe je Teil, Zeitpunkt des Speicherns): zum erneuten Aufrufen eines Looks",
-     "Einträge im Closet (Teil, Kleidungsstück, Farbe, Zeitpunkt des Speicherns): zum erneuten Aufrufen eines Kleidungsstücks",
-     "Ob die Einführung schon angezeigt wurde: um den ersten Start zu erkennen"
+     "Das heutige Outfit und die je Tag gespeicherten Outfits (Aussehen der Figur, Art und Farbe der Kleidungsstücke und Accessoires, Hintergrund, Datum und Zeitpunkt des Speicherns): um sie im Tab Verlauf wieder anzusehen und erneut anzuziehen",
+     "Als nicht getragen markierte Farben und Kleidungsstücke, Bereich des Kleiderschranks, festgehaltene Teile, zuletzt verwendete Farben und die Wahl von Tag oder Nacht für Hintergründe: für Vorschläge und den Editor",
+     "Wenn Sie den Standort erlauben, Breiten- und Längengrad auf eine Nachkommastelle gerundet und der Zeitpunkt des Auslesens: um Tag und Nacht des Hintergrunds anzupassen",
+     "Sprachwahl, ob Kalenderereignisse anzeigen eingeschaltet ist, ob TailorColor Pro gekauft wurde, ob die Einführung angezeigt wurde, wann die App zum ersten Mal lief und wann zuletzt eine bildschirmfüllende Werbung erschien: für den Betrieb der App und den Abstand zwischen bildschirmfüllenden Werbungen"
     ]
    },
    {
     "title": "Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Ein geteiltes Bild, das Sie in Fotos gesichert haben, löschen Sie in Fotos."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Ein gespeichertes Outfit lässt sich im Tab Verlauf tageweise löschen. Der ungefähre Standort wird einmal ausgelesen und aufbewahrt. Steht Tag und Nacht des Hintergrunds auf Automatisch, liest die App ihn neu aus, wenn sie in den Vordergrund kommt und der Wert älter als eine Woche ist, und ersetzt ihn. Fotos und Titel von Kalenderereignissen werden nicht aufbewahrt.",
+     "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
    },
    {
     "title": "Weitergabe an Dritte",
     "paragraphs": [
-     "Personenbezogene Daten werden nicht an Dritte weitergegeben."
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Wird jedoch Werbung geladen und angezeigt, sendet das in der App enthaltene Google Mobile Ads SDK die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
     ],
-    "bullets": []
+    "bullets": [
+     "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
+     "Zweck: Ausspielen von Werbung und Messung ihrer Wirkung",
+     "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
+     "Zeitpunkt und Weg: über das Internet, wenn eine Werbung geladen und angezeigt wird",
+     "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
+    ]
    },
    {
     "title": "Auftragsverarbeitung",
     "paragraphs": [
-     "Die Verarbeitung personenbezogener Daten wird nicht ausgelagert. Die App hat keine In-App-Käufe und verarbeitet daher keine Zahlungsdaten, und sie enthält weder Werbe- noch Analysewerkzeuge."
+     "Der Entwickler lagert die Verarbeitung personenbezogener Daten nicht aus. Apple wickelt die Zahlung für TailorColor Pro über den App Store ab, und die Zahlungsdaten unterliegen der Datenschutzerklärung von Apple. Der Entwickler erhält weder Ihr Zahlungsmittel noch Angaben zu Ihrem Apple-Account."
     ],
     "bullets": []
    },
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Gespeicherte Looks und Einträge im Closet löschen Sie einzeln im Bildschirm Saved; mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Ein gespeichertes Outfit entfernen Sie, indem Sie im Tab Verlauf den Tag wählen und auf Löschen tippen. Mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },
    {
     "title": "Rechte der Betroffenen und der gesetzlichen Vertretung",
     "paragraphs": [
-     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse."
+     "Da der Entwickler keine personenbezogenen Daten über Sie aufbewahrt, gibt es nichts, worauf Sie zugreifen oder was Sie berichtigen oder löschen lassen könnten. Bei Fragen schreiben Sie an die unten genannte Adresse.",
+     "Sie können bei Google Auskunft über die von AdMob erfassten Informationen verlangen oder deren Löschung (policies.google.com/privacy). Um die Nutzung der Werbekennung abzulehnen, folgen Sie Abschnitt 9. Die Zahlungsdaten liegen bei Apple und unterliegen der Datenschutzerklärung von Apple (apple.com/legal/privacy)."
     ],
     "bullets": []
    },
    {
     "title": "Maßnahmen zur Sicherheit",
     "paragraphs": [
-     "Fotos erhält die App einzeln über die Fotoauswahl von iOS, eine Berechtigung zum Lesen Ihrer Mediathek fordert sie nicht an. Nach dem Kamerazugriff fragt die App erst, wenn Sie auf Take a photo tippen. Ein Foto, das die App erhält, nutzt sie nur, solange Sie eine Farbe daraus lesen, und speichert es nicht."
+     "Wenn Sie eine Farbe aus einem Foto übernehmen oder Nach Foto anziehen verwenden, erhält die App ein einzelnes Foto: eines, das Sie mit Foto aufnehmen machen, oder eines, das Sie in der Fotoauswahl von iOS wählen. Nach dem Kamerazugriff fragt iOS, wenn Sie zum ersten Mal auf Foto aufnehmen tippen, und eine Berechtigung zum Lesen Ihrer Mediathek fordert die App nicht an. Das Foto wird auf dem Gerät ausgelesen. Beim Übernehmen einer Farbe liest die App die Farbe an der angetippten Stelle, und Nach Foto anziehen schätzt mit Apples Vision-Framework Farben und Arten der Kleidungsstücke. Das Foto liegt im Arbeitsspeicher, solange dieser Bildschirm geöffnet ist, und wird nicht als Datei gespeichert. Der Entwickler erhält es nicht.",
+     "Nach dem Kalenderzugriff fragt iOS nur, wenn Sie im Tab Verlauf Kalenderereignisse anzeigen einschalten. Erlauben Sie ihn, zeigt die Datumskarte im Tab Verlauf bis zu zwei Titel der Ereignisse dieses Tages. iOS stellt dies als vollen Kalenderzugriff dar, die App liest jedoch nur Titel, Beginn, die Angabe ganztägig und die Anzahl der Ereignisse dieses Tages und legt keine Ereignisse an und ändert keine. Die Titel werden nicht gespeichert und bei jedem Anzeigen einer Karte neu gelesen. Der Entwickler erhält sie nicht.",
+     "Nach dem Standortzugriff fragt iOS nur, wenn Sie einen Hintergrund wählen oder Tag und Nacht des Hintergrunds auf Automatisch stellen, und nicht beim Öffnen der App. Die App fordert den ungefähren Standort mit reduzierter Genauigkeit an, rundet die Koordinaten auf eine Nachkommastelle (etwa 11 km) und bewahrt sie in den Einstellungen der App auf dem Gerät auf. Mit dem Wert berechnet die App auf dem Gerät Sonnenaufgang und Sonnenuntergang an diesem Ort, damit der Hintergrund Tag, Abendrot und Nacht folgt. In gespeicherte Outfits wird er nicht geschrieben. Erlauben Sie den Zugriff nicht, schätzt die App anhand der Zeitzone des Geräts. Die App nutzt diesen Wert nicht für Werbung, und der Entwickler erhält Ihren Standort nicht."
     ],
     "bullets": []
    },
    {
     "title": "Cookies und andere automatische Erfassung",
     "paragraphs": [
-     "Die App verwendet keine Cookies, keine Werbekennung und keine Analysewerkzeuge."
+     "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob), das beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen kann.",
+     "Die App bereitet die Werbung vor, nachdem die Einführung abgeschlossen ist. Wenn die App die Werbung vorbereitet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT), sofern Sie sie noch nicht beantwortet haben. Die App funktioniert genauso, wenn Sie das Tracking nicht erlauben. AdMob erhält dann die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Bannerwerbung erscheint am unteren Rand der Tabs Heute und Verlauf. Die bildschirmfüllende Werbung erscheint unmittelbar vor dem Speichern des heutigen Outfits. In den ersten 3 Tagen nach dem ersten Start der App erscheint sie nicht, danach höchstens einmal in 24 Stunden. Gespeichert wird auch dann, wenn keine Werbung geladen werden konnte.",
+     "In Regionen, in denen eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Ergibt sich daraus, dass keine Werbung angefragt werden kann, erscheint auch die Tracking-Abfrage nicht. Dort ändern Sie Ihre Auswahl später unter Datenschutzeinstellungen im Bildschirm Info.",
+     "Nach dem Kauf von TailorColor Pro erscheinen weder Bannerwerbung noch bildschirmfüllende Werbung. Danach prüft die App beim Öffnen zuerst den Kauf, und sobald er bestätigt ist, startet sie AdMob nicht, sodass weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
     ],
-    "bullets": []
+    "bullets": [
+     "Gerätekennungen sowie die Werbekennung (IDFA), wenn Sie das Tracking erlauben",
+     "Ungefährer Standort, geschätzt anhand Ihrer IP-Adresse",
+     "Interaktionsdaten zu Werbung wie Einblendungen und Antippen sowie Daten zur Nutzung der App",
+     "Informationen zu Leistung, Abstürzen und Diagnose der App"
+    ]
    },
    {
     "title": "Verantwortlich für den Datenschutz",
@@ -285,7 +307,8 @@
    {
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
-     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite."
+     "Ändert sich diese Erklärung, stehen der neue Text und das neue Datum des Inkrafttretens auf dieser Seite.",
+     "2026-11-24: Für 1.0.0 vollständig neu gefasst. Beschrieben sind jetzt die Werbung von Google AdMob und die Einwilligung in Werbung, die Tracking-Abfrage, die Zahlung für TailorColor Pro, die Verwendung von Kamera-, Kalender- und Standortzugriff sowie die auf dem Gerät aufbewahrten Daten. Das vorherige Datum des Inkrafttretens war der 2026-09-20."
     ],
     "bullets": []
    }

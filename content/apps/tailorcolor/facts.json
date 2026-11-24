@@ -1,8 +1,20 @@
 {
  "describesVersion": "1.0.0",
- "purchase": "none",
- "ads": false,
+ "purchase": "one-time",
+ "ads": true,
  "account": false,
+ "privacy": [
+  "2026-11-24: 처리방침만 심사 중인 1.0.0 (빌드 8, 앱 저장소 커밋 8b2ca83)에 맞췄다. 소개 페이지 문구와 아래 products, network, permissions, storage, export 는 2026-09-20 빌드 1 기준 그대로이고 지금 앱과 다르다. 소개 페이지는 출시 때 따로 고친다.",
+  "계정, 서버: 회원가입, 로그인, 자체 서버 없음. 앱 코드에 URLSession, CloudKit 0건. 외부 패키지는 Google Mobile Ads 13.10.0, UMP 3.1.0 둘(project.yml:16-21).",
+  "기록: Application Support/TailorColor/fits 의 current.json, fits.json, settings.json(FitStore.swift:32, 41-46). 저장한 날은 FitState(캐릭터, 옷과 소품, 배경)와 날짜, 저장 시각. 기록 탭에서 날짜마다 지운다(RecordView.swift:478-482).",
+  "광고: 배너 둘(오늘 탭, 기록 탭), 오늘 핏 저장 직전 전면(project.yml:80-83). 전면은 처음 3일 없음, 그 뒤 24시간에 한 번(AdsModel.swift:37-38). 순서는 UMP 동의, canRequestAds 일 때만 ATT, SDK 시작(AdsModel.swift start, startAfterConsent). Pro 는 배너와 전면 없음(AdsModel.swift:135, 212). 정보 화면의 개인정보 선택은 UMP 가 요구하는 지역만(AboutView.swift:56-57).",
+  "위치: 대략 위치, 사용 중에만. 낮과 밤이 자동이고 기본 배경이 아닌 배경을 고를 때만 묻는다(DayLight.swift:81-88, 99-101). NSLocationDefaultAccuracyReduced(project.yml:89). 0.1도로 줄여 UserDefaults scenePlace 에만 두고 일주일 지나면 다시 읽는다(DayLight.swift:35-38, 123-128).",
+  "캘린더: 전체 접근 권한이지만 읽기만. 기록 탭 스위치를 켤 때만 묻고 그날 일정 제목 두 개까지 보인다. 저장하지 않고 카드마다 다시 읽는다(CalendarEvents.swift:58-68, 71, 120, 136-145).",
+  "사진: 카메라(NSCameraUsageDescription)와 PhotosPicker. NSPhotoLibraryUsageDescription 없음. 기기 안 Apple Vision 으로 읽고 화면이 떠 있는 동안 메모리에만(PhotoDressView.swift:7-10, PhotoVision.swift:6-7). PHPhotoLibrary, ShareLink, UIActivityViewController 0건이라 처리방침에서 공유 그림 문장을 뺐다.",
+  "결제: 비소모성 com.kimdh.TailorColor.pro.lifetime, 가족 공유(docs/store/iap.json:3-6). StoreKit 이 처리하고 앱은 구매 여부만 확인, 복원(ProStore.swift:32-39, 228).",
+  "ASC App Privacy 게시분(2026-11-24): 7개 유형(기기 ID, 광고 데이터, 제품 상호작용, 대략 위치, 성능, 충돌, 기타 진단), 추적은 기기 ID 하나. 앱 PrivacyInfo.xcprivacy 는 추적 false, UserDefaults CA92.1.",
+  "출처: TailorColor 세션 사실 초안 tmp/tailorcolor-100-privacy-2026-11-24/facts.md, 근거 줄은 8b2ca83 에서 다시 열어 확인."
+ ],
  "products": [
   "인앱 구매가 없다. 결제 코드도 StoreKit 도 프로젝트에 없다. 무료 한도라는 개념 자체가 없으므로 Pro 섹션을 두지 않는다."
  ],
