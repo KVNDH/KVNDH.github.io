@@ -4,7 +4,7 @@
  "summary": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
  "hero": {
   "hook": "Elige tus fotos y se colocan en la pared como copias reveladas. Añade cinta y marcos, y guarda el fondo tal como lo ves.",
-  "shotAlt": "El paso Diseño del editor de Tapey. Una vista previa de la pantalla bloqueada con seis fotos en cuadrícula, encima de los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco y de una fila de opciones de diseño."
+  "shotAlt": "El paso Diseño del editor de Tapey. Una vista previa de la pantalla bloqueada con ocho fotos en cuadrícula, encima de una fila de opciones de diseño y de los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco."
  },
  "sections": [
   {
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Primer plano del paso Diseño. Una fila de siete opciones de diseño (Auto, Cuadrícula, Escalera, Corazón, Guirnalda, Película, Mosaico) queda sobre la línea Círculo 8+, Estrella 10+, y abajo del todo están los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco.",
+    "alt": "Primer plano del paso Diseño. En una fila de opciones de diseño (Auto, Cuadrícula, Escalera, Corazón, Círculo, Guirnalda, Película) está elegida Cuadrícula, y Guirnalda y Película llevan un candado. Debajo queda la línea Estrella 10+, y abajo del todo están los pasos Fotos, Reloj, Diseño, Fondo, Cinta y Marco.",
     "caption": "Pantalla de la app, ampliada",
     "focus": "-720px"
    }

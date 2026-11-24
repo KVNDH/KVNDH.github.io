@@ -4,7 +4,7 @@
  "summary": "Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.",
  "hero": {
   "hook": "Wählen Sie Ihre Fotos, und sie setzen sich wie Abzüge an die Wand. Tape und Rahmen dazu, dann sichern Sie den Hintergrund genau so, wie Sie ihn sehen.",
-  "shotAlt": "Der Schritt Layout im Editor von Tapey. Eine Vorschau des Sperrbildschirms mit sechs Fotos im Raster steht über den Schritten Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen und einer Reihe von Layout-Optionen."
+  "shotAlt": "Der Schritt Layout im Editor von Tapey. Eine Vorschau des Sperrbildschirms mit acht Fotos im Raster steht über einer Reihe von Layout-Optionen und den Schritten Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen."
  },
  "sections": [
   {
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Der Schritt Layout aus der Nähe. Eine Reihe mit sieben Layout-Optionen (Auto, Raster, Treppe, Herz, Girlande, Film, Mosaik) steht über der Zeile Kreis 8+, Stern 10+, ganz unten liegen die Schritte Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen.",
+    "alt": "Der Schritt Layout aus der Nähe. In einer Reihe von Layout-Optionen (Auto, Raster, Treppe, Herz, Kreis, Girlande, Film) ist Raster ausgewählt, Girlande und Film tragen ein Schloss. Darunter steht die Zeile Stern 10+, ganz unten liegen die Schritte Fotos, Uhr, Layout, Hintergrund, Tape und Rahmen.",
     "caption": "App-Ansicht, vergrößert",
     "focus": "-720px"
    }

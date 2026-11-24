@@ -4,7 +4,7 @@
  "summary": "Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.",
  "hero": {
   "hook": "Pick your photos and they settle onto the wall like prints. Add washi tape and frames, then save the wallpaper exactly as you see it.",
-  "shotAlt": "The Layout step in the Tapey editor. A lock screen preview with six photos in a grid sits above the Photos, Clock, Layout, Background, Tape, and Frame steps and a row of layout options."
+  "shotAlt": "The Layout step in the Tapey editor. A lock screen preview with eight photos in a grid sits above a row of layout options and the Photos, Clock, Layout, Background, Tape, and Frame steps."
  },
  "sections": [
   {
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "Close-up of the Layout step. A row of seven layout options (Auto, Grid, Stairs, Heart, Garland, Film, Mosaic) sits above a line reading Circle 8+, Star 10+, with the Photos, Clock, Layout, Background, Tape, and Frame steps at the bottom.",
+    "alt": "Close-up of the Layout step. A row of layout options (Auto, Grid, Stairs, Heart, Circle, Garland, Film) has Grid selected, and Garland and Film carry a lock. Below it is a line reading Star 10+, with the Photos, Clock, Layout, Background, Tape, and Frame steps at the bottom.",
     "caption": "App screen, zoomed in",
     "focus": "-720px"
    }

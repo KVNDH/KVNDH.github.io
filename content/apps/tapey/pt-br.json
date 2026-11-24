@@ -4,7 +4,7 @@
  "summary": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
  "hero": {
   "hook": "Escolha suas fotos e elas se assentam na parede como cópias reveladas. Acrescente fita e molduras e salve o papel de parede exatamente como você está vendo.",
-  "shotAlt": "A etapa Layout no editor do Tapey. Uma prévia da tela bloqueada com seis fotos em grade fica acima das etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura e de uma fileira de opções de layout."
+  "shotAlt": "A etapa Layout no editor do Tapey. Uma prévia da tela bloqueada com oito fotos em grade fica acima de uma fileira de opções de layout e das etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura."
  },
  "sections": [
   {
@@ -21,7 +21,7 @@
    "visual": {
     "type": "crop",
     "shot": 1,
-    "alt": "A etapa Layout vista de perto. Uma fileira com sete opções de layout (Auto, Grade, Escada, Coração, Guirlanda, Filme, Mosaico) fica acima da linha Círculo 8+, Estrela 10+, e bem embaixo estão as etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura.",
+    "alt": "A etapa Layout vista de perto. Em uma fileira de opções de layout (Auto, Grade, Escada, Coração, Círculo, Guirlanda, Filme), Grade está selecionada, e Guirlanda e Filme têm um cadeado. Abaixo fica a linha Estrela 10+, e bem embaixo estão as etapas Fotos, Relógio, Layout, Fundo, Fita e Moldura.",
     "caption": "Tela do app, ampliada",
     "focus": "-720px"
    }

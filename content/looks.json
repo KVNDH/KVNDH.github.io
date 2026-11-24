@@ -424,47 +424,47 @@
  "tapey": {
   "mode": "blur",
   "ink": "dark",
-  "color": "#CBC2B5",
+  "color": "#CDC7BE",
   "alts": {
    "ko": [
     "좋아하는 사진을 붙여 잠금화면을 만듭니다",
-    "테이프와 폴라로이드, 손글씨 메모로 꾸밉니다",
-    "몇 장 고르면 알아서 배치합니다"
+    "그날 있었던 일을 직접 기록합니다",
+    "테이프를 골라 사진에 붙입니다"
    ],
    "en": [
     "Tape up photos you love as your lock screen",
-    "Add tape, Polaroids and handwritten notes",
-    "Pick a few photos and they fall into place"
+    "Write about that day in your own words",
+    "Pick a tape and stick it on a photo"
    ],
    "ja": [
     "好きな写真を貼って ロック画面をつくります",
-    "テープとポラロイド、 手書きメモで飾ります",
-    "何枚か選ぶだけで 自動で配置します"
+    "その日のできごとを 自分の手で残します",
+    "テープを選んで 写真に貼ります"
    ],
    "zh-hans": [
     "贴上喜欢的照片 做成锁屏",
-    "用胶带、拍立得 和手写备注来装饰",
-    "选几张照片 自动完成布局"
+    "亲手记下 那天发生的事",
+    "挑一款胶带 贴在照片上"
    ],
    "zh-hant": [
     "貼上喜歡的照片 做成鎖定畫面",
-    "用膠帶、拍立得 和手寫備註來裝飾",
-    "挑幾張照片 自動排好版面"
+    "親手記下 那天發生的事",
+    "挑一款膠帶 貼在照片上"
    ],
    "de": [
     "Lieblingsfotos auf den Sperrbildschirm kleben",
-    "Mit Tape, Polaroids und Handschrift verzieren",
-    "Ein paar Fotos wählen, sie ordnen sich selbst"
+    "Was an dem Tag geschah, selbst festhalten",
+    "Ein Tape wählen und aufs Foto kleben"
    ],
    "es": [
     "Pega tus fotos favoritas en la pantalla bloqueada",
-    "Decora con cinta, Polaroid y notas a mano",
-    "Elige unas fotos y se colocan solas"
+    "Anota lo que pasó ese día",
+    "Elige una cinta y pégala en la foto"
    ],
    "pt-br": [
     "Cole suas fotos favoritas na tela de bloqueio",
-    "Decore com fita, Polaroid e anotações à mão",
-    "Escolha algumas fotos, o layout se monta sozinho"
+    "Anote o que aconteceu naquele dia",
+    "Escolha uma fita e cole na foto"
    ]
   }
  },
