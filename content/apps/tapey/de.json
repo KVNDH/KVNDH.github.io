@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Die Fotos finden ihren Platz",
    "body": [
-    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben. Bei einem Foto, das Sie zuerst antippen, ändern Sie mit zwei Fingern Größe und Winkel; an jeder anderen Stelle vergrößern zwei Finger die Ansicht. Im Layout Auto bleibt, was Sie von Hand bewegt haben, dort, wo Sie es abgelegt haben. Passt ein Foto nicht ganz in sein Fenster, wählen Sie mit Ausschnitt den sichtbaren Teil."
+    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben. Bei einem Foto, das Sie zuerst antippen, ändern Sie mit zwei Fingern Größe und Winkel; an jeder anderen Stelle vergrößern zwei Finger die Ansicht. Im Layout Auto bleibt, was Sie von Hand bewegt haben, dort, wo Sie es abgelegt haben. In den Layouts Raster, Herz, Kreis und Stern tauschen zwei Fotos die Plätze, wenn Sie eines auf dem anderen ablegen. Passt ein Foto nicht ganz in sein Fenster, wählen Sie mit Ausschnitt den sichtbaren Teil."
    ],
    "bullets": [
     "Bis zu 12 Fotos, mit Tapey Pro 30",
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Tape und Rahmen",
    "body": [
-    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Statt Tape kann auch eine Reißzwecke das Foto halten, in einer Farbe Ihrer Wahl. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz, und Aufnahmedatum fügt den Tag der Aufnahme hinzu. Wählen Sie ein Foto und tippen Sie auf Tape, um nur diesem Foto ein eigenes Tape und einen eigenen Rahmen zu geben. Auch Änderungen an Hintergrund, Tape und Rahmen lassen sich rückgängig machen."
+    "Wählen Sie eine Tape-Farbe, und das Tape klebt. Ändern Sie, wo es sitzt, und sein Muster, oder geben Sie ihm gerissene Enden. Die Mischen-Taste im Schritt Tape ändert Position, Muster und Farbe auf einmal. Statt Tape kann auch eine Reißzwecke das Foto halten, in einer Farbe Ihrer Wahl. Im Polaroid-Rahmen trägt jedes Foto seine eigene handgeschriebene Notiz, und Aufnahmedatum fügt den Tag der Aufnahme hinzu. Wählen Sie ein Foto und tippen Sie auf Tape, um nur diesem Foto ein eigenes Tape und einen eigenen Rahmen zu geben. Auch Änderungen an Hintergrund, Tape und Rahmen lassen sich rückgängig machen."
    ],
    "bullets": [
-    "8 Tape-Farben, 4 Muster und 12 Pro-Muster",
+    "8 Tape-Farben, 8 Muster und 12 Pro-Muster",
     "Weißer Rand und Polaroid-Rahmen",
     "S/W für die ganze Wand oder ein einzelnes Foto",
     "Handschriftliche Notizen in 31 Sprachen"
@@ -93,7 +93,7 @@
     "type": "chips",
     "items": [
      "Kein Konto",
-     "31 Sprachen"
+     "46 Sprachen"
     ]
    }
   }
@@ -132,7 +132,7 @@
    "q": "Die Werbung beim Sichern",
    "a": [
     "Beim Sichern eines Hintergrunds zeigt Tapey eine bildschirmfüllende Werbung. Ausgewählt und ausgeliefert wird sie von Google AdMob.",
-    "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung. Tapey wartet höchstens 60 Sekunden auf die Werbung. Werbung, die danach eintrifft, wird nicht gezeigt. Während des Sicherns ist das Bearbeiten gesperrt. Dauert das Sichern länger, weil die App auf eine Werbung wartet, erscheint Speichern wird vorbereitet.",
+    "Lässt sich die Werbung nicht laden oder ist das letzte Sichern fehlgeschlagen, sichert Tapey sofort und ohne Werbung. Tapey wartet höchstens 60 Sekunden auf die Werbung. Werbung, die danach eintrifft, wird nicht gezeigt. Während des Sicherns ist das Bearbeiten gesperrt. Bei einem Sichern mit Werbung erscheinen zuerst Speichern wird vorbereitet und Nach der Werbung wird gespeichert, danach folgt die Werbung.",
     "Auf einem Gerät, auf dem die Werbung schon mindestens dreimal zu sehen war, zeigt der Bildschirm nach dem Sichern nach der Werbung einen einzeiligen Hinweis auf Tapey Pro. Schließt du ihn, erscheint er erst wieder, wenn du die Werbung dreimal mehr gesehen hast."
    ]
   },
@@ -154,7 +154,7 @@
    "q": "Wo Ihre Arbeit liegt",
    "a": [
     "Kopien der gewählten Fotos und Hintergrundfotos liegen zusammen mit Layout und Notizen im Speicher der App, damit Sie dort weitermachen können, wo Sie aufgehört haben. Neu beginnen im Menü und dann Neu beginnen löscht die aktuelle Arbeit. Behalten und neu beginnen legt sie zuerst unter Zuletzt ab und beginnt dann neu. Mit dem Löschen der App verschwindet alles.",
-    "Tippen Sie nach dem Sichern auf Neu erstellen, wandert die aktuelle Arbeit zu Zuletzt. Dort bleiben 3 Projekte, und das älteste weicht, wenn ein neues dazukommt."
+    "Tippen Sie nach dem Sichern auf Neu erstellen, wandert die aktuelle Arbeit zu Zuletzt. Dort bleiben 3 Projekte, und das älteste weicht, wenn ein neues dazukommt. Halten Sie ein Projekt unter Zuletzt gedrückt und wählen Sie Löschen, um nur dieses zu entfernen."
    ]
   },
   {

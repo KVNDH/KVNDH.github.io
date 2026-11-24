@@ -182,7 +182,7 @@
   {
    "q": "App languages",
    "a": [
-    "The app is in English and Korean. It follows whichever of the two comes first in the device's preferred languages, and appears in English when neither is listed."
+    "The app comes in 46 languages. iOS picks the first language in the device's preferred languages that the app supports, and the app appears in English when none of them is listed."
    ]
   }
  ],

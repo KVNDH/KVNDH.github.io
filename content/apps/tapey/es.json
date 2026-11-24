@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Las fotos encuentran su sitio",
    "body": [
-    "Elige tus fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla. Toca primero una foto para cambiar con dos dedos su tamaño y su inclinación; en cualquier otro sitio, dos dedos amplían la vista. En el diseño Auto, la foto que mueves a mano se queda donde la has dejado. Si una foto no cabe entera en su ventana, toca Encuadre para elegir la parte que se ve."
+    "Elige tus fotos y Tapey las coloca como copias sobre una pared. Arrastra una foto para moverla. Toca primero una foto para cambiar con dos dedos su tamaño y su inclinación; en cualquier otro sitio, dos dedos amplían la vista. En el diseño Auto, la foto que mueves a mano se queda donde la has dejado. En los diseños Cuadrícula, Corazón, Círculo y Estrella, al soltar una foto sobre otra, las dos intercambian su sitio. Si una foto no cabe entera en su ventana, toca Encuadre para elegir la parte que se ve."
    ],
    "bullets": [
     "Hasta 12 fotos, o 30 con Tapey Pro",
@@ -30,10 +30,10 @@
    "layout": "feat",
    "title": "Cinta y marcos",
    "body": [
-    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. En lugar de cinta, una chincheta del color que elijas también puede sujetar la foto. Con el marco Polaroid, cada foto puede llevar su propia nota a mano, y Fecha de la foto añade el día en que se hizo. Selecciona una foto y toca Cinta para darle solo a esa foto su propia cinta y su propio marco. Los cambios de fondo, cinta y marco también se pueden deshacer."
+    "Elige un color de cinta y la cinta se pega. Cambia dónde va y su patrón, o déjale los extremos rasgados. El botón de barajar del paso Cinta cambia a la vez la posición, el patrón y el color. En lugar de cinta, una chincheta del color que elijas también puede sujetar la foto. Con el marco Polaroid, cada foto puede llevar su propia nota a mano, y Fecha de la foto añade el día en que se hizo. Selecciona una foto y toca Cinta para darle solo a esa foto su propia cinta y su propio marco. Los cambios de fondo, cinta y marco también se pueden deshacer."
    ],
    "bullets": [
-    "8 colores de cinta, 4 patrones y 12 patrones Pro",
+    "8 colores de cinta, 8 patrones y 12 patrones Pro",
     "Borde blanco y marco Polaroid",
     "B/N para todo el fondo o para una sola foto",
     "Notas a mano en 31 idiomas"
@@ -93,7 +93,7 @@
     "type": "chips",
     "items": [
      "Sin cuenta",
-     "31 idiomas"
+     "46 idiomas"
     ]
    }
   }
@@ -132,7 +132,7 @@
    "q": "El anuncio al guardar",
    "a": [
     "Tapey muestra un anuncio a pantalla completa cuando guardas un fondo. Google AdMob selecciona y muestra ese anuncio.",
-    "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio. Tapey espera el anuncio como máximo 60 segundos, y un anuncio que llega después no se muestra. Mientras se guarda, la edición queda bloqueada. Si esperar un anuncio alarga el guardado, aparece Preparando el guardado.",
+    "Si el anuncio no carga, o si el último guardado falló, Tapey guarda al momento y sin anuncio. Tapey espera el anuncio como máximo 60 segundos, y un anuncio que llega después no se muestra. Mientras se guarda, la edición queda bloqueada. Cuando el guardado lleva anuncio, primero aparecen Preparando el guardado y Se guarda al terminar el anuncio, y después llega el anuncio.",
     "En un dispositivo que ya ha visto el anuncio tres veces o más, la pantalla que aparece después de guardar muestra, tras el anuncio, una línea sobre Tapey Pro. Si la cierras, no vuelve hasta que veas el anuncio tres veces más."
    ]
   },
@@ -154,7 +154,7 @@
    "q": "Dónde se guarda tu trabajo",
    "a": [
     "Las copias de las fotos y de las fotos de fondo que eliges, junto con la disposición y las notas, se guardan en el almacenamiento de la app para que puedas seguir donde lo dejaste. Empezar de nuevo, en el menú, y después Empezar de nuevo borra el trabajo actual. Conservar y empezar de nuevo lo pasa antes a Recientes y luego empieza de cero. Al eliminar la app desaparece todo.",
-    "Si tocas Crear uno nuevo después de guardar, el trabajo actual pasa a Recientes. Recientes conserva 3 proyectos y retira el más antiguo cuando entra uno nuevo."
+    "Si tocas Crear uno nuevo después de guardar, el trabajo actual pasa a Recientes. Recientes conserva 3 proyectos y retira el más antiguo cuando entra uno nuevo. Mantén pulsado un proyecto en Recientes y elige Eliminar para borrar solo ese."
    ]
   },
   {
