@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Photos find their place",
    "body": [
-    "Pick your photos and Tapey lays them out like prints on a wall. Drag a photo to move it. Tap a photo first to resize and turn it with two fingers; anywhere else, two fingers zoom the view. In the Auto layout, any photo you move by hand stays pinned where you put it. In the Grid, Heart, Circle, and Star layouts, dropping a photo onto another swaps the two. When a photo doesn't fit its window, tap Reframe to choose the part that shows."
+    "Pick your photos and Tapey lays them out like prints on a wall. Drag a photo to move it. Tap a photo first to resize and turn it with two fingers; anywhere else, two fingers zoom the view. On iPhone, the editor opens with the whole wall on one screen, and turning on Close-up view zooms in to suit each step. In the Auto layout, any photo you move by hand stays pinned where you put it. In the Grid, Heart, Circle, and Star layouts, dropping a photo onto another swaps the two. When a photo doesn't fit its window, tap Reframe to choose the part that shows."
    ],
    "bullets": [
     "Up to 12 photos, or 30 with Tapey Pro",
@@ -36,7 +36,7 @@
     "8 tape colors, 8 patterns, and 12 Pro patterns",
     "White borders and Polaroid frames",
     "B&W for the whole wall or a single photo",
-    "Handwritten notes in 31 languages"
+    "Handwritten notes in 35 languages"
    ],
    "visual": {
     "type": "kit",
@@ -188,7 +188,7 @@
  ],
  "privacy": {
   "title": "Tapey Privacy Policy",
-  "effectiveDate": "2026-11-18",
+  "effectiveDate": "2026-11-24",
   "summary": "The developer does not collect personal information. The ad shown when you save comes from Google AdMob, which processes device information such as the advertising identifier. Apple handles payment for Tapey Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Tapey app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -219,7 +219,7 @@
    {
     "title": "Processing and retention period",
     "paragraphs": [
-     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. The last wallpaper used by the shortcut is replaced each time you save, so only one is kept. Start over in the menu does not remove it, and it is deleted when you delete the app. Wallpapers, Home Screen images, and photos you take that are saved to the Photos app are deleted in the Photos app.",
+     "The developer holds no personal information. Data in the app's storage is deleted when you delete the app. Recent keeps up to 3 projects and drops the oldest when a new one comes in, and you can also delete them one at a time. The copy of the wallpaper made for sharing when you save is kept in a temporary folder and removed the next time the app opens. The last wallpaper used by the shortcut is replaced each time you save, so only one is kept. Start over in the menu does not remove it, and it is deleted when you delete the app. Wallpapers, Home Screen images, and photos you take that are saved to the Photos app are deleted in the Photos app.",
      "Information collected by AdMob is kept according to Google's Privacy Policy (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,13 +227,13 @@
    {
     "title": "Disclosure to third parties",
     "paragraphs": [
-     "The developer does not provide users' personal information to third parties. When an ad is shown, however, the Google Mobile Ads SDK built into the app sends the information in section 9 directly to Google, as follows."
+     "The developer does not provide users' personal information to third parties. When an ad is loaded and shown, however, the Google Mobile Ads SDK built into the app sends the information in section 9 directly to Google, as follows."
     ],
     "bullets": [
      "Recipient: Google LLC (United States), AdMob",
      "Purpose: showing ads and measuring ad performance",
      "Information: the device information and ad interaction records listed in section 9",
-     "When and how: sent over the internet when an ad is loaded and shown",
+     "When and how: sent over the internet when an ad is loaded and shown. An ad may be loaded ahead of time, before you tap save",
      "Retention: as set out in Google's Privacy Policy"
     ]
    },
@@ -247,7 +247,7 @@
    {
     "title": "Destruction of information",
     "paragraphs": [
-     "The developer holds no personal information, so there is nothing to destroy. Start over in the menu clears your current work, and deleting the app removes all of its data."
+     "The developer holds no personal information, so there is nothing to destroy. Start over in the menu clears your current work. To remove a single recent project, touch and hold it in Recent on the start screen or in the menu and choose Delete; a deleted project cannot be restored. Deleting the app removes all of its data."
     ],
     "bullets": []
    },
@@ -271,6 +271,7 @@
     "paragraphs": [
      "The app does not use cookies or analytics tools. It includes the Google Mobile Ads SDK (AdMob) for advertising, which may collect the information below when it loads and shows ads.",
      "On a newly installed device, the app gets ads ready only after you first add a photo to the wall, and saves before that have no ads. Once a device has gotten ads ready, the app does so each time it opens. When it gets ads ready, iOS shows the App Tracking Transparency (ATT) prompt if you haven't answered it yet. It is not shown when you save. If you don't allow tracking, AdMob does not receive the advertising identifier (IDFA), and ads still appear. You can change this in iOS Settings > Privacy & Security > Tracking.",
+     "From 2.2.1, once ads are ready and the wall has a photo, the app loads the full-screen ad for your next save ahead of time, before you tap save. It also loads one when you close the screen that appears after saving and return to editing, and an ad loaded more than 50 minutes ago is discarded and loaded again. As a result, the information below may be sent to Google with an ad request even when you do not save. Ads still appear only when you save.",
      "In regions where ad consent is required, such as the European Economic Area, Google's consent form appears first. If the result is that ads can't be requested, the tracking prompt is not shown either. There, you can change your choices under Ad preferences at the bottom of the start screen.",
      "After you buy Tapey Pro (including an earlier Remove ads purchase), no ads appear, and from the next launch the app no longer starts AdMob, so neither the consent form nor the tracking prompt appears."
     ],
@@ -318,6 +319,7 @@
     "title": "Changes to this policy",
     "paragraphs": [
      "If this policy changes, this page will show what changed and the new effective date.",
+     "2026-11-24: Added to Disclosure to third parties and Automatic collection and how to refuse it that 2.2.1 loads the ad for your next save ahead of time, and added to Processing and retention period and Destruction of information that recent projects can be deleted one at a time. The previous effective date was 2026-11-18.",
      "2026-11-18: Added to Processing and retention period and Security measures that Date taken in 2.2.0 reads the capture date of a chosen photo on the device, and that Also save one for the Home Screen saves one more image. The previous effective date was 2026-10-20.",
      "2026-10-20: Added the setting that also saves photos you take to the Photos app, the one last saved wallpaper kept for the shortcut, and the tape, frame, and visible part set for each photo in 2.1.0 to Information processed, Processing and retention period, and Security measures. Corrected when ads are prepared on a newly installed device. The previous effective date was 2026-10-19.",
      "2026-10-19: Added the number of ads seen and a record of closing the Tapey Pro note, used in 2.0.2 for the Tapey Pro note on the screen after saving, to Information processed. The previous effective date was 2026-10-15.",

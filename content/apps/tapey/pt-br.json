@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "As fotos acham o lugar delas",
    "body": [
-    "Escolha suas fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la. Toque primeiro numa foto para mudar com dois dedos o tamanho e a inclinação; em qualquer outro lugar, dois dedos ampliam a tela. No layout Auto, a foto que você move à mão fica fixa onde você a deixou. Nos layouts Grade, Coração, Círculo e Estrela, soltar uma foto sobre outra faz as duas trocarem de lugar. Se uma foto não cabe inteira na janela, toque em Enquadrar para escolher a parte que aparece."
+    "Escolha suas fotos e o Tapey as espalha como cópias numa parede. Arraste uma foto para movê-la. Toque primeiro numa foto para mudar com dois dedos o tamanho e a inclinação; em qualquer outro lugar, dois dedos ampliam a tela. No iPhone, o editor mostra de início a parede inteira numa só tela, e com Vista de perto cada etapa aparece ampliada. No layout Auto, a foto que você move à mão fica fixa onde você a deixou. Nos layouts Grade, Coração, Círculo e Estrela, soltar uma foto sobre outra faz as duas trocarem de lugar. Se uma foto não cabe inteira na janela, toque em Enquadrar para escolher a parte que aparece."
    ],
    "bullets": [
     "Até 12 fotos, ou 30 com o Tapey Pro",
@@ -36,7 +36,7 @@
     "8 cores de fita, 8 padrões e 12 padrões Pro",
     "Borda branca e moldura Polaroid",
     "P&B no fundo inteiro ou numa foto só",
-    "Notas à mão em 31 idiomas"
+    "Notas à mão em 35 idiomas"
    ],
    "visual": {
     "type": "kit",
@@ -188,7 +188,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Tapey",
-  "effectiveDate": "2026-11-18",
+  "effectiveDate": "2026-11-24",
   "summary": "O desenvolvedor não coleta informações pessoais. O anúncio exibido ao salvar vem do Google AdMob, que trata informações do aparelho como o identificador de publicidade. O pagamento do Tapey Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Tapey (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -219,7 +219,7 @@
    {
     "title": "Tratamento e período de retenção",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. O último papel de parede usado pelo atalho é substituído a cada salvamento, então só fica um. Recomeçar, no menu, não o apaga, e ele some quando você exclui o app. Os papéis de parede, as imagens para a Tela de Início e as fotos tiradas que vão para o app Fotos são apagados pelo app Fotos.",
+     "O desenvolvedor não guarda informações pessoais. Os dados no armazenamento do app somem quando você exclui o app. Recentes guarda até 3 projetos e descarta o mais antigo quando um novo entra, e você também pode excluí-los um a um. A cópia do papel de parede para compartilhar, criada quando você salva, fica numa pasta temporária e é removido na próxima vez que o app é aberto. O último papel de parede usado pelo atalho é substituído a cada salvamento, então só fica um. Recomeçar, no menu, não o apaga, e ele some quando você exclui o app. Os papéis de parede, as imagens para a Tela de Início e as fotos tiradas que vão para o app Fotos são apagados pelo app Fotos.",
      "As informações coletadas pelo AdMob são mantidas conforme a Política de Privacidade do Google (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,13 +227,13 @@
    {
     "title": "Divulgação a terceiros",
     "paragraphs": [
-     "O desenvolvedor não fornece a terceiros as informações pessoais de quem usa o app. Quando um anúncio é exibido, porém, o SDK do Google Mobile Ads embutido no app envia diretamente ao Google as informações da seção 9, do seguinte modo."
+     "O desenvolvedor não fornece a terceiros as informações pessoais de quem usa o app. Quando um anúncio é carregado e exibido, porém, o SDK do Google Mobile Ads embutido no app envia diretamente ao Google as informações da seção 9, do seguinte modo."
     ],
     "bullets": [
      "Destinatário: Google LLC (Estados Unidos), AdMob",
      "Finalidade: exibir anúncios e medir o desempenho deles",
      "Informações: as informações do aparelho e os registros de interação com anúncios da seção 9",
-     "Quando e como: enviadas pela internet quando um anúncio é carregado e exibido",
+     "Quando e como: enviadas pela internet quando um anúncio é carregado e exibido. Um anúncio pode ser carregado com antecedência, antes de você tocar em salvar",
      "Retenção: conforme a Política de Privacidade do Google"
     ]
    },
@@ -247,7 +247,7 @@
    {
     "title": "Exclusão das informações",
     "paragraphs": [
-     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Recomeçar, no menu, limpa o trabalho atual, e excluir o app leva junto todos os dados dele."
+     "O desenvolvedor não guarda informações pessoais, então não há o que excluir. Recomeçar, no menu, limpa o trabalho atual. Para apagar um só projeto recente, toque e segure o projeto em Recentes, na tela inicial ou no menu, e escolha Excluir; um projeto excluído não pode ser recuperado. Excluir o app leva junto todos os dados dele."
     ],
     "bullets": []
    },
@@ -271,6 +271,7 @@
     "paragraphs": [
      "O app não usa cookies nem ferramentas de análise. Para a publicidade, ele inclui o SDK do Google Mobile Ads (AdMob), que pode coletar as informações de baixo quando carrega e exibe anúncios.",
      "Num aparelho recém-instalado, o app só prepara os anúncios depois que você coloca a primeira foto na parede, e o que você salvar antes disso não tem anúncios. Depois que um aparelho preparou os anúncios uma vez, o app faz isso a cada abertura. Quando o app prepara os anúncios, o iOS mostra o aviso de transparência de rastreamento (ATT), caso você ainda não tenha respondido. Ele não aparece na hora de salvar. Se você não permitir o rastreamento, o AdMob não recebe o identificador de publicidade (IDFA), e os anúncios continuam aparecendo. Isso pode ser alterado em Ajustes > Privacidade e Segurança > Rastreamento.",
+     "A partir da versão 2.2.1, quando os anúncios estão preparados e há alguma foto na parede, o app carrega com antecedência, antes de você tocar em salvar, o anúncio em tela cheia do próximo salvamento. Ele também carrega um quando você fecha a tela que aparece depois de salvar e volta a editar, e um anúncio carregado há mais de 50 minutos é descartado e carregado de novo. Por isso as informações de baixo podem ser enviadas ao Google com um pedido de anúncio mesmo que você não salve. Os anúncios continuam aparecendo só na hora de salvar.",
      "Nas regiões onde o consentimento de anúncios é exigido, como o Espaço Econômico Europeu, o formulário de consentimento do Google aparece primeiro. Se o resultado for que os anúncios não podem ser solicitados, o aviso de rastreamento também não aparece. Lá você muda suas escolhas em Preferências de anúncios, no rodapé da tela inicial.",
      "Depois da compra do Tapey Pro (ou de uma compra anterior de Remover anúncios), os anúncios não aparecem, e a partir da abertura seguinte o app deixa de iniciar o AdMob, então nem o formulário de consentimento nem o aviso de rastreamento aparecem."
     ],
@@ -318,6 +319,7 @@
     "title": "Mudanças nesta política",
     "paragraphs": [
      "Se esta política mudar, esta página mostrará o que mudou e a nova data de vigência.",
+     "2026-11-24: foi incluído em “Divulgação a terceiros” e “Coleta automática e como recusá-la” que a versão 2.2.1 carrega com antecedência o anúncio do próximo salvamento, e em “Tratamento e período de retenção” e “Exclusão das informações” que os projetos recentes podem ser excluídos um a um. A data de vigência anterior era 2026-11-18.",
      "2026-11-18: foi incluído em “Tratamento e período de retenção” e “Medidas de segurança” que Data da foto, da versão 2.2.0, lê no aparelho a data de captura da foto escolhida, e que Salvar também para a Tela de Início salva mais uma imagem. A data de vigência anterior era 2026-10-20.",
      "2026-10-20: o ajuste da versão 2.1.0 que também salva no app Fotos as fotos que você tira, a cópia do último papel de parede salvo usada pelo atalho e a fita, a moldura e a parte visível escolhidas para cada foto foram incluídos em “Informações tratadas”, “Tratamento e período de retenção” e “Medidas de segurança”. O momento em que um aparelho recém-instalado prepara os anúncios foi corrigido. A data de vigência anterior era 2026-10-19.",
      "2026-10-19: o número de anúncios vistos e um registro de que o aviso do Tapey Pro foi fechado, que a versão 2.0.2 usa no aviso do Tapey Pro da tela depois de salvar, foram incluídos em “Informações tratadas”. A data de vigência anterior era 2026-10-15.",

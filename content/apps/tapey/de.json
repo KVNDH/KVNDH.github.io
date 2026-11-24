@@ -11,7 +11,7 @@
    "layout": "feat",
    "title": "Die Fotos finden ihren Platz",
    "body": [
-    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben. Bei einem Foto, das Sie zuerst antippen, ändern Sie mit zwei Fingern Größe und Winkel; an jeder anderen Stelle vergrößern zwei Finger die Ansicht. Im Layout Auto bleibt, was Sie von Hand bewegt haben, dort, wo Sie es abgelegt haben. In den Layouts Raster, Herz, Kreis und Stern tauschen zwei Fotos die Plätze, wenn Sie eines auf dem anderen ablegen. Passt ein Foto nicht ganz in sein Fenster, wählen Sie mit Ausschnitt den sichtbaren Teil."
+    "Wählen Sie Ihre Fotos, und Tapey legt sie wie Abzüge an eine Wand. Ziehen Sie ein Foto, um es zu verschieben. Bei einem Foto, das Sie zuerst antippen, ändern Sie mit zwei Fingern Größe und Winkel; an jeder anderen Stelle vergrößern zwei Finger die Ansicht. Auf dem iPhone zeigt der Editor zu Beginn die ganze Wand auf einem Bildschirm, und mit Nahansicht sehen Sie jeden Schritt vergrößert. Im Layout Auto bleibt, was Sie von Hand bewegt haben, dort, wo Sie es abgelegt haben. In den Layouts Raster, Herz, Kreis und Stern tauschen zwei Fotos die Plätze, wenn Sie eines auf dem anderen ablegen. Passt ein Foto nicht ganz in sein Fenster, wählen Sie mit Ausschnitt den sichtbaren Teil."
    ],
    "bullets": [
     "Bis zu 12 Fotos, mit Tapey Pro 30",
@@ -36,7 +36,7 @@
     "8 Tape-Farben, 8 Muster und 12 Pro-Muster",
     "Weißer Rand und Polaroid-Rahmen",
     "S/W für die ganze Wand oder ein einzelnes Foto",
-    "Handschriftliche Notizen in 31 Sprachen"
+    "Handschriftliche Notizen in 35 Sprachen"
    ],
    "visual": {
     "type": "kit",
@@ -188,7 +188,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Tapey",
-  "effectiveDate": "2026-11-18",
+  "effectiveDate": "2026-11-24",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Die Werbung beim Sichern kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Die Zahlung für Tapey Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Tapey (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -219,7 +219,7 @@
    {
     "title": "Verarbeitung und Aufbewahrungsdauer",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Die Kopie des Hintergrunds, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Der letzte Hintergrund für den Kurzbefehl wird bei jedem Sichern ersetzt, es bleibt also nur einer. Neu beginnen im Menü entfernt ihn nicht, er verschwindet mit dem Löschen der App. Hintergründe, Bilder für den Home-Bildschirm und aufgenommene Fotos, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf. Daten im Speicher der App werden mit dem Löschen der App entfernt. Unter Zuletzt bleiben bis zu 3 Projekte, das älteste weicht, wenn ein neues dazukommt, und Sie können sie auch einzeln löschen. Die Kopie des Hintergrunds, die beim Speichern zum Teilen entsteht, liegt in einem temporären Ordner und wird beim nächsten Öffnen der App entfernt. Der letzte Hintergrund für den Kurzbefehl wird bei jedem Sichern ersetzt, es bleibt also nur einer. Neu beginnen im Menü entfernt ihn nicht, er verschwindet mit dem Löschen der App. Hintergründe, Bilder für den Home-Bildschirm und aufgenommene Fotos, die in der Fotos-App gesichert wurden, löschen Sie in der Fotos-App.",
      "Die von AdMob erfassten Informationen werden gemäß der Datenschutzerklärung von Google aufbewahrt (policies.google.com/privacy)."
     ],
     "bullets": []
@@ -227,13 +227,13 @@
    {
     "title": "Weitergabe an Dritte",
     "paragraphs": [
-     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Wird jedoch Werbung angezeigt, sendet das in der App enthaltene Google Mobile Ads SDK die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
+     "Der Entwickler gibt keine personenbezogenen Daten von Nutzerinnen und Nutzern an Dritte weiter. Wird jedoch Werbung geladen und angezeigt, sendet das in der App enthaltene Google Mobile Ads SDK die in Abschnitt 9 genannten Informationen direkt an Google, und zwar wie folgt."
     ],
     "bullets": [
      "Empfänger: Google LLC (Vereinigte Staaten), AdMob",
      "Zweck: Ausspielen von Werbung und Messung ihrer Wirkung",
      "Informationen: die in Abschnitt 9 genannten Geräteinformationen und Interaktionsdaten zu Werbung",
-     "Zeitpunkt und Weg: über das Internet, wenn eine Werbung geladen und angezeigt wird",
+     "Zeitpunkt und Weg: über das Internet, wenn eine Werbung geladen und angezeigt wird. Eine Werbung kann vorab geladen werden, bevor Sie auf Sichern tippen",
      "Aufbewahrung: wie in der Datenschutzerklärung von Google beschrieben"
     ]
    },
@@ -247,7 +247,7 @@
    {
     "title": "Löschung der Daten",
     "paragraphs": [
-     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Neu beginnen im Menü löscht Ihre aktuelle Arbeit, und mit dem Löschen der App verschwinden alle ihre Daten."
+     "Der Entwickler bewahrt keine personenbezogenen Daten auf, es gibt also nichts zu löschen. Neu beginnen im Menü löscht Ihre aktuelle Arbeit. Ein einzelnes Projekt entfernen Sie, indem Sie es unter Zuletzt auf dem Startbildschirm oder im Menü gedrückt halten und Löschen wählen; ein gelöschtes Projekt lässt sich nicht wiederherstellen. Mit dem Löschen der App verschwinden alle ihre Daten."
     ],
     "bullets": []
    },
@@ -271,6 +271,7 @@
     "paragraphs": [
      "Die App verwendet keine Cookies und keine Analysewerkzeuge. Für Werbung enthält sie das Google Mobile Ads SDK (AdMob), das beim Laden und Anzeigen von Werbung die unten genannten Informationen erfassen kann.",
      "Auf einem neu eingerichteten Gerät bereitet die App die Werbung erst vor, nachdem Sie das erste Foto an die Wand gebracht haben, und Sicherungen davor kommen ohne Werbung aus. Hat ein Gerät die Werbung einmal vorbereitet, geschieht das danach bei jedem Öffnen der App. Wenn die App die Werbung vorbereitet, zeigt iOS die Abfrage zur App Tracking Transparency (ATT), sofern Sie sie noch nicht beantwortet haben. Beim Sichern erscheint sie nicht. Erlauben Sie das Tracking nicht, erhält AdMob die Werbekennung (IDFA) nicht, und Werbung erscheint trotzdem. Ändern lässt sich das unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+     "Ab 2.2.1 lädt die App, sobald die Werbung vorbereitet ist und ein Foto an der Wand hängt, die bildschirmfüllende Werbung für das nächste Sichern vorab, also bevor Sie auf Sichern tippen. Sie lädt auch dann eine, wenn Sie den Bildschirm nach dem Sichern schließen und zum Bearbeiten zurückkehren, und eine Werbung, die vor mehr als 50 Minuten geladen wurde, wird verworfen und neu geladen. Dadurch können die unten genannten Informationen mit einer Werbeanfrage auch dann an Google gesendet werden, wenn Sie nicht sichern. Werbung erscheint weiterhin nur beim Sichern.",
      "In Regionen, in denen eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint zuerst das Einwilligungsformular von Google. Ergibt sich daraus, dass keine Werbung angefragt werden kann, erscheint auch die Tracking-Abfrage nicht. Dort ändern Sie Ihre Auswahl später unter Werbeeinstellungen am unteren Rand des Startbildschirms.",
      "Nach dem Kauf von Tapey Pro (auch nach einem früheren Kauf von Werbung entfernen) erscheint keine Werbung mehr, und ab dem nächsten Öffnen startet die App AdMob nicht mehr, sodass weder das Einwilligungsformular noch die Tracking-Abfrage erscheinen."
     ],
@@ -318,6 +319,7 @@
     "title": "Änderungen dieser Erklärung",
     "paragraphs": [
      "Ändert sich diese Erklärung, zeigt diese Seite, was sich geändert hat, und das neue Datum des Inkrafttretens.",
+     "2026-11-24: Dass 2.2.1 die Werbung für das nächste Sichern vorab lädt, wurde unter „Weitergabe an Dritte“ und „Automatische Erfassung und wie Sie sie ablehnen“ ergänzt. Dass sich letzte Projekte einzeln löschen lassen, wurde unter „Verarbeitung und Aufbewahrungsdauer“ und „Löschung der Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-11-18.",
      "2026-11-18: Dass Aufnahmedatum in 2.2.0 das Aufnahmedatum eines gewählten Fotos auf dem Gerät liest und dass Auch für den Home-Bildschirm sichern ein weiteres Bild sichert, wurde unter „Verarbeitung und Aufbewahrungsdauer“ und „Maßnahmen zur Sicherheit“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-10-20.",
      "2026-10-20: Die Einstellung, mit der aufgenommene Fotos auch in der Fotos-App gesichert werden, der eine zuletzt gesicherte Hintergrund für den Kurzbefehl sowie Tape, Rahmen und sichtbarer Ausschnitt für einzelne Fotos aus 2.1.0 wurden unter „Verarbeitete Daten“, „Verarbeitung und Aufbewahrungsdauer“ und „Maßnahmen zur Sicherheit“ ergänzt. Der Zeitpunkt, zu dem ein neu eingerichtetes Gerät die Werbung vorbereitet, wurde berichtigt. Das vorherige Datum des Inkrafttretens war der 2026-10-19.",
      "2026-10-19: Die Zahl der gesehenen Werbungen und ein Vermerk, dass der Hinweis auf Tapey Pro geschlossen wurde, genutzt in 2.0.2 für den Hinweis auf Tapey Pro auf dem Bildschirm nach dem Sichern, wurden unter „Verarbeitete Daten“ ergänzt. Das vorherige Datum des Inkrafttretens war der 2026-10-15.",
