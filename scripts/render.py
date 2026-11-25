@@ -240,7 +240,13 @@ def now_pill(label: str = "", on: bool = False) -> str:
     return f'<p class="now" data-on="{1 if on else 0}" aria-hidden="true"><i></i><b>{esc(label)}</b></p>'
 
 
+def wordmark(lang: str) -> str:
+    return f'<a class="wm" href="{page_path(lang)}">{MARK}<span>kvndh</span></a>'
+
+
 def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
+    """2026-11-25 제안서 3: 종이 밖 윗줄(kvndh, 언어)과 앱 띠를 한 줄로. kvndh / 앱 이름 | 탭 | App Store | 언어.
+    눌리지 않던 번호 알약은 앱 쪽에서 뺀다(번호는 아이콘 틀 위 No. 한 곳)."""
     ui, app, copy = site.ui[lang], site.app(slug), site.app_copy(slug, lang)
     tabs = []
     for kind in ("about", "support", "privacy"):
@@ -252,11 +258,19 @@ def app_bar(site: Site, lang: str, slug: str, current: str) -> str:
         icon=asset(slug, "icon-180.webp"),
         tabs="".join(tabs),
         store_btn=store_button(site, lang, app, small=True),
+        wm=wordmark(lang),
+        lang_menu=lang_menu(site, lang, slug, current),
     )
 
 
+def hub_bar(site: Site, lang: str) -> str:
+    """허브의 머리띠: kvndh | 지금 보는 앱 번호 | 언어. 번호 점(버밀리언)은 여기 한 자리."""
+    return (f'<nav class="ab ab-hub" aria-label="kvndh">{wordmark(lang)}<span class="grow" aria-hidden="true"></span>'
+            f'{now_pill()}{lang_menu(site, lang, None, "about")}</nav>')
+
+
 def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, description: str,
-         content: str, footer: str, body_class: str, bar: str = "", now: str = "", after: str = "",
+         content: str, footer: str, body_class: str, bar: str = "", after: str = "",
          extra_head: str = "", og_image: str = "/assets/og.jpg", hub: bool = False) -> str:
     """hub=True 면 허브 전용 CSS 규칙(/*h*/)을 싣는다."""
     option = site.lang(lang)
@@ -272,10 +286,6 @@ def page(site: Site, *, lang: str, slug: str | None, kind: str, title: str, desc
         extra_head=extra_head,
         css=css(site, hub=hub),
         skip_label=esc(site.ui[lang]["skip"]),
-        hub_path=page_path(lang),
-        mark=MARK,
-        now=now,
-        lang_menu=lang_menu(site, lang, slug, kind),
         app_bar=bar,
         content=content,
         footer=footer,
@@ -324,15 +334,15 @@ def render_hub(site: Site, lang: str) -> str:
         slots.append(f'<span class="qslot"><img src="{asset(app["slug"], "icon-180.webp")}" alt="" '
                      'width="64" height="64" loading="lazy"></span>')
     quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
-    # 첫 화면 더미: 위에서부터 1, 2, 3, 4 줄. 맨 위(가장 먼저 눈에 띄는 자리)가 출시된 첫 앱이다
-    soon = ' class="soon"'
-    # 10-25 O: 출시된 앱의 더미 아이콘은 그 앱 판(#slug)으로 가는 링크, 출시 전 앱은 흐린 그림 그대로
+    # 첫 화면 더미: 출시 순서 피라미드(2026-11-25 사용자). 맨 위 한 줄에 App Store 에 가장 먼저 나온 앱 하나,
+    # 아래로 한 줄에 하나씩 늘고 나중에 낸 앱이 아래로 간다. 덜 찬 마지막 줄은 가운데. 출시 전 앱은 넣지 않는다.
+    # 순서는 site.json 의 firstRelease(App Store 첫 출시일), 같은 날이면 site.json 순서
+    # 10-25 O: 더미 아이콘은 그 앱 판(#slug)으로 가는 링크
+    by_release = sorted(apps, key=lambda a: a.get("firstRelease") or "9999")
     fan_imgs = [
         f'<a href="#{esc(a["slug"])}"><img src="{asset(a["slug"], "icon-180.webp")}" '
         f'alt="{esc(site.app_copy(a["slug"], lang)["name"])}" width="72" height="72"></a>'
-        if released(a) else
-        f'<img src="{asset(a["slug"], "icon-180.webp")}" alt="" width="72" height="72"{soon}>'
-        for a in apps + quiet
+        for a in by_release
     ]
     rows, k, n = [], 0, 1
     while k < len(fan_imgs):
@@ -350,7 +360,7 @@ def render_hub(site: Site, lang: str) -> str:
     after = f"{viewer}\n{canvas_json(data)}\n<script>{text(site, 'hub.js')}</script>"
     names = ", ".join(site.app_copy(a["slug"], lang)["name"] for a in apps)
     return page(site, lang=lang, slug=None, kind="about", title=ui["hubMetaTitle"], description=names,
-                content=content, footer=hub_footer(site, lang), body_class="hub", now=now_pill(),
+                content=content, footer=hub_footer(site, lang), body_class="hub", bar=hub_bar(site, lang),
                 after=after, hub=True)
 
 
@@ -359,17 +369,11 @@ def still_plate(site: Site, slug: str, size: str) -> str:
     if size == "l":
         big = (site.root / "assets" / slug / "icon-640.webp").exists()
         srcset = (f' srcset="{asset(slug, "icon-360.webp")} 360w, {asset(slug, "icon-640.webp")} 640w"'
-                  ' sizes="(max-width:720px) 240px, 360px"') if big else ""
+                  ' sizes="(max-width:720px) 132px, 240px"') if big else ""
         return (f'<div class="plate plate-l"><img class="ic-l" src="{asset(slug, "icon-360.webp")}"{srcset} alt="" '
                 'width="360" height="360" fetchpriority="high"></div>')
     return (f'<span class="plate plate-s"><img src="{asset(slug, "icon-180.webp")}" alt="" '
             'width="76" height="76"></span>')
-
-
-def app_now(site: Site, lang: str, slug: str) -> str:
-    """앱 쪽 번호 점은 번호만(10-25 Y: 이름은 바로 아래 머리띠에 있다). 번호가 없는 출시 전 앱은 점을 띄우지 않는다."""
-    n = number(site, lang, slug)
-    return now_pill(f"{n[0]} / {n[1]}", on=True) if n else now_pill()
 
 
 def number_label(site: Site, lang: str, slug: str) -> str:
@@ -536,7 +540,7 @@ def render_app(site: Site, lang: str, slug: str) -> str:
     return page(site, lang=lang, slug=slug, kind="about",
                 title=f'{copy["name"]}: {copy["subtitle"]}', description=copy["summary"],
                 content=content, footer=app_footer(site, lang, slug), body_class="app",
-                bar=app_bar(site, lang, slug, "about"), now=app_now(site, lang, slug),
+                bar=app_bar(site, lang, slug, "about"),
                 # ASC 레코드가 없는 출시 전 앱(2026-09-26 Readride)은 스마트 배너를 달지 않는다
                 extra_head=(f'<meta name="apple-itunes-app" content="app-id={app["appStoreId"]}">'
                             if app.get("appStoreId") else ""),
@@ -560,7 +564,7 @@ def render_support(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="support", title=f'{copy["name"]} {ui["navSupport"]}',
                 description=copy["summary"], content=content, footer=app_footer(site, lang, slug),
-                body_class="page-doc", bar=app_bar(site, lang, slug, "support"), now=app_now(site, lang, slug),
+                body_class="page-doc", bar=app_bar(site, lang, slug, "support"),
                 og_image=asset(slug, "og.jpg"))
 
 
@@ -603,7 +607,7 @@ def render_privacy(site: Site, lang: str, slug: str) -> str:
     )
     return page(site, lang=lang, slug=slug, kind="privacy", title=policy["title"], description=policy["summary"],
                 content=content, footer=app_footer(site, lang, slug), body_class="page-doc",
-                bar=app_bar(site, lang, slug, "privacy"), now=app_now(site, lang, slug),
+                bar=app_bar(site, lang, slug, "privacy"),
                 og_image=asset(slug, "og.jpg"))
 
 

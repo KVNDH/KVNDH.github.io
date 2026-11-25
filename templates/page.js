@@ -9,6 +9,10 @@
   var toc=document.querySelector('.toc details');
   if(toc){var wide=matchMedia('(min-width:901px)'),head=toc.querySelector('summary'),fit=function(){toc.open=wide.matches;if(wide.matches)head.tabIndex=-1;else head.removeAttribute('tabindex')};
     fit();wide.addEventListener('change',fit);head.addEventListener('click',function(e){if(wide.matches)e.preventDefault()})}
+  // 2026-11-25 제안서 5: 좁은 화면(900px 이하)에서는 목차를 문서 머리가 아니라 요약 상자 아래에 둔다. 넓으면 옆 칸으로 되돌린다
+  var nav=document.querySelector('.pv .toc'),sum=document.querySelector('.doc-sum');
+  if(nav&&sum){var pv=nav.parentNode,narrow=matchMedia('(max-width:900px)'),place=function(){if(narrow.matches)sum.after(nav);else pv.insertBefore(nav,pv.firstChild)};
+    place();narrow.addEventListener('change',place)}
   // 지원 답 주소: #q7 로 오면 7번 답을 연다
   function reveal(){var d=location.hash&&document.getElementById(location.hash.slice(1));if(d&&d.tagName==='DETAILS')d.open=true}
   reveal();addEventListener('hashchange',reveal);

@@ -63,6 +63,7 @@
   {
    "slug": "life-tyde",
    "appStoreId": "6773198369",
+   "firstRelease": "2026-05-28",
    "accent": "#E33C48",
    "accentText": "#F46A74",
    "glow": "rgba(227,60,72,.34)",
@@ -71,6 +72,7 @@
   {
    "slug": "tapey",
    "appStoreId": "6778635856",
+   "firstRelease": "2026-06-15",
    "accent": "#CBD3B6",
    "accentText": "#CBD3B6",
    "glow": "rgba(203,211,182,.24)",
@@ -79,6 +81,7 @@
   {
    "slug": "dice-master",
    "appStoreId": "6765857608",
+   "firstRelease": "2026-06-28",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -87,6 +90,7 @@
   {
    "slug": "snapline",
    "appStoreId": "6809834907",
+   "firstRelease": "2026-09-17",
    "accent": "#F9F9F9",
    "accentText": "#F9F9F9",
    "glow": "rgba(249,249,249,.16)",
@@ -95,6 +99,7 @@
   {
    "slug": "percentime",
    "appStoreId": "6814066451",
+   "firstRelease": "2026-09-22",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -103,6 +108,7 @@
   {
    "slug": "brushworks",
    "appStoreId": "6810951573",
+   "firstRelease": "2026-09-24",
    "accent": "#A05B42",
    "accentText": "#E39C80",
    "glow": "rgba(160,91,66,.5)",
@@ -113,6 +119,7 @@
   {
    "slug": "readride",
    "appStoreId": "6816576585",
+   "firstRelease": "2026-09-29",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -121,6 +128,7 @@
   {
    "slug": "onpace",
    "appStoreId": "6816075554",
+   "firstRelease": "2026-09-30",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -129,6 +137,7 @@
   {
    "slug": "tailorcolor",
    "appStoreId": "6814066446",
+   "firstRelease": "2026-11-24",
    "accent": "#c29a3c",
    "accentText": "#c29a3c",
    "glow": "rgba(194,154,60,.28)",
@@ -137,6 +146,7 @@
   {
    "slug": "codematic",
    "appStoreId": "6819201504",
+   "firstRelease": "2026-10-30",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -145,6 +155,7 @@
   {
    "slug": "spectable",
    "appStoreId": "6829383480",
+   "firstRelease": "2026-11-06",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -153,6 +164,7 @@
   {
    "slug": "set-and-burn",
    "appStoreId": "6829377551",
+   "firstRelease": "2026-11-06",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",
@@ -161,6 +173,7 @@
   {
    "slug": "dailyleft",
    "appStoreId": "6829438107",
+   "firstRelease": "2026-11-06",
    "accent": "#E63946",
    "accentText": "#F46A74",
    "glow": "rgba(230,57,70,.28)",

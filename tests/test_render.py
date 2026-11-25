@@ -79,7 +79,7 @@ class HubTest(unittest.TestCase):
         html = render.render_hub(site, "ko")
         self.assertIn('<section class="quiet" aria-hidden="true"><span class="qslot">', html)
         self.assertIn('src="/assets/soon/icon-180.webp"', html)
-        self.assertIn('<img src="/assets/soon/icon-180.webp" alt="" width="72" height="72" class="soon">', html)
+        self.assertNotIn('class="soon"', html)   # 2026-11-25: 출시 전 앱은 첫 화면 더미에 넣지 않는다
         self.assertNotIn("Soon", html)
         self.assertNotIn("/ko/soon/", html)
         self.assertNotIn("https://apps.apple.com/app/id456", html)
@@ -144,14 +144,21 @@ class AppPageTest(unittest.TestCase):
         html = render.render_app(self.site, "ko", "demo")
         self.assertIn('<body class="app">', html)
         self.assertIn('<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">', html)
-        # 10-25 Y: 앱 쪽 번호 점은 번호만. 이름은 바로 아래 머리띠에 한 번
-        self.assertIn('<p class="now" data-on="1" aria-hidden="true"><i></i><b>01 / 01</b></p>', html)
-        for kind in (render.render_support, render.render_privacy):
-            self.assertIn('<b>01 / 01</b></p>', kind(self.site, "ko", "demo"))
+        # 2026-11-25 제안서 3: 앱 쪽에는 눌리지 않는 번호 알약이 없다. 번호는 아이콘 틀 위 No. 한 곳,
+        # kvndh 와 언어는 앱 머리띠 한 줄 안에
+        for kind in (render.render_app, render.render_support, render.render_privacy):
+            page = kind(self.site, "ko", "demo")
+            self.assertNotIn('class="now"', page)
+            self.assertNotIn('<header class="top">', page)
+            bar = re.search(r'<nav class="ab" .*?</nav>', page, re.S).group(0)
+            self.assertIn('<a class="wm" href="/ko/">', bar)
+            self.assertIn('<details class="lang">', bar)
+        self.assertIn('<span class="lab">No. 01 / 01</span>', html)
 
     def test_unreleased_app_page_shows_no_number_dot(self):
         html = render.render_app(Site(make_site(unreleased=True)), "ko", "soon")
-        self.assertIn('<p class="now" data-on="0" aria-hidden="true"><i></i><b></b></p>', html)
+        self.assertNotIn('class="now"', html)
+        self.assertNotIn('<span class="lab">No.', html)
 
     def test_store_button_reads_like_the_hub(self):
         # 10-25 W: 허브와 앱 쪽이 같은 'App Store ↗' 한 문구, 앱 이름은 접근 이름에
@@ -312,11 +319,18 @@ class OtherPagesTest(unittest.TestCase):
         self.assertNotIn("/ko/soon/", html)
 
     def test_first_released_app_tops_the_pile(self):
-        # 첫 화면 더미는 위에서부터 1, 2, ... 줄이고 맨 위가 출시된 첫 앱(출시 전 앱은 뒤로)
-        html = render.render_hub(Site(make_site(unreleased=True)), "ko")
-        fan = re.search(r'<div class="fan" style="--rows:2">(.*?)</div>', html).group(1)
-        self.assertTrue(fan.startswith('<span class="row"><a href="#demo"><img src="/assets/demo/icon-180.webp"'))
-        self.assertEqual(fan.count('<span class="row">'), 2)
+        # 2026-11-25 사용자: 첫 화면 더미는 출시 순서 피라미드. 위에서부터 1, 2, 3, ... 개씩이고 맨 위가 App Store 에
+        # 가장 먼저 나온 앱(site.json firstRelease, 같은 날이면 site.json 순서). 출시 전 앱은 넣지 않는다
+        site = grow(Site(make_site(unreleased=True)), 4)
+        dates = {"demo": "2026-03-01", "demo2": "2026-01-01", "demo3": "2026-02-01", "demo4": "2026-02-01"}
+        for app in site.apps:
+            if app["slug"] in dates:
+                app["firstRelease"] = dates[app["slug"]]
+        html = render.render_hub(site, "ko")
+        fan = re.search(r'<div class="fan" style="--rows:3">(.*?)</div>', html).group(1)
+        rows = [re.findall(r'href="#([^"]+)"', r) for r in fan.split('<span class="row">')[1:]]
+        self.assertEqual(rows, [["demo2"], ["demo3", "demo4"], ["demo"]])
+        self.assertNotIn("soon", fan)
 
     def test_canvas_json_cannot_close_its_script(self):
         site = Site(make_site())
@@ -435,7 +449,7 @@ class OverlapAndWidthTest(unittest.TestCase):
     def test_bar_store_button_hides_below_940(self):
         # AF: 721~853px 에서 상점 단추가 머리띠 밖으로 나가 페이지가 가로로 흔들렸다
         self.assertIn("display:none", rule(self.sub, ".ab .btn", "(max-width:940px)"))
-        self.assertEqual(rule(self.sub, ".ab .btn"), "")
+        self.assertNotIn("display", rule(self.sub, ".ab .btn"))
 
     def test_long_tab_names_wrap_up_to_374(self):
         # H: es 360폭 탭 줄이 6px 넘쳤다. .now 를 숨기는 경계(359)는 그대로
@@ -487,7 +501,10 @@ class AlternateConditionTest(unittest.TestCase):
     def test_dark_secondary_text_keeps_the_light_hierarchy(self):
         # K: 다크 본문 대 보조 글자가 1.34:1 로 거의 같은 밝기였다(라이트 3.55:1)
         light, dark = self.colors(False), self.colors(True)
-        self.assertGreaterEqual(contrast(dark["tx"], dark["t2"]), contrast(light["tx"], light["t2"]))
+        # 2026-11-25 제안서 6: 보조 글자를 앱들과 같은 값(라이트 #66666E, 다크 #93939B)으로 올려 다크 대비가 6.89:1 이 됐다.
+        # 본문과 보조 글자의 차이는 두 모드 모두 2.5:1 아래로 내려가지 않는다
+        self.assertGreaterEqual(contrast(dark["tx"], dark["t2"]), 2.5)
+        self.assertGreaterEqual(contrast(light["tx"], light["t2"]), 2.5)
         self.assertGreaterEqual(contrast(dark["t2"], dark["paper"]), 4.5)
         self.assertGreaterEqual(contrast(dark["t2"], dark["pl"]), 4.5)
 
@@ -629,8 +646,8 @@ class ShortcutTest(unittest.TestCase):
         self.assertEqual(links, [("demo", "Demo"), ("demo2", "Demo2"), ("demo3", "Demo3")])
         for slug, _ in links:
             self.assertIn(f'<article class="piece" id="{slug}">', html)
-        self.assertNotIn('href="#soon"', html)                           # 출시 전 앱은 흐린 그림 그대로
-        self.assertIn('alt="" width="72" height="72" class="soon">', fan)
+        self.assertNotIn('href="#soon"', html)
+        self.assertNotIn('class="soon"', fan)                            # 2026-11-25: 출시 전 앱은 더미에 넣지 않는다
         self.assertIn(".fan a{display:block", render.css(self.site, hub=True))
 
     def test_other_app_is_reached_through_the_wordmark_and_fan(self):
