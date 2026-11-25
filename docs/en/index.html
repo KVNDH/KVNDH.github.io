@@ -80,11 +80,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
 .hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
 .cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh);container-type:size}
-.fan{--ic:72px;position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
-.fan .row{display:flex;gap:10px}
+.fan{--ic:72px;--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--cols) - 1) * 10px) / var(--cols)));position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
+.fan .row{display:flex;gap:10px;width:calc(var(--cols) * var(--s) + (var(--cols) - 1) * 10px)}
+.fan .sp{display:block;flex:none;width:var(--s);height:var(--s)}
 .fan a{display:block;border-radius:22.5%}
 .fan a:focus-visible{outline-offset:3px;border-radius:24%}
-.fan img{--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)));width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
+.fan img{width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
 /* 원화 한 점 */
 .piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
 .piece:nth-of-type(even) .frame{order:2}
@@ -462,12 +463,12 @@ html{scroll-padding-top:72px}
 .plate-l{--slot:132px}
 }
 /* 4: 홈 첫 칸은 내용 높이만큼이라 첫 작품의 번호표와 아이콘이 첫 화면에 걸친다. 작품 사이도 줄인다.
-   더미 아이콘은 칸 폭을 (가장 긴 줄의 아이콘 수)로 나눈 크기까지 줄어 폰에서도 피라미드가 줄바꿈되지 않는다 */
+   더미 아이콘은 칸 폭을 (가장 긴 줄의 칸 수, 대각선 빈칸 포함)로 나눈 크기까지 줄어 폰에서도 세 줄이 꺾이지 않는다 */
 .hero{min-height:0;display:block;padding-bottom:20px}
 .cluster{height:auto;container-type:inline-size;margin-top:28px}
 .fan{position:static}
 .fan .row{flex-wrap:nowrap}
-.fan img{--s:min(var(--ic),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)))}
+.fan{--s:min(var(--ic),calc((100cqw - (var(--cols) - 1) * 10px) / var(--cols)))}
 .piece{min-height:0;padding:56px 96px}
 @media (max-width:900px){
 .piece{padding:48px 56px}
@@ -499,7 +500,7 @@ html{scroll-padding-top:72px}
 <section class="hero">
 <p class="mono">kvndh.com</p>
 <div><p class="hero-t" aria-hidden="true">kvndh</p>
-<div class="cluster"><div class="fan" style="--rows:5"><span class="row"><a href="#life-tyde"><img src="/assets/life-tyde/icon-180.webp" alt="Life Tyde" width="72" height="72"></a></span><span class="row"><a href="#tapey"><img src="/assets/tapey/icon-180.webp" alt="Tapey" width="72" height="72"></a><a href="#dice-master"><img src="/assets/dice-master/icon-180.webp" alt="Dice Master" width="72" height="72"></a></span><span class="row"><a href="#snapline"><img src="/assets/snapline/icon-180.webp" alt="SnapLine" width="72" height="72"></a><a href="#percentime"><img src="/assets/percentime/icon-180.webp" alt="Percentime" width="72" height="72"></a><a href="#brushworks"><img src="/assets/brushworks/icon-180.webp" alt="BrushWorks" width="72" height="72"></a></span><span class="row"><a href="#readride"><img src="/assets/readride/icon-180.webp" alt="Readride" width="72" height="72"></a><a href="#onpace"><img src="/assets/onpace/icon-180.webp" alt="OnPace" width="72" height="72"></a><a href="#codematic"><img src="/assets/codematic/icon-180.webp" alt="Codematic" width="72" height="72"></a><a href="#spectable"><img src="/assets/spectable/icon-180.webp" alt="SpecTable" width="72" height="72"></a></span><span class="row"><a href="#set-and-burn"><img src="/assets/set-and-burn/icon-180.webp" alt="Set &amp; Burn" width="72" height="72"></a><a href="#dailyleft"><img src="/assets/dailyleft/icon-180.webp" alt="DailyLeft" width="72" height="72"></a><a href="#tailorcolor"><img src="/assets/tailorcolor/icon-180.webp" alt="TailorColor" width="72" height="72"></a></span></div></div></div>
+<div class="cluster"><div class="fan" style="--rows:3;--cols:6"><span class="row"><a href="#life-tyde"><img src="/assets/life-tyde/icon-180.webp" alt="Life Tyde" width="72" height="72"></a><a href="#snapline"><img src="/assets/snapline/icon-180.webp" alt="SnapLine" width="72" height="72"></a><a href="#readride"><img src="/assets/readride/icon-180.webp" alt="Readride" width="72" height="72"></a><a href="#spectable"><img src="/assets/spectable/icon-180.webp" alt="SpecTable" width="72" height="72"></a><a href="#tailorcolor"><img src="/assets/tailorcolor/icon-180.webp" alt="TailorColor" width="72" height="72"></a></span><span class="row"><i class="sp" aria-hidden="true"></i><a href="#tapey"><img src="/assets/tapey/icon-180.webp" alt="Tapey" width="72" height="72"></a><a href="#percentime"><img src="/assets/percentime/icon-180.webp" alt="Percentime" width="72" height="72"></a><a href="#onpace"><img src="/assets/onpace/icon-180.webp" alt="OnPace" width="72" height="72"></a><a href="#set-and-burn"><img src="/assets/set-and-burn/icon-180.webp" alt="Set &amp; Burn" width="72" height="72"></a></span><span class="row"><i class="sp" aria-hidden="true"></i><i class="sp" aria-hidden="true"></i><a href="#dice-master"><img src="/assets/dice-master/icon-180.webp" alt="Dice Master" width="72" height="72"></a><a href="#brushworks"><img src="/assets/brushworks/icon-180.webp" alt="BrushWorks" width="72" height="72"></a><a href="#codematic"><img src="/assets/codematic/icon-180.webp" alt="Codematic" width="72" height="72"></a><a href="#dailyleft"><img src="/assets/dailyleft/icon-180.webp" alt="DailyLeft" width="72" height="72"></a></span></div></div></div>
 </section>
 <article class="piece" id="life-tyde">
 <div class="frame"><span class="tick"></span><span class="tick2"></span>

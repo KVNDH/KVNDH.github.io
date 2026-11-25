@@ -340,23 +340,27 @@ def render_hub(site: Site, lang: str) -> str:
         slots.append(f'<span class="qslot"><img src="{asset(app["slug"], "icon-180.webp")}" alt="" '
                      'width="64" height="64" loading="lazy"></span>')
     quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
-    # 첫 화면 더미: 출시 순서 피라미드(2026-11-25 사용자). 맨 위 한 줄에 App Store 에 가장 먼저 나온 앱 하나,
-    # 아래로 한 줄에 하나씩 늘고 나중에 낸 앱이 아래로 간다. 덜 찬 마지막 줄은 가운데. 출시 전 앱은 넣지 않는다.
-    # 순서는 listed() 의 출시 순서(작품 번호와 같다)
+    # 첫 화면 더미: 출시 순서 세 줄 대각선(2026-11-25 사용자, 피라미드를 바꿈). 출시 순서 번호를 위에서 아래로 세 칸씩
+    # 채운 뒤 다음 열로 넘어간다(1,2,3 이 첫 열, 4,5,6 이 둘째 열). 둘째 줄은 아이콘 한 칸, 셋째 줄은 두 칸 앞을 비워
+    # 1-2-3, 4-5-6 이 오른쪽 아래로 내려가는 대각선이 된다.
+    #   [1][4][7][10][13]
+    #   [ ][2][5][8][11]
+    #   [ ][ ][3][6][9][12]
+    # 새로 출시된 앱은 같은 규칙으로 뒤에 붙는다. 출시 전 앱은 넣지 않는다. 순서는 listed() 의 출시 순서(작품 번호와 같다)
     # 10-25 O: 더미 아이콘은 그 앱 판(#slug)으로 가는 링크
     fan_imgs = [
         f'<a href="#{esc(a["slug"])}"><img src="{asset(a["slug"], "icon-180.webp")}" '
         f'alt="{esc(site.app_copy(a["slug"], lang)["name"])}" width="72" height="72"></a>'
         for a in apps
     ]
-    rows, k, n = [], 0, 1
-    while k < len(fan_imgs):
-        rows.append('<span class="row">' + "".join(fan_imgs[k:k + n]) + "</span>")
-        k, n = k + n, n + 1
-    # 10-25 L: 아이콘 = (칸 높이 - 줄 사이 10px x (줄 수 - 1)) / 줄 수, 72px(폰 54px)까지(style.css .fan img).
-    # 가로 폰이나 앱이 늘어도 더미가 칸을 넘지 않는다
+    gap = '<i class="sp" aria-hidden="true"></i>'
+    lines = [fan_imgs[r::3] for r in range(min(3, len(fan_imgs)))]
+    rows = ['<span class="row">' + gap * r + "".join(line) + "</span>" for r, line in enumerate(lines)]
+    cols = max((r + len(line) for r, line in enumerate(lines)), default=1)
+    # 10-25 L: 아이콘 = min(72px(폰 54px), 칸 폭을 가장 긴 줄의 칸 수(빈칸 포함)로 나눈 크기)(style.css .fan).
+    # 폰 폭에서도 줄이 꺾이거나 가로로 밀리지 않고 아이콘이 줄어든다
     content = tpl(site, "hub.html").substitute(
-        title=esc(ui["hubMetaTitle"]), rows=len(rows),
+        title=esc(ui["hubMetaTitle"]), rows=len(rows), cols=cols,
         fan="".join(rows), pieces="\n".join(pieces), quiet=quiet_html)
     data = {"page": "hub", "plates": plates,
             "ui": {"total": total, "more": ui["learnMore"], "support": ui["navSupport"]}}

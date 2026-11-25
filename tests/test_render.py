@@ -319,17 +319,20 @@ class OtherPagesTest(unittest.TestCase):
         self.assertNotIn("/ko/soon/", html)
 
     def test_first_released_app_tops_the_pile(self):
-        # 2026-11-25 사용자: 첫 화면 더미는 출시 순서 피라미드. 위에서부터 1, 2, 3, ... 개씩이고 맨 위가 App Store 에
-        # 가장 먼저 나온 앱(site.json firstRelease, 같은 날이면 site.json 순서). 출시 전 앱은 넣지 않는다
+        # 2026-11-25 사용자: 첫 화면 더미는 출시 순서 세 줄 대각선. 위에서 아래로 세 칸씩 채우고 다음 열로 넘어가며,
+        # 둘째 줄은 한 칸, 셋째 줄은 두 칸 앞을 비운다. 맨 앞이 App Store 에 가장 먼저 나온 앱(site.json firstRelease,
+        # 같은 날이면 site.json 순서). 출시 전 앱은 넣지 않는다
         site = grow(Site(make_site(unreleased=True)), 4)
         dates = {"demo": "2026-03-01", "demo2": "2026-01-01", "demo3": "2026-02-01", "demo4": "2026-02-01"}
         for app in site.apps:
             if app["slug"] in dates:
                 app["firstRelease"] = dates[app["slug"]]
         html = render.render_hub(site, "ko")
-        fan = re.search(r'<div class="fan" style="--rows:3">(.*?)</div>', html).group(1)
+        fan = re.search(r'<div class="fan" style="--rows:3;--cols:3">(.*?)</div>', html).group(1)
         rows = [re.findall(r'href="#([^"]+)"', r) for r in fan.split('<span class="row">')[1:]]
-        self.assertEqual(rows, [["demo2"], ["demo3", "demo4"], ["demo"]])
+        self.assertEqual(rows, [["demo2", "demo"], ["demo3"], ["demo4"]])
+        gaps = [r.split("<a ")[0].count('class="sp"') for r in fan.split('<span class="row">')[1:]]
+        self.assertEqual(gaps, [0, 1, 2])
         self.assertNotIn("soon", fan)
         # 작품 번호도 같은 출시 순서(No. 01 이 가장 먼저 나온 앱), 앱 쪽 번호도 같다
         self.assertEqual(re.findall(r'<article class="piece" id="([^"]+)">', html), ["demo2", "demo3", "demo4", "demo"])
@@ -580,8 +583,9 @@ class ListCapTest(unittest.TestCase):
         pieces = re.findall(r'<article class="piece".*?</article>', two, re.S)
         self.assertEqual(len(pieces), 8)
         self.assertEqual({len(re.findall(r"<a |<button ", p)) for p in pieces}, {3})   # 판 단추, App Store, 자세히 보기
-        self.assertIn('style="--rows:3"', one)   # 4개 = 1 + 2 + 1
-        self.assertIn('style="--rows:4"', two)   # 8개 = 1 + 2 + 3 + 2
+        # 2026-11-25 세 줄 대각선: 줄은 늘 셋, 칸 수는 가장 긴 줄(대각선 빈칸 포함)
+        self.assertIn('style="--rows:3;--cols:3"', one)   # 4개 = [1][4] / [ ][2] / [ ][ ][3]
+        self.assertIn('style="--rows:3;--cols:4"', two)   # 8개 = [1][4][7] / [ ][2][5][8] / [ ][ ][3][6]
         two_langs = render.render_404(Site(make_site(langs=("ko", "en"))))
         three_langs = render.render_404(Site(make_site(langs=("ko", "en", "ja"))))
         self.assertEqual(len(re.findall(r"<p[ >]", two_langs)), len(re.findall(r"<p[ >]", three_langs)))
@@ -606,10 +610,13 @@ class ListCapTest(unittest.TestCase):
     def test_fan_icons_divide_the_cluster_height(self):
         # L: 844x390 에서 칸 195px 에 더미 318px, 위 아이콘이 제목을 41px 덮었다
         self.assertIn("container-type:size", rule(self.hub, ".cluster"))
-        img = rule(self.hub, ".fan img")
-        self.assertIn("calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows))", img)
-        self.assertIn("calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows))", img)
-        self.assertIn("min(var(--ic),", img)
+        fan = rule(self.hub, ".fan")
+        self.assertIn("calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows))", fan)
+        # 2026-11-25 세 줄 대각선: 폭은 가장 긴 줄의 칸 수(대각선 빈칸 포함)로 나눈다
+        self.assertIn("calc((100cqw - (var(--cols) - 1) * 10px) / var(--cols))", fan)
+        self.assertIn("min(var(--ic),", fan)
+        self.assertIn("width:var(--s);height:var(--s)", rule(self.hub, ".fan img"))
+        self.assertIn("width:var(--s);height:var(--s)", rule(self.hub, ".fan .sp"))
         self.assertIn("--ic:72px", rule(self.hub, ".fan"))
         self.assertIn("--ic:54px", rule(self.hub, ".fan", "(max-width:720px)"))
         self.assertNotIn("width:72px;height:72px", self.hub)
@@ -646,7 +653,7 @@ class ShortcutTest(unittest.TestCase):
     def test_fan_icons_link_to_their_plates(self):
         # O: 첫 화면 더미 아이콘이 다 보이지만 누를 수 없어 8번째 판까지 390x844 스크롤 5388px, Tab 25회
         html = render.render_hub(grow(Site(make_site(unreleased=True)), 3), "ko")
-        fan = re.search(r'<div class="fan" style="--rows:\d+">(.*?)</div>', html).group(1)
+        fan = re.search(r'<div class="fan" style="--rows:\d+;--cols:\d+">(.*?)</div>', html).group(1)
         self.assertNotIn('<div class="cluster" aria-hidden', html)
         links = re.findall(r'<a href="#([^"]+)"><img [^>]*alt="([^"]+)"', fan)
         self.assertEqual(links, [("demo", "Demo"), ("demo2", "Demo2"), ("demo3", "Demo3")])

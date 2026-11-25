@@ -49,11 +49,12 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 /*h*/.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:96px 80px 56px;text-align:center}
 /*h*/.hero-t{margin-top:12px;font-size:clamp(64px,10vw,132px);line-height:.92;font-weight:800;letter-spacing:-.06em}
 /*h*/.cluster{position:relative;margin:20px auto 0;width:min(760px,100%);height:min(500px,50vh);container-type:size}
-/*h*/.fan{--ic:72px;position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
-/*h*/.fan .row{display:flex;gap:10px}
+/*h*/.fan{--ic:72px;--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--cols) - 1) * 10px) / var(--cols)));position:absolute;inset:0;display:flex;flex-direction:column;gap:10px;justify-content:center;align-items:center}
+/*h*/.fan .row{display:flex;gap:10px;width:calc(var(--cols) * var(--s) + (var(--cols) - 1) * 10px)}
+/*h*/.fan .sp{display:block;flex:none;width:var(--s);height:var(--s)}
 /*h*/.fan a{display:block;border-radius:22.5%}
 /*h*/.fan a:focus-visible{outline-offset:3px;border-radius:24%}
-/*h*/.fan img{--s:min(var(--ic),calc((100cqh - (var(--rows) - 1) * 10px) / var(--rows)),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)));width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
+/*h*/.fan img{width:var(--s);height:var(--s);border-radius:22.5%;box-shadow:0 8px 18px -8px rgba(26,26,26,.35)}
 /* 원화 한 점 */
 /*h*/.piece{position:relative;min-height:72vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:56px;padding:40px 96px}
 /*h*/.piece:nth-of-type(even) .frame{order:2}
@@ -450,12 +451,12 @@ html{scroll-padding-top:72px}
 .plate-l{--slot:132px}
 }
 /* 4: 홈 첫 칸은 내용 높이만큼이라 첫 작품의 번호표와 아이콘이 첫 화면에 걸친다. 작품 사이도 줄인다.
-   더미 아이콘은 칸 폭을 (가장 긴 줄의 아이콘 수)로 나눈 크기까지 줄어 폰에서도 피라미드가 줄바꿈되지 않는다 */
+   더미 아이콘은 칸 폭을 (가장 긴 줄의 칸 수, 대각선 빈칸 포함)로 나눈 크기까지 줄어 폰에서도 세 줄이 꺾이지 않는다 */
 /*h*/.hero{min-height:0;display:block;padding-bottom:20px}
 /*h*/.cluster{height:auto;container-type:inline-size;margin-top:28px}
 /*h*/.fan{position:static}
 /*h*/.fan .row{flex-wrap:nowrap}
-/*h*/.fan img{--s:min(var(--ic),calc((100cqw - (var(--rows) - 1) * 10px) / var(--rows)))}
+/*h*/.fan{--s:min(var(--ic),calc((100cqw - (var(--cols) - 1) * 10px) / var(--cols)))}
 /*h*/.piece{min-height:0;padding:56px 96px}
 @media (max-width:900px){
 /*h*/.piece{padding:48px 56px}
