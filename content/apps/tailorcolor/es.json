@@ -88,10 +88,31 @@
    }
   },
   {
+   "layout": "feat",
+   "title": "En el iPad, el personaje y la ropa quedan lado a lado",
+   "body": [
+    "En el iPad, Hoy pone a tu personaje junto a la ropa que eliges, y Registro muestra el calendario y el look de ese día en una misma pantalla. El iPad se usa en vertical y en horizontal, y la pantalla ancha de un iPhone plegable abierto usa la misma disposición."
+   ],
+   "bullets": [
+    "Personaje y ropa lado a lado en Hoy",
+    "Calendario y look de ese día juntos en Registro",
+    "iPad en vertical y horizontal, e iPhone plegable abierto"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 6,
+    "alt": "Hoy en un iPad en horizontal. A la izquierda el personaje delante del arco y a la derecha las pestañas de ropa con el color, lo llevado hace poco y una cuadrícula de tipos, lado a lado.",
+    "caption": "Pantalla del iPad, ampliada",
+    "focus": "0px",
+    "focusX": "-60px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "46 idiomas y modo oscuro",
    "body": [
-    "La app está en 46 idiomas. Empieza en el idioma del dispositivo, y puedes elegir otro en Idioma, dentro de la pantalla Acerca de. En Aspecto eliges Sistema, Claro u Oscuro. No hay cuenta ni inicio de sesión, y la ropa y el registro se guardan en tu iPhone."
+    "La app está en 46 idiomas. Empieza en el idioma del dispositivo, y puedes elegir otro en Idioma, dentro de la pantalla Acerca de. En Aspecto eliges Sistema, Claro u Oscuro. No hay cuenta ni inicio de sesión, y la ropa y el registro se guardan en tu iPhone o iPad."
    ],
    "bullets": [],
    "visual": {
@@ -99,7 +120,7 @@
     "items": [
      "46 idiomas",
      "Aspecto claro y oscuro",
-     "Guardado en tu iPhone, sin cuenta"
+     "Guardado en tu iPhone o iPad, sin cuenta"
     ]
    }
   }
@@ -175,7 +196,7 @@
   {
    "q": "Vestir a partir de una foto (TailorColor Pro)",
    "a": [
-    "Haz o elige una foto con el botón de cámara de la parte superior de Hoy, y la app lee la ropa que aparece para armar un look para tu personaje. La foto se lee en tu iPhone con el framework Vision de Apple y no se guarda.",
+    "Haz o elige una foto con el botón de cámara de la parte superior de Hoy, y la app lee la ropa que aparece para armar un look para tu personaje. La foto se lee en tu dispositivo con el framework Vision de Apple y no se guarda.",
     "Cualquiera puede revisar y corregir lo que se leyó. Ponerle ese look al personaje forma parte de TailorColor Pro."
    ]
   },
@@ -207,16 +228,23 @@
    ]
   },
   {
+   "q": "iPad e iPhone plegable",
+   "a": [
+    "En el iPad, las pestañas Arriba, Abajo, Exterior, Calzado y Complementos quedan junto a tu personaje en Hoy, así que ves al personaje mientras eliges la ropa. En Registro, la tarjeta del día que eliges queda junto al calendario, y al tocar otra fecha solo cambia la tarjeta. El registro se guarda en cada dispositivo por separado, así que lo que guardas en el iPhone no aparece en el iPad.",
+    "La pantalla ancha de un iPhone plegable abierto usa la misma disposición. Si la pantalla tiene una franja del sistema a un lado, botones como Hoy, Registro y Guardar look se colocan en esa franja. Cerrado, en una ventana estrecha de Split View o con el texto muy grande, la app usa la disposición del iPhone."
+   ]
+  },
+  {
    "q": "Dispositivos, idioma y aspecto",
    "a": [
-    "TailorColor funciona solo en iPhone con iOS 17 o posterior, y la pantalla se queda en vertical.",
+    "TailorColor funciona en iPhone con iOS 17 o posterior y en iPad con iPadOS 17 o posterior. En el iPhone la pantalla se queda en vertical, y en el iPad funciona en vertical y en horizontal.",
     "La app está en 46 idiomas. Empieza en el idioma del dispositivo, y puedes elegir otro en Idioma, dentro de la pantalla Acerca de. En el mismo lugar, Aspecto puede ser Sistema, Claro u Oscuro."
    ]
   },
   {
    "q": "Cuenta y dónde se guarda el registro",
    "a": [
-    "No hay cuenta ni inicio de sesión. La ropa y el registro se guardan en el almacenamiento de la app en tu iPhone y se borran al eliminar la app.",
+    "No hay cuenta ni inicio de sesión. La ropa y el registro se guardan en el almacenamiento de la app en tu iPhone o iPad y se borran al eliminar la app.",
     "Un día guardado se borra con Eliminar en su tarjeta de fecha de Registro, de uno en uno."
    ]
   }

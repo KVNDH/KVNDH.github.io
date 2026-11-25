@@ -88,10 +88,31 @@
    }
   },
   {
+   "layout": "feat",
+   "title": "On iPad, your character and clothes sit side by side",
+   "body": [
+    "On iPad, Today puts your character beside the clothes you pick from, and Record shows the calendar and that day's outfit on one screen. iPad works upright or sideways, and the wide screen of a foldable iPhone opened out uses the same layout."
+   ],
+   "bullets": [
+    "Character and clothes side by side in Today",
+    "Calendar and that day's outfit together in Record",
+    "iPad upright or sideways, and foldable iPhone opened out"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 6,
+    "alt": "Today on iPad in landscape. The character in front of the arch on the left, and on the right the Top tab with Color, Recently worn and a grid of kinds, side by side.",
+    "caption": "iPad screen, close-up",
+    "focus": "0px",
+    "focusX": "-60px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "46 languages and dark mode",
    "body": [
-    "The app's screens come in 46 languages. It starts in your device language, and you can pick another under Language on the About screen. Appearance can be System, Light or Dark. There is no account or sign-in, and your outfits and records are saved on your iPhone."
+    "The app's screens come in 46 languages. It starts in your device language, and you can pick another under Language on the About screen. Appearance can be System, Light or Dark. There is no account or sign-in, and your outfits and records are saved on your iPhone or iPad."
    ],
    "bullets": [],
    "visual": {
@@ -99,7 +120,7 @@
     "items": [
      "46 languages",
      "Light and dark appearance",
-     "Saved on your iPhone, no account"
+     "Saved on your iPhone or iPad, no account"
     ]
    }
   }
@@ -175,7 +196,7 @@
   {
    "q": "Dress from a photo (TailorColor Pro)",
    "a": [
-    "Take or choose a photo with the camera button at the top of Today, and the app reads the clothes in it to build an outfit for your character. The photo is read on your iPhone with Apple's Vision framework and is not kept.",
+    "Take or choose a photo with the camera button at the top of Today, and the app reads the clothes in it to build an outfit for your character. The photo is read on your device with Apple's Vision framework and is not kept.",
     "Anyone can look over and fix what was read. Putting that outfit on your character is part of TailorColor Pro."
    ]
   },
@@ -207,16 +228,23 @@
    ]
   },
   {
+   "q": "iPad and foldable iPhone",
+   "a": [
+    "On iPad, the Top, Bottom, Outer, Shoes and Extras tabs sit beside your character on Today, so you can watch the character while you pick clothes. On Record, the date card for the day you pick sits beside the calendar, and tapping another date changes only the card. Records are kept on each device separately, so what you save on iPhone does not show up on iPad.",
+    "The wide screen of a foldable iPhone opened out uses the same layout. When the screen has a system strip along one side, buttons such as Today, Record and Save fit stand in that strip. Folded, in a narrow Split View window or with very large text, the app uses the iPhone layout."
+   ]
+  },
+  {
    "q": "Devices, language and appearance",
    "a": [
-    "TailorColor runs on iPhone only, with iOS 17 or later, and the screen stays in portrait.",
+    "TailorColor runs on iPhone with iOS 17 or later and on iPad with iPadOS 17 or later. On iPhone the screen stays in portrait, and on iPad it works in portrait and landscape.",
     "The app's screens come in 46 languages. It starts in your device language, and you can pick another under Language on the About screen. Appearance, in the same place, can be System, Light or Dark."
    ]
   },
   {
    "q": "Account and where records are kept",
    "a": [
-    "There is no account or sign-in. Your clothes and records are saved in the app's storage on your iPhone and are removed when you delete the app.",
+    "There is no account or sign-in. Your clothes and records are saved in the app's storage on your iPhone or iPad and are removed when you delete the app.",
     "Delete a saved day from its date card on Record, one day at a time."
    ]
   }

@@ -88,10 +88,31 @@
    }
   },
   {
+   "layout": "feat",
+   "title": "No iPad, o personagem e as roupas ficam lado a lado",
+   "body": [
+    "No iPad, Hoje mostra o seu personagem ao lado das roupas que você escolhe, e Registro mostra o calendário e o look daquele dia na mesma tela. O iPad funciona na vertical e na horizontal, e a tela larga de um iPhone dobrável aberto usa o mesmo layout."
+   ],
+   "bullets": [
+    "Personagem e roupas lado a lado na aba Hoje",
+    "Calendário e look daquele dia juntos na aba Registro",
+    "iPad na vertical e na horizontal, e iPhone dobrável aberto"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 6,
+    "alt": "Hoje no iPad na horizontal. À esquerda o personagem diante do arco e à direita as abas de roupas com a cor, as peças usadas recentemente e uma grade de tipos, lado a lado.",
+    "caption": "Tela do iPad, ampliada",
+    "focus": "0px",
+    "focusX": "-60px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "46 idiomas e modo escuro",
    "body": [
-    "O app está em 46 idiomas. Ele começa no idioma do aparelho, e você pode escolher outro em Idioma, na tela Sobre. Em Aparência, você escolhe Sistema, Claro ou Escuro. Não há conta nem login, e as roupas e o registro ficam salvos no seu iPhone."
+    "O app está em 46 idiomas. Ele começa no idioma do aparelho, e você pode escolher outro em Idioma, na tela Sobre. Em Aparência, você escolhe Sistema, Claro ou Escuro. Não há conta nem login, e as roupas e o registro ficam salvos no seu iPhone ou iPad."
    ],
    "bullets": [],
    "visual": {
@@ -99,7 +120,7 @@
     "items": [
      "46 idiomas",
      "Aparência clara e escura",
-     "Salvo no seu iPhone, sem conta"
+     "Salvo no seu iPhone ou iPad, sem conta"
     ]
    }
   }
@@ -175,7 +196,7 @@
   {
    "q": "Vestir a partir de uma foto (TailorColor Pro)",
    "a": [
-    "Tire ou escolha uma foto com o botão de câmera no alto de Hoje, e o app lê as roupas da foto para montar um look para o seu personagem. A foto é lida no seu iPhone com o framework Vision da Apple e não é guardada.",
+    "Tire ou escolha uma foto com o botão de câmera no alto de Hoje, e o app lê as roupas da foto para montar um look para o seu personagem. A foto é lida no seu aparelho com o framework Vision da Apple e não é guardada.",
     "Qualquer pessoa pode conferir e corrigir o que foi lido. Vestir esse look no personagem faz parte do TailorColor Pro."
    ]
   },
@@ -207,16 +228,23 @@
    ]
   },
   {
+   "q": "iPad e iPhone dobrável",
+   "a": [
+    "No iPad, as abas Parte de cima, Parte de baixo, Casaco, Calçados e Acessórios ficam ao lado do seu personagem em Hoje, para você ver o personagem enquanto escolhe as roupas. No Registro, o cartão do dia escolhido fica ao lado do calendário, e tocar em outra data troca só o cartão. O registro fica salvo em cada aparelho separadamente, então o que você salva no iPhone não aparece no iPad.",
+    "A tela larga de um iPhone dobrável aberto usa o mesmo layout. Quando a tela tem uma faixa do sistema na lateral, botões como Hoje, Registro e Salvar look ficam nessa faixa. Fechado, em uma janela estreita do Split View ou com o texto muito grande, o app usa o layout do iPhone."
+   ]
+  },
+  {
    "q": "Aparelhos, idioma e aparência",
    "a": [
-    "O TailorColor funciona só no iPhone, com iOS 17 ou posterior, e a tela fica na vertical.",
+    "O TailorColor funciona no iPhone com iOS 17 ou posterior e no iPad com iPadOS 17 ou posterior. No iPhone a tela fica na vertical, e no iPad funciona na vertical e na horizontal.",
     "O app está em 46 idiomas. Ele começa no idioma do aparelho, e você pode escolher outro em Idioma, na tela Sobre. No mesmo lugar, Aparência pode ser Sistema, Claro ou Escuro."
    ]
   },
   {
    "q": "Conta e onde o registro fica salvo",
    "a": [
-    "Não há conta nem login. As roupas e o registro ficam salvos no armazenamento do app no seu iPhone e são apagados quando você apaga o app.",
+    "Não há conta nem login. As roupas e o registro ficam salvos no armazenamento do app no seu iPhone ou iPad e são apagados quando você apaga o app.",
     "Um dia salvo é apagado com Apagar no cartão de data do Registro, um dia de cada vez."
    ]
   }

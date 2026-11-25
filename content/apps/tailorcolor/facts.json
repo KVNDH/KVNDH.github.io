@@ -1,9 +1,9 @@
 {
- "describesVersion": "1.0.0",
+ "describesVersion": "1.0.1",
  "purchase": "one-time",
  "ads": true,
  "account": false,
- "versionNote": "1.0.0 (빌드 8, 앱 저장소 태그 v1.0.0 = v1.0.0-build8 = 695015b) 기준이다. 2026-11-25 ASC READY_FOR_SALE, App Store 앱 ID 6814066446. 소개, 지원, 처리방침 모두 이 판을 설명한다. iPad 와 펼친 화면은 1.0.1 준비 중이라 쓰지 않는다.",
+ "versionNote": "1.0.1 (빌드 9, 앱 저장소 main 46935c8) 기준이다. 2026-11-25 22:01 ASC READY_FOR_SALE(Commander 확인), App Store 앱 ID 6814066446. 1.0.0 (빌드 8, 태그 v1.0.0 = 695015b) 에서 바뀐 것은 iPad 지원과 펼친 iPhone Duo 넓은 화면뿐이고 나머지 기능 근거는 1.0.0 그대로다. 처리방침은 1.0.0 판(시행일 2026-11-24)을 그대로 둔다.",
  "privacy": [
   "2026-11-24: 처리방침을 1.0.0 (빌드 8, 앱 저장소 커밋 8b2ca83)에 맞췄다(사이트 d91a3190). 2026-11-25 소개와 지원 페이지도 출시된 1.0.0 (695015b)에 맞췄다.",
   "계정, 서버: 회원가입, 로그인, 자체 서버 없음. 앱 코드에 URLSession, CloudKit 0건. 외부 패키지는 Google Mobile Ads 13.10.0, UMP 3.1.0 둘(project.yml:16-21).",
@@ -34,15 +34,17 @@
   "색 고리: 옷을 한 번 누르면 그 옷의 색 고리, 옷이 아닌 곳(얼굴, 배경)을 누르면 크게 보기, 고리 밖을 누르면 고리만 닫힘(TodayView.swift:322-333). 색 목록 맨 앞에 '직접 고르기', '사진에서 고르기'(EditorPanels.swift:1097-1131).",
   "배색 추천: 피부톤과 퍼스널 컬러 반영, 추천마다 이유 한 줄, '안 입는 색' 제외, '고정' 유지, '아무거나 입히기'(TodayView.swift:435-468, 스토어 설명).",
   "기록: '오늘 핏 저장', 날짜마다 한 벌, 이미 저장한 날은 바꿀지 묻는다(TodayView.swift:531 'Replace the fit saved for ...?'). 제목 아래 날짜를 누르면 '날짜 고르기'(TodayView.swift:220, DayViews.swift:60). 날짜 카드의 '오늘로 가져오기', '지우기', 기록 탭 위 '저장한 핏 훑어보기'와 '내 옷장'(RecordView.swift:118-137), '크게 보기'(RecordView.swift:199). '비슷한 착장'(같은 종류, 비슷한 색), '이 핏에 어울리는 것'(누르면 입혀 봅니다), '캘린더 일정 보기'(RecordView.swift:395, 일정 제목 두 개까지).",
-  "정보 화면: 화면 모드(시스템, 라이트, 다크), 언어(시스템과 46개 언어), TailorColor Pro, 구매 복원, 지원, 개인정보 처리방침(AboutView.swift:42-60, 151-173)."
+  "정보 화면: 화면 모드(시스템, 라이트, 다크), 언어(시스템과 46개 언어), TailorColor Pro, 구매 복원, 지원, 개인정보 처리방침(AboutView.swift:42-60, 151-173).",
+  "넓은 화면(1.0.1): 창 폭 700pt 이상이고 두 기둥이 들어가며 큰 글자(접근성 크기)가 아닐 때(WideLayout.swift:22, :28). 오늘 탭은 무대와 옷 고르기를 나란히(TodayView.swift:663-675), 넉넉하면(창 1100pt 이상, iPad 가로) 맨 왼쪽에 입은 옷 목록 칸이 더 생긴다(WideLayout.swift:210-211). 기록 탭은 달력과 고른 날 카드를 나란히, 날짜를 누르면 오른쪽만 바뀐다(RecordView.swift:142-151). 펼친 Duo 는 옆 안전 영역 80pt 이상이면 그 자리에 단추 띠(오늘, 기록 아래에 오늘 탭은 핏 저장, 사진으로 입히기, 내 캐릭터, 정보, 기록 탭은 이전 달, 다음 달, 저장한 핏 훑어보기, 내 옷장, WideLayout.swift:24, :33-34, TodayView.swift:654-664, RecordView.swift:129-141). 접은 Duo, Split View 좁은 창, 큰 글자는 iPhone 판. 기기 사이 동기화 없음(CloudKit, iCloud 0건)."
  ],
  "notOffered": [
   "빌드 1(2026-09-20) 문구에서 걷어 낸 것: '광고 없음', '인앱 구매 없음'(1.0.0 은 광고와 Pro 가 있다), '코디 공유'(ShareLink, UIActivityViewController 0건), '저장함'과 배색/옷장 두 칸(지금 이름은 '기록' 탭과 '내 옷장'), 마네킹, 여섯 자리, 24색 고정 팔레트, 11가지 규칙과 최대 12벌, 1080 x 1350 그림. 사이트에 다시 쓰지 않는다.",
-  "1.0.1 준비 중(iPad, 펼친 iPhone 넓은 화면)은 출시 전이라 쓰지 않는다."
+  "사이트 문구는 다른 앱 페이지와 같이 'iPhone Duo' 대신 '접는 iPhone을 펼친 넓은 화면'으로 쓴다(스토어 문안은 iPhone Duo). 화면 폭 수치(700pt, 80pt)는 쓰지 않는다.",
+  "다음 판 작업(앱 저장소 main 의 커밋 안 된 전용 확인창 ConfirmCard 등)은 출시 전이라 쓰지 않는다."
  ],
  "platform": [
-  "iPhone 전용(project.yml:162 TARGETED_DEVICE_FAMILY \"1\"), iOS 17.0 이상(project.yml:5-6), 세로 고정(project.yml:70 UISupportedInterfaceOrientations Portrait), 다크 모드 지원(정보 화면 화면 모드).",
-  "앱 화면 46개 언어(v1.0.0 TailorColor/Resources/Localizable.xcstrings 의 언어 46개, 영어 포함). 스토어 문안은 ko 와 en-US 둘."
+  "iPhone 과 iPad(1.0.1 부터 project.yml:174 TARGETED_DEVICE_FAMILY \"1,2\", 1.0.0 은 \"1\"), iOS 와 iPadOS 17.0 이상(project.yml:5-6). iPhone 은 세로 고정(project.yml:71), iPad 는 네 방향(project.yml:72-76). 다크 모드 지원(정보 화면 화면 모드).",
+  "앱 화면 46개 언어(v1.0.0 TailorColor/Resources/Localizable.xcstrings 의 언어 46개, 영어 포함). 스토어 문안은 1.0.0 은 ko 와 en-US 둘, 1.0.1 부터 50개 로케일."
  ],
  "uiNames": [
   "사이트 여덟 언어는 그 언어 앱 화면 글자(v1.0.0 Localizable.xcstrings)를 쓴다. 앱이 ja, zh-Hans, zh-Hant, de, es, pt-BR 를 지원하므로 영어 인용을 두지 않는다.",
@@ -52,7 +54,8 @@
  ],
  "shots": [
   "출처: ColorFit docs/store/screenshots/{ko,en}/1-today, 2-ring, 3-record, 4-scene, 5-zoom.png (1320x2868, v1.0.0 과 같은 파일). import_assets.py 가 -strip 해 660px webp 로(RIFF 청크 VP8 하나, EXIF, XMP, ICC 없음 확인). 그 언어 그림이 없는 여섯 언어는 shot_path 가 en 을 쓴다.",
-  "첫 화면 원화 셋 = 01~03. 절 그림: 1절 04(상의 종류 격자, focus -560px), 2절 02(색 고리), 3절 03(기록 카드), 4절 05(카페 배경 크게 보기)."
+  "첫 화면 원화 셋 = 01~03. 절 그림: 1절 04(상의 종류 격자, focus -560px), 2절 02(색 고리), 3절 03(기록 카드), 4절 05(카페 배경 크게 보기).",
+  "06 = 1.0.1 iPad 스토어 그림 1-today(ColorFit docs/store/screenshots/ipad/{en,ko}/1-today.png, 2752x2064 가로, 13인치). import_assets.py 가 가로 그림은 1320px 폭 webp 로. iPad 절(5절) 그림이고 focusW 620px 로 무대와 옷 고르기 쪽을 보인다."
  ],
  "numbers": [
   "1",
@@ -73,6 +76,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 체형 3, 피부색 6, 머리 모양 20, 머리 색 7, 상의 16, 하의 15, 아우터 21, 신발 22, 무늬 13, 언어 46, 하루 1. 24 와 3 은 광고 간격(24시간, 3일), 17 은 iOS 17. 11 과 22 는 기록 카드 그림 설명의 날짜(11월 22일).",
  "sources": [
+  "1.0.1 사실 초안 tmp/tailorcolor-101-site-2026-11-25/FACTS.md(TailorColor 세션), 근거 줄은 ColorFit main 46935c8 에서 git show 로 다시 확인(2026-11-25). 스토어 1.0.1 설명과 새 소식은 ColorFit docs/store/metadata.json.",
   "TailorColor 세션 사실 초안 tmp/tailorcolor-100-site-2026-11-25/facts.md, 근거 줄은 ColorFit 태그 v1.0.0 (695015b)에서 git show 로 다시 열어 확인(2026-11-25).",
   "처리방침 근거: tmp/tailorcolor-100-privacy-2026-11-24/facts.md, 앱 커밋 8b2ca83(사이트 d91a3190).",
   "그 전(빌드 1) 근거: 2026-09-20 커밋 bd24e85. 지금 앱과 다르다."

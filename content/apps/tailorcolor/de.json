@@ -88,10 +88,31 @@
    }
   },
   {
+   "layout": "feat",
+   "title": "Auf dem iPad stehen Figur und Kleidung nebeneinander",
+   "body": [
+    "Auf dem iPad steht in Heute Ihre Figur neben der Kleiderauswahl, und Verlauf zeigt Kalender und Outfit des Tages auf einem Bildschirm. Das iPad lässt sich hoch und quer nutzen, und der breite Bildschirm eines aufgeklappten faltbaren iPhone zeigt dasselbe Layout."
+   ],
+   "bullets": [
+    "Figur und Kleidung nebeneinander in Heute",
+    "Kalender und Outfit des Tages zusammen in Verlauf",
+    "iPad hoch und quer, aufgeklapptes faltbares iPhone"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 6,
+    "alt": "Heute auf dem iPad im Querformat. Links die Figur vor dem Bogen, rechts die Kleidungs-Tabs mit Farbe, zuletzt getragenen Teilen und einem Raster der Arten, nebeneinander.",
+    "caption": "iPad-Ansicht, vergrößert",
+    "focus": "0px",
+    "focusX": "-60px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "46 Sprachen und dunkler Modus",
    "body": [
-    "Die App gibt es in 46 Sprachen. Sie startet in der Sprache Ihres Geräts, und unter „Sprache“ im Info-Bildschirm wählen Sie eine andere. Beim Erscheinungsbild wählen Sie System, Hell oder Dunkel. Es gibt kein Konto und keine Anmeldung, und Kleidung und Verlauf werden auf Ihrem iPhone gespeichert."
+    "Die App gibt es in 46 Sprachen. Sie startet in der Sprache Ihres Geräts, und unter „Sprache“ im Info-Bildschirm wählen Sie eine andere. Beim Erscheinungsbild wählen Sie System, Hell oder Dunkel. Es gibt kein Konto und keine Anmeldung, und Kleidung und Verlauf werden auf Ihrem iPhone oder iPad gespeichert."
    ],
    "bullets": [],
    "visual": {
@@ -99,7 +120,7 @@
     "items": [
      "46 Sprachen",
      "Helles und dunkles Erscheinungsbild",
-     "Ohne Konto auf dem iPhone gespeichert"
+     "Ohne Konto auf iPhone oder iPad gespeichert"
     ]
    }
   }
@@ -175,7 +196,7 @@
   {
    "q": "„Nach Foto anziehen“ (TailorColor Pro)",
    "a": [
-    "Nehmen oder wählen Sie mit der Kamerataste oben in Heute ein Foto, liest die App die Kleidung darauf und stellt daraus ein Outfit für Ihre Figur zusammen. Das Foto wird auf Ihrem iPhone mit Apples Vision-Framework gelesen und nicht aufbewahrt.",
+    "Nehmen oder wählen Sie mit der Kamerataste oben in Heute ein Foto, liest die App die Kleidung darauf und stellt daraus ein Outfit für Ihre Figur zusammen. Das Foto wird auf Ihrem Gerät mit Apples Vision-Framework gelesen und nicht aufbewahrt.",
     "Das Ergebnis ansehen und korrigieren kann jeder. Das Outfit der Figur anzuziehen gehört zu TailorColor Pro."
    ]
   },
@@ -207,16 +228,23 @@
    ]
   },
   {
+   "q": "iPad und faltbares iPhone",
+   "a": [
+    "Auf dem iPad stehen die Tabs Oberteil, Unterteil, Jacke, Schuhe und Accessoires in Heute neben Ihrer Figur, sodass Sie die Figur beim Auswählen im Blick haben. In Verlauf steht die Datumskarte des gewählten Tages neben dem Kalender, und ein Tipp auf ein anderes Datum wechselt nur die Karte. Der Verlauf wird auf jedem Gerät getrennt gespeichert. Was Sie auf dem iPhone speichern, erscheint also nicht auf dem iPad.",
+    "Der breite Bildschirm eines aufgeklappten faltbaren iPhone zeigt dasselbe Layout. Hat der Bildschirm seitlich einen Systemstreifen, stehen Tasten wie Heute, Verlauf und „Outfit speichern“ in diesem Streifen. Zugeklappt, in einem schmalen Split-View-Fenster oder mit sehr großer Schrift nutzt die App das iPhone-Layout."
+   ]
+  },
+  {
    "q": "Geräte, Sprache und Erscheinungsbild",
    "a": [
-    "TailorColor läuft nur auf dem iPhone mit iOS 17 oder neuer, und der Bildschirm bleibt im Hochformat.",
+    "TailorColor läuft auf dem iPhone mit iOS 17 oder neuer und auf dem iPad mit iPadOS 17 oder neuer. Auf dem iPhone bleibt der Bildschirm im Hochformat, auf dem iPad geht Hoch- und Querformat.",
     "Die App gibt es in 46 Sprachen. Sie startet in der Sprache Ihres Geräts, und unter „Sprache“ im Info-Bildschirm wählen Sie eine andere. Am selben Ort wählen Sie beim Erscheinungsbild System, Hell oder Dunkel."
    ]
   },
   {
    "q": "Konto und wo der Verlauf liegt",
    "a": [
-    "Es gibt kein Konto und keine Anmeldung. Kleidung und Verlauf werden im Speicher der App auf Ihrem iPhone gespeichert und mit der App gelöscht.",
+    "Es gibt kein Konto und keine Anmeldung. Kleidung und Verlauf werden im Speicher der App auf Ihrem iPhone oder iPad gespeichert und mit der App gelöscht.",
     "Einen gespeicherten Tag löschen Sie über „Löschen“ auf seiner Datumskarte in Verlauf, einen Tag nach dem anderen."
    ]
   }
