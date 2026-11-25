@@ -331,6 +331,12 @@ class OtherPagesTest(unittest.TestCase):
         rows = [re.findall(r'href="#([^"]+)"', r) for r in fan.split('<span class="row">')[1:]]
         self.assertEqual(rows, [["demo2"], ["demo3", "demo4"], ["demo"]])
         self.assertNotIn("soon", fan)
+        # 작품 번호도 같은 출시 순서(No. 01 이 가장 먼저 나온 앱), 앱 쪽 번호도 같다
+        self.assertEqual(re.findall(r'<article class="piece" id="([^"]+)">', html), ["demo2", "demo3", "demo4", "demo"])
+        self.assertEqual(render.number(site, "ko", "demo2"), ("01", "04"))
+        self.assertEqual(render.number(site, "ko", "demo"), ("04", "04"))
+        del site.apps[0]["firstRelease"]   # 막 출시로 바꿔 날짜가 아직 없는 앱은 맨 뒤
+        self.assertEqual(render.number(site, "ko", "demo"), ("04", "04"))
 
     def test_canvas_json_cannot_close_its_script(self):
         site = Site(make_site())

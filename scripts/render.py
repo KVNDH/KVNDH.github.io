@@ -168,9 +168,15 @@ def released(app: dict) -> bool:
     return not app.get("unreleased")
 
 
+def release_order(apps: list[dict]) -> list[dict]:
+    """출시 순서(2026-11-25 사용자). site.json 의 firstRelease(App Store 첫 출시일) 순, 같은 날이면 site.json 순서.
+    firstRelease 가 없는 앱(막 출시로 바꾼 앱)은 맨 뒤 번호를 받는다."""
+    return sorted(apps, key=lambda a: a.get("firstRelease") or "9999")
+
+
 def listed(site: Site, lang: str) -> list[dict]:
-    """허브에 원화로 거는 앱(출시됐고 이 언어 문구가 있는 앱). 순서는 site.json 그대로이고 번호도 이 순서다."""
-    return [a for a in site.apps if released(a) and site.app_copy(a["slug"], lang)]
+    """허브에 원화로 거는 앱(출시됐고 이 언어 문구가 있는 앱). 출시 순서이고 번호(No. 01 / 13)와 첫 화면 피라미드도 이 순서다."""
+    return release_order([a for a in site.apps if released(a) and site.app_copy(a["slug"], lang)])
 
 
 def quiet_apps(site: Site) -> list[dict]:
@@ -200,7 +206,7 @@ def hub_footer(site: Site, lang: str) -> str:
     email = site.config["contact"]
     privacy = "".join(
         f'<li><a href="{page_path(lang, app["slug"], "privacy")}">{esc(site.app_copy(app["slug"], lang)["name"])}</a></li>'
-        for app in site.apps if released(app) and site.has_pages(app["slug"], lang)
+        for app in release_order(site.apps) if released(app) and site.has_pages(app["slug"], lang)
     )
     # 10-25 사용자: 앱마다 한 줄씩 세로로 쌓이면 앱이 늘수록 길어진다 → 맨 아래 한 줄 전체를 쓰고 옆으로 흘려 접는다
     # 10-25 M: 머리띠 메뉴와 같은 언어 8개를 바닥에 한 번 더 두지 않는다
@@ -336,13 +342,12 @@ def render_hub(site: Site, lang: str) -> str:
     quiet_html = f'<section class="quiet" aria-hidden="true">{"".join(slots)}</section>' if slots else ""
     # 첫 화면 더미: 출시 순서 피라미드(2026-11-25 사용자). 맨 위 한 줄에 App Store 에 가장 먼저 나온 앱 하나,
     # 아래로 한 줄에 하나씩 늘고 나중에 낸 앱이 아래로 간다. 덜 찬 마지막 줄은 가운데. 출시 전 앱은 넣지 않는다.
-    # 순서는 site.json 의 firstRelease(App Store 첫 출시일), 같은 날이면 site.json 순서
+    # 순서는 listed() 의 출시 순서(작품 번호와 같다)
     # 10-25 O: 더미 아이콘은 그 앱 판(#slug)으로 가는 링크
-    by_release = sorted(apps, key=lambda a: a.get("firstRelease") or "9999")
     fan_imgs = [
         f'<a href="#{esc(a["slug"])}"><img src="{asset(a["slug"], "icon-180.webp")}" '
         f'alt="{esc(site.app_copy(a["slug"], lang)["name"])}" width="72" height="72"></a>'
-        for a in by_release
+        for a in apps
     ]
     rows, k, n = [], 0, 1
     while k < len(fan_imgs):
