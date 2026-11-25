@@ -182,10 +182,18 @@
   "icon": "ColorFit/TailorColor/Resources/Assets.xcassets/AppIcon.appiconset/icon-1024.png",
   "shots": {
    "en": [
-    "ColorFit/docs/store/screenshots/en/1-look.png"
+    "ColorFit/docs/store/screenshots/en/1-today.png",
+    "ColorFit/docs/store/screenshots/en/2-ring.png",
+    "ColorFit/docs/store/screenshots/en/3-record.png",
+    "ColorFit/docs/store/screenshots/en/4-scene.png",
+    "ColorFit/docs/store/screenshots/en/5-zoom.png"
    ],
    "ko": [
-    "ColorFit/docs/store/screenshots/ko/1-look.png"
+    "ColorFit/docs/store/screenshots/ko/1-today.png",
+    "ColorFit/docs/store/screenshots/ko/2-ring.png",
+    "ColorFit/docs/store/screenshots/ko/3-record.png",
+    "ColorFit/docs/store/screenshots/ko/4-scene.png",
+    "ColorFit/docs/store/screenshots/ko/5-zoom.png"
    ]
   }
  },

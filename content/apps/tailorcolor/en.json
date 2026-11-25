@@ -1,176 +1,223 @@
 {
  "name": "TailorColor",
- "subtitle": "A look built color by color",
- "summary": "Dress the mannequin color by color and find a look that holds together.",
+ "subtitle": "Character fits and color picks",
+ "summary": "Dress your character in what you wore and keep one outfit per day on a calendar.",
  "hero": {
-  "hook": "Dress the mannequin color by color and find a look that holds together.",
-  "shotAlt": "The TailorColor home screen. The mannequin wears a navy long-sleeve tee, beige chinos and white sneakers, with slot chips in a row below."
+  "hook": "Dress your character in what you wore, keep one outfit per day on a calendar, and get colors picked for your skin tone.",
+  "shotAlt": "The TailorColor Today tab. In front of the arch stage, the character wears a striped shirt, beige trousers and a crossbody bag. Below are a one-line reason for the colors and the Top, Bottom, Outer, Shoes and Extras tabs."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "Six slots, one color each",
+   "title": "Pick the clothes and dress your character",
    "body": [
-    "Top, bottom, shoes, hat, outer and bag make six slots. Tap one and a sheet opens with garments above and colors below, and what you pick lands on the mannequin right away. Colors come from a set of 24. Neutrals, denim and earth tones carry the base, and accents sit on top of them."
+    "In My character, set the body, skin tone and hairstyle, then put on a top, bottoms, outerwear, shoes and extras. Each piece takes a kind, a color and a pattern, and the pieces you wore lately sit in the first row. There are 13 patterns, from checks and polka dots to leopard."
    ],
    "bullets": [
-    "Six slots: top, bottom, shoes, hat, outer, bag",
-    "24 colors across neutrals, denim, earth and accents",
-    "Hat, outer and bag switch on and off"
+    "3 body types, 6 skin tones, 20 hairstyles",
+    "16 tops, 15 bottoms, 21 outerwear pieces, 22 shoe styles",
+    "Hats, bags, scarves, neckties and more extras"
    ],
    "visual": {
     "type": "crop",
-    "shot": 1,
-    "alt": "A close view of the mannequin's upper body. A camel coat hangs open over a navy long-sleeve tee.",
-    "caption": "Detail from the app"
+    "shot": 4,
+    "alt": "Close-up of the Top tab. Sky Blue is the chosen color. Below are the Recently worn row and a grid of top kinds such as T-shirt, Shirt, Polo, Knit, Sweatshirt and Hoodie.",
+    "caption": "App screen, close-up",
+    "focus": "-400px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "feat",
-   "title": "Flip through them in order",
+   "title": "Tap a piece and matching colors gather around it",
    "body": [
-    "Eleven rules score every combination, and the strongest twelve are laid out in advance. Each tap on Another combination moves one place down that list, and the end wraps around to the start. Only the best look for each pairing of bottom and shoes survives, so what comes up next reads as plainly different. A line above the mannequin says why this one works."
+    "Tap a piece on the character and colors that suit it appear in a ring around it. The one you tap goes on right there. Suggest colors reads your skin tone and personal color, and puts a one-line reason under every suggestion. Colors in Skipped colors stay out, and a piece you Keep stays put while the rest changes."
    ],
    "bullets": [
-    "Eleven rules weighing contrast and color count",
-    "Up to 12 looks, ranked",
-    "Lock holds one color while the rest change"
+    "A color ring around the piece you tap",
+    "Suggest colors, with a reason for each pick",
+    "Skipped colors, Keep and Dress me randomly"
    ],
    "visual": {
-    "type": "kit",
-    "label": "Another combination, Lock and Let TailorColor choose, with eleven rules and up to 12 looks",
-    "items": [
-     {
-      "name": "Another combination",
-      "desc": "Move down the ranked list"
-     },
-     {
-      "name": "Lock",
-      "desc": "Hold the color in that slot",
-      "on": true
-     },
-     {
-      "name": "Let TailorColor choose",
-      "desc": "Hand the slot back to the ranking"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Rules",
-      "value": "Eleven"
-     },
-     {
-      "label": "Looks prepared",
-      "value": "Up to 12",
-      "meter": "ticks",
-      "count": 12,
-      "on": 4
-     }
-    ]
+    "type": "crop",
+    "shot": 2,
+    "alt": "The color ring opened on the shirt. Several color circles and a color wheel button surround the character, with a one-line reason for the colors below.",
+    "caption": "App screen, close-up",
+    "focus": "-60px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "One outfit a day, kept on a calendar",
+   "body": [
+    "Tap Save today's fit and the outfit goes on the Record calendar under that date. Each date card lists what you wore piece by piece, with Similar fits in the same kinds and close colors, and Goes well with this fit. Use Pick a day to fill in past days or plan what to wear, and put pieces and whole fits back on from My closet."
+   ],
+   "bullets": [
+    "A Record calendar with one outfit per day",
+    "Similar fits and Goes well with this fit",
+    "My closet and Show calendar events"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "alt": "The Record card for Sunday, November 22. Beside the character in a camel coat are that day's events and the top, bottom, outer, shoes and bag. Similar fits and Goes well with this fit are below.",
+    "caption": "App screen, close-up",
+    "focus": "-110px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Stand it against a background and look closer",
+   "body": [
+    "Tap anywhere on the character other than the clothes to see it full screen. The standard stage is the Arch, and under Background you can try the Home, the Cafe and a running path under a Han River bridge. The light follows sunrise and sunset where you are, through day, sunset and night. Saving with a background other than the Arch is part of TailorColor Pro."
+   ],
+   "bullets": [
+    "Tap outside the clothes to look closer",
+    "Arch, Home, Cafe and Han River backgrounds",
+    "Day, sunset and night light"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 5,
+    "alt": "The close-up screen. The character stands in front of a cafe with a green awning, in a striped shirt and jeans with a crossbody bag.",
+    "caption": "App screen, close-up",
+    "focus": "-100px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "card",
-   "title": "Take a color from a photo",
+   "title": "46 languages and dark mode",
    "body": [
-    "Photograph a piece you already own, or anything whose color caught your eye, then tap the spot you want. The app reads the color there and swaps in the nearest of the 24. The photo sits on screen while you choose and is not kept in the app."
+    "The app's screens come in 46 languages. It starts in your device language, and you can pick another under Language on the About screen. Appearance can be System, Light or Dark. There is no account or sign-in, and your outfits and records are saved on your iPhone."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
-     "Choose from your photos",
-     "Take one on the spot"
+     "46 languages",
+     "Light and dark appearance",
+     "Saved on your iPhone, no account"
     ]
    }
-  },
-  {
-   "layout": "card",
-   "title": "Keep the ones you like",
-   "body": [
-    "Save this look drops all six slots into Saved. When a single piece is the part worth keeping, put it in the Closet instead. Neither has a limit, so they pile up and stay there. Share this look renders the current outfit at 1080 x 1350 and hands it to the share sheet."
-   ],
-   "bullets": [
-    "Saved holds all six slots together",
-    "Closet holds one garment at a time",
-    "Shared as a 1080 x 1350 image"
-   ]
   }
  ],
+ "pro": {
+  "kick": "TailorColor Pro",
+  "title": "Removes the ads,\nand adds backgrounds and Dress from a photo",
+  "items": [
+   "No banners on Today and Record, and no ad before saving",
+   "Save outfits with the Home, Cafe and Han River backgrounds",
+   "Dress from a photo: the clothes in a photo go on your character",
+   "Try the backgrounds on before you buy",
+   "Family Sharing"
+  ]
+ },
  "faq": [
   {
-   "q": "The six slots and switching them off",
+   "q": "Setting up My character",
    "a": [
-    "Top, bottom and shoes are always on. Hat, outer and bag switch on and off from their slot chips. Switching one off takes it off the mannequin and out of the ranking.",
-    "Tapping a slot opens a sheet. Garments are at the top, colors below. What you pick lands on the mannequin as you tap it."
+    "Open My character with the person button at the top of Today. Choose from three body types, six skin tones, twenty hairstyles and seven hair colors, and add glasses, a beard, hair accessories and blush.",
+    "Your personal color is set in My character too. Suggest colors looks at your skin tone and personal color when it picks."
    ]
   },
   {
-   "q": "The colors you can pick",
+   "q": "Clothes and extras",
    "a": [
-    "There are 24: six neutrals, three denims, five earth tones, navy and nine accents. They are the colors clothes actually come in, fixed in the app, so there is no way to mix your own or enter a hex value.",
-    "A color taken from a photo also resolves to the nearest of the 24."
+    "Pick them from the Top, Bottom, Outer, Shoes and Extras tabs at the bottom of Today. There are 16 tops, 15 bottoms, 21 outerwear pieces and 22 shoe styles, and the extras include hats, bags, scarves and neckties.",
+    "Each tab has a color and a kind to choose, and 13 patterns such as checks, polka dots and leopard. The Recently worn row brings back pieces you put on before."
    ]
   },
   {
-   "q": "How Another combination picks the next one",
+   "q": "The color ring and picking a color",
    "a": [
-    "It is not random. Eleven rules score each combination, the strongest twelve are prepared in advance, and every tap moves one place down that list. The end wraps around to the start.",
-    "Only the best look for each pairing of bottom and shoes is kept, so you never get a run of outfits that differ by one color. Swiping the mannequin left or right walks the same list."
+    "Tap a piece on the character once and colors that suit it appear in a ring around it. Tap a color in the ring to change it right there, and tap outside the ring to close it.",
+    "At the start of each tab's color list are Pick any color and Pick from photo. Use Pick any color for an exact shade, or Pick from photo to take a color from a photo."
    ]
   },
   {
-   "q": "What Lock holds",
+   "q": "Suggest colors and its reasons",
    "a": [
-    "Lock holds the color only. That slot keeps its color while the rest are chosen again around it. The garment itself is a separate choice and stays put either way.",
-    "Tap the same button to release it. Let TailorColor choose hands the slot back to the ranking."
+    "Tap Suggest colors and the character is dressed in colors that reflect your skin tone and personal color, with a one-line reason under the character.",
+    "Colors you put in Skipped colors are left out. A piece you Keep, with the button beside Kind, stays as it is while the rest changes. Dress me randomly puts on clothes and colors at random."
    ]
   },
   {
-   "q": "The line that explains a combination",
+   "q": "Save today's fit and the Record tab",
    "a": [
-    "There are nine of them: dark top with a light bottom, tone on tone, one accent, bag matching the shoes, denim holding it together, and so on. Two or three show up per combination.",
-    "Combinations are named five ways. When there is an accent color the name borrows it, and otherwise the look is called earth tones, denim basics, monotone or basic."
+    "Tap Save today's fit and the outfit goes on the Record calendar. Each date holds one outfit, and saving again on a date that already has one asks before replacing it. Tap the date under the title on Today to open Pick a day, where you can fill in past days or plan what to wear.",
+    "Each date card lists what you wore, piece by piece. Bring to today puts that outfit on again for today, and Delete removes that day. Browse saved fits at the top of Record steps through your saved days, and Look closer shows one outfit full screen."
    ]
   },
   {
-   "q": "Taking a color from a photo",
+   "q": "My closet and Similar fits",
    "a": [
-    "Open the color sheet and choose Pick a color from a photo. Take a photo or choose one, tap the spot you want, and confirm with Use this color when the swatch below looks right.",
-    "Choosing a photo goes through the iOS photo picker, so the app asks for no photo library permission and receives only the one image you picked. Camera permission is asked only when you tap Take a photo."
+    "My closet gathers the pieces and whole fits you have worn, and choosing one puts it back on your character. Open it with the My closet button on Today or the hanger button at the top of Record.",
+    "Under each date card on Record are Similar fits, in the same kinds and close colors, and Goes well with this fit. Tap one of those to try it on."
    ]
   },
   {
-   "q": "Saved and Closet",
+   "q": "Show calendar events",
    "a": [
-    "The Saved screen has two tabs. Looks holds all six slots at once, and tapping one puts that outfit back on the mannequin exactly as it was.",
-    "Closet holds one garment at a time as a garment-and-color pair, which suits pieces you actually own and want to try other colors against. Neither tab has a limit."
+    "Turn on Show calendar events in Record and each date card shows up to two event titles for that day. iOS asks for calendar access when you turn it on.",
+    "The app only reads events. It does not create or change them, and it does not keep the titles it reads."
    ]
   },
   {
-   "q": "Sharing a look",
+   "q": "Backgrounds and light (TailorColor Pro)",
    "a": [
-    "Share this look renders the current outfit at 1080 x 1350 and hands it to the iOS share sheet, where the destination is yours to pick. Saving it to Photos leaves a PNG."
+    "Under Background on Today, choose the Arch, Home, Cafe or Han River. You furnish the Home yourself. The light changes through day, sunset and night: with location allowed it follows sunrise and sunset where you are, and without it the app goes by your device's time zone.",
+    "You can try on any background. Saving today's fit with a background other than the Arch asks for TailorColor Pro, and the same dialog can also save without the background. Days you already saved keep their backgrounds."
    ]
   },
   {
-   "q": "Which garments are available",
+   "q": "Dress from a photo (TailorColor Pro)",
    "a": [
-    "Nine at the moment: two tops, two bottoms, one outer layer, two pairs of shoes, one hat and one bag. Greyed-out entries in the sheet are garments still being prepared.",
-    "Saved looks and the closet stay as they are when new garments arrive."
+    "Take or choose a photo with the camera button at the top of Today, and the app reads the clothes in it to build an outfit for your character. The photo is read on your iPhone with Apple's Vision framework and is not kept.",
+    "Anyone can look over and fix what was read. Putting that outfit on your character is part of TailorColor Pro."
    ]
   },
   {
-   "q": "Device and display",
+   "q": "Where the ads appear",
    "a": [
-    "The app runs on iPhone with iOS 17 or later. iPad is not supported yet, and the screen stays in portrait.",
-    "The interface is always light. Since the whole point is judging color, it keeps one background rather than following the system dark mode."
+    "Google AdMob shows the ads. There is one banner at the bottom of Today and one at the bottom of Record, and a full-screen ad may appear just before saving when you tap Save today's fit.",
+    "The full-screen ad does not appear in the first 3 days after you first open the app, and after that it appears at most once every 24 hours. If the ad does not load, the save goes through anyway. Remove ads above a banner opens the TailorColor Pro purchase screen."
    ]
   },
   {
-   "q": "Internet connection",
+   "q": "TailorColor Pro and restoring the purchase",
    "a": [
-    "Choosing colors, saving and sharing all work with no connection. The app makes no requests of its own. Safari opens only when you tap the support or privacy link on the About screen."
+    "Tap the info button at the top of Today, then the TailorColor Pro row, to open the purchase screen. Pro adds three things: no ads, backgrounds and Dress from a photo. It supports Family Sharing. Everything else works without buying.",
+    "On a new device or after reinstalling, tap Restore Purchases on the About screen or the purchase screen. With the same Apple Account, you won't be charged again."
+   ]
+  },
+  {
+   "q": "Tracking and ad choices",
+   "a": [
+    "The app gets ads ready after the intro screens, and if you have not answered yet, iOS asks then whether TailorColor may track you. If you have TailorColor Pro, it does not ask. The app works the same either way, and you can change your answer in Settings > Privacy & Security > Tracking.",
+    "Where ad consent is required, such as the European Economic Area, Google's consent form appears before the tracking prompt. There, change your choices under Privacy choices on the About screen."
+   ]
+  },
+  {
+   "q": "Reporting an inappropriate ad",
+   "a": [
+    "If you see an ad that is inappropriate or does not fit the app's age rating, send the time you saw it and what it showed to kvndh36@naver.com. Once confirmed, it is blocked in AdMob."
+   ]
+  },
+  {
+   "q": "Devices, language and appearance",
+   "a": [
+    "TailorColor runs on iPhone only, with iOS 17 or later, and the screen stays in portrait.",
+    "The app's screens come in 46 languages. It starts in your device language, and you can pick another under Language on the About screen. Appearance, in the same place, can be System, Light or Dark."
+   ]
+  },
+  {
+   "q": "Account and where records are kept",
+   "a": [
+    "There is no account or sign-in. Your clothes and records are saved in the app's storage on your iPhone and are removed when you delete the app.",
+    "Delete a saved day from its date card on Record, one day at a time."
    ]
   }
  ],

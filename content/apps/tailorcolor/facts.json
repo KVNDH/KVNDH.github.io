@@ -3,8 +3,9 @@
  "purchase": "one-time",
  "ads": true,
  "account": false,
+ "versionNote": "1.0.0 (빌드 8, 앱 저장소 태그 v1.0.0 = v1.0.0-build8 = 695015b) 기준이다. 2026-11-25 ASC READY_FOR_SALE, App Store 앱 ID 6814066446. 소개, 지원, 처리방침 모두 이 판을 설명한다. iPad 와 펼친 화면은 1.0.1 준비 중이라 쓰지 않는다.",
  "privacy": [
-  "2026-11-24: 처리방침만 심사 중인 1.0.0 (빌드 8, 앱 저장소 커밋 8b2ca83)에 맞췄다. 소개 페이지 문구와 아래 products, network, permissions, storage, export 는 2026-09-20 빌드 1 기준 그대로이고 지금 앱과 다르다. 소개 페이지는 출시 때 따로 고친다.",
+  "2026-11-24: 처리방침을 1.0.0 (빌드 8, 앱 저장소 커밋 8b2ca83)에 맞췄다(사이트 d91a3190). 2026-11-25 소개와 지원 페이지도 출시된 1.0.0 (695015b)에 맞췄다.",
   "계정, 서버: 회원가입, 로그인, 자체 서버 없음. 앱 코드에 URLSession, CloudKit 0건. 외부 패키지는 Google Mobile Ads 13.10.0, UMP 3.1.0 둘(project.yml:16-21).",
   "기록: Application Support/TailorColor/fits 의 current.json, fits.json, settings.json(FitStore.swift:32, 41-46). 저장한 날은 FitState(캐릭터, 옷과 소품, 배경)와 날짜, 저장 시각. 기록 탭에서 날짜마다 지운다(RecordView.swift:478-482).",
   "광고: 배너 둘(오늘 탭, 기록 탭), 오늘 핏 저장 직전 전면(project.yml:80-83). 전면은 처음 3일 없음, 그 뒤 24시간에 한 번(AdsModel.swift:37-38). 순서는 UMP 동의, canRequestAds 일 때만 ATT, SDK 시작(AdsModel.swift start, startAfterConsent). Pro 는 배너와 전면 없음(AdsModel.swift:135, 212). 정보 화면의 개인정보 선택은 UMP 가 요구하는 지역만(AboutView.swift:56-57).",
@@ -16,127 +17,64 @@
   "출처: TailorColor 세션 사실 초안 tmp/tailorcolor-100-privacy-2026-11-24/facts.md, 근거 줄은 8b2ca83 에서 다시 열어 확인."
  ],
  "products": [
-  "인앱 구매가 없다. 결제 코드도 StoreKit 도 프로젝트에 없다. 무료 한도라는 개념 자체가 없으므로 Pro 섹션을 두지 않는다."
+  "TailorColor Pro: 비소모성 com.kimdh.TailorColor.pro.lifetime, 가족 공유(ColorFit docs/store/iap.json:3-6). 가격은 사이트에 쓰지 않는다(지역마다 다르고 바뀔 수 있다).",
+  "혜택 셋(TailorColor/Store/ProEntitlement.swift:123-159 ProBenefit, 결제 화면 ProSheet.swift 가 그대로 보인다): 1) 광고 제거, 오늘 탭과 기록 탭 배너와 저장 전 광고(ProEntitlement.swift:150, AdsModel.swift:135-136). 2) 배경, 집(가구 sofa, plant, lamp, mirror), 카페, 한강 다리 밑 달리기 길, 그곳의 낮과 노을과 밤 빛(ProEntitlement.swift:152, Packages/TailorColorCore/Sources/TailorColorCore/Scene.swift:8-10, 17-18). 기본 아치는 무료. 누구나 입혀 보고, 아치 아닌 배경과 함께 저장할 때 Pro 를 묻고 같은 창에서 배경 없이 저장 가능, 저장한 날은 배경 유지(ProEntitlement.swift:162-164, TodayView.swift:145, 158). 3) 사진으로 입히기, 사진 속 옷을 캐릭터에, 기기 안에서 읽고 저장 안 함(ProEntitlement.swift:154). 읽고 고치기는 누구나, 입히기가 Pro('Putting it on comes with TailorColor Pro. Anyone can read and fix the photo.').",
+  "구매 화면 여는 곳: 정보 화면(오늘 탭 위 정보 단추)의 TailorColor Pro 줄, 배너 위 '광고 제거'(ProSheet.swift 머리 주석, AdBanner.swift:48). 구매 복원은 정보 화면과 구매 화면(AboutView.swift:132, ProSheet.swift:153). 그 밖의 기능은 구매 없이(iap.json reviewNote).",
+  "가격 문구 규칙: '무료', '광고 없음'은 Pro 블록, Pro FAQ, 처리방침 밖에서 내세우지 않는다. 한 번 구매, 구독 아님 같은 구매 방식도 내세우지 않는다(ProSheet.swift 머리 주석과 같은 결)."
  ],
- "network": [
-  "네트워크 호출이 한 줄도 없다. URLSession/URLRequest 0건.",
-  "바깥으로 나가는 길은 정보 화면의 지원과 개인정보 처리방침 링크뿐이고, 누르면 Safari 가 kvndh.com 을 연다."
+ "adsDetail": [
+  "Google AdMob. 배너 둘: 오늘 탭 아래, 기록 탭 아래(TailorColor/Ads/AdUnit.swift:14-18). 전면 하나: '오늘 핏 저장' 직전(AdsModel.swift:54-55).",
+  "전면은 이 기기에서 광고 코드가 처음 돈 뒤 3일 없음, 그 뒤 마지막으로 실제로 뜬 전면에서 24시간이 지났을 때만(AdsModel.swift:37-43 InterstitialRule). 못 받아도 저장은 막지 않는다(AdsModel.swift:54-55). 사이트는 '처음 실행한 뒤 3일'로 쓴다(처리방침과 같은 말).",
+  "순서: 첫 실행 화면이 끝난 뒤 UMP, ATT(아직 정하지 않았을 때), SDK 시작. Pro 구매자는 SDK, 동의 창, 추적 허용 창 없음(AdsModel.swift:45-51). EEA 등에서만 정보 화면에 '개인정보 선택'(AboutView.swift:56-57)."
  ],
- "permissions": [
-  "사진 보관함: PhotosPicker(PHPicker)를 쓴다. 시스템이 따로 띄우는 화면이라 사진 접근 권한을 요청하지 않는다. 앱은 고른 사진 한 장만 받는다.",
-  "카메라: 사진 찍기를 누를 때만 묻는다. NSCameraUsageDescription 은 'Take a photo to pick a color from it.' / '사진에서 색을 따려고 카메라를 씁니다.'",
-  "받은 사진은 메모리에서만 쓴다. 긴 변 1600px 로 줄여 보여 주고, 누른 자리의 3x3 픽셀 평균색을 읽는다. 저장하지 않고 내보내지 않는다."
+ "features": [
+  "스토어 설명 1.0.0(ColorFit docs/store/metadata.json ko, en-US description)과 같은 기능만 쓴다.",
+  "내 캐릭터(오늘 탭 위 사람 단추, TodayView.swift:253, CharacterSheet 675): 체형 3, 피부색 6(Avatar.swift:75 skins), 머리 모양 20(Avatar.swift:3-6), 머리 색 7(Avatar.swift:76), 안경, 수염, 머리 소품, 볼터치, 퍼스널 컬러(EditorPanels.swift:177-180).",
+  "옷: 상의 16(Pieces.swift:29-31 TopKind), 하의 15(59-61 BottomKind), 아우터 21(76-78 OuterKind 에서 none 뺌), 신발 22(112-117 ShoeKind), 무늬 13(Pieces.swift:6-8 Pattern 에서 none 뺌). 소품은 모자, 가방, 머플러, 넥타이 등.",
+  "색 고리: 옷을 한 번 누르면 그 옷의 색 고리, 옷이 아닌 곳(얼굴, 배경)을 누르면 크게 보기, 고리 밖을 누르면 고리만 닫힘(TodayView.swift:322-333). 색 목록 맨 앞에 '직접 고르기', '사진에서 고르기'(EditorPanels.swift:1097-1131).",
+  "배색 추천: 피부톤과 퍼스널 컬러 반영, 추천마다 이유 한 줄, '안 입는 색' 제외, '고정' 유지, '아무거나 입히기'(TodayView.swift:435-468, 스토어 설명).",
+  "기록: '오늘 핏 저장', 날짜마다 한 벌, 이미 저장한 날은 바꿀지 묻는다(TodayView.swift:531 'Replace the fit saved for ...?'). 제목 아래 날짜를 누르면 '날짜 고르기'(TodayView.swift:220, DayViews.swift:60). 날짜 카드의 '오늘로 가져오기', '지우기', 기록 탭 위 '저장한 핏 훑어보기'와 '내 옷장'(RecordView.swift:118-137), '크게 보기'(RecordView.swift:199). '비슷한 착장'(같은 종류, 비슷한 색), '이 핏에 어울리는 것'(누르면 입혀 봅니다), '캘린더 일정 보기'(RecordView.swift:395, 일정 제목 두 개까지).",
+  "정보 화면: 화면 모드(시스템, 라이트, 다크), 언어(시스템과 46개 언어), TailorColor Pro, 구매 복원, 지원, 개인정보 처리방침(AboutView.swift:42-60, 151-173)."
  ],
- "storage": [
-  "Application Support/TailorColor/looks.json: 저장한 배색. 항목마다 UUID, 부위별 (옷 id, 색 id), 저장 시각.",
-  "Application Support/TailorColor/closet.json: 옷장. UUID, 부위, 옷 id, 색 id, 저장 시각.",
-  "UserDefaults: 온보딩을 봤는지 여부(onboardingVersion) 하나뿐.",
-  "개수 상한이 없다. 저장한 배색과 옷장 모두 제한 없이 쌓인다.",
-  "앱을 지우면 함께 지워진다."
- ],
- "slots": [
-  "여섯 자리다: 상의, 하의, 신발, 모자, 아우터, 가방.",
-  "상의, 하의, 신발은 늘 켜져 있고 모자, 아우터, 가방은 켜고 끈다."
- ],
- "garments": [
-  "레이어가 있는 옷은 9벌이다. 상의 2(긴팔 티셔츠, 후드티), 하의 2(와이드 치노, 스트레이트 치노), 아우터 1(코트), 신발 2(스니커즈, 로퍼), 모자 1(볼캡), 가방 1(크로스백).",
-  "카탈로그에는 29벌이 적혀 있지만 나머지 20벌은 레이어 이미지가 없어 '준비 중'으로 막혀 있다. 문구에 29 를 쓰지 않는다."
- ],
- "palette": [
-  "24색 고정 팔레트다. hex 가 코드에 박혀 있고 계산으로 뽑지 않는다.",
-  "무채 6: Black #1f1f21, Charcoal #3b3c3f, Gray #86878a, Light Gray #c4c4c1, Ivory #ebe5d7, White #f4f3ef",
-  "데님 3: Raw Denim #27354f, Mid Denim #4d6788, Light Denim #9fb3c9",
-  "어스 5: Beige #cbb795, Khaki #8b8465, Olive #5b5f43, Brown #5f4331, Camel #ad8253",
-  "기본 1: Navy #232f47",
-  "포인트 9: Washed Blue #4f6f8f, Pigment Green #3d5642, Sage #9ba88f, Sky Blue #a8c0d6, Burgundy #672b33, Mustard #c29a3c, Dusty Pink #d2a8a2, Red #a4332d, Lavender #b3aac9",
-  "팔레트 밖 색은 쓸 수 없다. 직접 hex 를 넣는 길이 없다.",
-  "사진에서 딴 색도 OKLab 거리로 가장 가까운 팔레트 색으로 바뀐다. 그게 전부다."
- ],
- "scoring": [
-  "규칙은 열하나다. 정본은 목업 JS 이고 Swift 는 골든 파일로 묶여 있다.",
-  "1. 상하의 밝기 대비: OKLab L 차가 25 이상이면 크게, 12 이상이면 조금 올린다. 비슷하면서 계열도 다르면 깎는다.",
-  "2. 포인트 색 개수: 한 곳이면 올리고, 둘 이상이면 개수만큼 깎는다.",
-  "3. 신발: 무채색이나 어스 톤이면 올리고 아니면 깎는다.",
-  "4. 가방과 신발이 같은 색이면 올린다.",
-  "5. 모자가 가방, 신발, 하의 가운데 하나와 같은 색이면 조금 올린다.",
-  "6. 하의가 데님이면 올린다.",
-  "7. 상하의가 모두 데님이면 깎는다. 밝기 차가 작을수록 더 깎는다.",
-  "8. 아우터: 포인트 색이 아니면 올리고, 상하의와 같은 색이면 깎고, 상의와 같은 계열이면 올린다.",
-  "9. 어스 톤이 둘 이상이고 포인트도 어스 계열뿐이면 올린다.",
-  "10. 같은 색을 네 곳 넘게 쓰면 깎는다.",
-  "11. 쓴 색 수: 3색 이하면 크게, 4색이면 조금 올리고, 5색부터 깎는다."
- ],
- "suggestions": [
-  "무작위가 아니다. 점수 순위대로 최대 12개를 미리 뽑아 두고 차례로 넘어가며, 끝에서 처음으로 돌아온다.",
-  "(하의, 신발) 짝마다 가장 좋은 하나만 남겨서 눈에 띄게 다른 것만 나온다.",
-  "마네킹을 좌우로 밀어도 같은 목록을 앞뒤로 오간다.",
-  "화면에 뜨는 이유는 9종이고 한 조합에 두셋이 붙는다.",
-  "조합 이름은 5종이다: %@ accent(%@ 포인트), Earth tones(어스 톤), Denim basics(데님 베이직), Monotone(모노톤), Basic(베이직)."
- ],
- "lock": [
-  "고정은 색만 붙잡는다. 옷 종류는 따로 고르는 값이고 잠금과 무관하다."
- ],
- "export": [
-  "내보내는 그림은 1080 x 1350(4:5)이다. 배경은 앱의 종이색이고 여백은 12%.",
-  "시스템 공유 시트에 이미지로 넘긴다. 저장하면 PNG 가 된다. 앱이 어디로도 올리지 않는다."
+ "notOffered": [
+  "빌드 1(2026-09-20) 문구에서 걷어 낸 것: '광고 없음', '인앱 구매 없음'(1.0.0 은 광고와 Pro 가 있다), '코디 공유'(ShareLink, UIActivityViewController 0건), '저장함'과 배색/옷장 두 칸(지금 이름은 '기록' 탭과 '내 옷장'), 마네킹, 여섯 자리, 24색 고정 팔레트, 11가지 규칙과 최대 12벌, 1080 x 1350 그림. 사이트에 다시 쓰지 않는다.",
+  "1.0.1 준비 중(iPad, 펼친 iPhone 넓은 화면)은 출시 전이라 쓰지 않는다."
  ],
  "platform": [
-  "최소 iOS 17.0.",
-  "TARGETED_DEVICE_FAMILY 1. 아이폰 전용이고 아이패드를 지원하지 않는다.",
-  "세로 고정. 가로 모드가 없다.",
-  "UIUserInterfaceStyle Light. 색을 보는 앱이라 화면 색을 고정했고 다크 모드를 지원하지 않는다."
+  "iPhone 전용(project.yml:162 TARGETED_DEVICE_FAMILY \"1\"), iOS 17.0 이상(project.yml:5-6), 세로 고정(project.yml:70 UISupportedInterfaceOrientations Portrait), 다크 모드 지원(정보 화면 화면 모드).",
+  "앱 화면 46개 언어(v1.0.0 TailorColor/Resources/Localizable.xcstrings 의 언어 46개, 영어 포함). 스토어 문안은 ko 와 en-US 둘."
  ],
- "uiNames": {
-  "Another combination": "다른 조합",
-  "Save this look": "배색 저장",
-  "Share this look": "코디 공유",
-  "Keep in closet": "옷장에 저장",
-  "Saved": "저장함",
-  "Looks": "배색",
-  "Closet": "옷장",
-  "Pick a color from a photo": "사진에서 색 따오기",
-  "Pick a color": "색 따오기",
-  "Take a photo": "사진 찍기",
-  "Choose a photo": "사진 고르기",
-  "Use this color": "이 색으로",
-  "Let TailorColor choose": "자동으로 고르기",
-  "From the photo": "사진에서 딴 색",
-  "About": "정보",
-  "Support": "지원",
-  "Privacy Policy": "개인정보 처리방침",
-  "Top": "상의",
-  "Bottom": "하의",
-  "Shoes": "신발",
-  "Hat": "모자",
-  "Outer": "아우터",
-  "Bag": "가방"
- },
- "reasons": {
-  "Dark top, light bottom": "진한 상의에 밝은 하의",
-  "Light top, dark bottom": "밝은 상의에 진한 하의",
-  "Tone on tone": "비슷한 색끼리 톤온톤",
-  "One accent: %@": "포인트는 %@ 하나",
-  "Bag matches the shoes": "가방과 신발을 같은 색으로",
-  "Denim holds it together": "데님이 받쳐 줍니다",
-  "Outer echoes the top": "아우터와 상의를 같은 계열로",
-  "Earth tones throughout": "어스 톤으로 묶었습니다",
-  "Three colors or fewer": "3색 이내"
- },
+ "uiNames": [
+  "사이트 여덟 언어는 그 언어 앱 화면 글자(v1.0.0 Localizable.xcstrings)를 쓴다. 앱이 ja, zh-Hans, zh-Hant, de, es, pt-BR 를 지원하므로 영어 인용을 두지 않는다.",
+  "ko: 오늘 핏 저장, 기록, 오늘, 배색 추천, 안 입는 색, 고정, 아무거나 입히기, 사진에서 고르기, 직접 고르기, 저장한 핏 훑어보기, 크게 보기, 날짜 고르기, 내 옷장, 비슷한 착장, 이 핏에 어울리는 것, 캘린더 일정 보기, 내 캐릭터, 사진으로 입히기, 광고 제거, 구매 복원, 개인정보 선택, 정보, 오늘로 가져오기, 지우기, 배경, 집, 카페, 한강 다리 밑, 아치, 화면 모드, 언어.",
+  "en: Save today's fit, Record, Today, Suggest colors, Skipped colors, Keep, Dress me randomly, Pick from photo, Pick any color, Browse saved fits, Look closer, Pick a day, My closet, Similar fits, Goes well with this fit, Show calendar events, My character, Dress from a photo, Remove ads, Restore Purchases, Privacy choices, About, Bring to today, Delete, Background, Home, Cafe, Han River, Arch, Appearance, Language.",
+  "그림 설명(alt)의 화면 글자: ko 페이지는 ko 그림, 나머지 일곱 언어는 en 그림이라 첫 절 그림 설명은 en 화면 글자(Sky Blue, Recently worn, T-shirt 등)를 그대로 인용했다."
+ ],
+ "shots": [
+  "출처: ColorFit docs/store/screenshots/{ko,en}/1-today, 2-ring, 3-record, 4-scene, 5-zoom.png (1320x2868, v1.0.0 과 같은 파일). import_assets.py 가 -strip 해 660px webp 로(RIFF 청크 VP8 하나, EXIF, XMP, ICC 없음 확인). 그 언어 그림이 없는 여섯 언어는 shot_path 가 en 을 쓴다.",
+  "첫 화면 원화 셋 = 01~03. 절 그림: 1절 04(상의 종류 격자, focus -560px), 2절 02(색 고리), 3절 03(기록 카드), 4절 05(카페 배경 크게 보기)."
+ ],
  "numbers": [
-  "1", "2", "3", "4", "5", "6", "9", "11", "12", "17", "24", "1080", "1350"
+  "1",
+  "2",
+  "3",
+  "6",
+  "7",
+  "11",
+  "13",
+  "15",
+  "16",
+  "17",
+  "20",
+  "21",
+  "22",
+  "24",
+  "46"
  ],
- "versionNote": "1.0.0 (빌드 1) 기준이다. 출시 전이라 App Store 에 레코드가 없다. 사이트 등록은 ASC 앱 ID 가 생긴 뒤에 한다.",
- "note": [
-  "버튼과 탭 이름은 여덟 언어 모두 영어로 둔다. 앱이 en/ko 만 지원하므로 다른 언어 기기에서는 iOS 가 영어 화면을 보여 주기 때문이다. 앱에 그 언어가 추가되면 그 로케일 문구의 버튼 이름을 함께 바꾼다.",
-  "부위 이름(상의, 하의, 신발, 모자, 아우터, 가방)과 색 계열은 버튼이 아니라 일반 명사로 보고 각 언어로 풀어 썼다.",
-  "지금 그 자리에 있는 옷이 볼캡과 코트 하나씩뿐이라, 몇몇 언어가 부위 이름을 그 옷에 맞춰 좁게 적었다. **옷이 늘면 이 단어들을 다시 봐야 한다.** de 는 모자를 Kappe, 아우터를 Mantel 로 적었고(넓히려면 Kopfbedeckung, Überbekleidung), es 는 모자를 gorra 로 적었다(넓히려면 sombrero).",
-  "옷이 9벌에서 늘어나면 ko/en 의 '쓸 수 있는 옷' FAQ 와 여덟 언어의 같은 항목을 한 작업에서 고친다."
- ],
+ "numbersNote": "소개 문구의 숫자: 체형 3, 피부색 6, 머리 모양 20, 머리 색 7, 상의 16, 하의 15, 아우터 21, 신발 22, 무늬 13, 언어 46, 하루 1. 24 와 3 은 광고 간격(24시간, 3일), 17 은 iOS 17. 11 과 22 는 기록 카드 그림 설명의 날짜(11월 22일).",
  "sources": [
-  "TailorColor 세션이 코드에서 읽어 보낸 확인분 (2026-09-20, 커밋 bd24e85)",
-  "String Catalog: TailorColor/Resources/Localizable.xcstrings (en 이 소스 언어)",
-  "PrivacyInfo.xcprivacy: NSPrivacyTracking false, 수집 데이터 유형 없음, Required Reason API 는 UserDefaults(CA92.1) 하나",
-  "ASC 개인정보 설문 답: 데이터를 수집하지 않음(Data Not Collected)",
-  "스크린샷: docs/store/screenshots/{en,ko}/1-look, 2-outer, 3-colors, 4-saved (1320x2868), extra/onboarding-1~3, all-slots"
+  "TailorColor 세션 사실 초안 tmp/tailorcolor-100-site-2026-11-25/facts.md, 근거 줄은 ColorFit 태그 v1.0.0 (695015b)에서 git show 로 다시 열어 확인(2026-11-25).",
+  "처리방침 근거: tmp/tailorcolor-100-privacy-2026-11-24/facts.md, 앱 커밋 8b2ca83(사이트 d91a3190).",
+  "그 전(빌드 1) 근거: 2026-09-20 커밋 bd24e85. 지금 앱과 다르다."
  ]
 }

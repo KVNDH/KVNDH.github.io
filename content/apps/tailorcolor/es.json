@@ -1,176 +1,223 @@
 {
  "name": "TailorColor",
- "subtitle": "Un look montado color a color",
- "summary": "Viste al maniquí color a color hasta dar con un conjunto que combine.",
+ "subtitle": "Looks de tu personaje y colores sugeridos",
+ "summary": "Viste a tu personaje con lo que llevaste ese día y guarda un look por día en un calendario.",
  "hero": {
-  "hook": "Viste al maniquí color a color hasta dar con un conjunto que combine.",
-  "shotAlt": "La pantalla de inicio de TailorColor. El maniquí lleva una camiseta de manga larga azul marino, chinos beige y zapatillas blancas, y debajo están en fila los botones de cada zona."
+  "hook": "Viste a tu personaje con lo que llevaste ese día, guarda un look por día en un calendario y recibe colores elegidos para tu tono de piel.",
+  "shotAlt": "La pestaña Hoy de TailorColor. Delante del escenario del arco, el personaje lleva una camisa de rayas, un pantalón beige y un bolso bandolera. Debajo hay una línea con el motivo de los colores y las pestañas Arriba, Abajo, Exterior, Calzado y Complementos."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "Seis zonas, un color en cada una",
+   "title": "Elige la ropa y viste a tu personaje",
    "body": [
-    "Parte de arriba, parte de abajo, calzado, gorra, abrigo y bolso: seis zonas en total. Toca una y se abre un panel con las prendas arriba y los colores abajo, y lo que eliges aparece puesto en el maniquí al momento. Los colores salen de una gama de 24. Los neutros, los azules vaqueros y los tonos tierra forman la base, y los colores de acento van por encima."
+    "En Mi personaje defines la complexión, el tono de piel y el peinado, y luego le pones parte de arriba, parte de abajo, prenda exterior, calzado y complementos. Cada prenda tiene tipo, color y estampado, y lo que llevaste hace poco aparece en la primera fila. Hay 13 estampados, de cuadros y lunares a leopardo."
    ],
    "bullets": [
-    "Seis zonas: arriba, abajo, calzado, gorra, abrigo, bolso",
-    "24 colores: neutros, vaqueros, tonos tierra y acentos",
-    "Gorra, abrigo y bolso se ponen y se quitan"
+    "3 complexiones, 6 tonos de piel, 20 peinados",
+    "16 partes de arriba, 15 de abajo, 21 prendas exteriores, 22 tipos de calzado",
+    "Gorros, bolsos, bufandas, corbatas y más complementos"
    ],
    "visual": {
     "type": "crop",
-    "shot": 1,
-    "alt": "Vista ampliada de la parte superior del maniquí. Un abrigo camel abierto cae sobre una camiseta de manga larga azul marino.",
-    "caption": "Pantalla de la app, ampliada"
+    "shot": 4,
+    "alt": "Detalle de la pestaña de la parte de arriba. El color elegido es Sky Blue. Debajo están la fila Recently worn y una cuadrícula de tipos como T-shirt, Shirt, Polo, Knit, Sweatshirt y Hoodie.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-400px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "feat",
-   "title": "Una combinación tras otra, por orden",
+   "title": "Toca una prenda y los colores que combinan la rodean",
    "body": [
-    "Once reglas puntúan cada combinación, y la app prepara de antemano hasta doce, de mayor a menor puntuación. Cada toque en Another combination (otra combinación) baja un puesto en esa lista, y al llegar al final vuelve al principio. Para cada pareja de parte de abajo y calzado solo se conserva la mejor combinación, así que cada conjunto nuevo se ve claramente distinto del anterior. Encima del maniquí, una línea explica por qué ese conjunto funciona."
+    "Toca una prenda del personaje y los colores que le van aparecen en un anillo a su alrededor; el que tocas se aplica en el momento. Sugerir colores tiene en cuenta tu tono de piel y tu colorimetría, y añade una línea con el motivo de cada sugerencia. Los colores descartados quedan fuera, y una prenda fijada se queda como está mientras cambia el resto."
    ],
    "bullets": [
-    "Once reglas que valoran contraste y número de colores",
-    "Hasta 12 conjuntos, por orden",
-    "Lock fija un color mientras cambia el resto"
+    "Un anillo de colores alrededor de la prenda",
+    "Sugerir colores, con el motivo de cada elección",
+    "Colores descartados, Fijar y Vestir al azar"
    ],
    "visual": {
-    "type": "kit",
-    "label": "Another combination, Lock y Let TailorColor choose, con once reglas y hasta 12 conjuntos",
-    "items": [
-     {
-      "name": "Another combination",
-      "desc": "Pasa al siguiente puesto"
-     },
-     {
-      "name": "Lock",
-      "desc": "Fija el color de esa zona",
-      "on": true
-     },
-     {
-      "name": "Let TailorColor choose",
-      "desc": "Devuelve la zona a las sugerencias"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Reglas",
-      "value": "Once"
-     },
-     {
-      "label": "Conjuntos preparados",
-      "value": "Hasta 12",
-      "meter": "ticks",
-      "count": 12,
-      "on": 4
-     }
-    ]
+    "type": "crop",
+    "shot": 2,
+    "alt": "El anillo de colores abierto sobre la camisa. Varios círculos de color y un botón de rueda de color rodean al personaje, y debajo hay una línea con el motivo de los colores.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-60px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Un look al día, guardado en un calendario",
+   "body": [
+    "Toca Guardar look de hoy y el look queda en el calendario de Registro bajo esa fecha. Cada tarjeta de fecha detalla lo que llevaste prenda por prenda, junto con Looks parecidos en los mismos tipos y colores cercanos y Combina con este look. Con Elegir un día completas días pasados o planeas qué ponerte, y desde Mi armario vuelves a poner prendas y looks completos que ya llevaste."
+   ],
+   "bullets": [
+    "Un calendario de Registro con un look por día",
+    "Looks parecidos y Combina con este look",
+    "Mi armario y Mostrar eventos del calendario"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "alt": "La tarjeta de Registro del 22 de noviembre. Junto al personaje con abrigo camel aparecen los eventos del día y la parte de arriba, la de abajo, la prenda exterior, el calzado y el bolso. Debajo están los looks parecidos y lo que combina con este look.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-110px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Ponlo delante de un fondo y míralo de cerca",
+   "body": [
+    "Toca el personaje fuera de la ropa para verlo a pantalla completa. El escenario estándar es el arco, y en Fondo puedes probar la casa, la cafetería y una pista para correr bajo un puente del río Han. La luz sigue el amanecer y el atardecer de donde estás, entre día, atardecer y noche. Guardar con un fondo distinto del arco forma parte de TailorColor Pro."
+   ],
+   "bullets": [
+    "Toca fuera de la ropa para ampliar",
+    "Fondos de arco, casa, cafetería y río Han",
+    "Luz de día, de atardecer y de noche"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 5,
+    "alt": "La vista ampliada. El personaje está delante de una cafetería con toldo verde, con camisa de rayas, vaqueros y bolso bandolera.",
+    "caption": "Pantalla de la app, ampliada",
+    "focus": "-100px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "card",
-   "title": "Toma el color de una foto",
+   "title": "46 idiomas y modo oscuro",
    "body": [
-    "Haz una foto de una prenda que ya tengas, o de cualquier cosa cuyo color te haya llamado la atención, y toca el punto que quieras. La app lee el color de ese punto y viste la zona con el más cercano de los 24. La foto está en pantalla mientras eliges y no se guarda en la app."
+    "La app está en 46 idiomas. Empieza en el idioma del dispositivo, y puedes elegir otro en Idioma, dentro de la pantalla Acerca de. En Aspecto eliges Sistema, Claro u Oscuro. No hay cuenta ni inicio de sesión, y la ropa y el registro se guardan en tu iPhone."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
-     "Elegir de tus fotos",
-     "Hacer una en el momento"
+     "46 idiomas",
+     "Aspecto claro y oscuro",
+     "Guardado en tu iPhone, sin cuenta"
     ]
    }
-  },
-  {
-   "layout": "card",
-   "title": "Guarda los looks que te convencen",
-   "body": [
-    "Save this look manda las seis zonas juntas a Saved (guardados). Cuando lo que quieres conservar es una sola prenda, guárdala en Closet (armario). No hay límite de cantidad, así que puedes ir acumulando y recuperarlos cuando quieras. Share this look convierte el conjunto actual en una imagen de 1080 x 1350 y la pasa al menú Compartir."
-   ],
-   "bullets": [
-    "Saved guarda las seis zonas juntas",
-    "Closet guarda las prendas de una en una",
-    "Se comparte como imagen de 1080 x 1350"
-   ]
   }
  ],
+ "pro": {
+  "kick": "TailorColor Pro",
+  "title": "Quita los anuncios\ny añade fondos y Vestir a partir de una foto",
+  "items": [
+   "Sin banners en Hoy y Registro, y sin anuncio antes de guardar",
+   "Guarda looks con los fondos de casa, cafetería y río Han",
+   "Vestir a partir de una foto: la ropa de una foto, en tu personaje",
+   "Prueba los fondos antes de comprar",
+   "Compatible con En familia"
+  ]
+ },
  "faq": [
   {
-   "q": "Activar y desactivar las seis zonas",
+   "q": "Configurar Mi personaje",
    "a": [
-    "La parte de arriba, la de abajo y el calzado están siempre activos. La gorra, el abrigo y el bolso se activan y desactivan desde sus botones de zona. Al desactivar una zona, desaparece del maniquí y queda fuera de las sugerencias.",
-    "Al tocar una zona se abre un panel. Arriba están las prendas y abajo los colores. Lo que eliges aparece puesto en el maniquí en cuanto lo tocas."
+    "Abre Mi personaje con el botón de persona de la parte superior de Hoy. Elige entre tres complexiones, seis tonos de piel, veinte peinados y siete colores de pelo, y añade gafas, barba, accesorios para el pelo y colorete.",
+    "Tu colorimetría también se elige en Mi personaje. Sugerir colores tiene en cuenta tu tono de piel y tu colorimetría al elegir."
    ]
   },
   {
-   "q": "Los colores disponibles",
+   "q": "Ropa y complementos",
    "a": [
-    "Hay 24: seis neutros, tres azules vaqueros, cinco tonos tierra, el azul marino y nueve colores de acento. Es una selección fija de los colores más habituales en la ropa, así que no se puede crear un color propio ni introducir un valor hex.",
-    "Un color sacado de una foto también se convierte en el más cercano de los 24."
+    "Se eligen en las pestañas Arriba, Abajo, Exterior, Calzado y Complementos de la parte inferior de Hoy. Hay 16 partes de arriba, 15 de abajo, 21 prendas exteriores y 22 tipos de calzado, y entre los complementos hay gorros, bolsos, bufandas y corbatas.",
+    "En cada pestaña eliges color y tipo, y uno de 13 estampados como cuadros, lunares o leopardo. La fila Llevado hace poco recupera prendas que ya pusiste."
    ]
   },
   {
-   "q": "Cómo elige Another combination el siguiente conjunto",
+   "q": "El anillo de colores y cómo elegir color",
    "a": [
-    "No es al azar. Once reglas puntúan cada combinación, la app prepara de antemano hasta 12 de mayor a menor puntuación y cada toque baja un puesto en esa lista. Al llegar al final, vuelve al principio.",
-    "Para cada pareja de parte de abajo y calzado solo se conserva la mejor combinación, de modo que no salen seguidos conjuntos que solo cambian en un color. Deslizar el maniquí a izquierda o derecha recorre la misma lista hacia delante o hacia atrás."
+    "Toca una vez una prenda del personaje y los colores que le van aparecen en un anillo a su alrededor. Toca un color del anillo para cambiarlo en el momento, y toca fuera del anillo para cerrarlo.",
+    "Al principio de la lista de colores de cada pestaña están Elegir cualquier color y Elegir de una foto. Usa Elegir cualquier color para un tono exacto, o Elegir de una foto para tomar un color de una foto."
    ]
   },
   {
-   "q": "Qué fija Lock",
+   "q": "Sugerir colores y sus motivos",
    "a": [
-    "Lock fija solo el color. Esa zona conserva su color mientras el resto se vuelve a elegir a su alrededor. La prenda es una elección aparte y se queda como está, con Lock o sin él.",
-    "Para soltarlo, toca el mismo botón otra vez. Let TailorColor choose devuelve la zona a las sugerencias."
+    "Toca Sugerir colores y el personaje se viste con colores que tienen en cuenta tu tono de piel y tu colorimetría, con una línea debajo que explica el motivo.",
+    "Los colores que pongas en Colores descartados quedan fuera. Una prenda que fijes con Fijar, junto a Tipo, se queda como está mientras cambia el resto. Vestir al azar pone ropa y colores al azar."
    ]
   },
   {
-   "q": "La línea que explica cada combinación",
+   "q": "Guardar look de hoy y la pestaña Registro",
    "a": [
-    "Hay nueve, como parte de arriba oscura con parte de abajo clara, tono sobre tono, un solo color de acento, bolso a juego con el calzado o el vaquero como base. Cada combinación lleva dos o tres.",
-    "Las combinaciones tienen cinco nombres. Si hay un color de acento, el nombre sale de ese color; si no, el conjunto se llama Earth tones, Denim basics, Monotone o Basic."
+    "Toca Guardar look de hoy y el look queda en el calendario de Registro. Cada fecha guarda un look, y si vuelves a guardar en una fecha que ya tiene uno, la app pregunta antes de reemplazarlo. Toca la fecha bajo el título de Hoy para abrir Elegir un día, donde completas días pasados o planeas qué ponerte.",
+    "Cada tarjeta de fecha detalla lo que llevaste prenda por prenda. Pasar a hoy vuelve a poner ese look para hoy, y Eliminar borra ese día. Con Ver looks guardados, arriba en Registro, recorres los días guardados, y Ampliar muestra un look a pantalla completa."
    ]
   },
   {
-   "q": "Tomar un color de una foto",
+   "q": "Mi armario y Looks parecidos",
    "a": [
-    "Abre el panel de colores y elige Pick a color from a photo. Haz una foto o elige una, toca el punto que quieras y, cuando la muestra de abajo te convenza, confirma con Use this color.",
-    "Para elegir una foto se usa el selector de fotos de iOS, así que la app no pide acceso a la fototeca y solo recibe la imagen que eliges. El permiso de la cámara solo se pide cuando tocas Take a photo."
+    "Mi armario reúne las prendas y los looks completos que llevaste, y al elegir uno se lo vuelve a poner al personaje. Ábrelo con el botón Mi armario de Hoy o con el botón de percha de la parte superior de Registro.",
+    "Bajo cada tarjeta de fecha de Registro aparecen Looks parecidos, en los mismos tipos y colores cercanos, y Combina con este look. Toca uno para probárselo al personaje."
    ]
   },
   {
-   "q": "Saved y Closet",
+   "q": "Mostrar eventos del calendario",
    "a": [
-    "La pantalla Saved tiene dos pestañas. Looks guarda las seis zonas a la vez, y al tocar un look, ese conjunto vuelve al maniquí tal como estaba.",
-    "Closet guarda las prendas de una en una, cada una con su color, lo que va bien para las piezas que de verdad tienes y quieres probar con otros colores. Ninguna de las dos pestañas tiene límite."
+    "Activa Mostrar eventos del calendario en Registro y cada tarjeta de fecha muestra hasta dos títulos de eventos de ese día. Al activarlo, iOS pide acceso al calendario.",
+    "La app solo lee los eventos. No los crea ni los cambia, y no guarda los títulos que lee."
    ]
   },
   {
-   "q": "Compartir un look",
+   "q": "Fondos y luz (TailorColor Pro)",
    "a": [
-    "Share this look convierte el conjunto actual en una imagen de 1080 x 1350 y la pasa al menú Compartir de iOS, donde eliges a dónde enviarla. Si la guardas en Fotos, queda como PNG."
+    "En Fondo, dentro de Hoy, eliges Arco, Casa, Cafetería o Río Han. La casa la amueblas tú. La luz cambia entre día, atardecer y noche: con la ubicación permitida sigue el amanecer y el atardecer de donde estás, y sin ella se guía por la zona horaria del dispositivo.",
+    "Puedes probar cualquier fondo. Si guardas el look de hoy con un fondo distinto del arco, la app pregunta por TailorColor Pro, y en el mismo cuadro también puedes guardar sin el fondo. Los días ya guardados conservan su fondo."
    ]
   },
   {
-   "q": "Qué prendas hay",
+   "q": "Vestir a partir de una foto (TailorColor Pro)",
    "a": [
-    "Por ahora, nueve: dos partes de arriba, dos de abajo, un abrigo, dos pares de zapatos, una gorra y un bolso. Las opciones en gris del panel son prendas que todavía se están preparando.",
-    "Los looks guardados y Closet se quedan como están cuando llegan prendas nuevas."
+    "Haz o elige una foto con el botón de cámara de la parte superior de Hoy, y la app lee la ropa que aparece para armar un look para tu personaje. La foto se lee en tu iPhone con el framework Vision de Apple y no se guarda.",
+    "Cualquiera puede revisar y corregir lo que se leyó. Ponerle ese look al personaje forma parte de TailorColor Pro."
    ]
   },
   {
-   "q": "Dispositivo y pantalla",
+   "q": "Dónde aparecen los anuncios",
    "a": [
-    "La app funciona en iPhone con iOS 17 o posterior. Todavía no es compatible con iPad, y la pantalla se mantiene en vertical.",
-    "La interfaz es siempre clara. Como es una app para elegir colores a ojo, no sigue el modo oscuro del sistema y compara los colores siempre sobre el mismo fondo."
+    "Los anuncios los muestra Google AdMob. Hay un banner en la parte inferior de Hoy y otro en la de Registro, y al tocar Guardar look de hoy puede aparecer un anuncio a pantalla completa justo antes de guardar.",
+    "El anuncio a pantalla completa no aparece en los primeros 3 días después de abrir la app por primera vez, y después aparece como mucho una vez cada 24 horas. Si el anuncio no carga, se guarda igualmente. Quitar anuncios, encima de un banner, abre la pantalla de compra de TailorColor Pro."
    ]
   },
   {
-   "q": "Conexión a internet",
+   "q": "TailorColor Pro y restaurar compras",
    "a": [
-    "Elegir colores, guardar y compartir funcionan sin conexión. La app no hace peticiones por su cuenta. Safari solo se abre cuando tocas el enlace Support o Privacy Policy en la pantalla About."
+    "Toca el botón de información de la parte superior de Hoy y luego la fila TailorColor Pro para abrir la pantalla de compra. Pro añade tres cosas: sin anuncios, fondos y Vestir a partir de una foto. Es compatible con En familia. Todo lo demás funciona sin comprar.",
+    "En un dispositivo nuevo o tras reinstalar, toca Restaurar compras en la pantalla Acerca de o en la pantalla de compra. Con la misma cuenta de Apple no vuelves a pagar."
+   ]
+  },
+  {
+   "q": "Seguimiento y opciones de anuncios",
+   "a": [
+    "La app prepara los anuncios después de las pantallas de introducción, y si aún no has respondido, iOS pregunta entonces si TailorColor puede rastrearte. Si tienes TailorColor Pro, no lo pregunta. La app funciona igual en ambos casos, y puedes cambiar tu respuesta en Ajustes > Privacidad y seguridad > Rastreo.",
+    "Donde se requiere consentimiento para anuncios, como en el Espacio Económico Europeo, el formulario de consentimiento de Google aparece antes que la pregunta de rastreo. Allí cambias tus opciones en Opciones de privacidad, dentro de la pantalla Acerca de."
+   ]
+  },
+  {
+   "q": "Denunciar un anuncio",
+   "a": [
+    "Si ves un anuncio inapropiado o que no encaja con la clasificación por edad de la app, escribe a kvndh36@naver.com indicando cuándo apareció y qué mostraba. El desarrollador lo revisará y lo bloqueará en AdMob."
+   ]
+  },
+  {
+   "q": "Dispositivos, idioma y aspecto",
+   "a": [
+    "TailorColor funciona solo en iPhone con iOS 17 o posterior, y la pantalla se queda en vertical.",
+    "La app está en 46 idiomas. Empieza en el idioma del dispositivo, y puedes elegir otro en Idioma, dentro de la pantalla Acerca de. En el mismo lugar, Aspecto puede ser Sistema, Claro u Oscuro."
+   ]
+  },
+  {
+   "q": "Cuenta y dónde se guarda el registro",
+   "a": [
+    "No hay cuenta ni inicio de sesión. La ropa y el registro se guardan en el almacenamiento de la app en tu iPhone y se borran al eliminar la app.",
+    "Un día guardado se borra con Eliminar en su tarjeta de fecha de Registro, de uno en uno."
    ]
   }
  ],

@@ -1,176 +1,223 @@
 {
  "name": "TailorColor",
- "subtitle": "Farben wechseln, bis das Outfit sitzt",
- "summary": "Kleiden Sie die Schaufensterpuppe Farbe für Farbe ein und finden Sie einen stimmigen Look.",
+ "subtitle": "Outfits der Figur festhalten, Farben vorschlagen lassen",
+ "summary": "Ziehen Sie Ihrer Figur an, was Sie an dem Tag trugen, und halten Sie jeden Tag ein Outfit im Kalender fest.",
  "hero": {
-  "hook": "Kleiden Sie die Schaufensterpuppe Farbe für Farbe ein und finden Sie einen stimmigen Look.",
-  "shotAlt": "Der Startbildschirm von TailorColor. Die Schaufensterpuppe trägt ein marineblaues Langarmshirt, eine beigefarbene Chino und weiße Sneaker, darunter reihen sich die Chips der einzelnen Teile."
+  "hook": "Ziehen Sie Ihrer Figur an, was Sie an dem Tag trugen, halten Sie jeden Tag ein Outfit im Kalender fest und lassen Sie sich Farben passend zu Ihrem Hautton vorschlagen.",
+  "shotAlt": "Der Tab Heute in TailorColor. Vor der Bogenbühne trägt die Figur ein gestreiftes Hemd, eine beige Hose und eine Umhängetasche. Darunter stehen eine Zeile mit dem Grund für die Farben und die Tabs Oberteil, Unterteil, Jacke, Schuhe und Accessoires."
  },
  "sections": [
   {
    "layout": "feat",
-   "title": "Sechs Teile, je eine Farbe",
+   "title": "Kleidung wählen und der Figur anziehen",
    "body": [
-    "Oberteil, Hose, Schuhe, Kappe, Mantel und Tasche: Das sind die sechs Teile. Tippen Sie eines an, öffnet sich eine Auswahl mit den Kleidungsstücken oben und den Farben unten, und was Sie wählen, trägt die Schaufensterpuppe sofort. Die Farben stammen aus einer festen Palette mit 24 Tönen. Neutraltöne, Denim und Erdtöne bilden das Fundament, Akzentfarben kommen obendrauf."
+    "Unter „Meine Figur“ legen Sie Statur, Hautton und Frisur fest und ziehen dann Oberteil, Unterteil, Jacke, Schuhe und Accessoires an. Jedes Teil bekommt eine Art, eine Farbe und ein Muster, und zuletzt getragene Teile stehen in der ersten Reihe. Es gibt 13 Muster, von Karo und Punkten bis Leopard."
    ],
    "bullets": [
-    "Sechs Teile von Kopf bis Fuß",
-    "24 Farben: Neutral-, Denim-, Erd- und Akzenttöne",
-    "Kappe, Mantel und Tasche zuschaltbar"
+    "3 Staturen, 6 Hauttöne, 20 Frisuren",
+    "16 Oberteile, 15 Unterteile, 21 Jacken und Mäntel, 22 Schuhe",
+    "Hüte, Taschen, Schals, Krawatten und mehr"
    ],
    "visual": {
     "type": "crop",
-    "shot": 1,
-    "alt": "Der Oberkörper der Schaufensterpuppe aus der Nähe. Über dem marineblauen Langarmshirt hängt offen ein camelfarbener Mantel.",
-    "caption": "App-Ansicht, vergrößert"
+    "shot": 4,
+    "alt": "Ausschnitt aus dem Oberteil-Tab. Als Farbe ist Sky Blue gewählt. Darunter stehen die Reihe Recently worn und ein Raster aus Oberteilarten wie T-shirt, Shirt, Polo, Knit, Sweatshirt und Hoodie.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-400px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "feat",
-   "title": "Die besten Kombinationen der Reihe nach",
+   "title": "Ein Tipp auf ein Teil, und passende Farben legen sich darum",
    "body": [
-    "Elf Regeln bewerten jede Kombination, und die bis zu zwölf besten liegen vorab bereit. Jeder Tipp auf Another combination rückt in dieser Liste einen Platz weiter, nach dem letzten geht es wieder von vorn los. Für jedes Paar aus Hose und Schuhen bleibt nur der beste Look übrig, deshalb unterscheidet sich der nächste Vorschlag deutlich vom vorigen. Eine Zeile über der Schaufensterpuppe sagt, warum diese Kombination funktioniert."
+    "Tippen Sie auf ein Teil der Figur, erscheinen passende Farben als Ring darum, und die gewählte Farbe sitzt sofort. „Farben vorschlagen“ berücksichtigt Hautton und Farbtyp und nennt zu jedem Vorschlag in einer Zeile den Grund. Ausgeschlossene Farben bleiben draußen, und ein fixiertes Teil bleibt, während sich der Rest ändert."
    ],
    "bullets": [
-    "Elf Regeln für Kontrast und Zahl der Farben",
-    "Bis zu 12 Looks nach Rang",
-    "Lock hält eine Farbe fest"
+    "Ein Farbring um das angetippte Teil",
+    "Farbvorschläge mit Grund",
+    "Ausgeschlossene Farben, Fixieren und Zufallsoutfit"
    ],
    "visual": {
-    "type": "kit",
-    "label": "Die Werkzeuge Another combination, Lock und Let TailorColor choose, dazu elf Regeln und bis zu 12 Looks",
-    "items": [
-     {
-      "name": "Another combination",
-      "desc": "Zum nächsten Look der Liste"
-     },
-     {
-      "name": "Lock",
-      "desc": "Hält die Farbe dieses Teils",
-      "on": true
-     },
-     {
-      "name": "Let TailorColor choose",
-      "desc": "Gibt das Teil an die Wertung zurück"
-     }
-    ],
-    "rows": [
-     {
-      "label": "Regeln",
-      "value": "Elf"
-     },
-     {
-      "label": "Vorbereitete Looks",
-      "value": "Bis zu 12",
-      "meter": "ticks",
-      "count": 12,
-      "on": 4
-     }
-    ]
+    "type": "crop",
+    "shot": 2,
+    "alt": "Der Farbring am Hemd. Um die Figur liegen mehrere Farbkreise und eine Farbrad-Taste, darunter eine Zeile mit dem Grund für die Farben.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-60px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Ein Outfit pro Tag, im Kalender festgehalten",
+   "body": [
+    "Mit „Heutiges Outfit speichern“ landet das Outfit unter seinem Datum im Kalender des Tabs Verlauf. Jede Datumskarte listet Teil für Teil, was Sie trugen, dazu „Ähnliche Outfits“ in gleichen Arten und nahen Farben und „Passt zu diesem Outfit“. Mit „Tag wählen“ tragen Sie vergangene Tage nach oder planen, was Sie anziehen, und aus „Mein Kleiderschrank“ ziehen Sie getragene Teile und ganze Outfits wieder an."
+   ],
+   "bullets": [
+    "Ein Verlaufskalender mit einem Outfit pro Tag",
+    "Ähnliche Outfits und Passendes zum Outfit",
+    "Kleiderschrank und Kalenderereignisse"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 3,
+    "alt": "Die Verlaufskarte für den 22. November. Neben der Figur im Kamelmantel stehen die Termine des Tages sowie Oberteil, Unterteil, Jacke, Schuhe und Tasche. Darunter folgen ähnliche Outfits und Passendes zum Outfit.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-110px",
+    "focusW": "400px"
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Vor einen Hintergrund stellen und vergrößern",
+   "body": [
+    "Tippen Sie auf die Figur außerhalb der Kleidung, sehen Sie sie bildschirmfüllend. Die Standardbühne ist der Bogen, und unter „Hintergrund“ probieren Sie Zuhause, das Café und eine Laufstrecke unter einer Brücke am Han-Fluss aus. Das Licht folgt Sonnenaufgang und -untergang an Ihrem Ort und wechselt zwischen Tag, Abendrot und Nacht. Mit einem anderen Hintergrund als dem Bogen zu speichern gehört zu TailorColor Pro."
+   ],
+   "bullets": [
+    "Außerhalb der Kleidung tippen zum Vergrößern",
+    "Hintergründe Bogen, Zuhause, Café und Han-Fluss",
+    "Licht für Tag, Abendrot und Nacht"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 5,
+    "alt": "Die vergrößerte Ansicht. Die Figur steht vor einem Café mit grüner Markise, in gestreiftem Hemd und Jeans mit Umhängetasche.",
+    "caption": "App-Ansicht, vergrößert",
+    "focus": "-100px",
+    "focusW": "400px"
    }
   },
   {
    "layout": "card",
-   "title": "Eine Farbe aus dem Foto übernehmen",
+   "title": "46 Sprachen und dunkler Modus",
    "body": [
-    "Fotografieren Sie ein Kleidungsstück aus Ihrem Schrank oder etwas, dessen Farbe Ihnen aufgefallen ist, und tippen Sie auf die Stelle, die Sie meinen. Die App liest dort die Farbe und setzt den ähnlichsten der 24 Töne ein. Das Foto steht nur auf dem Bildschirm, solange Sie wählen, und wird in der App nicht aufbewahrt."
+    "Die App gibt es in 46 Sprachen. Sie startet in der Sprache Ihres Geräts, und unter „Sprache“ im Info-Bildschirm wählen Sie eine andere. Beim Erscheinungsbild wählen Sie System, Hell oder Dunkel. Es gibt kein Konto und keine Anmeldung, und Kleidung und Verlauf werden auf Ihrem iPhone gespeichert."
    ],
    "bullets": [],
    "visual": {
     "type": "chips",
     "items": [
-     "Aus der Mediathek wählen",
-     "Direkt fotografieren"
+     "46 Sprachen",
+     "Helles und dunkles Erscheinungsbild",
+     "Ohne Konto auf dem iPhone gespeichert"
     ]
    }
-  },
-  {
-   "layout": "card",
-   "title": "Was gefällt, bleibt",
-   "body": [
-    "Save this look legt alle sechs Teile zusammen unter Saved ab. Gefällt Ihnen nur ein einzelnes Kleidungsstück, legen Sie es mit Keep in closet in den Tab Closet. Ein Limit gibt es bei beiden nicht, die Einträge sammeln sich an und bleiben. Share this look macht aus dem aktuellen Outfit ein Bild in 1080 x 1350 Pixeln und reicht es an das Teilen-Menü weiter."
-   ],
-   "bullets": [
-    "Saved speichert alle sechs Teile",
-    "Closet für einzelne Kleidungsstücke",
-    "Teilen als Bild in 1080 x 1350"
-   ]
   }
  ],
+ "pro": {
+  "kick": "TailorColor Pro",
+  "title": "Entfernt die Werbung\nund bringt Hintergründe und „Nach Foto anziehen“",
+  "items": [
+   "Keine Banner in Heute und Verlauf, keine Werbung vor dem Speichern",
+   "Outfits mit den Hintergründen Zuhause, Café und Han-Fluss speichern",
+   "Nach Foto anziehen: die Kleidung auf einem Foto an Ihre Figur",
+   "Hintergründe schon vor dem Kauf anprobieren",
+   "Familienfreigabe"
+  ]
+ },
  "faq": [
   {
-   "q": "Die sechs Teile ein- und ausschalten",
+   "q": "„Meine Figur“ einrichten",
    "a": [
-    "Oberteil, Hose und Schuhe sind immer da. Kappe, Mantel und Tasche schalten Sie über ihre Chips ein und aus. Ein ausgeschaltetes Teil verschwindet von der Schaufensterpuppe und fällt aus der Wertung.",
-    "Tippen Sie auf ein Teil, öffnet sich eine Auswahl: oben die Kleidungsstücke, unten die Farben. Was Sie antippen, trägt die Schaufensterpuppe sofort."
+    "Öffnen Sie „Meine Figur“ mit der Personentaste oben in Heute. Wählen Sie aus drei Staturen, sechs Hauttönen, zwanzig Frisuren und sieben Haarfarben und ergänzen Sie Brille, Bart, Haarschmuck und Rouge.",
+    "Auch Ihren Farbtyp wählen Sie unter „Meine Figur“. „Farben vorschlagen“ achtet bei der Auswahl auf Hautton und Farbtyp."
    ]
   },
   {
-   "q": "Welche Farben es gibt",
+   "q": "Kleidung und Accessoires",
    "a": [
-    "Es sind 24: sechs Neutraltöne, drei Denimtöne, fünf Erdtöne, Navy und neun Akzentfarben. Die Auswahl hält sich an Farben, in denen Kleidung tatsächlich vorkommt, und ist fest in der App hinterlegt. Eigene Farben mischen oder einen Hex-Wert eingeben können Sie deshalb nicht.",
-    "Auch eine Farbe aus einem Foto wird zum ähnlichsten der 24 Töne."
+    "Sie wählen sie in den Tabs Oberteil, Unterteil, Jacke, Schuhe und Accessoires unten in Heute. Es gibt 16 Oberteile, 15 Unterteile, 21 Jacken und Mäntel und 22 Schuhe, und zu den Accessoires gehören Hüte, Taschen, Schals und Krawatten.",
+    "In jedem Tab wählen Sie Farbe und Art, dazu eines von 13 Mustern wie Karo, Punkte oder Leopard. In der Reihe „Zuletzt getragen“ holen Sie früher angezogene Teile zurück."
    ]
   },
   {
-   "q": "Wie Another combination den nächsten Look wählt",
+   "q": "Der Farbring und die Farbwahl",
    "a": [
-    "Der Zufall entscheidet nicht. Elf Regeln bewerten jede Kombination, die bis zu zwölf besten liegen vorab bereit, und jeder Tipp rückt in dieser Liste einen Platz weiter. Nach dem letzten geht es wieder von vorn los.",
-    "Für jedes Paar aus Hose und Schuhen bleibt nur der beste Look. So folgen nie mehrere Outfits aufeinander, die sich bloß in einer Farbe unterscheiden. Wischen Sie auf der Schaufensterpuppe nach links oder rechts, bewegen Sie sich durch dieselbe Liste."
+    "Tippen Sie einmal auf ein Teil der Figur, erscheinen passende Farben als Ring darum. Ein Tipp auf eine Farbe im Ring ändert sie sofort, ein Tipp außerhalb schließt den Ring.",
+    "Am Anfang der Farbliste jedes Tabs stehen „Farbe frei wählen“ und „Aus Foto wählen“. Mit „Farbe frei wählen“ legen Sie einen genauen Ton fest, mit „Aus Foto wählen“ übernehmen Sie eine Farbe aus einem Foto."
    ]
   },
   {
-   "q": "Was Lock festhält",
+   "q": "„Farben vorschlagen“ und der Grund",
    "a": [
-    "Lock hält nur die Farbe fest. Dieses Teil behält seine Farbe, während die übrigen neu gewählt werden. Das Kleidungsstück selbst ist eine eigene Wahl und bleibt in jedem Fall, wie es ist.",
-    "Zum Lösen tippen Sie noch einmal auf dieselbe Taste. Let TailorColor choose gibt das Teil wieder an die Wertung zurück."
+    "Tippen Sie auf „Farben vorschlagen“, trägt die Figur Farben, die Hautton und Farbtyp berücksichtigen, und unter ihr steht in einer Zeile der Grund für die Wahl.",
+    "Farben unter „Ausgeschlossene Farben“ werden nicht vorgeschlagen. Ein Teil, das Sie mit „Fixieren“ neben „Art“ festhalten, bleibt, während sich der Rest ändert. „Zufallsoutfit“ zieht der Figur zufällige Kleidung und Farben an."
    ]
   },
   {
-   "q": "Die Zeile, die eine Kombination erklärt",
+   "q": "„Heutiges Outfit speichern“ und der Tab Verlauf",
    "a": [
-    "Es gibt neun solcher Begründungen, etwa „Dark top, light bottom“, „Tone on tone“, „Bag matches the shoes“, „Denim holds it together“ und „Three colors or fewer“. Zu jeder Kombination erscheinen zwei oder drei davon.",
-    "Für den Namen einer Kombination gibt es fünf Formen. Ist eine Akzentfarbe dabei, trägt der Name sie, etwa „Burgundy accent“. Sonst heißt der Look „Earth tones“, „Denim basics“, „Monotone“ oder „Basic“."
+    "Mit „Heutiges Outfit speichern“ landet das Outfit im Kalender des Tabs Verlauf. Jedes Datum hält ein Outfit, und wer für ein schon belegtes Datum erneut speichert, wird vorher gefragt, ob es ersetzt werden soll. Ein Tipp auf das Datum unter dem Titel in Heute öffnet „Tag wählen“, wo Sie vergangene Tage nachtragen oder planen, was Sie anziehen.",
+    "Jede Datumskarte listet Teil für Teil, was Sie trugen. „Für heute übernehmen“ zieht dieses Outfit für heute wieder an, „Löschen“ entfernt den Tag. Mit „Gespeicherte Outfits durchsehen“ oben in Verlauf blättern Sie durch die gespeicherten Tage, und „Vergrößern“ zeigt ein Outfit bildschirmfüllend."
    ]
   },
   {
-   "q": "Eine Farbe aus einem Foto übernehmen",
+   "q": "„Mein Kleiderschrank“ und ähnliche Outfits",
    "a": [
-    "Wählen Sie in der Farbauswahl Pick a color from a photo und dann Take a photo oder Choose a photo. Tippen Sie auf die Stelle, die Sie meinen, und bestätigen Sie mit Use this color, wenn das Farbfeld darunter stimmt.",
-    "Fotos wählen Sie über die Fotoauswahl von iOS. Die App fragt deshalb nicht nach Zugriff auf Ihre Mediathek und erhält nur das eine Bild, das Sie ausgesucht haben. Nach dem Kamerazugriff fragt sie erst, wenn Sie auf Take a photo tippen."
+    "„Mein Kleiderschrank“ sammelt getragene Teile und ganze Outfits, und eine Auswahl zieht sie der Figur wieder an. Sie öffnen ihn mit der Taste „Mein Kleiderschrank“ in Heute oder der Bügeltaste oben in Verlauf.",
+    "Unter jeder Datumskarte in Verlauf stehen „Ähnliche Outfits“ in gleichen Arten und nahen Farben sowie „Passt zu diesem Outfit“. Ein Tipp darauf probiert es an der Figur an."
    ]
   },
   {
-   "q": "Saved und Closet",
+   "q": "„Kalenderereignisse anzeigen“",
    "a": [
-    "Der Bildschirm Saved hat zwei Tabs. Looks nimmt alle sechs Teile auf einmal auf, und ein Tipp auf einen Eintrag zieht der Schaufensterpuppe genau dieses Outfit wieder an.",
-    "Closet nimmt ein Kleidungsstück nach dem anderen auf, jeweils als Paar aus Kleidungsstück und Farbe. Das eignet sich für Teile, die Sie wirklich besitzen und mit anderen Farben ausprobieren möchten. Keiner der beiden Tabs hat ein Limit."
+    "Schalten Sie in Verlauf „Kalenderereignisse anzeigen“ ein, zeigt jede Datumskarte bis zu zwei Termintitel des Tages. Beim Einschalten fragt iOS nach dem Kalenderzugriff.",
+    "Die App liest Termine nur. Sie legt keine an, ändert keine und speichert die gelesenen Titel nicht."
    ]
   },
   {
-   "q": "Einen Look teilen",
+   "q": "Hintergründe und Licht (TailorColor Pro)",
    "a": [
-    "Share this look macht aus dem aktuellen Outfit ein Bild in 1080 x 1350 Pixeln und reicht es an das Teilen-Menü von iOS weiter, wo Sie das Ziel selbst wählen. Sichern Sie es in Fotos, entsteht ein PNG."
+    "Unter „Hintergrund“ in Heute wählen Sie Bogen, Zuhause, Café oder Han-Fluss. Zuhause richten Sie selbst mit Möbeln ein. Das Licht wechselt zwischen Tag, Abendrot und Nacht. Mit Standortfreigabe folgt es Sonnenaufgang und -untergang an Ihrem Ort, ohne sie richtet es sich nach der Zeitzone des Geräts.",
+    "Jeden Hintergrund können Sie anprobieren. Wer das heutige Outfit mit einem anderen Hintergrund als dem Bogen speichert, wird nach TailorColor Pro gefragt und kann im selben Dialog auch ohne Hintergrund speichern. Schon gespeicherte Tage behalten ihren Hintergrund."
    ]
   },
   {
-   "q": "Welche Kleidungsstücke es gibt",
+   "q": "„Nach Foto anziehen“ (TailorColor Pro)",
    "a": [
-    "Zurzeit neun: zwei Oberteile, zwei Hosen, ein Mantel, zwei Paar Schuhe, eine Kappe und eine Tasche. Grau dargestellte Einträge in der Auswahl sind Kleidungsstücke, die noch vorbereitet werden.",
-    "Kommen neue Kleidungsstücke hinzu, bleiben Ihre Einträge unter Looks und Closet unverändert."
+    "Nehmen oder wählen Sie mit der Kamerataste oben in Heute ein Foto, liest die App die Kleidung darauf und stellt daraus ein Outfit für Ihre Figur zusammen. Das Foto wird auf Ihrem iPhone mit Apples Vision-Framework gelesen und nicht aufbewahrt.",
+    "Das Ergebnis ansehen und korrigieren kann jeder. Das Outfit der Figur anzuziehen gehört zu TailorColor Pro."
    ]
   },
   {
-   "q": "Gerät und Anzeige",
+   "q": "Wo Werbung erscheint",
    "a": [
-    "Die App läuft auf dem iPhone ab iOS 17. Das iPad wird noch nicht unterstützt, und der Bildschirm bleibt im Hochformat.",
-    "Die Oberfläche ist stets hell. Da es darum geht, Farben zu beurteilen, bleibt der Hintergrund gleich und folgt nicht dem Dunkelmodus des Systems."
+    "Die Werbung zeigt Google AdMob. Unten in Heute und unten in Verlauf steht je ein Banner, und beim Tippen auf „Heutiges Outfit speichern“ kann kurz vor dem Speichern eine Vollbildanzeige erscheinen.",
+    "In den ersten 3 Tagen nach dem ersten Öffnen der App erscheint keine Vollbildanzeige, danach höchstens einmal in 24 Stunden. Lädt die Anzeige nicht, wird trotzdem gespeichert. „Werbung entfernen“ über einem Banner öffnet den Kaufbildschirm von TailorColor Pro."
    ]
   },
   {
-   "q": "Internetverbindung",
+   "q": "TailorColor Pro und Käufe wiederherstellen",
    "a": [
-    "Farben wählen, speichern und teilen funktioniert ohne Verbindung. Die App stellt von sich aus keine Anfragen ins Netz. Safari öffnet sich nur, wenn Sie im Bildschirm About auf Support oder Privacy Policy tippen."
+    "Tippen Sie oben in Heute auf die Info-Taste und dann auf die Zeile TailorColor Pro, um den Kaufbildschirm zu öffnen. Pro bringt drei Dinge: keine Werbung, Hintergründe und „Nach Foto anziehen“. Es unterstützt die Familienfreigabe. Alles andere funktioniert ohne Kauf.",
+    "Auf einem neuen Gerät oder nach einer Neuinstallation tippen Sie im Info-Bildschirm oder auf dem Kaufbildschirm auf „Käufe wiederherstellen“. Mit demselben Apple Account zahlen Sie nicht erneut."
+   ]
+  },
+  {
+   "q": "Tracking und Werbeeinstellungen",
+   "a": [
+    "Nach den Einführungsbildschirmen bereitet die App die Werbung vor, und wenn Sie noch nicht geantwortet haben, fragt iOS dann, ob Tracking erlaubt ist. Mit TailorColor Pro kommt diese Frage nicht. Die App funktioniert in beiden Fällen gleich, und Ihre Antwort ändern Sie unter Einstellungen > Datenschutz & Sicherheit > Tracking.",
+    "Wo eine Einwilligung in Werbung nötig ist, etwa im Europäischen Wirtschaftsraum, erscheint das Einwilligungsformular von Google vor der Tracking-Abfrage. Dort ändern Sie Ihre Einwilligung unter „Datenschutzeinstellungen“ im Info-Bildschirm."
+   ]
+  },
+  {
+   "q": "Anzeige melden",
+   "a": [
+    "Wenn Sie eine Anzeige sehen, die unangemessen ist oder nicht zur Altersfreigabe der App passt, schreiben Sie an kvndh36@naver.com, wann sie erschien und was sie zeigte. Der Entwickler prüft sie und sperrt sie in AdMob."
+   ]
+  },
+  {
+   "q": "Geräte, Sprache und Erscheinungsbild",
+   "a": [
+    "TailorColor läuft nur auf dem iPhone mit iOS 17 oder neuer, und der Bildschirm bleibt im Hochformat.",
+    "Die App gibt es in 46 Sprachen. Sie startet in der Sprache Ihres Geräts, und unter „Sprache“ im Info-Bildschirm wählen Sie eine andere. Am selben Ort wählen Sie beim Erscheinungsbild System, Hell oder Dunkel."
+   ]
+  },
+  {
+   "q": "Konto und wo der Verlauf liegt",
+   "a": [
+    "Es gibt kein Konto und keine Anmeldung. Kleidung und Verlauf werden im Speicher der App auf Ihrem iPhone gespeichert und mit der App gelöscht.",
+    "Einen gespeicherten Tag löschen Sie über „Löschen“ auf seiner Datumskarte in Verlauf, einen Tag nach dem anderen."
    ]
   }
  ],

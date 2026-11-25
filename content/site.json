@@ -132,8 +132,7 @@
    "accent": "#c29a3c",
    "accentText": "#c29a3c",
    "glow": "rgba(194,154,60,.28)",
-   "paperAccent": "#5f4331",
-   "unreleased": true
+   "paperAccent": "#5f4331"
   },
   {
    "slug": "codematic",
