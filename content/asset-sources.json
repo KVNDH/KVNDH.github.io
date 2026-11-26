@@ -251,12 +251,14 @@
    "ko": [
     "Readride/docs/screenshots/site/01-prepare-pdf-ko.png",
     "Readride/docs/screenshots/site/02-paused-ko.png",
-    "Readride/docs/screenshots/site/03-prepare-web-ko.png"
+    "Readride/docs/screenshots/site/03-prepare-web-ko.png",
+    "Readride/docs/store/shots-raw/ipad/ko/02-paused.png"
    ],
    "en": [
     "Readride/docs/screenshots/site/01-prepare-pdf-en.png",
     "Readride/docs/screenshots/site/02-paused-en.png",
-    "Readride/docs/screenshots/site/03-prepare-web-en.png"
+    "Readride/docs/screenshots/site/03-prepare-web-en.png",
+    "Readride/docs/store/shots-raw/ipad/en-US/02-paused.png"
    ]
   },
   "store": "Readride/docs/store"

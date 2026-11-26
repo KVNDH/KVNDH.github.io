@@ -1,9 +1,9 @@
 {
- "describesVersion": "1.0.4",
+ "describesVersion": "1.0.5",
  "purchase": "one-time",
  "ads": false,
  "account": false,
- "platform": "iOS 18.0 이상, iPhone(세로만)과 iPad(네 방향, Split View 와 창 크기 조절, UIRequiresFullScreen 없음). TARGETED_DEVICE_FAMILY 1,2 (앱, 공유 확장). iPad 는 같은 화면을 읽기 좋은 폭 700pt 로 넓힘, 두 칸 배치 없음 (project.yml, 95e4f2c). Mac, Vision Pro 설치 막음. 1.0.3(빌드 4, 2f43919): 접는 iPhone(사이트 표기, 기기 상표명 안 씀). 창 오른쪽 안전 영역 76pt 이상(접힘 세로, 펼침 가로의 84pt 띠)이면 읽기 화면의 단추 일곱(재생, 한 문장 뒤로, 다음 문장으로, 속도 +, 속도 −, 문서 지도, 설정)을 띠에 세로로, 속도는 + 와 − 사이 숫자(ReadingRail, StepControl vertical, f7933fa). ✕ 와 진행률은 머리에 남음. 오른쪽에서 왼쪽 언어에서도 띠는 기기 오른쪽(97fc798). 머리가 창 모서리를 비키는 조건을 창 크기로(8493ef7). 펼친 넓은 화면은 iPad 처럼 기둥 700pt(ReadableWidth.column). 보통 iPhone, iPad 화면은 그대로",
+ "platform": "iOS 18.0 이상, iPhone(세로만)과 iPad(네 방향, Split View 와 창 크기 조절, UIRequiresFullScreen 없음). TARGETED_DEVICE_FAMILY 1,2 (앱, 공유 확장). Mac, Vision Pro 설치 막음. 1.0.5(057e350, 제출 빌드 8c0aafc): 넓은 배치는 기기가 아니라 창 폭 800pt 이상(펼친 Duo 는 오른쪽 띠를 뺀 폭)으로 정함(Readride/Support/WideLayout.swift:8-23). iPad 11형 세로(834)부터, 펼친 접는 iPhone 가로. 책장은 왼쪽 목록 340pt | 오른쪽 고른 문서의 멈춘 자리(LibraryHero.swift:4-9, 진행 막대나 절 목록 없음), 준비 화면은 본문 미리보기 | 설정(PreparePreviewPane.swift), 설정은 읽기 미리보기 | 설정(SettingsView.swift:35-46). 멈춘 읽기 화면은 앞뒤 본문을 두 쪽으로, 좌우로 밀어 넘김(RSVPSpreadView.swift). 두 쪽은 쪽 하나에 지금 글자 크기로 한 줄 18자, 8줄 이상 들 때만, 아니면 한 뷰(WideLayout.swift SpreadGeometry.fits). 두 쪽일 때 문서 지도는 시트 대신 왼쪽 쪽이 차례(RSVPView.swift openMap). iPad 는 무대 글자 1.4배(기기로 정함, 좁은 창도). 펼친 Duo 는 준비와 설정을 전체 화면으로(WideLayout.presentsFullScreen). 800pt 보다 좁은 창(iPad mini 세로 744, Split View 절반 이하, Slide Over, 접힌 Duo, 펼친 Duo 세로 669)은 1.0.4 와 같은 한 기둥 700pt(ReadableWidth). iPad 책장 끌어 놓기(LibraryView.swift:177-181, 732-772 ShelfDrop, iPad 만): 받는 형식의 파일 하나만, 여럿이면 금지 표시, 읽기나 준비 화면이 떠 있으면 받지 않음, 임시 폴더에 복사해 준비 화면으로. 키보드 단축키(RSVPView.swift:247-273, 읽기 화면, 기기 구분 없음): 스페이스 재생과 멈춤, ← 한 문장 뒤로, → 다음 문장, ↑ ↓ 속도(언어별 단계), Esc 닫기(차례 쪽이 열렸으면 차례부터). 1.0.3 부터 접는 iPhone(사이트 표기, 기기 상표명 안 씀): 창 오른쪽 안전 영역 76pt 이상이면 읽기 화면의 단추 일곱(재생, 한 문장 뒤로, 다음 문장으로, 속도 +, 속도 −, 문서 지도, 설정)을 띠에 세로로, 속도는 + 와 − 사이 숫자(ReadingRail, StepControl vertical). ✕ 와 진행률은 머리에 남음. 오른쪽에서 왼쪽 언어에서도 띠는 기기 오른쪽",
  "products": [
   "Readride Pro: 비소모성 1개 (com.kimdh.Readride.pro.lifetime), 가족 공유 켬. 가격은 문구에 쓰지 않는다 (StoreKit/Readride.storekit). ASC 앱 6816576585, 이 상품은 1.0.0 과 함께 2026-09-30 출시(HQ 가 ASC 로 확인)"
  ],
@@ -46,7 +46,6 @@
  "notOffered": [
   "스캔 PDF(글자 층 없음) OCR. 글자 인식은 글자 층이 있는 깨진 데바나가리 쪽(hi, mr)을 다시 읽을 때만",
   "HWP",
-  "iPad 두 칸 배치(같은 화면을 넓힐 뿐)",
   "여러 창(UIApplicationSupportsMultipleScenes false)",
   "AI 요약",
   "읽기 통계",
@@ -92,6 +91,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 무료 문서 3개, 쉼 5단계(ja, zh 는 숫자로 씀), 읽는 언어 44개, 분당 100~1,000단어(ko 와 알파벳 언어, 1.0.2), ko 묶기 예 '120억 원'. 1.0.1 부터 앱 화면이 46개 언어라 다른 언어 페이지의 UI 이름은 Localizable.xcstrings 의 그 언어 이름을 쓴다. 기능 절 캡처는 영어판이라 캡처 대체 문구(shotAlt, 기능 절 alt)만 영어 UI 이름으로 둔다",
  "sources": [
+  "Readride 1.0.5 기준(2026-11-27 사이트 갱신, Commander 가 2026-11-27 07:14 ASC READY_FOR_SALE 확인). 앱 코드 main 057e350(제출 빌드 8c0aafc 와 앱 소스 같음, 뒤는 시험 대상 IPHONEOS_DEPLOYMENT_TARGET 18.4 뿐). ba067e5..057e350 의 Readride/ 변경: WideLayout.swift(새), RSVPSpreadView.swift(새), LibraryHero.swift(새), PreparePreviewPane.swift(새), LibraryView, RSVPView, SettingsView, PrepareView, DocumentMapView, Localizable.xcstrings, SC/TC 글꼴. project.yml 은 버전과 시험 대상만. PrivacyInfo, 엔타이틀먼트, Info.plist, 공유 확장, WebImport, ProRules, StoreKit diff 0 이라 처리방침과 무료/Pro 경계 그대로. 끌어 놓은 파일 사본은 준비가 끝나면 지움(LibraryView.swift:429-433, 462-468). whatsNew ko '• iPad와 펼친 iPhone Duo의 넓은 화면 지원 • 넓은 화면에서 책처럼 두 쪽 보기 • iPad에서 파일 끌어 놓기와 키보드 단축키 지원 • 세부 다듬기와 안정성 개선'(docs/store/draft-1.0.5-ko.md). Readride 세션 사실 정리 docs/SITE_DRAFT.md '1.0.5 에서 바꿀 것'(9d7cc1a). 끌어 놓기 문구는 앱 'You can also drag a file here.'(Localizable.xcstrings, ko '여기에 파일을 끌어 놓아도 됩니다.')",
   "Readride 1.0.4 기준(2026-11-11 사이트 갱신). 커밋 범위 2f43919(1.0.3 빌드 4)..ba067e5(1.0.4 (1) 아카이브, ASC 빌드 fbe2d98c, 2026-11-10 제출), 마지막 앱 코드 커밋 5725797. project.yml CFBundleShortVersionString 1.0.4, CFBundleVersion 1. 앱에 실린 것은 아이콘 흰 바탕(e7a6447, AppIcon.png 밝은 바탕 #FFFFFF, 다크와 틴트 #000000)과 impeccable polish(ea8c74c): 멈춘 화면 앞뒤 본문의 빈 줄 접기(RSVPContextView.swift collapseBlankLines), 다크 준비 화면 순흑(CanvasRows), 꺼진 기호 단추 흐림(dimmedWhenDisabled), 밀어 지우기 빨강, 문서 지도 닫기 아이콘 단추, 섹션 사이 32pt, ko 확인창 '이 문서를 삭제할까요?'. 엔타이틀먼트, PrivacyInfo, Info.plist, ProRules, StoreKit, 네트워크 코드 diff 0 이라 무료/Pro 경계와 처리방침은 그대로. whatsNew ko '읽기를 멈춘 화면의 문단 간격 개선, 다크 모드의 준비 화면 개선, 세부 다듬기와 안정성 개선'(docs/store/metadata.json, c335635). 그림: 아이콘 AppIcon.png(blob 823fc74)로 icon-180, icon-360, icon-640, og 를 import_assets.py readride 로 다시 뽑음, 사이트 캡처(바이트 같음)와 스토어 합성본은 그대로",
   "1.0.3 앱 코드: Readride 2f43919(1.0.3 빌드 4, project.yml CFBundleShortVersionString 1.0.3, CFBundleVersion 4, 2026-10-15 출시 HQ 확인). 1.0.2 의 마지막 앱 코드 95e4f2c 와 비교하면 Readride/ 에서 바뀐 것은 RSVPView, RSVPContextView, Components, StepControl 뿐(Duo 띠와 앞뒤 본문 윗줄 맞춤 27d13e0, 3f0b887). ProRules, StoreKit, 권한, 엔타이틀먼트, PrivacyInfo, 네트워크 코드는 그대로라 무료/Pro 경계와 처리방침은 바꾸지 않음. 단추 이름은 Readride/Resources/Localizable.xcstrings(2f43919). whatsNew ko 'iPhone Duo 지원'(d281a97)",
   "Readride/docs/SITE_DRAFT.md (cb56df5, '1.0.2(iCloud 동기화, iPad)에서 바꿀 것')",
@@ -100,5 +100,5 @@
   "Readride cb56df5 (1.0.2 (1) a699b1d, iPad 95e4f2c, iCloud 59a8fda 98294ee, 스키마 5a85f07, Pro 목록 68ea110, 속도 c2b44c6), Readride/docs/store/metadata.json 1.0.2"
  ],
  "icloudDeletePathNote": "iCloud 사본 지우는 경로의 마지막 칸 이름: ko '저장 공간'은 사용자 iPhone 확인(10-03). en Storage, de Speicher, es Almacenamiento, pt-br Armazenamento, zh-hans 储存空间, zh-hant 儲存空間 은 iOS 27.0 시뮬레이터 런타임 iCloudSettings.framework 문자열에서 읽음(2026-10-08, Readride 세션). ja 는 미확정(容量 과 ストレージ 가 갈림)이라 'ストレージを管理' 그대로 둠.",
- "versionNote": "Readride 1.0.4(빌드 1) 출시 반영(2026-11-11 HQ 확인). 바뀐 것: 흰 바탕 아이콘(e7a6447)과 화면 다듬기(ea8c74c, 멈춘 화면 문단 간격, 다크 준비 화면, 꺼진 단추 흐림 등). 사이트 반영: 아이콘 icon-180, icon-360, icon-640, og 를 흰 바탕 아이콘으로 다시 뽑음. 본문, FAQ, Pro 목록, 숫자, UI 이름(uiNames)은 그대로 맞음. 다듬기는 사이트에 쓰지 않음. 기능 절 둘째 그림(멈춘 화면, 9월 27일 촬영)은 1.0.4 전 문단 간격이 보이지만 다시 찍지 않음. 처리방침: 저장 항목, 권한, SDK, 결제 변화가 없어 본문과 시행일 2026-10-06 그대로"
+ "versionNote": "Readride 1.0.5(빌드 1) 출시 반영(2026-11-27 Commander ASC 확인). 바뀐 것: iPad 와 펼친 접는 iPhone 의 넓은 배치(책장 목록 | 멈춘 자리, 준비와 설정 미리보기 | 설정, 멈춘 화면 두 쪽, 두 쪽일 때 지도는 왼쪽 쪽 차례), iPad 끌어 놓기, 키보드 단축키. 사이트 반영(8개 언어): 마지막 카드 앞에 그림 있는 iPad feat 절(DailyLeft b79c63cc 틀, 코디네이터 승인 2026-11-27, 불릿 셋, ja 는 숫자 대신 見開き), FAQ '넣을 수 있는 글'에 iPad 끌어 놓기 한 문장, FAQ 'iPad와 접는 iPhone에서 쓰기'를 세 문단(넓은 배치, 좁은 창과 끌어 놓기와 키보드, 접는 iPhone 띠)으로. 그림: iPhone 그림 01~03 은 1.0.5 에서 화면이 바뀌지 않아 그대로. 새 shots/{ko,en}/04 = Readride docs/store/shots-raw/ipad/{ko,en-US}/02-paused.png(1.0.5 스토어 원본, iPad 13형 세로 2064x2752, 2026-11-25 22:35 촬영, 추적 안 하는 로컬 파일, 상태 막대에 11월 25일)를 import_assets.py 로 1320px 폭 -strip. 절 그림은 focus -22px, focusW 620px 로 무대와 두 쪽 위쪽이 보임. 다른 언어는 en 그림. 처리방침 그대로(시행일 2026-10-06). 1.0.4: 흰 바탕 아이콘(e7a6447)과 화면 다듬기(ea8c74c), 사이트는 아이콘만 다시 뽑음"
 }

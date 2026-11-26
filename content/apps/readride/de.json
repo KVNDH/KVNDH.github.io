@@ -58,6 +58,26 @@
    ]
   },
   {
+   "layout": "feat",
+   "title": "Auf dem iPad für den großen Bildschirm gemacht",
+   "body": [
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone zeigt das Regal links Ihre Dokumente und rechts die Stelle, an der Sie im gewählten Dokument aufgehört haben. Wenn Sie anhalten, öffnet sich der Text um Ihre Stelle wie ein Buch auf zwei Seiten. Auf dem iPad können Sie eine Datei ins Regal ziehen, um sie hinzuzufügen, und mit der Tastatur wiedergeben und anhalten, zwischen Sätzen springen und das Tempo ändern."
+   ],
+   "bullets": [
+    "Zwei Seiten wie im Buch, wenn Sie anhalten",
+    "Dateien ins Regal ziehen",
+    "Tastaturkurzbefehle auf dem iPad"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 4,
+    "alt": "Angehaltenes Lesen auf dem iPad im Hochformat. Oben steht groß „The letter“, darunter öffnet sich der Text auf zwei Seiten, links mit dem Titel des Dokuments, rechts mit den Absätzen um die Lesestelle.",
+    "caption": "iPad-Ansicht, vergrößert",
+    "focus": "-22px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "Ihre Stelle und Ihr Tempo",
    "body": [
@@ -90,7 +110,7 @@
   {
    "q": "Was Sie hinzufügen können",
    "a": [
-    "Textdateien (txt und md), PDFs und ePubs ohne DRM, aus der Dateien-App oder über das Teilen aus anderen Apps. Kopierten Text können Sie einfügen, einen Webartikel aus Safari über „Teilen“ senden. PDFs mit Passwort öffnen sich, sobald Sie das Passwort eingeben. Readride passt am besten zu fortlaufendem Text wie Romanen, Nachrichten und Essays. Tabellen und Aufzählungen werden ohne ihr Layout als reiner Text gelesen."
+    "Textdateien (txt und md), PDFs und ePubs ohne DRM, aus der Dateien-App oder über das Teilen aus anderen Apps. Auf dem iPad können Sie eine Datei auch ins Regal ziehen. Kopierten Text können Sie einfügen, einen Webartikel aus Safari über „Teilen“ senden. PDFs mit Passwort öffnen sich, sobald Sie das Passwort eingeben. Readride passt am besten zu fortlaufendem Text wie Romanen, Nachrichten und Essays. Tabellen und Aufzählungen werden ohne ihr Layout als reiner Text gelesen."
    ]
   },
   {
@@ -144,7 +164,9 @@
   {
    "q": "Readride auf dem iPad und dem faltbaren iPhone",
    "a": [
-    "Readride läuft auch auf dem iPad. Es zeigt dieselben Bildschirme wie auf dem iPhone, auf eine angenehme Lesebreite erweitert, im Hoch- und im Querformat, und passt sich an, wenn Sie die Fenstergröße ändern. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone wird es genauso erweitert. Hat der Lesebildschirm an einer Seite einen Systemstreifen, stehen Wiedergeben, Ein Satz zurück, Nächster Satz, Lesetempo + und −, Dokumentübersicht und Einstellungen senkrecht in diesem Streifen, und das Tempo steht als Zahl zwischen + und −."
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone zeigt das Regal links Ihre Dokumente und rechts die Stelle, an der Sie im gewählten Dokument aufgehört haben; tippen Sie darauf, um das Dokument zu öffnen. Die Vorbereitung zeigt links eine große Vorschau des Texts, die Einstellungen zeigen links eine Vorschau des Lesebildschirms. Wenn Sie anhalten, öffnet sich der Text um Ihre Stelle wie ein Buch auf zwei Seiten, die Sie mit einem Wischen umblättern, und mit Readride Pro öffnet sich die Dokumentübersicht dann als Inhaltsverzeichnis anstelle der gelesenen Seite. Ist die Schrift so groß, dass nur wenig Text auf eine Seite passt, zeigt Readride statt zwei Seiten eine einzige Ansicht.",
+    "Auf dem iPad erscheinen die Wörter beim Lesen größer als auf dem iPhone. Wenn Sie das Fenster mit Split View oder Slide Over schmal machen, ein iPad mini im Hochformat halten oder ein aufgeklapptes faltbares iPhone hochkant drehen, zeigt Readride dieselben Bildschirme wie auf dem iPhone, auf eine angenehme Lesebreite erweitert. Ziehen Sie eine Datei aus der daneben geöffneten Dateien-App oder aus Safari ins Regal, öffnet sich die Vorbereitung. Dateien lassen sich nur einzeln hinzufügen. Ist eine Tastatur angeschlossen, startet und stoppt die Leertaste auf dem Lesebildschirm die Wiedergabe, die Pfeiltasten nach links und rechts gehen einen Satz zurück oder zum nächsten, die Pfeiltasten nach oben und unten ändern das Tempo, und mit Esc kehren Sie zum Regal zurück.",
+    "Hat auf einem faltbaren iPhone der Lesebildschirm an einer Seite einen Systemstreifen, stehen Wiedergeben, Ein Satz zurück, Nächster Satz, Lesetempo + und −, Dokumentübersicht und Einstellungen senkrecht in diesem Streifen, und das Tempo steht als Zahl zwischen + und −."
    ]
   },
   {

@@ -58,6 +58,26 @@
    ]
   },
   {
+   "layout": "feat",
+   "title": "Made for the bigger screen on iPad",
+   "body": [
+    "On iPad and on the wide screen of a foldable iPhone opened out, your shelf lists documents on the left and, on the right, shows where you stopped in the one you pick. When you pause, the text around your place opens into two pages, like a book. On iPad you can drag a file onto the shelf to add it, and use the keyboard to play and pause, move between sentences, and change the speed."
+   ],
+   "bullets": [
+    "Two pages, like a book, when you pause",
+    "Drag files onto the shelf",
+    "Keyboard shortcuts on iPad"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 4,
+    "alt": "Reading paused on iPad in portrait. “The letter” appears large at the top, and below it the text opens into two pages, with the document title on the left page and the paragraphs around your place on the right.",
+    "caption": "iPad screen, close-up",
+    "focus": "-22px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "Your place and your pace",
    "body": [
@@ -90,7 +110,7 @@
   {
    "q": "What you can add",
    "a": [
-    "Text files (txt and md), PDFs, and DRM-free ePubs, from the Files app or shared from other apps. You can also paste copied text, or share a web article from Safari. Password-protected PDFs open once you enter the password. Readride works best with running text such as novels, news, and essays. Tables and bullet lists are read as plain words, without their layout."
+    "Text files (txt and md), PDFs, and DRM-free ePubs, from the Files app or shared from other apps. On iPad, you can drag a file onto the shelf as well. You can also paste copied text, or share a web article from Safari. Password-protected PDFs open once you enter the password. Readride works best with running text such as novels, news, and essays. Tables and bullet lists are read as plain words, without their layout."
    ]
   },
   {
@@ -144,7 +164,9 @@
   {
    "q": "Using Readride on iPad and foldable iPhone",
    "a": [
-    "Readride runs on iPad too. It shows the same screens as on iPhone, widened to a comfortable reading width, in portrait or landscape, and it adjusts when you resize the window. On the wide screen of a foldable iPhone opened out, it widens the same way. When the reading screen has a system strip along one side, Play, Back One Sentence, Next Sentence, reading speed + and −, Document Map and Settings stand in that strip, with the speed shown as a number between + and −."
+    "On iPad and on the wide screen of a foldable iPhone opened out, the shelf lists your documents on the left and, on the right, shows where you stopped in the one you pick; tap that spot to open the document. Get Ready shows a large preview of the text on the left, and Settings shows a preview of the reading screen on the left. When you pause, the text around your place opens into two pages, like a book, that you swipe to turn, and with Readride Pro, Document Map then opens as a table of contents in place of the page you've read. If the text is so large that little fits on a page, Readride shows a single view instead of two pages.",
+    "On iPad, the words you read appear larger than on iPhone. When you make the window narrow with Split View or Slide Over, hold an iPad mini in portrait, or turn an opened-out foldable iPhone upright, Readride shows the same screens as on iPhone, widened to a comfortable reading width. Drag a file onto the shelf from the Files app or Safari open beside Readride, and Get Ready opens. Files go in one at a time. With a keyboard connected, on the reading screen Space plays and pauses, the Left and Right Arrow keys go back one sentence or on to the next, the Up and Down Arrow keys change the speed, and Esc takes you back to the shelf.",
+    "On a foldable iPhone, when the reading screen has a system strip along one side, Play, Back One Sentence, Next Sentence, reading speed + and −, Document Map and Settings stand in that strip, with the speed shown as a number between + and −."
    ]
   },
   {

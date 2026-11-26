@@ -58,6 +58,26 @@
    ]
   },
   {
+   "layout": "feat",
+   "title": "No iPad, feito para a tela grande",
+   "body": [
+    "No iPad e na tela larga de um iPhone dobrável aberto, a estante mostra seus documentos à esquerda e, à direita, onde você parou no que escolher. Quando você pausa, o texto em volta de onde você estava se abre em duas páginas, como um livro. No iPad, você pode arrastar um arquivo para a estante para adicioná-lo e usar o teclado para reproduzir e pausar, passar de uma frase a outra e mudar a velocidade."
+   ],
+   "bullets": [
+    "Duas páginas como num livro quando você pausa",
+    "Arquivos arrastados para a estante",
+    "Atalhos de teclado no iPad"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 4,
+    "alt": "Leitura pausada no iPad na vertical. No alto aparece grande “The letter” e, abaixo, o texto se abre em duas páginas, com o título do documento na da esquerda e os parágrafos de onde você estava na da direita.",
+    "caption": "Tela do iPad, ampliada",
+    "focus": "-22px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "Onde você parou e no seu ritmo",
    "body": [
@@ -90,7 +110,7 @@
   {
    "q": "O que você pode adicionar",
    "a": [
-    "Arquivos de texto (txt e md), PDFs e ePubs sem DRM, pelo app Arquivos ou compartilhados de outros apps. Você também pode colar texto copiado ou enviar um artigo da web pelo botão Compartilhar do Safari. PDFs com senha abrem quando você digita a senha. O Readride funciona melhor com texto corrido, como romances, notícias e ensaios. Tabelas e listas são lidas como palavras em sequência, sem o layout."
+    "Arquivos de texto (txt e md), PDFs e ePubs sem DRM, pelo app Arquivos ou compartilhados de outros apps. No iPad, dá para arrastar um arquivo para a estante. Você também pode colar texto copiado ou enviar um artigo da web pelo botão Compartilhar do Safari. PDFs com senha abrem quando você digita a senha. O Readride funciona melhor com texto corrido, como romances, notícias e ensaios. Tabelas e listas são lidas como palavras em sequência, sem o layout."
    ]
   },
   {
@@ -144,7 +164,9 @@
   {
    "q": "O Readride no iPad e no iPhone dobrável",
    "a": [
-    "O Readride também funciona no iPad. Ele mostra as mesmas telas do iPhone, alargadas para uma largura confortável de leitura, na vertical e na horizontal, e se ajusta quando você muda o tamanho da janela. Na tela larga de um iPhone dobrável aberto, ele se alarga do mesmo jeito. Quando a tela de leitura tem uma faixa do sistema de um lado, Reproduzir, Voltar uma frase, Próxima frase, a velocidade de leitura + e −, Mapa do documento e Ajustes ficam na vertical nessa faixa, com a velocidade como número entre + e −."
+    "No iPad e na tela larga de um iPhone dobrável aberto, a estante mostra seus documentos à esquerda e, à direita, onde você parou no que escolher; toque ali para abrir o documento. A Preparação mostra à esquerda uma prévia grande do texto, e os Ajustes mostram à esquerda uma prévia da tela de leitura. Quando você pausa, o texto em volta de onde você estava se abre em duas páginas, como um livro, que você vira deslizando, e, com o Readride Pro, o Mapa do documento passa a abrir como sumário no lugar da página já lida. Se a letra estiver tão grande que caiba pouco numa página, o Readride mostra uma só tela em vez de duas páginas.",
+    "No iPad, as palavras que você lê aparecem maiores que no iPhone. Quando você estreita a janela com o Split View ou o Slide Over, segura um iPad mini na vertical ou gira na vertical um iPhone dobrável aberto, o Readride mostra as mesmas telas do iPhone, alargadas para uma largura confortável de leitura. Arraste um arquivo para a estante a partir do app Arquivos ou do Safari aberto ao lado, e a Preparação se abre. Os arquivos entram um de cada vez. Com um teclado conectado, na tela de leitura a barra de espaço reproduz e pausa, as setas para a esquerda e para a direita voltam uma frase ou passam para a próxima, as setas para cima e para baixo mudam a velocidade e Esc leva você de volta à estante.",
+    "Num iPhone dobrável, quando a tela de leitura tem uma faixa do sistema de um lado, Reproduzir, Voltar uma frase, Próxima frase, a velocidade de leitura + e −, Mapa do documento e Ajustes ficam na vertical nessa faixa, com a velocidade como número entre + e −."
    ]
   },
   {

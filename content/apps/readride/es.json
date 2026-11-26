@@ -58,6 +58,26 @@
    ]
   },
   {
+   "layout": "feat",
+   "title": "En el iPad, pensado para la pantalla grande",
+   "body": [
+    "En el iPad y en la pantalla ancha de un iPhone plegable abierto, la estantería muestra tus documentos a la izquierda y, a la derecha, dónde te quedaste en el que elijas. Al pausar, el texto alrededor de donde ibas se abre en dos páginas, como un libro. En el iPad puedes arrastrar un archivo a la estantería para añadirlo y usar el teclado para reproducir y pausar, moverte entre frases y cambiar la velocidad."
+   ],
+   "bullets": [
+    "Dos páginas como en un libro al pausar",
+    "Archivos arrastrados a la estantería",
+    "Atajos de teclado en el iPad"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 4,
+    "alt": "Lectura en pausa en un iPad en vertical. Arriba aparece en grande «The letter» y debajo el texto se abre en dos páginas, con el título del documento en la izquierda y los párrafos de donde ibas en la derecha.",
+    "caption": "Pantalla del iPad, ampliada",
+    "focus": "-22px",
+    "focusW": "620px"
+   }
+  },
+  {
    "layout": "card",
    "title": "Dónde ibas y a qué ritmo",
    "body": [
@@ -90,7 +110,7 @@
   {
    "q": "Qué puedes añadir",
    "a": [
-    "Archivos de texto (txt y md), PDF y ePub sin DRM, desde la app Archivos o compartidos desde otras apps. También puedes pegar texto copiado o enviar un artículo web desde Safari con el botón Compartir. Los PDF con contraseña se abren al introducirla. Readride funciona mejor con texto corrido, como novelas, noticias y ensayos. Las tablas y las listas se leen como palabras seguidas, sin su formato."
+    "Archivos de texto (txt y md), PDF y ePub sin DRM, desde la app Archivos o compartidos desde otras apps. En el iPad puedes, además, arrastrar un archivo a la estantería. También puedes pegar texto copiado o enviar un artículo web desde Safari con el botón Compartir. Los PDF con contraseña se abren al introducirla. Readride funciona mejor con texto corrido, como novelas, noticias y ensayos. Las tablas y las listas se leen como palabras seguidas, sin su formato."
    ]
   },
   {
@@ -144,7 +164,9 @@
   {
    "q": "Readride en el iPad y en el iPhone plegable",
    "a": [
-    "Readride también funciona en el iPad. Muestra las mismas pantallas que en el iPhone, ensanchadas a un ancho cómodo para leer, en vertical y en horizontal, y se ajusta cuando cambias el tamaño de la ventana. En la pantalla ancha de un iPhone plegable abierto se ensancha igual. Cuando la pantalla de lectura tiene una franja del sistema a un lado, Reproducir, Retroceder una frase, Frase siguiente, la velocidad de lectura + y −, Mapa del documento y Ajustes se colocan en vertical en esa franja, con la velocidad como número entre + y −."
+    "En el iPad y en la pantalla ancha de un iPhone plegable abierto, la estantería muestra tus documentos a la izquierda y, a la derecha, dónde te quedaste en el que elijas; tócalo para abrir el documento. Preparación muestra a la izquierda una vista previa grande del texto, y Ajustes muestra a la izquierda una vista previa de la pantalla de lectura. Al pausar, el texto alrededor de donde ibas se abre en dos páginas, como un libro, que pasas deslizando, y, con Readride Pro, el Mapa del documento se abre entonces como índice en lugar de la página ya leída. Si la letra es tan grande que cabe poco en una página, Readride lo muestra en una sola vista en lugar de dos páginas.",
+    "En el iPad, las palabras que lees aparecen más grandes que en el iPhone. Cuando estrechas la ventana con Split View o Slide Over, sostienes un iPad mini en vertical o giras en vertical un iPhone plegable abierto, Readride muestra las mismas pantallas que en el iPhone, ensanchadas a un ancho cómodo para leer. Arrastra un archivo a la estantería desde la app Archivos o Safari abiertos al lado y se abre Preparación. Los archivos se añaden de uno en uno. Con un teclado conectado, en la pantalla de lectura la barra espaciadora reproduce y pausa, las flechas izquierda y derecha retroceden una frase o pasan a la siguiente, las flechas arriba y abajo cambian la velocidad y Esc te devuelve a la estantería.",
+    "En un iPhone plegable, cuando la pantalla de lectura tiene una franja del sistema a un lado, Reproducir, Retroceder una frase, Frase siguiente, la velocidad de lectura + y −, Mapa del documento y Ajustes se colocan en vertical en esa franja, con la velocidad como número entre + y −."
    ]
   },
   {
