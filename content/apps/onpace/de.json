@@ -61,6 +61,22 @@
   },
   {
    "layout": "card",
+   "title": "Auf dem iPad bekommen Karte und Kontrollpunkte mehr Platz",
+   "body": [
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone steht die große Zahl in der Mitte des Wegbildschirms, links und rechts daneben der nächste Kontrollpunkt und die erwartete Ankunft. Auf der Spur darunter stehen die Namen der Kontrollpunkte, und die Karte nutzt die ganze Bildschirmbreite. Der Routenbildschirm teilt sich in zwei Seiten, sodass Sie Kontrollpunkte mit Blick auf die Karte bearbeiten."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad hoch und quer",
+     "Spur mit Namen der Kontrollpunkte",
+     "Routenbildschirm mit Liste und Karte nebeneinander"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Aus Ihren Wegen abgestimmt",
    "body": [
     "Jeder Weg fügt echte Zeiten hinzu. Abschnittszeiten zählen ab dem Moment, in dem Sie tatsächlich losgegangen sind, und ein später Aufbruch wird getrennt gezählt. Waren Sie zu spät, weil Sie spät losgegangen sind, sagt OnPace genau das, statt eine frühere Abfahrt vorzuschlagen. Die App nimmt den Median Ihrer letzten Wege, schlägt mit Pin-Nummer vor, einen Kontrollpunkt zu verschieben, an dem Sie immer zu spät sind, oder einen zu knappen Abschnitt zu lockern, und zeigt Abschnitte, die an bestimmten Wochentagen oder zu bestimmten Abfahrtszeiten länger dauern. „Deine letzte Fahrt“ auf dem Startbildschirm zeigt, wie spät Sie losgegangen sind und wie lange der Weg gedauert hat. Hat ein Weg trotz pünktlichem Aufbruch länger gedauert als geplant, steht es allen offen, die Abfahrt anhand dieses einen Wegs vorzuziehen."
@@ -154,9 +170,11 @@
    ]
   },
   {
-   "q": "OnPace auf einem faltbaren iPhone",
+   "q": "OnPace auf dem iPad und einem faltbaren iPhone",
    "a": [
-    "Hat der Bildschirm eines faltbaren iPhone an einer Seite einen Systemstreifen, stehen während eines Wegs die Kartentaste und die Markierungen „Einsteigen“, „Aussteigen“, „Hinein“, „Hinaus“ und „Sonstiges“ senkrecht in diesem Streifen. Zusammengeklappt und hochkant passt die Karte auf den ersten Bildschirm. Aufgeklappt und quer zeigt der Wegbildschirm links die große Zahl und die Liste „Verbleibend“, rechts die Karte, alles auf einem Bildschirm. Beim Erstellen oder Bearbeiten einer Route auf der Karte öffnet sich die Karte bei aufgeklapptem iPhone im Vollbild, und quer steht das Bedienfeld neben der Karte."
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone steht die große Zahl in der Mitte des Wegbildschirms, links und rechts daneben der nächste Kontrollpunkt und die erwartete Ankunft. Auf der Spur darunter stehen die Namen der Kontrollpunkte; reicht der Platz nicht, nur Start, Ziel und der nächste Kontrollpunkt. Die Karte nutzt die ganze Bildschirmbreite. Hat der Bildschirm seitlich einen Systemstreifen, stehen die Markierungen „Einsteigen“, „Aussteigen“, „Hinein“, „Hinaus“ und „Sonstiges“ senkrecht in diesem Streifen, sonst unten auf dem Bildschirm.",
+    "Der Routenbildschirm teilt sich in zwei Seiten: quer links die Liste und rechts die Karte, hochkant oben die Karte und darunter die Liste. Beim Erstellen oder Bearbeiten einer Route auf der Karte öffnet sich die Karte im Vollbild; das Bedienfeld steht quer neben der Karte und hochkant darunter.",
+    "Zugeklappt und hochkant stehen die Kartentaste und die Markierungen im Systemstreifen, sodass die Karte auf den ersten Bildschirm passt. Zugeklappt oder in einem schmal gezogenen Fenster auf dem iPad nutzt die App das iPhone-Layout."
    ]
   }
  ],

@@ -1,5 +1,5 @@
 {
- "describesVersion": "1.0.6",
+ "describesVersion": "1.0.7",
  "purchase": "one-time",
  "ads": false,
  "account": false,
@@ -42,6 +42,7 @@
   "실시간 버스와 지하철 정보"
  ],
  "trip": [
+  "1.0.7 iPad 와 펼친 Duo(App/WideLayout.swift mode: 옆 안전 영역 80 이상만 뺀 폭 W 820 이상 가로면 넓은 가로, 640 이상 세로면 넓은 세로, 그 밖과 세로 compact 는 아이폰 배치): 실행 화면은 큰 편차 숫자 가운데, 다음 지점과 도착 예상이 양 날개, 게이지와 이름 붙은 트랙(RunTrackNames, 점 간격 72 미만이면 양 끝과 다음 지점만 이름), 지도는 화면 폭 띠(Views.swift:856 넓은 창 실행). 1.0.6 까지 편 Duo 가로의 왼쪽 큰 숫자와 남은 지점 목록(Remaining) | 오른쪽 지도 배치는 없어지고 Localizable 의 Remaining, %lld more 키도 빠짐. 표시 다섯은 옆 띠가 있으면 띠(RunStrip), 없으면 아래(세로는 정지 양옆, 가로는 바닥 오른쪽). 길 화면, 다녀온 길로 만들기는 두 쪽(WidePages.swift TwoPage, 가로 왼쪽 글 | 오른쪽 그림, 세로 위 그림 | 아래 글). 지도 편집은 가로 세로 regular(iPad, 편 Duo)면 전체 화면(openMapEditor), 넓은 세로는 지도 아래 고정 칸, 넓은 가로는 왼쪽 계획 쪽 | 지도(WideEditor.swift). 시트는 iPad 에서 .page. 각진 단추(Theme.swift Corner)는 디자인이라 사이트에 쓰지 않음",
   "편차 +4:10 꼴(분:초, + 가 늦음), 다음 지점과 정상 구간, 도착 예상, 남은 거리. 도착 2분 뒤 저절로 멈춘다",
   "오차 범위: ±30초, 1분, 2분, 3분, 빨라도 괜찮음(늦음 30초·1분·2분), 직접 15초~10분. 기본 ±1분",
   "늦음 효과음(1.0.2, 무료, 616d2ef, 663f713, 13fa3ad): 배너 알림 없이 소리만. 늦은 분(내림) 1~5 마다 한 번, N분이면 음 N개(나무 마림바, 5분 넘어도 5분 소리), 오차 범위와 상관없이 분으로만 센다. 빠름은 조용. 늦은 분이 1분 넘게 줄어 있어야 다시 센다. 편차가 한 번에 60초 넘게 튀거나 길 밖이면 내지 않음. 잠금 화면 카드가 없어도 난다. 미디어 볼륨, 무음 스위치와 상관없음, 듣던 음악은 잠깐 줄임. 설정 Pace 절의 'Sound when running late'(늦어지면 효과음) 스위치와 Preview(미리 듣기) 1~5 (App/LateChime.swift, LateChimePlayer.swift, LiveActivityDriver.swift, Views.swift:1055)",
@@ -96,7 +97,6 @@
   "Your last trip": "방금 다녀온 기록",
   "You usually leave %@ late": "평소 출발이 %@ 늦습니다",
   "#%lld %@": "%1$lld번 %2$@",
-  "Remaining": "남은 지점",
   "Board": "탑승",
   "Get off": "하차",
   "Enter": "안으로",
@@ -113,6 +113,7 @@
  ],
  "numbersNote": "소개 문구의 숫자: 도착 2분 뒤 멈춤, 무료 길 2개, 1.0.2 늦음 효과음 '5분까지 1분마다'(ko, ja, zh). 출발 알림의 5, 10, 15분은 지원(FAQ)에만 쓴다. 1.0.6 부터 앱 화면이 46개 언어(8f94658)라 다른 언어 페이지(de, es, ja, pt-br, zh-hans, zh-hant)의 UI 이름은 그 언어 앱 글자(Localizable.xcstrings)로 바꿨고 따옴표는 사이트 관례(de „“, es «», pt-br “”, ja 「」, zh-hans “”, zh-hant 「」). 1.0.5 까지는 앱 화면이 영어와 한국어뿐이라 다른 언어 페이지에 영어 UI 이름을 썼다. 1.0.0 의 Transit to the next checkpoint 스위치는 1.0.1 에서 To the next checkpoint 선택(Walk, Bus, Subway)으로 바뀌었다. 1.0.3 의 FAQ 예시 7분(평소 출발이 7분 늦습니다), 3번(같은 묶음 기록 3번, 3번 서현로)은 지원(FAQ)에만 쓴다. 'Edit route' 는 1.0.3 에서 'Edit on map'(지도에서 고치기)으로 바뀌어 버스나 지하철 구간 FAQ 를 고쳤다",
  "sources": [
+  "1.0.7 앱 코드: OnPace main a5273a0(= ipad-duo, 1.0.7 (1) 심사 제출 기록, 버전 올림 146db1c, 2026-11-26 19:02 ASC READY_FOR_SALE, Commander 확인)의 PoC/ 를 1.0.6 305c4be 와 비교. 바뀐 것은 iPad 지원과 넓은 창 배치(6dc9c8a~b0b4998), 각진 단추(0ed9d29, 362f1ec, 1c51d38), 버전. ProStore, PrivacyInfo, InfoPlist.xcstrings diff 0, Info.plist 는 iPad 방향 키만, 새 저장 키, 네트워크, 권한 없어 처리방침 그대로. Localizable 은 Remaining, %lld more 두 키만 빠지고 ko 값 변화 없음. whatsNew ko '• iPad 지원 • 펼친 iPhone Duo 화면 개선 • 세부 다듬기와 안정성 개선'. 사이트 반영(8개 언어): 마지막 카드 앞에 iPad 카드 절(chips, 그림 없음), FAQ '접는 iPhone에서 쓰기'를 'iPad와 접는 iPhone에서 쓰기'로 바꾸고 없어진 남은 지점 목록 문장을 새 배치로. 그림은 앱 세션이 새 경로를 보내지 않아 그대로",
   "1.0.6 앱 코드: OnPace 305c4be(1.0.6 (1) 심사 제출 기록, project.yml MARKETING_VERSION 1.0.6, CURRENT_PROJECT_VERSION 1, 2026-11-24 07:01 ASC READY_FOR_SALE, Commander 확인)의 PoC/ 를 v1.0.5 와 비교. 바뀐 것은 앱 화면 46개 언어(8f94658: Localizable, InfoPlist, AppShortcuts 카탈로그 44개 언어 추가, 언어별 Plex 글꼴 Typography.swift uiFamily, ar he ur 의 화살표 문구)와 버전뿐, 저장, 권한, 네트워크 변화 없음이라 처리방침 그대로. whatsNew ko '• 앱 화면 언어 추가 지원'. 사이트 반영: 여섯 언어 페이지 UI 이름을 앱 글자로(소개, 지원, 처리방침 본문, 12절 변경 이력은 그대로). 사이트 본문에 언어 수 문장은 없음. 그림: ja, de, es, pt-br, zh-hans, zh-hant 에 OnPace docs/store/shots-raw/iphone/{ja,de-DE,es-ES,pt-BR,zh-Hans,zh-Hant}/{run,route,map}.png(2026-11-22 촬영, 1320x2868, OnPace 세션 전달)를 import_assets.py 와 같은 인자(-resize 660x -quality 80)로 shots/<언어>/01~03, asset-sources.json 에 더함. ko, en 그림과 첫 화면 store 세트, 아이콘 그대로(AppIcon 바이트 같음)",
   "1.0.5 앱 코드: OnPace a32550a(태그 v1.0.5, project.yml MARKETING_VERSION 1.0.5, CURRENT_PROJECT_VERSION 2, 2026-11-16 READY_FOR_SALE, HQ 확인)의 PoC/ 를 1.0.4 dbab3b8 과 비교. 바뀐 앱 파일은 AppIcon 세 장(2219015, 밝은 판 #FFFFFF, 다크와 틴트 #000000), ConfirmCard, History, Home, Info.plist, InfoPlist.xcstrings(동작 문구), PlaceSearch, Refine, RouteBuilder, Schedule, Sensors, Views, Localizable.xcstrings, Theme, project.yml. StoreKit, ProStore, Paywall, PrivacyInfo diff 0, 새 저장 키, 파일, 네트워크 없음. 처리방침은 동작 문구에 맞춰 8절 동작 문장과 2절 마지막 실행 항목(걷기와 차량 전환 시각, 1.0.0 부터 last-run.json 에 있던 것)을 고치고 시행 2026-11-16. 사이트 그림: shots-raw/iphone/ko/{run,route,map}.png, en-US/{run,route,map}.png 도 1.0.5 새 촬영(11-16 OnPace 세션 확인, run 과 map 은 23:30 다시 찍음). 첫 화면 store 세트는 1.0.4 그대로",
   "1.0.4 앱 코드: OnPace dbab3b8(project.yml MARKETING_VERSION 1.0.4, CURRENT_PROJECT_VERSION 1, 제출 0e6fc86, 2026-10-28 READY_FOR_SALE, ASC 확인)의 PoC/ 를 1.0.3 84ef3a6 과 비교. 바뀐 앱 파일은 App/MapLook.swift, RouteBuilder.swift, RoutineMap.swift, Views.swift, WideLayoutFlag.swift 다섯과 project.yml 버전 번호뿐(나머지는 PoC/scripts). Shared, Widgets, StoreKit, ProStore, Paywall, InfoPlist, PrivacyInfo, Localizable.xcstrings diff 0, 새 저장 키, 파일, 네트워크, 권한 없음이라 처리방침과 무료, Pro 범위는 그대로. 0e6fc86..7d4f77c 는 스크립트와 문서뿐. whatsNew ko '• 펼친 iPhone Duo에서 넓은 지도로 길 편집 • iPhone Duo 지원 개선 • 세부 다듬기와 안정성 개선' (docs/store/metadata.json). 스토어 스크린샷: iPhone 세트(en-US, ko)와 shots-raw 는 1.0.3(65ea563, 10-19 캡처) 그대로, 1.0.4 에서 Duo 세트 50 로케일을 새로 올림(e77fe63, docs/store/screenshots/duo)",
@@ -124,5 +125,8 @@
   "1.0.1 앱 코드: OnPace 599acc7(= 0a60535 와 앱 코드 같음)의 PoC/ 를 1.0.0 제출 커밋 4894944 와 비교. project.yml MARKETING_VERSION 1.0.1, CURRENT_PROJECT_VERSION 2. 권한 문구, PrivacyInfo.xcprivacy, StoreKit 은 바뀌지 않음",
   "출발 알림, 시간대 자동 선택, 요일 Pro, 버스와 지하철: 34e1bc5. 지점 이름: 0a60535. 켜진 스위치 버밀리언: 74c226e",
   "그림: OnPace/docs/store/shots-raw/iphone/<ko|en-US>/run.png, route.png, map.png(커밋 밖, ko 10-01 15:09~15:10, en 10-01 13:20~13:27 캡처). 합성본 docs/store/screenshots/iphone/<ko|en-US>/01~03.png (8b4ac1d, ko 9336a0e)"
+ ],
+ "platform": [
+  "iPhone 과 iPad(1.0.7 부터, PoC/project.yml TARGETED_DEVICE_FAMILY \"1,2\", 위젯 확장 같음), iOS 18 이상. iPhone 세로와 가로(거꾸로 세로 없음), iPad 네 방향(UISupportedInterfaceOrientations~ipad). 1.0.6 까지는 iPhone 전용"
  ]
 }

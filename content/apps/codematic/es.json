@@ -51,13 +51,29 @@
    "layout": "card",
    "title": "Quién recibió cada código",
    "body": [
-    "Escribe el nombre del destinatario al entregar un código y cada código guarda quién lo recibió y cuándo. Deshaz un código entregado por error y exporta el registro en CSV. Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone con la misma cuenta de Apple."
+    "Escribe el nombre del destinatario al entregar un código y cada código guarda quién lo recibió y cuándo. Deshaz un código entregado por error y exporta el registro en CSV. Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone y iPad con la misma cuenta de Apple."
    ],
    "bullets": [
     "Registro de entregas y deshacer",
     "Exportación a CSV",
     "Sincronización con iCloud"
    ]
+  },
+  {
+   "layout": "card",
+   "title": "En el iPad, ves los lotes y lo entregado a la vez",
+   "body": [
+    "En el iPad, la lista de lotes queda a la izquierda y en el centro emites los códigos del lote elegido. Con una pantalla ancha, los códigos que quedan y el registro de entregas tienen su propia columna a la derecha; con una más estrecha, el registro pasa debajo de la lista de lotes. Al emitir desde App Store Connect, las apps, los productos y las ofertas aparecen uno al lado del otro para que elijas."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad en vertical y horizontal",
+     "Lotes y entregas a la vez",
+     "Apps, productos y ofertas en paralelo"
+    ]
+   }
   },
   {
    "layout": "card",
@@ -127,7 +143,7 @@
   {
    "q": "Otros dispositivos",
    "a": [
-    "Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone con la misma cuenta de Apple. La pantalla «Información» muestra el estado en la fila «Almacenamiento en iCloud». Sin una sesión de iCloud, se guardan en ese dispositivo. La clave de API de App Store Connect se añade en cada dispositivo por separado."
+    "Los lotes y los códigos se guardan en iCloud y aparecen en otros iPhone y iPad con la misma cuenta de Apple. La pantalla «Información» muestra el estado en la fila «Almacenamiento en iCloud». Sin una sesión de iCloud, se guardan en ese dispositivo. La clave de API de App Store Connect se añade en cada dispositivo por separado."
    ]
   },
   {
@@ -177,6 +193,13 @@
    "q": "Si dejas de tener Pro",
    "a": [
     "Tras un reembolso, o si sales de En familia, los lotes que trajiste de App Store Connect se quedan y puedes seguir emitiendo, exportando y borrando. También puedes quitar tu clave en cualquier momento. Solo la creación de lotes nuevos desde App Store Connect sigue el límite de 3."
+   ]
+  },
+  {
+   "q": "Ver en el iPad y en un iPhone plegable",
+   "a": [
+    "En el iPad, la lista de lotes queda a la izquierda y el lote elegido en el centro. En una ventana ancha, los códigos que quedan y «Entregados» tienen su propia columna a la derecha; en una más estrecha, «Entregados» pasa debajo de la lista de lotes. La pantalla de códigos nuevos muestra a la izquierda las formas de añadirlos y a la derecha los detalles y los códigos leídos. Al emitir desde App Store Connect, las apps, los productos y las ofertas aparecen en tres columnas, una al lado de otra.",
+    "En el iPhone la pantalla va solo en vertical; en el iPad, en vertical y en horizontal. Con un iPhone plegable abierto y en horizontal, la pantalla del lote se divide en dos columnas y «Entregados» aparece arriba en la columna derecha. Cerrado, o en el iPad con la ventana estrecha, la app usa la disposición del iPhone."
    ]
   },
   {

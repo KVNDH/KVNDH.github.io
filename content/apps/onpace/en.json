@@ -61,6 +61,22 @@
   },
   {
    "layout": "card",
+   "title": "On iPad, the map and checkpoints get more room",
+   "body": [
+    "On iPad and on the wide screen of a foldable iPhone opened out, the trip screen puts the big number in the middle, with the next checkpoint and the expected arrival on either side. The track below carries checkpoint names, and the map spans the width of the screen. The route screen splits into two pages, so you can edit checkpoints while looking at the map."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad upright and sideways",
+     "Track with checkpoint names",
+     "Route screen with list and map side by side"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Tuned from your trips",
    "body": [
     "Each trip adds real times. Leg times count from when you actually left, and leaving late is counted separately. On a day you were late because you left late, OnPace says so instead of telling you to leave earlier. It looks at the median of your recent trips, suggests moving a checkpoint you always reach late or loosening a leg that is too tight, names each one by its pin number, and points out legs that take longer on certain weekdays or departure times. Your last trip on the home screen shows how late you left and how long the trip took. When a trip took longer than planned even though you left on time, moving your departure earlier from that single trip is open to everyone."
@@ -154,9 +170,11 @@
    ]
   },
   {
-   "q": "Using OnPace on a foldable iPhone",
+   "q": "Using OnPace on iPad and a foldable iPhone",
    "a": [
-    "On a foldable iPhone, when the screen has a system strip along one side, the map button and the Board, Get off, Enter, Exit and Other marks stand in that strip during a trip. Folded and held upright, the map fits on the first screen. Unfolded and held sideways, the trip screen shows the big number and the Remaining checkpoints on the left and the map on the right, all on one screen. When you create or edit a route on the map, the map opens full screen with the iPhone unfolded, and the panel sits beside the map when the screen is sideways."
+    "On iPad and on the wide screen of a foldable iPhone opened out, the trip screen puts the big number in the middle, with the next checkpoint and the expected arrival on either side. The track below carries checkpoint names; when there are too many to fit, only the start, the end and the next checkpoint are named. The map spans the width of the screen. When the screen has a system strip along one side, the Board, Get off, Enter, Exit and Other marks stand in that strip; otherwise they sit at the bottom of the screen.",
+    "The route screen splits into two pages: held sideways, the list is on the left and the map on the right; held upright, the map is on top and the list below. When you create or edit a route on the map, the map opens full screen, with the panel beside the map when sideways and below it when upright.",
+    "Folded and held upright, the map button and the marks stand in the system strip, so the map fits on the first screen. Folded, or with the window made narrow on iPad, the app uses the same layout as on iPhone."
    ]
   }
  ],

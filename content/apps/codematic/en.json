@@ -51,13 +51,29 @@
    "layout": "card",
    "title": "Who got which code",
    "body": [
-    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Rolls and codes are stored in iCloud and show up on other iPhones signed in to the same Apple Account."
+    "Add the recipient's name when you hand a code out, and each code keeps who got it and when. Undo a code handed out by mistake, and export the record as CSV. Rolls and codes are stored in iCloud and show up on other iPhones and iPads signed in to the same Apple Account."
    ],
    "bullets": [
     "Handed out list and Undo",
     "Export as CSV",
     "iCloud sync"
    ]
+  },
+  {
+   "layout": "card",
+   "title": "On iPad, see your rolls and what you handed out together",
+   "body": [
+    "On iPad, the list of rolls sits on the left, and you issue codes from the chosen roll in the middle. On a wide screen, the remaining codes and the handed-out record get their own column on the right; on a narrower one, the handed-out record moves under the list of rolls. When you issue from App Store Connect, apps, products and offers appear side by side for you to pick from."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad upright and sideways",
+     "Rolls and handed-out record together",
+     "Apps, products and offers side by side"
+    ]
+   }
   },
   {
    "layout": "card",
@@ -127,7 +143,7 @@
   {
    "q": "Other devices",
    "a": [
-    "Rolls and codes are stored in iCloud and appear on other iPhones signed in to the same Apple Account. The Info screen shows the status under iCloud storage. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
+    "Rolls and codes are stored in iCloud and appear on other iPhones and iPads signed in to the same Apple Account. The Info screen shows the status under iCloud storage. Without an iCloud sign-in they are stored on that device. An App Store Connect API key is added on each device separately."
    ]
   },
   {
@@ -177,6 +193,13 @@
    "q": "If Pro goes away",
    "a": [
     "After a refund, or when you leave Family Sharing, rolls you brought in from App Store Connect stay, and you can still issue, export and delete them. You can also remove your key at any time. Only creating new rolls from App Store Connect follows the limit of 3."
+   ]
+  },
+  {
+   "q": "iPad and foldable iPhone",
+   "a": [
+    "On iPad, the list of rolls is on the left and the chosen roll in the middle. In a wide window, the remaining codes and Handed out have their own column on the right; in a narrower one, Handed out moves under the list of rolls. The New codes screen shows the ways to add codes on the left and the details and the codes it read on the right. When you issue from App Store Connect, apps, products and offers appear in three columns side by side.",
+    "On iPhone the screen stays upright; on iPad it works upright and sideways. With a foldable iPhone opened out and held sideways, the roll screen splits into two columns and Handed out appears at the top of the right column. Folded, or with the window made narrow on iPad, the app uses the same layout as on iPhone."
    ]
   },
   {

@@ -51,13 +51,29 @@
    "layout": "card",
    "title": "Wer welchen Code bekommen hat",
    "body": [
-    "Tragen Sie beim Weitergeben den Namen des Empfängers ein, dann hält jeder Code fest, wer ihn wann bekommen hat. Einen versehentlich verteilten Code widerrufen Sie, und den Verlauf exportieren Sie als CSV. Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones, die mit demselben Apple Account angemeldet sind."
+    "Tragen Sie beim Weitergeben den Namen des Empfängers ein, dann hält jeder Code fest, wer ihn wann bekommen hat. Einen versehentlich verteilten Code widerrufen Sie, und den Verlauf exportieren Sie als CSV. Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones und iPads, die mit demselben Apple Account angemeldet sind."
    ],
    "bullets": [
     "Verlauf und Widerrufen",
     "CSV-Export",
     "iCloud-Synchronisierung"
    ]
+  },
+  {
+   "layout": "card",
+   "title": "Auf dem iPad sehen Sie Stapel und Verlauf zusammen",
+   "body": [
+    "Auf dem iPad steht links die Liste der Stapel, in der Mitte geben Sie Codes aus dem gewählten Stapel aus. Auf einem breiten Bildschirm haben die übrigen Codes und der Verlauf der weitergegebenen Codes rechts eine eigene Spalte, auf einem schmaleren rückt der Verlauf unter die Stapelliste. Beim Ausgeben aus App Store Connect stehen Apps, Produkte und Angebote nebeneinander zur Auswahl."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad hoch und quer",
+     "Stapel und Verlauf zusammen",
+     "Apps, Produkte und Angebote nebeneinander"
+    ]
+   }
   },
   {
    "layout": "card",
@@ -127,7 +143,7 @@
   {
    "q": "Andere Geräte",
    "a": [
-    "Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones, die mit demselben Apple Account angemeldet sind. Der Bildschirm „Info“ zeigt den Status in der Zeile „iCloud-Speicherung“. Ohne iCloud-Anmeldung werden sie auf dem jeweiligen Gerät gespeichert. Einen API-Schlüssel für App Store Connect fügen Sie auf jedem Gerät einzeln hinzu."
+    "Stapel und Codes liegen in iCloud und erscheinen auf anderen iPhones und iPads, die mit demselben Apple Account angemeldet sind. Der Bildschirm „Info“ zeigt den Status in der Zeile „iCloud-Speicherung“. Ohne iCloud-Anmeldung werden sie auf dem jeweiligen Gerät gespeichert. Einen API-Schlüssel für App Store Connect fügen Sie auf jedem Gerät einzeln hinzu."
    ]
   },
   {
@@ -177,6 +193,13 @@
    "q": "Wenn Pro wegfällt",
    "a": [
     "Nach einer Erstattung oder wenn Sie die Familienfreigabe verlassen, bleiben aus App Store Connect übernommene Stapel erhalten, und Sie können daraus weiter Codes ausgeben, sie exportieren und löschen. Auch Ihren Schlüssel können Sie jederzeit entfernen. Nur für neue Stapel über App Store Connect gilt die Grenze von 3."
+   ]
+  },
+  {
+   "q": "iPad und faltbares iPhone",
+   "a": [
+    "Auf dem iPad steht links die Liste der Stapel, in der Mitte der gewählte Stapel. In einem breiten Fenster haben die übrigen Codes und „Weitergegeben“ rechts eine eigene Spalte, in einem schmaleren rückt „Weitergegeben“ unter die Stapelliste. Der Bildschirm für neue Codes zeigt links die Wege zum Hinzufügen, rechts die Details und die gelesenen Codes. Beim Ausgeben aus App Store Connect stehen Apps, Produkte und Angebote in drei Spalten nebeneinander.",
+    "Auf dem iPhone bleibt der Bildschirm im Hochformat, auf dem iPad geht hoch und quer. Ist ein faltbares iPhone aufgeklappt und quer, teilt sich der Stapelbildschirm in zwei Spalten, und oben in der rechten Spalte erscheint „Weitergegeben“. Zugeklappt oder in einem schmal gezogenen Fenster auf dem iPad nutzt die App das iPhone-Layout."
    ]
   },
   {

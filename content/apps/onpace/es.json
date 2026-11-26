@@ -61,6 +61,22 @@
   },
   {
    "layout": "card",
+   "title": "En el iPad, el mapa y los puntos de control tienen más espacio",
+   "body": [
+    "En el iPad y en la pantalla ancha de un iPhone plegable abierto, la pantalla del trayecto pone la cifra grande en el centro, con el siguiente punto de control y la llegada prevista a cada lado. Debajo, la línea de puntos muestra sus nombres y el mapa ocupa todo el ancho de la pantalla. La pantalla de la ruta se divide en dos páginas para que edites los puntos de control mientras ves el mapa."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad en vertical y horizontal",
+     "Línea con los nombres de los puntos de control",
+     "Ruta con lista y mapa uno al lado del otro"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Ajustado con tus trayectos",
    "body": [
     "Cada trayecto suma tiempos reales. Los tiempos de cada tramo cuentan desde que saliste de verdad, y salir tarde se cuenta aparte. Si llegaste tarde porque saliste tarde, OnPace te lo dice en lugar de proponerte salir antes. Mira la mediana de tus trayectos recientes, sugiere con el número de pin mover un punto de control al que siempre llegas tarde o aflojar un tramo demasiado justo, y señala los tramos que tardan más ciertos días de la semana o a ciertas horas de salida. «Tu último trayecto», en la pantalla de inicio, muestra con cuánto retraso saliste y cuánto duró el trayecto. Si saliste a tiempo y aun así tardaste más de lo previsto, adelantar la salida a partir de ese único trayecto está al alcance de todos."
@@ -154,9 +170,11 @@
    ]
   },
   {
-   "q": "Usar OnPace en un iPhone plegable",
+   "q": "Usar OnPace en el iPad y en un iPhone plegable",
    "a": [
-    "En un iPhone plegable, cuando la pantalla tiene una franja del sistema en un lado, durante el trayecto el botón del mapa y las marcas «Subir», «Bajar», «Entrar», «Salir» y «Otro» se colocan en vertical en esa franja. Plegado y en vertical, el mapa cabe en la primera pantalla. Desplegado y en horizontal, la pantalla del trayecto muestra a la izquierda la cifra grande y la lista «Pendientes» y a la derecha el mapa, todo en una sola pantalla. Al crear o editar una ruta en el mapa, con el iPhone desplegado el mapa se abre a pantalla completa y, en horizontal, el panel queda junto al mapa."
+    "En el iPad y en la pantalla ancha de un iPhone plegable abierto, la pantalla del trayecto pone la cifra grande en el centro, con el siguiente punto de control y la llegada prevista a cada lado. Debajo, la línea de puntos muestra sus nombres; si no caben todos, solo se ven el inicio, el final y el siguiente punto. El mapa ocupa todo el ancho de la pantalla. Si la pantalla tiene una franja del sistema en un lado, las marcas «Subir», «Bajar», «Entrar», «Salir» y «Otro» se colocan en vertical en esa franja; si no, quedan en la parte inferior de la pantalla.",
+    "La pantalla de la ruta se divide en dos páginas: en horizontal, la lista a la izquierda y el mapa a la derecha; en vertical, el mapa arriba y la lista debajo. Al crear o editar una ruta en el mapa, el mapa se abre a pantalla completa, con el panel junto al mapa en horizontal y debajo en vertical.",
+    "Plegado y en vertical, el botón del mapa y las marcas se colocan en la franja del sistema, así que el mapa cabe en la primera pantalla. Plegado, o en el iPad con la ventana estrecha, la app usa la disposición del iPhone."
    ]
   }
  ],
