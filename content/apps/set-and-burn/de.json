@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Datenschutzerklärung für Set & Burn",
-  "effectiveDate": "2026-11-07",
+  "effectiveDate": "2026-11-26",
   "summary": "Der Entwickler erfasst keine personenbezogenen Daten. Bannerwerbung kommt von Google AdMob, das dabei Geräteinformationen wie die Werbekennung verarbeitet. Bewegungswerte dienen dem Zählen der Sprünge, und der Entwickler erhält sie nicht. Die Zahlung für Pro wickelt Apple ab.",
   "intro": [
    "kvndh (im Folgenden der Entwickler) behandelt die personenbezogenen Daten der Nutzerinnen und Nutzer der App Set & Burn (im Folgenden die App) nach dem Datenschutzgesetz der Republik Korea, wie im Folgenden dargelegt."
@@ -194,7 +194,8 @@
     "paragraphs": [
      "Die App hat weder Registrierung noch Anmeldung, und der Entwickler erhebt keine personenbezogenen Daten von Nutzerinnen und Nutzern.",
      "Die App zeigt Bannerwerbung auf dem Abschlussbildschirm und in der Workout-Liste. Googles Werbedienst AdMob wählt diese Werbung aus und zeigt sie an und nutzt dafür Geräteinformationen, um Werbung auszuspielen und ihre Wirkung zu messen.",
-     "Während ein Workout mit eingeschaltetem „Sprünge zählen“ läuft, zählt die App Sprünge und Schritte anhand der Bewegungswerte Ihrer AirPods oder Ihres iPhone. Das geschieht auf Ihrem Gerät."
+     "Während ein Workout mit eingeschaltetem „Sprünge zählen“ läuft, zählt die App Sprünge und Schritte anhand der Bewegungswerte Ihrer AirPods oder Ihres iPhone. Das geschieht auf Ihrem Gerät.",
+     "Während ein Workout läuft, nutzt die Apple Watch-App eine HealthKit-Trainingssitzung, damit Timer und Vibration auch bei gesenktem Handgelenk weiterlaufen, und speichert mit deiner Erlaubnis das beendete Workout (Trainingsart, Start- und Endzeit) in der Health-App. Die App liest keine Health-Daten. iPhone und Apple Watch tauschen Workout-Liste, Einstellungen, Fortschritt und die gesamte Trainingszeit miteinander aus. Das geschieht auf deinen Geräten, und der Entwickler erhält diese Daten nicht."
     ],
     "bullets": []
    },

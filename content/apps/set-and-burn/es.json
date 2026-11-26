@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Política de privacidad de Set & Burn",
-  "effectiveDate": "2026-11-07",
+  "effectiveDate": "2026-11-26",
   "summary": "El desarrollador no recoge información personal. Los anuncios de banner vienen de Google AdMob, que trata información del dispositivo como el identificador de publicidad. Los valores de movimiento se usan para contar saltos, y el desarrollador no los recibe. Del pago de Pro se encarga Apple.",
   "intro": [
    "kvndh (en adelante, el desarrollador) trata la información personal de quienes usan la app Set & Burn (en adelante, la app) conforme a la Ley de Protección de Información Personal de Corea, según se expone a continuación."
@@ -194,7 +194,8 @@
     "paragraphs": [
      "La app no tiene registro ni inicio de sesión, y el desarrollador no recoge información personal de quienes la usan.",
      "La app muestra anuncios de banner en la pantalla final y en la lista de entrenamientos. El servicio publicitario de Google, AdMob, elige y muestra esos anuncios, y usa información del dispositivo para mostrar anuncios y medir su rendimiento.",
-     "Mientras se ejecuta un entrenamiento con «Contar saltos» activado, la app cuenta saltos y pasos a partir de los valores de movimiento de tus AirPods o tu iPhone. Esto ocurre en tu dispositivo."
+     "Mientras se ejecuta un entrenamiento con «Contar saltos» activado, la app cuenta saltos y pasos a partir de los valores de movimiento de tus AirPods o tu iPhone. Esto ocurre en tu dispositivo.",
+     "Mientras un entrenamiento está en curso, la app del Apple Watch usa una sesión de entrenamiento de HealthKit para que el temporizador y la vibración sigan con la muñeca bajada y, si lo permites, guarda el entrenamiento terminado (tipo, hora de inicio y de fin) en la app Salud. La app no lee datos de Salud. El iPhone y el Apple Watch intercambian la lista de entrenamientos, los ajustes, el progreso y el tiempo de trabajo acumulado. Esto ocurre en tus dispositivos y el desarrollador no recibe estos datos."
     ],
     "bullets": []
    },

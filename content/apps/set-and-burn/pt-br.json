@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Política de Privacidade do Set & Burn",
-  "effectiveDate": "2026-11-07",
+  "effectiveDate": "2026-11-26",
   "summary": "O desenvolvedor não coleta informações pessoais. Os anúncios em banner vêm do Google AdMob, que trata informações do aparelho como o identificador de publicidade. Os valores de movimento são usados para contar pulos, e o desenvolvedor não os recebe. O pagamento do Pro é processado pela Apple.",
   "intro": [
    "kvndh (a seguir, o desenvolvedor) trata as informações pessoais de quem usa o app Set & Burn (a seguir, o app) conforme a Lei de Proteção de Informações Pessoais da Coreia, como exposto abaixo."
@@ -194,7 +194,8 @@
     "paragraphs": [
      "O app não tem cadastro nem login, e o desenvolvedor não coleta informações pessoais de quem o usa.",
      "O app mostra anúncios em banner na tela final e na lista de treinos. O serviço de publicidade do Google, o AdMob, escolhe e exibe esses anúncios e usa informações do aparelho para exibir anúncios e medir o desempenho deles.",
-     "Enquanto um treino com “Contagem de pulos” ligado está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho."
+     "Enquanto um treino com “Contagem de pulos” ligado está rodando, o app conta pulos e passos a partir dos valores de movimento dos seus AirPods ou do iPhone. Isso acontece no seu aparelho.",
+     "Durante um treino, o app do Apple Watch usa uma sessão de treino do HealthKit para que o timer e a vibração continuem com o pulso abaixado e, se você permitir, salva o treino terminado (tipo, hora de início e de fim) no app Saúde. O app não lê dados do Saúde. O iPhone e o Apple Watch trocam entre si a lista de treinos, os ajustes, o andamento e o tempo de trabalho acumulado. Isso acontece nos seus dispositivos, e o desenvolvedor não recebe esses dados."
     ],
     "bullets": []
    },

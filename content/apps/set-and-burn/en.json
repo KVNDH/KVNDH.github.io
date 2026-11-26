@@ -183,7 +183,7 @@
  ],
  "privacy": {
   "title": "Set & Burn Privacy Policy",
-  "effectiveDate": "2026-11-07",
+  "effectiveDate": "2026-11-26",
   "summary": "The developer does not collect personal information. Banner ads come from Google AdMob, which processes device information such as the advertising identifier. Motion values are used to count jumps, and the developer does not receive them. Apple handles payment for Pro.",
   "intro": [
    "kvndh (\"the developer\") handles the personal information of people who use the Set & Burn app (\"the app\") under Korea's Personal Information Protection Act, as set out below."
@@ -194,7 +194,8 @@
     "paragraphs": [
      "The app has no sign-up or login, and the developer does not collect personal information from users.",
      "The app shows banner ads on the finish screen and in the workout list. Google's ad service AdMob selects and displays those ads, and uses device information to show ads and measure how they perform.",
-     "While a workout with Count jumps on is running, the app counts jumps and steps from the motion values of your AirPods or iPhone. This happens on your device."
+     "While a workout with Count jumps on is running, the app counts jumps and steps from the motion values of your AirPods or iPhone. This happens on your device.",
+     "While a workout runs, the Apple Watch app uses a HealthKit workout session so the timer and haptics continue with your wrist down, and, if you allow it, saves the finished workout (workout type, start and end time) to the Health app. The app does not read Health data. Your iPhone and Apple Watch exchange your workout list, settings, run progress and lifetime work time with each other. This happens on your devices, and the developer does not receive this data."
     ],
     "bullets": []
    },
