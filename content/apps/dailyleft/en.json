@@ -322,7 +322,7 @@
      "Information that AdMob may collect when showing ads is listed in section 9."
     ],
     "bullets": [
-     "Budget settings (budget type, currency and amount, period start day, the calculation period rule and the day it was last changed, Count weekdays only, Leftover Handling, Daily Amount Unit, the day carry-over started counting and the money carried into that period, whether payments go through over budget, how payment notices arrive, days left out in the calendar): used to work out the money left and the daily amount, kept separately for each budget if you use several",
+     "Budget settings (budget type, currency and amount, period start day, the calculation period rule and the day it was last changed, Count weekdays only, Leftover Handling, Daily Amount Unit, the day carry-over started counting and the money carried into that period, whether payments go through over budget, how payment notices arrive, days left out in the calendar, the Fever Effect amount (Burns From) if it is on): used to work out the money left and the daily amount, kept separately for each budget if you use several",
      "Card last 4 digits (if entered, for each budget): used to record a payment message to the right budget and skip messages from other cards",
      "Transactions (date, amount, merchant or memo, time added to the app, how it was recorded): used to work out the money left and for the transaction list",
      "The original text of recorded payment messages: saved as is in the saved file and used so the same message isn't recorded twice. It may include part of the approver's name (for example H*D), the merchant, the card's last 4 digits, the amount and the time",
