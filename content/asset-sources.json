@@ -312,12 +312,14 @@
    "ko": [
     "DailyLeft/build/site-113/ko/1-today.png",
     "DailyLeft/build/site-113/ko/2-calendar.png",
-    "DailyLeft/build/site-112/ko/3-widgets.png"
+    "DailyLeft/build/site-112/ko/3-widgets.png",
+    "DailyLeft/build/site-113/ipad/ko/02-calendar.png"
    ],
    "en": [
     "DailyLeft/build/site-113/en/1-today.png",
     "DailyLeft/build/site-113/en/2-calendar.png",
-    "DailyLeft/build/site-112/en/3-widgets.png"
+    "DailyLeft/build/site-112/en/3-widgets.png",
+    "DailyLeft/build/site-113/ipad/en-US/02-calendar.png"
    ]
   },
   "store": "DailyLeft/docs/store"

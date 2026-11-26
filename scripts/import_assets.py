@@ -45,10 +45,11 @@ def import_app(slug: str) -> None:
         for i, rel in enumerate(shots, 1):
             out = dest / "shots" / lang / f"{i:02d}.webp"
             out.parent.mkdir(parents=True, exist_ok=True)
-            # 가로 그림(iPad)은 절 그림에서 폭 620px 안팎으로 크게 보여 두 배 폭으로 줄인다(2026-11-25 TailorColor 1.0.1)
+            # iPad 그림(가로, 또는 폭 2000px 넘는 세로)은 절 그림에서 폭 620px 안팎으로 크게 보여 두 배 폭으로 줄인다
+            # (2026-11-25 TailorColor 1.0.1 가로, 2026-11-26 DailyLeft 1.1.3 iPad 세로)
             w, h = map(int, subprocess.run(["magick", "identify", "-format", "%w %h", CODING / rel],
                                           check=True, capture_output=True, text=True).stdout.split())
-            magick(CODING / rel, "-strip", "-resize", "1320x" if w > h else "660x", "-quality", "80", out)
+            magick(CODING / rel, "-strip", "-resize", "1320x" if w > h or w > 2000 else "660x", "-quality", "80", out)
     magick("-size", "1200x630", f"radial-gradient:{app['accent']}-#0A0A0B",
            "(", icon, "-resize", "300x300", ")", "-gravity", "center", "-composite", "-strip", "-quality", "85", dest / "og.jpg")
 

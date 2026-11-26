@@ -80,19 +80,23 @@
    ]
   },
   {
-   "layout": "card",
+   "layout": "feat",
    "title": "No iPad, você vê o dinheiro restante e o calendário em tamanho grande",
    "body": [
     "No iPad, o número grande, a barra do período e o calendário da tela principal ficam um embaixo do outro no centro da tela. Na horizontal, no lugar do calendário, os dias do período aparecem em uma linha, e tocar em um dia mostra na hora quanto você gastou e as transações daquele dia. A tela larga de um iPhone dobrável aberto usa o mesmo layout, e a Tela de Início do iPad pode ter widgets grandes."
    ],
-   "bullets": [],
+   "bullets": [
+    "iPad na vertical e na horizontal",
+    "Gastos e transações de cada dia",
+    "Widgets grandes na Tela de Início do iPad"
+   ],
    "visual": {
-    "type": "chips",
-    "items": [
-     "iPad na vertical e na horizontal",
-     "Gastos e transações de cada dia",
-     "Widgets grandes na Tela de Início do iPad"
-    ]
+    "type": "crop",
+    "shot": 4,
+    "alt": "A tela principal do DailyLeft no iPad na vertical. Abaixo da barra fica o calendário do período e, embaixo dele, o gasto e a transação do dia escolhido.",
+    "caption": "Tela do iPad, ampliada",
+    "focus": "-262px",
+    "focusW": "620px"
    }
   },
   {

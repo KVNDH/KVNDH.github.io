@@ -80,19 +80,23 @@
    ]
   },
   {
-   "layout": "card",
+   "layout": "feat",
    "title": "On iPad, the money left and the calendar get more room",
    "body": [
     "On iPad, the big number, the period bar and the calendar on the main screen sit one after another in the middle of the screen. Turned sideways, the period's dates run in one row instead of the calendar, and tapping a date shows what you spent and your transactions that day. The wide screen of a foldable iPhone opened out uses the same layout, and you can put a large widget on the iPad Home Screen."
    ],
-   "bullets": [],
+   "bullets": [
+    "iPad upright and sideways",
+    "Spending and transactions by date",
+    "Large widgets on the iPad Home Screen"
+   ],
    "visual": {
-    "type": "chips",
-    "items": [
-     "iPad upright and sideways",
-     "Spending and transactions by date",
-     "Large widgets on the iPad Home Screen"
-    ]
+    "type": "crop",
+    "shot": 4,
+    "alt": "The DailyLeft main screen on iPad in portrait. The period calendar spreads out below the bar, and under it are the spending and transaction for the chosen day.",
+    "caption": "iPad screen, close-up",
+    "focus": "-262px",
+    "focusW": "620px"
    }
   },
   {

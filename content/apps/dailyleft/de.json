@@ -80,19 +80,23 @@
    ]
   },
   {
-   "layout": "card",
+   "layout": "feat",
    "title": "Auf dem iPad sehen Sie das übrige Geld und den Kalender groß",
    "body": [
     "Auf dem iPad stehen die große Zahl, der Balken des Zeitraums und der Kalender des Hauptbildschirms untereinander in der Mitte des Bildschirms. Im Querformat reihen sich statt des Kalenders die Tage des Zeitraums in einer Zeile, und ein Tipp auf einen Tag zeigt gleich die Ausgaben und Transaktionen dieses Tages. Der breite Bildschirm eines aufgeklappten faltbaren iPhone zeigt dasselbe Layout, und auf dem Home-Bildschirm des iPad können Sie große Widgets platzieren."
    ],
-   "bullets": [],
+   "bullets": [
+    "iPad hoch und quer",
+    "Ausgaben und Transaktionen pro Tag",
+    "Große Widgets auf dem iPad-Home-Bildschirm"
+   ],
    "visual": {
-    "type": "chips",
-    "items": [
-     "iPad hoch und quer",
-     "Ausgaben und Transaktionen pro Tag",
-     "Große Widgets auf dem iPad-Home-Bildschirm"
-    ]
+    "type": "crop",
+    "shot": 4,
+    "alt": "Der Hauptbildschirm von DailyLeft auf dem iPad im Hochformat. Unter dem Balken ist der Kalender des Zeitraums ausgebreitet, darunter stehen die Ausgaben und die Transaktion des gewählten Tages.",
+    "caption": "iPad-Ansicht, vergrößert",
+    "focus": "-262px",
+    "focusW": "620px"
    }
   },
   {
