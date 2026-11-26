@@ -81,6 +81,22 @@
   },
   {
    "layout": "card",
+   "title": "On iPad, the money left and the calendar get more room",
+   "body": [
+    "On iPad, the big number, the period bar and the calendar on the main screen sit one after another in the middle of the screen. Turned sideways, the period's dates run in one row instead of the calendar, and tapping a date shows what you spent and your transactions that day. The wide screen of a foldable iPhone opened out uses the same layout, and you can put a large widget on the iPad Home Screen."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad upright and sideways",
+     "Spending and transactions by date",
+     "Large widgets on the iPad Home Screen"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "When the balance is off",
    "body": [
     "If the record and your real balance differ, tap the big number and enter the real amount. One Balance adjustment line records the difference, and your original transactions stay as they are."
@@ -150,6 +166,13 @@
    ]
   },
   {
+   "q": "Fever Effect",
+   "a": [
+    "With a monthly budget, turn on Fever Effect in Settings, enter a Burns From amount and save. When the daily average on the main screen is that amount or more, the big number burns like a flame. It is off at first. It doesn't appear when you're over budget, when the balance is 0 or when you're looking at a past period, and it isn't in the widgets.",
+    "With a daily budget this setting doesn't appear. With two or more budgets, you set it for each budget on that budget's screen."
+   ]
+  },
+  {
    "q": "Recording text messages with a Shortcuts automation (South Korea)",
    "a": [
     "This works only if your iPhone's region was South Korea when you first set up the app. Elsewhere, use Add by Hand. If payment notices reach you by text message, you can set up a Shortcuts automation. Automation Setup, opened from Shortcuts Automation in Settings, has Get Shortcut, which gets you a shortcut with the single app action Record Payment Message through a link. You add the shortcut in the Shortcuts app and turn on the automation yourself. The steps for your iOS version are listed in order on the same screen. If the link doesn't open, follow the steps under Build It Yourself, which starts collapsed. Once the automation has run, the Shortcuts Automation row in Settings shows Working. When the automation records a payment, a silent one-line notification arrives instead of a result window. Messages from other cards and messages that aren't payments don't send one. If you haven't allowed notifications yet, tap Allow Notifications in Automation Setup; if they're turned off, turn them on with Open Settings.",
@@ -194,7 +217,8 @@
    "a": [
     "Home Screen widgets come in small and medium sizes. They show the money left and what you can spend today, and the medium size also lists your 3 latest transactions.",
     "There are three Lock Screen widgets. The rectangular one shows the money left and what you can spend today, the circular one shows the share left, and the inline one shows the money left. Until you enter a budget in the app, they show Not set up or a question mark.",
-    "With DailyLeft Pro and two or more budgets, the Budgets widget shows what's left in each budget at a glance. It comes in small, medium and large on the Home Screen and in the three Lock Screen shapes, and you choose Budgets to Show when you edit the widget. In the medium and large sizes, tapping a budget opens the app on that budget. The original widget always shows the first budget."
+    "With DailyLeft Pro and two or more budgets, the Budgets widget shows what's left in each budget at a glance. It comes in small, medium and large on the Home Screen and in the three Lock Screen shapes, and you choose Budgets to Show when you edit the widget. In the medium and large sizes, tapping a budget opens the app on that budget. The original widget always shows the first budget.",
+    "The iPad Home Screen also has large and extra large sizes. In the extra large size, this period's dates run in one row and what you spent each day shows as a bar. On iPad, the Budgets widget also comes in extra large and shows budgets two at a time in two rows."
    ]
   },
   {
@@ -248,13 +272,21 @@
   {
    "q": "Changing devices",
    "a": [
-    "If you're signed in to iCloud and iCloud Backup is on in Settings, a backup of your records is kept in your own iCloud. If you delete and reinstall the app, or install it on another iPhone with the same Apple Account, the records come back from that backup before you set the app up. It is not a sync that keeps two devices matched, and a device that already has records is never overwritten."
+    "If you're signed in to iCloud and iCloud Backup is on in Settings, a backup of your records is kept in your own iCloud. If you delete and reinstall the app, or install it on another iPhone or iPad with the same Apple Account, the records come back from that backup before you set the app up. It is not a sync that keeps two devices matched, and a device that already has records is never overwritten."
+   ]
+  },
+  {
+   "q": "iPad and foldable iPhone",
+   "a": [
+    "On iPad, the big number, the period bar and the calendar on the main screen sit one after another in the middle of the screen. Turned sideways, the period's dates run in one row instead of the calendar, with your latest transactions below. Tap a past day or today, and the big number stays as it is while what you spent and your transactions that day appear below.",
+    "On iPad, the Payment Notices section and Automation Setup don't appear in Settings. In the South Korea region, you can paste a notice into Add from Message to record it. Records are kept on each device separately, and records on iPhone and iPad are not matched to each other.",
+    "The wide screen of a foldable iPhone opened out uses the same layout. When the screen has a system strip along one side, the Settings and Add buttons move into that strip. Folded, or with the window made narrow on iPad, the app uses the same layout as on iPhone."
    ]
   },
   {
    "q": "Supported devices and languages",
    "a": [
-    "iPhone only, with iOS 26 or later. The app's screens are in 46 languages. It uses the first language in your device's language list that the app supports, or English if none is supported. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
+    "Runs on iPhone with iOS 26 or later and on iPad with iPadOS 26 or later. The app's screens are in 46 languages. It uses the first language in your device's language list that the app supports, or English if none is supported. Portrait and landscape are supported. Amounts are whole numbers in your region's currency, set when you first set up the app. There are no decimals or exchange rates, so you can't enter 12.50. Recording from messages takes only payments in won."
    ]
   },
   {

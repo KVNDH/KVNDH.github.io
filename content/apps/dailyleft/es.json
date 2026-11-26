@@ -81,6 +81,22 @@
   },
   {
    "layout": "card",
+   "title": "En el iPad, el dinero que queda y el calendario se ven en grande",
+   "body": [
+    "En el iPad, el número grande, la barra del periodo y el calendario de la pantalla principal se colocan uno tras otro en el centro de la pantalla. En horizontal, en lugar del calendario, los días del periodo aparecen en una sola fila, y al tocar un día ves al momento lo que gastaste y las transacciones de ese día. La pantalla ancha de un iPhone plegable abierto usa la misma disposición, y en la pantalla de inicio del iPad puedes poner widgets grandes."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad en vertical y horizontal",
+     "Lo gastado y las transacciones de cada día",
+     "Widgets grandes en la pantalla de inicio del iPad"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Si el saldo no cuadra",
    "body": [
     "Si el registro y tu saldo real no coinciden, toca el número grande e introduce el importe real. Una línea de «Ajuste de saldo» recoge la diferencia, y tus transacciones originales se quedan como están."
@@ -150,6 +166,13 @@
    ]
   },
   {
+   "q": "Efecto fiebre",
+   "a": [
+    "Con un presupuesto mensual, activa «Efecto fiebre» en Ajustes, introduce un importe en «Arde desde» y guarda. Cuando la media diaria de la pantalla principal llega a ese importe o lo supera, el número grande arde como una llama. De forma predeterminada está desactivado. No aparece cuando te has pasado del presupuesto, cuando el saldo es 0 ni cuando ves un periodo pasado, y tampoco está en los widgets.",
+    "Con un presupuesto diario, este ajuste no aparece. Si usas dos o más presupuestos, se configura en la pantalla de cada presupuesto."
+   ]
+  },
+  {
    "q": "Registrar mensajes de texto con una automatización de Atajos (Corea del Sur)",
    "a": [
     "Esto solo funciona si la región de tu iPhone era Corea del Sur al configurar la app por primera vez. En otros lugares, usa «Añadir a mano». Si los avisos de pago te llegan por mensaje de texto, puedes crear una automatización de Atajos. «Configuración de la automatización», que se abre desde «Automatización de Atajos» en Ajustes, tiene «Obtener atajo», que te da por enlace un atajo con una sola acción de la app, «Registrar SMS de pago». Tú añades el atajo en la app Atajos y activas la automatización. Los pasos para tu versión de iOS aparecen en orden en esa misma pantalla. Si el enlace no se abre, sigue los pasos de «Crearlo a mano», que aparece contraído. Cuando la automatización se ha ejecutado una vez, la fila «Automatización de Atajos» de Ajustes muestra «Funciona». Cuando la automatización registra un pago, llega una notificación silenciosa de una línea en lugar de una ventana de resultado. Los mensajes de otras tarjetas y los que no son pagos no envían ninguna. Si aún no has permitido las notificaciones, toca «Permitir notificaciones» en «Configuración de la automatización»; si están desactivadas, actívalas con «Abrir Ajustes».",
@@ -194,7 +217,8 @@
    "a": [
     "Los widgets de la pantalla de inicio tienen tamaño pequeño y mediano. Muestran el dinero que queda y lo que puedes gastar hoy, y el tamaño mediano también incluye tus 3 últimas transacciones.",
     "Hay tres widgets para la pantalla de bloqueo. El rectangular muestra el dinero que queda y lo que puedes gastar hoy, el circular muestra la proporción que queda, y el de una línea muestra el dinero que queda. Hasta que introduzcas un presupuesto en la app, muestran «Sin configurar» o un signo de interrogación.",
-    "Con DailyLeft Pro y dos o más presupuestos, el widget «Presupuestos» muestra de un vistazo lo que queda en cada presupuesto. Tiene tamaño pequeño, mediano y grande en la pantalla de inicio y las tres formas de la pantalla de bloqueo, y eliges «Presupuestos que mostrar» al editar el widget. En los tamaños mediano y grande, al tocar un presupuesto la app se abre en ese presupuesto. El widget original siempre muestra el primer presupuesto."
+    "Con DailyLeft Pro y dos o más presupuestos, el widget «Presupuestos» muestra de un vistazo lo que queda en cada presupuesto. Tiene tamaño pequeño, mediano y grande en la pantalla de inicio y las tres formas de la pantalla de bloqueo, y eliges «Presupuestos que mostrar» al editar el widget. En los tamaños mediano y grande, al tocar un presupuesto la app se abre en ese presupuesto. El widget original siempre muestra el primer presupuesto.",
+    "La pantalla de inicio del iPad también tiene tamaño grande y extragrande. En el tamaño extragrande, los días de este periodo aparecen en una sola fila y lo que gastaste cada día se muestra con una barra. En el iPad, el widget «Presupuestos» también se puede elegir en tamaño extragrande, y muestra los presupuestos en dos filas de dos."
    ]
   },
   {
@@ -248,13 +272,21 @@
   {
    "q": "Cambiar de dispositivo",
    "a": [
-    "Si tienes la sesión iniciada en iCloud y tienes activado «Copia en iCloud» en los Ajustes, se guarda una copia de seguridad de tus registros en tu propio iCloud. Si eliminas y vuelves a instalar la app, o la instalas en otro iPhone con la misma cuenta de Apple, los registros vuelven desde esa copia antes de que configures la app. No es una sincronización que mantenga iguales dos dispositivos, y nunca se sobrescribe un dispositivo que ya tiene registros."
+    "Si tienes la sesión iniciada en iCloud y tienes activado «Copia en iCloud» en los Ajustes, se guarda una copia de seguridad de tus registros en tu propio iCloud. Si eliminas y vuelves a instalar la app, o la instalas en otro iPhone o iPad con la misma cuenta de Apple, los registros vuelven desde esa copia antes de que configures la app. No es una sincronización que mantenga iguales dos dispositivos, y nunca se sobrescribe un dispositivo que ya tiene registros."
+   ]
+  },
+  {
+   "q": "Ver en el iPad y en un iPhone plegable",
+   "a": [
+    "En el iPad, el número grande, la barra del periodo y el calendario de la pantalla principal se colocan uno tras otro en el centro de la pantalla. En horizontal, en lugar del calendario, los días del periodo aparecen en una sola fila, con tus últimas transacciones debajo. Al tocar un día pasado o el de hoy, el número grande se queda igual y debajo aparecen lo que gastaste y las transacciones de ese día.",
+    "En el iPad, la sección «Avisos de pago» y «Configuración de la automatización» no aparecen en Ajustes. Si la región es Corea del Sur, puedes registrar un pago pegando el texto del aviso en «Añadir desde SMS». Los registros se guardan en cada dispositivo por separado, y los del iPhone y el iPad no se sincronizan entre sí.",
+    "La pantalla ancha de un iPhone plegable abierto usa la misma disposición. Si la pantalla tiene una franja del sistema a un lado, los botones de Ajustes y de añadir se colocan en esa franja. Cerrado, o en el iPad con la ventana estrecha, la app usa la disposición del iPhone."
    ]
   },
   {
    "q": "Dispositivos e idiomas compatibles",
    "a": [
-    "Solo para iPhone, con iOS 26 o posterior. La app está en 46 idiomas: usa el primero de la lista de idiomas del dispositivo que admita, o inglés si no admite ninguno. Admite vertical y horizontal. Los importes son números enteros en la moneda de tu región, fijada al configurar la app por primera vez. No hay decimales ni tipos de cambio, así que no puedes introducir 12,50. El registro desde mensajes solo acepta pagos en wones."
+    "Funciona en iPhone con iOS 26 o posterior y en iPad con iPadOS 26 o posterior. La app está en 46 idiomas: usa el primero de la lista de idiomas del dispositivo que admita, o inglés si no admite ninguno. Admite vertical y horizontal. Los importes son números enteros en la moneda de tu región, fijada al configurar la app por primera vez. No hay decimales ni tipos de cambio, así que no puedes introducir 12,50. El registro desde mensajes solo acepta pagos en wones."
    ]
   },
   {

@@ -81,6 +81,22 @@
   },
   {
    "layout": "card",
+   "title": "Auf dem iPad sehen Sie das übrige Geld und den Kalender groß",
+   "body": [
+    "Auf dem iPad stehen die große Zahl, der Balken des Zeitraums und der Kalender des Hauptbildschirms untereinander in der Mitte des Bildschirms. Im Querformat reihen sich statt des Kalenders die Tage des Zeitraums in einer Zeile, und ein Tipp auf einen Tag zeigt gleich die Ausgaben und Transaktionen dieses Tages. Der breite Bildschirm eines aufgeklappten faltbaren iPhone zeigt dasselbe Layout, und auf dem Home-Bildschirm des iPad können Sie große Widgets platzieren."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad hoch und quer",
+     "Ausgaben und Transaktionen pro Tag",
+     "Große Widgets auf dem iPad-Home-Bildschirm"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Wenn der Saldo nicht stimmt",
    "body": [
     "Weichen die Einträge von Ihrem tatsächlichen Saldo ab, tippen Sie auf die große Zahl und tragen den tatsächlichen Betrag ein. Eine Zeile „Saldokorrektur“ hält die Differenz fest, und Ihre ursprünglichen Transaktionen bleiben, wie sie sind."
@@ -150,6 +166,13 @@
    ]
   },
   {
+   "q": "Fieber-Effekt",
+   "a": [
+    "Schalten Sie bei einem Monatsbudget in den Einstellungen „Fieber-Effekt“ ein, tragen Sie unter „Brennt ab“ einen Betrag ein und speichern Sie. Dann brennt die große Zahl auf dem Hauptbildschirm wie eine Flamme, sobald der Tagesdurchschnitt mindestens diesen Betrag erreicht. Anfangs ist der Effekt ausgeschaltet. Wenn Sie über dem Budget sind, der Saldo bei 0 liegt oder Sie einen vergangenen Zeitraum ansehen, erscheint er nicht, und in den Widgets gibt es ihn nicht.",
+    "Bei einem Tagesbudget erscheint diese Einstellung nicht. Nutzen Sie zwei oder mehr Budgets, legen Sie sie auf dem Bildschirm jedes Budgets einzeln fest."
+   ]
+  },
+  {
    "q": "SMS mit einer Kurzbefehl-Automation erfassen (Südkorea)",
    "a": [
     "Das funktioniert nur, wenn die Region Ihres iPhones bei der ersten Einrichtung Südkorea war. Sonst nutzen Sie „Manuell hinzufügen“. Kommen Zahlungshinweise per SMS bei Ihnen an, können Sie eine Kurzbefehl-Automation einrichten. „Automation einrichten“, das Sie in den Einstellungen über „Kurzbefehle-Automation“ öffnen, enthält „Kurzbefehl laden“. Damit laden Sie per Link einen Kurzbefehl mit der einen App-Aktion „Zahlungsnachricht erfassen“. Sie fügen ihn in der Kurzbefehle-App hinzu und schalten die Automation selbst ein. Die Schritte für Ihre iOS-Version stehen der Reihe nach auf demselben Bildschirm. Öffnet sich der Link nicht, folgen Sie den Schritten unter „Selbst erstellen“, das zunächst eingeklappt ist. Sobald die Automation einmal gelaufen ist, zeigt die Zeile „Kurzbefehle-Automation“ in den Einstellungen „Läuft“. Erfasst die Automation eine Zahlung, kommt statt eines Ergebnisfensters eine lautlose Mitteilung in einer Zeile. Nachrichten anderer Karten und Nachrichten, die keine Zahlung sind, lösen keine aus. Haben Sie Mitteilungen noch nicht erlaubt, tippen Sie in „Automation einrichten“ auf „Mitteilungen erlauben“; sind sie ausgeschaltet, schalten Sie sie mit „Einstellungen öffnen“ ein.",
@@ -194,7 +217,8 @@
    "a": [
     "Widgets für den Home-Bildschirm gibt es in klein und mittel. Sie zeigen das übrige Geld und was Sie heute ausgeben können, die mittlere Größe zeigt außerdem Ihre 3 letzten Transaktionen.",
     "Für den Sperrbildschirm gibt es drei Widgets. Das rechteckige zeigt das übrige Geld und was Sie heute ausgeben können, das runde den verbleibenden Anteil und das einzeilige das übrige Geld. Solange Sie in der App kein Budget eingetragen haben, zeigen sie „Nicht eingerichtet“ oder ein Fragezeichen.",
-    "Mit DailyLeft Pro und zwei oder mehr Budgets zeigt das Widget Budgets auf einen Blick, was in jedem Budget übrig ist. Es gibt es in klein, mittel und groß für den Home-Bildschirm und in den drei Formen für den Sperrbildschirm, und beim Bearbeiten des Widgets wählen Sie „Angezeigte Budgets“. In mittel und groß öffnet ein Tippen auf ein Budget die App mit diesem Budget. Das ursprüngliche Widget zeigt immer das erste Budget."
+    "Mit DailyLeft Pro und zwei oder mehr Budgets zeigt das Widget Budgets auf einen Blick, was in jedem Budget übrig ist. Es gibt es in klein, mittel und groß für den Home-Bildschirm und in den drei Formen für den Sperrbildschirm, und beim Bearbeiten des Widgets wählen Sie „Angezeigte Budgets“. In mittel und groß öffnet ein Tippen auf ein Budget die App mit diesem Budget. Das ursprüngliche Widget zeigt immer das erste Budget.",
+    "Auf dem Home-Bildschirm des iPad gibt es außerdem groß und extragroß. In extragroß reihen sich die Tage des aktuellen Zeitraums in einer Zeile, und was Sie an jedem Tag ausgegeben haben, erscheint als Balken. Auf dem iPad lässt sich auch das Widget Budgets in extragroß wählen, und es zeigt je zwei Budgets in zwei Reihen."
    ]
   },
   {
@@ -248,13 +272,21 @@
   {
    "q": "Beim Gerätewechsel",
    "a": [
-    "Wenn Sie bei iCloud angemeldet sind und „iCloud-Backup“ in den Einstellungen eingeschaltet ist, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
+    "Wenn Sie bei iCloud angemeldet sind und „iCloud-Backup“ in den Einstellungen eingeschaltet ist, liegt eine Sicherung Ihrer Einträge in Ihrer eigenen iCloud. Löschen Sie die App und installieren sie neu oder installieren sie auf einem anderen iPhone oder iPad mit demselben Apple Account, werden die Einträge vor der Einrichtung aus dieser Sicherung wiederhergestellt. Es ist keine Synchronisierung, die zwei Geräte abgleicht, und ein Gerät, auf dem schon Einträge sind, wird nie überschrieben."
+   ]
+  },
+  {
+   "q": "iPad und faltbares iPhone",
+   "a": [
+    "Auf dem iPad stehen die große Zahl, der Balken des Zeitraums und der Kalender des Hauptbildschirms untereinander in der Mitte des Bildschirms. Im Querformat reihen sich statt des Kalenders die Tage des Zeitraums in einer Zeile, und darunter stehen die letzten Transaktionen. Tippen Sie auf einen vergangenen Tag oder auf heute, bleibt die große Zahl, wie sie ist, und darunter erscheinen die Ausgaben und Transaktionen dieses Tages.",
+    "Auf dem iPad erscheinen der Bereich „Zahlungsmitteilungen“ und „Automation einrichten“ in den Einstellungen nicht. Ist die Region Südkorea, können Sie den Text einer Zahlungsmitteilung unter „Aus Nachricht“ einfügen und so erfassen. Die Einträge werden auf jedem Gerät getrennt gespeichert, und die Einträge von iPhone und iPad werden nicht abgeglichen.",
+    "Der breite Bildschirm eines aufgeklappten faltbaren iPhone zeigt dasselbe Layout. Hat der Bildschirm seitlich einen Systemstreifen, wandern die Tasten für Einstellungen und Hinzufügen in diesen Streifen. Zugeklappt oder in einem schmal gezogenen Fenster auf dem iPad nutzt die App das iPhone-Layout."
    ]
   },
   {
    "q": "Unterstützte Geräte und Sprachen",
    "a": [
-    "Nur für iPhone, ab iOS 26. Die App gibt es in 46 Sprachen: Sie zeigt die erste Sprache aus der Sprachliste Ihres Geräts, die sie unterstützt, sonst Englisch. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
+    "Die App läuft auf dem iPhone ab iOS 26 und auf dem iPad ab iPadOS 26. Die App gibt es in 46 Sprachen: Sie zeigt die erste Sprache aus der Sprachliste Ihres Geräts, die sie unterstützt, sonst Englisch. Hoch- und Querformat werden unterstützt. Beträge sind ganze Zahlen in der Währung Ihrer Region, die bei der ersten Einrichtung festgelegt wird. Dezimalstellen und Wechselkurse gibt es nicht, 12,50 lässt sich also nicht eintragen. Beim Erfassen aus Nachrichten zählen nur Zahlungen in Won."
    ]
   },
   {

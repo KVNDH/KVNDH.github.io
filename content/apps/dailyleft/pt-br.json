@@ -81,6 +81,22 @@
   },
   {
    "layout": "card",
+   "title": "No iPad, você vê o dinheiro restante e o calendário em tamanho grande",
+   "body": [
+    "No iPad, o número grande, a barra do período e o calendário da tela principal ficam um embaixo do outro no centro da tela. Na horizontal, no lugar do calendário, os dias do período aparecem em uma linha, e tocar em um dia mostra na hora quanto você gastou e as transações daquele dia. A tela larga de um iPhone dobrável aberto usa o mesmo layout, e a Tela de Início do iPad pode ter widgets grandes."
+   ],
+   "bullets": [],
+   "visual": {
+    "type": "chips",
+    "items": [
+     "iPad na vertical e na horizontal",
+     "Gastos e transações de cada dia",
+     "Widgets grandes na Tela de Início do iPad"
+    ]
+   }
+  },
+  {
+   "layout": "card",
    "title": "Quando o saldo não bate",
    "body": [
     "Se o registro e o seu saldo real forem diferentes, toque no número grande e informe o valor real. Uma linha de “Ajuste de saldo” registra a diferença, e as transações originais ficam como estão."
@@ -150,6 +166,13 @@
    ]
   },
   {
+   "q": "Efeito febre",
+   "a": [
+    "Com um orçamento mensal, ligue “Efeito febre” nos Ajustes, informe um valor em “Pega fogo a partir de” e salve. Quando a média diária da tela principal for igual ou maior que esse valor, o número grande pega fogo. Vem desligado por padrão. Não aparece quando você passou do orçamento ou o saldo está em 0, quando você olha um período passado, nem nos widgets.",
+    "Com um orçamento diário, esse ajuste não aparece. Com dois ou mais orçamentos, você o define para cada orçamento na tela dele."
+   ]
+  },
+  {
    "q": "Registrar mensagens de texto com uma automação de Atalhos (Coreia do Sul)",
    "a": [
     "Isso só funciona se a região do seu iPhone era Coreia do Sul na primeira configuração do app. Em outros lugares, use “Adicionar Manualmente”. Se os avisos de pagamento chegam por mensagem de texto, você pode criar uma automação de Atalhos. “Configurar Automação”, que você abre em “Automação de Atalhos” nos Ajustes, tem “Obter Atalho”, que traz por link um atalho com uma única ação do app, “Registrar Mensagem de Pagamento”. Você adiciona o atalho no app Atalhos e ativa a automação. Os passos para a sua versão do iOS aparecem em ordem na mesma tela. Se o link não abrir, siga os passos de “Criar Manualmente”, que fica recolhido. Depois que a automação roda uma vez, a linha “Automação de Atalhos” nos Ajustes mostra “Funcionando”. Quando a automação registra um pagamento, chega uma notificação silenciosa de uma linha em vez de uma janela de resultado. Mensagens de outros cartões e mensagens que não são pagamentos não geram notificação. Se você ainda não permitiu as notificações, toque em “Permitir Notificações” em “Configurar Automação”; se estiverem desativadas, ative-as com “Abrir Ajustes”.",
@@ -194,7 +217,8 @@
    "a": [
     "Os widgets da Tela de Início vêm nos tamanhos pequeno e médio. Eles mostram o dinheiro restante e o que você pode gastar hoje, e o tamanho médio também lista as suas 3 transações mais recentes.",
     "Há três widgets da Tela Bloqueada. O retangular mostra o dinheiro restante e o que você pode gastar hoje, o circular mostra a proporção restante, e o de uma linha mostra o dinheiro restante. Até você informar um orçamento no app, eles mostram “Não configurado” ou um ponto de interrogação.",
-    "Com o DailyLeft Pro e dois ou mais orçamentos, o widget “Orçamentos” mostra num relance quanto resta em cada orçamento. Ele vem nos tamanhos pequeno, médio e grande na Tela de Início e nos três formatos da Tela Bloqueada, e você escolhe “Orçamentos a Mostrar” ao editar o widget. Nos tamanhos médio e grande, tocar em um orçamento abre o app nesse orçamento. O widget original sempre mostra o primeiro orçamento."
+    "Com o DailyLeft Pro e dois ou mais orçamentos, o widget “Orçamentos” mostra num relance quanto resta em cada orçamento. Ele vem nos tamanhos pequeno, médio e grande na Tela de Início e nos três formatos da Tela Bloqueada, e você escolhe “Orçamentos a Mostrar” ao editar o widget. Nos tamanhos médio e grande, tocar em um orçamento abre o app nesse orçamento. O widget original sempre mostra o primeiro orçamento.",
+    "A Tela de Início do iPad também tem os tamanhos grande e extragrande. No extragrande, os dias do período atual aparecem em uma linha, com uma barra para o que você gastou em cada dia. No iPad, o widget “Orçamentos” também pode ser escolhido no tamanho extragrande e mostra os orçamentos em duas linhas de dois."
    ]
   },
   {
@@ -248,13 +272,21 @@
   {
    "q": "Trocar de aparelho",
    "a": [
-    "Se você estiver conectado ao iCloud e o “Backup do iCloud” estiver ativado nos Ajustes, um backup dos seus registros fica no seu próprio iCloud. Se você excluir e reinstalar o app, ou instalá-lo em outro iPhone com a mesma Conta Apple, os registros voltam desse backup antes de você configurar o app. Não é uma sincronização que mantém dois aparelhos iguais, e um aparelho que já tem registros nunca é sobrescrito."
+    "Se você estiver conectado ao iCloud e o “Backup do iCloud” estiver ativado nos Ajustes, um backup dos seus registros fica no seu próprio iCloud. Se você excluir e reinstalar o app, ou instalá-lo em outro iPhone ou iPad com a mesma Conta Apple, os registros voltam desse backup antes de você configurar o app. Não é uma sincronização que mantém dois aparelhos iguais, e um aparelho que já tem registros nunca é sobrescrito."
+   ]
+  },
+  {
+   "q": "A tela no iPad e no iPhone dobrável",
+   "a": [
+    "No iPad, o número grande, a barra do período e o calendário da tela principal ficam um embaixo do outro no centro da tela. Na horizontal, no lugar do calendário, os dias do período aparecem em uma linha, com as transações recentes embaixo. Ao tocar em um dia passado ou em hoje, o número grande continua igual, e o que você gastou e as transações daquele dia aparecem embaixo.",
+    "No iPad, a seção “Avisos de Pagamento” e “Configurar Automação” não aparecem nos Ajustes. Se a região for Coreia do Sul, você pode registrar um pagamento colando o texto do aviso em “Adicionar da Mensagem”. Os registros ficam salvos em cada aparelho separadamente, e os registros do iPhone e do iPad não são sincronizados entre si.",
+    "A tela larga de um iPhone dobrável aberto usa o mesmo layout. Quando a tela tem uma faixa do sistema na lateral, os botões de Ajustes e de adicionar passam para essa faixa. Com o iPhone fechado, ou com uma janela estreita no iPad, o app usa o layout do iPhone."
    ]
   },
   {
    "q": "Aparelhos e idiomas compatíveis",
    "a": [
-    "Só para iPhone, com iOS 26 ou posterior. O app está em 46 idiomas: usa o primeiro idioma da lista do aparelho que ele suporta, ou inglês se nenhum for suportado. Funciona em retrato e paisagem. Os valores são números inteiros na moeda da sua região, definida na primeira configuração do app. Não há casas decimais nem câmbio, então não dá para digitar 12,50. O registro por mensagem só aceita pagamentos em won."
+    "Funciona no iPhone com iOS 26 ou posterior e no iPad com iPadOS 26 ou posterior. O app está em 46 idiomas: usa o primeiro idioma da lista do aparelho que ele suporta, ou inglês se nenhum for suportado. Funciona em retrato e paisagem. Os valores são números inteiros na moeda da sua região, definida na primeira configuração do app. Não há casas decimais nem câmbio, então não dá para digitar 12,50. O registro por mensagem só aceita pagamentos em won."
    ]
   },
   {
