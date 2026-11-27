@@ -75,7 +75,7 @@
    "layout": "card",
    "title": "Direkt vom Sperrbildschirm ablesen",
    "body": [
-    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. Halten Sie ein Timer-Widget gedrückt und wählen Sie unter „Widget bearbeiten“ den Eintrag „Neuester Timer“, dann zeigt es immer den Timer, den Sie zuletzt angelegt haben. In StandBy erscheinen dieselben Widgets groß. Drehen Sie das Telefon quer, wechselt auch die App zu einem schwarzen Bildschirm mit dem Ring und einer großen Prozentzahl. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
+    "Drei Widgets für den Sperrbildschirm, drei für den Startbildschirm und dazu ein Stapel-Widget, das mehrere Zeiträume auf einmal zeigt. In jeder Größe steht der Name dabei, man sieht also, wozu der Prozentwert gehört. Halten Sie ein Timer-Widget gedrückt und wählen Sie unter „Widget bearbeiten“ den Eintrag „Neuester Timer“, dann zeigt es immer den Timer, den Sie zuletzt angelegt haben. In StandBy erscheinen dieselben Widgets groß. Drehen Sie ein iPhone quer, wechselt auch die App zu einem schwarzen Bildschirm mit dem Ring und einer großen Prozentzahl. Sie zeichnen genau in dem Moment neu, in dem sich die Zahl ändert, also steht der Tag mittags auf genau 50 Prozent."
    ],
    "bullets": [
     "Rund, rechteckig und einzeilig auf dem Sperrbildschirm",
@@ -137,6 +137,26 @@
       "value": "1 Min. bis 23 Std. 59 Min."
      }
     ]
+   }
+  },
+  {
+   "layout": "feat",
+   "title": "Auf dem iPad mehr Details für den großen Bildschirm",
+   "body": [
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone erscheinen die Timer auf dem Startbildschirm als Zeilen statt als Karten, jede mit einer großen Prozentzahl und einer Reihe eckiger Zellen. Im Vollbild stapeln sich neben oder unter dem Ring Zeilen mit feineren Zellen: Bei Dieses Jahr wird jeder Monat zu einer Zeile mit seinen Tagen. Wählen Sie im Menü Mehr den Eintrag StandBy, erscheint ein großer schwarzer Bildschirm. Auf dem iPad stellen Sie Beginn und Ziel eines neuen Timers nebeneinander ein."
+   ],
+   "bullets": [
+    "Hoch- und Querformat auf dem iPad",
+    "Timer in Zeilen mit eckigen Zellen",
+    "Feinere Zellen neben dem Ring"
+   ],
+   "visual": {
+    "type": "crop",
+    "shot": 6,
+    "alt": "Der Startbildschirm auf einem iPad im Hochformat. Unter „Wo wir gerade stehen“ folgen Heute, Dieser Monat, Dieses Jahr und Die 2020er, darunter Timer wie „Arbeitszeit“ und „Das Jahr, in dem ich 50 werde“, jeweils in einer Zeile mit der Prozentzahl rechts und einer Reihe eckiger Zellen darunter.",
+    "caption": "iPad-Ansicht, vergrößert",
+    "focus": "0px",
+    "focusW": "420px"
    }
   }
  ],
@@ -208,7 +228,7 @@
    "a": [
     "Tippen Sie oben rechts im Bildschirm Neuer Timer auf das Symbol mit drei Strängen, dann hört die App sofort zu. Sobald Sie aufhören zu sprechen, füllt sie Beginn, Ziel und Name mit dem, was sie verstanden hat; auf Sichern tippen Sie selbst. Das Symbol gibt es nur beim Anlegen eines neuen Timers, und es verschwindet, wenn Stunden je Wochentag eingeschaltet ist.",
     "„bis 14 Uhr“ reicht bis 14 Uhr, heute oder, wenn es schon später ist, morgen, und „3 Stunden“ zählt drei Stunden ab jetzt. „vom 5. November bis 31. Dezember“ reicht vom 5. November 0 Uhr bis zum 31. Dezember 24 Uhr. Auch „bis Freitag 18 Uhr“ und „100 Tage“ werden verstanden. Bei „Meeting 1 Stunde 30 Minuten“ wird Meeting zum Namen.",
-    "Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple, etwa Bengalisch und Tamil. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein.",
+    "Das Symbol erscheint in allen App-Sprachen außer den 11 ohne Spracherkennung von Apple, etwa Bengalisch und Tamil. Bei der ersten Nutzung fragt die App einmal nach Zugriff auf Mikrofon und Spracherkennung. Auf einem iPhone oder iPad, das Sprache nicht auf dem Gerät erkennen kann, öffnet sich ein Feld zum Schreiben, und Sie tippen den Satz dort ein.",
     "Ins Kontrollzentrum, auf die Plätze für Steuerelemente unten auf dem Sperrbildschirm und auf die Aktionstaste lässt sich die Taste „Timer per Sprache“ legen. Ein Druck darauf öffnet die App bei Neuer Timer, und sie hört sofort zu. Auf Sichern tippen Sie auch hier selbst. In einer Sprache ohne „In Worten“ öffnet sich nur Neuer Timer, ohne zuzuhören.",
     "In der Kurzbefehle-App nutzen Sie die Aktion „Timer anlegen“. Schreiben Sie in das Feld „Bis wann“ einen Satz wie „bis Freitag 18 Uhr“ oder „1 Stunde 30 Minuten“, und der Timer entsteht, ohne dass sich die App öffnet. Diesen Kurzbefehl können Sie auch auf die Aktionstaste legen. Timer aus der Taste oder einem Kurzbefehl zählen zu den drei eigenen."
    ]
@@ -251,7 +271,15 @@
   {
    "q": "Gerät und Internet",
    "a": [
-    "Läuft auf dem iPhone ab iOS 18. App und Widgets gibt es in 46 Sprachen, sie folgen der Sprache des Geräts. Im Hochformat nutzen Sie sie wie gewohnt, quer gedreht zeigt sie einen großen schwarzen Bildschirm. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz. Auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone steht die Liste auf dem Startbildschirm 600 Punkt breit in der Mitte, und im Vollbild sitzt der Ring links, Name und verbleibende Zeit rechts. Hat der Bildschirm eines faltbaren iPhone an einer Seite einen Systemstreifen, stehen Einstellungen, Neuer Timer, Bearbeiten und Zeilen wählen von der Liste senkrecht in diesem Streifen, und Schließen und Mehr aus dem Vollbild sitzen ebenfalls darin."
+    "Läuft auf dem iPhone ab iOS 18 und auf dem iPad ab iPadOS 18. App und Widgets gibt es in 46 Sprachen, sie folgen der Sprache des Geräts. Auf dem iPhone nutzen Sie sie im Hochformat, quer gedreht zeigt sie einen großen schwarzen Bildschirm. Auf dem iPad geht Hoch- und Querformat. Hell ist die Voreinstellung, bei dunklem System kippt alles auf Schwarz."
+   ]
+  },
+  {
+   "q": "iPad und faltbares iPhone",
+   "a": [
+    "Auf dem iPad und auf dem breiten Bildschirm eines aufgeklappten faltbaren iPhone zeigt der Startbildschirm Ihre Timer als Zeilen statt als Karten. Ist der Bildschirm breiter als hoch, stehen große Prozentzahl und Name in der linken Hälfte, die Zellen in der rechten. Ist er höher als breit, laufen die Zellen unter Name und Prozentzahl über die ganze Breite. Auf breiten Bildschirmen sind die Zellen eckig. Vergangene und verbleibende Zeit sehen Sie im Vollbild, das Sie durch Tippen auf eine Zeile öffnen.",
+    "Im Vollbild stapeln sich die Zellen in Zeilen neben dem Ring, auf einem Bildschirm, der höher als breit ist, darunter. Jede Zelle des Rings wird zu einer Zeile, geteilt in die nächstkleinere Einheit: Bei Dieses Jahr ist jeder Monat eine Zeile mit seinen Tagen, bei Dieser Monat jeder Tag eine Zeile mit 24 Stunden. Zeiträume ohne Zellen bleiben ein einzelner Ring. Auf einem breiten Bildschirm wechselt das Drehen des Geräts nicht zum schwarzen Bildschirm. Wählen Sie dafür im Vollbild im Menü Mehr den Eintrag StandBy, und tippen Sie einmal, um zurückzukehren.",
+    "Auf dem iPad öffnet sich der Bildschirm für einen neuen Timer breit, und mit „Beginn und Ziel“ stehen die beiden Felder nebeneinander. Wenn Sie das Fenster mit Split View oder Slide Over schmal machen oder ein faltbares iPhone zuklappen, sehen Sie dieselben Bildschirme wie auf dem iPhone. Hat der Bildschirm eines faltbaren iPhone an einer Seite einen Systemstreifen, stehen Einstellungen, Neuer Timer, Bearbeiten und Zeilen wählen von der Liste senkrecht in diesem Streifen, und Schließen und Mehr aus dem Vollbild sitzen ebenfalls darin."
    ]
   }
  ],
